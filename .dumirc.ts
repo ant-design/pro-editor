@@ -4,11 +4,33 @@ export default defineConfig({
   outputPath: 'docs-dist',
   themeConfig: {
     hero: {
-      title: 'ProEditor',
-      description: '🌟 轻量级编辑器 UI 框架',
-      actions: {
-        text: '🏮🏮 快速开始 →',
-        link: '/docs/intro',
+      'zh-CN': {
+        title: 'ProEditor',
+        description: '🌟 轻量级编辑器 UI 框架',
+        actions: [
+          {
+            text: '快速开始 →',
+            link: '/docs/intro',
+          },
+          {
+            text: 'Github',
+            link: 'https://github.com/ant-design/pro-editor',
+          },
+        ],
+      },
+      'en-US': {
+        title: 'ProEditor',
+        description: '🌟 Lightweight Editor UI Framework',
+        actions: [
+          {
+            text: 'Quick Start →',
+            link: '/docs/intro',
+          },
+          {
+            text: 'Github',
+            link: 'https://github.com/ant-design/pro-editor',
+          },
+        ],
       },
     },
     features: [
