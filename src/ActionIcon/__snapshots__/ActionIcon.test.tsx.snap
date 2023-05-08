@@ -1,0 +1,61 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ActionIcon > 可正常渲染 1`] = `
+.emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+.emotion-0:hover {
+  color: rgba(0, 0, 0, 0.88)!important;
+}
+
+<div>
+  <button
+    class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-0"
+    type="button"
+  >
+    hello
+  </button>
+</div>
+`;
+
+exports[`ActionIcon > 带有标题 1`] = `
+.emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+.emotion-0:hover {
+  color: rgba(0, 0, 0, 0.88)!important;
+}
+
+<div>
+  <button
+    class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-0"
+    type="button"
+  >
+    hello
+  </button>
+</div>
+`;

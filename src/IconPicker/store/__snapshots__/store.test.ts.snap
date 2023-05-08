@@ -1,0 +1,5163 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`IconPicker Store > State：组件状态 > Hooks 初始值 1`] = `
+{
+  "addScript": [Function],
+  "antdIconList": [
+    {
+      "componentName": "AccountBookFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "AccountBookOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "AimOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "AlertFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "AlertOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "AlibabaOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "AlignCenterOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "AlignLeftOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "AlignRightOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "AlipayCircleFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "AlipayCircleOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "AlipayOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "AlipaySquareFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "AliwangwangFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "AliwangwangOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "AliyunOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "AmazonCircleFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "AmazonOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "AmazonSquareFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "AndroidFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "AndroidOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "AntCloudOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "AntDesignOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "ApartmentOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "ApiFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "ApiOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "AppleFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "AppleOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "AppstoreAddOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "AppstoreFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "AppstoreOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "AreaChartOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "ArrowDownOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "ArrowLeftOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "ArrowRightOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "ArrowUpOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "ArrowsAltOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "AudioFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "AudioMutedOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "AudioOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "AuditOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "BackwardFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "BackwardOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "BankFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "BankOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "BarChartOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "BarcodeOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "BarsOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "BehanceCircleFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "BehanceOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "BehanceSquareFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "BehanceSquareOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "BellFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "BellOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "BgColorsOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "BlockOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "BoldOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "BookFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "BookOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "BorderBottomOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "BorderHorizontalOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "BorderInnerOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "BorderLeftOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "BorderOuterOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "BorderOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "BorderRightOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "BorderTopOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "BorderVerticleOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "BorderlessTableOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "BoxPlotFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "BoxPlotOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "BranchesOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "BugFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "BugOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "BuildFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "BuildOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "BulbFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "BulbOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "CalculatorFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "CalculatorOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "CalendarFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "CalendarOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "CameraFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "CameraOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "CarFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "CarOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "CaretDownFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "CaretDownOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "CaretLeftFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "CaretLeftOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "CaretRightFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "CaretRightOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "CaretUpFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "CaretUpOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "CarryOutFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "CarryOutOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "CheckCircleFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "CheckCircleOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "CheckOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "CheckSquareFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "CheckSquareOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "ChromeFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "ChromeOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "CiCircleFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "CiCircleOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "CiOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "ClearOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "ClockCircleFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "ClockCircleOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "CloseCircleFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "CloseCircleOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "CloseOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "CloseSquareFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "CloseSquareOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "CloudDownloadOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "CloudFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "CloudOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "CloudServerOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "CloudSyncOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "CloudUploadOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "ClusterOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "CodeFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "CodeOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "CodeSandboxCircleFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "CodeSandboxOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "CodeSandboxSquareFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "CodepenCircleFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "CodepenCircleOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "CodepenOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "CodepenSquareFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "CoffeeOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "ColumnHeightOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "ColumnWidthOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "CommentOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "CompassFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "CompassOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "CompressOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "ConsoleSqlOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "ContactsFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "ContactsOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "ContainerFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "ContainerOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "ControlFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "ControlOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "CopyFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "CopyOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "CopyrightCircleFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "CopyrightCircleOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "CopyrightOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "CreditCardFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "CreditCardOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "CrownFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "CrownOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "CustomerServiceFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "CustomerServiceOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "DashOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "DashboardFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "DashboardOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "DatabaseFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "DatabaseOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "DeleteColumnOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "DeleteFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "DeleteOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "DeleteRowOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "DeliveredProcedureOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "DeploymentUnitOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "DesktopOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "DiffFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "DiffOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "DingdingOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "DingtalkCircleFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "DingtalkOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "DingtalkSquareFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "DisconnectOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "DislikeFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "DislikeOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "DollarCircleFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "DollarCircleOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "DollarOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "DotChartOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "DoubleLeftOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "DoubleRightOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "DownCircleFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "DownCircleOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "DownOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "DownSquareFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "DownSquareOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "DownloadOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "DragOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "DribbbleCircleFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "DribbbleOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "DribbbleSquareFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "DribbbleSquareOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "DropboxCircleFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "DropboxOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "DropboxSquareFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "EditFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "EditOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "EllipsisOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "EnterOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "EnvironmentFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "EnvironmentOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "EuroCircleFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "EuroCircleOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "EuroOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "ExceptionOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "ExclamationCircleFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "ExclamationCircleOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "ExclamationOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "ExpandAltOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "ExpandOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "ExperimentFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "ExperimentOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "ExportOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "EyeFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "EyeInvisibleFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "EyeInvisibleOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "EyeOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "FacebookFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "FacebookOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "FallOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "FastBackwardFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "FastBackwardOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "FastForwardFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "FastForwardOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "FieldBinaryOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "FieldNumberOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "FieldStringOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "FieldTimeOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "FileAddFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "FileAddOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "FileDoneOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "FileExcelFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "FileExcelOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "FileExclamationFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "FileExclamationOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "FileFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "FileGifOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "FileImageFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "FileImageOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "FileJpgOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "FileMarkdownFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "FileMarkdownOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "FileOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "FilePdfFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "FilePdfOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "FilePptFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "FilePptOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "FileProtectOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "FileSearchOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "FileSyncOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "FileTextFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "FileTextOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "FileUnknownFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "FileUnknownOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "FileWordFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "FileWordOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "FileZipFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "FileZipOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "FilterFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "FilterOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "FireFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "FireOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "FlagFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "FlagOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "FolderAddFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "FolderAddOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "FolderFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "FolderOpenFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "FolderOpenOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "FolderOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "FolderViewOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "FontColorsOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "FontSizeOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "ForkOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "FormOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "FormatPainterFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "FormatPainterOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "ForwardFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "ForwardOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "FrownFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "FrownOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "FullscreenExitOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "FullscreenOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "FunctionOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "FundFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "FundOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "FundProjectionScreenOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "FundViewOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "FunnelPlotFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "FunnelPlotOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "GatewayOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "GifOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "GiftFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "GiftOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "GithubFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "GithubOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "GitlabFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "GitlabOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "GlobalOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "GoldFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "GoldOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "GoldenFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "GoogleCircleFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "GoogleOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "GooglePlusCircleFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "GooglePlusOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "GooglePlusSquareFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "GoogleSquareFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "GroupOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "HddFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "HddOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "HeartFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "HeartOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "HeatMapOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "HighlightFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "HighlightOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "HistoryOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "HolderOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "HomeFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "HomeOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "HourglassFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "HourglassOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "Html5Filled",
+      "type": "antd",
+    },
+    {
+      "componentName": "Html5Outlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "IdcardFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "IdcardOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "IeCircleFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "IeOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "IeSquareFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "ImportOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "InboxOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "InfoCircleFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "InfoCircleOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "InfoOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "InsertRowAboveOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "InsertRowBelowOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "InsertRowLeftOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "InsertRowRightOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "InstagramFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "InstagramOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "InsuranceFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "InsuranceOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "InteractionFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "InteractionOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "IssuesCloseOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "ItalicOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "KeyOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "LaptopOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "LayoutFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "LayoutOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "LeftCircleFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "LeftCircleOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "LeftOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "LeftSquareFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "LeftSquareOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "LikeFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "LikeOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "LineChartOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "LineHeightOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "LineOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "LinkOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "LinkedinFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "LinkedinOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "Loading3QuartersOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "LoadingOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "LockFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "LockOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "LoginOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "LogoutOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "MacCommandFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "MacCommandOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "MailFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "MailOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "ManOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "MedicineBoxFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "MedicineBoxOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "MediumCircleFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "MediumOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "MediumSquareFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "MediumWorkmarkOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "MehFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "MehOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "MenuFoldOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "MenuOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "MenuUnfoldOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "MergeCellsOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "MessageFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "MessageOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "MinusCircleFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "MinusCircleOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "MinusOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "MinusSquareFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "MinusSquareOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "MobileFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "MobileOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "MoneyCollectFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "MoneyCollectOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "MonitorOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "MoreOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "NodeCollapseOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "NodeExpandOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "NodeIndexOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "NotificationFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "NotificationOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "NumberOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "OneToOneOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "OrderedListOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "PaperClipOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "PartitionOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "PauseCircleFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "PauseCircleOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "PauseOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "PayCircleFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "PayCircleOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "PercentageOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "PhoneFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "PhoneOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "PicCenterOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "PicLeftOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "PicRightOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "PictureFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "PictureOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "PieChartFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "PieChartOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "PlayCircleFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "PlayCircleOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "PlaySquareFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "PlaySquareOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "PlusCircleFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "PlusCircleOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "PlusOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "PlusSquareFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "PlusSquareOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "PoundCircleFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "PoundCircleOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "PoundOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "PoweroffOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "PrinterFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "PrinterOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "ProfileFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "ProfileOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "ProjectFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "ProjectOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "PropertySafetyFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "PropertySafetyOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "PullRequestOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "PushpinFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "PushpinOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "QqCircleFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "QqOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "QqSquareFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "QrcodeOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "QuestionCircleFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "QuestionCircleOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "QuestionOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "RadarChartOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "RadiusBottomleftOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "RadiusBottomrightOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "RadiusSettingOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "RadiusUpleftOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "RadiusUprightOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "ReadFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "ReadOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "ReconciliationFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "ReconciliationOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "RedEnvelopeFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "RedEnvelopeOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "RedditCircleFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "RedditOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "RedditSquareFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "RedoOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "ReloadOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "RestFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "RestOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "RetweetOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "RightCircleFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "RightCircleOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "RightOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "RightSquareFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "RightSquareOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "RiseOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "RobotFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "RobotOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "RocketFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "RocketOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "RollbackOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "RotateLeftOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "RotateRightOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "SafetyCertificateFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "SafetyCertificateOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "SafetyOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "SaveFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "SaveOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "ScanOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "ScheduleFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "ScheduleOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "ScissorOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "SearchOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "SecurityScanFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "SecurityScanOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "SelectOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "SendOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "SettingFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "SettingOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "ShakeOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "ShareAltOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "ShopFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "ShopOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "ShoppingCartOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "ShoppingFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "ShoppingOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "ShrinkOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "SignalFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "SisternodeOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "SketchCircleFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "SketchOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "SketchSquareFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "SkinFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "SkinOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "SkypeFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "SkypeOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "SlackCircleFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "SlackOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "SlackSquareFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "SlackSquareOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "SlidersFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "SlidersOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "SmallDashOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "SmileFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "SmileOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "SnippetsFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "SnippetsOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "SolutionOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "SortAscendingOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "SortDescendingOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "SoundFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "SoundOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "SplitCellsOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "StarFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "StarOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "StepBackwardFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "StepBackwardOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "StepForwardFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "StepForwardOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "StockOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "StopFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "StopOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "StrikethroughOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "SubnodeOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "SwapLeftOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "SwapOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "SwapRightOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "SwitcherFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "SwitcherOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "SyncOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "TableOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "TabletFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "TabletOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "TagFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "TagOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "TagsFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "TagsOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "TaobaoCircleFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "TaobaoCircleOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "TaobaoOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "TaobaoSquareFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "TeamOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "ThunderboltFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "ThunderboltOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "ToTopOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "ToolFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "ToolOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "TrademarkCircleFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "TrademarkCircleOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "TrademarkOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "TransactionOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "TranslationOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "TrophyFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "TrophyOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "TwitterCircleFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "TwitterOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "TwitterSquareFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "UnderlineOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "UndoOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "UngroupOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "UnlockFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "UnlockOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "UnorderedListOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "UpCircleFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "UpCircleOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "UpOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "UpSquareFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "UpSquareOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "UploadOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "UsbFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "UsbOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "UserAddOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "UserDeleteOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "UserOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "UserSwitchOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "UsergroupAddOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "UsergroupDeleteOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "VerifiedOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "VerticalAlignBottomOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "VerticalAlignMiddleOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "VerticalAlignTopOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "VerticalLeftOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "VerticalRightOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "VideoCameraAddOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "VideoCameraFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "VideoCameraOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "WalletFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "WalletOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "WarningFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "WarningOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "WechatFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "WechatOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "WeiboCircleFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "WeiboCircleOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "WeiboOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "WeiboSquareFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "WeiboSquareOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "WhatsAppOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "WifiOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "WindowsFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "WindowsOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "WomanOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "YahooFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "YahooOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "YoutubeFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "YoutubeOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "YuqueFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "YuqueOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "ZhihuCircleFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "ZhihuOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "ZhihuSquareFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "ZoomInOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "ZoomOutOutlined",
+      "type": "antd",
+    },
+  ],
+  "filterKeywords": "",
+  "icon": null,
+  "iconfontIconList": [],
+  "iconfontScripts": [],
+  "onIconChange": null,
+  "onIconfontScriptsChange": null,
+  "open": false,
+  "outsourceIconfontScripts": undefined,
+  "panelTabKey": "antd",
+  "removeScripts": [Function],
+  "resetIcon": [Function],
+  "selectIcon": [Function],
+  "selectScript": [Function],
+  "showForm": false,
+  "toggleForm": [Function],
+  "togglePanel": [Function],
+  "updateScripts": [Function],
+}
+`;
+
+exports[`IconPicker Store > State：组件状态 > 默认初始值 1`] = `
+{
+  "addScript": [Function],
+  "antdIconList": [
+    {
+      "componentName": "AccountBookFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "AccountBookOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "AimOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "AlertFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "AlertOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "AlibabaOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "AlignCenterOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "AlignLeftOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "AlignRightOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "AlipayCircleFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "AlipayCircleOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "AlipayOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "AlipaySquareFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "AliwangwangFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "AliwangwangOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "AliyunOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "AmazonCircleFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "AmazonOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "AmazonSquareFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "AndroidFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "AndroidOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "AntCloudOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "AntDesignOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "ApartmentOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "ApiFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "ApiOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "AppleFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "AppleOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "AppstoreAddOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "AppstoreFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "AppstoreOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "AreaChartOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "ArrowDownOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "ArrowLeftOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "ArrowRightOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "ArrowUpOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "ArrowsAltOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "AudioFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "AudioMutedOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "AudioOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "AuditOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "BackwardFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "BackwardOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "BankFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "BankOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "BarChartOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "BarcodeOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "BarsOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "BehanceCircleFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "BehanceOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "BehanceSquareFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "BehanceSquareOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "BellFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "BellOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "BgColorsOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "BlockOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "BoldOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "BookFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "BookOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "BorderBottomOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "BorderHorizontalOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "BorderInnerOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "BorderLeftOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "BorderOuterOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "BorderOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "BorderRightOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "BorderTopOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "BorderVerticleOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "BorderlessTableOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "BoxPlotFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "BoxPlotOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "BranchesOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "BugFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "BugOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "BuildFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "BuildOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "BulbFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "BulbOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "CalculatorFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "CalculatorOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "CalendarFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "CalendarOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "CameraFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "CameraOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "CarFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "CarOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "CaretDownFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "CaretDownOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "CaretLeftFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "CaretLeftOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "CaretRightFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "CaretRightOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "CaretUpFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "CaretUpOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "CarryOutFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "CarryOutOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "CheckCircleFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "CheckCircleOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "CheckOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "CheckSquareFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "CheckSquareOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "ChromeFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "ChromeOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "CiCircleFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "CiCircleOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "CiOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "ClearOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "ClockCircleFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "ClockCircleOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "CloseCircleFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "CloseCircleOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "CloseOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "CloseSquareFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "CloseSquareOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "CloudDownloadOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "CloudFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "CloudOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "CloudServerOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "CloudSyncOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "CloudUploadOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "ClusterOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "CodeFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "CodeOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "CodeSandboxCircleFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "CodeSandboxOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "CodeSandboxSquareFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "CodepenCircleFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "CodepenCircleOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "CodepenOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "CodepenSquareFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "CoffeeOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "ColumnHeightOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "ColumnWidthOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "CommentOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "CompassFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "CompassOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "CompressOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "ConsoleSqlOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "ContactsFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "ContactsOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "ContainerFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "ContainerOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "ControlFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "ControlOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "CopyFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "CopyOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "CopyrightCircleFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "CopyrightCircleOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "CopyrightOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "CreditCardFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "CreditCardOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "CrownFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "CrownOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "CustomerServiceFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "CustomerServiceOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "DashOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "DashboardFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "DashboardOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "DatabaseFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "DatabaseOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "DeleteColumnOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "DeleteFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "DeleteOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "DeleteRowOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "DeliveredProcedureOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "DeploymentUnitOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "DesktopOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "DiffFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "DiffOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "DingdingOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "DingtalkCircleFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "DingtalkOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "DingtalkSquareFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "DisconnectOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "DislikeFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "DislikeOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "DollarCircleFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "DollarCircleOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "DollarOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "DotChartOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "DoubleLeftOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "DoubleRightOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "DownCircleFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "DownCircleOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "DownOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "DownSquareFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "DownSquareOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "DownloadOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "DragOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "DribbbleCircleFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "DribbbleOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "DribbbleSquareFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "DribbbleSquareOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "DropboxCircleFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "DropboxOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "DropboxSquareFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "EditFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "EditOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "EllipsisOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "EnterOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "EnvironmentFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "EnvironmentOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "EuroCircleFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "EuroCircleOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "EuroOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "ExceptionOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "ExclamationCircleFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "ExclamationCircleOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "ExclamationOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "ExpandAltOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "ExpandOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "ExperimentFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "ExperimentOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "ExportOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "EyeFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "EyeInvisibleFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "EyeInvisibleOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "EyeOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "FacebookFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "FacebookOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "FallOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "FastBackwardFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "FastBackwardOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "FastForwardFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "FastForwardOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "FieldBinaryOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "FieldNumberOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "FieldStringOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "FieldTimeOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "FileAddFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "FileAddOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "FileDoneOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "FileExcelFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "FileExcelOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "FileExclamationFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "FileExclamationOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "FileFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "FileGifOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "FileImageFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "FileImageOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "FileJpgOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "FileMarkdownFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "FileMarkdownOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "FileOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "FilePdfFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "FilePdfOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "FilePptFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "FilePptOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "FileProtectOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "FileSearchOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "FileSyncOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "FileTextFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "FileTextOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "FileUnknownFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "FileUnknownOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "FileWordFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "FileWordOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "FileZipFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "FileZipOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "FilterFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "FilterOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "FireFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "FireOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "FlagFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "FlagOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "FolderAddFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "FolderAddOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "FolderFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "FolderOpenFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "FolderOpenOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "FolderOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "FolderViewOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "FontColorsOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "FontSizeOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "ForkOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "FormOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "FormatPainterFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "FormatPainterOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "ForwardFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "ForwardOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "FrownFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "FrownOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "FullscreenExitOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "FullscreenOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "FunctionOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "FundFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "FundOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "FundProjectionScreenOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "FundViewOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "FunnelPlotFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "FunnelPlotOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "GatewayOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "GifOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "GiftFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "GiftOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "GithubFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "GithubOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "GitlabFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "GitlabOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "GlobalOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "GoldFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "GoldOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "GoldenFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "GoogleCircleFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "GoogleOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "GooglePlusCircleFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "GooglePlusOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "GooglePlusSquareFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "GoogleSquareFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "GroupOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "HddFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "HddOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "HeartFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "HeartOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "HeatMapOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "HighlightFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "HighlightOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "HistoryOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "HolderOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "HomeFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "HomeOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "HourglassFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "HourglassOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "Html5Filled",
+      "type": "antd",
+    },
+    {
+      "componentName": "Html5Outlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "IdcardFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "IdcardOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "IeCircleFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "IeOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "IeSquareFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "ImportOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "InboxOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "InfoCircleFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "InfoCircleOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "InfoOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "InsertRowAboveOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "InsertRowBelowOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "InsertRowLeftOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "InsertRowRightOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "InstagramFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "InstagramOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "InsuranceFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "InsuranceOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "InteractionFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "InteractionOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "IssuesCloseOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "ItalicOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "KeyOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "LaptopOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "LayoutFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "LayoutOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "LeftCircleFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "LeftCircleOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "LeftOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "LeftSquareFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "LeftSquareOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "LikeFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "LikeOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "LineChartOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "LineHeightOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "LineOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "LinkOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "LinkedinFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "LinkedinOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "Loading3QuartersOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "LoadingOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "LockFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "LockOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "LoginOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "LogoutOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "MacCommandFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "MacCommandOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "MailFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "MailOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "ManOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "MedicineBoxFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "MedicineBoxOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "MediumCircleFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "MediumOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "MediumSquareFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "MediumWorkmarkOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "MehFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "MehOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "MenuFoldOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "MenuOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "MenuUnfoldOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "MergeCellsOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "MessageFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "MessageOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "MinusCircleFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "MinusCircleOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "MinusOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "MinusSquareFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "MinusSquareOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "MobileFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "MobileOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "MoneyCollectFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "MoneyCollectOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "MonitorOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "MoreOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "NodeCollapseOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "NodeExpandOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "NodeIndexOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "NotificationFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "NotificationOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "NumberOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "OneToOneOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "OrderedListOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "PaperClipOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "PartitionOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "PauseCircleFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "PauseCircleOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "PauseOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "PayCircleFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "PayCircleOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "PercentageOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "PhoneFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "PhoneOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "PicCenterOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "PicLeftOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "PicRightOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "PictureFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "PictureOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "PieChartFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "PieChartOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "PlayCircleFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "PlayCircleOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "PlaySquareFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "PlaySquareOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "PlusCircleFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "PlusCircleOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "PlusOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "PlusSquareFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "PlusSquareOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "PoundCircleFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "PoundCircleOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "PoundOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "PoweroffOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "PrinterFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "PrinterOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "ProfileFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "ProfileOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "ProjectFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "ProjectOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "PropertySafetyFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "PropertySafetyOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "PullRequestOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "PushpinFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "PushpinOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "QqCircleFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "QqOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "QqSquareFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "QrcodeOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "QuestionCircleFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "QuestionCircleOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "QuestionOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "RadarChartOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "RadiusBottomleftOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "RadiusBottomrightOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "RadiusSettingOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "RadiusUpleftOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "RadiusUprightOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "ReadFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "ReadOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "ReconciliationFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "ReconciliationOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "RedEnvelopeFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "RedEnvelopeOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "RedditCircleFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "RedditOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "RedditSquareFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "RedoOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "ReloadOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "RestFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "RestOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "RetweetOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "RightCircleFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "RightCircleOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "RightOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "RightSquareFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "RightSquareOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "RiseOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "RobotFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "RobotOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "RocketFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "RocketOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "RollbackOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "RotateLeftOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "RotateRightOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "SafetyCertificateFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "SafetyCertificateOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "SafetyOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "SaveFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "SaveOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "ScanOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "ScheduleFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "ScheduleOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "ScissorOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "SearchOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "SecurityScanFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "SecurityScanOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "SelectOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "SendOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "SettingFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "SettingOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "ShakeOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "ShareAltOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "ShopFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "ShopOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "ShoppingCartOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "ShoppingFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "ShoppingOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "ShrinkOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "SignalFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "SisternodeOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "SketchCircleFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "SketchOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "SketchSquareFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "SkinFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "SkinOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "SkypeFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "SkypeOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "SlackCircleFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "SlackOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "SlackSquareFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "SlackSquareOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "SlidersFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "SlidersOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "SmallDashOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "SmileFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "SmileOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "SnippetsFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "SnippetsOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "SolutionOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "SortAscendingOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "SortDescendingOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "SoundFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "SoundOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "SplitCellsOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "StarFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "StarOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "StepBackwardFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "StepBackwardOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "StepForwardFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "StepForwardOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "StockOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "StopFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "StopOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "StrikethroughOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "SubnodeOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "SwapLeftOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "SwapOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "SwapRightOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "SwitcherFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "SwitcherOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "SyncOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "TableOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "TabletFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "TabletOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "TagFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "TagOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "TagsFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "TagsOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "TaobaoCircleFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "TaobaoCircleOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "TaobaoOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "TaobaoSquareFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "TeamOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "ThunderboltFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "ThunderboltOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "ToTopOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "ToolFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "ToolOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "TrademarkCircleFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "TrademarkCircleOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "TrademarkOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "TransactionOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "TranslationOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "TrophyFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "TrophyOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "TwitterCircleFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "TwitterOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "TwitterSquareFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "UnderlineOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "UndoOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "UngroupOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "UnlockFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "UnlockOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "UnorderedListOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "UpCircleFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "UpCircleOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "UpOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "UpSquareFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "UpSquareOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "UploadOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "UsbFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "UsbOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "UserAddOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "UserDeleteOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "UserOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "UserSwitchOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "UsergroupAddOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "UsergroupDeleteOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "VerifiedOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "VerticalAlignBottomOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "VerticalAlignMiddleOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "VerticalAlignTopOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "VerticalLeftOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "VerticalRightOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "VideoCameraAddOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "VideoCameraFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "VideoCameraOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "WalletFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "WalletOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "WarningFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "WarningOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "WechatFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "WechatOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "WeiboCircleFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "WeiboCircleOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "WeiboOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "WeiboSquareFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "WeiboSquareOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "WhatsAppOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "WifiOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "WindowsFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "WindowsOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "WomanOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "YahooFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "YahooOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "YoutubeFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "YoutubeOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "YuqueFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "YuqueOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "ZhihuCircleFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "ZhihuOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "ZhihuSquareFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "ZoomInOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "ZoomOutOutlined",
+      "type": "antd",
+    },
+  ],
+  "filterKeywords": "",
+  "icon": null,
+  "iconfontIconList": [],
+  "iconfontScripts": [],
+  "onIconChange": null,
+  "onIconfontScriptsChange": null,
+  "open": false,
+  "outsourceIconfontScripts": undefined,
+  "panelTabKey": "antd",
+  "removeScripts": [Function],
+  "resetIcon": [Function],
+  "selectIcon": [Function],
+  "selectScript": [Function],
+  "showForm": false,
+  "toggleForm": [Function],
+  "togglePanel": [Function],
+  "updateScripts": [Function],
+}
+`;
