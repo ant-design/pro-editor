@@ -1,0 +1,262 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`useStore > 默认快照 > default 1`] = `
+{
+  "config": {
+    "bankCard": true,
+    "data": "hundreds",
+    "dateTime": "dateTime",
+    "idCard": true,
+    "landline": true,
+    "month": "zh",
+    "name": "zh",
+    "percent": false,
+    "phone": true,
+    "website": "url",
+    "week": "zh",
+  },
+  "fillTreeData": [
+    {
+      "children": [
+        {
+          "icon": <ForwardRef(UserOutlined) />,
+          "key": "name",
+          "params": [
+            {
+              "label": "中文",
+              "value": "zh",
+            },
+            {
+              "label": "英文",
+              "value": "en",
+            },
+          ],
+          "title": "人名",
+        },
+        {
+          "icon": <ForwardRef(GlobalOutlined) />,
+          "key": "website",
+          "params": [
+            {
+              "label": "链接",
+              "value": "url",
+            },
+            {
+              "label": "域名",
+              "value": "domain",
+            },
+            {
+              "label": "IP",
+              "value": "ip",
+            },
+          ],
+          "title": "网址",
+        },
+        {
+          "icon": <ForwardRef(MailOutlined) />,
+          "key": "mail",
+          "title": "邮件",
+        },
+      ],
+      "icon": <FillText />,
+      "key": "common",
+      "params": [
+        {
+          "label": "短文本",
+          "value": "default",
+        },
+        {
+          "label": "长文本",
+          "value": "longText",
+        },
+      ],
+      "title": "文本",
+    },
+    {
+      "children": [
+        {
+          "checked": {
+            "label": "脱敏",
+            "value": false,
+          },
+          "icon": <ForwardRef(PhoneOutlined) />,
+          "key": "phone",
+          "title": "手机",
+        },
+        {
+          "checked": {
+            "label": "脱敏",
+            "value": false,
+          },
+          "icon": <ForwardRef(PhoneOutlined) />,
+          "key": "landline",
+          "title": "座机",
+        },
+        {
+          "checked": {
+            "label": "脱敏",
+            "value": false,
+          },
+          "icon": <ForwardRef(IdcardOutlined) />,
+          "key": "idCard",
+          "title": "身份证",
+        },
+        {
+          "checked": {
+            "label": "脱敏",
+            "value": false,
+          },
+          "icon": <ForwardRef(IdcardOutlined) />,
+          "key": "bankCard",
+          "title": "信用卡/借记卡",
+        },
+      ],
+      "key": "identifier",
+      "title": "编号",
+    },
+    {
+      "children": [
+        {
+          "checked": {
+            "label": "小数",
+            "value": false,
+          },
+          "icon": <ForwardRef(PercentageOutlined) />,
+          "key": "percent",
+          "title": "百分比",
+        },
+        {
+          "checked": {
+            "label": "小数",
+            "value": false,
+          },
+          "icon": <ForwardRef(DollarOutlined) />,
+          "key": "money",
+          "title": "金额",
+        },
+      ],
+      "icon": <FillNumber />,
+      "key": "data",
+      "params": [
+        {
+          "label": "0~9",
+          "value": "digits",
+        },
+        {
+          "label": "10~99",
+          "value": "tens",
+        },
+        {
+          "label": "100~999",
+          "value": "hundreds",
+        },
+      ],
+      "title": "数据",
+    },
+    {
+      "children": [
+        {
+          "icon": <ForwardRef(CalendarOutlined) />,
+          "key": "date",
+          "params": [
+            {
+              "label": "年月日",
+              "value": "yyyy年MM月dd日",
+            },
+            {
+              "label": "年/月/日",
+              "value": "yyyy/MM/dd",
+            },
+            {
+              "label": "年-月-日",
+              "value": "yyyy-MM-dd",
+            },
+          ],
+          "title": "日期",
+        },
+        {
+          "icon": <FillMonth />,
+          "key": "month",
+          "params": [
+            {
+              "label": "中文",
+              "value": "zh",
+            },
+            {
+              "label": "英文",
+              "value": "en",
+            },
+            {
+              "label": "英文简写",
+              "value": "abbr",
+            },
+          ],
+          "title": "月份",
+        },
+        {
+          "icon": <FillWeek />,
+          "key": "week",
+          "params": [
+            {
+              "label": "中文",
+              "value": "zh",
+            },
+            {
+              "label": "英文",
+              "value": "en",
+            },
+            {
+              "label": "英文简写",
+              "value": "abbr",
+            },
+          ],
+          "title": "星期",
+        },
+      ],
+      "icon": <ForwardRef(ClockCircleOutlined) />,
+      "key": "dateTime",
+      "params": [
+        {
+          "label": "日期时间",
+          "value": "dateTime",
+        },
+        {
+          "label": "日期",
+          "value": "date",
+        },
+        {
+          "label": "时间",
+          "value": "time",
+        },
+      ],
+      "title": "时间",
+    },
+    {
+      "children": [
+        {
+          "icon": <FillCountry />,
+          "key": "country",
+          "title": "国家和地区",
+        },
+        {
+          "key": "province",
+          "title": "省份",
+        },
+        {
+          "icon": <FillCity />,
+          "key": "city",
+          "title": "城市",
+        },
+      ],
+      "icon": <ForwardRef(EnvironmentOutlined) />,
+      "key": "address",
+      "title": "地址",
+    },
+  ],
+  "handleFill": [Function],
+  "handleShowDemoData": [Function],
+  "locale": "zh_CN",
+  "updateConfig": [Function],
+  "updateState": [Function],
+}
+`;
