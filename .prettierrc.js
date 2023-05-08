@@ -4,9 +4,10 @@ module.exports = {
     require.resolve('prettier-plugin-organize-imports'),
     require.resolve('prettier-plugin-packagejson'),
   ],
-  printWidth: 80,
+  printWidth: 100,
   proseWrap: 'never',
   singleQuote: true,
+  endOfLine: 'lf',
   trailingComma: 'all',
   overrides: [
     {
