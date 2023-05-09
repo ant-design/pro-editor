@@ -12,14 +12,7 @@ import {
 } from '@ant-design/icons';
 import type { FillTreeData } from '../types';
 
-import {
-  FillCity,
-  FillCountry,
-  FillMonth,
-  FillNumber,
-  FillText,
-  FillWeek,
-} from '../../../icons';
+import { FillCity, FillCountry, FillMonth, FillNumber, FillText, FillWeek } from '../icons';
 
 const fillDefaultConfig: FillTreeData[] = [
   {
