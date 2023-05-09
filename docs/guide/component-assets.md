@@ -4,8 +4,6 @@ group: 基础框架
 
 nav:
   title: 文档
-  order: 1
-  path: /docs
 ---
 
 # 复杂组件的元数据

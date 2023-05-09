@@ -2,11 +2,6 @@
 title: usePresenceAsset
 group: Hooks
 order: 2
-
-nav:
-  title: 文档
-  order: 1
-  path: /docs
 ---
 
 该方法可以获取编辑器中的资产的感知视图状态

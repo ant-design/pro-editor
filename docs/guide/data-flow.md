@@ -1,11 +1,6 @@
 ---
 title: ProEditor 数据流架构
 group: 基础框架
-
-nav:
-  title: 文档
-  order: 1
-  path: /docs
 ---
 
 # 适配多人协同模式的数据流架构
@@ -97,11 +92,7 @@ export const Container: FC = (props) => {
   return (
     <Wrapper>
       <App {...res} />
-      <StoreUpdater
-        config={config}
-        defaultConfig={defaultConfig}
-        onConfigChange={onConfigChange}
-      />
+      <StoreUpdater config={config} defaultConfig={defaultConfig} onConfigChange={onConfigChange} />
     </Wrapper>
   );
 };

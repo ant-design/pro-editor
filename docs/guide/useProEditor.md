@@ -2,11 +2,6 @@
 title: useProEditor
 group: Hooks
 order: 1
-
-nav:
-  title: 文档
-  order: 1
-  path: /docs
 ---
 
 该方法为一个 React Hook，用于获取 ProEditor 编辑器的实例对象。以下是使用方法：
