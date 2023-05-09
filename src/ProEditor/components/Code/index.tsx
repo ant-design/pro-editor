@@ -1,5 +1,6 @@
 import { DownOutlined, RightOutlined } from '@ant-design/icons';
 import { DraggablePanel, Highlight } from '@ant-design/pro-editor';
+import { transformSync } from '@babel/runtime';
 import { useTheme } from 'antd-style';
 import type { FC } from 'react';
 import { memo, useState } from 'react';
@@ -24,14 +25,33 @@ export const CodePanel: FC<CodePanelProps> = memo((props) => {
   const { onCopy } = props;
   const { isDarkMode } = useTheme();
 
-  const code = componentAsset.generateCode(config);
+  const configCode = componentAsset.generateCode(config);
 
   let prettierCode = '';
   try {
     const prettier = require('prettier');
     const plugins = [require('prettier/parser-typescript')];
 
-    prettierCode = prettier.format(code, {
+    // 测试
+    const parseJs = true;
+
+    if (parseJs) {
+      const { code } = transformSync(configCode, {
+        plugins: [
+          [require.resolve('@babel/plugin-syntax-dynamic-import')],
+          [
+            require.resolve('@babel/plugin-transform-typescript'),
+            {
+              isTSX: true,
+            },
+          ],
+        ],
+      });
+
+      console.log('code', code);
+    }
+
+    prettierCode = prettier.format(configCode, {
       parser: 'typescript',
       plugins,
       // 以下参考 Bigfish 配置
@@ -44,7 +64,7 @@ export const CodePanel: FC<CodePanelProps> = memo((props) => {
     });
   } catch (err) {
     console.error('err', err);
-    prettierCode = `代码格式化失败，格式化前为:\n ${code}`;
+    prettierCode = `代码格式化失败，格式化前为:\n ${configCode}`;
   }
 
   return (
