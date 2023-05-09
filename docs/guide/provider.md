@@ -1,11 +1,6 @@
 ---
 title: <ProEditorProvider />
 group: 组件
-
-nav:
-  title: 文档
-  order: 1
-  path: /docs
 ---
 
 # ProEditorProvider
