@@ -1,4 +1,4 @@
-import type { IconUnit } from 'c2d2c-types';
+import type { IconUnit } from '@alipay/c2d2c-types';
 import type { FC } from 'react';
 import { memo } from 'react';
 import { Flexbox } from 'react-layout-kit';
@@ -18,10 +18,8 @@ const iconBoxStyle = (token: AntdToken) =>
     width: 100%;
     overflow: hidden;
 
-    box-shadow: 1px 0 0 0 ${token.colorBorderSecondary},
-      0 1px 0 0 ${token.colorBorderSecondary},
-      1px 1px 0 0 ${token.colorBorderSecondary},
-      1px 0 0 0 ${token.colorBorderSecondary} inset,
+    box-shadow: 1px 0 0 0 ${token.colorBorderSecondary}, 0 1px 0 0 ${token.colorBorderSecondary},
+      1px 1px 0 0 ${token.colorBorderSecondary}, 1px 0 0 0 ${token.colorBorderSecondary} inset,
       0 1px 0 0 ${token.colorBorderSecondary} inset;
     background: ${token.colorBgContainer};
 

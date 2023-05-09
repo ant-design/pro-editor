@@ -6,7 +6,6 @@ export * from './ComponentAsset';
 export * from './ConfigProvider';
 export * from './DataFill';
 export * from './DataPreviewer';
-export * from './DraggableCodeBox';
 export * from './DraggablePanel';
 export { default as ErrorBoundary } from './ErrorBoundary';
 export { ExcelTable } from './ExcelTable';
@@ -17,11 +16,7 @@ export * from './Highlight';
 export * from './IconPicker';
 export { default as InteractContainer } from './InteractContainer';
 // 导出类型
-export type {
-  CanvasInteractRule,
-  InteractStatus,
-  InteractStatusNode,
-} from './InteractContainer';
+export type { CanvasInteractRule, InteractStatus, InteractStatusNode } from './InteractContainer';
 //  ProEditor
 export {
   EditorMode,
@@ -30,11 +25,7 @@ export {
   storeSelectors,
   useStore as useProEditorStore,
 } from './ProEditor';
-export type {
-  PresenceEditor,
-  ProEditorProps,
-  ProEditorStore,
-} from './ProEditor';
+export type { PresenceEditor, ProEditorProps, ProEditorStore } from './ProEditor';
 export * from './RealTimeCollaboration';
 export * from './SortList';
 export { default as SortableList } from './SortableList';

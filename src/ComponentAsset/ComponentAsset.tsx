@@ -1,15 +1,10 @@
 /*eslint no-invalid-this: "error"*/
-import { getDefaultValueFromSchema } from 'c2d2c-utils';
+import { getDefaultValueFromSchema } from '@alipay/c2d2c-utils';
 import { FC, ReactNode } from 'react';
 import type { UseBoundStore } from 'zustand/react';
 
 import type { EditorMode } from '../ProEditor';
-import type {
-  AssetModels,
-  CanvasRule,
-  CodeEmitter,
-  ComponentAssetParams,
-} from './types';
+import type { AssetModels, CanvasRule, CodeEmitter, ComponentAssetParams } from './types';
 import { DataProvider, EmitterEnv } from './types';
 
 export class ComponentAsset<Config = any, Props = any> {
@@ -43,9 +38,7 @@ export class ComponentAsset<Config = any, Props = any> {
    */
   DataProvider: DataProvider;
 
-  ErrorBoundary: FC<{ children: ReactNode }> = ({ children }) => (
-    <>{children}</>
-  );
+  ErrorBoundary: FC<{ children: ReactNode }> = ({ children }) => <>{children}</>;
 
   rules: CanvasRule[];
   models: AssetModels<Config>;
@@ -55,9 +48,7 @@ export class ComponentAsset<Config = any, Props = any> {
   codeEmitter: CodeEmitter<Config, Props>;
 
   isStarterMode: (store: any) => boolean = () => {
-    throw Error(
-      '暂未实现 emptyModeSelector 方法，请在初始化时传入 emptyModeSelector',
-    );
+    throw Error('暂未实现 emptyModeSelector 方法，请在初始化时传入 emptyModeSelector');
   };
 
   constructor(params: ComponentAssetParams<Config>) {

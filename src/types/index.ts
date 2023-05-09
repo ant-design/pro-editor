@@ -1,4 +1,4 @@
-import type { CategoryConfig } from 'c2d2c-types';
+import type { CategoryConfig } from '@alipay/c2d2c-types';
 
 export enum CategoryMap {
   type = 'type',
