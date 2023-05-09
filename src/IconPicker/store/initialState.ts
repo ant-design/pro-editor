@@ -1,4 +1,4 @@
-import type { IconfontIcon, IconUnit, ReactIcon } from 'c2d2c-types';
+import type { IconfontIcon, IconUnit, ReactIcon } from '@alipay/c2d2c-types';
 import { antdIconList } from '../contents/antdIcons';
 import type { ExternalScripts } from '../types';
 

@@ -1,5 +1,5 @@
+import type { IconUnit } from '@alipay/c2d2c-types';
 import { act, renderHook } from '@testing-library/react';
-import type { IconUnit } from 'c2d2c-types';
 import { readFileSync } from 'fs';
 import path from 'path';
 import { vi } from 'vitest';
@@ -22,12 +22,9 @@ let originFetch;
 describe('IconPicker Store', () => {
   beforeEach(() => {
     originFetch = global.fetch;
-    const text = readFileSync(
-      path.join(__dirname, './__mockData__/iconfont.js'),
-      {
-        encoding: 'utf-8',
-      },
-    );
+    const text = readFileSync(path.join(__dirname, './__mockData__/iconfont.js'), {
+      encoding: 'utf-8',
+    });
     // @ts-ignore
     global.fetch = vi.fn(() => {
       return {
