@@ -1,6 +1,6 @@
 {
   "name": "@ant-design/pro-editor",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "A react library developed with dumi",
   "license": "MIT",
   "module": "dist/index.js",

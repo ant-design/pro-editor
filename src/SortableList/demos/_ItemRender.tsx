@@ -6,7 +6,7 @@ import { ItemRenderProps, fieldStyle, tableColumnValueOptions } from './data';
 
 export const randomIndex = () => Math.random() * 10000;
 
-const ItemRender = ({ item, index }: ItemRenderProps) => {
+const ItemRender = ({ item, index, compact = false }: ItemRenderProps) => {
   const instance = useSortableList();
   const [title, setTitle] = useState(item?.title);
   const [changed, setChanged] = useState(false);
@@ -32,7 +32,7 @@ const ItemRender = ({ item, index }: ItemRenderProps) => {
       <div style={fieldStyle}>
         <Input
           size={'small'}
-          style={{ width: '100%' }}
+          style={{ width: '100%', paddingLeft: compact ? 12 : undefined }}
           id={`index-${index}`}
           value={title}
           onBlur={() => {
