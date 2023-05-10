@@ -14,7 +14,7 @@ export default defineConfig({
       reporter: ['text', 'json', 'lcov'],
     },
     alias: {
-      '@alipay/pro-editor': path.join(__dirname, './src'),
+      '@ant-design/pro-editor': path.join(__dirname, './src'),
     },
   },
 });
