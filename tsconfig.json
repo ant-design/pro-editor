@@ -16,5 +16,5 @@
     }
   },
   "exclude": ["node_modules", "dist"],
-  "include": ["src", "config/config.ts", ".dumi/**/*"]
+  "include": ["src", "config/config.ts", ".dumi/**/*", "tests"]
 }

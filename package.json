@@ -21,7 +21,10 @@
     "lint:es": "eslint \"{src,test}/**/*.{js,jsx,ts,tsx}\"",
     "prepare": "husky install && dumi setup",
     "prepublishOnly": "father doctor && npm run build",
-    "start": "npm run dev"
+    "start": "npm run dev",
+    "test": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "test:update": "vitest -u"
   },
   "commitlint": {
     "extends": [
@@ -100,11 +103,16 @@
   "devDependencies": {
     "@commitlint/cli": "^17.1.2",
     "@commitlint/config-conventional": "^17.1.0",
+    "@emotion/jest": "^11",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^14.4.3",
     "@types/color": "^3",
     "@types/json-schema": "^7.0.11",
     "@types/react": "^18.0.0",
     "@types/react-dom": "^18.0.0",
     "@umijs/lint": "^4.0.0",
+    "@vitest/coverage-c8": "latest",
     "antd": "^5.4.7",
     "dumi": "^2.1.22",
     "dumi-theme-antd-style": "^0.25.0",
@@ -119,6 +127,7 @@
     "react-dom": "^18.0.0",
     "rxjs-spy": "^8",
     "stylelint": "^14.9.1",
+    "vitest": "latest",
     "wait-on": "^6.0.1",
     "y-protocols": "^1",
     "y-webrtc": "^10",
