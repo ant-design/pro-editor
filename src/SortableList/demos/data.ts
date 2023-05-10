@@ -6,6 +6,7 @@ export type SchemaItem = {
 export interface ItemRenderProps {
   item: SchemaItem;
   index: number;
+  compact?: boolean;
 }
 
 export const fieldStyle: React.CSSProperties = {

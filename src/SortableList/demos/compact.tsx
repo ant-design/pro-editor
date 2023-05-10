@@ -11,7 +11,7 @@ export default () => {
         onChange={(data) => {
           console.log('data', data);
         }}
-        renderContent={(item, index) => <ItemRender item={item} index={index} />}
+        renderContent={(item, index) => <ItemRender item={item} index={index} compact />}
       />
     </div>
   );
