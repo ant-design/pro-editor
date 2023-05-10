@@ -1,12 +1,14 @@
 {
   "name": "@ant-design/pro-editor",
   "version": "0.1.0",
-  "description": "A react library developed with dumi",
+  "description": "🌟 Lightweight Editor UI Framework",
   "license": "MIT",
-  "module": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "sideEffects": false,
+  "main": "es/index.js",
+  "module": "es/index.js",
+  "typings": "es/index.d.ts",
   "files": [
-    "dist"
+    "es"
   ],
   "scripts": {
     "build": "father build",
