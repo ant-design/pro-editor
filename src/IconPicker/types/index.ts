@@ -1,4 +1,4 @@
-export type { IconUnit, IconfontIcon, ReactIcon } from '@alipay/c2d2c-types';
+export type { IconUnit, IconfontIcon, ReactIcon } from '@c2d2c/types';
 
 /**
  * 外部的图标 url

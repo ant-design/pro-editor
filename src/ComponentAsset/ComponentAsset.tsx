@@ -1,5 +1,5 @@
 /*eslint no-invalid-this: "error"*/
-import { getDefaultValueFromSchema } from '@alipay/c2d2c-utils';
+import { getDefaultValueFromSchema } from '@c2d2c/utils';
 import { FC, ReactNode } from 'react';
 import type { UseBoundStore } from 'zustand/react';
 

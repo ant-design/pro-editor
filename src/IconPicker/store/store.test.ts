@@ -1,4 +1,4 @@
-import type { IconUnit } from '@alipay/c2d2c-types';
+import type { IconUnit } from '@c2d2c/types';
 import { act, renderHook } from '@testing-library/react';
 import { readFileSync } from 'fs';
 import path from 'path';
