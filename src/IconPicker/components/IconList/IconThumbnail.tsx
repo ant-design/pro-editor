@@ -1,4 +1,4 @@
-import type { IconUnit } from '@alipay/c2d2c-types';
+import type { IconUnit } from '@c2d2c/types';
 import type { FC } from 'react';
 import { memo } from 'react';
 import { Flexbox } from 'react-layout-kit';
