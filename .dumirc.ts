@@ -2,6 +2,7 @@ import { defineConfig } from 'dumi';
 
 export default defineConfig({
   outputPath: 'docs-dist',
+  mfsu: false,
   themeConfig: {
     hero: {
       'zh-CN': {
@@ -41,8 +42,7 @@ export default defineConfig({
         description: '在 Ant Design 上进行了自己的封装，更加易用',
       },
       {
-        image:
-          'https://gw.alipayobjects.com/zos/rmsportal/KDpgvguMpGfqaHPjicRK.svg',
+        image: 'https://gw.alipayobjects.com/zos/rmsportal/KDpgvguMpGfqaHPjicRK.svg',
         title: 'Ant Design',
         description: '与 Ant Design 设计体系一脉相承，无缝对接 antd 项目',
       },
@@ -57,8 +57,7 @@ export default defineConfig({
         image:
           'https://mdn.alipayobjects.com/yuyan_qk0oxh/afts/img/Y_NMQKxw7OgAAAAAAAAAAAAAFl94AQBr',
         title: '预设样式',
-        description:
-          '样式风格与 antd 一脉相承，无需魔改，浑然天成。默认好用的主题系统',
+        description: '样式风格与 antd 一脉相承，无需魔改，浑然天成。默认好用的主题系统',
       },
       {
         image:
@@ -68,11 +67,9 @@ export default defineConfig({
       },
 
       {
-        image:
-          'https://gw.alipayobjects.com/zos/antfincdn/Eb8IHpb9jE/Typescript_logo_2020.svg',
+        image: 'https://gw.alipayobjects.com/zos/antfincdn/Eb8IHpb9jE/Typescript_logo_2020.svg',
         title: 'TypeScript',
-        description:
-          '使用 TypeScript 开发，提供完整的类型定义文件，无需频繁打开官网',
+        description: '使用 TypeScript 开发，提供完整的类型定义文件，无需频繁打开官网',
       },
     ],
     logo: 'https://gw.alipayobjects.com/zos/antfincdn/upvrAjAPQX/Logo_Tech%252520UI.svg',

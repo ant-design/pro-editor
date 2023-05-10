@@ -1,6 +1,6 @@
 import { DownOutlined, RightOutlined } from '@ant-design/icons';
 import { DraggablePanel, Highlight } from '@ant-design/pro-editor';
-import { transformSync } from '@babel/runtime';
+import { transformSync } from '@babel/core';
 import { useTheme } from 'antd-style';
 import type { FC } from 'react';
 import { memo, useState } from 'react';
