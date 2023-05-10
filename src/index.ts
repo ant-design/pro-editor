@@ -28,8 +28,6 @@ export {
 export type { PresenceEditor, ProEditorProps, ProEditorStore } from './ProEditor';
 export * from './RealTimeCollaboration';
 export * from './SortList';
-export { default as SortableList } from './SortableList';
-export type { Column, CreatorButtonProps, Props } from './SortableList';
 export * from './SortableTree';
 export { default as TipGuide } from './TipGuide';
 export * from './antd';

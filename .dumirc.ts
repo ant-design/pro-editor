@@ -2,7 +2,6 @@ import { defineConfig } from 'dumi';
 
 export default defineConfig({
   outputPath: 'docs-dist',
-  mfsu: false,
   themeConfig: {
     hero: {
       'zh-CN': {
