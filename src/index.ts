@@ -27,7 +27,7 @@ export {
 } from './ProEditor';
 export type { PresenceEditor, ProEditorProps, ProEditorStore } from './ProEditor';
 export * from './RealTimeCollaboration';
-export * from './SortList';
+export * from './SortableList';
 export * from './SortableTree';
 export { default as TipGuide } from './TipGuide';
 export * from './antd';
