@@ -7978,7 +7978,7 @@ exports[`<Highlight /> > renders json.tsx correctly 1`] = `
                         style="cursor: default;"
                       >
                         "
-                        TechUI
+                        ProComponents
                         "
                       </span>
                     </div>
@@ -8053,7 +8053,7 @@ exports[`<Highlight /> > renders json.tsx correctly 1`] = `
                         style="cursor: default;"
                       >
                         "
-                        基于 Ant Design 的蚂蚁集团企业级 UI 资产库。
+                        基于 Ant Design 的 UI 资产库。
                         "
                       </span>
                     </div>
