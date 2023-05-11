@@ -1,6 +1,6 @@
 import { DownOutlined, RightOutlined } from '@ant-design/icons';
 import { DraggablePanel, Highlight } from '@ant-design/pro-editor';
-import { transformSync } from '@babel/core';
+// import { transformSync } from '@babel/core';
 import { useTheme } from 'antd-style';
 import type { FC } from 'react';
 import { memo, useState } from 'react';
@@ -32,24 +32,24 @@ export const CodePanel: FC<CodePanelProps> = memo((props) => {
     const prettier = require('prettier');
     const plugins = [require('prettier/parser-typescript')];
 
-    // 测试
-    const parseJs = true;
+    // 测试 JS 文件转换
+    //     const parseJs = true;
 
-    if (parseJs) {
-      const { code } = transformSync(configCode, {
-        plugins: [
-          [require.resolve('@babel/plugin-syntax-dynamic-import')],
-          [
-            require.resolve('@babel/plugin-transform-typescript'),
-            {
-              isTSX: true,
-            },
-          ],
-        ],
-      });
+    //     if (parseJs) {
+    //       const { code } = transformSync(configCode, {
+    //         plugins: [
+    //           [require.resolve('@babel/plugin-syntax-dynamic-import')],
+    //           [
+    //             require.resolve('@babel/plugin-transform-typescript'),
+    //             {
+    //               isTSX: true,
+    //             },
+    //           ],
+    //         ],
+    //       });
 
-      console.log('code', code);
-    }
+    //       console.log('code', code);
+    //     }
 
     prettierCode = prettier.format(configCode, {
       parser: 'typescript',

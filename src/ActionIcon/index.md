@@ -1,6 +1,9 @@
 ---
 title: ActionIcon 动作图标
 group: 基础组件
+nav:
+  title: 组件
+  order: 2
 ---
 
 # ActionIcon 动作图标

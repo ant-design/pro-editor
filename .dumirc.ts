@@ -11,12 +11,7 @@ export default defineConfig({
         actions: [
           {
             text: '快速开始 →',
-            link: '/docs/intro',
-          },
-          {
-            text: 'Github',
-            link: 'https://github.com/ant-design/pro-editor',
-            openExternal: true,
+            link: '/guide/intro',
           },
         ],
       },
@@ -26,15 +21,13 @@ export default defineConfig({
         actions: [
           {
             text: 'Quick Start →',
-            link: '/docs/intro',
-          },
-          {
-            text: 'Github',
-            link: 'https://github.com/ant-design/pro-editor',
-            openExternal: true,
+            link: '/guide/intro',
           },
         ],
       },
+    },
+    socialLinks: {
+      github: 'https://github.com/ant-design/pro-editor',
     },
     footer: 'Made with ❤️ by 蚂蚁集团 - AFX & 数字科技',
     features: [

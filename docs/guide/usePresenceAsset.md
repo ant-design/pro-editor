@@ -6,7 +6,7 @@ order: 2
 
 该方法可以获取编辑器中的资产的感知视图状态
 
-<!-- ```ts
+```ts
 import { usePresenceAsset } from '@ant-design/pro-editor';
 
 const getPresenceAsset = () => {
@@ -18,7 +18,7 @@ const getPresenceAsset = () => {
 
   return null;
 };
-``` -->
+```
 
 :::warning
 
