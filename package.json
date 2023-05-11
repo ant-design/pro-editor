@@ -55,6 +55,7 @@
     "@babel/core": "^7.21.8",
     "@babel/plugin-syntax-dynamic-import": "^7.8.3",
     "@babel/plugin-transform-typescript": "^7.21.3",
+    "@babel/runtime": "^7.21.5",
     "@c2d2c/types": "^1",
     "@c2d2c/utils": "^1",
     "@dnd-kit/core": "^6",
