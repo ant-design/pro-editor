@@ -31,14 +31,42 @@ const SortableList: FC<SortableListProps> = ({ prefixCls }) => {
     isEqual,
   );
 
-  const { record, creatorButtonText = '添加一列' } = creatorButtonProps || {};
+  const {
+    record,
+    creatorButtonText = '添加一列',
+    showInList = true,
+    showInEmpty = true,
+  } = creatorButtonProps || {};
 
   const { styles } = useStyle(prefixCls);
+
+  const CreateButton = (
+    <Button
+      block
+      size={'small'}
+      className={styles.btnAdd}
+      onClick={() => {
+        const intialValue = {
+          ...(record && typeof record === 'function' ? record(value.length) : record),
+        };
+        dispatchListData({
+          type: 'addItem',
+          item: intialValue,
+        });
+      }}
+      icon={<PlusOutlined />}
+    >
+      {creatorButtonText}
+    </Button>
+  );
 
   return (
     <>
       {Array.isArray(value) && value.length === 0 ? (
-        <Empty image={Empty.PRESENTED_IMAGE_SIMPLE} />
+        <>
+          <Empty image={Empty.PRESENTED_IMAGE_SIMPLE} />
+          {showInEmpty === false ? null : CreateButton}
+        </>
       ) : (
         <List prefixCls={prefixCls}>
           {value.map((item, index) => {
@@ -60,25 +88,7 @@ const SortableList: FC<SortableListProps> = ({ prefixCls }) => {
           })}
         </List>
       )}
-      {creatorButtonProps === false ? null : (
-        <Button
-          block
-          size={'small'}
-          className={styles.btnAdd}
-          onClick={() => {
-            const intialValue = {
-              ...(record && typeof record === 'function' ? record(value.length) : record),
-            };
-            dispatchListData({
-              type: 'addItem',
-              item: intialValue,
-            });
-          }}
-          icon={<PlusOutlined />}
-        >
-          {creatorButtonText}
-        </Button>
-      )}
+      {showInList === false ? null : CreateButton}
     </>
   );
 };

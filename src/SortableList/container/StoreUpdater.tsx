@@ -48,7 +48,7 @@ export interface StoreUpdaterProps<T = any> {
   /**
    * 新建对象相关属性
    */
-  creatorButtonProps?: CreatorButtonProps | false;
+  creatorButtonProps?: CreatorButtonProps;
   /**
    * 如果为 true，则会在 devtools 中显示 SortableTree 内部的数据结构
    * @internal
