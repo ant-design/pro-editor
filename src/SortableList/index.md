@@ -27,7 +27,10 @@ group:
 
 ### 自定义创建按钮
 
-提供 `creatorButtonProps` 属性方便配置自定义创建按钮的文案和初始化生成逻辑。
+提供 `creatorButtonProps` 属性方便配置自定义创建按钮的文案和初始化生成逻辑:
+
+- 无数据时添加一列按钮会成为空状态引导项，可以用 `showInEmpty` 配置项控制显示隐藏。
+- 有数据时添加一列按钮默认显示在列表下方，可以用 `showInList` 配置项控制显示隐藏。
 
 <code src="./demos/custom.tsx" ></code>
 
