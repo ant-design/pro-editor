@@ -14,13 +14,15 @@ const Header = () => {
 
 export default () => {
   return (
-    <SortableList<SchemaItem>
-      initialValues={INIT_VALUES}
-      onChange={(data) => {
-        console.log('data', data);
-      }}
-      renderHeader={() => <Header />}
-      renderContent={(item, index) => <ItemRender item={item} index={index} />}
-    />
+    <div style={{ width: 340, padding: '0 12px' }}>
+      <SortableList<SchemaItem>
+        initialValues={INIT_VALUES}
+        onChange={(data) => {
+          console.log('data', data);
+        }}
+        renderHeader={() => <Header />}
+        renderContent={(item, index) => <ItemRender item={item} index={index} />}
+      />
+    </div>
   );
 };
