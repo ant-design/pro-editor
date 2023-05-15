@@ -40,55 +40,60 @@ const SortableList: FC<SortableListProps> = ({ prefixCls }) => {
 
   const { styles } = useStyle(prefixCls);
 
-  const CreateButton = (
-    <Button
-      block
-      size={'small'}
-      className={styles.btnAdd}
-      onClick={() => {
-        const intialValue = {
-          ...(record && typeof record === 'function' ? record(value.length) : record),
-        };
-        dispatchListData({
-          type: 'addItem',
-          item: intialValue,
-        });
-      }}
-      icon={<PlusOutlined />}
-    >
-      {creatorButtonText}
-    </Button>
-  );
+  const CreateButton = ({ empty = false }) => {
+    return (
+      <Button
+        block={empty ? false : true}
+        size={'small'}
+        className={styles.btnAdd}
+        onClick={() => {
+          const intialValue = {
+            ...(record && typeof record === 'function' ? record(value.length) : record),
+          };
+          dispatchListData({
+            type: 'addItem',
+            item: intialValue,
+          });
+        }}
+        icon={<PlusOutlined />}
+      >
+        {creatorButtonText}
+      </Button>
+    );
+  };
 
   return (
     <>
       {Array.isArray(value) && value.length === 0 ? (
         <>
-          <Empty image={Empty.PRESENTED_IMAGE_SIMPLE} />
-          {showInEmpty === false ? null : CreateButton}
+          <Empty image={Empty.PRESENTED_IMAGE_SIMPLE}>
+            {showInEmpty === false ? null : <CreateButton empty />}
+          </Empty>
         </>
       ) : (
-        <List prefixCls={prefixCls}>
-          {value.map((item, index) => {
-            return (
-              <SortableItem
-                key={keyManager.keys[index]}
-                id={keyManager.keys[index]}
-                index={index}
-                compact={compact}
-                hideRemove={hideRemove}
-                onRemove={() => dispatchListData({ type: 'removeItem', index })}
-                actions={typeof actions === 'function' ? actions(item, index) : actions}
-                useDragOverlay={true}
-                prefixCls={prefixCls}
-              >
-                {renderContent?.(item, index)}
-              </SortableItem>
-            );
-          })}
-        </List>
+        <>
+          <List prefixCls={prefixCls}>
+            {value.map((item, index) => {
+              return (
+                <SortableItem
+                  key={keyManager.keys[index]}
+                  id={keyManager.keys[index]}
+                  index={index}
+                  compact={compact}
+                  hideRemove={hideRemove}
+                  onRemove={() => dispatchListData({ type: 'removeItem', index })}
+                  actions={typeof actions === 'function' ? actions(item, index) : actions}
+                  useDragOverlay={true}
+                  prefixCls={prefixCls}
+                >
+                  {renderContent?.(item, index)}
+                </SortableItem>
+              );
+            })}
+          </List>
+          {showInList === false ? null : <CreateButton />}
+        </>
       )}
-      {showInList === false ? null : CreateButton}
     </>
   );
 };

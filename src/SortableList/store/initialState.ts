@@ -66,10 +66,4 @@ export const initialState: State = {
   renderHeader: undefined,
   renderContent: undefined,
   actions: [],
-  creatorButtonProps: {
-    showInList: true,
-    showInEmpty: true,
-    creatorButtonText: '添加一列',
-    record: undefined,
-  },
 };
