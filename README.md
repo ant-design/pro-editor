@@ -3,15 +3,13 @@
 [![NPM version](https://img.shields.io/npm/v/@ant-design/pro-editor.svg?style=flat)](https://npmjs.org/package/@ant-design/pro-editor)
 [![NPM downloads](http://img.shields.io/npm/dm/@ant-design/pro-editor.svg?style=flat)](https://npmjs.org/package/@ant-design/pro-editor)
 
-A react library developed with dumi
+🌟 A Lightweight Editor UI Framework
 
-## Usage
+## Install
 
-TODO
-
-## Options
-
-TODO
+```
+$ npm install @ant-design/pro-editor
+```
 
 ## Development
 
