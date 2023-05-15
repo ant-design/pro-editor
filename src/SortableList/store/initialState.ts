@@ -42,7 +42,7 @@ export interface State<T = any> {
   /**
    * 新建对象相关属性
    */
-  creatorButtonProps?: CreatorButtonProps | false;
+  creatorButtonProps?: CreatorButtonProps;
   /**
    * 紧凑模式
    */
@@ -66,8 +66,4 @@ export const initialState: State = {
   renderHeader: undefined,
   renderContent: undefined,
   actions: [],
-  creatorButtonProps: {
-    creatorButtonText: '添加一列',
-    record: undefined,
-  },
 };

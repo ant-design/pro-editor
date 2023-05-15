@@ -34,7 +34,12 @@ export default () => {
           console.log('data', data);
           setListData(data);
         }}
-        creatorButtonProps={false}
+        creatorButtonProps={{
+          showInList: false,
+          record: (index) => ({
+            title: `${index}-${randomIndex()}`,
+          }),
+        }}
         renderContent={(item, index) => <ItemRender item={item} index={index} />}
         SHOW_STORE_IN_DEVTOOLS // 用于显示 Redux Devtools
       />

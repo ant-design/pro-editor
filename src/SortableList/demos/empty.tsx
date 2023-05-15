@@ -4,11 +4,13 @@ import { SchemaItem } from './data';
 
 export default () => {
   return (
-    <SortableList<SchemaItem>
-      onChange={(data) => {
-        console.log('data', data);
-      }}
-      renderContent={(item, index) => <ItemRender item={item} index={index} />}
-    />
+    <div style={{ width: 340, padding: '0 12px' }}>
+      <SortableList<SchemaItem>
+        onChange={(data) => {
+          console.log('data', data);
+        }}
+        renderContent={(item, index) => <ItemRender item={item} index={index} />}
+      />
+    </div>
   );
 };
