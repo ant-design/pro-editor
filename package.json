@@ -4,11 +4,12 @@
   "description": "🌟 Lightweight Editor UI Framework",
   "license": "MIT",
   "sideEffects": false,
-  "main": "es/index.js",
+  "main": "lib/index.js",
   "module": "es/index.js",
-  "typings": "es/index.d.ts",
+  "typings": "lib/index.d.ts",
   "files": [
-    "es"
+    "es",
+    "lib"
   ],
   "scripts": {
     "build": "father build",
