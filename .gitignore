@@ -6,3 +6,4 @@ node_modules
 .dumi/tmp-production
 .DS_Store
 package-lock.json
+.idea
