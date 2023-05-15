@@ -1,14 +1,9 @@
-import {
-  DatabaseOutlined,
-  FlagOutlined,
-  RollbackOutlined,
-  TableOutlined,
-} from '@ant-design/icons';
+import { DatabaseOutlined, FlagOutlined, RollbackOutlined, TableOutlined } from '@ant-design/icons';
 import { ActionIcon, CollapseTitle } from '@ant-design/pro-editor';
+import { JsonViewer } from '@textea/json-viewer';
 import { Button, Divider, Empty, Pagination, Popconfirm, Table } from 'antd';
 import type { CSSProperties, FC, ReactNode } from 'react';
 import { useMemo, useState } from 'react';
-import ReactJson from 'react-json-view';
 import { Flexbox } from 'react-layout-kit';
 import useMergedState from 'use-merge-value';
 import { getPrefixCls } from '../theme';
@@ -131,9 +126,7 @@ const Previewer: FC<DataPreviewerProps> = ({
           <ActionIcon
             title={`显示为${displayType === 'table' ? '对象' : '表格'}`}
             placement={'bottom'}
-            icon={
-              displayType === 'table' ? <DatabaseOutlined /> : <TableOutlined />
-            }
+            icon={displayType === 'table' ? <DatabaseOutlined /> : <TableOutlined />}
             onClick={() => {
               setDisplayType(displayType === 'object' ? 'table' : 'object');
             }}
@@ -142,17 +135,11 @@ const Previewer: FC<DataPreviewerProps> = ({
         <Divider type={'vertical'} dashed style={{ margin: '0 4px' }} />
         <Flexbox horizontal gap={4}>
           <Popconfirm
-            title={
-              '即将重置列配置与表格数据，其余配置（分页器、工具栏等）保持不变。确定重置吗？'
-            }
+            title={'即将重置列配置与表格数据，其余配置（分页器、工具栏等）保持不变。确定重置吗？'}
             placement={'left'}
             onConfirm={onResetClick}
           >
-            <ActionIcon
-              title={`重置数据`}
-              placement={'bottom'}
-              icon={<RollbackOutlined />}
-            />
+            <ActionIcon title={`重置数据`} placement={'bottom'} icon={<RollbackOutlined />} />
           </Popconfirm>
           {extra ? <>{extra}</> : null}
         </Flexbox>
@@ -190,13 +177,13 @@ const Previewer: FC<DataPreviewerProps> = ({
                   }}
                   className={styles.json}
                 >
-                  <ReactJson
-                    name={`第${index + 1}条数据`}
+                  <JsonViewer
+                    rootName={`第${index + 1}条数据`}
                     collapseStringsAfterLength={22}
                     enableClipboard={false}
-                    src={data[index]}
+                    value={data[index]}
                     displayDataTypes={showType}
-                    theme={isDarkMode ? 'railscasts' : undefined}
+                    theme={isDarkMode ? 'dark' : 'light'}
                   />
                 </Flexbox>
                 <Divider style={{ margin: '12px 0' }} dashed />
@@ -220,9 +207,7 @@ const Previewer: FC<DataPreviewerProps> = ({
                 bordered
                 className={styles.table}
                 pagination={false}
-                columns={
-                  columns && columns.map((c) => ({ ...c, ellipsis: true }))
-                }
+                columns={columns && columns.map((c) => ({ ...c, ellipsis: true }))}
               />
             )}
           </Flexbox>
