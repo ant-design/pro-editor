@@ -4,11 +4,12 @@
   "description": "🌟 Lightweight Editor UI Framework",
   "license": "MIT",
   "sideEffects": false,
-  "main": "es/index.js",
+  "main": "lib/index.js",
   "module": "es/index.js",
-  "typings": "es/index.d.ts",
+  "typings": "lib/index.d.ts",
   "files": [
-    "es"
+    "es",
+    "lib"
   ],
   "scripts": {
     "build": "father build",
@@ -16,8 +17,7 @@
     "dev": "dumi dev",
     "docs:build": "dumi build",
     "doctor": "father doctor",
-    "lint": "npm run lint:es && npm run lint:css",
-    "lint:css": "stylelint \"{src,test}/**/*.{css,less}\"",
+    "lint": "npm run lint:es",
     "lint:es": "eslint \"{src,test}/**/*.{js,jsx,ts,tsx}\"",
     "prepare": "husky install && dumi setup",
     "prepublishOnly": "father doctor && npm run build",
