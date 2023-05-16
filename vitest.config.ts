@@ -11,6 +11,7 @@ export default defineConfig({
     globals: true,
     testTimeout: 20000,
     coverage: {
+      provider: 'c8',
       reporter: ['text', 'json', 'lcov'],
     },
     alias: {
