@@ -1,5 +1,5 @@
+import { JsonViewer } from '@textea/json-viewer';
 import classNames from 'classnames';
-import ReactJson from 'react-json-view';
 
 import type { HighlightProps } from './index';
 import { THEME_DARK } from './index';
@@ -39,12 +39,12 @@ export default ({
         styles,
       )}
     >
-      <ReactJson
-        src={json}
-        theme={isDarkTheme ? 'ocean' : undefined}
+      <JsonViewer
+        value={json}
+        theme={isDarkTheme ? 'dark' : 'light'}
         displayDataTypes={false}
         style={{ height }}
-        name={false}
+        rootName={false}
       />
     </div>
   );
