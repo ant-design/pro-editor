@@ -66,6 +66,7 @@
     "@emotion/styled": "^11",
     "@faker-js/faker": "^7",
     "@handsontable/react": "^12",
+    "@mui/material": "^5.13.1",
     "@textea/json-viewer": "^3",
     "ahooks": "^3",
     "classnames": "^2.3.2",
