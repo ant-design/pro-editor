@@ -3,3 +3,4 @@ export * from './container';
 export type { SortableListRef } from './container/StoreUpdater';
 export { useSortableList } from './hooks/useSortableList';
 export type { SortableListInstance } from './hooks/useSortableList';
+export type { CreatorButtonProps } from './type';
