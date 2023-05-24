@@ -72,4 +72,4 @@ group:
 
 ## API
 
-<API id="SortableList" />
+<API id="SortableList"></API>

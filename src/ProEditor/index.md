@@ -2,7 +2,7 @@
 title: ProEditor 配置容器
 group:
   title: 容器能力
-  order: 0
+  order: 2
 ---
 
 # ProEditor 装配器容器
