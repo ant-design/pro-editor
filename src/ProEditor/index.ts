@@ -8,4 +8,4 @@ export {
   useStore,
   useStoreApi,
 } from './store';
-export type { PresenceEditor, ProEditorStore } from './store';
+export type { PresenceEditor, ProEditorInstance, ProEditorStore } from './store';
