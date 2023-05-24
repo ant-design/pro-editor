@@ -46,7 +46,7 @@
     ]
   },
   "dependencies": {
-    "@ant-design/icons": "^4.6.2",
+    "@ant-design/icons": "^5",
     "@ant-design/pro-components": "^2",
     "@antv/dw-random": "^1",
     "@babel/core": "^7.21.8",
@@ -117,7 +117,7 @@
     "eslint": "^8.23.0",
     "father": "^4.1.0",
     "husky": "^8.0.1",
-    "jsdom": "^21",
+    "jsdom": "^22",
     "lint-staged": "^13.0.3",
     "prettier": "^2.7.1",
     "prettier-plugin-organize-imports": "^3.0.0",
@@ -125,7 +125,7 @@
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "rxjs-spy": "^8",
-    "stylelint": "^14.9.1",
+    "stylelint": "^15",
     "vitest": "latest",
     "wait-on": "^6.0.1",
     "y-protocols": "^1",
