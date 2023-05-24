@@ -44,6 +44,7 @@ export default defineConfig({
     socialLinks: {
       github: 'https://github.com/ant-design/pro-editor',
     },
+    siteToken: { demoInheritSiteTheme: true },
     footer: 'Made with ❤️ by 蚂蚁集团 - AFX & 数字科技',
     features: [
       {
