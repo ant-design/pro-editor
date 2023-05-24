@@ -16,6 +16,7 @@
     "build:watch": "father dev",
     "dev": "dumi dev",
     "docs:build": "dumi build",
+    "docs:preview": "PREVIEW=1 dumi build",
     "doctor": "father doctor",
     "lint": "npm run lint:es",
     "lint:es": "eslint \"{src,test}/**/*.{js,jsx,ts,tsx}\"",
