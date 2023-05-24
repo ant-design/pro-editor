@@ -1,18 +1,11 @@
 import type { StoreApi } from 'zustand';
 import { create } from 'zustand';
-import { createContext } from 'zustand-utils';
-import { devtools } from 'zustand/middleware';
+import { createContext, optionalDevtools } from 'zustand-utils';
 
 import type { Store } from './store';
 import vanillaStore from './store';
 
 export const createStore = (showDevtools?: boolean) =>
-  // @ts-ignore
-  create<Store>()(
-    showDevtools
-      ? devtools(vanillaStore, { name: 'IconPicker' })
-      : vanillaStore,
-  );
+  create<Store>()(optionalDevtools(showDevtools)(vanillaStore, { name: 'IconPicker' }));
 
-export const { Provider, useStore, useStoreApi } =
-  createContext<StoreApi<Store>>();
+export const { Provider, useStore, useStoreApi } = createContext<StoreApi<Store>>();

@@ -6,7 +6,3 @@ group:
 ---
 
 # ConfigProvider 全局容器
-
-## 代码演示
-
-<code src="./demos/basic.tsx" ></code>
