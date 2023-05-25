@@ -1,8 +1,9 @@
-import { ColumnItemOption, createStyles, css, cx, useSortableList } from '@ant-design/pro-editor';
+import { ColumnItemOption, useSortableList } from '@ant-design/pro-editor';
 import { Select } from 'antd';
+import { createStyles } from 'antd-style';
 import { CSSProperties, memo } from 'react';
 
-const useStyle = createStyles(({ prefixCls: ant }, prefixCls) => {
+const useStyle = createStyles(({ prefixCls: ant, css, cx }, prefixCls) => {
   const prefix = `${prefixCls}-content`;
   return {
     select: cx(

@@ -1,9 +1,9 @@
-import { ColumnItemList, createStyles, css } from '@ant-design/pro-editor';
-import { cx } from 'antd-style';
+import { ColumnItemList } from '@ant-design/pro-editor';
+import { createStyles } from 'antd-style';
 import { memo } from 'react';
 import { Flexbox } from 'react-layout-kit';
 
-const useStyle = createStyles(({ token }, prefixCls) => {
+const useStyle = createStyles(({ token, css, cx }, prefixCls) => {
   return {
     content: cx(
       `${prefixCls}-content`,
@@ -31,7 +31,7 @@ interface HeaderProps {
   columns: ColumnItemList<any>;
 }
 export const Header = memo<HeaderProps>(({ prefixCls, columns }) => {
-  const { styles } = useStyle(prefixCls);
+  const { styles, cx } = useStyle(prefixCls);
 
   return (
     <Flexbox horizontal align={'center'} gap={4}>
