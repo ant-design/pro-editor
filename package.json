@@ -23,7 +23,6 @@
     "lint:es": "eslint \"{src,test}/**/*.{js,jsx,ts,tsx}\"",
     "prepare": "husky install && dumi setup",
     "prepublishOnly": "father doctor && npm run build",
-    "publish": "npm publish --registry https://registry.npmjs.org",
     "start": "npm run dev",
     "test": "vitest",
     "test:coverage": "vitest run --coverage",

@@ -43,6 +43,12 @@ $ npm run docs:build
 $ npm run doctor
 ```
 
+## Release
+
+```bash
+$ npm publish --registry https://registry.npmjs.org
+```
+
 ## LICENSE
 
 MIT
