@@ -2,6 +2,7 @@
 export * from './ActionIcon';
 export { default as CollapseTitle } from './CollapseTitle';
 export { default as ColorPicker } from './ColorPicker';
+export * from './ColumnList';
 export * from './ComponentAsset';
 export * from './ConfigProvider';
 export * from './DataFill';
