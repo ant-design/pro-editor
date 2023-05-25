@@ -10,8 +10,9 @@
 
 🌟 A Lightweight Editor UI Framework
 
-[![NPM version](https://img.shields.io/npm/v/@ant-design/pro-editor.svg?style=flat)](https://npmjs.org/package/@ant-design/pro-editor)
-[![NPM downloads](http://img.shields.io/npm/dm/@ant-design/pro-editor.svg?style=flat)](https://npmjs.org/package/@ant-design/pro-editor)
+![NPM version](https://img.shields.io/npm/v/@ant-design/pro-editor.svg?style=flat)
+![NPM downloads](http://img.shields.io/npm/dm/@ant-design/pro-editor.svg?style=flat)
+![Test CI](https://github.com/ant-design/pro-editor/actions/workflows/test.yml/badge.svg)
 
 </div>
 
