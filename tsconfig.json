@@ -8,11 +8,12 @@
     "target": "ESNext",
     "module": "esnext",
     "jsx": "react-jsx",
-    "types": ["node", "vitest/globals"],
+    "types": ["vitest/globals"],
     "declaration": true,
     "baseUrl": ".",
     "paths": {
-      "@ant-design/pro-editor": ["./src"]
+      "@ant-design/pro-editor": ["./src"],
+      "@/*": ["src/*"]
     }
   },
   "exclude": ["node_modules", "dist"],

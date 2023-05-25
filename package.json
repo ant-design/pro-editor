@@ -14,8 +14,10 @@
   "scripts": {
     "build": "father build",
     "build:watch": "father dev",
+    "ci": "npm run lint && npm run ts-check",
     "dev": "dumi dev",
     "docs:build": "dumi build",
+    "docs:preview": "PREVIEW=1 dumi build",
     "doctor": "father doctor",
     "lint": "npm run lint:es",
     "lint:es": "eslint \"{src,test}/**/*.{js,jsx,ts,tsx}\"",
@@ -25,12 +27,8 @@
     "start": "npm run dev",
     "test": "vitest",
     "test:coverage": "vitest run --coverage",
-    "test:update": "vitest -u"
-  },
-  "commitlint": {
-    "extends": [
-      "@commitlint/config-conventional"
-    ]
+    "test:update": "vitest -u",
+    "ts-check": "tsc  -p tsconfig-check.json"
   },
   "lint-staged": {
     "*.{md,json}": [
@@ -50,7 +48,7 @@
     ]
   },
   "dependencies": {
-    "@ant-design/icons": "^4.6.2",
+    "@ant-design/icons": "^5",
     "@ant-design/pro-components": "^2",
     "@antv/dw-random": "^1",
     "@babel/core": "^7.21.8",
@@ -66,11 +64,12 @@
     "@emotion/styled": "^11",
     "@faker-js/faker": "^7",
     "@handsontable/react": "^12",
+    "@mui/material": "^5",
     "@textea/json-viewer": "^3",
     "ahooks": "^3",
     "classnames": "^2.3.2",
     "color": "^4",
-    "copy-to-clipboard": "^3.3.3",
+    "copy-to-clipboard": "^3",
     "diff": "^5",
     "handsontable": "^12",
     "highlight.js": "~10.5.0",
@@ -95,16 +94,13 @@
     "rxjs": "^7.5.5",
     "type-fest": "^3",
     "umi-request": "^1.3.9",
-    "unstated-next": "^1.1.0",
-    "use-merge-value": "^1.0.2",
+    "use-merge-value": "^1",
     "yjs": "^13",
     "zustand": "^4",
     "zustand-middleware-yjs": "^1.2.8",
     "zustand-utils": "^1"
   },
   "devDependencies": {
-    "@commitlint/cli": "^17.1.2",
-    "@commitlint/config-conventional": "^17.1.0",
     "@emotion/jest": "^11",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -115,13 +111,16 @@
     "@types/react-dom": "^18.0.0",
     "@umijs/lint": "^4.0.0",
     "@vitest/coverage-c8": "latest",
-    "antd": "^5.4.7",
     "dumi": "^2",
     "dumi-theme-antd-style": "latest",
+    "antd": "^5",
+    "commitlint": "^17",
+    "commitlint-config-gitmoji": "^2",
     "eslint": "^8.23.0",
     "father": "^4.1.0",
+    "glob": "^10.2.6",
     "husky": "^8.0.1",
-    "jsdom": "^21",
+    "jsdom": "^22",
     "lint-staged": "^13.0.3",
     "prettier": "^2.7.1",
     "prettier-plugin-organize-imports": "^3.0.0",
@@ -130,7 +129,8 @@
     "react-dom": "^18.0.0",
     "react-lazy-load": "^4",
     "rxjs-spy": "^8",
-    "stylelint": "^14.9.1",
+    "stylelint": "^15",
+    "typescript": "^5.0.4",
     "vitest": "latest",
     "wait-on": "^6.0.1",
     "y-protocols": "^1",

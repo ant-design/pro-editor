@@ -2,8 +2,15 @@ import { defineConfig } from 'dumi';
 
 const isProd = process.env.NODE_ENV === 'production';
 
+const isProdSite =
+  // 不是预览模式 同时是生产环境
+  process.env.PREVIEW !== '1' && isProd;
+
 export default defineConfig({
   outputPath: 'docs-dist',
+  // 部署在非根目录时, base 和 publicPath 都需要配置
+  base: isProdSite ? '/pro-editor/' : '/',
+  publicPath: isProdSite ? '/pro-editor/' : '/',
   //   mfsu: false,
   apiParser: {},
   resolve: {
@@ -44,6 +51,7 @@ export default defineConfig({
     socialLinks: {
       github: 'https://github.com/ant-design/pro-editor',
     },
+    siteToken: { demoInheritSiteTheme: true },
     footer: 'Made with ❤️ by 蚂蚁集团 - AFX & 数字科技',
     features: [
       {
