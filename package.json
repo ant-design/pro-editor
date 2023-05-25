@@ -14,6 +14,7 @@
   "scripts": {
     "build": "father build",
     "build:watch": "father dev",
+    "ci": "npm run lint && npm run ts-check",
     "dev": "dumi dev",
     "docs:build": "dumi build",
     "docs:preview": "PREVIEW=1 dumi build",
@@ -26,7 +27,8 @@
     "start": "npm run dev",
     "test": "vitest",
     "test:coverage": "vitest run --coverage",
-    "test:update": "vitest -u"
+    "test:update": "vitest -u",
+    "ts-check": "tsc  -p tsconfig-check.json"
   },
   "lint-staged": {
     "*.{md,json}": [
@@ -46,7 +48,7 @@
     ]
   },
   "dependencies": {
-    "@ant-design/icons": "^4.6.2",
+    "@ant-design/icons": "^5",
     "@ant-design/pro-components": "^2",
     "@antv/dw-random": "^1",
     "@babel/core": "^7.21.8",
@@ -116,8 +118,9 @@
     "dumi-theme-antd-style": "^0.25.0",
     "eslint": "^8.23.0",
     "father": "^4.1.0",
+    "glob": "^10.2.6",
     "husky": "^8.0.1",
-    "jsdom": "^21",
+    "jsdom": "^22",
     "lint-staged": "^13.0.3",
     "prettier": "^2.7.1",
     "prettier-plugin-organize-imports": "^3.0.0",
@@ -125,7 +128,8 @@
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "rxjs-spy": "^8",
-    "stylelint": "^14.9.1",
+    "stylelint": "^15",
+    "typescript": "^5.0.4",
     "vitest": "latest",
     "wait-on": "^6.0.1",
     "y-protocols": "^1",
