@@ -16,6 +16,7 @@
     "build:watch": "father dev",
     "dev": "dumi dev",
     "docs:build": "dumi build",
+    "docs:preview": "PREVIEW=1 dumi build",
     "doctor": "father doctor",
     "lint": "npm run lint:es",
     "lint:es": "eslint \"{src,test}/**/*.{js,jsx,ts,tsx}\"",
@@ -26,11 +27,6 @@
     "test": "vitest",
     "test:coverage": "vitest run --coverage",
     "test:update": "vitest -u"
-  },
-  "commitlint": {
-    "extends": [
-      "@commitlint/config-conventional"
-    ]
   },
   "lint-staged": {
     "*.{md,json}": [
@@ -66,12 +62,12 @@
     "@emotion/styled": "^11",
     "@faker-js/faker": "^7",
     "@handsontable/react": "^12",
-    "@mui/material": "^5.13.1",
+    "@mui/material": "^5",
     "@textea/json-viewer": "^3",
     "ahooks": "^3",
     "classnames": "^2.3.2",
     "color": "^4",
-    "copy-to-clipboard": "^3.3.3",
+    "copy-to-clipboard": "^3",
     "diff": "^5",
     "handsontable": "^12",
     "highlight.js": "~10.5.0",
@@ -96,16 +92,13 @@
     "rxjs": "^7.5.5",
     "type-fest": "^3",
     "umi-request": "^1.3.9",
-    "unstated-next": "^1.1.0",
-    "use-merge-value": "^1.0.2",
+    "use-merge-value": "^1",
     "yjs": "^13",
     "zustand": "^4",
     "zustand-middleware-yjs": "^1.2.8",
     "zustand-utils": "^1"
   },
   "devDependencies": {
-    "@commitlint/cli": "^17.1.2",
-    "@commitlint/config-conventional": "^17.1.0",
     "@emotion/jest": "^11",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -116,7 +109,9 @@
     "@types/react-dom": "^18.0.0",
     "@umijs/lint": "^4.0.0",
     "@vitest/coverage-c8": "latest",
-    "antd": "^5.4.7",
+    "antd": "^5",
+    "commitlint": "^17",
+    "commitlint-config-gitmoji": "^2",
     "dumi": "^2.1.22",
     "dumi-theme-antd-style": "^0.25.0",
     "eslint": "^8.23.0",
