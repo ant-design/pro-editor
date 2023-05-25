@@ -1,10 +1,11 @@
-import { ColumnItemList, createStyles, css, cx, useSortableList } from '@ant-design/pro-editor';
+import { ColumnItemList, useSortableList } from '@ant-design/pro-editor';
+import { createStyles } from 'antd-style';
 import { memo } from 'react';
 import { Flexbox } from 'react-layout-kit';
 import ControlInput from './renderItem/Input';
 import ControlSelect from './renderItem/Select';
 
-const useStyle = createStyles(({}, prefixCls) => {
+const useStyle = createStyles(({ css, cx }, prefixCls) => {
   const prefix = `${prefixCls}-content`;
   return {
     content: cx(

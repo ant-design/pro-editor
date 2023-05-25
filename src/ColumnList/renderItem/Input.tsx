@@ -1,8 +1,9 @@
-import { createStyles, css, cx, useSortableList } from '@ant-design/pro-editor';
+import { useSortableList } from '@ant-design/pro-editor';
 import { Input } from 'antd';
+import { createStyles } from 'antd-style';
 import { CSSProperties, memo, useRef, useState } from 'react';
 
-const useStyle = createStyles(({}, prefixCls) => {
+const useStyle = createStyles(({ css, cx }, prefixCls) => {
   const prefix = `${prefixCls}-content`;
   return {
     input: cx(
