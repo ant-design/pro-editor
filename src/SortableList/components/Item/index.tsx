@@ -1,5 +1,6 @@
 import type { DraggableSyntheticListeners } from '@dnd-kit/core';
 import type { Transform } from '@dnd-kit/utilities';
+import { useToken } from '../../../theme';
 /* eslint-disable consistent-return */
 import classNames from 'classnames';
 import { PropsWithChildren, forwardRef, memo, useEffect } from 'react';
@@ -60,6 +61,7 @@ const Item = memo(
       },
       ref,
     ) => {
+      const token = useToken();
       const { styles } = useStyle(prefixCls);
       const itemPrefixCls = classNames(`${prefixCls}-item`);
 
@@ -107,7 +109,7 @@ const Item = memo(
             })}
             style={{
               ...style,
-              backgroundColor: compact ? undefined : 'hsl(0, 0%, 98%)',
+              backgroundColor: compact ? undefined : token.colorBgContainer,
             }}
             data-cypress="draggable-item"
             {...(!handle ? listeners : undefined)}
