@@ -12,11 +12,11 @@ export default defineConfig({
   base: isProdSite ? '/pro-editor/' : '/',
   publicPath: isProdSite ? '/pro-editor/' : '/',
   //   mfsu: false,
-  apiParser: {},
-  resolve: {
-    // 配置入口文件路径，API 解析将从这里开始
-    entryFile: './src/index.ts',
-  },
+  // apiParser: {},
+  // resolve: {
+  //   // 配置入口文件路径，API 解析将从这里开始
+  //   entryFile: './src/index.ts',
+  // },
   favicons: ['https://gw.alipayobjects.com/zos/antfincdn/upvrAjAPQX/Logo_Tech%252520UI.svg'],
   // @ts-ignore
   ssr: isProd ? {} : false,
