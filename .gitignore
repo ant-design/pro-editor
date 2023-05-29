@@ -1,9 +1,12 @@
 node_modules
-/dist
-/es
+dist
+es
+lib
 .dumi/tmp
 .dumi/tmp-test
 .dumi/tmp-production
 .DS_Store
 package-lock.json
 .idea
+docs-dist
+server
