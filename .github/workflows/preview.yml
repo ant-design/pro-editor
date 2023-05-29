@@ -1,6 +1,9 @@
 name: Surge PR Preview
 
-on: [pull_request]
+on: 
+  pull_request:
+
+  workflow_dispatch:
 
 jobs:
   preview:
@@ -14,6 +17,7 @@ jobs:
           version: 8
 
       - uses: afc163/surge-preview@v1
+        id: preview_step
         with:
           surge_token: ${{ secrets.SURGE_TOKEN }}
           github_token: ${{ secrets.GITHUB_TOKEN }}
