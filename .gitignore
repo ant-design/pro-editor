@@ -10,3 +10,4 @@ package-lock.json
 .idea
 docs-dist
 server
+.husky/prepare-commit-msg
