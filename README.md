@@ -13,6 +13,7 @@
 ![NPM version](https://img.shields.io/npm/v/@ant-design/pro-editor.svg?style=flat)
 ![NPM downloads](http://img.shields.io/npm/dm/@ant-design/pro-editor.svg?style=flat)
 ![Test CI](https://github.com/ant-design/pro-editor/actions/workflows/test.yml/badge.svg)
+![Deploy CI](https://github.com/ant-design/pro-editor/actions/workflows/deploy.yml/badge.svg)
 
 </div>
 
