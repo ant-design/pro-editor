@@ -17,35 +17,45 @@
 
 </div>
 
-## Install
+## 📦 Install
 
-```
+```bash
 $ npm install @ant-design/pro-editor
 ```
 
-## Development
-
 ```bash
-# install dependencies
-$ npm install
-
-# develop library by docs demo
-$ npm start
-
-# build library source code
-$ npm run build
-
-# build library source code in watch mode
-$ npm run build:watch
-
-# build docs
-$ npm run docs:build
-
-# check your project for potential problems
-$ npm run doctor
+yarn add @ant-design/pro-editor
 ```
 
-### Contributing
+## 🔨 Usage
+
+```jsx
+import { SmileOutlined } from '@ant-design/icons';
+import { ActionIcon } from '@ant-design/pro-editor';
+
+export default () => (
+  <ActionIcon
+    title={'功能按钮的说明'}
+    icon={<SmileOutlined />}
+    onClick={() => {
+      alert('触发动作');
+    }}
+  />
+);
+```
+
+## ⌨️ Development
+
+```bash
+$ git clone git@github.com:ant-design/pro-editor.git
+$ cd pro-editor
+$ npm install
+$ npm start
+```
+
+Open your browser and visit http://localhost:8000
+
+## 🤝 Contributing [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
 - [Release Guide](https://github.com/ant-design/pro-editor/wiki/release)
 
