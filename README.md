@@ -45,11 +45,9 @@ $ npm run docs:build
 $ npm run doctor
 ```
 
-## Release
+### Contributing
 
-```bash
-$ npm publish --registry https://registry.npmjs.org
-```
+- [Release Guide](https://github.com/ant-design/pro-editor/wiki/release)
 
 ## LICENSE
 

@@ -1,5 +1,4 @@
-import type { InputProps as Props } from 'antd';
-import { Input as _Input } from 'antd';
+import { InputProps as Props, Input as _Input } from 'antd';
 import type { FC } from 'react';
 import { useRef } from 'react';
 import { ConfigProvider } from '../ConfigProvider';

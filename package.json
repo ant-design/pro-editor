@@ -23,7 +23,6 @@
     "lint:es": "eslint \"{src,test}/**/*.{js,jsx,ts,tsx}\"",
     "prepare": "husky install && dumi setup",
     "prepublishOnly": "father doctor && npm run build",
-    "release": "semantic-release",
     "start": "npm run dev",
     "test": "vitest",
     "test:coverage": "vitest run --coverage",
@@ -146,7 +145,8 @@
     "react-dom": ">=18"
   },
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
   },
   "authors": [
     "rdmclin2@163.com"
