@@ -1,15 +1,12 @@
 import type { StoreApi } from 'zustand';
 import { create } from 'zustand';
-import { createContext } from 'zustand-utils';
-import { optionalDevtools } from '../../utils';
+import { createContext, optionalDevtools } from 'zustand-utils';
 
 import type { Store } from './store';
 import vanillaStore from './store';
 
 const createStore = (showDevTools: boolean) =>
-  create(
-    optionalDevtools(showDevTools)(vanillaStore, { name: 'SortableTree' }),
-  );
+  create(optionalDevtools(showDevTools)(vanillaStore, { name: 'SortableTree' }));
 
 const { useStore, useStoreApi, Provider } = createContext<StoreApi<Store>>();
 
