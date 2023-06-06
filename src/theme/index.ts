@@ -27,8 +27,5 @@ export {
   keyframes,
   useAntdToken as useToken,
   type AntdToken,
-  type GetAntdThemeConfig,
-  type ThemeAppearance,
-  type ThemeMode,
 } from 'antd-style';
 export * from './themes';
