@@ -2,7 +2,7 @@ import type { ButtonProps, TooltipProps } from 'antd';
 import { Button, Tooltip } from 'antd';
 import type { CSSProperties, FC } from 'react';
 import { ConfigProvider } from '../ConfigProvider';
-import { cx, getPrefixCls, useToken } from '../theme';
+import { getPrefixCls } from '../theme';
 import { useStyles } from './style';
 
 /**
@@ -48,9 +48,7 @@ const ActionIcon: FC<ActionIconProps> = ({
   ...restProps
 }) => {
   const prefixCls = getPrefixCls('actionicon', customPrefixCls);
-  const { styles } = useStyles({ size, prefixCls });
-
-  const token = useToken();
+  const { styles, theme: token, cx } = useStyles({ size, prefixCls });
 
   const Icon = (
     <Button
