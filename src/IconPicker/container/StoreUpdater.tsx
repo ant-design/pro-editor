@@ -1,6 +1,6 @@
 import type { FC } from 'react';
 
-import { createStoreUpdater } from '../../utils';
+import { createStoreUpdater } from 'zustand-utils';
 import type { State } from '../store';
 import { useStoreApi } from '../store';
 import type { ExternalScripts, IconUnit } from '../types';
@@ -35,23 +35,18 @@ const StoreUpdater: FC<StoreUpdaterProps> = ({
   onActiveIconfontScriptChange,
 }) => {
   const storeApi = useStoreApi();
-  const useStoreUpdater = createStoreUpdater<StoreUpdaterProps>(useStoreApi);
+  const useStoreUpdater = createStoreUpdater<StoreUpdaterProps>(storeApi);
 
   useStoreUpdater('icon', defaultIcon, []);
   useStoreUpdater('icon', icon);
   useStoreUpdater('onIconChange', onIconChange);
 
-  useStoreUpdater(
-    'iconfontScripts',
-    iconfontScripts,
-    [iconfontScripts],
-    (state) => {
-      storeApi.setState({
-        iconfontScripts: state,
-        outsourceIconfontScripts: state,
-      });
-    },
-  );
+  useStoreUpdater('iconfontScripts', iconfontScripts, [iconfontScripts], () => {
+    storeApi.setState({
+      iconfontScripts,
+      outsourceIconfontScripts: iconfontScripts,
+    });
+  });
   useStoreUpdater('iconfontScripts', defaultIconfontScripts, []);
   useStoreUpdater('onIconfontScriptsChange', onIconfontScriptsChange);
 
@@ -63,14 +58,9 @@ const StoreUpdater: FC<StoreUpdaterProps> = ({
       storeApi.getState().selectScript(script);
     },
   );
-  useStoreUpdater(
-    'activeIconfontScript',
-    defaultActiveIconfontScript,
-    [],
-    (script) => {
-      storeApi.getState().selectScript(script);
-    },
-  );
+  useStoreUpdater('activeIconfontScript', defaultActiveIconfontScript, [], (script) => {
+    storeApi.getState().selectScript(script);
+  });
   useStoreUpdater('onActiveIconfontScriptChange', onActiveIconfontScriptChange);
 
   return null;

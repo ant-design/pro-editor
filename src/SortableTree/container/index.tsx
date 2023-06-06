@@ -1,4 +1,4 @@
-import { memo } from 'react';
+import { memo, ReactNode } from 'react';
 
 import { ConfigProvider } from '../../ConfigProvider';
 import type { ControlledState } from '../store';
@@ -9,22 +9,18 @@ import StoreUpdater from './StoreUpdater';
 
 import type { StoreUpdaterProps } from './StoreUpdater';
 
-export interface SortableTreeProps<T>
-  extends StoreUpdaterProps<T>,
-    ControlledState,
-    AppProps {}
+export interface SortableTreeProps<T> extends StoreUpdaterProps<T>, ControlledState, AppProps {}
 
 export { SortableTreeProvider } from './Provider';
 
-export const SortableTree: <T>(props: SortableTreeProps<T>) => JSX.Element =
-  memo((props) => {
-    const { SHOW_STORE_IN_DEVTOOLS, className, style, ...res } = props;
-    return (
-      <ConfigProvider>
-        <SortableTreeProvider showDevtools={SHOW_STORE_IN_DEVTOOLS}>
-          <App style={style} className={className} />
-          <StoreUpdater {...res} />
-        </SortableTreeProvider>
-      </ConfigProvider>
-    );
-  });
+export const SortableTree: <T>(props: SortableTreeProps<T>) => ReactNode = memo((props) => {
+  const { SHOW_STORE_IN_DEVTOOLS, className, style, ...res } = props;
+  return (
+    <ConfigProvider>
+      <SortableTreeProvider showDevtools={SHOW_STORE_IN_DEVTOOLS}>
+        <App style={style} className={className} />
+        <StoreUpdater {...res} />
+      </SortableTreeProvider>
+    </ConfigProvider>
+  );
+});
