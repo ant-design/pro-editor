@@ -1,7 +1,7 @@
 import { getPrefixCls, SortableList } from '@ant-design/pro-editor';
-import { forwardRef, useCallback } from 'react';
-
 import { cx } from 'antd-style';
+import { forwardRef, ReactNode, useCallback } from 'react';
+
 import { SortableListProps, SortableListRef } from '../SortableList';
 import ColumnItem from './ColumnItem';
 import { Header } from './Header';
@@ -11,7 +11,7 @@ export interface ColumnListProps<T = any> extends SortableListProps<T> {
   columns: ColumnItemList<T>;
 }
 
-const ColumnList: <T = any>(props: ColumnListProps<T>) => JSX.Element = forwardRef<
+const ColumnList: <T = any>(props: ColumnListProps<T>) => ReactNode = forwardRef<
   SortableListRef<any>,
   ColumnListProps
 >(({ prefixCls: customPrefixCls, className, columns, ...props }, ref) => {
