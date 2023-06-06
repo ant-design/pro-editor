@@ -41,10 +41,10 @@ const StoreUpdater: FC<StoreUpdaterProps> = ({
   useStoreUpdater('icon', icon);
   useStoreUpdater('onIconChange', onIconChange);
 
-  useStoreUpdater('iconfontScripts', iconfontScripts, [iconfontScripts], (state) => {
+  useStoreUpdater('iconfontScripts', iconfontScripts, [iconfontScripts], () => {
     storeApi.setState({
-      iconfontScripts: state,
-      outsourceIconfontScripts: state,
+      iconfontScripts,
+      outsourceIconfontScripts: iconfontScripts,
     });
   });
   useStoreUpdater('iconfontScripts', defaultIconfontScripts, []);
