@@ -1,8 +1,9 @@
-import { createStyles, css, STUDIO_UI_PREFIX } from '../../theme';
+import { createStyles } from 'antd-style';
+import { STUDIO_UI_PREFIX } from '../../theme';
 
 const studioCls = `.${STUDIO_UI_PREFIX}`;
 
-export const useStyle = createStyles(({ token }) => {
+export const useStyle = createStyles(({ token, css }) => {
   return {
     directory: css({
       [`${studioCls}-tree-directory`]: {
