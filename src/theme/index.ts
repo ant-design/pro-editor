@@ -16,7 +16,6 @@ declare module 'antd-style' {
   export interface CustomStylish extends StudioStylish {}
 }
 
-export { default as styled } from '@emotion/styled';
 export {
   ThemeProvider,
   createGlobalStyle,

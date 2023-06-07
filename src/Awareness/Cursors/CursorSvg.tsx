@@ -1,11 +1,10 @@
-import type { FC } from 'react';
 import { memo } from 'react';
 
 interface CursorProps {
   color: string;
 }
 
-const Cursor: FC<CursorProps> = memo(({ color }) => {
+const Cursor = memo<CursorProps>(({ color }) => {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width="22" height="24">
       <g fill="none" fillRule="evenodd">

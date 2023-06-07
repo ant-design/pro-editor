@@ -1,5 +1,7 @@
-// 导出组件
+export { default as yjsMiddleware } from 'zustand-middleware-yjs';
 export * from './ActionIcon';
+export { default as Awareness } from './Awareness';
+export type { IAwareness } from './Awareness';
 export { default as CollapseTitle } from './CollapseTitle';
 export { default as ColorPicker } from './ColorPicker';
 export * from './ColumnList';
@@ -16,9 +18,7 @@ export type { FreeCanvasProps } from './FreeCanvas';
 export * from './Highlight';
 export * from './IconPicker';
 export { default as InteractContainer } from './InteractContainer';
-// 导出类型
 export type { CanvasInteractRule, InteractStatus, InteractStatusNode } from './InteractContainer';
-//  ProEditor
 export {
   EditorMode,
   ProEditor,
@@ -27,7 +27,6 @@ export {
   useStore as useProEditorStore,
 } from './ProEditor';
 export type { PresenceEditor, ProEditorProps, ProEditorStore } from './ProEditor';
-export * from './RealTimeCollaboration';
 export * from './SortableList';
 export * from './SortableTree';
 export { default as TipGuide } from './TipGuide';
