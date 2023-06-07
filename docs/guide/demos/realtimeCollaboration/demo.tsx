@@ -1,8 +1,7 @@
+import { Awareness } from '@ant-design/pro-editor';
 import { Button, Divider, Input } from 'antd';
 import { memo } from 'react';
 import { WebrtcProvider } from 'y-webrtc';
-
-import { Awareness } from '@ant-design/pro-editor';
 
 import { createStore, doc, Provider, useStore } from './store';
 

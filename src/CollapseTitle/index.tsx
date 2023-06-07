@@ -4,13 +4,13 @@ import type { CSSProperties, FC, ReactNode } from 'react';
 import { Flexbox } from 'react-layout-kit';
 import useMergedState from 'use-merge-value';
 
-import { getPrefixCls } from '../theme';
+import { getPrefixCls } from '@/theme';
 
 import { ConfigProvider } from '../ConfigProvider';
 
 import { useStyles } from './style';
 
-interface CollapseTitleProps {
+export interface CollapseTitleProps {
   /**
    * 默认展开
    */
@@ -92,10 +92,7 @@ const CollapseTitle: FC<CollapseTitleProps> = ({
             onClick={showPanel ? toggleCollapse : undefined}
             className={styles.title}
           >
-            <CaretRightFilled
-              style={{ fontSize: 10 }}
-              rotate={showPanel ? 90 : 0}
-            />
+            <CaretRightFilled style={{ fontSize: 10 }} rotate={showPanel ? 90 : 0} />
             <div>{title}</div>
           </Flexbox>
           {extra && extra(showPanel)}

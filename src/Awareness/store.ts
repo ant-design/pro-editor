@@ -61,9 +61,7 @@ export const createStore = (provider: WebrtcProvider) => {
   useEffect(() => {
     // 先创建一下监听事件
     awareness.on('change', () => {
-      const awarenessStates = Array.from(
-        awareness.getStates().values(),
-      ) as AwarenessState[];
+      const awarenessStates = Array.from(awareness.getStates().values()) as AwarenessState[];
 
       useStore.setState((state) => ({ ...state, awarenessStates }));
     });
@@ -81,5 +79,5 @@ export const createStore = (provider: WebrtcProvider) => {
 
   return useStore;
 };
-export const { useStore, Provider, useStoreApi } =
-  createContext<StoreApi<ProviderStore>>();
+
+export const { useStore, Provider, useStoreApi } = createContext<StoreApi<ProviderStore>>();
