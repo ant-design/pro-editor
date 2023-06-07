@@ -39,7 +39,7 @@ const Avatars = memo(() => {
   return (
     <A.Group>
       {awarenessStates?.filter(Boolean).map(({ user, active }, index) => (
-        <AvatarWrapper active={active} key={`${user.id}-${index}`} {...user} />
+        <AvatarWrapper active={active} key={`${user?.id}-${index}`} {...user} />
       ))}
     </A.Group>
   );
