@@ -1,7 +1,7 @@
-import { createStyles, css, cx } from '../theme';
+import { createStyles } from '../theme';
 
 export const useStyles = createStyles(
-  ({ token, stylish }, { prefixCls, className, showPanel }) => {
+  ({ token, css, cx, stylish }, { prefixCls, className, showPanel }) => {
     return {
       container: cx(
         prefixCls,

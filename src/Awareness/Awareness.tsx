@@ -1,10 +1,9 @@
-import type { FC } from 'react';
+import { memo } from 'react';
 import type { WebrtcProvider } from 'y-webrtc';
 
 import Avatars from './Avatars';
 import Cursors from './Cursors';
 
-import { memo } from 'react';
 import { createStore, Provider } from './store';
 
 export interface AwarenessProps {
@@ -22,15 +21,11 @@ export interface AwarenessProps {
   cursors?: boolean;
 }
 
-const Awareness: FC<AwarenessProps> = ({
-  provider,
-  avatars = true,
-  cursors = true,
-}) => (
+const Awareness = memo<AwarenessProps>(({ provider, avatars = true, cursors = true }) => (
   <Provider createStore={() => createStore(provider)}>
     {cursors && <Cursors />}
     {avatars && <Avatars />}
   </Provider>
-);
+));
 
-export default memo(Awareness);
+export default Awareness;

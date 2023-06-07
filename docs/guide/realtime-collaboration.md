@@ -12,7 +12,7 @@ group: 容器能力
 
 ## Demo 演示
 
-<code src="./demos/_demo.tsx" ></code>
+<code src="./demos/realtimeCollaboration/demo.tsx"></code>
 
 ## 数据同步： Yjs 中间件
 

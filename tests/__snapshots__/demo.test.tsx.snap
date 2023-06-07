@@ -191,6 +191,224 @@ exports[`<ActionIcon /> > renders preset.tsx correctly 1`] = `
 </div>
 `;
 
+exports[`<Awareness /> > renders Avatar.tsx correctly 1`] = `
+.emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+<div>
+  <div
+    class="layoutkit-center emotion-0"
+  >
+    <span
+      class="studio-avatar studio-avatar-circle"
+      style="background: pink; color: black; z-index: 100; filter: none; overflow: initial; cursor: pointer;"
+    >
+      <span
+        class="studio-avatar-string"
+        style="transform: scale(1) translateX(-50%);"
+      >
+        u
+        <span
+          class="studio-badge studio-badge-status studio-badge-not-a-wrapper"
+          style="position: absolute; left: 11px; top: 11px;"
+        >
+          <span
+            class="studio-badge-status-dot studio-badge-status-success"
+          />
+        </span>
+      </span>
+    </span>
+    <span
+      class="studio-avatar studio-avatar-circle"
+      style="background: blue; outline: 2px solid blue; z-index: 1000; filter: grayscale(80%); overflow: initial; cursor: pointer;"
+    >
+      <span
+        class="studio-avatar-string"
+        style="transform: scale(1) translateX(-50%);"
+      >
+        u
+        <span
+          class="studio-badge studio-badge-status studio-badge-not-a-wrapper"
+          style="position: absolute; left: 11px; top: 11px;"
+        >
+          <span
+            class="studio-badge-status-dot studio-badge-status-default"
+            style="color: rgb(217, 217, 217); background: rgb(217, 217, 217);"
+          />
+        </span>
+      </span>
+    </span>
+    <span
+      class="studio-avatar studio-avatar-circle"
+      style="background: green; z-index: 0; filter: grayscale(80%); overflow: initial; cursor: pointer;"
+    >
+      <span
+        class="studio-avatar-string"
+        style="transform: scale(1) translateX(-50%);"
+      >
+        u
+        <span
+          class="studio-badge studio-badge-status studio-badge-not-a-wrapper"
+          style="position: absolute; left: 11px; top: 11px;"
+        >
+          <span
+            class="studio-badge-status-dot studio-badge-status-default"
+            style="color: rgb(217, 217, 217); background: rgb(217, 217, 217);"
+          />
+        </span>
+      </span>
+    </span>
+  </div>
+</div>
+`;
+
+exports[`<Awareness /> > renders Cursor.tsx correctly 1`] = `
+.emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.emotion-1 {
+  position: fixed;
+  z-index: 5000;
+}
+
+.emotion-2 {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 12px;
+  max-width: 96px;
+  padding: 2px 12px;
+  border-radius: 4px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+<div>
+  <div
+    class="layoutkit-flexbox emotion-0"
+    style="background: rgba(0, 0, 0, 0.5);"
+  >
+    <div
+      class="emotion-1"
+      style="top: 30px; left: 50px;"
+    >
+      <svg
+        height="24"
+        width="22"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g
+          fill="none"
+          fill-rule="evenodd"
+        >
+          <path
+            d="M19.208 10.282 2.007 2.269l4.068 18.916.066-.1a29.368 29.368 0 0 1 13.067-10.803Z"
+            fill="pink"
+          />
+          <path
+            d="m19.483 10.954.758-.32a.365.365 0 0 0 .013-.666l-.747-.347-18.246-8.5a.143.143 0 0 0-.2.16L5.375 21.34l.18.833a.357.357 0 0 0 .645.123l.469-.704 2.458-3.694a14.326 14.326 0 0 1 6.374-5.27l3.982-1.674Z"
+            stroke="#FFF"
+            stroke-width="1.5"
+          />
+        </g>
+      </svg>
+      <div
+        class="emotion-2"
+        style="background-color: pink; color: black;"
+      >
+        user1
+      </div>
+    </div>
+    <div
+      class="emotion-1"
+      style="top: 30px; left: 200px;"
+    >
+      <svg
+        height="24"
+        width="22"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g
+          fill="none"
+          fill-rule="evenodd"
+        >
+          <path
+            d="M19.208 10.282 2.007 2.269l4.068 18.916.066-.1a29.368 29.368 0 0 1 13.067-10.803Z"
+            fill="blue"
+          />
+          <path
+            d="m19.483 10.954.758-.32a.365.365 0 0 0 .013-.666l-.747-.347-18.246-8.5a.143.143 0 0 0-.2.16L5.375 21.34l.18.833a.357.357 0 0 0 .645.123l.469-.704 2.458-3.694a14.326 14.326 0 0 1 6.374-5.27l3.982-1.674Z"
+            stroke="#FFF"
+            stroke-width="1.5"
+          />
+        </g>
+      </svg>
+      <div
+        class="emotion-2"
+        style="background-color: blue; color: white;"
+      >
+        user2
+      </div>
+    </div>
+    <div
+      class="emotion-1"
+      style="top: 30px; left: 350px;"
+    >
+      <svg
+        height="24"
+        width="22"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g
+          fill="none"
+          fill-rule="evenodd"
+        >
+          <path
+            d="M19.208 10.282 2.007 2.269l4.068 18.916.066-.1a29.368 29.368 0 0 1 13.067-10.803Z"
+            fill="green"
+          />
+          <path
+            d="m19.483 10.954.758-.32a.365.365 0 0 0 .013-.666l-.747-.347-18.246-8.5a.143.143 0 0 0-.2.16L5.375 21.34l.18.833a.357.357 0 0 0 .645.123l.469-.704 2.458-3.694a14.326 14.326 0 0 1 6.374-5.27l3.982-1.674Z"
+            stroke="#FFF"
+            stroke-width="1.5"
+          />
+        </g>
+      </svg>
+      <div
+        class="emotion-2"
+        style="background-color: green; color: white;"
+      >
+        user3
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`<CollapseTitle /> > renders basic.tsx correctly 1`] = `
 .emotion-0 {
   display: -webkit-box;
@@ -15727,19 +15945,22 @@ exports[`<FreeCanvas /> > renders basic.tsx correctly 1`] = `
 }
 
 .emotion-3 {
-  padding: 8px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 8px;
 }
 
 <div>
@@ -15809,7 +16030,7 @@ exports[`<FreeCanvas /> > renders basic.tsx correctly 1`] = `
         class="emotion-2"
       >
         <div
-          class="emotion-3"
+          class="layoutkit-center emotion-3"
         >
           <div
             class="studio-space studio-space-horizontal studio-space-align-center"
@@ -17550,19 +17771,22 @@ exports[`<ProEditor /> > renders controlledPresence.tsx correctly 1`] = `
 }
 
 .emotion-9 {
-  padding: 8px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 8px;
 }
 
 .emotion-10 {
@@ -18111,7 +18335,7 @@ exports[`<ProEditor /> > renders controlledPresence.tsx correctly 1`] = `
                   class="emotion-8"
                 >
                   <div
-                    class="emotion-9"
+                    class="layoutkit-center emotion-9"
                   >
                     <div
                       class="studio-space studio-space-horizontal studio-space-align-center"
@@ -19078,19 +19302,22 @@ exports[`<ProEditor /> > renders customAssets.tsx correctly 1`] = `
 }
 
 .emotion-8 {
-  padding: 8px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 8px;
 }
 
 .emotion-9 {
@@ -19528,7 +19755,7 @@ exports[`<ProEditor /> > renders customAssets.tsx correctly 1`] = `
                 class="emotion-7"
               >
                 <div
-                  class="emotion-8"
+                  class="layoutkit-center emotion-8"
                 >
                   <div
                     class="studio-space studio-space-horizontal studio-space-align-center"

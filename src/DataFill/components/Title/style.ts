@@ -1,6 +1,6 @@
-import { createStyles, css, cx } from '../../../theme';
+import { createStyles } from 'antd-style';
 
-export const useStyle = createStyles(({ token }, prefixCls) => {
+export const useStyle = createStyles(({ token, css, cx }, prefixCls) => {
   return {
     demo: cx(
       `${prefixCls}-demo-data`,

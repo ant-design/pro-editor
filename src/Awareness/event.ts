@@ -16,17 +16,12 @@ const mouse$ = fromEvent<MouseEvent>(document, 'mousemove').pipe(
 );
 
 const visibility$ = merge(
-  fromEvent(document, 'visibilitychange').pipe(
-    map(() => document.visibilityState),
-  ),
+  fromEvent(document, 'visibilitychange').pipe(map(() => document.visibilityState)),
   fromEvent(window, 'focus').pipe(map(() => document.visibilityState)),
   fromEvent(window, 'blur').pipe(map(() => 'hidden')),
 );
 
-export const useAwarenessEvent = ({
-  onMouseMove,
-  onBlur,
-}: AwarenessEventParams) => {
+export const useAwarenessEvent = ({ onMouseMove, onBlur }: AwarenessEventParams) => {
   useEffect(() => {
     const x = mouse$.subscribe(onMouseMove);
     const y = visibility$.subscribe(onBlur);
