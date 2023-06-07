@@ -1,17 +1,11 @@
 import { ExpandOutlined, MinusOutlined, PlusOutlined } from '@ant-design/icons';
 import { Button, ConfigProvider, Space, Tooltip } from 'antd';
+import { useTheme } from 'antd-style';
 import isEqual from 'lodash.isequal';
 import type { FC } from 'react';
 import { memo, useEffect } from 'react';
+import { Center } from 'react-layout-kit';
 import { Viewport, useReactFlow, useViewport } from 'reactflow';
-import { styled, useToken } from '../theme';
-
-const Container = styled.div`
-  padding: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-`;
 
 const Zoom: FC = memo(() => {
   const reactFlow = useReactFlow();
@@ -42,45 +36,41 @@ interface ControlActionProps {
   extraBtns?: React.ReactNode[];
 }
 
-const ControlAction: FC<ControlActionProps> = memo(
-  ({ viewport, extraBtns = [] }) => {
-    const token = useToken();
-    const reactFlow = useReactFlow();
+const ControlAction: FC<ControlActionProps> = memo(({ viewport, extraBtns = [] }) => {
+  const token = useTheme();
+  const reactFlow = useReactFlow();
 
-    const handleZoomIn = () => {
-      reactFlow.zoomIn();
-    };
-    const handleZoomOut = () => {
-      reactFlow.zoomOut();
-    };
-    const handleZoomFit = () => {
-      reactFlow.fitView();
-    };
+  const handleZoomIn = () => {
+    reactFlow.zoomIn();
+  };
+  const handleZoomOut = () => {
+    reactFlow.zoomOut();
+  };
+  const handleZoomFit = () => {
+    reactFlow.fitView();
+  };
 
-    useEffect(() => {
-      if (isEqual(reactFlow.getViewport(), viewport)) return;
+  useEffect(() => {
+    if (isEqual(reactFlow.getViewport(), viewport)) return;
 
-      reactFlow.setViewport(viewport);
-    }, [viewport]);
+    reactFlow.setViewport(viewport);
+  }, [viewport]);
 
-    return (
-      <ConfigProvider
-        theme={{ token: { colorBgContainer: token.colorBgElevated } }}
-      >
-        <Container>
-          <Space>
-            <Button icon={<MinusOutlined />} onClick={handleZoomOut} />
-            <Zoom />
-            <Button icon={<PlusOutlined />} onClick={handleZoomIn} />
-            <Tooltip title={'自适应画布'}>
-              <Button icon={<ExpandOutlined />} onClick={handleZoomFit} />
-            </Tooltip>
-            {extraBtns}
-          </Space>
-        </Container>
-      </ConfigProvider>
-    );
-  },
-);
+  return (
+    <ConfigProvider theme={{ token: { colorBgContainer: token.colorBgElevated } }}>
+      <Center padding={8}>
+        <Space>
+          <Button icon={<MinusOutlined />} onClick={handleZoomOut} />
+          <Zoom />
+          <Button icon={<PlusOutlined />} onClick={handleZoomIn} />
+          <Tooltip title={'自适应画布'}>
+            <Button icon={<ExpandOutlined />} onClick={handleZoomFit} />
+          </Tooltip>
+          {extraBtns}
+        </Space>
+      </Center>
+    </ConfigProvider>
+  );
+});
 
 export default ControlAction;

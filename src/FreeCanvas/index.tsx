@@ -5,7 +5,7 @@ import ReactFlow, { Background, ReactFlowProvider } from 'reactflow';
 import Artboard from './Artboard';
 import ControlAction from './ControlAction';
 
-import { Control, useStyle } from './style';
+import { useStyle } from './style';
 
 // 只有引入默认 style 才能保证交互是正常的
 import 'reactflow/dist/style.css';
@@ -72,9 +72,9 @@ const Canvas: FC<FreeCanvasProps> = ({
         zoomOnScroll={false}
       >
         {control && (
-          <Control>
+          <div className={styles.control}>
             <ControlAction viewport={viewport} extraBtns={extraControlBtns} />
-          </Control>
+          </div>
         )}
 
         <Background color="#aaa" gap={16} style={{ zIndex: -1 }} />
