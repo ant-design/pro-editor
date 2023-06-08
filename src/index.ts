@@ -15,7 +15,6 @@ export { ExcelTable } from './ExcelTable';
 export type { ExcelTableProps, ExcelTableStore, TableData } from './ExcelTable';
 export { default as FreeCanvas } from './FreeCanvas';
 export type { FreeCanvasProps } from './FreeCanvas';
-export * from './Highlight';
 export * from './IconPicker';
 export { default as InteractContainer } from './InteractContainer';
 export type { CanvasInteractRule, InteractStatus, InteractStatusNode } from './InteractContainer';
