@@ -2,18 +2,18 @@ import type { StoreApi } from 'zustand';
 import { create } from 'zustand';
 import { createContext, optionalDevtools } from 'zustand-utils';
 
-import type { Store } from './store';
+import type { InternalSortableTreeStore } from './store';
 import vanillaStore from './store';
 
 const createStore = (showDevTools: boolean) =>
   create(optionalDevtools(showDevTools)(vanillaStore, { name: 'SortableTree' }));
 
-const { useStore, useStoreApi, Provider } = createContext<StoreApi<Store>>();
+const { useStore, useStoreApi, Provider } = createContext<StoreApi<InternalSortableTreeStore>>();
 
 // ========= 导出 ========= //
 
-export type { ControlledState, State } from './initialState';
+export type { ControlledState, OnTreeDataChange, State } from './initialState';
 export * from './selectors';
-export type { Store } from './store';
+export type { InternalSortableTreeStore } from './store';
 export type { TreeNodeDispatchPayload } from './treeDataReducer';
-export { createStore, useStore, Provider, useStoreApi };
+export { Provider, createStore, useStore, useStoreApi };

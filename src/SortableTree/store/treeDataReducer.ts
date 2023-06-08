@@ -3,12 +3,7 @@ import { arrayMove } from '@dnd-kit/sortable';
 import { produce } from 'immer';
 import merge from 'lodash.merge';
 import type { Projected, TreeData } from '../types';
-import {
-  buildTree,
-  flattenTree,
-  removeNode,
-  setProperty,
-} from '../utils/treeNode';
+import { buildTree, flattenTree, removeNode, setProperty } from '../utils/treeNode';
 
 import type { FlattenNode } from '../types';
 
@@ -40,10 +35,10 @@ interface RemoveNodeAction {
 }
 
 // 修改节点content内容
-interface UpdateNodeContentAction {
+interface UpdateNodeContentAction<T = any> {
   type: 'updateNodeContent';
   id: UniqueIdentifier;
-  content: any;
+  content: T;
 }
 
 // 切换节点折叠状态
@@ -73,15 +68,13 @@ export type TreeDataDispatchPayload =
   | RemoveNodeAction
   | UpdateNodeContentAction;
 
-export const treeDataReducer = (
-  treeData: TreeData,
-  payload: TreeDataDispatchPayload,
-): TreeData => {
+export const treeDataReducer = (treeData: TreeData, payload: TreeDataDispatchPayload): TreeData => {
   switch (payload.type) {
     case 'toggleCollapse':
       return setProperty(treeData, payload.id, 'collapsed', (value) => {
         return !value;
       });
+
     case 'toggleExtraVisible':
       return setProperty(treeData, payload.id, 'showExtra', (value) => {
         return !value;

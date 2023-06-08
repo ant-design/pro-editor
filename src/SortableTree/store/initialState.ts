@@ -1,4 +1,10 @@
 import type { RenderNodeProps, TreeData, UniqueIdentifier } from '../types';
+import { TreeDataDispatchPayload } from './treeDataReducer';
+
+export type OnTreeDataChange<T = any> = (
+  treeData: TreeData<T>,
+  event: TreeDataDispatchPayload,
+) => void;
 
 export interface ControlledState {
   /**
@@ -60,7 +66,7 @@ export interface State extends ControlledState {
    * @title 树形数据改变回调函数
    * @param treeData - 改变后的树形数据
    */
-  onTreeDataChange?: (treeData: TreeData) => void;
+  onTreeDataChange?: OnTreeDataChange;
   /**
    * @title 渲染节点内容函数
    * @param node - 节点数据
