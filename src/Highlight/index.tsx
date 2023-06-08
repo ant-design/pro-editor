@@ -4,57 +4,17 @@
  * 如果没有在 https://github.com/highlightjs/highlight.js/tree/master/src/languages 中查找是否支持，然后添加
  * 优先支持蚂蚁主流语言，没有import在代码中使用的不会打包
  */
+import { CheckOutlined, CopyOutlined } from '@ant-design/icons';
+import classNames from 'classnames';
 import hljs from 'highlight.js/lib/core';
 import { createRef, isValidElement, useEffect, useState } from 'react';
-import { default as javascript, default as jsx } from './languages/javascript';
-// tsx 本质上也是采用typescript进行解析，hljs做了支持
-import css from './languages/css';
-import java from './languages/java';
-import json from './languages/json';
-import markdown from './languages/markdown';
-import { default as tsx, default as typescript } from './languages/typescript';
-import xml from './languages/xml';
-import yaml from './languages/yaml';
-
-import classNames from 'classnames';
+import CopyToClipboard from 'react-copy-to-clipboard';
 import { getPrefixCls } from '../theme';
 import HighlightCell from './HighlightCell';
 import JsonView from './JsonView';
-
 import { useStyles } from './style';
-
-import { CheckOutlined, CopyOutlined } from '@ant-design/icons';
-import CopyToClipboard from 'react-copy-to-clipboard';
-import { customRule } from './customRule';
+import { LanguageType, THEME_DARK, THEME_LIGHT, ThemeType, useHighlight } from './useHighlight';
 import { useKeyDownCopyEvent } from './useKeyDownCopyEvent';
-
-// 目前支持的语言列表
-export const languageMap = {
-  javascript,
-  typescript,
-  css,
-  json,
-  markdown,
-  xml,
-  yaml,
-  tsx,
-  jsx,
-  java,
-};
-
-export const THEME_DARK = 'dark';
-export const THEME_LIGHT = 'light';
-
-// 主题类型
-const tuple = <T extends string[]>(...args: T) => args;
-const ThemeTypes = tuple(THEME_DARK, THEME_LIGHT);
-export type ThemeType = (typeof ThemeTypes)[number];
-
-// 支持的语言
-const supportedLanguages = Object.keys(
-  languageMap,
-) as (keyof typeof languageMap)[];
-export type LanguageType = (typeof supportedLanguages)[number];
 
 export interface HighlightProps {
   /**
@@ -121,44 +81,8 @@ export interface HighlightProps {
   onCopy?: (children: any) => void;
 }
 
-// 自定义规则适配多语言
-const withCustomRule = (fn, enableCustomRule) => (args) => {
-  const { contains, ...rest } = fn(args);
-  const rule = enableCustomRule ? customRule : [];
-  return {
-    ...rest,
-    contains: [
-      // 注入自定义规则(日期, 时间, 日志状态)
-      ...rule,
-      // 原始的规则定义
-      ...contains,
-    ],
-  };
-};
-
-export const registerLanguage = (
-  language: string,
-  enableCustomRule: boolean,
-) => {
-  if (language && languageMap[language]) {
-    hljs.registerLanguage(
-      language,
-      withCustomRule(languageMap[language], enableCustomRule),
-    );
-  } else {
-    Object.keys(languageMap).forEach((lan) => {
-      hljs.registerLanguage(
-        lan,
-        withCustomRule(languageMap[lan], enableCustomRule),
-      );
-    });
-  }
-};
-
 export const renderHightlight = (language, content) => {
-  const result = language
-    ? hljs.highlight(language, content || '')
-    : hljs.highlightAuto(content);
+  const result = language ? hljs.highlight(language, content || '') : hljs.highlightAuto(content);
   return result;
 };
 
@@ -180,24 +104,14 @@ const Highlight: React.FC<HighlightProps> = (props) => {
   const prefixCls = getPrefixCls('highlight', customPrefixCls);
   const { styles } = useStyles(prefixCls);
 
-  const themeClass =
-    theme === THEME_DARK ? styles.darkTheme : styles.lightTheme;
+  useHighlight(language);
+
+  const themeClass = theme === THEME_DARK ? styles.darkTheme : styles.lightTheme;
 
   const codeRef = createRef<HTMLPreElement>();
 
   // 代码块展示的结构
   const [codeBlock, setCodeBlock] = useState();
-
-  // 按需加载语言
-  useEffect(() => {
-    if (language && languageMap[language]) {
-      hljs.registerLanguage(language, languageMap[language]);
-    } else {
-      Object.keys(languageMap).forEach((lan) => {
-        hljs.registerLanguage(lan, languageMap[lan]);
-      });
-    }
-  }, [language]);
 
   const highlightCode = () => {
     // 数据为空即跳过渲染
@@ -281,10 +195,7 @@ const Highlight: React.FC<HighlightProps> = (props) => {
                 color: `${theme === THEME_DARK ? `#fafafa` : `#2b303b`}`,
               }}
             />
-            <CheckOutlined
-              className={styles.copyIcon}
-              style={{ color: 'rgb(63,177,99)' }}
-            />
+            <CheckOutlined className={styles.copyIcon} style={{ color: 'rgb(63,177,99)' }} />
           </button>
         </CopyToClipboard>
       </>
@@ -310,9 +221,7 @@ const Highlight: React.FC<HighlightProps> = (props) => {
             height,
             borderCollapse: 'collapse',
           }}
-          className={classNames(
-            `${theme === THEME_DARK ? styles.darkTheme : styles.lightTheme}`,
-          )}
+          className={classNames(`${theme === THEME_DARK ? styles.darkTheme : styles.lightTheme}`)}
         >
           <tbody>{codeBlock}</tbody>
         </table>
