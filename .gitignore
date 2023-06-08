@@ -11,3 +11,4 @@ package-lock.json
 docs-dist
 server
 .husky/prepare-commit-msg
+coverage
