@@ -17,5 +17,13 @@
     }
   },
   "exclude": ["node_modules", "dist"],
-  "include": ["src", "config/config.ts", "docs", ".dumi/**/*", "tests", ".dumirc.ts"]
+  "include": [
+    "src",
+    "config/config.ts",
+    "vitest.config.ts",
+    "docs",
+    ".dumi/**/*",
+    "tests",
+    ".dumirc.ts"
+  ]
 }
