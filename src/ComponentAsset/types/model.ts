@@ -1,8 +1,8 @@
 import type { EmitterEnv } from '@ant-design/pro-editor';
 import type { EditorMode } from '../../ProEditor';
-import type { JSONSchemaObject } from '../types';
+import type { JSONSchema } from '../types';
 
-export type FuncAssetSchema<C> = (mode?: EditorMode) => JSONSchemaObject & C;
+export type FuncAssetSchema<C> = (mode?: EditorMode) => JSONSchema & C;
 
 /**
  * 资产配置模型
