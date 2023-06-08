@@ -7,21 +7,14 @@ import type { CSSProperties, FC, HTMLAttributes } from 'react';
 import { memo, useRef } from 'react';
 import { shallow } from 'zustand/shallow';
 
-import {
-  CollapseAction,
-  DeleteAction,
-  HandleAction,
-} from '../../../ActionIcon';
+import { CollapseAction, DeleteAction, HandleAction } from '@/ActionIcon';
 
 import { useStore } from '../../store';
 import { FlattenNode } from '../../types';
 import { iOS } from '../../utils/utils';
 
 const useStyles = createStyles(
-  (
-    { css, cx },
-    { prefix, collapsed }: { prefix: string; collapsed: boolean },
-  ) => {
+  ({ css, cx }, { prefix, collapsed }: { prefix: string; collapsed: boolean }) => {
     return {
       container: cx(
         prefix,
@@ -63,8 +56,7 @@ const useStyles = createStyles(
   },
 );
 
-export interface TreeItemProps
-  extends Omit<HTMLAttributes<HTMLLIElement>, 'id'> {
+export interface TreeItemProps extends Omit<HTMLAttributes<HTMLLIElement>, 'id'> {
   /**
    * @title 子节点数量
    */
@@ -123,10 +115,8 @@ export interface TreeItemProps
   prefixCls: string;
 }
 
-const animateLayoutChanges: AnimateLayoutChanges = ({
-  isSorting,
-  wasDragging,
-}) => (isSorting || wasDragging ? false : true);
+const animateLayoutChanges: AnimateLayoutChanges = ({ isSorting, wasDragging }) =>
+  isSorting || wasDragging ? false : true;
 
 const TreeItem: FC<TreeItemProps> = memo(
   ({
@@ -148,30 +138,22 @@ const TreeItem: FC<TreeItemProps> = memo(
     const prefix = `${prefixCls}-node`;
     const { styles, cx } = useStyles({ prefix, collapsed });
 
-    const [
-      indentationWidth,
-      selected,
-      Content,
-      Extra,
-      withKeyboardSelectNode,
-      deselectedNode,
-    ] = useStore(
-      (s) => [
-        s.indentationWidth,
-        s.selectedIds.includes(id),
-        s.renderContent,
-        s.renderExtra,
-        s.withKeyboardSelectNode,
-        s.deselectedNode,
-      ],
-      shallow,
-    );
+    const [indentationWidth, selected, Content, Extra, withKeyboardSelectNode, deselectedNode] =
+      useStore(
+        (s) => [
+          s.indentationWidth,
+          s.selectedIds.includes(id),
+          s.renderContent,
+          s.renderExtra,
+          s.withKeyboardSelectNode,
+          s.deselectedAll,
+        ],
+        shallow,
+      );
 
     const extraPanelVisible = showExtra && !clone;
 
-    const containerRef = useRef(
-      document.getElementsByClassName(prefixCls).item(0),
-    );
+    const containerRef = useRef(document.getElementsByClassName(prefixCls).item(0));
 
     const {
       isDragging: ghost,
@@ -216,18 +198,11 @@ const TreeItem: FC<TreeItemProps> = memo(
           }}
           {...props}
         >
-          <div
-            className={`${prefix}-body`}
-            ref={setDraggableNodeRef}
-            style={style}
-          >
+          <div className={`${prefix}-body`} ref={setDraggableNodeRef} style={style}>
             <HandleAction
               {...listeners}
               {...attributes}
-              className={cx(
-                `${prefix}-handle`,
-                clone ? undefined : styles.handle,
-              )}
+              className={cx(`${prefix}-handle`, clone ? undefined : styles.handle)}
               style={{ width: 12 }}
             />
             {onCollapse && (
@@ -239,15 +214,9 @@ const TreeItem: FC<TreeItemProps> = memo(
                 className={styles.collapseAction}
               />
             )}
-            <span className={`${prefix}-content`}>
-              {Content ? <Content {...node} /> : id}
-            </span>
+            <span className={`${prefix}-content`}>{Content ? <Content {...node} /> : id}</span>
             {!hideRemove && !clone && onRemove && (
-              <DeleteAction
-                onClick={onRemove}
-                title={'删除此项'}
-                className={styles.deleteAction}
-              />
+              <DeleteAction onClick={onRemove} title={'删除此项'} className={styles.deleteAction} />
             )}
             {clone && childCount && childCount > 1 ? (
               <span className={`${prefix}-count`}>{childCount}</span>

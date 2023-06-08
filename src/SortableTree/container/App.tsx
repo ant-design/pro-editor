@@ -7,11 +7,8 @@ import {
   useSensor,
   useSensors,
 } from '@dnd-kit/core';
-import {
-  SortableContext,
-  verticalListSortingStrategy,
-} from '@dnd-kit/sortable';
-import isEqual from 'lodash.isequal';
+import { SortableContext, verticalListSortingStrategy } from '@dnd-kit/sortable';
+import isEqual from 'fast-deep-equal';
 import type { CSSProperties, FC } from 'react';
 import { memo, useEffect, useMemo, useRef, useState } from 'react';
 import { createPortal } from 'react-dom';
@@ -23,7 +20,7 @@ import type { SensorContext } from '../types';
 
 import { dataFlattenSelector, sortedIdsSelector, useStore } from '../store';
 
-import { getPrefixCls } from '../../theme';
+import { getPrefixCls } from '@/theme';
 import DragOverlay from '../features/DragOverlay';
 import SortableList from '../features/TreeList';
 
@@ -127,10 +124,7 @@ const App: FC<AppProps> = memo(
           onDragEnd={handleDragEnd}
           onDragCancel={handleDragCancel}
         >
-          <SortableContext
-            items={sortedIds}
-            strategy={verticalListSortingStrategy}
-          >
+          <SortableContext items={sortedIds} strategy={verticalListSortingStrategy}>
             <>
               <SortableList prefixCls={prefixCls} />
               {overlay}

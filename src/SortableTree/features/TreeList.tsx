@@ -1,9 +1,8 @@
+import { createStyles, cx, getStudioStylish } from '@/theme';
 import { PlusOutlined } from '@ant-design/icons';
 import { useMemoizedFn } from 'ahooks';
 import { Button } from 'antd';
-import { cx } from 'antd-style';
 import isEqual from 'lodash.isequal';
-import type { FC } from 'react';
 import { memo } from 'react';
 import { shallow } from 'zustand/shallow';
 
@@ -18,7 +17,7 @@ interface TreeNodeProps {
   node: FlattenNode;
 }
 
-const TreeNode: FC<TreeNodeProps> = memo(({ prefixCls, node }) => {
+const TreeNode = memo<TreeNodeProps>(({ prefixCls, node }) => {
   const [activeId, indentationWidth, dispatchTreeData, hideRemove] = useStore(
     (s) => [s.activeId, s.indentationWidth, s.dispatchTreeData, s.hideRemove],
     shallow,
@@ -27,9 +26,7 @@ const TreeNode: FC<TreeNodeProps> = memo(({ prefixCls, node }) => {
   const projected = useStore(projectedSelector, shallow);
   const { id, children, collapsed, depth } = node;
 
-  const onRemove = useMemoizedFn(() =>
-    dispatchTreeData({ type: 'removeNode', id }),
-  );
+  const onRemove = useMemoizedFn(() => dispatchTreeData({ type: 'removeNode', id }));
 
   return (
     <SortableTreeItem
@@ -44,9 +41,7 @@ const TreeNode: FC<TreeNodeProps> = memo(({ prefixCls, node }) => {
       showExtra={node.showExtra}
       // 交互操作
       onCollapse={
-        children.length
-          ? () => dispatchTreeData({ type: 'toggleCollapse', id })
-          : undefined
+        children.length ? () => dispatchTreeData({ type: 'toggleCollapse', id }) : undefined
       }
       node={node}
       onRemove={onRemove}
@@ -54,16 +49,35 @@ const TreeNode: FC<TreeNodeProps> = memo(({ prefixCls, node }) => {
   );
 }, isEqual);
 
+const useStyle = createStyles((props, prefixCls: string) => {
+  const { token, css } = props;
+  const common = getStudioStylish(props);
+
+  return {
+    btnAdd: cx(
+      'studio-btn-solid',
+      `${prefixCls}-btn-add`,
+      css`
+        height: 24px;
+        padding-block: 2px;
+        margin-top: ${token.marginXXS}px;
+      `,
+      common.defaultButton,
+    ),
+  };
+});
+
 interface TreeListProps {
   prefixCls: string;
 }
 
-const TreeList: FC<TreeListProps> = ({ prefixCls }) => {
+const TreeList = memo<TreeListProps>(({ prefixCls }) => {
   const [dispatchTreeData, hideAdd] = useStore(
     (s) => [s.dispatchTreeData, s.hideAdd, s.hideRemove],
     shallow,
   );
   const flattenData: FlattenNode[] = useStore(dataFlattenSelector, isEqual);
+  const { styles } = useStyle(prefixCls);
 
   return (
     <>
@@ -74,7 +88,7 @@ const TreeList: FC<TreeListProps> = ({ prefixCls }) => {
         <Button
           block
           size={'small'}
-          className={cx(`${prefixCls}-btn-add`, 'studio-btn-solid')}
+          className={styles.btnAdd}
           onClick={() => {
             const index = flattenData.length + 1;
             dispatchTreeData({
@@ -89,6 +103,6 @@ const TreeList: FC<TreeListProps> = ({ prefixCls }) => {
       )}
     </>
   );
-};
+});
 
-export default memo(TreeList);
+export default TreeList;

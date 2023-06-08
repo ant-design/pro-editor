@@ -1,25 +1,19 @@
-import type { FlattenNode } from '../../SortableTree';
+import type { FlattenNode } from '../types';
 import { getFlattenedData, getProjection } from '../utils/utils';
 
-import type { Store } from './store';
+import type { InternalSortableTreeStore } from './store';
 
-export const dataFlattenSelector = (s: Store): FlattenNode[] =>
+export const dataFlattenSelector = (s: InternalSortableTreeStore): FlattenNode[] =>
   getFlattenedData(s.treeData, s.activeId);
 
-export const sortedIdsSelector = (s: Store) => {
+export const sortedIdsSelector = (s: InternalSortableTreeStore) => {
   return dataFlattenSelector(s).map(({ id }) => id);
 };
 
-export const projectedSelector = (s: Store) => {
+export const projectedSelector = (s: InternalSortableTreeStore) => {
   const { activeId, overId, offsetLeft, indentationWidth } = s;
 
   return activeId && overId
-    ? getProjection(
-        dataFlattenSelector(s),
-        activeId,
-        overId,
-        offsetLeft,
-        indentationWidth,
-      )
+    ? getProjection(dataFlattenSelector(s), activeId, overId, offsetLeft, indentationWidth)
     : null;
 };
