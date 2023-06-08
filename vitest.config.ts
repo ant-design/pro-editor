@@ -11,8 +11,8 @@ export default defineConfig({
     globals: true,
     testTimeout: 20000,
     coverage: {
-      provider: 'c8',
-      reporter: ['text', 'json', 'lcov'],
+      provider: 'v8',
+      reporter: ['text', 'json', 'lcov', 'text-summary'],
     },
     alias: {
       '@ant-design/pro-editor': path.join(__dirname, './src'),
