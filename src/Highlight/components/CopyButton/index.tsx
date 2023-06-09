@@ -2,7 +2,7 @@ import { CheckOutlined, CopyOutlined } from '@ant-design/icons';
 import classNames from 'classnames';
 import { useEffect, useState } from 'react';
 import CopyToClipboard from 'react-copy-to-clipboard';
-import { THEME_DARK, ThemeType } from '../../hooks/useHighlight';
+import { THEME_DARK, ThemeType } from '../../theme';
 import { useStyles } from './style';
 
 interface CopyButtonProps {

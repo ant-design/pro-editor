@@ -9,15 +9,11 @@ import { createRef, useEffect, useState } from 'react';
 import { getPrefixCls } from '../theme';
 import CopyButton from './components/CopyButton';
 import HighlightCell from './components/HighlightCell';
-import {
-  LanguageType,
-  THEME_DARK,
-  THEME_LIGHT,
-  ThemeType,
-  useHighlight,
-} from './hooks/useHighlight';
+import { LanguageType } from './hooks/language';
+import { useHighlight } from './hooks/useHighlight';
 import { useKeyDownCopyEvent } from './hooks/useKeyDownCopyEvent';
 import { useStyles } from './style';
+import { THEME_DARK, THEME_LIGHT, ThemeType } from './theme';
 
 export interface HighlightProps {
   /**
@@ -100,7 +96,7 @@ const Highlight: React.FC<HighlightProps> = (props) => {
   const prefixCls = getPrefixCls('highlight', customPrefixCls);
   const { styles } = useStyles(prefixCls);
 
-  const { loading, renderHighlight } = useHighlight(language, theme);
+  const { renderHighlight } = useHighlight(language);
 
   const themeClass = theme === THEME_DARK ? styles.darkTheme : styles.lightTheme;
 
@@ -142,10 +138,9 @@ const Highlight: React.FC<HighlightProps> = (props) => {
 
   // 触发重新渲染
   useEffect(() => {
-    if (loading) return;
     highlightCode();
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [children, innerHTML, theme, language, lineNumber, loading]);
+  }, [children, innerHTML, theme, language, lineNumber]);
 
   // 支持复制能力
   useKeyDownCopyEvent(codeRef, onCopy);
