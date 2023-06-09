@@ -75,11 +75,10 @@ const Highlight: React.FC<HighlightProps> = (props) => {
   } = props;
 
   const prefixCls = getPrefixCls('highlight', customPrefixCls);
-  const { styles } = useStyles({ prefixCls, theme });
+  const { styles } = useStyles({ prefixCls, theme, lineNumber });
+  const { loading, renderShiki } = useShiki(language, theme);
   const codeRef = createRef<HTMLDivElement>();
   useKeyDownCopyEvent(codeRef, onCopy);
-
-  const { loading, renderShiki } = useShiki(language, theme);
 
   return (
     <>

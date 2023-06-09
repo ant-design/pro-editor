@@ -19,5 +19,6 @@ export default () => (
     onCopy={(children) => {
       console.log('代码复制', children);
     }}
+    themeMode={'dark'}
   />
 );
