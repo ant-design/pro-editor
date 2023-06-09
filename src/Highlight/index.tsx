@@ -1,12 +1,10 @@
-import { Loading3QuartersOutlined as Loading } from '@ant-design/icons';
 import classNames from 'classnames';
 import { createRef } from 'react';
-import { Center } from 'react-layout-kit';
 import { getPrefixCls } from '../theme';
 import CopyButton from './components/CopyButton';
 import Highlighter from './components/HighLighter';
+import Shiki from './components/Shiki';
 import { useKeyDownCopyEvent } from './hooks/useKeyDownCopyEvent';
-import { useShiki } from './hooks/useShiki';
 import { useStyles } from './style';
 import { THEME_LIGHT, ThemeType } from './theme';
 
@@ -60,6 +58,10 @@ export interface HighlightProps {
    * @title 复制按钮点击后回调
    */
   onCopy?: (children: any) => void;
+  /**
+   * 高亮器
+   */
+  highlighter?: 'shiki' | 'highlight.js';
 }
 
 const Highlight: React.FC<HighlightProps> = (props) => {
@@ -72,12 +74,12 @@ const Highlight: React.FC<HighlightProps> = (props) => {
     theme = THEME_LIGHT,
     language,
     prefixCls: customPrefixCls,
+    highlighter = 'highlight.js',
     onCopy,
   } = props;
 
   const prefixCls = getPrefixCls('highlight', customPrefixCls);
-  const { styles, theme: globalTheme } = useStyles({ prefixCls, theme, lineNumber });
-  const { error, loading, renderShiki } = useShiki(language, theme);
+  const { styles } = useStyles({ prefixCls, theme, lineNumber });
   const codeRef = createRef<HTMLDivElement>();
   useKeyDownCopyEvent(codeRef, onCopy);
 
@@ -92,12 +94,7 @@ const Highlight: React.FC<HighlightProps> = (props) => {
         {copyable && (
           <CopyButton prefixCls={prefixCls} onCopy={onCopy} theme={theme} content={children} />
         )}
-        {loading ? (
-          <Center className={styles.loading} gap={8} horizontal>
-            <Loading spin style={{ color: globalTheme.colorTextTertiary }} />
-            Highlighting...
-          </Center>
-        ) : error ? (
+        {highlighter === 'highlight.js' ? (
           <Highlighter
             lineNumber={lineNumber}
             language={language}
@@ -107,12 +104,9 @@ const Highlight: React.FC<HighlightProps> = (props) => {
             {children}
           </Highlighter>
         ) : (
-          <div
-            className={classNames(styles.shiki)}
-            dangerouslySetInnerHTML={{
-              __html: renderShiki(children) || '',
-            }}
-          />
+          <Shiki lineNumber={lineNumber} language={language} theme={theme} prefixCls={prefixCls}>
+            {children}
+          </Shiki>
         )}
       </div>
     </>

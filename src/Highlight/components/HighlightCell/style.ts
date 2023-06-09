@@ -19,9 +19,11 @@ export const useStyles = createStyles(({ css, cx }, prefixCls) => {
     index: cx(
       `${prefix}-index`,
       css`
+        box-sizing: border-box;
         width: 40px;
         min-width: 40px;
-        padding: 2px 8px;
+        padding-block: 2px;
+        padding-inline: 8px;
         color: #aaa;
         text-align: right;
         background: rgba(255, 255, 255, 0.03);

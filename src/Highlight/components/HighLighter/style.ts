@@ -5,11 +5,17 @@ export const useStyles = createStyles(({ css, cx }, prefixCls) => {
   const prefix = `${prefixCls}`;
 
   return {
+    table: cx(
+      `${prefix}-table`,
+      css`
+        padding: 0;
+        border-collapse: collapse;
+      `,
+    ),
     lightTheme: cx(
       `${prefix}-light`,
       css`
         display: block;
-        padding: 0.5em;
         overflow-x: auto;
         color: #383a42;
         background: ${lightThemeBg};
@@ -88,7 +94,6 @@ export const useStyles = createStyles(({ css, cx }, prefixCls) => {
       `${prefix}-dark`,
       css`
         display: block;
-        padding: 0.5em;
         overflow-x: auto;
         color: #c0c5ce;
         background: ${darkThemeBg};

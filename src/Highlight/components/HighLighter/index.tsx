@@ -62,13 +62,12 @@ const HighLighter: React.FC<HighLighterProps> = (props) => {
   }, [children, theme, language, lineNumber]);
 
   return (
-    <pre className={classNames(prefixCls, themeClass)}>
+    <pre className={classNames(themeClass)}>
       <table
-        style={{
-          padding: '0',
-          borderCollapse: 'collapse',
-        }}
-        className={classNames(`${theme === THEME_DARK ? styles.darkTheme : styles.lightTheme}`)}
+        className={classNames(
+          styles.table,
+          `${theme === THEME_DARK ? styles.darkTheme : styles.lightTheme}`,
+        )}
       >
         <tbody>{codeBlock}</tbody>
       </table>
