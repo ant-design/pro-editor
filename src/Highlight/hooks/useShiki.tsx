@@ -10,6 +10,9 @@ export const useShiki = (language, theme) => {
     const highlighter = await getHighlighter({
       langs: Object.keys(languageMap) as any,
       themes: [themeConfig(true), themeConfig(false)],
+      paths: {
+        wasm: 'https://gw.alipayobjects.com/os/lib/shiki-es/0.2.0/dist/assets/dist/onig.wasm',
+      },
     });
     setShiki(highlighter);
   };

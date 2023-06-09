@@ -23,6 +23,10 @@ group: 基础组件
 
 <code src="./demos/lineNumber.tsx" ></code>
 
+### 主题 & 语言切换
+
+<code src="./demos/theme.tsx" ></code>
+
 ## API 参数
 
 ### Highlight
@@ -45,3 +49,6 @@ group: 基础组件
 - markdown
 - xml
 - yaml
+- bash
+- python
+- sql
