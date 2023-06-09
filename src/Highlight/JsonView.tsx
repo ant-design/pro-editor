@@ -1,8 +1,8 @@
 import { JsonViewer } from '@textea/json-viewer';
 import classNames from 'classnames';
 
+import { THEME_DARK } from './hooks/useHighlight';
 import type { HighlightProps } from './index';
-import { THEME_DARK } from './useHighlight';
 
 import { getPrefixCls } from '../theme';
 

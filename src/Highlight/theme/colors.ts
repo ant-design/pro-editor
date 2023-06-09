@@ -13,6 +13,7 @@ type colorStep = [
   string,
   string,
 ];
+
 export interface ColorScaleItem {
   dark: colorStep;
   darkA: colorStep;

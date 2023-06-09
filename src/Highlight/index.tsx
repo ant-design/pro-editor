@@ -7,12 +7,18 @@
 import classNames from 'classnames';
 import { createRef, isValidElement, useEffect, useState } from 'react';
 import { getPrefixCls } from '../theme';
-import HighlightCell from './HighlightCell';
 import JsonView from './JsonView';
 import CopyButton from './components/CopyButton';
+import HighlightCell from './components/HighlightCell';
+import {
+  LanguageType,
+  THEME_DARK,
+  THEME_LIGHT,
+  ThemeType,
+  useHighlight,
+} from './hooks/useHighlight';
+import { useKeyDownCopyEvent } from './hooks/useKeyDownCopyEvent';
 import { useStyles } from './style';
-import { LanguageType, THEME_DARK, THEME_LIGHT, ThemeType, useHighlight } from './useHighlight';
-import { useKeyDownCopyEvent } from './useKeyDownCopyEvent';
 
 export interface HighlightProps {
   /**

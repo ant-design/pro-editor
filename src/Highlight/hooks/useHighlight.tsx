@@ -1,16 +1,16 @@
 import hljs from 'highlight.js/lib/core';
 import { getHighlighter, type Highlighter } from 'shiki-es';
-import { default as javascript, default as jsx } from './languages/javascript';
+import { default as javascript, default as jsx } from '../languages/javascript';
 // tsx 本质上也是采用typescript进行解析，hljs做了支持
 import { useEffect, useState } from 'react';
-import css from './languages/css';
-import java from './languages/java';
-import json from './languages/json';
-import markdown from './languages/markdown';
-import { default as tsx, default as typescript } from './languages/typescript';
-import xml from './languages/xml';
-import yaml from './languages/yaml';
-import { themeConfig } from './theme';
+import css from '../languages/css';
+import java from '../languages/java';
+import json from '../languages/json';
+import markdown from '../languages/markdown';
+import { default as tsx, default as typescript } from '../languages/typescript';
+import xml from '../languages/xml';
+import yaml from '../languages/yaml';
+import { themeConfig } from '../theme';
 
 export const THEME_DARK = 'dark';
 export const THEME_LIGHT = 'light';
