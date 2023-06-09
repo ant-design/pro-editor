@@ -5,9 +5,8 @@
  * 优先支持蚂蚁主流语言，没有import在代码中使用的不会打包
  */
 import classNames from 'classnames';
-import { createRef, isValidElement, useEffect, useState } from 'react';
+import { createRef, useEffect, useState } from 'react';
 import { getPrefixCls } from '../theme';
-import JsonView from './JsonView';
 import CopyButton from './components/CopyButton';
 import HighlightCell from './components/HighlightCell';
 import {
@@ -61,10 +60,8 @@ export interface HighlightProps {
    */
   innerHTML?: boolean;
   /**
-   * @title 高亮内容，为 JSON 时支持 object
-   * @description 高亮内容，为 JSON 时支持 object
-   * @renderType json
-   * @renderOptions {"format": "string"}
+   * @title 高亮内容
+   * @description 高亮内容
    */
   children?: any;
   /**
@@ -190,18 +187,4 @@ const Highlight: React.FC<HighlightProps> = (props) => {
   );
 };
 
-const HighlightWrapper = (props: HighlightProps) => {
-  const { language, children } = props;
-  if (
-    language === 'json' &&
-    children &&
-    typeof children === 'object' &&
-    !isValidElement(children)
-  ) {
-    return <JsonView {...props} json={children} />;
-  }
-
-  return <Highlight {...props} />;
-};
-
-export { HighlightWrapper as Highlight };
+export { Highlight };

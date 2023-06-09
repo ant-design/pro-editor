@@ -27,12 +27,6 @@ group: 基础组件
 
 <code src="./demos/lineNumber.tsx" ></code>
 
-### JSON 格式
-
-当格式为 json 时，`children` 支持传入 `object` 对象用于层级收放展示。
-
-<code src="./demos/json.tsx" ></code>
-
 ## API 参数
 
 ### Highlight
