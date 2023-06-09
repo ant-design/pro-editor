@@ -6,7 +6,6 @@
  */
 import { CheckOutlined, CopyOutlined } from '@ant-design/icons';
 import classNames from 'classnames';
-import hljs from 'highlight.js/lib/core';
 import { createRef, isValidElement, useEffect, useState } from 'react';
 import CopyToClipboard from 'react-copy-to-clipboard';
 import { getPrefixCls } from '../theme';
@@ -81,11 +80,6 @@ export interface HighlightProps {
   onCopy?: (children: any) => void;
 }
 
-export const renderHightlight = (language, content) => {
-  const result = language ? hljs.highlight(language, content || '') : hljs.highlightAuto(content);
-  return result;
-};
-
 const Highlight: React.FC<HighlightProps> = (props) => {
   const {
     children,
@@ -104,7 +98,7 @@ const Highlight: React.FC<HighlightProps> = (props) => {
   const prefixCls = getPrefixCls('highlight', customPrefixCls);
   const { styles } = useStyles(prefixCls);
 
-  useHighlight(language);
+  const { renderHighlight } = useHighlight(language);
 
   const themeClass = theme === THEME_DARK ? styles.darkTheme : styles.lightTheme;
 
@@ -120,7 +114,7 @@ const Highlight: React.FC<HighlightProps> = (props) => {
     }
 
     // 构造table展示codeblock
-    const { value } = renderHightlight(language, children);
+    const { value } = renderHighlight(language, children);
     const sourceData = value.split(/\r?\n/);
     // 构造整个list所需要的内容（行号和内容）
     const rowList = sourceData.map((rowValue, index) => ({
