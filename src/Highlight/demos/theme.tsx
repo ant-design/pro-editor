@@ -7,7 +7,7 @@ import { Select, Space } from 'antd';
 import { useState } from 'react';
 import configs from './config';
 
-const DEFAULT_LANGUAGE = 'bash';
+const DEFAULT_LANGUAGE = 'typescript';
 const DEFAULT_THEME = 'light';
 const DEFAULT_LINENUMBER = 'false';
 const { Option } = Select;

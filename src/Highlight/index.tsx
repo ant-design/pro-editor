@@ -1,9 +1,10 @@
+import { Loading3QuartersOutlined as Loading } from '@ant-design/icons';
 import classNames from 'classnames';
 import { createRef } from 'react';
+import { Center } from 'react-layout-kit';
 import { getPrefixCls } from '../theme';
 import CopyButton from './components/CopyButton';
 import Highlighter from './components/HighLighter';
-import { LanguageType } from './hooks/language';
 import { useKeyDownCopyEvent } from './hooks/useKeyDownCopyEvent';
 import { useShiki } from './hooks/useShiki';
 import { useStyles } from './style';
@@ -27,11 +28,11 @@ export interface HighlightProps {
   prefixCls?: string;
   /**
    * @title 指定语言
-   * @description 指定语言，目前支持 javascript,typescript,css,json,markdown,xml,yaml
+   * @description 指定语言
    * @renderType select
    * @default "typescript"
    */
-  language: LanguageType;
+  language: string;
   /**
    * @title 主题
    * @description 主题颜色, dark 黑色主题，light 白色主题
@@ -75,8 +76,8 @@ const Highlight: React.FC<HighlightProps> = (props) => {
   } = props;
 
   const prefixCls = getPrefixCls('highlight', customPrefixCls);
-  const { styles } = useStyles({ prefixCls, theme, lineNumber });
-  const { loading, renderShiki } = useShiki(language, theme);
+  const { styles, theme: globalTheme } = useStyles({ prefixCls, theme, lineNumber });
+  const { error, loading, renderShiki } = useShiki(language, theme);
   const codeRef = createRef<HTMLDivElement>();
   useKeyDownCopyEvent(codeRef, onCopy);
 
@@ -92,6 +93,11 @@ const Highlight: React.FC<HighlightProps> = (props) => {
           <CopyButton prefixCls={prefixCls} onCopy={onCopy} theme={theme} content={children} />
         )}
         {loading ? (
+          <Center className={styles.loading} gap={8} horizontal>
+            <Loading spin style={{ color: globalTheme.colorTextTertiary }} />
+            Highlighting...
+          </Center>
+        ) : error ? (
           <Highlighter
             lineNumber={lineNumber}
             language={language}

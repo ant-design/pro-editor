@@ -28,7 +28,6 @@ export const useStyles = createStyles(({ css, cx, token }, { prefixCls, theme, l
       css`
         position: relative;
         margin: 0;
-        border-radius: ${token.borderRadius}px;
         background-color: ${theme === 'dark' ? darkThemeBg : lightThemeBg};
 
         pre {
@@ -49,6 +48,26 @@ export const useStyles = createStyles(({ css, cx, token }, { prefixCls, theme, l
           overflow-x: scroll;
           background: none !important;
         }
+      `,
+    ),
+    loading: cx(
+      css`
+        backdrop-filter: saturate(180%) blur(10px);
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        height: 36px;
+        padding: 0 8px;
+
+        font-family: ${token.fontFamilyCode};
+        color: ${token.colorTextTertiary};
+
+        border-radius: ${token.borderRadius};
       `,
     ),
   };

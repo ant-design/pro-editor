@@ -25,6 +25,8 @@ group: 基础组件
 
 ### 主题 & 语言切换
 
+你可以通过这个示例查看不同语言在不同主题下的效果。
+
 <code src="./demos/theme.tsx" ></code>
 
 ## API 参数
@@ -49,6 +51,5 @@ group: 基础组件
 - markdown
 - xml
 - yaml
-- bash
 - python
 - sql
