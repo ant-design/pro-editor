@@ -31,14 +31,13 @@ group: 基础组件
 
 ### Highlight
 
-| 参数       | 说明                                                                                                                                                                                   | 类型    | 默认值  |
-| :--------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :------ | :------ |
-| language   | 指定语言类型，详见下表，若不指定语言组件会智能探测为可选类型语言中的一种进行渲染                                                                                                       | string  | -       |
-| theme      | 指定主题，可选 `dark`, `light`                                                                                                                                                         | string  | `light` |
-| lineNumber | 指定代码块行号是否开启，可选 `true`, `false`                                                                                                                                           | boolean | false   |
-| copyable   | 指定代码块是否展示复制按钮，可选 `true`, `false`                                                                                                                                       | boolean | true    |
-| height     | 指定代码块高度，用于需要控制代码块高度固定的场景, 非 innerHTML 场景有效                                                                                                                | number  | -       |
-| innerHTML  | 使用 `dangerouslySetInnerHTML` 来渲染多段代码，代码使用`<pre><code></code></pre>`进行包裹，在从 cms 场景获取代码渲染的情况下非常有用，请自行确保传入的代码内容安全，防止`XSS`代码注入. | boolean | false   |
+| 参数       | 说明                                             | 类型    | 默认值  |
+| :--------- | :----------------------------------------------- | :------ | :------ |
+| language   | 指定语言类型，详见下表                           | string  | -       |
+| theme      | 指定主题，可选 `dark`, `light`                   | string  | `light` |
+| lineNumber | 指定代码块行号是否开启，可选 `true`, `false`     | boolean | false   |
+| copyable   | 指定代码块是否展示复制按钮，可选 `true`, `false` | boolean | true    |
+| height     | 指定代码块高度，用于需要控制代码块高度固定的场景 | number  | -       |
 
 ### 目前支持的语言列表
 

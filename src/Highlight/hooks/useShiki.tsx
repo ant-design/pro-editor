@@ -3,10 +3,6 @@ import { getHighlighter, type Highlighter } from 'shiki-es';
 import { themeConfig } from '../theme';
 import { languageMap } from './language';
 
-// 支持的语言
-const supportedLanguages = Object.keys(languageMap) as (keyof typeof languageMap)[];
-export type LanguageType = (typeof supportedLanguages)[number];
-
 export const useHighlight = (language, theme) => {
   const [shiki, setShiki] = useState<Highlighter>(null);
 
