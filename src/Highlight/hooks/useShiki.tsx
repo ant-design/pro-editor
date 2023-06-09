@@ -45,14 +45,14 @@ export const useShiki = (language, theme) => {
   }, []);
 
   const renderShiki = (content) => {
-    if (shiki.getLoadedLanguages().includes(language)) {
+    if (shiki && shiki.getLoadedLanguages().includes(language)) {
       const result = shiki?.codeToHtml(content, {
         lang: language,
         theme,
       });
       return result;
     } else {
-      return content;
+      return `<pre><code>${content}</code></pre>`;
     }
   };
 

@@ -31,6 +31,10 @@ export const useStyles = createStyles(({ css, cx, token }, { prefixCls, lineNumb
     ),
     loading: cx(
       css`
+        backdrop-filter: saturate(180%) blur(10px);
+        position: absolute;
+        top: 0;
+        right: 0;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -40,6 +44,8 @@ export const useStyles = createStyles(({ css, cx, token }, { prefixCls, lineNumb
 
         font-family: ${token.fontFamilyCode};
         color: ${token.colorTextTertiary};
+
+        border-radius: ${token.borderRadius};
       `,
     ),
   };

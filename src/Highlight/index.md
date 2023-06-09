@@ -23,7 +23,13 @@ group: 基础组件
 
 <code src="./demos/lineNumber.tsx" ></code>
 
-### 主题 & 语言切换
+### 使用 Shiki 渲染器
+
+使用 [Shiki](https://github.com/shikijs/shiki) 渲染，Shiki 使用 TextMate 语法器更加精确，代价是需要加载额外的 wasm 文件，在网络不好的情况下体验不佳。
+
+<code src="./demos/shiki.tsx" ></code>
+
+### 主题 & 语言 & 行号 & 渲染器
 
 你可以通过这个示例查看不同语言在不同主题下的效果。
 
