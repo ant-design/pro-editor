@@ -4,13 +4,12 @@
  * 如果没有在 https://github.com/highlightjs/highlight.js/tree/master/src/languages 中查找是否支持，然后添加
  * 优先支持蚂蚁主流语言，没有import在代码中使用的不会打包
  */
-import { CheckOutlined, CopyOutlined } from '@ant-design/icons';
 import classNames from 'classnames';
 import { createRef, isValidElement, useEffect, useState } from 'react';
-import CopyToClipboard from 'react-copy-to-clipboard';
 import { getPrefixCls } from '../theme';
 import HighlightCell from './HighlightCell';
 import JsonView from './JsonView';
+import CopyButton from './components/CopyButton';
 import { useStyles } from './style';
 import { LanguageType, THEME_DARK, THEME_LIGHT, ThemeType, useHighlight } from './useHighlight';
 import { useKeyDownCopyEvent } from './useKeyDownCopyEvent';
@@ -98,14 +97,14 @@ const Highlight: React.FC<HighlightProps> = (props) => {
   const prefixCls = getPrefixCls('highlight', customPrefixCls);
   const { styles } = useStyles(prefixCls);
 
-  const { renderHighlight } = useHighlight(language);
+  const { loading, renderHighlight } = useHighlight(language, theme);
 
   const themeClass = theme === THEME_DARK ? styles.darkTheme : styles.lightTheme;
 
   const codeRef = createRef<HTMLPreElement>();
 
   // 代码块展示的结构
-  const [codeBlock, setCodeBlock] = useState();
+  const [codeBlock, setCodeBlock] = useState(null);
 
   const highlightCode = () => {
     // 数据为空即跳过渲染
@@ -114,7 +113,7 @@ const Highlight: React.FC<HighlightProps> = (props) => {
     }
 
     // 构造table展示codeblock
-    const { value } = renderHighlight(language, children);
+    const value = renderHighlight(children);
     const sourceData = value.split(/\r?\n/);
     // 构造整个list所需要的内容（行号和内容）
     const rowList = sourceData.map((rowValue, index) => ({
@@ -140,9 +139,10 @@ const Highlight: React.FC<HighlightProps> = (props) => {
 
   // 触发重新渲染
   useEffect(() => {
+    if (loading) return;
     highlightCode();
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [children, innerHTML, theme, language, lineNumber]);
+  }, [children, innerHTML, theme, language, lineNumber, loading]);
 
   // 支持复制能力
   useKeyDownCopyEvent(codeRef, onCopy);
@@ -153,48 +153,6 @@ const Highlight: React.FC<HighlightProps> = (props) => {
     customProps.dangerouslySetInnerHTML = { __html: children as string };
     return <div {...customProps} />;
   }
-
-  const CopyButton = () => {
-    const [copyId, setCopyId] = useState<number | undefined>();
-    useEffect(() => {
-      return () => {
-        window.clearTimeout(copyId);
-      };
-    });
-    const [copied, setCopied] = useState(false);
-    return (
-      <>
-        <CopyToClipboard
-          text={children && children.length ? children : ''}
-          onCopy={() => {
-            setCopied(true);
-            const tempCopyId = window.setTimeout(() => {
-              setCopied(false);
-            }, 2000);
-            setCopyId(tempCopyId);
-            if (onCopy) onCopy(children);
-          }}
-        >
-          <button
-            type={'button'}
-            disabled={copied}
-            className={styles.copy}
-            style={{
-              background: `${theme === THEME_DARK ? `#2b303b` : `#fafafa`}`,
-            }}
-          >
-            <CopyOutlined
-              className={classNames(styles.copyIcon, { scoll: copied })}
-              style={{
-                color: `${theme === THEME_DARK ? `#fafafa` : `#2b303b`}`,
-              }}
-            />
-            <CheckOutlined className={styles.copyIcon} style={{ color: 'rgb(63,177,99)' }} />
-          </button>
-        </CopyToClipboard>
-      </>
-    );
-  };
 
   return (
     <>
@@ -207,7 +165,9 @@ const Highlight: React.FC<HighlightProps> = (props) => {
         }}
         className={classNames(prefixCls, className, themeClass)}
       >
-        {copyable && <CopyButton />}
+        {copyable && (
+          <CopyButton prefixCls={prefixCls} onCopy={onCopy} theme={theme} content={children} />
+        )}
         {/* 展示lineNumber或不展示 */}
         <table
           style={{
