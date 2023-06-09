@@ -3,7 +3,7 @@ import { getHighlighter, type Highlighter } from 'shiki-es';
 import { themeConfig } from '../theme';
 import { languageMap } from './language';
 
-export const useHighlight = (language, theme) => {
+export const useShiki = (language, theme) => {
   const [shiki, setShiki] = useState<Highlighter>(null);
 
   const initShiki = async () => {

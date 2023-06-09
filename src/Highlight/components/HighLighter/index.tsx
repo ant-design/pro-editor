@@ -12,12 +12,12 @@ import { THEME_DARK, THEME_LIGHT } from '../../theme';
 import HighlightCell from '../HighlightCell';
 import { useStyles } from './style';
 
-export type HighlighterProps = Pick<
+export type HighLighterProps = Pick<
   HighlightProps,
   'language' | 'children' | 'theme' | 'prefixCls' | 'lineNumber'
 >;
 
-const Highlighter: React.FC<HighlighterProps> = (props) => {
+const HighLighter: React.FC<HighLighterProps> = (props) => {
   const { children, lineNumber = false, theme = THEME_LIGHT, language, prefixCls } = props;
   const [codeBlock, setCodeBlock] = useState(null);
   const { styles } = useStyles(prefixCls);
@@ -76,4 +76,4 @@ const Highlighter: React.FC<HighlighterProps> = (props) => {
   );
 };
 
-export default Highlighter;
+export default HighLighter;

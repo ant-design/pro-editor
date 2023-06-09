@@ -5,10 +5,6 @@ group: 基础组件
 
 # Highlight 代码高亮
 
-> 迁移自 TechUI，并进行精简和修改以适配 TechUI Studio
-
-高亮代码，相较编辑器而言要更轻量，组件封装了[highlight.js](https://highlightjs.org) 的高亮能力，目前 `highlight.js` 支持 [187 种不同类型的语言](https://highlightjs.org/static/demo/)，为防止打包体积过大，目前我们仅加载了部分语言类型，若有新增的语言需求，请联系我们添加。
-
 ## 何时使用
 
 展示代码时使用，不需要编辑代码时使用。

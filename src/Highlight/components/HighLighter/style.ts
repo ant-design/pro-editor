@@ -1,7 +1,5 @@
 import { createStyles } from '../../../theme';
-
-export const lightThemeBg = '#fafafa';
-export const darkThemeBg = '#2b303b';
+import { darkThemeBg, lightThemeBg } from '../../theme';
 
 export const useStyles = createStyles(({ css, cx }, prefixCls) => {
   const prefix = `${prefixCls}`;

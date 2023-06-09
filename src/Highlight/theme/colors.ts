@@ -38,6 +38,9 @@ export interface ColorScales {
   yellow: ColorScaleItem;
 }
 
+export const lightThemeBg = '#fafafa';
+export const darkThemeBg = '#2b303b';
+
 export const colorScales: ColorScales = {
   red: {
     light: [
