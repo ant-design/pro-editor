@@ -1,46 +1,40 @@
 import type { TreeData } from '@ant-design/pro-editor';
-import { IconPicker, SortableTree } from '@ant-design/pro-editor';
-import { Input } from 'antd';
+import { SortableTree, useSortableTree } from '@ant-design/pro-editor';
 import { useState } from 'react';
-import { Flexbox } from 'react-layout-kit';
 
-import type { MenuContent } from './data';
-import { menuData } from './data';
+import { Input } from 'antd';
+import { initialData } from './data';
 
-const NodeRender = ({ node }) => {
-  const [text, setText] = useState(node.content.name);
+interface DataContent {
+  title: string;
+}
+
+const Content = ({ value, id }) => {
+  const instance = useSortableTree();
 
   return (
-    <Flexbox horizontal align={'center'} gap={4}>
-      <div>
-        <IconPicker icon={node.content.icon} />
-      </div>
-      <Input
-        size={'small'}
-        value={text}
-        id={node.id}
-        tabIndex={10}
-        onChange={(e) => {
-          setText(e.target.value);
-        }}
-      />
-    </Flexbox>
+    <Input
+      value={value}
+      onChange={(e) => {
+        instance.updateNodeContent(id, { title: e.target.value });
+      }}
+    />
   );
 };
 
 export default () => {
-  const [treeData, setTreeData] = useState<TreeData<MenuContent>>(menuData);
+  const [treeData, setTreeData] = useState<TreeData<DataContent>>(initialData);
 
   return (
     <div style={{ width: 340, padding: '0 12px' }}>
-      <SortableTree<MenuContent>
+      <SortableTree<DataContent>
         treeData={treeData}
-        onTreeDataChange={(data) => {
-          console.log('变更：', data);
+        renderContent={(item) => <Content id={item.id} value={item.content?.title} />}
+        onTreeDataChange={(data, event) => {
+          console.log('数据：', data);
+          console.log('事件：', event);
           setTreeData(data);
         }}
-        renderContent={(node) => node.content && <NodeRender node={node} />}
-        SHOW_STORE_IN_DEVTOOLS // 用于显示 Redux Devtools
       />
     </div>
   );

@@ -81,8 +81,9 @@ export const useStyles = createStyles(({ css, token }, prefixCls) => {
 
       &-selected {
         .${prefix}-node-body {
-          background-color: ${token.colorPrimaryBg};
-          outline: 1px solid ${token.colorPrimary};
+          // 暂时先不实现选中效果
+          // background-color: ${token.colorPrimaryBg};
+          // outline: 1px solid ${token.colorPrimary};
         }
       }
 
