@@ -23,11 +23,11 @@ group: 基础组件
 
 <code src="./demos/lineNumber.tsx" ></code>
 
-### 使用 Shiki 渲染器
+### 使用 highlight.js 渲染器
 
-使用 [Shiki](https://github.com/shikijs/shiki) 渲染，Shiki 使用 TextMate 语法器更加精确，代价是需要加载额外的 wasm 文件，在网络不好的情况下体验不佳。
+Highlight 默认使用 [Shiki](https://github.com/shikijs/shiki) 渲染，Shiki 使用 TextMate 语法器更加精确，不过需要加载额外的 wasm 文件，在网络不好的情况下体验不佳。你可以通过设定渲染器为 [highlight.js](https://highlightjs.org/) 来替代。
 
-<code src="./demos/shiki.tsx" ></code>
+<code src="./demos/highlight.js.tsx" ></code>
 
 ### 主题 & 语言 & 行号 & 渲染器
 

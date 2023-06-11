@@ -74,7 +74,7 @@ const Highlight: React.FC<HighlightProps> = (props) => {
     theme = THEME_LIGHT,
     language,
     prefixCls: customPrefixCls,
-    highlighter = 'highlight.js',
+    highlighter = 'shiki',
     onCopy,
   } = props;
 

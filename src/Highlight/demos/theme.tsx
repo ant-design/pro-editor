@@ -10,7 +10,7 @@ import configs from './config';
 const DEFAULT_LANGUAGE = 'typescript';
 const DEFAULT_THEME = 'light';
 const DEFAULT_LINENUMBER = 'false';
-const DEFAULT_HIGH_LIGHTER = 'highlight.js';
+const DEFAULT_HIGH_LIGHTER = 'shiki';
 const { Option } = Select;
 
 export default () => {

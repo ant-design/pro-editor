@@ -7,7 +7,7 @@ export default () => (
     onCopy={(children) => {
       console.log('复制代码', children);
     }}
-    highlighter="shiki"
+    highlighter="highlight.js"
     lineNumber
   >
     {`public class HelloWorld {
