@@ -1,5 +1,5 @@
 import { createStyles } from '../theme';
-import { darkThemeBg, lightThemeBg } from './theme';
+import { getThemeColor } from './theme/colors';
 
 interface IHighlightStyleProps {
   type: 'pure' | 'block';
@@ -10,11 +10,11 @@ interface IHighlightStyleProps {
 export const useStyles = createStyles(
   ({ css, cx, token }, { prefixCls, theme, type }: IHighlightStyleProps) => {
     const prefix = `${prefixCls}`;
-    const backgroundColor = theme === 'dark' ? darkThemeBg : lightThemeBg;
+    const { colorFillTertiary } = getThemeColor(theme === 'dark');
 
     const typeStylish = css`
-      background-color: ${type === 'block' ? backgroundColor : 'transparent'};
-      border: 1px solid ${type === 'block' ? backgroundColor : 'transparent'};
+      background-color: ${type === 'block' ? colorFillTertiary : 'transparent'};
+      border: 1px solid ${type === 'block' ? colorFillTertiary : 'transparent'};
     `;
 
     return {

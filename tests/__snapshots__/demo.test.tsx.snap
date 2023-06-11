@@ -16283,6 +16283,7 @@ exports[`<Highlight /> > renders basic.tsx correctly 1`] = `
   opacity: 0.6;
   -webkit-transition: opacity 0.2s;
   transition: opacity 0.2s;
+  background-color: #2b303b;
 }
 
 .emotion-1:hover {
@@ -16291,6 +16292,7 @@ exports[`<Highlight /> > renders basic.tsx correctly 1`] = `
 
 .emotion-2 {
   width: 16px;
+  color: #dddddd;
   height: 16px;
   font-size: 16px;
 }
@@ -16419,14 +16421,12 @@ exports[`<Highlight /> > renders basic.tsx correctly 1`] = `
   >
     <button
       class="studio-highlight-copy emotion-1"
-      style="background: rgb(43, 48, 59);"
       type="button"
     >
       <span
         aria-label="copy"
         class="anticon anticon-copy studio-highlight-copy-icon emotion-2"
         role="img"
-        style="color: rgb(250, 250, 250);"
       >
         <svg
           aria-hidden="true"
@@ -16642,6 +16642,7 @@ exports[`<Highlight /> > renders lineNumber.tsx correctly 1`] = `
   opacity: 0.6;
   -webkit-transition: opacity 0.2s;
   transition: opacity 0.2s;
+  background-color: #fafafa;
 }
 
 .emotion-1:hover {
@@ -16650,6 +16651,7 @@ exports[`<Highlight /> > renders lineNumber.tsx correctly 1`] = `
 
 .emotion-2 {
   width: 16px;
+  color: #333333;
   height: 16px;
   font-size: 16px;
 }
@@ -16791,14 +16793,12 @@ exports[`<Highlight /> > renders lineNumber.tsx correctly 1`] = `
   >
     <button
       class="studio-highlight-copy emotion-1"
-      style="background: rgb(250, 250, 250);"
       type="button"
     >
       <span
         aria-label="copy"
         class="anticon anticon-copy studio-highlight-copy-icon emotion-2"
         role="img"
-        style="color: rgb(43, 48, 59);"
       >
         <svg
           aria-hidden="true"
@@ -17039,6 +17039,7 @@ exports[`<Highlight /> > renders theme.tsx correctly 1`] = `
   opacity: 0.6;
   -webkit-transition: opacity 0.2s;
   transition: opacity 0.2s;
+  background-color: #fafafa;
 }
 
 .emotion-1:hover {
@@ -17047,6 +17048,7 @@ exports[`<Highlight /> > renders theme.tsx correctly 1`] = `
 
 .emotion-2 {
   width: 16px;
+  color: #333333;
   height: 16px;
   font-size: 16px;
 }
@@ -17474,14 +17476,12 @@ exports[`<Highlight /> > renders theme.tsx correctly 1`] = `
       >
         <button
           class="studio-highlight-copy emotion-1"
-          style="background: rgb(250, 250, 250);"
           type="button"
         >
           <span
             aria-label="copy"
             class="anticon anticon-copy studio-highlight-copy-icon emotion-2"
             role="img"
-            style="color: rgb(43, 48, 59);"
           >
             <svg
               aria-hidden="true"
@@ -18378,6 +18378,7 @@ exports[`<ProEditor /> > renders controlledPresence.tsx correctly 1`] = `
   opacity: 0.6;
   -webkit-transition: opacity 0.2s;
   transition: opacity 0.2s;
+  background-color: #fafafa;
 }
 
 .emotion-20:hover {
@@ -18386,6 +18387,7 @@ exports[`<ProEditor /> > renders controlledPresence.tsx correctly 1`] = `
 
 .emotion-21 {
   width: 16px;
+  color: #333333;
   height: 16px;
   font-size: 16px;
 }
@@ -19111,14 +19113,12 @@ exports[`<ProEditor /> > renders controlledPresence.tsx correctly 1`] = `
                     >
                       <button
                         class="studio-highlight-copy emotion-20"
-                        style="background: rgb(250, 250, 250);"
                         type="button"
                       >
                         <span
                           aria-label="copy"
                           class="anticon anticon-copy studio-highlight-copy-icon emotion-21"
                           role="img"
-                          style="color: rgb(43, 48, 59);"
                         >
                           <svg
                             aria-hidden="true"
@@ -19986,6 +19986,7 @@ exports[`<ProEditor /> > renders customAssets.tsx correctly 1`] = `
   opacity: 0.6;
   -webkit-transition: opacity 0.2s;
   transition: opacity 0.2s;
+  background-color: #2b303b;
 }
 
 .emotion-19:hover {
@@ -19994,6 +19995,7 @@ exports[`<ProEditor /> > renders customAssets.tsx correctly 1`] = `
 
 .emotion-20 {
   width: 16px;
+  color: #dddddd;
   height: 16px;
   font-size: 16px;
 }
@@ -20598,14 +20600,12 @@ exports[`<ProEditor /> > renders customAssets.tsx correctly 1`] = `
                   >
                     <button
                       class="studio-highlight-copy emotion-19"
-                      style="background: rgb(43, 48, 59);"
                       type="button"
                     >
                       <span
                         aria-label="copy"
                         class="anticon anticon-copy studio-highlight-copy-icon emotion-20"
                         role="img"
-                        style="color: rgb(250, 250, 250);"
                       >
                         <svg
                           aria-hidden="true"

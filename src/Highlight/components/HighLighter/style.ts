@@ -3,8 +3,7 @@ import { getThemeColor } from '../../theme/colors';
 
 export const useStyles = createStyles(({ css, cx, token }, { prefixCls, lineNumber, theme }) => {
   const prefix = `${prefixCls}`;
-  const isDarkMode = theme === 'dark';
-  const { colorTextTertiary } = getThemeColor(isDarkMode);
+  const { colorTextTertiary } = getThemeColor(theme === 'dark');
 
   const lineNumberStyle = css`
     code {

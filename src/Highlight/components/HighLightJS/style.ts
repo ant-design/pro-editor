@@ -2,8 +2,6 @@ import { createStyles } from '../../../theme';
 import { getThemeColor } from '../../theme/colors';
 
 export const useStyles = createStyles(({ css, cx }, theme) => {
-  const isDarkMode = theme === 'dark';
-
   const {
     colorBlue,
     colorGreen,
@@ -12,7 +10,7 @@ export const useStyles = createStyles(({ css, cx }, theme) => {
     colorText,
     colorTextSecondary,
     colorTextTertiary,
-  } = getThemeColor(isDarkMode);
+  } = getThemeColor(theme === 'dark');
 
   return {
     theme: cx(

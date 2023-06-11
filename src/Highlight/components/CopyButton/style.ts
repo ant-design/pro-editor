@@ -1,7 +1,9 @@
 import { createStyles } from '../../../theme';
+import { getThemeColor } from '../../theme/colors';
 
-export const useStyles = createStyles(({ css, cx }, prefixCls) => {
+export const useStyles = createStyles(({ css, cx }, { prefixCls, theme }) => {
   const prefix = `${prefixCls}`;
+  const { colorFillTertiary, colorText } = getThemeColor(theme === 'dark');
 
   return {
     copy: cx(
@@ -21,6 +23,7 @@ export const useStyles = createStyles(({ css, cx }, prefixCls) => {
         cursor: pointer;
         opacity: 0.6;
         transition: opacity 0.2s;
+        background-color: ${colorFillTertiary};
 
         &:hover {
           opacity: 0.8;
@@ -31,6 +34,7 @@ export const useStyles = createStyles(({ css, cx }, prefixCls) => {
       `${prefix}-copy-icon`,
       css`
         width: 16px;
+        color: ${colorText};
         height: 16px;
         font-size: 16px;
 

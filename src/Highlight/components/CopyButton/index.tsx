@@ -2,7 +2,7 @@ import { CheckOutlined, CopyOutlined } from '@ant-design/icons';
 import classNames from 'classnames';
 import { useEffect, useState } from 'react';
 import CopyToClipboard from 'react-copy-to-clipboard';
-import { THEME_DARK, ThemeType } from '../../theme';
+import { ThemeType } from '../../theme';
 import { useStyles } from './style';
 
 interface CopyButtonProps {
@@ -23,7 +23,7 @@ interface CopyButtonProps {
 const CopyButton: React.FC<CopyButtonProps> = (props) => {
   const { content, onCopy, theme, prefixCls } = props;
   const [copyId, setCopyId] = useState<number | undefined>();
-  const { styles } = useStyles(prefixCls);
+  const { styles } = useStyles({ prefixCls, theme });
 
   useEffect(() => {
     return () => {
@@ -44,20 +44,8 @@ const CopyButton: React.FC<CopyButtonProps> = (props) => {
           if (onCopy) onCopy(content);
         }}
       >
-        <button
-          type={'button'}
-          disabled={copied}
-          className={styles.copy}
-          style={{
-            background: `${theme === THEME_DARK ? `#2b303b` : `#fafafa`}`,
-          }}
-        >
-          <CopyOutlined
-            className={classNames(styles.copyIcon, { scoll: copied })}
-            style={{
-              color: `${theme === THEME_DARK ? `#fafafa` : `#2b303b`}`,
-            }}
-          />
+        <button type={'button'} disabled={copied} className={styles.copy}>
+          <CopyOutlined className={classNames(styles.copyIcon, { scoll: copied })} />
           <CheckOutlined className={styles.copyIcon} style={{ color: 'rgb(63,177,99)' }} />
         </button>
       </CopyToClipboard>
