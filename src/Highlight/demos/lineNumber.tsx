@@ -10,6 +10,7 @@ export default () => (
     onCopy={(children) => {
       console.log('复制代码', children);
     }}
+    language="java"
   >
     {`public class HelloWorld {
     public static void main(String[] args) {

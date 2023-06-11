@@ -32,25 +32,18 @@ export interface ProEditorAppProps {
 }
 
 export const ProEditor: FC<ProEditorAppProps> = memo((props) => {
-  const {
-    logo,
-    hideNavbar = true,
-    style,
-    ErrorBoundary = DefaultErrorBoundary,
-    onCopy,
-  } = props;
+  const { logo, hideNavbar = true, style, ErrorBoundary = DefaultErrorBoundary, onCopy } = props;
 
-  const [prefixCls, exportConfig, componentAsset, width, panelExpand] =
-    useStore(
-      (s) => [
-        s.prefixCls,
-        s.exportConfig,
-        s.componentAsset,
-        s.presenceEditor.panelSize.width,
-        s.presenceEditor.panelExpand,
-      ],
-      shallow,
-    );
+  const [prefixCls, exportConfig, componentAsset, width, panelExpand] = useStore(
+    (s) => [
+      s.prefixCls,
+      s.exportConfig,
+      s.componentAsset,
+      s.presenceEditor.panelSize.width,
+      s.presenceEditor.panelExpand,
+    ],
+    shallow,
+  );
 
   const { styles } = useStyle(prefixCls);
 
@@ -67,7 +60,7 @@ export const ProEditor: FC<ProEditorAppProps> = memo((props) => {
       >
         {hideNavbar ? null : <NavBar logo={logo} />}
 
-        <Stage hideNavbar={hideNavbar} onCopy={onCopy} />
+        <Stage hideNavbar={hideNavbar} onCopy={onCopy} prefixCls={prefixCls} />
       </div>
       <ConfigPanel />
     </div>
@@ -78,9 +71,7 @@ export const ProEditor: FC<ProEditorAppProps> = memo((props) => {
       {!DataProvider ? (
         children
       ) : (
-        <DataProvider createStore={() => componentAsset.componentStore}>
-          {children}
-        </DataProvider>
+        <DataProvider createStore={() => componentAsset.componentStore}>{children}</DataProvider>
       )}
     </ErrorBoundary>
   );

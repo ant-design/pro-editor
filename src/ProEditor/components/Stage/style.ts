@@ -1,7 +1,7 @@
-import { createStyles, css, cx } from '../../../theme';
+import { createStyles } from '../../../theme';
 
-export const useStyles = createStyles(({ prefixCls }) => {
-  const prefix = `${prefixCls}-editor-stage`;
+export const useStyles = createStyles(({ css, cx }, prefixCls) => {
+  const prefix = `${prefixCls}-stage`;
 
   return {
     container: cx(
