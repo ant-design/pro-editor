@@ -17398,7 +17398,7 @@ exports[`<Highlight /> > renders theme.tsx correctly 1`] = `
         class="studio-space-item"
         style="margin-right: 8px;"
       >
-        渲染器:
+        展示类型:
       </div>
       <div
         class="studio-space-item"
@@ -17433,9 +17433,9 @@ exports[`<Highlight /> > renders theme.tsx correctly 1`] = `
             </span>
             <span
               class="studio-select-selection-item"
-              title="Shiki"
+              title="block"
             >
-              Shiki
+              block
             </span>
           </div>
           <span
