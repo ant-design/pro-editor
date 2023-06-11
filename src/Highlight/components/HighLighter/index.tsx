@@ -8,7 +8,7 @@ import classNames from 'classnames';
 import { useEffect, useState } from 'react';
 import { useHighlight } from '../../hooks/useHighlight';
 import { HighlightProps } from '../../index';
-import { THEME_DARK, THEME_LIGHT } from '../../theme';
+import { THEME_LIGHT } from '../../theme';
 import HighlightCell from '../HighlightCell';
 import { useStyles } from './style';
 
@@ -20,10 +20,8 @@ export type HighLighterProps = Pick<
 const HighLighter: React.FC<HighLighterProps> = (props) => {
   const { children, lineNumber = false, theme = THEME_LIGHT, language, prefixCls } = props;
   const [codeBlock, setCodeBlock] = useState(null);
-  const { styles } = useStyles(prefixCls);
+  const { styles } = useStyles(theme);
   const { renderHighlight } = useHighlight(language);
-
-  const themeClass = theme === THEME_DARK ? styles.darkTheme : styles.lightTheme;
 
   const highlightCode = () => {
     // 数据为空即跳过渲染
@@ -56,13 +54,8 @@ const HighLighter: React.FC<HighLighterProps> = (props) => {
   }, [children, theme, language, lineNumber]);
 
   return (
-    <pre className={classNames(themeClass)}>
-      <table
-        border={0}
-        cellPadding={0}
-        cellSpacing={0}
-        className={classNames(`${theme === THEME_DARK ? styles.darkTheme : styles.lightTheme}`)}
-      >
+    <pre className={classNames(styles.theme)}>
+      <table border={0} cellPadding={0} cellSpacing={0}>
         <tbody>{codeBlock}</tbody>
       </table>
     </pre>

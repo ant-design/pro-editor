@@ -1,149 +1,74 @@
 import { createStyles } from '../../../theme';
-import { darkThemeBg, lightThemeBg } from '../../theme';
+import { getThemeColor } from '../../theme/colors';
 
-export const useStyles = createStyles(({ css, cx }, prefixCls) => {
-  const prefix = `${prefixCls}`;
+export const useStyles = createStyles(({ css, cx }, theme) => {
+  const isDarkMode = theme === 'dark';
+
+  const {
+    colorBlue,
+    colorGreen,
+    colorOrange,
+    colorRed,
+    colorText,
+    colorTextSecondary,
+    colorTextTertiary,
+  } = getThemeColor(isDarkMode);
 
   return {
-    lightTheme: cx(
-      `${prefix}-light`,
+    theme: cx(
       css`
         display: block;
         overflow-x: auto;
-        color: #383a42;
-        background: ${lightThemeBg};
+        color: ${colorText};
+        background-color: ${colorTextSecondary};
 
+        /* Comment */
         .hljs-comment,
         .hljs-quote {
-          color: #a0a1a7;
-          font-style: italic;
+          color: ${colorTextTertiary};
         }
 
-        .hljs-doctag,
-        .hljs-keyword,
-        .hljs-formula {
-          color: #a626a4;
-        }
-
-        .hljs-section,
-        .hljs-name,
-        .hljs-selector-tag,
-        .hljs-deletion,
-        .hljs-subst {
-          color: #e45649;
-        }
-
-        .hljs-literal {
-          color: #0184bb;
-        }
-
-        .hljs-string,
-        .hljs-regexp,
-        .hljs-addition,
+        /*  Red */
+        .hljs-variable,
         .hljs-attribute,
-        .hljs-meta-string {
-          color: #50a14f;
-        }
-
-        .hljs-built_in,
-        .hljs-class .hljs-title {
-          color: #c18401;
-        }
-
-        .hljs-attr,
-        .hljs-variable,
-        .hljs-template-variable,
-        .hljs-type,
-        .hljs-selector-class,
-        .hljs-selector-attr,
-        .hljs-selector-pseudo,
-        .hljs-number {
-          color: #986801;
-        }
-
-        .hljs-symbol,
-        .hljs-bullet,
-        .hljs-link,
-        .hljs-meta,
-        .hljs-selector-id,
-        .hljs-title {
-          color: #4078f2;
-        }
-
-        .hljs-emphasis {
-          font-style: italic;
-        }
-
-        .hljs-strong {
-          font-weight: bold;
-        }
-
-        .hljs-link {
-          text-decoration: underline;
-        }
-      `,
-    ),
-    darkTheme: cx(
-      `${prefix}-dark`,
-      css`
-        display: block;
-        overflow-x: auto;
-        color: #c0c5ce;
-        background: ${darkThemeBg};
-
-        /* Ocean Comment */
-        .hljs-comment,
-        .hljs-quote {
-          color: #65737e;
-        }
-
-        /* Ocean Red */
-        .hljs-variable,
         .hljs-template-variable,
         .hljs-tag,
         .hljs-name,
         .hljs-selector-id,
         .hljs-selector-class,
         .hljs-regexp,
+        .hljs-title,
         .hljs-deletion {
-          color: #bf616a;
+          color: ${colorRed};
         }
 
-        /* Ocean Orange */
-        .hljs-number,
-        .hljs-built_in,
+        /* Orange */
+
         .hljs-builtin-name,
         .hljs-literal,
         .hljs-type,
         .hljs-params,
         .hljs-meta,
         .hljs-link {
-          color: #d08770;
+          color: ${colorOrange};
         }
 
-        /* Ocean Yellow */
-        .hljs-attribute {
-          color: #ebcb8b;
-        }
-
-        /* Ocean Green */
+        /* Green */
         .hljs-string,
+        .hljs-number,
         .hljs-symbol,
         .hljs-bullet,
         .hljs-addition {
-          color: #a3be8c;
+          color: ${colorGreen};
         }
 
-        /* Ocean Blue */
-        .hljs-title,
-        .hljs-section {
-          color: #8fa1b3;
-        }
-
-        /* Ocean Purple */
+        /* Blue */
         .hljs-keyword,
-        .hljs-selector-tag {
-          color: #b48ead;
+        .hljs-doctag,
+        .hljs-built_in,
+        .hljs-selector-tag,
+        .hljs-section {
+          color: ${colorBlue};
         }
 
         .hljs-emphasis {
