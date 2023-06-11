@@ -78,7 +78,7 @@ const Highlight: React.FC<HighlightProps> = (props) => {
   } = props;
 
   const prefixCls = getPrefixCls('highlight', customPrefixCls);
-  const { styles } = useStyles({ prefixCls, theme, lineNumber, type });
+  const { styles } = useStyles({ prefixCls, theme, type });
   const codeRef = createRef<HTMLDivElement>();
   useKeyDownCopyEvent(codeRef, onCopy);
 

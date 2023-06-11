@@ -19,7 +19,7 @@ export type ShikiProps = Pick<
 
 const HighLighter: React.FC<ShikiProps> = (props) => {
   const { children, lineNumber = false, theme, language, prefixCls } = props;
-  const { styles, theme: globalTheme } = useStyles({ prefixCls, lineNumber });
+  const { styles } = useStyles({ prefixCls, lineNumber, theme });
   const { renderShiki, loading } = useShiki(language, theme);
 
   return (
@@ -37,8 +37,8 @@ const HighLighter: React.FC<ShikiProps> = (props) => {
         />
       )}
       {loading ? (
-        <Center className={styles.loading} gap={8} horizontal>
-          <Loading spin style={{ color: globalTheme.colorTextTertiary }} />
+        <Center className={styles.center} gap={8} horizontal>
+          <Loading spin className={styles.loading} />
           Highlighting...
         </Center>
       ) : null}

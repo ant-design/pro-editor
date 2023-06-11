@@ -1,7 +1,10 @@
 import { createStyles } from '../../../theme';
+import { getThemeColor } from '../../theme/colors';
 
-export const useStyles = createStyles(({ css, cx, token }, { prefixCls, lineNumber }) => {
+export const useStyles = createStyles(({ css, cx, token }, { prefixCls, lineNumber, theme }) => {
   const prefix = `${prefixCls}`;
+  const isDarkMode = theme === 'dark';
+  const { colorTextTertiary } = getThemeColor(isDarkMode);
 
   const lineNumberStyle = css`
     code {
@@ -31,7 +34,10 @@ export const useStyles = createStyles(({ css, cx, token }, { prefixCls, lineNumb
         }
       `,
     ),
-    loading: cx(
+    loading: cx(css`
+      color: ${colorTextTertiary};
+    `),
+    center: cx(
       css`
         backdrop-filter: saturate(180%) blur(10px);
         position: absolute;
@@ -45,7 +51,7 @@ export const useStyles = createStyles(({ css, cx, token }, { prefixCls, lineNumb
         padding: 0 8px;
 
         font-family: ${token.fontFamilyCode};
-        color: ${token.colorTextTertiary};
+        color: ${colorTextTertiary};
 
         border-radius: ${token.borderRadius};
       `,

@@ -16244,7 +16244,7 @@ exports[`<FreeCanvas /> > renders basic.tsx correctly 1`] = `
 exports[`<Highlight /> > renders basic.tsx correctly 1`] = `
 .emotion-0 {
   background-color: #2b303b;
-  border: 1px solid transparent;
+  border: 1px solid #2b303b;
   position: relative;
   margin: 0;
   border-radius: 6px;
@@ -16404,8 +16404,12 @@ exports[`<Highlight /> > renders basic.tsx correctly 1`] = `
   height: 36px;
   padding: 0 8px;
   font-family: 'SFMono-Regular',Consolas,'Liberation Mono',Menlo,Courier,monospace;
-  color: rgba(0, 0, 0, 0.45);
+  color: #555555;
   border-radius: 6;
+}
+
+.emotion-12 {
+  color: #555555;
 }
 
 <div>
@@ -16573,403 +16577,8 @@ exports[`<Highlight /> > renders basic.tsx correctly 1`] = `
     >
       <span
         aria-label="loading-3-quarters"
-        class="anticon anticon-loading-3-quarters anticon-spin"
+        class="anticon anticon-loading-3-quarters anticon-spin emotion-12"
         role="img"
-        style="color: rgba(0, 0, 0, 0.45);"
-      >
-        <svg
-          aria-hidden="true"
-          data-icon="loading-3-quarters"
-          fill="currentColor"
-          focusable="false"
-          height="1em"
-          viewBox="0 0 1024 1024"
-          width="1em"
-        >
-          <path
-            d="M512 1024c-69.1 0-136.2-13.5-199.3-40.2C251.7 958 197 921 150 874c-47-47-84-101.7-109.8-162.7C13.5 648.2 0 581.1 0 512c0-19.9 16.1-36 36-36s36 16.1 36 36c0 59.4 11.6 117 34.6 171.3 22.2 52.4 53.9 99.5 94.3 139.9 40.4 40.4 87.5 72.2 139.9 94.3C395 940.4 452.6 952 512 952c59.4 0 117-11.6 171.3-34.6 52.4-22.2 99.5-53.9 139.9-94.3 40.4-40.4 72.2-87.5 94.3-139.9C940.4 629 952 571.4 952 512c0-59.4-11.6-117-34.6-171.3a440.45 440.45 0 00-94.3-139.9 437.71 437.71 0 00-139.9-94.3C629 83.6 571.4 72 512 72c-19.9 0-36-16.1-36-36s16.1-36 36-36c69.1 0 136.2 13.5 199.3 40.2C772.3 66 827 103 874 150c47 47 83.9 101.8 109.7 162.7 26.7 63.1 40.2 130.2 40.2 199.3s-13.5 136.2-40.2 199.3C958 772.3 921 827 874 874c-47 47-101.8 83.9-162.7 109.7-63.1 26.8-130.2 40.3-199.3 40.3z"
-          />
-        </svg>
-      </span>
-      Highlighting...
-    </div>
-  </div>
-</div>
-`;
-
-exports[`<Highlight /> > renders highlight.js.tsx correctly 1`] = `
-.emotion-0 {
-  background-color: #2b303b;
-  border: 1px solid transparent;
-  position: relative;
-  margin: 0;
-  border-radius: 6px;
-  -webkit-transition: background-color 100ms cubic-bezier(0.215, 0.61, 0.355, 1);
-  transition: background-color 100ms cubic-bezier(0.215, 0.61, 0.355, 1);
-}
-
-.emotion-0 pre {
-  margin: 0!important;
-  padding: 16px 24px!important;
-  background: none!important;
-}
-
-.emotion-0 code {
-  background: transparent!important;
-}
-
-.emotion-1 {
-  position: absolute;
-  top: 16px;
-  right: 16px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  width: 16px;
-  height: 16px;
-  padding: 0;
-  overflow: hidden;
-  border: 0;
-  outline: none;
-  cursor: pointer;
-  opacity: 0.6;
-  -webkit-transition: opacity 0.2s;
-  transition: opacity 0.2s;
-}
-
-.emotion-1:hover {
-  opacity: 0.8;
-}
-
-.emotion-2 {
-  width: 16px;
-  height: 16px;
-  font-size: 16px;
-}
-
-.emotion-2.scoll {
-  -webkit-animation: copy-button-trans 2s;
-  animation: copy-button-trans 2s;
-  -webkit-animation-play-state: running;
-  animation-play-state: running;
-}
-
-.emotion-4 {
-  display: block;
-  overflow-x: auto;
-  color: #dddddd;
-  background-color: #777777;
-}
-
-.emotion-4 .hljs-comment,
-.emotion-4 .hljs-quote {
-  color: #555555;
-}
-
-.emotion-4 .hljs-variable,
-.emotion-4 .hljs-attribute,
-.emotion-4 .hljs-template-variable,
-.emotion-4 .hljs-tag,
-.emotion-4 .hljs-name,
-.emotion-4 .hljs-selector-id,
-.emotion-4 .hljs-selector-class,
-.emotion-4 .hljs-regexp,
-.emotion-4 .hljs-title,
-.emotion-4 .hljs-deletion {
-  color: #f04f88;
-}
-
-.emotion-4 .hljs-builtin-name,
-.emotion-4 .hljs-literal,
-.emotion-4 .hljs-type,
-.emotion-4 .hljs-params,
-.emotion-4 .hljs-meta,
-.emotion-4 .hljs-link {
-  color: #ffcb47;
-}
-
-.emotion-4 .hljs-string,
-.emotion-4 .hljs-number,
-.emotion-4 .hljs-symbol,
-.emotion-4 .hljs-bullet,
-.emotion-4 .hljs-addition {
-  color: #c4f042;
-}
-
-.emotion-4 .hljs-keyword,
-.emotion-4 .hljs-doctag,
-.emotion-4 .hljs-built_in,
-.emotion-4 .hljs-selector-tag,
-.emotion-4 .hljs-section {
-  color: #8ae8ff;
-}
-
-.emotion-4 .hljs-emphasis {
-  font-style: italic;
-}
-
-.emotion-4 .hljs-strong {
-  font-weight: bold;
-}
-
-.emotion-5 {
-  box-sizing: border-box;
-  width: 1rem;
-  margin-right: 1.5rem;
-  display: inline-block;
-  color: rgba(115, 138, 148, 0.4);
-  text-align: right;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-.emotion-6 {
-  width: 100%;
-}
-
-.emotion-15 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  gap: 8px;
-}
-
-.emotion-16 {
-  -webkit-backdrop-filter: saturate(180%) blur(10px);
-  backdrop-filter: saturate(180%) blur(10px);
-  position: absolute;
-  top: 0;
-  right: 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  height: 36px;
-  padding: 0 8px;
-  font-family: 'SFMono-Regular',Consolas,'Liberation Mono',Menlo,Courier,monospace;
-  color: rgba(0, 0, 0, 0.45);
-  border-radius: 6;
-}
-
-<div>
-  <div
-    class="studio-highlight-container emotion-0"
-    tabindex="-1"
-  >
-    <button
-      class="studio-highlight-copy emotion-1"
-      style="background: rgb(43, 48, 59);"
-      type="button"
-    >
-      <span
-        aria-label="copy"
-        class="anticon anticon-copy studio-highlight-copy-icon emotion-2"
-        role="img"
-        style="color: rgb(250, 250, 250);"
-      >
-        <svg
-          aria-hidden="true"
-          data-icon="copy"
-          fill="currentColor"
-          focusable="false"
-          height="1em"
-          viewBox="64 64 896 896"
-          width="1em"
-        >
-          <path
-            d="M832 64H296c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h496v688c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8V96c0-17.7-14.3-32-32-32zM704 192H192c-17.7 0-32 14.3-32 32v530.7c0 8.5 3.4 16.6 9.4 22.6l173.3 173.3c2.2 2.2 4.7 4 7.4 5.5v1.9h4.2c3.5 1.3 7.2 2 11 2H704c17.7 0 32-14.3 32-32V224c0-17.7-14.3-32-32-32zM350 856.2L263.9 770H350v86.2zM664 888H414V746c0-22.1-17.9-40-40-40H232V264h432v624z"
-          />
-        </svg>
-      </span>
-      <span
-        aria-label="check"
-        class="anticon anticon-check studio-highlight-copy-icon emotion-2"
-        role="img"
-        style="color: rgb(63, 177, 99);"
-      >
-        <svg
-          aria-hidden="true"
-          data-icon="check"
-          fill="currentColor"
-          focusable="false"
-          height="1em"
-          viewBox="64 64 896 896"
-          width="1em"
-        >
-          <path
-            d="M912 190h-69.9c-9.8 0-19.1 4.5-25.1 12.2L404.7 724.5 207 474a32 32 0 00-25.1-12.2H112c-6.7 0-10.4 7.7-6.3 12.9l273.9 347c12.8 16.2 37.4 16.2 50.3 0l488.4-618.9c4.1-5.1.4-12.8-6.3-12.8z"
-          />
-        </svg>
-      </span>
-    </button>
-    <pre
-      class="emotion-4"
-    >
-      <table
-        border="0"
-        cellpadding="0"
-        cellspacing="0"
-      >
-        <tbody>
-          <tr>
-            <td
-              class="undefined-index emotion-5"
-            >
-              1
-            </td>
-            <td
-              class="undefined-content emotion-6"
-            >
-              <span
-                class="hljs-keyword"
-              >
-                public
-              </span>
-               
-              <span
-                class="hljs-class"
-              >
-                <span
-                  class="hljs-keyword"
-                >
-                  class
-                </span>
-                 
-                <span
-                  class="hljs-title"
-                >
-                  HelloWorld
-                </span>
-                 
-              </span>
-              {
-            </td>
-          </tr>
-          <tr>
-            <td
-              class="undefined-index emotion-5"
-            >
-              2
-            </td>
-            <td
-              class="undefined-content emotion-6"
-            >
-                  
-              <span
-                class="hljs-function"
-              >
-                <span
-                  class="hljs-keyword"
-                >
-                  public
-                </span>
-                 
-                <span
-                  class="hljs-keyword"
-                >
-                  static
-                </span>
-                 
-                <span
-                  class="hljs-keyword"
-                >
-                  void
-                </span>
-                 
-                <span
-                  class="hljs-title"
-                >
-                  main
-                </span>
-                <span
-                  class="hljs-params"
-                >
-                  (String[] args)
-                </span>
-                 
-              </span>
-              {
-            </td>
-          </tr>
-          <tr>
-            <td
-              class="undefined-index emotion-5"
-            >
-              3
-            </td>
-            <td
-              class="undefined-content emotion-6"
-            >
-                    System.out.println(
-              <span
-                class="hljs-string"
-              >
-                "Hello World!"
-              </span>
-              );
-            </td>
-          </tr>
-          <tr>
-            <td
-              class="undefined-index emotion-5"
-            >
-              4
-            </td>
-            <td
-              class="undefined-content emotion-6"
-            >
-                  }
-            </td>
-          </tr>
-          <tr>
-            <td
-              class="undefined-index emotion-5"
-            >
-              5
-            </td>
-            <td
-              class="undefined-content emotion-6"
-            >
-                }
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </pre>
-    <div
-      class="layoutkit-center emotion-15 emotion-16"
-    >
-      <span
-        aria-label="loading-3-quarters"
-        class="anticon anticon-loading-3-quarters anticon-spin"
-        role="img"
-        style="color: rgba(0, 0, 0, 0.45);"
       >
         <svg
           aria-hidden="true"
@@ -16994,7 +16603,7 @@ exports[`<Highlight /> > renders highlight.js.tsx correctly 1`] = `
 exports[`<Highlight /> > renders lineNumber.tsx correctly 1`] = `
 .emotion-0 {
   background-color: #fafafa;
-  border: 1px solid transparent;
+  border: 1px solid #fafafa;
   position: relative;
   margin: 0;
   border-radius: 6px;
@@ -17167,8 +16776,12 @@ exports[`<Highlight /> > renders lineNumber.tsx correctly 1`] = `
   height: 36px;
   padding: 0 8px;
   font-family: 'SFMono-Regular',Consolas,'Liberation Mono',Menlo,Courier,monospace;
-  color: rgba(0, 0, 0, 0.45);
+  color: #aaaaaa;
   border-radius: 6;
+}
+
+.emotion-17 {
+  color: #aaaaaa;
 }
 
 <div>
@@ -17361,9 +16974,8 @@ exports[`<Highlight /> > renders lineNumber.tsx correctly 1`] = `
     >
       <span
         aria-label="loading-3-quarters"
-        class="anticon anticon-loading-3-quarters anticon-spin"
+        class="anticon anticon-loading-3-quarters anticon-spin emotion-17"
         role="img"
-        style="color: rgba(0, 0, 0, 0.45);"
       >
         <svg
           aria-hidden="true"
@@ -17388,7 +17000,7 @@ exports[`<Highlight /> > renders lineNumber.tsx correctly 1`] = `
 exports[`<Highlight /> > renders theme.tsx correctly 1`] = `
 .emotion-0 {
   background-color: #fafafa;
-  border: 1px solid transparent;
+  border: 1px solid #fafafa;
   position: relative;
   margin: 0;
   border-radius: 6px;
@@ -17548,8 +17160,12 @@ exports[`<Highlight /> > renders theme.tsx correctly 1`] = `
   height: 36px;
   padding: 0 8px;
   font-family: 'SFMono-Regular',Consolas,'Liberation Mono',Menlo,Courier,monospace;
-  color: rgba(0, 0, 0, 0.45);
+  color: #aaaaaa;
   border-radius: 6;
+}
+
+.emotion-21 {
+  color: #aaaaaa;
 }
 
 <div>
@@ -18153,9 +17769,8 @@ exports[`<Highlight /> > renders theme.tsx correctly 1`] = `
         >
           <span
             aria-label="loading-3-quarters"
-            class="anticon anticon-loading-3-quarters anticon-spin"
+            class="anticon anticon-loading-3-quarters anticon-spin emotion-21"
             role="img"
-            style="color: rgba(0, 0, 0, 0.45);"
           >
             <svg
               aria-hidden="true"
@@ -18724,7 +18339,7 @@ exports[`<ProEditor /> > renders controlledPresence.tsx correctly 1`] = `
 
 .emotion-19 {
   background-color: #fafafa;
-  border: 1px solid transparent;
+  border: 1px solid #fafafa;
   position: relative;
   margin: 0;
   border-radius: 6px;
@@ -18897,15 +18512,19 @@ exports[`<ProEditor /> > renders controlledPresence.tsx correctly 1`] = `
   height: 36px;
   padding: 0 8px;
   font-family: 'SFMono-Regular',Consolas,'Liberation Mono',Menlo,Courier,monospace;
-  color: rgba(0, 0, 0, 0.45);
+  color: #aaaaaa;
   border-radius: 6;
 }
 
 .emotion-30 {
+  color: #aaaaaa;
+}
+
+.emotion-31 {
   position: relative;
 }
 
-.emotion-30::before {
+.emotion-31::before {
   position: absolute;
   z-index: 50;
   -webkit-transition: all 0.3s ease-in-out;
@@ -18913,18 +18532,18 @@ exports[`<ProEditor /> > renders controlledPresence.tsx correctly 1`] = `
   content: '';
 }
 
-.emotion-30:hover::before,
-.emotion-30:active::before {
+.emotion-31:hover::before,
+.emotion-31:active::before {
   background: #1677ff;
 }
 
-.emotion-30::before {
+.emotion-31::before {
   top: 50%;
   height: 2px;
   width: 100%;
 }
 
-.emotion-31 {
+.emotion-32 {
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
@@ -18932,11 +18551,11 @@ exports[`<ProEditor /> > renders controlledPresence.tsx correctly 1`] = `
   border: 0 solid rgba(5, 5, 5, 0.06);
 }
 
-.emotion-31:hover .studio-draggable-panel-toggle {
+.emotion-32:hover .studio-draggable-panel-toggle {
   opacity: 1;
 }
 
-.emotion-32 {
+.emotion-33 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -18954,7 +18573,7 @@ exports[`<ProEditor /> > renders controlledPresence.tsx correctly 1`] = `
   align-items: center;
 }
 
-.emotion-33 {
+.emotion-34 {
   position: absolute;
   opacity: 0;
   z-index: 1001;
@@ -18976,16 +18595,16 @@ exports[`<ProEditor /> > renders controlledPresence.tsx correctly 1`] = `
   border-right-width: 0;
 }
 
-.emotion-33:hover {
+.emotion-34:hover {
   color: rgba(0, 0, 0, 0.65);
   background: rgba(0, 0, 0, 0.02);
 }
 
-.emotion-35 {
+.emotion-36 {
   position: relative;
 }
 
-.emotion-35::before {
+.emotion-36::before {
   position: absolute;
   z-index: 50;
   -webkit-transition: all 0.3s ease-in-out;
@@ -18993,18 +18612,18 @@ exports[`<ProEditor /> > renders controlledPresence.tsx correctly 1`] = `
   content: '';
 }
 
-.emotion-35:hover::before,
-.emotion-35:active::before {
+.emotion-36:hover::before,
+.emotion-36:active::before {
   background: #1677ff;
 }
 
-.emotion-35::before {
+.emotion-36::before {
   left: 50%;
   width: 2px;
   height: 100%;
 }
 
-.emotion-37 {
+.emotion-38 {
   background-color: #fff;
   color: rgba(0, 0, 0, 0.87);
   -webkit-transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
@@ -19020,14 +18639,14 @@ exports[`<ProEditor /> > renders controlledPresence.tsx correctly 1`] = `
   content-visibility: auto;
 }
 
-.emotion-38 {
+.emotion-39 {
   -webkit-user-select: text;
   -moz-user-select: text;
   -ms-user-select: text;
   user-select: text;
 }
 
-.emotion-39 {
+.emotion-40 {
   display: inline-block;
   line-height: 1.5;
   color: #002b36;
@@ -19035,7 +18654,7 @@ exports[`<ProEditor /> > renders controlledPresence.tsx correctly 1`] = `
   opacity: 0.8;
 }
 
-.emotion-40 {
+.emotion-41 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -19053,20 +18672,20 @@ exports[`<ProEditor /> > renders controlledPresence.tsx correctly 1`] = `
   font-size: .8rem;
 }
 
-.emotion-40:hover {
+.emotion-41:hover {
   cursor: pointer;
 }
 
-.emotion-42 {
+.emotion-43 {
   display: inline-block;
   margin-right: 4px;
 }
 
-.emotion-43 {
+.emotion-44 {
   letter-spacing: 0.5px;
 }
 
-.emotion-44 {
+.emotion-45 {
   padding-left: 4px;
   font-style: italic;
   color: rgba(0, 0, 0, 0.3);
@@ -19076,7 +18695,7 @@ exports[`<ProEditor /> > renders controlledPresence.tsx correctly 1`] = `
   user-select: none;
 }
 
-.emotion-45 {
+.emotion-46 {
   display: block;
   padding-left: 14.399999999999999px;
   margin-left: 4.8px;
@@ -19084,12 +18703,12 @@ exports[`<ProEditor /> > renders controlledPresence.tsx correctly 1`] = `
   border-left: 1px solid rgb(235, 235, 235);
 }
 
-.emotion-58 {
+.emotion-59 {
   display: inline-block;
   color: #268bd2;
 }
 
-.emotion-59 {
+.emotion-60 {
   display: inline-block;
   margin-left: 4px;
   margin-right: 4px;
@@ -19101,21 +18720,21 @@ exports[`<ProEditor /> > renders controlledPresence.tsx correctly 1`] = `
   user-select: none;
 }
 
-.emotion-60 {
+.emotion-61 {
   display: inline-block;
 }
 
-.emotion-89 {
+.emotion-90 {
   display: inline-block;
   color: #2aa198;
 }
 
-.emotion-126 {
+.emotion-127 {
   display: inline-block;
   color: #586e75;
 }
 
-.emotion-128 {
+.emotion-129 {
   font-size: 0.7rem;
   background-color: rgb(235, 235, 235);
   border-radius: 3px;
@@ -19575,9 +19194,8 @@ exports[`<ProEditor /> > renders controlledPresence.tsx correctly 1`] = `
                       >
                         <span
                           aria-label="loading-3-quarters"
-                          class="anticon anticon-loading-3-quarters anticon-spin"
+                          class="anticon anticon-loading-3-quarters anticon-spin emotion-30"
                           role="img"
-                          style="color: rgba(0, 0, 0, 0.45);"
                         >
                           <svg
                             aria-hidden="true"
@@ -19599,7 +19217,7 @@ exports[`<ProEditor /> > renders controlledPresence.tsx correctly 1`] = `
                   </div>
                   <div>
                     <div
-                      class="studio-draggable-panel-top-handle emotion-30"
+                      class="studio-draggable-panel-top-handle emotion-31"
                       style="position: absolute; user-select: none; width: 100%; height: 10px; top: -5px; left: 0px; cursor: row-resize;"
                     />
                   </div>
@@ -19609,11 +19227,11 @@ exports[`<ProEditor /> > renders controlledPresence.tsx correctly 1`] = `
           </div>
         </div>
         <div
-          class="studio-draggable-panel emotion-31"
+          class="studio-draggable-panel emotion-32"
           style="border-left-width: 1px;"
         >
           <div
-            class="layoutkit-center emotion-32 studio-draggable-panel-toggle studio-draggable-panel-toggle-left emotion-33"
+            class="layoutkit-center emotion-33 studio-draggable-panel-toggle studio-draggable-panel-toggle-left emotion-34"
           >
             <span
               aria-label="left"
@@ -19647,7 +19265,7 @@ exports[`<ProEditor /> > renders controlledPresence.tsx correctly 1`] = `
             </div>
             <div>
               <div
-                class="emotion-35 studio-draggable-panel-left-handle"
+                class="emotion-36 studio-draggable-panel-left-handle"
                 style="position: absolute; user-select: none; width: 10px; height: 100%; top: 0px; left: -5px; cursor: col-resize;"
               />
             </div>
@@ -19660,18 +19278,18 @@ exports[`<ProEditor /> > renders controlledPresence.tsx correctly 1`] = `
     >
       当前视图状态：
       <div
-        class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 json-viewer-theme-light emotion-37"
+        class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 json-viewer-theme-light emotion-38"
       >
         <div
-          class="data-key-pair MuiBox-root emotion-38"
+          class="data-key-pair MuiBox-root emotion-39"
           data-testid="data-key-pair"
         >
           <span
-            class="data-key MuiBox-root emotion-39"
+            class="data-key MuiBox-root emotion-40"
           >
             <svg
               aria-hidden="true"
-              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium emotion-40"
+              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium emotion-41"
               focusable="false"
               viewBox="0 0 24 24"
             >
@@ -19680,41 +19298,41 @@ exports[`<ProEditor /> > renders controlledPresence.tsx correctly 1`] = `
               />
             </svg>
             <span
-              class="MuiBox-root emotion-41"
+              class="MuiBox-root emotion-42"
             >
               "
               root
               "
             </span>
             <div
-              class="MuiBox-root emotion-42"
+              class="MuiBox-root emotion-43"
             >
               :
             </div>
             <span
-              class="data-object-start MuiBox-root emotion-43"
+              class="data-object-start MuiBox-root emotion-44"
             >
               {
               <span
-                class="MuiBox-root emotion-44"
+                class="MuiBox-root emotion-45"
               >
                 5 Items
               </span>
             </span>
           </span>
           <div
-            class="data-object MuiBox-root emotion-45"
+            class="data-object MuiBox-root emotion-46"
           >
             <div
-              class="data-key-pair MuiBox-root emotion-38"
+              class="data-key-pair MuiBox-root emotion-39"
               data-testid="data-key-pairpanelPosition"
             >
               <span
-                class="data-key MuiBox-root emotion-39"
+                class="data-key MuiBox-root emotion-40"
               >
                 <svg
                   aria-hidden="true"
-                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium emotion-40"
+                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium emotion-41"
                   focusable="false"
                   viewBox="0 0 24 24"
                 >
@@ -19723,96 +19341,96 @@ exports[`<ProEditor /> > renders controlledPresence.tsx correctly 1`] = `
                   />
                 </svg>
                 <span
-                  class="MuiBox-root emotion-41"
+                  class="MuiBox-root emotion-42"
                 >
                   "
                   panelPosition
                   "
                 </span>
                 <div
-                  class="MuiBox-root emotion-42"
+                  class="MuiBox-root emotion-43"
                 >
                   :
                 </div>
                 <span
-                  class="data-object-start MuiBox-root emotion-43"
+                  class="data-object-start MuiBox-root emotion-44"
                 >
                   {
                   <span
-                    class="MuiBox-root emotion-44"
+                    class="MuiBox-root emotion-45"
                   >
                     2 Items
                   </span>
                 </span>
               </span>
               <div
-                class="data-object MuiBox-root emotion-45"
+                class="data-object MuiBox-root emotion-46"
               >
                 <div
-                  class="data-key-pair MuiBox-root emotion-38"
+                  class="data-key-pair MuiBox-root emotion-39"
                   data-testid="data-key-pairpanelPosition.x"
                 >
                   <span
-                    class="data-key MuiBox-root emotion-39"
+                    class="data-key MuiBox-root emotion-40"
                   >
                     <span
-                      class="MuiBox-root emotion-41"
+                      class="MuiBox-root emotion-42"
                     >
                       "
                       x
                       "
                     </span>
                     <div
-                      class="MuiBox-root emotion-42"
+                      class="MuiBox-root emotion-43"
                     >
                       :
                     </div>
                   </span>
                   <div
-                    class="MuiBox-root emotion-58"
+                    class="MuiBox-root emotion-59"
                   >
                     <div
-                      class="data-type-label MuiBox-root emotion-59"
+                      class="data-type-label MuiBox-root emotion-60"
                     >
                       int
                     </div>
                     <div
-                      class="int-value MuiBox-root emotion-60"
+                      class="int-value MuiBox-root emotion-61"
                     >
                       0
                     </div>
                   </div>
                 </div>
                 <div
-                  class="data-key-pair MuiBox-root emotion-38"
+                  class="data-key-pair MuiBox-root emotion-39"
                   data-testid="data-key-pairpanelPosition.y"
                 >
                   <span
-                    class="data-key MuiBox-root emotion-39"
+                    class="data-key MuiBox-root emotion-40"
                   >
                     <span
-                      class="MuiBox-root emotion-41"
+                      class="MuiBox-root emotion-42"
                     >
                       "
                       y
                       "
                     </span>
                     <div
-                      class="MuiBox-root emotion-42"
+                      class="MuiBox-root emotion-43"
                     >
                       :
                     </div>
                   </span>
                   <div
-                    class="MuiBox-root emotion-58"
+                    class="MuiBox-root emotion-59"
                   >
                     <div
-                      class="data-type-label MuiBox-root emotion-59"
+                      class="data-type-label MuiBox-root emotion-60"
                     >
                       int
                     </div>
                     <div
-                      class="int-value MuiBox-root emotion-60"
+                      class="int-value MuiBox-root emotion-61"
                     >
                       0
                     </div>
@@ -19820,21 +19438,21 @@ exports[`<ProEditor /> > renders controlledPresence.tsx correctly 1`] = `
                 </div>
               </div>
               <span
-                class="data-object-end MuiBox-root emotion-41"
+                class="data-object-end MuiBox-root emotion-42"
               >
                 }
               </span>
             </div>
             <div
-              class="data-key-pair MuiBox-root emotion-38"
+              class="data-key-pair MuiBox-root emotion-39"
               data-testid="data-key-pairpanelSize"
             >
               <span
-                class="data-key MuiBox-root emotion-39"
+                class="data-key MuiBox-root emotion-40"
               >
                 <svg
                   aria-hidden="true"
-                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium emotion-40"
+                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium emotion-41"
                   focusable="false"
                   viewBox="0 0 24 24"
                 >
@@ -19843,61 +19461,61 @@ exports[`<ProEditor /> > renders controlledPresence.tsx correctly 1`] = `
                   />
                 </svg>
                 <span
-                  class="MuiBox-root emotion-41"
+                  class="MuiBox-root emotion-42"
                 >
                   "
                   panelSize
                   "
                 </span>
                 <div
-                  class="MuiBox-root emotion-42"
+                  class="MuiBox-root emotion-43"
                 >
                   :
                 </div>
                 <span
-                  class="data-object-start MuiBox-root emotion-43"
+                  class="data-object-start MuiBox-root emotion-44"
                 >
                   {
                   <span
-                    class="MuiBox-root emotion-44"
+                    class="MuiBox-root emotion-45"
                   >
                     1 Items
                   </span>
                 </span>
               </span>
               <div
-                class="data-object MuiBox-root emotion-45"
+                class="data-object MuiBox-root emotion-46"
               >
                 <div
-                  class="data-key-pair MuiBox-root emotion-38"
+                  class="data-key-pair MuiBox-root emotion-39"
                   data-testid="data-key-pairpanelSize.width"
                 >
                   <span
-                    class="data-key MuiBox-root emotion-39"
+                    class="data-key MuiBox-root emotion-40"
                   >
                     <span
-                      class="MuiBox-root emotion-41"
+                      class="MuiBox-root emotion-42"
                     >
                       "
                       width
                       "
                     </span>
                     <div
-                      class="MuiBox-root emotion-42"
+                      class="MuiBox-root emotion-43"
                     >
                       :
                     </div>
                   </span>
                   <div
-                    class="MuiBox-root emotion-58"
+                    class="MuiBox-root emotion-59"
                   >
                     <div
-                      class="data-type-label MuiBox-root emotion-59"
+                      class="data-type-label MuiBox-root emotion-60"
                     >
                       int
                     </div>
                     <div
-                      class="int-value MuiBox-root emotion-60"
+                      class="int-value MuiBox-root emotion-61"
                     >
                       340
                     </div>
@@ -19905,56 +19523,56 @@ exports[`<ProEditor /> > renders controlledPresence.tsx correctly 1`] = `
                 </div>
               </div>
               <span
-                class="data-object-end MuiBox-root emotion-41"
+                class="data-object-end MuiBox-root emotion-42"
               >
                 }
               </span>
             </div>
             <div
-              class="data-key-pair MuiBox-root emotion-38"
+              class="data-key-pair MuiBox-root emotion-39"
               data-testid="data-key-pairpanelExpand"
             >
               <span
-                class="data-key MuiBox-root emotion-39"
+                class="data-key MuiBox-root emotion-40"
               >
                 <span
-                  class="MuiBox-root emotion-41"
+                  class="MuiBox-root emotion-42"
                 >
                   "
                   panelExpand
                   "
                 </span>
                 <div
-                  class="MuiBox-root emotion-42"
+                  class="MuiBox-root emotion-43"
                 >
                   :
                 </div>
               </span>
               <div
-                class="MuiBox-root emotion-89"
+                class="MuiBox-root emotion-90"
               >
                 <div
-                  class="data-type-label MuiBox-root emotion-59"
+                  class="data-type-label MuiBox-root emotion-60"
                 >
                   bool
                 </div>
                 <div
-                  class="bool-value MuiBox-root emotion-60"
+                  class="bool-value MuiBox-root emotion-61"
                 >
                   true
                 </div>
               </div>
             </div>
             <div
-              class="data-key-pair MuiBox-root emotion-38"
+              class="data-key-pair MuiBox-root emotion-39"
               data-testid="data-key-pairviewport"
             >
               <span
-                class="data-key MuiBox-root emotion-39"
+                class="data-key MuiBox-root emotion-40"
               >
                 <svg
                   aria-hidden="true"
-                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium emotion-40"
+                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium emotion-41"
                   focusable="false"
                   viewBox="0 0 24 24"
                 >
@@ -19963,131 +19581,131 @@ exports[`<ProEditor /> > renders controlledPresence.tsx correctly 1`] = `
                   />
                 </svg>
                 <span
-                  class="MuiBox-root emotion-41"
+                  class="MuiBox-root emotion-42"
                 >
                   "
                   viewport
                   "
                 </span>
                 <div
-                  class="MuiBox-root emotion-42"
+                  class="MuiBox-root emotion-43"
                 >
                   :
                 </div>
                 <span
-                  class="data-object-start MuiBox-root emotion-43"
+                  class="data-object-start MuiBox-root emotion-44"
                 >
                   {
                   <span
-                    class="MuiBox-root emotion-44"
+                    class="MuiBox-root emotion-45"
                   >
                     3 Items
                   </span>
                 </span>
               </span>
               <div
-                class="data-object MuiBox-root emotion-45"
+                class="data-object MuiBox-root emotion-46"
               >
                 <div
-                  class="data-key-pair MuiBox-root emotion-38"
+                  class="data-key-pair MuiBox-root emotion-39"
                   data-testid="data-key-pairviewport.x"
                 >
                   <span
-                    class="data-key MuiBox-root emotion-39"
+                    class="data-key MuiBox-root emotion-40"
                   >
                     <span
-                      class="MuiBox-root emotion-41"
+                      class="MuiBox-root emotion-42"
                     >
                       "
                       x
                       "
                     </span>
                     <div
-                      class="MuiBox-root emotion-42"
+                      class="MuiBox-root emotion-43"
                     >
                       :
                     </div>
                   </span>
                   <div
-                    class="MuiBox-root emotion-58"
+                    class="MuiBox-root emotion-59"
                   >
                     <div
-                      class="data-type-label MuiBox-root emotion-59"
+                      class="data-type-label MuiBox-root emotion-60"
                     >
                       int
                     </div>
                     <div
-                      class="int-value MuiBox-root emotion-60"
+                      class="int-value MuiBox-root emotion-61"
                     >
                       0
                     </div>
                   </div>
                 </div>
                 <div
-                  class="data-key-pair MuiBox-root emotion-38"
+                  class="data-key-pair MuiBox-root emotion-39"
                   data-testid="data-key-pairviewport.y"
                 >
                   <span
-                    class="data-key MuiBox-root emotion-39"
+                    class="data-key MuiBox-root emotion-40"
                   >
                     <span
-                      class="MuiBox-root emotion-41"
+                      class="MuiBox-root emotion-42"
                     >
                       "
                       y
                       "
                     </span>
                     <div
-                      class="MuiBox-root emotion-42"
+                      class="MuiBox-root emotion-43"
                     >
                       :
                     </div>
                   </span>
                   <div
-                    class="MuiBox-root emotion-58"
+                    class="MuiBox-root emotion-59"
                   >
                     <div
-                      class="data-type-label MuiBox-root emotion-59"
+                      class="data-type-label MuiBox-root emotion-60"
                     >
                       int
                     </div>
                     <div
-                      class="int-value MuiBox-root emotion-60"
+                      class="int-value MuiBox-root emotion-61"
                     >
                       0
                     </div>
                   </div>
                 </div>
                 <div
-                  class="data-key-pair MuiBox-root emotion-38"
+                  class="data-key-pair MuiBox-root emotion-39"
                   data-testid="data-key-pairviewport.zoom"
                 >
                   <span
-                    class="data-key MuiBox-root emotion-39"
+                    class="data-key MuiBox-root emotion-40"
                   >
                     <span
-                      class="MuiBox-root emotion-41"
+                      class="MuiBox-root emotion-42"
                     >
                       "
                       zoom
                       "
                     </span>
                     <div
-                      class="MuiBox-root emotion-42"
+                      class="MuiBox-root emotion-43"
                     >
                       :
                     </div>
                   </span>
                   <div
-                    class="MuiBox-root emotion-58"
+                    class="MuiBox-root emotion-59"
                   >
                     <div
-                      class="data-type-label MuiBox-root emotion-59"
+                      class="data-type-label MuiBox-root emotion-60"
                     >
                       int
                     </div>
                     <div
-                      class="int-value MuiBox-root emotion-60"
+                      class="int-value MuiBox-root emotion-61"
                     >
                       1
                     </div>
@@ -20095,39 +19713,39 @@ exports[`<ProEditor /> > renders controlledPresence.tsx correctly 1`] = `
                 </div>
               </div>
               <span
-                class="data-object-end MuiBox-root emotion-41"
+                class="data-object-end MuiBox-root emotion-42"
               >
                 }
               </span>
             </div>
             <div
-              class="data-key-pair MuiBox-root emotion-38"
+              class="data-key-pair MuiBox-root emotion-39"
               data-testid="data-key-paircomponentSizeOnCanvas"
             >
               <span
-                class="data-key MuiBox-root emotion-39"
+                class="data-key MuiBox-root emotion-40"
               >
                 <span
-                  class="MuiBox-root emotion-41"
+                  class="MuiBox-root emotion-42"
                 >
                   "
                   componentSizeOnCanvas
                   "
                 </span>
                 <div
-                  class="MuiBox-root emotion-42"
+                  class="MuiBox-root emotion-43"
                 >
                   :
                 </div>
               </span>
               <div
-                class="MuiBox-root emotion-126"
+                class="MuiBox-root emotion-127"
               >
                 <div
-                  class="undefined-value MuiBox-root emotion-60"
+                  class="undefined-value MuiBox-root emotion-61"
                 >
                   <div
-                    class="MuiBox-root emotion-128"
+                    class="MuiBox-root emotion-129"
                   >
                     undefined
                   </div>
@@ -20136,7 +19754,7 @@ exports[`<ProEditor /> > renders controlledPresence.tsx correctly 1`] = `
             </div>
           </div>
           <span
-            class="data-object-end MuiBox-root emotion-41"
+            class="data-object-end MuiBox-root emotion-42"
           >
             }
           </span>
@@ -20329,7 +19947,7 @@ exports[`<ProEditor /> > renders customAssets.tsx correctly 1`] = `
 
 .emotion-18 {
   background-color: #2b303b;
-  border: 1px solid transparent;
+  border: 1px solid #2b303b;
   position: relative;
   margin: 0;
   border-radius: 6px;
@@ -20502,15 +20120,19 @@ exports[`<ProEditor /> > renders customAssets.tsx correctly 1`] = `
   height: 36px;
   padding: 0 8px;
   font-family: 'SFMono-Regular',Consolas,'Liberation Mono',Menlo,Courier,monospace;
-  color: rgba(255, 255, 255, 0.45);
+  color: #555555;
   border-radius: 6;
 }
 
 .emotion-29 {
+  color: #555555;
+}
+
+.emotion-30 {
   position: relative;
 }
 
-.emotion-29::before {
+.emotion-30::before {
   position: absolute;
   z-index: 50;
   -webkit-transition: all 0.3s ease-in-out;
@@ -20518,18 +20140,18 @@ exports[`<ProEditor /> > renders customAssets.tsx correctly 1`] = `
   content: '';
 }
 
-.emotion-29:hover::before,
-.emotion-29:active::before {
+.emotion-30:hover::before,
+.emotion-30:active::before {
   background: #1677ff;
 }
 
-.emotion-29::before {
+.emotion-30::before {
   top: 50%;
   height: 2px;
   width: 100%;
 }
 
-.emotion-30 {
+.emotion-31 {
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
@@ -20537,11 +20159,11 @@ exports[`<ProEditor /> > renders customAssets.tsx correctly 1`] = `
   border: 0 solid rgba(140, 94, 2, 0.08);
 }
 
-.emotion-30:hover .studio-draggable-panel-toggle {
+.emotion-31:hover .studio-draggable-panel-toggle {
   opacity: 1;
 }
 
-.emotion-31 {
+.emotion-32 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -20559,7 +20181,7 @@ exports[`<ProEditor /> > renders customAssets.tsx correctly 1`] = `
   align-items: center;
 }
 
-.emotion-32 {
+.emotion-33 {
   position: absolute;
   opacity: 0;
   z-index: 1001;
@@ -20581,16 +20203,16 @@ exports[`<ProEditor /> > renders customAssets.tsx correctly 1`] = `
   border-right-width: 0;
 }
 
-.emotion-32:hover {
+.emotion-33:hover {
   color: rgba(255, 255, 255, 0.65);
   background: rgba(255, 255, 255, 0.04);
 }
 
-.emotion-34 {
+.emotion-35 {
   position: relative;
 }
 
-.emotion-34::before {
+.emotion-35::before {
   position: absolute;
   z-index: 50;
   -webkit-transition: all 0.3s ease-in-out;
@@ -20598,12 +20220,12 @@ exports[`<ProEditor /> > renders customAssets.tsx correctly 1`] = `
   content: '';
 }
 
-.emotion-34:hover::before,
-.emotion-34:active::before {
+.emotion-35:hover::before,
+.emotion-35:active::before {
   background: #1677ff;
 }
 
-.emotion-34::before {
+.emotion-35::before {
   left: 50%;
   width: 2px;
   height: 100%;
@@ -21059,9 +20681,8 @@ exports[`<ProEditor /> > renders customAssets.tsx correctly 1`] = `
                     >
                       <span
                         aria-label="loading-3-quarters"
-                        class="anticon anticon-loading-3-quarters anticon-spin"
+                        class="anticon anticon-loading-3-quarters anticon-spin emotion-29"
                         role="img"
-                        style="color: rgba(255, 255, 255, 0.45);"
                       >
                         <svg
                           aria-hidden="true"
@@ -21083,7 +20704,7 @@ exports[`<ProEditor /> > renders customAssets.tsx correctly 1`] = `
                 </div>
                 <div>
                   <div
-                    class="studio-draggable-panel-top-handle emotion-29"
+                    class="studio-draggable-panel-top-handle emotion-30"
                     style="position: absolute; user-select: none; width: 100%; height: 10px; top: -5px; left: 0px; cursor: row-resize;"
                   />
                 </div>
@@ -21093,11 +20714,11 @@ exports[`<ProEditor /> > renders customAssets.tsx correctly 1`] = `
         </div>
       </div>
       <div
-        class="studio-draggable-panel emotion-30"
+        class="studio-draggable-panel emotion-31"
         style="border-left-width: 1px;"
       >
         <div
-          class="layoutkit-center emotion-31 studio-draggable-panel-toggle studio-draggable-panel-toggle-left emotion-32"
+          class="layoutkit-center emotion-32 studio-draggable-panel-toggle studio-draggable-panel-toggle-left emotion-33"
         >
           <span
             aria-label="left"
@@ -21131,7 +20752,7 @@ exports[`<ProEditor /> > renders customAssets.tsx correctly 1`] = `
           </div>
           <div>
             <div
-              class="emotion-34 studio-draggable-panel-left-handle"
+              class="emotion-35 studio-draggable-panel-left-handle"
               style="position: absolute; user-select: none; width: 10px; height: 100%; top: 0px; left: -5px; cursor: col-resize;"
             />
           </div>

@@ -10,13 +10,13 @@ import configs from './config';
 const DEFAULT_LANGUAGE = 'typescript';
 const DEFAULT_THEME = 'light';
 const DEFAULT_LINENUMBER = 'false';
-const DEFAULT_HIGH_LIGHTER = 'shiki';
+const DEFAULT_TYPE = 'block';
 const { Option } = Select;
 
 export default () => {
   const [theme, setTheme] = useState<'light' | 'dark'>(DEFAULT_THEME);
   const [language, setLanguage] = useState(DEFAULT_LANGUAGE);
-  const [highlighter, setHighlighter] = useState(DEFAULT_HIGH_LIGHTER);
+  const [type, setType] = useState(DEFAULT_TYPE);
   const [lineNumberStatus, setLineNumberStatus] = useState(DEFAULT_LINENUMBER);
   const code = configs.find((config) => config.language === language).code || '';
 
@@ -55,14 +55,14 @@ export default () => {
           <Option value="false">不展示</Option>
           <Option value="true">展示</Option>
         </Select>
-        渲染器:
+        展示类型:
         <Select
-          defaultValue={DEFAULT_HIGH_LIGHTER}
+          defaultValue={DEFAULT_TYPE}
           style={{ width: 120 }}
-          onChange={(value) => setHighlighter(value)}
+          onChange={(value) => setType(value)}
         >
-          <Option value="highlight.js">highlight.js</Option>
-          <Option value="shiki">Shiki</Option>
+          <Option value="block">block</Option>
+          <Option value="pure">pure</Option>
         </Select>
       </Space>
       <div style={{ height: 400, width: '100%', overflowY: 'scroll', marginBlockStart: '16px' }}>
@@ -70,7 +70,7 @@ export default () => {
           language={language as 'json'}
           theme={theme}
           lineNumber={lineNumberStatus !== DEFAULT_LINENUMBER}
-          highlighter={highlighter as 'highlight.js'}
+          type={type as 'block' | 'pure'}
         >
           {code}
         </Highlight>
