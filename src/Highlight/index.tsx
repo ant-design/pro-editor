@@ -62,6 +62,10 @@ export interface HighlightProps {
    * 高亮器
    */
   highlighter?: 'shiki' | 'highlight.js';
+  /**
+   * 高亮类型
+   */
+  type?: 'pure' | 'block';
 }
 
 const Highlight: React.FC<HighlightProps> = (props) => {
@@ -75,11 +79,12 @@ const Highlight: React.FC<HighlightProps> = (props) => {
     language,
     prefixCls: customPrefixCls,
     highlighter = 'shiki',
+    type = 'block',
     onCopy,
   } = props;
 
   const prefixCls = getPrefixCls('highlight', customPrefixCls);
-  const { styles } = useStyles({ prefixCls, theme, lineNumber });
+  const { styles } = useStyles({ prefixCls, theme, lineNumber, type });
   const codeRef = createRef<HTMLDivElement>();
   useKeyDownCopyEvent(codeRef, onCopy);
 

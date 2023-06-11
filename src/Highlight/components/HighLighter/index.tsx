@@ -43,13 +43,7 @@ const HighLighter: React.FC<HighLighterProps> = (props) => {
       rowList.map((src, index) => {
         return (
           <tr key={index}>
-            <HighlightCell
-              lineNumber={lineNumber}
-              width="100%"
-              data={src}
-              theme={theme}
-              prefixCls={prefixCls}
-            />
+            <HighlightCell lineNumber={lineNumber} data={src} prefixCls={prefixCls} />
           </tr>
         );
       }),
@@ -64,10 +58,10 @@ const HighLighter: React.FC<HighLighterProps> = (props) => {
   return (
     <pre className={classNames(themeClass)}>
       <table
-        className={classNames(
-          styles.table,
-          `${theme === THEME_DARK ? styles.darkTheme : styles.lightTheme}`,
-        )}
+        border={0}
+        cellPadding={0}
+        cellSpacing={0}
+        className={classNames(`${theme === THEME_DARK ? styles.darkTheme : styles.lightTheme}`)}
       >
         <tbody>{codeBlock}</tbody>
       </table>

@@ -2,6 +2,7 @@ import { createStyles } from '../../../theme';
 
 export const useStyles = createStyles(({ css, cx, token }, { prefixCls, lineNumber }) => {
   const prefix = `${prefixCls}`;
+
   const lineNumberStyle = css`
     code {
       counter-reset: step;
@@ -16,6 +17,7 @@ export const useStyles = createStyles(({ css, cx, token }, { prefixCls, lineNumb
       display: inline-block;
       text-align: right;
       color: rgba(115, 138, 148, 0.4);
+      user-select: none;
     }
   `;
   return {

@@ -16243,67 +16243,23 @@ exports[`<FreeCanvas /> > renders basic.tsx correctly 1`] = `
 
 exports[`<Highlight /> > renders basic.tsx correctly 1`] = `
 .emotion-0 {
-  display: block;
-  padding: 0.5em;
-  overflow-x: auto;
-  color: #c0c5ce;
-  background: #2b303b;
+  background-color: #2b303b;
+  border: 1px solid transparent;
+  position: relative;
+  margin: 0;
+  border-radius: 6px;
+  -webkit-transition: background-color 100ms cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: background-color 100ms cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
-.emotion-0 .hljs-comment,
-.emotion-0 .hljs-quote {
-  color: #65737e;
+.emotion-0 pre {
+  margin: 0!important;
+  padding: 16px 24px!important;
+  background: none!important;
 }
 
-.emotion-0 .hljs-variable,
-.emotion-0 .hljs-template-variable,
-.emotion-0 .hljs-tag,
-.emotion-0 .hljs-name,
-.emotion-0 .hljs-selector-id,
-.emotion-0 .hljs-selector-class,
-.emotion-0 .hljs-regexp,
-.emotion-0 .hljs-deletion {
-  color: #bf616a;
-}
-
-.emotion-0 .hljs-number,
-.emotion-0 .hljs-built_in,
-.emotion-0 .hljs-builtin-name,
-.emotion-0 .hljs-literal,
-.emotion-0 .hljs-type,
-.emotion-0 .hljs-params,
-.emotion-0 .hljs-meta,
-.emotion-0 .hljs-link {
-  color: #d08770;
-}
-
-.emotion-0 .hljs-attribute {
-  color: #ebcb8b;
-}
-
-.emotion-0 .hljs-string,
-.emotion-0 .hljs-symbol,
-.emotion-0 .hljs-bullet,
-.emotion-0 .hljs-addition {
-  color: #a3be8c;
-}
-
-.emotion-0 .hljs-title,
-.emotion-0 .hljs-section {
-  color: #8fa1b3;
-}
-
-.emotion-0 .hljs-keyword,
-.emotion-0 .hljs-selector-tag {
-  color: #b48ead;
-}
-
-.emotion-0 .hljs-emphasis {
-  font-style: italic;
-}
-
-.emotion-0 .hljs-strong {
-  font-weight: bold;
+.emotion-0 code {
+  background: transparent!important;
 }
 
 .emotion-1 {
@@ -16346,14 +16302,53 @@ exports[`<Highlight /> > renders basic.tsx correctly 1`] = `
   animation-play-state: running;
 }
 
+.emotion-4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 8px;
+}
+
 .emotion-5 {
-  padding: 2px 8px;
+  -webkit-backdrop-filter: saturate(180%) blur(10px);
+  backdrop-filter: saturate(180%) blur(10px);
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  height: 36px;
+  padding: 0 8px;
+  font-family: 'SFMono-Regular',Consolas,'Liberation Mono',Menlo,Courier,monospace;
+  color: rgba(0, 0, 0, 0.45);
+  border-radius: 6;
 }
 
 <div>
-  <pre
-    class="studio-highlight studio-highlight-dark emotion-0"
-    style="position: relative; margin: 0px;"
+  <div
+    class="studio-highlight-container emotion-0"
     tabindex="-1"
   >
     <button
@@ -16402,685 +16397,54 @@ exports[`<Highlight /> > renders basic.tsx correctly 1`] = `
         </svg>
       </span>
     </button>
-    <table
-      class="studio-highlight-dark emotion-0"
-      style="padding: 0px; border-collapse: collapse;"
-    >
-      <tbody>
-        <tr>
-          <td
-            class="studio-highlight-content emotion-5"
-            style="width: 100%;"
-          >
-            <span
-              class="hljs-keyword"
-            >
-              public
-            </span>
-             
-            <span
-              class="hljs-class"
-            >
-              <span
-                class="hljs-keyword"
-              >
-                class
-              </span>
-               
-              <span
-                class="hljs-title"
-              >
-                HelloWorld
-              </span>
-               
-            </span>
-            {
-          </td>
-        </tr>
-        <tr>
-          <td
-            class="studio-highlight-content emotion-5"
-            style="width: 100%;"
-          >
-                
-            <span
-              class="hljs-function"
-            >
-              <span
-                class="hljs-keyword"
-              >
-                public
-              </span>
-               
-              <span
-                class="hljs-keyword"
-              >
-                static
-              </span>
-               
-              <span
-                class="hljs-keyword"
-              >
-                void
-              </span>
-               
-              <span
-                class="hljs-title"
-              >
-                main
-              </span>
-              <span
-                class="hljs-params"
-              >
-                (String[] args)
-              </span>
-               
-            </span>
-            {
-          </td>
-        </tr>
-        <tr>
-          <td
-            class="studio-highlight-content emotion-5"
-            style="width: 100%;"
-          >
-                  System.out.println(
-            <span
-              class="hljs-string"
-            >
-              "Hello World!"
-            </span>
-            );
-          </td>
-        </tr>
-        <tr>
-          <td
-            class="studio-highlight-content emotion-5"
-            style="width: 100%;"
-          >
-                }
-          </td>
-        </tr>
-        <tr>
-          <td
-            class="studio-highlight-content emotion-5"
-            style="width: 100%;"
-          >
-              }
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  </pre>
-</div>
-`;
-
-exports[`<Highlight /> > renders json.tsx correctly 1`] = `
-.emotion-0 {
-  padding: 0;
-}
-
-.emotion-0 .react-json-view {
-  padding: 0.5em;
-  overflow: auto;
-}
-
-.emotion-0 .react-json-view .icon-container svg {
-  -webkit-transform: translateY(5px);
-  -moz-transform: translateY(5px);
-  -ms-transform: translateY(5px);
-  transform: translateY(5px);
-}
-
-.emotion-1 {
-  display: block;
-  padding: 0.5em;
-  overflow-x: auto;
-  color: #383a42;
-  background: #fafafa;
-}
-
-.emotion-1 .react-json-view {
-  background: #fafafa;
-}
-
-.emotion-1 .hljs-comment,
-.emotion-1 .hljs-quote {
-  color: #a0a1a7;
-  font-style: italic;
-}
-
-.emotion-1 .hljs-doctag,
-.emotion-1 .hljs-keyword,
-.emotion-1 .hljs-formula {
-  color: #a626a4;
-}
-
-.emotion-1 .hljs-section,
-.emotion-1 .hljs-name,
-.emotion-1 .hljs-selector-tag,
-.emotion-1 .hljs-deletion,
-.emotion-1 .hljs-subst {
-  color: #e45649;
-}
-
-.emotion-1 .hljs-literal {
-  color: #0184bb;
-}
-
-.emotion-1 .hljs-string,
-.emotion-1 .hljs-regexp,
-.emotion-1 .hljs-addition,
-.emotion-1 .hljs-attribute,
-.emotion-1 .hljs-meta-string {
-  color: #50a14f;
-}
-
-.emotion-1 .hljs-built_in,
-.emotion-1 .hljs-class .hljs-title {
-  color: #c18401;
-}
-
-.emotion-1 .hljs-attr,
-.emotion-1 .hljs-variable,
-.emotion-1 .hljs-template-variable,
-.emotion-1 .hljs-type,
-.emotion-1 .hljs-selector-class,
-.emotion-1 .hljs-selector-attr,
-.emotion-1 .hljs-selector-pseudo,
-.emotion-1 .hljs-number {
-  color: #986801;
-}
-
-.emotion-1 .hljs-symbol,
-.emotion-1 .hljs-bullet,
-.emotion-1 .hljs-link,
-.emotion-1 .hljs-meta,
-.emotion-1 .hljs-selector-id,
-.emotion-1 .hljs-title {
-  color: #4078f2;
-}
-
-.emotion-1 .hljs-emphasis {
-  font-style: italic;
-}
-
-.emotion-1 .hljs-strong {
-  font-weight: bold;
-}
-
-.emotion-1 .hljs-link {
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.emotion-2 {
-  background-color: #fff;
-  color: rgba(0, 0, 0, 0.87);
-  -webkit-transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-  transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-  border-radius: 4px;
-  box-shadow: none;
-  background-color: rgba(0, 0, 0, 0);
-  font-family: monospace;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  content-visibility: auto;
-}
-
-.emotion-3 {
-  -webkit-user-select: text;
-  -moz-user-select: text;
-  -ms-user-select: text;
-  user-select: text;
-}
-
-.emotion-4 {
-  display: inline-block;
-  line-height: 1.5;
-  color: #002b36;
-  letter-spacing: 0.5px;
-  opacity: 0.8;
-}
-
-.emotion-5 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 1em;
-  height: 1em;
-  display: inline-block;
-  fill: currentColor;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  -webkit-transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-  transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-  font-size: 1.5rem;
-  font-size: .8rem;
-}
-
-.emotion-5:hover {
-  cursor: pointer;
-}
-
-.emotion-7 {
-  letter-spacing: 0.5px;
-}
-
-.emotion-8 {
-  padding-left: 4px;
-  font-style: italic;
-  color: rgba(0, 0, 0, 0.3);
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-.emotion-9 {
-  display: block;
-  padding-left: 14.399999999999999px;
-  margin-left: 4.8px;
-  color: #002b36;
-  border-left: 1px solid rgb(235, 235, 235);
-}
-
-.emotion-13 {
-  display: inline-block;
-  margin-right: 4px;
-}
-
-.emotion-14 {
-  display: inline-block;
-  color: #cb4b16;
-}
-
-.emotion-15 {
-  display: inline-block;
-}
-
-.emotion-16 {
-  overflow-wrap: anywhere;
-  cursor: inherit;
-}
-
-<div>
-  <div
-    class="studio-highlight studio-highlight-json-view emotion-0 studio-highlight-light emotion-1 jsonView lightTheme lightThemeIndex darkTheme darkThemeIndex index content copy copyIcon"
-  >
     <div
-      class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 json-viewer-theme-light emotion-2"
+      class="layoutkit-center emotion-4 emotion-5"
     >
-      <div
-        class="data-key-pair MuiBox-root emotion-3"
-        data-testid="data-key-pair"
+      <span
+        aria-label="loading-3-quarters"
+        class="anticon anticon-loading-3-quarters anticon-spin"
+        role="img"
+        style="color: rgba(0, 0, 0, 0.45);"
       >
-        <span
-          class="data-key MuiBox-root emotion-4"
+        <svg
+          aria-hidden="true"
+          data-icon="loading-3-quarters"
+          fill="currentColor"
+          focusable="false"
+          height="1em"
+          viewBox="0 0 1024 1024"
+          width="1em"
         >
-          <svg
-            aria-hidden="true"
-            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium emotion-5"
-            focusable="false"
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M16.59 8.59 12 13.17 7.41 8.59 6 10l6 6 6-6z"
-            />
-          </svg>
-          <span
-            class="MuiBox-root emotion-6"
+          <path
+            d="M512 1024c-69.1 0-136.2-13.5-199.3-40.2C251.7 958 197 921 150 874c-47-47-84-101.7-109.8-162.7C13.5 648.2 0 581.1 0 512c0-19.9 16.1-36 36-36s36 16.1 36 36c0 59.4 11.6 117 34.6 171.3 22.2 52.4 53.9 99.5 94.3 139.9 40.4 40.4 87.5 72.2 139.9 94.3C395 940.4 452.6 952 512 952c59.4 0 117-11.6 171.3-34.6 52.4-22.2 99.5-53.9 139.9-94.3 40.4-40.4 72.2-87.5 94.3-139.9C940.4 629 952 571.4 952 512c0-59.4-11.6-117-34.6-171.3a440.45 440.45 0 00-94.3-139.9 437.71 437.71 0 00-139.9-94.3C629 83.6 571.4 72 512 72c-19.9 0-36-16.1-36-36s16.1-36 36-36c69.1 0 136.2 13.5 199.3 40.2C772.3 66 827 103 874 150c47 47 83.9 101.8 109.7 162.7 26.7 63.1 40.2 130.2 40.2 199.3s-13.5 136.2-40.2 199.3C958 772.3 921 827 874 874c-47 47-101.8 83.9-162.7 109.7-63.1 26.8-130.2 40.3-199.3 40.3z"
           />
-          <span
-            class="data-object-start MuiBox-root emotion-7"
-          >
-            {
-            <span
-              class="MuiBox-root emotion-8"
-            >
-              3 Items
-            </span>
-          </span>
-        </span>
-        <div
-          class="data-object MuiBox-root emotion-9"
-        >
-          <div
-            class="data-key-pair MuiBox-root emotion-3"
-            data-testid="data-key-pairname"
-          >
-            <span
-              class="data-key MuiBox-root emotion-4"
-            >
-              <span
-                class="MuiBox-root emotion-6"
-              >
-                "
-                name
-                "
-              </span>
-              <div
-                class="MuiBox-root emotion-13"
-              >
-                :
-              </div>
-            </span>
-            <div
-              class="MuiBox-root emotion-14"
-            >
-              <div
-                class="string-value MuiBox-root emotion-15"
-              >
-                <span
-                  class="MuiBox-root emotion-16"
-                >
-                  "
-                  ProComponents
-                  "
-                </span>
-              </div>
-            </div>
-          </div>
-          <div
-            class="data-key-pair MuiBox-root emotion-3"
-            data-testid="data-key-pairdescription"
-          >
-            <span
-              class="data-key MuiBox-root emotion-4"
-            >
-              <span
-                class="MuiBox-root emotion-6"
-              >
-                "
-                description
-                "
-              </span>
-              <div
-                class="MuiBox-root emotion-13"
-              >
-                :
-              </div>
-            </span>
-            <div
-              class="MuiBox-root emotion-14"
-            >
-              <div
-                class="string-value MuiBox-root emotion-15"
-              >
-                <span
-                  class="MuiBox-root emotion-16"
-                >
-                  "
-                  基于 Ant Design 的 UI 资产库。
-                  "
-                </span>
-              </div>
-            </div>
-          </div>
-          <div
-            class="data-key-pair MuiBox-root emotion-3"
-            data-testid="data-key-pairversions"
-          >
-            <span
-              class="data-key MuiBox-root emotion-4"
-            >
-              <svg
-                aria-hidden="true"
-                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium emotion-5"
-                focusable="false"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M16.59 8.59 12 13.17 7.41 8.59 6 10l6 6 6-6z"
-                />
-              </svg>
-              <span
-                class="MuiBox-root emotion-6"
-              >
-                "
-                versions
-                "
-              </span>
-              <div
-                class="MuiBox-root emotion-13"
-              >
-                :
-              </div>
-              <span
-                class="data-object-start MuiBox-root emotion-7"
-              >
-                [
-                <span
-                  class="MuiBox-root emotion-8"
-                >
-                  3 Items
-                </span>
-              </span>
-            </span>
-            <div
-              class="data-object MuiBox-root emotion-9"
-            >
-              <div
-                class="data-key-pair MuiBox-root emotion-3"
-                data-testid="data-key-pairversions.0"
-              >
-                <span
-                  class="data-key MuiBox-root emotion-4"
-                >
-                  <span
-                    class="MuiBox-root emotion-6"
-                  >
-                    <span
-                      class="MuiBox-root emotion-6"
-                      style="color: rgb(108, 113, 196);"
-                    >
-                      0
-                    </span>
-                  </span>
-                  <div
-                    class="MuiBox-root emotion-13"
-                  >
-                    :
-                  </div>
-                </span>
-                <div
-                  class="MuiBox-root emotion-14"
-                >
-                  <div
-                    class="string-value MuiBox-root emotion-15"
-                  >
-                    <span
-                      class="MuiBox-root emotion-16"
-                    >
-                      "
-                      1.0.0
-                      "
-                    </span>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="data-key-pair MuiBox-root emotion-3"
-                data-testid="data-key-pairversions.1"
-              >
-                <span
-                  class="data-key MuiBox-root emotion-4"
-                >
-                  <span
-                    class="MuiBox-root emotion-6"
-                  >
-                    <span
-                      class="MuiBox-root emotion-6"
-                      style="color: rgb(108, 113, 196);"
-                    >
-                      1
-                    </span>
-                  </span>
-                  <div
-                    class="MuiBox-root emotion-13"
-                  >
-                    :
-                  </div>
-                </span>
-                <div
-                  class="MuiBox-root emotion-14"
-                >
-                  <div
-                    class="string-value MuiBox-root emotion-15"
-                  >
-                    <span
-                      class="MuiBox-root emotion-16"
-                    >
-                      "
-                      2.0.0
-                      "
-                    </span>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="data-key-pair MuiBox-root emotion-3"
-                data-testid="data-key-pairversions.2"
-              >
-                <span
-                  class="data-key MuiBox-root emotion-4"
-                >
-                  <span
-                    class="MuiBox-root emotion-6"
-                  >
-                    <span
-                      class="MuiBox-root emotion-6"
-                      style="color: rgb(108, 113, 196);"
-                    >
-                      2
-                    </span>
-                  </span>
-                  <div
-                    class="MuiBox-root emotion-13"
-                  >
-                    :
-                  </div>
-                </span>
-                <div
-                  class="MuiBox-root emotion-14"
-                >
-                  <div
-                    class="string-value MuiBox-root emotion-15"
-                  >
-                    <span
-                      class="MuiBox-root emotion-16"
-                    >
-                      "
-                      2.5.1
-                      "
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <span
-              class="data-object-end MuiBox-root emotion-6"
-            >
-              ]
-            </span>
-          </div>
-        </div>
-        <span
-          class="data-object-end MuiBox-root emotion-6"
-        >
-          }
-        </span>
-      </div>
+        </svg>
+      </span>
+      Highlighting...
     </div>
   </div>
 </div>
 `;
 
-exports[`<Highlight /> > renders lineNumber.tsx correctly 1`] = `
+exports[`<Highlight /> > renders highlight.js.tsx correctly 1`] = `
 .emotion-0 {
-  display: block;
-  padding: 0.5em;
-  overflow-x: auto;
-  color: #383a42;
-  background: #fafafa;
+  background-color: #2b303b;
+  border: 1px solid transparent;
+  position: relative;
+  margin: 0;
+  border-radius: 6px;
+  -webkit-transition: background-color 100ms cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: background-color 100ms cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
-.emotion-0 .react-json-view {
-  background: #fafafa;
+.emotion-0 pre {
+  margin: 0!important;
+  padding: 16px 24px!important;
+  background: none!important;
 }
 
-.emotion-0 .hljs-comment,
-.emotion-0 .hljs-quote {
-  color: #a0a1a7;
-  font-style: italic;
-}
-
-.emotion-0 .hljs-doctag,
-.emotion-0 .hljs-keyword,
-.emotion-0 .hljs-formula {
-  color: #a626a4;
-}
-
-.emotion-0 .hljs-section,
-.emotion-0 .hljs-name,
-.emotion-0 .hljs-selector-tag,
-.emotion-0 .hljs-deletion,
-.emotion-0 .hljs-subst {
-  color: #e45649;
-}
-
-.emotion-0 .hljs-literal {
-  color: #0184bb;
-}
-
-.emotion-0 .hljs-string,
-.emotion-0 .hljs-regexp,
-.emotion-0 .hljs-addition,
-.emotion-0 .hljs-attribute,
-.emotion-0 .hljs-meta-string {
-  color: #50a14f;
-}
-
-.emotion-0 .hljs-built_in,
-.emotion-0 .hljs-class .hljs-title {
-  color: #c18401;
-}
-
-.emotion-0 .hljs-attr,
-.emotion-0 .hljs-variable,
-.emotion-0 .hljs-template-variable,
-.emotion-0 .hljs-type,
-.emotion-0 .hljs-selector-class,
-.emotion-0 .hljs-selector-attr,
-.emotion-0 .hljs-selector-pseudo,
-.emotion-0 .hljs-number {
-  color: #986801;
-}
-
-.emotion-0 .hljs-symbol,
-.emotion-0 .hljs-bullet,
-.emotion-0 .hljs-link,
-.emotion-0 .hljs-meta,
-.emotion-0 .hljs-selector-id,
-.emotion-0 .hljs-title {
-  color: #4078f2;
-}
-
-.emotion-0 .hljs-emphasis {
-  font-style: italic;
-}
-
-.emotion-0 .hljs-strong {
-  font-weight: bold;
-}
-
-.emotion-0 .hljs-link {
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
+.emotion-0 code {
+  background: transparent!important;
 }
 
 .emotion-1 {
@@ -17123,31 +16487,384 @@ exports[`<Highlight /> > renders lineNumber.tsx correctly 1`] = `
   animation-play-state: running;
 }
 
-.emotion-5 {
-  width: 40px;
-  min-width: 40px;
-  padding: 2px 8px;
-  color: #aaa;
+.emotion-4 {
+  display: block;
+  overflow-x: auto;
+  color: #c0c5ce;
+  background: #2b303b;
+}
+
+.emotion-4 .hljs-comment,
+.emotion-4 .hljs-quote {
+  color: #65737e;
+}
+
+.emotion-4 .hljs-variable,
+.emotion-4 .hljs-template-variable,
+.emotion-4 .hljs-tag,
+.emotion-4 .hljs-name,
+.emotion-4 .hljs-selector-id,
+.emotion-4 .hljs-selector-class,
+.emotion-4 .hljs-regexp,
+.emotion-4 .hljs-deletion {
+  color: #bf616a;
+}
+
+.emotion-4 .hljs-number,
+.emotion-4 .hljs-built_in,
+.emotion-4 .hljs-builtin-name,
+.emotion-4 .hljs-literal,
+.emotion-4 .hljs-type,
+.emotion-4 .hljs-params,
+.emotion-4 .hljs-meta,
+.emotion-4 .hljs-link {
+  color: #d08770;
+}
+
+.emotion-4 .hljs-attribute {
+  color: #ebcb8b;
+}
+
+.emotion-4 .hljs-string,
+.emotion-4 .hljs-symbol,
+.emotion-4 .hljs-bullet,
+.emotion-4 .hljs-addition {
+  color: #a3be8c;
+}
+
+.emotion-4 .hljs-title,
+.emotion-4 .hljs-section {
+  color: #8fa1b3;
+}
+
+.emotion-4 .hljs-keyword,
+.emotion-4 .hljs-selector-tag {
+  color: #b48ead;
+}
+
+.emotion-4 .hljs-emphasis {
+  font-style: italic;
+}
+
+.emotion-4 .hljs-strong {
+  font-weight: bold;
+}
+
+.emotion-6 {
+  box-sizing: border-box;
+  width: 1rem;
+  margin-right: 1.5rem;
+  display: inline-block;
+  color: rgba(115, 138, 148, 0.4);
   text-align: right;
-  background: rgba(255, 255, 255, 0.03);
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
 }
 
-.emotion-6 {
-  border-right: 1px solid rgba(0, 0, 0, 0.05);
-}
-
 .emotion-7 {
-  padding: 2px 8px;
+  width: 100%;
 }
 
 <div>
-  <pre
-    class="studio-highlight studio-highlight-light emotion-0"
-    style="position: relative; margin: 0px;"
+  <div
+    class="studio-highlight-container emotion-0"
+    tabindex="-1"
+  >
+    <button
+      class="studio-highlight-copy emotion-1"
+      style="background: rgb(43, 48, 59);"
+      type="button"
+    >
+      <span
+        aria-label="copy"
+        class="anticon anticon-copy studio-highlight-copy-icon emotion-2"
+        role="img"
+        style="color: rgb(250, 250, 250);"
+      >
+        <svg
+          aria-hidden="true"
+          data-icon="copy"
+          fill="currentColor"
+          focusable="false"
+          height="1em"
+          viewBox="64 64 896 896"
+          width="1em"
+        >
+          <path
+            d="M832 64H296c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h496v688c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8V96c0-17.7-14.3-32-32-32zM704 192H192c-17.7 0-32 14.3-32 32v530.7c0 8.5 3.4 16.6 9.4 22.6l173.3 173.3c2.2 2.2 4.7 4 7.4 5.5v1.9h4.2c3.5 1.3 7.2 2 11 2H704c17.7 0 32-14.3 32-32V224c0-17.7-14.3-32-32-32zM350 856.2L263.9 770H350v86.2zM664 888H414V746c0-22.1-17.9-40-40-40H232V264h432v624z"
+          />
+        </svg>
+      </span>
+      <span
+        aria-label="check"
+        class="anticon anticon-check studio-highlight-copy-icon emotion-2"
+        role="img"
+        style="color: rgb(63, 177, 99);"
+      >
+        <svg
+          aria-hidden="true"
+          data-icon="check"
+          fill="currentColor"
+          focusable="false"
+          height="1em"
+          viewBox="64 64 896 896"
+          width="1em"
+        >
+          <path
+            d="M912 190h-69.9c-9.8 0-19.1 4.5-25.1 12.2L404.7 724.5 207 474a32 32 0 00-25.1-12.2H112c-6.7 0-10.4 7.7-6.3 12.9l273.9 347c12.8 16.2 37.4 16.2 50.3 0l488.4-618.9c4.1-5.1.4-12.8-6.3-12.8z"
+          />
+        </svg>
+      </span>
+    </button>
+    <pre
+      class="studio-highlight-dark emotion-4"
+    >
+      <table
+        border="0"
+        cellpadding="0"
+        cellspacing="0"
+        class="studio-highlight-dark emotion-4"
+      >
+        <tbody>
+          <tr>
+            <td
+              class="studio-highlight-index emotion-6"
+            >
+              1
+            </td>
+            <td
+              class="studio-highlight-content emotion-7"
+            >
+              <span
+                class="hljs-keyword"
+              >
+                public
+              </span>
+               
+              <span
+                class="hljs-class"
+              >
+                <span
+                  class="hljs-keyword"
+                >
+                  class
+                </span>
+                 
+                <span
+                  class="hljs-title"
+                >
+                  HelloWorld
+                </span>
+                 
+              </span>
+              {
+            </td>
+          </tr>
+          <tr>
+            <td
+              class="studio-highlight-index emotion-6"
+            >
+              2
+            </td>
+            <td
+              class="studio-highlight-content emotion-7"
+            >
+                  
+              <span
+                class="hljs-function"
+              >
+                <span
+                  class="hljs-keyword"
+                >
+                  public
+                </span>
+                 
+                <span
+                  class="hljs-keyword"
+                >
+                  static
+                </span>
+                 
+                <span
+                  class="hljs-keyword"
+                >
+                  void
+                </span>
+                 
+                <span
+                  class="hljs-title"
+                >
+                  main
+                </span>
+                <span
+                  class="hljs-params"
+                >
+                  (String[] args)
+                </span>
+                 
+              </span>
+              {
+            </td>
+          </tr>
+          <tr>
+            <td
+              class="studio-highlight-index emotion-6"
+            >
+              3
+            </td>
+            <td
+              class="studio-highlight-content emotion-7"
+            >
+                    System.out.println(
+              <span
+                class="hljs-string"
+              >
+                "Hello World!"
+              </span>
+              );
+            </td>
+          </tr>
+          <tr>
+            <td
+              class="studio-highlight-index emotion-6"
+            >
+              4
+            </td>
+            <td
+              class="studio-highlight-content emotion-7"
+            >
+                  }
+            </td>
+          </tr>
+          <tr>
+            <td
+              class="studio-highlight-index emotion-6"
+            >
+              5
+            </td>
+            <td
+              class="studio-highlight-content emotion-7"
+            >
+                }
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </pre>
+  </div>
+</div>
+`;
+
+exports[`<Highlight /> > renders lineNumber.tsx correctly 1`] = `
+.emotion-0 {
+  background-color: #fafafa;
+  border: 1px solid transparent;
+  position: relative;
+  margin: 0;
+  border-radius: 6px;
+  -webkit-transition: background-color 100ms cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: background-color 100ms cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.emotion-0 pre {
+  margin: 0!important;
+  padding: 16px 24px!important;
+  background: none!important;
+}
+
+.emotion-0 code {
+  background: transparent!important;
+}
+
+.emotion-1 {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 16px;
+  height: 16px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  opacity: 0.6;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+
+.emotion-1:hover {
+  opacity: 0.8;
+}
+
+.emotion-2 {
+  width: 16px;
+  height: 16px;
+  font-size: 16px;
+}
+
+.emotion-2.scoll {
+  -webkit-animation: copy-button-trans 2s;
+  animation: copy-button-trans 2s;
+  -webkit-animation-play-state: running;
+  animation-play-state: running;
+}
+
+.emotion-4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.emotion-5 {
+  -webkit-backdrop-filter: saturate(180%) blur(10px);
+  backdrop-filter: saturate(180%) blur(10px);
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  height: 36px;
+  padding: 0 8px;
+  font-family: 'SFMono-Regular',Consolas,'Liberation Mono',Menlo,Courier,monospace;
+  color: rgba(0, 0, 0, 0.45);
+  border-radius: 6;
+}
+
+<div>
+  <div
+    class="studio-highlight-container emotion-0"
     tabindex="-1"
   >
     <button
@@ -17196,147 +16913,518 @@ exports[`<Highlight /> > renders lineNumber.tsx correctly 1`] = `
         </svg>
       </span>
     </button>
-    <table
-      class="studio-highlight-light emotion-0"
-      style="padding: 0px; border-collapse: collapse;"
+    <div
+      class="layoutkit-center emotion-4 emotion-5"
     >
-      <tbody>
-        <tr>
-          <td
-            class="studio-highlight-index emotion-5 studio-highlight-light-index emotion-6"
-          >
-            1
-          </td>
-          <td
-            class="studio-highlight-content emotion-7"
-            style="width: 100%;"
+      <span
+        aria-label="loading-3-quarters"
+        class="anticon anticon-loading-3-quarters anticon-spin"
+        role="img"
+        style="color: rgba(0, 0, 0, 0.45);"
+      >
+        <svg
+          aria-hidden="true"
+          data-icon="loading-3-quarters"
+          fill="currentColor"
+          focusable="false"
+          height="1em"
+          viewBox="0 0 1024 1024"
+          width="1em"
+        >
+          <path
+            d="M512 1024c-69.1 0-136.2-13.5-199.3-40.2C251.7 958 197 921 150 874c-47-47-84-101.7-109.8-162.7C13.5 648.2 0 581.1 0 512c0-19.9 16.1-36 36-36s36 16.1 36 36c0 59.4 11.6 117 34.6 171.3 22.2 52.4 53.9 99.5 94.3 139.9 40.4 40.4 87.5 72.2 139.9 94.3C395 940.4 452.6 952 512 952c59.4 0 117-11.6 171.3-34.6 52.4-22.2 99.5-53.9 139.9-94.3 40.4-40.4 72.2-87.5 94.3-139.9C940.4 629 952 571.4 952 512c0-59.4-11.6-117-34.6-171.3a440.45 440.45 0 00-94.3-139.9 437.71 437.71 0 00-139.9-94.3C629 83.6 571.4 72 512 72c-19.9 0-36-16.1-36-36s16.1-36 36-36c69.1 0 136.2 13.5 199.3 40.2C772.3 66 827 103 874 150c47 47 83.9 101.8 109.7 162.7 26.7 63.1 40.2 130.2 40.2 199.3s-13.5 136.2-40.2 199.3C958 772.3 921 827 874 874c-47 47-101.8 83.9-162.7 109.7-63.1 26.8-130.2 40.3-199.3 40.3z"
+          />
+        </svg>
+      </span>
+      Highlighting...
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<Highlight /> > renders theme.tsx correctly 1`] = `
+.emotion-0 {
+  background-color: #fafafa;
+  border: 1px solid transparent;
+  position: relative;
+  margin: 0;
+  border-radius: 6px;
+  -webkit-transition: background-color 100ms cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: background-color 100ms cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.emotion-0 pre {
+  margin: 0!important;
+  padding: 16px 24px!important;
+  background: none!important;
+}
+
+.emotion-0 code {
+  background: transparent!important;
+}
+
+.emotion-1 {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 16px;
+  height: 16px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  opacity: 0.6;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+
+.emotion-1:hover {
+  opacity: 0.8;
+}
+
+.emotion-2 {
+  width: 16px;
+  height: 16px;
+  font-size: 16px;
+}
+
+.emotion-2.scoll {
+  -webkit-animation: copy-button-trans 2s;
+  animation: copy-button-trans 2s;
+  -webkit-animation-play-state: running;
+  animation-play-state: running;
+}
+
+.emotion-4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.emotion-5 {
+  -webkit-backdrop-filter: saturate(180%) blur(10px);
+  backdrop-filter: saturate(180%) blur(10px);
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  height: 36px;
+  padding: 0 8px;
+  font-family: 'SFMono-Regular',Consolas,'Liberation Mono',Menlo,Courier,monospace;
+  color: rgba(0, 0, 0, 0.45);
+  border-radius: 6;
+}
+
+<div>
+  <div>
+    <div
+      class="studio-space studio-space-horizontal studio-space-align-center"
+    >
+      <div
+        class="studio-space-item"
+        style="margin-right: 8px;"
+      >
+        语言选择:
+      </div>
+      <div
+        class="studio-space-item"
+        style="margin-right: 8px;"
+      >
+        <div
+          class="studio-select studio-select-single studio-select-show-arrow"
+          style="width: 120px;"
+        >
+          <div
+            class="studio-select-selector"
           >
             <span
-              class="hljs-keyword"
+              class="studio-select-selection-search"
             >
-              public
+              <input
+                aria-activedescendant="rc_select_TEST_OR_SSR_list_0"
+                aria-autocomplete="list"
+                aria-controls="rc_select_TEST_OR_SSR_list"
+                aria-expanded="false"
+                aria-haspopup="listbox"
+                aria-owns="rc_select_TEST_OR_SSR_list"
+                autocomplete="off"
+                class="studio-select-selection-search-input"
+                id="rc_select_TEST_OR_SSR"
+                readonly=""
+                role="combobox"
+                style="opacity: 0;"
+                type="search"
+                unselectable="on"
+                value=""
+              />
             </span>
-             
             <span
-              class="hljs-class"
+              class="studio-select-selection-item"
+              title="Typescript"
             >
-              <span
-                class="hljs-keyword"
+              Typescript
+            </span>
+          </div>
+          <span
+            aria-hidden="true"
+            class="studio-select-arrow"
+            style="user-select: none;"
+            unselectable="on"
+          >
+            <span
+              aria-label="down"
+              class="anticon anticon-down studio-select-suffix"
+              role="img"
+            >
+              <svg
+                aria-hidden="true"
+                data-icon="down"
+                fill="currentColor"
+                focusable="false"
+                height="1em"
+                viewBox="64 64 896 896"
+                width="1em"
               >
-                class
-              </span>
-               
-              <span
-                class="hljs-title"
+                <path
+                  d="M884 256h-75c-5.1 0-9.9 2.5-12.9 6.6L512 654.2 227.9 262.6c-3-4.1-7.8-6.6-12.9-6.6h-75c-6.5 0-10.3 7.4-6.5 12.7l352.6 486.1c12.8 17.6 39 17.6 51.7 0l352.6-486.1c3.9-5.3.1-12.7-6.4-12.7z"
+                />
+              </svg>
+            </span>
+          </span>
+        </div>
+      </div>
+      <div
+        class="studio-space-item"
+        style="margin-right: 8px;"
+      >
+        主题选择:
+      </div>
+      <div
+        class="studio-space-item"
+        style="margin-right: 8px;"
+      >
+        <div
+          class="studio-select studio-select-single studio-select-show-arrow"
+          style="width: 120px;"
+        >
+          <div
+            class="studio-select-selector"
+          >
+            <span
+              class="studio-select-selection-search"
+            >
+              <input
+                aria-activedescendant="rc_select_TEST_OR_SSR_list_0"
+                aria-autocomplete="list"
+                aria-controls="rc_select_TEST_OR_SSR_list"
+                aria-expanded="false"
+                aria-haspopup="listbox"
+                aria-owns="rc_select_TEST_OR_SSR_list"
+                autocomplete="off"
+                class="studio-select-selection-search-input"
+                id="rc_select_TEST_OR_SSR"
+                readonly=""
+                role="combobox"
+                style="opacity: 0;"
+                type="search"
+                unselectable="on"
+                value=""
+              />
+            </span>
+            <span
+              class="studio-select-selection-item"
+              title="白色主题"
+            >
+              白色主题
+            </span>
+          </div>
+          <span
+            aria-hidden="true"
+            class="studio-select-arrow"
+            style="user-select: none;"
+            unselectable="on"
+          >
+            <span
+              aria-label="down"
+              class="anticon anticon-down studio-select-suffix"
+              role="img"
+            >
+              <svg
+                aria-hidden="true"
+                data-icon="down"
+                fill="currentColor"
+                focusable="false"
+                height="1em"
+                viewBox="64 64 896 896"
+                width="1em"
               >
-                HelloWorld
-              </span>
-               
+                <path
+                  d="M884 256h-75c-5.1 0-9.9 2.5-12.9 6.6L512 654.2 227.9 262.6c-3-4.1-7.8-6.6-12.9-6.6h-75c-6.5 0-10.3 7.4-6.5 12.7l352.6 486.1c12.8 17.6 39 17.6 51.7 0l352.6-486.1c3.9-5.3.1-12.7-6.4-12.7z"
+                />
+              </svg>
             </span>
-            {
-          </td>
-        </tr>
-        <tr>
-          <td
-            class="studio-highlight-index emotion-5 studio-highlight-light-index emotion-6"
+          </span>
+        </div>
+      </div>
+      <div
+        class="studio-space-item"
+        style="margin-right: 8px;"
+      >
+        展示行号:
+      </div>
+      <div
+        class="studio-space-item"
+        style="margin-right: 8px;"
+      >
+        <div
+          class="studio-select studio-select-single studio-select-show-arrow"
+          style="width: 120px;"
+        >
+          <div
+            class="studio-select-selector"
           >
-            2
-          </td>
-          <td
-            class="studio-highlight-content emotion-7"
-            style="width: 100%;"
+            <span
+              class="studio-select-selection-search"
+            >
+              <input
+                aria-activedescendant="rc_select_TEST_OR_SSR_list_0"
+                aria-autocomplete="list"
+                aria-controls="rc_select_TEST_OR_SSR_list"
+                aria-expanded="false"
+                aria-haspopup="listbox"
+                aria-owns="rc_select_TEST_OR_SSR_list"
+                autocomplete="off"
+                class="studio-select-selection-search-input"
+                id="rc_select_TEST_OR_SSR"
+                readonly=""
+                role="combobox"
+                style="opacity: 0;"
+                type="search"
+                unselectable="on"
+                value=""
+              />
+            </span>
+            <span
+              class="studio-select-selection-item"
+              title="不展示"
+            >
+              不展示
+            </span>
+          </div>
+          <span
+            aria-hidden="true"
+            class="studio-select-arrow"
+            style="user-select: none;"
+            unselectable="on"
           >
-                
             <span
-              class="hljs-keyword"
+              aria-label="down"
+              class="anticon anticon-down studio-select-suffix"
+              role="img"
             >
-              public
-            </span>
-             
-            <span
-              class="hljs-keyword"
-            >
-              static
-            </span>
-             
-            <span
-              class="hljs-built_in"
-            >
-              void
-            </span>
-             
-            <span
-              class="hljs-function"
-            >
-              <span
-                class="hljs-title"
+              <svg
+                aria-hidden="true"
+                data-icon="down"
+                fill="currentColor"
+                focusable="false"
+                height="1em"
+                viewBox="64 64 896 896"
+                width="1em"
               >
-                main
-              </span>
-              (
-              <span
-                class="hljs-params"
-              >
-                <span
-                  class="hljs-built_in"
-                >
-                  String
-                </span>
-                [] args
-              </span>
-              )
+                <path
+                  d="M884 256h-75c-5.1 0-9.9 2.5-12.9 6.6L512 654.2 227.9 262.6c-3-4.1-7.8-6.6-12.9-6.6h-75c-6.5 0-10.3 7.4-6.5 12.7l352.6 486.1c12.8 17.6 39 17.6 51.7 0l352.6-486.1c3.9-5.3.1-12.7-6.4-12.7z"
+                />
+              </svg>
             </span>
-             {
-          </td>
-        </tr>
-        <tr>
-          <td
-            class="studio-highlight-index emotion-5 studio-highlight-light-index emotion-6"
+          </span>
+        </div>
+      </div>
+      <div
+        class="studio-space-item"
+        style="margin-right: 8px;"
+      >
+        渲染器:
+      </div>
+      <div
+        class="studio-space-item"
+      >
+        <div
+          class="studio-select studio-select-single studio-select-show-arrow"
+          style="width: 120px;"
+        >
+          <div
+            class="studio-select-selector"
           >
-            3
-          </td>
-          <td
-            class="studio-highlight-content emotion-7"
-            style="width: 100%;"
-          >
-                  System.out.println(
             <span
-              class="hljs-string"
+              class="studio-select-selection-search"
             >
-              "Hello World!"
+              <input
+                aria-activedescendant="rc_select_TEST_OR_SSR_list_0"
+                aria-autocomplete="list"
+                aria-controls="rc_select_TEST_OR_SSR_list"
+                aria-expanded="false"
+                aria-haspopup="listbox"
+                aria-owns="rc_select_TEST_OR_SSR_list"
+                autocomplete="off"
+                class="studio-select-selection-search-input"
+                id="rc_select_TEST_OR_SSR"
+                readonly=""
+                role="combobox"
+                style="opacity: 0;"
+                type="search"
+                unselectable="on"
+                value=""
+              />
             </span>
-            );
-          </td>
-        </tr>
-        <tr>
-          <td
-            class="studio-highlight-index emotion-5 studio-highlight-light-index emotion-6"
+            <span
+              class="studio-select-selection-item"
+              title="Shiki"
+            >
+              Shiki
+            </span>
+          </div>
+          <span
+            aria-hidden="true"
+            class="studio-select-arrow"
+            style="user-select: none;"
+            unselectable="on"
           >
-            4
-          </td>
-          <td
-            class="studio-highlight-content emotion-7"
-            style="width: 100%;"
+            <span
+              aria-label="down"
+              class="anticon anticon-down studio-select-suffix"
+              role="img"
+            >
+              <svg
+                aria-hidden="true"
+                data-icon="down"
+                fill="currentColor"
+                focusable="false"
+                height="1em"
+                viewBox="64 64 896 896"
+                width="1em"
+              >
+                <path
+                  d="M884 256h-75c-5.1 0-9.9 2.5-12.9 6.6L512 654.2 227.9 262.6c-3-4.1-7.8-6.6-12.9-6.6h-75c-6.5 0-10.3 7.4-6.5 12.7l352.6 486.1c12.8 17.6 39 17.6 51.7 0l352.6-486.1c3.9-5.3.1-12.7-6.4-12.7z"
+                />
+              </svg>
+            </span>
+          </span>
+        </div>
+      </div>
+    </div>
+    <div
+      style="height: 400px; width: 100%; overflow-y: scroll; margin-block-start: 16px;"
+    >
+      <div
+        class="studio-highlight-container emotion-0"
+        tabindex="-1"
+      >
+        <button
+          class="studio-highlight-copy emotion-1"
+          style="background: rgb(250, 250, 250);"
+          type="button"
+        >
+          <span
+            aria-label="copy"
+            class="anticon anticon-copy studio-highlight-copy-icon emotion-2"
+            role="img"
+            style="color: rgb(43, 48, 59);"
           >
-                }
-          </td>
-        </tr>
-        <tr>
-          <td
-            class="studio-highlight-index emotion-5 studio-highlight-light-index emotion-6"
+            <svg
+              aria-hidden="true"
+              data-icon="copy"
+              fill="currentColor"
+              focusable="false"
+              height="1em"
+              viewBox="64 64 896 896"
+              width="1em"
+            >
+              <path
+                d="M832 64H296c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h496v688c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8V96c0-17.7-14.3-32-32-32zM704 192H192c-17.7 0-32 14.3-32 32v530.7c0 8.5 3.4 16.6 9.4 22.6l173.3 173.3c2.2 2.2 4.7 4 7.4 5.5v1.9h4.2c3.5 1.3 7.2 2 11 2H704c17.7 0 32-14.3 32-32V224c0-17.7-14.3-32-32-32zM350 856.2L263.9 770H350v86.2zM664 888H414V746c0-22.1-17.9-40-40-40H232V264h432v624z"
+              />
+            </svg>
+          </span>
+          <span
+            aria-label="check"
+            class="anticon anticon-check studio-highlight-copy-icon emotion-2"
+            role="img"
+            style="color: rgb(63, 177, 99);"
           >
-            5
-          </td>
-          <td
-            class="studio-highlight-content emotion-7"
-            style="width: 100%;"
+            <svg
+              aria-hidden="true"
+              data-icon="check"
+              fill="currentColor"
+              focusable="false"
+              height="1em"
+              viewBox="64 64 896 896"
+              width="1em"
+            >
+              <path
+                d="M912 190h-69.9c-9.8 0-19.1 4.5-25.1 12.2L404.7 724.5 207 474a32 32 0 00-25.1-12.2H112c-6.7 0-10.4 7.7-6.3 12.9l273.9 347c12.8 16.2 37.4 16.2 50.3 0l488.4-618.9c4.1-5.1.4-12.8-6.3-12.8z"
+              />
+            </svg>
+          </span>
+        </button>
+        <div
+          class="layoutkit-center emotion-4 emotion-5"
+        >
+          <span
+            aria-label="loading-3-quarters"
+            class="anticon anticon-loading-3-quarters anticon-spin"
+            role="img"
+            style="color: rgba(0, 0, 0, 0.45);"
           >
-              }
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  </pre>
+            <svg
+              aria-hidden="true"
+              data-icon="loading-3-quarters"
+              fill="currentColor"
+              focusable="false"
+              height="1em"
+              viewBox="0 0 1024 1024"
+              width="1em"
+            >
+              <path
+                d="M512 1024c-69.1 0-136.2-13.5-199.3-40.2C251.7 958 197 921 150 874c-47-47-84-101.7-109.8-162.7C13.5 648.2 0 581.1 0 512c0-19.9 16.1-36 36-36s36 16.1 36 36c0 59.4 11.6 117 34.6 171.3 22.2 52.4 53.9 99.5 94.3 139.9 40.4 40.4 87.5 72.2 139.9 94.3C395 940.4 452.6 952 512 952c59.4 0 117-11.6 171.3-34.6 52.4-22.2 99.5-53.9 139.9-94.3 40.4-40.4 72.2-87.5 94.3-139.9C940.4 629 952 571.4 952 512c0-59.4-11.6-117-34.6-171.3a440.45 440.45 0 00-94.3-139.9 437.71 437.71 0 00-139.9-94.3C629 83.6 571.4 72 512 72c-19.9 0-36-16.1-36-36s16.1-36 36-36c69.1 0 136.2 13.5 199.3 40.2C772.3 66 827 103 874 150c47 47 83.9 101.8 109.7 162.7 26.7 63.1 40.2 130.2 40.2 199.3s-13.5 136.2-40.2 199.3C958 772.3 921 827 874 874c-47 47-101.8 83.9-162.7 109.7-63.1 26.8-130.2 40.3-199.3 40.3z"
+              />
+            </svg>
+          </span>
+          Highlighting...
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 `;
 
@@ -17884,85 +17972,23 @@ exports[`<ProEditor /> > renders controlledPresence.tsx correctly 1`] = `
 }
 
 .emotion-19 {
-  display: block;
-  padding: 0.5em;
-  overflow-x: auto;
-  color: #383a42;
-  background: #fafafa;
+  background-color: #fafafa;
+  border: 1px solid transparent;
+  position: relative;
+  margin: 0;
+  border-radius: 6px;
+  -webkit-transition: background-color 100ms cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: background-color 100ms cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
-.emotion-19 .react-json-view {
-  background: #fafafa;
+.emotion-19 pre {
+  margin: 0!important;
+  padding: 16px 24px!important;
+  background: none!important;
 }
 
-.emotion-19 .hljs-comment,
-.emotion-19 .hljs-quote {
-  color: #a0a1a7;
-  font-style: italic;
-}
-
-.emotion-19 .hljs-doctag,
-.emotion-19 .hljs-keyword,
-.emotion-19 .hljs-formula {
-  color: #a626a4;
-}
-
-.emotion-19 .hljs-section,
-.emotion-19 .hljs-name,
-.emotion-19 .hljs-selector-tag,
-.emotion-19 .hljs-deletion,
-.emotion-19 .hljs-subst {
-  color: #e45649;
-}
-
-.emotion-19 .hljs-literal {
-  color: #0184bb;
-}
-
-.emotion-19 .hljs-string,
-.emotion-19 .hljs-regexp,
-.emotion-19 .hljs-addition,
-.emotion-19 .hljs-attribute,
-.emotion-19 .hljs-meta-string {
-  color: #50a14f;
-}
-
-.emotion-19 .hljs-built_in,
-.emotion-19 .hljs-class .hljs-title {
-  color: #c18401;
-}
-
-.emotion-19 .hljs-attr,
-.emotion-19 .hljs-variable,
-.emotion-19 .hljs-template-variable,
-.emotion-19 .hljs-type,
-.emotion-19 .hljs-selector-class,
-.emotion-19 .hljs-selector-attr,
-.emotion-19 .hljs-selector-pseudo,
-.emotion-19 .hljs-number {
-  color: #986801;
-}
-
-.emotion-19 .hljs-symbol,
-.emotion-19 .hljs-bullet,
-.emotion-19 .hljs-link,
-.emotion-19 .hljs-meta,
-.emotion-19 .hljs-selector-id,
-.emotion-19 .hljs-title {
-  color: #4078f2;
-}
-
-.emotion-19 .hljs-emphasis {
-  font-style: italic;
-}
-
-.emotion-19 .hljs-strong {
-  font-weight: bold;
-}
-
-.emotion-19 .hljs-link {
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
+.emotion-19 code {
+  background: transparent!important;
 }
 
 .emotion-20 {
@@ -18005,32 +18031,55 @@ exports[`<ProEditor /> > renders controlledPresence.tsx correctly 1`] = `
   animation-play-state: running;
 }
 
+.emotion-23 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 8px;
+}
+
 .emotion-24 {
-  width: 40px;
-  min-width: 40px;
-  padding: 2px 8px;
-  color: #aaa;
-  text-align: right;
-  background: rgba(255, 255, 255, 0.03);
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+  -webkit-backdrop-filter: saturate(180%) blur(10px);
+  backdrop-filter: saturate(180%) blur(10px);
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  height: 36px;
+  padding: 0 8px;
+  font-family: 'SFMono-Regular',Consolas,'Liberation Mono',Menlo,Courier,monospace;
+  color: rgba(0, 0, 0, 0.45);
+  border-radius: 6;
 }
 
 .emotion-25 {
-  border-right: 1px solid rgba(0, 0, 0, 0.05);
-}
-
-.emotion-26 {
-  padding: 2px 8px;
-}
-
-.emotion-30 {
   position: relative;
 }
 
-.emotion-30::before {
+.emotion-25::before {
   position: absolute;
   z-index: 50;
   -webkit-transition: all 0.3s ease-in-out;
@@ -18038,18 +18087,18 @@ exports[`<ProEditor /> > renders controlledPresence.tsx correctly 1`] = `
   content: '';
 }
 
-.emotion-30:hover::before,
-.emotion-30:active::before {
+.emotion-25:hover::before,
+.emotion-25:active::before {
   background: #1677ff;
 }
 
-.emotion-30::before {
+.emotion-25::before {
   top: 50%;
   height: 2px;
   width: 100%;
 }
 
-.emotion-31 {
+.emotion-26 {
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
@@ -18057,11 +18106,11 @@ exports[`<ProEditor /> > renders controlledPresence.tsx correctly 1`] = `
   border: 0 solid rgba(5, 5, 5, 0.06);
 }
 
-.emotion-31:hover .studio-draggable-panel-toggle {
+.emotion-26:hover .studio-draggable-panel-toggle {
   opacity: 1;
 }
 
-.emotion-32 {
+.emotion-27 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -18079,7 +18128,7 @@ exports[`<ProEditor /> > renders controlledPresence.tsx correctly 1`] = `
   align-items: center;
 }
 
-.emotion-33 {
+.emotion-28 {
   position: absolute;
   opacity: 0;
   z-index: 1001;
@@ -18101,16 +18150,16 @@ exports[`<ProEditor /> > renders controlledPresence.tsx correctly 1`] = `
   border-right-width: 0;
 }
 
-.emotion-33:hover {
+.emotion-28:hover {
   color: rgba(0, 0, 0, 0.65);
   background: rgba(0, 0, 0, 0.02);
 }
 
-.emotion-35 {
+.emotion-30 {
   position: relative;
 }
 
-.emotion-35::before {
+.emotion-30::before {
   position: absolute;
   z-index: 50;
   -webkit-transition: all 0.3s ease-in-out;
@@ -18118,18 +18167,18 @@ exports[`<ProEditor /> > renders controlledPresence.tsx correctly 1`] = `
   content: '';
 }
 
-.emotion-35:hover::before,
-.emotion-35:active::before {
+.emotion-30:hover::before,
+.emotion-30:active::before {
   background: #1677ff;
 }
 
-.emotion-35::before {
+.emotion-30::before {
   left: 50%;
   width: 2px;
   height: 100%;
 }
 
-.emotion-37 {
+.emotion-32 {
   background-color: #fff;
   color: rgba(0, 0, 0, 0.87);
   -webkit-transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
@@ -18145,14 +18194,14 @@ exports[`<ProEditor /> > renders controlledPresence.tsx correctly 1`] = `
   content-visibility: auto;
 }
 
-.emotion-38 {
+.emotion-33 {
   -webkit-user-select: text;
   -moz-user-select: text;
   -ms-user-select: text;
   user-select: text;
 }
 
-.emotion-39 {
+.emotion-34 {
   display: inline-block;
   line-height: 1.5;
   color: #002b36;
@@ -18160,7 +18209,7 @@ exports[`<ProEditor /> > renders controlledPresence.tsx correctly 1`] = `
   opacity: 0.8;
 }
 
-.emotion-40 {
+.emotion-35 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -18178,20 +18227,20 @@ exports[`<ProEditor /> > renders controlledPresence.tsx correctly 1`] = `
   font-size: .8rem;
 }
 
-.emotion-40:hover {
+.emotion-35:hover {
   cursor: pointer;
 }
 
-.emotion-42 {
+.emotion-37 {
   display: inline-block;
   margin-right: 4px;
 }
 
-.emotion-43 {
+.emotion-38 {
   letter-spacing: 0.5px;
 }
 
-.emotion-44 {
+.emotion-39 {
   padding-left: 4px;
   font-style: italic;
   color: rgba(0, 0, 0, 0.3);
@@ -18201,7 +18250,7 @@ exports[`<ProEditor /> > renders controlledPresence.tsx correctly 1`] = `
   user-select: none;
 }
 
-.emotion-45 {
+.emotion-40 {
   display: block;
   padding-left: 14.399999999999999px;
   margin-left: 4.8px;
@@ -18209,12 +18258,12 @@ exports[`<ProEditor /> > renders controlledPresence.tsx correctly 1`] = `
   border-left: 1px solid rgb(235, 235, 235);
 }
 
-.emotion-58 {
+.emotion-53 {
   display: inline-block;
   color: #268bd2;
 }
 
-.emotion-59 {
+.emotion-54 {
   display: inline-block;
   margin-left: 4px;
   margin-right: 4px;
@@ -18226,21 +18275,21 @@ exports[`<ProEditor /> > renders controlledPresence.tsx correctly 1`] = `
   user-select: none;
 }
 
-.emotion-60 {
+.emotion-55 {
   display: inline-block;
 }
 
-.emotion-89 {
+.emotion-84 {
   display: inline-block;
   color: #2aa198;
 }
 
-.emotion-126 {
+.emotion-121 {
   display: inline-block;
   color: #586e75;
 }
 
-.emotion-128 {
+.emotion-123 {
   font-size: 0.7rem;
   background-color: rgb(235, 235, 235);
   border-radius: 3px;
@@ -18610,9 +18659,9 @@ exports[`<ProEditor /> > renders controlledPresence.tsx correctly 1`] = `
                   <div
                     class="layoutkit-flexbox emotion-0 emotion-18"
                   >
-                    <pre
-                      class="studio-highlight studio-highlight-light emotion-19"
-                      style="position: relative; margin: 0px;"
+                    <div
+                      class="studio-highlight-container emotion-19"
+                      style="height: 100%;"
                       tabindex="-1"
                     >
                       <button
@@ -18661,42 +18710,36 @@ exports[`<ProEditor /> > renders controlledPresence.tsx correctly 1`] = `
                           </svg>
                         </span>
                       </button>
-                      <table
-                        class="studio-highlight-light emotion-19"
-                        style="padding: 0px; height: 100%; border-collapse: collapse;"
+                      <div
+                        class="layoutkit-center emotion-23 emotion-24"
                       >
-                        <tbody>
-                          <tr>
-                            <td
-                              class="studio-highlight-index emotion-24 studio-highlight-light-index emotion-25"
-                            >
-                              1
-                            </td>
-                            <td
-                              class="studio-highlight-content emotion-26"
-                              style="width: 100%;"
-                            >
-                              暂无生成代码;
-                            </td>
-                          </tr>
-                          <tr>
-                            <td
-                              class="studio-highlight-index emotion-24 studio-highlight-light-index emotion-25"
-                            >
-                              2
-                            </td>
-                            <td
-                              class="studio-highlight-content emotion-26"
-                              style="width: 100%;"
+                        <span
+                          aria-label="loading-3-quarters"
+                          class="anticon anticon-loading-3-quarters anticon-spin"
+                          role="img"
+                          style="color: rgba(0, 0, 0, 0.45);"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            data-icon="loading-3-quarters"
+                            fill="currentColor"
+                            focusable="false"
+                            height="1em"
+                            viewBox="0 0 1024 1024"
+                            width="1em"
+                          >
+                            <path
+                              d="M512 1024c-69.1 0-136.2-13.5-199.3-40.2C251.7 958 197 921 150 874c-47-47-84-101.7-109.8-162.7C13.5 648.2 0 581.1 0 512c0-19.9 16.1-36 36-36s36 16.1 36 36c0 59.4 11.6 117 34.6 171.3 22.2 52.4 53.9 99.5 94.3 139.9 40.4 40.4 87.5 72.2 139.9 94.3C395 940.4 452.6 952 512 952c59.4 0 117-11.6 171.3-34.6 52.4-22.2 99.5-53.9 139.9-94.3 40.4-40.4 72.2-87.5 94.3-139.9C940.4 629 952 571.4 952 512c0-59.4-11.6-117-34.6-171.3a440.45 440.45 0 00-94.3-139.9 437.71 437.71 0 00-139.9-94.3C629 83.6 571.4 72 512 72c-19.9 0-36-16.1-36-36s16.1-36 36-36c69.1 0 136.2 13.5 199.3 40.2C772.3 66 827 103 874 150c47 47 83.9 101.8 109.7 162.7 26.7 63.1 40.2 130.2 40.2 199.3s-13.5 136.2-40.2 199.3C958 772.3 921 827 874 874c-47 47-101.8 83.9-162.7 109.7-63.1 26.8-130.2 40.3-199.3 40.3z"
                             />
-                          </tr>
-                        </tbody>
-                      </table>
-                    </pre>
+                          </svg>
+                        </span>
+                        Highlighting...
+                      </div>
+                    </div>
                   </div>
                   <div>
                     <div
-                      class="studio-draggable-panel-top-handle emotion-30"
+                      class="studio-draggable-panel-top-handle emotion-25"
                       style="position: absolute; user-select: none; width: 100%; height: 10px; top: -5px; left: 0px; cursor: row-resize;"
                     />
                   </div>
@@ -18706,11 +18749,11 @@ exports[`<ProEditor /> > renders controlledPresence.tsx correctly 1`] = `
           </div>
         </div>
         <div
-          class="studio-draggable-panel emotion-31"
+          class="studio-draggable-panel emotion-26"
           style="border-left-width: 1px;"
         >
           <div
-            class="layoutkit-center emotion-32 studio-draggable-panel-toggle studio-draggable-panel-toggle-left emotion-33"
+            class="layoutkit-center emotion-27 studio-draggable-panel-toggle studio-draggable-panel-toggle-left emotion-28"
           >
             <span
               aria-label="left"
@@ -18744,7 +18787,7 @@ exports[`<ProEditor /> > renders controlledPresence.tsx correctly 1`] = `
             </div>
             <div>
               <div
-                class="emotion-35 studio-draggable-panel-left-handle"
+                class="emotion-30 studio-draggable-panel-left-handle"
                 style="position: absolute; user-select: none; width: 10px; height: 100%; top: 0px; left: -5px; cursor: col-resize;"
               />
             </div>
@@ -18757,18 +18800,18 @@ exports[`<ProEditor /> > renders controlledPresence.tsx correctly 1`] = `
     >
       当前视图状态：
       <div
-        class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 json-viewer-theme-light emotion-37"
+        class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 json-viewer-theme-light emotion-32"
       >
         <div
-          class="data-key-pair MuiBox-root emotion-38"
+          class="data-key-pair MuiBox-root emotion-33"
           data-testid="data-key-pair"
         >
           <span
-            class="data-key MuiBox-root emotion-39"
+            class="data-key MuiBox-root emotion-34"
           >
             <svg
               aria-hidden="true"
-              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium emotion-40"
+              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium emotion-35"
               focusable="false"
               viewBox="0 0 24 24"
             >
@@ -18777,41 +18820,41 @@ exports[`<ProEditor /> > renders controlledPresence.tsx correctly 1`] = `
               />
             </svg>
             <span
-              class="MuiBox-root emotion-41"
+              class="MuiBox-root emotion-36"
             >
               "
               root
               "
             </span>
             <div
-              class="MuiBox-root emotion-42"
+              class="MuiBox-root emotion-37"
             >
               :
             </div>
             <span
-              class="data-object-start MuiBox-root emotion-43"
+              class="data-object-start MuiBox-root emotion-38"
             >
               {
               <span
-                class="MuiBox-root emotion-44"
+                class="MuiBox-root emotion-39"
               >
                 5 Items
               </span>
             </span>
           </span>
           <div
-            class="data-object MuiBox-root emotion-45"
+            class="data-object MuiBox-root emotion-40"
           >
             <div
-              class="data-key-pair MuiBox-root emotion-38"
+              class="data-key-pair MuiBox-root emotion-33"
               data-testid="data-key-pairpanelPosition"
             >
               <span
-                class="data-key MuiBox-root emotion-39"
+                class="data-key MuiBox-root emotion-34"
               >
                 <svg
                   aria-hidden="true"
-                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium emotion-40"
+                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium emotion-35"
                   focusable="false"
                   viewBox="0 0 24 24"
                 >
@@ -18820,96 +18863,96 @@ exports[`<ProEditor /> > renders controlledPresence.tsx correctly 1`] = `
                   />
                 </svg>
                 <span
-                  class="MuiBox-root emotion-41"
+                  class="MuiBox-root emotion-36"
                 >
                   "
                   panelPosition
                   "
                 </span>
                 <div
-                  class="MuiBox-root emotion-42"
+                  class="MuiBox-root emotion-37"
                 >
                   :
                 </div>
                 <span
-                  class="data-object-start MuiBox-root emotion-43"
+                  class="data-object-start MuiBox-root emotion-38"
                 >
                   {
                   <span
-                    class="MuiBox-root emotion-44"
+                    class="MuiBox-root emotion-39"
                   >
                     2 Items
                   </span>
                 </span>
               </span>
               <div
-                class="data-object MuiBox-root emotion-45"
+                class="data-object MuiBox-root emotion-40"
               >
                 <div
-                  class="data-key-pair MuiBox-root emotion-38"
+                  class="data-key-pair MuiBox-root emotion-33"
                   data-testid="data-key-pairpanelPosition.x"
                 >
                   <span
-                    class="data-key MuiBox-root emotion-39"
+                    class="data-key MuiBox-root emotion-34"
                   >
                     <span
-                      class="MuiBox-root emotion-41"
+                      class="MuiBox-root emotion-36"
                     >
                       "
                       x
                       "
                     </span>
                     <div
-                      class="MuiBox-root emotion-42"
+                      class="MuiBox-root emotion-37"
                     >
                       :
                     </div>
                   </span>
                   <div
-                    class="MuiBox-root emotion-58"
+                    class="MuiBox-root emotion-53"
                   >
                     <div
-                      class="data-type-label MuiBox-root emotion-59"
+                      class="data-type-label MuiBox-root emotion-54"
                     >
                       int
                     </div>
                     <div
-                      class="int-value MuiBox-root emotion-60"
+                      class="int-value MuiBox-root emotion-55"
                     >
                       0
                     </div>
                   </div>
                 </div>
                 <div
-                  class="data-key-pair MuiBox-root emotion-38"
+                  class="data-key-pair MuiBox-root emotion-33"
                   data-testid="data-key-pairpanelPosition.y"
                 >
                   <span
-                    class="data-key MuiBox-root emotion-39"
+                    class="data-key MuiBox-root emotion-34"
                   >
                     <span
-                      class="MuiBox-root emotion-41"
+                      class="MuiBox-root emotion-36"
                     >
                       "
                       y
                       "
                     </span>
                     <div
-                      class="MuiBox-root emotion-42"
+                      class="MuiBox-root emotion-37"
                     >
                       :
                     </div>
                   </span>
                   <div
-                    class="MuiBox-root emotion-58"
+                    class="MuiBox-root emotion-53"
                   >
                     <div
-                      class="data-type-label MuiBox-root emotion-59"
+                      class="data-type-label MuiBox-root emotion-54"
                     >
                       int
                     </div>
                     <div
-                      class="int-value MuiBox-root emotion-60"
+                      class="int-value MuiBox-root emotion-55"
                     >
                       0
                     </div>
@@ -18917,21 +18960,21 @@ exports[`<ProEditor /> > renders controlledPresence.tsx correctly 1`] = `
                 </div>
               </div>
               <span
-                class="data-object-end MuiBox-root emotion-41"
+                class="data-object-end MuiBox-root emotion-36"
               >
                 }
               </span>
             </div>
             <div
-              class="data-key-pair MuiBox-root emotion-38"
+              class="data-key-pair MuiBox-root emotion-33"
               data-testid="data-key-pairpanelSize"
             >
               <span
-                class="data-key MuiBox-root emotion-39"
+                class="data-key MuiBox-root emotion-34"
               >
                 <svg
                   aria-hidden="true"
-                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium emotion-40"
+                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium emotion-35"
                   focusable="false"
                   viewBox="0 0 24 24"
                 >
@@ -18940,61 +18983,61 @@ exports[`<ProEditor /> > renders controlledPresence.tsx correctly 1`] = `
                   />
                 </svg>
                 <span
-                  class="MuiBox-root emotion-41"
+                  class="MuiBox-root emotion-36"
                 >
                   "
                   panelSize
                   "
                 </span>
                 <div
-                  class="MuiBox-root emotion-42"
+                  class="MuiBox-root emotion-37"
                 >
                   :
                 </div>
                 <span
-                  class="data-object-start MuiBox-root emotion-43"
+                  class="data-object-start MuiBox-root emotion-38"
                 >
                   {
                   <span
-                    class="MuiBox-root emotion-44"
+                    class="MuiBox-root emotion-39"
                   >
                     1 Items
                   </span>
                 </span>
               </span>
               <div
-                class="data-object MuiBox-root emotion-45"
+                class="data-object MuiBox-root emotion-40"
               >
                 <div
-                  class="data-key-pair MuiBox-root emotion-38"
+                  class="data-key-pair MuiBox-root emotion-33"
                   data-testid="data-key-pairpanelSize.width"
                 >
                   <span
-                    class="data-key MuiBox-root emotion-39"
+                    class="data-key MuiBox-root emotion-34"
                   >
                     <span
-                      class="MuiBox-root emotion-41"
+                      class="MuiBox-root emotion-36"
                     >
                       "
                       width
                       "
                     </span>
                     <div
-                      class="MuiBox-root emotion-42"
+                      class="MuiBox-root emotion-37"
                     >
                       :
                     </div>
                   </span>
                   <div
-                    class="MuiBox-root emotion-58"
+                    class="MuiBox-root emotion-53"
                   >
                     <div
-                      class="data-type-label MuiBox-root emotion-59"
+                      class="data-type-label MuiBox-root emotion-54"
                     >
                       int
                     </div>
                     <div
-                      class="int-value MuiBox-root emotion-60"
+                      class="int-value MuiBox-root emotion-55"
                     >
                       340
                     </div>
@@ -19002,56 +19045,56 @@ exports[`<ProEditor /> > renders controlledPresence.tsx correctly 1`] = `
                 </div>
               </div>
               <span
-                class="data-object-end MuiBox-root emotion-41"
+                class="data-object-end MuiBox-root emotion-36"
               >
                 }
               </span>
             </div>
             <div
-              class="data-key-pair MuiBox-root emotion-38"
+              class="data-key-pair MuiBox-root emotion-33"
               data-testid="data-key-pairpanelExpand"
             >
               <span
-                class="data-key MuiBox-root emotion-39"
+                class="data-key MuiBox-root emotion-34"
               >
                 <span
-                  class="MuiBox-root emotion-41"
+                  class="MuiBox-root emotion-36"
                 >
                   "
                   panelExpand
                   "
                 </span>
                 <div
-                  class="MuiBox-root emotion-42"
+                  class="MuiBox-root emotion-37"
                 >
                   :
                 </div>
               </span>
               <div
-                class="MuiBox-root emotion-89"
+                class="MuiBox-root emotion-84"
               >
                 <div
-                  class="data-type-label MuiBox-root emotion-59"
+                  class="data-type-label MuiBox-root emotion-54"
                 >
                   bool
                 </div>
                 <div
-                  class="bool-value MuiBox-root emotion-60"
+                  class="bool-value MuiBox-root emotion-55"
                 >
                   true
                 </div>
               </div>
             </div>
             <div
-              class="data-key-pair MuiBox-root emotion-38"
+              class="data-key-pair MuiBox-root emotion-33"
               data-testid="data-key-pairviewport"
             >
               <span
-                class="data-key MuiBox-root emotion-39"
+                class="data-key MuiBox-root emotion-34"
               >
                 <svg
                   aria-hidden="true"
-                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium emotion-40"
+                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium emotion-35"
                   focusable="false"
                   viewBox="0 0 24 24"
                 >
@@ -19060,131 +19103,131 @@ exports[`<ProEditor /> > renders controlledPresence.tsx correctly 1`] = `
                   />
                 </svg>
                 <span
-                  class="MuiBox-root emotion-41"
+                  class="MuiBox-root emotion-36"
                 >
                   "
                   viewport
                   "
                 </span>
                 <div
-                  class="MuiBox-root emotion-42"
+                  class="MuiBox-root emotion-37"
                 >
                   :
                 </div>
                 <span
-                  class="data-object-start MuiBox-root emotion-43"
+                  class="data-object-start MuiBox-root emotion-38"
                 >
                   {
                   <span
-                    class="MuiBox-root emotion-44"
+                    class="MuiBox-root emotion-39"
                   >
                     3 Items
                   </span>
                 </span>
               </span>
               <div
-                class="data-object MuiBox-root emotion-45"
+                class="data-object MuiBox-root emotion-40"
               >
                 <div
-                  class="data-key-pair MuiBox-root emotion-38"
+                  class="data-key-pair MuiBox-root emotion-33"
                   data-testid="data-key-pairviewport.x"
                 >
                   <span
-                    class="data-key MuiBox-root emotion-39"
+                    class="data-key MuiBox-root emotion-34"
                   >
                     <span
-                      class="MuiBox-root emotion-41"
+                      class="MuiBox-root emotion-36"
                     >
                       "
                       x
                       "
                     </span>
                     <div
-                      class="MuiBox-root emotion-42"
+                      class="MuiBox-root emotion-37"
                     >
                       :
                     </div>
                   </span>
                   <div
-                    class="MuiBox-root emotion-58"
+                    class="MuiBox-root emotion-53"
                   >
                     <div
-                      class="data-type-label MuiBox-root emotion-59"
+                      class="data-type-label MuiBox-root emotion-54"
                     >
                       int
                     </div>
                     <div
-                      class="int-value MuiBox-root emotion-60"
+                      class="int-value MuiBox-root emotion-55"
                     >
                       0
                     </div>
                   </div>
                 </div>
                 <div
-                  class="data-key-pair MuiBox-root emotion-38"
+                  class="data-key-pair MuiBox-root emotion-33"
                   data-testid="data-key-pairviewport.y"
                 >
                   <span
-                    class="data-key MuiBox-root emotion-39"
+                    class="data-key MuiBox-root emotion-34"
                   >
                     <span
-                      class="MuiBox-root emotion-41"
+                      class="MuiBox-root emotion-36"
                     >
                       "
                       y
                       "
                     </span>
                     <div
-                      class="MuiBox-root emotion-42"
+                      class="MuiBox-root emotion-37"
                     >
                       :
                     </div>
                   </span>
                   <div
-                    class="MuiBox-root emotion-58"
+                    class="MuiBox-root emotion-53"
                   >
                     <div
-                      class="data-type-label MuiBox-root emotion-59"
+                      class="data-type-label MuiBox-root emotion-54"
                     >
                       int
                     </div>
                     <div
-                      class="int-value MuiBox-root emotion-60"
+                      class="int-value MuiBox-root emotion-55"
                     >
                       0
                     </div>
                   </div>
                 </div>
                 <div
-                  class="data-key-pair MuiBox-root emotion-38"
+                  class="data-key-pair MuiBox-root emotion-33"
                   data-testid="data-key-pairviewport.zoom"
                 >
                   <span
-                    class="data-key MuiBox-root emotion-39"
+                    class="data-key MuiBox-root emotion-34"
                   >
                     <span
-                      class="MuiBox-root emotion-41"
+                      class="MuiBox-root emotion-36"
                     >
                       "
                       zoom
                       "
                     </span>
                     <div
-                      class="MuiBox-root emotion-42"
+                      class="MuiBox-root emotion-37"
                     >
                       :
                     </div>
                   </span>
                   <div
-                    class="MuiBox-root emotion-58"
+                    class="MuiBox-root emotion-53"
                   >
                     <div
-                      class="data-type-label MuiBox-root emotion-59"
+                      class="data-type-label MuiBox-root emotion-54"
                     >
                       int
                     </div>
                     <div
-                      class="int-value MuiBox-root emotion-60"
+                      class="int-value MuiBox-root emotion-55"
                     >
                       1
                     </div>
@@ -19192,39 +19235,39 @@ exports[`<ProEditor /> > renders controlledPresence.tsx correctly 1`] = `
                 </div>
               </div>
               <span
-                class="data-object-end MuiBox-root emotion-41"
+                class="data-object-end MuiBox-root emotion-36"
               >
                 }
               </span>
             </div>
             <div
-              class="data-key-pair MuiBox-root emotion-38"
+              class="data-key-pair MuiBox-root emotion-33"
               data-testid="data-key-paircomponentSizeOnCanvas"
             >
               <span
-                class="data-key MuiBox-root emotion-39"
+                class="data-key MuiBox-root emotion-34"
               >
                 <span
-                  class="MuiBox-root emotion-41"
+                  class="MuiBox-root emotion-36"
                 >
                   "
                   componentSizeOnCanvas
                   "
                 </span>
                 <div
-                  class="MuiBox-root emotion-42"
+                  class="MuiBox-root emotion-37"
                 >
                   :
                 </div>
               </span>
               <div
-                class="MuiBox-root emotion-126"
+                class="MuiBox-root emotion-121"
               >
                 <div
-                  class="undefined-value MuiBox-root emotion-60"
+                  class="undefined-value MuiBox-root emotion-55"
                 >
                   <div
-                    class="MuiBox-root emotion-128"
+                    class="MuiBox-root emotion-123"
                   >
                     undefined
                   </div>
@@ -19233,7 +19276,7 @@ exports[`<ProEditor /> > renders controlledPresence.tsx correctly 1`] = `
             </div>
           </div>
           <span
-            class="data-object-end MuiBox-root emotion-41"
+            class="data-object-end MuiBox-root emotion-36"
           >
             }
           </span>
@@ -19260,7 +19303,7 @@ exports[`<ProEditor /> > renders customAssets.tsx correctly 1`] = `
   flex-wrap: nowrap;
   height: 100%;
   position: relative;
-  background-color: #f5f5f5;
+  background-color: #20252b;
 }
 
 .emotion-2 {
@@ -19325,8 +19368,8 @@ exports[`<ProEditor /> > renders customAssets.tsx correctly 1`] = `
   -ms-flex-negative: 0;
   flex-shrink: 0;
   position: relative;
-  border: 0 solid rgba(5, 5, 5, 0.06);
-  border-top: 1px solid #d9d9d9;
+  border: 0 solid rgba(140, 94, 2, 0.08);
+  border-top: 1px solid #424242;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -19341,7 +19384,7 @@ exports[`<ProEditor /> > renders customAssets.tsx correctly 1`] = `
 }
 
 .emotion-10 {
-  background: #ffffff;
+  background: #282c34;
   overflow: hidden;
 }
 
@@ -19365,7 +19408,7 @@ exports[`<ProEditor /> > renders customAssets.tsx correctly 1`] = `
 }
 
 .emotion-12 {
-  background: #ffffff;
+  background: #282c34;
   cursor: pointer;
 }
 
@@ -19384,18 +19427,18 @@ exports[`<ProEditor /> > renders customAssets.tsx correctly 1`] = `
   cursor: pointer;
   -webkit-transition: 150ms background-color ease-in-out;
   transition: 150ms background-color ease-in-out;
-  color: rgba(0, 0, 0, 0.65);
+  color: rgba(255, 255, 255, 0.65);
   padding: 2px 8px;
-  color: rgba(0, 0, 0, 0.65);
+  color: rgba(255, 255, 255, 0.65);
   border-radius: 6px;
 }
 
 .emotion-14:hover {
-  background: rgba(0, 0, 0, 0.02);
+  background: rgba(255, 255, 255, 0.04);
 }
 
 .emotion-14:hover {
-  color: rgba(0, 0, 0, 0.88);
+  color: rgba(255, 255, 255, 0.85);
 }
 
 .emotion-15 {
@@ -19420,90 +19463,28 @@ exports[`<ProEditor /> > renders customAssets.tsx correctly 1`] = `
 }
 
 .emotion-17 {
-  background: rgba(0, 0, 0, 0.02);
+  background: rgba(255, 255, 255, 0.04);
   height: 100%;
 }
 
 .emotion-18 {
-  display: block;
-  padding: 0.5em;
-  overflow-x: auto;
-  color: #383a42;
-  background: #fafafa;
+  background-color: #2b303b;
+  border: 1px solid transparent;
+  position: relative;
+  margin: 0;
+  border-radius: 6px;
+  -webkit-transition: background-color 100ms cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: background-color 100ms cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
-.emotion-18 .react-json-view {
-  background: #fafafa;
+.emotion-18 pre {
+  margin: 0!important;
+  padding: 16px 24px!important;
+  background: none!important;
 }
 
-.emotion-18 .hljs-comment,
-.emotion-18 .hljs-quote {
-  color: #a0a1a7;
-  font-style: italic;
-}
-
-.emotion-18 .hljs-doctag,
-.emotion-18 .hljs-keyword,
-.emotion-18 .hljs-formula {
-  color: #a626a4;
-}
-
-.emotion-18 .hljs-section,
-.emotion-18 .hljs-name,
-.emotion-18 .hljs-selector-tag,
-.emotion-18 .hljs-deletion,
-.emotion-18 .hljs-subst {
-  color: #e45649;
-}
-
-.emotion-18 .hljs-literal {
-  color: #0184bb;
-}
-
-.emotion-18 .hljs-string,
-.emotion-18 .hljs-regexp,
-.emotion-18 .hljs-addition,
-.emotion-18 .hljs-attribute,
-.emotion-18 .hljs-meta-string {
-  color: #50a14f;
-}
-
-.emotion-18 .hljs-built_in,
-.emotion-18 .hljs-class .hljs-title {
-  color: #c18401;
-}
-
-.emotion-18 .hljs-attr,
-.emotion-18 .hljs-variable,
-.emotion-18 .hljs-template-variable,
-.emotion-18 .hljs-type,
-.emotion-18 .hljs-selector-class,
-.emotion-18 .hljs-selector-attr,
-.emotion-18 .hljs-selector-pseudo,
-.emotion-18 .hljs-number {
-  color: #986801;
-}
-
-.emotion-18 .hljs-symbol,
-.emotion-18 .hljs-bullet,
-.emotion-18 .hljs-link,
-.emotion-18 .hljs-meta,
-.emotion-18 .hljs-selector-id,
-.emotion-18 .hljs-title {
-  color: #4078f2;
-}
-
-.emotion-18 .hljs-emphasis {
-  font-style: italic;
-}
-
-.emotion-18 .hljs-strong {
-  font-weight: bold;
-}
-
-.emotion-18 .hljs-link {
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
+.emotion-18 code {
+  background: transparent!important;
 }
 
 .emotion-19 {
@@ -19546,25 +19527,128 @@ exports[`<ProEditor /> > renders customAssets.tsx correctly 1`] = `
   animation-play-state: running;
 }
 
+.emotion-22 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 8px;
+}
+
 .emotion-23 {
-  width: 40px;
-  min-width: 40px;
-  padding: 2px 8px;
-  color: #aaa;
-  text-align: right;
-  background: rgba(255, 255, 255, 0.03);
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+  -webkit-backdrop-filter: saturate(180%) blur(10px);
+  backdrop-filter: saturate(180%) blur(10px);
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  height: 36px;
+  padding: 0 8px;
+  font-family: 'SFMono-Regular',Consolas,'Liberation Mono',Menlo,Courier,monospace;
+  color: rgba(255, 255, 255, 0.45);
+  border-radius: 6;
 }
 
 .emotion-24 {
-  border-right: 1px solid rgba(0, 0, 0, 0.05);
+  position: relative;
+}
+
+.emotion-24::before {
+  position: absolute;
+  z-index: 50;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  content: '';
+}
+
+.emotion-24:hover::before,
+.emotion-24:active::before {
+  background: #1677ff;
+}
+
+.emotion-24::before {
+  top: 50%;
+  height: 2px;
+  width: 100%;
 }
 
 .emotion-25 {
-  padding: 2px 8px;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  position: relative;
+  border: 0 solid rgba(140, 94, 2, 0.08);
+}
+
+.emotion-25:hover .studio-draggable-panel-toggle {
+  opacity: 1;
+}
+
+.emotion-26 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-27 {
+  position: absolute;
+  opacity: 0;
+  z-index: 1001;
+  -webkit-transition: opacity 0.1s;
+  transition: opacity 0.1s;
+  border-radius: 4px;
+  cursor: pointer;
+  background: #32363e;
+  border-width: 1px;
+  border-style: solid;
+  color: rgba(255, 255, 255, 0.45);
+  border-color: #424242;
+  width: 16px;
+  height: 40px;
+  left: -17px;
+  top: 50%;
+  margin-top: -20px;
+  border-radius: 4px 0 0 4px;
+  border-right-width: 0;
+}
+
+.emotion-27:hover {
+  color: rgba(255, 255, 255, 0.65);
+  background: rgba(255, 255, 255, 0.04);
 }
 
 .emotion-29 {
@@ -19585,86 +19669,6 @@ exports[`<ProEditor /> > renders customAssets.tsx correctly 1`] = `
 }
 
 .emotion-29::before {
-  top: 50%;
-  height: 2px;
-  width: 100%;
-}
-
-.emotion-30 {
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  position: relative;
-  border: 0 solid rgba(5, 5, 5, 0.06);
-}
-
-.emotion-30:hover .studio-draggable-panel-toggle {
-  opacity: 1;
-}
-
-.emotion-31 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.emotion-32 {
-  position: absolute;
-  opacity: 0;
-  z-index: 1001;
-  -webkit-transition: opacity 0.1s;
-  transition: opacity 0.1s;
-  border-radius: 4px;
-  cursor: pointer;
-  background: #ffffff;
-  border-width: 1px;
-  border-style: solid;
-  color: rgba(0, 0, 0, 0.45);
-  border-color: #d9d9d9;
-  width: 16px;
-  height: 40px;
-  left: -17px;
-  top: 50%;
-  margin-top: -20px;
-  border-radius: 4px 0 0 4px;
-  border-right-width: 0;
-}
-
-.emotion-32:hover {
-  color: rgba(0, 0, 0, 0.65);
-  background: rgba(0, 0, 0, 0.02);
-}
-
-.emotion-34 {
-  position: relative;
-}
-
-.emotion-34::before {
-  position: absolute;
-  z-index: 50;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  content: '';
-}
-
-.emotion-34:hover::before,
-.emotion-34:active::before {
-  background: #1677ff;
-}
-
-.emotion-34::before {
   left: 50%;
   width: 2px;
   height: 100%;
@@ -20030,21 +20034,21 @@ exports[`<ProEditor /> > renders customAssets.tsx correctly 1`] = `
                 <div
                   class="layoutkit-flexbox emotion-16 emotion-17"
                 >
-                  <pre
-                    class="studio-highlight studio-highlight-light emotion-18"
-                    style="position: relative; margin: 0px;"
+                  <div
+                    class="studio-highlight-container emotion-18"
+                    style="height: 100%;"
                     tabindex="-1"
                   >
                     <button
                       class="studio-highlight-copy emotion-19"
-                      style="background: rgb(250, 250, 250);"
+                      style="background: rgb(43, 48, 59);"
                       type="button"
                     >
                       <span
                         aria-label="copy"
                         class="anticon anticon-copy studio-highlight-copy-icon emotion-20"
                         role="img"
-                        style="color: rgb(43, 48, 59);"
+                        style="color: rgb(250, 250, 250);"
                       >
                         <svg
                           aria-hidden="true"
@@ -20081,42 +20085,36 @@ exports[`<ProEditor /> > renders customAssets.tsx correctly 1`] = `
                         </svg>
                       </span>
                     </button>
-                    <table
-                      class="studio-highlight-light emotion-18"
-                      style="padding: 0px; height: 100%; border-collapse: collapse;"
+                    <div
+                      class="layoutkit-center emotion-22 emotion-23"
                     >
-                      <tbody>
-                        <tr>
-                          <td
-                            class="studio-highlight-index emotion-23 studio-highlight-light-index emotion-24"
-                          >
-                            1
-                          </td>
-                          <td
-                            class="studio-highlight-content emotion-25"
-                            style="width: 100%;"
-                          >
-                            暂无生成代码;
-                          </td>
-                        </tr>
-                        <tr>
-                          <td
-                            class="studio-highlight-index emotion-23 studio-highlight-light-index emotion-24"
-                          >
-                            2
-                          </td>
-                          <td
-                            class="studio-highlight-content emotion-25"
-                            style="width: 100%;"
+                      <span
+                        aria-label="loading-3-quarters"
+                        class="anticon anticon-loading-3-quarters anticon-spin"
+                        role="img"
+                        style="color: rgba(255, 255, 255, 0.45);"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          data-icon="loading-3-quarters"
+                          fill="currentColor"
+                          focusable="false"
+                          height="1em"
+                          viewBox="0 0 1024 1024"
+                          width="1em"
+                        >
+                          <path
+                            d="M512 1024c-69.1 0-136.2-13.5-199.3-40.2C251.7 958 197 921 150 874c-47-47-84-101.7-109.8-162.7C13.5 648.2 0 581.1 0 512c0-19.9 16.1-36 36-36s36 16.1 36 36c0 59.4 11.6 117 34.6 171.3 22.2 52.4 53.9 99.5 94.3 139.9 40.4 40.4 87.5 72.2 139.9 94.3C395 940.4 452.6 952 512 952c59.4 0 117-11.6 171.3-34.6 52.4-22.2 99.5-53.9 139.9-94.3 40.4-40.4 72.2-87.5 94.3-139.9C940.4 629 952 571.4 952 512c0-59.4-11.6-117-34.6-171.3a440.45 440.45 0 00-94.3-139.9 437.71 437.71 0 00-139.9-94.3C629 83.6 571.4 72 512 72c-19.9 0-36-16.1-36-36s16.1-36 36-36c69.1 0 136.2 13.5 199.3 40.2C772.3 66 827 103 874 150c47 47 83.9 101.8 109.7 162.7 26.7 63.1 40.2 130.2 40.2 199.3s-13.5 136.2-40.2 199.3C958 772.3 921 827 874 874c-47 47-101.8 83.9-162.7 109.7-63.1 26.8-130.2 40.3-199.3 40.3z"
                           />
-                        </tr>
-                      </tbody>
-                    </table>
-                  </pre>
+                        </svg>
+                      </span>
+                      Highlighting...
+                    </div>
+                  </div>
                 </div>
                 <div>
                   <div
-                    class="studio-draggable-panel-top-handle emotion-29"
+                    class="studio-draggable-panel-top-handle emotion-24"
                     style="position: absolute; user-select: none; width: 100%; height: 10px; top: -5px; left: 0px; cursor: row-resize;"
                   />
                 </div>
@@ -20126,11 +20124,11 @@ exports[`<ProEditor /> > renders customAssets.tsx correctly 1`] = `
         </div>
       </div>
       <div
-        class="studio-draggable-panel emotion-30"
+        class="studio-draggable-panel emotion-25"
         style="border-left-width: 1px;"
       >
         <div
-          class="layoutkit-center emotion-31 studio-draggable-panel-toggle studio-draggable-panel-toggle-left emotion-32"
+          class="layoutkit-center emotion-26 studio-draggable-panel-toggle studio-draggable-panel-toggle-left emotion-27"
         >
           <span
             aria-label="left"
@@ -20164,7 +20162,7 @@ exports[`<ProEditor /> > renders customAssets.tsx correctly 1`] = `
           </div>
           <div>
             <div
-              class="emotion-34 studio-draggable-panel-left-handle"
+              class="emotion-29 studio-draggable-panel-left-handle"
               style="position: absolute; user-select: none; width: 10px; height: 100%; top: 0px; left: -5px; cursor: col-resize;"
             />
           </div>

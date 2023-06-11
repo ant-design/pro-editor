@@ -5,13 +5,6 @@ export const useStyles = createStyles(({ css, cx }, prefixCls) => {
   const prefix = `${prefixCls}`;
 
   return {
-    table: cx(
-      `${prefix}-table`,
-      css`
-        padding: 0;
-        border-collapse: collapse;
-      `,
-    ),
     lightTheme: cx(
       `${prefix}-light`,
       css`
