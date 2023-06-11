@@ -1,6 +1,6 @@
-import { createStyles, css, cx } from '../../theme';
+import { createStyles } from '../../theme';
 
-export const useStyle = createStyles(({ token }, prefixCls) => ({
+export const useStyle = createStyles(({ token, css, cx }, prefixCls) => ({
   app: css`
     height: 100%;
   `,

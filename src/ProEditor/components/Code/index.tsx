@@ -106,7 +106,7 @@ export const CodePanel: FC<CodePanelProps> = memo((props) => {
           theme={isDarkMode ? 'dark' : 'light'}
           lineNumber
           language="tsx"
-          height="100%"
+          style={{ height: '100%' }}
           onCopy={onCopy}
         >
           {prettierCode}

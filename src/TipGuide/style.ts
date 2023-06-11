@@ -1,6 +1,6 @@
-import { createStyles, css, cx } from '../theme';
+import { createStyles } from '../theme';
 
-export const useStyle = createStyles((_, prefixCls: string) => {
+export const useStyle = createStyles(({ css, cx }, prefixCls: string) => {
   return {
     container: cx(
       prefixCls,

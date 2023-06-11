@@ -1,7 +1,7 @@
-import { createStyles, cx, getStudioStylish } from '../theme';
+import { createStyles, getStudioStylish } from '../theme';
 
 export const useStyle = createStyles((props, prefixCls: string) => {
-  const { token, css } = props;
+  const { token, css, cx } = props;
   const common = getStudioStylish(props);
 
   return {
