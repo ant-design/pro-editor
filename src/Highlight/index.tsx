@@ -2,8 +2,7 @@ import classNames from 'classnames';
 import { createRef } from 'react';
 import { getPrefixCls } from '../theme';
 import CopyButton from './components/CopyButton';
-import Highlighter from './components/HighLighter';
-import Shiki from './components/Shiki';
+import HighLighter from './components/HighLighter';
 import { useKeyDownCopyEvent } from './hooks/useKeyDownCopyEvent';
 import { useStyles } from './style';
 import { THEME_LIGHT, ThemeType } from './theme';
@@ -59,10 +58,6 @@ export interface HighlightProps {
    */
   onCopy?: (children: any) => void;
   /**
-   * 高亮器
-   */
-  highlighter?: 'shiki' | 'highlight.js';
-  /**
    * 高亮类型
    */
   type?: 'pure' | 'block';
@@ -78,7 +73,6 @@ const Highlight: React.FC<HighlightProps> = (props) => {
     theme = THEME_LIGHT,
     language,
     prefixCls: customPrefixCls,
-    highlighter = 'shiki',
     type = 'block',
     onCopy,
   } = props;
@@ -99,20 +93,14 @@ const Highlight: React.FC<HighlightProps> = (props) => {
         {copyable && (
           <CopyButton prefixCls={prefixCls} onCopy={onCopy} theme={theme} content={children} />
         )}
-        {highlighter === 'highlight.js' ? (
-          <Highlighter
-            lineNumber={lineNumber}
-            language={language}
-            theme={theme}
-            prefixCls={prefixCls}
-          >
-            {children}
-          </Highlighter>
-        ) : (
-          <Shiki lineNumber={lineNumber} language={language} theme={theme} prefixCls={prefixCls}>
-            {children}
-          </Shiki>
-        )}
+        <HighLighter
+          lineNumber={lineNumber}
+          language={language}
+          theme={theme}
+          prefixCls={prefixCls}
+        >
+          {children}
+        </HighLighter>
       </div>
     </>
   );

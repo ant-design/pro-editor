@@ -4,61 +4,45 @@
  * 如果没有在 https://github.com/highlightjs/highlight.js/tree/master/src/languages 中查找是否支持，然后添加
  * 优先支持主流语言，没有import在代码中使用的不会打包
  */
+import { Loading3QuartersOutlined as Loading } from '@ant-design/icons';
 import classNames from 'classnames';
-import { useEffect, useState } from 'react';
-import { useHighlight } from '../../hooks/useHighlight';
+import { Center } from 'react-layout-kit';
+import { useShiki } from '../../hooks/useShiki';
 import { HighlightProps } from '../../index';
-import { THEME_LIGHT } from '../../theme';
-import HighlightCell from '../HighlightCell';
+import HighLightJS from '../HighLightJS';
 import { useStyles } from './style';
 
-export type HighLighterProps = Pick<
+export type ShikiProps = Pick<
   HighlightProps,
   'language' | 'children' | 'theme' | 'prefixCls' | 'lineNumber'
 >;
 
-const HighLighter: React.FC<HighLighterProps> = (props) => {
-  const { children, lineNumber = false, theme = THEME_LIGHT, language, prefixCls } = props;
-  const [codeBlock, setCodeBlock] = useState(null);
-  const { styles } = useStyles(theme);
-  const { renderHighlight } = useHighlight(language);
-
-  const highlightCode = () => {
-    // 数据为空即跳过渲染
-    if (!children) {
-      return;
-    }
-
-    // 构造table展示codeblock
-    const value = renderHighlight(children);
-    const sourceData = value.split(/\r?\n/);
-    // 构造整个list所需要的内容（行号和内容）
-    const rowList = sourceData.map((rowValue, index) => ({
-      value: rowValue,
-      index: index + 1,
-    }));
-    setCodeBlock(
-      rowList.map((src, index) => {
-        return (
-          <tr key={index}>
-            <HighlightCell lineNumber={lineNumber} data={src} prefixCls={prefixCls} />
-          </tr>
-        );
-      }),
-    );
-  };
-
-  // 触发重新渲染
-  useEffect(() => {
-    highlightCode();
-  }, [children, theme, language, lineNumber]);
+const HighLighter: React.FC<ShikiProps> = (props) => {
+  const { children, lineNumber = false, theme, language, prefixCls } = props;
+  const { styles, theme: globalTheme } = useStyles({ prefixCls, lineNumber });
+  const { renderShiki, loading } = useShiki(language, theme);
 
   return (
-    <pre className={classNames(styles.theme)}>
-      <table border={0} cellPadding={0} cellSpacing={0}>
-        <tbody>{codeBlock}</tbody>
-      </table>
-    </pre>
+    <>
+      {loading ? (
+        <HighLightJS lineNumber={lineNumber} theme={theme} language={language}>
+          {children}
+        </HighLightJS>
+      ) : (
+        <div
+          className={classNames(styles.shiki)}
+          dangerouslySetInnerHTML={{
+            __html: renderShiki(children) || '',
+          }}
+        />
+      )}
+      {loading ? (
+        <Center className={styles.loading} gap={8} horizontal>
+          <Loading spin style={{ color: globalTheme.colorTextTertiary }} />
+          Highlighting...
+        </Center>
+      ) : null}
+    </>
   );
 };
 

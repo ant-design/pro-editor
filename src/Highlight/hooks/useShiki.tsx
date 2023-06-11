@@ -20,24 +20,16 @@ export const languageMap = [
 
 export const useShiki = (language, theme) => {
   const [shiki, setShiki] = useState<Highlighter>(null);
-  const [loading, setLoading] = useState(true); // [false, true, true, false
-  const [error, setError] = useState(null);
 
   const initShiki = async () => {
-    try {
-      setLoading(true);
-      const highlighter = await getHighlighter({
-        langs: languageMap as any,
-        themes: [themeConfig(true), themeConfig(false)],
-        paths: {
-          wasm: 'https://gw.alipayobjects.com/os/lib/shiki-es/0.2.0/dist/assets/dist/onig.wasm',
-        },
-      });
-      setShiki(highlighter);
-    } catch (e) {
-      setError(e);
-    }
-    setLoading(false);
+    const highlighter = await getHighlighter({
+      langs: languageMap as any,
+      themes: [themeConfig(true), themeConfig(false)],
+      paths: {
+        wasm: 'https://gw.alipayobjects.com/os/lib/shiki-es/0.2.0/dist/assets/dist/onig.wasm',
+      },
+    });
+    setShiki(highlighter);
   };
 
   useEffect(() => {
@@ -56,5 +48,5 @@ export const useShiki = (language, theme) => {
     }
   };
 
-  return { loading, error, renderShiki };
+  return { loading: !shiki, renderShiki };
 };

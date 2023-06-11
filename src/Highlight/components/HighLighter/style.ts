@@ -1,83 +1,53 @@
 import { createStyles } from '../../../theme';
-import { getThemeColor } from '../../theme/colors';
 
-export const useStyles = createStyles(({ css, cx }, theme) => {
-  const isDarkMode = theme === 'dark';
+export const useStyles = createStyles(({ css, cx, token }, { prefixCls, lineNumber }) => {
+  const prefix = `${prefixCls}`;
 
-  const {
-    colorBlue,
-    colorGreen,
-    colorOrange,
-    colorRed,
-    colorText,
-    colorTextSecondary,
-    colorTextTertiary,
-  } = getThemeColor(isDarkMode);
+  const lineNumberStyle = css`
+    code {
+      counter-reset: step;
+      counter-increment: step 0;
+    }
 
+    code .line::before {
+      content: counter(step);
+      counter-increment: step;
+      width: 1rem;
+      margin-right: 1.5rem;
+      display: inline-block;
+      text-align: right;
+      color: rgba(115, 138, 148, 0.4);
+      user-select: none;
+    }
+  `;
   return {
-    theme: cx(
+    shiki: cx(
+      `${prefix}-shiki`,
       css`
-        display: block;
-        overflow-x: auto;
-        color: ${colorText};
-        background-color: ${colorTextSecondary};
-
-        /* Comment */
-        .hljs-comment,
-        .hljs-quote {
-          color: ${colorTextTertiary};
+        .shiki {
+          overflow-x: scroll;
+          background: none !important;
+          ${lineNumber ? lineNumberStyle : ''}
         }
+      `,
+    ),
+    loading: cx(
+      css`
+        backdrop-filter: saturate(180%) blur(10px);
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
-        /*  Red */
-        .hljs-variable,
-        .hljs-attribute,
-        .hljs-template-variable,
-        .hljs-tag,
-        .hljs-name,
-        .hljs-selector-id,
-        .hljs-selector-class,
-        .hljs-regexp,
-        .hljs-title,
-        .hljs-deletion {
-          color: ${colorRed};
-        }
+        height: 36px;
+        padding: 0 8px;
 
-        /* Orange */
+        font-family: ${token.fontFamilyCode};
+        color: ${token.colorTextTertiary};
 
-        .hljs-builtin-name,
-        .hljs-literal,
-        .hljs-type,
-        .hljs-params,
-        .hljs-meta,
-        .hljs-link {
-          color: ${colorOrange};
-        }
-
-        /* Green */
-        .hljs-string,
-        .hljs-number,
-        .hljs-symbol,
-        .hljs-bullet,
-        .hljs-addition {
-          color: ${colorGreen};
-        }
-
-        /* Blue */
-        .hljs-keyword,
-        .hljs-doctag,
-        .hljs-built_in,
-        .hljs-selector-tag,
-        .hljs-section {
-          color: ${colorBlue};
-        }
-
-        .hljs-emphasis {
-          font-style: italic;
-        }
-
-        .hljs-strong {
-          font-weight: bold;
-        }
+        border-radius: ${token.borderRadius};
       `,
     ),
   };
