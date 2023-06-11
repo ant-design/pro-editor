@@ -1,21 +1,12 @@
-import type { UniqueIdentifier } from '@dnd-kit/core';
 import type { MutableRefObject } from 'react';
 import { useImperativeHandle } from 'react';
 import { createStoreUpdater } from 'zustand-utils';
 
-import {
-  SortableTreeInstance,
-  useSortableTree,
-} from '../hooks/useSortableTree';
-import type { ControlledState } from '../store';
+import { SortableTreeInstance, useSortableTree } from '../hooks/useSortableTree';
+import type { ControlledState, OnTreeDataChange } from '../store';
 import { useStoreApi } from '../store';
 
-import type {
-  FlattenNode,
-  RenderNodeProps,
-  TreeData,
-  TreeNode,
-} from '../types';
+import type { RenderNodeProps, TreeData } from '../types';
 
 export interface StoreUpdaterProps<T = any> extends ControlledState {
   /**
@@ -29,7 +20,7 @@ export interface StoreUpdaterProps<T = any> extends ControlledState {
   /**
    * 数据变更回调
    */
-  onTreeDataChange?: (treeData: TreeData<T>) => void;
+  onTreeDataChange?: OnTreeDataChange<T>;
   /**
    * 渲染内容
    */
@@ -49,28 +40,6 @@ export interface StoreUpdaterProps<T = any> extends ControlledState {
   SHOW_STORE_IN_DEVTOOLS?: boolean;
 }
 
-/**
- * 供外部使用的 ref 方法
- */
-export interface SortableTreeRef {
-  flattenData?: FlattenNode[];
-  selectedIds?: UniqueIdentifier[];
-  addNode: (node: TreeNode, index?: number) => void;
-
-  removeNode: (id: UniqueIdentifier) => void;
-  /**
-   * 更新节点内容
-   * @param id
-   * @param content
-   */
-  updateNodeContent: (id: UniqueIdentifier, content: any) => void;
-  /**
-   * 切换节点的 extra 显示
-   * @param id
-   */
-  toggleExtraVisible: (id: UniqueIdentifier) => void;
-}
-
 const StoreUpdater = ({
   defaultTreeData,
   treeData,
@@ -88,7 +57,6 @@ const StoreUpdater = ({
   const useStoreUpdater = createStoreUpdater<StoreUpdaterProps>(storeApi);
 
   useStoreUpdater('treeData', defaultTreeData, []);
-  useStoreUpdater('treeData', treeData);
   useStoreUpdater('treeData', treeData);
   useStoreUpdater('renderContent', renderContent);
   useStoreUpdater('renderExtra', renderExtra);
