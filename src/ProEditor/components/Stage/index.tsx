@@ -13,13 +13,14 @@ import { useStyles } from './style';
 export const Stage: FC<{
   hideNavbar: boolean;
   onCopy?: (children: any) => void;
-}> = memo(({ hideNavbar, onCopy }) => {
+  prefixCls?: string;
+}> = memo(({ hideNavbar, onCopy, prefixCls }) => {
   const isStarter = useStore((x) =>
     x.componentAsset.componentStore((s) => x.componentAsset.isStarterMode(s)),
   );
   const isDesignMode = useStore(isDesignModeSelector);
 
-  const { styles } = useStyles();
+  const { styles } = useStyles(prefixCls);
 
   return (
     <div

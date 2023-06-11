@@ -1,11 +1,11 @@
 import { Empty } from 'antd';
 import type { FC } from 'react';
 import { memo } from 'react';
-import { createStyles, css, cx } from '../../../theme';
+import { createStyles } from '../../../theme';
 
 import { useStore } from '../../store';
 
-const useStyles = createStyles(({ token }, prefixCls) => ({
+const useStyles = createStyles(({ token, css, cx }, prefixCls) => ({
   cls: cx(
     `${prefixCls}-empty`,
     css`
@@ -22,9 +22,7 @@ const AssetEmpty: FC = memo(() => {
 
   return (
     <div className={styles.cls}>
-      <Empty
-        description={'未找到 ComponentAsset，请在 props 中传入 ComponentAsset'}
-      />
+      <Empty description={'未找到 ComponentAsset，请在 props 中传入 ComponentAsset'} />
     </div>
   );
 });
