@@ -27,10 +27,10 @@ export const configPanelSlice: StateCreator<
    * @param newPos
    */
   updatePanelPosition: (newPos: Position) => {
-    const { presenceEditor } = get();
+    const { editorAwareness } = get();
 
     get().internalUpdateEditorAwareness({
-      panelPosition: { ...presenceEditor.panelPosition, ...newPos },
+      panelPosition: { ...editorAwareness.panelPosition, ...newPos },
     });
   },
   updatePanelSize: (size) => {
@@ -41,10 +41,10 @@ export const configPanelSlice: StateCreator<
    * 触发面板展开折叠
    */
   togglePanelExpand: (nextExpandState) => {
-    const { internalUpdateEditorAwareness, presenceEditor } = get();
+    const { internalUpdateEditorAwareness, editorAwareness } = get();
     if (typeof nextExpandState === undefined) {
       internalUpdateEditorAwareness({
-        panelExpand: !presenceEditor.panelExpand,
+        panelExpand: !editorAwareness.panelExpand,
       });
     } else {
       internalUpdateEditorAwareness({ panelExpand: nextExpandState });

@@ -10,7 +10,7 @@ import Component from './Component';
 
 const Canvas: FC = memo(() => {
   const [viewport, updatePresenceEditor, componentAsset] = useStore(
-    (s) => [s.presenceEditor.viewport, s.internalUpdateEditorAwareness, s.componentAsset],
+    (s) => [s.editorAwareness.viewport, s.internalUpdateEditorAwareness, s.componentAsset],
     shallow,
   );
   const [enableCanvasInteraction, toggleCanvasInteraction] = useStore(

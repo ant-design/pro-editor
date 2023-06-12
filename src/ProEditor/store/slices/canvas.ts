@@ -73,11 +73,11 @@ export const canvasSlice: StateCreator<
   },
 
   updateViewport: (viewPort) => {
-    const { internalUpdateEditorAwareness, presenceEditor } = get();
+    const { internalUpdateEditorAwareness, editorAwareness } = get();
 
     internalUpdateEditorAwareness({
       viewport: {
-        ...presenceEditor.viewport,
+        ...editorAwareness.viewport,
         ...viewPort,
       },
     });

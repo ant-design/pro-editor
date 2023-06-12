@@ -19,10 +19,10 @@ const StoreUpdater = memo(
     componentAsset,
     mode,
     onCanvasError,
-    presenceAsset,
-    onPresenceAssetChange,
-    presenceEditor,
-    onPresenceEditorChange,
+    assetAwareness,
+    onAssetAwarenessChange,
+    editorAwareness,
+    onEditorAwarenessChange,
     editorRef,
   }: StoreUpdaterProps) => {
     const storeApi = useStoreApi();
@@ -30,13 +30,13 @@ const StoreUpdater = memo(
 
     useStoreUpdater('mode', mode);
     useStoreUpdater('config', config);
-    useStoreUpdater('presenceAsset', presenceAsset);
-    useStoreUpdater('presenceEditor', presenceEditor);
+    useStoreUpdater('assetAwareness', assetAwareness);
+    useStoreUpdater('editorAwareness', editorAwareness);
 
     // 为了在受控模式下避免不必要的渲染，将下面的对象只做第一次加载
     useStoreUpdater('componentAsset', componentAsset, []);
-    useStoreUpdater('onPresenceAssetChange', onPresenceAssetChange, []);
-    useStoreUpdater('onPresenceEditorChange', onPresenceEditorChange, []);
+    useStoreUpdater('onAssetAwarenessChange', onAssetAwarenessChange, []);
+    useStoreUpdater('onEditorAwarenessChange', onEditorAwarenessChange, []);
     useStoreUpdater('onConfigChange', onConfigChange, []);
     useStoreUpdater('onCanvasError', onCanvasError, []);
 
