@@ -85,8 +85,10 @@ const StoreUpdater = forwardRef(
     // KeyManager 和 value & initialValues 同步。
     const KeyManagerUpdater = (state, key) => {
       const { keyManager } = storeApi.getState();
+      // value 为空处理
+      const value = state[key] || [];
       const manager = produce(keyManager, (draft) => {
-        state[key].forEach((__, index) => {
+        value.forEach((__, index) => {
           const key = draft.keys[index];
           if (key === undefined) {
             draft.keys[index] = draft.id;
@@ -96,7 +98,7 @@ const StoreUpdater = forwardRef(
         return draft;
       });
 
-      storeApi.setState({ keyManager: manager, [key]: state[key] });
+      storeApi.setState({ keyManager: manager, [key]: value });
     };
 
     useStoreUpdater('value', initialValues, []);

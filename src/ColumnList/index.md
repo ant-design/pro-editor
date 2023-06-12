@@ -36,6 +36,10 @@ order: 3
 
 <code src="./demos/custom.tsx" ></code>
 
+### 空数据
+
+<code src="./demos/empty.tsx" ></code>
+
 ## API
 
 <API id="ColumnList"></API>
