@@ -60,8 +60,8 @@ export default defineConfig({
       {
         image:
           'https://mdn.alipayobjects.com/yuyan_qk0oxh/afts/img/UKqDTIp55HYAAAAAAAAAAAAAFl94AQBr',
-        title: '国际化',
-        description: '提供完备的国际化，与 Ant Design 体系打通，无需多余配置',
+        title: '通用编辑器组件',
+        description: '提供完备的编辑器组件，方便使用者定制自己的编辑器',
       },
 
       {

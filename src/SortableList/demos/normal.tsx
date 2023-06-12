@@ -7,8 +7,8 @@ export default () => {
     <div style={{ width: 340, padding: '0 12px' }}>
       <SortableList<SchemaItem>
         initialValues={INIT_VALUES}
-        onChange={(data) => {
-          console.log('data', data);
+        onChange={(data, event) => {
+          console.log('data', data, event);
         }}
         renderContent={(item, index) => <ItemRender item={item} index={index} />}
       />
