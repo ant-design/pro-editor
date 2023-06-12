@@ -1,12 +1,8 @@
 import { act, renderHook } from '@testing-library/react';
 import { useEffect, useState } from 'react';
 
-import type {
-  CanvasInteractRule,
-  InteractStatus,
-} from '../../InteractContainer';
+import type { CanvasInteractRule, InteractStatus } from '../../InteractContainer';
 import { createStore } from './createStore';
-import { EditorMode } from './initialState';
 
 vi.mock('zustand');
 
@@ -64,14 +60,6 @@ describe('proEditorStore', () => {
       });
     });
 
-    it('internalSetState', () => {
-      const { result } = renderHook(() => useStore());
-      act(() => {
-        result.current.internalSetState({ mode: EditorMode.Design });
-      });
-      expect(result.current.mode).toEqual('design');
-    });
-
     describe('修改配置', () => {
       it('默认', () => {
         const { result } = renderHook(() => useStore());
@@ -86,7 +74,7 @@ describe('proEditorStore', () => {
       });
       it('受控模式：没有 componentAssets 则不生成 props', () => {
         type Config = { text: string };
-        const useTextStore = createStore<Config>();
+        const useTextStore = createStore();
 
         const { result } = renderHook(() => {
           const [value, onChange] = useState<Config>({ text: '' });
@@ -94,7 +82,7 @@ describe('proEditorStore', () => {
           const store = useTextStore();
 
           useEffect(() => {
-            store.internalSetState({
+            useTextStore.setState({
               onConfigChange: ({ config, props }) => {
                 onChange(config);
                 onPropsChange(props);
@@ -105,7 +93,7 @@ describe('proEditorStore', () => {
 
           useEffect(() => {
             if (!value) return;
-            store.internalSetState({ config: value });
+            useTextStore.setState({ config: value });
             // eslint-disable-next-line react-hooks/exhaustive-deps
           }, [value]);
 
@@ -133,7 +121,7 @@ describe('proEditorStore', () => {
           const store = useTestStore();
 
           useEffect(() => {
-            store.internalSetState({
+            useTestStore.setState({
               onConfigChange: ({ config, isEmpty, props }) => {
                 onChange(config as any);
                 onPropsChange(props);
@@ -145,7 +133,7 @@ describe('proEditorStore', () => {
 
           useEffect(() => {
             if (!value) return;
-            store.internalSetState({ config: value });
+            useTestStore.setState({ config: value });
             // eslint-disable-next-line react-hooks/exhaustive-deps
           }, [value]);
 
@@ -262,13 +250,13 @@ describe('proEditorStore', () => {
           const store = useStore();
 
           useEffect(() => {
-            store.internalSetState({ onInteractionChange: onChange });
+            useStore.setState({ onInteractionChange: onChange });
             // eslint-disable-next-line react-hooks/exhaustive-deps
           }, []);
 
           useEffect(() => {
             if (!value) return;
-            store.internalSetState({ interaction: value });
+            useStore.setState({ interaction: value });
             // eslint-disable-next-line react-hooks/exhaustive-deps
           }, [value]);
 

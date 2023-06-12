@@ -1,5 +1,6 @@
-import { ProEditorProvider, useProEditor } from '@ant-design/pro-editor';
 import { renderHook } from '@testing-library/react';
+
+import { ProEditorProvider, useProEditor } from '@ant-design/pro-editor';
 
 describe('useProEditor', () => {
   it('返回正确的实例类型', () => {
@@ -10,9 +11,9 @@ describe('useProEditor', () => {
     });
     expect(instance).toHaveProperty('getViewport');
     expect(instance).toHaveProperty('getConfig');
-    expect(instance).toHaveProperty('setConfig');
+    expect(instance).toHaveProperty('updateConfig');
     expect(instance).toHaveProperty('getProps');
-    expect(instance).toHaveProperty('getPresenceEditor');
+    expect(instance).toHaveProperty('getEditorAwareness');
 
     expect(instance).not.toHaveProperty('props');
     expect(instance).not.toHaveProperty('config');
@@ -24,7 +25,6 @@ describe('useProEditor', () => {
     expect(instance).not.toHaveProperty('onPresenceAssetChange');
     expect(instance).not.toHaveProperty('onConfigChange');
     expect(instance).not.toHaveProperty('onInteractionChange');
-    expect(instance).not.toHaveProperty('syncOutSource');
     expect(instance).not.toHaveProperty('internalSetState');
     expect(instance).not.toHaveProperty('internalUpdateCanvasInteract');
     expect(instance).not.toHaveProperty('internalUpdatePresenceEditor');
@@ -39,7 +39,7 @@ describe('useProEditor', () => {
       wrapper: ProEditorProvider,
     });
     const config = { name: 'John' };
-    instance.setConfig(config);
+    instance.updateConfig(config);
     expect(instance.getConfig()).toEqual(config);
     expect(instance.getProps()).toEqual({});
   });
@@ -48,6 +48,6 @@ describe('useProEditor', () => {
     const {
       result: { current: instance },
     } = renderHook(useProEditor, { wrapper: ProEditorProvider });
-    expect(instance.getPresenceEditor()).toMatchSnapshot();
+    expect(instance.getEditorAwareness()).toMatchSnapshot();
   });
 });

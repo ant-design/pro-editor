@@ -10,11 +10,7 @@ import Component from './Component';
 
 const Canvas: FC = memo(() => {
   const [viewport, updatePresenceEditor, componentAsset] = useStore(
-    (s) => [
-      s.presenceEditor.viewport,
-      s.internalUpdatePresenceEditor,
-      s.componentAsset,
-    ],
+    (s) => [s.presenceEditor.viewport, s.internalUpdateEditorAwareness, s.componentAsset],
     shallow,
   );
   const [enableCanvasInteraction, toggleCanvasInteraction] = useStore(
@@ -37,9 +33,7 @@ const Canvas: FC = memo(() => {
             key="interaction"
           >
             <Button
-              icon={
-                enableCanvasInteraction ? <AimOutlined /> : <StopOutlined />
-              }
+              icon={enableCanvasInteraction ? <AimOutlined /> : <StopOutlined />}
               onClick={toggleCanvasInteraction}
             />
           </Tooltip>,
