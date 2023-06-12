@@ -10,21 +10,20 @@ describe('useProEditor', () => {
     });
     expect(instance).toHaveProperty('getViewport');
     expect(instance).toHaveProperty('getConfig');
-    expect(instance).toHaveProperty('setConfig');
+    expect(instance).toHaveProperty('updateConfig');
     expect(instance).toHaveProperty('getProps');
-    expect(instance).toHaveProperty('getPresenceEditor');
+    expect(instance).toHaveProperty('getEditorAwareness');
 
     expect(instance).not.toHaveProperty('props');
     expect(instance).not.toHaveProperty('config');
     expect(instance).not.toHaveProperty('interaction');
-    expect(instance).not.toHaveProperty('presenceEditor');
-    expect(instance).not.toHaveProperty('presenceAsset');
+    expect(instance).not.toHaveProperty('editorAwareness');
+    expect(instance).not.toHaveProperty('assetAwareness');
     expect(instance).not.toHaveProperty('onCanvasError');
-    expect(instance).not.toHaveProperty('onPresenceEditorChange');
-    expect(instance).not.toHaveProperty('onPresenceAssetChange');
+    expect(instance).not.toHaveProperty('onEditorAwarenessChange');
+    expect(instance).not.toHaveProperty('onAssetAwarenessChange');
     expect(instance).not.toHaveProperty('onConfigChange');
     expect(instance).not.toHaveProperty('onInteractionChange');
-    expect(instance).not.toHaveProperty('syncOutSource');
     expect(instance).not.toHaveProperty('internalSetState');
     expect(instance).not.toHaveProperty('internalUpdateCanvasInteract');
     expect(instance).not.toHaveProperty('internalUpdatePresenceEditor');
@@ -39,7 +38,7 @@ describe('useProEditor', () => {
       wrapper: ProEditorProvider,
     });
     const config = { name: 'John' };
-    instance.setConfig(config);
+    instance.updateConfig(config);
     expect(instance.getConfig()).toEqual(config);
     expect(instance.getProps()).toEqual({});
   });
@@ -48,6 +47,6 @@ describe('useProEditor', () => {
     const {
       result: { current: instance },
     } = renderHook(useProEditor, { wrapper: ProEditorProvider });
-    expect(instance.getPresenceEditor()).toMatchSnapshot();
+    expect(instance.getEditorAwareness()).toMatchSnapshot();
   });
 });

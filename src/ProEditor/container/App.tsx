@@ -39,8 +39,8 @@ export const ProEditor: FC<ProEditorAppProps> = memo((props) => {
       s.prefixCls,
       s.exportConfig,
       s.componentAsset,
-      s.presenceEditor.panelSize.width,
-      s.presenceEditor.panelExpand,
+      s.editorAwareness.panelSize.width,
+      s.editorAwareness.panelExpand,
     ],
     shallow,
   );

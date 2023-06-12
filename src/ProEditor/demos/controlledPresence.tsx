@@ -1,7 +1,7 @@
 /**
  * iframe: 800
  */
-import { ComponentAsset, PresenceEditor, ProEditor } from '@ant-design/pro-editor';
+import { AwarenessEditor, ComponentAsset, ProEditor } from '@ant-design/pro-editor';
 import { JsonViewer } from '@textea/json-viewer';
 import { useLocalStorageState } from 'ahooks';
 import { Flexbox } from 'react-layout-kit';
@@ -17,13 +17,14 @@ const assets = new ComponentAsset({
 });
 
 export default () => {
-  const [presence, setPresence] = useLocalStorageState<PresenceEditor>('DEMO-PRO-EDITOR-PRESENCE');
+  const [presence, setPresence] = useLocalStorageState<AwarenessEditor>('DEMO-PRO-EDITOR');
+
   return (
     <Flexbox>
       <ProEditor
         componentAsset={assets}
-        presenceEditor={presence}
-        onPresenceEditorChange={setPresence}
+        editorAwareness={presence}
+        onEditorAwarenessChange={setPresence}
         style={{ height: 'calc(100vh - 100px)' }}
       />
       <Flexbox>
