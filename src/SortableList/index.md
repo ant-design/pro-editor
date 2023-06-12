@@ -72,4 +72,65 @@ group:
 
 ## API
 
-<API id="SortableList"></API>
+### Basic 组件属性
+
+| 属性名             | 类型                                                             | 描述                               |
+| ------------------ | ---------------------------------------------------------------- | ---------------------------------- |
+| value              | `T[]`                                                            | 值                                 |
+| initialValues      | `T[]`                                                            | 初始值                             |
+| onChange           | `(value: T[], event: ListDataDispatchPayload) => void`           | 值变化                             |
+| renderContent      | `(item: T, index: number) => ReactNode`                          | 渲染内容区域                       |
+| actions            | `(item: T, index: number) => ReactNode[]` \| `React.ReactNode[]` | 除列表自带操作之外的其他操作自渲染 |
+| renderHeader       | `() => React.ReactNode`                                          | 渲染头部区域                       |
+| ref                | `ForwardedRef<SortableListRef<T>>`                               | 对外部暴露方法                     |
+| creatorButtonProps | CreatorButtonProps                                               | 新建对象相关属性                   |
+| compact            | `boolean`                                                        | 紧凑模式, 默认为 false             |
+| hideRemove         | `boolean`                                                        | 是否隐藏删除按钮，默认为 false     |
+
+### CreatorButtonProps 创建按钮属性
+
+| 属性名            | 类型                                     | 描述                       |
+| ----------------- | ---------------------------------------- | -------------------------- |
+| showInList        | `boolean`                                | 列表有值时是否展示添加按钮 |
+| showInEmpty       | `boolean`                                | 空数据时是否展示添加按钮   |
+| record            | `(index: number) => Record<string, any>` | 生成初始值逻辑             |
+| creatorButtonText | `string`                                 | 新增一行按钮文案           |
+
+### ListDataDispatchPayload
+
+组件通过 `onChange` 以及 `ForwardRef` 的方式暴露底层事件，你可以细粒度地控制列表的增删改查，移动，以及根据事件细粒度控制后续的行为链路。
+
+```jsx | pure
+// 新增节点
+interface AddItemAction {
+  type: 'addItem';
+  item: any;
+  index?: number;
+}
+
+// 移动节点
+interface MoveItemAction {
+  type: 'moveItem';
+  /**
+   * 当前节点id
+   */
+  activeId: UniqueIdentifier;
+  /**
+   * 目标节点id
+   */
+  targetId: UniqueIdentifier;
+}
+
+// 移除节点
+interface RemoveItemAction {
+  type: 'removeItem';
+  index: number;
+}
+
+// 修改节点content内容
+interface UpdateItemAction {
+  type: 'updateItem';
+  index: number;
+  item: any;
+}
+```
