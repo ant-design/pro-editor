@@ -15,13 +15,13 @@ const ConfigPanel: React.FC = memo(() => {
     isExpand,
   ] = useStore(
     (s) => [
-      s.presenceEditor.panelPosition,
-      s.presenceEditor.panelSize.width,
+      s.editorAwareness.panelPosition,
+      s.editorAwareness.panelSize.width,
       s.updatePanelPosition,
       s.updatePanelSize,
       s.togglePanelExpand,
       s.componentAsset,
-      s.presenceEditor.panelExpand,
+      s.editorAwareness.panelExpand,
     ],
     shallow,
   );
@@ -36,8 +36,7 @@ const ConfigPanel: React.FC = memo(() => {
         if (!size.width) return;
 
         updatePanelSize({
-          width:
-            typeof size.width === 'string' ? parseInt(size.width) : size.width,
+          width: typeof size.width === 'string' ? parseInt(size.width) : size.width,
         });
       }}
       onExpandChange={togglePanelExpand}

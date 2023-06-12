@@ -1,6 +1,5 @@
-import { renderHook } from '@testing-library/react';
-
 import { ProEditorProvider, useProEditor } from '@ant-design/pro-editor';
+import { renderHook } from '@testing-library/react';
 
 describe('useProEditor', () => {
   it('返回正确的实例类型', () => {
@@ -18,11 +17,11 @@ describe('useProEditor', () => {
     expect(instance).not.toHaveProperty('props');
     expect(instance).not.toHaveProperty('config');
     expect(instance).not.toHaveProperty('interaction');
-    expect(instance).not.toHaveProperty('presenceEditor');
-    expect(instance).not.toHaveProperty('presenceAsset');
+    expect(instance).not.toHaveProperty('editorAwareness');
+    expect(instance).not.toHaveProperty('assetAwareness');
     expect(instance).not.toHaveProperty('onCanvasError');
-    expect(instance).not.toHaveProperty('onPresenceEditorChange');
-    expect(instance).not.toHaveProperty('onPresenceAssetChange');
+    expect(instance).not.toHaveProperty('onEditorAwarenessChange');
+    expect(instance).not.toHaveProperty('onAssetAwarenessChange');
     expect(instance).not.toHaveProperty('onConfigChange');
     expect(instance).not.toHaveProperty('onInteractionChange');
     expect(instance).not.toHaveProperty('internalSetState');

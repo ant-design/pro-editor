@@ -12,4 +12,4 @@ export type { ProEditorState, ProEditorStoreKey, PublicProEditorStore } from './
 
 export * from './selectors';
 export type { AwarenessEditor } from './slices/awareness';
-export type { EditorMode, TabKey } from './slices/general';
+export { EditorMode, TabKey } from './slices/general';

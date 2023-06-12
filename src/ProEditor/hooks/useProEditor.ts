@@ -17,8 +17,8 @@ export const useProEditor = <T>(): ProEditorInstance<T> => {
 
   const { deselectCanvas, updateConfig, exportConfig, resetConfig } = storeApi.getState();
 
-  const getViewport = useMemoizedFn(() => storeApi.getState().presenceEditor.viewport);
-  const getEditorAwareness = useMemoizedFn(() => storeApi.getState().presenceEditor);
+  const getViewport = useMemoizedFn(() => storeApi.getState().editorAwareness.viewport);
+  const getEditorAwareness = useMemoizedFn(() => storeApi.getState().editorAwareness);
   const getConfig = useMemoizedFn(() => storeApi.getState().config);
   const getProps = useMemoizedFn(() => storeApi.getState().props);
 

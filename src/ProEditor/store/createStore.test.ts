@@ -24,7 +24,7 @@ describe('proEditorStore', () => {
     it('updatePosition', () => {
       const { result } = renderHook(() => useStore());
 
-      expect(result.current.presenceEditor.panelPosition).toEqual({
+      expect(result.current.editorAwareness.panelPosition).toEqual({
         x: 0,
         y: 0,
       });
@@ -32,7 +32,7 @@ describe('proEditorStore', () => {
       act(() => {
         result.current.updatePanelPosition({ x: 12 });
       });
-      expect(result.current.presenceEditor.panelPosition).toEqual({
+      expect(result.current.editorAwareness.panelPosition).toEqual({
         x: 12,
         y: 0,
       });
@@ -40,7 +40,7 @@ describe('proEditorStore', () => {
       act(() => {
         result.current.updatePanelPosition({ y: 1 });
       });
-      expect(result.current.presenceEditor.panelPosition).toEqual({
+      expect(result.current.editorAwareness.panelPosition).toEqual({
         x: 12,
         y: 1,
       });
@@ -53,7 +53,7 @@ describe('proEditorStore', () => {
         result.current.updateViewport({ zoom: 2 });
       });
 
-      expect(result.current.presenceEditor.viewport).toEqual({
+      expect(result.current.editorAwareness.viewport).toEqual({
         zoom: 2,
         x: 0,
         y: 0,

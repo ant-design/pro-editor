@@ -38,25 +38,25 @@ export interface AwarenessEditor {
 
 export interface AwarenessSliceState<T = object> {
   /** 编辑器供外部感知的视图状态 */
-  presenceAsset: T;
+  assetAwareness: T;
   /**
    * 编辑器供外部感知的视图状态变化时的回调函数
    * @param presenceAsset - 编辑器供外部感知的视图状态
    */
-  onPresenceAssetChange?: (presenceAsset: T) => void;
+  onAssetAwarenessChange?: (awareness: T) => void;
   /** 编辑器受外部感知的状态 */
-  presenceEditor: AwarenessEditor;
+  editorAwareness: AwarenessEditor;
   /**
    * 编辑器受外部感知的状态变化时的回调函数
    * @param presence - 编辑器受外部感知的状态
    */
-  onPresenceEditorChange?: (presence: AwarenessEditor) => void;
+  onEditorAwarenessChange?: (awareness: AwarenessEditor) => void;
 }
 
 const initialAwarenessState: AwarenessSliceState = {
-  presenceAsset: {},
-  onPresenceAssetChange: null,
-  presenceEditor: {
+  assetAwareness: {},
+  onAssetAwarenessChange: null,
+  editorAwareness: {
     // 面板
     panelPosition: { x: 0, y: 0 },
     panelSize: {
@@ -69,7 +69,7 @@ const initialAwarenessState: AwarenessSliceState = {
       zoom: 1,
     },
   },
-  onPresenceEditorChange: null,
+  onEditorAwarenessChange: null,
 };
 
 // eslint-disable-next-line @typescript-eslint/no-empty-interface
@@ -88,22 +88,22 @@ export const awarenessSlice: StateCreator<
 > = (set, get) => ({
   ...initialAwarenessState,
   internalUpdateAssetAwareness: (awareness) => {
-    const { onPresenceAssetChange, presenceAsset } = get();
+    const { onAssetAwarenessChange, assetAwareness } = get();
 
-    const nextAwarenessView = { ...presenceAsset, ...awareness };
+    const nextAwarenessView = { ...assetAwareness, ...awareness };
 
-    set({ presenceAsset: nextAwarenessView }, false, '🕹内部更新：assetAwareness');
+    set({ assetAwareness: nextAwarenessView }, false, '🕹内部更新：assetAwareness');
 
-    onPresenceAssetChange?.(nextAwarenessView);
+    onAssetAwarenessChange?.(nextAwarenessView);
   },
 
   internalUpdateEditorAwareness: (awareness) => {
-    const { onPresenceEditorChange, presenceEditor } = get();
+    const { onEditorAwarenessChange, editorAwareness } = get();
 
-    const nextAwareness = merge({}, presenceEditor, awareness);
+    const nextAwareness = merge({}, editorAwareness, awareness);
 
-    set({ presenceEditor: nextAwareness }, false, '🕹内部更新：editorPresence');
+    set({ editorAwareness: nextAwareness }, false, '🕹内部更新：editorPresence');
 
-    onPresenceEditorChange?.(nextAwareness);
+    onEditorAwarenessChange?.(nextAwareness);
   },
 });

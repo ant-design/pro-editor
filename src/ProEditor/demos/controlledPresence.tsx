@@ -23,8 +23,8 @@ export default () => {
     <Flexbox>
       <ProEditor
         componentAsset={assets}
-        presenceEditor={presence}
-        onPresenceEditorChange={setPresence}
+        editorAwareness={presence}
+        onEditorAwarenessChange={setPresence}
         style={{ height: 'calc(100vh - 100px)' }}
       />
       <Flexbox>
