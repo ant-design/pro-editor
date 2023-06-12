@@ -102,7 +102,7 @@ export const awarenessSlice: StateCreator<
 
     const nextAwareness = merge({}, editorAwareness, awareness);
 
-    set({ editorAwareness: nextAwareness }, false, '🕹内部更新：editorPresence');
+    set({ editorAwareness: nextAwareness }, false, '🕹内部更新：editorAwareness');
 
     onEditorAwarenessChange?.(nextAwareness);
   },
