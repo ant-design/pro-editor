@@ -72,4 +72,26 @@ group:
 
 ## API
 
-<API id="SortableList"></API>
+| 属性名             | 类型                                                             | 描述                               |
+| ------------------ | ---------------------------------------------------------------- | ---------------------------------- |
+| value              | `T[]`                                                            | 值                                 |
+| initialValues      | `T[]`                                                            | 初始值                             |
+| onChange           | `(value: T[]) => void`                                           | 值变化                             |
+| renderContent      | `(item: T, index: number) => ReactNode`                          | 渲染内容区域                       |
+| actions            | `(item: T, index: number) => ReactNode[]` \| `React.ReactNode[]` | 除列表自带操作之外的其他操作自渲染 |
+| renderHeader       | `() => React.ReactNode`                                          | 渲染头部区域                       |
+| ref                | `ForwardedRef<SortableListRef<T>>`                               | 对外部暴露方法                     |
+| creatorButtonProps | CreatorButtonProps                                               | 新建对象相关属性                   |
+| compact            | `boolean`                                                        | 紧凑模式, 默认为 false             |
+| hideRemove         | `boolean`                                                        | 是否隐藏删除按钮，默认为 false     |
+
+### CreatorButtonProps
+
+创建按钮组件的属性
+
+| 属性名            | 类型                                     | 描述                       |
+| ----------------- | ---------------------------------------- | -------------------------- |
+| showInList        | `boolean`                                | 列表有值时是否展示添加按钮 |
+| showInEmpty       | `boolean`                                | 空数据时是否展示添加按钮   |
+| record            | `(index: number) => Record<string, any>` | 生成初始值逻辑             |
+| creatorButtonText | `string`                                 | 新增一行按钮文案           |
