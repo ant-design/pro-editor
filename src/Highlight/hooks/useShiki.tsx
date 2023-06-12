@@ -1,6 +1,9 @@
 import { useEffect, useState } from 'react';
-import { getHighlighter, type Highlighter } from 'shiki-es';
+import { getHighlighter, setCDN, type Highlighter } from 'shiki-es';
 import { themeConfig } from '../theme';
+
+// 国内使用 CDN 加速
+setCDN('https://npm.elemecdn.com/shiki-es/dist/assets');
 
 // 目前支持的语言列表
 export const languageMap = [
@@ -25,9 +28,6 @@ export const useShiki = (language, theme) => {
     const highlighter = await getHighlighter({
       langs: languageMap as any,
       themes: [themeConfig(true), themeConfig(false)],
-      paths: {
-        wasm: 'https://gw.alipayobjects.com/os/lib/shiki-es/0.2.0/dist/assets/dist/onig.wasm',
-      },
     });
     setShiki(highlighter);
   };
