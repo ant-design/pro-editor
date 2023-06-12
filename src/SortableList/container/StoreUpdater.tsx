@@ -3,7 +3,7 @@ import { ForwardedRef, forwardRef, useImperativeHandle } from 'react';
 import { createStoreUpdater } from 'zustand-utils';
 import { useSortableList } from '..';
 
-import { useStoreApi } from '../store';
+import { OnChange, useStoreApi } from '../store';
 
 import type { CreatorButtonProps, RenderActionProps, RenderItemProps } from '../type';
 
@@ -28,7 +28,7 @@ export interface StoreUpdaterProps<T = any> {
   /**
    * 值变化
    */
-  onChange?: (value: T[]) => void;
+  onChange?: OnChange;
   /**
    * 渲染内容区域
    */
