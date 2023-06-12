@@ -11,9 +11,7 @@ import type { StoreUpdaterProps } from './StoreUpdater';
 import StoreUpdater from './StoreUpdater';
 import { useStyle } from './style';
 
-export type ProEditorProps<Config = any> = ProEditorAppProps &
-  AppContainerProps &
-  StoreUpdaterProps<Config>;
+export type ProEditorProps = ProEditorAppProps & AppContainerProps & StoreUpdaterProps;
 
 export const ProEditor: FC<ProEditorProps> = memo((props) => {
   const { themeMode, theme, showEditorDevtools, editorRef, ...res } = props;

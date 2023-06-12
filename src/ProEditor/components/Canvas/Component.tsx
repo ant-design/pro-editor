@@ -23,7 +23,7 @@ const Component: FC = memo(() => {
       s.enableCanvasInteraction,
       s.componentAsset,
       s.internalUpdateCanvasInteract,
-      s.internalUpdatePresenceEditor,
+      s.internalUpdateAssetAwareness,
     ],
     shallow,
   );

@@ -1,10 +1,10 @@
+import type { InternalProEditorStore } from './createStore';
 import { isDesignModeSelector } from './selectors';
-import type { ProEditorStore } from './store';
 
 test('isDesignModeSelector', () => {
-  const design = isDesignModeSelector({ mode: 'design' } as ProEditorStore);
+  const design = isDesignModeSelector({ mode: 'design' } as InternalProEditorStore);
   expect(design).toBeTruthy();
 
-  const dev = isDesignModeSelector({ mode: 'develop' } as ProEditorStore);
+  const dev = isDesignModeSelector({ mode: 'develop' } as InternalProEditorStore);
   expect(dev).toBeFalsy();
 });
