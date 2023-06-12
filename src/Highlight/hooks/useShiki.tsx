@@ -2,8 +2,10 @@ import { useEffect, useState } from 'react';
 import { getHighlighter, setCDN, type Highlighter } from 'shiki-es';
 import { themeConfig } from '../theme';
 
-// 国内使用 CDN 加速
-setCDN('https://npm.elemecdn.com/shiki-es/dist/assets');
+// 国内使用 CDN 加速, 测试环境为 node，会加载失败
+if (process.env.NODE_ENV !== 'test') {
+  setCDN('https://npm.elemecdn.com/shiki-es/dist/assets');
+}
 
 // 目前支持的语言列表
 export const languageMap = [
