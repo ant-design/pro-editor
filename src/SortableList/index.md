@@ -78,7 +78,7 @@ group:
 | ------------------ | ---------------------------------------------------------------- | ---------------------------------- |
 | value              | `T[]`                                                            | 值                                 |
 | initialValues      | `T[]`                                                            | 初始值                             |
-| onChange           | `(value: T[]) => void`                                           | 值变化                             |
+| onChange           | `(value: T[], event: ListDataDispatchPayload) => void`           | 值变化                             |
 | renderContent      | `(item: T, index: number) => ReactNode`                          | 渲染内容区域                       |
 | actions            | `(item: T, index: number) => ReactNode[]` \| `React.ReactNode[]` | 除列表自带操作之外的其他操作自渲染 |
 | renderHeader       | `() => React.ReactNode`                                          | 渲染头部区域                       |
@@ -96,9 +96,9 @@ group:
 | record            | `(index: number) => Record<string, any>` | 生成初始值逻辑             |
 | creatorButtonText | `string`                                 | 新增一行按钮文案           |
 
-### Actions
+### ListDataDispatchPayload
 
-通过 `ref` 你可以控制列表的增删改查和移动。
+组件通过 `onChange` 以及 `ForwardRef` 的方式暴露底层事件，你可以细粒度地控制列表的增删改查，移动，以及根据事件细粒度控制后续的行为链路。
 
 ```jsx | pure
 // 新增节点
