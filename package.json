@@ -14,6 +14,7 @@
   "scripts": {
     "build": "father build",
     "build:watch": "father dev",
+    "changelog": "conventional-changelog -n node_modules/conventional-changelog-gitmoji-config -i CHANGELOG.md -s -r 0",
     "ci": "npm run lint && npm run ts-check",
     "deploy": "npm run docs:build && gh-pages -d ./docs-dist",
     "dev": "dumi dev",
@@ -104,7 +105,6 @@
   },
   "devDependencies": {
     "@emotion/jest": "^11",
-    "@emotion/styled": "^11",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^14.4.3",
@@ -117,6 +117,7 @@
     "antd": "^5",
     "commitlint": "^17",
     "commitlint-config-gitmoji": "^2",
+    "conventional-changelog-gitmoji-config": "^1.5.2",
     "dumi": "^2",
     "dumi-theme-antd-style": "latest",
     "eslint": "^8.23.0",

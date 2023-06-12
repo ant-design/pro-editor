@@ -17,7 +17,7 @@ const assets = new ComponentAsset({
 });
 
 export default () => {
-  const [presence, setPresence] = useLocalStorageState<AwarenessEditor>('DEMO-PRO-EDITOR-PRESENCE');
+  const [presence, setPresence] = useLocalStorageState<AwarenessEditor>('DEMO-PRO-EDITOR');
 
   return (
     <Flexbox>
