@@ -11,6 +11,6 @@ const createStore = (showDevTools: boolean) =>
 const { useStore, useStoreApi, Provider } = createContext<StoreApi<Store>>();
 
 // ========= 导出 ========= //
-export type { State } from './initialState';
+export type { OnChange, State } from './initialState';
 export type { Store } from './store';
 export { createStore, useStore, Provider, useStoreApi };

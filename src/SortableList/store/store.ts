@@ -45,7 +45,7 @@ const vanillaStore: StateCreator<Store, [['zustand/devtools', never]]> = (set, g
     if (data) {
       if (isEqual(value, data)) return;
       set({ value: data });
-      if (onChange) onChange(data);
+      if (onChange) onChange(data, payload);
     }
     if (manager) {
       set({ keyManager: manager });

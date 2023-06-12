@@ -72,6 +72,8 @@ group:
 
 ## API
 
+### Basic 组件属性
+
 | 属性名             | 类型                                                             | 描述                               |
 | ------------------ | ---------------------------------------------------------------- | ---------------------------------- |
 | value              | `T[]`                                                            | 值                                 |
@@ -85,9 +87,7 @@ group:
 | compact            | `boolean`                                                        | 紧凑模式, 默认为 false             |
 | hideRemove         | `boolean`                                                        | 是否隐藏删除按钮，默认为 false     |
 
-### CreatorButtonProps
-
-创建按钮组件的属性
+### CreatorButtonProps 创建按钮属性
 
 | 属性名            | 类型                                     | 描述                       |
 | ----------------- | ---------------------------------------- | -------------------------- |
@@ -95,3 +95,42 @@ group:
 | showInEmpty       | `boolean`                                | 空数据时是否展示添加按钮   |
 | record            | `(index: number) => Record<string, any>` | 生成初始值逻辑             |
 | creatorButtonText | `string`                                 | 新增一行按钮文案           |
+
+### Actions
+
+通过 `ref` 你可以控制列表的增删改查和移动。
+
+```jsx | pure
+// 新增节点
+interface AddItemAction {
+  type: 'addItem';
+  item: any;
+  index?: number;
+}
+
+// 移动节点
+interface MoveItemAction {
+  type: 'moveItem';
+  /**
+   * 当前节点id
+   */
+  activeId: UniqueIdentifier;
+  /**
+   * 目标节点id
+   */
+  targetId: UniqueIdentifier;
+}
+
+// 移除节点
+interface RemoveItemAction {
+  type: 'removeItem';
+  index: number;
+}
+
+// 修改节点content内容
+interface UpdateItemAction {
+  type: 'updateItem';
+  index: number;
+  item: any;
+}
+```
