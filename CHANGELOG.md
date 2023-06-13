@@ -1,5 +1,30 @@
 # Changelog
 
+## [Version&nbsp;0.3.0-alpha.2](https://github.com/ant-design/pro-editor/compare/v0.3.0-alpha.1...v0.3.0-alpha.2)
+
+<sup>Released on **2023-06-13**</sup>
+
+#### ✨ 新特性
+
+- 新增 ContextMenu 组件.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's improved
+
+- 新增 ContextMenu 组件 ([265b442](https://github.com/ant-design/pro-editor/commit/265b442))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
 ## [Version&nbsp;0.3.0-alpha.1](https://github.com/ant-design/pro-editor/compare/v0.2.3...v0.3.0-alpha.1)
 
 <sup>Released on **2023-06-13**</sup>
