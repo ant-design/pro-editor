@@ -1,5 +1,38 @@
 # Changelog
 
+## [Version&nbsp;0.3.0-alpha.1](https://github.com/ant-design/pro-editor/compare/v0.2.3...v0.3.0-alpha.1)
+
+<sup>Released on **2023-06-13**</sup>
+
+#### ✨ 新特性
+
+- Support undo/redo for ProEditor.
+
+#### 💄 样式
+
+- Update empty style.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's improved
+
+- Support undo/redo for ProEditor ([cec5611](https://github.com/ant-design/pro-editor/commit/cec5611))
+
+#### Styles
+
+- Update empty style ([a6a61c5](https://github.com/ant-design/pro-editor/commit/a6a61c5))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
 ### [Version&nbsp;0.2.3](https://github.com/ant-design/pro-editor/compare/v0.2.2...v0.2.3)
 
 <sup>Released on **2023-06-13**</sup>
