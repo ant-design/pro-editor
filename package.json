@@ -2,6 +2,14 @@
   "name": "@ant-design/pro-editor",
   "version": "0.2.2",
   "description": "🌟 Lightweight Editor UI Framework",
+  "homepage": "https://github.com/ant-design/pro-editor",
+  "bugs": {
+    "url": "https://github.com/ant-design/pro-editor/issues/new"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ant-design/pro-editor.git"
+  },
   "license": "MIT",
   "sideEffects": false,
   "main": "es/index.js",
