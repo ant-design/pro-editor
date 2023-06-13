@@ -119,8 +119,6 @@ Open your browser and visit http://localhost:8000
 
 - [Release Guide](https://github.com/ant-design/pro-editor/wiki/release)
 
-## 🤝 Contributing
-
 <!-- CONTRIBUTION GROUP -->
 
 > 📊 Total: <kbd>**1**</kbd>
