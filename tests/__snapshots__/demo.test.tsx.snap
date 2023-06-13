@@ -10123,6 +10123,14 @@ exports[`<ColumnList /> > renders normal.tsx correctly 1`] = `
 </div>
 `;
 
+exports[`<ContextMenu /> > renders index.tsx correctly 1`] = `
+<div>
+  <div>
+    RightClick
+  </div>
+</div>
+`;
+
 exports[`<DataFill /> > renders basic.tsx correctly 1`] = `
 .emotion-0 {
   display: -webkit-box;
