@@ -20,4 +20,13 @@ group:
 
 <code src='./demos/_dev.tsx' ></code>
 
-<API src="./index.tsx"></API>
+## API
+
+错误边界组件属性接口
+
+| 属性名         | 类型              | 描述               |
+| -------------- | ----------------- | ------------------ |
+| children       | `React.ReactNode` | 子组件             |
+| onExportConfig | `() => void`      | 导出配置项回调函数 |
+| onRetry        | `() => void`      | 重试回调函数       |
+| showDev        | `boolean`         | 是否显示开发者选项 |
