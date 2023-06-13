@@ -1,7 +1,9 @@
+import merge from 'lodash.merge';
 import { StateCreator } from 'zustand';
 
 import { ComponentAsset } from '@/ComponentAsset';
 
+import { DocWithHistoryManager, UserActionParams } from '../../utils/yjs';
 import { InternalProEditorStore } from '../createStore';
 
 // ======== state ======== //
@@ -30,6 +32,7 @@ export interface ConfigPublicState<Config = any> {
 export interface ConfigSliceState extends ConfigPublicState {
   /** 组件的 props */
   props?: any;
+  yjsDoc: DocWithHistoryManager<{ config: any }>;
 }
 
 const initialConfigState: ConfigSliceState = {
@@ -40,9 +43,20 @@ const initialConfigState: ConfigSliceState = {
   config: null,
   onConfigChange: null,
   props: {},
+  yjsDoc: new DocWithHistoryManager<{ config: any }>(),
 };
 
 // ======== action ======== //
+
+export interface ActionPayload {
+  type: string;
+  payload: any;
+}
+
+export interface ActionOptions {
+  recordHistory?: boolean;
+  payload?: Partial<UserActionParams>;
+}
 
 export interface ConfigPublicAction {
   /**
@@ -50,14 +64,14 @@ export interface ConfigPublicAction {
    */
   exportConfig: () => void;
   resetConfig: () => void;
-  updateConfig: <T>(config: Partial<T>) => void;
+  updateConfig: <T>(config: Partial<T>, options?: ActionOptions) => void;
 }
 
 export interface ConfigSlice extends ConfigPublicAction, ConfigSliceState {
   /**
    * 内部更新配置
    **/
-  internalUpdateConfig: <T>(config: Partial<T>) => void;
+  internalUpdateConfig: <T>(config: Partial<T>, payload?: ActionPayload) => void;
 }
 
 export const configSlice: StateCreator<
@@ -74,12 +88,12 @@ export const configSlice: StateCreator<
    * 内部修改 config 方法
    * 传给 ProTableStore 进行 config 同步
    */
-  internalUpdateConfig: (config) => {
+  internalUpdateConfig: (config, payload) => {
     const { onConfigChange, componentAsset } = get();
 
-    const nextConfig = { ...get().config, ...config };
+    const nextConfig = merge({}, get().config, config);
 
-    set({ config: nextConfig }, false, '🕹内部更新：config');
+    set({ config: nextConfig }, false, payload);
 
     onConfigChange?.({
       config: nextConfig,
@@ -99,7 +113,13 @@ export const configSlice: StateCreator<
     document.body.removeChild(eleLink);
   },
 
-  updateConfig: (config) => {
-    get().internalUpdateConfig(config);
+  updateConfig: (config, action) => {
+    get().internalUpdateConfig(config, { type: '外部 updateConfig 更新', payload: config });
+
+    const useAction = merge({}, { recordHistory: true }, action);
+
+    if (useAction.recordHistory) {
+      get().yjsDoc.recordHistoryData({ config }, { ...useAction.payload, timestamp: Date.now() });
+    }
   },
 });
