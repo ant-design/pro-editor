@@ -70,6 +70,8 @@
     "@dnd-kit/modifiers": "^6",
     "@dnd-kit/sortable": "^7",
     "@dnd-kit/utilities": "^3",
+    "@emotion/react": "^11",
+    "@emotion/styled": "^11",
     "@faker-js/faker": "^7",
     "@handsontable/react": "^12",
     "@mui/material": "^5",
