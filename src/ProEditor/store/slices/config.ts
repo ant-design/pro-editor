@@ -35,17 +35,6 @@ export interface ConfigSliceState extends ConfigPublicState {
   yjsDoc: DocWithHistoryManager<{ config: any }>;
 }
 
-const initialConfigState: ConfigSliceState = {
-  // 资产
-  componentAsset: null,
-
-  // 文件配置属性
-  config: null,
-  onConfigChange: null,
-  props: {},
-  yjsDoc: new DocWithHistoryManager<{ config: any }>(),
-};
-
 // ======== action ======== //
 
 export interface ActionPayload {
@@ -79,47 +68,60 @@ export const configSlice: StateCreator<
   [['zustand/devtools', never]],
   [],
   ConfigSlice
-> = (set, get) => ({
-  ...initialConfigState,
-  resetConfig: () => {
-    set({ config: initialConfigState.config, props: initialConfigState.props });
-  },
-  /**
-   * 内部修改 config 方法
-   * 传给 ProTableStore 进行 config 同步
-   */
-  internalUpdateConfig: (config, payload) => {
-    const { onConfigChange, componentAsset } = get();
+> = (set, get) => {
+  const initialConfigState: ConfigSliceState = {
+    // 资产
+    componentAsset: null,
 
-    const nextConfig = { ...get().config, ...config };
+    // 文件配置属性
+    config: null,
+    onConfigChange: null,
+    props: {},
+    yjsDoc: new DocWithHistoryManager<{ config: any }>(),
+  };
 
-    set({ config: nextConfig }, false, payload);
+  return {
+    ...initialConfigState,
+    resetConfig: () => {
+      set({ config: initialConfigState.config, props: initialConfigState.props });
+    },
+    /**
+     * 内部修改 config 方法
+     * 传给 ProTableStore 进行 config 同步
+     */
+    internalUpdateConfig: (config, payload) => {
+      const { onConfigChange, componentAsset } = get();
 
-    onConfigChange?.({
-      config: nextConfig,
-      props: componentAsset?.generateProps(nextConfig),
-      isEmpty: componentAsset?.isStarterMode(nextConfig),
-    });
-  },
+      const nextConfig = { ...get().config, ...config };
 
-  exportConfig: () => {
-    const eleLink = document.createElement('a');
-    eleLink.download = 'pro-edior-config.json';
-    eleLink.style.display = 'none';
-    const blob = new Blob([JSON.stringify(get().config)]);
-    eleLink.href = URL.createObjectURL(blob);
-    document.body.appendChild(eleLink);
-    eleLink.click();
-    document.body.removeChild(eleLink);
-  },
+      set({ config: nextConfig }, false, payload);
 
-  updateConfig: (config, action) => {
-    get().internalUpdateConfig(config, { type: '外部 updateConfig 更新', payload: config });
+      onConfigChange?.({
+        config: nextConfig,
+        props: componentAsset?.generateProps(nextConfig),
+        isEmpty: componentAsset?.isStarterMode(nextConfig),
+      });
+    },
 
-    const useAction = merge({}, { recordHistory: true }, action);
+    exportConfig: () => {
+      const eleLink = document.createElement('a');
+      eleLink.download = 'pro-edior-config.json';
+      eleLink.style.display = 'none';
+      const blob = new Blob([JSON.stringify(get().config)]);
+      eleLink.href = URL.createObjectURL(blob);
+      document.body.appendChild(eleLink);
+      eleLink.click();
+      document.body.removeChild(eleLink);
+    },
 
-    if (useAction.recordHistory) {
-      get().yjsDoc.recordHistoryData({ config }, { ...useAction.payload, timestamp: Date.now() });
-    }
-  },
-});
+    updateConfig: (config, action) => {
+      get().internalUpdateConfig(config, { type: '外部 updateConfig 更新', payload: config });
+
+      const useAction = merge({}, { recordHistory: true }, action);
+
+      if (useAction.recordHistory) {
+        get().yjsDoc.recordHistoryData({ config }, { ...useAction.payload, timestamp: Date.now() });
+      }
+    },
+  };
+};
