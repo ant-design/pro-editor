@@ -53,16 +53,33 @@ export const AltIcon = () => (
   <svg
     className="lucide lucide-chevron-up"
     fill="none"
-    height={iconSize}
     stroke="currentColor"
     strokeLinecap="round"
     strokeLinejoin="round"
+    height={iconSize}
     strokeWidth={strokeWidth}
-    viewBox="0 0 24 24"
     width={iconSize}
+    viewBox="0 0 24 24"
     xmlns="http://www.w3.org/2000/svg"
   >
     <path d="M3 3h6l6 18h6"></path>
     <path d="M14 3h7"></path>
+  </svg>
+);
+
+export const ChevronRightIcon = ({ className }) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    height={iconSize}
+    width={iconSize}
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth={strokeWidth}
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    className={`lucide lucide-chevron-right ${className}`}
+  >
+    <polyline points="9 18 15 12 9 6" />
   </svg>
 );

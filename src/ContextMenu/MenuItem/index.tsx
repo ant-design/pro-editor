@@ -1,8 +1,7 @@
-import { ChevronRightIcon } from 'lucide-react';
 import { forwardRef, ReactNode } from 'react';
 import { Flexbox } from 'react-layout-kit';
 
-import { AltIcon, CommandIcon, ControlIcon, ShiftIcon } from './icons';
+import { AltIcon, ChevronRightIcon, CommandIcon, ControlIcon, ShiftIcon } from './icons';
 import { useStyles } from './style';
 
 const KEYBOARD_ICON_MAP: Record<string, any> = {
