@@ -22,7 +22,7 @@
     "build": "father build",
     "build:watch": "father dev",
     "changelog": "conventional-changelog -n node_modules/conventional-changelog-gitmoji-config -i CHANGELOG.md -s -r 0",
-    "ci": "npm run lint && npm run ts-check",
+    "ci": "npm run lint && npm run ts-check && npm run doctor",
     "deploy": "npm run docs:build && gh-pages -d ./docs-dist",
     "dev": "dumi dev",
     "docs:build": "dumi build",
