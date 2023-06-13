@@ -1,3 +1,22 @@
+# Changelog
+
+### [Version&nbsp;0.2.2-alpha.1](https://github.com/ant-design/pro-editor/compare/v0.2.1...v0.2.2-alpha.1)
+
+<sup>Released on **2023-06-13**</sup>
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
 ### Version&nbsp;0.2.1
 
 <sup>Released on **2023-06-12**</sup>
