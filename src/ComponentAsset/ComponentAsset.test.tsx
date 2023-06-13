@@ -3,12 +3,7 @@ import { act, fireEvent, render, screen } from '@testing-library/react';
 import { ComponentAsset } from '../ComponentAsset';
 
 import type { ButtonConfig } from './demoAssets';
-import {
-  contentModel,
-  demoAssets,
-  dynamicContentModel,
-  Provider,
-} from './demoAssets';
+import { contentModel, demoAssets, dynamicContentModel } from './demoAssets';
 
 describe('ComponentAsset', () => {
   describe('状态值', () => {
@@ -111,14 +106,14 @@ describe('ComponentAsset', () => {
     test('同一实例重复渲染多次', async () => {
       const asset = new ComponentAsset<ButtonConfig>(demoAssets);
       const comp = render(
-        <Provider createStore={() => asset.componentStore}>
+        <asset.AssetProvider createStore={() => asset.componentStore}>
           <asset.Component />
-        </Provider>,
+        </asset.AssetProvider>,
       );
       render(
-        <Provider createStore={() => asset.componentStore}>
+        <asset.AssetProvider createStore={() => asset.componentStore}>
           <asset.Component />
-        </Provider>,
+        </asset.AssetProvider>,
       );
 
       const components = await comp.queryAllByTestId('component');
@@ -132,18 +127,18 @@ describe('ComponentAsset', () => {
 
       render(
         <>
-          <Provider createStore={() => asset1.componentStore}>
+          <asset1.AssetProvider createStore={() => asset1.componentStore}>
             <asset1.Component
               // @ts-ignore
               id={'1'}
             />
-          </Provider>
-          <Provider createStore={() => asset2.componentStore}>
+          </asset1.AssetProvider>
+          <asset2.AssetProvider createStore={() => asset2.componentStore}>
             <asset2.Component
               // @ts-ignore
               id={'2'}
             />
-          </Provider>
+          </asset2.AssetProvider>
         </>,
       );
 
@@ -163,15 +158,16 @@ describe('ComponentAsset', () => {
 
     test('渲染时同一实例的组件时共享相同状态', async () => {
       const asset = new ComponentAsset<ButtonConfig>(demoAssets);
+
       const comp = render(
-        <Provider createStore={() => asset.componentStore}>
+        <asset.AssetProvider createStore={() => asset.componentStore}>
           <asset.Component />
-        </Provider>,
+        </asset.AssetProvider>,
       );
       const panel = render(
-        <Provider createStore={() => asset.componentStore}>
+        <asset.AssetProvider createStore={() => asset.componentStore}>
           <asset.ConfigPanel />
-        </Provider>,
+        </asset.AssetProvider>,
       );
 
       const component = await comp.findByTestId('component');

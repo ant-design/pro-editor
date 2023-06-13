@@ -50,6 +50,7 @@ export const ProEditor: FC<ProEditorAppProps> = memo((props) => {
   // 第一次渲染的时候 componentAsset 是不存在的，为避免面板模块报错，返回空状态组件
   if (!componentAsset) return <AssetEmpty />;
 
+  const AssetProvider = componentAsset.AssetProvider;
   const DataProvider = componentAsset.DataProvider;
 
   const children = (
@@ -68,11 +69,9 @@ export const ProEditor: FC<ProEditorAppProps> = memo((props) => {
 
   return (
     <ErrorBoundary onExportConfig={exportConfig}>
-      {!DataProvider ? (
-        children
-      ) : (
-        <DataProvider createStore={() => componentAsset.componentStore}>{children}</DataProvider>
-      )}
+      <AssetProvider createStore={() => componentAsset.componentStore}>
+        {!DataProvider ? children : <DataProvider>{children}</DataProvider>}
+      </AssetProvider>
     </ErrorBoundary>
   );
 });

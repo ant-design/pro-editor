@@ -1,11 +1,13 @@
 /*eslint no-invalid-this: "error"*/
 import { getDefaultValueFromSchema } from '@c2d2c/utils';
-import { FC, ReactNode } from 'react';
+import { FC, PropsWithChildren, ReactNode } from 'react';
 import type { UseBoundStore } from 'zustand/react';
 
 import type { EditorMode } from '../ProEditor';
 import type { AssetModels, CanvasRule, CodeEmitter, ComponentAssetParams } from './types';
 import { DataProvider, EmitterEnv } from './types';
+
+import { createAssetStore } from './store';
 
 export class ComponentAsset<Config = any, Props = any> {
   /**
@@ -36,7 +38,9 @@ export class ComponentAsset<Config = any, Props = any> {
   /**
    * 组件数据提供者
    */
-  DataProvider: DataProvider;
+  DataProvider?: FC<PropsWithChildren>;
+
+  AssetProvider: DataProvider;
 
   ErrorBoundary: FC<{ children: ReactNode }> = ({ children }) => <>{children}</>;
 
@@ -62,11 +66,14 @@ export class ComponentAsset<Config = any, Props = any> {
       this.defaultConfig = params.defaultConfig;
     }
 
-    // 初始化 store
-    this.componentStore = params.createStore({
-      showDevtools: params.showDevtools,
-      defaultConfig: params.defaultConfig,
+    const { createStore, Provider } = createAssetStore(params.createStore, {
+      initialState: params.defaultConfig,
+      ...params.storeOptions,
     });
+
+    // 初始化 store
+    this.componentStore = createStore();
+    this.AssetProvider = Provider;
 
     // 交互规则
     this.rules = params.ui.rules;
