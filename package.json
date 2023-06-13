@@ -1,6 +1,6 @@
 {
   "name": "@ant-design/pro-editor",
-  "version": "0.2.2-alpha.1",
+  "version": "0.2.2",
   "description": "🌟 Lightweight Editor UI Framework",
   "license": "MIT",
   "sideEffects": false,
