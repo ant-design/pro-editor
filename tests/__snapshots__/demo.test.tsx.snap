@@ -18874,10 +18874,10 @@ exports[`<ProEditor /> > renders controlledPresence.tsx correctly 1`] = `
   >
     <div
       class="studio-app emotion-1"
+      style="height: calc(100vh - 100px);"
     >
       <div
         class="studio-editor-main emotion-2"
-        style="height: calc(100vh - 100px);"
       >
         <div
           class="studio-editor-left emotion-3"
@@ -19916,10 +19916,10 @@ exports[`<ProEditor /> > renders customAssets.tsx correctly 1`] = `
 <div>
   <div
     class="studio-app emotion-0"
+    style="height: 100vh;"
   >
     <div
       class="studio-editor-main emotion-1"
-      style="height: 100vh;"
     >
       <div
         class="studio-editor-left emotion-2"
@@ -20449,6 +20449,24 @@ exports[`<ProEditor /> > renders empty.tsx correctly 1`] = `
 }
 
 .emotion-1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-2 {
   height: 100%;
   background: #f5f5f5;
 }
@@ -20456,9 +20474,10 @@ exports[`<ProEditor /> > renders empty.tsx correctly 1`] = `
 <div>
   <div
     class="studio-app emotion-0"
+    style="height: 100vh;"
   >
     <div
-      class="studio-editor-empty emotion-1"
+      class="layoutkit-center emotion-1 studio-editor-empty emotion-2"
     >
       <div
         class="studio-empty"

@@ -6,6 +6,24 @@ exports[`ProEditor > 没有传入 ComponentAsset 时，渲染为空状态 1`] = 
 }
 
 .emotion-1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-2 {
   height: 100%;
   background: #f5f5f5;
 }
@@ -15,7 +33,7 @@ exports[`ProEditor > 没有传入 ComponentAsset 时，渲染为空状态 1`] = 
     class="studio-app emotion-0"
   >
     <div
-      class="studio-editor-empty emotion-1"
+      class="layoutkit-center emotion-1 studio-editor-empty emotion-2"
     >
       <div
         class="studio-empty"
