@@ -32,4 +32,70 @@ atomId: SortableTree
 [//]: #
 [//]: # '<code src="./demos/_multiSelect.tsx" ></code>'
 
-<API id="SortableTree"></API>
+## API
+
+### 属性
+
+| 名称                | 类型                                                             | 描述               |
+| ------------------- | ---------------------------------------------------------------- | ------------------ |
+| hideAdd             | `boolean`                                                        | 隐藏默认的添加按钮 |
+| hideRemove          | `boolean`                                                        | 隐藏默认的删除按钮 |
+| indentationWidth    | `number`                                                         | 缩进宽度           |
+| onSelectedIdsChange | `(selectedIds: UniqueIdentifier[]) => void`                      | 选中 ID 变更回调   |
+| treeData            | `TreeData<T>`                                                    | 树的数据           |
+| defaultTreeData     | `TreeData<T>`                                                    | 默认数据           |
+| onTreeDataChange    | `(treeData: TreeData<T>,event: TreeDataDispatchPayload) => void` | 数据变更回调       |
+| renderContent       | `(node: FlattenNode<T>) => JSX.Element`                          | 渲染内容           |
+| renderExtra         | `(node: FlattenNode<T>) => JSX.Element`                          | 渲染额外项         |
+| ref                 | `MutableRefObject<SortableTreeInstance<T>>`                      | 对外部暴露方法     |
+
+## TreeNode
+
+树节点
+
+| 名称      | 类型               | 描述             |
+| --------- | ------------------ | ---------------- |
+| id        | `UniqueIdentifier` | 节点 ID          |
+| children  | `TreeNode<T>[]`    | 子节点列表       |
+| collapsed | `boolean`          | 组是否折叠       |
+| showExtra | `boolean`          | 是否显示额外区域 |
+| content   | `T`                | 节点数据         |
+
+## FlattenNode
+
+展平的节点
+
+| 名称     | 类型                         | 描述                             |
+| -------- | ---------------------------- | -------------------------------- |
+| parentId | `UniqueIdentifier` \| `null` | 父节点 ID，如果是根节点则为 null |
+| depth    | `number`                     | 节点深度                         |
+| index    | `number`                     | 节点在同级节点中的位置           |
+
+## SortableTreeInstance
+
+SortableTree 实例对象，类型定义参考：
+
+```typescript
+export interface SortableTreeInstance<T = any> extends PublicSortableTreeStore {
+  /**
+   * 获取当前激活节点的 id
+   * @returns 当前激活节点的 id
+   */
+  getActiveId: () => UniqueIdentifier;
+  /**
+   * 获取当前选中节点的 id 数组
+   * @returns 当前选中节点的 id 数组
+   */
+  getSelectedIds: () => UniqueIdentifier[];
+  /**
+   * 获取当前树的数据
+   * @returns 当前树的数据
+   */
+  getTreeData: () => TreeData<T>;
+  /**
+   * 获取当前树的扁平化数据
+   * @returns 当前树的扁平化数据
+   */
+  getFlattenData: () => FlattenNode<T>[];
+}
+```
