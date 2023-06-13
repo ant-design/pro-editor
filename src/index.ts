@@ -7,6 +7,8 @@ export { default as ColorPicker } from './ColorPicker';
 export * from './ColumnList';
 export * from './ComponentAsset';
 export * from './ConfigProvider';
+export { default as ContextMenu } from './ContextMenu';
+export type { ContextMenuProps } from './ContextMenu';
 export * from './DataFill';
 export * from './DataPreviewer';
 export * from './DraggablePanel';
