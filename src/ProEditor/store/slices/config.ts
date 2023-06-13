@@ -91,7 +91,7 @@ export const configSlice: StateCreator<
   internalUpdateConfig: (config, payload) => {
     const { onConfigChange, componentAsset } = get();
 
-    const nextConfig = merge({}, get().config, config);
+    const nextConfig = { ...get().config, ...config };
 
     set({ config: nextConfig }, false, payload);
 
