@@ -1,5 +1,30 @@
 # Changelog
 
+## [Version&nbsp;0.3.0-alpha.5](https://github.com/ant-design/pro-editor/compare/v0.3.0-alpha.4...v0.3.0-alpha.5)
+
+<sup>Released on **2023-06-13**</sup>
+
+#### 🐛 修复
+
+- 修正潜藏的 undo/redo bug，并补充单测.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's fixed
+
+- 修正潜藏的 undo/redo bug，并补充单测 ([a671b65](https://github.com/ant-design/pro-editor/commit/a671b65))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
 ## [Version&nbsp;0.3.0-alpha.4](https://github.com/ant-design/pro-editor/compare/v0.3.0-alpha.3...v0.3.0-alpha.4)
 
 <sup>Released on **2023-06-13**</sup>
