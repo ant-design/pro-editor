@@ -50,9 +50,6 @@ jobs:
       - name: Install deps
         run: pnpm install
 
-      - name: build
-        run: pnpm run build
-
       - name: release
         run: pnpm run release
         env:
