@@ -1,5 +1,30 @@
 # Changelog
 
+## [Version&nbsp;0.3.0-alpha.6](https://github.com/ant-design/pro-editor/compare/v0.3.0-alpha.5...v0.3.0-alpha.6)
+
+<sup>Released on **2023-06-13**</sup>
+
+#### ✨ 新特性
+
+- 重构优化 ComponentAsset store 实现，收敛 AssetStore 的定义方式.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's improved
+
+- 重构优化 ComponentAsset store 实现，收敛 AssetStore 的定义方式 ([37e85ab](https://github.com/ant-design/pro-editor/commit/37e85ab))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
 ## [Version&nbsp;0.3.0-alpha.5](https://github.com/ant-design/pro-editor/compare/v0.3.0-alpha.4...v0.3.0-alpha.5)
 
 <sup>Released on **2023-06-13**</sup>
