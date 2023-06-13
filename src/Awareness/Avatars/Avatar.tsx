@@ -3,11 +3,32 @@ import Color from 'color';
 import { memo } from 'react';
 
 interface AvatarProps {
+  /**
+   * 用户名
+   */
   name: string;
+  /**
+   * 颜色
+   */
   color: string;
+  /**
+   * 是否激活状态
+   * @default false
+   */
   active?: boolean;
+  /**
+   * 是否当前用户
+   * @default false
+   */
   current?: boolean;
+  /**
+   * 是否关注了当前用户
+   * @default false
+   */
   following?: boolean;
+  /**
+   * 点击事件回调函数
+   */
   onClick?: () => void;
 }
 
