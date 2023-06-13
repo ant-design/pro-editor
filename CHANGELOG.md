@@ -1,5 +1,30 @@
 # Changelog
 
+## [Version&nbsp;0.3.0-alpha.4](https://github.com/ant-design/pro-editor/compare/v0.3.0-alpha.3...v0.3.0-alpha.4)
+
+<sup>Released on **2023-06-13**</sup>
+
+#### 🐛 修复
+
+- Fix config update.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's fixed
+
+- Fix config update ([fee5441](https://github.com/ant-design/pro-editor/commit/fee5441))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
 ## [Version&nbsp;0.3.0-alpha.3](https://github.com/ant-design/pro-editor/compare/v0.3.0-alpha.2...v0.3.0-alpha.3)
 
 <sup>Released on **2023-06-13**</sup>
