@@ -5,23 +5,28 @@ import { memo } from 'react';
 import { shallow } from 'zustand/shallow';
 
 import FreeCanvas from '../../../FreeCanvas';
-import { useUpdateEditorAwareness } from '../../hooks/useEditorAwareness';
 import { useStore } from '../../store';
 import Component from './Component';
 
 const Canvas: FC = memo(() => {
-  const [viewport, componentAsset] = useStore(
-    (s) => [s.editorAwareness.viewport, s.componentAsset],
-    shallow,
-  );
-  const [enableCanvasInteraction, toggleCanvasInteraction] = useStore(
-    (s) => [s.enableCanvasInteraction, s.toggleCanvasInteraction],
+  const [
+    viewport,
+    componentAsset,
+    enableCanvasInteraction,
+    toggleCanvasInteraction,
+    updateEditorAwareness,
+  ] = useStore(
+    (s) => [
+      s.editorAwareness.viewport,
+      s.componentAsset,
+      s.enableCanvasInteraction,
+      s.toggleCanvasInteraction,
+      s.internalUpdateEditorAwareness,
+    ],
     shallow,
   );
 
   const ErrorBoundary = componentAsset.ErrorBoundary;
-
-  const { updateEditorAwareness } = useUpdateEditorAwareness();
 
   return (
     <ErrorBoundary>

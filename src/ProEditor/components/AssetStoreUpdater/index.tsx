@@ -1,6 +1,5 @@
 import isEqual from 'fast-deep-equal';
 import { memo, useEffect } from 'react';
-import { createStoreUpdater } from 'zustand-utils';
 import { shallow } from 'zustand/shallow';
 
 import { useProEditor } from '../../hooks/useProEditor';
@@ -9,38 +8,51 @@ import { useStore, useStoreApi } from '../../store';
 const AssetStoreUpdater = memo(() => {
   const instance = useProEditor();
 
-  const [useAssetStoreApi, useAssetStore, configSelector] = useStore(
+  const [useAssetStoreApi, configSelector, setConfig, config] = useStore(
     (s) => [
       s.componentAsset.componentStoreApi,
-      s.componentAsset.componentStore,
       s.componentAsset.configSelector,
+      s.componentAsset.setConfig,
+      s.config,
     ],
     shallow,
   );
   const assetStoreApi = useAssetStoreApi();
 
-  // 将 instance 的方法全部同步到 assetStore
+  const setState = (state, action: any) => (assetStoreApi.setState as any)(state, false, action);
+
   useEffect(() => {
-    assetStoreApi.setState({ ...instance });
+    setState(instance, { type: '⏬ 注入 editor 方法', payload: Object.keys(instance) });
   }, []);
 
   // 将计算后的默认值传给面板
   // 用等式做一次优化，不然每次都会重新计算
-  const defaultConfig = useStore((s) => s.componentAsset.getDefaultConfig(s.mode), isEqual);
+  const defaultConfig = useStore(
+    (s) =>
+      s.componentAsset.defaultConfig || configSelector(s.componentAsset.getDefaultConfig(s.mode)),
+    isEqual,
+  );
 
   const proEditorStoreApi = useStoreApi();
-  const useStoreUpdater = createStoreUpdater(proEditorStoreApi);
+
+  const syncState = (state) => setState(state, { type: '🔄 从 Editor 同步状态', payload: state });
+
   // 用 defaultConfig 更新一次config
-  useStoreUpdater('config', defaultConfig, []);
-
-  // 将 assetStore 的 config 自动同步到 proEditorStore
-  const assetConfig = useAssetStore(configSelector, isEqual);
   useEffect(() => {
-    if (typeof assetConfig === 'undefined') return;
-    if (isEqual(assetConfig, proEditorStoreApi.getState().config)) return;
+    const state = { config: defaultConfig };
+    proEditorStoreApi.setState(state);
+    proEditorStoreApi.getState().yjsDoc.updateHistoryData(state);
 
-    proEditorStoreApi.setState({ config: assetConfig });
-  }, [assetConfig]);
+    setConfig(config, syncState);
+  }, []);
+
+  // 将 proEditorStore 的 config 自动同步到  assetStore
+  useEffect(() => {
+    const assetConfig = configSelector(assetStoreApi.getState());
+    if (isEqual(assetConfig, config)) return;
+
+    setConfig(config, syncState);
+  }, [config]);
 
   return null;
 });
