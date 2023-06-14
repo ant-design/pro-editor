@@ -87,6 +87,7 @@
     "handsontable": "^12",
     "highlight.js": "~10.5.0",
     "immer": "^9.0.7",
+    "leva": "^0.9.35",
     "lodash.flatten": "^4.4.0",
     "lodash.get": "^4.4.2",
     "lodash.isempty": "^4.4.0",
