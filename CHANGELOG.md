@@ -1,5 +1,31 @@
 # Changelog
 
+## [Version&nbsp;0.3.0-alpha.7](https://github.com/ant-design/pro-editor/compare/v0.3.0-alpha.6...v0.3.0-alpha.7)
+
+<sup>Released on **2023-06-14**</sup>
+
+#### ✨ 新特性
+
+- 实现 AssetStore 与 EditorStore 的状态自动同步, 新增 LevaPanel 属性面板.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's improved
+
+- 实现 AssetStore 与 EditorStore 的状态自动同步 ([3eeb73b](https://github.com/ant-design/pro-editor/commit/3eeb73b))
+- 新增 LevaPanel 属性面板 ([ee2d922](https://github.com/ant-design/pro-editor/commit/ee2d922))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
 ## [Version&nbsp;0.3.0-alpha.6](https://github.com/ant-design/pro-editor/compare/v0.3.0-alpha.5...v0.3.0-alpha.6)
 
 <sup>Released on **2023-06-13**</sup>
