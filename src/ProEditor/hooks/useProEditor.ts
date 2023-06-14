@@ -25,6 +25,7 @@ export const useProEditor = <T>(): ProEditorInstance<T> => {
     resetConfig,
     undo,
     redo,
+    updateCanvasInteraction,
   } = storeApi.getState();
 
   const getViewport = useMemoizedFn(() => storeApi.getState().editorAwareness.viewport);
@@ -35,10 +36,11 @@ export const useProEditor = <T>(): ProEditorInstance<T> => {
   return useMemo(
     () => ({
       updateConfig,
+      updateViewport,
+      updateCanvasInteraction,
       deselectCanvas,
       exportConfig,
       resetConfig,
-      updateViewport,
       undo,
       redo,
       undoStack,
