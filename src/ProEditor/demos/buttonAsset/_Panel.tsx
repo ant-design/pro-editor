@@ -20,7 +20,7 @@ export const ButtonPanel: FC = memo(() => {
       <LevaPanel<ButtonConfig>
         schema={buttonSchema}
         onChange={(data, item) => {
-          updateConfig(item, true);
+          updateConfig(item, { replace: true });
         }}
         value={data}
         title={'Button'}
@@ -30,14 +30,17 @@ export const ButtonPanel: FC = memo(() => {
         预设：
         <Button
           onClick={() => {
-            updateConfig({ children: '默认按钮', type: 'default' }, true);
+            updateConfig({ children: '默认按钮', type: 'default' }, { replace: true });
           }}
         >
           默认按钮
         </Button>
         <Button
           onClick={() => {
-            updateConfig({ children: '主要按钮', size: 'small', type: 'primary' }, true);
+            updateConfig(
+              { children: '主要按钮', size: 'small', type: 'primary' },
+              { replace: true },
+            );
           }}
         >
           主要按钮
@@ -53,7 +56,7 @@ export const ButtonPanel: FC = memo(() => {
                 ghost: true,
                 shape: 'round',
               },
-              true,
+              { replace: true },
             );
           }}
         >

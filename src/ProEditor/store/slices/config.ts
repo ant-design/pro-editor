@@ -44,6 +44,7 @@ export interface ActionPayload {
 
 export interface ActionOptions {
   recordHistory?: boolean;
+  replace?: boolean;
   payload?: Partial<UserActionParams>;
 }
 
@@ -53,7 +54,7 @@ export interface ConfigPublicAction {
    */
   exportConfig: () => void;
   resetConfig: () => void;
-  updateConfig: <T>(config: Partial<T>, replace?: boolean, options?: ActionOptions) => void;
+  updateConfig: <T>(config: Partial<T>, options?: ActionOptions) => void;
 }
 
 export interface ConfigSlice extends ConfigPublicAction, ConfigSliceState {
@@ -120,14 +121,14 @@ export const configSlice: StateCreator<
       document.body.removeChild(eleLink);
     },
 
-    updateConfig: (config, replace, action) => {
+    updateConfig: (config, { replace, recordHistory } = {}) => {
       get().internalUpdateConfig(
         config,
-        { type: '外部 updateConfig 更新', payload: config },
+        { type: '调用 updateConfig 更新', payload: config },
         replace,
       );
 
-      const useAction = merge({}, { recordHistory: true }, action);
+      const useAction = merge({}, { recordHistory: true }, { recordHistory });
 
       if (useAction.recordHistory) {
         get().yjsDoc.recordHistoryData({ config }, { ...useAction.payload, timestamp: Date.now() });

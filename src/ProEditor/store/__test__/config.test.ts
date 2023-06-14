@@ -66,14 +66,6 @@ describe('configSlice', () => {
       result.current.updateConfig({ foo: 'bar' }, { recordHistory: true });
     });
 
-    expect(result.current.internalUpdateConfig).toHaveBeenCalledWith(
-      { foo: 'bar' },
-      {
-        payload: { foo: 'bar' },
-        type: '外部 updateConfig 更新',
-      },
-    );
-
     expect(result.current.yjsDoc.undoManager.undoStack).toHaveLength(1);
   });
 

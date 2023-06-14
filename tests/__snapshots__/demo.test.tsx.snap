@@ -18726,22 +18726,6 @@ exports[`<ProEditor /> > renders buttonAssets.tsx correctly 1`] = `
 }
 
 .emotion-35 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  padding: 8px;
-  gap: 4px;
-}
-
-.emotion-36 {
   --leva-sizes-controlWidth: 66%;
   --leva-colors-elevation1: rgba(0, 0, 0, 0.06);
   --leva-colors-elevation2: transparent;
@@ -18757,32 +18741,69 @@ exports[`<ProEditor /> > renders buttonAssets.tsx correctly 1`] = `
   --leva-shadows-level2: unset;
   --leva-fonts-mono: 'SFMono-Regular',Consolas,'Liberation Mono',Menlo,Courier,monospace;
   overflow: auto;
-  width: 100%;
-  height: 100%;
   padding: 6px 0;
 }
 
-.emotion-36>div {
+.emotion-35>div {
   background: transparent;
 }
 
-.emotion-36>div>div {
+.emotion-35>div>div {
   background: transparent;
 }
 
-.emotion-36 input:checked+label>svg {
+.emotion-35 input:checked+label>svg {
   stroke: #f5f5f5;
 }
 
-.emotion-36 button {
+.emotion-35 button {
   --leva-colors-accent2: rgba(0, 0, 0, 0.06);
 }
 
+.emotion-36 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 8px;
+  gap: 4px;
+}
+
 .emotion-37 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  padding: 12px;
+  gap: 8px;
+}
+
+.emotion-38 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  gap: 4px;
+}
+
+.emotion-39 {
   position: relative;
 }
 
-.emotion-37::before {
+.emotion-39::before {
   position: absolute;
   z-index: 50;
   -webkit-transition: all 0.3s ease-in-out;
@@ -18790,12 +18811,12 @@ exports[`<ProEditor /> > renders buttonAssets.tsx correctly 1`] = `
   content: '';
 }
 
-.emotion-37:hover::before,
-.emotion-37:active::before {
+.emotion-39:hover::before,
+.emotion-39:active::before {
   background: #1677ff;
 }
 
-.emotion-37::before {
+.emotion-39::before {
   left: 50%;
   width: 2px;
   height: 100%;
@@ -19316,40 +19337,7 @@ exports[`<ProEditor /> > renders buttonAssets.tsx correctly 1`] = `
           style="position: relative; user-select: auto; display: flex; flex-direction: column; width: 340px; height: 100%; min-width: 340px; box-sizing: border-box; flex-shrink: 0;"
         >
           <div
-            class="layoutkit-flexbox emotion-35"
-          >
-            预设：
-            <button
-              class="studio-btn studio-btn-default"
-              type="button"
-            >
-              <span>
-                默认按钮
-              </span>
-            </button>
-            <button
-              class="studio-btn studio-btn-default"
-              type="button"
-            >
-              <span>
-                主要按钮
-              </span>
-            </button>
-            <button
-              class="studio-btn studio-btn-default"
-              type="button"
-            >
-              <span>
-                危险按钮
-              </span>
-            </button>
-          </div>
-          <div
-            class="studio-divider studio-divider-horizontal"
-            role="separator"
-          />
-          <div
-            class="emotion-36"
+            class="emotion-35"
           >
             <div
               class="leva-c-kWgxhW leva-c-kWgxhW-bSMcqW-fill-true leva-c-kWgxhW-czBHep-hideTitleBar-false"
@@ -19859,9 +19847,119 @@ exports[`<ProEditor /> > renders buttonAssets.tsx correctly 1`] = `
               </div>
             </div>
           </div>
+          <div
+            class="studio-divider studio-divider-horizontal"
+            role="separator"
+          />
+          <div
+            class="layoutkit-flexbox emotion-36"
+          >
+            预设：
+            <button
+              class="studio-btn studio-btn-default"
+              type="button"
+            >
+              <span>
+                默认按钮
+              </span>
+            </button>
+            <button
+              class="studio-btn studio-btn-default"
+              type="button"
+            >
+              <span>
+                主要按钮
+              </span>
+            </button>
+            <button
+              class="studio-btn studio-btn-default"
+              type="button"
+            >
+              <span>
+                危险按钮
+              </span>
+            </button>
+          </div>
+          <div
+            class="studio-divider studio-divider-horizontal"
+            role="separator"
+          />
+          <div
+            class="layoutkit-flexbox emotion-37"
+          >
+            <button
+              class="studio-btn studio-btn-default"
+              disabled=""
+              type="button"
+            >
+              <span
+                class="studio-btn-icon"
+              >
+                <span
+                  aria-label="undo"
+                  class="anticon anticon-undo"
+                  role="img"
+                >
+                  <svg
+                    aria-hidden="true"
+                    data-icon="undo"
+                    fill="currentColor"
+                    focusable="false"
+                    height="1em"
+                    viewBox="64 64 896 896"
+                    width="1em"
+                  >
+                    <path
+                      d="M511.4 124C290.5 124.3 112 303 112 523.9c0 128 60.2 242 153.8 315.2l-37.5 48c-4.1 5.3-.3 13 6.3 12.9l167-.8c5.2 0 9-4.9 7.7-9.9L369.8 727a8 8 0 00-14.1-3L315 776.1c-10.2-8-20-16.7-29.3-26a318.64 318.64 0 01-68.6-101.7C200.4 609 192 567.1 192 523.9s8.4-85.1 25.1-124.5c16.1-38.1 39.2-72.3 68.6-101.7 29.4-29.4 63.6-52.5 101.7-68.6C426.9 212.4 468.8 204 512 204s85.1 8.4 124.5 25.1c38.1 16.1 72.3 39.2 101.7 68.6 29.4 29.4 52.5 63.6 68.6 101.7 16.7 39.4 25.1 81.3 25.1 124.5s-8.4 85.1-25.1 124.5a318.64 318.64 0 01-68.6 101.7c-7.5 7.5-15.3 14.5-23.4 21.2a7.93 7.93 0 00-1.2 11.1l39.4 50.5c2.8 3.5 7.9 4.1 11.4 1.3C854.5 760.8 912 649.1 912 523.9c0-221.1-179.4-400.2-400.6-399.9z"
+                    />
+                  </svg>
+                </span>
+              </span>
+              <div
+                class="layoutkit-flexbox emotion-38"
+                style="display: inline-flex;"
+              >
+                <div>
+                  撤销
+                </div>
+              </div>
+            </button>
+            <button
+              class="studio-btn studio-btn-default"
+              disabled=""
+              type="button"
+            >
+              <span
+                class="studio-btn-icon"
+              >
+                <span
+                  aria-label="redo"
+                  class="anticon anticon-redo"
+                  role="img"
+                >
+                  <svg
+                    aria-hidden="true"
+                    data-icon="redo"
+                    fill="currentColor"
+                    focusable="false"
+                    height="1em"
+                    viewBox="64 64 896 896"
+                    width="1em"
+                  >
+                    <path
+                      d="M758.2 839.1C851.8 765.9 912 651.9 912 523.9 912 303 733.5 124.3 512.6 124 291.4 123.7 112 302.8 112 523.9c0 125.2 57.5 236.9 147.6 310.2 3.5 2.8 8.6 2.2 11.4-1.3l39.4-50.5c2.7-3.4 2.1-8.3-1.2-11.1-8.1-6.6-15.9-13.7-23.4-21.2a318.64 318.64 0 01-68.6-101.7C200.4 609 192 567.1 192 523.9s8.4-85.1 25.1-124.5c16.1-38.1 39.2-72.3 68.6-101.7 29.4-29.4 63.6-52.5 101.7-68.6C426.9 212.4 468.8 204 512 204s85.1 8.4 124.5 25.1c38.1 16.1 72.3 39.2 101.7 68.6 29.4 29.4 52.5 63.6 68.6 101.7 16.7 39.4 25.1 81.3 25.1 124.5s-8.4 85.1-25.1 124.5a318.64 318.64 0 01-68.6 101.7c-9.3 9.3-19.1 18-29.3 26L668.2 724a8 8 0 00-14.1 3l-39.6 162.2c-1.2 5 2.6 9.9 7.7 9.9l167 .8c6.7 0 10.5-7.7 6.3-12.9l-37.3-47.9z"
+                    />
+                  </svg>
+                </span>
+              </span>
+              <span>
+                重做
+              </span>
+            </button>
+          </div>
           <div>
             <div
-              class="emotion-37 studio-draggable-panel-left-handle"
+              class="emotion-39 studio-draggable-panel-left-handle"
               style="position: absolute; user-select: none; width: 10px; height: 100%; top: 0px; left: -5px; cursor: col-resize;"
             />
           </div>
@@ -20532,9 +20630,7 @@ exports[`<ProEditor /> > renders controlledPresence.tsx correctly 1`] = `
                               <button
                                 data-testid="component"
                                 type="button"
-                              >
-                                123
-                              </button>
+                              />
                             </div>
                           </div>
                         </div>
@@ -20975,9 +21071,7 @@ exports[`<ProEditor /> > renders controlledPresence.tsx correctly 1`] = `
           >
             <div
               data-testid="panel"
-            >
-              123
-            </div>
+            />
             <div>
               <div
                 class="emotion-36 studio-draggable-panel-left-handle"
@@ -22019,9 +22113,7 @@ exports[`<ProEditor /> > renders defaultAssets.tsx correctly 1`] = `
                             <button
                               data-testid="component"
                               type="button"
-                            >
-                              123
-                            </button>
+                            />
                           </div>
                         </div>
                       </div>
@@ -22462,9 +22554,7 @@ exports[`<ProEditor /> > renders defaultAssets.tsx correctly 1`] = `
         >
           <div
             data-testid="panel"
-          >
-            123
-          </div>
+          />
           <div>
             <div
               class="emotion-35 studio-draggable-panel-left-handle"
