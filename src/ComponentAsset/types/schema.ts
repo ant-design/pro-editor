@@ -55,8 +55,9 @@ export type JSONSchemaVersion = string;
  * JSON Schema v7
  * @see https://tools.ietf.org/html/draft-handrews-json-schema-validation-01
  */
-export type JSONSchemaDefinition = JSONSchema | boolean;
-export interface JSONSchema {
+export type JSONSchemaDefinition = JSONSchema;
+
+export interface JSONSchema<T extends Record<string, any> = any> {
   $id?: string | undefined;
   $ref?: string | undefined;
   $schema?: JSONSchemaVersion | undefined;
@@ -112,6 +113,9 @@ export interface JSONSchema {
   minProperties?: number | undefined;
   required?: string[] | undefined;
   properties?:
+    | {
+        [item in keyof T]: JSONSchemaDefinition;
+      }
     | {
         [key: string]: JSONSchemaDefinition;
       }
@@ -169,8 +173,20 @@ export interface JSONSchema {
    */
   title?: string | undefined;
   description?: string | undefined;
-  default?: JSONSchemaType | undefined;
+  default?: any | undefined;
   readOnly?: boolean | undefined;
   writeOnly?: boolean | undefined;
   examples?: JSONSchemaType | undefined;
+
+  // 为渲染提供的扩展字段
+  renderType?: string;
+  renderProps?: any;
+  renderOptions?: any;
+  enumNames?: string[];
+  enumOptions?: EnumOption[];
+  category?: string;
+}
+interface EnumOption {
+  label?: string;
+  value?: string;
 }
