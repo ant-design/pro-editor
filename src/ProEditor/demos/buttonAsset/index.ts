@@ -3,11 +3,11 @@ import type { ComponentAssetParams } from '@ant-design/pro-editor';
 import { ButtonComponent } from './_Component';
 import { ButtonPanel } from './_Panel';
 
-import { ButtonStore, createStore } from './store';
+import { createStore } from './store';
 
-import { buttonModel } from './models';
+import { ButtonConfig, buttonModel } from './models';
 
-export const buttonAssetParams: ComponentAssetParams<ButtonStore> = {
+export const buttonAssetParams: ComponentAssetParams<ButtonConfig> = {
   id: 'Button',
 
   createStore,
@@ -19,9 +19,12 @@ export const buttonAssetParams: ComponentAssetParams<ButtonStore> = {
   },
 
   models: [buttonModel],
+  defaultConfig: {
+    children: '默认按钮',
+  },
+
   storeOptions: {
     devtools: true,
-    partial: (s) => s.content,
   },
 
   codeEmitter: () => '',
