@@ -1,5 +1,38 @@
 # Changelog
 
+## [Version&nbsp;0.4.0-alpha.1](https://github.com/ant-design/pro-editor/compare/v0.3.0...v0.4.0-alpha.1)
+
+<sup>Released on **2023-06-14**</sup>
+
+#### ✨ 新特性
+
+- **pro-editor**: 增加 updateCanvasInteraction 方法.
+
+#### 🐛 修复
+
+- **sortable-tree**: 修正 ReactNodeProps 方法类型定义.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's improved
+
+- **pro-editor**: 增加 updateCanvasInteraction 方法 ([7a038c8](https://github.com/ant-design/pro-editor/commit/7a038c8))
+
+#### What's fixed
+
+- **sortable-tree**: 修正 ReactNodeProps 方法类型定义 ([8dfe762](https://github.com/ant-design/pro-editor/commit/8dfe762))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
 ## [Version&nbsp;0.3.0](https://github.com/ant-design/pro-editor/compare/v0.2.3...v0.3.0)
 
 <sup>Released on **2023-06-14**</sup>
