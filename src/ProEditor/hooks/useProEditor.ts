@@ -15,7 +15,7 @@ export interface ProEditorInstance<Config = any, Props = any> extends PublicProE
 export const useProEditor = <T>(): ProEditorInstance<T> => {
   const storeApi = useStoreApi();
 
-  const { deselectCanvas, updateConfig, exportConfig, resetConfig, undo, redo } =
+  const { deselectCanvas, updateConfig, exportConfig, updateViewport, resetConfig, undo, redo } =
     storeApi.getState();
 
   const getViewport = useMemoizedFn(() => storeApi.getState().editorAwareness.viewport);
@@ -29,6 +29,7 @@ export const useProEditor = <T>(): ProEditorInstance<T> => {
       deselectCanvas,
       exportConfig,
       resetConfig,
+      updateViewport,
       undo,
       redo,
       getViewport,
