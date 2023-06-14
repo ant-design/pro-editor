@@ -19,9 +19,7 @@ describe('ComponentAsset', () => {
         },
       });
 
-      expect(() => asset.isStarterMode({})).toThrowError(
-        '暂未实现 emptyModeSelector 方法，请在初始化时传入 emptyModeSelector',
-      );
+      expect(asset.isStarterMode({})).toBeFalsy();
     });
 
     it('外部传入emptyModeSelector', () => {
