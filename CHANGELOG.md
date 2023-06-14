@@ -1,5 +1,30 @@
 # Changelog
 
+## [Version&nbsp;0.4.0-alpha.2](https://github.com/ant-design/pro-editor/compare/v0.4.0-alpha.1...v0.4.0-alpha.2)
+
+<sup>Released on **2023-06-14**</sup>
+
+#### ✨ 新特性
+
+- **component-asset**: CreateUseAssetStore 方法支持导出 AssetProvider.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's improved
+
+- **component-asset**: CreateUseAssetStore 方法支持导出 AssetProvider ([557ff3b](https://github.com/ant-design/pro-editor/commit/557ff3b))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
 ## [Version&nbsp;0.4.0-alpha.1](https://github.com/ant-design/pro-editor/compare/v0.3.0...v0.4.0-alpha.1)
 
 <sup>Released on **2023-06-14**</sup>
