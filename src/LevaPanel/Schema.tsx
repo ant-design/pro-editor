@@ -38,7 +38,7 @@ const Schema: <T>(props: SchemaProps<T>) => ReactNode = memo(
             onChange?.({ [context.key]: value } as any, full as any);
           },
         } as SchemaItem;
-        if (outConfig[key]) {
+        if (outConfig && outConfig[key]) {
           config['value'] = outConfig[key];
         }
         return config;

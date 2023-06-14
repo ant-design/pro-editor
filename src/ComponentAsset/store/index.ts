@@ -5,9 +5,9 @@ import { DevtoolsOptions } from 'zustand/middleware';
 import { PublicProEditorStore } from '@/ProEditor/store';
 
 export interface AssetStoreOptions<T = any> {
-  initialState?: T;
   devtools?: boolean | DevtoolsOptions;
-  partial?: (state: T) => any;
+  getConfig?: (state: any) => T;
+  setConfig?: (config: T, set) => void;
 }
 
 export type CreateAssetStore<T> = StateCreator<
@@ -33,11 +33,7 @@ export const createAssetStore = <T>(
 
     const devtools = optionalDevtools(!(options?.devtools === false));
 
-    const initialState = options?.initialState || {};
-
-    return create<T>()(
-      devtools((...params) => ({ ...createStore(...params), ...initialState }), devtoolsOptions),
-    );
+    return create<T>()(devtools(createStore, devtoolsOptions));
   };
 
   return { Provider, createStore: store, useStoreApi };
@@ -48,6 +44,6 @@ export type WithoutCallSignature<T> = {
 };
 
 export const createUseAssetStore = <T>(): {
-  useStore: UseContextStore<StoreApi<T>>;
-  useStoreApi: () => WithoutCallSignature<StoreApi<T>>;
+  useStore: UseContextStore<StoreApi<T & PublicProEditorStore>>;
+  useStoreApi: () => WithoutCallSignature<StoreApi<T & PublicProEditorStore>>;
 } => ({ useStore, useStoreApi });

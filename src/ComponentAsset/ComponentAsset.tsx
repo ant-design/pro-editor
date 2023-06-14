@@ -52,6 +52,7 @@ export class ComponentAsset<Config = any, Props = any> {
   componentStore: UseBoundStore<any>;
   componentStoreApi: () => WithoutCallSignature<StoreApi<any>>;
   configSelector: (s: Config) => Partial<Config>;
+  setConfig: (config: Config, set) => void;
   codeEmitter: CodeEmitter<Config, Props>;
 
   isStarterMode: (store: any) => boolean = () => false;
@@ -67,10 +68,10 @@ export class ComponentAsset<Config = any, Props = any> {
       this.defaultConfig = params.defaultConfig;
     }
 
-    const { createStore, Provider, useStoreApi } = createAssetStore(params.createStore, {
-      initialState: params.defaultConfig,
-      ...params.storeOptions,
-    });
+    const { createStore, Provider, useStoreApi } = createAssetStore(
+      params.createStore,
+      params.storeOptions,
+    );
 
     // 初始化 store
     this.componentStore = createStore();
@@ -78,7 +79,9 @@ export class ComponentAsset<Config = any, Props = any> {
     this.AssetProvider = Provider;
 
     this.configSelector =
-      params.storeOptions?.partial || ((s: Config) => JSON.parse(JSON.stringify(s)));
+      params.storeOptions?.getConfig || ((s: Config) => JSON.parse(JSON.stringify(s)));
+    this.setConfig = params.storeOptions?.setConfig || ((config: Config, set) => set(config));
+
     // 交互规则
     this.rules = params.ui.rules;
 

@@ -53,14 +53,14 @@ export interface ConfigPublicAction {
    */
   exportConfig: () => void;
   resetConfig: () => void;
-  updateConfig: <T>(config: Partial<T>, options?: ActionOptions) => void;
+  updateConfig: <T>(config: Partial<T>, replace?: boolean, options?: ActionOptions) => void;
 }
 
 export interface ConfigSlice extends ConfigPublicAction, ConfigSliceState {
   /**
    * 内部更新配置
    **/
-  internalUpdateConfig: <T>(config: Partial<T>, payload?: ActionPayload) => void;
+  internalUpdateConfig: <T>(config: Partial<T>, payload?: ActionPayload, replace?: boolean) => void;
 }
 
 export const configSlice: StateCreator<
@@ -80,8 +80,14 @@ export const configSlice: StateCreator<
     yjsDoc: new DocWithHistoryManager<{ config: any }>(),
   };
 
+  const undoLength = initialConfigState.yjsDoc.undoManager.undoStack.length;
+
+  const redoLength = initialConfigState.yjsDoc.undoManager.redoStack.length;
+
   return {
     ...initialConfigState,
+    undoLength,
+    redoLength,
     resetConfig: () => {
       set({ config: initialConfigState.config, props: initialConfigState.props });
     },
@@ -89,10 +95,10 @@ export const configSlice: StateCreator<
      * 内部修改 config 方法
      * 传给 ProTableStore 进行 config 同步
      */
-    internalUpdateConfig: (config, payload) => {
+    internalUpdateConfig: (config, payload, replace) => {
       const { onConfigChange, componentAsset } = get();
 
-      const nextConfig = { ...get().config, ...config };
+      const nextConfig = replace ? config : { ...get().config, ...config };
 
       set({ config: nextConfig }, false, payload);
 
@@ -114,8 +120,12 @@ export const configSlice: StateCreator<
       document.body.removeChild(eleLink);
     },
 
-    updateConfig: (config, action) => {
-      get().internalUpdateConfig(config, { type: '外部 updateConfig 更新', payload: config });
+    updateConfig: (config, replace, action) => {
+      get().internalUpdateConfig(
+        config,
+        { type: '外部 updateConfig 更新', payload: config },
+        replace,
+      );
 
       const useAction = merge({}, { recordHistory: true }, action);
 
