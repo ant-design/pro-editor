@@ -10,9 +10,13 @@ group:
 
 使用 ProEditor 可以快速构建出组件的配置界面。
 
+## 以 Button 示例
+
+<code src='./demos/buttonAssets.tsx' ></code>
+
 ## 传入 ComponentAssets
 
-<code src='./demos/customAssets.tsx' ></code>
+<code src='./demos/defaultAssets.tsx' ></code>
 
 ## 无 ComponentAssets
 
