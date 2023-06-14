@@ -1,5 +1,55 @@
 # Changelog
 
+## [Version&nbsp;0.3.0](https://github.com/ant-design/pro-editor/compare/v0.2.3...v0.3.0)
+
+<sup>Released on **2023-06-14**</sup>
+
+#### ✨ 新特性
+
+- Support undo/redo for ProEditor, 完善 AssetStore 数据链路, 实现 AssetStore 与 EditorStore 的状态自动同步, 新增 ContextMenu 组件, 新增 LevaPanel 属性面板, 重构优化 ComponentAsset store 实现，收敛 AssetStore 的定义方式.
+
+#### 🐛 修复
+
+- Fix config update, remove lucide icon, 修正潜藏的 undo/redo bug，并补充单测.
+
+#### 💄 样式
+
+- **leva-panel**: 添加 style 与 className 属性.
+- Update empty style.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's improved
+
+- Support undo/redo for ProEditor ([cec5611](https://github.com/ant-design/pro-editor/commit/cec5611))
+- 完善 AssetStore 数据链路 ([20df5b2](https://github.com/ant-design/pro-editor/commit/20df5b2))
+- 实现 AssetStore 与 EditorStore 的状态自动同步 ([3eeb73b](https://github.com/ant-design/pro-editor/commit/3eeb73b))
+- 新增 ContextMenu 组件 ([265b442](https://github.com/ant-design/pro-editor/commit/265b442))
+- 新增 LevaPanel 属性面板 ([ee2d922](https://github.com/ant-design/pro-editor/commit/ee2d922))
+- 重构优化 ComponentAsset store 实现，收敛 AssetStore 的定义方式 ([37e85ab](https://github.com/ant-design/pro-editor/commit/37e85ab))
+
+#### What's fixed
+
+- Fix config update ([fee5441](https://github.com/ant-design/pro-editor/commit/fee5441))
+- Remove lucide icon ([697a8f3](https://github.com/ant-design/pro-editor/commit/697a8f3))
+- 修正潜藏的 undo/redo bug，并补充单测 ([a671b65](https://github.com/ant-design/pro-editor/commit/a671b65))
+
+#### Styles
+
+- **leva-panel**: 添加 style 与 className 属性 ([b0920fe](https://github.com/ant-design/pro-editor/commit/b0920fe))
+- Update empty style ([a6a61c5](https://github.com/ant-design/pro-editor/commit/a6a61c5))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
 ## [Version&nbsp;0.3.0-alpha.8](https://github.com/ant-design/pro-editor/compare/v0.3.0-alpha.7...v0.3.0-alpha.8)
 
 <sup>Released on **2023-06-14**</sup>
