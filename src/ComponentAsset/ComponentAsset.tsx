@@ -1,6 +1,6 @@
 /*eslint no-invalid-this: "error"*/
 import { getDefaultValueFromSchema } from '@c2d2c/utils';
-import { FC, PropsWithChildren, ReactNode } from 'react';
+import { FC, ReactNode } from 'react';
 import { StoreApi } from 'zustand';
 import type { UseBoundStore } from 'zustand/react';
 
@@ -36,10 +36,6 @@ export class ComponentAsset<Config = any, Props = any> {
    * 组件开发控制器
    */
   DevelopController: FC;
-  /**
-   * 组件数据提供者
-   */
-  DataProvider?: FC<PropsWithChildren>;
 
   AssetProvider: DataProvider;
 
@@ -89,7 +85,6 @@ export class ComponentAsset<Config = any, Props = any> {
     this.Component = params.ui.Component;
     this.ConfigPanel = params.ui.ConfigPanel;
     this.CanvasStarter = params.ui.CanvasStarter;
-    this.DataProvider = params.ui.DataProvider;
     this.DesignController = params.ui.DesignController;
     this.DevelopController = params.ui.DevelopController;
 

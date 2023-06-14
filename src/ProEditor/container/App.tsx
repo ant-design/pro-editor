@@ -52,7 +52,6 @@ export const ProEditor: FC<ProEditorAppProps> = memo((props) => {
   if (!componentAsset) return <AssetEmpty />;
 
   const AssetProvider = componentAsset.AssetProvider;
-  const DataProvider = componentAsset.DataProvider;
 
   const children = (
     <div className={styles.main} style={style}>
@@ -71,7 +70,7 @@ export const ProEditor: FC<ProEditorAppProps> = memo((props) => {
   return (
     <ErrorBoundary onExportConfig={exportConfig}>
       <AssetProvider createStore={() => componentAsset.componentStore}>
-        {!DataProvider ? children : <DataProvider>{children}</DataProvider>}
+        {children}
         <AssetStoreUpdater />
       </AssetProvider>
     </ErrorBoundary>

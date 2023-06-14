@@ -5,7 +5,6 @@ import { AssetStoreOptions } from '@/ComponentAsset/store';
 import type { CanvasInteractRule } from '@/InteractContainer';
 import type { CodeEmitter } from './code';
 import type { AssetModels } from './model';
-import type { DataProvider } from './render';
 
 export type CanvasRule = CanvasInteractRule;
 
@@ -36,7 +35,6 @@ export interface ComponentAssetUIParams {
    */
   DevelopController?: FC;
 
-  DataProvider?: DataProvider;
   /**
    * 判断是否进入引导模式
    */
