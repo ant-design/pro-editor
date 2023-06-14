@@ -37,4 +37,23 @@ group: 基础组件
 
 <code src="./demos/controlFloat.tsx" compact="true"  ></code>
 
-<API id="DraggablePanel" />
+## API
+
+| 属性名           | 类型                                       | 默认值       | 描述                                     |
+| ---------------- | ------------------------------------------ | ------------ | ---------------------------------------- |
+| mode             | `'fixed' \| 'float'`                       | `'fixed'`    | 面板的位置模式，使用固定模式或者浮动窗口 |
+| placement        | `'right' \| 'left' \| 'top' \| 'bottom'`   | `'right'`    | 固定模式下面板的朝向，默认放置在右侧     |
+| minWidth         | `number`                                   |              | 面板的最小宽度                           |
+| minHeight        | `number`                                   |              | 面板的最小高度                           |
+| resize           | `RndProps['enableResizing']`               |              | 控制可缩放区域                           |
+| size             | `Partial<Size>`                            |              | 面板尺寸                                 |
+| onSizeChange     | `(delta: NumberSize, size?: Size) => void` |              | 面板尺寸变更回调                         |
+| onSizeDragging   | `(delta: NumberSize, size?: Size) => void` |              | 面板尺寸拖拽过程中的回调                 |
+| expandable       | `boolean`                                  | `true`       | 是否可展开                               |
+| isExpand         | `boolean`                                  |              | 当前是否为展开状态                       |
+| onExpandChange   | `(expand: boolean) => void`                |              | 展开状态变更回调                         |
+| position         | `RndProps['position']`                     |              | 面板位置，受控模式                       |
+| defaultSize      | `Partial<Size>`                            |              | 面板默认尺寸                             |
+| defaultPosition  | `RndProps['position']`                     | `[100, 100]` | 面板默认位置，悬浮模式下有效             |
+| onPositionChange | `(position: RndProps['position']) => void` |              | 面板位置变更回调                         |
+| children         | `ReactNode`                                |              | 面板内容                                 |
