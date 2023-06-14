@@ -9,10 +9,28 @@ import { ReactNode, memo, useEffect, useMemo } from 'react';
 
 import { SchemaItem, toLevaSchema } from './utils/schema';
 
+/**
+ * 用于生成表单的 schema 配置项
+ * @template T - 表单数据类型
+ */
 export interface SchemaProps<T> {
+  /**
+   * JSON Schema 配置项
+   */
   schema: JSONSchema<T>;
+  /**
+   * 表单默认值
+   */
   defaultValue?: T;
+  /**
+   * 表单当前值
+   */
   value?: T;
+  /**
+   * 表单值变化的回调函数
+   * @param changedValue - 变化的部分值
+   * @param fullValue - 完整的表单值
+   */
   onChange?: (changedValue: Partial<T>, fullValue: T) => void;
 }
 
