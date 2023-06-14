@@ -3,9 +3,9 @@ import type { ComponentAssetParams } from '../types';
 import { TestComponent, TestPanel } from './Component';
 
 import type { ButtonConfig } from './store';
-import { createStore, Provider } from './store';
+import { createStore } from './store';
 
-import { contentModel } from './assets';
+import { contentModel } from './models';
 
 export const demoAssets: ComponentAssetParams<ButtonConfig> = {
   id: 'Button',
@@ -15,7 +15,6 @@ export const demoAssets: ComponentAssetParams<ButtonConfig> = {
     Component: TestComponent,
     ConfigPanel: TestPanel,
     rules: [],
-    DataProvider: Provider,
   },
 
   models: [contentModel],
@@ -23,5 +22,5 @@ export const demoAssets: ComponentAssetParams<ButtonConfig> = {
   codeEmitter: () => '',
 };
 
-export * from './assets';
+export * from './models';
 export * from './store';

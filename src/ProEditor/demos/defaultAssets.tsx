@@ -9,9 +9,8 @@ export default () => (
     componentAsset={
       new ComponentAsset({
         ...demoAssets,
-        ui: {
-          ...demoAssets.ui,
-          isStarterMode: () => false,
+        storeOptions: {
+          devtools: true,
         },
       })
     }

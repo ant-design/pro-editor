@@ -749,82 +749,6 @@ exports[`<CollapseTitle /> > renders expand.tsx correctly 1`] = `
 </div>
 `;
 
-exports[`<ColorPicker /> > renders controlled.tsx correctly 1`] = `
-.emotion-0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 44px;
-  height: 21px;
-  padding: 4px;
-  border: 1px solid #d9d9d9;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.emotion-1 {
-  border-radius: 2px;
-  width: 100%;
-  height: 100%;
-}
-
-<div>
-  <div
-    class="studio-colorpicker"
-  >
-    <div
-      class="studio-colorpicker-container emotion-0"
-    >
-      <div
-        class="studio-colorpicker-color emotion-1"
-        style="background: rgb(22, 119, 255);"
-      />
-    </div>
-  </div>
-  <input
-    class="studio-input"
-    type="text"
-    value="#1677FF"
-  />
-</div>
-`;
-
-exports[`<ColorPicker /> > renders normal.tsx correctly 1`] = `
-.emotion-0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 44px;
-  height: 21px;
-  padding: 4px;
-  border: 1px solid #d9d9d9;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.emotion-1 {
-  border-radius: 2px;
-  width: 100%;
-  height: 100%;
-}
-
-<div>
-  <div
-    class="studio-colorpicker"
-  >
-    <div
-      class="studio-colorpicker-container emotion-0"
-    >
-      <div
-        class="studio-colorpicker-color emotion-1"
-      />
-    </div>
-  </div>
-</div>
-`;
-
 exports[`<ColumnList /> > renders actions.tsx correctly 1`] = `
 .emotion-0 {
   display: -webkit-box;
@@ -10123,6 +10047,14 @@ exports[`<ColumnList /> > renders normal.tsx correctly 1`] = `
 </div>
 `;
 
+exports[`<ContextMenu /> > renders index.tsx correctly 1`] = `
+<div>
+  <div>
+    RightClick
+  </div>
+</div>
+`;
+
 exports[`<DataFill /> > renders basic.tsx correctly 1`] = `
 .emotion-0 {
   display: -webkit-box;
@@ -18348,6 +18280,1696 @@ exports[`<InteractContainer /> > renders WithContainer.tsx correctly 1`] = `
 </div>
 `;
 
+exports[`<ProEditor /> > renders buttonAssets.tsx correctly 1`] = `
+.emotion-0 {
+  height: 100%;
+}
+
+.emotion-1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex-wrap: nowrap;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  height: 100%;
+  position: relative;
+  background-color: #f5f5f5;
+}
+
+.emotion-2 {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.emotion-3 {
+  overflow: scroll;
+}
+
+.emotion-4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 100%;
+}
+
+.emotion-5 .react-flow__attribution {
+  display: none;
+}
+
+.emotion-5 .react-flow__pane,
+.emotion-5 .react-flow__node {
+  cursor: auto;
+}
+
+.emotion-7 {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  z-index: 100;
+}
+
+.emotion-8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 8px;
+}
+
+.emotion-9 {
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  position: relative;
+  border: 0 solid rgba(5, 5, 5, 0.06);
+  border-top: 1px solid #d9d9d9;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-9:hover .studio-draggable-panel-toggle {
+  opacity: 1;
+}
+
+.emotion-10 {
+  background: #ffffff;
+  overflow: hidden;
+}
+
+.emotion-11 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  padding: 6px 8px;
+}
+
+.emotion-12 {
+  background: #ffffff;
+  cursor: pointer;
+}
+
+.emotion-13 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  gap: 12px;
+}
+
+.emotion-14 {
+  cursor: pointer;
+  -webkit-transition: 150ms background-color ease-in-out;
+  transition: 150ms background-color ease-in-out;
+  color: rgba(0, 0, 0, 0.65);
+  padding: 2px 8px;
+  color: rgba(0, 0, 0, 0.65);
+  border-radius: 6px;
+}
+
+.emotion-14:hover {
+  background: rgba(0, 0, 0, 0.02);
+}
+
+.emotion-14:hover {
+  color: rgba(0, 0, 0, 0.88);
+}
+
+.emotion-15 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  gap: 8px;
+}
+
+.emotion-16 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-17 {
+  background: rgba(0, 0, 0, 0.02);
+  height: 100%;
+}
+
+.emotion-18 {
+  background-color: #fafafa;
+  border: 1px solid #fafafa;
+  position: relative;
+  margin: 0;
+  border-radius: 6px;
+  -webkit-transition: background-color 100ms cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: background-color 100ms cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.emotion-18 pre {
+  margin: 0!important;
+  padding: 16px 24px!important;
+  background: none!important;
+}
+
+.emotion-18 code {
+  background: transparent!important;
+}
+
+.emotion-19 {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 16px;
+  height: 16px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  opacity: 0.6;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+  background-color: #fafafa;
+}
+
+.emotion-19:hover {
+  opacity: 0.8;
+}
+
+.emotion-20 {
+  width: 16px;
+  color: #333333;
+  height: 16px;
+  font-size: 16px;
+}
+
+.emotion-20.scoll {
+  -webkit-animation: copy-button-trans 2s;
+  animation: copy-button-trans 2s;
+  -webkit-animation-play-state: running;
+  animation-play-state: running;
+}
+
+.emotion-22 {
+  display: block;
+  overflow-x: auto;
+  color: #333333;
+  background-color: #666666;
+}
+
+.emotion-22 .hljs-comment,
+.emotion-22 .hljs-quote {
+  color: #aaaaaa;
+}
+
+.emotion-22 .hljs-variable,
+.emotion-22 .hljs-attribute,
+.emotion-22 .hljs-template-variable,
+.emotion-22 .hljs-tag,
+.emotion-22 .hljs-name,
+.emotion-22 .hljs-selector-id,
+.emotion-22 .hljs-selector-class,
+.emotion-22 .hljs-regexp,
+.emotion-22 .hljs-title,
+.emotion-22 .hljs-deletion {
+  color: #ec5e41;
+}
+
+.emotion-22 .hljs-builtin-name,
+.emotion-22 .hljs-literal,
+.emotion-22 .hljs-type,
+.emotion-22 .hljs-params,
+.emotion-22 .hljs-meta,
+.emotion-22 .hljs-link {
+  color: #ff802b;
+}
+
+.emotion-22 .hljs-string,
+.emotion-22 .hljs-number,
+.emotion-22 .hljs-symbol,
+.emotion-22 .hljs-bullet,
+.emotion-22 .hljs-addition {
+  color: #55b467;
+}
+
+.emotion-22 .hljs-keyword,
+.emotion-22 .hljs-doctag,
+.emotion-22 .hljs-built_in,
+.emotion-22 .hljs-selector-tag,
+.emotion-22 .hljs-section {
+  color: #369eff;
+}
+
+.emotion-22 .hljs-emphasis {
+  font-style: italic;
+}
+
+.emotion-22 .hljs-strong {
+  font-weight: bold;
+}
+
+.emotion-23 {
+  box-sizing: border-box;
+  width: 1rem;
+  margin-right: 1.5rem;
+  display: inline-block;
+  color: rgba(115, 138, 148, 0.4);
+  text-align: right;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.emotion-24 {
+  width: 100%;
+}
+
+.emotion-27 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.emotion-28 {
+  -webkit-backdrop-filter: saturate(180%) blur(10px);
+  backdrop-filter: saturate(180%) blur(10px);
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  height: 36px;
+  padding: 0 8px;
+  font-family: 'SFMono-Regular',Consolas,'Liberation Mono',Menlo,Courier,monospace;
+  color: #aaaaaa;
+  border-radius: 6;
+}
+
+.emotion-29 {
+  color: #aaaaaa;
+}
+
+.emotion-30 {
+  position: relative;
+}
+
+.emotion-30::before {
+  position: absolute;
+  z-index: 50;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  content: '';
+}
+
+.emotion-30:hover::before,
+.emotion-30:active::before {
+  background: #1677ff;
+}
+
+.emotion-30::before {
+  top: 50%;
+  height: 2px;
+  width: 100%;
+}
+
+.emotion-31 {
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  position: relative;
+  border: 0 solid rgba(5, 5, 5, 0.06);
+}
+
+.emotion-31:hover .studio-draggable-panel-toggle {
+  opacity: 1;
+}
+
+.emotion-32 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-33 {
+  position: absolute;
+  opacity: 0;
+  z-index: 1001;
+  -webkit-transition: opacity 0.1s;
+  transition: opacity 0.1s;
+  border-radius: 4px;
+  cursor: pointer;
+  background: #ffffff;
+  border-width: 1px;
+  border-style: solid;
+  color: rgba(0, 0, 0, 0.45);
+  border-color: #d9d9d9;
+  width: 16px;
+  height: 40px;
+  left: -17px;
+  top: 50%;
+  margin-top: -20px;
+  border-radius: 4px 0 0 4px;
+  border-right-width: 0;
+}
+
+.emotion-33:hover {
+  color: rgba(0, 0, 0, 0.65);
+  background: rgba(0, 0, 0, 0.02);
+}
+
+.emotion-35 {
+  --leva-sizes-controlWidth: 66%;
+  --leva-colors-elevation1: rgba(0, 0, 0, 0.06);
+  --leva-colors-elevation2: transparent;
+  --leva-colors-elevation3: rgba(0, 0, 0, 0.06);
+  --leva-colors-accent1: #1677ff;
+  --leva-colors-accent2: #4096ff;
+  --leva-colors-accent3: #0958d9;
+  --leva-colors-highlight1: rgba(0, 0, 0, 0.45);
+  --leva-colors-highlight2: rgba(0, 0, 0, 0.65);
+  --leva-colors-highlight3: rgba(0, 0, 0, 0.88);
+  --leva-colors-vivid1: #faad14;
+  --leva-shadows-level1: unset;
+  --leva-shadows-level2: unset;
+  --leva-fonts-mono: 'SFMono-Regular',Consolas,'Liberation Mono',Menlo,Courier,monospace;
+  overflow: auto;
+  padding: 6px 0;
+}
+
+.emotion-35>div {
+  background: transparent;
+}
+
+.emotion-35>div>div {
+  background: transparent;
+}
+
+.emotion-35 input:checked+label>svg {
+  stroke: #f5f5f5;
+}
+
+.emotion-35 button {
+  --leva-colors-accent2: rgba(0, 0, 0, 0.06);
+}
+
+.emotion-36 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 8px;
+  gap: 4px;
+}
+
+.emotion-37 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  padding: 12px;
+  gap: 8px;
+}
+
+.emotion-38 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  gap: 4px;
+}
+
+.emotion-39 {
+  position: relative;
+}
+
+.emotion-39::before {
+  position: absolute;
+  z-index: 50;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  content: '';
+}
+
+.emotion-39:hover::before,
+.emotion-39:active::before {
+  background: #1677ff;
+}
+
+.emotion-39::before {
+  left: 50%;
+  width: 2px;
+  height: 100%;
+}
+
+<div>
+  <div
+    class="studio-app emotion-0"
+    style="height: 100vh;"
+  >
+    <div
+      class="studio-editor-main emotion-1"
+    >
+      <div
+        class="studio-editor-left emotion-2"
+        style="max-width: calc(100vw - 340px);"
+      >
+        <div
+          class="studio-editor-stage-container emotion-3"
+          style="height: 100%;"
+        >
+          <div
+            class="layoutkit-flexbox emotion-4"
+          >
+            <div
+              class="react-flow emotion-5"
+              data-testid="rf__wrapper"
+              style="width: 100%; height: 100%; overflow: hidden; position: relative; z-index: 0;"
+            >
+              <div
+                class="react-flow__renderer"
+                style="position: absolute; width: 100%; height: 100%; top: 0px; left: 0px;"
+              >
+                <div
+                  class="react-flow__pane"
+                  style="position: absolute; width: 100%; height: 100%; top: 0px; left: 0px;"
+                >
+                  <div
+                    class="react-flow__viewport react-flow__container"
+                    style="transform: translate(0px,0px) scale(1);"
+                  >
+                    <svg
+                      class="react-flow__edges react-flow__container"
+                      height="500"
+                      style="z-index: 0;"
+                      width="500"
+                    >
+                      <defs />
+                      <g />
+                    </svg>
+                    <div
+                      class="react-flow__edgelabel-renderer"
+                    />
+                    <div
+                      class="react-flow__nodes"
+                      style="position: absolute; width: 100%; height: 100%; top: 0px; left: 0px;"
+                    >
+                      <div
+                        aria-describedby="react-flow__node-desc-1"
+                        class="react-flow__node react-flow__node-artboard selectable"
+                        data-id="artboard"
+                        data-testid="rf__node-artboard"
+                        role="button"
+                        style="z-index: 0; transform: translate(0px,0px); pointer-events: all; visibility: hidden;"
+                        tabindex="0"
+                      >
+                        <div
+                          class="emotion-0"
+                        >
+                          <div
+                            class="studio-editor-canvas-component"
+                            id="studio-editor-canvas"
+                          >
+                            <button
+                              class="canvas-btn canvas-btn-default"
+                              type="button"
+                            >
+                              <span>
+                                默认按钮
+                              </span>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="emotion-7"
+              >
+                <div
+                  class="layoutkit-center emotion-8"
+                >
+                  <div
+                    class="studio-space studio-space-horizontal studio-space-align-center"
+                  >
+                    <div
+                      class="studio-space-item"
+                      style="margin-right: 8px;"
+                    >
+                      <button
+                        class="studio-btn studio-btn-default studio-btn-icon-only"
+                        type="button"
+                      >
+                        <span
+                          class="studio-btn-icon"
+                        >
+                          <span
+                            aria-label="minus"
+                            class="anticon anticon-minus"
+                            role="img"
+                          >
+                            <svg
+                              aria-hidden="true"
+                              data-icon="minus"
+                              fill="currentColor"
+                              focusable="false"
+                              height="1em"
+                              viewBox="64 64 896 896"
+                              width="1em"
+                            >
+                              <path
+                                d="M872 474H152c-4.4 0-8 3.6-8 8v60c0 4.4 3.6 8 8 8h720c4.4 0 8-3.6 8-8v-60c0-4.4-3.6-8-8-8z"
+                              />
+                            </svg>
+                          </span>
+                        </span>
+                      </button>
+                    </div>
+                    <div
+                      class="studio-space-item"
+                      style="margin-right: 8px;"
+                    >
+                      <button
+                        class="studio-btn studio-btn-default"
+                        style="width: 64px;"
+                        type="button"
+                      >
+                        <span>
+                          100%
+                        </span>
+                      </button>
+                    </div>
+                    <div
+                      class="studio-space-item"
+                      style="margin-right: 8px;"
+                    >
+                      <button
+                        class="studio-btn studio-btn-default studio-btn-icon-only"
+                        type="button"
+                      >
+                        <span
+                          class="studio-btn-icon"
+                        >
+                          <span
+                            aria-label="plus"
+                            class="anticon anticon-plus"
+                            role="img"
+                          >
+                            <svg
+                              aria-hidden="true"
+                              data-icon="plus"
+                              fill="currentColor"
+                              focusable="false"
+                              height="1em"
+                              viewBox="64 64 896 896"
+                              width="1em"
+                            >
+                              <defs>
+                                <style />
+                              </defs>
+                              <path
+                                d="M482 152h60q8 0 8 8v704q0 8-8 8h-60q-8 0-8-8V160q0-8 8-8z"
+                              />
+                              <path
+                                d="M176 474h672q8 0 8 8v60q0 8-8 8H176q-8 0-8-8v-60q0-8 8-8z"
+                              />
+                            </svg>
+                          </span>
+                        </span>
+                      </button>
+                    </div>
+                    <div
+                      class="studio-space-item"
+                      style="margin-right: 8px;"
+                    >
+                      <button
+                        class="studio-btn studio-btn-default studio-btn-icon-only"
+                        type="button"
+                      >
+                        <span
+                          class="studio-btn-icon"
+                        >
+                          <span
+                            aria-label="expand"
+                            class="anticon anticon-expand"
+                            role="img"
+                          >
+                            <svg
+                              aria-hidden="true"
+                              data-icon="expand"
+                              fill="currentColor"
+                              focusable="false"
+                              height="1em"
+                              viewBox="64 64 896 896"
+                              width="1em"
+                            >
+                              <defs>
+                                <style />
+                              </defs>
+                              <path
+                                d="M342 88H120c-17.7 0-32 14.3-32 32v224c0 8.8 7.2 16 16 16h48c8.8 0 16-7.2 16-16V168h174c8.8 0 16-7.2 16-16v-48c0-8.8-7.2-16-16-16zm578 576h-48c-8.8 0-16 7.2-16 16v176H682c-8.8 0-16 7.2-16 16v48c0 8.8 7.2 16 16 16h222c17.7 0 32-14.3 32-32V680c0-8.8-7.2-16-16-16zM342 856H168V680c0-8.8-7.2-16-16-16h-48c-8.8 0-16 7.2-16 16v224c0 17.7 14.3 32 32 32h222c8.8 0 16-7.2 16-16v-48c0-8.8-7.2-16-16-16zM904 88H682c-8.8 0-16 7.2-16 16v48c0 8.8 7.2 16 16 16h174v176c0 8.8 7.2 16 16 16h48c8.8 0 16-7.2 16-16V120c0-17.7-14.3-32-32-32z"
+                              />
+                            </svg>
+                          </span>
+                        </span>
+                      </button>
+                    </div>
+                    <div
+                      class="studio-space-item"
+                    >
+                      <button
+                        class="studio-btn studio-btn-default studio-btn-icon-only"
+                        type="button"
+                      >
+                        <span
+                          class="studio-btn-icon"
+                        >
+                          <span
+                            aria-label="aim"
+                            class="anticon anticon-aim"
+                            role="img"
+                          >
+                            <svg
+                              aria-hidden="true"
+                              data-icon="aim"
+                              fill="currentColor"
+                              focusable="false"
+                              height="1em"
+                              viewBox="64 64 896 896"
+                              width="1em"
+                            >
+                              <defs>
+                                <style />
+                              </defs>
+                              <path
+                                d="M952 474H829.8C812.5 327.6 696.4 211.5 550 194.2V72c0-4.4-3.6-8-8-8h-60c-4.4 0-8 3.6-8 8v122.2C327.6 211.5 211.5 327.6 194.2 474H72c-4.4 0-8 3.6-8 8v60c0 4.4 3.6 8 8 8h122.2C211.5 696.4 327.6 812.5 474 829.8V952c0 4.4 3.6 8 8 8h60c4.4 0 8-3.6 8-8V829.8C696.4 812.5 812.5 696.4 829.8 550H952c4.4 0 8-3.6 8-8v-60c0-4.4-3.6-8-8-8zM512 756c-134.8 0-244-109.2-244-244s109.2-244 244-244 244 109.2 244 244-109.2 244-244 244z"
+                              />
+                              <path
+                                d="M512 392c-32.1 0-62.1 12.4-84.8 35.2-22.7 22.7-35.2 52.7-35.2 84.8s12.5 62.1 35.2 84.8C449.9 619.4 480 632 512 632s62.1-12.5 84.8-35.2C619.4 574.1 632 544 632 512s-12.5-62.1-35.2-84.8A118.57 118.57 0 00512 392z"
+                              />
+                            </svg>
+                          </span>
+                        </span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <svg
+                class="react-flow__background"
+                data-testid="rf__background"
+                style="z-index: -1; position: absolute; width: 100%; height: 100%; top: 0px; left: 0px;"
+              >
+                <pattern
+                  height="16"
+                  id="pattern-1undefined"
+                  patternTransform="translate(-0.5,-0.5)"
+                  patternUnits="userSpaceOnUse"
+                  width="16"
+                  x="0"
+                  y="0"
+                >
+                  <circle
+                    cx="0.5"
+                    cy="0.5"
+                    fill="#aaa"
+                    r="0.5"
+                  />
+                </pattern>
+                <rect
+                  fill="url(#pattern-1undefined)"
+                  height="100%"
+                  width="100%"
+                  x="0"
+                  y="0"
+                />
+              </svg>
+              <div
+                class="react-flow__panel react-flow__attribution bottom right"
+                data-message="Please only hide this attribution when you are subscribed to React Flow Pro: https://pro.reactflow.dev"
+                style="pointer-events: all;"
+              >
+                <a
+                  aria-label="React Flow attribution"
+                  href="https://reactflow.dev"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  React Flow
+                </a>
+              </div>
+              <div
+                id="react-flow__node-desc-1"
+                style="display: none;"
+              >
+                Press enter or space to select a node.
+                You can then use the arrow keys to move the node around.
+                 Press delete to remove it and escape to cancel.
+                 
+              </div>
+              <div
+                id="react-flow__edge-desc-1"
+                style="display: none;"
+              >
+                Press enter or space to select an edge. You can then press delete to remove it or escape to cancel.
+              </div>
+              <div
+                aria-atomic="true"
+                aria-live="assertive"
+                id="react-flow__aria-live-1"
+                style="position: absolute; width: 1px; height: 1px; margin: -1px; border: 0px; padding: 0px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); clip-path: inset(100%);"
+              />
+            </div>
+            <div
+              class="studio-draggable-panel emotion-9"
+              style="border-top-width: 1px;"
+            >
+              <div
+                class="studio-draggable-panel-fixed emotion-10"
+                style="position: relative; user-select: auto; width: auto; height: 220px; min-width: 280px; min-height: 36px; box-sizing: border-box; flex-shrink: 0;"
+              >
+                <div
+                  class="layoutkit-flexbox emotion-11 emotion-12"
+                >
+                  <div
+                    class="layoutkit-flexbox emotion-13 emotion-14"
+                  >
+                    <span
+                      aria-label="down"
+                      class="anticon anticon-down"
+                      role="img"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        data-icon="down"
+                        fill="currentColor"
+                        focusable="false"
+                        height="1em"
+                        viewBox="64 64 896 896"
+                        width="1em"
+                      >
+                        <path
+                          d="M884 256h-75c-5.1 0-9.9 2.5-12.9 6.6L512 654.2 227.9 262.6c-3-4.1-7.8-6.6-12.9-6.6h-75c-6.5 0-10.3 7.4-6.5 12.7l352.6 486.1c12.8 17.6 39 17.6 51.7 0l352.6-486.1c3.9-5.3.1-12.7-6.4-12.7z"
+                        />
+                      </svg>
+                    </span>
+                    代码生成
+                  </div>
+                  <div
+                    class="layoutkit-flexbox emotion-15"
+                  />
+                </div>
+                <div
+                  class="layoutkit-flexbox emotion-16 emotion-17"
+                >
+                  <div
+                    class="studio-highlight-container emotion-18"
+                    style="height: 100%;"
+                    tabindex="-1"
+                  >
+                    <button
+                      class="studio-highlight-copy emotion-19"
+                      type="button"
+                    >
+                      <span
+                        aria-label="copy"
+                        class="anticon anticon-copy studio-highlight-copy-icon emotion-20"
+                        role="img"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          data-icon="copy"
+                          fill="currentColor"
+                          focusable="false"
+                          height="1em"
+                          viewBox="64 64 896 896"
+                          width="1em"
+                        >
+                          <path
+                            d="M832 64H296c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h496v688c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8V96c0-17.7-14.3-32-32-32zM704 192H192c-17.7 0-32 14.3-32 32v530.7c0 8.5 3.4 16.6 9.4 22.6l173.3 173.3c2.2 2.2 4.7 4 7.4 5.5v1.9h4.2c3.5 1.3 7.2 2 11 2H704c17.7 0 32-14.3 32-32V224c0-17.7-14.3-32-32-32zM350 856.2L263.9 770H350v86.2zM664 888H414V746c0-22.1-17.9-40-40-40H232V264h432v624z"
+                          />
+                        </svg>
+                      </span>
+                      <span
+                        aria-label="check"
+                        class="anticon anticon-check studio-highlight-copy-icon emotion-20"
+                        role="img"
+                        style="color: rgb(63, 177, 99);"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          data-icon="check"
+                          fill="currentColor"
+                          focusable="false"
+                          height="1em"
+                          viewBox="64 64 896 896"
+                          width="1em"
+                        >
+                          <path
+                            d="M912 190h-69.9c-9.8 0-19.1 4.5-25.1 12.2L404.7 724.5 207 474a32 32 0 00-25.1-12.2H112c-6.7 0-10.4 7.7-6.3 12.9l273.9 347c12.8 16.2 37.4 16.2 50.3 0l488.4-618.9c4.1-5.1.4-12.8-6.3-12.8z"
+                          />
+                        </svg>
+                      </span>
+                    </button>
+                    <pre
+                      class="emotion-22"
+                    >
+                      <table
+                        border="0"
+                        cellpadding="0"
+                        cellspacing="0"
+                      >
+                        <tbody>
+                          <tr>
+                            <td
+                              class="undefined-index emotion-23"
+                            >
+                              1
+                            </td>
+                            <td
+                              class="undefined-content emotion-24"
+                            >
+                              暂无生成代码;
+                            </td>
+                          </tr>
+                          <tr>
+                            <td
+                              class="undefined-index emotion-23"
+                            >
+                              2
+                            </td>
+                            <td
+                              class="undefined-content emotion-24"
+                            />
+                          </tr>
+                        </tbody>
+                      </table>
+                    </pre>
+                    <div
+                      class="layoutkit-center emotion-27 emotion-28"
+                    >
+                      <span
+                        aria-label="loading-3-quarters"
+                        class="anticon anticon-loading-3-quarters anticon-spin emotion-29"
+                        role="img"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          data-icon="loading-3-quarters"
+                          fill="currentColor"
+                          focusable="false"
+                          height="1em"
+                          viewBox="0 0 1024 1024"
+                          width="1em"
+                        >
+                          <path
+                            d="M512 1024c-69.1 0-136.2-13.5-199.3-40.2C251.7 958 197 921 150 874c-47-47-84-101.7-109.8-162.7C13.5 648.2 0 581.1 0 512c0-19.9 16.1-36 36-36s36 16.1 36 36c0 59.4 11.6 117 34.6 171.3 22.2 52.4 53.9 99.5 94.3 139.9 40.4 40.4 87.5 72.2 139.9 94.3C395 940.4 452.6 952 512 952c59.4 0 117-11.6 171.3-34.6 52.4-22.2 99.5-53.9 139.9-94.3 40.4-40.4 72.2-87.5 94.3-139.9C940.4 629 952 571.4 952 512c0-59.4-11.6-117-34.6-171.3a440.45 440.45 0 00-94.3-139.9 437.71 437.71 0 00-139.9-94.3C629 83.6 571.4 72 512 72c-19.9 0-36-16.1-36-36s16.1-36 36-36c69.1 0 136.2 13.5 199.3 40.2C772.3 66 827 103 874 150c47 47 83.9 101.8 109.7 162.7 26.7 63.1 40.2 130.2 40.2 199.3s-13.5 136.2-40.2 199.3C958 772.3 921 827 874 874c-47 47-101.8 83.9-162.7 109.7-63.1 26.8-130.2 40.3-199.3 40.3z"
+                          />
+                        </svg>
+                      </span>
+                      Highlighting...
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div
+                    class="studio-draggable-panel-top-handle emotion-30"
+                    style="position: absolute; user-select: none; width: 100%; height: 10px; top: -5px; left: 0px; cursor: row-resize;"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="studio-draggable-panel emotion-31"
+        style="border-left-width: 1px;"
+      >
+        <div
+          class="layoutkit-center emotion-32 studio-draggable-panel-toggle studio-draggable-panel-toggle-left emotion-33"
+        >
+          <span
+            aria-label="left"
+            class="anticon anticon-left"
+            role="img"
+          >
+            <svg
+              aria-hidden="true"
+              data-icon="left"
+              fill="currentColor"
+              focusable="false"
+              height="1em"
+              style="transform: rotate(180deg);"
+              viewBox="64 64 896 896"
+              width="1em"
+            >
+              <path
+                d="M724 218.3V141c0-6.7-7.7-10.4-12.9-6.3L260.3 486.8a31.86 31.86 0 000 50.3l450.8 352.1c5.3 4.1 12.9.4 12.9-6.3v-77.3c0-4.9-2.3-9.6-6.1-12.6l-360-281 360-281.1c3.8-3 6.1-7.7 6.1-12.6z"
+              />
+            </svg>
+          </span>
+        </div>
+        <div
+          class="studio-draggable-panel-fixed emotion-10"
+          style="position: relative; user-select: auto; display: flex; flex-direction: column; width: 340px; height: 100%; min-width: 340px; box-sizing: border-box; flex-shrink: 0;"
+        >
+          <div
+            class="emotion-35"
+          >
+            <div
+              class="leva-c-kWgxhW leva-c-kWgxhW-bSMcqW-fill-true leva-c-kWgxhW-czBHep-hideTitleBar-false"
+              style="display: block; transform: translate3d(undefinedpx, undefinedpx, 0);"
+            >
+              <div
+                class="leva-c-hwBXYF"
+              >
+                <i
+                  class="leva-c-ctBOWy"
+                >
+                  <svg
+                    class="leva-c-cHvNmv"
+                    height="8"
+                    style="transform: rotate(0deg);"
+                    viewBox="0 0 9 5"
+                    width="12"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M3.8 4.4c.4.3 1 .3 1.4 0L8 1.7A1 1 0 007.4 0H1.6a1 1 0 00-.7 1.7l3 2.7z"
+                    />
+                  </svg>
+                </i>
+                <div
+                  class="leva-c-iLtnIm"
+                >
+                  Button
+                </div>
+                <i
+                  class="leva-c-ctBOWy"
+                >
+                  <svg
+                    height="20"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M9 9a2 2 0 114 0 2 2 0 01-4 0z"
+                    />
+                    <path
+                      clip-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-13a4 4 0 00-3.446 6.032l-2.261 2.26a1 1 0 101.414 1.415l2.261-2.261A4 4 0 1011 5z"
+                      fill-rule="evenodd"
+                    />
+                  </svg>
+                </i>
+              </div>
+              <div
+                class="leva-c-fxiFTg leva-c-fxiFTg-dbaoCM-toggled-false"
+              >
+                <input
+                  class="leva-c-iYYzmZ"
+                  placeholder="[Open filter with CMD+SHIFT+L]"
+                  value=""
+                />
+                <i
+                  class="leva-c-ctBOWy"
+                  style="visibility: hidden;"
+                >
+                  <svg
+                    fill="currentColor"
+                    height="14"
+                    viewBox="0 0 20 20"
+                    width="14"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      clip-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z"
+                      fill-rule="evenodd"
+                    />
+                  </svg>
+                </i>
+              </div>
+              <div
+                class="leva-c-hBtFDW"
+              >
+                <div
+                  class="leva-c-dmsJDs leva-c-dmsJDs-lpvxwm-toggled-true leva-c-dmsJDs-hXSjjU-isRoot-true"
+                >
+                  <div
+                    class="leva-c-bDGmTT"
+                  >
+                    <div
+                      class="leva-c-grzFYX leva-c-jzsQCy"
+                    >
+                      <div
+                        class="leva-c-iSkYoW"
+                      >
+                        <label
+                          class="leva-c-dKMqBT"
+                          for="children"
+                          title="文本"
+                        >
+                          文本
+                        </label>
+                      </div>
+                      <div
+                        class="leva-c-kXfPOu"
+                      >
+                        <input
+                          autocomplete="off"
+                          class="leva-c-ghmOOI"
+                          id="children"
+                          spellcheck="false"
+                          type="text"
+                          value="默认按钮"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="leva-c-bDGmTT"
+                  >
+                    <div
+                      class="leva-c-grzFYX leva-c-jzsQCy"
+                    >
+                      <div
+                        class="leva-c-iSkYoW"
+                      >
+                        <label
+                          class="leva-c-dKMqBT"
+                          for="type"
+                          title="类型"
+                        >
+                          类型
+                        </label>
+                      </div>
+                      <div
+                        class="leva-c-dkRbIj"
+                      >
+                        <select
+                          class="leva-c-bHmsMj"
+                          id="type"
+                        >
+                          <option
+                            value="0"
+                          >
+                            强调
+                          </option>
+                          <option
+                            value="1"
+                          >
+                            默认
+                          </option>
+                          <option
+                            value="2"
+                          >
+                            虚线
+                          </option>
+                          <option
+                            value="3"
+                          >
+                            链接
+                          </option>
+                          <option
+                            value="4"
+                          >
+                            文本
+                          </option>
+                        </select>
+                        <div
+                          class="leva-c-fOquTv"
+                        >
+                          默认
+                        </div>
+                        <svg
+                          class="leva-c-cHvNmv"
+                          height="5"
+                          style="transform: rotate(0deg);"
+                          viewBox="0 0 9 5"
+                          width="9"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M3.8 4.4c.4.3 1 .3 1.4 0L8 1.7A1 1 0 007.4 0H1.6a1 1 0 00-.7 1.7l3 2.7z"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="leva-c-bDGmTT"
+                  >
+                    <div
+                      class="leva-c-grzFYX leva-c-jzsQCy"
+                    >
+                      <div
+                        class="leva-c-iSkYoW"
+                      >
+                        <label
+                          class="leva-c-dKMqBT"
+                          for="danger"
+                          title="危险态"
+                        >
+                          危险态
+                        </label>
+                      </div>
+                      <div
+                        class="leva-c-TldsY"
+                      >
+                        <input
+                          id="danger"
+                          type="checkbox"
+                        />
+                        <label
+                          for="danger"
+                        >
+                          <svg
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M5 13l4 4L19 7"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                            />
+                          </svg>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="leva-c-bDGmTT"
+                  >
+                    <div
+                      class="leva-c-grzFYX leva-c-jzsQCy"
+                    >
+                      <div
+                        class="leva-c-iSkYoW"
+                      >
+                        <label
+                          class="leva-c-dKMqBT"
+                          for="icon"
+                          title="图标"
+                        >
+                          图标
+                        </label>
+                      </div>
+                      <div
+                        class="leva-c-kXfPOu"
+                      >
+                        <input
+                          autocomplete="off"
+                          class="leva-c-ghmOOI"
+                          id="icon"
+                          spellcheck="false"
+                          type="text"
+                          value=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="leva-c-bDGmTT"
+                  >
+                    <div
+                      class="leva-c-grzFYX leva-c-jzsQCy"
+                    >
+                      <div
+                        class="leva-c-iSkYoW"
+                      >
+                        <label
+                          class="leva-c-dKMqBT"
+                          for="size"
+                          title="大小"
+                        >
+                          大小
+                        </label>
+                      </div>
+                      <div
+                        class="leva-c-dkRbIj"
+                      >
+                        <select
+                          class="leva-c-bHmsMj"
+                          id="size"
+                        >
+                          <option
+                            value="0"
+                          >
+                            大
+                          </option>
+                          <option
+                            value="1"
+                          >
+                            中
+                          </option>
+                          <option
+                            value="2"
+                          >
+                            小
+                          </option>
+                        </select>
+                        <div
+                          class="leva-c-fOquTv"
+                        >
+                          中
+                        </div>
+                        <svg
+                          class="leva-c-cHvNmv"
+                          height="5"
+                          style="transform: rotate(0deg);"
+                          viewBox="0 0 9 5"
+                          width="9"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M3.8 4.4c.4.3 1 .3 1.4 0L8 1.7A1 1 0 007.4 0H1.6a1 1 0 00-.7 1.7l3 2.7z"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="leva-c-bDGmTT"
+                  >
+                    <div
+                      class="leva-c-grzFYX leva-c-jzsQCy"
+                    >
+                      <div
+                        class="leva-c-iSkYoW"
+                      >
+                        <label
+                          class="leva-c-dKMqBT"
+                          for="shape"
+                          title="形状"
+                        >
+                          形状
+                        </label>
+                      </div>
+                      <div
+                        class="leva-c-dkRbIj"
+                      >
+                        <select
+                          class="leva-c-bHmsMj"
+                          id="shape"
+                        >
+                          <option
+                            value="0"
+                          >
+                            默认
+                          </option>
+                          <option
+                            value="1"
+                          >
+                            圆形
+                          </option>
+                          <option
+                            value="2"
+                          >
+                            胶囊
+                          </option>
+                        </select>
+                        <div
+                          class="leva-c-fOquTv"
+                        >
+                          默认
+                        </div>
+                        <svg
+                          class="leva-c-cHvNmv"
+                          height="5"
+                          style="transform: rotate(0deg);"
+                          viewBox="0 0 9 5"
+                          width="9"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M3.8 4.4c.4.3 1 .3 1.4 0L8 1.7A1 1 0 007.4 0H1.6a1 1 0 00-.7 1.7l3 2.7z"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="leva-c-bDGmTT"
+                  >
+                    <div
+                      class="leva-c-grzFYX leva-c-jzsQCy"
+                    >
+                      <div
+                        class="leva-c-iSkYoW"
+                      >
+                        <label
+                          class="leva-c-dKMqBT"
+                          for="loading"
+                          title="加载中"
+                        >
+                          加载中
+                        </label>
+                      </div>
+                      <div
+                        class="leva-c-TldsY"
+                      >
+                        <input
+                          id="loading"
+                          type="checkbox"
+                        />
+                        <label
+                          for="loading"
+                        >
+                          <svg
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M5 13l4 4L19 7"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                            />
+                          </svg>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="leva-c-bDGmTT"
+                  >
+                    <div
+                      class="leva-c-grzFYX leva-c-jzsQCy"
+                    >
+                      <div
+                        class="leva-c-iSkYoW"
+                      >
+                        <label
+                          class="leva-c-dKMqBT"
+                          for="disabled"
+                          title="禁用"
+                        >
+                          禁用
+                        </label>
+                      </div>
+                      <div
+                        class="leva-c-TldsY"
+                      >
+                        <input
+                          id="disabled"
+                          type="checkbox"
+                        />
+                        <label
+                          for="disabled"
+                        >
+                          <svg
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M5 13l4 4L19 7"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                            />
+                          </svg>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="leva-c-bDGmTT"
+                  >
+                    <div
+                      class="leva-c-grzFYX leva-c-jzsQCy"
+                    >
+                      <div
+                        class="leva-c-iSkYoW"
+                      >
+                        <label
+                          class="leva-c-dKMqBT"
+                          for="ghost"
+                          title="幽灵按钮"
+                        >
+                          幽灵按钮
+                        </label>
+                      </div>
+                      <div
+                        class="leva-c-TldsY"
+                      >
+                        <input
+                          id="ghost"
+                          type="checkbox"
+                        />
+                        <label
+                          for="ghost"
+                        >
+                          <svg
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M5 13l4 4L19 7"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                            />
+                          </svg>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="studio-divider studio-divider-horizontal"
+            role="separator"
+          />
+          <div
+            class="layoutkit-flexbox emotion-36"
+          >
+            预设：
+            <button
+              class="studio-btn studio-btn-default"
+              type="button"
+            >
+              <span>
+                默认按钮
+              </span>
+            </button>
+            <button
+              class="studio-btn studio-btn-default"
+              type="button"
+            >
+              <span>
+                主要按钮
+              </span>
+            </button>
+            <button
+              class="studio-btn studio-btn-default"
+              type="button"
+            >
+              <span>
+                危险按钮
+              </span>
+            </button>
+          </div>
+          <div
+            class="studio-divider studio-divider-horizontal"
+            role="separator"
+          />
+          <div
+            class="layoutkit-flexbox emotion-37"
+          >
+            <button
+              class="studio-btn studio-btn-default"
+              disabled=""
+              type="button"
+            >
+              <span
+                class="studio-btn-icon"
+              >
+                <span
+                  aria-label="undo"
+                  class="anticon anticon-undo"
+                  role="img"
+                >
+                  <svg
+                    aria-hidden="true"
+                    data-icon="undo"
+                    fill="currentColor"
+                    focusable="false"
+                    height="1em"
+                    viewBox="64 64 896 896"
+                    width="1em"
+                  >
+                    <path
+                      d="M511.4 124C290.5 124.3 112 303 112 523.9c0 128 60.2 242 153.8 315.2l-37.5 48c-4.1 5.3-.3 13 6.3 12.9l167-.8c5.2 0 9-4.9 7.7-9.9L369.8 727a8 8 0 00-14.1-3L315 776.1c-10.2-8-20-16.7-29.3-26a318.64 318.64 0 01-68.6-101.7C200.4 609 192 567.1 192 523.9s8.4-85.1 25.1-124.5c16.1-38.1 39.2-72.3 68.6-101.7 29.4-29.4 63.6-52.5 101.7-68.6C426.9 212.4 468.8 204 512 204s85.1 8.4 124.5 25.1c38.1 16.1 72.3 39.2 101.7 68.6 29.4 29.4 52.5 63.6 68.6 101.7 16.7 39.4 25.1 81.3 25.1 124.5s-8.4 85.1-25.1 124.5a318.64 318.64 0 01-68.6 101.7c-7.5 7.5-15.3 14.5-23.4 21.2a7.93 7.93 0 00-1.2 11.1l39.4 50.5c2.8 3.5 7.9 4.1 11.4 1.3C854.5 760.8 912 649.1 912 523.9c0-221.1-179.4-400.2-400.6-399.9z"
+                    />
+                  </svg>
+                </span>
+              </span>
+              <div
+                class="layoutkit-flexbox emotion-38"
+                style="display: inline-flex;"
+              >
+                <div>
+                  撤销
+                </div>
+              </div>
+            </button>
+            <button
+              class="studio-btn studio-btn-default"
+              disabled=""
+              type="button"
+            >
+              <span
+                class="studio-btn-icon"
+              >
+                <span
+                  aria-label="redo"
+                  class="anticon anticon-redo"
+                  role="img"
+                >
+                  <svg
+                    aria-hidden="true"
+                    data-icon="redo"
+                    fill="currentColor"
+                    focusable="false"
+                    height="1em"
+                    viewBox="64 64 896 896"
+                    width="1em"
+                  >
+                    <path
+                      d="M758.2 839.1C851.8 765.9 912 651.9 912 523.9 912 303 733.5 124.3 512.6 124 291.4 123.7 112 302.8 112 523.9c0 125.2 57.5 236.9 147.6 310.2 3.5 2.8 8.6 2.2 11.4-1.3l39.4-50.5c2.7-3.4 2.1-8.3-1.2-11.1-8.1-6.6-15.9-13.7-23.4-21.2a318.64 318.64 0 01-68.6-101.7C200.4 609 192 567.1 192 523.9s8.4-85.1 25.1-124.5c16.1-38.1 39.2-72.3 68.6-101.7 29.4-29.4 63.6-52.5 101.7-68.6C426.9 212.4 468.8 204 512 204s85.1 8.4 124.5 25.1c38.1 16.1 72.3 39.2 101.7 68.6 29.4 29.4 52.5 63.6 68.6 101.7 16.7 39.4 25.1 81.3 25.1 124.5s-8.4 85.1-25.1 124.5a318.64 318.64 0 01-68.6 101.7c-9.3 9.3-19.1 18-29.3 26L668.2 724a8 8 0 00-14.1 3l-39.6 162.2c-1.2 5 2.6 9.9 7.7 9.9l167 .8c6.7 0 10.5-7.7 6.3-12.9l-37.3-47.9z"
+                    />
+                  </svg>
+                </span>
+              </span>
+              <span>
+                重做
+              </span>
+            </button>
+          </div>
+          <div>
+            <div
+              class="emotion-39 studio-draggable-panel-left-handle"
+              style="position: absolute; user-select: none; width: 10px; height: 100%; top: 0px; left: -5px; cursor: col-resize;"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`<ProEditor /> > renders controlledPresence.tsx correctly 1`] = `
 .emotion-0 {
   display: -webkit-box;
@@ -18847,21 +20469,87 @@ exports[`<ProEditor /> > renders controlledPresence.tsx correctly 1`] = `
   opacity: 0.8;
 }
 
-.emotion-42 {
+.emotion-41 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 1em;
+  height: 1em;
   display: inline-block;
-  margin-right: 4px;
+  fill: currentColor;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  font-size: 1.5rem;
+  font-size: .8rem;
+}
+
+.emotion-41:hover {
+  cursor: pointer;
 }
 
 .emotion-43 {
   display: inline-block;
-  color: #586e75;
+  margin-right: 4px;
 }
 
 .emotion-44 {
-  display: inline-block;
+  letter-spacing: 0.5px;
 }
 
 .emotion-45 {
+  padding-left: 4px;
+  font-style: italic;
+  color: rgba(0, 0, 0, 0.3);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.emotion-46 {
+  display: block;
+  padding-left: 14.399999999999999px;
+  margin-left: 4.8px;
+  color: #002b36;
+  border-left: 1px solid rgb(235, 235, 235);
+}
+
+.emotion-59 {
+  display: inline-block;
+  color: #268bd2;
+}
+
+.emotion-60 {
+  display: inline-block;
+  margin-left: 4px;
+  margin-right: 4px;
+  font-size: 0.7rem;
+  opacity: 0.8;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.emotion-61 {
+  display: inline-block;
+}
+
+.emotion-90 {
+  display: inline-block;
+  color: #2aa198;
+}
+
+.emotion-127 {
+  display: inline-block;
+  color: #586e75;
+}
+
+.emotion-129 {
   font-size: 0.7rem;
   background-color: rgb(235, 235, 235);
   border-radius: 3px;
@@ -18874,10 +20562,10 @@ exports[`<ProEditor /> > renders controlledPresence.tsx correctly 1`] = `
   >
     <div
       class="studio-app emotion-1"
+      style="height: calc(100vh - 100px);"
     >
       <div
         class="studio-editor-main emotion-2"
-        style="height: calc(100vh - 100px);"
       >
         <div
           class="studio-editor-left emotion-3"
@@ -18942,9 +20630,7 @@ exports[`<ProEditor /> > renders controlledPresence.tsx correctly 1`] = `
                               <button
                                 data-testid="component"
                                 type="button"
-                              >
-                                123
-                              </button>
+                              />
                             </div>
                           </div>
                         </div>
@@ -19385,9 +21071,7 @@ exports[`<ProEditor /> > renders controlledPresence.tsx correctly 1`] = `
           >
             <div
               data-testid="panel"
-            >
-              123
-            </div>
+            />
             <div>
               <div
                 class="emotion-36 studio-draggable-panel-left-handle"
@@ -19412,32 +21096,477 @@ exports[`<ProEditor /> > renders controlledPresence.tsx correctly 1`] = `
           <span
             class="data-key MuiBox-root emotion-40"
           >
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium emotion-41"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M16.59 8.59 12 13.17 7.41 8.59 6 10l6 6 6-6z"
+              />
+            </svg>
             <span
-              class="MuiBox-root emotion-41"
+              class="MuiBox-root emotion-42"
             >
               "
               root
               "
             </span>
             <div
-              class="MuiBox-root emotion-42"
+              class="MuiBox-root emotion-43"
             >
               :
             </div>
-          </span>
-          <div
-            class="MuiBox-root emotion-43"
-          >
-            <div
-              class="undefined-value MuiBox-root emotion-44"
+            <span
+              class="data-object-start MuiBox-root emotion-44"
             >
-              <div
+              {
+              <span
                 class="MuiBox-root emotion-45"
               >
-                undefined
+                5 Items
+              </span>
+            </span>
+          </span>
+          <div
+            class="data-object MuiBox-root emotion-46"
+          >
+            <div
+              class="data-key-pair MuiBox-root emotion-39"
+              data-testid="data-key-pairpanelPosition"
+            >
+              <span
+                class="data-key MuiBox-root emotion-40"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium emotion-41"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M16.59 8.59 12 13.17 7.41 8.59 6 10l6 6 6-6z"
+                  />
+                </svg>
+                <span
+                  class="MuiBox-root emotion-42"
+                >
+                  "
+                  panelPosition
+                  "
+                </span>
+                <div
+                  class="MuiBox-root emotion-43"
+                >
+                  :
+                </div>
+                <span
+                  class="data-object-start MuiBox-root emotion-44"
+                >
+                  {
+                  <span
+                    class="MuiBox-root emotion-45"
+                  >
+                    2 Items
+                  </span>
+                </span>
+              </span>
+              <div
+                class="data-object MuiBox-root emotion-46"
+              >
+                <div
+                  class="data-key-pair MuiBox-root emotion-39"
+                  data-testid="data-key-pairpanelPosition.x"
+                >
+                  <span
+                    class="data-key MuiBox-root emotion-40"
+                  >
+                    <span
+                      class="MuiBox-root emotion-42"
+                    >
+                      "
+                      x
+                      "
+                    </span>
+                    <div
+                      class="MuiBox-root emotion-43"
+                    >
+                      :
+                    </div>
+                  </span>
+                  <div
+                    class="MuiBox-root emotion-59"
+                  >
+                    <div
+                      class="data-type-label MuiBox-root emotion-60"
+                    >
+                      int
+                    </div>
+                    <div
+                      class="int-value MuiBox-root emotion-61"
+                    >
+                      0
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="data-key-pair MuiBox-root emotion-39"
+                  data-testid="data-key-pairpanelPosition.y"
+                >
+                  <span
+                    class="data-key MuiBox-root emotion-40"
+                  >
+                    <span
+                      class="MuiBox-root emotion-42"
+                    >
+                      "
+                      y
+                      "
+                    </span>
+                    <div
+                      class="MuiBox-root emotion-43"
+                    >
+                      :
+                    </div>
+                  </span>
+                  <div
+                    class="MuiBox-root emotion-59"
+                  >
+                    <div
+                      class="data-type-label MuiBox-root emotion-60"
+                    >
+                      int
+                    </div>
+                    <div
+                      class="int-value MuiBox-root emotion-61"
+                    >
+                      0
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <span
+                class="data-object-end MuiBox-root emotion-42"
+              >
+                }
+              </span>
+            </div>
+            <div
+              class="data-key-pair MuiBox-root emotion-39"
+              data-testid="data-key-pairpanelSize"
+            >
+              <span
+                class="data-key MuiBox-root emotion-40"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium emotion-41"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M16.59 8.59 12 13.17 7.41 8.59 6 10l6 6 6-6z"
+                  />
+                </svg>
+                <span
+                  class="MuiBox-root emotion-42"
+                >
+                  "
+                  panelSize
+                  "
+                </span>
+                <div
+                  class="MuiBox-root emotion-43"
+                >
+                  :
+                </div>
+                <span
+                  class="data-object-start MuiBox-root emotion-44"
+                >
+                  {
+                  <span
+                    class="MuiBox-root emotion-45"
+                  >
+                    1 Items
+                  </span>
+                </span>
+              </span>
+              <div
+                class="data-object MuiBox-root emotion-46"
+              >
+                <div
+                  class="data-key-pair MuiBox-root emotion-39"
+                  data-testid="data-key-pairpanelSize.width"
+                >
+                  <span
+                    class="data-key MuiBox-root emotion-40"
+                  >
+                    <span
+                      class="MuiBox-root emotion-42"
+                    >
+                      "
+                      width
+                      "
+                    </span>
+                    <div
+                      class="MuiBox-root emotion-43"
+                    >
+                      :
+                    </div>
+                  </span>
+                  <div
+                    class="MuiBox-root emotion-59"
+                  >
+                    <div
+                      class="data-type-label MuiBox-root emotion-60"
+                    >
+                      int
+                    </div>
+                    <div
+                      class="int-value MuiBox-root emotion-61"
+                    >
+                      340
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <span
+                class="data-object-end MuiBox-root emotion-42"
+              >
+                }
+              </span>
+            </div>
+            <div
+              class="data-key-pair MuiBox-root emotion-39"
+              data-testid="data-key-pairpanelExpand"
+            >
+              <span
+                class="data-key MuiBox-root emotion-40"
+              >
+                <span
+                  class="MuiBox-root emotion-42"
+                >
+                  "
+                  panelExpand
+                  "
+                </span>
+                <div
+                  class="MuiBox-root emotion-43"
+                >
+                  :
+                </div>
+              </span>
+              <div
+                class="MuiBox-root emotion-90"
+              >
+                <div
+                  class="data-type-label MuiBox-root emotion-60"
+                >
+                  bool
+                </div>
+                <div
+                  class="bool-value MuiBox-root emotion-61"
+                >
+                  true
+                </div>
+              </div>
+            </div>
+            <div
+              class="data-key-pair MuiBox-root emotion-39"
+              data-testid="data-key-pairviewport"
+            >
+              <span
+                class="data-key MuiBox-root emotion-40"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium emotion-41"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M16.59 8.59 12 13.17 7.41 8.59 6 10l6 6 6-6z"
+                  />
+                </svg>
+                <span
+                  class="MuiBox-root emotion-42"
+                >
+                  "
+                  viewport
+                  "
+                </span>
+                <div
+                  class="MuiBox-root emotion-43"
+                >
+                  :
+                </div>
+                <span
+                  class="data-object-start MuiBox-root emotion-44"
+                >
+                  {
+                  <span
+                    class="MuiBox-root emotion-45"
+                  >
+                    3 Items
+                  </span>
+                </span>
+              </span>
+              <div
+                class="data-object MuiBox-root emotion-46"
+              >
+                <div
+                  class="data-key-pair MuiBox-root emotion-39"
+                  data-testid="data-key-pairviewport.x"
+                >
+                  <span
+                    class="data-key MuiBox-root emotion-40"
+                  >
+                    <span
+                      class="MuiBox-root emotion-42"
+                    >
+                      "
+                      x
+                      "
+                    </span>
+                    <div
+                      class="MuiBox-root emotion-43"
+                    >
+                      :
+                    </div>
+                  </span>
+                  <div
+                    class="MuiBox-root emotion-59"
+                  >
+                    <div
+                      class="data-type-label MuiBox-root emotion-60"
+                    >
+                      int
+                    </div>
+                    <div
+                      class="int-value MuiBox-root emotion-61"
+                    >
+                      0
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="data-key-pair MuiBox-root emotion-39"
+                  data-testid="data-key-pairviewport.y"
+                >
+                  <span
+                    class="data-key MuiBox-root emotion-40"
+                  >
+                    <span
+                      class="MuiBox-root emotion-42"
+                    >
+                      "
+                      y
+                      "
+                    </span>
+                    <div
+                      class="MuiBox-root emotion-43"
+                    >
+                      :
+                    </div>
+                  </span>
+                  <div
+                    class="MuiBox-root emotion-59"
+                  >
+                    <div
+                      class="data-type-label MuiBox-root emotion-60"
+                    >
+                      int
+                    </div>
+                    <div
+                      class="int-value MuiBox-root emotion-61"
+                    >
+                      0
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="data-key-pair MuiBox-root emotion-39"
+                  data-testid="data-key-pairviewport.zoom"
+                >
+                  <span
+                    class="data-key MuiBox-root emotion-40"
+                  >
+                    <span
+                      class="MuiBox-root emotion-42"
+                    >
+                      "
+                      zoom
+                      "
+                    </span>
+                    <div
+                      class="MuiBox-root emotion-43"
+                    >
+                      :
+                    </div>
+                  </span>
+                  <div
+                    class="MuiBox-root emotion-59"
+                  >
+                    <div
+                      class="data-type-label MuiBox-root emotion-60"
+                    >
+                      int
+                    </div>
+                    <div
+                      class="int-value MuiBox-root emotion-61"
+                    >
+                      1
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <span
+                class="data-object-end MuiBox-root emotion-42"
+              >
+                }
+              </span>
+            </div>
+            <div
+              class="data-key-pair MuiBox-root emotion-39"
+              data-testid="data-key-paircomponentSizeOnCanvas"
+            >
+              <span
+                class="data-key MuiBox-root emotion-40"
+              >
+                <span
+                  class="MuiBox-root emotion-42"
+                >
+                  "
+                  componentSizeOnCanvas
+                  "
+                </span>
+                <div
+                  class="MuiBox-root emotion-43"
+                >
+                  :
+                </div>
+              </span>
+              <div
+                class="MuiBox-root emotion-127"
+              >
+                <div
+                  class="undefined-value MuiBox-root emotion-61"
+                >
+                  <div
+                    class="MuiBox-root emotion-129"
+                  >
+                    undefined
+                  </div>
+                </div>
               </div>
             </div>
           </div>
+          <span
+            class="data-object-end MuiBox-root emotion-42"
+          >
+            }
+          </span>
         </div>
       </div>
     </div>
@@ -19445,7 +21574,7 @@ exports[`<ProEditor /> > renders controlledPresence.tsx correctly 1`] = `
 </div>
 `;
 
-exports[`<ProEditor /> > renders customAssets.tsx correctly 1`] = `
+exports[`<ProEditor /> > renders defaultAssets.tsx correctly 1`] = `
 .emotion-0 {
   height: 100%;
 }
@@ -19916,10 +22045,10 @@ exports[`<ProEditor /> > renders customAssets.tsx correctly 1`] = `
 <div>
   <div
     class="studio-app emotion-0"
+    style="height: 100vh;"
   >
     <div
       class="studio-editor-main emotion-1"
-      style="height: 100vh;"
     >
       <div
         class="studio-editor-left emotion-2"
@@ -19984,9 +22113,7 @@ exports[`<ProEditor /> > renders customAssets.tsx correctly 1`] = `
                             <button
                               data-testid="component"
                               type="button"
-                            >
-                              123
-                            </button>
+                            />
                           </div>
                         </div>
                       </div>
@@ -20427,9 +22554,7 @@ exports[`<ProEditor /> > renders customAssets.tsx correctly 1`] = `
         >
           <div
             data-testid="panel"
-          >
-            123
-          </div>
+          />
           <div>
             <div
               class="emotion-35 studio-draggable-panel-left-handle"
@@ -20449,6 +22574,24 @@ exports[`<ProEditor /> > renders empty.tsx correctly 1`] = `
 }
 
 .emotion-1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-2 {
   height: 100%;
   background: #f5f5f5;
 }
@@ -20456,9 +22599,10 @@ exports[`<ProEditor /> > renders empty.tsx correctly 1`] = `
 <div>
   <div
     class="studio-app emotion-0"
+    style="height: 100vh;"
   >
     <div
-      class="studio-editor-empty emotion-1"
+      class="layoutkit-center emotion-1 studio-editor-empty emotion-2"
     >
       <div
         class="studio-empty"

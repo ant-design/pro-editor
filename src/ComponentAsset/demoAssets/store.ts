@@ -1,6 +1,4 @@
-import type { StoreApi } from 'zustand';
-import { create } from 'zustand';
-import { createContext } from 'zustand-utils';
+import { CreateAssetStore, createUseAssetStore } from '@ant-design/pro-editor';
 
 export interface ButtonConfig {
   content: {
@@ -12,19 +10,18 @@ export interface ButtonStore extends ButtonConfig {
   setText: (text: string) => void;
 }
 
-const createStore = () =>
-  create<ButtonStore>((set, get) => ({
-    content: {
-      text: '123',
-      icon: '',
-    },
+const createStore: CreateAssetStore<ButtonStore> = (set, get) => ({
+  content: {
+    text: '123',
+    icon: '',
+  },
 
-    setText: (text) => {
-      const { content } = get();
-      set({ content: { ...content, text } });
-    },
-  }));
+  setText: (text) => {
+    const { content } = get();
+    set({ content: { ...content, text } });
+  },
+});
 
-const { Provider, useStore } = createContext<StoreApi<ButtonStore>>();
+const { useStore } = createUseAssetStore<ButtonStore>();
 
-export { Provider, createStore, useStore };
+export { createStore, useStore };

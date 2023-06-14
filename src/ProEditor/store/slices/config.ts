@@ -1,7 +1,9 @@
+import merge from 'lodash.merge';
 import { StateCreator } from 'zustand';
 
 import { ComponentAsset } from '@/ComponentAsset';
 
+import { DocWithHistoryManager, UserActionParams } from '../../utils/yjs';
 import { InternalProEditorStore } from '../createStore';
 
 // ======== state ======== //
@@ -30,19 +32,21 @@ export interface ConfigPublicState<Config = any> {
 export interface ConfigSliceState extends ConfigPublicState {
   /** 组件的 props */
   props?: any;
+  yjsDoc: DocWithHistoryManager<{ config: any }>;
 }
 
-const initialConfigState: ConfigSliceState = {
-  // 资产
-  componentAsset: null,
-
-  // 文件配置属性
-  config: null,
-  onConfigChange: null,
-  props: {},
-};
-
 // ======== action ======== //
+
+export interface ActionPayload {
+  type: string;
+  payload: any;
+}
+
+export interface ActionOptions {
+  recordHistory?: boolean;
+  replace?: boolean;
+  payload?: Partial<UserActionParams>;
+}
 
 export interface ConfigPublicAction {
   /**
@@ -50,14 +54,14 @@ export interface ConfigPublicAction {
    */
   exportConfig: () => void;
   resetConfig: () => void;
-  updateConfig: <T>(config: Partial<T>) => void;
+  updateConfig: <T>(config: Partial<T>, options?: ActionOptions) => void;
 }
 
 export interface ConfigSlice extends ConfigPublicAction, ConfigSliceState {
   /**
    * 内部更新配置
    **/
-  internalUpdateConfig: <T>(config: Partial<T>) => void;
+  internalUpdateConfig: <T>(config: Partial<T>, payload?: ActionPayload, replace?: boolean) => void;
 }
 
 export const configSlice: StateCreator<
@@ -65,41 +69,70 @@ export const configSlice: StateCreator<
   [['zustand/devtools', never]],
   [],
   ConfigSlice
-> = (set, get) => ({
-  ...initialConfigState,
-  resetConfig: () => {
-    set({ config: initialConfigState.config, props: initialConfigState.props });
-  },
-  /**
-   * 内部修改 config 方法
-   * 传给 ProTableStore 进行 config 同步
-   */
-  internalUpdateConfig: (config) => {
-    const { onConfigChange, componentAsset } = get();
+> = (set, get) => {
+  const initialConfigState: ConfigSliceState = {
+    // 资产
+    componentAsset: null,
 
-    const nextConfig = { ...get().config, ...config };
+    // 文件配置属性
+    config: null,
+    onConfigChange: null,
+    props: {},
+    yjsDoc: new DocWithHistoryManager<{ config: any }>(),
+  };
 
-    set({ config: nextConfig }, false, '🕹内部更新：config');
+  const undoLength = initialConfigState.yjsDoc.undoManager.undoStack.length;
 
-    onConfigChange?.({
-      config: nextConfig,
-      props: componentAsset?.generateProps(nextConfig),
-      isEmpty: componentAsset?.isStarterMode(nextConfig),
-    });
-  },
+  const redoLength = initialConfigState.yjsDoc.undoManager.redoStack.length;
 
-  exportConfig: () => {
-    const eleLink = document.createElement('a');
-    eleLink.download = 'pro-edior-config.json';
-    eleLink.style.display = 'none';
-    const blob = new Blob([JSON.stringify(get().config)]);
-    eleLink.href = URL.createObjectURL(blob);
-    document.body.appendChild(eleLink);
-    eleLink.click();
-    document.body.removeChild(eleLink);
-  },
+  return {
+    ...initialConfigState,
+    undoLength,
+    redoLength,
+    resetConfig: () => {
+      set({ config: initialConfigState.config, props: initialConfigState.props });
+    },
+    /**
+     * 内部修改 config 方法
+     * 传给 ProTableStore 进行 config 同步
+     */
+    internalUpdateConfig: (config, payload, replace) => {
+      const { onConfigChange, componentAsset } = get();
 
-  updateConfig: (config) => {
-    get().internalUpdateConfig(config);
-  },
-});
+      const nextConfig = replace ? config : { ...get().config, ...config };
+
+      set({ config: nextConfig }, false, payload);
+
+      onConfigChange?.({
+        config: nextConfig,
+        props: componentAsset?.generateProps(nextConfig),
+        isEmpty: componentAsset?.isStarterMode(nextConfig),
+      });
+    },
+
+    exportConfig: () => {
+      const eleLink = document.createElement('a');
+      eleLink.download = 'pro-edior-config.json';
+      eleLink.style.display = 'none';
+      const blob = new Blob([JSON.stringify(get().config)]);
+      eleLink.href = URL.createObjectURL(blob);
+      document.body.appendChild(eleLink);
+      eleLink.click();
+      document.body.removeChild(eleLink);
+    },
+
+    updateConfig: (config, { replace, recordHistory } = {}) => {
+      get().internalUpdateConfig(
+        config,
+        { type: '调用 updateConfig 更新', payload: config },
+        replace,
+      );
+
+      const useAction = merge({}, { recordHistory: true }, { recordHistory });
+
+      if (useAction.recordHistory) {
+        get().yjsDoc.recordHistoryData({ config }, { ...useAction.payload, timestamp: Date.now() });
+      }
+    },
+  };
+};

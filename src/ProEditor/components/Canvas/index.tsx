@@ -9,12 +9,20 @@ import { useStore } from '../../store';
 import Component from './Component';
 
 const Canvas: FC = memo(() => {
-  const [viewport, updatePresenceEditor, componentAsset] = useStore(
-    (s) => [s.editorAwareness.viewport, s.internalUpdateEditorAwareness, s.componentAsset],
-    shallow,
-  );
-  const [enableCanvasInteraction, toggleCanvasInteraction] = useStore(
-    (s) => [s.enableCanvasInteraction, s.toggleCanvasInteraction],
+  const [
+    viewport,
+    componentAsset,
+    enableCanvasInteraction,
+    toggleCanvasInteraction,
+    updateEditorAwareness,
+  ] = useStore(
+    (s) => [
+      s.editorAwareness.viewport,
+      s.componentAsset,
+      s.enableCanvasInteraction,
+      s.toggleCanvasInteraction,
+      s.internalUpdateEditorAwareness,
+    ],
     shallow,
   );
 
@@ -25,7 +33,7 @@ const Canvas: FC = memo(() => {
       <FreeCanvas
         viewport={viewport}
         onViewportChange={(viewport) => {
-          updatePresenceEditor({ viewport });
+          updateEditorAwareness({ viewport });
         }}
         extraControlBtns={[
           <Tooltip

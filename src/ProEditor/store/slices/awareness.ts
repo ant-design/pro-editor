@@ -92,7 +92,10 @@ export const awarenessSlice: StateCreator<
 
     const nextAwarenessView = { ...assetAwareness, ...awareness };
 
-    set({ assetAwareness: nextAwarenessView }, false, '🕹内部更新：assetAwareness');
+    set({ assetAwareness: nextAwarenessView }, false, {
+      type: '🕹内部更新：assetAwareness',
+      payload: awareness,
+    });
 
     onAssetAwarenessChange?.(nextAwarenessView);
   },
@@ -102,7 +105,10 @@ export const awarenessSlice: StateCreator<
 
     const nextAwareness = merge({}, editorAwareness, awareness);
 
-    set({ editorAwareness: nextAwareness }, false, '🕹内部更新：editorAwareness');
+    set({ editorAwareness: nextAwareness }, false, {
+      type: '🕹内部更新：editorAwareness',
+      payload: awareness,
+    });
 
     onEditorAwarenessChange?.(nextAwareness);
   },
