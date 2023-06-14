@@ -26,3 +26,12 @@ group: 面板模块
 ## 隐藏工具条
 
 <code src="./demos/_hideToolbar.tsx" ></code>
+
+## API
+
+| 属性名       | 类型                         | 描述             |
+| ------------ | ---------------------------- | ---------------- |
+| value        | `string[][]`                 | 当前数据值       |
+| defaultValue | `string[][]`                 | 初始数据值       |
+| onChange     | `(data: string[][]) => void` | 数据变化回调函数 |
+| toolbar      | `false`                      | 工具条           |
