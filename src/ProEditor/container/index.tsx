@@ -14,11 +14,11 @@ import { useStyle } from './style';
 export type ProEditorProps = ProEditorAppProps & AppContainerProps & StoreUpdaterProps;
 
 export const ProEditor: FC<ProEditorProps> = memo((props) => {
-  const { themeMode, theme, style, showEditorDevtools, editorRef, ...res } = props;
+  const { themeMode, theme, style, __STORE_DEVTOOLS__, editorRef, ...res } = props;
   const { styles } = useStyle();
 
   return (
-    <Provider showDevtools={showEditorDevtools}>
+    <Provider showDevtools={__STORE_DEVTOOLS__}>
       <AppContainer themeMode={themeMode} theme={theme}>
         <App className={styles.app} style={style}>
           <Content {...res} />
