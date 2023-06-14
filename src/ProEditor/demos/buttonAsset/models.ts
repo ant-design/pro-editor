@@ -1,7 +1,7 @@
 import type { AssetConfigModel, JSONSchema } from '@ant-design/pro-editor';
 
 export interface ButtonConfig {
-  children: string;
+  children?: string;
   type?: 'primary' | 'default' | 'dashed' | 'link' | 'text';
   size?: 'large' | 'middle' | 'small';
   danger?: boolean;

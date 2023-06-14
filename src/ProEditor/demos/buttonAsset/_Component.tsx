@@ -1,12 +1,11 @@
+import { useProEditorStore } from '@ant-design/pro-editor';
 import { Button } from 'antd';
 import isEqual from 'fast-deep-equal';
 import { memo } from 'react';
 
-import { useStore } from './store';
-
 export const ButtonComponent = memo(() => {
-  const store = useStore((s) => s.content, isEqual);
+  const data = useProEditorStore((s) => s.config, isEqual);
 
-  console.log(store);
-  return <Button {...store} />;
+  console.log(data);
+  return <Button {...data} />;
 });
