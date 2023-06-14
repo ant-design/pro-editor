@@ -1,6 +1,6 @@
 import { createStyles } from 'antd-style';
 import { LevaPanel, LevaStoreProvider, useCreateStore } from 'leva';
-import { ReactNode, memo } from 'react';
+import { CSSProperties, ReactNode, memo } from 'react';
 import Schema, { SchemaProps } from './Schema';
 
 const useStyles = createStyles(
@@ -21,8 +21,7 @@ const useStyles = createStyles(
     --leva-fonts-mono: ${token.fontFamilyCode};
 
     overflow: auto;
-    width: 100%;
-    height: 100%;
+
     padding: 6px 0;
 
     > div {
@@ -45,15 +44,17 @@ const useStyles = createStyles(
 
 export interface LevaPanelProps<T> extends SchemaProps<T> {
   title?: ReactNode;
+  className?: string;
+  style?: CSSProperties;
 }
 
 const Panel: <T>(props: LevaPanelProps<T>) => ReactNode = memo(
-  ({ value, title, onChange, schema }) => {
+  ({ value, title, onChange, schema, className, style }) => {
     const store = useCreateStore();
-    const { styles } = useStyles();
+    const { styles, cx } = useStyles();
 
     return (
-      <div className={styles}>
+      <div className={cx(styles, className)} style={style}>
         <LevaPanel
           hideCopyButton
           neverHide
