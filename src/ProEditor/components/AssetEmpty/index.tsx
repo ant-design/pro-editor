@@ -1,6 +1,8 @@
 import { Empty } from 'antd';
 import type { FC } from 'react';
 import { memo } from 'react';
+import { Center } from 'react-layout-kit';
+
 import { createStyles } from '../../../theme';
 
 import { useStore } from '../../store';
@@ -21,9 +23,9 @@ const AssetEmpty: FC = memo(() => {
   const { styles } = useStyles(prefixCls);
 
   return (
-    <div className={styles.cls}>
+    <Center className={styles.cls}>
       <Empty description={'未找到 ComponentAsset，请在 props 中传入 ComponentAsset'} />
-    </div>
+    </Center>
   );
 });
 

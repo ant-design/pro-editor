@@ -5,6 +5,7 @@ import { useTheme } from 'antd-style';
 import type { FC } from 'react';
 import { memo, useState } from 'react';
 import { Flexbox } from 'react-layout-kit';
+import { shallow } from 'zustand/shallow';
 import { useStore } from '../../store';
 import { useStyles } from './style';
 
@@ -18,7 +19,7 @@ interface CodePanelProps {
  * 用于组装成品代码并高亮展示
  */
 export const CodePanel: FC<CodePanelProps> = memo((props) => {
-  const { config, componentAsset } = useStore();
+  const [config, componentAsset] = useStore((s) => [s.config, s.componentAsset], shallow);
   const { styles, cx } = useStyles();
   const [expand, setExpand] = useState(true);
   const [height, setHeight] = useState(220);

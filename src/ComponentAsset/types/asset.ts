@@ -1,10 +1,10 @@
-import type { UseBoundStore } from 'zustand/react';
-
 import { FC, ReactNode } from 'react';
-import type { CanvasInteractRule } from '../../InteractContainer';
+
+import type { CreateAssetStore } from '@/ComponentAsset';
+import { AssetStoreOptions } from '@/ComponentAsset/store';
+import type { CanvasInteractRule } from '@/InteractContainer';
 import type { CodeEmitter } from './code';
 import type { AssetModels } from './model';
-import { DataProvider } from './render';
 
 export type CanvasRule = CanvasInteractRule;
 
@@ -35,7 +35,6 @@ export interface ComponentAssetUIParams {
    */
   DevelopController?: FC;
 
-  DataProvider?: DataProvider;
   /**
    * 判断是否进入引导模式
    */
@@ -60,12 +59,10 @@ export interface ComponentAssetParams<Config, Props = any> {
    * 初始化的默认值
    */
   defaultConfig?: Partial<Config>;
-  /**
-   * 是否显示 devtools
-   */
-  showDevtools?: boolean;
 
-  createStore: (params?: any) => UseBoundStore<any>;
+  createStore: CreateAssetStore<Config>;
+
+  storeOptions?: AssetStoreOptions<Config>;
   /**
    * 组件的业务数据模型
    * @param config

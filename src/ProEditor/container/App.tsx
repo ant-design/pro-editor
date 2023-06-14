@@ -5,6 +5,7 @@ import { shallow } from 'zustand/shallow';
 import NavBar from '../components/NavBar';
 
 import AssetEmpty from '../components/AssetEmpty';
+import AssetStoreUpdater from '../components/AssetStoreUpdater';
 import ConfigPanel from '../components/ConfigPanel';
 import Stage from '../components/Stage';
 
@@ -24,7 +25,7 @@ export interface ProEditorAppProps {
    * 自定义错误兜底形态
    */
   ErrorBoundary?: FC;
-  showEditorDevtools?: boolean;
+  __STORE_DEVTOOLS__?: boolean;
   /**
    * 代码复制回调
    */
@@ -50,7 +51,7 @@ export const ProEditor: FC<ProEditorAppProps> = memo((props) => {
   // 第一次渲染的时候 componentAsset 是不存在的，为避免面板模块报错，返回空状态组件
   if (!componentAsset) return <AssetEmpty />;
 
-  const DataProvider = componentAsset.DataProvider;
+  const AssetProvider = componentAsset.AssetProvider;
 
   const children = (
     <div className={styles.main} style={style}>
@@ -68,11 +69,10 @@ export const ProEditor: FC<ProEditorAppProps> = memo((props) => {
 
   return (
     <ErrorBoundary onExportConfig={exportConfig}>
-      {!DataProvider ? (
-        children
-      ) : (
-        <DataProvider createStore={() => componentAsset.componentStore}>{children}</DataProvider>
-      )}
+      <AssetProvider createStore={() => componentAsset.componentStore}>
+        {children}
+        <AssetStoreUpdater />
+      </AssetProvider>
     </ErrorBoundary>
   );
 });

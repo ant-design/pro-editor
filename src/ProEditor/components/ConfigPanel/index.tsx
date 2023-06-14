@@ -1,30 +1,25 @@
 import { DraggablePanel } from '@ant-design/pro-editor';
+import isEqual from 'fast-deep-equal';
 import { memo } from 'react';
 import { shallow } from 'zustand/shallow';
 
 import { useStore } from '../../store';
 
 const ConfigPanel: React.FC = memo(() => {
-  const [
-    panelPosition,
-    width,
-    updatePosition,
-    updatePanelSize,
-    togglePanelExpand,
-    componentAsset,
-    isExpand,
-  ] = useStore(
-    (s) => [
-      s.editorAwareness.panelPosition,
-      s.editorAwareness.panelSize.width,
-      s.updatePanelPosition,
-      s.updatePanelSize,
-      s.togglePanelExpand,
-      s.componentAsset,
-      s.editorAwareness.panelExpand,
-    ],
-    shallow,
-  );
+  const [width, updatePosition, updatePanelSize, togglePanelExpand, componentAsset, isExpand] =
+    useStore(
+      (s) => [
+        s.editorAwareness.panelSize.width,
+        s.updatePanelPosition,
+        s.updatePanelSize,
+        s.togglePanelExpand,
+        s.componentAsset,
+        s.editorAwareness.panelExpand,
+      ],
+      shallow,
+    );
+
+  const panelPosition = useStore((s) => s.editorAwareness.panelPosition, isEqual);
 
   return (
     <DraggablePanel

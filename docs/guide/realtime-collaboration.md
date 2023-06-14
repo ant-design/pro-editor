@@ -18,8 +18,6 @@ group: 容器能力
 
 直接复用了 [zustand-middleware-yjs](https://github.com/joebobmiles/zustand-middleware-yjs) 中间件
 
-PS: 当前该中间件未实现 Y.Text 对象的协议，因此多人同步编辑一个文本块时可能会错位，作者可能会在 11 月份去[实现该功能](https://github.com/joebobmiles/zustand-middleware-yjs/issues/36)
-
 后面只要为 ProEditor 容器设计合适的数据同步分层结构，ProEditor 容器就可以具有多人协作的能力。
 
 ## 协同感知

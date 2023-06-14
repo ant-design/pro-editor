@@ -1,11 +1,14 @@
 /*eslint no-invalid-this: "error"*/
 import { getDefaultValueFromSchema } from '@c2d2c/utils';
 import { FC, ReactNode } from 'react';
+import { StoreApi } from 'zustand';
 import type { UseBoundStore } from 'zustand/react';
 
 import type { EditorMode } from '../ProEditor';
 import type { AssetModels, CanvasRule, CodeEmitter, ComponentAssetParams } from './types';
 import { DataProvider, EmitterEnv } from './types';
+
+import { createAssetStore, WithoutCallSignature } from './store';
 
 export class ComponentAsset<Config = any, Props = any> {
   /**
@@ -33,10 +36,8 @@ export class ComponentAsset<Config = any, Props = any> {
    * 组件开发控制器
    */
   DevelopController: FC;
-  /**
-   * 组件数据提供者
-   */
-  DataProvider: DataProvider;
+
+  AssetProvider: DataProvider;
 
   ErrorBoundary: FC<{ children: ReactNode }> = ({ children }) => <>{children}</>;
 
@@ -45,11 +46,12 @@ export class ComponentAsset<Config = any, Props = any> {
 
   defaultConfig: Partial<Config>;
   componentStore: UseBoundStore<any>;
+  componentStoreApi: () => WithoutCallSignature<StoreApi<any>>;
+  configSelector: (s: Config) => Partial<Config>;
+  setConfig: (config: Config, set) => void;
   codeEmitter: CodeEmitter<Config, Props>;
 
-  isStarterMode: (store: any) => boolean = () => {
-    throw Error('暂未实现 emptyModeSelector 方法，请在初始化时传入 emptyModeSelector');
-  };
+  isStarterMode: (store: any) => boolean = () => false;
 
   constructor(params: ComponentAssetParams<Config>) {
     this.id = params.id;
@@ -62,11 +64,19 @@ export class ComponentAsset<Config = any, Props = any> {
       this.defaultConfig = params.defaultConfig;
     }
 
+    const { createStore, Provider, useStoreApi } = createAssetStore(
+      params.createStore,
+      params.storeOptions,
+    );
+
     // 初始化 store
-    this.componentStore = params.createStore({
-      showDevtools: params.showDevtools,
-      defaultConfig: params.defaultConfig,
-    });
+    this.componentStore = createStore();
+    this.componentStoreApi = useStoreApi;
+    this.AssetProvider = Provider;
+
+    this.configSelector =
+      params.storeOptions?.getConfig || ((s: Config) => JSON.parse(JSON.stringify(s)));
+    this.setConfig = params.storeOptions?.setConfig || ((config: Config, set) => set(config));
 
     // 交互规则
     this.rules = params.ui.rules;
@@ -75,7 +85,6 @@ export class ComponentAsset<Config = any, Props = any> {
     this.Component = params.ui.Component;
     this.ConfigPanel = params.ui.ConfigPanel;
     this.CanvasStarter = params.ui.CanvasStarter;
-    this.DataProvider = params.ui.DataProvider;
     this.DesignController = params.ui.DesignController;
     this.DevelopController = params.ui.DevelopController;
 
