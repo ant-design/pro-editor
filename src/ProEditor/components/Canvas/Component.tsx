@@ -6,33 +6,28 @@ import { memo, useEffect, useRef } from 'react';
 import { shallow } from 'zustand/shallow';
 
 import InteractContainer from '../../../InteractContainer';
+import { useUpdateEditorAwareness } from '../../hooks/useEditorAwareness';
 import { useStore } from '../../store';
 
 const Component: FC = memo(() => {
-  const [
-    prefixCls,
-    interaction,
-    enableCanvasInteraction,
-    componentAsset,
-    updateCanvasInteract,
-    internalUpdatePresenceEditor,
-  ] = useStore(
-    (s) => [
-      `${s.prefixCls}-canvas`,
-      s.interaction,
-      s.enableCanvasInteraction,
-      s.componentAsset,
-      s.internalUpdateCanvasInteract,
-      s.internalUpdateAssetAwareness,
-    ],
-    shallow,
-  );
+  const [prefixCls, interaction, enableCanvasInteraction, componentAsset, updateCanvasInteract] =
+    useStore(
+      (s) => [
+        `${s.prefixCls}-canvas`,
+        s.interaction,
+        s.enableCanvasInteraction,
+        s.componentAsset,
+        s.internalUpdateCanvasInteract,
+      ],
+      shallow,
+    );
 
   const ref = useRef();
   const size = useSize(ref);
+  const { updateEditorAwareness } = useUpdateEditorAwareness();
 
   useEffect(() => {
-    internalUpdatePresenceEditor({ componentSizeOnCanvas: size });
+    updateEditorAwareness({ componentSizeOnCanvas: size });
   }, [size]);
 
   return (

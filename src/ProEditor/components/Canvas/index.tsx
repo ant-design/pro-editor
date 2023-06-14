@@ -5,12 +5,13 @@ import { memo } from 'react';
 import { shallow } from 'zustand/shallow';
 
 import FreeCanvas from '../../../FreeCanvas';
+import { useUpdateEditorAwareness } from '../../hooks/useEditorAwareness';
 import { useStore } from '../../store';
 import Component from './Component';
 
 const Canvas: FC = memo(() => {
-  const [viewport, updatePresenceEditor, componentAsset] = useStore(
-    (s) => [s.editorAwareness.viewport, s.internalUpdateEditorAwareness, s.componentAsset],
+  const [viewport, componentAsset] = useStore(
+    (s) => [s.editorAwareness.viewport, s.componentAsset],
     shallow,
   );
   const [enableCanvasInteraction, toggleCanvasInteraction] = useStore(
@@ -20,12 +21,14 @@ const Canvas: FC = memo(() => {
 
   const ErrorBoundary = componentAsset.ErrorBoundary;
 
+  const { updateEditorAwareness } = useUpdateEditorAwareness();
+
   return (
     <ErrorBoundary>
       <FreeCanvas
         viewport={viewport}
         onViewportChange={(viewport) => {
-          updatePresenceEditor({ viewport });
+          updateEditorAwareness({ viewport });
         }}
         extraControlBtns={[
           <Tooltip

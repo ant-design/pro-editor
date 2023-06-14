@@ -34,11 +34,11 @@ const initialCanvasState: CanvasSliceState = {
 
 export interface CanvasPublicAction {
   deselectCanvas: () => void;
+  updateViewport: (viewPort: Partial<Viewport>) => void;
 }
 export interface CanvasSlice extends CanvasPublicAction, CanvasSliceState {
   internalUpdateCanvasInteract: (interaction: InteractStatus) => void;
   toggleCanvasInteraction: () => void;
-  updateViewport: (viewPort: Partial<Viewport>) => void;
 }
 
 export const canvasSlice: StateCreator<
