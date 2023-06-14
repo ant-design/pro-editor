@@ -3,7 +3,6 @@ export * from './ActionIcon';
 export { default as Awareness } from './Awareness';
 export type { IAwareness } from './Awareness';
 export { default as CollapseTitle } from './CollapseTitle';
-export { default as ColorPicker } from './ColorPicker';
 export * from './ColumnList';
 export * from './ComponentAsset';
 export * from './ConfigProvider';

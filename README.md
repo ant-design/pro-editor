@@ -121,8 +121,11 @@ Open your browser and visit http://localhost:8000
 
 <!-- CONTRIBUTION GROUP -->
 
-> 📊 Total: <kbd>**1**</kbd>
+> 📊 Total: <kbd>**2**</kbd>
 
+<a href="https://github.com/rdmclin2" title="rdmclin2">
+  <img src="https://avatars.githubusercontent.com/u/4705237?v=4" width="50" />
+</a>
 <a href="https://github.com/arvinxx" title="arvinxx">
   <img src="https://avatars.githubusercontent.com/u/28616219?v=4" width="50" />
 </a>
