@@ -2,6 +2,7 @@ import { Viewport } from 'reactflow';
 import { StateCreator } from 'zustand';
 
 import { InteractStatus, OnInteractionStatusChange } from '@/InteractContainer';
+import { UserActionParams } from '@/ProEditor/utils/yjs';
 import { InternalProEditorStore } from '../createStore';
 
 // ======== state ======== //
@@ -35,9 +36,16 @@ const initialCanvasState: CanvasSliceState = {
 export interface CanvasPublicAction {
   deselectCanvas: () => void;
   updateViewport: (viewPort: Partial<Viewport>) => void;
+  updateCanvasInteraction: (
+    interaction: InteractStatus,
+    action?: Partial<UserActionParams>,
+  ) => void;
 }
 export interface CanvasSlice extends CanvasPublicAction, CanvasSliceState {
-  internalUpdateCanvasInteract: (interaction: InteractStatus) => void;
+  internalUpdateCanvasInteract: (
+    interaction: InteractStatus,
+    action?: Partial<UserActionParams>,
+  ) => void;
   toggleCanvasInteraction: () => void;
 }
 
@@ -49,10 +57,12 @@ export const canvasSlice: StateCreator<
 > = (set, get) => ({
   ...initialCanvasState,
   //内部更新交互参数方法
-  internalUpdateCanvasInteract: (interact) => {
+  internalUpdateCanvasInteract: (interact, action) => {
     const { onInteractionChange } = get();
 
-    set({ interaction: interact }, false, '🕹内部更新：interaction');
+    set({ interaction: interact }, false, {
+      type: action?.type || '🕹内部更新：interaction',
+    });
 
     onInteractionChange?.(interact);
   },
@@ -70,6 +80,10 @@ export const canvasSlice: StateCreator<
   deselectCanvas: () => {
     const { internalUpdateCanvasInteract } = get();
     internalUpdateCanvasInteract({ status: 'unSelected' });
+  },
+
+  updateCanvasInteraction: (interaction) => {
+    get().internalUpdateCanvasInteract(interaction, { name: 'updateCanvasInteraction 触发' });
   },
 
   updateViewport: (viewPort) => {
