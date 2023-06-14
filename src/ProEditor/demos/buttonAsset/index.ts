@@ -1,7 +1,7 @@
 import type { ComponentAssetParams } from '@ant-design/pro-editor';
 
-import { ButtonComponent } from './Component';
-import { ButtonPanel } from './Panel';
+import { ButtonComponent } from './_Component';
+import { ButtonPanel } from './_Panel';
 
 import { ButtonStore, createStore } from './store';
 
