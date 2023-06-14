@@ -48,12 +48,24 @@ export interface ActionOptions {
   payload?: Partial<UserActionParams>;
 }
 
+/**
+ * 公共配置操作接口
+ */
 export interface ConfigPublicAction {
   /**
    * 导出配置
    */
   exportConfig: () => void;
+  /**
+   * 重置配置
+   */
   resetConfig: () => void;
+  /**
+   * 更新配置
+   * @template T - 配置对象类型
+   * @param {Partial<T>} config - 需要更新的配置对象
+   * @param {ActionOptions} [options] - 配置项
+   */
   updateConfig: <T>(config: Partial<T>, options?: ActionOptions) => void;
 }
 
