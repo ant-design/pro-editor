@@ -1,5 +1,38 @@
 # Changelog
 
+## [Version&nbsp;0.3.0-alpha.8](https://github.com/ant-design/pro-editor/compare/v0.3.0-alpha.7...v0.3.0-alpha.8)
+
+<sup>Released on **2023-06-14**</sup>
+
+#### ✨ 新特性
+
+- 完善 AssetStore 数据链路.
+
+#### 💄 样式
+
+- **leva-panel**: 添加 style 与 className 属性.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's improved
+
+- 完善 AssetStore 数据链路 ([20df5b2](https://github.com/ant-design/pro-editor/commit/20df5b2))
+
+#### Styles
+
+- **leva-panel**: 添加 style 与 className 属性 ([b0920fe](https://github.com/ant-design/pro-editor/commit/b0920fe))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
 ## [Version&nbsp;0.3.0-alpha.7](https://github.com/ant-design/pro-editor/compare/v0.3.0-alpha.6...v0.3.0-alpha.7)
 
 <sup>Released on **2023-06-14**</sup>
