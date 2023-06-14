@@ -34,13 +34,26 @@ const initialCanvasState: CanvasSliceState = {
 };
 
 export interface CanvasPublicAction {
+  /**
+   * 取消选中 Canvas
+   */
   deselectCanvas: () => void;
+  /**
+   * 更新视口
+   * @param viewPort - 视口的部分属性
+   */
   updateViewport: (viewPort: Partial<Viewport>) => void;
+  /**
+   * 更新 Canvas 交互状态
+   * @param interaction - 交互状态
+   * @param action - 用户操作的部分参数
+   */
   updateCanvasInteraction: (
     interaction: InteractStatus,
     action?: Partial<UserActionParams>,
   ) => void;
 }
+
 export interface CanvasSlice extends CanvasPublicAction, CanvasSliceState {
   internalUpdateCanvasInteract: (
     interaction: InteractStatus,
