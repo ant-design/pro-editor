@@ -5,6 +5,7 @@ import { shallow } from 'zustand/shallow';
 import NavBar from '../components/NavBar';
 
 import AssetEmpty from '../components/AssetEmpty';
+import AssetStoreUpdater from '../components/AssetStoreUpdater';
 import ConfigPanel from '../components/ConfigPanel';
 import Stage from '../components/Stage';
 
@@ -24,7 +25,7 @@ export interface ProEditorAppProps {
    * 自定义错误兜底形态
    */
   ErrorBoundary?: FC;
-  showEditorDevtools?: boolean;
+  __STORE_DEVTOOLS__?: boolean;
   /**
    * 代码复制回调
    */
@@ -71,6 +72,7 @@ export const ProEditor: FC<ProEditorAppProps> = memo((props) => {
     <ErrorBoundary onExportConfig={exportConfig}>
       <AssetProvider createStore={() => componentAsset.componentStore}>
         {!DataProvider ? children : <DataProvider>{children}</DataProvider>}
+        <AssetStoreUpdater />
       </AssetProvider>
     </ErrorBoundary>
   );
