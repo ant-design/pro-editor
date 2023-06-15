@@ -1,3 +1,3 @@
 export * from './ComponentAsset';
-export { createUseAssetStore, type CreateAssetStore } from './store';
+export { createTestAssetStore, createUseAssetStore, type CreateAssetStore } from './store';
 export * from './types';
