@@ -24,11 +24,13 @@ export const createTestAssetStore = <T>(createStore: CreateAssetStore<T>) => {
   const useAssetStore = create<T>(createStore);
   const { getConfig, setConfig } = useEditorStore.getState();
 
-  useAssetStore.setState({ getConfig, setConfig } as any);
+  const init = () => {
+    useAssetStore.setState({ getConfig, setConfig } as any);
 
-  useEditorStore.subscribe(({ config }) => {
-    useAssetStore.setState(config);
-  });
+    useEditorStore.subscribe(({ config }) => {
+      useAssetStore.setState(config);
+    });
+  };
 
-  return useAssetStore;
+  return { useAssetStore, init, useEditorStore };
 };
