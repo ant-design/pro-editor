@@ -1,5 +1,6 @@
 ---
 title: Highlight 代码高亮
+atomId: Highlight
 group: 基础组件
 ---
 

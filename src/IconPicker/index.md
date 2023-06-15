@@ -1,5 +1,6 @@
 ---
 title: IconPicker 图标选择器
+atomId: IconPicker
 group:
   title: 面板模块
   order: 1

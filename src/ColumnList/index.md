@@ -1,5 +1,6 @@
 ---
 title: ColumnList 列编辑列表
+atomId: ColumnList
 group: 可排序组件
 order: 3
 ---
@@ -9,10 +10,6 @@ order: 3
 ## 何时使用
 
 根据 `schema` 自动生成简单的排序列表。
-
-## 何时使用
-
-简单排序表单场景。
 
 ## 代码演示
 
