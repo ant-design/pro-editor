@@ -1,5 +1,6 @@
 ---
 title: SortableList 可排序列表
+atomId: SortableList
 group:
   title: 可排序组件
   order: 1

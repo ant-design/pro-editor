@@ -1,5 +1,6 @@
 ---
 title: CollapseTitle 折叠容器
+atomId: CollapseTitle
 group: 基础组件
 ---
 

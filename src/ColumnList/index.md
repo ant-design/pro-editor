@@ -1,5 +1,6 @@
 ---
 title: ColumnList 列编辑列表
+atomId: ColumnList
 group: 可排序组件
 order: 3
 ---

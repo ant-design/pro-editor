@@ -1,5 +1,6 @@
 ---
 title: InteractContainer 交互容器
+atomId: InteractContainer
 group: 面板模块
 ---
 
