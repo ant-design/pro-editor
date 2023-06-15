@@ -8,14 +8,28 @@ describe('useProEditor', () => {
     } = renderHook(() => useProEditor<{ name: string }>(), {
       wrapper: ProEditorProvider,
     });
-    expect(instance).toHaveProperty('getViewport');
-    expect(instance).toHaveProperty('setViewport');
+
+    expect(instance).toHaveProperty('getProps');
     expect(instance).toHaveProperty('getConfig');
     expect(instance).toHaveProperty('setConfig');
-    expect(instance).toHaveProperty('getProps');
-    expect(instance).toHaveProperty('getEditorAwareness');
+    expect(instance).toHaveProperty('exportConfig');
+    expect(instance).toHaveProperty('resetConfig');
+
+    expect(instance).toHaveProperty('getViewport');
+    expect(instance).toHaveProperty('setViewport');
+
     expect(instance).toHaveProperty('getCanvasInteraction');
     expect(instance).toHaveProperty('setCanvasInteraction');
+    expect(instance).toHaveProperty('deselectCanvas');
+
+    expect(instance).toHaveProperty('undo');
+    expect(instance).toHaveProperty('redo');
+    expect(instance).toHaveProperty('undoStack');
+    expect(instance).toHaveProperty('redoStack');
+
+    expect(instance).toHaveProperty('getEditorAwareness');
+
+    expect(instance).toHaveProperty('togglePanelExpand');
 
     expect(instance).not.toHaveProperty('props');
     expect(instance).not.toHaveProperty('config');

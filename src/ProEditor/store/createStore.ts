@@ -3,21 +3,11 @@ import { create } from 'zustand';
 import { optionalDevtools } from 'zustand-utils';
 import { DevtoolsOptions } from 'zustand/middleware';
 
-import {
-  AwarenessPublicAction,
-  AwarenessSlice,
-  AwarenessSliceState,
-  awarenessSlice,
-} from './slices/awareness';
-import { CanvasPublicAction, CanvasSlice, PublicCanvasState, canvasSlice } from './slices/canvas';
-import { ConfigPublicAction, ConfigPublicState, ConfigSlice, configSlice } from './slices/config';
+import { AwarenessSlice, AwarenessSliceState, awarenessSlice } from './slices/awareness';
+import { CanvasSlice, PublicCanvasState, canvasSlice } from './slices/canvas';
+import { ConfigPublicState, ConfigSlice, configSlice } from './slices/config';
 import { ConfigPanelSlice, configPanelSlice } from './slices/configPanel';
-import {
-  GeneralPublicAction,
-  GeneralSlice,
-  GeneralSliceState,
-  generalSlice,
-} from './slices/general';
+import { GeneralSlice, GeneralSliceState, generalSlice } from './slices/general';
 
 /**
  * ProEditorState 接口描述编辑器状态
@@ -35,13 +25,6 @@ export type InternalProEditorStore = ProEditorState &
   ConfigPanelSlice &
   AwarenessSlice &
   GeneralSlice;
-
-export type PublicProEditorStore = CanvasPublicAction &
-  ConfigPublicAction &
-  GeneralPublicAction &
-  AwarenessPublicAction;
-
-export type ProEditorStoreKey = keyof InternalProEditorStore;
 
 const vanillaStore: StateCreator<InternalProEditorStore, [['zustand/devtools', never]]> = (
   ...params
