@@ -188,5 +188,5 @@ export interface JSONSchema<T extends Record<string, any> = any> {
 }
 interface EnumOption {
   label?: string;
-  value?: string;
+  value?: any;
 }
