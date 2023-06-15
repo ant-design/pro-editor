@@ -24,7 +24,7 @@ export const buttonAssetParams: ComponentAssetParams<ButtonConfig> = {
   },
 
   storeOptions: {
-    devtools: true,
+    devtools: { name: 'ButtonAssetStore' },
   },
 
   codeEmitter: () => '',
