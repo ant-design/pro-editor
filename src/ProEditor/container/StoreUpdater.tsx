@@ -1,6 +1,6 @@
 import isEqual from 'fast-deep-equal';
 import { memo, MutableRefObject, useImperativeHandle } from 'react';
-import { createStoreUpdater } from 'zustand-utils';
+import { createStoreUpdater, storeApiSetState } from 'zustand-utils';
 
 import { ProEditorInstance, useProEditor } from '../hooks/useProEditor';
 import type { ProEditorState } from '../store';
@@ -29,23 +29,26 @@ const StoreUpdater = memo(
     const storeApi = useStoreApi();
     const useStoreUpdater = createStoreUpdater(storeApi);
     const { yjsDoc } = storeApi.getState();
-
     // 结合 yjs 进行变更
     const useUpdateWithYjs = (key: 'config', value: any) => {
       useStoreUpdater(key, value, [value], (partialNewState) => {
         // 如果相等，不需要更新
         if (isEqual(value, storeApi.getState()[key])) return;
 
-        storeApi.setState(partialNewState);
+        storeApiSetState(storeApi, partialNewState, false, {
+          type: `📶 useUpdateWithYjs / ${key}`,
+          payload: value,
+        });
 
         yjsDoc.updateHistoryData(partialNewState);
       });
     };
 
     useStoreUpdater('mode', mode);
-    useUpdateWithYjs('config', config);
     useStoreUpdater('assetAwareness', assetAwareness);
     useStoreUpdater('editorAwareness', editorAwareness);
+
+    useUpdateWithYjs('config', config);
 
     // 为了在受控模式下避免不必要的渲染，将下面的对象只做第一次加载
     useStoreUpdater('componentAsset', componentAsset, []);
