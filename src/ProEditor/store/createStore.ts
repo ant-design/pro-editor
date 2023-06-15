@@ -1,6 +1,7 @@
 import type { StateCreator } from 'zustand';
 import { create } from 'zustand';
 import { optionalDevtools } from 'zustand-utils';
+import { DevtoolsOptions } from 'zustand/middleware';
 
 import {
   AwarenessPublicAction,
@@ -52,8 +53,11 @@ const vanillaStore: StateCreator<InternalProEditorStore, [['zustand/devtools', n
   ...awarenessSlice(...params),
 });
 
-export const createStore = (showDevTools: boolean = false) => {
-  const devtools = optionalDevtools(showDevTools);
+export const createStore = (options: boolean | DevtoolsOptions = false) => {
+  const devtools = optionalDevtools(options !== false);
 
-  return create<InternalProEditorStore>()(devtools(vanillaStore, { name: 'ProEditorStore' }));
+  const devtoolOptions =
+    options === false ? undefined : options === true ? { name: 'ProEditorStore' } : options;
+
+  return create<InternalProEditorStore>()(devtools(vanillaStore, devtoolOptions));
 };

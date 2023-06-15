@@ -1,11 +1,12 @@
 import type { FC, ReactNode } from 'react';
+import { DevtoolsOptions } from 'zustand/middleware';
 
 import { createStore, Provider, useStoreApi } from '../store';
 
 export const ProEditorProvider: FC<{
   children: ReactNode;
-  showDevtools?: boolean;
-}> = ({ children, showDevtools }) => {
+  devtoolOptions?: boolean | DevtoolsOptions;
+}> = ({ children, devtoolOptions }) => {
   let isWrapped = true;
 
   const Content = <>{children}</>;
@@ -20,9 +21,7 @@ export const ProEditorProvider: FC<{
     return Content;
   }
 
-  return (
-    <Provider createStore={() => createStore(showDevtools)}>{Content}</Provider>
-  );
+  return <Provider createStore={() => createStore(devtoolOptions)}>{Content}</Provider>;
 };
 
 export default ProEditorProvider;

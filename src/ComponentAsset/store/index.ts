@@ -1,9 +1,9 @@
+import { ReactNode } from 'react';
 import { StateCreator, StoreApi, create } from 'zustand';
 import { UseContextStore, createContext, optionalDevtools } from 'zustand-utils';
 import { DevtoolsOptions } from 'zustand/middleware';
 
 import type { ProEditorInstance } from '@/ProEditor';
-import { ReactNode } from 'react';
 
 export interface AssetStoreOptions<T = any> {
   devtools?: boolean | DevtoolsOptions;
