@@ -9,8 +9,7 @@ export * from './hooks/useProEditor';
 
 export {
   EditorMode,
-  isDesignModeSelector,
   storeSelectors as proEditorSelectors,
   useStore as useProEditorStore,
 } from './store';
-export type { AwarenessEditor, PublicProEditorStore as ProEditorStore } from './store';
+export type { AwarenessEditor, InternalProEditorStore as ProEditorStore } from './store';

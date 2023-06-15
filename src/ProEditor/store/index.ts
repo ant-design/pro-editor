@@ -8,7 +8,7 @@ const { Provider, useStore, useStoreApi } = createContext<StoreApi<InternalProEd
 
 export { Provider, createStore, useStore, useStoreApi };
 
-export type { ProEditorState, ProEditorStoreKey, PublicProEditorStore } from './createStore';
+export type { InternalProEditorStore, ProEditorState } from './createStore';
 
 export * from './selectors';
 export type { AwarenessEditor } from './slices/awareness';
