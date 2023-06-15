@@ -1,6 +1,7 @@
 ---
 title: ErrorBoundary 错误提示
 order: 100
+atomId: ErrorBoundary
 group:
   title: 面板模块
   order: 1

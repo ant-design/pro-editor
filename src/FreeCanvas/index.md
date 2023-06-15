@@ -1,5 +1,6 @@
 ---
 title: FreeCanvas 自由画布
+atomId: FreeCanvas
 group: 面板模块
 ---
 

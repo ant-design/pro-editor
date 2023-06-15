@@ -1,5 +1,6 @@
 ---
 title: TipGuide 关注点引导
+atomId: TipGuide
 group: 基础组件
 ---
 

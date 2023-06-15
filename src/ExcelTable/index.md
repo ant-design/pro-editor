@@ -1,5 +1,6 @@
 ---
 title: ExcelTable 类 Excel 表格组件
+atomId: ExcelTable
 group: 面板模块
 ---
 
