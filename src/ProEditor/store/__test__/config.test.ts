@@ -63,7 +63,7 @@ describe('configSlice', () => {
     act(() => {
       useStore.setState({ internalUpdateConfig });
 
-      result.current.updateConfig({ foo: 'bar' }, { recordHistory: true });
+      result.current.setConfig({ foo: 'bar' }, { recordHistory: true });
     });
 
     expect(result.current.yjsDoc.undoManager.undoStack).toHaveLength(1);
@@ -73,7 +73,7 @@ describe('configSlice', () => {
     const { result } = renderHook(() => useStore());
 
     act(() => {
-      result.current.updateConfig({ foo: 'bar' }, { recordHistory: false });
+      result.current.setConfig({ foo: 'bar' }, { recordHistory: false });
     });
 
     expect(result.current.config).toEqual({ foo: 'bar' });
@@ -81,7 +81,7 @@ describe('configSlice', () => {
     expect(result.current.yjsDoc.undoManager.undoStack).toHaveLength(0);
 
     act(() => {
-      result.current.updateConfig({ foo: 'abc' });
+      result.current.setConfig({ foo: 'abc' });
     });
 
     expect(result.current.yjsDoc.undoManager.undoStack).toHaveLength(1);

@@ -25,7 +25,6 @@ export interface ProEditorAppProps {
    * 自定义错误兜底形态
    */
   ErrorBoundary?: FC;
-  __STORE_DEVTOOLS__?: boolean;
   /**
    * 代码复制回调
    */

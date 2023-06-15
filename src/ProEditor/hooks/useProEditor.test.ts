@@ -9,10 +9,13 @@ describe('useProEditor', () => {
       wrapper: ProEditorProvider,
     });
     expect(instance).toHaveProperty('getViewport');
+    expect(instance).toHaveProperty('setViewport');
     expect(instance).toHaveProperty('getConfig');
-    expect(instance).toHaveProperty('updateConfig');
+    expect(instance).toHaveProperty('setConfig');
     expect(instance).toHaveProperty('getProps');
     expect(instance).toHaveProperty('getEditorAwareness');
+    expect(instance).toHaveProperty('getCanvasInteraction');
+    expect(instance).toHaveProperty('setCanvasInteraction');
 
     expect(instance).not.toHaveProperty('props');
     expect(instance).not.toHaveProperty('config');
@@ -38,7 +41,7 @@ describe('useProEditor', () => {
       wrapper: ProEditorProvider,
     });
     const config = { name: 'John' };
-    instance.updateConfig(config);
+    instance.setConfig(config);
     expect(instance.getConfig()).toEqual(config);
     expect(instance.getProps()).toEqual({});
   });
