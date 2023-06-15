@@ -1,5 +1,38 @@
 # Changelog
 
+## [Version&nbsp;0.4.0-alpha.5](https://github.com/ant-design/pro-editor/compare/v0.4.0-alpha.4...v0.4.0-alpha.5)
+
+<sup>Released on **2023-06-15**</sup>
+
+#### ✨ 新特性
+
+- **pro-editor**: 支持配置 ProEditorStore 在 devtools 中的名称.
+
+#### 🐛 修复
+
+- **pro-editor**: 调整 devtools api 名称.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's improved
+
+- **pro-editor**: 支持配置 ProEditorStore 在 devtools 中的名称 ([e9d373d](https://github.com/ant-design/pro-editor/commit/e9d373d))
+
+#### What's fixed
+
+- **pro-editor**: 调整 devtools api 名称 ([4b4f509](https://github.com/ant-design/pro-editor/commit/4b4f509))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
 ## [Version&nbsp;0.4.0-alpha.4](https://github.com/ant-design/pro-editor/compare/v0.4.0-alpha.3...v0.4.0-alpha.4)
 
 <sup>Released on **2023-06-15**</sup>
