@@ -10,6 +10,6 @@ export default () => (
   <ProEditor
     componentAsset={ButtonComponentAsset}
     style={{ height: '100vh' }}
-    __STORE_DEVTOOLS__={{ name: 'ButtonEditor' }}
+    __EDITOR_STORE_DEVTOOLS__={{ name: 'ButtonEditor' }}
   />
 );

@@ -15,15 +15,15 @@ import { useStyle } from './style';
 export type ProEditorProps = ProEditorAppProps &
   AppContainerProps &
   StoreUpdaterProps & {
-    __STORE_DEVTOOLS__?: boolean | DevtoolsOptions;
+    __EDITOR_STORE_DEVTOOLS__?: boolean | DevtoolsOptions;
   };
 
 export const ProEditor: FC<ProEditorProps> = memo((props) => {
-  const { themeMode, theme, style, __STORE_DEVTOOLS__, editorRef, ...res } = props;
+  const { themeMode, theme, style, __EDITOR_STORE_DEVTOOLS__, editorRef, ...res } = props;
   const { styles } = useStyle();
 
   return (
-    <Provider devtoolOptions={__STORE_DEVTOOLS__}>
+    <Provider devtoolOptions={__EDITOR_STORE_DEVTOOLS__}>
       <AppContainer themeMode={themeMode} theme={theme}>
         <App className={styles.app} style={style}>
           <Content {...res} />
