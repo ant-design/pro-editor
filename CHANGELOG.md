@@ -1,5 +1,32 @@
 # Changelog
 
+## [Version&nbsp;0.4.0-alpha.7](https://github.com/ant-design/pro-editor/compare/v0.4.0-alpha.6...v0.4.0-alpha.7)
+
+<sup>Released on **2023-06-15**</sup>
+
+#### ✨ 新特性
+
+- **component-asset**: 添加 createTestAssetStore 方法，便于下游测试.
+- **pro-editor**: 支持 getCanvasInteraction，并调整 store set、get 命名风格.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's improved
+
+- **component-asset**: 添加 createTestAssetStore 方法，便于下游测试 ([051615d](https://github.com/ant-design/pro-editor/commit/051615d))
+- **pro-editor**: 支持 getCanvasInteraction，并调整 store set、get 命名风格 ([9c778fb](https://github.com/ant-design/pro-editor/commit/9c778fb))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
 ## [Version&nbsp;0.4.0-alpha.6](https://github.com/ant-design/pro-editor/compare/v0.4.0-alpha.5...v0.4.0-alpha.6)
 
 <sup>Released on **2023-06-15**</sup>
