@@ -48,13 +48,25 @@ export interface ActionOptions {
   payload?: Partial<UserActionParams>;
 }
 
+/**
+ * 公共配置操作接口
+ */
 export interface ConfigPublicAction {
   /**
    * 导出配置
    */
   exportConfig: () => void;
+  /**
+   * 重置配置
+   */
   resetConfig: () => void;
-  updateConfig: <T>(config: Partial<T>, options?: ActionOptions) => void;
+  /**
+   * 更新配置
+   * @template T - 配置对象类型
+   * @param {Partial<T>} config - 需要更新的配置对象
+   * @param {ActionOptions} [options] - 配置项
+   */
+  setConfig: <T>(config: Partial<T>, options?: ActionOptions) => void;
 }
 
 export interface ConfigSlice extends ConfigPublicAction, ConfigSliceState {
@@ -121,7 +133,7 @@ export const configSlice: StateCreator<
       document.body.removeChild(eleLink);
     },
 
-    updateConfig: (config, { replace, recordHistory } = {}) => {
+    setConfig: (config, { replace, recordHistory } = {}) => {
       get().internalUpdateConfig(
         config,
         { type: '调用 updateConfig 更新', payload: config },

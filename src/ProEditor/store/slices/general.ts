@@ -31,13 +31,27 @@ const initialGeneralState: GeneralSliceState = {
 
 // ======== action ======== //
 
+/**
+ * 通用公共动作
+ */
 export interface GeneralPublicAction {
+  /**
+   * 撤销操作
+   */
   undo: () => void;
+  /**
+   * 重做操作
+   */
   redo: () => void;
+  /**
+   * 撤销栈
+   */
   undoStack: () => StackItem[];
+  /**
+   * 重做栈
+   */
   redoStack: () => StackItem[];
 }
-
 export interface GeneralSlice extends GeneralPublicAction, GeneralSliceState {}
 
 export const generalSlice: StateCreator<

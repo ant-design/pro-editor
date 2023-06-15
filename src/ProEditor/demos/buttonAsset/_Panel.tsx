@@ -11,7 +11,7 @@ import { ButtonConfig, buttonSchema } from './models';
 export const ButtonPanel: FC = memo(() => {
   const data = useProEditorStore((s) => s.config, isEqual);
   const [updateConfig, undo, redo, undoStack, redoStack] = useProEditorStore(
-    (s) => [s.updateConfig, s.undo, s.redo, s.undoStack().length, s.redoStack().length],
+    (s) => [s.setConfig, s.undo, s.redo, s.undoStack().length, s.redoStack().length],
     shallow,
   );
 

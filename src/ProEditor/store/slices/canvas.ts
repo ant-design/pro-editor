@@ -2,6 +2,7 @@ import { Viewport } from 'reactflow';
 import { StateCreator } from 'zustand';
 
 import { InteractStatus, OnInteractionStatusChange } from '@/InteractContainer';
+import { UserActionParams } from '@/ProEditor/utils/yjs';
 import { InternalProEditorStore } from '../createStore';
 
 // ======== state ======== //
@@ -33,11 +34,28 @@ const initialCanvasState: CanvasSliceState = {
 };
 
 export interface CanvasPublicAction {
+  /**
+   * 取消选中 Canvas
+   */
   deselectCanvas: () => void;
-  updateViewport: (viewPort: Partial<Viewport>) => void;
+  /**
+   * 更新视口
+   * @param viewPort - 视口的部分属性
+   */
+  setViewport: (viewPort: Partial<Viewport>) => void;
+  /**
+   * 更新 Canvas 交互状态
+   * @param interaction - 交互状态
+   * @param action - 用户操作的部分参数
+   */
+  setCanvasInteraction: (interaction: InteractStatus, action?: Partial<UserActionParams>) => void;
 }
+
 export interface CanvasSlice extends CanvasPublicAction, CanvasSliceState {
-  internalUpdateCanvasInteract: (interaction: InteractStatus) => void;
+  internalUpdateCanvasInteract: (
+    interaction: InteractStatus,
+    action?: Partial<UserActionParams>,
+  ) => void;
   toggleCanvasInteraction: () => void;
 }
 
@@ -49,10 +67,12 @@ export const canvasSlice: StateCreator<
 > = (set, get) => ({
   ...initialCanvasState,
   //内部更新交互参数方法
-  internalUpdateCanvasInteract: (interact) => {
+  internalUpdateCanvasInteract: (interact, action) => {
     const { onInteractionChange } = get();
 
-    set({ interaction: interact }, false, '🕹内部更新：interaction');
+    set({ interaction: interact }, false, {
+      type: action?.type || '🕹内部更新：interaction',
+    });
 
     onInteractionChange?.(interact);
   },
@@ -72,7 +92,11 @@ export const canvasSlice: StateCreator<
     internalUpdateCanvasInteract({ status: 'unSelected' });
   },
 
-  updateViewport: (viewPort) => {
+  setCanvasInteraction: (interaction) => {
+    get().internalUpdateCanvasInteract(interaction, { name: 'updateCanvasInteraction 触发' });
+  },
+
+  setViewport: (viewPort) => {
     const { internalUpdateEditorAwareness, editorAwareness } = get();
 
     internalUpdateEditorAwareness({

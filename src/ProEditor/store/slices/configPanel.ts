@@ -11,6 +11,7 @@ export interface ConfigPanelPublicAction {
    */
   togglePanelExpand: (nextExpandState?: boolean) => void;
 }
+
 export interface ConfigPanelSlice extends ConfigPanelPublicAction {
   updatePanelPosition: (position: Partial<Position>) => void;
   updatePanelSize: (sizeDelta: Partial<NumberSize>) => void;

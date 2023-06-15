@@ -1,5 +1,223 @@
 # Changelog
 
+## [Version&nbsp;0.4.0-alpha.8](https://github.com/ant-design/pro-editor/compare/v0.4.0-alpha.7...v0.4.0-alpha.8)
+
+<sup>Released on **2023-06-15**</sup>
+
+#### ✨ 新特性
+
+- **component-asset**: 优化 createTestAssetStore ，便于下游测试.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's improved
+
+- **component-asset**: 优化 createTestAssetStore ，便于下游测试 ([9d1f11f](https://github.com/ant-design/pro-editor/commit/9d1f11f))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+## [Version&nbsp;0.4.0-alpha.7](https://github.com/ant-design/pro-editor/compare/v0.4.0-alpha.6...v0.4.0-alpha.7)
+
+<sup>Released on **2023-06-15**</sup>
+
+#### ✨ 新特性
+
+- **component-asset**: 添加 createTestAssetStore 方法，便于下游测试.
+- **pro-editor**: 支持 getCanvasInteraction，并调整 store set、get 命名风格.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's improved
+
+- **component-asset**: 添加 createTestAssetStore 方法，便于下游测试 ([051615d](https://github.com/ant-design/pro-editor/commit/051615d))
+- **pro-editor**: 支持 getCanvasInteraction，并调整 store set、get 命名风格 ([9c778fb](https://github.com/ant-design/pro-editor/commit/9c778fb))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+## [Version&nbsp;0.4.0-alpha.6](https://github.com/ant-design/pro-editor/compare/v0.4.0-alpha.5...v0.4.0-alpha.6)
+
+<sup>Released on **2023-06-15**</sup>
+
+#### 🐛 修复
+
+- **component-asset**: 修正类型.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's fixed
+
+- **component-asset**: 修正类型 ([a2f411d](https://github.com/ant-design/pro-editor/commit/a2f411d))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+## [Version&nbsp;0.4.0-alpha.5](https://github.com/ant-design/pro-editor/compare/v0.4.0-alpha.4...v0.4.0-alpha.5)
+
+<sup>Released on **2023-06-15**</sup>
+
+#### ✨ 新特性
+
+- **pro-editor**: 支持配置 ProEditorStore 在 devtools 中的名称.
+
+#### 🐛 修复
+
+- **pro-editor**: 调整 devtools api 名称.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's improved
+
+- **pro-editor**: 支持配置 ProEditorStore 在 devtools 中的名称 ([e9d373d](https://github.com/ant-design/pro-editor/commit/e9d373d))
+
+#### What's fixed
+
+- **pro-editor**: 调整 devtools api 名称 ([4b4f509](https://github.com/ant-design/pro-editor/commit/4b4f509))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+## [Version&nbsp;0.4.0-alpha.4](https://github.com/ant-design/pro-editor/compare/v0.4.0-alpha.3...v0.4.0-alpha.4)
+
+<sup>Released on **2023-06-15**</sup>
+
+#### 🐛 修复
+
+- **component-asset**: 修正 CreateAssetStore 的类型，对齐到 ProEditorInstance.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's fixed
+
+- **component-asset**: 修正 CreateAssetStore 的类型，对齐到 ProEditorInstance ([70008a8](https://github.com/ant-design/pro-editor/commit/70008a8))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+## [Version&nbsp;0.4.0-alpha.3](https://github.com/ant-design/pro-editor/compare/v0.4.0-alpha.2...v0.4.0-alpha.3)
+
+<sup>Released on **2023-06-15**</sup>
+
+#### 🐛 修复
+
+- **pro-editor**: 修正与 assetStore 的数据同步问题.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's fixed
+
+- **pro-editor**: 修正与 assetStore 的数据同步问题 ([fa98010](https://github.com/ant-design/pro-editor/commit/fa98010))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+## [Version&nbsp;0.4.0-alpha.2](https://github.com/ant-design/pro-editor/compare/v0.4.0-alpha.1...v0.4.0-alpha.2)
+
+<sup>Released on **2023-06-14**</sup>
+
+#### ✨ 新特性
+
+- **component-asset**: CreateUseAssetStore 方法支持导出 AssetProvider.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's improved
+
+- **component-asset**: CreateUseAssetStore 方法支持导出 AssetProvider ([557ff3b](https://github.com/ant-design/pro-editor/commit/557ff3b))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+## [Version&nbsp;0.4.0-alpha.1](https://github.com/ant-design/pro-editor/compare/v0.3.0...v0.4.0-alpha.1)
+
+<sup>Released on **2023-06-14**</sup>
+
+#### ✨ 新特性
+
+- **pro-editor**: 增加 updateCanvasInteraction 方法.
+
+#### 🐛 修复
+
+- **sortable-tree**: 修正 ReactNodeProps 方法类型定义.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's improved
+
+- **pro-editor**: 增加 updateCanvasInteraction 方法 ([7a038c8](https://github.com/ant-design/pro-editor/commit/7a038c8))
+
+#### What's fixed
+
+- **sortable-tree**: 修正 ReactNodeProps 方法类型定义 ([8dfe762](https://github.com/ant-design/pro-editor/commit/8dfe762))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
 ## [Version&nbsp;0.3.0](https://github.com/ant-design/pro-editor/compare/v0.2.3...v0.3.0)
 
 <sup>Released on **2023-06-14**</sup>
