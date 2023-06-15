@@ -2,7 +2,7 @@ import { StateCreator, StoreApi, create } from 'zustand';
 import { UseContextStore, createContext, optionalDevtools } from 'zustand-utils';
 import { DevtoolsOptions } from 'zustand/middleware';
 
-import { PublicProEditorStore } from '@/ProEditor/store';
+import type { ProEditorInstance } from '@/ProEditor';
 import { ReactNode } from 'react';
 
 export interface AssetStoreOptions<T = any> {
@@ -12,7 +12,7 @@ export interface AssetStoreOptions<T = any> {
 }
 
 export type CreateAssetStore<T> = StateCreator<
-  T & PublicProEditorStore,
+  T & ProEditorInstance,
   [['zustand/devtools', never]],
   [],
   T
@@ -45,8 +45,8 @@ export type WithoutCallSignature<T> = {
 };
 
 export const createUseAssetStore = <T>(): {
-  useStore: UseContextStore<StoreApi<T & PublicProEditorStore>>;
-  useStoreApi: () => WithoutCallSignature<StoreApi<T & PublicProEditorStore>>;
+  useStore: UseContextStore<StoreApi<T & ProEditorInstance>>;
+  useStoreApi: () => WithoutCallSignature<StoreApi<T & ProEditorInstance>>;
   AssetProvider: ({
     createStore,
     children,
