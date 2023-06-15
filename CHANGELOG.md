@@ -1,5 +1,30 @@
 # Changelog
 
+## [Version&nbsp;0.4.0-alpha.6](https://github.com/ant-design/pro-editor/compare/v0.4.0-alpha.5...v0.4.0-alpha.6)
+
+<sup>Released on **2023-06-15**</sup>
+
+#### 🐛 修复
+
+- **component-asset**: 修正类型.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's fixed
+
+- **component-asset**: 修正类型 ([a2f411d](https://github.com/ant-design/pro-editor/commit/a2f411d))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
 ## [Version&nbsp;0.4.0-alpha.5](https://github.com/ant-design/pro-editor/compare/v0.4.0-alpha.4...v0.4.0-alpha.5)
 
 <sup>Released on **2023-06-15**</sup>
