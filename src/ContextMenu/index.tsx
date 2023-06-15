@@ -28,17 +28,20 @@ import MenuItem from './MenuItem';
 import { useStyles } from './style';
 import { GeneralItemType, MenuItemType } from './types';
 
+/**
+ * @description 右键菜单的属性
+ */
 export interface ContextMenuProps {
   /**
-   * @description Container element for the context menu
+   * @description 右键菜单的容器元素
    */
   container?: HTMLElement;
   /**
-   * @description Items to be displayed in the context menu
+   * @description 右键菜单的菜单项
    */
   items: MenuItemType[];
   /**
-   * @description Label for the context menu
+   * @description 右键菜单的标签
    */
   label?: string;
 }

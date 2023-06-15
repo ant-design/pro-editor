@@ -2,13 +2,18 @@
 group: 基础组件
 atomId: ContextMenu
 title: ContextMenu 情景菜单
-description: The ContextMenu component is used to display a contextual menu. It is triggered by a right-click or long-press event and can contain a list of MenuItem components. The menu can be nested within other menus and will adjust its position based on available space. Users can interact with the menu using their mouse, keyboard, or touch screen. The component also supports the rendering of dividers between menu items.
 ---
 
-## Default
+# ContextMenu 情景菜单
+
+## 何时使用
+
+该组件用于展示情景菜单，右击或者长按触发，可以使用键盘操作选单。
+
+## 代码演示
+
+### 基本使用
 
 <code src="./demos/index.tsx" center></code>
 
-## APIs
-
-<API></API>
+## API
