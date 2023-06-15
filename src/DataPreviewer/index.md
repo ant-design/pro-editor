@@ -1,5 +1,6 @@
 ---
 title: DataPreviewer 数据预览器
+atomId: DataPreviewer
 group: 面板模块
 ---
 
