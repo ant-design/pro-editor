@@ -32,17 +32,6 @@ title: ContextMenu 情景菜单
 export type MenuItemType = GeneralItemType | SubMenuType | MenuDividerType;
 ```
 
-### CommonType
-
-通用的菜单项类型。
-
-| 属性名  | 类型         | 描述                     |
-| ------- | ------------ | ------------------------ |
-| key     | `string`     | 菜单项的唯一标识         |
-| label   | `string`     | 菜单项的文本标签         |
-| icon    | `ReactNode`  | 菜单项的图标             |
-| onClick | `() => void` | 菜单项的点击事件回调函数 |
-
 ### GeneralItemType
 
 普通菜单项类型。
