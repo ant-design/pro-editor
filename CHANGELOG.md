@@ -1,5 +1,30 @@
 # Changelog
 
+### [Version&nbsp;0.4.1](https://github.com/ant-design/pro-editor/compare/v0.4.0...v0.4.1)
+
+<sup>Released on **2023-06-15**</sup>
+
+#### 🐛 修复
+
+- **use-proeditor**: 修正 togglePanelExpand 方法缺失的 bug.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's fixed
+
+- **use-proeditor**: 修正 togglePanelExpand 方法缺失的 bug ([b126d67](https://github.com/ant-design/pro-editor/commit/b126d67))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
 ## [Version&nbsp;0.4.0](https://github.com/ant-design/pro-editor/compare/v0.3.0...v0.4.0)
 
 <sup>Released on **2023-06-15**</sup>
