@@ -42,16 +42,13 @@ export interface CanvasPublicAction {
    * 更新视口
    * @param viewPort - 视口的部分属性
    */
-  updateViewport: (viewPort: Partial<Viewport>) => void;
+  setViewport: (viewPort: Partial<Viewport>) => void;
   /**
    * 更新 Canvas 交互状态
    * @param interaction - 交互状态
    * @param action - 用户操作的部分参数
    */
-  updateCanvasInteraction: (
-    interaction: InteractStatus,
-    action?: Partial<UserActionParams>,
-  ) => void;
+  setCanvasInteraction: (interaction: InteractStatus, action?: Partial<UserActionParams>) => void;
 }
 
 export interface CanvasSlice extends CanvasPublicAction, CanvasSliceState {
@@ -95,11 +92,11 @@ export const canvasSlice: StateCreator<
     internalUpdateCanvasInteract({ status: 'unSelected' });
   },
 
-  updateCanvasInteraction: (interaction) => {
+  setCanvasInteraction: (interaction) => {
     get().internalUpdateCanvasInteract(interaction, { name: 'updateCanvasInteraction 触发' });
   },
 
-  updateViewport: (viewPort) => {
+  setViewport: (viewPort) => {
     const { internalUpdateEditorAwareness, editorAwareness } = get();
 
     internalUpdateEditorAwareness({

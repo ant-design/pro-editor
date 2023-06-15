@@ -66,7 +66,7 @@ export interface ConfigPublicAction {
    * @param {Partial<T>} config - 需要更新的配置对象
    * @param {ActionOptions} [options] - 配置项
    */
-  updateConfig: <T>(config: Partial<T>, options?: ActionOptions) => void;
+  setConfig: <T>(config: Partial<T>, options?: ActionOptions) => void;
 }
 
 export interface ConfigSlice extends ConfigPublicAction, ConfigSliceState {
@@ -133,7 +133,7 @@ export const configSlice: StateCreator<
       document.body.removeChild(eleLink);
     },
 
-    updateConfig: (config, { replace, recordHistory } = {}) => {
+    setConfig: (config, { replace, recordHistory } = {}) => {
       get().internalUpdateConfig(
         config,
         { type: '调用 updateConfig 更新', payload: config },
