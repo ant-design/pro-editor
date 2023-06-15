@@ -50,7 +50,7 @@ describe('proEditorStore', () => {
       const { result } = renderHook(() => useStore());
 
       act(() => {
-        result.current.updateViewport({ zoom: 2 });
+        result.current.setViewport({ zoom: 2 });
       });
 
       expect(result.current.editorAwareness.viewport).toEqual({
