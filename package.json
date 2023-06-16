@@ -78,7 +78,6 @@
     "@mui/material": "^5",
     "@textea/json-viewer": "^3",
     "ahooks": "^3",
-    "antd-style": "^3",
     "classnames": "^2.3.2",
     "color": "^4",
     "copy-to-clipboard": "^3",
@@ -160,6 +159,7 @@
   },
   "peerDependencies": {
     "antd": ">=5",
+    "antd-style": ">=3",
     "react": ">=18",
     "react-dom": ">=18"
   },
