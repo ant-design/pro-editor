@@ -1,5 +1,30 @@
 # Changelog
 
+### [Version&nbsp;0.4.2-alpha.1](https://github.com/ant-design/pro-editor/compare/v0.4.1...v0.4.2-alpha.1)
+
+<sup>Released on **2023-06-16**</sup>
+
+#### 🐛 修复
+
+- 将 antd-style 设为 peer，修正 ThemeProvider 多实例问题.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's fixed
+
+- 将 antd-style 设为 peer，修正 ThemeProvider 多实例问题 ([86719b5](https://github.com/ant-design/pro-editor/commit/86719b5))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
 ### [Version&nbsp;0.4.1](https://github.com/ant-design/pro-editor/compare/v0.4.0...v0.4.1)
 
 <sup>Released on **2023-06-15**</sup>
