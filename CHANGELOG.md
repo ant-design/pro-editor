@@ -1,5 +1,30 @@
 # Changelog
 
+### [Version&nbsp;0.4.2-alpha.2](https://github.com/ant-design/pro-editor/compare/v0.4.2-alpha.1...v0.4.2-alpha.2)
+
+<sup>Released on **2023-06-16**</sup>
+
+#### 🐛 修复
+
+- Fix Input ref props.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's fixed
+
+- Fix Input ref props ([ca1d539](https://github.com/ant-design/pro-editor/commit/ca1d539))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
 ### [Version&nbsp;0.4.2-alpha.1](https://github.com/ant-design/pro-editor/compare/v0.4.1...v0.4.2-alpha.1)
 
 <sup>Released on **2023-06-16**</sup>
