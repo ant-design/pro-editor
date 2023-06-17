@@ -1,5 +1,5 @@
 ---
-title: <ProEditorProvider />
+title: ProEditorProvider
 group: 组件
 ---
 

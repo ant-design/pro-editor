@@ -1,4 +1,4 @@
-import type { ComponentAssetParams } from '@ant-design/pro-editor';
+import type { ComponentAssetParams } from '@/index';
 
 import { ButtonComponent } from './_Component';
 import { ButtonPanel } from './_Panel';

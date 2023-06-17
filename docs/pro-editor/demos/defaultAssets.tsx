@@ -1,8 +1,8 @@
 /**
  * iframe: 600
  */
-import { ComponentAsset, ProEditor } from '@ant-design/pro-editor';
-import { demoAssets } from '../../ComponentAsset/demoAssets';
+import { demoAssets } from '@/ComponentAsset/demoAssets';
+import { ComponentAsset, ProEditor } from '@/index';
 
 export default () => (
   <ProEditor

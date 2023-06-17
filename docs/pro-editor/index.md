@@ -1,9 +1,10 @@
 ---
 title: ProEditor 配置容器
 atomId: ProEditor
-group:
+group: 组件
+nav:
   title: 装配器
-  order: 2
+  order: 3
 ---
 
 # ProEditor 装配器容器

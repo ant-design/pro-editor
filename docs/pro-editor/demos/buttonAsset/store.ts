@@ -1,4 +1,4 @@
-import { CreateAssetStore, createUseAssetStore } from '@ant-design/pro-editor';
+import { CreateAssetStore, createUseAssetStore } from '@/index';
 
 // eslint-disable-next-line @typescript-eslint/no-empty-interface
 export interface ButtonStore {}

@@ -28,6 +28,10 @@ export default defineConfig({
             text: '快速开始 →',
             link: '/guide/intro',
           },
+          {
+            text: 'Github',
+            link: 'https://github.com/ant-design/pro-editor',
+          },
         ],
       },
       'en-US': {

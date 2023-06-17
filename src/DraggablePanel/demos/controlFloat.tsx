@@ -1,3 +1,6 @@
+/**
+ * iframe: 500
+ */
 import type { Position } from '@ant-design/pro-editor';
 import { DraggablePanel } from '@ant-design/pro-editor';
 import { useLocalStorageState } from 'ahooks';
