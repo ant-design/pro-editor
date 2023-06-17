@@ -1,5 +1,30 @@
 # Changelog
 
+## [Version&nbsp;0.5.0-alpha.2](https://github.com/ant-design/pro-editor/compare/v0.5.0-alpha.1...v0.5.0-alpha.2)
+
+<sup>Released on **2023-06-17**</sup>
+
+#### 🐛 修复
+
+- **component-asset**: 修正 AssetSchema 类型.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's fixed
+
+- **component-asset**: 修正 AssetSchema 类型 ([005f857](https://github.com/ant-design/pro-editor/commit/005f857))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
 ## [Version&nbsp;0.5.0-alpha.1](https://github.com/ant-design/pro-editor/compare/v0.4.2-alpha.2...v0.5.0-alpha.1)
 
 <sup>Released on **2023-06-16**</sup>
