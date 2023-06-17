@@ -3,7 +3,7 @@ import type { StoreApi } from 'zustand';
 import { create } from 'zustand';
 import { createContext } from 'zustand-utils';
 
-import { yjsMiddleware } from '@ant-design/pro-editor';
+import { yjsMiddleware } from '@/index';
 
 interface Store {
   count: number;
