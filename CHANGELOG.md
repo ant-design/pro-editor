@@ -1,5 +1,30 @@
 # Changelog
 
+## [Version&nbsp;0.5.0-alpha.3](https://github.com/ant-design/pro-editor/compare/v0.5.0-alpha.2...v0.5.0-alpha.3)
+
+<sup>Released on **2023-06-18**</sup>
+
+#### 🐛 修复
+
+- **awareness**: 兼容服务端渲染.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's fixed
+
+- **awareness**: 兼容服务端渲染 ([dfe8bd5](https://github.com/ant-design/pro-editor/commit/dfe8bd5))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
 ## [Version&nbsp;0.5.0-alpha.2](https://github.com/ant-design/pro-editor/compare/v0.5.0-alpha.1...v0.5.0-alpha.2)
 
 <sup>Released on **2023-06-17**</sup>
