@@ -24,7 +24,7 @@ const useStyles = createStyles(({ css }) => ({
   `,
 }));
 
-interface CursorProps {
+export interface CursorProps {
   position: { x: number; y: number };
   color: string;
   name: string;

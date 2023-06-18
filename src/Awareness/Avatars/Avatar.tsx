@@ -2,7 +2,7 @@ import { Avatar as A, Badge, Tooltip } from 'antd';
 import Color from 'color';
 import { memo } from 'react';
 
-interface AvatarProps {
+export interface AvatarProps {
   /**
    * 用户名
    */
