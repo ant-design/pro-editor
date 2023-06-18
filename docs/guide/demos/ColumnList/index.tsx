@@ -1,6 +1,3 @@
-/**
- * defaultShowCode: true
- */
 import type { ColumnItemList } from '@ant-design/pro-editor';
 import { ColumnList } from '@ant-design/pro-editor';
 import { useState } from 'react';
