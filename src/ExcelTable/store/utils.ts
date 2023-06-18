@@ -33,3 +33,16 @@ export const updateDataByColumn = (column: number, data: string[][]) => {
   }
   return data;
 };
+
+export const createEmptySpreadsheetData = (rows, columns) => {
+  let data = [];
+  let row;
+  for (let i = 0; i < rows; i++) {
+    row = [];
+    for (let j = 0; j < columns; j++) {
+      row.push('');
+    }
+    data.push(row);
+  }
+  return data;
+};
