@@ -4,7 +4,7 @@ import { arrayMove } from '@dnd-kit/sortable';
 import type { FlattenNode, TreeData, TreeNode } from '../types';
 import { flattenTree } from './treeNode';
 
-export const iOS = /iPad|iPhone|iPod/.test(navigator.platform);
+export const iOS = /iPad|iPhone|iPod/.test(navigator?.platform);
 
 function getDragDepth(offset: number, indentationWidth: number) {
   return Math.round(offset / indentationWidth);
@@ -77,10 +77,7 @@ function getMinDepth({ nextItem }: { nextItem: FlattenNode }) {
   return 0;
 }
 
-export function findItemDeep(
-  items: TreeData,
-  itemId: UniqueIdentifier,
-): TreeNode | undefined {
+export function findItemDeep(items: TreeData, itemId: UniqueIdentifier): TreeNode | undefined {
   for (const item of items) {
     const { id, children } = item;
 
@@ -116,10 +113,7 @@ export function getChildCount(items: TreeData, id: UniqueIdentifier) {
   return item ? countChildren(item.children) : 0;
 }
 
-export function removeChildrenOf(
-  items: FlattenNode[],
-  ids: UniqueIdentifier[],
-) {
+export function removeChildrenOf(items: FlattenNode[], ids: UniqueIdentifier[]) {
   const excludeParentIds = [...ids];
 
   return items.filter((item) => {
@@ -134,19 +128,12 @@ export function removeChildrenOf(
   });
 }
 
-export const getFlattenedData = (
-  treeData: TreeData,
-  activeId: UniqueIdentifier,
-) => {
+export const getFlattenedData = (treeData: TreeData, activeId: UniqueIdentifier) => {
   const flattenedTree = flattenTree(treeData);
   const collapsedItems = flattenedTree.reduce<UniqueIdentifier[]>(
-    (acc, { children, collapsed, id }) =>
-      collapsed && children.length ? [...acc, id] : acc,
+    (acc, { children, collapsed, id }) => (collapsed && children.length ? [...acc, id] : acc),
     [],
   );
 
-  return removeChildrenOf(
-    flattenedTree,
-    activeId ? [activeId, ...collapsedItems] : collapsedItems,
-  );
+  return removeChildrenOf(flattenedTree, activeId ? [activeId, ...collapsedItems] : collapsedItems);
 };
