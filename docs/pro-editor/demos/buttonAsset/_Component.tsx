@@ -1,4 +1,4 @@
-import { useProEditorStore } from '@/index';
+import { useProEditorStore } from '@ant-design/pro-editor';
 import { Button } from 'antd';
 import isEqual from 'fast-deep-equal';
 import { memo } from 'react';

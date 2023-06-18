@@ -1,4 +1,4 @@
-import type { AssetConfigModel, JSONSchema } from '@/index';
+import type { AssetConfigModel, JSONSchema } from '@ant-design/pro-editor';
 
 export interface ButtonConfig {
   children?: string;

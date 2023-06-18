@@ -1,5 +1,5 @@
-import { LevaPanel, useProEditorStore } from '@/index';
 import { RedoOutlined, UndoOutlined } from '@ant-design/icons';
+import { LevaPanel, useProEditorStore } from '@ant-design/pro-editor';
 import { Button, Divider } from 'antd';
 import isEqual from 'fast-deep-equal';
 import { FC, memo } from 'react';
