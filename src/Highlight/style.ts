@@ -23,6 +23,7 @@ export const useStyles = createStyles(
         typeStylish,
         css`
           position: relative;
+          overflow: auto;
           margin: 0;
           border-radius: ${token.borderRadius}px;
           transition: background-color 100ms ${token.motionEaseOut};
