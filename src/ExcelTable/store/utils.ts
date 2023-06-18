@@ -1,12 +1,22 @@
-import Handsontable from 'handsontable';
+export const createEmptySpreadsheetData = (rows, columns) => {
+  let data = [];
+  let row;
+  for (let i = 0; i < rows; i++) {
+    row = [];
+    for (let j = 0; j < columns; j++) {
+      row.push('');
+    }
+    data.push(row);
+  }
+  return data;
+};
 
 /**
  * 根据列数创建需要的行数
  * @param row
  * @param column
  */
-export const getNewRows = (row: number, column: number) =>
-  Handsontable.helper.createEmptySpreadsheetData(row, column);
+export const getNewRows = (row: number, column: number) => createEmptySpreadsheetData(row, column);
 
 export const updateDataByRow = (row, data: string[][]) => {
   if (data?.length < row) {
@@ -30,19 +40,6 @@ export const updateDataByColumn = (column: number, data: string[][]) => {
   if (headerCol < column) {
     const newColArr = new Array(column - headerCol).fill('');
     return data.map((col) => col.concat(newColArr));
-  }
-  return data;
-};
-
-export const createEmptySpreadsheetData = (rows, columns) => {
-  let data = [];
-  let row;
-  for (let i = 0; i < rows; i++) {
-    row = [];
-    for (let j = 0; j < columns; j++) {
-      row.push('');
-    }
-    data.push(row);
   }
   return data;
 };
