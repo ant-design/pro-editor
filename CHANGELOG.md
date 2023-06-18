@@ -1,5 +1,30 @@
 # Changelog
 
+## [Version&nbsp;0.5.0-alpha.6](https://github.com/ant-design/pro-editor/compare/v0.5.0-alpha.5...v0.5.0-alpha.6)
+
+<sup>Released on **2023-06-18**</sup>
+
+#### 🐛 修复
+
+- **sortable-tree**: 修正 SortableTree 在 server 端的兼容性问题.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's fixed
+
+- **sortable-tree**: 修正 SortableTree 在 server 端的兼容性问题 ([8570903](https://github.com/ant-design/pro-editor/commit/8570903))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
 ## [Version&nbsp;0.5.0-alpha.5](https://github.com/ant-design/pro-editor/compare/v0.5.0-alpha.4...v0.5.0-alpha.5)
 
 <sup>Released on **2023-06-18**</sup>
