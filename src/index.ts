@@ -1,7 +1,7 @@
 export { default as yjsMiddleware } from 'zustand-middleware-yjs';
 export * from './ActionIcon';
 export { default as Awareness } from './Awareness';
-export type { IAwareness } from './Awareness';
+export type { AwarenessProps } from './Awareness';
 export { default as CollapseTitle } from './CollapseTitle';
 export * from './ColumnList';
 export * from './ComponentAsset';
