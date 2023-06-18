@@ -4,7 +4,8 @@ import { arrayMove } from '@dnd-kit/sortable';
 import type { FlattenNode, TreeData, TreeNode } from '../types';
 import { flattenTree } from './treeNode';
 
-export const iOS = /iPad|iPhone|iPod/.test(navigator?.platform);
+export const iOS =
+  typeof navigator === 'undefined' ? false : /iPad|iPhone|iPod/.test(navigator?.platform);
 
 function getDragDepth(offset: number, indentationWidth: number) {
   return Math.round(offset / indentationWidth);
