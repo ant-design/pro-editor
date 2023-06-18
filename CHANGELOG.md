@@ -1,5 +1,30 @@
 # Changelog
 
+## [Version&nbsp;0.5.0-alpha.8](https://github.com/ant-design/pro-editor/compare/v0.5.0-alpha.7...v0.5.0-alpha.8)
+
+<sup>Released on **2023-06-18**</sup>
+
+#### 🐛 修复
+
+- Highlight scroll error.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's fixed
+
+- Highlight scroll error, closes [#37](https://github.com/ant-design/pro-editor/issues/37) ([a313ceb](https://github.com/ant-design/pro-editor/commit/a313ceb))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
 ## [Version&nbsp;0.5.0-alpha.7](https://github.com/ant-design/pro-editor/compare/v0.5.0-alpha.6...v0.5.0-alpha.7)
 
 <sup>Released on **2023-06-18**</sup>
