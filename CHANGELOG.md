@@ -1,5 +1,30 @@
 # Changelog
 
+## [Version&nbsp;0.5.0-alpha.5](https://github.com/ant-design/pro-editor/compare/v0.5.0-alpha.4...v0.5.0-alpha.5)
+
+<sup>Released on **2023-06-18**</sup>
+
+#### 🐛 修复
+
+- **excel-table**: 修正 Hansontable 在 server 端的兼容性问题.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's fixed
+
+- **excel-table**: 修正 Hansontable 在 server 端的兼容性问题 ([c834bb4](https://github.com/ant-design/pro-editor/commit/c834bb4))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
 ## [Version&nbsp;0.5.0-alpha.4](https://github.com/ant-design/pro-editor/compare/v0.5.0-alpha.3...v0.5.0-alpha.4)
 
 <sup>Released on **2023-06-18**</sup>
