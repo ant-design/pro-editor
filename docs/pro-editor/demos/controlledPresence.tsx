@@ -1,20 +1,14 @@
 /**
  * iframe: 800
  */
-import { AwarenessEditor, ComponentAsset, ProEditor } from '@ant-design/pro-editor';
+import { AwarenessEditor, ComponentAsset, ProEditor } from '@/index';
 import { JsonViewer } from '@textea/json-viewer';
 import { useLocalStorageState } from 'ahooks';
 import { Flexbox } from 'react-layout-kit';
 
-import { demoAssets } from '../../ComponentAsset/demoAssets';
+import { demoAssets } from '@/ComponentAsset/demoAssets';
 
-const assets = new ComponentAsset({
-  ...demoAssets,
-  ui: {
-    ...demoAssets.ui,
-    isStarterMode: () => false,
-  },
-});
+const assets = new ComponentAsset(demoAssets);
 
 export default () => {
   const [presence, setPresence] = useLocalStorageState<AwarenessEditor>('DEMO-PRO-EDITOR');

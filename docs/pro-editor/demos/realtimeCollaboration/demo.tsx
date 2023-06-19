@@ -1,4 +1,4 @@
-import { Awareness } from '@ant-design/pro-editor';
+import { Awareness } from '@/index';
 import { Button, Divider, Input } from 'antd';
 import { memo } from 'react';
 import { WebrtcProvider } from 'y-webrtc';
