@@ -3,6 +3,7 @@ import { AppContainer } from '@ant-design/pro-editor';
 import { App } from 'antd';
 import type { FC } from 'react';
 import { memo } from 'react';
+import { HotkeysProvider } from 'react-hotkeys-hook';
 import { DevtoolsOptions } from 'zustand/middleware';
 
 import type { ProEditorAppProps } from './App';
@@ -23,14 +24,16 @@ export const ProEditor: FC<ProEditorProps> = memo((props) => {
   const { styles } = useStyle();
 
   return (
-    <Provider devtoolOptions={__EDITOR_STORE_DEVTOOLS__}>
-      <AppContainer themeMode={themeMode} theme={theme}>
-        <App className={styles.app} style={style}>
-          <Content {...res} />
-        </App>
-      </AppContainer>
-      <StoreUpdater editorRef={editorRef} {...res} />
-    </Provider>
+    <HotkeysProvider initiallyActiveScopes={['pro-editor']}>
+      <Provider devtoolOptions={__EDITOR_STORE_DEVTOOLS__}>
+        <AppContainer themeMode={themeMode} theme={theme}>
+          <App className={styles.app} style={style}>
+            <Content {...res} />
+          </App>
+        </AppContainer>
+        <StoreUpdater editorRef={editorRef} {...res} />
+      </Provider>
+    </HotkeysProvider>
   );
 });
 
