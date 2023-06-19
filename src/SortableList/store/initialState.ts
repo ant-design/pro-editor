@@ -5,9 +5,9 @@ import type {
   RenderItemProps,
   UniqueIdentifier,
 } from '../type';
-import { ListDataDispatchPayload } from './listDataReducer';
+import { SortableListDispatchPayload } from './listDataReducer';
 
-export type OnChange<T = any> = (values: T[], event: ListDataDispatchPayload) => void;
+export type OnChange<T = any> = (values: T[], event: SortableListDispatchPayload) => void;
 
 export interface State<T = any> {
   /*

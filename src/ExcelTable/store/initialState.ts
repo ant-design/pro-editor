@@ -1,4 +1,4 @@
-import Handsontable from 'handsontable';
+import { createEmptySpreadsheetData } from './utils';
 
 export type TableData = string[][];
 export type OnDataChange = (data: TableData) => void;
@@ -16,7 +16,7 @@ export interface ExcelTableState {
   onDataChange?: OnDataChange;
 }
 
-const defaultData = Handsontable.helper.createEmptySpreadsheetData(6, 5);
+const defaultData = createEmptySpreadsheetData(6, 5);
 
 export const initialState: ExcelTableState = {
   data: defaultData,

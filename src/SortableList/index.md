@@ -97,15 +97,21 @@ group:
 | record            | `(index: number) => Record<string, any>` | 生成初始值逻辑             |
 | creatorButtonText | `string`                                 | 新增一行按钮文案           |
 
-### ListDataDispatchPayload
+### SortableListDispatchPayload
 
 组件通过 `onChange` 以及 `ForwardRef` 的方式暴露底层事件，你可以细粒度地控制列表的增删改查，移动，以及根据事件细粒度控制后续的行为链路。
 
-```jsx | pure
+```ts
 // 新增节点
 interface AddItemAction {
   type: 'addItem';
+  /**
+   * 新增的节点
+   */
   item: any;
+  /**
+   * 新增节点的位置，不传则默认在最后
+   */
   index?: number;
 }
 
@@ -113,25 +119,34 @@ interface AddItemAction {
 interface MoveItemAction {
   type: 'moveItem';
   /**
-   * 当前节点id
+   * 当前节点的唯一标识符
    */
-  activeId: UniqueIdentifier;
+  activeId: string | number;
   /**
-   * 目标节点id
+   * 目标节点的唯一标识符
    */
-  targetId: UniqueIdentifier;
+  targetId: string | number;
 }
 
 // 移除节点
 interface RemoveItemAction {
   type: 'removeItem';
+  /**
+   * 要移除的节点的位置
+   */
   index: number;
 }
 
-// 修改节点content内容
+// 修改节点 content 内容
 interface UpdateItemAction {
   type: 'updateItem';
+  /**
+   * 要修改的节点的位置
+   */
   index: number;
+  /**
+   * 修改后的节点内容
+   */
   item: any;
 }
 ```

@@ -1,6 +1,6 @@
 {
   "name": "@ant-design/pro-editor",
-  "version": "0.4.2",
+  "version": "0.5.0-alpha.8",
   "description": "🌟 Lightweight Editor UI Framework",
   "homepage": "https://github.com/ant-design/pro-editor",
   "bugs": {
@@ -60,9 +60,6 @@
     "@ant-design/icons": "^5",
     "@ant-design/pro-components": "^2",
     "@antv/dw-random": "^1",
-    "@babel/core": "^7.21.8",
-    "@babel/plugin-syntax-dynamic-import": "^7.8.3",
-    "@babel/plugin-transform-typescript": "^7.21.3",
     "@babel/runtime": "^7.21.5",
     "@c2d2c/types": "^1",
     "@c2d2c/utils": "^1",
@@ -78,7 +75,6 @@
     "@mui/material": "^5",
     "@textea/json-viewer": "^3",
     "ahooks": "^3",
-    "antd-style": "^3",
     "classnames": "^2.3.2",
     "color": "^4",
     "copy-to-clipboard": "^3",
@@ -123,6 +119,7 @@
     "@testing-library/user-event": "^14.4.3",
     "@types/color": "^3",
     "@types/json-schema": "^7.0.11",
+    "@types/lodash-es": "^4",
     "@types/react": "^18.0.0",
     "@types/react-dom": "^18.0.0",
     "@umijs/lint": "^4.0.0",
@@ -160,6 +157,7 @@
   },
   "peerDependencies": {
     "antd": ">=5",
+    "antd-style": ">=3",
     "react": ">=18",
     "react-dom": ">=18"
   },
