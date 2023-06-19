@@ -1,5 +1,207 @@
 # Changelog
 
+## [Version&nbsp;0.5.0-alpha.8](https://github.com/ant-design/pro-editor/compare/v0.5.0-alpha.7...v0.5.0-alpha.8)
+
+<sup>Released on **2023-06-18**</sup>
+
+#### 🐛 修复
+
+- Highlight scroll error.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's fixed
+
+- Highlight scroll error, closes [#37](https://github.com/ant-design/pro-editor/issues/37) ([a313ceb](https://github.com/ant-design/pro-editor/commit/a313ceb))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+## [Version&nbsp;0.5.0-alpha.7](https://github.com/ant-design/pro-editor/compare/v0.5.0-alpha.6...v0.5.0-alpha.7)
+
+<sup>Released on **2023-06-18**</sup>
+
+#### 🐛 修复
+
+- **sortable-tree**: 修正 SortableTree 在 server 端的兼容性问题.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's fixed
+
+- **sortable-tree**: 修正 SortableTree 在 server 端的兼容性问题 ([04e2597](https://github.com/ant-design/pro-editor/commit/04e2597))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+## [Version&nbsp;0.5.0-alpha.6](https://github.com/ant-design/pro-editor/compare/v0.5.0-alpha.5...v0.5.0-alpha.6)
+
+<sup>Released on **2023-06-18**</sup>
+
+#### 🐛 修复
+
+- **sortable-tree**: 修正 SortableTree 在 server 端的兼容性问题.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's fixed
+
+- **sortable-tree**: 修正 SortableTree 在 server 端的兼容性问题 ([8570903](https://github.com/ant-design/pro-editor/commit/8570903))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+## [Version&nbsp;0.5.0-alpha.5](https://github.com/ant-design/pro-editor/compare/v0.5.0-alpha.4...v0.5.0-alpha.5)
+
+<sup>Released on **2023-06-18**</sup>
+
+#### 🐛 修复
+
+- **excel-table**: 修正 Hansontable 在 server 端的兼容性问题.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's fixed
+
+- **excel-table**: 修正 Hansontable 在 server 端的兼容性问题 ([c834bb4](https://github.com/ant-design/pro-editor/commit/c834bb4))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+## [Version&nbsp;0.5.0-alpha.4](https://github.com/ant-design/pro-editor/compare/v0.5.0-alpha.3...v0.5.0-alpha.4)
+
+<sup>Released on **2023-06-18**</sup>
+
+#### 🐛 修复
+
+- **awareness**: 修正类型导出问题.
+- **excel-table**: 修正 Hansontable 在 server 端的兼容性问题.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's fixed
+
+- **awareness**: 修正类型导出问题 ([2b24240](https://github.com/ant-design/pro-editor/commit/2b24240))
+- **excel-table**: 修正 Hansontable 在 server 端的兼容性问题 ([2b95772](https://github.com/ant-design/pro-editor/commit/2b95772))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+## [Version&nbsp;0.5.0-alpha.3](https://github.com/ant-design/pro-editor/compare/v0.5.0-alpha.2...v0.5.0-alpha.3)
+
+<sup>Released on **2023-06-18**</sup>
+
+#### 🐛 修复
+
+- **awareness**: 兼容服务端渲染.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's fixed
+
+- **awareness**: 兼容服务端渲染 ([dfe8bd5](https://github.com/ant-design/pro-editor/commit/dfe8bd5))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+## [Version&nbsp;0.5.0-alpha.2](https://github.com/ant-design/pro-editor/compare/v0.5.0-alpha.1...v0.5.0-alpha.2)
+
+<sup>Released on **2023-06-17**</sup>
+
+#### 🐛 修复
+
+- **component-asset**: 修正 AssetSchema 类型.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's fixed
+
+- **component-asset**: 修正 AssetSchema 类型 ([005f857](https://github.com/ant-design/pro-editor/commit/005f857))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+## [Version&nbsp;0.5.0-alpha.1](https://github.com/ant-design/pro-editor/compare/v0.4.2-alpha.2...v0.5.0-alpha.1)
+
+<sup>Released on **2023-06-16**</sup>
+
+#### ✨ 新特性
+
+- **sortable-list**: 导出 SortableListDispatchPayload 类型定义.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's improved
+
+- **sortable-list**: 导出 SortableListDispatchPayload 类型定义 ([21b51e6](https://github.com/ant-design/pro-editor/commit/21b51e6))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
 ### [Version&nbsp;0.4.2](https://github.com/ant-design/pro-editor/compare/v0.4.1...v0.4.2)
 
 <sup>Released on **2023-06-18**</sup>
@@ -16,6 +218,56 @@
 #### What's fixed
 
 - Highlight scroll error, closes [#37](https://github.com/ant-design/pro-editor/issues/37) ([a313ceb](https://github.com/ant-design/pro-editor/commit/a313ceb))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version&nbsp;0.4.2-alpha.2](https://github.com/ant-design/pro-editor/compare/v0.4.2-alpha.1...v0.4.2-alpha.2)
+
+<sup>Released on **2023-06-16**</sup>
+
+#### 🐛 修复
+
+- Fix Input ref props.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's fixed
+
+- Fix Input ref props ([ca1d539](https://github.com/ant-design/pro-editor/commit/ca1d539))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version&nbsp;0.4.2-alpha.1](https://github.com/ant-design/pro-editor/compare/v0.4.1...v0.4.2-alpha.1)
+
+<sup>Released on **2023-06-16**</sup>
+
+#### 🐛 修复
+
+- 将 antd-style 设为 peer，修正 ThemeProvider 多实例问题.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's fixed
+
+- 将 antd-style 设为 peer，修正 ThemeProvider 多实例问题 ([86719b5](https://github.com/ant-design/pro-editor/commit/86719b5))
 
 </details>
 
