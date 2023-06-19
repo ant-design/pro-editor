@@ -16,7 +16,7 @@ group: 容器能力
 
 ## 数据同步： Yjs 中间件
 
-直接复用了 [zustand-middleware-yjs](https://github.com/joebobmiles/zustand-middleware-yjs) 中间件
+复用了 [zustand-middleware-yjs](https://github.com/joebobmiles/zustand-middleware-yjs) 中间件
 
 后面只要为 ProEditor 容器设计合适的数据同步分层结构，ProEditor 容器就可以具有多人协作的能力。
 

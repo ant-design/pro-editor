@@ -1,3 +1,6 @@
+/**
+ * iframe: true
+ */
 import { DraggablePanel } from '@ant-design/pro-editor';
 
 export default () => (
