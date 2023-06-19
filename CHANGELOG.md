@@ -1,5 +1,50 @@
 # Changelog
 
+## [Version&nbsp;0.5.0](https://github.com/ant-design/pro-editor/compare/v0.4.2...v0.5.0)
+
+<sup>Released on **2023-06-19**</sup>
+
+#### ✨ 新特性
+
+- **sortable-list**: 导出 SortableListDispatchPayload 类型定义.
+
+#### 🐛 修复
+
+- **awareness**: 修正类型导出问题, 兼容服务端渲染.
+- **component-asset**: 修正 AssetSchema 类型.
+- **excel-table**: 修正 Hansontable 在 server 端的兼容性问题, 修正 Hansontable 在 server 端的兼容性问题.
+- **sortable-tree**: 修正 SortableTree 在 server 端的兼容性问题, 修正 SortableTree 在 server 端的兼容性问题.
+- Fix Input ref props, 将 antd-style 设为 peer，修正 ThemeProvider 多实例问题.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's improved
+
+- **sortable-list**: 导出 SortableListDispatchPayload 类型定义 ([21b51e6](https://github.com/ant-design/pro-editor/commit/21b51e6))
+
+#### What's fixed
+
+- **awareness**: 修正类型导出问题 ([2b24240](https://github.com/ant-design/pro-editor/commit/2b24240))
+- **awareness**: 兼容服务端渲染 ([dfe8bd5](https://github.com/ant-design/pro-editor/commit/dfe8bd5))
+- **component-asset**: 修正 AssetSchema 类型 ([005f857](https://github.com/ant-design/pro-editor/commit/005f857))
+- **excel-table**: 修正 Hansontable 在 server 端的兼容性问题 ([c834bb4](https://github.com/ant-design/pro-editor/commit/c834bb4))
+- **excel-table**: 修正 Hansontable 在 server 端的兼容性问题 ([2b95772](https://github.com/ant-design/pro-editor/commit/2b95772))
+- **sortable-tree**: 修正 SortableTree 在 server 端的兼容性问题 ([04e2597](https://github.com/ant-design/pro-editor/commit/04e2597))
+- **sortable-tree**: 修正 SortableTree 在 server 端的兼容性问题 ([8570903](https://github.com/ant-design/pro-editor/commit/8570903))
+- Fix Input ref props ([ca1d539](https://github.com/ant-design/pro-editor/commit/ca1d539))
+- 将 antd-style 设为 peer，修正 ThemeProvider 多实例问题 ([86719b5](https://github.com/ant-design/pro-editor/commit/86719b5))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
 ## [Version&nbsp;0.5.0-alpha.8](https://github.com/ant-design/pro-editor/compare/v0.5.0-alpha.7...v0.5.0-alpha.8)
 
 <sup>Released on **2023-06-18**</sup>
