@@ -1,9 +1,8 @@
+import { yjsMiddleware } from '@ant-design/pro-editor';
 import { Doc } from 'yjs';
 import type { StoreApi } from 'zustand';
 import { create } from 'zustand';
 import { createContext } from 'zustand-utils';
-
-import { yjsMiddleware } from '@/index';
 
 interface Store {
   count: number;

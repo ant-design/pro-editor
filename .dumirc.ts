@@ -12,7 +12,7 @@ export default defineConfig({
   // },
   favicons: ['https://gw.alipayobjects.com/zos/antfincdn/upvrAjAPQX/Logo_Tech%252520UI.svg'],
   // @ts-ignore
-  ssr: isProd ? {} : false,
+  ssr: false,
   hash: true,
   ignoreMomentLocale: true,
   codeSplitting: {
