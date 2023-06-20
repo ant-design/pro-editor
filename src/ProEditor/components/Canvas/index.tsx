@@ -1,4 +1,4 @@
-import { AimOutlined, StopOutlined } from '@ant-design/icons';
+import { AimOutlined, RedoOutlined, StopOutlined, UndoOutlined } from '@ant-design/icons';
 import { Button, Tooltip } from 'antd';
 import type { FC } from 'react';
 import { memo } from 'react';
@@ -15,6 +15,10 @@ const Canvas: FC = memo(() => {
     enableCanvasInteraction,
     toggleCanvasInteraction,
     updateEditorAwareness,
+    redo,
+    undo,
+    canRedo,
+    canUndo,
   ] = useStore(
     (s) => [
       s.editorAwareness.viewport,
@@ -22,6 +26,10 @@ const Canvas: FC = memo(() => {
       s.enableCanvasInteraction,
       s.toggleCanvasInteraction,
       s.internalUpdateEditorAwareness,
+      s.redo,
+      s.undo,
+      s.redoStack().length > 0,
+      s.undoStack().length > 0,
     ],
     shallow,
   );
@@ -45,6 +53,14 @@ const Canvas: FC = memo(() => {
               onClick={toggleCanvasInteraction}
             />
           </Tooltip>,
+          <Button.Group key={'undo-redo'}>
+            <Tooltip title="撤销">
+              <Button icon={<UndoOutlined />} onClick={undo} disabled={!canUndo} />
+            </Tooltip>
+            <Tooltip title="重做">
+              <Button icon={<RedoOutlined />} onClick={redo} disabled={!canRedo} />
+            </Tooltip>
+          </Button.Group>,
         ]}
       >
         <Component />

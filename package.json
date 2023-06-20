@@ -99,6 +99,7 @@
     "re-resizable": "^6.9.1",
     "react-colorful": "^5",
     "react-copy-to-clipboard": "^5.0.4",
+    "react-hotkeys-hook": "^4",
     "react-layout-kit": "^1",
     "react-rnd": "^10.3.5",
     "reactflow": "^11",
