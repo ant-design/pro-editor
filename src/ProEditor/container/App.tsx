@@ -9,6 +9,7 @@ import AssetStoreUpdater from '../components/AssetStoreUpdater';
 import ConfigPanel from '../components/ConfigPanel';
 import Stage from '../components/Stage';
 
+import { useHotkeyManager } from '@/ProEditor/hooks/useHotkeyManager';
 import DefaultErrorBoundary from '../../ErrorBoundary';
 import { useStore } from '../store';
 import { useStyle } from './style';
@@ -46,6 +47,9 @@ export const ProEditor: FC<ProEditorAppProps> = memo((props) => {
   );
 
   const { styles } = useStyle(prefixCls);
+
+  // 注册快捷键
+  useHotkeyManager();
 
   // 第一次渲染的时候 componentAsset 是不存在的，为避免面板模块报错，返回空状态组件
   if (!componentAsset) return <AssetEmpty />;
