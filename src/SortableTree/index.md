@@ -27,6 +27,7 @@ atomId: SortableTree
 ### 使用 renderContent 自定义渲染
 
 <code src="./demos/renderContent.tsx" ></code>
+<code src="./demos/disableDrag.tsx" ></code>
 
 [//]: # '### 多选方案'
 [//]: #
