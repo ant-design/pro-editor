@@ -79,9 +79,15 @@
 
 ## 📦 Install
 
+本组件库为 [纯 ESM](https://gist.github.com/sindresorhus/a39789f98801d908bbc7ff3ecc99d99c)。
+
+使用 npm 安装：
+
 ```bash
 $ npm install @ant-design/pro-editor
 ```
+
+使用 pnpm 安装：
 
 ```bash
 $ pnpm add @ant-design/pro-editor
@@ -104,6 +110,18 @@ export default () => (
 );
 ```
 
+### 适配 NextJS
+
+为适配 nextjs 的 SSR 模式, 需要将本包的相关依赖添加到 `next.config.js` 的 `transpilePackages` 配置中:
+
+```js
+// next.config.js
+const nextConfig = {
+  // ...other config
+  transpilePackages: ['@ant-design/pro-editor', 'leva'],
+};
+```
+
 ## ⌨️ Development
 
 ```bash
@@ -114,6 +132,12 @@ $ npm start
 ```
 
 Open your browser and visit http://localhost:8000
+
+<div align="right">
+
+[![][back-to-top]](#readme-top)
+
+</div>
 
 ## 🤝 Contributing [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
@@ -142,7 +166,7 @@ Open your browser and visit http://localhost:8000
 
 [![][back-to-top]](#readme-top)
 
-## </div>
+</div>
 
 #### 📝 License
 
