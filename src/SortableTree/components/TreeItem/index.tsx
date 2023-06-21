@@ -138,18 +138,26 @@ const TreeItem: FC<TreeItemProps> = memo(
     const prefix = `${prefixCls}-node`;
     const { styles, cx } = useStyles({ prefix, collapsed });
 
-    const [indentationWidth, selected, Content, Extra, withKeyboardSelectNode, deselectedNode] =
-      useStore(
-        (s) => [
-          s.indentationWidth,
-          s.selectedIds.includes(id),
-          s.renderContent,
-          s.renderExtra,
-          s.withKeyboardSelectNode,
-          s.deselectedAll,
-        ],
-        shallow,
-      );
+    const [
+      indentationWidth,
+      selected,
+      Content,
+      Extra,
+      withKeyboardSelectNode,
+      deselectedNode,
+      disableDrag,
+    ] = useStore(
+      (s) => [
+        s.indentationWidth,
+        s.selectedIds.includes(id),
+        s.renderContent,
+        s.renderExtra,
+        s.withKeyboardSelectNode,
+        s.deselectedAll,
+        s.disableDrag,
+      ],
+      shallow,
+    );
 
     const extraPanelVisible = showExtra && !clone;
 
@@ -199,12 +207,14 @@ const TreeItem: FC<TreeItemProps> = memo(
           {...props}
         >
           <div className={`${prefix}-body`} ref={setDraggableNodeRef} style={style}>
-            <HandleAction
-              {...listeners}
-              {...attributes}
-              className={cx(`${prefix}-handle`, clone ? undefined : styles.handle)}
-              style={{ width: 12 }}
-            />
+            {disableDrag ? null : (
+              <HandleAction
+                {...listeners}
+                {...attributes}
+                className={cx(`${prefix}-handle`, clone ? undefined : styles.handle)}
+                style={{ width: 12 }}
+              />
+            )}
             {onCollapse && (
               <CollapseAction
                 onClick={(e) => {
