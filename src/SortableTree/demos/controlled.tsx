@@ -1,3 +1,6 @@
+/**
+ * title: 受控模式
+ */
 import type { TreeData } from '@ant-design/pro-editor';
 import { SortableTree, useSortableTree } from '@ant-design/pro-editor';
 import { useState } from 'react';
