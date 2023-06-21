@@ -2,6 +2,8 @@
 title: SortableTree 可排序树
 group: 可排序组件
 atomId: SortableTree
+demo:
+  cols: 2
 ---
 
 # SortableTree 可排序树
@@ -12,19 +14,12 @@ atomId: SortableTree
 
 需要做树型数据结构的编辑（增删、排序）时可以使用。
 
-## 代码演示
+## Demo 演示
 
-### 基本使用
-
-默认支持增加、删除、排序操作。
+###
 
 <code src="./demos/default.tsx" ></code>
-
-### 受控模式
-
 <code src="./demos/controlled.tsx" ></code>
-
-### 使用 renderContent 自定义渲染
 
 <code src="./demos/renderContent.tsx" ></code>
 <code src="./demos/disableDrag.tsx" ></code>
@@ -41,6 +36,7 @@ atomId: SortableTree
 | ------------------- | ---------------------------------------------------------------- | ------------------ |
 | hideAdd             | `boolean`                                                        | 隐藏默认的添加按钮 |
 | hideRemove          | `boolean`                                                        | 隐藏默认的删除按钮 |
+| disableDrag         | `boolean`                                                        | 禁用拖拽           |
 | indentationWidth    | `number`                                                         | 缩进宽度           |
 | onSelectedIdsChange | `(selectedIds: UniqueIdentifier[]) => void`                      | 选中 ID 变更回调   |
 | treeData            | `TreeData<T>`                                                    | 树的数据           |
