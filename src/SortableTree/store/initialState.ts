@@ -16,6 +16,10 @@ export interface ControlledState {
    */
   hideRemove?: boolean;
   /**
+   * 禁用拖拽
+   */
+  disableDrag?: boolean;
+  /**
    * 缩进宽度
    */
   indentationWidth?: number;
@@ -96,6 +100,7 @@ export const initialState: State = {
   renderContent: undefined,
   renderExtra: undefined,
   hideAdd: false,
+  disableDrag: false,
   hideRemove: false,
   ...initialDragState,
 };
