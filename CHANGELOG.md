@@ -1,5 +1,30 @@
 # Changelog
 
+## [Version&nbsp;0.7.0](https://github.com/ant-design/pro-editor/compare/v0.6.0...v0.7.0)
+
+<sup>Released on **2023-06-25**</sup>
+
+#### ✨ 新特性
+
+- **sortable-tree**: 支持禁用拖拽功能.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's improved
+
+- **sortable-tree**: 支持禁用拖拽功能 ([cc53208](https://github.com/ant-design/pro-editor/commit/cc53208))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
 ## [Version&nbsp;0.6.0](https://github.com/ant-design/pro-editor/compare/v0.5.0...v0.6.0)
 
 <sup>Released on **2023-06-20**</sup>
