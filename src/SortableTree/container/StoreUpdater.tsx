@@ -51,6 +51,7 @@ const StoreUpdater = ({
   hideRemove,
   hideAdd,
   indentationWidth,
+  disableDrag,
 }: StoreUpdaterProps) => {
   const storeApi = useStoreApi();
 
@@ -65,6 +66,7 @@ const StoreUpdater = ({
   useStoreUpdater('indentationWidth', indentationWidth);
   useStoreUpdater('hideAdd', hideAdd);
   useStoreUpdater('hideRemove', hideRemove);
+  useStoreUpdater('disableDrag', disableDrag);
 
   useStoreUpdater('onSelectedIdsChange', onSelectedIdsChange);
 
