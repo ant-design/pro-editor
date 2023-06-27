@@ -138,7 +138,13 @@ const Item = memo(
                   />
                 ) : null}
               </Flexbox>
-              {children}
+              {children ? (
+                children
+              ) : (
+                <Flexbox flex={1} style={{ paddingLeft: 4 }}>
+                  {id}
+                </Flexbox>
+              )}
               <Flexbox
                 className={classNames(styles.actions, compact ? styles.actionsRight : undefined)}
                 direction={'horizontal'}
