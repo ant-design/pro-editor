@@ -1,3 +1,7 @@
+/**
+ * title: 使用 ref 获得实例
+ * description: 提供传统的 `ref` 方式关联组件实例，可实现自定义功能，如将添加按钮渲染到组件右上方。
+ */
 import { PlusCircleFilled } from '@ant-design/icons';
 import { ActionIcon, SortableList, SortableListRef } from '@ant-design/pro-editor';
 import { useRef, useState } from 'react';
@@ -41,7 +45,6 @@ export default () => {
           }),
         }}
         renderContent={(item, index) => <ItemRender item={item} index={index} />}
-        SHOW_STORE_IN_DEVTOOLS // 用于显示 Redux Devtools
       />
     </div>
   );
