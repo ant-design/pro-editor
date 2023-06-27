@@ -38,7 +38,7 @@ const Overlay: FC<OverlayProps> = ({ prefixCls }) => {
     >
       {activeId ? (
         <Item id={activeId} dragOverlay prefixCls={prefixCls} compact={compact}>
-          {renderContent(value[activeIndex], activeIndex)}
+          {renderContent?.(value[activeIndex], activeIndex)}
         </Item>
       ) : null}
     </DragOverlay>
