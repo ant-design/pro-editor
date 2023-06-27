@@ -1,18 +1,20 @@
 /**
- * title: 空状态
- * description: 当没有数据时，列表显示空状态
+ * title: 默认使用
  * compact: true
  */
 import { SortableList } from '@ant-design/pro-editor';
 import { useTheme } from 'antd-style';
 import { Flexbox } from 'react-layout-kit';
 
-export default () => {
-  const token = useTheme();
+const list = [{ id: 'hello' }, { id: 'world' }];
 
+const Demo = () => {
+  const token = useTheme();
   return (
     <Flexbox padding={24} style={{ background: token.colorBgLayout }}>
-      <SortableList />
+      <SortableList value={list} />
     </Flexbox>
   );
 };
+
+export default Demo;
