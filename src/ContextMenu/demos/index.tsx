@@ -17,7 +17,7 @@ export default () => {
           {
             key: 'selectAll',
             label: '选择全部',
-            icon: <BoxSelectIcon />,
+            icon: <BoxSelectIcon width={'1em'} height={'1em'} />,
             shortcut: ['meta', 'A'],
           },
           { label: '放大', key: 'zoomIn', icon: <ZoomInOutlined /> },

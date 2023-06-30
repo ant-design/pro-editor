@@ -24,6 +24,7 @@ import {
 import { Divider } from 'antd';
 import { forwardRef, HTMLProps, useCallback, useEffect, useRef, useState } from 'react';
 
+import { cx } from 'antd-style';
 import MenuItem from './MenuItem';
 import { useStyles } from './style';
 import { GeneralItemType, MenuItemType } from './types';
@@ -65,7 +66,7 @@ const MenuComponent = forwardRef<
   const parentId = useFloatingParentNodeId();
   const isNested = parentId !== null;
 
-  const { refs, context } = useFloating<HTMLButtonElement>({
+  const { refs, context, floatingStyles } = useFloating<HTMLButtonElement>({
     nodeId,
     open: isOpen,
     onOpenChange: setIsOpen,
@@ -113,6 +114,8 @@ const MenuComponent = forwardRef<
     listNavigation,
     typeahead,
   ]);
+
+  console.log(getFloatingProps());
 
   // Event emitter allows you to communicate across tree components.
   // This effect closes all menus when an item gets clicked anywhere
@@ -281,7 +284,12 @@ const MenuComponent = forwardRef<
             modal={false}
             returnFocus={!isNested}
           >
-            <div className={styles.container} ref={refs.setFloating} {...getFloatingProps()}>
+            <div
+              className={cx(styles.container, 'studio-context-menu')}
+              ref={refs.setFloating}
+              style={floatingStyles}
+              {...getFloatingProps()}
+            >
               {items?.map(renderMenuItem)}
             </div>
           </FloatingFocusManager>

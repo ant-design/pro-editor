@@ -4,6 +4,7 @@ export const useStyles = createStyles(({ css, cx, token }, prefixCls: string) =>
   container: cx(
     prefixCls,
     css`
+      all: unset;
       user-select: none;
       scrollbar-width: none;
 
@@ -14,7 +15,7 @@ export const useStyles = createStyles(({ css, cx, token }, prefixCls: string) =>
       width: 200px;
       padding: 5px;
 
-      font-size: ${token.fontSize};
+      font-size: ${token.fontSize}px;
 
       background: ${token.colorBgContainer};
       border: 1px solid ${token.colorBorder};
