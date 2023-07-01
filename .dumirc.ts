@@ -15,9 +15,6 @@ export default defineConfig({
   ssr: false,
   hash: true,
   ignoreMomentLocale: true,
-  codeSplitting: {
-    jsStrategy: 'granularChunks',
-  },
   themeConfig: {
     hero: {
       'zh-CN': {
