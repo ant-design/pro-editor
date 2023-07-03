@@ -13,7 +13,7 @@ export interface SortableTreeProps<T> extends StoreUpdaterProps<T>, ControlledSt
 
 export { SortableTreeProvider } from './Provider';
 
-export const SortableTree: <T>(props: SortableTreeProps<T>) => ReactElement = memo((props) => {
+export const SortableTree = memo((props) => {
   const { SHOW_STORE_IN_DEVTOOLS, className, style, ...res } = props;
   return (
     <ConfigProvider>
@@ -23,4 +23,4 @@ export const SortableTree: <T>(props: SortableTreeProps<T>) => ReactElement = me
       </SortableTreeProvider>
     </ConfigProvider>
   );
-});
+}) as <T>(props: SortableTreeProps<T>) => ReactElement;
