@@ -4,7 +4,7 @@ import { StateCreator } from 'zustand/vanilla';
 import { FlattenNode } from '../../types';
 import { getFlattenedData } from '../../utils/utils';
 import { initialDragState } from '../initialState';
-import { projectedSelector } from '../selectors';
+import { dataFlattenSelector, projectedSelector } from '../selectors';
 import { InternalSortableTreeStore } from '../store';
 
 export interface DndAction {
@@ -57,11 +57,22 @@ export const dndSlice: StateCreator<
     set({ overId: over?.id ?? null });
   },
   handleDragEnd: ({ active, over }) => {
-    const { resetState, dispatchTreeData } = get();
+    const { resetState, dispatchTreeData, sortableRule } = get();
 
+    const dataFlatten = dataFlattenSelector(get());
+    const activeNode = dataFlatten.find((i) => i.id === active.id);
+    const targetNode = dataFlatten.find((i) => i.id === over.id);
     const projected = projectedSelector(get());
 
-    if (projected && over) {
+    const canSort =
+      !sortableRule ||
+      sortableRule?.({
+        activeNode,
+        targetNode,
+        projected,
+      });
+
+    if (projected && over && canSort) {
       dispatchTreeData({
         type: 'moveNode',
         projected,

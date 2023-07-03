@@ -6,7 +6,7 @@ import { SortableTreeInstance, useSortableTree } from '../hooks/useSortableTree'
 import type { ControlledState, OnTreeDataChange } from '../store';
 import { useStoreApi } from '../store';
 
-import type { RenderNodeProps, TreeData } from '../types';
+import type { FlattenNode, Projected, RenderNodeProps, TreeData } from '../types';
 
 export interface StoreUpdaterProps<T = any> extends ControlledState {
   /**
@@ -38,6 +38,14 @@ export interface StoreUpdaterProps<T = any> extends ControlledState {
    * @internal
    */
   SHOW_STORE_IN_DEVTOOLS?: boolean;
+  /**
+   * 是否可拖动的函数规则，如果返回false，本次拖动会被禁用，默认允许自由拖动
+   */
+  sortableRule?: (data: {
+    activeNode: FlattenNode<T>;
+    targetNode: FlattenNode<T>;
+    projected: Projected;
+  }) => boolean;
 }
 
 const StoreUpdater = ({
@@ -52,6 +60,7 @@ const StoreUpdater = ({
   hideAdd,
   indentationWidth,
   disableDrag,
+  sortableRule,
 }: StoreUpdaterProps) => {
   const storeApi = useStoreApi();
 
@@ -67,6 +76,7 @@ const StoreUpdater = ({
   useStoreUpdater('hideAdd', hideAdd);
   useStoreUpdater('hideRemove', hideRemove);
   useStoreUpdater('disableDrag', disableDrag);
+  useStoreUpdater('sortableRule', sortableRule);
 
   useStoreUpdater('onSelectedIdsChange', onSelectedIdsChange);
 
