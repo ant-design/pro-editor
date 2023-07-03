@@ -23,6 +23,7 @@ demo:
 
 <code src="./demos/renderContent.tsx" ></code>
 <code src="./demos/disableDrag.tsx" ></code>
+<code src="./demos/sortableRule.tsx" ></code>
 
 [//]: # '### 多选方案'
 [//]: #
@@ -32,19 +33,20 @@ demo:
 
 ### 属性
 
-| 名称                | 类型                                                             | 描述               |
-| ------------------- | ---------------------------------------------------------------- | ------------------ |
-| hideAdd             | `boolean`                                                        | 隐藏默认的添加按钮 |
-| hideRemove          | `boolean`                                                        | 隐藏默认的删除按钮 |
-| disableDrag         | `boolean`                                                        | 禁用拖拽           |
-| indentationWidth    | `number`                                                         | 缩进宽度           |
-| onSelectedIdsChange | `(selectedIds: UniqueIdentifier[]) => void`                      | 选中 ID 变更回调   |
-| treeData            | `TreeData<T>`                                                    | 树的数据           |
-| defaultTreeData     | `TreeData<T>`                                                    | 默认数据           |
-| onTreeDataChange    | `(treeData: TreeData<T>,event: TreeDataDispatchPayload) => void` | 数据变更回调       |
-| renderContent       | `(node: FlattenNode<T>) => JSX.Element`                          | 渲染内容           |
-| renderExtra         | `(node: FlattenNode<T>) => JSX.Element`                          | 渲染额外项         |
-| ref                 | `MutableRefObject<SortableTreeInstance<T>>`                      | 对外部暴露方法     |
+| 名称                | 类型                                                                                                  | 描述                   |
+| ------------------- | ----------------------------------------------------------------------------------------------------- | ---------------------- |
+| hideAdd             | `boolean`                                                                                             | 隐藏默认的添加按钮     |
+| hideRemove          | `boolean`                                                                                             | 隐藏默认的删除按钮     |
+| disableDrag         | `boolean`                                                                                             | 禁用拖拽               |
+| indentationWidth    | `number`                                                                                              | 缩进宽度               |
+| onSelectedIdsChange | `(selectedIds: UniqueIdentifier[]) => void`                                                           | 选中 ID 变更回调       |
+| treeData            | `TreeData<T>`                                                                                         | 树的数据               |
+| defaultTreeData     | `TreeData<T>`                                                                                         | 默认数据               |
+| onTreeDataChange    | `(treeData: TreeData<T>,event: TreeDataDispatchPayload) => void`                                      | 数据变更回调           |
+| renderContent       | `(node: FlattenNode<T>) => JSX.Element`                                                               | 渲染内容               |
+| renderExtra         | `(node: FlattenNode<T>) => JSX.Element`                                                               | 渲染额外项             |
+| ref                 | `MutableRefObject<SortableTreeInstance<T>>`                                                           | 对外部暴露方法         |
+| sortableRule        | `data: { activeNode: FlattenNode<T>; targetNode: FlattenNode<T>; projected: Projected; }) => boolean` | 控制拖动排序的规则函数 |
 
 ## TreeNode
 
@@ -67,6 +69,17 @@ demo:
 | parentId | `UniqueIdentifier` \| `null` | 父节点 ID，如果是根节点则为 null |
 | depth    | `number`                     | 节点深度                         |
 | index    | `number`                     | 节点在同级节点中的位置           |
+
+## Projected
+
+放置目标位置信息
+
+| 名称     | 类型                         | 描述                             |
+| -------- | ---------------------------- | -------------------------------- |
+| depth    | `number`                     | 放置目标位置深度                 |
+| maxDepth | `number`                     | 目标位置可放置最大深度           |
+| minDepth | `number`                     | 目标位置可放置可放置最小深度     |
+| parentId | `UniqueIdentifier` \| `null` | 父节点 ID，如果是根节点则为 null |
 
 ## SortableTreeInstance
 
