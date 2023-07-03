@@ -1,22 +1,22 @@
+/**
+ * title: 受控模式
+ * description: onChange 会返回变更数据
+ * compact: true
+ */
 import { SortableList } from '@ant-design/pro-editor';
+import { useTheme } from 'antd-style';
 import { useState } from 'react';
-import ItemRender from './_ItemRender';
-import { INIT_VALUES, SchemaItem } from './data';
+import { Flexbox } from 'react-layout-kit';
 
-export default () => {
-  const [listData, setListData] = useState<SchemaItem[]>(INIT_VALUES);
+const Demo = () => {
+  const [list, setList] = useState([{ id: 'hello' }, { id: 'world' }]);
 
+  const token = useTheme();
   return (
-    <div style={{ width: 340, padding: '0 12px' }}>
-      <SortableList<SchemaItem>
-        value={listData}
-        onChange={(data) => {
-          console.log('data', data);
-          setListData(data);
-        }}
-        renderContent={(item, index) => <ItemRender item={item} index={index} />}
-        SHOW_STORE_IN_DEVTOOLS // 用于显示 Redux Devtools
-      />
-    </div>
+    <Flexbox padding={24} style={{ background: token.colorBgLayout }}>
+      <SortableList value={list} onChange={(value) => setList(value)} />
+    </Flexbox>
   );
 };
+
+export default Demo;

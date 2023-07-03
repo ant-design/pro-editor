@@ -1,3 +1,7 @@
+/**
+ * title: renderHeader
+ * description:  使用 `renderHeader()` 方法可自定义列表标题。
+ */
 import { SortableList } from '@ant-design/pro-editor';
 import { Flexbox } from 'react-layout-kit';
 import ItemRender from './_ItemRender';
@@ -20,7 +24,7 @@ export default () => {
         onChange={(data) => {
           console.log('data', data);
         }}
-        renderHeader={() => <Header />}
+        renderHeader={Header}
         renderContent={(item, index) => <ItemRender item={item} index={index} />}
       />
     </div>
