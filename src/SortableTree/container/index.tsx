@@ -1,4 +1,4 @@
-import { memo, ReactElement } from 'react';
+import { memo, ReactNode } from 'react';
 
 import { ConfigProvider } from '../../ConfigProvider';
 import type { ControlledState } from '../store';
@@ -23,4 +23,4 @@ export const SortableTree = memo((props) => {
       </SortableTreeProvider>
     </ConfigProvider>
   );
-}) as <T>(props: SortableTreeProps<T>) => ReactElement;
+}) as <T>(props: SortableTreeProps<T>) => ReactNode;
