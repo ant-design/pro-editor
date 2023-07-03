@@ -1,4 +1,4 @@
-import type { RenderNodeProps, TreeData, UniqueIdentifier } from '../types';
+import type { FlattenNode, Projected, RenderNodeProps, TreeData, UniqueIdentifier } from '../types';
 import { TreeDataDispatchPayload } from './treeDataReducer';
 
 export type OnTreeDataChange<T = any> = (
@@ -32,7 +32,7 @@ export interface ControlledState {
 /**
  * @title 组件状态
  */
-export interface State extends ControlledState {
+export interface State<T = any> extends ControlledState {
   /**
    * @title 树形数据
    */
@@ -81,6 +81,14 @@ export interface State extends ControlledState {
    * @param node - 节点数据
    */
   renderExtra: RenderNodeProps;
+  /**
+   * 是否可拖动的函数规则，如果返回false，本次拖动会被禁用，默认允许自由拖动
+   */
+  sortableRule?: (data: {
+    activeNode: FlattenNode<T>;
+    targetNode: FlattenNode<T>;
+    projected: Projected;
+  }) => boolean;
 }
 
 export const initialDragState: Pick<
