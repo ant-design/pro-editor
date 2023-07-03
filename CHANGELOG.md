@@ -1,5 +1,30 @@
 # Changelog
 
+## [Version&nbsp;0.8.0](https://github.com/ant-design/pro-editor/compare/v0.7.2...v0.8.0)
+
+<sup>Released on **2023-07-03**</sup>
+
+#### ✨ 新特性
+
+- **sortable-tree**: 新增 sortableRule 函数规则，控制拖动排序.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's improved
+
+- **sortable-tree**: 新增 sortableRule 函数规则，控制拖动排序, closes [#46](https://github.com/ant-design/pro-editor/issues/46) ([9b8d127](https://github.com/ant-design/pro-editor/commit/9b8d127))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
 ### [Version&nbsp;0.7.2](https://github.com/ant-design/pro-editor/compare/v0.7.1...v0.7.2)
 
 <sup>Released on **2023-07-03**</sup>
