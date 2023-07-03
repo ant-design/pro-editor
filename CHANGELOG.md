@@ -1,5 +1,30 @@
 # Changelog
 
+### [Version&nbsp;0.7.2](https://github.com/ant-design/pro-editor/compare/v0.7.1...v0.7.2)
+
+<sup>Released on **2023-07-03**</sup>
+
+#### 🐛 修复
+
+- **sortable-list**: 兼容默认数据展示.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's fixed
+
+- **sortable-list**: 兼容默认数据展示 ([b203c88](https://github.com/ant-design/pro-editor/commit/b203c88))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
 ### [Version&nbsp;0.7.1](https://github.com/ant-design/pro-editor/compare/v0.7.0...v0.7.1)
 
 <sup>Released on **2023-07-03**</sup>
