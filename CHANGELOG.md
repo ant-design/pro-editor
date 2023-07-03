@@ -1,5 +1,30 @@
 # Changelog
 
+### [Version&nbsp;0.7.1](https://github.com/ant-design/pro-editor/compare/v0.7.0...v0.7.1)
+
+<sup>Released on **2023-07-03**</sup>
+
+#### 🐛 修复
+
+- 优化 Input 和 InputNumber 组件的受控变更逻辑.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's fixed
+
+- 优化 Input 和 InputNumber 组件的受控变更逻辑, closes [#45](https://github.com/ant-design/pro-editor/issues/45) ([e903a6b](https://github.com/ant-design/pro-editor/commit/e903a6b))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
 ## [Version&nbsp;0.7.0](https://github.com/ant-design/pro-editor/compare/v0.6.0...v0.7.0)
 
 <sup>Released on **2023-06-25**</sup>
