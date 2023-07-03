@@ -126,6 +126,8 @@
     "@umijs/lint": "^4.0.0",
     "@vitest/coverage-v8": "latest",
     "antd": "^5",
+    "antd-style": "^3",
+    "babel-plugin-antd-style": "^1.0.4",
     "commitlint": "^17",
     "commitlint-config-gitmoji": "^2",
     "conventional-changelog-gitmoji-config": "^1.5.2",
