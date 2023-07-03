@@ -28832,20 +28832,63 @@ exports[`<antd /> > renders basic.tsx correctly 1`] = `
   box-shadow: none;
 }
 
-.emotion-2:hover {
+<div>
+  <div
+    class="studio-space studio-space-vertical"
+  >
+    <div
+      class="studio-space-item"
+      style="margin-bottom: 8px;"
+    >
+      Input
+    </div>
+    <div
+      class="studio-space-item"
+    >
+      <div
+        class="studio-space studio-space-vertical"
+      >
+        <div
+          class="studio-space-item"
+          style="margin-bottom: 8px;"
+        >
+          <input
+            class="studio-input emotion-0"
+            placeholder="请输入内容"
+            type="text"
+            value=""
+          />
+        </div>
+        <div
+          class="studio-space-item"
+        >
+          <input
+            class="studio-input emotion-0"
+            type="text"
+            value="包含有文本"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<antd /> > renders inputNumber.tsx correctly 1`] = `
+.emotion-0:hover {
   color: rgba(0, 0, 0, 0.88);
   background-color: rgba(0, 0, 0, 0.04);
   border-color: transparent;
 }
 
-.emotion-2:focus {
+.emotion-0:focus {
   color: rgba(0, 0, 0, 0.88)!important;
   background-color: rgba(0, 0, 0, 0.02)!important;
   border-color: #1677ff!important;
   box-shadow: none;
 }
 
-.emotion-2 .studio-input-number-group-addon {
+.emotion-0 .studio-input-number-group-addon {
   padding: 0 4px;
   color: rgba(0, 0, 0, 0.45);
   background: rgba(0, 0, 0, 0.02);
@@ -28858,49 +28901,28 @@ exports[`<antd /> > renders basic.tsx correctly 1`] = `
   >
     <div
       class="studio-space-item"
+      style="margin-bottom: 8px;"
+    >
+      InputNumber
+    </div>
+    <div
+      class="studio-space-item"
     >
       <div
-        class="studio-space studio-space-horizontal studio-space-align-start"
+        class="studio-space studio-space-vertical"
       >
         <div
           class="studio-space-item"
-          style="margin-right: 8px;"
-        >
-          Input
-        </div>
-        <div
-          class="studio-space-item"
+          style="margin-bottom: 8px;"
         >
           <div
-            class="studio-space studio-space-vertical"
+            class="studio-input-number-group-wrapper studio-input-number-group-wrapper-lg emotion-0"
           >
             <div
-              class="studio-space-item"
-              style="margin-bottom: 8px;"
-            >
-              <input
-                class="studio-input emotion-0"
-                placeholder="请输入内容"
-                type="text"
-                value=""
-              />
-            </div>
-            <div
-              class="studio-space-item"
-              style="margin-bottom: 8px;"
-            >
-              <input
-                class="studio-input emotion-0"
-                type="text"
-                value="包含有文本"
-              />
-            </div>
-            <div
-              class="studio-space-item"
-              style="margin-bottom: 8px;"
+              class="studio-input-number-wrapper studio-input-number-group"
             >
               <div
-                class="studio-input-number studio-input-number-sm emotion-2"
+                class="studio-input-number studio-input-number-lg emotion-0"
               >
                 <div
                   class="studio-input-number-handler-wrap"
@@ -28973,96 +28995,193 @@ exports[`<antd /> > renders basic.tsx correctly 1`] = `
                   />
                 </div>
               </div>
+              <div
+                class="studio-input-number-group-addon"
+              >
+                列
+              </div>
             </div>
+          </div>
+        </div>
+        <div
+          class="studio-space-item"
+          style="margin-bottom: 8px;"
+        >
+          <div
+            class="studio-input-number-group-wrapper studio-input-number-group-wrapper-sm emotion-0"
+          >
             <div
-              class="studio-space-item"
+              class="studio-input-number-wrapper studio-input-number-group"
             >
               <div
-                class="studio-input-number-group-wrapper studio-input-number-group-wrapper-sm emotion-2"
+                class="studio-input-number studio-input-number-sm emotion-0"
               >
                 <div
-                  class="studio-input-number-wrapper studio-input-number-group"
+                  class="studio-input-number-handler-wrap"
                 >
-                  <div
-                    class="studio-input-number studio-input-number-sm emotion-2"
+                  <span
+                    aria-disabled="false"
+                    aria-label="Increase Value"
+                    class="studio-input-number-handler studio-input-number-handler-up"
+                    role="button"
+                    unselectable="on"
                   >
-                    <div
-                      class="studio-input-number-handler-wrap"
+                    <span
+                      aria-label="up"
+                      class="anticon anticon-up studio-input-number-handler-up-inner"
+                      role="img"
                     >
-                      <span
-                        aria-disabled="false"
-                        aria-label="Increase Value"
-                        class="studio-input-number-handler studio-input-number-handler-up"
-                        role="button"
-                        unselectable="on"
+                      <svg
+                        aria-hidden="true"
+                        data-icon="up"
+                        fill="currentColor"
+                        focusable="false"
+                        height="1em"
+                        viewBox="64 64 896 896"
+                        width="1em"
                       >
-                        <span
-                          aria-label="up"
-                          class="anticon anticon-up studio-input-number-handler-up-inner"
-                          role="img"
-                        >
-                          <svg
-                            aria-hidden="true"
-                            data-icon="up"
-                            fill="currentColor"
-                            focusable="false"
-                            height="1em"
-                            viewBox="64 64 896 896"
-                            width="1em"
-                          >
-                            <path
-                              d="M890.5 755.3L537.9 269.2c-12.8-17.6-39-17.6-51.7 0L133.5 755.3A8 8 0 00140 768h75c5.1 0 9.9-2.5 12.9-6.6L512 369.8l284.1 391.6c3 4.1 7.8 6.6 12.9 6.6h75c6.5 0 10.3-7.4 6.5-12.7z"
-                            />
-                          </svg>
-                        </span>
-                      </span>
-                      <span
-                        aria-disabled="false"
-                        aria-label="Decrease Value"
-                        class="studio-input-number-handler studio-input-number-handler-down"
-                        role="button"
-                        unselectable="on"
-                      >
-                        <span
-                          aria-label="down"
-                          class="anticon anticon-down studio-input-number-handler-down-inner"
-                          role="img"
-                        >
-                          <svg
-                            aria-hidden="true"
-                            data-icon="down"
-                            fill="currentColor"
-                            focusable="false"
-                            height="1em"
-                            viewBox="64 64 896 896"
-                            width="1em"
-                          >
-                            <path
-                              d="M884 256h-75c-5.1 0-9.9 2.5-12.9 6.6L512 654.2 227.9 262.6c-3-4.1-7.8-6.6-12.9-6.6h-75c-6.5 0-10.3 7.4-6.5 12.7l352.6 486.1c12.8 17.6 39 17.6 51.7 0l352.6-486.1c3.9-5.3.1-12.7-6.4-12.7z"
-                            />
-                          </svg>
-                        </span>
-                      </span>
-                    </div>
-                    <div
-                      class="studio-input-number-input-wrap"
-                    >
-                      <input
-                        aria-valuenow="100"
-                        autocomplete="off"
-                        class="studio-input-number-input"
-                        role="spinbutton"
-                        step="1"
-                        value="100"
-                      />
-                    </div>
-                  </div>
-                  <div
-                    class="studio-input-number-group-addon"
+                        <path
+                          d="M890.5 755.3L537.9 269.2c-12.8-17.6-39-17.6-51.7 0L133.5 755.3A8 8 0 00140 768h75c5.1 0 9.9-2.5 12.9-6.6L512 369.8l284.1 391.6c3 4.1 7.8 6.6 12.9 6.6h75c6.5 0 10.3-7.4 6.5-12.7z"
+                        />
+                      </svg>
+                    </span>
+                  </span>
+                  <span
+                    aria-disabled="false"
+                    aria-label="Decrease Value"
+                    class="studio-input-number-handler studio-input-number-handler-down"
+                    role="button"
+                    unselectable="on"
                   >
-                    列
-                  </div>
+                    <span
+                      aria-label="down"
+                      class="anticon anticon-down studio-input-number-handler-down-inner"
+                      role="img"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        data-icon="down"
+                        fill="currentColor"
+                        focusable="false"
+                        height="1em"
+                        viewBox="64 64 896 896"
+                        width="1em"
+                      >
+                        <path
+                          d="M884 256h-75c-5.1 0-9.9 2.5-12.9 6.6L512 654.2 227.9 262.6c-3-4.1-7.8-6.6-12.9-6.6h-75c-6.5 0-10.3 7.4-6.5 12.7l352.6 486.1c12.8 17.6 39 17.6 51.7 0l352.6-486.1c3.9-5.3.1-12.7-6.4-12.7z"
+                        />
+                      </svg>
+                    </span>
+                  </span>
                 </div>
+                <div
+                  class="studio-input-number-input-wrap"
+                >
+                  <input
+                    aria-valuenow="100"
+                    autocomplete="off"
+                    class="studio-input-number-input"
+                    role="spinbutton"
+                    step="1"
+                    value="100"
+                  />
+                </div>
+              </div>
+              <div
+                class="studio-input-number-group-addon"
+              >
+                列
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="studio-space-item"
+        >
+          <div
+            class="studio-input-number-group-wrapper studio-input-number-group-wrapper-sm emotion-0"
+          >
+            <div
+              class="studio-input-number-wrapper studio-input-number-group"
+            >
+              <div
+                class="studio-input-number studio-input-number-sm emotion-0"
+              >
+                <div
+                  class="studio-input-number-handler-wrap"
+                >
+                  <span
+                    aria-disabled="false"
+                    aria-label="Increase Value"
+                    class="studio-input-number-handler studio-input-number-handler-up"
+                    role="button"
+                    unselectable="on"
+                  >
+                    <span
+                      aria-label="up"
+                      class="anticon anticon-up studio-input-number-handler-up-inner"
+                      role="img"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        data-icon="up"
+                        fill="currentColor"
+                        focusable="false"
+                        height="1em"
+                        viewBox="64 64 896 896"
+                        width="1em"
+                      >
+                        <path
+                          d="M890.5 755.3L537.9 269.2c-12.8-17.6-39-17.6-51.7 0L133.5 755.3A8 8 0 00140 768h75c5.1 0 9.9-2.5 12.9-6.6L512 369.8l284.1 391.6c3 4.1 7.8 6.6 12.9 6.6h75c6.5 0 10.3-7.4 6.5-12.7z"
+                        />
+                      </svg>
+                    </span>
+                  </span>
+                  <span
+                    aria-disabled="false"
+                    aria-label="Decrease Value"
+                    class="studio-input-number-handler studio-input-number-handler-down"
+                    role="button"
+                    unselectable="on"
+                  >
+                    <span
+                      aria-label="down"
+                      class="anticon anticon-down studio-input-number-handler-down-inner"
+                      role="img"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        data-icon="down"
+                        fill="currentColor"
+                        focusable="false"
+                        height="1em"
+                        viewBox="64 64 896 896"
+                        width="1em"
+                      >
+                        <path
+                          d="M884 256h-75c-5.1 0-9.9 2.5-12.9 6.6L512 654.2 227.9 262.6c-3-4.1-7.8-6.6-12.9-6.6h-75c-6.5 0-10.3 7.4-6.5 12.7l352.6 486.1c12.8 17.6 39 17.6 51.7 0l352.6-486.1c3.9-5.3.1-12.7-6.4-12.7z"
+                        />
+                      </svg>
+                    </span>
+                  </span>
+                </div>
+                <div
+                  class="studio-input-number-input-wrap"
+                >
+                  <input
+                    aria-valuenow="100"
+                    autocomplete="off"
+                    class="studio-input-number-input"
+                    role="spinbutton"
+                    step="1"
+                    value="100"
+                  />
+                </div>
+              </div>
+              <div
+                class="studio-input-number-group-addon"
+              >
+                列
               </div>
             </div>
           </div>
