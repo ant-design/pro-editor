@@ -75,6 +75,27 @@ demo:
 | record            | `(index: number) => Record<string, any>` | 生成初始值逻辑             |
 | creatorButtonText | `string`                                 | 新增一行按钮文案           |
 
+### 自定义样式
+
+可以使用 `getItemStyle` 来调整样式，该方法的签名为：
+
+```typescript
+interface GetItemStylesArgs {
+  index: number;
+  isDragging: boolean;
+  id: string;
+  isSorting: boolean;
+  overIndex: number;
+  isDragOverlay: boolean;
+}
+
+type GetItemStyles = (status: GetItemStylesArgs) => React.CSSProperties;
+```
+
+基于相应参数，可以自由控制列项的样式
+
+<code src="./demos/CustomStyle.tsx"></code>
+
 ### SortableListDispatchPayload
 
 组件通过 `onChange` 以及 `ForwardRef` 的方式暴露底层事件，你可以细粒度地控制列表的增删改查，移动，以及根据事件细粒度控制后续的行为链路。

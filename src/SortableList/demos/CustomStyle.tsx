@@ -1,7 +1,4 @@
-/**
- * iframe: true
- */
-import SortableList from '@arvinxu/sortable-list';
+import { SortableList } from '@ant-design/pro-editor';
 import { useState } from 'react';
 
 const Demo = () => {
@@ -14,12 +11,10 @@ const Demo = () => {
 
   return (
     <SortableList
-      dataSource={list}
+      value={list}
       onChange={setList}
       style={{ background: 'rgb(255,224,224)', padding: 24, borderRadius: 12 }}
-      removable={false}
       className={'custom-class'}
-      gap={24}
       getItemStyles={({ isSorting, isDragging, isDragOverlay }) => {
         // overlay 使用默认样式
         if (isDragOverlay) return;
