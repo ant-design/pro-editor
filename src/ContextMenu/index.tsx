@@ -115,8 +115,6 @@ const MenuComponent = forwardRef<
     typeahead,
   ]);
 
-  console.log(getFloatingProps());
-
   // Event emitter allows you to communicate across tree components.
   // This effect closes all menus when an item gets clicked anywhere
   // in the tree.
