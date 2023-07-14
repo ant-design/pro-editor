@@ -171,5 +171,8 @@
   "authors": [
     "rdmclin2@163.com",
     "arvinx@foxmail.com"
-  ]
+  ],
+  "gitmoji": {
+    "capitalizeTitle": false
+  }
 }
