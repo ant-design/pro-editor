@@ -18,29 +18,17 @@ export const buttonSchema: JSONSchema<ButtonConfig> = {
   properties: {
     children: {
       type: 'string',
-      description: '设置按钮文本',
       title: '按钮文本',
-      renderProps: {
-        allowClear: true,
-        placeholder: '空值将无法正常显示',
-        autoFocus: true,
-      },
     },
     type: {
       type: 'string',
       title: '类型',
-      renderType: 'radioGroup',
       default: 'default',
       enum: ['primary', 'default', 'dashed', 'link', 'text'],
       enumNames: ['强调', '默认', '虚线', '链接', '文本'],
-      renderOptions: {
-        layout: 'vertical',
-        noLabel: true,
-      },
     },
     danger: {
       type: 'boolean',
-      renderType: 'boolean',
       title: '危险态',
       default: false,
     },
@@ -52,16 +40,13 @@ export const buttonSchema: JSONSchema<ButtonConfig> = {
     size: {
       title: '大小',
       type: 'string',
-      renderType: 'radioGroup',
       enum: ['large', 'middle', 'small'],
       enumNames: ['大', '中', '小'],
       default: 'middle',
-      category: 'style',
     },
     shape: {
       title: '形状',
       type: 'string',
-      renderType: 'radioGroup',
       enumOptions: [
         {
           label: '默认',
@@ -75,29 +60,21 @@ export const buttonSchema: JSONSchema<ButtonConfig> = {
           value: 'round',
         },
       ],
-      category: 'style',
-      renderOptions: {},
     },
     loading: {
       type: 'boolean',
-      renderType: 'boolean',
       title: '加载中',
       default: false,
-      category: 'status',
     },
     disabled: {
       type: 'boolean',
-      renderType: 'boolean',
       title: '禁用',
       default: false,
-      category: 'status',
     },
     ghost: {
       type: 'boolean',
-      renderType: 'boolean',
       title: '幽灵按钮',
       default: false,
-      category: 'style',
     },
   },
 };
