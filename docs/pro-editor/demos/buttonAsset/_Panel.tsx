@@ -6,7 +6,7 @@ import { FC, memo } from 'react';
 import { Flexbox } from 'react-layout-kit';
 import { shallow } from 'zustand/shallow';
 
-import { ButtonConfig, buttonSchema } from './models';
+import { ButtonConfig, buttonModel } from './models';
 
 export const ButtonPanel: FC = memo(() => {
   const data = useProEditorStore((s) => s.config, isEqual);
@@ -18,7 +18,7 @@ export const ButtonPanel: FC = memo(() => {
   return (
     <>
       <LevaPanel<ButtonConfig>
-        schema={buttonSchema}
+        schema={buttonModel.schema()}
         onChange={(data, item) => {
           updateConfig(item, { replace: true });
         }}
