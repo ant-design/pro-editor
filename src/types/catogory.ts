@@ -1,4 +1,17 @@
-import type { CategoryConfig } from '@c2d2c/types';
+export interface CategoryBaseField {
+  title?: string;
+  description?: string;
+  defaultActive?: boolean;
+}
+/**
+ * 目录分类
+ * 默认包含 四个分类
+ * type:  '类型'
+ * content: '内容'
+ * style: '样式'
+ * status:  '状态'
+ */
+export type CategoryConfig = Record<string, CategoryBaseField>;
 
 export enum CategoryMap {
   type = 'type',
