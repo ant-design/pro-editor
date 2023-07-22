@@ -1,11 +1,11 @@
 import { JSONSchema } from '@/ComponentAsset';
-import { getDefaultValueFromSchema } from '@c2d2c/utils';
 import { useMemoizedFn } from 'ahooks';
 import isEqual from 'fast-deep-equal';
 import { useControls, useStoreContext } from 'leva';
 import { DataInput } from 'leva/src/types';
 import merge from 'lodash.merge';
 import { ReactNode, memo, useEffect, useMemo } from 'react';
+import { getDefaultValueFromSchema } from '../utils';
 
 import { SchemaItem, toLevaSchema } from './utils/schema';
 
