@@ -1,9 +1,9 @@
-import type { IconUnit } from '@c2d2c/types';
 import { act, renderHook } from '@testing-library/react';
 import { readFileSync } from 'fs';
 import path from 'path';
 import { vi } from 'vitest';
 import { create } from 'zustand';
+import type { IconUnit } from '../types';
 
 import type { Store } from './store';
 import vanillaStore from './store';
