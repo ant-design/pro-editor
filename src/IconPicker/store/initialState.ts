@@ -1,6 +1,5 @@
-import type { IconfontIcon, IconUnit, ReactIcon } from '@c2d2c/types';
 import { antdIconList } from '../contents/antdIcons';
-import type { ExternalScripts } from '../types';
+import type { ExternalScripts, IconfontIcon, IconUnit, ReactIcon } from '../types';
 
 export interface State {
   /**

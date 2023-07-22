@@ -1,8 +1,8 @@
-import type { IconUnit } from '@c2d2c/types';
 import { createStyles } from 'antd-style';
 import type { FC } from 'react';
 import { memo } from 'react';
 import { Flexbox } from 'react-layout-kit';
+import type { IconUnit } from '../../types';
 
 import IconItem from '../../features/IconRender';
 import { useStore } from '../../store';

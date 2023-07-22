@@ -1,5 +1,5 @@
 import * as AntdIcon from '@ant-design/icons';
-import type { ReactIcon } from '@c2d2c/types';
+import type { ReactIcon } from '../types';
 
 const list = Object.keys(AntdIcon).filter(
   (key) => key.endsWith('Outlined') || key.endsWith('Filled'),
