@@ -32873,13 +32873,13 @@ exports[`<antd /> > renders inputNumber.tsx correctly 1`] = `
           style="margin-bottom: 8px;"
         >
           <div
-            class="studio-input-number-group-wrapper studio-input-number-group-wrapper-lg emotion-0"
+            class="studio-input-number-group-wrapper emotion-0 studio-input-number-group-wrapper-lg"
           >
             <div
               class="studio-input-number-wrapper studio-input-number-group"
             >
               <div
-                class="studio-input-number studio-input-number-lg emotion-0"
+                class="studio-input-number studio-input-number-lg"
               >
                 <div
                   class="studio-input-number-handler-wrap"
@@ -32965,13 +32965,13 @@ exports[`<antd /> > renders inputNumber.tsx correctly 1`] = `
           style="margin-bottom: 8px;"
         >
           <div
-            class="studio-input-number-group-wrapper studio-input-number-group-wrapper-sm emotion-0"
+            class="studio-input-number-group-wrapper emotion-0 studio-input-number-group-wrapper-sm"
           >
             <div
               class="studio-input-number-wrapper studio-input-number-group"
             >
               <div
-                class="studio-input-number studio-input-number-sm emotion-0"
+                class="studio-input-number studio-input-number-sm"
               >
                 <div
                   class="studio-input-number-handler-wrap"
@@ -33056,13 +33056,13 @@ exports[`<antd /> > renders inputNumber.tsx correctly 1`] = `
           class="studio-space-item"
         >
           <div
-            class="studio-input-number-group-wrapper studio-input-number-group-wrapper-sm emotion-0"
+            class="studio-input-number-group-wrapper emotion-0 studio-input-number-group-wrapper-sm"
           >
             <div
               class="studio-input-number-wrapper studio-input-number-group"
             >
               <div
-                class="studio-input-number studio-input-number-sm emotion-0"
+                class="studio-input-number studio-input-number-sm"
               >
                 <div
                   class="studio-input-number-handler-wrap"
