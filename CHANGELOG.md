@@ -1,5 +1,30 @@
 # Changelog
 
+## [Version&nbsp;0.9.0](https://github.com/ant-design/pro-editor/compare/v0.8.0...v0.9.0)
+
+<sup>Released on **2023-07-24**</sup>
+
+#### ✨ 新特性
+
+- Add field component.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's improved
+
+- Add field component, closes [#49](https://github.com/ant-design/pro-editor/issues/49) ([5129247](https://github.com/ant-design/pro-editor/commit/5129247))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
 ## [Version&nbsp;0.8.0](https://github.com/ant-design/pro-editor/compare/v0.7.2...v0.8.0)
 
 <sup>Released on **2023-07-03**</sup>
