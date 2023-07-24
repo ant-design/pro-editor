@@ -85,8 +85,8 @@ const FieldSelect: React.FC<FieldSelectProps> = (props) => {
 
   const { styles } = useStyle(prefixCls);
 
-  const onNameChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    setName(event.target.value);
+  const onNameChange = (value) => {
+    setName(value);
   };
 
   const onSelectChange = (selectedValue: string) => {
