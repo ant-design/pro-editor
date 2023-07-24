@@ -2,10 +2,10 @@ import type { UniqueIdentifier } from '@dnd-kit/core';
 import { AnimateLayoutChanges, useSortable } from '@dnd-kit/sortable';
 import { CSS } from '@dnd-kit/utilities';
 import { useClickAway } from 'ahooks';
-import { createStyles } from 'antd-style';
 import type { CSSProperties, FC, HTMLAttributes } from 'react';
 import { memo, useRef } from 'react';
 import { shallow } from 'zustand/shallow';
+import { createStyles } from '../../../theme';
 
 import { CollapseAction, DeleteAction, HandleAction } from '@/ActionIcon';
 

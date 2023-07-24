@@ -1,6 +1,6 @@
-import { createStyles } from 'antd-style';
 import type { FC } from 'react';
 import { memo } from 'react';
+import { createStyles } from '../../../theme';
 
 import { useStore } from '../../store';
 import IconThumbnail from './IconThumbnail';

@@ -1,6 +1,6 @@
-import { createStyles } from 'antd-style';
 import { LevaPanel, LevaStoreProvider, useCreateStore } from 'leva';
 import { CSSProperties, ReactNode, memo } from 'react';
+import { createStyles } from '../theme';
 import Schema, { SchemaProps } from './Schema';
 
 const useStyles = createStyles(
