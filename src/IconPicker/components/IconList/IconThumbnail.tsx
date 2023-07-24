@@ -1,7 +1,7 @@
-import { createStyles } from 'antd-style';
 import type { FC } from 'react';
 import { memo } from 'react';
 import { Flexbox } from 'react-layout-kit';
+import { createStyles } from '../../../theme';
 import type { IconUnit } from '../../types';
 
 import IconItem from '../../features/IconRender';

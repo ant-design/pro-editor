@@ -1,7 +1,6 @@
-import { createStyles, css, cx } from '@ant-design/pro-editor';
+import { createStyles } from '../theme';
 
-export const useStyle = createStyles((_, prefixCls: string) => {
-  const { token } = _;
+export const useStyle = createStyles(({ css, cx, token }, prefixCls: string) => {
   return {
     icon: cx(
       `${prefixCls}`,

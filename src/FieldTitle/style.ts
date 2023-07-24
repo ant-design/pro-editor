@@ -1,6 +1,6 @@
-import { createStyles, css, cx } from '@ant-design/pro-editor';
+import { createStyles } from '../theme';
 
-export const useStyle = createStyles(({ token }, { prefixCls, checkable }) => {
+export const useStyle = createStyles(({ token, css, cx }, { prefixCls, checkable }) => {
   return {
     content: cx(
       `${prefixCls}-content`,
