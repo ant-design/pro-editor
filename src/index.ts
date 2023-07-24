@@ -14,6 +14,7 @@ export * from './DraggablePanel';
 export { default as ErrorBoundary } from './ErrorBoundary';
 export { ExcelTable } from './ExcelTable';
 export type { ExcelTableProps, ExcelTableStore, TableData } from './ExcelTable';
+export { default as FieldIcon } from './FieldIcon';
 export { default as FreeCanvas } from './FreeCanvas';
 export type { FreeCanvasProps } from './FreeCanvas';
 export * from './Highlight';
