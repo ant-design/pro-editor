@@ -16,17 +16,16 @@ export interface NavBarProps {
 
 const NavBar: FC<NavBarProps> = memo(({ logo }) => {
   const prefixCls = useStore((s) => s.prefixCls, shallow);
-
   const { styles } = useStyle(`${prefixCls}-navbar`);
 
   const defaultLogo = (
     <Space>
       <img
-        src="https://gw.alipayobjects.com/zos/hitu-asset/2661db12-eeeb-4f61-a285-0d066ac68e52/hitu-1617880447900-image.png"
-        alt="TechUI Studio"
+        src="https://gw.alipayobjects.com/zos/antfincdn/upvrAjAPQX/Logo_Tech%252520UI.svg"
+        alt="ProEditor"
         className={styles.img}
       />
-      <div style={{ fontSize: 16 }}>TechUI Studio</div>
+      <div style={{ fontSize: 16 }}>ProEditor</div>
     </Space>
   );
 
