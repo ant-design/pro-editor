@@ -1,8 +1,6 @@
 ---
 title: FieldIcon 字段图标
-group:
-  title: API 相关组件
-  order: 10
+group: 基础组件
 ---
 
 # FieldIcon 字段图标

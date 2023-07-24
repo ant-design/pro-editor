@@ -1,6 +1,6 @@
 ---
 title: FieldTitle 字段标题
-group: API 相关组件
+group: 基础组件
 ---
 
 # FieldTitle 字段标题

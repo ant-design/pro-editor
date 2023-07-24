@@ -1,6 +1,6 @@
 ---
 title: FieldSelect 字段选择器
-group: API 相关组件
+group: 基础组件
 ---
 
 # FieldSelect 字段选择器
