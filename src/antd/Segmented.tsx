@@ -50,12 +50,10 @@ export interface SegmentedProps<T = string>
   /**
    * 选项值
    */
-  options: { label: ReactNode; value: T }[];
+  options: { label: ReactNode; value: T; icon?: React.ReactNode }[];
 }
 
-export const Segmented: <T = string>(
-  props: SegmentedProps<T>,
-) => JSX.Element = (props) => {
+export const Segmented: <T = string>(props: SegmentedProps<T>) => JSX.Element = (props) => {
   const { styles, cx } = useStyles();
 
   return (

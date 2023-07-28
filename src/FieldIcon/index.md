@@ -25,14 +25,6 @@ group: 基础组件
 
 ### APIFieldType 字段类型枚举
 
-`@alipay/studio-oneapi-sdk` 中导出了 API 字段类型的枚举，你可以这样使用：
-
-```tsx | pure
-import { APIFieldType } from '@alipay/studio-oneapi-sdk';
-
-<FieldIcon type={APIFieldType.any} />;
-```
-
 | 类型           | 字段说明     |
 | :------------- | :----------- |
 | `integer`      | 整数         |
