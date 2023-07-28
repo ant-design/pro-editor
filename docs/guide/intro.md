@@ -14,7 +14,9 @@ ProEditor 定位轻量级编辑器 UI 框架，期望为「编辑」场景提供
 ## 安装
 
 ```bash
-npm install @ant-design/pro-editor -S
+# @ant-design/pro-editor 基于 antd 和 antd-style，需要在项目中安装
+$ npm install antd antd-style -S
+$ npm install @ant-design/pro-editor -S
 ```
 
 ### 使用组件
