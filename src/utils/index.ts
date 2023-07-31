@@ -1,2 +1,2 @@
 export * from './autoId';
-export * from './schema';
+export * from './c2d2c';
