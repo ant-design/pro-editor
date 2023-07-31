@@ -1,5 +1,8 @@
 import { JSONSchema } from '@/types/schema';
-import { isEmpty, isNil, omitBy, uniq } from 'lodash';
+import isEmpty from 'lodash.isempty';
+import isNil from 'lodash.isnil';
+import omitBy from 'lodash.omitby';
+import uniq from 'lodash.uniq';
 import { ReactNodeElement } from '../types';
 
 /**
