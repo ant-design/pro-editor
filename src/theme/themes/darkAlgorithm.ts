@@ -1,5 +1,5 @@
 import { theme } from 'antd';
-import type { MappingAlgorithm } from 'antd/es/config-provider/context';
+import type { MappingAlgorithm } from 'antd/es/theme/interface';
 
 /**
  * studio 暗色模式下算法
