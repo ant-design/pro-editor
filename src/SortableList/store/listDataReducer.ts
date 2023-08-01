@@ -1,7 +1,7 @@
 import type { UniqueIdentifier } from '@dnd-kit/core';
 import { arrayMove } from '@dnd-kit/sortable';
 import { produce } from 'immer';
-import { merge } from 'lodash-es';
+import merge from 'lodash.merge';
 
 import type { KeyManager } from '../type';
 
