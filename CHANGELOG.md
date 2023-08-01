@@ -1,5 +1,38 @@
 # Changelog
 
+## [Version&nbsp;0.10.0](https://github.com/ant-design/pro-editor/compare/v0.9.0...v0.10.0)
+
+<sup>Released on **2023-08-01**</sup>
+
+#### ✨ 新特性
+
+- Add c2d2c getDiffPropsWithSchema and getSymbolMasterNameFromProps func.
+
+#### 🐛 修复
+
+- Test snapshot udpate.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's improved
+
+- Add c2d2c getDiffPropsWithSchema and getSymbolMasterNameFromProps func, closes [#52](https://github.com/ant-design/pro-editor/issues/52) ([ea4ad31](https://github.com/ant-design/pro-editor/commit/ea4ad31))
+
+#### What's fixed
+
+- Test snapshot udpate, closes [#53](https://github.com/ant-design/pro-editor/issues/53) ([985c630](https://github.com/ant-design/pro-editor/commit/985c630))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
 ## [Version&nbsp;0.9.0](https://github.com/ant-design/pro-editor/compare/v0.8.0...v0.9.0)
 
 <sup>Released on **2023-07-24**</sup>
