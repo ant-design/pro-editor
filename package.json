@@ -57,7 +57,7 @@
     ]
   },
   "dependencies": {
-    "@ant-design/icons": "^5.1.4",
+    "@ant-design/icons": "^5.2.1",
     "@ant-design/pro-components": "^2.6.10",
     "@antv/dw-random": "^1.1.7",
     "@babel/runtime": "^7.22.6",
@@ -126,7 +126,7 @@
     "@types/react-dom": "^18.2.7",
     "@umijs/lint": "^4.0.73",
     "@vitest/coverage-v8": "latest",
-    "antd": "^5.7.3",
+    "antd": "^5.8.0",
     "antd-style": "^3.4.3",
     "babel-plugin-antd-style": "^1.0.4",
     "commitlint": "^17.6.7",
