@@ -142,8 +142,8 @@ describe('generateCode', () => {
       };
       expect(generateJSXCode('Steps', props))
         .toEqual(`<Steps current={1}><Steps.Step title="Finished" description="This is a description."/>
-      <Steps.Step title="In Progress" subTitle="Left 00:00:08" description="This is a description."/>
-      <Steps.Step title="Waiting" description="This is a description."/></Steps>`);
+<Steps.Step title="In Progress" subTitle="Left 00:00:08" description="This is a description."/>
+<Steps.Step title="Waiting" description="This is a description."/></Steps>`);
     });
 
     it('单个子组件场景：Card.Meta', () => {
@@ -212,7 +212,8 @@ describe('generateProps', () => {
     expect(createPropString('hello', 1e1000)).toEqual('hello={Infinity}');
   });
   it('函数', () => {
-    expect(createPropString('hello', () => {})).toEqual('hello={() => {}}');
+    expect(createPropString('hello', () => {})).toEqual(`hello={() => {
+    }}`);
   });
 
   it('symbol', () => {
