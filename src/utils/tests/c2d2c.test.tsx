@@ -3,8 +3,10 @@ import {
   generateImportCode,
   generateJSXCode,
   getDefaultValueFromSchema,
+  getDiffPropsWithSchema,
+  getSymbolMasterNameFromProps,
 } from '../c2d2c';
-import { schema } from './schema';
+import { buttonSchema, menuSchema, radioGroup, schema, tagSchema } from './schema';
 
 describe('getDefaultValueFromSchema', () => {
   it('获取默认值', () => {
@@ -22,6 +24,105 @@ describe('getDefaultValueFromSchema', () => {
       showLeft: true,
       showMargin: true,
     });
+  });
+});
+
+describe('getDiffPropsWithSchema', () => {
+  it('简单版本', () => {
+    const props = { checked: false, children: '未选中项', disabled: false };
+
+    expect(getDiffPropsWithSchema(props, radioGroup as any)).toEqual({
+      children: '未选中项',
+    });
+  });
+  it('没有 schema的情况', () => {
+    const props = { checked: false, children: '未选中项', disabled: false };
+
+    expect(getDiffPropsWithSchema(props)).toEqual(props);
+  });
+  it('schema 为空的情况', () => {
+    const props = { checked: false, children: '未选中项', disabled: false };
+
+    expect(getDiffPropsWithSchema(props, { type: 'object' })).toEqual(props);
+  });
+});
+
+describe('getSymbolMasterNameFromProps', () => {
+  it('正常生成', () => {
+    const name = getSymbolMasterNameFromProps(
+      'antd',
+      'Button',
+      {
+        danger: false,
+        isSubmit: false,
+        children: '主按钮',
+        ghost: false,
+        size: 'middle',
+        type: 'dashed',
+        shape: '',
+        disabled: false,
+        alignment: { vertical: 'top', horizontal: 'left' },
+        resize: { widthFollow: 'self', heightFollow: 'self' },
+      },
+      buttonSchema,
+    );
+
+    expect(name).toEqual(
+      'antd/Button/children=主按钮,type=dashed,alignment.vertical=top,alignment.horizontal=left,resize.widthFollow=self,resize.heightFollow=self',
+    );
+  });
+  it('包含 null 或者 undefined 的 props 需要被过滤', () => {
+    const name = getSymbolMasterNameFromProps(
+      'antd',
+      'Tag',
+      {
+        color: null,
+        closable: true,
+        a: undefined,
+        children: '标签123',
+        alignment: { vertical: 'top', horizontal: 'left' },
+        resize: { widthFollow: 'self', heightFollow: 'self' },
+      },
+      tagSchema,
+    );
+
+    expect(name).toEqual(
+      'antd/Tag/closable=true,children=标签123,alignment.vertical=top,alignment.horizontal=left,resize.widthFollow=self,resize.heightFollow=self',
+    );
+  });
+
+  it('包含数组、嵌套对象的处理方法', () => {
+    const props = {
+      size: 'large',
+      mode: 'vertical',
+      theme: 'dark',
+      items: [
+        { label: '菜单项1', key: '2', disabled: false },
+        { label: '菜单项2', key: '1', disabled: false },
+        { label: '菜单项3', key: '3' },
+        { label: '菜单项4' },
+        { label: '' },
+      ],
+    };
+    const name = getSymbolMasterNameFromProps('antd', 'Menu', props, menuSchema);
+    expect(name).toEqual(
+      'antd/Menu/size=large,theme=dark,items=[{label=菜单项1,key=2,disabled=false},{label=菜单项2,key=1,disabled=false},{label=菜单项3,key=3},{label=菜单项4},{label=}]',
+    );
+  });
+
+  it('没有schema时，也可以正常生成', () => {
+    const name = getSymbolMasterNameFromProps('antd', 'Button', {
+      danger: false,
+      children: '主按钮',
+      size: 'middle',
+      shape: null,
+      a: undefined,
+      alignment: { vertical: 'top', horizontal: 'left' },
+    });
+
+    expect(name).toEqual(
+      'antd/Button/danger=false,children=主按钮,size=middle,alignment.vertical=top,alignment.horizontal=left',
+    );
   });
 });
 
