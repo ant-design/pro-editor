@@ -27,3 +27,25 @@ group: 基础组件
 ### 使用浮动面板
 
 <code src="./demos/withPanel.tsx" iframe></code>
+
+## API
+
+| 属性名            | 类型                                                                            | 描述                             |
+| ----------------- | ------------------------------------------------------------------------------- | -------------------------------- |
+| className         | `string`                                                                        | 自定义的 classname               |
+| style             | `React.CSSProperties`                                                           | 自定义 style                     |
+| config            | `[]<ButtonConfig>`                                                              | 生成按钮的配置 config            |
+| render            | `(defalutDom: React.ReactNode, config: Array<ButtonConfig>) => React.ReactNode` | 用于渲染自定义能力的 render 方法 |
+| onFullScreenClick | `() => void`                                                                    | 全屏按钮点击的回掉               |
+| onUndoClick       | `() => void`                                                                    | 撤销按钮点击的回掉               |
+| onRedoClick       | `() => void`                                                                    | 重做按钮点击的回掉               |
+| onDeleteClick     | `() => void`                                                                    | 删除按钮点击的回掉               |
+
+### ButtonConfig
+
+| 属性名  | 类型                  | 描述                   |
+| ------- | --------------------- | ---------------------- |
+| icon    | `React.ReactNode`     | 展示的 icon            |
+| style   | `React.CSSProperties` | 每个配置按钮的单独样式 |
+| key     | `key`                 | 每个按钮单独的 key     |
+| onClick | `() => void`          | 按钮点击事件的回掉     |
