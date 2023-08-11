@@ -1,5 +1,4 @@
 import { JSONSchema } from '@/types/schema';
-import isArray from 'lodash.isarray';
 import isEmpty from 'lodash.isempty';
 import isEqual from 'lodash.isequal';
 import isNil from 'lodash.isnil';
@@ -71,7 +70,7 @@ export const getSymbolMasterNameFromProps = (
         const [key, value] = entry;
 
         // 针对数组，需要结构它的内部对象
-        if (isArray(value)) {
+        if (value instanceof Array) {
           return `${key}=[${value.map((item) => `{${genName(item)}}`).join(',')}]`;
         }
 
