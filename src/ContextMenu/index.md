@@ -14,7 +14,7 @@ title: ContextMenu 情景菜单
 
 ### 基本使用
 
-<code src="./demos/index.tsx" center></code>
+<code src="./demos/index.tsx" center iframe></code>
 
 ## API
 
