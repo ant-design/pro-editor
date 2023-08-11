@@ -12,8 +12,6 @@ export * from './DataFill';
 export * from './DataPreviewer';
 export * from './DraggablePanel';
 export { default as ErrorBoundary } from './ErrorBoundary';
-export { ExcelTable } from './ExcelTable';
-export type { ExcelTableProps, ExcelTableStore, TableData } from './ExcelTable';
 export { default as FieldIcon } from './FieldIcon';
 export * from './FieldSelect';
 export { default as FieldSelect } from './FieldSelect';
