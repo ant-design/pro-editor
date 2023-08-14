@@ -19,7 +19,7 @@ export default defineConfig({
     hero: {
       'zh-CN': {
         title: 'ProEditor',
-        description: '🌟 轻量级编辑器 UI 框架',
+        description: '🌟 通用编辑器 UI 框架',
         actions: [
           {
             text: '快速开始 →',
@@ -33,7 +33,7 @@ export default defineConfig({
       },
       'en-US': {
         title: 'ProEditor',
-        description: '🌟 Lightweight Editor UI Framework',
+        description: '🌟 A General Editor UI Framework',
         actions: [
           {
             text: 'Quick Start →',
