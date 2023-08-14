@@ -1,5 +1,39 @@
 # Changelog
 
+## [Version&nbsp;0.11.0](https://github.com/ant-design/pro-editor/compare/v0.10.0...v0.11.0)
+
+<sup>Released on **2023-08-14**</sup>
+
+#### ✨ 新特性
+
+- Add ActinGroup Components.
+
+#### 🐛 修复
+
+- Update snapshot, update snapshot.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's improved
+
+- Add ActinGroup Components ([e7222a6](https://github.com/ant-design/pro-editor/commit/e7222a6))
+
+#### What's fixed
+
+- Update snapshot ([5b3a02b](https://github.com/ant-design/pro-editor/commit/5b3a02b))
+- Update snapshot ([58514a4](https://github.com/ant-design/pro-editor/commit/58514a4))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
 ## [Version&nbsp;0.10.0](https://github.com/ant-design/pro-editor/compare/v0.9.0...v0.10.0)
 
 <sup>Released on **2023-08-01**</sup>
