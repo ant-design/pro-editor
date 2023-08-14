@@ -1,4 +1,5 @@
 export { default as yjsMiddleware } from 'zustand-middleware-yjs';
+export { default as ActionGroup } from './ActionGroup';
 export * from './ActionIcon';
 export { default as Awareness } from './Awareness';
 export type { AwarenessProps } from './Awareness';
