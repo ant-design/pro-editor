@@ -1,5 +1,38 @@
 # Changelog
 
+## [Version&nbsp;0.12.0](https://github.com/ant-design/pro-editor/compare/v0.11.0...v0.12.0)
+
+<sup>Released on **2023-08-15**</sup>
+
+#### ✨ 新特性
+
+- Add more ActionGroup api support & style update.
+
+#### 🐛 修复
+
+- Update snapshot.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's improved
+
+- Add more ActionGroup api support & style update ([3d142fd](https://github.com/ant-design/pro-editor/commit/3d142fd))
+
+#### What's fixed
+
+- Update snapshot ([4bb1c01](https://github.com/ant-design/pro-editor/commit/4bb1c01))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
 ## [Version&nbsp;0.11.0](https://github.com/ant-design/pro-editor/compare/v0.10.0...v0.11.0)
 
 <sup>Released on **2023-08-14**</sup>
