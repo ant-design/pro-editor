@@ -9,7 +9,7 @@ export default () => {
     <>
       {contextHolder}
       <ActionGroup
-        items={[
+        dropdownMenu={[
           {
             icon: <CopyOutlined />,
             onClick: () => {
@@ -33,6 +33,9 @@ export default () => {
               messageApi.success('缩小！');
             },
             label: '缩小！',
+          },
+          {
+            type: 'divider',
           },
           {
             icon: <DragOutlined />,
