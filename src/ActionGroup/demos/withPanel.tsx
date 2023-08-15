@@ -35,7 +35,7 @@ export default () => {
           background: '#fff',
         }}
       >
-        <ActionGroup />
+        <ActionGroup size={30} />
       </DraggablePanel>
     </div>
   );
