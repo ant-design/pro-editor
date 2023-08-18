@@ -326,7 +326,7 @@ export const chatsTokenCount = (s: SessionStore): number[] => {
 
 那在页面上使用 selector 也非常简单，直接按需引入即可（代码如下）。由于转换后的数据类型是 `number`，因此 react 感知到的状态类型也是 `number`，因此即使 chats 中发生了不影响计算结果的其他的状态变更（例如更新 message 的时间等），这个组件内部也不会触发重新渲染。
 
-```tsx
+```tsx | pure
 const Token = memo<>(() => {
   const [totalToken, systemRoleToken, chatsToken] = useSessionStore((s) => [
     chatSelectors.totalTokenCount(s),
