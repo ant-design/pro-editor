@@ -17,6 +17,14 @@ export const useStyles = createStyles(({ token, css, cx }, { size, className, pr
     &:hover {
       color: ${token.colorText} !important;
     }
+
+    &:active {
+      scale: 0.8;
+      color: ${token.colorText};
+    }
+
+    transition: color 600ms ${token.motionEaseOut}, scale 400ms ${token.motionEaseOut},
+      background-color 100ms ${token.motionEaseOut};
   `;
 
   return {
