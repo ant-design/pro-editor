@@ -1,13 +1,13 @@
 import { act } from 'react-dom/test-utils';
 import { beforeEach } from 'vitest';
-import { create as actualCreate } from 'zustand';
+import { createWithEqualityFn as actualCreate } from 'zustand/traditional';
 
 // a variable to hold reset functions for all stores declared in the app
-const storeResetFns = new Set();
+const storeResetFns = new Set<() => void>();
 
 // when creating a store, we get its initial state, create a reset function and add it in the set
 const createImpl = (createState) => {
-  const store = actualCreate(createState);
+  const store = actualCreate(createState, Object.is);
   const initialState = store.getState();
   storeResetFns.add(() => store.setState(initialState, true));
   return store;
@@ -22,8 +22,6 @@ beforeEach(() => {
   );
 });
 
-export const create = (f) => (f === undefined ? createImpl : createImpl(f));
+export const createWithEqualityFn = (f) => (f === undefined ? createImpl : createImpl(f));
 
-export default create;
-
-export { useStore } from 'zustand';
+export { useStoreWithEqualityFn as useStore } from 'zustand/traditional';
