@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 import type { CanvasInteractRule, InteractStatus } from '../../InteractContainer';
 import { createStore } from './createStore';
 
-vi.mock('zustand');
+vi.mock('zustand/traditional');
 
 const useStore = createStore();
 
