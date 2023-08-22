@@ -1,8 +1,9 @@
+import isEqual from 'fast-deep-equal';
 import { fromEvent, Subject } from 'rxjs';
 import { switchMap, tap } from 'rxjs/operators';
 import type { StoreApi } from 'zustand';
-import { create } from 'zustand';
 import { createContext } from 'zustand-utils';
+import { createWithEqualityFn } from 'zustand/traditional';
 
 import DataFiller from '../DataFiller';
 import type { ShowDemoDataPayload } from '../types';
@@ -21,7 +22,7 @@ export interface DataFillAction {
 export type DataFillStore = DataFillState & DataFillAction;
 
 const createStore = () =>
-  create<DataFillStore>((set, get) => {
+  createWithEqualityFn<DataFillStore>((set, get) => {
     // 处理鼠标交互处理
 
     const mouseMoveIn$ = new Subject<ShowDemoDataPayload>();
@@ -65,9 +66,8 @@ const createStore = () =>
       },
       handleShowDemoData: (payload) => mouseMoveIn$.next(payload),
     };
-  });
+  }, isEqual);
 
-const { Provider, useStore, useStoreApi } =
-  createContext<StoreApi<DataFillStore>>();
+const { Provider, useStore, useStoreApi } = createContext<StoreApi<DataFillStore>>();
 
 export { createStore, Provider, useStore, useStoreApi };
