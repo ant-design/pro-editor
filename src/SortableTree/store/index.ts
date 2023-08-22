@@ -1,12 +1,16 @@
+import isEqual from 'fast-deep-equal';
 import type { StoreApi } from 'zustand';
-import { create } from 'zustand';
 import { createContext, optionalDevtools } from 'zustand-utils';
+import { createWithEqualityFn } from 'zustand/traditional';
 
 import type { InternalSortableTreeStore } from './store';
 import vanillaStore from './store';
 
 const createStore = (showDevTools: boolean) =>
-  create(optionalDevtools(showDevTools)(vanillaStore, { name: 'SortableTree' }));
+  createWithEqualityFn(
+    optionalDevtools(showDevTools)(vanillaStore, { name: 'SortableTree' }),
+    isEqual,
+  );
 
 const { useStore, useStoreApi, Provider } = createContext<StoreApi<InternalSortableTreeStore>>();
 
