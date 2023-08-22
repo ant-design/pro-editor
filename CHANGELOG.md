@@ -1,5 +1,31 @@
 # Changelog
 
+### [Version&nbsp;0.12.1](https://github.com/ant-design/pro-editor/compare/v0.12.0...v0.12.1)
+
+<sup>Released on **2023-08-22**</sup>
+
+#### 🐛 修复
+
+- Refactor with zustand v4.4 equalFn, upgrade zustand version.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's fixed
+
+- Refactor with zustand v4.4 equalFn ([f7e002c](https://github.com/ant-design/pro-editor/commit/f7e002c))
+- Upgrade zustand version ([bd6e70a](https://github.com/ant-design/pro-editor/commit/bd6e70a))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
 ## [Version&nbsp;0.12.0](https://github.com/ant-design/pro-editor/compare/v0.11.0...v0.12.0)
 
 <sup>Released on **2023-08-15**</sup>
