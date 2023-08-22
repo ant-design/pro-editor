@@ -1,8 +1,9 @@
 import { yjsMiddleware } from '@ant-design/pro-editor';
+import isEqual from 'fast-deep-equal';
 import { Doc } from 'yjs';
 import type { StoreApi } from 'zustand';
-import { create } from 'zustand';
 import { createContext } from 'zustand-utils';
+import { createWithEqualityFn } from 'zustand/traditional';
 
 interface Store {
   count: number;
@@ -14,7 +15,7 @@ interface Store {
 export const doc = new Doc();
 
 export const createStore = () =>
-  create<Store>(
+  createWithEqualityFn<Store>(
     yjsMiddleware<Store>(doc, 'shared', (set) => ({
       count: 0,
       text: '',
@@ -26,6 +27,7 @@ export const createStore = () =>
         })),
       updateText: (text) => set((state) => ({ ...state, text })),
     })),
+    isEqual,
   );
 
 export const { useStore, Provider } = createContext<StoreApi<Store>>();

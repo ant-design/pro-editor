@@ -1,7 +1,9 @@
+import isEqual from 'fast-deep-equal';
 import { ReactNode } from 'react';
-import { StateCreator, StoreApi, create } from 'zustand';
+import { StateCreator, StoreApi } from 'zustand';
 import { UseContextStore, createContext, optionalDevtools } from 'zustand-utils';
 import { DevtoolsOptions } from 'zustand/middleware';
+import { createWithEqualityFn } from 'zustand/traditional';
 
 import type { ProEditorInstance } from '@/ProEditor';
 
@@ -34,7 +36,7 @@ export const createAssetStore = <T>(
 
     const devtools = optionalDevtools(!(options?.devtools === false));
 
-    return create<T>()(devtools(createStore, devtoolsOptions));
+    return createWithEqualityFn<T>()(devtools(createStore, devtoolsOptions), isEqual);
   };
 
   return { Provider, createStore: store, useStoreApi };

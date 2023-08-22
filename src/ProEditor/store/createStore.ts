@@ -1,7 +1,8 @@
+import isEqual from 'fast-deep-equal';
 import type { StateCreator } from 'zustand';
-import { create } from 'zustand';
 import { optionalDevtools } from 'zustand-utils';
 import { DevtoolsOptions } from 'zustand/middleware';
+import { createWithEqualityFn } from 'zustand/traditional';
 
 import { AwarenessSlice, AwarenessSliceState, awarenessSlice } from './slices/awareness';
 import { CanvasSlice, PublicCanvasState, canvasSlice } from './slices/canvas';
@@ -42,5 +43,8 @@ export const createStore = (options: boolean | DevtoolsOptions = false) => {
   const devtoolOptions =
     options === false ? undefined : options === true ? { name: 'ProEditorStore' } : options;
 
-  return create<InternalProEditorStore>()(devtools(vanillaStore, devtoolOptions));
+  return createWithEqualityFn<InternalProEditorStore>()(
+    devtools(vanillaStore, devtoolOptions),
+    isEqual,
+  );
 };

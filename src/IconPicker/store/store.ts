@@ -1,11 +1,8 @@
+import isEqual from 'fast-deep-equal';
 import produce from 'immer';
-import isEqual from 'lodash.isequal';
 import type { StateCreator } from 'zustand/vanilla';
 import type { ExternalScripts, IconUnit } from '../types';
-import {
-  extractListFormIconfontJS,
-  findNeighborIndex,
-} from '../utils/iconfont';
+import { extractListFormIconfontJS, findNeighborIndex } from '../utils/iconfont';
 
 import type { State } from './initialState';
 import { initialState } from './initialState';
@@ -23,10 +20,7 @@ export interface Action {
 
 export type Store = State & Action;
 
-const vanillaStore: StateCreator<Store, [['zustand/devtools', never]]> = (
-  set,
-  get,
-) => ({
+const vanillaStore: StateCreator<Store, [['zustand/devtools', never]]> = (set, get) => ({
   ...initialState,
 
   resetIcon: () => {
