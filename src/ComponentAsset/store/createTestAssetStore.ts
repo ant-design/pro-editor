@@ -1,4 +1,5 @@
-import { create } from 'zustand';
+import isEqual from 'fast-deep-equal';
+import { createWithEqualityFn } from 'zustand/traditional';
 
 import { CreateAssetStore } from './createAssetStore';
 
@@ -7,21 +8,24 @@ import { CreateAssetStore } from './createAssetStore';
  * @param createStore
  */
 export const createTestAssetStore = <T>(createStore: CreateAssetStore<T>) => {
-  const useEditorStore = create<{
+  const useEditorStore = createWithEqualityFn<{
     config: T;
     setConfig: (config: T) => void;
     getConfig: () => T;
-  }>((set, get) => ({
-    config: null,
-    setConfig: (config) => {
-      set({ config: { ...get().config, ...config } });
-    },
-    getConfig: () => {
-      return get().config;
-    },
-  }));
+  }>(
+    (set, get) => ({
+      config: null,
+      setConfig: (config) => {
+        set({ config: { ...get().config, ...config } });
+      },
+      getConfig: () => {
+        return get().config;
+      },
+    }),
+    isEqual,
+  );
 
-  const useAssetStore = create<T>(createStore);
+  const useAssetStore = createWithEqualityFn<T>(createStore, isEqual);
   const { getConfig, setConfig } = useEditorStore.getState();
 
   const init = () => {

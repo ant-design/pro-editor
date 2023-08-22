@@ -1,12 +1,13 @@
 // FIXME：这里理论上不应该使用 faker 的，后续需要重构优化掉
 import { faker } from '@faker-js/faker';
+import isEqual from 'fast-deep-equal';
 import { useEffect } from 'react';
 import type { Position } from 'react-rnd';
 import type { Awareness } from 'y-protocols/awareness';
 import type { WebrtcProvider } from 'y-webrtc';
 import type { StoreApi } from 'zustand';
-import { create } from 'zustand';
 import { createContext } from 'zustand-utils';
+import { createWithEqualityFn } from 'zustand/traditional';
 
 import { useAwarenessEvent } from './event';
 
@@ -33,7 +34,7 @@ interface ProviderStore {
 }
 
 export const createStore = (provider: WebrtcProvider) => {
-  const useStore = create<ProviderStore>((set) => {
+  const useStore = createWithEqualityFn<ProviderStore>((set) => {
     return {
       provider,
       awareness: provider.awareness,
@@ -44,7 +45,7 @@ export const createStore = (provider: WebrtcProvider) => {
         set({ followUser });
       },
     };
-  });
+  }, isEqual);
   const { awareness } = useStore.getState();
 
   // eslint-disable-next-line react-hooks/rules-of-hooks
