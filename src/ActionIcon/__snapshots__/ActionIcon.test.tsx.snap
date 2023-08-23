@@ -14,10 +14,17 @@ exports[`ActionIcon > 可正常渲染 1`] = `
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-transition: color 600ms cubic-bezier(0.215, 0.61, 0.355, 1),scale 400ms cubic-bezier(0.215, 0.61, 0.355, 1),background-color 100ms cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: color 600ms cubic-bezier(0.215, 0.61, 0.355, 1),scale 400ms cubic-bezier(0.215, 0.61, 0.355, 1),background-color 100ms cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .emotion-0:hover {
   color: rgba(0, 0, 0, 0.88)!important;
+}
+
+.emotion-0:active {
+  scale: 0.8;
+  color: rgba(0, 0, 0, 0.88);
 }
 
 <div>
@@ -66,10 +73,17 @@ exports[`ActionIcon > 带有标题 1`] = `
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-transition: color 600ms cubic-bezier(0.215, 0.61, 0.355, 1),scale 400ms cubic-bezier(0.215, 0.61, 0.355, 1),background-color 100ms cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: color 600ms cubic-bezier(0.215, 0.61, 0.355, 1),scale 400ms cubic-bezier(0.215, 0.61, 0.355, 1),background-color 100ms cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .emotion-0:hover {
   color: rgba(0, 0, 0, 0.88)!important;
+}
+
+.emotion-0:active {
+  scale: 0.8;
+  color: rgba(0, 0, 0, 0.88);
 }
 
 <div>
