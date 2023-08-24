@@ -13,6 +13,7 @@ import type { Store } from '../store/store';
 const selector = (s: Store) => ({
   activeId: s.activeId,
   compact: s.compact,
+  hideRemove: s.hideRemove,
   renderContent: s.renderContent,
   getActiveIndex: s.getActiveIndex,
 });
@@ -22,7 +23,10 @@ interface OverlayProps {
 }
 
 const Overlay: FC<OverlayProps> = ({ prefixCls }) => {
-  const { activeId, compact, renderContent, getActiveIndex } = useStore(selector, shallow);
+  const { activeId, compact, renderContent, getActiveIndex, hideRemove } = useStore(
+    selector,
+    shallow,
+  );
   const value = useStore((s) => s.value, isEqual);
   const activeIndex = getActiveIndex();
 
@@ -37,7 +41,13 @@ const Overlay: FC<OverlayProps> = ({ prefixCls }) => {
       }}
     >
       {activeId ? (
-        <Item id={activeId} dragOverlay prefixCls={prefixCls} compact={compact}>
+        <Item
+          id={activeId}
+          dragOverlay
+          prefixCls={prefixCls}
+          compact={compact}
+          hideRemove={hideRemove}
+        >
           {renderContent?.(value[activeIndex], activeIndex)}
         </Item>
       ) : null}
