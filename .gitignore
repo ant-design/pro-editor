@@ -7,6 +7,7 @@ lib
 .dumi/tmp-production
 .DS_Store
 package-lock.json
+yarn.lock
 .idea
 docs-dist
 server
