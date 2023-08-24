@@ -5,7 +5,12 @@ import { useSortableList } from '..';
 
 import { OnChange, useStoreApi } from '../store';
 
-import type { CreatorButtonProps, RenderActionProps, RenderItemProps } from '../type';
+import type {
+  CreatorButtonProps,
+  GetItemStyles,
+  RenderActionProps,
+  RenderItemProps,
+} from '../type';
 
 /**
  * 供外部使用的 ref 方法
@@ -62,6 +67,10 @@ export interface StoreUpdaterProps<T = any> {
    * 是否隐藏删除按钮，默认为 false
    */
   hideRemove?: boolean;
+  /**
+   * 自定义排序容器样式
+   */
+  getItemStyles?: GetItemStyles;
 }
 
 const StoreUpdater = forwardRef(
@@ -73,6 +82,7 @@ const StoreUpdater = forwardRef(
       onChange,
       renderContent,
       renderHeader,
+      getItemStyles,
       actions,
       compact,
       hideRemove,
@@ -106,6 +116,7 @@ const StoreUpdater = forwardRef(
     useStoreUpdater('creatorButtonProps', creatorButtonProps);
     useStoreUpdater('renderContent', renderContent);
     useStoreUpdater('renderHeader', renderHeader);
+    useStoreUpdater('getItemStyles', getItemStyles);
     useStoreUpdater('actions', actions);
     useStoreUpdater('compact', compact);
     useStoreUpdater('hideRemove', hideRemove);

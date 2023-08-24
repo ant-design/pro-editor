@@ -1,5 +1,6 @@
 import type {
   CreatorButtonProps,
+  GetItemStyles,
   KeyManager,
   RenderActionProps,
   RenderItemProps,
@@ -39,6 +40,10 @@ export interface State<T = any> {
    */
   actions: RenderActionProps<T>;
   /**
+   * 渲染可排序列表项样式
+   */
+  getItemStyles?: GetItemStyles;
+  /**
    * 渲染头部区域
    */
   renderHeader: () => React.ReactNode;
@@ -68,5 +73,6 @@ export const initialState: State = {
   onChange: undefined,
   renderHeader: undefined,
   renderContent: undefined,
+  getItemStyles: () => ({}),
   actions: [],
 };

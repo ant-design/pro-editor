@@ -15,6 +15,7 @@ const selector = (s: Store) => ({
   compact: s.compact,
   hideRemove: s.hideRemove,
   renderContent: s.renderContent,
+  getItemStyles: s.getItemStyles,
   getActiveIndex: s.getActiveIndex,
 });
 
@@ -23,7 +24,7 @@ interface OverlayProps {
 }
 
 const Overlay: FC<OverlayProps> = ({ prefixCls }) => {
-  const { activeId, compact, renderContent, getActiveIndex, hideRemove } = useStore(
+  const { activeId, compact, renderContent, getActiveIndex, hideRemove, getItemStyles } = useStore(
     selector,
     shallow,
   );
@@ -46,6 +47,14 @@ const Overlay: FC<OverlayProps> = ({ prefixCls }) => {
           dragOverlay
           prefixCls={prefixCls}
           compact={compact}
+          style={getItemStyles({
+            id: activeId,
+            index: activeIndex,
+            isSorting: true,
+            isDragging: true,
+            overIndex: -1,
+            isDragOverlay: true,
+          })}
           hideRemove={hideRemove}
         >
           {renderContent?.(value[activeIndex], activeIndex)}

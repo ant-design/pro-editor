@@ -1,5 +1,5 @@
 import type { UniqueIdentifier } from '@dnd-kit/core';
-import type { ReactNode } from 'react';
+import type { CSSProperties, ReactNode } from 'react';
 
 export interface KeyManager {
   /**
@@ -38,3 +38,17 @@ export type RenderActionProps<T = any> =
   | React.ReactNode[];
 
 export type { UniqueIdentifier };
+
+interface GetWrapperStyleArgs {
+  index: number;
+  isDragging: boolean;
+  id: UniqueIdentifier;
+}
+
+interface GetItemStylesArgs extends GetWrapperStyleArgs {
+  isSorting: boolean;
+  overIndex: number;
+  isDragOverlay: boolean;
+}
+
+export type GetItemStyles = (status: GetItemStylesArgs) => CSSProperties;

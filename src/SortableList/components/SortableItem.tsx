@@ -1,6 +1,6 @@
 import { useSortable } from '@dnd-kit/sortable';
 import type { PropsWithChildren } from 'react';
-import { UniqueIdentifier } from '../type';
+import { GetItemStyles, UniqueIdentifier } from '../type';
 import Item from './Item';
 
 interface SortableItemProps {
@@ -11,6 +11,7 @@ interface SortableItemProps {
   onRemove?: (index: number) => void;
   children: React.ReactNode;
   actions?: React.ReactNode[];
+  getItemStyles?: GetItemStyles;
   prefixCls?: string;
   hideRemove?: boolean;
   compact?: boolean;
@@ -23,6 +24,7 @@ export default function SortableItem({
   actions,
   onRemove,
   useDragOverlay = true,
+  getItemStyles,
   children,
   prefixCls,
   hideRemove = false,
@@ -33,6 +35,7 @@ export default function SortableItem({
     isDragging,
     isSorting,
     listeners,
+    overIndex,
     setNodeRef, // 标记可以 droppable 的容器
     transform,
     transition,
@@ -56,6 +59,15 @@ export default function SortableItem({
       onRemove={onRemove ? () => onRemove(index) : undefined}
       transform={transform}
       transition={!useDragOverlay && isDragging ? 'none' : transition}
+      // 样式
+      style={getItemStyles({
+        index,
+        id,
+        isDragging,
+        isSorting,
+        overIndex,
+        isDragOverlay: false,
+      })}
       listeners={listeners}
       data-index={index}
       data-id={id}

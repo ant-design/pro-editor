@@ -13,6 +13,7 @@ import { useStyle } from '../style';
 
 const selector = (s: Store) => ({
   renderContent: s.renderContent,
+  getItemStyles: s.getItemStyles,
   compact: s.compact,
   hideRemove: s.hideRemove,
   creatorButtonProps: s.creatorButtonProps,
@@ -24,7 +25,10 @@ interface SortableListProps {
 }
 
 const SortableList: FC<SortableListProps> = ({ prefixCls }) => {
-  const { dispatchListData, renderContent, compact, hideRemove } = useStore(selector, shallow);
+  const { dispatchListData, renderContent, compact, hideRemove, getItemStyles } = useStore(
+    selector,
+    shallow,
+  );
 
   const [value, keyManager, creatorButtonProps, actions] = useStore(
     (s) => [s.value, s.keyManager, s.creatorButtonProps, s.actions],
@@ -81,6 +85,7 @@ const SortableList: FC<SortableListProps> = ({ prefixCls }) => {
                   index={index}
                   compact={compact}
                   hideRemove={hideRemove}
+                  getItemStyles={getItemStyles}
                   onRemove={() => dispatchListData({ type: 'removeItem', index })}
                   actions={typeof actions === 'function' ? actions(item, index) : actions}
                   useDragOverlay={true}

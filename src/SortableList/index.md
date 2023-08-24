@@ -26,6 +26,7 @@ demo:
 <code src="./demos/header.tsx" ></code>
 <code src="./demos/renderContent.tsx" ></code>
 <code src="./demos/actions.tsx" ></code>
+<code src="./demos/CustomStyle.tsx" ></code>
 
 ### 自定义创建按钮
 
