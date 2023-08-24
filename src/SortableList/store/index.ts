@@ -15,7 +15,5 @@ const createStore = (showDevTools: boolean) =>
 const { useStore, useStoreApi, Provider } = createContext<StoreApi<Store>>();
 
 // ========= 导出 ========= //
-export type { OnChange, State } from './initialState';
-export type { SortableListDispatchPayload } from './listDataReducer';
 export type { Store } from './store';
 export { Provider, createStore, useStore, useStoreApi };

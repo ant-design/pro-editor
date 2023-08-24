@@ -1,6 +1,6 @@
 import { useSortable } from '@dnd-kit/sortable';
 import type { PropsWithChildren } from 'react';
-import { GetItemStyles, UniqueIdentifier } from '../type';
+import { GetItemStyles, RenderItem, UniqueIdentifier } from '../type/type';
 import Item from './Item';
 
 interface SortableItemProps {
@@ -11,6 +11,7 @@ interface SortableItemProps {
   onRemove?: (index: number) => void;
   children: React.ReactNode;
   actions?: React.ReactNode[];
+  renderItem?: RenderItem;
   getItemStyles?: GetItemStyles;
   prefixCls?: string;
   hideRemove?: boolean;

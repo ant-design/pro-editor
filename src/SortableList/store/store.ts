@@ -1,7 +1,7 @@
 import type { DragEndEvent, DragStartEvent } from '@dnd-kit/core';
 import isEqual from 'lodash.isequal';
 import type { StateCreator } from 'zustand/vanilla';
-import type { State } from './initialState';
+import type { SortableListState } from '../type';
 import { initialState } from './initialState';
 import { listDataReducer } from './listDataReducer';
 
@@ -14,7 +14,7 @@ interface Action {
   getActiveIndex: () => number;
 }
 
-export type Store = State & Action;
+export type Store = SortableListState & Action;
 
 const vanillaStore: StateCreator<Store, [['zustand/devtools', never]]> = (set, get) => ({
   ...initialState,

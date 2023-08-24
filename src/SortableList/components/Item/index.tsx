@@ -1,40 +1,15 @@
-import type { DraggableSyntheticListeners } from '@dnd-kit/core';
-import type { Transform } from '@dnd-kit/utilities';
 import { useToken } from '../../../theme';
 /* eslint-disable consistent-return */
 import classNames from 'classnames';
 import { PropsWithChildren, forwardRef, memo, useEffect } from 'react';
 import { Flexbox } from 'react-layout-kit';
+import { BaseItemProps } from '../../type';
 
 import { DeleteAction, HandleAction } from '../../../ActionIcon';
-import { UniqueIdentifier } from '../../type';
 import { useStyle } from './style';
 
-export interface ItemProps {
-  dragOverlay?: boolean;
-  color?: string;
-  disabled?: boolean;
-  dragging?: boolean;
-  handle?: boolean;
-  height?: number;
-  index?: number;
-  fadeIn?: boolean;
-  hideRemove?: boolean;
-  compact?: boolean;
-  transform?: Transform | null;
-  listeners?: DraggableSyntheticListeners;
-  sorting?: boolean;
-  className?: string;
-  style?: React.CSSProperties;
-  transition?: string | null;
-  id: UniqueIdentifier;
-  onRemove?: () => void;
-  actions?: React.ReactNode[];
-  prefixCls?: string;
-}
-
 const Item = memo(
-  forwardRef<HTMLLIElement, PropsWithChildren<ItemProps>>(
+  forwardRef<HTMLLIElement, PropsWithChildren<BaseItemProps>>(
     (
       {
         color,

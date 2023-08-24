@@ -2,12 +2,12 @@ import { produce } from 'immer';
 import { ForwardedRef, forwardRef, useImperativeHandle } from 'react';
 import { createStoreUpdater } from 'zustand-utils';
 import { useSortableList } from '..';
-
-import { OnChange, useStoreApi } from '../store';
+import { useStoreApi } from '../store';
 
 import type {
   CreatorButtonProps,
   GetItemStyles,
+  OnChange,
   RenderActionProps,
   RenderItemProps,
 } from '../type';

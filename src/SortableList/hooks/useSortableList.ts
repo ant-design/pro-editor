@@ -1,6 +1,6 @@
 import { useMemoizedFn } from 'ahooks';
 import { useStoreApi } from '../store';
-import { UniqueIdentifier } from '../type';
+import { UniqueIdentifier } from '../type/type';
 /**
  * SortableList 实例对象
  * @template T 节点数据类型
