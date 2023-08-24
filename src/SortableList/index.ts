@@ -4,7 +4,6 @@ export * from './container';
 export { useSortableList } from './hooks/useSortableList';
 export type { SortableListInstance } from './hooks/useSortableList';
 export type {
-  CreatorButtonProps,
   SortableItem,
   SortableItemList,
   SortableListDispatchPayload,

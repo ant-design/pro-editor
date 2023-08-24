@@ -7,7 +7,6 @@ import type { StoreUpdaterProps } from '../type';
 const StoreUpdater = forwardRef(
   (
     {
-      creatorButtonProps,
       initialValues,
       value,
       onChange,
@@ -27,7 +26,6 @@ const StoreUpdater = forwardRef(
     useStoreUpdater('initialValues', initialValues);
     useStoreUpdater('value', value);
     useStoreUpdater('onChange', onChange);
-    useStoreUpdater('creatorButtonProps', creatorButtonProps);
     useStoreUpdater('renderContent', renderContent);
     useStoreUpdater('renderHeader', renderHeader);
     useStoreUpdater('getItemStyles', getItemStyles);

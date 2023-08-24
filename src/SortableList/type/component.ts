@@ -51,25 +51,6 @@ export type RenderItem<T = SortableItem> = (
   },
 ) => ReactElement;
 
-export interface CreatorButtonProps {
-  /**
-   * 列表有值时是否展示添加按钮
-   */
-  showInList?: boolean;
-  /**
-   * 空数据时是否展示添加按钮
-   */
-  showInEmpty?: boolean;
-  /**
-   * 生成初始值逻辑
-   */
-  record?: (index: number) => SortableItem;
-  /**
-   * 新增一行按钮文案
-   */
-  creatorButtonText?: string;
-}
-
 export type RenderItemProps<T = SortableItem> = (item: T, index: number) => ReactNode;
 
 export type RenderActionProps<T = SortableItem> =

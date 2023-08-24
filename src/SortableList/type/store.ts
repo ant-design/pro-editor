@@ -1,6 +1,5 @@
 import { ForwardedRef } from 'react';
 import type {
-  CreatorButtonProps,
   GetItemStyles,
   RenderActionProps,
   RenderItemProps,
@@ -46,10 +45,6 @@ export interface SortableListState {
    */
   renderHeader: () => React.ReactNode;
   /**
-   * 新建对象相关属性
-   */
-  creatorButtonProps?: CreatorButtonProps;
-  /**
    * 紧凑模式
    */
   compact?: boolean;
@@ -62,10 +57,10 @@ export interface SortableListState {
 /**
  * 供外部使用的 ref 方法
  */
-export interface SortableListRef {
-  addItem: (item?: SortableItem, index?: number) => void;
+export interface SortableListRef<T = SortableItem> {
+  addItem: (item?: T, index?: number) => void;
   removeItem: (index: number) => void;
-  updateItem: (item: SortableItem, index: number) => void;
+  updateItem: (item: T, index: number) => void;
 }
 
 export interface StoreUpdaterProps<T = SortableItem> {
@@ -97,10 +92,6 @@ export interface StoreUpdaterProps<T = SortableItem> {
    * 对外部暴露方法
    */
   ref?: ForwardedRef<SortableListRef>;
-  /**
-   * 新建对象相关属性
-   */
-  creatorButtonProps?: CreatorButtonProps;
   /**
    * 如果为 true，则会在 devtools 中显示 SortableTree 内部的数据结构
    * @internal

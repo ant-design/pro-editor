@@ -57,7 +57,7 @@ export default () => (
     }}
     creatorButtonProps={{
       record: (index) => ({
-        mockDataIndex: `${index}-${randomIndex()}`,
+        dataIndex: `${index}-${randomIndex()}`,
       }),
     }}
   />

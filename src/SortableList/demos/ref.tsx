@@ -38,12 +38,6 @@ export default () => {
           console.log('data', data);
           setListData(data);
         }}
-        creatorButtonProps={{
-          showInList: false,
-          record: (index) => ({
-            title: `${index}-${randomIndex()}`,
-          }),
-        }}
         renderContent={(item, index) => <ItemRender item={item} index={index} />}
       />
     </div>
