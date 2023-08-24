@@ -12,7 +12,6 @@ export const listDataReducer = (value: any[], payload: SortableListDispatchPaylo
       const overIndex = getIndexOfActiveItem(value, targetId);
       if (activeIndex === overIndex) return;
 
-      // Do not handle out of range
       if (
         activeIndex < 0 ||
         activeIndex >= value.length ||

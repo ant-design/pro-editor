@@ -1,11 +1,11 @@
 import { useMemoizedFn } from 'ahooks';
 import { useStoreApi } from '../store';
-import { UniqueIdentifier } from '../type/type';
+import { SortableItem, UniqueIdentifier } from '../type';
 /**
  * SortableList 实例对象
  * @template T 节点数据类型
  */
-export interface SortableListInstance<T = any> {
+export interface SortableListInstance {
   /**
    * 获取当前激活节点的 id
    * @returns 当前激活节点的 id
@@ -15,14 +15,14 @@ export interface SortableListInstance<T = any> {
    * 获取当前树的数据
    * @returns 当前树的数据
    */
-  getValue: () => T[];
+  getValue: () => SortableItem[];
   /**
    * 添加项
    * @param item 数据
    * @param index 列表索引
    * @returns
    */
-  addItem: (item?: T, index?: number) => void;
+  addItem: (item?: SortableItem, index?: number) => void;
   /**
    * 删除项
    * @param index 列表索引
@@ -35,19 +35,19 @@ export interface SortableListInstance<T = any> {
    * @param index 列表索引
    * @returns
    */
-  updateItem: (item: T, index: number) => void;
+  updateItem: (item: Partial<SortableItem>, index: number) => void;
 }
 
-export const useSortableList = <T>(): SortableListInstance<T> => {
+export const useSortableList = (): SortableListInstance => {
   const storeApi = useStoreApi();
 
   const getActiveId = useMemoizedFn(() => storeApi.getState().activeId);
   const getValue = useMemoizedFn(() => storeApi.getState().value);
-  const addItem = (item?: T, index?: number) =>
+  const addItem = (item?: SortableItem, index?: number) =>
     storeApi.getState().dispatchListData({ type: 'addItem', item, index });
   const removeItem = (index: number) =>
     storeApi.getState().dispatchListData({ type: 'removeItem', index });
-  const updateItem = (item: T, index: number) =>
+  const updateItem = (item: Partial<SortableItem>, index: number) =>
     storeApi.getState().dispatchListData({ type: 'updateItem', item, index });
 
   return {

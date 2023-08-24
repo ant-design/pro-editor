@@ -63,7 +63,7 @@ export interface CreatorButtonProps {
   /**
    * 生成初始值逻辑
    */
-  record?: (index: number) => Record<string, any>;
+  record?: (index: number) => SortableItem;
   /**
    * 新增一行按钮文案
    */

@@ -2,6 +2,7 @@ import type { DragEndEvent, DragStartEvent } from '@dnd-kit/core';
 import isEqual from 'lodash.isequal';
 import type { StateCreator } from 'zustand/vanilla';
 import type { SortableListState } from '../type';
+import { SortableListDispatchPayload } from '../type';
 import { initialState } from './initialState';
 import { listDataReducer } from './listDataReducer';
 
@@ -10,7 +11,7 @@ interface Action {
   handleDragStart: (event: DragStartEvent) => void;
   handleDragEnd: (event: DragEndEvent) => void;
   handleDragCancel: () => void;
-  dispatchListData: (payload: any) => void;
+  dispatchListData: (payload: SortableListDispatchPayload) => void;
 }
 
 export type Store = SortableListState & Action;

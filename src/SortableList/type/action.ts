@@ -59,7 +59,7 @@ export interface UpdateItemAction {
   /**
    * 修改后的节点内容
    */
-  item: SortableItem;
+  item: Partial<SortableItem>;
 }
 
 /**

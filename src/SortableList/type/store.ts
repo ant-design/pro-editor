@@ -4,6 +4,7 @@ import type {
   GetItemStyles,
   RenderActionProps,
   RenderItemProps,
+  SortableItem,
   SortableItemList,
   SortableListDispatchPayload,
   UniqueIdentifier,
@@ -61,13 +62,13 @@ export interface SortableListState {
 /**
  * 供外部使用的 ref 方法
  */
-export interface SortableListRef<T> {
-  addItem: (item?: T, index?: number) => void;
+export interface SortableListRef {
+  addItem: (item?: SortableItem, index?: number) => void;
   removeItem: (index: number) => void;
-  updateItem: (item: T, index: number) => void;
+  updateItem: (item: SortableItem, index: number) => void;
 }
 
-export interface StoreUpdaterProps<T = any> {
+export interface StoreUpdaterProps<T = SortableItem> {
   /**
    * 值
    */
@@ -95,7 +96,7 @@ export interface StoreUpdaterProps<T = any> {
   /**
    * 对外部暴露方法
    */
-  ref?: ForwardedRef<SortableListRef<T>>;
+  ref?: ForwardedRef<SortableListRef>;
   /**
    * 新建对象相关属性
    */

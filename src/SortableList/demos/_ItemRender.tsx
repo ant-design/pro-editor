@@ -20,7 +20,8 @@ const ItemRender = ({ item, index, compact = false }: ItemRenderProps) => {
     const value = instance.getValue() || [];
     // 如果是最后一个节点，按下回车后，会自动添加一个新的节点
     if (index + 1 === value.length) {
-      instance.addItem({ title: `new-${randomIndex()}` });
+      const id = randomIndex();
+      instance.addItem({ id, title: `new-${randomIndex()}` });
     } else {
       const nextNodeEl = document.getElementById(`index-${index + 1}`);
       nextNodeEl?.focus();
