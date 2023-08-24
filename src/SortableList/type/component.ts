@@ -8,6 +8,8 @@ export interface SortableBaseItem {
 
 export type SortableItem<T = Record<string, any>> = SortableBaseItem & T;
 
+export type SortableItemList<T = Record<string, any>> = SortableItem<T>[];
+
 export interface BaseItemProps {
   dragOverlay?: boolean;
   color?: string;
@@ -29,17 +31,6 @@ export interface BaseItemProps {
   onRemove?: () => void;
   actions?: React.ReactNode[];
   prefixCls?: string;
-}
-
-export interface KeyManager {
-  /**
-   * 列表 ID 项
-   */
-  keys: UniqueIdentifier[];
-  /**
-   * 当前自增 ID
-   */
-  id: number;
 }
 
 export type RenderItem<T = SortableItem> = (
@@ -79,9 +70,9 @@ export interface CreatorButtonProps {
   creatorButtonText?: string;
 }
 
-export type RenderItemProps<T = any> = (item: T, index: number) => ReactNode;
+export type RenderItemProps<T = SortableItem> = (item: T, index: number) => ReactNode;
 
-export type RenderActionProps<T = any> =
+export type RenderActionProps<T = SortableItem> =
   | ((item: T, index: number) => ReactNode[])
   | React.ReactNode[];
 

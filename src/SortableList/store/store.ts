@@ -11,7 +11,6 @@ interface Action {
   handleDragEnd: (event: DragEndEvent) => void;
   handleDragCancel: () => void;
   dispatchListData: (payload: any) => void;
-  getActiveIndex: () => number;
 }
 
 export type Store = SortableListState & Action;
@@ -40,22 +39,13 @@ const vanillaStore: StateCreator<Store, [['zustand/devtools', never]]> = (set, g
   },
   // ===== 更新 listData 方法 ======= //
   dispatchListData: (payload) => {
-    const { value, onChange, keyManager } = get();
-    const { data, manager } = listDataReducer(value, keyManager, payload) || {};
+    const { value, onChange } = get();
+    const data = listDataReducer(value, payload) || [];
     if (data) {
       if (isEqual(value, data)) return;
       set({ value: data });
       if (onChange) onChange(data, payload);
     }
-    if (manager) {
-      set({ keyManager: manager });
-    }
-  },
-
-  getActiveIndex: () => {
-    const { keyManager, activeId } = get();
-    const activeIndex = activeId ? keyManager.keys.indexOf(activeId) : -1;
-    return activeIndex;
   },
 });
 

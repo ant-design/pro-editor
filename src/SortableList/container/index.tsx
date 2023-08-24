@@ -1,9 +1,9 @@
 import { forwardRef, memo, ReactNode } from 'react';
 import { ConfigProvider } from '../../ConfigProvider';
+import type { StoreUpdaterProps } from '../type';
 import type { AppProps } from './App';
 import App from './App';
 import { SortableListProvider } from './Provider';
-import type { StoreUpdaterProps } from './StoreUpdater';
 import StoreUpdater from './StoreUpdater';
 
 export { SortableListProvider } from './Provider';

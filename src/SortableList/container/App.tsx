@@ -8,6 +8,7 @@ import {
   useSensor,
   useSensors,
 } from '@dnd-kit/core';
+import isEqual from 'lodash.isequal';
 import { createPortal } from 'react-dom';
 
 import { restrictToVerticalAxis, restrictToWindowEdges } from '@dnd-kit/modifiers';
@@ -16,7 +17,6 @@ import {
   sortableKeyboardCoordinates,
   verticalListSortingStrategy,
 } from '@dnd-kit/sortable';
-import isEqual from 'lodash.isequal';
 import type { CSSProperties, FC } from 'react';
 import { useMemo } from 'react';
 import { Flexbox } from 'react-layout-kit';
@@ -37,6 +37,8 @@ const selector = (s: Store) => ({
   handleDragEnd: s.handleDragEnd,
   renderHeader: s.renderHeader,
 });
+
+const dataSelector = (s: Store) => s.value;
 
 export interface AppProps {
   /**
@@ -59,7 +61,8 @@ const App: FC<AppProps> = ({ className, style, prefixCls: customPrefixCls }) => 
     shallow,
   );
 
-  const keyManager = useStore((s) => s.keyManager, isEqual);
+  const items = useStore(dataSelector, isEqual);
+
   const prefixCls = getPrefixCls('sortable-list', customPrefixCls);
 
   const sensors = useSensors(
@@ -86,15 +89,7 @@ const App: FC<AppProps> = ({ className, style, prefixCls: customPrefixCls }) => 
         onDragCancel={handleDragCancel}
         modifiers={[restrictToVerticalAxis, restrictToWindowEdges]}
       >
-        <SortableContext
-          // dndkit 的 bug ，必须要用 object 的 id 获取，否则 transform 一直为空。
-          items={keyManager.keys.map((key) => {
-            return {
-              id: key,
-            };
-          })}
-          strategy={verticalListSortingStrategy}
-        >
+        <SortableContext items={items} strategy={verticalListSortingStrategy}>
           {renderHeader?.()}
           <SortList prefixCls={prefixCls} />
           {overlay}

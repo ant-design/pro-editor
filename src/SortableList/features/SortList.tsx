@@ -1,14 +1,12 @@
-import type { FC } from 'react';
-import { memo } from 'react';
-import { shallow } from 'zustand/shallow';
-
-import { List, SortableItem } from '../components';
-import { useStore } from '../store';
-
 import { PlusOutlined } from '@ant-design/icons';
 import { Button, Empty } from 'antd';
 import isEqual from 'lodash.isequal';
+import type { FC } from 'react';
+import { memo } from 'react';
+import { shallow } from 'zustand/shallow';
+import { List, SortableItem } from '../components';
 import type { Store } from '../store';
+import { useStore } from '../store';
 import { useStyle } from '../style';
 
 const selector = (s: Store) => ({
@@ -30,8 +28,8 @@ const SortableList: FC<SortableListProps> = ({ prefixCls }) => {
     shallow,
   );
 
-  const [value, keyManager, creatorButtonProps, actions] = useStore(
-    (s) => [s.value, s.keyManager, s.creatorButtonProps, s.actions],
+  const [items, creatorButtonProps, actions] = useStore(
+    (s) => [s.value, s.creatorButtonProps, s.actions],
     isEqual,
   );
 
@@ -52,7 +50,7 @@ const SortableList: FC<SortableListProps> = ({ prefixCls }) => {
         className={styles.btnAdd}
         onClick={() => {
           const intialValue = {
-            ...(record && typeof record === 'function' ? record(value.length) : record),
+            ...(record && typeof record === 'function' ? record(items.length) : record),
           };
           dispatchListData({
             type: 'addItem',
@@ -68,7 +66,7 @@ const SortableList: FC<SortableListProps> = ({ prefixCls }) => {
 
   return (
     <>
-      {Array.isArray(value) && value.length === 0 ? (
+      {Array.isArray(items) && items.length === 0 ? (
         <>
           <Empty image={Empty.PRESENTED_IMAGE_SIMPLE}>
             {showInEmpty === false ? null : <CreateButton empty />}
@@ -77,11 +75,11 @@ const SortableList: FC<SortableListProps> = ({ prefixCls }) => {
       ) : (
         <>
           <List prefixCls={prefixCls}>
-            {value.map((item, index) => {
+            {items.map((item, index) => {
               return (
                 <SortableItem
-                  key={keyManager.keys[index]}
-                  id={keyManager.keys[index]}
+                  key={item.id}
+                  id={item.id}
                   index={index}
                   compact={compact}
                   hideRemove={hideRemove}

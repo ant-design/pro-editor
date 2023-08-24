@@ -1,18 +1,15 @@
 import { arrayMove } from '@dnd-kit/sortable';
 import { produce } from 'immer';
 import merge from 'lodash.merge';
-import { KeyManager, SortableListDispatchPayload } from '../type';
+import { SortableListDispatchPayload } from '../type';
+import { getIndexOfActiveItem } from '../utils';
 
-export const listDataReducer = (
-  value: any[],
-  keyManager: KeyManager,
-  payload: SortableListDispatchPayload,
-) => {
+export const listDataReducer = (value: any[], payload: SortableListDispatchPayload) => {
   switch (payload.type) {
     case 'moveItem':
       const { activeId, targetId } = payload;
-      const activeIndex = activeId ? keyManager.keys.indexOf(activeId) : -1;
-      const overIndex = targetId ? keyManager.keys.indexOf(targetId) : -1;
+      const activeIndex = getIndexOfActiveItem(value, activeId);
+      const overIndex = getIndexOfActiveItem(value, targetId);
       if (activeIndex === overIndex) return;
 
       // Do not handle out of range
@@ -25,16 +22,10 @@ export const listDataReducer = (
         return;
       }
 
-      return {
-        data: produce(value, (draft) => {
-          const sortedItems = arrayMove(draft, activeIndex, overIndex);
-          return sortedItems;
-        }),
-        manager: produce(keyManager, (draft) => {
-          draft.keys = arrayMove(draft.keys, activeIndex, overIndex);
-          return draft;
-        }),
-      };
+      return produce(value, (draft) => {
+        const sortedItems = arrayMove(draft, activeIndex, overIndex);
+        return sortedItems;
+      });
 
     case 'removeItem':
       const indexSet = new Set(Array.isArray(payload.index) ? payload.index : [payload.index]);
@@ -42,41 +33,23 @@ export const listDataReducer = (
         return;
       }
 
-      return {
-        data: produce(value, (draft) => {
-          const sortedItems = draft.filter((_, valueIndex) => !indexSet.has(valueIndex));
-          return sortedItems;
-        }),
-        manager: produce(keyManager, (draft) => {
-          draft.keys = draft.keys.filter((_, keysIndex) => !indexSet.has(keysIndex));
-          return draft;
-        }),
-      };
+      return produce(value, (draft) => {
+        const sortedItems = draft.filter((_, valueIndex) => !indexSet.has(valueIndex));
+        return sortedItems;
+      });
 
     case 'addItem':
       const { item, index = value.length } = payload;
-      return {
-        data: produce(value, (draft) => {
-          draft.splice(index, 0, item);
-          return draft;
-        }),
-        manager: produce(keyManager, (draft) => {
-          draft.keys.splice(index, 0, draft.id);
-          draft.id += 1;
-          return draft;
-        }),
-      };
+      return produce(value, (draft) => {
+        draft.splice(index, 0, item);
+        return draft;
+      });
 
     case 'updateItem':
-      return {
-        data: produce(value, (draft) => {
-          const { item, index } = payload;
-          draft[index] = merge(draft[index], item);
-          return draft;
-        }),
-        manager: produce(keyManager, (draft) => {
-          return draft;
-        }),
-      };
+      return produce(value, (draft) => {
+        const { item, index } = payload;
+        draft[index] = merge(draft[index], item);
+        return draft;
+      });
   }
 };

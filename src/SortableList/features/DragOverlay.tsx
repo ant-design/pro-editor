@@ -9,6 +9,7 @@ import { defaultDropAnimationSideEffects } from '@dnd-kit/core';
 import isEqual from 'lodash.isequal';
 import { useStore } from '../store';
 import type { Store } from '../store/store';
+import { getIndexOfActiveItem } from '../utils';
 
 const selector = (s: Store) => ({
   activeId: s.activeId,
@@ -16,7 +17,6 @@ const selector = (s: Store) => ({
   hideRemove: s.hideRemove,
   renderContent: s.renderContent,
   getItemStyles: s.getItemStyles,
-  getActiveIndex: s.getActiveIndex,
 });
 
 interface OverlayProps {
@@ -24,12 +24,12 @@ interface OverlayProps {
 }
 
 const Overlay: FC<OverlayProps> = ({ prefixCls }) => {
-  const { activeId, compact, renderContent, getActiveIndex, hideRemove, getItemStyles } = useStore(
+  const { activeId, compact, renderContent, hideRemove, getItemStyles } = useStore(
     selector,
     shallow,
   );
   const value = useStore((s) => s.value, isEqual);
-  const activeIndex = getActiveIndex();
+  const activeIndex = getIndexOfActiveItem(value, activeId);
 
   return (
     <DragOverlay

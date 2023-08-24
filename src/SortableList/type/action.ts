@@ -1,4 +1,5 @@
 import type { UniqueIdentifier } from '@dnd-kit/core';
+import { SortableItem } from '../type';
 
 // 新增节点
 export interface AddItemAction {
@@ -9,7 +10,7 @@ export interface AddItemAction {
   /**
    * 新增的节点
    */
-  item: any;
+  item: SortableItem;
   /**
    * 新增节点的位置
    * @default undefined
@@ -58,7 +59,7 @@ export interface UpdateItemAction {
   /**
    * 修改后的节点内容
    */
-  item: any;
+  item: SortableItem;
 }
 
 /**

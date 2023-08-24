@@ -1,16 +1,17 @@
+import { ForwardedRef } from 'react';
 import type {
   CreatorButtonProps,
   GetItemStyles,
-  KeyManager,
   RenderActionProps,
   RenderItemProps,
+  SortableItemList,
   SortableListDispatchPayload,
   UniqueIdentifier,
 } from '../type';
 
-export type OnChange<T = any> = (values: T[], event: SortableListDispatchPayload) => void;
+export type OnChange = (items: SortableItemList, event: SortableListDispatchPayload) => void;
 
-export interface SortableListState<T = any> {
+export interface SortableListState {
   /*
    * 值变化
    */
@@ -24,21 +25,17 @@ export interface SortableListState<T = any> {
    */
   activeId?: UniqueIdentifier;
   /**
-   * 字段管理
-   */
-  keyManager?: KeyManager;
-  /**
    * 值
    */
-  value?: T[];
+  value?: SortableItemList;
   /**
    * 渲染内容区域
    */
-  renderContent: RenderItemProps<T>;
+  renderContent: RenderItemProps;
   /**
    * 渲染额外区域
    */
-  actions: RenderActionProps<T>;
+  actions: RenderActionProps;
   /**
    * 渲染可排序列表项样式
    */
@@ -59,4 +56,65 @@ export interface SortableListState<T = any> {
    * 隐藏
    */
   hideRemove?: boolean;
+}
+
+/**
+ * 供外部使用的 ref 方法
+ */
+export interface SortableListRef<T> {
+  addItem: (item?: T, index?: number) => void;
+  removeItem: (index: number) => void;
+  updateItem: (item: T, index: number) => void;
+}
+
+export interface StoreUpdaterProps<T = any> {
+  /**
+   * 值
+   */
+  value?: T[];
+  /**
+   * 初始值
+   */
+  initialValues?: T[];
+  /**
+   * 值变化
+   */
+  onChange?: OnChange;
+  /**
+   * 渲染内容区域
+   */
+  renderContent?: RenderItemProps<T>;
+  /**
+   * 除列表自带操作之外的其他操作自渲染
+   */
+  actions?: RenderActionProps<T>;
+  /**
+   * 渲染头部区域
+   */
+  renderHeader?: () => React.ReactNode;
+  /**
+   * 对外部暴露方法
+   */
+  ref?: ForwardedRef<SortableListRef<T>>;
+  /**
+   * 新建对象相关属性
+   */
+  creatorButtonProps?: CreatorButtonProps;
+  /**
+   * 如果为 true，则会在 devtools 中显示 SortableTree 内部的数据结构
+   * @internal
+   */
+  SHOW_STORE_IN_DEVTOOLS?: boolean;
+  /**
+   * 紧凑模式, 默认为 false
+   */
+  compact?: boolean;
+  /**
+   * 是否隐藏删除按钮，默认为 false
+   */
+  hideRemove?: boolean;
+  /**
+   * 自定义排序容器样式
+   */
+  getItemStyles?: GetItemStyles;
 }
