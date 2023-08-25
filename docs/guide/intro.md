@@ -1,7 +1,8 @@
 ---
 title: 快速开始
-#group: 基础框架
-
+group:
+  title: 快速上手
+  order: 1
 nav:
   title: 文档
   order: 1

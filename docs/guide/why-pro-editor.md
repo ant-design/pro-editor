@@ -1,5 +1,6 @@
 ---
 title: Why ProEditor?
+group: 快速上手
 ---
 
 # Why ProEditor?
