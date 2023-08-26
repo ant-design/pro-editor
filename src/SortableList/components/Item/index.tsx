@@ -105,30 +105,19 @@ const Item = memo(
               })
             ) : (
               <Flexbox className={styles.content} direction={'horizontal'} align={'center'}>
-                <Flexbox
-                  className={classNames(styles.actionsLeft, styles.actions)}
-                  direction={'horizontal'}
-                >
+                <Flexbox flex={1} style={{ paddingLeft: 4 }}>
+                  {id}
+                </Flexbox>
+                <Flexbox className={classNames(styles.actions)} direction={'horizontal'}>
+                  {hideRemove ? null : <DeleteAction tabIndex={-1} onClick={onRemove} />}
                   {handle ? (
                     <HandleAction
                       tabIndex={-1}
                       cursor="grab"
                       data-cypress="draggable-handle"
-                      style={{
-                        position: 'absolute',
-                        left: '-13px',
-                      }}
                       {...listeners}
                     />
                   ) : null}
-                </Flexbox>
-                <Flexbox flex={1} style={{ paddingLeft: 4 }}>
-                  {id}
-                </Flexbox>
-                <Flexbox className={classNames(styles.actions)} direction={'horizontal'}>
-                  {hideRemove ? null : (
-                    <DeleteAction tabIndex={-1} onClick={onRemove} style={{ height: 22 }} />
-                  )}
                 </Flexbox>
               </Flexbox>
             )}

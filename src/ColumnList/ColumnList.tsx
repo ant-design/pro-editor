@@ -139,7 +139,6 @@ const ColumnList: <T = any>(props: ColumnListProps<T>) => ReactNode = forwardRef
         <EmptyGuide />
         <SortableList
           ref={ref}
-          compact
           renderItem={renderItem}
           value={parsedValue}
           initialValues={parsedInitialValues}

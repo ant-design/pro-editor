@@ -169,10 +169,6 @@ export const useStyle = createStyles(({ css, cx, token }, prefixCls: string) => 
         // 采用背景模糊来解决多种背景色下覆盖内容的问题 TODO：FireFox 兼容
         backdrop-filter: blur(5px);
         //background-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, @bg-2 10%, @bg-2 100%);
-
-        .tech-studio-actionicon-icon {
-          height: 22px;
-        }
       `,
     ),
     content: cx(
@@ -180,6 +176,9 @@ export const useStyle = createStyles(({ css, cx, token }, prefixCls: string) => 
       css`
         position: relative;
         width: 100%;
+        height: 24px;
+        border-radius: 2px;
+        min-width: 48px;
       `,
     ),
   };

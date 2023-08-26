@@ -12,26 +12,31 @@ import ControlInput from './renderItem/Input';
 import ControlSelect from './renderItem/Select';
 
 const useStyle = createStyles(({ css, cx }, prefixCls) => {
+  const prefix = `${prefixCls}-item`;
+
   return {
     item: cx(
-      `${prefixCls}-item`,
+      prefix,
       css`
         position: relative;
         width: 100%;
+
+        &:hover .${prefix}-actions {
+          opacity: 1;
+        }
       `,
     ),
     content: cx(
-      `${prefixCls}-item-content`,
+      `${prefix}-content`,
       css`
         flex: 1;
-        height: 24px;
         font-size: 12px;
         border-radius: 2px;
         min-width: 48px;
       `,
     ),
     actions: cx(
-      `${prefixCls}-item-actions`,
+      `${prefix}-actions`,
       css`
         z-index: 10;
         color: hsla(0, 0, 0, 0.45);
@@ -39,24 +44,16 @@ const useStyle = createStyles(({ css, cx }, prefixCls) => {
       `,
     ),
     actionsLeft: cx(
-      `${prefixCls}-item-actions-left`,
+      `${prefix}-actions-left`,
       css`
         position: absolute;
         top: 0;
         left: 0;
-
-        .studio-btn.studio-btn-sm.studio-btn-icon-only {
-          width: 14px;
-          height: 24px;
-          > svg {
-            width: 14px;
-          }
-        }
       `,
     ),
 
     actionsRight: cx(
-      `${prefixCls}-item-actions-right`,
+      `${prefix}-actions-right`,
       css`
         position: absolute;
         top: 1px;
@@ -98,6 +95,7 @@ const ColumnItem = memo<ItemRenderProps>(
           <HandleAction
             tabIndex={-1}
             cursor="grab"
+            style={{ width: 14, height: 24 }}
             data-cypress="draggable-handle"
             {...listeners}
           />
