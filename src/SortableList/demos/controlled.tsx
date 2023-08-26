@@ -15,7 +15,13 @@ const Demo = () => {
   const token = useTheme();
   return (
     <Flexbox padding={24} style={{ background: token.colorBgLayout }}>
-      <SortableList value={list} onChange={(value) => setList(value)} />
+      <SortableList
+        value={list}
+        onChange={(value) => {
+          console.log('change value', value);
+          setList(value);
+        }}
+      />
     </Flexbox>
   );
 };

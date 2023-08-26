@@ -12,13 +12,12 @@ demo:
 
 ## 何时使用
 
-简单排序表单场景。
+简单排序表单场景，提供基础底层 API，可在其上进行封装，可参考 `ColumnList`。
 
 ## 基础使用
 
 <code src="./demos/Basic.tsx" ></code>
 <code src="./demos/controlled.tsx" ></code>
-<code src="./demos/empty.tsx" ></code>
 
 ## 自定义样式
 
