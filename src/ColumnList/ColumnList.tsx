@@ -5,7 +5,7 @@ import {
   getPrefixCls,
   useSortableList,
 } from '@ant-design/pro-editor';
-import { Button } from 'antd';
+import { Button, Empty } from 'antd';
 import { ReactNode, forwardRef, useCallback, useMemo } from 'react';
 import { SortableListProps, SortableListRef } from '../SortableList';
 import ColumnItem from './ColumnItem';
@@ -15,6 +15,14 @@ import { ColumnItemList } from './types';
 import { genUniqueID } from './utils';
 
 export interface CreatorButtonProps<T> {
+  /**
+   * 列表有值时是否展示添加按钮
+   */
+  showInList?: boolean;
+  /**
+   * 空数据时是否展示添加按钮
+   */
+  showInEmpty?: boolean;
   /**
    * 生成初始值逻辑
    */
@@ -30,7 +38,7 @@ export interface ColumnListProps<T = any> extends SortableListProps<T> {
   /**
    * 初始化按钮相关配置
    */
-  creatorButtonProps?: CreatorButtonProps<T> | false;
+  creatorButtonProps?: CreatorButtonProps<T>;
 }
 
 const ColumnList: <T = any>(props: ColumnListProps<T>) => ReactNode = forwardRef<
@@ -50,6 +58,9 @@ const ColumnList: <T = any>(props: ColumnListProps<T>) => ReactNode = forwardRef
     ref,
   ) => {
     const prefixCls = getPrefixCls('column-list', customPrefixCls);
+    const instance = useSortableList();
+    const itemsLength = instance.getValue().length;
+
     const { styles, cx } = useStyle(prefixCls);
     // 校验是否传入 ID，如果没有传入 ID，就生成一个 ID
     const parsedValue = useMemo(
@@ -86,14 +97,17 @@ const ColumnList: <T = any>(props: ColumnListProps<T>) => ReactNode = forwardRef
       [prefixCls, columns],
     );
 
-    const CreateButton = () => {
-      const { record, creatorButtonText = '添加一列' } = creatorButtonProps || {};
-      const instance = useSortableList();
-      const itemsLength = instance.getValue().length;
+    const {
+      record,
+      creatorButtonText = '添加一列',
+      showInList = true,
+      showInEmpty = true,
+    } = creatorButtonProps || {};
 
+    const CreateButton = ({ empty = false }) => {
       return (
         <Button
-          block
+          block={empty ? false : true}
           size={'small'}
           className={styles.btnAdd}
           onClick={() => {
@@ -112,17 +126,27 @@ const ColumnList: <T = any>(props: ColumnListProps<T>) => ReactNode = forwardRef
 
     return (
       <SortableListProvider>
-        <SortableList
-          ref={ref}
-          compact
-          renderContent={renderContent}
-          renderHeader={renderHeader}
-          value={parsedValue}
-          initialValues={parsedInitialValues}
-          className={cx(prefixCls, className)}
-          {...props}
-        />
-        {creatorButtonProps ? <CreateButton /> : null}
+        {itemsLength ? (
+          <>
+            <Empty image={Empty.PRESENTED_IMAGE_SIMPLE}>
+              {showInEmpty === false ? null : <CreateButton empty />}
+            </Empty>
+          </>
+        ) : (
+          <>
+            <SortableList
+              ref={ref}
+              compact
+              renderContent={renderContent}
+              renderHeader={renderHeader}
+              value={parsedValue}
+              initialValues={parsedInitialValues}
+              className={cx(prefixCls, className)}
+              {...props}
+            />
+            {showInList === false ? null : <CreateButton />}
+          </>
+        )}
       </SortableListProvider>
     );
   },
