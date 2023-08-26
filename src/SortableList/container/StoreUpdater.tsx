@@ -10,9 +10,8 @@ const StoreUpdater = forwardRef(
       initialValues,
       value,
       onChange,
-      renderContent,
+      renderItem,
       getItemStyles,
-      actions,
       compact,
       hideRemove,
     }: StoreUpdaterProps,
@@ -25,9 +24,8 @@ const StoreUpdater = forwardRef(
     useStoreUpdater('initialValues', initialValues);
     useStoreUpdater('value', value);
     useStoreUpdater('onChange', onChange);
-    useStoreUpdater('renderContent', renderContent);
+    useStoreUpdater('renderItem', renderItem);
     useStoreUpdater('getItemStyles', getItemStyles);
-    useStoreUpdater('actions', actions);
     useStoreUpdater('compact', compact);
     useStoreUpdater('hideRemove', hideRemove);
 

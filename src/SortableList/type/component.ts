@@ -1,6 +1,6 @@
 import type { DraggableSyntheticListeners, UniqueIdentifier } from '@dnd-kit/core';
 import type { Transform } from '@dnd-kit/utilities';
-import type { CSSProperties, ReactElement, ReactNode, Ref } from 'react';
+import type { CSSProperties, ReactElement, Ref } from 'react';
 
 export interface SortableBaseItem {
   id: UniqueIdentifier;
@@ -17,6 +17,8 @@ export interface BaseItemProps {
   dragging?: boolean;
   handle?: boolean;
   height?: number;
+  item: SortableItem;
+  renderItem?: RenderItem;
   index?: number;
   fadeIn?: boolean;
   hideRemove?: boolean;
@@ -29,8 +31,21 @@ export interface BaseItemProps {
   transition?: string | null;
   id: UniqueIdentifier;
   onRemove?: () => void;
-  actions?: React.ReactNode[];
   prefixCls?: string;
+}
+
+export interface SortableItemProps {
+  disabled?: boolean;
+  id: UniqueIdentifier;
+  index: number;
+  item: SortableItem;
+  useDragOverlay?: boolean;
+  onRemove?: (index: number) => void;
+  renderItem?: RenderItem;
+  getItemStyles?: GetItemStyles;
+  prefixCls?: string;
+  hideRemove?: boolean;
+  compact?: boolean;
 }
 
 export type RenderItem<T = SortableItem> = (
@@ -46,16 +61,8 @@ export type RenderItem<T = SortableItem> = (
     style: CSSProperties | undefined;
     transform: any;
     transition: any;
-    onRemove: () => void;
-    onAddItem: (index: number, newItem: T) => void;
   },
 ) => ReactElement;
-
-export type RenderItemProps<T = SortableItem> = (item: T, index: number) => ReactNode;
-
-export type RenderActionProps<T = SortableItem> =
-  | ((item: T, index: number) => ReactNode[])
-  | React.ReactNode[];
 
 export type { UniqueIdentifier };
 

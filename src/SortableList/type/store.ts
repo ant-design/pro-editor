@@ -1,8 +1,7 @@
 import { ForwardedRef } from 'react';
 import type {
   GetItemStyles,
-  RenderActionProps,
-  RenderItemProps,
+  RenderItem,
   SortableItem,
   SortableItemList,
   SortableListDispatchPayload,
@@ -31,11 +30,7 @@ export interface SortableListState {
   /**
    * 渲染内容区域
    */
-  renderContent: RenderItemProps;
-  /**
-   * 渲染额外区域
-   */
-  actions: RenderActionProps;
+  renderItem: RenderItem;
   /**
    * 渲染可排序列表项样式
    */
@@ -73,13 +68,9 @@ export interface StoreUpdaterProps<T = SortableItem> {
    */
   onChange?: OnChange;
   /**
-   * 渲染内容区域
+   * 渲染可排序项
    */
-  renderContent?: RenderItemProps<T>;
-  /**
-   * 除列表自带操作之外的其他操作自渲染
-   */
-  actions?: RenderActionProps<T>;
+  renderItem?: RenderItem<T>;
   /**
    * 对外部暴露方法
    */

@@ -7,7 +7,7 @@ import type { Store } from '../store';
 import { useStore } from '../store';
 
 const selector = (s: Store) => ({
-  renderContent: s.renderContent,
+  renderItem: s.renderItem,
   getItemStyles: s.getItemStyles,
   compact: s.compact,
   hideRemove: s.hideRemove,
@@ -19,12 +19,12 @@ interface SortableListProps {
 }
 
 const SortableList: FC<SortableListProps> = ({ prefixCls }) => {
-  const { dispatchListData, renderContent, compact, hideRemove, getItemStyles } = useStore(
+  const { dispatchListData, renderItem, compact, hideRemove, getItemStyles } = useStore(
     selector,
     shallow,
   );
 
-  const [items, actions] = useStore((s) => [s.value, s.actions], isEqual);
+  const items = useStore((s) => s.value, isEqual);
 
   return (
     <List prefixCls={prefixCls}>
@@ -33,17 +33,16 @@ const SortableList: FC<SortableListProps> = ({ prefixCls }) => {
           <SortableItem
             key={item.id}
             id={item.id}
+            item={item}
             index={index}
             compact={compact}
             hideRemove={hideRemove}
+            renderItem={renderItem}
             getItemStyles={getItemStyles}
             onRemove={() => dispatchListData({ type: 'removeItem', index })}
-            actions={typeof actions === 'function' ? actions(item, index) : actions}
             useDragOverlay={true}
             prefixCls={prefixCls}
-          >
-            {renderContent?.(item, index)}
-          </SortableItem>
+          />
         );
       })}
     </List>

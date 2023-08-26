@@ -47,10 +47,11 @@ order: 3
 
 提供封装的 `columns` 配置，其他属性参考 `SortableList`
 
-| 属性名             | 类型                          | 描述             |
-| ------------------ | ----------------------------- | ---------------- |
-| columns            | `ColumnItem<T>[]`             | 列配置项         |
-| creatorButtonProps | `CreatorButtonProps \| false` | 新建对象相关属性 |
+| 属性名             | 类型                                                             | 描述                               |
+| ------------------ | ---------------------------------------------------------------- | ---------------------------------- |
+| columns            | `ColumnItem<T>[]`                                                | 列配置项                           |
+| creatorButtonProps | `CreatorButtonProps \| false`                                    | 新建对象相关属性                   |
+| actions            | `(item: T, index: number) => ReactNode[]` \| `React.ReactNode[]` | 除列表自带操作之外的其他操作自渲染 |
 
 ### CreatorButtonProps 创建按钮属性
 

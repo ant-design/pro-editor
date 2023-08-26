@@ -1,7 +1,7 @@
 import { useToken } from '../../../theme';
 /* eslint-disable consistent-return */
 import classNames from 'classnames';
-import { PropsWithChildren, forwardRef, memo, useEffect } from 'react';
+import { forwardRef, memo, useEffect } from 'react';
 import { Flexbox } from 'react-layout-kit';
 import { BaseItemProps } from '../../type';
 
@@ -9,7 +9,7 @@ import { DeleteAction, HandleAction } from '../../../ActionIcon';
 import { useStyle } from './style';
 
 const Item = memo(
-  forwardRef<HTMLLIElement, PropsWithChildren<BaseItemProps>>(
+  forwardRef<HTMLLIElement, BaseItemProps>(
     (
       {
         color,
@@ -21,16 +21,16 @@ const Item = memo(
         index,
         listeners,
         onRemove,
+        item,
+        renderItem,
         hideRemove = false,
         compact = false,
-        children,
         sorting,
         style,
         transition,
         transform,
         id,
         className,
-        actions,
         prefixCls,
         ...props
       },
@@ -91,45 +91,55 @@ const Item = memo(
             {...props}
             tabIndex={!handle ? 0 : undefined}
           >
-            <Flexbox className={styles.content} direction={'horizontal'} align={'center'}>
-              <Flexbox
-                className={classNames(styles.actionsLeft, styles.actions)}
-                direction={'horizontal'}
-              >
-                {handle ? (
-                  <HandleAction
-                    tabIndex={-1}
-                    cursor="grab"
-                    data-cypress="draggable-handle"
-                    style={
-                      compact
-                        ? undefined
-                        : {
-                            position: 'absolute',
-                            left: '-13px',
-                          }
-                    }
-                    {...listeners}
-                  />
-                ) : null}
-              </Flexbox>
-              {children ? (
-                children
-              ) : (
+            {renderItem ? (
+              renderItem(item, {
+                dragOverlay: Boolean(dragOverlay),
+                dragging: Boolean(dragging),
+                sorting: Boolean(sorting),
+                index,
+                fadeIn: Boolean(fadeIn),
+                listeners,
+                ref,
+                style,
+                transform,
+                transition,
+              })
+            ) : (
+              <Flexbox className={styles.content} direction={'horizontal'} align={'center'}>
+                <Flexbox
+                  className={classNames(styles.actionsLeft, styles.actions)}
+                  direction={'horizontal'}
+                >
+                  {handle ? (
+                    <HandleAction
+                      tabIndex={-1}
+                      cursor="grab"
+                      data-cypress="draggable-handle"
+                      style={
+                        compact
+                          ? undefined
+                          : {
+                              position: 'absolute',
+                              left: '-13px',
+                            }
+                      }
+                      {...listeners}
+                    />
+                  ) : null}
+                </Flexbox>
                 <Flexbox flex={1} style={{ paddingLeft: 4 }}>
                   {id}
                 </Flexbox>
-              )}
-              <Flexbox
-                className={classNames(styles.actions, compact ? styles.actionsRight : undefined)}
-                direction={'horizontal'}
-              >
-                {actions}
-                {hideRemove ? null : (
-                  <DeleteAction tabIndex={-1} onClick={onRemove} style={{ height: 22 }} />
-                )}
+                <Flexbox
+                  className={classNames(styles.actions, compact ? styles.actionsRight : undefined)}
+                  direction={'horizontal'}
+                >
+                  {hideRemove ? null : (
+                    <DeleteAction tabIndex={-1} onClick={onRemove} style={{ height: 22 }} />
+                  )}
+                </Flexbox>
               </Flexbox>
-            </Flexbox>
+            )}
           </div>
         </li>
       );

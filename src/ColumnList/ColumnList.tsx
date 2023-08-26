@@ -31,6 +31,10 @@ export interface ColumnListProps<T = any> extends SortableListProps<T> {
    * 初始化按钮相关配置
    */
   creatorButtonProps?: CreatorButtonProps<T> | false;
+  /**
+   * 额外操作按钮配置
+   */
+  actions: ((item: T, index: number) => ReactNode[]) | React.ReactNode[];
 }
 
 const ColumnList: <T = any>(props: ColumnListProps<T>) => ReactNode = forwardRef<
@@ -45,6 +49,8 @@ const ColumnList: <T = any>(props: ColumnListProps<T>) => ReactNode = forwardRef
       value,
       initialValues,
       creatorButtonProps,
+      actions,
+      hideRemove,
       ...props
     },
     ref,
@@ -75,9 +81,17 @@ const ColumnList: <T = any>(props: ColumnListProps<T>) => ReactNode = forwardRef
       [initialValues],
     );
 
-    const renderContent = useCallback(
-      (item, index) => (
-        <ColumnItem columns={columns} item={item} index={index} prefixCls={prefixCls} />
+    const renderItem = useCallback(
+      (item, { index, listeners }) => (
+        <ColumnItem
+          columns={columns}
+          item={item}
+          listeners={listeners}
+          index={index}
+          prefixCls={prefixCls}
+          actions={typeof actions === 'function' ? actions(item, index) : actions}
+          hideRemove={hideRemove}
+        />
       ),
       [prefixCls, columns],
     );
@@ -126,7 +140,7 @@ const ColumnList: <T = any>(props: ColumnListProps<T>) => ReactNode = forwardRef
         <SortableList
           ref={ref}
           compact
-          renderContent={renderContent}
+          renderItem={renderItem}
           value={parsedValue}
           initialValues={parsedInitialValues}
           className={cx(prefixCls, className)}
