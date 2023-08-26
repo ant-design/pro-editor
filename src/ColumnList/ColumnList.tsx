@@ -16,17 +16,9 @@ import { genUniqueID } from './utils';
 
 export interface CreatorButtonProps<T> {
   /**
-   * 列表有值时是否展示添加按钮
-   */
-  showInList?: boolean;
-  /**
-   * 空数据时是否展示添加按钮
-   */
-  showInEmpty?: boolean;
-  /**
    * 生成初始值逻辑
    */
-  record?: (index: number) => Partial<T>;
+  record: (index: number) => Partial<T>;
   /**
    * 新增一行按钮文案
    */
@@ -38,7 +30,7 @@ export interface ColumnListProps<T = any> extends SortableListProps<T> {
   /**
    * 初始化按钮相关配置
    */
-  creatorButtonProps?: CreatorButtonProps<T>;
+  creatorButtonProps?: CreatorButtonProps<T> | false;
 }
 
 const ColumnList: <T = any>(props: ColumnListProps<T>) => ReactNode = forwardRef<
@@ -58,8 +50,6 @@ const ColumnList: <T = any>(props: ColumnListProps<T>) => ReactNode = forwardRef
     ref,
   ) => {
     const prefixCls = getPrefixCls('column-list', customPrefixCls);
-    const instance = useSortableList();
-    const itemsLength = instance.getValue().length;
 
     const { styles, cx } = useStyle(prefixCls);
     // 校验是否传入 ID，如果没有传入 ID，就生成一个 ID
@@ -97,14 +87,13 @@ const ColumnList: <T = any>(props: ColumnListProps<T>) => ReactNode = forwardRef
       [prefixCls, columns],
     );
 
-    const {
-      record,
-      creatorButtonText = '添加一列',
-      showInList = true,
-      showInEmpty = true,
-    } = creatorButtonProps || {};
-
     const CreateButton = ({ empty = false }) => {
+      const instance = useSortableList();
+      const itemsLength = instance.getValue().length;
+      if (itemsLength === 0 && empty === false) return null;
+
+      const { record, creatorButtonText = '添加一列' } = creatorButtonProps || {};
+
       return (
         <Button
           block={empty ? false : true}
@@ -124,29 +113,31 @@ const ColumnList: <T = any>(props: ColumnListProps<T>) => ReactNode = forwardRef
       );
     };
 
+    const EmptyGuide = () => {
+      const instance = useSortableList();
+      const itemsLength = instance.getValue().length;
+
+      return itemsLength === 0 ? (
+        <Empty image={Empty.PRESENTED_IMAGE_SIMPLE}>
+          {creatorButtonProps === false ? null : <CreateButton empty />}
+        </Empty>
+      ) : null;
+    };
+
     return (
       <SortableListProvider>
-        {itemsLength ? (
-          <>
-            <Empty image={Empty.PRESENTED_IMAGE_SIMPLE}>
-              {showInEmpty === false ? null : <CreateButton empty />}
-            </Empty>
-          </>
-        ) : (
-          <>
-            <SortableList
-              ref={ref}
-              compact
-              renderContent={renderContent}
-              renderHeader={renderHeader}
-              value={parsedValue}
-              initialValues={parsedInitialValues}
-              className={cx(prefixCls, className)}
-              {...props}
-            />
-            {showInList === false ? null : <CreateButton />}
-          </>
-        )}
+        <EmptyGuide />
+        <SortableList
+          ref={ref}
+          compact
+          renderContent={renderContent}
+          renderHeader={renderHeader}
+          value={parsedValue}
+          initialValues={parsedInitialValues}
+          className={cx(prefixCls, className)}
+          {...props}
+        />
+        {creatorButtonProps === false ? null : <CreateButton />}
       </SortableListProvider>
     );
   },
