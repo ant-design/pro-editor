@@ -11,7 +11,6 @@ const StoreUpdater = forwardRef(
       value,
       onChange,
       renderContent,
-      renderHeader,
       getItemStyles,
       actions,
       compact,
@@ -27,7 +26,6 @@ const StoreUpdater = forwardRef(
     useStoreUpdater('value', value);
     useStoreUpdater('onChange', onChange);
     useStoreUpdater('renderContent', renderContent);
-    useStoreUpdater('renderHeader', renderHeader);
     useStoreUpdater('getItemStyles', getItemStyles);
     useStoreUpdater('actions', actions);
     useStoreUpdater('compact', compact);

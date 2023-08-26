@@ -41,10 +41,6 @@ export interface SortableListState {
    */
   getItemStyles?: GetItemStyles;
   /**
-   * 渲染头部区域
-   */
-  renderHeader: () => React.ReactNode;
-  /**
    * 紧凑模式
    */
   compact?: boolean;
@@ -84,10 +80,6 @@ export interface StoreUpdaterProps<T = SortableItem> {
    * 除列表自带操作之外的其他操作自渲染
    */
   actions?: RenderActionProps<T>;
-  /**
-   * 渲染头部区域
-   */
-  renderHeader?: () => React.ReactNode;
   /**
    * 对外部暴露方法
    */

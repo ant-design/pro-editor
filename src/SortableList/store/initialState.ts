@@ -6,7 +6,6 @@ export const initialState: SortableListState = {
   compact: false,
   hideRemove: false,
   onChange: undefined,
-  renderHeader: undefined,
   renderContent: undefined,
   getItemStyles: () => ({}),
   actions: [],

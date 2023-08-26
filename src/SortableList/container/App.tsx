@@ -35,7 +35,6 @@ const selector = (s: Store) => ({
   handleDragStart: s.handleDragStart,
   handleDragCancel: s.handleDragCancel,
   handleDragEnd: s.handleDragEnd,
-  renderHeader: s.renderHeader,
 });
 
 const dataSelector = (s: Store) => s.value;
@@ -56,10 +55,7 @@ export interface AppProps {
 }
 
 const App: FC<AppProps> = ({ className, style, prefixCls: customPrefixCls }) => {
-  const { handleDragStart, handleDragCancel, handleDragEnd, renderHeader } = useStore(
-    selector,
-    shallow,
-  );
+  const { handleDragStart, handleDragCancel, handleDragEnd } = useStore(selector, shallow);
 
   const items = useStore(dataSelector, isEqual);
 
@@ -90,7 +86,6 @@ const App: FC<AppProps> = ({ className, style, prefixCls: customPrefixCls }) => 
         modifiers={[restrictToVerticalAxis, restrictToWindowEdges]}
       >
         <SortableContext items={items} strategy={verticalListSortingStrategy}>
-          {renderHeader?.()}
           <SortList prefixCls={prefixCls} />
           {overlay}
         </SortableContext>

@@ -75,11 +75,6 @@ const ColumnList: <T = any>(props: ColumnListProps<T>) => ReactNode = forwardRef
       [initialValues],
     );
 
-    const renderHeader = useCallback(
-      () => <Header prefixCls={prefixCls} columns={columns} />,
-      [columns],
-    );
-
     const renderContent = useCallback(
       (item, index) => (
         <ColumnItem columns={columns} item={item} index={index} prefixCls={prefixCls} />
@@ -126,12 +121,12 @@ const ColumnList: <T = any>(props: ColumnListProps<T>) => ReactNode = forwardRef
 
     return (
       <SortableListProvider>
+        <Header prefixCls={prefixCls} columns={columns} />
         <EmptyGuide />
         <SortableList
           ref={ref}
           compact
           renderContent={renderContent}
-          renderHeader={renderHeader}
           value={parsedValue}
           initialValues={parsedInitialValues}
           className={cx(prefixCls, className)}
