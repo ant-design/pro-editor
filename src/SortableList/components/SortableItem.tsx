@@ -13,7 +13,6 @@ export default function SortableItem({
   item,
   prefixCls,
   hideRemove = false,
-  compact = false,
 }: SortableItemProps) {
   const {
     attributes,
@@ -39,7 +38,6 @@ export default function SortableItem({
       disabled={disabled}
       dragging={isDragging}
       sorting={isSorting}
-      compact={compact}
       hideRemove={hideRemove}
       index={index}
       onRemove={onRemove ? () => onRemove(index) : undefined}

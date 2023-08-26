@@ -13,9 +13,8 @@ import { getIndexOfActiveItem } from '../utils';
 
 const selector = (s: Store) => ({
   activeId: s.activeId,
-  compact: s.compact,
   hideRemove: s.hideRemove,
-  renderContent: s.renderContent,
+  renderItem: s.renderItem,
   getItemStyles: s.getItemStyles,
 });
 
@@ -24,12 +23,9 @@ interface OverlayProps {
 }
 
 const Overlay: FC<OverlayProps> = ({ prefixCls }) => {
-  const { activeId, compact, renderContent, hideRemove, getItemStyles } = useStore(
-    selector,
-    shallow,
-  );
-  const value = useStore((s) => s.value, isEqual);
-  const activeIndex = getIndexOfActiveItem(value, activeId);
+  const { activeId, renderItem, hideRemove, getItemStyles } = useStore(selector, shallow);
+  const items = useStore((s) => s.value, isEqual);
+  const activeIndex = getIndexOfActiveItem(items, activeId);
 
   return (
     <DragOverlay
@@ -45,8 +41,9 @@ const Overlay: FC<OverlayProps> = ({ prefixCls }) => {
         <Item
           id={activeId}
           dragOverlay
+          item={items[activeIndex]}
           prefixCls={prefixCls}
-          compact={compact}
+          renderItem={renderItem}
           style={getItemStyles({
             id: activeId,
             index: activeIndex,
@@ -56,9 +53,7 @@ const Overlay: FC<OverlayProps> = ({ prefixCls }) => {
             isDragOverlay: true,
           })}
           hideRemove={hideRemove}
-        >
-          {renderContent?.(value[activeIndex], activeIndex)}
-        </Item>
+        />
       ) : null}
     </DragOverlay>
   );

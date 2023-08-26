@@ -48,7 +48,6 @@ demo:
 | onChange      | `(value: T[], event: ListDataDispatchPayload) => void` | 值变化                         |
 | renderContent | `(item: T, index: number) => ReactNode`                | 渲染内容区域                   |
 | ref           | `ForwardedRef<SortableListRef<T>>`                     | 对外部暴露方法                 |
-| compact       | `boolean`                                              | 紧凑模式, 默认为 false         |
 | hideRemove    | `boolean`                                              | 是否隐藏删除按钮，默认为 false |
 
 ### SortableListDispatchPayload

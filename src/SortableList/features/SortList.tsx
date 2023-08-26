@@ -9,7 +9,6 @@ import { useStore } from '../store';
 const selector = (s: Store) => ({
   renderItem: s.renderItem,
   getItemStyles: s.getItemStyles,
-  compact: s.compact,
   hideRemove: s.hideRemove,
   dispatchListData: s.dispatchListData,
 });
@@ -19,10 +18,7 @@ interface SortableListProps {
 }
 
 const SortableList: FC<SortableListProps> = ({ prefixCls }) => {
-  const { dispatchListData, renderItem, compact, hideRemove, getItemStyles } = useStore(
-    selector,
-    shallow,
-  );
+  const { dispatchListData, renderItem, hideRemove, getItemStyles } = useStore(selector, shallow);
 
   const items = useStore((s) => s.value, isEqual);
 
@@ -35,7 +31,6 @@ const SortableList: FC<SortableListProps> = ({ prefixCls }) => {
             id={item.id}
             item={item}
             index={index}
-            compact={compact}
             hideRemove={hideRemove}
             renderItem={renderItem}
             getItemStyles={getItemStyles}

@@ -99,10 +99,6 @@ const ColumnItem = memo<ItemRenderProps>(
             tabIndex={-1}
             cursor="grab"
             data-cypress="draggable-handle"
-            style={{
-              position: 'absolute',
-              left: '-13px',
-            }}
             {...listeners}
           />
         </Flexbox>
@@ -147,7 +143,10 @@ const ColumnItem = memo<ItemRenderProps>(
             }
           })}
         </Flexbox>
-        <Flexbox className={classNames(styles.actions)} direction={'horizontal'}>
+        <Flexbox
+          className={classNames(styles.actions, styles.actionsRight)}
+          direction={'horizontal'}
+        >
           {actions}
           {hideRemove ? null : (
             <DeleteAction

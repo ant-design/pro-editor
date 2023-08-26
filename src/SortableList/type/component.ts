@@ -22,7 +22,6 @@ export interface BaseItemProps {
   index?: number;
   fadeIn?: boolean;
   hideRemove?: boolean;
-  compact?: boolean;
   transform?: Transform | null;
   listeners?: DraggableSyntheticListeners;
   sorting?: boolean;
@@ -45,7 +44,6 @@ export interface SortableItemProps {
   getItemStyles?: GetItemStyles;
   prefixCls?: string;
   hideRemove?: boolean;
-  compact?: boolean;
 }
 
 export type RenderItem<T = SortableItem> = (

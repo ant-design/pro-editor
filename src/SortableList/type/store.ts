@@ -36,10 +36,6 @@ export interface SortableListState {
    */
   getItemStyles?: GetItemStyles;
   /**
-   * 紧凑模式
-   */
-  compact?: boolean;
-  /**
    * 隐藏
    */
   hideRemove?: boolean;
@@ -80,10 +76,6 @@ export interface StoreUpdaterProps<T = SortableItem> {
    * @internal
    */
   SHOW_STORE_IN_DEVTOOLS?: boolean;
-  /**
-   * 紧凑模式, 默认为 false
-   */
-  compact?: boolean;
   /**
    * 是否隐藏删除按钮，默认为 false
    */

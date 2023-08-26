@@ -24,7 +24,6 @@ const Item = memo(
         item,
         renderItem,
         hideRemove = false,
-        compact = false,
         sorting,
         style,
         transition,
@@ -84,7 +83,7 @@ const Item = memo(
             })}
             style={{
               ...style,
-              backgroundColor: compact ? undefined : token.colorBgContainer,
+              backgroundColor: token.colorBgContainer,
             }}
             data-cypress="draggable-item"
             {...(!handle ? listeners : undefined)}
@@ -115,14 +114,10 @@ const Item = memo(
                       tabIndex={-1}
                       cursor="grab"
                       data-cypress="draggable-handle"
-                      style={
-                        compact
-                          ? undefined
-                          : {
-                              position: 'absolute',
-                              left: '-13px',
-                            }
-                      }
+                      style={{
+                        position: 'absolute',
+                        left: '-13px',
+                      }}
                       {...listeners}
                     />
                   ) : null}
@@ -130,10 +125,7 @@ const Item = memo(
                 <Flexbox flex={1} style={{ paddingLeft: 4 }}>
                   {id}
                 </Flexbox>
-                <Flexbox
-                  className={classNames(styles.actions, compact ? styles.actionsRight : undefined)}
-                  direction={'horizontal'}
-                >
+                <Flexbox className={classNames(styles.actions)} direction={'horizontal'}>
                   {hideRemove ? null : (
                     <DeleteAction tabIndex={-1} onClick={onRemove} style={{ height: 22 }} />
                   )}
