@@ -1,3 +1,7 @@
+/**
+ * title: 受控模式
+ * description: 表单可通过 `value` 受控
+ */
 import type { ColumnItemList } from '@ant-design/pro-editor';
 import { ColumnList } from '@ant-design/pro-editor';
 import { useState } from 'react';
@@ -40,10 +44,10 @@ const columns: ColumnItemList<SchemaItem> = [
 ];
 
 export default () => {
-  const [value, setValue] = useState(INIT_VALUES);
+  const [value, setValue] = useState<SchemaItem[]>(INIT_VALUES);
 
   return (
-    <ColumnList
+    <ColumnList<SchemaItem>
       columns={columns}
       value={value}
       onChange={(values) => {

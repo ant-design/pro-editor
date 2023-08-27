@@ -43,11 +43,10 @@ const useStyle = createStyles(({ css, cx }, prefixCls) => {
         opacity: 0;
       `,
     ),
-    actionsLeft: cx(
-      `${prefix}-actions-left`,
+    handle: cx(
+      `${prefix}-handle`,
       css`
         position: absolute;
-        top: 0;
         left: 0;
       `,
     ),
@@ -88,18 +87,14 @@ const ColumnItem = memo<ItemRenderProps>(
     const instance = useSortableList();
     return (
       <Flexbox className={styles.item} direction={'horizontal'} align={'center'}>
-        <Flexbox
-          className={classNames(styles.actionsLeft, styles.actions)}
-          direction={'horizontal'}
-        >
-          <HandleAction
-            tabIndex={-1}
-            cursor="grab"
-            style={{ width: 14, height: 24 }}
-            data-cypress="draggable-handle"
-            {...listeners}
-          />
-        </Flexbox>
+        <HandleAction
+          className={classNames(styles.actions, styles.handle)}
+          tabIndex={-1}
+          cursor="grab"
+          style={{ width: 14, height: 24 }}
+          data-cypress="draggable-handle"
+          {...listeners}
+        />
         <Flexbox horizontal gap={4} width={'100%'} className={styles.content}>
           {columns.map((col, colIndex) => {
             const style = { flex: 1, maxWidth: `${100 / columns.length}%` };
@@ -144,6 +139,7 @@ const ColumnItem = memo<ItemRenderProps>(
         <Flexbox
           className={classNames(styles.actions, styles.actionsRight)}
           direction={'horizontal'}
+          align="center"
         >
           {actions}
           {hideRemove ? null : (

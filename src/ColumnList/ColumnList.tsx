@@ -34,7 +34,7 @@ export interface ColumnListProps<T = any> extends SortableListProps<T> {
   /**
    * 额外操作按钮配置
    */
-  actions: ((item: T, index: number) => ReactNode[]) | React.ReactNode[];
+  actions?: ((item: T, index: number) => ReactNode[]) | React.ReactNode[];
 }
 
 const ColumnList: <T = any>(props: ColumnListProps<T>) => ReactNode = forwardRef<

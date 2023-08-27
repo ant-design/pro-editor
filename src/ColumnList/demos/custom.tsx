@@ -1,3 +1,7 @@
+/**
+ * title: 自定义初始化
+ * description: 可通过 `creatorButtonProps` 来自定义初始化逻辑
+ */
 import type { ColumnItemList } from '@ant-design/pro-editor';
 import { ColumnList } from '@ant-design/pro-editor';
 
@@ -45,8 +49,6 @@ const columns: ColumnItemList<SchemaItem> = [
     type: 'select',
   },
 ];
-
-// const newColumn: ProTableColumnConfig = ;
 
 export default () => (
   <ColumnList<SchemaItem>

@@ -1,6 +1,9 @@
+/**
+ * title: 自定义表单
+ * description: 目前支持 `input` 和 `select`, `custom` 三种表单类型.
+ */
 import type { ColumnItemList } from '@ant-design/pro-editor';
-import { ColumnList } from '@ant-design/pro-editor';
-
+import { ColorPicker, ColumnList } from '@ant-design/pro-editor';
 import { tableColumnValueOptions } from './mock_data/options';
 
 type SchemaItem = {
@@ -10,16 +13,16 @@ type SchemaItem = {
 };
 
 const initialValues = [
-  { dataIndex: 'orderId', valueType: 'text', title: '订单id', valueEnum: undefined },
-  { dataIndex: 'orderNumber', valueType: 'text', title: '订单号', valueEnum: undefined },
-  { dataIndex: 'orderMoney', valueType: 'text', title: '订单金额', valueEnum: undefined },
-  { dataIndex: 'productName', valueType: 'text', title: '产品名称', valueEnum: undefined },
-  { dataIndex: 'productComment', valueType: 'text', title: '产品介绍', valueEnum: undefined },
-  { dataIndex: 'orderStatus', valueType: 'text', title: '订单状态', valueEnum: undefined },
-  { dataIndex: 'orderCreated', valueType: 'date', title: '订单创建时间', valueEnum: undefined },
-  { dataIndex: 'detailPic', valueType: 'text', title: '产品详情图', valueEnum: undefined },
-  { dataIndex: 'closeReason', valueType: 'text', title: '订单关闭原因', valueEnum: undefined },
-  { dataIndex: 'closeType', valueType: 'text', title: '订单关闭类型', valueEnum: undefined },
+  { dataIndex: 'orderId', valueType: 'text', title: '订单id', color: undefined },
+  { dataIndex: 'orderNumber', valueType: 'text', title: '订单号', color: undefined },
+  { dataIndex: 'orderMoney', valueType: 'text', title: '订单金额', color: undefined },
+  { dataIndex: 'productName', valueType: 'text', title: '产品名称', color: undefined },
+  { dataIndex: 'productComment', valueType: 'text', title: '产品介绍', color: undefined },
+  { dataIndex: 'orderStatus', valueType: 'text', title: '订单状态', color: undefined },
+  { dataIndex: 'orderCreated', valueType: 'date', title: '订单创建时间', color: undefined },
+  { dataIndex: 'detailPic', valueType: 'text', title: '产品详情图', color: undefined },
+  { dataIndex: 'closeReason', valueType: 'text', title: '订单关闭原因', color: undefined },
+  { dataIndex: 'closeType', valueType: 'text', title: '订单关闭类型', color: undefined },
 ];
 
 const columns: ColumnItemList<SchemaItem> = [
@@ -38,6 +41,21 @@ const columns: ColumnItemList<SchemaItem> = [
     title: '字段',
     dataIndex: 'dataIndex',
     type: 'select',
+  },
+  {
+    title: '颜色',
+    dataIndex: 'color',
+    type: 'custom',
+    render: ({ value, onChange }) => {
+      return (
+        <ColorPicker
+          value={value}
+          size="small"
+          onChangeComplete={(value) => onChange(value.toHexString())}
+          showText
+        />
+      );
+    },
   },
 ];
 

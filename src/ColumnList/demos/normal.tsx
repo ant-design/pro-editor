@@ -1,3 +1,7 @@
+/**
+ * title: 基础使用
+ * description: 通过配置 `columns` 渲染排序表单
+ */
 import type { ColumnItemList } from '@ant-design/pro-editor';
 import { ColumnList } from '@ant-design/pro-editor';
 type SchemaItem = {
