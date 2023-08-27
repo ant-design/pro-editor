@@ -1,6 +1,6 @@
 import type { UniqueIdentifier } from '@dnd-kit/core';
 import isEqual from 'lodash.isequal';
-import React from 'react';
+import { useEffect, useState } from 'react';
 import type { SortableItemList } from '../type';
 
 const defaultInitializer = (index: number) => index;
@@ -52,8 +52,8 @@ export function move<T>(array: T[], moveIndex: number, toIndex: number) {
 }
 
 export const useLatest = (props: any) => {
-  const [state, setState] = React.useState(props);
-  React.useEffect(() => {
+  const [state, setState] = useState(props);
+  useEffect(() => {
     if (!isEqual(props, state)) {
       setState(props);
     }
