@@ -23,9 +23,11 @@ const Item = memo(
         onRemove,
         item,
         renderItem,
+        renderContent,
         hideRemove = false,
         sorting,
         style,
+        actions,
         transition,
         transform,
         id,
@@ -105,19 +107,32 @@ const Item = memo(
               })
             ) : (
               <Flexbox className={styles.content} direction={'horizontal'} align={'center'}>
-                <Flexbox flex={1} style={{ paddingLeft: 4 }}>
-                  {id}
-                </Flexbox>
-                <Flexbox className={classNames(styles.actions)} direction={'horizontal'}>
-                  {hideRemove ? null : <DeleteAction tabIndex={-1} onClick={onRemove} />}
-                  {handle ? (
-                    <HandleAction
-                      tabIndex={-1}
-                      cursor="grab"
-                      data-cypress="draggable-handle"
-                      {...listeners}
-                    />
-                  ) : null}
+                {handle ? (
+                  <HandleAction
+                    tabIndex={-1}
+                    className={classNames(styles.actions)}
+                    cursor="grab"
+                    data-cypress="draggable-handle"
+                    style={{ width: 14, height: 24 }}
+                    {...listeners}
+                  />
+                ) : null}
+                {renderContent ? (
+                  renderContent(item, index)
+                ) : (
+                  <Flexbox flex={1} style={{ paddingLeft: 4 }}>
+                    {id}
+                  </Flexbox>
+                )}
+                <Flexbox
+                  className={classNames(styles.actions, styles.actionsRight)}
+                  direction={'horizontal'}
+                  align="center"
+                >
+                  {actions}
+                  {hideRemove ? null : (
+                    <DeleteAction tabIndex={-1} onClick={onRemove} style={{ height: 22 }} />
+                  )}
                 </Flexbox>
               </Flexbox>
             )}

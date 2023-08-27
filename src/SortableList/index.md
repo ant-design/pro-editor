@@ -12,17 +12,17 @@ demo:
 
 ## 何时使用
 
-简单排序表单场景，提供基础底层 API，可在其上进行封装，可参考 `ColumnList`。
+针对可排序列表场景提供基础底层封装，可在其上进行进一步自定义，参考 `ColumnList`。
 
 ## 基础使用
 
 <code src="./demos/Basic.tsx" ></code>
 <code src="./demos/controlled.tsx" ></code>
 
-## 自定义样式
+## 自定义
 
-<code src="./demos/CustomStyle.tsx" ></code>
-<code src="./demos/CustomRender.tsx" ></code>
+<code src="./demos/getItemStyles.tsx" ></code>
+<code src="./demos/renderItem.tsx" ></code>
 
 ## 程序化控制
 
@@ -41,14 +41,16 @@ demo:
 
 ### Basic 组件属性
 
-| 属性名        | 类型                                                   | 描述                           |
-| ------------- | ------------------------------------------------------ | ------------------------------ |
-| value         | `T[]`                                                  | 值                             |
-| initialValues | `T[]`                                                  | 初始值                         |
-| onChange      | `(value: T[], event: ListDataDispatchPayload) => void` | 值变化                         |
-| renderContent | `(item: T, index: number) => ReactNode`                | 渲染内容区域                   |
-| ref           | `ForwardedRef<SortableListRef<T>>`                     | 对外部暴露方法                 |
-| hideRemove    | `boolean`                                              | 是否隐藏删除按钮，默认为 false |
+| 属性名        | 类型                                                             | 描述                               |
+| ------------- | ---------------------------------------------------------------- | ---------------------------------- |
+| value         | `T[]`                                                            | 值                                 |
+| initialValues | `T[]`                                                            | 初始值                             |
+| onChange      | `(value: T[], event: ListDataDispatchPayload) => void`           | 值变化                             |
+| renderContent | `(item: T, index: number) => ReactNode`                          | 渲染内容区域                       |
+| renderItem    | `(item: T, options) => ReactNode`                                | 自定义可排序容器                   |
+| ref           | `ForwardedRef<SortableListRef<T>>`                               | 对外部暴露方法                     |
+| hideRemove    | `boolean`                                                        | 是否隐藏删除按钮，默认为 false     |
+| actions       | `(item: T, index: number) => ReactNode[]` \| `React.ReactNode[]` | 除列表自带操作之外的其他操作自渲染 |
 
 ### SortableListDispatchPayload
 

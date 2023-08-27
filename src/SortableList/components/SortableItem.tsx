@@ -2,7 +2,7 @@ import { useSortable } from '@dnd-kit/sortable';
 import type { SortableItemProps } from '../type';
 import Item from './Item';
 
-export default function SortableItem({
+export default function SortableItem<T>({
   disabled,
   id,
   index,
@@ -10,10 +10,12 @@ export default function SortableItem({
   useDragOverlay = true,
   getItemStyles,
   renderItem,
+  renderContent,
   item,
+  actions,
   prefixCls,
   hideRemove = false,
-}: SortableItemProps) {
+}: SortableItemProps<T>) {
   const {
     attributes,
     isDragging,
@@ -39,11 +41,13 @@ export default function SortableItem({
       dragging={isDragging}
       sorting={isSorting}
       hideRemove={hideRemove}
+      actions={actions}
       index={index}
       onRemove={onRemove ? () => onRemove(index) : undefined}
       transform={transform}
       transition={!useDragOverlay && isDragging ? 'none' : transition}
       renderItem={renderItem}
+      renderContent={renderContent}
       // 样式
       style={getItemStyles({
         index,

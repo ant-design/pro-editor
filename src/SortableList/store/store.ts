@@ -11,10 +11,10 @@ interface Action {
   handleDragStart: (event: DragStartEvent) => void;
   handleDragEnd: (event: DragEndEvent) => void;
   handleDragCancel: () => void;
-  dispatchListData: (payload: SortableListDispatchPayload) => void;
+  dispatchListData: (payload: SortableListDispatchPayload<any>) => void;
 }
 
-export type Store = SortableListState & Action;
+export type Store = SortableListState<any> & Action;
 
 const vanillaStore: StateCreator<Store, [['zustand/devtools', never]]> = (set, get) => ({
   ...initialState,

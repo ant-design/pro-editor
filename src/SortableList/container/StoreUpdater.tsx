@@ -6,7 +6,16 @@ import type { StoreUpdaterProps } from '../type';
 
 const StoreUpdater = forwardRef(
   (
-    { initialValues, value, onChange, renderItem, getItemStyles, hideRemove }: StoreUpdaterProps,
+    {
+      initialValues,
+      value,
+      actions,
+      onChange,
+      renderItem,
+      renderContent,
+      getItemStyles,
+      hideRemove,
+    }: StoreUpdaterProps,
     ref,
   ) => {
     const storeApi = useStoreApi();
@@ -15,8 +24,10 @@ const StoreUpdater = forwardRef(
     useStoreUpdater('value', initialValues, []);
     useStoreUpdater('initialValues', initialValues);
     useStoreUpdater('value', value);
+    useStoreUpdater('actions', actions);
     useStoreUpdater('onChange', onChange);
     useStoreUpdater('renderItem', renderItem);
+    useStoreUpdater('renderContent', renderContent);
     useStoreUpdater('getItemStyles', getItemStyles);
     useStoreUpdater('hideRemove', hideRemove);
 

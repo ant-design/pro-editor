@@ -1,6 +1,8 @@
 import { ForwardedRef } from 'react';
 import type {
   GetItemStyles,
+  RenderActionProps,
+  RenderContent,
   RenderItem,
   SortableItem,
   SortableItemList,
@@ -28,9 +30,14 @@ export interface SortableListState {
    */
   value?: SortableItemList;
   /**
-   * 渲染内容区域
+   * 渲染额外区域
+   */
+  actions: RenderActionProps;
+  /**
+   * 渲染可排序项
    */
   renderItem: RenderItem;
+  renderContent?: RenderContent;
   /**
    * 渲染可排序列表项样式
    */
@@ -44,21 +51,21 @@ export interface SortableListState {
 /**
  * 供外部使用的 ref 方法
  */
-export interface SortableListRef<T = SortableItem> {
-  addItem: (item?: T, index?: number) => void;
+export interface SortableListRef {
+  addItem: (item?: SortableItem, index?: number) => void;
   removeItem: (index: number) => void;
-  updateItem: (item: T, index: number) => void;
+  updateItem: (item: SortableItem, index: number) => void;
 }
 
-export interface StoreUpdaterProps<T = SortableItem> {
+export interface StoreUpdaterProps {
   /**
    * 值
    */
-  value?: T[];
+  value?: SortableItemList;
   /**
    * 初始值
    */
-  initialValues?: T[];
+  initialValues?: SortableItemList;
   /**
    * 值变化
    */
@@ -66,7 +73,15 @@ export interface StoreUpdaterProps<T = SortableItem> {
   /**
    * 渲染可排序项
    */
-  renderItem?: RenderItem<T>;
+  renderItem?: RenderItem;
+  /**
+   * 渲染内容区域
+   */
+  renderContent?: RenderContent;
+  /**
+   * 除列表自带操作之外的其他操作自渲染
+   */
+  actions?: RenderActionProps;
   /**
    * 对外部暴露方法
    */

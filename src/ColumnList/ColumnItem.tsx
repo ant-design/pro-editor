@@ -74,9 +74,6 @@ interface ItemRenderProps<T = any> {
   index: number;
   prefixCls: string;
   listeners: any;
-  /**
-   * 除列表自带操作之外的其他操作自渲染
-   */
   actions?: React.ReactNode[];
   hideRemove?: boolean;
 }

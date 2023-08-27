@@ -19,8 +19,10 @@ export interface BaseItemProps {
   height?: number;
   item: SortableItem;
   renderItem?: RenderItem;
+  renderContent?: RenderContent;
   index?: number;
   fadeIn?: boolean;
+  actions: React.ReactNode[];
   hideRemove?: boolean;
   transform?: Transform | null;
   listeners?: DraggableSyntheticListeners;
@@ -33,21 +35,29 @@ export interface BaseItemProps {
   prefixCls?: string;
 }
 
-export interface SortableItemProps {
+export type RenderActionProps =
+  | ((item: SortableItem, index: number) => React.ReactNode[])
+  | React.ReactNode[];
+
+export interface SortableItemProps<T> {
   disabled?: boolean;
   id: UniqueIdentifier;
   index: number;
-  item: SortableItem;
+  item: SortableItem<T>;
   useDragOverlay?: boolean;
   onRemove?: (index: number) => void;
   renderItem?: RenderItem;
+  renderContent?: RenderContent;
+  actions: React.ReactNode[];
   getItemStyles?: GetItemStyles;
   prefixCls?: string;
   hideRemove?: boolean;
 }
 
+export type RenderContent = (item: SortableItem, index: number) => React.ReactNode;
+
 export type RenderItem<T = SortableItem> = (
-  item: T,
+  item: SortableItem<T>,
   options: {
     dragOverlay: boolean;
     dragging: boolean;
