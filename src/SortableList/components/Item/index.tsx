@@ -129,7 +129,7 @@ const Item = memo(
                   direction={'horizontal'}
                   align="center"
                 >
-                  {actions}
+                  {typeof actions === 'function' ? actions(item, index) : actions}
                   {hideRemove ? null : (
                     <DeleteAction tabIndex={-1} onClick={onRemove} style={{ height: 22 }} />
                   )}

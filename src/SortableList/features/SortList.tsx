@@ -34,7 +34,7 @@ const SortableList: FC<SortableListProps> = ({ prefixCls }) => {
             id={item.id}
             item={item}
             index={index}
-            actions={typeof actions === 'function' ? actions(item, index) : actions}
+            actions={actions}
             hideRemove={hideRemove}
             renderItem={renderItem}
             renderContent={renderContent}

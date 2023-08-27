@@ -10,7 +10,10 @@ import type {
   UniqueIdentifier,
 } from '../type';
 
-export type OnChange = <T>(items: SortableItemList<T>, event: SortableListDispatchPayload) => void;
+export type OnChange<T = SortableItem> = (
+  items: SortableItemList<T>,
+  event: SortableListDispatchPayload,
+) => void;
 
 export interface SortableListState {
   /*
@@ -32,11 +35,14 @@ export interface SortableListState {
   /**
    * 渲染额外区域
    */
-  actions: RenderActionProps;
+  actions?: RenderActionProps;
   /**
    * 渲染可排序项
    */
-  renderItem: RenderItem;
+  renderItem?: RenderItem;
+  /**
+   * 渲染可排序项内容
+   */
   renderContent?: RenderContent;
   /**
    * 渲染可排序列表项样式
@@ -51,10 +57,10 @@ export interface SortableListState {
 /**
  * 供外部使用的 ref 方法
  */
-export interface SortableListRef {
-  addItem: (item?: SortableItem, index?: number) => void;
+export interface SortableListRef<T = SortableItem> {
+  addItem: (item?: T, index?: number) => void;
   removeItem: (index: number) => void;
-  updateItem: (item: SortableItem, index: number) => void;
+  updateItem: (item: T, index: number) => void;
 }
 
 export interface StoreUpdaterProps<T> {
@@ -73,19 +79,19 @@ export interface StoreUpdaterProps<T> {
   /**
    * 渲染可排序项
    */
-  renderItem?: RenderItem;
+  renderItem?: RenderItem<T>;
   /**
    * 渲染内容区域
    */
-  renderContent?: RenderContent;
+  renderContent?: RenderContent<T>;
   /**
    * 除列表自带操作之外的其他操作自渲染
    */
-  actions?: RenderActionProps;
+  actions?: RenderActionProps<T>;
   /**
    * 对外部暴露方法
    */
-  ref?: ForwardedRef<SortableListRef>;
+  ref?: ForwardedRef<SortableListRef<T>>;
   /**
    * 如果为 true，则会在 devtools 中显示 SortableTree 内部的数据结构
    * @internal

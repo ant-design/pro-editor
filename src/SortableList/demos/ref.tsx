@@ -16,7 +16,7 @@ export const randomIndex = () => Math.random() * 10000;
 
 export default () => {
   const [listData, setListData] = useState<SchemaItem[]>(INIT_VALUES);
-  const ref = useRef<SortableListRef>(null);
+  const ref = useRef<SortableListRef<SchemaItem>>(null);
 
   return (
     <div style={{ width: 340, padding: '0 12px' }}>
@@ -29,6 +29,7 @@ export default () => {
           onClick={() => {
             const id = `id-${listData.length}-${randomIndex()}`;
             ref.current.addItem({ id, title: `new-${id}` });
+            ref.current.addItem({ id: 'xxx', title: '111' });
           }}
         />
       </Flexbox>
