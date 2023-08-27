@@ -15,6 +15,7 @@ const selector = (s: Store) => ({
   activeId: s.activeId,
   hideRemove: s.hideRemove,
   renderItem: s.renderItem,
+  renderContent: s.renderContent,
   getItemStyles: s.getItemStyles,
 });
 
@@ -23,7 +24,10 @@ interface OverlayProps {
 }
 
 const Overlay: FC<OverlayProps> = ({ prefixCls }) => {
-  const { activeId, renderItem, hideRemove, getItemStyles } = useStore(selector, shallow);
+  const { activeId, renderItem, hideRemove, getItemStyles, renderContent } = useStore(
+    selector,
+    shallow,
+  );
   const items = useStore((s) => s.value, isEqual);
   const activeIndex = getIndexOfActiveItem(items, activeId);
 
@@ -44,6 +48,7 @@ const Overlay: FC<OverlayProps> = ({ prefixCls }) => {
           item={items[activeIndex]}
           prefixCls={prefixCls}
           renderItem={renderItem}
+          renderContent={renderContent}
           style={getItemStyles({
             id: activeId,
             index: activeIndex,

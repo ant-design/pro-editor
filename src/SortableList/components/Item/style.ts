@@ -68,10 +68,6 @@ export const useStyle = createStyles(({ css, cx, token }, prefixCls: string) => 
             box-shadow: ${boxShadow};
           }
         }
-
-        &:hover .${prefixCls}-item-actions {
-          opacity: 1;
-        }
       `,
     ),
     disabled: cx(
@@ -148,6 +144,10 @@ export const useStyle = createStyles(({ css, cx, token }, prefixCls: string) => 
         height: 24px;
         border-radius: 2px;
         min-width: 48px;
+
+        &:hover .${prefixCls}-item-actions {
+          opacity: 1;
+        }
       `,
     ),
     actionsRight: cx(

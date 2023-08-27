@@ -1,3 +1,7 @@
+/**
+ * title: 自定义排序项
+ * description: 通过 `renderItem` 可以自定义每个排序项，相比于 `renderContent` 提供的自由度更大
+ */
 import { SortableList, SortableListRef } from '@ant-design/pro-editor';
 import { Badge, Button } from 'antd';
 import { useTheme } from 'antd-style';
@@ -56,7 +60,7 @@ const Demo = () => {
         ref={ref}
         onChange={setList}
         getItemStyles={() => ({ padding: '16px' })}
-        renderItem={(item: Item, { index }) => {
+        renderItem={(item: Item, { index, listeners }) => {
           return (
             <Flexbox horizontal width={'100%'} distribution={'space-between'} gap={12}>
               <Flexbox horizontal gap={8}>
@@ -109,6 +113,9 @@ const Demo = () => {
                   onClick={() => ref.current.removeItem(index)}
                 >
                   删除
+                </Button>
+                <Button size={'small'} type={'text'} {...listeners}>
+                  拖拽
                 </Button>
               </Flexbox>
             </Flexbox>

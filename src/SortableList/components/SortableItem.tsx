@@ -2,7 +2,7 @@ import { useSortable } from '@dnd-kit/sortable';
 import type { SortableItemProps } from '../type';
 import Item from './Item';
 
-export default function SortableItem<T>({
+export default function SortableItem({
   disabled,
   id,
   index,
@@ -15,7 +15,7 @@ export default function SortableItem<T>({
   actions,
   prefixCls,
   hideRemove = false,
-}: SortableItemProps<T>) {
+}: SortableItemProps) {
   const {
     attributes,
     isDragging,

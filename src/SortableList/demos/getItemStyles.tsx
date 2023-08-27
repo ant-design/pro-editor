@@ -19,10 +19,7 @@ const Demo = () => {
       onChange={setList}
       style={{ background: 'rgb(255,224,224)', padding: 24, borderRadius: 12 }}
       className={'custom-class'}
-      getItemStyles={({ isSorting, isDragging, isDragOverlay }) => {
-        // overlay 使用默认样式
-        if (isDragOverlay) return;
-
+      getItemStyles={({ isSorting, isDragging }) => {
         return {
           padding: 24,
           // 拖拽项修改背景色

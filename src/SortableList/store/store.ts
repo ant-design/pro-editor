@@ -11,10 +11,10 @@ interface Action {
   handleDragStart: (event: DragStartEvent) => void;
   handleDragEnd: (event: DragEndEvent) => void;
   handleDragCancel: () => void;
-  dispatchListData: (payload: SortableListDispatchPayload<any>) => void;
+  dispatchListData: (payload: SortableListDispatchPayload) => void;
 }
 
-export type Store = SortableListState<any> & Action;
+export type Store = SortableListState & Action;
 
 const vanillaStore: StateCreator<Store, [['zustand/devtools', never]]> = (set, get) => ({
   ...initialState,
@@ -41,7 +41,7 @@ const vanillaStore: StateCreator<Store, [['zustand/devtools', never]]> = (set, g
   // ===== 更新 listData 方法 ======= //
   dispatchListData: (payload) => {
     const { value, onChange } = get();
-    const data = listDataReducer(value, payload) || [];
+    const data = listDataReducer(value, payload);
     if (data) {
       if (isEqual(value, data)) return;
       set({ value: data });

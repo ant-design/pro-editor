@@ -20,6 +20,7 @@ demo:
 <code src="./demos/controlled.tsx" ></code>
 <code src="./demos/getItemStyles.tsx" ></code>
 <code src="./demos/renderItem.tsx" ></code>
+<code src="./demos/renderContent.tsx" ></code>
 
 ## 程序化控制
 
@@ -43,11 +44,99 @@ demo:
 | value         | `T[]`                                                            | 值                                 |
 | initialValues | `T[]`                                                            | 初始值                             |
 | onChange      | `(value: T[], event: ListDataDispatchPayload) => void`           | 值变化                             |
-| renderContent | `(item: T, index: number) => ReactNode`                          | 渲染内容区域                       |
-| renderItem    | `(item: T, options) => ReactNode`                                | 自定义可排序容器                   |
+| renderContent | `(item: T, index: number) => ReactNode`                          | 自定义可排序列表项内容             |
+| renderItem    | `(item: T, options) => ReactNode`                                | 自定义可排序列表项                 |
+| getItemStyle  | `(status: GetItemStylesArgs) => ReactNode`                       | 自定义容器样式                     |
 | ref           | `ForwardedRef<SortableListRef<T>>`                               | 对外部暴露方法                     |
 | hideRemove    | `boolean`                                                        | 是否隐藏删除按钮，默认为 false     |
 | actions       | `(item: T, index: number) => ReactNode[]` \| `React.ReactNode[]` | 除列表自带操作之外的其他操作自渲染 |
+
+### GetItemStylesArgs
+
+`getItemStyle` 用于自定义可排序项的容器样式，其方法定义如下:
+
+```typescript
+interface GetItemStylesArgs {
+  /**
+   * 当前列表项索引
+   */
+  index: number;
+  /**
+   * 是否在拖拽中
+   */
+  isDragging: boolean;
+  /**
+   * 当前列表项 ID
+   */
+  id: UniqueIdentifier;
+  /**
+   * 是否在排序中
+   */
+  isSorting: boolean;
+  /**
+   * 拖拽覆盖的列表项索引
+   */
+  overIndex: number;
+  /**
+   * 是否是拖拽中的列表项
+   */
+  isDragOverlay: boolean;
+}
+
+type GetItemStyles = (status: GetItemStylesArgs) => React.CSSProperties;
+```
+
+### RenderItem 参数
+
+`renderItem` 方法用于更大自由度地定义列表项，包括拖拽，删除，添加，列表项内容等部分，其参数暴露如下：
+
+```typescript
+export type RenderItem<T = SortableItem> = (
+  item: T,
+  options: {
+    /**
+     * 是否是被拖出的列表项
+     */
+    dragOverlay: boolean;
+    /**
+     * 是否在拖拽中
+     */
+    dragging: boolean;
+    /**
+     * 是否在排序中
+     */
+    sorting: boolean;
+    /**
+     * 当前列表项索引
+     */
+    index: number | undefined;
+    /**
+     * fade 动画
+     */
+    fadeIn: boolean;
+    /**
+     * 拖拽项监听器
+     */
+    listeners: DraggableSyntheticListeners;
+    /**
+     * ref
+     */
+    ref: Ref<HTMLElement>;
+    /**
+     * 当面列表项传入样式
+     */
+    style: CSSProperties | undefined;
+    /**
+     * 当面列表项 transform 动画
+     */
+    transform: any;
+    /**
+     * 当面列表项 transition 动画
+     */
+    transition: any;
+  },
+) => ReactElement;
+```
 
 ### SortableListDispatchPayload
 
