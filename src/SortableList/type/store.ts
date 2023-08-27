@@ -10,7 +10,7 @@ import type {
   UniqueIdentifier,
 } from '../type';
 
-export type OnChange = (items: SortableItemList, event: SortableListDispatchPayload) => void;
+export type OnChange = <T>(items: SortableItemList<T>, event: SortableListDispatchPayload) => void;
 
 export interface SortableListState {
   /*
@@ -57,19 +57,19 @@ export interface SortableListRef {
   updateItem: (item: SortableItem, index: number) => void;
 }
 
-export interface StoreUpdaterProps {
+export interface StoreUpdaterProps<T> {
   /**
    * 值
    */
-  value?: SortableItemList;
+  value?: T[];
   /**
    * 初始值
    */
-  initialValues?: SortableItemList;
+  initialValues?: T[];
   /**
    * 值变化
    */
-  onChange?: OnChange;
+  onChange?: OnChange<T>;
   /**
    * 渲染可排序项
    */

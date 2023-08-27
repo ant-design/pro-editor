@@ -3,13 +3,13 @@
  * description: onChange 会返回变更数据
  * compact: true
  */
-import { SortableList } from '@ant-design/pro-editor';
+import { SortableItem, SortableList } from '@ant-design/pro-editor';
 import { useTheme } from 'antd-style';
 import { useState } from 'react';
 import { Flexbox } from 'react-layout-kit';
 
 const Demo = () => {
-  const [list, setList] = useState([{ id: 'hello' }, { id: 'world' }]);
+  const [list, setList] = useState<SortableItem[]>([{ id: 'hello' }, { id: 'world' }]);
 
   const token = useTheme();
   return (

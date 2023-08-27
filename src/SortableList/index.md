@@ -18,9 +18,6 @@ demo:
 
 <code src="./demos/Basic.tsx" ></code>
 <code src="./demos/controlled.tsx" ></code>
-
-## 自定义
-
 <code src="./demos/getItemStyles.tsx" ></code>
 <code src="./demos/renderItem.tsx" ></code>
 

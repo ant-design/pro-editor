@@ -1,7 +1,7 @@
-import { SortableList } from '@ant-design/pro-editor';
-import { Button } from 'antd';
+import { SortableList, SortableListRef } from '@ant-design/pro-editor';
+import { Badge, Button } from 'antd';
 import { useTheme } from 'antd-style';
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 import { Flexbox } from 'react-layout-kit';
 
 interface Item {
@@ -11,6 +11,7 @@ interface Item {
 
 const Demo = () => {
   const token = useTheme();
+  const ref = useRef<SortableListRef>(null);
 
   const [list, setList] = useState<Item[]>([
     { id: '1', text: '关关雎鸠' },
@@ -52,55 +53,67 @@ const Demo = () => {
 
       <SortableList<Item>
         value={list}
+        ref={ref}
         onChange={setList}
-        // getItemStyles={() => ({ padding: '16px' })}
-        // renderItem={(item: Item, { onRemove, onAddItem, index }) => {
-        //   return (
-        //     <Flexbox horizontal width={'100%'} distribution={'space-between'} gap={12}>
-        //       <Flexbox horizontal gap={8}>
-        //         <div>
-        //           <Badge count={item.id} />
-        //         </div>
-        //         <div>{item.text}</div>
-        //       </Flexbox>
-        //       <Flexbox
-        //         horizontal // 由于拖拽事件是通过监听 onMouseDown 来识别用户动作
-        //         // 因此针对相关用户操作，需要终止 onMouseDown 的冒泡行为
-        //         onMouseDown={(e) => {
-        //           e.stopPropagation();
-        //         }}
-        //       >
-        //         <Button
-        //           size={'small'}
-        //           type={'text'}
-        //           onClick={() => {
-        //             onAddItem(index, {
-        //               id: Math.ceil(Math.random() * 100000).toString(16),
-        //               text: 'new',
-        //             });
-        //           }}
-        //         >
-        //           上方
-        //         </Button>
-        //         <Button
-        //           size={'small'}
-        //           type={'text'}
-        //           onClick={() => {
-        //             onAddItem(index + 1, {
-        //               id: Math.ceil(Math.random() * 1000).toString(16),
-        //               text: 'new',
-        //             });
-        //           }}
-        //         >
-        //           下方
-        //         </Button>
-        //         <Button size={'small'} danger type={'text'} onClick={onRemove}>
-        //           删除
-        //         </Button>
-        //       </Flexbox>
-        //     </Flexbox>
-        //   );
-        // }}
+        getItemStyles={() => ({ padding: '16px' })}
+        renderItem={(item: Item, { index }) => {
+          return (
+            <Flexbox horizontal width={'100%'} distribution={'space-between'} gap={12}>
+              <Flexbox horizontal gap={8}>
+                <div>
+                  <Badge count={item.id} />
+                </div>
+                <div>{item.text}</div>
+              </Flexbox>
+              <Flexbox
+                horizontal // 由于拖拽事件是通过监听 onMouseDown 来识别用户动作
+                // 因此针对相关用户操作，需要终止 onMouseDown 的冒泡行为
+                onMouseDown={(e) => {
+                  e.stopPropagation();
+                }}
+              >
+                <Button
+                  size={'small'}
+                  type={'text'}
+                  onClick={() => {
+                    ref.current.addItem(
+                      {
+                        id: Math.ceil(Math.random() * 100000).toString(16),
+                        text: 'new',
+                      },
+                      index,
+                    );
+                  }}
+                >
+                  上方
+                </Button>
+                <Button
+                  size={'small'}
+                  type={'text'}
+                  onClick={() => {
+                    ref.current.addItem(
+                      {
+                        id: Math.ceil(Math.random() * 1000).toString(16),
+                        text: 'new',
+                      },
+                      index + 1,
+                    );
+                  }}
+                >
+                  下方
+                </Button>
+                <Button
+                  size={'small'}
+                  danger
+                  type={'text'}
+                  onClick={() => ref.current.removeItem(index)}
+                >
+                  删除
+                </Button>
+              </Flexbox>
+            </Flexbox>
+          );
+        }}
       />
     </Flexbox>
   );
