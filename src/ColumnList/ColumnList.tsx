@@ -1,13 +1,10 @@
-import { PlusOutlined } from '@ant-design/icons';
 import {
   SortableItem,
   SortableList,
   SortableListProps,
   SortableListProvider,
   getPrefixCls,
-  useSortableList,
 } from '@ant-design/pro-editor';
-import { Button, Empty } from 'antd';
 import { ReactNode, forwardRef, useCallback, useMemo } from 'react';
 import ColumnItem from './ColumnItem';
 import { Header } from './Header';
@@ -66,8 +63,7 @@ const ColumnList: <T>(props: ColumnListProps<T>) => ReactNode = forwardRef<
     ref,
   ) => {
     const prefixCls = getPrefixCls('column-list', customPrefixCls);
-
-    const { styles, cx } = useStyle(prefixCls);
+    const { cx } = useStyle(prefixCls);
     // 校验是否传入 ID，如果没有传入 ID，就生成一个 ID
     const parsedValue = useMemo(
       () =>
@@ -106,47 +102,9 @@ const ColumnList: <T>(props: ColumnListProps<T>) => ReactNode = forwardRef<
       [prefixCls, columns],
     );
 
-    const CreateButton = ({ empty = false }) => {
-      const instance = useSortableList();
-      const itemsLength = instance.getValue().length;
-      if (itemsLength === 0 && empty === false) return null;
-
-      const { record, creatorButtonText = '添加一列' } = creatorButtonProps || {};
-
-      return (
-        <Button
-          block={empty ? false : true}
-          size={'small'}
-          className={styles.btnAdd}
-          onClick={() => {
-            const intialValue = {
-              id: genUniqueID(null, itemsLength),
-              ...(record && typeof record === 'function' ? record(itemsLength) : undefined),
-            };
-            instance.addItem(intialValue);
-          }}
-          icon={<PlusOutlined />}
-        >
-          {creatorButtonText}
-        </Button>
-      );
-    };
-
-    const EmptyGuide = () => {
-      const instance = useSortableList();
-      const itemsLength = instance.getValue().length;
-
-      return itemsLength === 0 ? (
-        <Empty image={Empty.PRESENTED_IMAGE_SIMPLE}>
-          {creatorButtonProps === false ? null : <CreateButton empty />}
-        </Empty>
-      ) : null;
-    };
-
     return (
       <SortableListProvider>
         <Header prefixCls={prefixCls} columns={columns} />
-        <EmptyGuide />
         <SortableList
           ref={ref}
           renderItem={renderItem}
@@ -155,7 +113,6 @@ const ColumnList: <T>(props: ColumnListProps<T>) => ReactNode = forwardRef<
           className={cx(prefixCls, className)}
           {...props}
         />
-        {creatorButtonProps === false ? null : <CreateButton />}
       </SortableListProvider>
     );
   },

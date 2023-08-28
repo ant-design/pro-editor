@@ -6,13 +6,8 @@ import * as path from 'path';
 import { act } from 'react-dom/test-utils';
 import { vi } from 'vitest';
 
-const originalRandom = Math.random;
-
 beforeEach(() => {
   vi.useFakeTimers();
-  vi.setSystemTime(1695830400000);
-  const mocked = vi.fn(() => 0.1);
-  Math.random = mocked;
   // @ts-ignore
   global.fetch = vi.fn(() =>
     Promise.resolve({ json: () => Promise.resolve({}), text: () => Promise.resolve('') }),
@@ -21,8 +16,8 @@ beforeEach(() => {
 
 afterEach(() => {
   vi.useRealTimers();
-  Math.random = originalRandom;
 });
+
 const baseDir = path.join(__dirname, '..');
 
 const npmSrcDir = path.join(baseDir, `./src`);
