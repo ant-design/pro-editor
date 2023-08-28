@@ -21,6 +21,7 @@ demo:
 <code src="./demos/getItemStyles.tsx" ></code>
 <code src="./demos/renderItem.tsx" ></code>
 <code src="./demos/renderContent.tsx" ></code>
+<code src="./demos/creatorButtonProps.tsx" ></code>
 
 ## 程序化控制
 

@@ -6,12 +6,18 @@ import { List, SortableItem } from '../components';
 import type { Store } from '../store';
 import { useStore } from '../store';
 
+import { PlusOutlined } from '@ant-design/icons';
+import { Button } from 'antd';
+
+import { useStyle } from '../style';
+
 const selector = (s: Store) => ({
   renderItem: s.renderItem,
   renderContent: s.renderContent,
   getItemStyles: s.getItemStyles,
   actions: s.actions,
   hideRemove: s.hideRemove,
+  creatorButtonProps: s.creatorButtonProps,
   dispatchListData: s.dispatchListData,
 });
 
@@ -20,32 +26,64 @@ interface SortableListProps {
 }
 
 const SortableList: FC<SortableListProps> = ({ prefixCls }) => {
-  const { dispatchListData, renderItem, renderContent, hideRemove, getItemStyles, actions } =
-    useStore(selector, shallow);
+  const {
+    dispatchListData,
+    renderItem,
+    renderContent,
+    creatorButtonProps = false,
+    hideRemove,
+    getItemStyles,
+    actions,
+  } = useStore(selector, shallow);
 
+  const { styles } = useStyle(prefixCls);
   const items = useStore((s) => s.value, isEqual);
 
+  const CreateButton = ({ empty = false }) => {
+    const { record, creatorButtonText = '添加一列' } = creatorButtonProps || {};
+
+    return (
+      <Button
+        block={empty ? false : true}
+        size={'small'}
+        className={styles.btnAdd}
+        onClick={() => {
+          dispatchListData({
+            type: 'addItem',
+            item: record(items.length),
+          });
+        }}
+        icon={<PlusOutlined />}
+      >
+        {creatorButtonText}
+      </Button>
+    );
+  };
+
   return (
-    <List prefixCls={prefixCls}>
-      {items.map((item, index) => {
-        return (
-          <SortableItem
-            key={item.id}
-            id={item.id}
-            item={item}
-            index={index}
-            actions={actions}
-            hideRemove={hideRemove}
-            renderItem={renderItem}
-            renderContent={renderContent}
-            getItemStyles={getItemStyles}
-            onRemove={() => dispatchListData({ type: 'removeItem', index })}
-            useDragOverlay={true}
-            prefixCls={prefixCls}
-          />
-        );
-      })}
-    </List>
+    <>
+      <List prefixCls={prefixCls}>
+        {items.map((item, index) => {
+          return (
+            <SortableItem
+              key={item.id}
+              id={item.id}
+              item={item}
+              index={index}
+              actions={actions}
+              hideRemove={hideRemove}
+              renderItem={renderItem}
+              renderContent={renderContent}
+              getItemStyles={getItemStyles}
+              onRemove={() => dispatchListData({ type: 'removeItem', index })}
+              useDragOverlay={true}
+              prefixCls={prefixCls}
+            />
+          );
+        })}
+      </List>
+      {creatorButtonProps === false ? null : <CreateButton />}
+    </>
   );
 };
 

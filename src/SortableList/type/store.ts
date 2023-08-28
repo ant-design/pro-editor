@@ -1,5 +1,6 @@
 import { ForwardedRef } from 'react';
 import type {
+  CreatorButtonProps,
   GetItemStyles,
   RenderActionProps,
   RenderContent,
@@ -45,6 +46,10 @@ export interface SortableListState {
    */
   renderContent?: RenderContent;
   /**
+   * 新建对象相关属性
+   */
+  creatorButtonProps?: CreatorButtonProps | false;
+  /**
    * 渲染可排序列表项样式
    */
   getItemStyles?: GetItemStyles;
@@ -84,6 +89,10 @@ export interface StoreUpdaterProps<T = SortableItem> {
    * 渲染内容区域
    */
   renderContent?: RenderContent<T>;
+  /**
+   * 新建对象相关属性
+   */
+  creatorButtonProps?: CreatorButtonProps | false;
   /**
    * 除列表自带操作之外的其他操作自渲染
    */

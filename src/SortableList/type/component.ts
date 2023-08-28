@@ -53,6 +53,17 @@ export interface SortableItemProps<T = SortableItem>
 
 export type RenderContent<T = SortableItem> = (item: T, index: number) => React.ReactNode;
 
+export interface CreatorButtonProps {
+  /**
+   * 生成初始值逻辑
+   */
+  record: (index: number) => SortableItem<Record<string, any>>;
+  /**
+   * 新增一行按钮文案
+   */
+  creatorButtonText?: string;
+}
+
 export type RenderItem<T = SortableItem> = (
   item: T,
   options: {

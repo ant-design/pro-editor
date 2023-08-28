@@ -2,7 +2,6 @@ import {
   SortableItem,
   SortableList,
   SortableListProps,
-  SortableListProvider,
   getPrefixCls,
 } from '@ant-design/pro-editor';
 import { ReactNode, forwardRef, useCallback, useMemo } from 'react';
@@ -25,14 +24,6 @@ export interface CreatorButtonProps<T> {
 
 export interface ColumnListProps<T = any> extends SortableListProps<T> {
   columns: ColumnItemList<T>;
-  /**
-   * 初始化按钮相关配置
-   */
-  creatorButtonProps?: CreatorButtonProps<T> | false;
-  /**
-   * 额外操作按钮配置
-   */
-  actions?: ((item: T, index: number) => ReactNode[]) | React.ReactNode[];
 }
 
 /**
@@ -55,7 +46,6 @@ const ColumnList: <T>(props: ColumnListProps<T>) => ReactNode = forwardRef<
       columns,
       value,
       initialValues,
-      creatorButtonProps,
       actions,
       hideRemove,
       ...props
@@ -103,7 +93,7 @@ const ColumnList: <T>(props: ColumnListProps<T>) => ReactNode = forwardRef<
     );
 
     return (
-      <SortableListProvider>
+      <>
         <Header prefixCls={prefixCls} columns={columns} />
         <SortableList
           ref={ref}
@@ -111,9 +101,14 @@ const ColumnList: <T>(props: ColumnListProps<T>) => ReactNode = forwardRef<
           value={parsedValue}
           initialValues={parsedInitialValues}
           className={cx(prefixCls, className)}
+          creatorButtonProps={{
+            record: (index) => ({
+              id: genUniqueID({}, index),
+            }),
+          }}
           {...props}
         />
-      </SortableListProvider>
+      </>
     );
   },
 );

@@ -14,6 +14,7 @@ const StoreUpdater = forwardRef(
       renderItem,
       renderContent,
       getItemStyles,
+      creatorButtonProps,
       hideRemove,
     }: StoreUpdaterProps,
     ref,
@@ -29,6 +30,7 @@ const StoreUpdater = forwardRef(
     useStoreUpdater('renderItem', renderItem);
     useStoreUpdater('renderContent', renderContent);
     useStoreUpdater('getItemStyles', getItemStyles);
+    useStoreUpdater('creatorButtonProps', creatorButtonProps);
     useStoreUpdater('hideRemove', hideRemove);
 
     // 将 store 传递到外部
