@@ -2647,7 +2647,7 @@ exports[`<ColumnList /> > renders actions.tsx correctly 1`] = `
           aria-roledescription="sortable"
           class="studio-sortable-list-item emotion-7 studio-sortable-list-item-withHandle"
           data-cypress="draggable-item"
-          data-id="columnlist_0_2058_1693188693295"
+          data-id="columnlist_0_2988_1693192449307"
           data-index="0"
           role="button"
           style="background-color: rgb(255, 255, 255);"
@@ -2702,6 +2702,7 @@ exports[`<ColumnList /> > renders actions.tsx correctly 1`] = `
                       aria-controls="rc_select_TEST_OR_SSR_list"
                       aria-expanded="false"
                       aria-haspopup="listbox"
+                      aria-label="Search"
                       aria-owns="rc_select_TEST_OR_SSR_list"
                       autocomplete="off"
                       class="studio-select-selection-search-input"
@@ -2763,6 +2764,7 @@ exports[`<ColumnList /> > renders actions.tsx correctly 1`] = `
                       aria-controls="rc_select_TEST_OR_SSR_list"
                       aria-expanded="false"
                       aria-haspopup="listbox"
+                      aria-label="Search"
                       aria-owns="rc_select_TEST_OR_SSR_list"
                       autocomplete="off"
                       class="studio-select-selection-search-input"
@@ -2887,7 +2889,7 @@ exports[`<ColumnList /> > renders actions.tsx correctly 1`] = `
           aria-roledescription="sortable"
           class="studio-sortable-list-item emotion-7 studio-sortable-list-item-withHandle"
           data-cypress="draggable-item"
-          data-id="columnlist_1_9194_1693188693295"
+          data-id="columnlist_1_4722_1693192449307"
           data-index="1"
           role="button"
           style="background-color: rgb(255, 255, 255);"
@@ -2942,6 +2944,7 @@ exports[`<ColumnList /> > renders actions.tsx correctly 1`] = `
                       aria-controls="rc_select_TEST_OR_SSR_list"
                       aria-expanded="false"
                       aria-haspopup="listbox"
+                      aria-label="Search"
                       aria-owns="rc_select_TEST_OR_SSR_list"
                       autocomplete="off"
                       class="studio-select-selection-search-input"
@@ -3003,6 +3006,7 @@ exports[`<ColumnList /> > renders actions.tsx correctly 1`] = `
                       aria-controls="rc_select_TEST_OR_SSR_list"
                       aria-expanded="false"
                       aria-haspopup="listbox"
+                      aria-label="Search"
                       aria-owns="rc_select_TEST_OR_SSR_list"
                       autocomplete="off"
                       class="studio-select-selection-search-input"
@@ -3127,7 +3131,7 @@ exports[`<ColumnList /> > renders actions.tsx correctly 1`] = `
           aria-roledescription="sortable"
           class="studio-sortable-list-item emotion-7 studio-sortable-list-item-withHandle"
           data-cypress="draggable-item"
-          data-id="columnlist_2_6783_1693188693295"
+          data-id="columnlist_2_8574_1693192449307"
           data-index="2"
           role="button"
           style="background-color: rgb(255, 255, 255);"
@@ -3182,6 +3186,7 @@ exports[`<ColumnList /> > renders actions.tsx correctly 1`] = `
                       aria-controls="rc_select_TEST_OR_SSR_list"
                       aria-expanded="false"
                       aria-haspopup="listbox"
+                      aria-label="Search"
                       aria-owns="rc_select_TEST_OR_SSR_list"
                       autocomplete="off"
                       class="studio-select-selection-search-input"
@@ -3243,6 +3248,7 @@ exports[`<ColumnList /> > renders actions.tsx correctly 1`] = `
                       aria-controls="rc_select_TEST_OR_SSR_list"
                       aria-expanded="false"
                       aria-haspopup="listbox"
+                      aria-label="Search"
                       aria-owns="rc_select_TEST_OR_SSR_list"
                       autocomplete="off"
                       class="studio-select-selection-search-input"
@@ -3396,14 +3402,11 @@ exports[`<ColumnList /> > renders actions.tsx correctly 1`] = `
           viewBox="64 64 896 896"
           width="1em"
         >
-          <defs>
-            <style />
-          </defs>
           <path
             d="M482 152h60q8 0 8 8v704q0 8-8 8h-60q-8 0-8-8V160q0-8 8-8z"
           />
           <path
-            d="M176 474h672q8 0 8 8v60q0 8-8 8H176q-8 0-8-8v-60q0-8 8-8z"
+            d="M192 474h672q8 0 8 8v60q0 8-8 8H160q-8 0-8-8v-60q0-8 8-8z"
           />
         </svg>
       </span>
@@ -3738,7 +3741,7 @@ exports[`<ColumnList /> > renders column.tsx correctly 1`] = `
           aria-roledescription="sortable"
           class="studio-sortable-list-item emotion-8 studio-sortable-list-item-withHandle"
           data-cypress="draggable-item"
-          data-id="columnlist_0_310_1693188691250"
+          data-id="columnlist_0_3043_1693192448142"
           data-index="0"
           role="button"
           style="background-color: rgb(255, 255, 255);"
@@ -3793,6 +3796,7 @@ exports[`<ColumnList /> > renders column.tsx correctly 1`] = `
                       aria-controls="rc_select_TEST_OR_SSR_list"
                       aria-expanded="false"
                       aria-haspopup="listbox"
+                      aria-label="Search"
                       aria-owns="rc_select_TEST_OR_SSR_list"
                       autocomplete="off"
                       class="studio-select-selection-search-input"
@@ -3854,6 +3858,7 @@ exports[`<ColumnList /> > renders column.tsx correctly 1`] = `
                       aria-controls="rc_select_TEST_OR_SSR_list"
                       aria-expanded="false"
                       aria-haspopup="listbox"
+                      aria-label="Search"
                       aria-owns="rc_select_TEST_OR_SSR_list"
                       autocomplete="off"
                       class="studio-select-selection-search-input"
@@ -3966,7 +3971,7 @@ exports[`<ColumnList /> > renders column.tsx correctly 1`] = `
           aria-roledescription="sortable"
           class="studio-sortable-list-item emotion-8 studio-sortable-list-item-withHandle"
           data-cypress="draggable-item"
-          data-id="columnlist_1_9257_1693188691250"
+          data-id="columnlist_1_7771_1693192448142"
           data-index="1"
           role="button"
           style="background-color: rgb(255, 255, 255);"
@@ -4021,6 +4026,7 @@ exports[`<ColumnList /> > renders column.tsx correctly 1`] = `
                       aria-controls="rc_select_TEST_OR_SSR_list"
                       aria-expanded="false"
                       aria-haspopup="listbox"
+                      aria-label="Search"
                       aria-owns="rc_select_TEST_OR_SSR_list"
                       autocomplete="off"
                       class="studio-select-selection-search-input"
@@ -4082,6 +4088,7 @@ exports[`<ColumnList /> > renders column.tsx correctly 1`] = `
                       aria-controls="rc_select_TEST_OR_SSR_list"
                       aria-expanded="false"
                       aria-haspopup="listbox"
+                      aria-label="Search"
                       aria-owns="rc_select_TEST_OR_SSR_list"
                       autocomplete="off"
                       class="studio-select-selection-search-input"
@@ -4194,7 +4201,7 @@ exports[`<ColumnList /> > renders column.tsx correctly 1`] = `
           aria-roledescription="sortable"
           class="studio-sortable-list-item emotion-8 studio-sortable-list-item-withHandle"
           data-cypress="draggable-item"
-          data-id="columnlist_2_1008_1693188691250"
+          data-id="columnlist_2_5072_1693192448142"
           data-index="2"
           role="button"
           style="background-color: rgb(255, 255, 255);"
@@ -4249,6 +4256,7 @@ exports[`<ColumnList /> > renders column.tsx correctly 1`] = `
                       aria-controls="rc_select_TEST_OR_SSR_list"
                       aria-expanded="false"
                       aria-haspopup="listbox"
+                      aria-label="Search"
                       aria-owns="rc_select_TEST_OR_SSR_list"
                       autocomplete="off"
                       class="studio-select-selection-search-input"
@@ -4310,6 +4318,7 @@ exports[`<ColumnList /> > renders column.tsx correctly 1`] = `
                       aria-controls="rc_select_TEST_OR_SSR_list"
                       aria-expanded="false"
                       aria-haspopup="listbox"
+                      aria-label="Search"
                       aria-owns="rc_select_TEST_OR_SSR_list"
                       autocomplete="off"
                       class="studio-select-selection-search-input"
@@ -4422,7 +4431,7 @@ exports[`<ColumnList /> > renders column.tsx correctly 1`] = `
           aria-roledescription="sortable"
           class="studio-sortable-list-item emotion-8 studio-sortable-list-item-withHandle"
           data-cypress="draggable-item"
-          data-id="columnlist_3_1105_1693188691250"
+          data-id="columnlist_3_2178_1693192448142"
           data-index="3"
           role="button"
           style="background-color: rgb(255, 255, 255);"
@@ -4477,6 +4486,7 @@ exports[`<ColumnList /> > renders column.tsx correctly 1`] = `
                       aria-controls="rc_select_TEST_OR_SSR_list"
                       aria-expanded="false"
                       aria-haspopup="listbox"
+                      aria-label="Search"
                       aria-owns="rc_select_TEST_OR_SSR_list"
                       autocomplete="off"
                       class="studio-select-selection-search-input"
@@ -4538,6 +4548,7 @@ exports[`<ColumnList /> > renders column.tsx correctly 1`] = `
                       aria-controls="rc_select_TEST_OR_SSR_list"
                       aria-expanded="false"
                       aria-haspopup="listbox"
+                      aria-label="Search"
                       aria-owns="rc_select_TEST_OR_SSR_list"
                       autocomplete="off"
                       class="studio-select-selection-search-input"
@@ -4650,7 +4661,7 @@ exports[`<ColumnList /> > renders column.tsx correctly 1`] = `
           aria-roledescription="sortable"
           class="studio-sortable-list-item emotion-8 studio-sortable-list-item-withHandle"
           data-cypress="draggable-item"
-          data-id="columnlist_4_2769_1693188691250"
+          data-id="columnlist_4_2041_1693192448142"
           data-index="4"
           role="button"
           style="background-color: rgb(255, 255, 255);"
@@ -4705,6 +4716,7 @@ exports[`<ColumnList /> > renders column.tsx correctly 1`] = `
                       aria-controls="rc_select_TEST_OR_SSR_list"
                       aria-expanded="false"
                       aria-haspopup="listbox"
+                      aria-label="Search"
                       aria-owns="rc_select_TEST_OR_SSR_list"
                       autocomplete="off"
                       class="studio-select-selection-search-input"
@@ -4766,6 +4778,7 @@ exports[`<ColumnList /> > renders column.tsx correctly 1`] = `
                       aria-controls="rc_select_TEST_OR_SSR_list"
                       aria-expanded="false"
                       aria-haspopup="listbox"
+                      aria-label="Search"
                       aria-owns="rc_select_TEST_OR_SSR_list"
                       autocomplete="off"
                       class="studio-select-selection-search-input"
@@ -4878,7 +4891,7 @@ exports[`<ColumnList /> > renders column.tsx correctly 1`] = `
           aria-roledescription="sortable"
           class="studio-sortable-list-item emotion-8 studio-sortable-list-item-withHandle"
           data-cypress="draggable-item"
-          data-id="columnlist_5_3777_1693188691250"
+          data-id="columnlist_5_6467_1693192448142"
           data-index="5"
           role="button"
           style="background-color: rgb(255, 255, 255);"
@@ -4933,6 +4946,7 @@ exports[`<ColumnList /> > renders column.tsx correctly 1`] = `
                       aria-controls="rc_select_TEST_OR_SSR_list"
                       aria-expanded="false"
                       aria-haspopup="listbox"
+                      aria-label="Search"
                       aria-owns="rc_select_TEST_OR_SSR_list"
                       autocomplete="off"
                       class="studio-select-selection-search-input"
@@ -4994,6 +5008,7 @@ exports[`<ColumnList /> > renders column.tsx correctly 1`] = `
                       aria-controls="rc_select_TEST_OR_SSR_list"
                       aria-expanded="false"
                       aria-haspopup="listbox"
+                      aria-label="Search"
                       aria-owns="rc_select_TEST_OR_SSR_list"
                       autocomplete="off"
                       class="studio-select-selection-search-input"
@@ -5106,7 +5121,7 @@ exports[`<ColumnList /> > renders column.tsx correctly 1`] = `
           aria-roledescription="sortable"
           class="studio-sortable-list-item emotion-8 studio-sortable-list-item-withHandle"
           data-cypress="draggable-item"
-          data-id="columnlist_6_2428_1693188691250"
+          data-id="columnlist_6_1802_1693192448142"
           data-index="6"
           role="button"
           style="background-color: rgb(255, 255, 255);"
@@ -5161,6 +5176,7 @@ exports[`<ColumnList /> > renders column.tsx correctly 1`] = `
                       aria-controls="rc_select_TEST_OR_SSR_list"
                       aria-expanded="false"
                       aria-haspopup="listbox"
+                      aria-label="Search"
                       aria-owns="rc_select_TEST_OR_SSR_list"
                       autocomplete="off"
                       class="studio-select-selection-search-input"
@@ -5222,6 +5238,7 @@ exports[`<ColumnList /> > renders column.tsx correctly 1`] = `
                       aria-controls="rc_select_TEST_OR_SSR_list"
                       aria-expanded="false"
                       aria-haspopup="listbox"
+                      aria-label="Search"
                       aria-owns="rc_select_TEST_OR_SSR_list"
                       autocomplete="off"
                       class="studio-select-selection-search-input"
@@ -5334,7 +5351,7 @@ exports[`<ColumnList /> > renders column.tsx correctly 1`] = `
           aria-roledescription="sortable"
           class="studio-sortable-list-item emotion-8 studio-sortable-list-item-withHandle"
           data-cypress="draggable-item"
-          data-id="columnlist_7_8181_1693188691250"
+          data-id="columnlist_7_2580_1693192448142"
           data-index="7"
           role="button"
           style="background-color: rgb(255, 255, 255);"
@@ -5389,6 +5406,7 @@ exports[`<ColumnList /> > renders column.tsx correctly 1`] = `
                       aria-controls="rc_select_TEST_OR_SSR_list"
                       aria-expanded="false"
                       aria-haspopup="listbox"
+                      aria-label="Search"
                       aria-owns="rc_select_TEST_OR_SSR_list"
                       autocomplete="off"
                       class="studio-select-selection-search-input"
@@ -5450,6 +5468,7 @@ exports[`<ColumnList /> > renders column.tsx correctly 1`] = `
                       aria-controls="rc_select_TEST_OR_SSR_list"
                       aria-expanded="false"
                       aria-haspopup="listbox"
+                      aria-label="Search"
                       aria-owns="rc_select_TEST_OR_SSR_list"
                       autocomplete="off"
                       class="studio-select-selection-search-input"
@@ -5562,7 +5581,7 @@ exports[`<ColumnList /> > renders column.tsx correctly 1`] = `
           aria-roledescription="sortable"
           class="studio-sortable-list-item emotion-8 studio-sortable-list-item-withHandle"
           data-cypress="draggable-item"
-          data-id="columnlist_8_7846_1693188691250"
+          data-id="columnlist_8_9631_1693192448142"
           data-index="8"
           role="button"
           style="background-color: rgb(255, 255, 255);"
@@ -5617,6 +5636,7 @@ exports[`<ColumnList /> > renders column.tsx correctly 1`] = `
                       aria-controls="rc_select_TEST_OR_SSR_list"
                       aria-expanded="false"
                       aria-haspopup="listbox"
+                      aria-label="Search"
                       aria-owns="rc_select_TEST_OR_SSR_list"
                       autocomplete="off"
                       class="studio-select-selection-search-input"
@@ -5678,6 +5698,7 @@ exports[`<ColumnList /> > renders column.tsx correctly 1`] = `
                       aria-controls="rc_select_TEST_OR_SSR_list"
                       aria-expanded="false"
                       aria-haspopup="listbox"
+                      aria-label="Search"
                       aria-owns="rc_select_TEST_OR_SSR_list"
                       autocomplete="off"
                       class="studio-select-selection-search-input"
@@ -5790,7 +5811,7 @@ exports[`<ColumnList /> > renders column.tsx correctly 1`] = `
           aria-roledescription="sortable"
           class="studio-sortable-list-item emotion-8 studio-sortable-list-item-withHandle"
           data-cypress="draggable-item"
-          data-id="columnlist_9_2386_1693188691250"
+          data-id="columnlist_9_6139_1693192448142"
           data-index="9"
           role="button"
           style="background-color: rgb(255, 255, 255);"
@@ -5845,6 +5866,7 @@ exports[`<ColumnList /> > renders column.tsx correctly 1`] = `
                       aria-controls="rc_select_TEST_OR_SSR_list"
                       aria-expanded="false"
                       aria-haspopup="listbox"
+                      aria-label="Search"
                       aria-owns="rc_select_TEST_OR_SSR_list"
                       autocomplete="off"
                       class="studio-select-selection-search-input"
@@ -5906,6 +5928,7 @@ exports[`<ColumnList /> > renders column.tsx correctly 1`] = `
                       aria-controls="rc_select_TEST_OR_SSR_list"
                       aria-expanded="false"
                       aria-haspopup="listbox"
+                      aria-label="Search"
                       aria-owns="rc_select_TEST_OR_SSR_list"
                       autocomplete="off"
                       class="studio-select-selection-search-input"
@@ -6047,14 +6070,11 @@ exports[`<ColumnList /> > renders column.tsx correctly 1`] = `
           viewBox="64 64 896 896"
           width="1em"
         >
-          <defs>
-            <style />
-          </defs>
           <path
             d="M482 152h60q8 0 8 8v704q0 8-8 8h-60q-8 0-8-8V160q0-8 8-8z"
           />
           <path
-            d="M176 474h672q8 0 8 8v60q0 8-8 8H176q-8 0-8-8v-60q0-8 8-8z"
+            d="M192 474h672q8 0 8 8v60q0 8-8 8H160q-8 0-8-8v-60q0-8 8-8z"
           />
         </svg>
       </span>
@@ -6384,7 +6404,7 @@ exports[`<ColumnList /> > renders controlled.tsx correctly 1`] = `
           aria-roledescription="sortable"
           class="studio-sortable-list-item emotion-7 studio-sortable-list-item-withHandle"
           data-cypress="draggable-item"
-          data-id="columnlist_0_9434_1693188690713"
+          data-id="columnlist_0_5954_1693192447801"
           data-index="0"
           role="button"
           style="background-color: rgb(255, 255, 255);"
@@ -6439,6 +6459,7 @@ exports[`<ColumnList /> > renders controlled.tsx correctly 1`] = `
                       aria-controls="rc_select_TEST_OR_SSR_list"
                       aria-expanded="false"
                       aria-haspopup="listbox"
+                      aria-label="Search"
                       aria-owns="rc_select_TEST_OR_SSR_list"
                       autocomplete="off"
                       class="studio-select-selection-search-input"
@@ -6500,6 +6521,7 @@ exports[`<ColumnList /> > renders controlled.tsx correctly 1`] = `
                       aria-controls="rc_select_TEST_OR_SSR_list"
                       aria-expanded="false"
                       aria-haspopup="listbox"
+                      aria-label="Search"
                       aria-owns="rc_select_TEST_OR_SSR_list"
                       autocomplete="off"
                       class="studio-select-selection-search-input"
@@ -6595,7 +6617,7 @@ exports[`<ColumnList /> > renders controlled.tsx correctly 1`] = `
           aria-roledescription="sortable"
           class="studio-sortable-list-item emotion-7 studio-sortable-list-item-withHandle"
           data-cypress="draggable-item"
-          data-id="columnlist_1_5774_1693188690713"
+          data-id="columnlist_1_8356_1693192447801"
           data-index="1"
           role="button"
           style="background-color: rgb(255, 255, 255);"
@@ -6650,6 +6672,7 @@ exports[`<ColumnList /> > renders controlled.tsx correctly 1`] = `
                       aria-controls="rc_select_TEST_OR_SSR_list"
                       aria-expanded="false"
                       aria-haspopup="listbox"
+                      aria-label="Search"
                       aria-owns="rc_select_TEST_OR_SSR_list"
                       autocomplete="off"
                       class="studio-select-selection-search-input"
@@ -6711,6 +6734,7 @@ exports[`<ColumnList /> > renders controlled.tsx correctly 1`] = `
                       aria-controls="rc_select_TEST_OR_SSR_list"
                       aria-expanded="false"
                       aria-haspopup="listbox"
+                      aria-label="Search"
                       aria-owns="rc_select_TEST_OR_SSR_list"
                       autocomplete="off"
                       class="studio-select-selection-search-input"
@@ -6806,7 +6830,7 @@ exports[`<ColumnList /> > renders controlled.tsx correctly 1`] = `
           aria-roledescription="sortable"
           class="studio-sortable-list-item emotion-7 studio-sortable-list-item-withHandle"
           data-cypress="draggable-item"
-          data-id="columnlist_2_1892_1693188690713"
+          data-id="columnlist_2_2896_1693192447801"
           data-index="2"
           role="button"
           style="background-color: rgb(255, 255, 255);"
@@ -6861,6 +6885,7 @@ exports[`<ColumnList /> > renders controlled.tsx correctly 1`] = `
                       aria-controls="rc_select_TEST_OR_SSR_list"
                       aria-expanded="false"
                       aria-haspopup="listbox"
+                      aria-label="Search"
                       aria-owns="rc_select_TEST_OR_SSR_list"
                       autocomplete="off"
                       class="studio-select-selection-search-input"
@@ -6922,6 +6947,7 @@ exports[`<ColumnList /> > renders controlled.tsx correctly 1`] = `
                       aria-controls="rc_select_TEST_OR_SSR_list"
                       aria-expanded="false"
                       aria-haspopup="listbox"
+                      aria-label="Search"
                       aria-owns="rc_select_TEST_OR_SSR_list"
                       autocomplete="off"
                       class="studio-select-selection-search-input"
@@ -7046,14 +7072,11 @@ exports[`<ColumnList /> > renders controlled.tsx correctly 1`] = `
           viewBox="64 64 896 896"
           width="1em"
         >
-          <defs>
-            <style />
-          </defs>
           <path
             d="M482 152h60q8 0 8 8v704q0 8-8 8h-60q-8 0-8-8V160q0-8 8-8z"
           />
           <path
-            d="M176 474h672q8 0 8 8v60q0 8-8 8H176q-8 0-8-8v-60q0-8 8-8z"
+            d="M192 474h672q8 0 8 8v60q0 8-8 8H160q-8 0-8-8v-60q0-8 8-8z"
           />
         </svg>
       </span>
@@ -7383,7 +7406,7 @@ exports[`<ColumnList /> > renders custom.tsx correctly 1`] = `
           aria-roledescription="sortable"
           class="studio-sortable-list-item emotion-7 studio-sortable-list-item-withHandle"
           data-cypress="draggable-item"
-          data-id="columnlist_0_9131_1693188689227"
+          data-id="columnlist_0_4923_1693192446827"
           data-index="0"
           role="button"
           style="background-color: rgb(255, 255, 255);"
@@ -7438,6 +7461,7 @@ exports[`<ColumnList /> > renders custom.tsx correctly 1`] = `
                       aria-controls="rc_select_TEST_OR_SSR_list"
                       aria-expanded="false"
                       aria-haspopup="listbox"
+                      aria-label="Search"
                       aria-owns="rc_select_TEST_OR_SSR_list"
                       autocomplete="off"
                       class="studio-select-selection-search-input"
@@ -7499,6 +7523,7 @@ exports[`<ColumnList /> > renders custom.tsx correctly 1`] = `
                       aria-controls="rc_select_TEST_OR_SSR_list"
                       aria-expanded="false"
                       aria-haspopup="listbox"
+                      aria-label="Search"
                       aria-owns="rc_select_TEST_OR_SSR_list"
                       autocomplete="off"
                       class="studio-select-selection-search-input"
@@ -7594,7 +7619,7 @@ exports[`<ColumnList /> > renders custom.tsx correctly 1`] = `
           aria-roledescription="sortable"
           class="studio-sortable-list-item emotion-7 studio-sortable-list-item-withHandle"
           data-cypress="draggable-item"
-          data-id="columnlist_1_7731_1693188689227"
+          data-id="columnlist_1_2729_1693192446827"
           data-index="1"
           role="button"
           style="background-color: rgb(255, 255, 255);"
@@ -7649,6 +7674,7 @@ exports[`<ColumnList /> > renders custom.tsx correctly 1`] = `
                       aria-controls="rc_select_TEST_OR_SSR_list"
                       aria-expanded="false"
                       aria-haspopup="listbox"
+                      aria-label="Search"
                       aria-owns="rc_select_TEST_OR_SSR_list"
                       autocomplete="off"
                       class="studio-select-selection-search-input"
@@ -7710,6 +7736,7 @@ exports[`<ColumnList /> > renders custom.tsx correctly 1`] = `
                       aria-controls="rc_select_TEST_OR_SSR_list"
                       aria-expanded="false"
                       aria-haspopup="listbox"
+                      aria-label="Search"
                       aria-owns="rc_select_TEST_OR_SSR_list"
                       autocomplete="off"
                       class="studio-select-selection-search-input"
@@ -7805,7 +7832,7 @@ exports[`<ColumnList /> > renders custom.tsx correctly 1`] = `
           aria-roledescription="sortable"
           class="studio-sortable-list-item emotion-7 studio-sortable-list-item-withHandle"
           data-cypress="draggable-item"
-          data-id="columnlist_2_2930_1693188689227"
+          data-id="columnlist_2_9971_1693192446827"
           data-index="2"
           role="button"
           style="background-color: rgb(255, 255, 255);"
@@ -7860,6 +7887,7 @@ exports[`<ColumnList /> > renders custom.tsx correctly 1`] = `
                       aria-controls="rc_select_TEST_OR_SSR_list"
                       aria-expanded="false"
                       aria-haspopup="listbox"
+                      aria-label="Search"
                       aria-owns="rc_select_TEST_OR_SSR_list"
                       autocomplete="off"
                       class="studio-select-selection-search-input"
@@ -7921,6 +7949,7 @@ exports[`<ColumnList /> > renders custom.tsx correctly 1`] = `
                       aria-controls="rc_select_TEST_OR_SSR_list"
                       aria-expanded="false"
                       aria-haspopup="listbox"
+                      aria-label="Search"
                       aria-owns="rc_select_TEST_OR_SSR_list"
                       autocomplete="off"
                       class="studio-select-selection-search-input"
@@ -8016,7 +8045,7 @@ exports[`<ColumnList /> > renders custom.tsx correctly 1`] = `
           aria-roledescription="sortable"
           class="studio-sortable-list-item emotion-7 studio-sortable-list-item-withHandle"
           data-cypress="draggable-item"
-          data-id="columnlist_3_8226_1693188689227"
+          data-id="columnlist_3_7275_1693192446827"
           data-index="3"
           role="button"
           style="background-color: rgb(255, 255, 255);"
@@ -8071,6 +8100,7 @@ exports[`<ColumnList /> > renders custom.tsx correctly 1`] = `
                       aria-controls="rc_select_TEST_OR_SSR_list"
                       aria-expanded="false"
                       aria-haspopup="listbox"
+                      aria-label="Search"
                       aria-owns="rc_select_TEST_OR_SSR_list"
                       autocomplete="off"
                       class="studio-select-selection-search-input"
@@ -8132,6 +8162,7 @@ exports[`<ColumnList /> > renders custom.tsx correctly 1`] = `
                       aria-controls="rc_select_TEST_OR_SSR_list"
                       aria-expanded="false"
                       aria-haspopup="listbox"
+                      aria-label="Search"
                       aria-owns="rc_select_TEST_OR_SSR_list"
                       autocomplete="off"
                       class="studio-select-selection-search-input"
@@ -8227,7 +8258,7 @@ exports[`<ColumnList /> > renders custom.tsx correctly 1`] = `
           aria-roledescription="sortable"
           class="studio-sortable-list-item emotion-7 studio-sortable-list-item-withHandle"
           data-cypress="draggable-item"
-          data-id="columnlist_4_2446_1693188689227"
+          data-id="columnlist_4_3373_1693192446827"
           data-index="4"
           role="button"
           style="background-color: rgb(255, 255, 255);"
@@ -8282,6 +8313,7 @@ exports[`<ColumnList /> > renders custom.tsx correctly 1`] = `
                       aria-controls="rc_select_TEST_OR_SSR_list"
                       aria-expanded="false"
                       aria-haspopup="listbox"
+                      aria-label="Search"
                       aria-owns="rc_select_TEST_OR_SSR_list"
                       autocomplete="off"
                       class="studio-select-selection-search-input"
@@ -8343,6 +8375,7 @@ exports[`<ColumnList /> > renders custom.tsx correctly 1`] = `
                       aria-controls="rc_select_TEST_OR_SSR_list"
                       aria-expanded="false"
                       aria-haspopup="listbox"
+                      aria-label="Search"
                       aria-owns="rc_select_TEST_OR_SSR_list"
                       autocomplete="off"
                       class="studio-select-selection-search-input"
@@ -8438,7 +8471,7 @@ exports[`<ColumnList /> > renders custom.tsx correctly 1`] = `
           aria-roledescription="sortable"
           class="studio-sortable-list-item emotion-7 studio-sortable-list-item-withHandle"
           data-cypress="draggable-item"
-          data-id="columnlist_5_6060_1693188689227"
+          data-id="columnlist_5_5590_1693192446827"
           data-index="5"
           role="button"
           style="background-color: rgb(255, 255, 255);"
@@ -8493,6 +8526,7 @@ exports[`<ColumnList /> > renders custom.tsx correctly 1`] = `
                       aria-controls="rc_select_TEST_OR_SSR_list"
                       aria-expanded="false"
                       aria-haspopup="listbox"
+                      aria-label="Search"
                       aria-owns="rc_select_TEST_OR_SSR_list"
                       autocomplete="off"
                       class="studio-select-selection-search-input"
@@ -8554,6 +8588,7 @@ exports[`<ColumnList /> > renders custom.tsx correctly 1`] = `
                       aria-controls="rc_select_TEST_OR_SSR_list"
                       aria-expanded="false"
                       aria-haspopup="listbox"
+                      aria-label="Search"
                       aria-owns="rc_select_TEST_OR_SSR_list"
                       autocomplete="off"
                       class="studio-select-selection-search-input"
@@ -8649,7 +8684,7 @@ exports[`<ColumnList /> > renders custom.tsx correctly 1`] = `
           aria-roledescription="sortable"
           class="studio-sortable-list-item emotion-7 studio-sortable-list-item-withHandle"
           data-cypress="draggable-item"
-          data-id="columnlist_6_2539_1693188689227"
+          data-id="columnlist_6_9830_1693192446827"
           data-index="6"
           role="button"
           style="background-color: rgb(255, 255, 255);"
@@ -8704,6 +8739,7 @@ exports[`<ColumnList /> > renders custom.tsx correctly 1`] = `
                       aria-controls="rc_select_TEST_OR_SSR_list"
                       aria-expanded="false"
                       aria-haspopup="listbox"
+                      aria-label="Search"
                       aria-owns="rc_select_TEST_OR_SSR_list"
                       autocomplete="off"
                       class="studio-select-selection-search-input"
@@ -8765,6 +8801,7 @@ exports[`<ColumnList /> > renders custom.tsx correctly 1`] = `
                       aria-controls="rc_select_TEST_OR_SSR_list"
                       aria-expanded="false"
                       aria-haspopup="listbox"
+                      aria-label="Search"
                       aria-owns="rc_select_TEST_OR_SSR_list"
                       autocomplete="off"
                       class="studio-select-selection-search-input"
@@ -8860,7 +8897,7 @@ exports[`<ColumnList /> > renders custom.tsx correctly 1`] = `
           aria-roledescription="sortable"
           class="studio-sortable-list-item emotion-7 studio-sortable-list-item-withHandle"
           data-cypress="draggable-item"
-          data-id="columnlist_7_57_1693188689227"
+          data-id="columnlist_7_4480_1693192446827"
           data-index="7"
           role="button"
           style="background-color: rgb(255, 255, 255);"
@@ -8915,6 +8952,7 @@ exports[`<ColumnList /> > renders custom.tsx correctly 1`] = `
                       aria-controls="rc_select_TEST_OR_SSR_list"
                       aria-expanded="false"
                       aria-haspopup="listbox"
+                      aria-label="Search"
                       aria-owns="rc_select_TEST_OR_SSR_list"
                       autocomplete="off"
                       class="studio-select-selection-search-input"
@@ -8976,6 +9014,7 @@ exports[`<ColumnList /> > renders custom.tsx correctly 1`] = `
                       aria-controls="rc_select_TEST_OR_SSR_list"
                       aria-expanded="false"
                       aria-haspopup="listbox"
+                      aria-label="Search"
                       aria-owns="rc_select_TEST_OR_SSR_list"
                       autocomplete="off"
                       class="studio-select-selection-search-input"
@@ -9071,7 +9110,7 @@ exports[`<ColumnList /> > renders custom.tsx correctly 1`] = `
           aria-roledescription="sortable"
           class="studio-sortable-list-item emotion-7 studio-sortable-list-item-withHandle"
           data-cypress="draggable-item"
-          data-id="columnlist_8_4490_1693188689227"
+          data-id="columnlist_8_3275_1693192446827"
           data-index="8"
           role="button"
           style="background-color: rgb(255, 255, 255);"
@@ -9126,6 +9165,7 @@ exports[`<ColumnList /> > renders custom.tsx correctly 1`] = `
                       aria-controls="rc_select_TEST_OR_SSR_list"
                       aria-expanded="false"
                       aria-haspopup="listbox"
+                      aria-label="Search"
                       aria-owns="rc_select_TEST_OR_SSR_list"
                       autocomplete="off"
                       class="studio-select-selection-search-input"
@@ -9187,6 +9227,7 @@ exports[`<ColumnList /> > renders custom.tsx correctly 1`] = `
                       aria-controls="rc_select_TEST_OR_SSR_list"
                       aria-expanded="false"
                       aria-haspopup="listbox"
+                      aria-label="Search"
                       aria-owns="rc_select_TEST_OR_SSR_list"
                       autocomplete="off"
                       class="studio-select-selection-search-input"
@@ -9282,7 +9323,7 @@ exports[`<ColumnList /> > renders custom.tsx correctly 1`] = `
           aria-roledescription="sortable"
           class="studio-sortable-list-item emotion-7 studio-sortable-list-item-withHandle"
           data-cypress="draggable-item"
-          data-id="columnlist_9_7712_1693188689227"
+          data-id="columnlist_9_7187_1693192446827"
           data-index="9"
           role="button"
           style="background-color: rgb(255, 255, 255);"
@@ -9337,6 +9378,7 @@ exports[`<ColumnList /> > renders custom.tsx correctly 1`] = `
                       aria-controls="rc_select_TEST_OR_SSR_list"
                       aria-expanded="false"
                       aria-haspopup="listbox"
+                      aria-label="Search"
                       aria-owns="rc_select_TEST_OR_SSR_list"
                       autocomplete="off"
                       class="studio-select-selection-search-input"
@@ -9398,6 +9440,7 @@ exports[`<ColumnList /> > renders custom.tsx correctly 1`] = `
                       aria-controls="rc_select_TEST_OR_SSR_list"
                       aria-expanded="false"
                       aria-haspopup="listbox"
+                      aria-label="Search"
                       aria-owns="rc_select_TEST_OR_SSR_list"
                       autocomplete="off"
                       class="studio-select-selection-search-input"
@@ -9522,14 +9565,11 @@ exports[`<ColumnList /> > renders custom.tsx correctly 1`] = `
           viewBox="64 64 896 896"
           width="1em"
         >
-          <defs>
-            <style />
-          </defs>
           <path
             d="M482 152h60q8 0 8 8v704q0 8-8 8h-60q-8 0-8-8V160q0-8 8-8z"
           />
           <path
-            d="M176 474h672q8 0 8 8v60q0 8-8 8H176q-8 0-8-8v-60q0-8 8-8z"
+            d="M192 474h672q8 0 8 8v60q0 8-8 8H160q-8 0-8-8v-60q0-8 8-8z"
           />
         </svg>
       </span>
@@ -9704,14 +9744,11 @@ exports[`<ColumnList /> > renders empty.tsx correctly 1`] = `
               viewBox="64 64 896 896"
               width="1em"
             >
-              <defs>
-                <style />
-              </defs>
               <path
                 d="M482 152h60q8 0 8 8v704q0 8-8 8h-60q-8 0-8-8V160q0-8 8-8z"
               />
               <path
-                d="M176 474h672q8 0 8 8v60q0 8-8 8H176q-8 0-8-8v-60q0-8 8-8z"
+                d="M192 474h672q8 0 8 8v60q0 8-8 8H160q-8 0-8-8v-60q0-8 8-8z"
               />
             </svg>
           </span>
@@ -10059,7 +10096,7 @@ exports[`<ColumnList /> > renders normal.tsx correctly 1`] = `
           aria-roledescription="sortable"
           class="studio-sortable-list-item emotion-6 studio-sortable-list-item-withHandle"
           data-cypress="draggable-item"
-          data-id="columnlist_0_6573_1693188688742"
+          data-id="columnlist_0_4287_1693192446437"
           data-index="0"
           role="button"
           style="background-color: rgb(255, 255, 255);"
@@ -10156,7 +10193,7 @@ exports[`<ColumnList /> > renders normal.tsx correctly 1`] = `
           aria-roledescription="sortable"
           class="studio-sortable-list-item emotion-6 studio-sortable-list-item-withHandle"
           data-cypress="draggable-item"
-          data-id="columnlist_1_3389_1693188688742"
+          data-id="columnlist_1_1026_1693192446437"
           data-index="1"
           role="button"
           style="background-color: rgb(255, 255, 255);"
@@ -10253,7 +10290,7 @@ exports[`<ColumnList /> > renders normal.tsx correctly 1`] = `
           aria-roledescription="sortable"
           class="studio-sortable-list-item emotion-6 studio-sortable-list-item-withHandle"
           data-cypress="draggable-item"
-          data-id="columnlist_2_904_1693188688742"
+          data-id="columnlist_2_5958_1693192446437"
           data-index="2"
           role="button"
           style="background-color: rgb(255, 255, 255);"
@@ -10379,14 +10416,11 @@ exports[`<ColumnList /> > renders normal.tsx correctly 1`] = `
           viewBox="64 64 896 896"
           width="1em"
         >
-          <defs>
-            <style />
-          </defs>
           <path
             d="M482 152h60q8 0 8 8v704q0 8-8 8h-60q-8 0-8-8V160q0-8 8-8z"
           />
           <path
-            d="M176 474h672q8 0 8 8v60q0 8-8 8H176q-8 0-8-8v-60q0-8 8-8z"
+            d="M192 474h672q8 0 8 8v60q0 8-8 8H160q-8 0-8-8v-60q0-8 8-8z"
           />
         </svg>
       </span>
@@ -17260,6 +17294,7 @@ exports[`<FieldSelect /> > renders basic.tsx correctly 1`] = `
           aria-controls="rc_select_TEST_OR_SSR_list"
           aria-expanded="false"
           aria-haspopup="listbox"
+          aria-label="Search"
           aria-owns="rc_select_TEST_OR_SSR_list"
           autocomplete="off"
           class="studio-select-selection-search-input"
@@ -18771,14 +18806,11 @@ exports[`<FreeCanvas /> > renders basic.tsx correctly 1`] = `
                       viewBox="64 64 896 896"
                       width="1em"
                     >
-                      <defs>
-                        <style />
-                      </defs>
                       <path
                         d="M482 152h60q8 0 8 8v704q0 8-8 8h-60q-8 0-8-8V160q0-8 8-8z"
                       />
                       <path
-                        d="M176 474h672q8 0 8 8v60q0 8-8 8H176q-8 0-8-8v-60q0-8 8-8z"
+                        d="M192 474h672q8 0 8 8v60q0 8-8 8H160q-8 0-8-8v-60q0-8 8-8z"
                       />
                     </svg>
                   </span>
@@ -19867,6 +19899,7 @@ exports[`<Highlight /> > renders theme.tsx correctly 1`] = `
                 aria-controls="rc_select_TEST_OR_SSR_list"
                 aria-expanded="false"
                 aria-haspopup="listbox"
+                aria-label="Search"
                 aria-owns="rc_select_TEST_OR_SSR_list"
                 autocomplete="off"
                 class="studio-select-selection-search-input"
@@ -19939,6 +19972,7 @@ exports[`<Highlight /> > renders theme.tsx correctly 1`] = `
                 aria-controls="rc_select_TEST_OR_SSR_list"
                 aria-expanded="false"
                 aria-haspopup="listbox"
+                aria-label="Search"
                 aria-owns="rc_select_TEST_OR_SSR_list"
                 autocomplete="off"
                 class="studio-select-selection-search-input"
@@ -20011,6 +20045,7 @@ exports[`<Highlight /> > renders theme.tsx correctly 1`] = `
                 aria-controls="rc_select_TEST_OR_SSR_list"
                 aria-expanded="false"
                 aria-haspopup="listbox"
+                aria-label="Search"
                 aria-owns="rc_select_TEST_OR_SSR_list"
                 autocomplete="off"
                 class="studio-select-selection-search-input"
@@ -20082,6 +20117,7 @@ exports[`<Highlight /> > renders theme.tsx correctly 1`] = `
                 aria-controls="rc_select_TEST_OR_SSR_list"
                 aria-expanded="false"
                 aria-haspopup="listbox"
+                aria-label="Search"
                 aria-owns="rc_select_TEST_OR_SSR_list"
                 autocomplete="off"
                 class="studio-select-selection-search-input"
@@ -23287,6 +23323,7 @@ exports[`<SortableList /> > renders provider.tsx correctly 1`] = `
                           aria-controls="rc_select_TEST_OR_SSR_list"
                           aria-expanded="false"
                           aria-haspopup="listbox"
+                          aria-label="Search"
                           aria-owns="rc_select_TEST_OR_SSR_list"
                           autocomplete="off"
                           class="studio-select-selection-search-input"
@@ -23444,6 +23481,7 @@ exports[`<SortableList /> > renders provider.tsx correctly 1`] = `
                           aria-controls="rc_select_TEST_OR_SSR_list"
                           aria-expanded="false"
                           aria-haspopup="listbox"
+                          aria-label="Search"
                           aria-owns="rc_select_TEST_OR_SSR_list"
                           autocomplete="off"
                           class="studio-select-selection-search-input"
@@ -23601,6 +23639,7 @@ exports[`<SortableList /> > renders provider.tsx correctly 1`] = `
                           aria-controls="rc_select_TEST_OR_SSR_list"
                           aria-expanded="false"
                           aria-haspopup="listbox"
+                          aria-label="Search"
                           aria-owns="rc_select_TEST_OR_SSR_list"
                           autocomplete="off"
                           class="studio-select-selection-search-input"
@@ -24064,6 +24103,7 @@ exports[`<SortableList /> > renders ref.tsx correctly 1`] = `
                           aria-controls="rc_select_TEST_OR_SSR_list"
                           aria-expanded="false"
                           aria-haspopup="listbox"
+                          aria-label="Search"
                           aria-owns="rc_select_TEST_OR_SSR_list"
                           autocomplete="off"
                           class="studio-select-selection-search-input"
@@ -24221,6 +24261,7 @@ exports[`<SortableList /> > renders ref.tsx correctly 1`] = `
                           aria-controls="rc_select_TEST_OR_SSR_list"
                           aria-expanded="false"
                           aria-haspopup="listbox"
+                          aria-label="Search"
                           aria-owns="rc_select_TEST_OR_SSR_list"
                           autocomplete="off"
                           class="studio-select-selection-search-input"
@@ -24378,6 +24419,7 @@ exports[`<SortableList /> > renders ref.tsx correctly 1`] = `
                           aria-controls="rc_select_TEST_OR_SSR_list"
                           aria-expanded="false"
                           aria-haspopup="listbox"
+                          aria-label="Search"
                           aria-owns="rc_select_TEST_OR_SSR_list"
                           autocomplete="off"
                           class="studio-select-selection-search-input"
@@ -24787,6 +24829,7 @@ exports[`<SortableList /> > renders renderContent.tsx correctly 1`] = `
                           aria-controls="rc_select_TEST_OR_SSR_list"
                           aria-expanded="false"
                           aria-haspopup="listbox"
+                          aria-label="Search"
                           aria-owns="rc_select_TEST_OR_SSR_list"
                           autocomplete="off"
                           class="studio-select-selection-search-input"
@@ -24944,6 +24987,7 @@ exports[`<SortableList /> > renders renderContent.tsx correctly 1`] = `
                           aria-controls="rc_select_TEST_OR_SSR_list"
                           aria-expanded="false"
                           aria-haspopup="listbox"
+                          aria-label="Search"
                           aria-owns="rc_select_TEST_OR_SSR_list"
                           autocomplete="off"
                           class="studio-select-selection-search-input"
@@ -25101,6 +25145,7 @@ exports[`<SortableList /> > renders renderContent.tsx correctly 1`] = `
                           aria-controls="rc_select_TEST_OR_SSR_list"
                           aria-expanded="false"
                           aria-haspopup="listbox"
+                          aria-label="Search"
                           aria-owns="rc_select_TEST_OR_SSR_list"
                           autocomplete="off"
                           class="studio-select-selection-search-input"
@@ -25422,16 +25467,18 @@ exports[`<SortableList /> > renders renderItem.tsx correctly 1`] = `
                       data-show="true"
                       title="1"
                     >
-                      <span
-                        class="studio-scroll-number-only"
-                        style="transition: none;"
-                      >
+                      <bdi>
                         <span
-                          class="studio-scroll-number-only-unit current"
+                          class="studio-scroll-number-only"
+                          style="transition: none;"
                         >
-                          1
+                          <span
+                            class="studio-scroll-number-only-unit current"
+                          >
+                            1
+                          </span>
                         </span>
-                      </span>
+                      </bdi>
                     </sup>
                   </span>
                 </div>
@@ -25509,16 +25556,18 @@ exports[`<SortableList /> > renders renderItem.tsx correctly 1`] = `
                       data-show="true"
                       title="2"
                     >
-                      <span
-                        class="studio-scroll-number-only"
-                        style="transition: none;"
-                      >
+                      <bdi>
                         <span
-                          class="studio-scroll-number-only-unit current"
+                          class="studio-scroll-number-only"
+                          style="transition: none;"
                         >
-                          2
+                          <span
+                            class="studio-scroll-number-only-unit current"
+                          >
+                            2
+                          </span>
                         </span>
-                      </span>
+                      </bdi>
                     </sup>
                   </span>
                 </div>
@@ -25596,16 +25645,18 @@ exports[`<SortableList /> > renders renderItem.tsx correctly 1`] = `
                       data-show="true"
                       title="3"
                     >
-                      <span
-                        class="studio-scroll-number-only"
-                        style="transition: none;"
-                      >
+                      <bdi>
                         <span
-                          class="studio-scroll-number-only-unit current"
+                          class="studio-scroll-number-only"
+                          style="transition: none;"
                         >
-                          3
+                          <span
+                            class="studio-scroll-number-only-unit current"
+                          >
+                            3
+                          </span>
                         </span>
-                      </span>
+                      </bdi>
                     </sup>
                   </span>
                 </div>
@@ -25683,16 +25734,18 @@ exports[`<SortableList /> > renders renderItem.tsx correctly 1`] = `
                       data-show="true"
                       title="4"
                     >
-                      <span
-                        class="studio-scroll-number-only"
-                        style="transition: none;"
-                      >
+                      <bdi>
                         <span
-                          class="studio-scroll-number-only-unit current"
+                          class="studio-scroll-number-only"
+                          style="transition: none;"
                         >
-                          4
+                          <span
+                            class="studio-scroll-number-only-unit current"
+                          >
+                            4
+                          </span>
                         </span>
-                      </span>
+                      </bdi>
                     </sup>
                   </span>
                 </div>
@@ -26063,6 +26116,7 @@ exports[`<SortableList /> > renders useSortableList.tsx correctly 1`] = `
                           aria-controls="rc_select_TEST_OR_SSR_list"
                           aria-expanded="false"
                           aria-haspopup="listbox"
+                          aria-label="Search"
                           aria-owns="rc_select_TEST_OR_SSR_list"
                           autocomplete="off"
                           class="studio-select-selection-search-input"
@@ -26220,6 +26274,7 @@ exports[`<SortableList /> > renders useSortableList.tsx correctly 1`] = `
                           aria-controls="rc_select_TEST_OR_SSR_list"
                           aria-expanded="false"
                           aria-haspopup="listbox"
+                          aria-label="Search"
                           aria-owns="rc_select_TEST_OR_SSR_list"
                           autocomplete="off"
                           class="studio-select-selection-search-input"
@@ -26377,6 +26432,7 @@ exports[`<SortableList /> > renders useSortableList.tsx correctly 1`] = `
                           aria-controls="rc_select_TEST_OR_SSR_list"
                           aria-expanded="false"
                           aria-haspopup="listbox"
+                          aria-label="Search"
                           aria-owns="rc_select_TEST_OR_SSR_list"
                           autocomplete="off"
                           class="studio-select-selection-search-input"
@@ -27517,14 +27573,11 @@ exports[`<SortableTree /> > renders controlled.tsx correctly 1`] = `
               viewBox="64 64 896 896"
               width="1em"
             >
-              <defs>
-                <style />
-              </defs>
               <path
                 d="M482 152h60q8 0 8 8v704q0 8-8 8h-60q-8 0-8-8V160q0-8 8-8z"
               />
               <path
-                d="M176 474h672q8 0 8 8v60q0 8-8 8H176q-8 0-8-8v-60q0-8 8-8z"
+                d="M192 474h672q8 0 8 8v60q0 8-8 8H160q-8 0-8-8v-60q0-8 8-8z"
               />
             </svg>
           </span>
@@ -28547,14 +28600,11 @@ exports[`<SortableTree /> > renders default.tsx correctly 1`] = `
               viewBox="64 64 896 896"
               width="1em"
             >
-              <defs>
-                <style />
-              </defs>
               <path
                 d="M482 152h60q8 0 8 8v704q0 8-8 8h-60q-8 0-8-8V160q0-8 8-8z"
               />
               <path
-                d="M176 474h672q8 0 8 8v60q0 8-8 8H176q-8 0-8-8v-60q0-8 8-8z"
+                d="M192 474h672q8 0 8 8v60q0 8-8 8H160q-8 0-8-8v-60q0-8 8-8z"
               />
             </svg>
           </span>
@@ -29308,14 +29358,11 @@ exports[`<SortableTree /> > renders disableDrag.tsx correctly 1`] = `
               viewBox="64 64 896 896"
               width="1em"
             >
-              <defs>
-                <style />
-              </defs>
               <path
                 d="M482 152h60q8 0 8 8v704q0 8-8 8h-60q-8 0-8-8V160q0-8 8-8z"
               />
               <path
-                d="M176 474h672q8 0 8 8v60q0 8-8 8H176q-8 0-8-8v-60q0-8 8-8z"
+                d="M192 474h672q8 0 8 8v60q0 8-8 8H160q-8 0-8-8v-60q0-8 8-8z"
               />
             </svg>
           </span>
@@ -30626,14 +30673,11 @@ exports[`<SortableTree /> > renders renderContent.tsx correctly 1`] = `
               viewBox="64 64 896 896"
               width="1em"
             >
-              <defs>
-                <style />
-              </defs>
               <path
                 d="M482 152h60q8 0 8 8v704q0 8-8 8h-60q-8 0-8-8V160q0-8 8-8z"
               />
               <path
-                d="M176 474h672q8 0 8 8v60q0 8-8 8H176q-8 0-8-8v-60q0-8 8-8z"
+                d="M192 474h672q8 0 8 8v60q0 8-8 8H160q-8 0-8-8v-60q0-8 8-8z"
               />
             </svg>
           </span>
@@ -31656,14 +31700,11 @@ exports[`<SortableTree /> > renders sortableRule.tsx correctly 1`] = `
               viewBox="64 64 896 896"
               width="1em"
             >
-              <defs>
-                <style />
-              </defs>
               <path
                 d="M482 152h60q8 0 8 8v704q0 8-8 8h-60q-8 0-8-8V160q0-8 8-8z"
               />
               <path
-                d="M176 474h672q8 0 8 8v60q0 8-8 8H176q-8 0-8-8v-60q0-8 8-8z"
+                d="M192 474h672q8 0 8 8v60q0 8-8 8H160q-8 0-8-8v-60q0-8 8-8z"
               />
             </svg>
           </span>
@@ -32397,6 +32438,7 @@ exports[`<antd /> > renders select.tsx correctly 1`] = `
                   aria-controls="rc_select_TEST_OR_SSR_list"
                   aria-expanded="false"
                   aria-haspopup="listbox"
+                  aria-label="Search"
                   aria-owns="rc_select_TEST_OR_SSR_list"
                   autocomplete="off"
                   class="studio-select-selection-search-input"
@@ -32457,6 +32499,7 @@ exports[`<antd /> > renders select.tsx correctly 1`] = `
                   aria-controls="rc_select_TEST_OR_SSR_list"
                   aria-expanded="false"
                   aria-haspopup="listbox"
+                  aria-label="Search"
                   aria-owns="rc_select_TEST_OR_SSR_list"
                   autocomplete="off"
                   class="studio-select-selection-search-input"
@@ -32523,6 +32566,7 @@ exports[`<antd /> > renders select.tsx correctly 1`] = `
                   aria-controls="rc_select_TEST_OR_SSR_list"
                   aria-expanded="false"
                   aria-haspopup="listbox"
+                  aria-label="Search"
                   aria-owns="rc_select_TEST_OR_SSR_list"
                   autocomplete="off"
                   class="studio-select-selection-search-input"
@@ -32583,6 +32627,7 @@ exports[`<antd /> > renders select.tsx correctly 1`] = `
                   aria-controls="rc_select_TEST_OR_SSR_list"
                   aria-expanded="false"
                   aria-haspopup="listbox"
+                  aria-label="Search"
                   aria-owns="rc_select_TEST_OR_SSR_list"
                   autocomplete="off"
                   class="studio-select-selection-search-input"
@@ -33145,6 +33190,7 @@ exports[`<antd /> > renders treeselect.tsx correctly 1`] = `
           aria-controls="rc_select_TEST_OR_SSR_list"
           aria-expanded="false"
           aria-haspopup="listbox"
+          aria-label="Search"
           aria-owns="rc_select_TEST_OR_SSR_list"
           autocomplete="off"
           class="studio-select-selection-search-input"
