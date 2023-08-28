@@ -63,7 +63,7 @@ export interface SortableListRef<T = SortableItem> {
   updateItem: (item: T, index: number) => void;
 }
 
-export interface StoreUpdaterProps<T> {
+export interface StoreUpdaterProps<T = SortableItem> {
   /**
    * 值
    */

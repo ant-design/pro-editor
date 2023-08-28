@@ -1,13 +1,14 @@
 import { PlusOutlined } from '@ant-design/icons';
 import {
+  SortableItem,
   SortableList,
+  SortableListProps,
   SortableListProvider,
   getPrefixCls,
   useSortableList,
 } from '@ant-design/pro-editor';
 import { Button, Empty } from 'antd';
 import { ReactNode, forwardRef, useCallback, useMemo } from 'react';
-import { SortableListProps, SortableListRef } from '../SortableList';
 import ColumnItem from './ColumnItem';
 import { Header } from './Header';
 import { useStyle } from './style';
@@ -37,8 +38,17 @@ export interface ColumnListProps<T = any> extends SortableListProps<T> {
   actions?: ((item: T, index: number) => ReactNode[]) | React.ReactNode[];
 }
 
-const ColumnList: <T = any>(props: ColumnListProps<T>) => ReactNode = forwardRef<
-  SortableListRef,
+/**
+ * 供外部使用的 ref 方法
+ */
+export interface ColumnListRef<T = any> {
+  addItem: (item?: SortableItem<T>, index?: number) => void;
+  removeItem: (index: number) => void;
+  updateItem: (item: SortableItem<T>, index: number) => void;
+}
+
+const ColumnList: <T>(props: ColumnListProps<T>) => ReactNode = forwardRef<
+  ColumnListRef,
   ColumnListProps
 >(
   (
