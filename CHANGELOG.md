@@ -1,5 +1,114 @@
 # Changelog
 
+## [Version&nbsp;0.2.0](https://github.com/ant-design/pro-editor/compare/v0.1.1...v0.2.0)
+
+<sup>Released on **2023-08-28**</sup>
+
+#### ✨ 新特性
+
+- **component-asset**: CreateUseAssetStore 方法支持导出 AssetProvider, 优化 createTestAssetStore ，便于下游测试, 添加 createTestAssetStore 方法，便于下游测试.
+- **pro-editor**: 增加 updateCanvasInteraction 方法, 支持 getCanvasInteraction，并调整 store set、get 命名风格, 支持撤销重做, 支持配置 ProEditorStore 在 devtools 中的名称.
+- **sortable-list**: 导出 SortableListDispatchPayload 类型定义.
+- **sortable-tree**: 支持禁用拖拽功能, 新增 sortableRule 函数规则，控制拖动排序.
+- Add ActinGroup Components, add c2d2c getDiffPropsWithSchema and getSymbolMasterNameFromProps func, add field component, add more ActionGroup api support & style update, add more antd temple components, SortableList support onChange event, support undo/redo for ProEditor, update Action Css Transition, update snapshot, 完善 AssetStore 数据链路, 实现 AssetStore 与 EditorStore 的状态自动同步, 新增 ContextMenu 组件, 新增 LevaPanel 属性面板, 重构优化 ComponentAsset store 实现，收敛 AssetStore 的定义方式.
+
+#### 🐛 修复
+
+- **awareness**: 修正类型导出问题, 兼容服务端渲染.
+- **component-asset**: 修正 AssetSchema 类型, 修正 CreateAssetStore 的类型，对齐到 ProEditorInstance, 修正类型.
+- **excel-table**: 修正 Hansontable 在 server 端的兼容性问题, 修正 Hansontable 在 server 端的兼容性问题.
+- **pro-editor**: 修正与 assetStore 的数据同步问题, 调整 devtools api 名称.
+- **sortable-list**: 兼容默认数据展示.
+- **sortable-tree**: 修正 ReactNodeProps 方法类型定义, 修正 SortableTree 在 server 端的兼容性问题, 修正 SortableTree 在 server 端的兼容性问题.
+- **use-proeditor**: 修正 togglePanelExpand 方法缺失的 bug.
+- Fix avatar key, fix config update, fix Input ref props, fix miss deps, github pages css style lost, highlight scroll error, refactor with zustand v4.4 equalFn, remove lucide icon, SortableList 默认空数据处理, test case error, test snapshot udpate, update snapshot, update snapshot, update snapshot, upgrade zustand version, 优化 Input 和 InputNumber 组件的受控变更逻辑, 修正潜藏的 undo/redo bug，并补充单测, 将 antd-style 设为 peer，修正 ThemeProvider 多实例问题, 将 handsontable 模块异步导入，解决 SSR 下无法使用的问题.
+
+#### 💄 样式
+
+- **leva-panel**: 添加 style 与 className 属性.
+- Update empty style.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's improved
+
+- **component-asset**: CreateUseAssetStore 方法支持导出 AssetProvider ([d33a8b3](https://github.com/ant-design/pro-editor/commit/d33a8b3))
+- **component-asset**: 优化 createTestAssetStore ，便于下游测试 ([e58eb84](https://github.com/ant-design/pro-editor/commit/e58eb84))
+- **component-asset**: 添加 createTestAssetStore 方法，便于下游测试 ([60fb2c8](https://github.com/ant-design/pro-editor/commit/60fb2c8))
+- **pro-editor**: 增加 updateCanvasInteraction 方法 ([8bf85d4](https://github.com/ant-design/pro-editor/commit/8bf85d4))
+- **pro-editor**: 支持 getCanvasInteraction，并调整 store set、get 命名风格 ([c673970](https://github.com/ant-design/pro-editor/commit/c673970))
+- **pro-editor**: 支持撤销重做 ([28a71a3](https://github.com/ant-design/pro-editor/commit/28a71a3))
+- **pro-editor**: 支持配置 ProEditorStore 在 devtools 中的名称 ([2cedbb3](https://github.com/ant-design/pro-editor/commit/2cedbb3))
+- **sortable-list**: 导出 SortableListDispatchPayload 类型定义 ([f47782b](https://github.com/ant-design/pro-editor/commit/f47782b))
+- **sortable-tree**: 支持禁用拖拽功能 ([9a00235](https://github.com/ant-design/pro-editor/commit/9a00235))
+- **sortable-tree**: 新增 sortableRule 函数规则，控制拖动排序, closes [#46](https://github.com/ant-design/pro-editor/issues/46) ([e941865](https://github.com/ant-design/pro-editor/commit/e941865))
+- Add ActinGroup Components ([231d713](https://github.com/ant-design/pro-editor/commit/231d713))
+- Add c2d2c getDiffPropsWithSchema and getSymbolMasterNameFromProps func, closes [#52](https://github.com/ant-design/pro-editor/issues/52) ([aa62185](https://github.com/ant-design/pro-editor/commit/aa62185))
+- Add field component, closes [#49](https://github.com/ant-design/pro-editor/issues/49) ([dfdfd16](https://github.com/ant-design/pro-editor/commit/dfdfd16))
+- Add more ActionGroup api support & style update ([16e5dbc](https://github.com/ant-design/pro-editor/commit/16e5dbc))
+- Add more antd temple components ([e99d7b7](https://github.com/ant-design/pro-editor/commit/e99d7b7))
+- SortableList support onChange event ([663846c](https://github.com/ant-design/pro-editor/commit/663846c))
+- Support undo/redo for ProEditor ([c88698a](https://github.com/ant-design/pro-editor/commit/c88698a))
+- Update Action Css Transition ([971f090](https://github.com/ant-design/pro-editor/commit/971f090))
+- Update snapshot ([6ee7422](https://github.com/ant-design/pro-editor/commit/6ee7422))
+- 完善 AssetStore 数据链路 ([eefef20](https://github.com/ant-design/pro-editor/commit/eefef20))
+- 实现 AssetStore 与 EditorStore 的状态自动同步 ([7135040](https://github.com/ant-design/pro-editor/commit/7135040))
+- 新增 ContextMenu 组件 ([6fa1558](https://github.com/ant-design/pro-editor/commit/6fa1558))
+- 新增 LevaPanel 属性面板 ([b7b0633](https://github.com/ant-design/pro-editor/commit/b7b0633))
+- 重构优化 ComponentAsset store 实现，收敛 AssetStore 的定义方式 ([6a74062](https://github.com/ant-design/pro-editor/commit/6a74062))
+
+#### What's fixed
+
+- **awareness**: 修正类型导出问题 ([650ef65](https://github.com/ant-design/pro-editor/commit/650ef65))
+- **awareness**: 兼容服务端渲染 ([1c04874](https://github.com/ant-design/pro-editor/commit/1c04874))
+- **component-asset**: 修正 AssetSchema 类型 ([5ba08b6](https://github.com/ant-design/pro-editor/commit/5ba08b6))
+- **component-asset**: 修正 CreateAssetStore 的类型，对齐到 ProEditorInstance ([769cf39](https://github.com/ant-design/pro-editor/commit/769cf39))
+- **component-asset**: 修正类型 ([4cede56](https://github.com/ant-design/pro-editor/commit/4cede56))
+- **excel-table**: 修正 Hansontable 在 server 端的兼容性问题 ([c4647d5](https://github.com/ant-design/pro-editor/commit/c4647d5))
+- **excel-table**: 修正 Hansontable 在 server 端的兼容性问题 ([7c91c42](https://github.com/ant-design/pro-editor/commit/7c91c42))
+- **pro-editor**: 修正与 assetStore 的数据同步问题 ([67735e2](https://github.com/ant-design/pro-editor/commit/67735e2))
+- **pro-editor**: 调整 devtools api 名称 ([10f1529](https://github.com/ant-design/pro-editor/commit/10f1529))
+- **sortable-list**: 兼容默认数据展示 ([58a3a15](https://github.com/ant-design/pro-editor/commit/58a3a15))
+- **sortable-tree**: 修正 ReactNodeProps 方法类型定义 ([c4024cc](https://github.com/ant-design/pro-editor/commit/c4024cc))
+- **sortable-tree**: 修正 SortableTree 在 server 端的兼容性问题 ([9e55c9f](https://github.com/ant-design/pro-editor/commit/9e55c9f))
+- **sortable-tree**: 修正 SortableTree 在 server 端的兼容性问题 ([7c0905e](https://github.com/ant-design/pro-editor/commit/7c0905e))
+- **use-proeditor**: 修正 togglePanelExpand 方法缺失的 bug ([169338b](https://github.com/ant-design/pro-editor/commit/169338b))
+- Fix avatar key ([26df41f](https://github.com/ant-design/pro-editor/commit/26df41f))
+- Fix config update ([2a3bbf3](https://github.com/ant-design/pro-editor/commit/2a3bbf3))
+- Fix Input ref props ([da05109](https://github.com/ant-design/pro-editor/commit/da05109))
+- Fix miss deps ([0c6f659](https://github.com/ant-design/pro-editor/commit/0c6f659))
+- Github pages css style lost, closes [#15](https://github.com/ant-design/pro-editor/issues/15) ([edf7355](https://github.com/ant-design/pro-editor/commit/edf7355))
+- Highlight scroll error, closes [#37](https://github.com/ant-design/pro-editor/issues/37) ([5abf169](https://github.com/ant-design/pro-editor/commit/5abf169))
+- Refactor with zustand v4.4 equalFn ([0559103](https://github.com/ant-design/pro-editor/commit/0559103))
+- Remove lucide icon ([b946ce3](https://github.com/ant-design/pro-editor/commit/b946ce3))
+- SortableList 默认空数据处理 ([07bda12](https://github.com/ant-design/pro-editor/commit/07bda12))
+- Test case error ([8e9a930](https://github.com/ant-design/pro-editor/commit/8e9a930))
+- Test snapshot udpate, closes [#53](https://github.com/ant-design/pro-editor/issues/53) ([d551f68](https://github.com/ant-design/pro-editor/commit/d551f68))
+- Update snapshot ([dbe098e](https://github.com/ant-design/pro-editor/commit/dbe098e))
+- Update snapshot ([511defb](https://github.com/ant-design/pro-editor/commit/511defb))
+- Update snapshot ([53e7dfb](https://github.com/ant-design/pro-editor/commit/53e7dfb))
+- Upgrade zustand version ([1fc2daa](https://github.com/ant-design/pro-editor/commit/1fc2daa))
+- 优化 Input 和 InputNumber 组件的受控变更逻辑, closes [#45](https://github.com/ant-design/pro-editor/issues/45) ([e1c7d4f](https://github.com/ant-design/pro-editor/commit/e1c7d4f))
+- 修正潜藏的 undo/redo bug，并补充单测 ([d1e3cc1](https://github.com/ant-design/pro-editor/commit/d1e3cc1))
+- 将 antd-style 设为 peer，修正 ThemeProvider 多实例问题 ([4ab40d7](https://github.com/ant-design/pro-editor/commit/4ab40d7))
+- 将 handsontable 模块异步导入，解决 SSR 下无法使用的问题 ([ab69afd](https://github.com/ant-design/pro-editor/commit/ab69afd))
+
+#### Styles
+
+- **leva-panel**: 添加 style 与 className 属性 ([7a55431](https://github.com/ant-design/pro-editor/commit/7a55431))
+- Update empty style ([e770ecb](https://github.com/ant-design/pro-editor/commit/e770ecb))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
 ## [Version&nbsp;0.13.0](https://github.com/ant-design/pro-editor/compare/v0.12.1...v0.13.0)
 
 <sup>Released on **2023-08-23**</sup>
