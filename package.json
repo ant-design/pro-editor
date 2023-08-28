@@ -93,6 +93,7 @@
     "lodash.unionby": "^4.8.0",
     "lodash.uniq": "^4.5.0",
     "mockjs": "^1.1.0",
+    "object-hash": "^3.0.0",
     "polished": "^4.2.2",
     "prettier": "^2.8.8",
     "re-resizable": "^6.9.11",

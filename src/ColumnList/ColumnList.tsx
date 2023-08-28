@@ -73,7 +73,7 @@ const ColumnList: <T>(props: ColumnListProps<T>) => ReactNode = forwardRef<
       () =>
         value
           ? value.map((item, index) => ({
-              id: genUniqueID(index),
+              id: genUniqueID(item, index),
               ...item,
             }))
           : undefined,
@@ -84,7 +84,7 @@ const ColumnList: <T>(props: ColumnListProps<T>) => ReactNode = forwardRef<
       () =>
         initialValues
           ? initialValues.map((item, index) => ({
-              id: genUniqueID(index),
+              id: genUniqueID(item, index),
               ...item,
             }))
           : undefined,
@@ -120,7 +120,7 @@ const ColumnList: <T>(props: ColumnListProps<T>) => ReactNode = forwardRef<
           className={styles.btnAdd}
           onClick={() => {
             const intialValue = {
-              id: genUniqueID(itemsLength),
+              id: genUniqueID(null, itemsLength),
               ...(record && typeof record === 'function' ? record(itemsLength) : undefined),
             };
             instance.addItem(intialValue);

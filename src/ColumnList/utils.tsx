@@ -1,3 +1,5 @@
-export const genUniqueID = (index) => {
-  return `columnlist_${index}_${Math.floor(Math.random() * 10000)}_${Date.now()}`;
+import hash from 'object-hash';
+
+export const genUniqueID = (item, index) => {
+  return `columnlist_${index}_${hash(item).slice(-6)}`;
 };
