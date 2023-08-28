@@ -10,8 +10,7 @@ const originalRandom = Math.random;
 
 beforeEach(() => {
   vi.useFakeTimers();
-  const date = new Date(2023, 8, 28);
-  vi.setSystemTime(date);
+  vi.setSystemTime(1695830400000);
   const mocked = vi.fn(() => 0.1);
   Math.random = mocked;
   // @ts-ignore
