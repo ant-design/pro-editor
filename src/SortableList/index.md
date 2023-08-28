@@ -55,10 +55,11 @@ demo:
 
 ### CreatorButtonProps 创建按钮属性
 
-| 属性名            | 类型                                                            | 描述                        |
-| ----------------- | --------------------------------------------------------------- | --------------------------- |
-| record            | `(index: number) => {id:string \| number, Record<string, any>}` | 生成初始值逻辑，必须包含 id |
-| creatorButtonText | `string`                                                        | 新增一行按钮文案            |
+| 属性名            | 类型                                     | 描述                 |
+| ----------------- | ---------------------------------------- | -------------------- | --- |
+| position          | `'bottom'\|'top'`                        | 按钮位置，默认在下方 |
+| record            | `(index: number) => Record<string, any>` | 生成初始值逻辑       |
+| creatorButtonText | `string`                                 | 新增一行按钮文案     |     |
 
 ### GetItemStylesArgs
 

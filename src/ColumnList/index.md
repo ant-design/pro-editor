@@ -26,19 +26,9 @@ demo:
 
 提供封装的 `columns` 配置，其他属性参考 `SortableList`
 
-| 属性名             | 类型                                                             | 描述                               |
-| ------------------ | ---------------------------------------------------------------- | ---------------------------------- |
-| columns            | `ColumnItem<T>[]`                                                | 列配置项                           |
-| creatorButtonProps | `CreatorButtonProps \| false`                                    | 新建对象相关属性                   |
-| actions            | `(item: T, index: number) => ReactNode[]` \| `React.ReactNode[]` | 除列表自带操作之外的其他操作自渲染 |
-
-### CreatorButtonProps 创建按钮属性
-
-| 属性名            | 类型                                     | 描述                 |
-| ----------------- | ---------------------------------------- | -------------------- |
-| position          | `'bottom'\|'top'`                        | 按钮位置，默认在下方 |
-| record            | `(index: number) => Record<string, any>` | 生成初始值逻辑       |
-| creatorButtonText | `string`                                 | 新增一行按钮文案     |
+| 属性名  | 类型              | 描述     |
+| ------- | ----------------- | -------- |
+| columns | `ColumnItem<T>[]` | 列配置项 |
 
 ### ColumnItem
 
