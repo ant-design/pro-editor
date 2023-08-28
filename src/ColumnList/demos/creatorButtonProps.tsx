@@ -112,6 +112,7 @@ export default () => (
       console.log('onChange', values);
     }}
     creatorButtonProps={{
+      position: 'top',
       record: (index) => ({
         id: randomIndex(),
         dataIndex: `${index}-${randomIndex()}`,

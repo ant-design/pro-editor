@@ -55,6 +55,10 @@ export type RenderContent<T = SortableItem> = (item: T, index: number) => React.
 
 export interface CreatorButtonProps {
   /**
+   * 添加创建按钮的位置
+   */
+  position?: 'bottom' | 'top';
+  /**
    * 生成初始值逻辑
    */
   record: (index: number) => SortableItem<Record<string, any>>;

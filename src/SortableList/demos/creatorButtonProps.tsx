@@ -16,6 +16,7 @@ const Demo = () => {
       <SortableList
         value={list}
         creatorButtonProps={{
+          creatorButtonText: '自定义添加',
           record: () => ({
             id: Math.ceil(Math.random() * 100000).toString(16),
           }),

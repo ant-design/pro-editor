@@ -1,3 +1,4 @@
+import { Empty } from 'antd';
 import isEqual from 'lodash.isequal';
 import type { FC } from 'react';
 import { memo } from 'react';
@@ -38,10 +39,9 @@ const SortableList: FC<SortableListProps> = ({ prefixCls }) => {
 
   const { styles } = useStyle(prefixCls);
   const items = useStore((s) => s.value, isEqual);
+  const { record, creatorButtonText = '添加一列', position = 'bottom' } = creatorButtonProps || {};
 
   const CreateButton = ({ empty = false }) => {
-    const { record, creatorButtonText = '添加一列' } = creatorButtonProps || {};
-
     return (
       <Button
         block={empty ? false : true}
@@ -60,8 +60,15 @@ const SortableList: FC<SortableListProps> = ({ prefixCls }) => {
     );
   };
 
-  return (
+  return Array.isArray(items) && items.length === 0 ? (
     <>
+      <Empty image={Empty.PRESENTED_IMAGE_SIMPLE} description="暂无数据">
+        {creatorButtonProps !== false ? <CreateButton empty={true} /> : null}
+      </Empty>
+    </>
+  ) : (
+    <>
+      {creatorButtonProps !== false && position === 'top' ? <CreateButton /> : null}
       <List prefixCls={prefixCls}>
         {items.map((item, index) => {
           return (
@@ -82,7 +89,7 @@ const SortableList: FC<SortableListProps> = ({ prefixCls }) => {
           );
         })}
       </List>
-      {creatorButtonProps === false ? null : <CreateButton />}
+      {creatorButtonProps !== false && position === 'bottom' ? <CreateButton /> : null}
     </>
   );
 };
