@@ -14,7 +14,7 @@ demo:
 
 针对可排序列表场景提供基础底层封装，可在其上进行进一步自定义，参考 `ColumnList`。
 
-## 基础使用
+## 使用方式
 
 <code src="./demos/Basic.tsx" ></code>
 <code src="./demos/controlled.tsx" ></code>
@@ -22,18 +22,8 @@ demo:
 <code src="./demos/renderItem.tsx" ></code>
 <code src="./demos/renderContent.tsx" ></code>
 <code src="./demos/creatorButtonProps.tsx" ></code>
-
-## 程序化控制
-
-使用 `ref` 或者 `useSortableList()` hook 均可获取组件实例，进而自行控制状态变更。
-
 <code src="./demos/ref.tsx" ></code>
 <code src="./demos/useSortableList.tsx" ></code>
-
-### Provider
-
-为了方便用户在更高的上下文中通过 `useSortableList()` hook 获得组件实例，我们提供了 `SortableListProvider` 由用户控制 Provider 的作用范围。
-
 <code src="./demos/provider.tsx" ></code>
 
 ## API

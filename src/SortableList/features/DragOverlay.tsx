@@ -45,6 +45,7 @@ const Overlay: FC<OverlayProps> = ({ prefixCls }) => {
         <Item
           id={activeId}
           dragOverlay
+          index={activeIndex}
           item={items[activeIndex]}
           prefixCls={prefixCls}
           renderItem={renderItem}
