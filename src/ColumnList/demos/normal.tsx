@@ -1,3 +1,7 @@
+/**
+ * title: 基础使用
+ * description: 通过配置 `columns` 渲染排序表单
+ */
 import type { ColumnItemList } from '@ant-design/pro-editor';
 import { ColumnList } from '@ant-design/pro-editor';
 type SchemaItem = {
@@ -6,12 +10,14 @@ type SchemaItem = {
 };
 
 const initialValues = [
-  { title: '序号', dataIndex: 'index' },
+  { id: 'index', title: '序号', valueType: 'indexBorder', dataIndex: 'index' },
   {
+    id: 'name',
     title: '授权企业名称',
+    valueType: 'text',
     dataIndex: 'name',
   },
-  { title: '被授权企业', dataIndex: 'authCompany' },
+  { id: 'authCompany', title: '被授权企业', valueType: 'text', dataIndex: 'authCompany' },
 ];
 
 const columns: ColumnItemList<SchemaItem> = [

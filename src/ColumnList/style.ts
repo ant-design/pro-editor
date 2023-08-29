@@ -1,6 +1,8 @@
-import { createStyles } from '../theme';
+import { createStyles, getStudioStylish } from '../theme';
 
-export const useStyle = createStyles(({ token, css, cx }, prefixCls) => {
+export const useStyle = createStyles((props, prefixCls) => {
+  const { token, css, cx } = props;
+  const common = getStudioStylish(props);
   return {
     content: cx(
       `${prefixCls}-content`,
@@ -18,6 +20,15 @@ export const useStyle = createStyles(({ token, css, cx }, prefixCls) => {
       css`
         color: ${token.colorTextTertiary};
       `,
+    ),
+    btnAdd: cx(
+      `${prefixCls}-btn-add`,
+      css`
+        height: 24px;
+        padding-block: 2px;
+        margin-top: ${token.marginXXS}px;
+      `,
+      common.defaultButton,
     ),
   };
 });

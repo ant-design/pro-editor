@@ -27,7 +27,9 @@ export default () => {
           key={'edit'}
           tabIndex={-1}
           onClick={() => {
-            ref.current.addItem({ title: `new-${randomIndex()}` });
+            const id = `id-${listData.length}-${randomIndex()}`;
+            ref.current.addItem({ id, title: `new-${id}` });
+            ref.current.addItem({ id: 'xxx', title: '111' });
           }}
         />
       </Flexbox>
@@ -37,12 +39,6 @@ export default () => {
         onChange={(data) => {
           console.log('data', data);
           setListData(data);
-        }}
-        creatorButtonProps={{
-          showInList: false,
-          record: (index) => ({
-            title: `${index}-${randomIndex()}`,
-          }),
         }}
         renderContent={(item, index) => <ItemRender item={item} index={index} />}
       />

@@ -11,6 +11,7 @@ export const useStyle = createStyles((props, prefixCls: string) => {
         height: 24px;
         padding-block: 2px;
         margin-top: ${token.marginXXS}px;
+        margin-bottom: ${token.marginXXS}px;
       `,
       common.defaultButton,
     ),

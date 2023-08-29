@@ -1,40 +1,15 @@
-import type { DraggableSyntheticListeners } from '@dnd-kit/core';
-import type { Transform } from '@dnd-kit/utilities';
 import { useToken } from '../../../theme';
 /* eslint-disable consistent-return */
 import classNames from 'classnames';
-import { PropsWithChildren, forwardRef, memo, useEffect } from 'react';
+import { forwardRef, memo, useEffect } from 'react';
 import { Flexbox } from 'react-layout-kit';
+import { BaseItemProps } from '../../type';
 
 import { DeleteAction, HandleAction } from '../../../ActionIcon';
-import { UniqueIdentifier } from '../../type';
 import { useStyle } from './style';
 
-export interface ItemProps {
-  dragOverlay?: boolean;
-  color?: string;
-  disabled?: boolean;
-  dragging?: boolean;
-  handle?: boolean;
-  height?: number;
-  index?: number;
-  fadeIn?: boolean;
-  hideRemove?: boolean;
-  compact?: boolean;
-  transform?: Transform | null;
-  listeners?: DraggableSyntheticListeners;
-  sorting?: boolean;
-  className?: string;
-  style?: React.CSSProperties;
-  transition?: string | null;
-  id: UniqueIdentifier;
-  onRemove?: () => void;
-  actions?: React.ReactNode[];
-  prefixCls?: string;
-}
-
 const Item = memo(
-  forwardRef<HTMLLIElement, PropsWithChildren<ItemProps>>(
+  forwardRef<HTMLLIElement, BaseItemProps>(
     (
       {
         color,
@@ -46,16 +21,17 @@ const Item = memo(
         index,
         listeners,
         onRemove,
+        item,
+        renderItem,
+        renderContent,
         hideRemove = false,
-        compact = false,
-        children,
         sorting,
         style,
+        actions,
         transition,
         transform,
         id,
         className,
-        actions,
         prefixCls,
         ...props
       },
@@ -109,52 +85,57 @@ const Item = memo(
             })}
             style={{
               ...style,
-              backgroundColor: compact ? undefined : token.colorBgContainer,
+              backgroundColor: token.colorBgContainer,
             }}
             data-cypress="draggable-item"
             {...(!handle ? listeners : undefined)}
             {...props}
             tabIndex={!handle ? 0 : undefined}
           >
-            <Flexbox className={styles.content} direction={'horizontal'} align={'center'}>
-              <Flexbox
-                className={classNames(styles.actionsLeft, styles.actions)}
-                direction={'horizontal'}
-              >
+            {renderItem ? (
+              renderItem(item, {
+                dragOverlay: Boolean(dragOverlay),
+                dragging: Boolean(dragging),
+                sorting: Boolean(sorting),
+                index,
+                fadeIn: Boolean(fadeIn),
+                listeners,
+                ref,
+                style,
+                transform,
+                transition,
+              })
+            ) : (
+              <Flexbox className={styles.content} direction={'horizontal'} align={'center'}>
                 {handle ? (
                   <HandleAction
                     tabIndex={-1}
+                    className={classNames(styles.actions)}
                     cursor="grab"
                     data-cypress="draggable-handle"
-                    style={
-                      compact
-                        ? undefined
-                        : {
-                            position: 'absolute',
-                            left: '-13px',
-                          }
-                    }
+                    style={{ width: 14, height: 24 }}
                     {...listeners}
                   />
                 ) : null}
-              </Flexbox>
-              {children ? (
-                children
-              ) : (
-                <Flexbox flex={1} style={{ paddingLeft: 4 }}>
-                  {id}
-                </Flexbox>
-              )}
-              <Flexbox
-                className={classNames(styles.actions, compact ? styles.actionsRight : undefined)}
-                direction={'horizontal'}
-              >
-                {actions}
-                {hideRemove ? null : (
-                  <DeleteAction tabIndex={-1} onClick={onRemove} style={{ height: 22 }} />
+                {renderContent ? (
+                  renderContent(item, index)
+                ) : (
+                  <Flexbox flex={1} style={{ paddingLeft: 4 }}>
+                    {id}
+                  </Flexbox>
                 )}
+                <Flexbox
+                  className={classNames(styles.actions, styles.actionsRight)}
+                  direction={'horizontal'}
+                  align="center"
+                >
+                  {typeof actions === 'function' ? actions(item, index) : actions}
+                  {hideRemove ? null : (
+                    <DeleteAction tabIndex={-1} onClick={onRemove} style={{ height: 22 }} />
+                  )}
+                </Flexbox>
               </Flexbox>
-            </Flexbox>
+            )}
           </div>
         </li>
       );

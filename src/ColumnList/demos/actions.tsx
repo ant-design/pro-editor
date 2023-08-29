@@ -1,3 +1,7 @@
+/**
+ * title: 自定义操作
+ * description: 可以通过 `actions` 属性自定义操作列
+ */
 import { EditFilled } from '@ant-design/icons';
 import type { ColumnItemList } from '@ant-design/pro-editor';
 import { ActionIcon, ColumnList } from '@ant-design/pro-editor';
@@ -11,13 +15,14 @@ type SchemaItem = {
 };
 
 const initialValues = [
-  { title: '序号', valueType: 'indexBorder', dataIndex: 'index' },
+  { id: 'index', title: '序号', valueType: 'indexBorder', dataIndex: 'index' },
   {
+    id: 'name',
     title: '授权企业名称',
     valueType: 'text',
     dataIndex: 'name',
   },
-  { title: '被授权企业', valueType: 'text', dataIndex: 'authCompany' },
+  { id: 'authCompany', title: '被授权企业', valueType: 'text', dataIndex: 'authCompany' },
 ];
 
 const columns: ColumnItemList<SchemaItem> = [

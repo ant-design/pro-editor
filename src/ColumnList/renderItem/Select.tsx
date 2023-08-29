@@ -39,7 +39,6 @@ const ControlSelect = memo<ItemRenderProps>(
         style={style}
         options={options}
         className={styles.select}
-        allowClear
         value={value}
         onClear={() => {
           instance.updateItem({ [dataIndex]: null }, index);

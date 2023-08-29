@@ -1,6 +1,6 @@
 /**
- * title: renderContent
- * description: 提供 `renderContent()` 方法由用户自定义列表项，更加灵活。
+ * title: 自定义列表项内容
+ * description: 提供 `renderContent` 由用户自定义除拖拽等操作外的列表项内容。
  */
 import { SortableList } from '@ant-design/pro-editor';
 import ItemRender from './_ItemRender';

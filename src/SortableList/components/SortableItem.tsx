@@ -1,38 +1,27 @@
 import { useSortable } from '@dnd-kit/sortable';
-import type { PropsWithChildren } from 'react';
-import { UniqueIdentifier } from '../type';
+import type { SortableItemProps } from '../type';
 import Item from './Item';
-
-interface SortableItemProps {
-  disabled?: boolean;
-  id: UniqueIdentifier;
-  index: number;
-  useDragOverlay?: boolean;
-  onRemove?: (index: number) => void;
-  children: React.ReactNode;
-  actions?: React.ReactNode[];
-  prefixCls?: string;
-  hideRemove?: boolean;
-  compact?: boolean;
-}
 
 export default function SortableItem({
   disabled,
   id,
   index,
-  actions,
   onRemove,
   useDragOverlay = true,
-  children,
+  getItemStyles,
+  renderItem,
+  renderContent,
+  item,
+  actions,
   prefixCls,
   hideRemove = false,
-  compact = false,
-}: PropsWithChildren<SortableItemProps>) {
+}: SortableItemProps) {
   const {
     attributes,
     isDragging,
     isSorting,
     listeners,
+    overIndex,
     setNodeRef, // 标记可以 droppable 的容器
     transform,
     transition,
@@ -46,24 +35,34 @@ export default function SortableItem({
       ref={setNodeRef}
       key={id}
       id={id}
+      // 数据
+      item={item}
       disabled={disabled}
       dragging={isDragging}
       sorting={isSorting}
-      compact={compact}
       hideRemove={hideRemove}
-      index={index}
       actions={actions}
+      index={index}
       onRemove={onRemove ? () => onRemove(index) : undefined}
       transform={transform}
       transition={!useDragOverlay && isDragging ? 'none' : transition}
+      renderItem={renderItem}
+      renderContent={renderContent}
+      // 样式
+      style={getItemStyles({
+        index,
+        id,
+        isDragging,
+        isSorting,
+        overIndex,
+        isDragOverlay: false,
+      })}
       listeners={listeners}
       data-index={index}
       data-id={id}
       dragOverlay={!useDragOverlay && isDragging}
       prefixCls={prefixCls}
       {...attributes}
-    >
-      {children}
-    </Item>
+    />
   );
 }

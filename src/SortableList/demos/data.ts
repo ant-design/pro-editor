@@ -1,7 +1,9 @@
-export type SchemaItem = {
+import { SortableItem } from '@ant-design/pro-editor';
+
+export type SchemaItem = SortableItem<{
   title?: string;
   dataIndex?: string;
-};
+}>;
 
 export interface ItemRenderProps {
   item: SchemaItem;
@@ -19,12 +21,13 @@ export const fieldStyle: React.CSSProperties = {
 };
 
 export const INIT_VALUES = [
-  { title: '序号', dataIndex: 'indexBorder' },
+  { id: 'index', title: '序号', dataIndex: 'indexBorder' },
   {
+    id: 'authName',
     title: '授权企业名称',
     dataIndex: 'text',
   },
-  { title: '被授权企业', dataIndex: 'select' },
+  { id: 'authedName', title: '被授权企业', dataIndex: 'select' },
 ];
 
 /*

@@ -12,29 +12,16 @@ demo:
 
 ## 何时使用
 
-简单排序表单场景。
+针对可排序列表场景提供基础底层封装，可在其上进行进一步自定义，参考 `ColumnList`。
 
 ## 基础使用
 
 <code src="./demos/Basic.tsx" ></code>
 <code src="./demos/controlled.tsx" ></code>
-<code src="./demos/empty.tsx" ></code>
-
-## 自定义样式
-
-<code src="./demos/compact.tsx" ></code>
-<code src="./demos/header.tsx" ></code>
+<code src="./demos/getItemStyles.tsx" ></code>
+<code src="./demos/renderItem.tsx" ></code>
 <code src="./demos/renderContent.tsx" ></code>
-<code src="./demos/actions.tsx" ></code>
-
-### 自定义创建按钮
-
-提供 `creatorButtonProps` 属性方便配置自定义创建按钮的文案和初始化生成逻辑:
-
-- 无数据时添加一列按钮会成为空状态引导项，可以用 `showInEmpty` 配置项控制显示隐藏。
-- 有数据时添加一列按钮默认显示在列表下方，可以用 `showInList` 配置项控制显示隐藏。
-
-<code src="./demos/custom.tsx" ></code>
+<code src="./demos/creatorButtonProps.tsx" ></code>
 
 ## 程序化控制
 
@@ -58,22 +45,108 @@ demo:
 | value              | `T[]`                                                            | 值                                 |
 | initialValues      | `T[]`                                                            | 初始值                             |
 | onChange           | `(value: T[], event: ListDataDispatchPayload) => void`           | 值变化                             |
-| renderContent      | `(item: T, index: number) => ReactNode`                          | 渲染内容区域                       |
-| actions            | `(item: T, index: number) => ReactNode[]` \| `React.ReactNode[]` | 除列表自带操作之外的其他操作自渲染 |
-| renderHeader       | `() => React.ReactNode`                                          | 渲染头部区域                       |
+| renderContent      | `(item: T, index: number) => ReactNode`                          | 自定义可排序列表项内容             |
+| renderItem         | `(item: T, options) => ReactNode`                                | 自定义可排序列表项                 |
+| getItemStyle       | `(status: GetItemStylesArgs) => ReactNode`                       | 自定义容器样式                     |
 | ref                | `ForwardedRef<SortableListRef<T>>`                               | 对外部暴露方法                     |
-| creatorButtonProps | CreatorButtonProps                                               | 新建对象相关属性                   |
-| compact            | `boolean`                                                        | 紧凑模式, 默认为 false             |
 | hideRemove         | `boolean`                                                        | 是否隐藏删除按钮，默认为 false     |
+| creatorButtonProps | `CreatorButtonProps\|false`                                      | 新建对象相关属性                   |
+| actions            | `(item: T, index: number) => ReactNode[]` \| `React.ReactNode[]` | 除列表自带操作之外的其他操作自渲染 |
 
 ### CreatorButtonProps 创建按钮属性
 
-| 属性名            | 类型                                     | 描述                       |
-| ----------------- | ---------------------------------------- | -------------------------- |
-| showInList        | `boolean`                                | 列表有值时是否展示添加按钮 |
-| showInEmpty       | `boolean`                                | 空数据时是否展示添加按钮   |
-| record            | `(index: number) => Record<string, any>` | 生成初始值逻辑             |
-| creatorButtonText | `string`                                 | 新增一行按钮文案           |
+| 属性名            | 类型                                     | 描述                 |
+| ----------------- | ---------------------------------------- | -------------------- | --- |
+| position          | `'bottom'\|'top'`                        | 按钮位置，默认在下方 |
+| record            | `(index: number) => Record<string, any>` | 生成初始值逻辑       |
+| creatorButtonText | `string`                                 | 新增一行按钮文案     |     |
+
+### GetItemStylesArgs
+
+`getItemStyle` 用于自定义可排序项的容器样式，其方法定义如下:
+
+```typescript
+interface GetItemStylesArgs {
+  /**
+   * 当前列表项索引
+   */
+  index: number;
+  /**
+   * 是否在拖拽中
+   */
+  isDragging: boolean;
+  /**
+   * 当前列表项 ID
+   */
+  id: UniqueIdentifier;
+  /**
+   * 是否在排序中
+   */
+  isSorting: boolean;
+  /**
+   * 拖拽覆盖的列表项索引
+   */
+  overIndex: number;
+  /**
+   * 是否是拖拽中的列表项
+   */
+  isDragOverlay: boolean;
+}
+
+type GetItemStyles = (status: GetItemStylesArgs) => React.CSSProperties;
+```
+
+### RenderItem 参数
+
+`renderItem` 方法用于更大自由度地定义列表项，包括拖拽，删除，添加，列表项内容等部分，其参数暴露如下：
+
+```typescript
+export type RenderItem<T = SortableItem> = (
+  item: T,
+  options: {
+    /**
+     * 是否是被拖出的列表项
+     */
+    dragOverlay: boolean;
+    /**
+     * 是否在拖拽中
+     */
+    dragging: boolean;
+    /**
+     * 是否在排序中
+     */
+    sorting: boolean;
+    /**
+     * 当前列表项索引
+     */
+    index: number | undefined;
+    /**
+     * fade 动画
+     */
+    fadeIn: boolean;
+    /**
+     * 拖拽项监听器
+     */
+    listeners: DraggableSyntheticListeners;
+    /**
+     * ref
+     */
+    ref: Ref<HTMLElement>;
+    /**
+     * 当面列表项传入样式
+     */
+    style: CSSProperties | undefined;
+    /**
+     * 当面列表项 transform 动画
+     */
+    transform: any;
+    /**
+     * 当面列表项 transition 动画
+     */
+    transition: any;
+  },
+) => ReactElement;
+```
 
 ### SortableListDispatchPayload
 

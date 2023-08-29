@@ -1,18 +1,19 @@
 /**
- * title: 自定义表单
- * description: 目前支持 `input` 和 `select`, `custom` 三种表单类型.
+ * title: 自定义初始化
+ * description: 可通过 `creatorButtonProps` 来自定义初始化逻辑
  */
 import type { ColumnItemList } from '@ant-design/pro-editor';
-import { ColorPicker, ColumnList } from '@ant-design/pro-editor';
+import { ColumnList } from '@ant-design/pro-editor';
+
 import { tableColumnValueOptions } from './mock_data/options';
 
 type SchemaItem = {
   title: string;
-  valueType: string;
+  valueType?: string;
   dataIndex: string;
 };
 
-const initialValues = [
+const INIT_VALUES = [
   { id: 'orderId', dataIndex: 'orderId', valueType: 'text', title: '订单id', color: undefined },
   {
     id: 'orderNumber',
@@ -79,6 +80,11 @@ const initialValues = [
   },
 ];
 
+/**
+ * 创建一个随机的索引标记符
+ */
+export const randomIndex = () => Math.random() * 10000;
+
 const columns: ColumnItemList<SchemaItem> = [
   {
     title: '列标题',
@@ -96,29 +102,21 @@ const columns: ColumnItemList<SchemaItem> = [
     dataIndex: 'dataIndex',
     type: 'select',
   },
-  {
-    title: '颜色',
-    dataIndex: 'color',
-    type: 'custom',
-    render: ({ value, onChange }) => {
-      return (
-        <ColorPicker
-          value={value}
-          size="small"
-          onChangeComplete={(value) => onChange(value.toHexString())}
-          showText
-        />
-      );
-    },
-  },
 ];
 
 export default () => (
   <ColumnList<SchemaItem>
     columns={columns}
-    initialValues={initialValues}
+    initialValues={INIT_VALUES}
     onChange={(values) => {
       console.log('onChange', values);
+    }}
+    creatorButtonProps={{
+      position: 'top',
+      record: (index) => ({
+        id: randomIndex(),
+        dataIndex: `${index}-${randomIndex()}`,
+      }),
     }}
   />
 );

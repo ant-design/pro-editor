@@ -68,10 +68,6 @@ export const useStyle = createStyles(({ css, cx, token }, prefixCls: string) => 
             box-shadow: ${boxShadow};
           }
         }
-
-        &:hover .${prefixCls}-item-actions {
-          opacity: 1;
-        }
       `,
     ),
     disabled: cx(
@@ -140,25 +136,22 @@ export const useStyle = createStyles(({ css, cx, token }, prefixCls: string) => 
         opacity: 0;
       `,
     ),
-    actionsLeft: cx(
-      `${prefixCls}-item-actions-left`,
+    content: cx(
+      `${prefixCls}-item-content`,
       css`
-        position: absolute;
-        top: 0;
-        left: 0;
+        position: relative;
+        width: 100%;
+        height: 24px;
+        border-radius: 2px;
+        min-width: 48px;
 
-        .studio-btn.studio-btn-sm.studio-btn-icon-only {
-          width: 14px;
-          height: 24px;
-          > svg {
-            width: 14px;
-          }
+        &:hover .${prefixCls}-item-actions {
+          opacity: 1;
         }
       `,
     ),
-
     actionsRight: cx(
-      `${prefixCls}-item-actions-right`,
+      `${prefix}-actions-right`,
       css`
         position: absolute;
         top: 1px;
@@ -169,17 +162,6 @@ export const useStyle = createStyles(({ css, cx, token }, prefixCls: string) => 
         // 采用背景模糊来解决多种背景色下覆盖内容的问题 TODO：FireFox 兼容
         backdrop-filter: blur(5px);
         //background-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, @bg-2 10%, @bg-2 100%);
-
-        .tech-studio-actionicon-icon {
-          height: 22px;
-        }
-      `,
-    ),
-    content: cx(
-      `${prefixCls}-item-content`,
-      css`
-        position: relative;
-        width: 100%;
       `,
     ),
   };

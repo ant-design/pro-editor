@@ -1,7 +1,8 @@
 import type { DragEndEvent, DragStartEvent } from '@dnd-kit/core';
 import isEqual from 'lodash.isequal';
 import type { StateCreator } from 'zustand/vanilla';
-import type { State } from './initialState';
+import type { SortableListState } from '../type';
+import { SortableListDispatchPayload } from '../type';
 import { initialState } from './initialState';
 import { listDataReducer } from './listDataReducer';
 
@@ -10,11 +11,10 @@ interface Action {
   handleDragStart: (event: DragStartEvent) => void;
   handleDragEnd: (event: DragEndEvent) => void;
   handleDragCancel: () => void;
-  dispatchListData: (payload: any) => void;
-  getActiveIndex: () => number;
+  dispatchListData: (payload: SortableListDispatchPayload) => void;
 }
 
-export type Store = State & Action;
+export type Store = SortableListState & Action;
 
 const vanillaStore: StateCreator<Store, [['zustand/devtools', never]]> = (set, get) => ({
   ...initialState,
@@ -40,22 +40,13 @@ const vanillaStore: StateCreator<Store, [['zustand/devtools', never]]> = (set, g
   },
   // ===== 更新 listData 方法 ======= //
   dispatchListData: (payload) => {
-    const { value, onChange, keyManager } = get();
-    const { data, manager } = listDataReducer(value, keyManager, payload) || {};
+    const { value, onChange } = get();
+    const data = listDataReducer(value, payload);
     if (data) {
       if (isEqual(value, data)) return;
       set({ value: data });
       if (onChange) onChange(data, payload);
     }
-    if (manager) {
-      set({ keyManager: manager });
-    }
-  },
-
-  getActiveIndex: () => {
-    const { keyManager, activeId } = get();
-    const activeIndex = activeId ? keyManager.keys.indexOf(activeId) : -1;
-    return activeIndex;
   },
 });
 

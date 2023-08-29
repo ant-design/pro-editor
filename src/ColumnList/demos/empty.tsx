@@ -1,3 +1,7 @@
+/**
+ * title: 空状态
+ * description: 当表单值为空时，会渲染空状态
+ */
 import { EditFilled } from '@ant-design/icons';
 import type { ColumnItemList } from '@ant-design/pro-editor';
 import { ActionIcon, ColumnList } from '@ant-design/pro-editor';
