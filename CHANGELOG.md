@@ -1,5 +1,44 @@
 # Changelog
 
+## [Version&nbsp;0.14.0](https://github.com/ant-design/pro-editor/compare/v0.13.1...v0.14.0)
+
+<sup>Released on **2023-08-29**</sup>
+
+#### ✨ 新特性
+
+- Auto generate id, support getItemStyles, 将创建按钮迁移到 columnList, 自定义创建按钮, 迁移 creatorButtonProps 属性到 columnList.
+
+#### 🐛 修复
+
+- Column list action lost, 修复 columnList ts error, 修复拖拽时 hideRemove 按钮仍在的问题.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's improved
+
+- Auto generate id ([976f556](https://github.com/ant-design/pro-editor/commit/976f556))
+- Support getItemStyles ([3f9024d](https://github.com/ant-design/pro-editor/commit/3f9024d))
+- 将创建按钮迁移到 columnList ([299c629](https://github.com/ant-design/pro-editor/commit/299c629))
+- 自定义创建按钮 ([7c1c21d](https://github.com/ant-design/pro-editor/commit/7c1c21d))
+- 迁移 creatorButtonProps 属性到 columnList ([7a59f12](https://github.com/ant-design/pro-editor/commit/7a59f12))
+
+#### What's fixed
+
+- Column list action lost ([3dd48b2](https://github.com/ant-design/pro-editor/commit/3dd48b2))
+- 修复 columnList ts error ([02b4f84](https://github.com/ant-design/pro-editor/commit/02b4f84))
+- 修复拖拽时 hideRemove 按钮仍在的问题 ([728c558](https://github.com/ant-design/pro-editor/commit/728c558))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
 ## [Version&nbsp;0.2.0](https://github.com/ant-design/pro-editor/compare/v0.1.1...v0.2.0)
 
 <sup>Released on **2023-08-28**</sup>
