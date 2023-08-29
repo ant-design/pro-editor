@@ -1,3 +1,8 @@
+/**
+ * title: 浮动面板中使用
+ * description: 配合 DraggablePanel 可以使得整个面板可浮动拖拽
+ */
+
 import type { Position } from '@ant-design/pro-editor';
 import { ActionGroup, DraggablePanel } from '@ant-design/pro-editor';
 import { useLocalStorageState } from 'ahooks';
