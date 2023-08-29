@@ -1,3 +1,4 @@
+import { CopyOutlined, DragOutlined, ZoomInOutlined, ZoomOutOutlined } from '@ant-design/icons';
 import { ActionGroup } from '@ant-design/pro-editor';
 import { InputNumber, Segmented, Space } from 'antd';
 import { useState } from 'react';
@@ -24,7 +25,28 @@ export default () => {
       )}
 
       <Segmented options={['row', 'column']} value={direction} onChange={setDirection} />
-      <ActionGroup type={type} size={size === 'number' ? number : size} direction={direction} />
+      <ActionGroup
+        type={type}
+        size={size === 'number' ? number : size}
+        direction={direction}
+        items={[
+          {
+            icon: <CopyOutlined />,
+          },
+          {
+            icon: <ZoomInOutlined />,
+          },
+          {
+            icon: <ZoomOutOutlined />,
+          },
+          {
+            type: 'divider',
+          },
+          {
+            icon: <DragOutlined />,
+          },
+        ]}
+      />
     </Space>
   );
 };

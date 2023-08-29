@@ -35,6 +35,9 @@ export default () => {
             label: '缩小！',
           },
           {
+            type: 'divider',
+          },
+          {
             icon: <DragOutlined />,
             onClick: () => {
               messageApi.loading('快速定位ing');
