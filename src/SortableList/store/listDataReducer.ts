@@ -3,7 +3,7 @@ import { produce } from 'immer';
 import merge from 'lodash.merge';
 import { SortableListDispatchPayload } from '../type';
 
-export const listDataReducer = (value: any[], getId, payload: SortableListDispatchPayload) => {
+export const listDataReducer = (value: any[], payload: SortableListDispatchPayload) => {
   switch (payload.type) {
     case 'moveItem':
       const { activeIndex, overIndex } = payload;
