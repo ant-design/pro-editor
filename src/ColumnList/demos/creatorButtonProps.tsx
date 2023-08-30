@@ -2,7 +2,7 @@
  * title: 自定义初始化
  * description: 可通过 `creatorButtonProps` 来自定义初始化逻辑
  */
-import type { ColumnItemList } from '@ant-design/pro-editor';
+import type { ColumnItemList, SortableItem } from '@ant-design/pro-editor';
 import { ColumnList } from '@ant-design/pro-editor';
 
 import { tableColumnValueOptions } from './mock_data/options';
@@ -11,7 +11,7 @@ type SchemaItem = {
   title: string;
   valueType?: string;
   dataIndex: string;
-};
+} & SortableItem;
 
 const INIT_VALUES = [
   { id: 'orderId', dataIndex: 'orderId', valueType: 'text', title: '订单id', color: undefined },
