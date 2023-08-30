@@ -1,5 +1,6 @@
 /**
  * title: 默认使用
+ * description: 默认内容区域渲染 `id`，可通过 `renderContent` 来自定义渲染内容。
  * compact: true
  */
 import { SortableList } from '@ant-design/pro-editor';
