@@ -35,9 +35,8 @@ const selector = (s: Store) => ({
   handleDragStart: s.handleDragStart,
   handleDragCancel: s.handleDragCancel,
   handleDragEnd: s.handleDragEnd,
+  getId: s.getId,
 });
-
-const dataSelector = (s: Store) => s.value;
 
 export interface AppProps {
   /**
@@ -55,9 +54,9 @@ export interface AppProps {
 }
 
 const App: FC<AppProps> = ({ className, style, prefixCls: customPrefixCls }) => {
-  const { handleDragStart, handleDragCancel, handleDragEnd } = useStore(selector, shallow);
+  const { handleDragStart, handleDragCancel, handleDragEnd, getId } = useStore(selector, shallow);
 
-  const items = useStore(dataSelector, isEqual);
+  const items = useStore((s) => s.value, isEqual);
 
   const prefixCls = getPrefixCls('sortable-list', customPrefixCls);
 
@@ -85,7 +84,13 @@ const App: FC<AppProps> = ({ className, style, prefixCls: customPrefixCls }) => 
         onDragCancel={handleDragCancel}
         modifiers={[restrictToVerticalAxis, restrictToWindowEdges]}
       >
-        <SortableContext items={items} strategy={verticalListSortingStrategy}>
+        <SortableContext
+          items={items.map((item, index) => ({
+            ...item,
+            id: getId(item, index),
+          }))}
+          strategy={verticalListSortingStrategy}
+        >
           <SortList prefixCls={prefixCls} />
           {overlay}
         </SortableContext>

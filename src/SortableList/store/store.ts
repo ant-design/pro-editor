@@ -3,6 +3,7 @@ import isEqual from 'lodash.isequal';
 import type { StateCreator } from 'zustand/vanilla';
 import type { SortableListState } from '../type';
 import { SortableListDispatchPayload } from '../type';
+import { getIndexOfActiveItem } from '../utils';
 import { initialState } from './initialState';
 import { listDataReducer } from './listDataReducer';
 
@@ -25,12 +26,13 @@ const vanillaStore: StateCreator<Store, [['zustand/devtools', never]]> = (set, g
     set({ activeId });
   },
   handleDragEnd: ({ over, active }) => {
-    const { dispatchListData } = get();
+    const { dispatchListData, value, getId } = get();
     if (over) {
       dispatchListData({
         type: 'moveItem',
-        activeId: active.id,
-        targetId: over.id,
+        activeIndex: getIndexOfActiveItem(value, getId, active.id),
+
+        overIndex: getIndexOfActiveItem(value, getId, over.id),
       });
     }
     set({ activeId: null });
@@ -40,8 +42,8 @@ const vanillaStore: StateCreator<Store, [['zustand/devtools', never]]> = (set, g
   },
   // ===== 更新 listData 方法 ======= //
   dispatchListData: (payload) => {
-    const { value, onChange } = get();
-    const data = listDataReducer(value, payload);
+    const { value, onChange, getId } = get();
+    const data = listDataReducer(value, getId, payload);
     if (data) {
       if (isEqual(value, data)) return;
       set({ value: data });

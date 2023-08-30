@@ -1,7 +1,7 @@
 import type { UniqueIdentifier } from '@dnd-kit/core';
 import isEqual from 'lodash.isequal';
 import { useEffect, useState } from 'react';
-import type { SortableItemList } from '../type';
+import type { SortableItem } from '../type';
 
 const defaultInitializer = (index: number) => index;
 
@@ -62,9 +62,10 @@ export const useLatest = (props: any) => {
   return [state, setState];
 };
 
-export const getIndexOfActiveItem = <T extends SortableItemList = SortableItemList>(
-  list: T,
+export const getIndexOfActiveItem = <T extends SortableItem>(
+  list: T[],
+  getId: (item: T, index: number) => UniqueIdentifier,
   id?: UniqueIdentifier,
 ) => {
-  return id ? list.findIndex((i) => i.id === id) : -1;
+  return id ? list.findIndex((item, index) => getId(item, index) === id) : -1;
 };

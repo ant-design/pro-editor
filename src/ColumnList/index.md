@@ -24,7 +24,7 @@ demo:
 
 ## API
 
-提供封装的 `columns` 配置，其他属性参考 `SortableList`，`SortableItem` 表示值中必须要有 `id` 属性作为唯一键值。
+提供封装的 `columns` 配置，其他属性参考 `SortableList`
 
 | 属性名  | 类型                         | 描述     |
 | ------- | ---------------------------- | -------- |
