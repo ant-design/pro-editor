@@ -2,6 +2,8 @@
 title: ActionGroup 工具面板
 atomId: ActionGroup
 group: 基础组件
+demo:
+  cols: 2
 ---
 
 # ActionGroup 工具面板
@@ -12,28 +14,11 @@ group: 基础组件
 
 ## 代码演示
 
-### 基础
-
 <code src="./demos/basic.tsx" ></code>
-
-### 使用配置
-
 <code src="./demos/config.tsx" ></code>
-
-### 使用 dropdownMenu 扩展更多内容
-
 <code src="./demos/dropMenu.tsx" ></code>
-
-### 类型、大小和方向调整
-
 <code src="./demos/type.tsx" ></code>
-
-### 高度自定义
-
 <code src="./demos/custom.tsx" ></code>
-
-### 使用浮动面板
-
 <code src="./demos/withPanel.tsx" iframe></code>
 
 ## API
