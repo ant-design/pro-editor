@@ -28,11 +28,13 @@ const vanillaStore: StateCreator<Store, [['zustand/devtools', never]]> = (set, g
   handleDragEnd: ({ over, active }) => {
     const { dispatchListData, value, getId } = get();
     if (over) {
+      const activeIndex = getIndexOfActiveItem(value, getId, active.id);
+      const overIndex = getIndexOfActiveItem(value, getId, over.id);
+
       dispatchListData({
         type: 'moveItem',
-        activeIndex: getIndexOfActiveItem(value, getId, active.id),
-
-        overIndex: getIndexOfActiveItem(value, getId, over.id),
+        activeIndex: activeIndex,
+        overIndex: overIndex,
       });
     }
     set({ activeId: null });
@@ -42,8 +44,8 @@ const vanillaStore: StateCreator<Store, [['zustand/devtools', never]]> = (set, g
   },
   // ===== 更新 listData 方法 ======= //
   dispatchListData: (payload) => {
-    const { value, onChange, getId } = get();
-    const data = listDataReducer(value, getId, payload);
+    const { value, onChange } = get();
+    const data = listDataReducer(value, payload);
     if (data) {
       if (isEqual(value, data)) return;
       set({ value: data });
