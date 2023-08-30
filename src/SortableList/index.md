@@ -30,32 +30,46 @@ demo:
 
 ### Basic 组件属性
 
-| 属性名             | 类型                                                             | 描述                               |
-| ------------------ | ---------------------------------------------------------------- | ---------------------------------- |
-| value              | `T[]`                                                            | 值                                 |
-| initialValues      | `T[]`                                                            | 初始值                             |
-| onChange           | `(value: T[], event: ListDataDispatchPayload) => void`           | 值变化                             |
-| renderContent      | `(item: T, index: number) => ReactNode`                          | 自定义可排序列表项内容             |
-| renderItem         | `(item: T, options) => ReactNode`                                | 自定义可排序列表项                 |
-| getItemStyle       | `(status: GetItemStylesArgs) => ReactNode`                       | 自定义容器样式                     |
-| ref                | `ForwardedRef<SortableListRef<T>>`                               | 对外部暴露方法                     |
-| hideRemove         | `boolean`                                                        | 是否隐藏删除按钮，默认为 false     |
-| creatorButtonProps | `CreatorButtonProps\|false`                                      | 新建对象相关属性                   |
-| actions            | `(item: T, index: number) => ReactNode[]` \| `React.ReactNode[]` | 除列表自带操作之外的其他操作自渲染 |
+`SortableItem` 表示值中必须要有 `id` 属性作为唯一键值。
+
+| 属性名             | 类型                                                                        | 描述                               |
+| ------------------ | --------------------------------------------------------------------------- | ---------------------------------- |
+| value              | `SortableItem[]`                                                            | 值                                 |
+| initialValues      | `SortableItem[]`                                                            | 初始值                             |
+| onChange           | `(value: SortableItem[], event: ListDataDispatchPayload) => void`           | 值变化                             |
+| renderContent      | `(item: SortableItem, index: number) => ReactNode`                          | 自定义可排序列表项内容             |
+| renderItem         | `(item: SortableItem, options) => ReactNode`                                | 自定义可排序列表项                 |
+| getItemStyle       | `(status: GetItemStylesArgs) => ReactNode`                                  | 自定义容器样式                     |
+| ref                | `ForwardedRef<SortableListRef<SortableItem>>`                               | 对外部暴露方法                     |
+| hideRemove         | `boolean`                                                                   | 是否隐藏删除按钮，默认为 false     |
+| creatorButtonProps | `CreatorButtonProps\|false`                                                 | 新建对象相关属性                   |
+| actions            | `(item: SortableItem, index: number) => ReactNode[]` \| `React.ReactNode[]` | 除列表自带操作之外的其他操作自渲染 |
 
 ### CreatorButtonProps 创建按钮属性
 
-| 属性名            | 类型                                     | 描述                 |
-| ----------------- | ---------------------------------------- | -------------------- | --- |
-| position          | `'bottom'\|'top'`                        | 按钮位置，默认在下方 |
-| record            | `(index: number) => Record<string, any>` | 生成初始值逻辑       |
-| creatorButtonText | `string`                                 | 新增一行按钮文案     |     |
+新增一行的时候要保证 `creatorButtonProps.record` id 值唯一，不然会导致组件逻辑出错。
+
+```tsx | pure
+<SortableList
+  creatorButtonProps={{
+    position: position as 'top',
+    // 每次新增的时候需要Key
+    record: () => ({ id: getNewId() }),
+  }}
+/>
+```
+
+| 属性名            | 类型                                           | 描述                 |
+| ----------------- | ---------------------------------------------- | -------------------- | --- |
+| position          | `'bottom'\|'top'`                              | 按钮位置，默认在下方 |
+| record            | `(index: number) => {id: string\|number, ...}` | 生成初始值逻辑       |
+| creatorButtonText | `string`                                       | 新增一行按钮文案     |     |
 
 ### GetItemStylesArgs
 
 `getItemStyle` 用于自定义可排序项的容器样式，其方法定义如下:
 
-```typescript
+```typescript | pure
 interface GetItemStylesArgs {
   /**
    * 当前列表项索引
@@ -90,7 +104,7 @@ type GetItemStyles = (status: GetItemStylesArgs) => React.CSSProperties;
 
 `renderItem` 方法用于更大自由度地定义列表项，包括拖拽，删除，添加，列表项内容等部分，其参数暴露如下：
 
-```typescript
+```tsx | pure
 export type RenderItem<T = SortableItem> = (
   item: T,
   options: {
@@ -142,14 +156,14 @@ export type RenderItem<T = SortableItem> = (
 
 组件通过 `onChange` 以及 `ForwardRef` 的方式暴露底层事件，你可以细粒度地控制列表的增删改查，移动，以及根据事件细粒度控制后续的行为链路。
 
-```ts
+```ts | pure
 // 新增节点
 interface AddItemAction {
   type: 'addItem';
   /**
    * 新增的节点
    */
-  item: any;
+  item: SortableItem;
   /**
    * 新增节点的位置，不传则默认在最后
    */
@@ -188,6 +202,6 @@ interface UpdateItemAction {
   /**
    * 修改后的节点内容
    */
-  item: any;
+  item: Partial<SortableItem>;
 }
 ```
