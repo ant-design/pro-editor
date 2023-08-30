@@ -23,8 +23,7 @@ const StoreUpdater = forwardRef(
     const useStoreUpdater = createStoreUpdater<StoreUpdaterProps>(storeApi);
 
     useStoreUpdater('value', initialValues, []);
-    useStoreUpdater('initialValues', initialValues);
-    useStoreUpdater('value', value);
+    useStoreUpdater('value', value, []);
     useStoreUpdater('actions', actions);
     useStoreUpdater('onChange', onChange);
     useStoreUpdater('renderItem', renderItem);

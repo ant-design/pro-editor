@@ -35,7 +35,7 @@ const columns: ColumnItemList<SchemaItem> = [
 ];
 
 export default () => {
-  const [value, setValue] = useState(null);
+  const [value, setValue] = useState([]);
   return (
     <ColumnList<SchemaItem>
       columns={columns}
