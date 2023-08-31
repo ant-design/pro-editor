@@ -1,5 +1,40 @@
 # Changelog
 
+## [Version&nbsp;0.16.0](https://github.com/ant-design/pro-editor/compare/v0.15.0...v0.16.0)
+
+<sup>Released on **2023-08-31**</sup>
+
+#### ✨ 新特性
+
+- 支持传入 getId 方法自定义 id 生成规则.
+
+#### 🐛 修复
+
+- DispatchListData error, 修复控制台报错, 去除自动生成 ID 的逻辑,改为由用户自行传递 ID.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's improved
+
+- 支持传入 getId 方法自定义 id 生成规则 ([74016a8](https://github.com/ant-design/pro-editor/commit/74016a8))
+
+#### What's fixed
+
+- DispatchListData error ([2852524](https://github.com/ant-design/pro-editor/commit/2852524))
+- 修复控制台报错 ([dadf4b3](https://github.com/ant-design/pro-editor/commit/dadf4b3))
+- 去除自动生成 ID 的逻辑，改为由用户自行传递 ID ([9026256](https://github.com/ant-design/pro-editor/commit/9026256))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
 ## [Version&nbsp;0.15.0](https://github.com/ant-design/pro-editor/compare/v0.14.1...v0.15.0)
 
 <sup>Released on **2023-08-30**</sup>
