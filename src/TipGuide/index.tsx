@@ -25,10 +25,6 @@ export interface TipGuideProps {
    */
   maxWidth?: number;
   /**
-   * 用于持久化该引导值状态
-   */
-  guideKey: string;
-  /**
    * 引导内容
    */
   children?: ReactNode;
@@ -71,7 +67,6 @@ const TipGuide: FC<TipGuideProps> = ({
   prefixCls: customPrefixCls,
   className,
   style,
-  guideKey,
   defaultOpen = true,
   open: outOpen,
   onOpenChange = () => {},
@@ -118,7 +113,7 @@ const TipGuide: FC<TipGuideProps> = ({
       }}
     >
       {open ? (
-        <div className={styles.container} key={guideKey}>
+        <div className={styles.container}>
           {children}
           <div
             className={styles.tip}

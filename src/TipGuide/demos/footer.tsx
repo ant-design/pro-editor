@@ -4,12 +4,10 @@ import { Button, Space } from 'antd';
 import { useState } from 'react';
 
 export default () => {
-  const guideKey = 'DEMO_KEY';
   const [open, setOpen] = useState(true);
 
   return (
     <TipGuide
-      guideKey={guideKey}
       open={open}
       placement="right"
       footerRender={() => {

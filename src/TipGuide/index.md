@@ -28,6 +28,10 @@ group: 基础组件
 
 <code src="./demos/footer.tsx" ></code>
 
+你还可以通过自定义和受控的方式使用 localStorage 来在业务中使用。
+
+<code src="./demos/localStorage.tsx" ></code>
+
 ### 偏移
 
 可以通过 `offsetY` 将引导点进行垂直方向偏移。
@@ -42,7 +46,6 @@ group: 基础组件
 | placement    | ToolTip 位置                        | `TooltipProps['placement']`               | 'bottom' |
 | offsetY      | 纵向偏移值                          | number                                    | -        |
 | maxWidth     | 最大宽度                            | number                                    | 300      |
-| guideKey     | 最用于持久化该引导值状态, 必填      | string                                    | -        |
 | open         | 受控的 open 属性                    | boolean                                   | -        |
 | onOpenChange | 当 open 属性变化时候的触发          | (open: boolean) => void                   | -        |
 | defaultOpen  | 默认时候的打开状态                  | boolean                                   | -        |
