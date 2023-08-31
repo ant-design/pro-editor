@@ -30,6 +30,7 @@ export * from './SortableList';
 export * from './SortableTree';
 export { default as TipGuide } from './TipGuide';
 export * from './antd';
+export * from './middleware';
 export * from './theme';
 export * from './types';
 export * from './utils';

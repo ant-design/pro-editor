@@ -43,7 +43,6 @@ const PickerPanel = () => {
         </Flexbox>
       ) : undefined}
       <Segmented
-        size={'small'}
         options={[
           { label: 'Ant Design', value: 'antd', icon: <AntDesignOutlined /> },
           { label: 'Iconfont', value: 'iconfont' },
