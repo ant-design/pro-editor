@@ -2,14 +2,12 @@ import { arrayMove } from '@dnd-kit/sortable';
 import { produce } from 'immer';
 import merge from 'lodash.merge';
 import { SortableListDispatchPayload } from '../type';
-import { getIndexOfActiveItem } from '../utils';
 
 export const listDataReducer = (value: any[], payload: SortableListDispatchPayload) => {
   switch (payload.type) {
     case 'moveItem':
-      const { activeId, targetId } = payload;
-      const activeIndex = getIndexOfActiveItem(value, activeId);
-      const overIndex = getIndexOfActiveItem(value, targetId);
+      const { activeIndex, overIndex } = payload;
+
       if (activeIndex === overIndex) return;
 
       if (

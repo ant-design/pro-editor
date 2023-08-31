@@ -1,8 +1,8 @@
 /**
  * title: 自定义初始化
- * description: 可通过 `creatorButtonProps` 来自定义初始化逻辑
+ * description: 可通过 `creatorButtonProps` 来自定义初始化逻辑，id 的生成逻辑是必须的。
  */
-import type { ColumnItemList } from '@ant-design/pro-editor';
+import type { ColumnItemList, SortableItem } from '@ant-design/pro-editor';
 import { ColumnList } from '@ant-design/pro-editor';
 
 import { tableColumnValueOptions } from './mock_data/options';
@@ -11,7 +11,7 @@ type SchemaItem = {
   title: string;
   valueType?: string;
   dataIndex: string;
-};
+} & SortableItem;
 
 const INIT_VALUES = [
   { id: 'orderId', dataIndex: 'orderId', valueType: 'text', title: '订单id', color: undefined },
@@ -81,7 +81,7 @@ const INIT_VALUES = [
 ];
 
 /**
- * 创建一个随机的索引标记符
+ * 创建一个随机的索引标记符，请勿在生产环境使用
  */
 export const randomIndex = () => Math.random() * 10000;
 

@@ -1,12 +1,12 @@
 import { useSortableList } from '@ant-design/pro-editor';
 import { Input, Select } from 'antd';
-import { useState } from 'react';
+import { memo, useState } from 'react';
 import { Flexbox } from 'react-layout-kit';
 import { ItemRenderProps, fieldStyle, tableColumnValueOptions } from './data';
 
 export const randomIndex = () => Math.random() * 10000;
 
-const ItemRender = ({ item, index, compact = false }: ItemRenderProps) => {
+const ItemRender = memo(({ item, index, compact = false }: ItemRenderProps) => {
   const instance = useSortableList();
   const [title, setTitle] = useState(item?.title);
   const [changed, setChanged] = useState(false);
@@ -63,6 +63,6 @@ const ItemRender = ({ item, index, compact = false }: ItemRenderProps) => {
       </div>
     </Flexbox>
   );
-};
+});
 
 export default ItemRender;

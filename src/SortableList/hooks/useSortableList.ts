@@ -12,6 +12,12 @@ export interface SortableListInstance {
    */
   getActiveId: () => UniqueIdentifier;
   /**
+   * 根据索引获取 id
+   * @param index
+   * @returns
+   */
+  getIdByIndex: (index: number) => UniqueIdentifier;
+  /**
    * 获取当前树的数据
    * @returns 当前树的数据
    */
@@ -42,6 +48,11 @@ export const useSortableList = (): SortableListInstance => {
   const storeApi = useStoreApi();
 
   const getActiveId = useMemoizedFn(() => storeApi.getState().activeId);
+  const getIdByIndex = useMemoizedFn((index?: number) => {
+    const { getId, value } = storeApi.getState();
+    const indexId = getId(value?.[index], index) || null;
+    return indexId;
+  });
   const getValue = useMemoizedFn(() => storeApi.getState().value);
   const addItem = (item?: SortableItem, index?: number) =>
     storeApi.getState().dispatchListData({ type: 'addItem', item, index });
@@ -55,6 +66,7 @@ export const useSortableList = (): SortableListInstance => {
     getValue,
     addItem,
     removeItem,
+    getIdByIndex,
     updateItem,
   };
 };

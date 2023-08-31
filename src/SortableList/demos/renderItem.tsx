@@ -1,6 +1,7 @@
 /**
  * title: 自定义排序项
  * description: 通过 `renderItem` 可以自定义每个排序项，相比于 `renderContent` 提供的自由度更大
+ * compact: true
  */
 import { SortableList, SortableListRef } from '@ant-design/pro-editor';
 import { Badge, Button } from 'antd';
@@ -29,26 +30,26 @@ const Demo = () => {
       <Flexbox horizontal gap={8}>
         <Button
           onClick={() => {
-            setList([
+            ref.current.addItem(
               {
                 id: Math.ceil(Math.random() * 100000).toString(16),
                 text: 'new',
               },
-              ...list,
-            ]);
+              0,
+            );
           }}
         >
           头部添加一项
         </Button>
         <Button
           onClick={() => {
-            setList([
-              ...list,
+            ref.current.addItem(
               {
                 id: Math.ceil(Math.random() * 100000).toString(16),
                 text: 'new',
               },
-            ]);
+              list.length,
+            );
           }}
         >
           尾部添加一项

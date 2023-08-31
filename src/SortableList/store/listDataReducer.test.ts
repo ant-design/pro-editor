@@ -17,8 +17,8 @@ describe('listDataReducer', () => {
     it('从第 2 项移动到第 0 项', () => {
       const data = listDataReducer(listData, {
         type: 'moveItem',
-        activeId: 3,
-        targetId: 1,
+        activeIndex: 2,
+        overIndex: 0,
       });
       expect(data).toEqual([listData[2], listData[0], listData[1]]);
     });

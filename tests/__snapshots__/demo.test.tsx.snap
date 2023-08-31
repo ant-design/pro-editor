@@ -2682,7 +2682,7 @@ exports[`<ColumnList /> > renders actions.tsx correctly 1`] = `
             >
               <input
                 class="studio-input studio-input-sm studio-column-list-content-tem emotion-13"
-                id="column-list-index-0"
+                id="column-list-0-index"
                 placeholder="请输入"
                 style="flex: 1; max-width: 33.333333333333336%;"
                 type="text"
@@ -2924,7 +2924,7 @@ exports[`<ColumnList /> > renders actions.tsx correctly 1`] = `
             >
               <input
                 class="studio-input studio-input-sm studio-column-list-content-tem emotion-13"
-                id="column-list-index-1"
+                id="column-list-1-name"
                 placeholder="请输入"
                 style="flex: 1; max-width: 33.333333333333336%;"
                 type="text"
@@ -3166,7 +3166,7 @@ exports[`<ColumnList /> > renders actions.tsx correctly 1`] = `
             >
               <input
                 class="studio-input studio-input-sm studio-column-list-content-tem emotion-13"
-                id="column-list-index-2"
+                id="column-list-2-authCompany"
                 placeholder="请输入"
                 style="flex: 1; max-width: 33.333333333333336%;"
                 type="text"
@@ -3777,7 +3777,7 @@ exports[`<ColumnList /> > renders column.tsx correctly 1`] = `
             >
               <input
                 class="studio-input studio-input-sm studio-column-list-content-tem emotion-14"
-                id="column-list-index-0"
+                id="column-list-0-orderId"
                 placeholder="请输入"
                 style="flex: 1; max-width: 25%;"
                 type="text"
@@ -4007,7 +4007,7 @@ exports[`<ColumnList /> > renders column.tsx correctly 1`] = `
             >
               <input
                 class="studio-input studio-input-sm studio-column-list-content-tem emotion-14"
-                id="column-list-index-1"
+                id="column-list-1-orderNumber"
                 placeholder="请输入"
                 style="flex: 1; max-width: 25%;"
                 type="text"
@@ -4237,7 +4237,7 @@ exports[`<ColumnList /> > renders column.tsx correctly 1`] = `
             >
               <input
                 class="studio-input studio-input-sm studio-column-list-content-tem emotion-14"
-                id="column-list-index-2"
+                id="column-list-2-orderMoney"
                 placeholder="请输入"
                 style="flex: 1; max-width: 25%;"
                 type="text"
@@ -4467,7 +4467,7 @@ exports[`<ColumnList /> > renders column.tsx correctly 1`] = `
             >
               <input
                 class="studio-input studio-input-sm studio-column-list-content-tem emotion-14"
-                id="column-list-index-3"
+                id="column-list-3-productName"
                 placeholder="请输入"
                 style="flex: 1; max-width: 25%;"
                 type="text"
@@ -4697,7 +4697,7 @@ exports[`<ColumnList /> > renders column.tsx correctly 1`] = `
             >
               <input
                 class="studio-input studio-input-sm studio-column-list-content-tem emotion-14"
-                id="column-list-index-4"
+                id="column-list-4-productComment"
                 placeholder="请输入"
                 style="flex: 1; max-width: 25%;"
                 type="text"
@@ -4927,7 +4927,7 @@ exports[`<ColumnList /> > renders column.tsx correctly 1`] = `
             >
               <input
                 class="studio-input studio-input-sm studio-column-list-content-tem emotion-14"
-                id="column-list-index-5"
+                id="column-list-5-orderStatus"
                 placeholder="请输入"
                 style="flex: 1; max-width: 25%;"
                 type="text"
@@ -5157,7 +5157,7 @@ exports[`<ColumnList /> > renders column.tsx correctly 1`] = `
             >
               <input
                 class="studio-input studio-input-sm studio-column-list-content-tem emotion-14"
-                id="column-list-index-6"
+                id="column-list-6-orderCreated"
                 placeholder="请输入"
                 style="flex: 1; max-width: 25%;"
                 type="text"
@@ -5387,7 +5387,7 @@ exports[`<ColumnList /> > renders column.tsx correctly 1`] = `
             >
               <input
                 class="studio-input studio-input-sm studio-column-list-content-tem emotion-14"
-                id="column-list-index-7"
+                id="column-list-7-detailPic"
                 placeholder="请输入"
                 style="flex: 1; max-width: 25%;"
                 type="text"
@@ -5617,7 +5617,7 @@ exports[`<ColumnList /> > renders column.tsx correctly 1`] = `
             >
               <input
                 class="studio-input studio-input-sm studio-column-list-content-tem emotion-14"
-                id="column-list-index-8"
+                id="column-list-8-closeReason"
                 placeholder="请输入"
                 style="flex: 1; max-width: 25%;"
                 type="text"
@@ -5847,7 +5847,7 @@ exports[`<ColumnList /> > renders column.tsx correctly 1`] = `
             >
               <input
                 class="studio-input studio-input-sm studio-column-list-content-tem emotion-14"
-                id="column-list-index-9"
+                id="column-list-9-closeType"
                 placeholder="请输入"
                 style="flex: 1; max-width: 25%;"
                 type="text"
@@ -6441,7 +6441,7 @@ exports[`<ColumnList /> > renders controlled.tsx correctly 1`] = `
             >
               <input
                 class="studio-input studio-input-sm studio-column-list-content-tem emotion-13"
-                id="column-list-index-0"
+                id="column-list-0-index"
                 placeholder="请输入"
                 style="flex: 1; max-width: 33.333333333333336%;"
                 type="text"
@@ -6654,7 +6654,7 @@ exports[`<ColumnList /> > renders controlled.tsx correctly 1`] = `
             >
               <input
                 class="studio-input studio-input-sm studio-column-list-content-tem emotion-13"
-                id="column-list-index-1"
+                id="column-list-1-name"
                 placeholder="请输入"
                 style="flex: 1; max-width: 33.333333333333336%;"
                 type="text"
@@ -6867,7 +6867,7 @@ exports[`<ColumnList /> > renders controlled.tsx correctly 1`] = `
             >
               <input
                 class="studio-input studio-input-sm studio-column-list-content-tem emotion-13"
-                id="column-list-index-2"
+                id="column-list-2-authCompany"
                 placeholder="请输入"
                 style="flex: 1; max-width: 33.333333333333336%;"
                 type="text"
@@ -7478,7 +7478,7 @@ exports[`<ColumnList /> > renders creatorButtonProps.tsx correctly 1`] = `
             >
               <input
                 class="studio-input studio-input-sm studio-column-list-content-tem emotion-14"
-                id="column-list-index-0"
+                id="column-list-0-orderId"
                 placeholder="请输入"
                 style="flex: 1; max-width: 33.333333333333336%;"
                 type="text"
@@ -7691,7 +7691,7 @@ exports[`<ColumnList /> > renders creatorButtonProps.tsx correctly 1`] = `
             >
               <input
                 class="studio-input studio-input-sm studio-column-list-content-tem emotion-14"
-                id="column-list-index-1"
+                id="column-list-1-orderNumber"
                 placeholder="请输入"
                 style="flex: 1; max-width: 33.333333333333336%;"
                 type="text"
@@ -7904,7 +7904,7 @@ exports[`<ColumnList /> > renders creatorButtonProps.tsx correctly 1`] = `
             >
               <input
                 class="studio-input studio-input-sm studio-column-list-content-tem emotion-14"
-                id="column-list-index-2"
+                id="column-list-2-orderMoney"
                 placeholder="请输入"
                 style="flex: 1; max-width: 33.333333333333336%;"
                 type="text"
@@ -8117,7 +8117,7 @@ exports[`<ColumnList /> > renders creatorButtonProps.tsx correctly 1`] = `
             >
               <input
                 class="studio-input studio-input-sm studio-column-list-content-tem emotion-14"
-                id="column-list-index-3"
+                id="column-list-3-productName"
                 placeholder="请输入"
                 style="flex: 1; max-width: 33.333333333333336%;"
                 type="text"
@@ -8330,7 +8330,7 @@ exports[`<ColumnList /> > renders creatorButtonProps.tsx correctly 1`] = `
             >
               <input
                 class="studio-input studio-input-sm studio-column-list-content-tem emotion-14"
-                id="column-list-index-4"
+                id="column-list-4-productComment"
                 placeholder="请输入"
                 style="flex: 1; max-width: 33.333333333333336%;"
                 type="text"
@@ -8543,7 +8543,7 @@ exports[`<ColumnList /> > renders creatorButtonProps.tsx correctly 1`] = `
             >
               <input
                 class="studio-input studio-input-sm studio-column-list-content-tem emotion-14"
-                id="column-list-index-5"
+                id="column-list-5-orderStatus"
                 placeholder="请输入"
                 style="flex: 1; max-width: 33.333333333333336%;"
                 type="text"
@@ -8756,7 +8756,7 @@ exports[`<ColumnList /> > renders creatorButtonProps.tsx correctly 1`] = `
             >
               <input
                 class="studio-input studio-input-sm studio-column-list-content-tem emotion-14"
-                id="column-list-index-6"
+                id="column-list-6-orderCreated"
                 placeholder="请输入"
                 style="flex: 1; max-width: 33.333333333333336%;"
                 type="text"
@@ -8969,7 +8969,7 @@ exports[`<ColumnList /> > renders creatorButtonProps.tsx correctly 1`] = `
             >
               <input
                 class="studio-input studio-input-sm studio-column-list-content-tem emotion-14"
-                id="column-list-index-7"
+                id="column-list-7-detailPic"
                 placeholder="请输入"
                 style="flex: 1; max-width: 33.333333333333336%;"
                 type="text"
@@ -9182,7 +9182,7 @@ exports[`<ColumnList /> > renders creatorButtonProps.tsx correctly 1`] = `
             >
               <input
                 class="studio-input studio-input-sm studio-column-list-content-tem emotion-14"
-                id="column-list-index-8"
+                id="column-list-8-closeReason"
                 placeholder="请输入"
                 style="flex: 1; max-width: 33.333333333333336%;"
                 type="text"
@@ -9395,7 +9395,7 @@ exports[`<ColumnList /> > renders creatorButtonProps.tsx correctly 1`] = `
             >
               <input
                 class="studio-input studio-input-sm studio-column-list-content-tem emotion-14"
-                id="column-list-index-9"
+                id="column-list-9-closeType"
                 placeholder="请输入"
                 style="flex: 1; max-width: 33.333333333333336%;"
                 type="text"
@@ -10118,7 +10118,7 @@ exports[`<ColumnList /> > renders normal.tsx correctly 1`] = `
             >
               <input
                 class="studio-input studio-input-sm studio-column-list-content-tem emotion-12"
-                id="column-list-index-0"
+                id="column-list-0-index"
                 placeholder="请输入"
                 style="flex: 1; max-width: 50%;"
                 type="text"
@@ -10126,7 +10126,7 @@ exports[`<ColumnList /> > renders normal.tsx correctly 1`] = `
               />
               <input
                 class="studio-input studio-input-sm studio-column-list-content-tem emotion-12"
-                id="column-list-index-0"
+                id="column-list-0-index"
                 placeholder="请输入"
                 style="flex: 1; max-width: 50%;"
                 type="text"
@@ -10215,7 +10215,7 @@ exports[`<ColumnList /> > renders normal.tsx correctly 1`] = `
             >
               <input
                 class="studio-input studio-input-sm studio-column-list-content-tem emotion-12"
-                id="column-list-index-1"
+                id="column-list-1-name"
                 placeholder="请输入"
                 style="flex: 1; max-width: 50%;"
                 type="text"
@@ -10223,7 +10223,7 @@ exports[`<ColumnList /> > renders normal.tsx correctly 1`] = `
               />
               <input
                 class="studio-input studio-input-sm studio-column-list-content-tem emotion-12"
-                id="column-list-index-1"
+                id="column-list-1-name"
                 placeholder="请输入"
                 style="flex: 1; max-width: 50%;"
                 type="text"
@@ -10312,7 +10312,7 @@ exports[`<ColumnList /> > renders normal.tsx correctly 1`] = `
             >
               <input
                 class="studio-input studio-input-sm studio-column-list-content-tem emotion-12"
-                id="column-list-index-2"
+                id="column-list-2-authCompany"
                 placeholder="请输入"
                 style="flex: 1; max-width: 50%;"
                 type="text"
@@ -10320,7 +10320,7 @@ exports[`<ColumnList /> > renders normal.tsx correctly 1`] = `
               />
               <input
                 class="studio-input studio-input-sm studio-column-list-content-tem emotion-12"
-                id="column-list-index-2"
+                id="column-list-2-authCompany"
                 placeholder="请输入"
                 style="flex: 1; max-width: 50%;"
                 type="text"
@@ -21745,19 +21745,6 @@ exports[`<SortableList /> > renders Basic.tsx correctly 1`] = `
 }
 
 .emotion-11 {
-  position: absolute;
-  top: 1px;
-  right: 1px;
-  -webkit-align-self: flex-end;
-  -ms-flex-item-align: flex-end;
-  align-self: flex-end;
-  overflow: hidden;
-  border-radius: 1px;
-  -webkit-backdrop-filter: blur(5px);
-  backdrop-filter: blur(5px);
-}
-
-.emotion-12 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -21774,11 +21761,11 @@ exports[`<SortableList /> > renders Basic.tsx correctly 1`] = `
   transition: color 600ms cubic-bezier(0.215, 0.61, 0.355, 1),scale 400ms cubic-bezier(0.215, 0.61, 0.355, 1),background-color 100ms cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
-.emotion-12:hover {
+.emotion-11:hover {
   color: rgba(0, 0, 0, 0.88)!important;
 }
 
-.emotion-12:active {
+.emotion-11:active {
   scale: 0.8;
   color: rgba(0, 0, 0, 0.88);
 }
@@ -21801,7 +21788,7 @@ exports[`<SortableList /> > renders Basic.tsx correctly 1`] = `
           style="--index: 0;"
         >
           <div
-            aria-describedby="DndDescribedBy-14"
+            aria-describedby="DndDescribedBy-15"
             aria-disabled="false"
             aria-roledescription="sortable"
             class="studio-sortable-list-item emotion-4 studio-sortable-list-item-withHandle"
@@ -21842,10 +21829,10 @@ exports[`<SortableList /> > renders Basic.tsx correctly 1`] = `
                 hello
               </div>
               <div
-                class="layoutkit-flexbox emotion-5 studio-sortable-list-item-actions emotion-10 studio-sortable-list-actions-right emotion-11"
+                class="layoutkit-flexbox emotion-5 studio-sortable-list-item-actions emotion-10"
               >
                 <button
-                  class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-12"
+                  class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-11"
                   style="height: 22px;"
                   tabindex="-1"
                   type="button"
@@ -21884,7 +21871,7 @@ exports[`<SortableList /> > renders Basic.tsx correctly 1`] = `
           style="--index: 1;"
         >
           <div
-            aria-describedby="DndDescribedBy-14"
+            aria-describedby="DndDescribedBy-15"
             aria-disabled="false"
             aria-roledescription="sortable"
             class="studio-sortable-list-item emotion-4 studio-sortable-list-item-withHandle"
@@ -21925,10 +21912,10 @@ exports[`<SortableList /> > renders Basic.tsx correctly 1`] = `
                 world
               </div>
               <div
-                class="layoutkit-flexbox emotion-5 studio-sortable-list-item-actions emotion-10 studio-sortable-list-actions-right emotion-11"
+                class="layoutkit-flexbox emotion-5 studio-sortable-list-item-actions emotion-10"
               >
                 <button
-                  class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-12"
+                  class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-11"
                   style="height: 22px;"
                   tabindex="-1"
                   type="button"
@@ -21963,7 +21950,7 @@ exports[`<SortableList /> > renders Basic.tsx correctly 1`] = `
         </li>
       </ul>
       <div
-        id="DndDescribedBy-14"
+        id="DndDescribedBy-15"
         style="display: none;"
       >
         
@@ -21975,7 +21962,7 @@ exports[`<SortableList /> > renders Basic.tsx correctly 1`] = `
       <div
         aria-atomic="true"
         aria-live="assertive"
-        id="DndLiveRegion-14"
+        id="DndLiveRegion-15"
         role="status"
         style="position: fixed; width: 1px; height: 1px; margin: -1px; border: 0px; padding: 0px; overflow: hidden; clip-path: inset(100%); white-space: nowrap;"
       />
@@ -22172,19 +22159,6 @@ exports[`<SortableList /> > renders controlled.tsx correctly 1`] = `
 }
 
 .emotion-11 {
-  position: absolute;
-  top: 1px;
-  right: 1px;
-  -webkit-align-self: flex-end;
-  -ms-flex-item-align: flex-end;
-  align-self: flex-end;
-  overflow: hidden;
-  border-radius: 1px;
-  -webkit-backdrop-filter: blur(5px);
-  backdrop-filter: blur(5px);
-}
-
-.emotion-12 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -22201,11 +22175,11 @@ exports[`<SortableList /> > renders controlled.tsx correctly 1`] = `
   transition: color 600ms cubic-bezier(0.215, 0.61, 0.355, 1),scale 400ms cubic-bezier(0.215, 0.61, 0.355, 1),background-color 100ms cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
-.emotion-12:hover {
+.emotion-11:hover {
   color: rgba(0, 0, 0, 0.88)!important;
 }
 
-.emotion-12:active {
+.emotion-11:active {
   scale: 0.8;
   color: rgba(0, 0, 0, 0.88);
 }
@@ -22225,10 +22199,10 @@ exports[`<SortableList /> > renders controlled.tsx correctly 1`] = `
         <li
           class="studio-sortable-list-item-wrapper emotion-3"
           data-testid="list-item"
-          style="--index: 0;"
+          style="--index: 0; transition: transform 0ms linear;"
         >
           <div
-            aria-describedby="DndDescribedBy-13"
+            aria-describedby="DndDescribedBy-14"
             aria-disabled="false"
             aria-roledescription="sortable"
             class="studio-sortable-list-item emotion-4 studio-sortable-list-item-withHandle"
@@ -22269,10 +22243,10 @@ exports[`<SortableList /> > renders controlled.tsx correctly 1`] = `
                 hello
               </div>
               <div
-                class="layoutkit-flexbox emotion-5 studio-sortable-list-item-actions emotion-10 studio-sortable-list-actions-right emotion-11"
+                class="layoutkit-flexbox emotion-5 studio-sortable-list-item-actions emotion-10"
               >
                 <button
-                  class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-12"
+                  class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-11"
                   style="height: 22px;"
                   tabindex="-1"
                   type="button"
@@ -22308,10 +22282,10 @@ exports[`<SortableList /> > renders controlled.tsx correctly 1`] = `
         <li
           class="studio-sortable-list-item-wrapper emotion-3"
           data-testid="list-item"
-          style="--index: 1;"
+          style="--index: 1; transition: transform 0ms linear;"
         >
           <div
-            aria-describedby="DndDescribedBy-13"
+            aria-describedby="DndDescribedBy-14"
             aria-disabled="false"
             aria-roledescription="sortable"
             class="studio-sortable-list-item emotion-4 studio-sortable-list-item-withHandle"
@@ -22352,10 +22326,10 @@ exports[`<SortableList /> > renders controlled.tsx correctly 1`] = `
                 world
               </div>
               <div
-                class="layoutkit-flexbox emotion-5 studio-sortable-list-item-actions emotion-10 studio-sortable-list-actions-right emotion-11"
+                class="layoutkit-flexbox emotion-5 studio-sortable-list-item-actions emotion-10"
               >
                 <button
-                  class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-12"
+                  class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-11"
                   style="height: 22px;"
                   tabindex="-1"
                   type="button"
@@ -22390,7 +22364,7 @@ exports[`<SortableList /> > renders controlled.tsx correctly 1`] = `
         </li>
       </ul>
       <div
-        id="DndDescribedBy-13"
+        id="DndDescribedBy-14"
         style="display: none;"
       >
         
@@ -22402,7 +22376,7 @@ exports[`<SortableList /> > renders controlled.tsx correctly 1`] = `
       <div
         aria-atomic="true"
         aria-live="assertive"
-        id="DndLiveRegion-13"
+        id="DndLiveRegion-14"
         role="status"
         style="position: fixed; width: 1px; height: 1px; margin: -1px; border: 0px; padding: 0px; overflow: hidden; clip-path: inset(100%); white-space: nowrap;"
       />
@@ -22599,19 +22573,6 @@ exports[`<SortableList /> > renders creatorButtonProps.tsx correctly 1`] = `
 }
 
 .emotion-11 {
-  position: absolute;
-  top: 1px;
-  right: 1px;
-  -webkit-align-self: flex-end;
-  -ms-flex-item-align: flex-end;
-  align-self: flex-end;
-  overflow: hidden;
-  border-radius: 1px;
-  -webkit-backdrop-filter: blur(5px);
-  backdrop-filter: blur(5px);
-}
-
-.emotion-12 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -22628,16 +22589,16 @@ exports[`<SortableList /> > renders creatorButtonProps.tsx correctly 1`] = `
   transition: color 600ms cubic-bezier(0.215, 0.61, 0.355, 1),scale 400ms cubic-bezier(0.215, 0.61, 0.355, 1),background-color 100ms cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
-.emotion-12:hover {
+.emotion-11:hover {
   color: rgba(0, 0, 0, 0.88)!important;
 }
 
-.emotion-12:active {
+.emotion-11:active {
   scale: 0.8;
   color: rgba(0, 0, 0, 0.88);
 }
 
-.emotion-23 {
+.emotion-21 {
   height: 24px;
   padding-block: 2px;
   margin-top: 4px;
@@ -22647,13 +22608,13 @@ exports[`<SortableList /> > renders creatorButtonProps.tsx correctly 1`] = `
   border-color: transparent;
 }
 
-.emotion-23:hover {
+.emotion-21:hover {
   color: rgba(0, 0, 0, 0.88)!important;
   background: rgba(0, 0, 0, 0.06)!important;
   border-color: transparent!important;
 }
 
-.emotion-23:focus {
+.emotion-21:focus {
   color: rgba(0, 0, 0, 0.65);
   background: rgba(0, 0, 0, 0.02);
   border-color: transparent;
@@ -22678,7 +22639,7 @@ exports[`<SortableList /> > renders creatorButtonProps.tsx correctly 1`] = `
           style="--index: 0;"
         >
           <div
-            aria-describedby="DndDescribedBy-12"
+            aria-describedby="DndDescribedBy-13"
             aria-disabled="false"
             aria-roledescription="sortable"
             class="studio-sortable-list-item emotion-4 studio-sortable-list-item-withHandle"
@@ -22719,10 +22680,10 @@ exports[`<SortableList /> > renders creatorButtonProps.tsx correctly 1`] = `
                 hello
               </div>
               <div
-                class="layoutkit-flexbox emotion-5 studio-sortable-list-item-actions emotion-10 studio-sortable-list-actions-right emotion-11"
+                class="layoutkit-flexbox emotion-5 studio-sortable-list-item-actions emotion-10"
               >
                 <button
-                  class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-12"
+                  class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-11"
                   style="height: 22px;"
                   tabindex="-1"
                   type="button"
@@ -22761,7 +22722,7 @@ exports[`<SortableList /> > renders creatorButtonProps.tsx correctly 1`] = `
           style="--index: 1;"
         >
           <div
-            aria-describedby="DndDescribedBy-12"
+            aria-describedby="DndDescribedBy-13"
             aria-disabled="false"
             aria-roledescription="sortable"
             class="studio-sortable-list-item emotion-4 studio-sortable-list-item-withHandle"
@@ -22802,10 +22763,10 @@ exports[`<SortableList /> > renders creatorButtonProps.tsx correctly 1`] = `
                 world
               </div>
               <div
-                class="layoutkit-flexbox emotion-5 studio-sortable-list-item-actions emotion-10 studio-sortable-list-actions-right emotion-11"
+                class="layoutkit-flexbox emotion-5 studio-sortable-list-item-actions emotion-10"
               >
                 <button
-                  class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-12"
+                  class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-11"
                   style="height: 22px;"
                   tabindex="-1"
                   type="button"
@@ -22840,7 +22801,7 @@ exports[`<SortableList /> > renders creatorButtonProps.tsx correctly 1`] = `
         </li>
       </ul>
       <button
-        class="studio-btn studio-btn-default studio-btn-sm studio-btn-block studio-sortable-list-btn-add emotion-23"
+        class="studio-btn studio-btn-default studio-btn-sm studio-btn-block studio-sortable-list-btn-add emotion-21"
         type="button"
       >
         <span
@@ -22873,6 +22834,420 @@ exports[`<SortableList /> > renders creatorButtonProps.tsx correctly 1`] = `
           自定义添加
         </span>
       </button>
+      <div
+        id="DndDescribedBy-13"
+        style="display: none;"
+      >
+        
+    To pick up a draggable item, press the space bar.
+    While dragging, use the arrow keys to move the item.
+    Press space again to drop the item in its new position, or press escape to cancel.
+  
+      </div>
+      <div
+        aria-atomic="true"
+        aria-live="assertive"
+        id="DndLiveRegion-13"
+        role="status"
+        style="position: fixed; width: 1px; height: 1px; margin: -1px; border: 0px; padding: 0px; overflow: hidden; clip-path: inset(100%); white-space: nowrap;"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<SortableList /> > renders getId.tsx correctly 1`] = `
+.emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 24px;
+}
+
+.emotion-1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-2 {
+  list-style: none;
+  display: grid;
+  grid-auto-rows: max-content;
+  grid-gap: 2px;
+  grid-template-columns: repeat(var(--columns, 1), 1fr);
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border-radius: 4px;
+  -webkit-transition: background-color 350ms ease;
+  transition: background-color 350ms ease;
+}
+
+.emotion-3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  box-sizing: border-box;
+  -webkit-transform: translate3d(var(--translate-x, 0), var(--translate-y, 0), 0) scaleX(var(--scale-x, 1)) scaleY(var(--scale-y, 1));
+  -moz-transform: translate3d(var(--translate-x, 0), var(--translate-y, 0), 0) scaleX(var(--scale-x, 1)) scaleY(var(--scale-y, 1));
+  -ms-transform: translate3d(var(--translate-x, 0), var(--translate-y, 0), 0) scaleX(var(--scale-x, 1)) scaleY(var(--scale-y, 1));
+  transform: translate3d(var(--translate-x, 0), var(--translate-y, 0), 0) scaleX(var(--scale-x, 1)) scaleY(var(--scale-y, 1));
+  transform-origin: 0 0;
+  touch-action: manipulation;
+}
+
+.emotion-3:not(:last-child) {
+  margin-bottom: 2px;
+}
+
+.emotion-4 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 1px 0;
+  color: rgba(0, 0, 0, 0.65);
+  font-size: 12px;
+  white-space: nowrap;
+  list-style: none;
+  border-radius: 4px;
+  outline: none;
+  -webkit-transform: scale(var(--scale, 1));
+  -moz-transform: scale(var(--scale, 1));
+  -ms-transform: scale(var(--scale, 1));
+  transform: scale(var(--scale, 1));
+  transform-origin: 50% 50%;
+  -webkit-transition: box-shadow 200ms cubic-bezier(0.18, 0.67, 0.6, 1.22);
+  transition: box-shadow 200ms cubic-bezier(0.18, 0.67, 0.6, 1.22);
+  -webkit-tap-highlight-color: transparent;
+}
+
+.emotion-4:focus-visible {
+  box-shadow: 0 0 4px 1px #4c9ffe,0 0 0 calc(1px / var(--scale-x, 1)) rgba(0, 0, 0, 0.05) 0 1px calc(3px / var(--scale-x, 1)) 0 rgba(0, 0, 0, 0.15);
+}
+
+.emotion-4:not(.studio-sortable-list-item-withHandle) {
+  cursor: -webkit-grab;
+  cursor: grab;
+  -webkit-user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  touch-action: none;
+}
+
+.emotion-4-dragging:not(.studio-sortable-list-item-dragOverlay) {
+  z-index: 0;
+  opacity: var(--dragging-opacity, 0.5);
+}
+
+.emotion-4-dragging:not(.studio-sortable-list-item-dragOverlay):focus {
+  box-shadow: 0 0 0 calc(1px / var(--scale-x, 1)) rgba(0, 0, 0, 0.05) 0 1px calc(3px / var(--scale-x, 1)) 0 rgba(0, 0, 0, 0.15);
+}
+
+.emotion-5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-6 {
+  position: relative;
+  width: 100%;
+  height: 24px;
+  border-radius: 2px;
+  min-width: 48px;
+}
+
+.emotion-6:hover .studio-sortable-list-item-actions {
+  opacity: 1;
+}
+
+.emotion-7 {
+  z-index: 10;
+  color: hsla(0, 0, 0, 0.45);
+  opacity: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-transition: color 600ms cubic-bezier(0.215, 0.61, 0.355, 1),scale 400ms cubic-bezier(0.215, 0.61, 0.355, 1),background-color 100ms cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: color 600ms cubic-bezier(0.215, 0.61, 0.355, 1),scale 400ms cubic-bezier(0.215, 0.61, 0.355, 1),background-color 100ms cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.emotion-7:hover {
+  color: rgba(0, 0, 0, 0.88)!important;
+}
+
+.emotion-7:active {
+  scale: 0.8;
+  color: rgba(0, 0, 0, 0.88);
+}
+
+.emotion-8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-10 {
+  z-index: 10;
+  color: hsla(0, 0, 0, 0.45);
+  opacity: 0;
+}
+
+.emotion-11 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-transition: color 600ms cubic-bezier(0.215, 0.61, 0.355, 1),scale 400ms cubic-bezier(0.215, 0.61, 0.355, 1),background-color 100ms cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: color 600ms cubic-bezier(0.215, 0.61, 0.355, 1),scale 400ms cubic-bezier(0.215, 0.61, 0.355, 1),background-color 100ms cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.emotion-11:hover {
+  color: rgba(0, 0, 0, 0.88)!important;
+}
+
+.emotion-11:active {
+  scale: 0.8;
+  color: rgba(0, 0, 0, 0.88);
+}
+
+<div>
+  <div
+    class="layoutkit-flexbox emotion-0"
+    style="background: rgb(245, 245, 245);"
+  >
+    <div
+      class="layoutkit-flexbox emotion-1 studio-sortable-list"
+    >
+      <ul
+        class="studio-sortable-list-container emotion-2"
+        style="--columns: 1;"
+      >
+        <li
+          class="studio-sortable-list-item-wrapper emotion-3"
+          data-testid="list-item"
+          style="--index: 0; transition: transform 0ms linear;"
+        >
+          <div
+            aria-describedby="DndDescribedBy-12"
+            aria-disabled="false"
+            aria-roledescription="sortable"
+            class="studio-sortable-list-item emotion-4 studio-sortable-list-item-withHandle"
+            data-cypress="draggable-item"
+            data-id="foo"
+            data-index="0"
+            role="button"
+            style="background-color: rgb(255, 255, 255);"
+          >
+            <div
+              class="layoutkit-flexbox emotion-5 studio-sortable-list-item-content emotion-6"
+            >
+              <button
+                class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-sortable-list-item-actions studio-actionicon emotion-7"
+                data-cypress="draggable-handle"
+                style="width: 14px; height: 24px;"
+                tabindex="-1"
+                type="button"
+              >
+                <span
+                  class="studio-btn-icon"
+                >
+                  <svg
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    width="16"
+                  >
+                    <path
+                      d="M7 2a2 2 0 1 0 .001 4.001A2 2 0 0 0 7 2zm0 6a2 2 0 1 0 .001 4.001A2 2 0 0 0 7 8zm0 6a2 2 0 1 0 .001 4.001A2 2 0 0 0 7 14zm6-8a2 2 0 1 0-.001-4.001A2 2 0 0 0 13 6zm0 2a2 2 0 1 0 .001 4.001A2 2 0 0 0 13 8zm0 6a2 2 0 1 0 .001 4.001A2 2 0 0 0 13 14z"
+                    />
+                  </svg>
+                </span>
+              </button>
+              <div
+                class="layoutkit-flexbox emotion-8"
+                style="padding-left: 4px;"
+              >
+                foo
+              </div>
+              <div
+                class="layoutkit-flexbox emotion-5 studio-sortable-list-item-actions emotion-10"
+              >
+                <button
+                  class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-11"
+                  style="height: 22px;"
+                  tabindex="-1"
+                  type="button"
+                >
+                  <span
+                    class="studio-btn-icon"
+                  >
+                    <span
+                      aria-label="delete"
+                      class="anticon anticon-delete"
+                      role="img"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        data-icon="delete"
+                        fill="currentColor"
+                        focusable="false"
+                        height="1em"
+                        viewBox="64 64 896 896"
+                        width="1em"
+                      >
+                        <path
+                          d="M864 256H736v-80c0-35.3-28.7-64-64-64H352c-35.3 0-64 28.7-64 64v80H160c-17.7 0-32 14.3-32 32v32c0 4.4 3.6 8 8 8h60.4l24.7 523c1.6 34.1 29.8 61 63.9 61h454c34.2 0 62.3-26.8 63.9-61l24.7-523H888c4.4 0 8-3.6 8-8v-32c0-17.7-14.3-32-32-32zm-200 0H360v-72h304v72z"
+                        />
+                      </svg>
+                    </span>
+                  </span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li
+          class="studio-sortable-list-item-wrapper emotion-3"
+          data-testid="list-item"
+          style="--index: 1; transition: transform 0ms linear;"
+        >
+          <div
+            aria-describedby="DndDescribedBy-12"
+            aria-disabled="false"
+            aria-roledescription="sortable"
+            class="studio-sortable-list-item emotion-4 studio-sortable-list-item-withHandle"
+            data-cypress="draggable-item"
+            data-id="bar"
+            data-index="1"
+            role="button"
+            style="background-color: rgb(255, 255, 255);"
+          >
+            <div
+              class="layoutkit-flexbox emotion-5 studio-sortable-list-item-content emotion-6"
+            >
+              <button
+                class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-sortable-list-item-actions studio-actionicon emotion-7"
+                data-cypress="draggable-handle"
+                style="width: 14px; height: 24px;"
+                tabindex="-1"
+                type="button"
+              >
+                <span
+                  class="studio-btn-icon"
+                >
+                  <svg
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    width="16"
+                  >
+                    <path
+                      d="M7 2a2 2 0 1 0 .001 4.001A2 2 0 0 0 7 2zm0 6a2 2 0 1 0 .001 4.001A2 2 0 0 0 7 8zm0 6a2 2 0 1 0 .001 4.001A2 2 0 0 0 7 14zm6-8a2 2 0 1 0-.001-4.001A2 2 0 0 0 13 6zm0 2a2 2 0 1 0 .001 4.001A2 2 0 0 0 13 8zm0 6a2 2 0 1 0 .001 4.001A2 2 0 0 0 13 14z"
+                    />
+                  </svg>
+                </span>
+              </button>
+              <div
+                class="layoutkit-flexbox emotion-8"
+                style="padding-left: 4px;"
+              >
+                bar
+              </div>
+              <div
+                class="layoutkit-flexbox emotion-5 studio-sortable-list-item-actions emotion-10"
+              >
+                <button
+                  class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-11"
+                  style="height: 22px;"
+                  tabindex="-1"
+                  type="button"
+                >
+                  <span
+                    class="studio-btn-icon"
+                  >
+                    <span
+                      aria-label="delete"
+                      class="anticon anticon-delete"
+                      role="img"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        data-icon="delete"
+                        fill="currentColor"
+                        focusable="false"
+                        height="1em"
+                        viewBox="64 64 896 896"
+                        width="1em"
+                      >
+                        <path
+                          d="M864 256H736v-80c0-35.3-28.7-64-64-64H352c-35.3 0-64 28.7-64 64v80H160c-17.7 0-32 14.3-32 32v32c0 4.4 3.6 8 8 8h60.4l24.7 523c1.6 34.1 29.8 61 63.9 61h454c34.2 0 62.3-26.8 63.9-61l24.7-523H888c4.4 0 8-3.6 8-8v-32c0-17.7-14.3-32-32-32zm-200 0H360v-72h304v72z"
+                        />
+                      </svg>
+                    </span>
+                  </span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
       <div
         id="DndDescribedBy-12"
         style="display: none;"
@@ -23072,19 +23447,6 @@ exports[`<SortableList /> > renders getItemStyles.tsx correctly 1`] = `
 }
 
 .emotion-10 {
-  position: absolute;
-  top: 1px;
-  right: 1px;
-  -webkit-align-self: flex-end;
-  -ms-flex-item-align: flex-end;
-  align-self: flex-end;
-  overflow: hidden;
-  border-radius: 1px;
-  -webkit-backdrop-filter: blur(5px);
-  backdrop-filter: blur(5px);
-}
-
-.emotion-11 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -23101,11 +23463,11 @@ exports[`<SortableList /> > renders getItemStyles.tsx correctly 1`] = `
   transition: color 600ms cubic-bezier(0.215, 0.61, 0.355, 1),scale 400ms cubic-bezier(0.215, 0.61, 0.355, 1),background-color 100ms cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
-.emotion-11:hover {
+.emotion-10:hover {
   color: rgba(0, 0, 0, 0.88)!important;
 }
 
-.emotion-11:active {
+.emotion-10:active {
   scale: 0.8;
   color: rgba(0, 0, 0, 0.88);
 }
@@ -23166,10 +23528,10 @@ exports[`<SortableList /> > renders getItemStyles.tsx correctly 1`] = `
               关关雎鸠
             </div>
             <div
-              class="layoutkit-flexbox emotion-4 studio-sortable-list-item-actions emotion-9 studio-sortable-list-actions-right emotion-10"
+              class="layoutkit-flexbox emotion-4 studio-sortable-list-item-actions emotion-9"
             >
               <button
-                class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-11"
+                class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-10"
                 style="height: 22px;"
                 tabindex="-1"
                 type="button"
@@ -23249,10 +23611,10 @@ exports[`<SortableList /> > renders getItemStyles.tsx correctly 1`] = `
               在河之洲
             </div>
             <div
-              class="layoutkit-flexbox emotion-4 studio-sortable-list-item-actions emotion-9 studio-sortable-list-actions-right emotion-10"
+              class="layoutkit-flexbox emotion-4 studio-sortable-list-item-actions emotion-9"
             >
               <button
-                class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-11"
+                class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-10"
                 style="height: 22px;"
                 tabindex="-1"
                 type="button"
@@ -23332,10 +23694,10 @@ exports[`<SortableList /> > renders getItemStyles.tsx correctly 1`] = `
               窈窕淑女
             </div>
             <div
-              class="layoutkit-flexbox emotion-4 studio-sortable-list-item-actions emotion-9 studio-sortable-list-actions-right emotion-10"
+              class="layoutkit-flexbox emotion-4 studio-sortable-list-item-actions emotion-9"
             >
               <button
-                class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-11"
+                class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-10"
                 style="height: 22px;"
                 tabindex="-1"
                 type="button"
@@ -23415,10 +23777,10 @@ exports[`<SortableList /> > renders getItemStyles.tsx correctly 1`] = `
               君子好逑
             </div>
             <div
-              class="layoutkit-flexbox emotion-4 studio-sortable-list-item-actions emotion-9 studio-sortable-list-actions-right emotion-10"
+              class="layoutkit-flexbox emotion-4 studio-sortable-list-item-actions emotion-9"
             >
               <button
-                class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-11"
+                class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-10"
                 style="height: 22px;"
                 tabindex="-1"
                 type="button"
@@ -23664,19 +24026,6 @@ exports[`<SortableList /> > renders provider.tsx correctly 1`] = `
 }
 
 .emotion-11 {
-  position: absolute;
-  top: 1px;
-  right: 1px;
-  -webkit-align-self: flex-end;
-  -ms-flex-item-align: flex-end;
-  align-self: flex-end;
-  overflow: hidden;
-  border-radius: 1px;
-  -webkit-backdrop-filter: blur(5px);
-  backdrop-filter: blur(5px);
-}
-
-.emotion-12 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -23693,29 +24042,29 @@ exports[`<SortableList /> > renders provider.tsx correctly 1`] = `
   transition: color 600ms cubic-bezier(0.215, 0.61, 0.355, 1),scale 400ms cubic-bezier(0.215, 0.61, 0.355, 1),background-color 100ms cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
-.emotion-12:hover {
+.emotion-11:hover {
   color: rgba(0, 0, 0, 0.88)!important;
 }
 
-.emotion-12:active {
+.emotion-11:active {
   scale: 0.8;
   color: rgba(0, 0, 0, 0.88);
 }
 
 <div>
-  <div>
+  <div
+    class="layoutkit-flexbox emotion-0"
+    style="background: rgb(245, 245, 245);"
+  >
     <button
-      class="studio-btn studio-btn-default"
+      class="studio-btn studio-btn-primary studio-btn-sm studio-btn-block"
+      style="margin-bottom: 8px;"
       type="button"
     >
       <span>
         获取值
       </span>
     </button>
-  </div>
-  <div
-    class="layoutkit-flexbox emotion-0"
-  >
     <div
       class="layoutkit-flexbox emotion-1 studio-sortable-list"
     >
@@ -23845,10 +24194,10 @@ exports[`<SortableList /> > renders provider.tsx correctly 1`] = `
                 </div>
               </div>
               <div
-                class="layoutkit-flexbox emotion-5 studio-sortable-list-item-actions emotion-10 studio-sortable-list-actions-right emotion-11"
+                class="layoutkit-flexbox emotion-5 studio-sortable-list-item-actions emotion-10"
               >
                 <button
-                  class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-12"
+                  class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-11"
                   style="height: 22px;"
                   tabindex="-1"
                   type="button"
@@ -24003,10 +24352,10 @@ exports[`<SortableList /> > renders provider.tsx correctly 1`] = `
                 </div>
               </div>
               <div
-                class="layoutkit-flexbox emotion-5 studio-sortable-list-item-actions emotion-10 studio-sortable-list-actions-right emotion-11"
+                class="layoutkit-flexbox emotion-5 studio-sortable-list-item-actions emotion-10"
               >
                 <button
-                  class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-12"
+                  class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-11"
                   style="height: 22px;"
                   tabindex="-1"
                   type="button"
@@ -24161,10 +24510,10 @@ exports[`<SortableList /> > renders provider.tsx correctly 1`] = `
                 </div>
               </div>
               <div
-                class="layoutkit-flexbox emotion-5 studio-sortable-list-item-actions emotion-10 studio-sortable-list-actions-right emotion-11"
+                class="layoutkit-flexbox emotion-5 studio-sortable-list-item-actions emotion-10"
               >
                 <button
-                  class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-12"
+                  class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-11"
                   style="height: 22px;"
                   tabindex="-1"
                   type="button"
@@ -24226,6 +24575,17 @@ exports[`<SortableList /> > renders ref.tsx correctly 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 24px;
+}
+
+.emotion-1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -24239,7 +24599,7 @@ exports[`<SortableList /> > renders ref.tsx correctly 1`] = `
   width: 100%;
 }
 
-.emotion-1 {
+.emotion-2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -24256,16 +24616,16 @@ exports[`<SortableList /> > renders ref.tsx correctly 1`] = `
   transition: color 600ms cubic-bezier(0.215, 0.61, 0.355, 1),scale 400ms cubic-bezier(0.215, 0.61, 0.355, 1),background-color 100ms cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
-.emotion-1:hover {
+.emotion-2:hover {
   color: rgba(0, 0, 0, 0.88)!important;
 }
 
-.emotion-1:active {
+.emotion-2:active {
   scale: 0.8;
   color: rgba(0, 0, 0, 0.88);
 }
 
-.emotion-2 {
+.emotion-3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -24275,7 +24635,7 @@ exports[`<SortableList /> > renders ref.tsx correctly 1`] = `
   flex-direction: column;
 }
 
-.emotion-3 {
+.emotion-4 {
   list-style: none;
   display: grid;
   grid-auto-rows: max-content;
@@ -24289,7 +24649,7 @@ exports[`<SortableList /> > renders ref.tsx correctly 1`] = `
   transition: background-color 350ms ease;
 }
 
-.emotion-4 {
+.emotion-5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -24303,11 +24663,11 @@ exports[`<SortableList /> > renders ref.tsx correctly 1`] = `
   touch-action: manipulation;
 }
 
-.emotion-4:not(:last-child) {
+.emotion-5:not(:last-child) {
   margin-bottom: 2px;
 }
 
-.emotion-5 {
+.emotion-6 {
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -24342,11 +24702,11 @@ exports[`<SortableList /> > renders ref.tsx correctly 1`] = `
   -webkit-tap-highlight-color: transparent;
 }
 
-.emotion-5:focus-visible {
+.emotion-6:focus-visible {
   box-shadow: 0 0 4px 1px #4c9ffe,0 0 0 calc(1px / var(--scale-x, 1)) rgba(0, 0, 0, 0.05) 0 1px calc(3px / var(--scale-x, 1)) 0 rgba(0, 0, 0, 0.15);
 }
 
-.emotion-5:not(.studio-sortable-list-item-withHandle) {
+.emotion-6:not(.studio-sortable-list-item-withHandle) {
   cursor: -webkit-grab;
   cursor: grab;
   -webkit-user-select: none;
@@ -24357,16 +24717,16 @@ exports[`<SortableList /> > renders ref.tsx correctly 1`] = `
   touch-action: none;
 }
 
-.emotion-5-dragging:not(.studio-sortable-list-item-dragOverlay) {
+.emotion-6-dragging:not(.studio-sortable-list-item-dragOverlay) {
   z-index: 0;
   opacity: var(--dragging-opacity, 0.5);
 }
 
-.emotion-5-dragging:not(.studio-sortable-list-item-dragOverlay):focus {
+.emotion-6-dragging:not(.studio-sortable-list-item-dragOverlay):focus {
   box-shadow: 0 0 0 calc(1px / var(--scale-x, 1)) rgba(0, 0, 0, 0.05) 0 1px calc(3px / var(--scale-x, 1)) 0 rgba(0, 0, 0, 0.15);
 }
 
-.emotion-6 {
+.emotion-7 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -24380,7 +24740,7 @@ exports[`<SortableList /> > renders ref.tsx correctly 1`] = `
   align-items: center;
 }
 
-.emotion-7 {
+.emotion-8 {
   position: relative;
   width: 100%;
   height: 24px;
@@ -24388,11 +24748,11 @@ exports[`<SortableList /> > renders ref.tsx correctly 1`] = `
   min-width: 48px;
 }
 
-.emotion-7:hover .studio-sortable-list-item-actions {
+.emotion-8:hover .studio-sortable-list-item-actions {
   opacity: 1;
 }
 
-.emotion-8 {
+.emotion-9 {
   z-index: 10;
   color: hsla(0, 0, 0, 0.45);
   opacity: 0;
@@ -24412,16 +24772,16 @@ exports[`<SortableList /> > renders ref.tsx correctly 1`] = `
   transition: color 600ms cubic-bezier(0.215, 0.61, 0.355, 1),scale 400ms cubic-bezier(0.215, 0.61, 0.355, 1),background-color 100ms cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
-.emotion-8:hover {
+.emotion-9:hover {
   color: rgba(0, 0, 0, 0.88)!important;
 }
 
-.emotion-8:active {
+.emotion-9:active {
   scale: 0.8;
   color: rgba(0, 0, 0, 0.88);
 }
 
-.emotion-9 {
+.emotion-10 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -24437,37 +24797,25 @@ exports[`<SortableList /> > renders ref.tsx correctly 1`] = `
   gap: 8px;
 }
 
-.emotion-11 {
+.emotion-12 {
   z-index: 10;
   color: hsla(0, 0, 0, 0.45);
   opacity: 0;
 }
 
-.emotion-12 {
-  position: absolute;
-  top: 1px;
-  right: 1px;
-  -webkit-align-self: flex-end;
-  -ms-flex-item-align: flex-end;
-  align-self: flex-end;
-  overflow: hidden;
-  border-radius: 1px;
-  -webkit-backdrop-filter: blur(5px);
-  backdrop-filter: blur(5px);
-}
-
 <div>
   <div
-    style="width: 340px; padding: 0px 12px;"
+    class="layoutkit-flexbox emotion-0"
+    style="background: rgb(245, 245, 245);"
   >
     <div
-      class="layoutkit-flexbox emotion-0"
+      class="layoutkit-flexbox emotion-1"
     >
       <div>
         列配置项
       </div>
       <button
-        class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-1"
+        class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-2"
         tabindex="-1"
         type="button"
       >
@@ -24497,14 +24845,14 @@ exports[`<SortableList /> > renders ref.tsx correctly 1`] = `
       </button>
     </div>
     <div
-      class="layoutkit-flexbox emotion-2 studio-sortable-list"
+      class="layoutkit-flexbox emotion-3 studio-sortable-list"
     >
       <ul
-        class="studio-sortable-list-container emotion-3"
+        class="studio-sortable-list-container emotion-4"
         style="--columns: 1;"
       >
         <li
-          class="studio-sortable-list-item-wrapper emotion-4"
+          class="studio-sortable-list-item-wrapper emotion-5"
           data-testid="list-item"
           style="--index: 0;"
         >
@@ -24512,7 +24860,7 @@ exports[`<SortableList /> > renders ref.tsx correctly 1`] = `
             aria-describedby="DndDescribedBy-9"
             aria-disabled="false"
             aria-roledescription="sortable"
-            class="studio-sortable-list-item emotion-5 studio-sortable-list-item-withHandle"
+            class="studio-sortable-list-item emotion-6 studio-sortable-list-item-withHandle"
             data-cypress="draggable-item"
             data-id="index"
             data-index="0"
@@ -24520,10 +24868,10 @@ exports[`<SortableList /> > renders ref.tsx correctly 1`] = `
             style="background-color: rgb(255, 255, 255);"
           >
             <div
-              class="layoutkit-flexbox emotion-6 studio-sortable-list-item-content emotion-7"
+              class="layoutkit-flexbox emotion-7 studio-sortable-list-item-content emotion-8"
             >
               <button
-                class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-sortable-list-item-actions studio-actionicon emotion-8"
+                class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-sortable-list-item-actions studio-actionicon emotion-9"
                 data-cypress="draggable-handle"
                 style="width: 14px; height: 24px;"
                 tabindex="-1"
@@ -24544,7 +24892,7 @@ exports[`<SortableList /> > renders ref.tsx correctly 1`] = `
                 </span>
               </button>
               <div
-                class="layoutkit-flexbox emotion-9"
+                class="layoutkit-flexbox emotion-10"
               >
                 <div
                   style="flex: 1; width: 100%; height: 24px; font-size: 12px; border-radius: 2px; min-width: 48px;"
@@ -24625,10 +24973,10 @@ exports[`<SortableList /> > renders ref.tsx correctly 1`] = `
                 </div>
               </div>
               <div
-                class="layoutkit-flexbox emotion-6 studio-sortable-list-item-actions emotion-11 studio-sortable-list-actions-right emotion-12"
+                class="layoutkit-flexbox emotion-7 studio-sortable-list-item-actions emotion-12"
               >
                 <button
-                  class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-1"
+                  class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-2"
                   style="height: 22px;"
                   tabindex="-1"
                   type="button"
@@ -24662,7 +25010,7 @@ exports[`<SortableList /> > renders ref.tsx correctly 1`] = `
           </div>
         </li>
         <li
-          class="studio-sortable-list-item-wrapper emotion-4"
+          class="studio-sortable-list-item-wrapper emotion-5"
           data-testid="list-item"
           style="--index: 1;"
         >
@@ -24670,7 +25018,7 @@ exports[`<SortableList /> > renders ref.tsx correctly 1`] = `
             aria-describedby="DndDescribedBy-9"
             aria-disabled="false"
             aria-roledescription="sortable"
-            class="studio-sortable-list-item emotion-5 studio-sortable-list-item-withHandle"
+            class="studio-sortable-list-item emotion-6 studio-sortable-list-item-withHandle"
             data-cypress="draggable-item"
             data-id="authName"
             data-index="1"
@@ -24678,10 +25026,10 @@ exports[`<SortableList /> > renders ref.tsx correctly 1`] = `
             style="background-color: rgb(255, 255, 255);"
           >
             <div
-              class="layoutkit-flexbox emotion-6 studio-sortable-list-item-content emotion-7"
+              class="layoutkit-flexbox emotion-7 studio-sortable-list-item-content emotion-8"
             >
               <button
-                class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-sortable-list-item-actions studio-actionicon emotion-8"
+                class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-sortable-list-item-actions studio-actionicon emotion-9"
                 data-cypress="draggable-handle"
                 style="width: 14px; height: 24px;"
                 tabindex="-1"
@@ -24702,7 +25050,7 @@ exports[`<SortableList /> > renders ref.tsx correctly 1`] = `
                 </span>
               </button>
               <div
-                class="layoutkit-flexbox emotion-9"
+                class="layoutkit-flexbox emotion-10"
               >
                 <div
                   style="flex: 1; width: 100%; height: 24px; font-size: 12px; border-radius: 2px; min-width: 48px;"
@@ -24783,10 +25131,10 @@ exports[`<SortableList /> > renders ref.tsx correctly 1`] = `
                 </div>
               </div>
               <div
-                class="layoutkit-flexbox emotion-6 studio-sortable-list-item-actions emotion-11 studio-sortable-list-actions-right emotion-12"
+                class="layoutkit-flexbox emotion-7 studio-sortable-list-item-actions emotion-12"
               >
                 <button
-                  class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-1"
+                  class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-2"
                   style="height: 22px;"
                   tabindex="-1"
                   type="button"
@@ -24820,7 +25168,7 @@ exports[`<SortableList /> > renders ref.tsx correctly 1`] = `
           </div>
         </li>
         <li
-          class="studio-sortable-list-item-wrapper emotion-4"
+          class="studio-sortable-list-item-wrapper emotion-5"
           data-testid="list-item"
           style="--index: 2;"
         >
@@ -24828,7 +25176,7 @@ exports[`<SortableList /> > renders ref.tsx correctly 1`] = `
             aria-describedby="DndDescribedBy-9"
             aria-disabled="false"
             aria-roledescription="sortable"
-            class="studio-sortable-list-item emotion-5 studio-sortable-list-item-withHandle"
+            class="studio-sortable-list-item emotion-6 studio-sortable-list-item-withHandle"
             data-cypress="draggable-item"
             data-id="authedName"
             data-index="2"
@@ -24836,10 +25184,10 @@ exports[`<SortableList /> > renders ref.tsx correctly 1`] = `
             style="background-color: rgb(255, 255, 255);"
           >
             <div
-              class="layoutkit-flexbox emotion-6 studio-sortable-list-item-content emotion-7"
+              class="layoutkit-flexbox emotion-7 studio-sortable-list-item-content emotion-8"
             >
               <button
-                class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-sortable-list-item-actions studio-actionicon emotion-8"
+                class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-sortable-list-item-actions studio-actionicon emotion-9"
                 data-cypress="draggable-handle"
                 style="width: 14px; height: 24px;"
                 tabindex="-1"
@@ -24860,7 +25208,7 @@ exports[`<SortableList /> > renders ref.tsx correctly 1`] = `
                 </span>
               </button>
               <div
-                class="layoutkit-flexbox emotion-9"
+                class="layoutkit-flexbox emotion-10"
               >
                 <div
                   style="flex: 1; width: 100%; height: 24px; font-size: 12px; border-radius: 2px; min-width: 48px;"
@@ -24941,10 +25289,10 @@ exports[`<SortableList /> > renders ref.tsx correctly 1`] = `
                 </div>
               </div>
               <div
-                class="layoutkit-flexbox emotion-6 studio-sortable-list-item-actions emotion-11 studio-sortable-list-actions-right emotion-12"
+                class="layoutkit-flexbox emotion-7 studio-sortable-list-item-actions emotion-12"
               >
                 <button
-                  class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-1"
+                  class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-2"
                   style="height: 22px;"
                   tabindex="-1"
                   type="button"
@@ -25009,9 +25357,20 @@ exports[`<SortableList /> > renders renderContent.tsx correctly 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  padding: 24px;
 }
 
 .emotion-1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-2 {
   list-style: none;
   display: grid;
   grid-auto-rows: max-content;
@@ -25025,7 +25384,7 @@ exports[`<SortableList /> > renders renderContent.tsx correctly 1`] = `
   transition: background-color 350ms ease;
 }
 
-.emotion-2 {
+.emotion-3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -25039,11 +25398,11 @@ exports[`<SortableList /> > renders renderContent.tsx correctly 1`] = `
   touch-action: manipulation;
 }
 
-.emotion-2:not(:last-child) {
+.emotion-3:not(:last-child) {
   margin-bottom: 2px;
 }
 
-.emotion-3 {
+.emotion-4 {
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -25078,11 +25437,11 @@ exports[`<SortableList /> > renders renderContent.tsx correctly 1`] = `
   -webkit-tap-highlight-color: transparent;
 }
 
-.emotion-3:focus-visible {
+.emotion-4:focus-visible {
   box-shadow: 0 0 4px 1px #4c9ffe,0 0 0 calc(1px / var(--scale-x, 1)) rgba(0, 0, 0, 0.05) 0 1px calc(3px / var(--scale-x, 1)) 0 rgba(0, 0, 0, 0.15);
 }
 
-.emotion-3:not(.studio-sortable-list-item-withHandle) {
+.emotion-4:not(.studio-sortable-list-item-withHandle) {
   cursor: -webkit-grab;
   cursor: grab;
   -webkit-user-select: none;
@@ -25093,16 +25452,16 @@ exports[`<SortableList /> > renders renderContent.tsx correctly 1`] = `
   touch-action: none;
 }
 
-.emotion-3-dragging:not(.studio-sortable-list-item-dragOverlay) {
+.emotion-4-dragging:not(.studio-sortable-list-item-dragOverlay) {
   z-index: 0;
   opacity: var(--dragging-opacity, 0.5);
 }
 
-.emotion-3-dragging:not(.studio-sortable-list-item-dragOverlay):focus {
+.emotion-4-dragging:not(.studio-sortable-list-item-dragOverlay):focus {
   box-shadow: 0 0 0 calc(1px / var(--scale-x, 1)) rgba(0, 0, 0, 0.05) 0 1px calc(3px / var(--scale-x, 1)) 0 rgba(0, 0, 0, 0.15);
 }
 
-.emotion-4 {
+.emotion-5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -25116,7 +25475,7 @@ exports[`<SortableList /> > renders renderContent.tsx correctly 1`] = `
   align-items: center;
 }
 
-.emotion-5 {
+.emotion-6 {
   position: relative;
   width: 100%;
   height: 24px;
@@ -25124,11 +25483,11 @@ exports[`<SortableList /> > renders renderContent.tsx correctly 1`] = `
   min-width: 48px;
 }
 
-.emotion-5:hover .studio-sortable-list-item-actions {
+.emotion-6:hover .studio-sortable-list-item-actions {
   opacity: 1;
 }
 
-.emotion-6 {
+.emotion-7 {
   z-index: 10;
   color: hsla(0, 0, 0, 0.45);
   opacity: 0;
@@ -25148,16 +25507,16 @@ exports[`<SortableList /> > renders renderContent.tsx correctly 1`] = `
   transition: color 600ms cubic-bezier(0.215, 0.61, 0.355, 1),scale 400ms cubic-bezier(0.215, 0.61, 0.355, 1),background-color 100ms cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
-.emotion-6:hover {
+.emotion-7:hover {
   color: rgba(0, 0, 0, 0.88)!important;
 }
 
-.emotion-6:active {
+.emotion-7:active {
   scale: 0.8;
   color: rgba(0, 0, 0, 0.88);
 }
 
-.emotion-7 {
+.emotion-8 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -25173,23 +25532,10 @@ exports[`<SortableList /> > renders renderContent.tsx correctly 1`] = `
   gap: 8px;
 }
 
-.emotion-9 {
+.emotion-10 {
   z-index: 10;
   color: hsla(0, 0, 0, 0.45);
   opacity: 0;
-}
-
-.emotion-10 {
-  position: absolute;
-  top: 1px;
-  right: 1px;
-  -webkit-align-self: flex-end;
-  -ms-flex-item-align: flex-end;
-  align-self: flex-end;
-  overflow: hidden;
-  border-radius: 1px;
-  -webkit-backdrop-filter: blur(5px);
-  backdrop-filter: blur(5px);
 }
 
 .emotion-11 {
@@ -25220,17 +25566,18 @@ exports[`<SortableList /> > renders renderContent.tsx correctly 1`] = `
 
 <div>
   <div
-    style="width: 340px; padding: 0px 12px;"
+    class="layoutkit-flexbox emotion-0"
+    style="background: rgb(245, 245, 245);"
   >
     <div
-      class="layoutkit-flexbox emotion-0 studio-sortable-list"
+      class="layoutkit-flexbox emotion-1 studio-sortable-list"
     >
       <ul
-        class="studio-sortable-list-container emotion-1"
+        class="studio-sortable-list-container emotion-2"
         style="--columns: 1;"
       >
         <li
-          class="studio-sortable-list-item-wrapper emotion-2"
+          class="studio-sortable-list-item-wrapper emotion-3"
           data-testid="list-item"
           style="--index: 0;"
         >
@@ -25238,7 +25585,7 @@ exports[`<SortableList /> > renders renderContent.tsx correctly 1`] = `
             aria-describedby="DndDescribedBy-8"
             aria-disabled="false"
             aria-roledescription="sortable"
-            class="studio-sortable-list-item emotion-3 studio-sortable-list-item-withHandle"
+            class="studio-sortable-list-item emotion-4 studio-sortable-list-item-withHandle"
             data-cypress="draggable-item"
             data-id="index"
             data-index="0"
@@ -25246,10 +25593,10 @@ exports[`<SortableList /> > renders renderContent.tsx correctly 1`] = `
             style="background-color: rgb(255, 255, 255);"
           >
             <div
-              class="layoutkit-flexbox emotion-4 studio-sortable-list-item-content emotion-5"
+              class="layoutkit-flexbox emotion-5 studio-sortable-list-item-content emotion-6"
             >
               <button
-                class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-sortable-list-item-actions studio-actionicon emotion-6"
+                class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-sortable-list-item-actions studio-actionicon emotion-7"
                 data-cypress="draggable-handle"
                 style="width: 14px; height: 24px;"
                 tabindex="-1"
@@ -25270,7 +25617,7 @@ exports[`<SortableList /> > renders renderContent.tsx correctly 1`] = `
                 </span>
               </button>
               <div
-                class="layoutkit-flexbox emotion-7"
+                class="layoutkit-flexbox emotion-8"
               >
                 <div
                   style="flex: 1; width: 100%; height: 24px; font-size: 12px; border-radius: 2px; min-width: 48px;"
@@ -25351,7 +25698,7 @@ exports[`<SortableList /> > renders renderContent.tsx correctly 1`] = `
                 </div>
               </div>
               <div
-                class="layoutkit-flexbox emotion-4 studio-sortable-list-item-actions emotion-9 studio-sortable-list-actions-right emotion-10"
+                class="layoutkit-flexbox emotion-5 studio-sortable-list-item-actions emotion-10"
               >
                 <button
                   class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-11"
@@ -25388,7 +25735,7 @@ exports[`<SortableList /> > renders renderContent.tsx correctly 1`] = `
           </div>
         </li>
         <li
-          class="studio-sortable-list-item-wrapper emotion-2"
+          class="studio-sortable-list-item-wrapper emotion-3"
           data-testid="list-item"
           style="--index: 1;"
         >
@@ -25396,7 +25743,7 @@ exports[`<SortableList /> > renders renderContent.tsx correctly 1`] = `
             aria-describedby="DndDescribedBy-8"
             aria-disabled="false"
             aria-roledescription="sortable"
-            class="studio-sortable-list-item emotion-3 studio-sortable-list-item-withHandle"
+            class="studio-sortable-list-item emotion-4 studio-sortable-list-item-withHandle"
             data-cypress="draggable-item"
             data-id="authName"
             data-index="1"
@@ -25404,10 +25751,10 @@ exports[`<SortableList /> > renders renderContent.tsx correctly 1`] = `
             style="background-color: rgb(255, 255, 255);"
           >
             <div
-              class="layoutkit-flexbox emotion-4 studio-sortable-list-item-content emotion-5"
+              class="layoutkit-flexbox emotion-5 studio-sortable-list-item-content emotion-6"
             >
               <button
-                class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-sortable-list-item-actions studio-actionicon emotion-6"
+                class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-sortable-list-item-actions studio-actionicon emotion-7"
                 data-cypress="draggable-handle"
                 style="width: 14px; height: 24px;"
                 tabindex="-1"
@@ -25428,7 +25775,7 @@ exports[`<SortableList /> > renders renderContent.tsx correctly 1`] = `
                 </span>
               </button>
               <div
-                class="layoutkit-flexbox emotion-7"
+                class="layoutkit-flexbox emotion-8"
               >
                 <div
                   style="flex: 1; width: 100%; height: 24px; font-size: 12px; border-radius: 2px; min-width: 48px;"
@@ -25509,7 +25856,7 @@ exports[`<SortableList /> > renders renderContent.tsx correctly 1`] = `
                 </div>
               </div>
               <div
-                class="layoutkit-flexbox emotion-4 studio-sortable-list-item-actions emotion-9 studio-sortable-list-actions-right emotion-10"
+                class="layoutkit-flexbox emotion-5 studio-sortable-list-item-actions emotion-10"
               >
                 <button
                   class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-11"
@@ -25546,7 +25893,7 @@ exports[`<SortableList /> > renders renderContent.tsx correctly 1`] = `
           </div>
         </li>
         <li
-          class="studio-sortable-list-item-wrapper emotion-2"
+          class="studio-sortable-list-item-wrapper emotion-3"
           data-testid="list-item"
           style="--index: 2;"
         >
@@ -25554,7 +25901,7 @@ exports[`<SortableList /> > renders renderContent.tsx correctly 1`] = `
             aria-describedby="DndDescribedBy-8"
             aria-disabled="false"
             aria-roledescription="sortable"
-            class="studio-sortable-list-item emotion-3 studio-sortable-list-item-withHandle"
+            class="studio-sortable-list-item emotion-4 studio-sortable-list-item-withHandle"
             data-cypress="draggable-item"
             data-id="authedName"
             data-index="2"
@@ -25562,10 +25909,10 @@ exports[`<SortableList /> > renders renderContent.tsx correctly 1`] = `
             style="background-color: rgb(255, 255, 255);"
           >
             <div
-              class="layoutkit-flexbox emotion-4 studio-sortable-list-item-content emotion-5"
+              class="layoutkit-flexbox emotion-5 studio-sortable-list-item-content emotion-6"
             >
               <button
-                class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-sortable-list-item-actions studio-actionicon emotion-6"
+                class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-sortable-list-item-actions studio-actionicon emotion-7"
                 data-cypress="draggable-handle"
                 style="width: 14px; height: 24px;"
                 tabindex="-1"
@@ -25586,7 +25933,7 @@ exports[`<SortableList /> > renders renderContent.tsx correctly 1`] = `
                 </span>
               </button>
               <div
-                class="layoutkit-flexbox emotion-7"
+                class="layoutkit-flexbox emotion-8"
               >
                 <div
                   style="flex: 1; width: 100%; height: 24px; font-size: 12px; border-radius: 2px; min-width: 48px;"
@@ -25667,7 +26014,7 @@ exports[`<SortableList /> > renders renderContent.tsx correctly 1`] = `
                 </div>
               </div>
               <div
-                class="layoutkit-flexbox emotion-4 studio-sortable-list-item-actions emotion-9 studio-sortable-list-actions-right emotion-10"
+                class="layoutkit-flexbox emotion-5 studio-sortable-list-item-actions emotion-10"
               >
                 <button
                   class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-11"
@@ -26296,9 +26643,20 @@ exports[`<SortableList /> > renders useSortableList.tsx correctly 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  padding: 24px;
 }
 
 .emotion-1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-2 {
   list-style: none;
   display: grid;
   grid-auto-rows: max-content;
@@ -26312,7 +26670,7 @@ exports[`<SortableList /> > renders useSortableList.tsx correctly 1`] = `
   transition: background-color 350ms ease;
 }
 
-.emotion-2 {
+.emotion-3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -26326,11 +26684,11 @@ exports[`<SortableList /> > renders useSortableList.tsx correctly 1`] = `
   touch-action: manipulation;
 }
 
-.emotion-2:not(:last-child) {
+.emotion-3:not(:last-child) {
   margin-bottom: 2px;
 }
 
-.emotion-3 {
+.emotion-4 {
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -26365,11 +26723,11 @@ exports[`<SortableList /> > renders useSortableList.tsx correctly 1`] = `
   -webkit-tap-highlight-color: transparent;
 }
 
-.emotion-3:focus-visible {
+.emotion-4:focus-visible {
   box-shadow: 0 0 4px 1px #4c9ffe,0 0 0 calc(1px / var(--scale-x, 1)) rgba(0, 0, 0, 0.05) 0 1px calc(3px / var(--scale-x, 1)) 0 rgba(0, 0, 0, 0.15);
 }
 
-.emotion-3:not(.studio-sortable-list-item-withHandle) {
+.emotion-4:not(.studio-sortable-list-item-withHandle) {
   cursor: -webkit-grab;
   cursor: grab;
   -webkit-user-select: none;
@@ -26380,16 +26738,16 @@ exports[`<SortableList /> > renders useSortableList.tsx correctly 1`] = `
   touch-action: none;
 }
 
-.emotion-3-dragging:not(.studio-sortable-list-item-dragOverlay) {
+.emotion-4-dragging:not(.studio-sortable-list-item-dragOverlay) {
   z-index: 0;
   opacity: var(--dragging-opacity, 0.5);
 }
 
-.emotion-3-dragging:not(.studio-sortable-list-item-dragOverlay):focus {
+.emotion-4-dragging:not(.studio-sortable-list-item-dragOverlay):focus {
   box-shadow: 0 0 0 calc(1px / var(--scale-x, 1)) rgba(0, 0, 0, 0.05) 0 1px calc(3px / var(--scale-x, 1)) 0 rgba(0, 0, 0, 0.15);
 }
 
-.emotion-4 {
+.emotion-5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -26403,7 +26761,7 @@ exports[`<SortableList /> > renders useSortableList.tsx correctly 1`] = `
   align-items: center;
 }
 
-.emotion-5 {
+.emotion-6 {
   position: relative;
   width: 100%;
   height: 24px;
@@ -26411,11 +26769,11 @@ exports[`<SortableList /> > renders useSortableList.tsx correctly 1`] = `
   min-width: 48px;
 }
 
-.emotion-5:hover .studio-sortable-list-item-actions {
+.emotion-6:hover .studio-sortable-list-item-actions {
   opacity: 1;
 }
 
-.emotion-6 {
+.emotion-7 {
   z-index: 10;
   color: hsla(0, 0, 0, 0.45);
   opacity: 0;
@@ -26435,16 +26793,16 @@ exports[`<SortableList /> > renders useSortableList.tsx correctly 1`] = `
   transition: color 600ms cubic-bezier(0.215, 0.61, 0.355, 1),scale 400ms cubic-bezier(0.215, 0.61, 0.355, 1),background-color 100ms cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
-.emotion-6:hover {
+.emotion-7:hover {
   color: rgba(0, 0, 0, 0.88)!important;
 }
 
-.emotion-6:active {
+.emotion-7:active {
   scale: 0.8;
   color: rgba(0, 0, 0, 0.88);
 }
 
-.emotion-7 {
+.emotion-8 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -26460,23 +26818,10 @@ exports[`<SortableList /> > renders useSortableList.tsx correctly 1`] = `
   gap: 8px;
 }
 
-.emotion-9 {
+.emotion-10 {
   z-index: 10;
   color: hsla(0, 0, 0, 0.45);
   opacity: 0;
-}
-
-.emotion-10 {
-  position: absolute;
-  top: 1px;
-  right: 1px;
-  -webkit-align-self: flex-end;
-  -ms-flex-item-align: flex-end;
-  align-self: flex-end;
-  overflow: hidden;
-  border-radius: 1px;
-  -webkit-backdrop-filter: blur(5px);
-  backdrop-filter: blur(5px);
 }
 
 .emotion-11 {
@@ -26507,17 +26852,18 @@ exports[`<SortableList /> > renders useSortableList.tsx correctly 1`] = `
 
 <div>
   <div
-    style="width: 340px; padding: 0px 12px;"
+    class="layoutkit-flexbox emotion-0"
+    style="background: rgb(245, 245, 245);"
   >
     <div
-      class="layoutkit-flexbox emotion-0 studio-sortable-list"
+      class="layoutkit-flexbox emotion-1 studio-sortable-list"
     >
       <ul
-        class="studio-sortable-list-container emotion-1"
+        class="studio-sortable-list-container emotion-2"
         style="--columns: 1;"
       >
         <li
-          class="studio-sortable-list-item-wrapper emotion-2"
+          class="studio-sortable-list-item-wrapper emotion-3"
           data-testid="list-item"
           style="--index: 0;"
         >
@@ -26525,7 +26871,7 @@ exports[`<SortableList /> > renders useSortableList.tsx correctly 1`] = `
             aria-describedby="DndDescribedBy-6"
             aria-disabled="false"
             aria-roledescription="sortable"
-            class="studio-sortable-list-item emotion-3 studio-sortable-list-item-withHandle"
+            class="studio-sortable-list-item emotion-4 studio-sortable-list-item-withHandle"
             data-cypress="draggable-item"
             data-id="index"
             data-index="0"
@@ -26533,10 +26879,10 @@ exports[`<SortableList /> > renders useSortableList.tsx correctly 1`] = `
             style="background-color: rgb(255, 255, 255);"
           >
             <div
-              class="layoutkit-flexbox emotion-4 studio-sortable-list-item-content emotion-5"
+              class="layoutkit-flexbox emotion-5 studio-sortable-list-item-content emotion-6"
             >
               <button
-                class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-sortable-list-item-actions studio-actionicon emotion-6"
+                class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-sortable-list-item-actions studio-actionicon emotion-7"
                 data-cypress="draggable-handle"
                 style="width: 14px; height: 24px;"
                 tabindex="-1"
@@ -26557,7 +26903,7 @@ exports[`<SortableList /> > renders useSortableList.tsx correctly 1`] = `
                 </span>
               </button>
               <div
-                class="layoutkit-flexbox emotion-7"
+                class="layoutkit-flexbox emotion-8"
               >
                 <div
                   style="flex: 1; width: 100%; height: 24px; font-size: 12px; border-radius: 2px; min-width: 48px;"
@@ -26638,7 +26984,7 @@ exports[`<SortableList /> > renders useSortableList.tsx correctly 1`] = `
                 </div>
               </div>
               <div
-                class="layoutkit-flexbox emotion-4 studio-sortable-list-item-actions emotion-9 studio-sortable-list-actions-right emotion-10"
+                class="layoutkit-flexbox emotion-5 studio-sortable-list-item-actions emotion-10"
               >
                 <button
                   class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-11"
@@ -26675,7 +27021,7 @@ exports[`<SortableList /> > renders useSortableList.tsx correctly 1`] = `
           </div>
         </li>
         <li
-          class="studio-sortable-list-item-wrapper emotion-2"
+          class="studio-sortable-list-item-wrapper emotion-3"
           data-testid="list-item"
           style="--index: 1;"
         >
@@ -26683,7 +27029,7 @@ exports[`<SortableList /> > renders useSortableList.tsx correctly 1`] = `
             aria-describedby="DndDescribedBy-6"
             aria-disabled="false"
             aria-roledescription="sortable"
-            class="studio-sortable-list-item emotion-3 studio-sortable-list-item-withHandle"
+            class="studio-sortable-list-item emotion-4 studio-sortable-list-item-withHandle"
             data-cypress="draggable-item"
             data-id="authName"
             data-index="1"
@@ -26691,10 +27037,10 @@ exports[`<SortableList /> > renders useSortableList.tsx correctly 1`] = `
             style="background-color: rgb(255, 255, 255);"
           >
             <div
-              class="layoutkit-flexbox emotion-4 studio-sortable-list-item-content emotion-5"
+              class="layoutkit-flexbox emotion-5 studio-sortable-list-item-content emotion-6"
             >
               <button
-                class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-sortable-list-item-actions studio-actionicon emotion-6"
+                class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-sortable-list-item-actions studio-actionicon emotion-7"
                 data-cypress="draggable-handle"
                 style="width: 14px; height: 24px;"
                 tabindex="-1"
@@ -26715,7 +27061,7 @@ exports[`<SortableList /> > renders useSortableList.tsx correctly 1`] = `
                 </span>
               </button>
               <div
-                class="layoutkit-flexbox emotion-7"
+                class="layoutkit-flexbox emotion-8"
               >
                 <div
                   style="flex: 1; width: 100%; height: 24px; font-size: 12px; border-radius: 2px; min-width: 48px;"
@@ -26796,7 +27142,7 @@ exports[`<SortableList /> > renders useSortableList.tsx correctly 1`] = `
                 </div>
               </div>
               <div
-                class="layoutkit-flexbox emotion-4 studio-sortable-list-item-actions emotion-9 studio-sortable-list-actions-right emotion-10"
+                class="layoutkit-flexbox emotion-5 studio-sortable-list-item-actions emotion-10"
               >
                 <button
                   class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-11"
@@ -26833,7 +27179,7 @@ exports[`<SortableList /> > renders useSortableList.tsx correctly 1`] = `
           </div>
         </li>
         <li
-          class="studio-sortable-list-item-wrapper emotion-2"
+          class="studio-sortable-list-item-wrapper emotion-3"
           data-testid="list-item"
           style="--index: 2;"
         >
@@ -26841,7 +27187,7 @@ exports[`<SortableList /> > renders useSortableList.tsx correctly 1`] = `
             aria-describedby="DndDescribedBy-6"
             aria-disabled="false"
             aria-roledescription="sortable"
-            class="studio-sortable-list-item emotion-3 studio-sortable-list-item-withHandle"
+            class="studio-sortable-list-item emotion-4 studio-sortable-list-item-withHandle"
             data-cypress="draggable-item"
             data-id="authedName"
             data-index="2"
@@ -26849,10 +27195,10 @@ exports[`<SortableList /> > renders useSortableList.tsx correctly 1`] = `
             style="background-color: rgb(255, 255, 255);"
           >
             <div
-              class="layoutkit-flexbox emotion-4 studio-sortable-list-item-content emotion-5"
+              class="layoutkit-flexbox emotion-5 studio-sortable-list-item-content emotion-6"
             >
               <button
-                class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-sortable-list-item-actions studio-actionicon emotion-6"
+                class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-sortable-list-item-actions studio-actionicon emotion-7"
                 data-cypress="draggable-handle"
                 style="width: 14px; height: 24px;"
                 tabindex="-1"
@@ -26873,7 +27219,7 @@ exports[`<SortableList /> > renders useSortableList.tsx correctly 1`] = `
                 </span>
               </button>
               <div
-                class="layoutkit-flexbox emotion-7"
+                class="layoutkit-flexbox emotion-8"
               >
                 <div
                   style="flex: 1; width: 100%; height: 24px; font-size: 12px; border-radius: 2px; min-width: 48px;"
@@ -26954,7 +27300,7 @@ exports[`<SortableList /> > renders useSortableList.tsx correctly 1`] = `
                 </div>
               </div>
               <div
-                class="layoutkit-flexbox emotion-4 studio-sortable-list-item-actions emotion-9 studio-sortable-list-actions-right emotion-10"
+                class="layoutkit-flexbox emotion-5 studio-sortable-list-item-actions emotion-10"
               >
                 <button
                   class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-11"
@@ -27287,7 +27633,7 @@ exports[`<SortableTree /> > renders controlled.tsx correctly 1`] = `
           class="studio-sortable-tree-node-body"
         >
           <button
-            aria-describedby="DndDescribedBy-19"
+            aria-describedby="DndDescribedBy-20"
             aria-disabled="false"
             aria-roledescription="sortable"
             class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-sortable-tree-node-handle studio-actionicon emotion-3"
@@ -27358,7 +27704,7 @@ exports[`<SortableTree /> > renders controlled.tsx correctly 1`] = `
           class="studio-sortable-tree-node-body"
         >
           <button
-            aria-describedby="DndDescribedBy-19"
+            aria-describedby="DndDescribedBy-20"
             aria-disabled="false"
             aria-roledescription="sortable"
             class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-sortable-tree-node-handle studio-actionicon emotion-3"
@@ -27447,7 +27793,7 @@ exports[`<SortableTree /> > renders controlled.tsx correctly 1`] = `
           class="studio-sortable-tree-node-body"
         >
           <button
-            aria-describedby="DndDescribedBy-19"
+            aria-describedby="DndDescribedBy-20"
             aria-disabled="false"
             aria-roledescription="sortable"
             class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-sortable-tree-node-handle studio-actionicon emotion-3"
@@ -27518,7 +27864,7 @@ exports[`<SortableTree /> > renders controlled.tsx correctly 1`] = `
           class="studio-sortable-tree-node-body"
         >
           <button
-            aria-describedby="DndDescribedBy-19"
+            aria-describedby="DndDescribedBy-20"
             aria-disabled="false"
             aria-roledescription="sortable"
             class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-sortable-tree-node-handle studio-actionicon emotion-3"
@@ -27589,7 +27935,7 @@ exports[`<SortableTree /> > renders controlled.tsx correctly 1`] = `
           class="studio-sortable-tree-node-body"
         >
           <button
-            aria-describedby="DndDescribedBy-19"
+            aria-describedby="DndDescribedBy-20"
             aria-disabled="false"
             aria-roledescription="sortable"
             class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-sortable-tree-node-handle studio-actionicon emotion-3"
@@ -27660,7 +28006,7 @@ exports[`<SortableTree /> > renders controlled.tsx correctly 1`] = `
           class="studio-sortable-tree-node-body"
         >
           <button
-            aria-describedby="DndDescribedBy-19"
+            aria-describedby="DndDescribedBy-20"
             aria-disabled="false"
             aria-roledescription="sortable"
             class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-sortable-tree-node-handle studio-actionicon emotion-3"
@@ -27731,7 +28077,7 @@ exports[`<SortableTree /> > renders controlled.tsx correctly 1`] = `
           class="studio-sortable-tree-node-body"
         >
           <button
-            aria-describedby="DndDescribedBy-19"
+            aria-describedby="DndDescribedBy-20"
             aria-disabled="false"
             aria-roledescription="sortable"
             class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-sortable-tree-node-handle studio-actionicon emotion-3"
@@ -27802,7 +28148,7 @@ exports[`<SortableTree /> > renders controlled.tsx correctly 1`] = `
           class="studio-sortable-tree-node-body"
         >
           <button
-            aria-describedby="DndDescribedBy-19"
+            aria-describedby="DndDescribedBy-20"
             aria-disabled="false"
             aria-roledescription="sortable"
             class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-sortable-tree-node-handle studio-actionicon emotion-3"
@@ -27891,7 +28237,7 @@ exports[`<SortableTree /> > renders controlled.tsx correctly 1`] = `
           class="studio-sortable-tree-node-body"
         >
           <button
-            aria-describedby="DndDescribedBy-19"
+            aria-describedby="DndDescribedBy-20"
             aria-disabled="false"
             aria-roledescription="sortable"
             class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-sortable-tree-node-handle studio-actionicon emotion-3"
@@ -27962,7 +28308,7 @@ exports[`<SortableTree /> > renders controlled.tsx correctly 1`] = `
           class="studio-sortable-tree-node-body"
         >
           <button
-            aria-describedby="DndDescribedBy-19"
+            aria-describedby="DndDescribedBy-20"
             aria-disabled="false"
             aria-roledescription="sortable"
             class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-sortable-tree-node-handle studio-actionicon emotion-3"
@@ -28059,7 +28405,7 @@ exports[`<SortableTree /> > renders controlled.tsx correctly 1`] = `
         </span>
       </button>
       <div
-        id="DndDescribedBy-19"
+        id="DndDescribedBy-20"
         style="display: none;"
       >
         
@@ -28071,7 +28417,7 @@ exports[`<SortableTree /> > renders controlled.tsx correctly 1`] = `
       <div
         aria-atomic="true"
         aria-live="assertive"
-        id="DndLiveRegion-19"
+        id="DndLiveRegion-20"
         role="status"
         style="position: fixed; width: 1px; height: 1px; margin: -1px; border: 0px; padding: 0px; overflow: hidden; clip-path: inset(100%); white-space: nowrap;"
       />
@@ -28354,7 +28700,7 @@ exports[`<SortableTree /> > renders default.tsx correctly 1`] = `
           class="studio-sortable-tree-node-body"
         >
           <button
-            aria-describedby="DndDescribedBy-18"
+            aria-describedby="DndDescribedBy-19"
             aria-disabled="false"
             aria-roledescription="sortable"
             class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-sortable-tree-node-handle studio-actionicon emotion-3"
@@ -28421,7 +28767,7 @@ exports[`<SortableTree /> > renders default.tsx correctly 1`] = `
           class="studio-sortable-tree-node-body"
         >
           <button
-            aria-describedby="DndDescribedBy-18"
+            aria-describedby="DndDescribedBy-19"
             aria-disabled="false"
             aria-roledescription="sortable"
             class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-sortable-tree-node-handle studio-actionicon emotion-3"
@@ -28506,7 +28852,7 @@ exports[`<SortableTree /> > renders default.tsx correctly 1`] = `
           class="studio-sortable-tree-node-body"
         >
           <button
-            aria-describedby="DndDescribedBy-18"
+            aria-describedby="DndDescribedBy-19"
             aria-disabled="false"
             aria-roledescription="sortable"
             class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-sortable-tree-node-handle studio-actionicon emotion-3"
@@ -28573,7 +28919,7 @@ exports[`<SortableTree /> > renders default.tsx correctly 1`] = `
           class="studio-sortable-tree-node-body"
         >
           <button
-            aria-describedby="DndDescribedBy-18"
+            aria-describedby="DndDescribedBy-19"
             aria-disabled="false"
             aria-roledescription="sortable"
             class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-sortable-tree-node-handle studio-actionicon emotion-3"
@@ -28640,7 +28986,7 @@ exports[`<SortableTree /> > renders default.tsx correctly 1`] = `
           class="studio-sortable-tree-node-body"
         >
           <button
-            aria-describedby="DndDescribedBy-18"
+            aria-describedby="DndDescribedBy-19"
             aria-disabled="false"
             aria-roledescription="sortable"
             class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-sortable-tree-node-handle studio-actionicon emotion-3"
@@ -28707,7 +29053,7 @@ exports[`<SortableTree /> > renders default.tsx correctly 1`] = `
           class="studio-sortable-tree-node-body"
         >
           <button
-            aria-describedby="DndDescribedBy-18"
+            aria-describedby="DndDescribedBy-19"
             aria-disabled="false"
             aria-roledescription="sortable"
             class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-sortable-tree-node-handle studio-actionicon emotion-3"
@@ -28774,7 +29120,7 @@ exports[`<SortableTree /> > renders default.tsx correctly 1`] = `
           class="studio-sortable-tree-node-body"
         >
           <button
-            aria-describedby="DndDescribedBy-18"
+            aria-describedby="DndDescribedBy-19"
             aria-disabled="false"
             aria-roledescription="sortable"
             class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-sortable-tree-node-handle studio-actionicon emotion-3"
@@ -28841,7 +29187,7 @@ exports[`<SortableTree /> > renders default.tsx correctly 1`] = `
           class="studio-sortable-tree-node-body"
         >
           <button
-            aria-describedby="DndDescribedBy-18"
+            aria-describedby="DndDescribedBy-19"
             aria-disabled="false"
             aria-roledescription="sortable"
             class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-sortable-tree-node-handle studio-actionicon emotion-3"
@@ -28926,7 +29272,7 @@ exports[`<SortableTree /> > renders default.tsx correctly 1`] = `
           class="studio-sortable-tree-node-body"
         >
           <button
-            aria-describedby="DndDescribedBy-18"
+            aria-describedby="DndDescribedBy-19"
             aria-disabled="false"
             aria-roledescription="sortable"
             class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-sortable-tree-node-handle studio-actionicon emotion-3"
@@ -28993,7 +29339,7 @@ exports[`<SortableTree /> > renders default.tsx correctly 1`] = `
           class="studio-sortable-tree-node-body"
         >
           <button
-            aria-describedby="DndDescribedBy-18"
+            aria-describedby="DndDescribedBy-19"
             aria-disabled="false"
             aria-roledescription="sortable"
             class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-sortable-tree-node-handle studio-actionicon emotion-3"
@@ -29086,7 +29432,7 @@ exports[`<SortableTree /> > renders default.tsx correctly 1`] = `
         </span>
       </button>
       <div
-        id="DndDescribedBy-18"
+        id="DndDescribedBy-19"
         style="display: none;"
       >
         
@@ -29098,7 +29444,7 @@ exports[`<SortableTree /> > renders default.tsx correctly 1`] = `
       <div
         aria-atomic="true"
         aria-live="assertive"
-        id="DndLiveRegion-18"
+        id="DndLiveRegion-19"
         role="status"
         style="position: fixed; width: 1px; height: 1px; margin: -1px; border: 0px; padding: 0px; overflow: hidden; clip-path: inset(100%); white-space: nowrap;"
       />
@@ -29844,7 +30190,7 @@ exports[`<SortableTree /> > renders disableDrag.tsx correctly 1`] = `
         </span>
       </button>
       <div
-        id="DndDescribedBy-17"
+        id="DndDescribedBy-18"
         style="display: none;"
       >
         
@@ -29856,7 +30202,7 @@ exports[`<SortableTree /> > renders disableDrag.tsx correctly 1`] = `
       <div
         aria-atomic="true"
         aria-live="assertive"
-        id="DndLiveRegion-17"
+        id="DndLiveRegion-18"
         role="status"
         style="position: fixed; width: 1px; height: 1px; margin: -1px; border: 0px; padding: 0px; overflow: hidden; clip-path: inset(100%); white-space: nowrap;"
       />
@@ -30187,7 +30533,7 @@ exports[`<SortableTree /> > renders renderContent.tsx correctly 1`] = `
           class="studio-sortable-tree-node-body"
         >
           <button
-            aria-describedby="DndDescribedBy-16"
+            aria-describedby="DndDescribedBy-17"
             aria-disabled="false"
             aria-roledescription="sortable"
             class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-sortable-tree-node-handle studio-actionicon emotion-3"
@@ -30278,7 +30624,7 @@ exports[`<SortableTree /> > renders renderContent.tsx correctly 1`] = `
           class="studio-sortable-tree-node-body"
         >
           <button
-            aria-describedby="DndDescribedBy-16"
+            aria-describedby="DndDescribedBy-17"
             aria-disabled="false"
             aria-roledescription="sortable"
             class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-sortable-tree-node-handle studio-actionicon emotion-3"
@@ -30387,7 +30733,7 @@ exports[`<SortableTree /> > renders renderContent.tsx correctly 1`] = `
           class="studio-sortable-tree-node-body"
         >
           <button
-            aria-describedby="DndDescribedBy-16"
+            aria-describedby="DndDescribedBy-17"
             aria-disabled="false"
             aria-roledescription="sortable"
             class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-sortable-tree-node-handle studio-actionicon emotion-3"
@@ -30478,7 +30824,7 @@ exports[`<SortableTree /> > renders renderContent.tsx correctly 1`] = `
           class="studio-sortable-tree-node-body"
         >
           <button
-            aria-describedby="DndDescribedBy-16"
+            aria-describedby="DndDescribedBy-17"
             aria-disabled="false"
             aria-roledescription="sortable"
             class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-sortable-tree-node-handle studio-actionicon emotion-3"
@@ -30569,7 +30915,7 @@ exports[`<SortableTree /> > renders renderContent.tsx correctly 1`] = `
           class="studio-sortable-tree-node-body"
         >
           <button
-            aria-describedby="DndDescribedBy-16"
+            aria-describedby="DndDescribedBy-17"
             aria-disabled="false"
             aria-roledescription="sortable"
             class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-sortable-tree-node-handle studio-actionicon emotion-3"
@@ -30660,7 +31006,7 @@ exports[`<SortableTree /> > renders renderContent.tsx correctly 1`] = `
           class="studio-sortable-tree-node-body"
         >
           <button
-            aria-describedby="DndDescribedBy-16"
+            aria-describedby="DndDescribedBy-17"
             aria-disabled="false"
             aria-roledescription="sortable"
             class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-sortable-tree-node-handle studio-actionicon emotion-3"
@@ -30751,7 +31097,7 @@ exports[`<SortableTree /> > renders renderContent.tsx correctly 1`] = `
           class="studio-sortable-tree-node-body"
         >
           <button
-            aria-describedby="DndDescribedBy-16"
+            aria-describedby="DndDescribedBy-17"
             aria-disabled="false"
             aria-roledescription="sortable"
             class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-sortable-tree-node-handle studio-actionicon emotion-3"
@@ -30842,7 +31188,7 @@ exports[`<SortableTree /> > renders renderContent.tsx correctly 1`] = `
           class="studio-sortable-tree-node-body"
         >
           <button
-            aria-describedby="DndDescribedBy-16"
+            aria-describedby="DndDescribedBy-17"
             aria-disabled="false"
             aria-roledescription="sortable"
             class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-sortable-tree-node-handle studio-actionicon emotion-3"
@@ -30951,7 +31297,7 @@ exports[`<SortableTree /> > renders renderContent.tsx correctly 1`] = `
           class="studio-sortable-tree-node-body"
         >
           <button
-            aria-describedby="DndDescribedBy-16"
+            aria-describedby="DndDescribedBy-17"
             aria-disabled="false"
             aria-roledescription="sortable"
             class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-sortable-tree-node-handle studio-actionicon emotion-3"
@@ -31042,7 +31388,7 @@ exports[`<SortableTree /> > renders renderContent.tsx correctly 1`] = `
           class="studio-sortable-tree-node-body"
         >
           <button
-            aria-describedby="DndDescribedBy-16"
+            aria-describedby="DndDescribedBy-17"
             aria-disabled="false"
             aria-roledescription="sortable"
             class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-sortable-tree-node-handle studio-actionicon emotion-3"
@@ -31159,7 +31505,7 @@ exports[`<SortableTree /> > renders renderContent.tsx correctly 1`] = `
         </span>
       </button>
       <div
-        id="DndDescribedBy-16"
+        id="DndDescribedBy-17"
         style="display: none;"
       >
         
@@ -31171,7 +31517,7 @@ exports[`<SortableTree /> > renders renderContent.tsx correctly 1`] = `
       <div
         aria-atomic="true"
         aria-live="assertive"
-        id="DndLiveRegion-16"
+        id="DndLiveRegion-17"
         role="status"
         style="position: fixed; width: 1px; height: 1px; margin: -1px; border: 0px; padding: 0px; overflow: hidden; clip-path: inset(100%); white-space: nowrap;"
       />
@@ -31454,7 +31800,7 @@ exports[`<SortableTree /> > renders sortableRule.tsx correctly 1`] = `
           class="studio-sortable-tree-node-body"
         >
           <button
-            aria-describedby="DndDescribedBy-15"
+            aria-describedby="DndDescribedBy-16"
             aria-disabled="false"
             aria-roledescription="sortable"
             class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-sortable-tree-node-handle studio-actionicon emotion-3"
@@ -31521,7 +31867,7 @@ exports[`<SortableTree /> > renders sortableRule.tsx correctly 1`] = `
           class="studio-sortable-tree-node-body"
         >
           <button
-            aria-describedby="DndDescribedBy-15"
+            aria-describedby="DndDescribedBy-16"
             aria-disabled="false"
             aria-roledescription="sortable"
             class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-sortable-tree-node-handle studio-actionicon emotion-3"
@@ -31606,7 +31952,7 @@ exports[`<SortableTree /> > renders sortableRule.tsx correctly 1`] = `
           class="studio-sortable-tree-node-body"
         >
           <button
-            aria-describedby="DndDescribedBy-15"
+            aria-describedby="DndDescribedBy-16"
             aria-disabled="false"
             aria-roledescription="sortable"
             class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-sortable-tree-node-handle studio-actionicon emotion-3"
@@ -31673,7 +32019,7 @@ exports[`<SortableTree /> > renders sortableRule.tsx correctly 1`] = `
           class="studio-sortable-tree-node-body"
         >
           <button
-            aria-describedby="DndDescribedBy-15"
+            aria-describedby="DndDescribedBy-16"
             aria-disabled="false"
             aria-roledescription="sortable"
             class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-sortable-tree-node-handle studio-actionicon emotion-3"
@@ -31740,7 +32086,7 @@ exports[`<SortableTree /> > renders sortableRule.tsx correctly 1`] = `
           class="studio-sortable-tree-node-body"
         >
           <button
-            aria-describedby="DndDescribedBy-15"
+            aria-describedby="DndDescribedBy-16"
             aria-disabled="false"
             aria-roledescription="sortable"
             class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-sortable-tree-node-handle studio-actionicon emotion-3"
@@ -31807,7 +32153,7 @@ exports[`<SortableTree /> > renders sortableRule.tsx correctly 1`] = `
           class="studio-sortable-tree-node-body"
         >
           <button
-            aria-describedby="DndDescribedBy-15"
+            aria-describedby="DndDescribedBy-16"
             aria-disabled="false"
             aria-roledescription="sortable"
             class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-sortable-tree-node-handle studio-actionicon emotion-3"
@@ -31874,7 +32220,7 @@ exports[`<SortableTree /> > renders sortableRule.tsx correctly 1`] = `
           class="studio-sortable-tree-node-body"
         >
           <button
-            aria-describedby="DndDescribedBy-15"
+            aria-describedby="DndDescribedBy-16"
             aria-disabled="false"
             aria-roledescription="sortable"
             class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-sortable-tree-node-handle studio-actionicon emotion-3"
@@ -31941,7 +32287,7 @@ exports[`<SortableTree /> > renders sortableRule.tsx correctly 1`] = `
           class="studio-sortable-tree-node-body"
         >
           <button
-            aria-describedby="DndDescribedBy-15"
+            aria-describedby="DndDescribedBy-16"
             aria-disabled="false"
             aria-roledescription="sortable"
             class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-sortable-tree-node-handle studio-actionicon emotion-3"
@@ -32026,7 +32372,7 @@ exports[`<SortableTree /> > renders sortableRule.tsx correctly 1`] = `
           class="studio-sortable-tree-node-body"
         >
           <button
-            aria-describedby="DndDescribedBy-15"
+            aria-describedby="DndDescribedBy-16"
             aria-disabled="false"
             aria-roledescription="sortable"
             class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-sortable-tree-node-handle studio-actionicon emotion-3"
@@ -32093,7 +32439,7 @@ exports[`<SortableTree /> > renders sortableRule.tsx correctly 1`] = `
           class="studio-sortable-tree-node-body"
         >
           <button
-            aria-describedby="DndDescribedBy-15"
+            aria-describedby="DndDescribedBy-16"
             aria-disabled="false"
             aria-roledescription="sortable"
             class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-sortable-tree-node-handle studio-actionicon emotion-3"
@@ -32186,7 +32532,7 @@ exports[`<SortableTree /> > renders sortableRule.tsx correctly 1`] = `
         </span>
       </button>
       <div
-        id="DndDescribedBy-15"
+        id="DndDescribedBy-16"
         style="display: none;"
       >
         
@@ -32198,7 +32544,7 @@ exports[`<SortableTree /> > renders sortableRule.tsx correctly 1`] = `
       <div
         aria-atomic="true"
         aria-live="assertive"
-        id="DndLiveRegion-15"
+        id="DndLiveRegion-16"
         role="status"
         style="position: fixed; width: 1px; height: 1px; margin: -1px; border: 0px; padding: 0px; overflow: hidden; clip-path: inset(100%); white-space: nowrap;"
       />

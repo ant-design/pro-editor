@@ -125,7 +125,7 @@ const Item = memo(
                   </Flexbox>
                 )}
                 <Flexbox
-                  className={classNames(styles.actions, styles.actionsRight)}
+                  className={classNames(styles.actions)}
                   direction={'horizontal'}
                   align="center"
                 >

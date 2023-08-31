@@ -2,12 +2,13 @@
  * title: 基础使用
  * description: 通过配置 `columns` 渲染排序表单
  */
-import type { ColumnItemList } from '@ant-design/pro-editor';
+import type { ColumnItemList, SortableItem } from '@ant-design/pro-editor';
 import { ColumnList } from '@ant-design/pro-editor';
+
 type SchemaItem = {
   title: string;
   dataIndex: string;
-};
+} & SortableItem;
 
 const initialValues = [
   { id: 'index', title: '序号', valueType: 'indexBorder', dataIndex: 'index' },

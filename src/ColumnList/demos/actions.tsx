@@ -3,7 +3,7 @@
  * description: 可以通过 `actions` 属性自定义操作列
  */
 import { EditFilled } from '@ant-design/icons';
-import type { ColumnItemList } from '@ant-design/pro-editor';
+import type { ColumnItemList, SortableItem } from '@ant-design/pro-editor';
 import { ActionIcon, ColumnList } from '@ant-design/pro-editor';
 import { message } from 'antd';
 import { tableColumnValueOptions } from './mock_data/options';
@@ -12,9 +12,9 @@ type SchemaItem = {
   title: string;
   valueType: string;
   dataIndex: string;
-};
+} & SortableItem;
 
-const initialValues = [
+const initialValues: SchemaItem[] = [
   { id: 'index', title: '序号', valueType: 'indexBorder', dataIndex: 'index' },
   {
     id: 'name',

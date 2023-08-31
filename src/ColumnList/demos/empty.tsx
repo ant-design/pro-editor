@@ -3,7 +3,7 @@
  * description: 当表单值为空时，会渲染空状态
  */
 import { EditFilled } from '@ant-design/icons';
-import type { ColumnItemList } from '@ant-design/pro-editor';
+import type { ColumnItemList, SortableItem } from '@ant-design/pro-editor';
 import { ActionIcon, ColumnList } from '@ant-design/pro-editor';
 import { message } from 'antd';
 import { useState } from 'react';
@@ -13,7 +13,7 @@ type SchemaItem = {
   title: string;
   valueType: string;
   dataIndex: string;
-};
+} & SortableItem;
 
 const columns: ColumnItemList<SchemaItem> = [
   {
@@ -35,7 +35,7 @@ const columns: ColumnItemList<SchemaItem> = [
 ];
 
 export default () => {
-  const [value, setValue] = useState(null);
+  const [value, setValue] = useState([]);
   return (
     <ColumnList<SchemaItem>
       columns={columns}

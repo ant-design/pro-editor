@@ -1,8 +1,8 @@
-import { useSortableList } from '@ant-design/pro-editor';
+import { genUniqueId, useSortableList } from '@ant-design/pro-editor';
+import { UniqueIdentifier } from '@dnd-kit/core';
 import { Input } from 'antd';
 import { createStyles } from 'antd-style';
 import { CSSProperties, memo, useRef, useState } from 'react';
-import { genUniqueID } from '../utils';
 
 const useStyle = createStyles(({ css, cx }, prefixCls) => {
   const prefix = `${prefixCls}-content`;
@@ -20,13 +20,14 @@ interface ItemRenderProps {
   dataIndex: string;
   value: string;
   index: number;
+  id: UniqueIdentifier;
   prefixCls: string;
   style: CSSProperties;
   placeholder?: string;
 }
 
 const ControlInput = memo<ItemRenderProps>(
-  ({ dataIndex, placeholder, value, index, prefixCls, style }) => {
+  ({ dataIndex, placeholder, value, index, prefixCls, style, id }) => {
     const instance = useSortableList();
 
     const [innerValue, setInnerValue] = useState(value);
@@ -39,18 +40,19 @@ const ControlInput = memo<ItemRenderProps>(
       setChanged(false);
     };
 
-    const customListId = (index) => `column-list-index-${index}`;
+    const customListId = (index, id) => `column-list-${index}-${id}`;
 
     const handleNextFocus = () => {
       const value = instance.getValue() || [];
       // 如果是最后一个节点，按下回车后，会自动添加一个新的节点
       if (index + 1 === value.length) {
-        // TODO：create 项时 新建项的预填充内容
-        instance.addItem({ id: genUniqueID(value, value.length), [dataIndex]: '' });
+        instance.addItem({ id: genUniqueId(value.length.toString()), [dataIndex]: '' });
       }
 
       setTimeout(() => {
-        const nextNodeEl = document.getElementById(customListId(index + 1));
+        const nextNodeEl = document.getElementById(
+          customListId(index + 1, instance.getIdByIndex(index + 1)),
+        );
         nextNodeEl?.focus();
       }, 200);
     };
@@ -60,7 +62,7 @@ const ControlInput = memo<ItemRenderProps>(
         size={'small'}
         value={innerValue}
         style={style}
-        id={customListId(index)}
+        id={customListId(index, id)}
         onCompositionStart={() => {
           shouldChange.current = false;
         }}
