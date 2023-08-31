@@ -45,7 +45,8 @@ export interface ActionPayload {
 export interface ActionOptions {
   recordHistory?: boolean;
   replace?: boolean;
-  payload?: Partial<UserActionParams>;
+  trigger?: string;
+  payload?: Partial<Pick<UserActionParams, 'type' | 'name'>>;
 }
 
 /**
@@ -93,14 +94,9 @@ export const configSlice: StateCreator<
     yjsDoc: new DocWithHistoryManager<{ config: any }>(),
   };
 
-  const undoLength = initialConfigState.yjsDoc.undoManager.undoStack.length;
-
-  const redoLength = initialConfigState.yjsDoc.undoManager.redoStack.length;
-
   return {
     ...initialConfigState,
-    undoLength,
-    redoLength,
+
     resetConfig: () => {
       set({ config: initialConfigState.config, props: initialConfigState.props });
     },
@@ -133,14 +129,18 @@ export const configSlice: StateCreator<
       document.body.removeChild(eleLink);
     },
 
-    setConfig: (config, { replace, recordHistory } = {}) => {
+    setConfig: (config, options = {}) => {
+      const { replace, recordHistory, payload, trigger } = options;
+      const useAction = merge({}, { recordHistory: true }, { recordHistory, payload });
+
       get().internalUpdateConfig(
         config,
-        { type: '调用 updateConfig 更新', payload: config },
+        {
+          type: `setConfig/${trigger || 'unknown'}`,
+          payload: { config, replace, recordHistory, ...payload },
+        },
         replace,
       );
-
-      const useAction = merge({}, { recordHistory: true }, { recordHistory });
 
       if (useAction.recordHistory) {
         get().yjsDoc.recordHistoryData({ config }, { ...useAction.payload, timestamp: Date.now() });

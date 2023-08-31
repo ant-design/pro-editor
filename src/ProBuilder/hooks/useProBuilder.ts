@@ -48,6 +48,8 @@ export const useProBuilder = <T>(): ProBuilderInstance<T> => {
   const {
     deselectCanvas,
     undoStack,
+    undoLength,
+    redoLength,
     redoStack,
     setConfig,
     exportConfig,
@@ -83,6 +85,8 @@ export const useProBuilder = <T>(): ProBuilderInstance<T> => {
       redo,
       undoStack,
       redoStack,
+      undoLength,
+      redoLength,
 
       getProps,
       getEditorAwareness,

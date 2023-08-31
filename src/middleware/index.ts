@@ -1,1 +1,1 @@
-export * from './proEditor';
+export * from './pro-editor';

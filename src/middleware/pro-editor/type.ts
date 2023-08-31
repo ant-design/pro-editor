@@ -1,7 +1,7 @@
 import { StateCreator } from 'zustand/vanilla';
 import { TakeTwo, Write } from '../types/utils';
 
-interface ProEditorSetStateAction {
+export interface ProEditorSetStateAction {
   type: unknown;
 
   /**
@@ -21,9 +21,9 @@ export interface ProEditorMiddlewareInjectMethod<Sa extends unknown[], Sr, T, A>
   setState<A1 extends string | ProEditorSetStateAction>(...a: [...a: TakeTwo<Sa>, action?: A1]): Sr;
 
   proEditor: {
-    undo: () => void;
-    redo: () => void;
-    clearStorage: () => void;
+    undo?: () => void;
+    redo?: () => void;
+    // clearStorage: () => void;
     getOptions: () => Partial<ProEditorOptions<T, A>>;
   };
 }

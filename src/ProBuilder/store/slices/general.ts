@@ -51,6 +51,9 @@ export interface GeneralPublicAction {
    * 重做栈
    */
   redoStack: () => StackItem[];
+
+  undoLength: () => number;
+  redoLength: () => number;
 }
 export interface GeneralSlice extends GeneralPublicAction, GeneralSliceState {}
 
@@ -63,11 +66,14 @@ export const generalSlice: StateCreator<
   ...initialGeneralState,
 
   undoStack: () => {
-    return get().yjsDoc.undoManager.undoStack;
+    console.log(get().yjsDoc.undoManager)
+    return get().yjsDoc.undoManager.undoStack
   },
-  redoStack: () => {
-    return get().yjsDoc.undoManager.redoStack;
-  },
+  redoStack: () => get().yjsDoc.undoManager.redoStack,
+
+  undoLength: () => get().yjsDoc.undoManager.undoStack.length,
+  redoLength: () => get().yjsDoc.undoManager.redoStack.length,
+
   undo: () => {
     const { yjsDoc, internalUpdateConfig } = get();
     const stack = yjsDoc.undo();
