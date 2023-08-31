@@ -1,5 +1,40 @@
 # Changelog
 
+## [Version&nbsp;0.17.0](https://github.com/ant-design/pro-editor/compare/v0.16.0...v0.17.0)
+
+<sup>Released on **2023-08-31**</sup>
+
+#### ✨ 新特性
+
+- Add rc-utils, TipGuide add controlled api, update snapshot.
+
+#### 🐛 修复
+
+- Merge main.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's improved
+
+- Add rc-utils ([d89f716](https://github.com/ant-design/pro-editor/commit/d89f716))
+- TipGuide add controlled api ([a5df92a](https://github.com/ant-design/pro-editor/commit/a5df92a))
+- Update snapshot ([1a06859](https://github.com/ant-design/pro-editor/commit/1a06859))
+
+#### What's fixed
+
+- Merge main ([808ff09](https://github.com/ant-design/pro-editor/commit/808ff09))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
 ## [Version&nbsp;0.16.0](https://github.com/ant-design/pro-editor/compare/v0.15.0...v0.16.0)
 
 <sup>Released on **2023-08-31**</sup>
