@@ -123,6 +123,7 @@ const ColumnItem = memo<ItemRenderProps>(
                 return Custom ? (
                   <Custom
                     item={item}
+                    key={`${item?.dataIndex}-${colIndex}`}
                     column={col}
                     onChange={(value) => {
                       instance.updateItem({ [col.dataIndex]: value }, index);

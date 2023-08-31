@@ -16,6 +16,7 @@ const selector = (s: Store) => ({
   renderItem: s.renderItem,
   renderContent: s.renderContent,
   getItemStyles: s.getItemStyles,
+  getId: s.getId,
   actions: s.actions,
   hideRemove: s.hideRemove,
   creatorButtonProps: s.creatorButtonProps,
@@ -35,6 +36,7 @@ const SortableList: FC<SortableListProps> = ({ prefixCls }) => {
     hideRemove,
     getItemStyles,
     actions,
+    getId,
   } = useStore(selector, shallow);
 
   const { styles } = useStyle(prefixCls);
@@ -71,10 +73,11 @@ const SortableList: FC<SortableListProps> = ({ prefixCls }) => {
       {creatorButtonProps !== false && position === 'top' ? <CreateButton /> : null}
       <List prefixCls={prefixCls}>
         {items.map((item, index) => {
+          const id = getId(item, index);
           return (
             <SortableItem
-              key={item.id}
-              id={item.id}
+              key={id}
+              id={id}
               item={item}
               index={index}
               actions={actions}

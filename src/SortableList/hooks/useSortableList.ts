@@ -49,7 +49,8 @@ export const useSortableList = (): SortableListInstance => {
 
   const getActiveId = useMemoizedFn(() => storeApi.getState().activeId);
   const getIdByIndex = useMemoizedFn((index?: number) => {
-    const indexId = storeApi.getState().value?.[index]?.id || null;
+    const { getId, value } = storeApi.getState();
+    const indexId = getId(value?.[index], index) || null;
     return indexId;
   });
   const getValue = useMemoizedFn(() => storeApi.getState().value);

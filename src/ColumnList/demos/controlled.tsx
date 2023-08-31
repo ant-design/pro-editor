@@ -2,7 +2,7 @@
  * title: 受控模式
  * description: 表单可通过 `value` 受控
  */
-import type { ColumnItemList } from '@ant-design/pro-editor';
+import type { ColumnItemList, SortableItem } from '@ant-design/pro-editor';
 import { ColumnList } from '@ant-design/pro-editor';
 import { useState } from 'react';
 
@@ -12,9 +12,9 @@ type SchemaItem = {
   title: string;
   valueType: string;
   dataIndex: string;
-};
+} & SortableItem;
 
-const INIT_VALUES = [
+const INIT_VALUES: SchemaItem[] = [
   { id: 'index', title: '序号', valueType: 'indexBorder', dataIndex: 'index' },
   {
     id: 'name',
@@ -45,7 +45,7 @@ const columns: ColumnItemList<SchemaItem> = [
 ];
 
 export default () => {
-  const [value, setValue] = useState<SchemaItem[]>(INIT_VALUES);
+  const [value, setValue] = useState(INIT_VALUES);
 
   return (
     <ColumnList<SchemaItem>

@@ -1,4 +1,3 @@
-import type { UniqueIdentifier } from '@dnd-kit/core';
 import { SortableItem } from '../type';
 
 // 新增节点
@@ -25,13 +24,13 @@ export interface MoveItemAction {
    */
   type: 'moveItem';
   /**
-   * 当前节点的唯一标识符
+   * 当前节点索引
    */
-  activeId: UniqueIdentifier;
+  activeIndex: number;
   /**
-   * 目标节点的唯一标识符
+   * 目标节点索引
    */
-  targetId: UniqueIdentifier;
+  overIndex: number;
 }
 
 // 移除节点

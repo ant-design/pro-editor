@@ -2,7 +2,7 @@
  * title: 自定义表单
  * description: 目前支持 `input` 和 `select`, `custom` 三种表单类型.
  */
-import type { ColumnItemList } from '@ant-design/pro-editor';
+import type { ColumnItemList, SortableItem } from '@ant-design/pro-editor';
 import { ColorPicker, ColumnList } from '@ant-design/pro-editor';
 import { tableColumnValueOptions } from './mock_data/options';
 
@@ -10,7 +10,7 @@ type SchemaItem = {
   title: string;
   valueType: string;
   dataIndex: string;
-};
+} & SortableItem;
 
 const initialValues = [
   { id: 'orderId', dataIndex: 'orderId', valueType: 'text', title: '订单id', color: undefined },

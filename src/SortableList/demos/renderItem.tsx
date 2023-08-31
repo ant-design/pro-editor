@@ -30,26 +30,26 @@ const Demo = () => {
       <Flexbox horizontal gap={8}>
         <Button
           onClick={() => {
-            setList([
+            ref.current.addItem(
               {
                 id: Math.ceil(Math.random() * 100000).toString(16),
                 text: 'new',
               },
-              ...list,
-            ]);
+              0,
+            );
           }}
         >
           头部添加一项
         </Button>
         <Button
           onClick={() => {
-            setList([
-              ...list,
+            ref.current.addItem(
               {
                 id: Math.ceil(Math.random() * 100000).toString(16),
                 text: 'new',
               },
-            ]);
+              list.length,
+            );
           }}
         >
           尾部添加一项
