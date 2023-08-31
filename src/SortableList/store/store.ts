@@ -3,6 +3,7 @@ import isEqual from 'lodash.isequal';
 import type { StateCreator } from 'zustand/vanilla';
 import type { SortableListState } from '../type';
 import { SortableListDispatchPayload } from '../type';
+import { getIndexOfActiveItem } from '../utils';
 import { initialState } from './initialState';
 import { listDataReducer } from './listDataReducer';
 
@@ -25,12 +26,15 @@ const vanillaStore: StateCreator<Store, [['zustand/devtools', never]]> = (set, g
     set({ activeId });
   },
   handleDragEnd: ({ over, active }) => {
-    const { dispatchListData } = get();
+    const { dispatchListData, value, getId } = get();
     if (over) {
+      const activeIndex = getIndexOfActiveItem(value, getId, active.id);
+      const overIndex = getIndexOfActiveItem(value, getId, over.id);
+
       dispatchListData({
         type: 'moveItem',
-        activeId: active.id,
-        targetId: over.id,
+        activeIndex: activeIndex,
+        overIndex: overIndex,
       });
     }
     set({ activeId: null });

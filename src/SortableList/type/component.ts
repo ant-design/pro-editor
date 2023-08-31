@@ -4,7 +4,7 @@ import type { CSSProperties, ReactElement, Ref } from 'react';
 import { StoreUpdaterProps } from '../type/store';
 
 export interface SortableBaseItem {
-  id: UniqueIdentifier;
+  id?: UniqueIdentifier;
 }
 
 export type SortableItem<T = Record<string, any>> = SortableBaseItem & T;

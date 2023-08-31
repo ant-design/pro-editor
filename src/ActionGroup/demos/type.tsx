@@ -1,4 +1,7 @@
 import { CopyOutlined, DragOutlined, ZoomInOutlined, ZoomOutOutlined } from '@ant-design/icons';
+/**
+ * title: 模式配置
+ */
 import { ActionGroup } from '@ant-design/pro-editor';
 import { InputNumber, Segmented, Space } from 'antd';
 import { useState } from 'react';

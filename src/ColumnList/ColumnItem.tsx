@@ -2,6 +2,7 @@ import {
   ColumnItemList,
   DeleteAction,
   HandleAction,
+  SortableItem,
   useSortableList,
 } from '@ant-design/pro-editor';
 import { createStyles } from 'antd-style';
@@ -68,7 +69,7 @@ const useStyle = createStyles(({ css, cx }, prefixCls) => {
   };
 });
 
-interface ItemRenderProps<T = any> {
+interface ItemRenderProps<T extends SortableItem = SortableItem> {
   columns: ColumnItemList<T>;
   item: T;
   index: number;
@@ -98,6 +99,7 @@ const ColumnItem = memo<ItemRenderProps>(
             const props = {
               dataIndex: col.dataIndex,
               value: item[col.dataIndex],
+              id: item.id,
               index,
               prefixCls,
               style,
@@ -121,6 +123,7 @@ const ColumnItem = memo<ItemRenderProps>(
                 return Custom ? (
                   <Custom
                     item={item}
+                    key={`${item?.dataIndex}-${colIndex}`}
                     column={col}
                     onChange={(value) => {
                       instance.updateItem({ [col.dataIndex]: value }, index);

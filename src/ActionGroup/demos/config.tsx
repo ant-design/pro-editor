@@ -1,3 +1,7 @@
+/**
+ * title: 配置使用
+ * description: 通过配置 `items` 渲染整个内容
+ */
 import { CopyOutlined, DragOutlined, ZoomInOutlined, ZoomOutOutlined } from '@ant-design/icons';
 import { ActionGroup } from '@ant-design/pro-editor';
 import { message } from 'antd';
