@@ -5,7 +5,7 @@ import { UseContextStore, createContext, optionalDevtools } from 'zustand-utils'
 import { DevtoolsOptions } from 'zustand/middleware';
 import { createWithEqualityFn } from 'zustand/traditional';
 
-import type { ProEditorInstance } from '@/ProEditor';
+import type { ProBuilderInstance } from '@/ProBuilder';
 
 export interface AssetStoreOptions<T = any> {
   devtools?: boolean | DevtoolsOptions;
@@ -14,7 +14,7 @@ export interface AssetStoreOptions<T = any> {
 }
 
 export type CreateAssetStore<T> = StateCreator<
-  T & ProEditorInstance,
+  T & ProBuilderInstance,
   [['zustand/devtools', never]],
   [],
   T

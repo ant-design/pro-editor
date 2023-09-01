@@ -1,5 +1,5 @@
 import type { EmitterEnv } from '@ant-design/pro-editor';
-import type { EditorMode } from '../../ProEditor';
+import type { EditorMode } from '../../ProBuilder';
 import type { JSONSchema } from '../types';
 
 export type FuncAssetSchema<C> = (mode?: EditorMode) => JSONSchema<C>;
