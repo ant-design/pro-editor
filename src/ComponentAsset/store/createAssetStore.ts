@@ -47,8 +47,8 @@ export type WithoutCallSignature<T> = {
 };
 
 export const createUseAssetStore = <T>(): {
-  useStore: UseContextStore<StoreApi<T & ProEditorInstance>>;
-  useStoreApi: () => WithoutCallSignature<StoreApi<T & ProEditorInstance>>;
+  useStore: UseContextStore<StoreApi<T & ProBuilderInstance>>;
+  useStoreApi: () => WithoutCallSignature<StoreApi<T & ProBuilderInstance>>;
   AssetProvider: ({
     createStore,
     children,
