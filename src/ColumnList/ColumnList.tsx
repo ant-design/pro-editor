@@ -20,41 +20,59 @@ export interface ColumnListProps<T extends SortableItem = SortableItem>
 const ColumnList: <T extends SortableItem>(props: ColumnListProps<T>) => ReactNode = forwardRef<
   SortableListRef,
   ColumnListProps
->(({ prefixCls: customPrefixCls, className, columns, actions, hideRemove, ...props }, ref) => {
-  const prefixCls = getPrefixCls('column-list', customPrefixCls);
-  const { cx } = useStyle(prefixCls);
+>(
+  (
+    {
+      prefixCls: customPrefixCls,
+      className,
+      columns,
+      actions,
+      hideRemove,
+      creatorButtonProps,
+      ...props
+    },
+    ref,
+  ) => {
+    const prefixCls = getPrefixCls('column-list', customPrefixCls);
+    const { cx } = useStyle(prefixCls);
 
-  const renderItem = useCallback(
-    (item, { index, listeners }) => (
-      <ColumnItem
-        columns={columns}
-        item={item}
-        listeners={listeners}
-        index={index}
-        prefixCls={prefixCls}
-        actions={typeof actions === 'function' ? actions(item, index) : actions}
-        hideRemove={hideRemove}
-      />
-    ),
-    [prefixCls, columns],
-  );
+    const renderItem = useCallback(
+      (item, { index, listeners }) => (
+        <ColumnItem
+          columns={columns}
+          item={item}
+          listeners={listeners}
+          index={index}
+          prefixCls={prefixCls}
+          actions={typeof actions === 'function' ? actions(item, index) : actions}
+          hideRemove={hideRemove}
+        />
+      ),
+      [prefixCls, columns],
+    );
 
-  return (
-    <>
-      <Header prefixCls={prefixCls} columns={columns} />
-      <SortableList
-        ref={ref}
-        renderItem={renderItem}
-        className={cx(prefixCls, className)}
-        creatorButtonProps={{
-          record: () => ({
-            id: genUniqueId('column-list'),
-          }),
-        }}
-        {...props}
-      />
-    </>
-  );
-});
+    return (
+      <>
+        <Header prefixCls={prefixCls} columns={columns} />
+        <SortableList
+          ref={ref}
+          renderItem={renderItem}
+          className={cx(prefixCls, className)}
+          creatorButtonProps={
+            creatorButtonProps === false
+              ? false
+              : {
+                  record: () => ({
+                    id: genUniqueId('column-list'),
+                  }),
+                  ...creatorButtonProps,
+                }
+          }
+          {...props}
+        />
+      </>
+    );
+  },
+);
 
 export default ColumnList;
