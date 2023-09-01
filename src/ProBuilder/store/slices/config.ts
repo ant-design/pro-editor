@@ -4,7 +4,7 @@ import { StateCreator } from 'zustand';
 
 import { ComponentAsset } from '@/ComponentAsset';
 
-import { DocWithHistoryManager, UserActionParams } from '../../utils/yjs';
+import { DocWithHistoryManager } from '../../utils/yjs';
 import { InternalProBuilderStore } from '../createStore';
 
 // ======== state ======== //
@@ -47,7 +47,8 @@ export interface ActionOptions {
   recordHistory?: boolean;
   replace?: boolean;
   trigger?: string;
-  payload?: Partial<Pick<UserActionParams, 'type' | 'name'>>;
+  type?: string;
+  name?: string;
 }
 
 /**
@@ -133,20 +134,21 @@ export const configSlice: StateCreator<
     setConfig: (config, options = {}) => {
       if (isEqual(config, get().config)) return;
 
-      const { replace, recordHistory, payload, trigger } = options;
-      const useAction = merge({}, { recordHistory: true }, { recordHistory, payload });
+      const { replace, recordHistory, name, type, trigger } = options;
 
       get().internalUpdateConfig(
         config,
         {
           type: `setConfig/${trigger || 'unknown'}`,
-          payload: { config, replace, recordHistory, ...payload },
+          payload: { config, options },
         },
         replace,
       );
 
+      const useAction = merge({}, { recordHistory: true }, { recordHistory, name, type });
+
       if (useAction.recordHistory) {
-        get().yjsDoc.recordHistoryData({ config }, { ...useAction.payload, timestamp: Date.now() });
+        get().yjsDoc.recordHistoryData({ config }, { ...useAction, timestamp: Date.now() });
       }
     },
   };

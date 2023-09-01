@@ -1,4 +1,4 @@
-import { StackItem } from 'yjs/dist/src/utils/UndoManager';
+import { StackItem as YJSStackItem } from 'yjs/dist/src/utils/UndoManager';
 import { StateCreator } from 'zustand';
 
 import getPrefixCls from '@/_util/getPrefixCls';
@@ -31,6 +31,11 @@ const initialGeneralState: GeneralSliceState = {
 
 // ======== action ======== //
 
+export interface StackItem {
+  timestamp: number;
+  name?: string;
+  type?: string;
+}
 /**
  * 通用公共动作
  */
@@ -57,6 +62,13 @@ export interface GeneralPublicAction {
 }
 export interface GeneralSlice extends GeneralPublicAction, GeneralSliceState {}
 
+const mapUndoManagerStackToUserStack = (stack: YJSStackItem[]) =>
+  stack.map<StackItem>((i) => ({
+    name: i.meta.get('name'),
+    timestamp: i.meta.get('timestamp'),
+    type: i.meta.get('type'),
+  }));
+
 export const generalSlice: StateCreator<
   InternalProBuilderStore,
   [['zustand/devtools', never]],
@@ -65,11 +77,8 @@ export const generalSlice: StateCreator<
 > = (set, get) => ({
   ...initialGeneralState,
 
-  undoStack: () => {
-    console.log(get().yjsDoc.undoManager)
-    return get().yjsDoc.undoManager.undoStack
-  },
-  redoStack: () => get().yjsDoc.undoManager.redoStack,
+  undoStack: () => mapUndoManagerStackToUserStack(get().yjsDoc.undoManager.undoStack),
+  redoStack: () => mapUndoManagerStackToUserStack(get().yjsDoc.undoManager.redoStack),
 
   undoLength: () => get().yjsDoc.undoManager.undoStack.length,
   redoLength: () => get().yjsDoc.undoManager.redoStack.length,

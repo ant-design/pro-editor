@@ -31,7 +31,7 @@ const createStore: StateCreator<Store, [['zustand/devtools', never], ['pro-edito
     set({ data: nextData }, false, {
       type: 'plus',
       payload: nextData,
-      name: '12',
+      name: '+1',
       recordHistory: true,
     });
   },
