@@ -1,5 +1,5 @@
 import { RedoOutlined, UndoOutlined } from '@ant-design/icons';
-import { LevaPanel, useProEditorStore } from '@ant-design/pro-editor';
+import { LevaPanel, useProBuilderStore } from '@ant-design/pro-editor';
 import { Button, Divider } from 'antd';
 import isEqual from 'fast-deep-equal';
 import { FC, memo } from 'react';
@@ -9,8 +9,8 @@ import { shallow } from 'zustand/shallow';
 import { ButtonConfig, buttonModel } from './models';
 
 export const ButtonPanel: FC = memo(() => {
-  const data = useProEditorStore((s) => s.config, isEqual);
-  const [updateConfig, undo, redo, undoStack, redoStack] = useProEditorStore(
+  const data = useProBuilderStore((s) => s.config, isEqual);
+  const [updateConfig, undo, redo, undoStack, redoStack] = useProBuilderStore(
     (s) => [s.setConfig, s.undo, s.redo, s.undoStack().length, s.redoStack().length],
     shallow,
   );

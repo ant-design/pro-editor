@@ -1,6 +1,6 @@
 /**
  * iframe: 300
  */
-import { ProEditor } from '@ant-design/pro-editor';
+import { ProBuilder } from '@ant-design/pro-editor';
 
-export default () => <ProEditor style={{ height: '100vh' }} />;
+export default () => <ProBuilder style={{ height: '100vh' }} />;

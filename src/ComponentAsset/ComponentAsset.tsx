@@ -4,7 +4,7 @@ import { StoreApi } from 'zustand';
 import type { UseBoundStore } from 'zustand/react';
 import { getDefaultValueFromSchema } from '../utils';
 
-import type { EditorMode } from '../ProEditor';
+import type { EditorMode } from '../ProBuilder';
 import type { AssetModels, CanvasRule, CodeEmitter, ComponentAssetParams } from './types';
 import { DataProvider, EmitterEnv } from './types';
 

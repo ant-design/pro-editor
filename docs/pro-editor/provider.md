@@ -1,9 +1,9 @@
 ---
-title: ProEditorProvider
+title: ProBuilderProvider
 group: 组件
 ---
 
-# ProEditorProvider
+# ProBuilderProvider
 
 如果：
 
@@ -11,4 +11,4 @@ group: 组件
 - 在页面上有多个 ProEditor 实例；
 - 需要在不是 ProEditor 组件子元素的组件中访问内部状态，或使用 ProEditor 所提供的数据方法。
 
-那么你就需要用 `ProEditorProvider` 包裹相应的应用组件。
+那么你就需要用 `ProBuilderProvider` 包裹相应的应用组件。
