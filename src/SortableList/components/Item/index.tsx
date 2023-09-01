@@ -117,13 +117,9 @@ const Item = memo(
                     {...listeners}
                   />
                 ) : null}
-                {renderContent ? (
-                  renderContent(item, index)
-                ) : (
-                  <Flexbox flex={1} style={{ paddingLeft: 4 }}>
-                    {id}
-                  </Flexbox>
-                )}
+                <Flexbox flex={1} style={{ paddingLeft: 4 }}>
+                  {renderContent ? renderContent(item, index) : id}
+                </Flexbox>
                 <Flexbox
                   className={classNames(styles.actions)}
                   direction={'horizontal'}
