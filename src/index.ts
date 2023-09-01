@@ -25,7 +25,7 @@ export { default as InteractContainer } from './InteractContainer';
 export type { CanvasInteractRule, InteractStatus, InteractStatusNode } from './InteractContainer';
 export { default as LevaPanel } from './LevaPanel';
 export type { LevaPanelProps } from './LevaPanel';
-export * from './ProEditor';
+export * from './ProBuilder';
 export * from './SortableList';
 export * from './SortableTree';
 export { default as TipGuide } from './TipGuide';
