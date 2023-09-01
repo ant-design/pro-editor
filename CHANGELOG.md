@@ -1,5 +1,39 @@
 # Changelog
 
+## [Version&nbsp;0.18.0](https://github.com/ant-design/pro-editor/compare/v0.17.0...v0.18.0)
+
+<sup>Released on **2023-09-01**</sup>
+
+#### ✨ 新特性
+
+- Delete tipGuide key & add some demo.
+
+#### 🐛 修复
+
+- Defautl getId, 修复 ProBuilder 引用错误.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's improved
+
+- Delete tipGuide key & add some demo ([1c2f206](https://github.com/ant-design/pro-editor/commit/1c2f206))
+
+#### What's fixed
+
+- Defautl getId ([f1f5d61](https://github.com/ant-design/pro-editor/commit/f1f5d61))
+- 修复 ProBuilder 引用错误 ([c440447](https://github.com/ant-design/pro-editor/commit/c440447))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
 ## [Version&nbsp;0.17.0](https://github.com/ant-design/pro-editor/compare/v0.16.0...v0.17.0)
 
 <sup>Released on **2023-08-31**</sup>
