@@ -10,7 +10,7 @@
 
 <div align="center">
 
-🌟 An Editor UI Framework
+🌟 An Editor UI Framework and Components
 
 [Changelog](./CHANGELOG.md) · [Report Bug][issues-url] · [Request Feature][issues-url]
 
