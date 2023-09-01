@@ -1,7 +1,7 @@
 import { useStoreApi } from '@/ProEditor/store';
 import isEqual from 'fast-deep-equal';
 import { produce } from 'immer';
-import { memo, useEffect } from 'react';
+import { memo, useCallback, useEffect } from 'react';
 import { StoreApi } from 'zustand';
 import { createStoreUpdater, storeApiSetState } from 'zustand-utils';
 import { UseBoundStore } from 'zustand/react';
@@ -24,23 +24,30 @@ const ProEditorStoreUpdater = memo<ProEditorStoreUpdaterProps>(({ store }) => {
   }
 
   const storeApi = useStoreApi();
-
-  const useStoreUpdater = createStoreUpdater(storeApi);
   const { yjsDoc, setConfig } = storeApi.getState();
+
+  const configKey = proEditor.options.name;
 
   const getProEditorConfig = () => {
     return proEditor.options.partialize(store.getState());
   };
+
+  const isEqualConfig = () => {
+    const config = getProEditorConfig();
+    return isEqual(config, storeApi.getState().config?.[configKey]);
+  };
+
   // 将应用层的 store 注入 config
   const config = getProEditorConfig();
 
-  // 结合 yjs 进行变更
-  useStoreUpdater('config', config, [], (partialNewState) => {
-    if (isEqual(config, storeApi.getState().config)) return;
+  const useStoreUpdater = createStoreUpdater(storeApi);
+
+  useStoreUpdater('config', { [configKey]: config }, [], (partialNewState) => {
+    if (isEqualConfig()) return;
 
     storeApiSetState(storeApi, partialNewState, false, {
-      type: `⤵️ syncData from ${proEditor.options.name}`,
-      payload: config,
+      type: `⤵️ syncData from ${configKey}`,
+      payload: { config, name: configKey },
     });
 
     yjsDoc.updateHistoryData(partialNewState);
@@ -49,8 +56,10 @@ const ProEditorStoreUpdater = memo<ProEditorStoreUpdaterProps>(({ store }) => {
   // TODO: 可以看下是否拆成独立的onRedoUndoChange
   useStoreUpdater(
     'onConfigChange',
-    ({ config }) => {
+    (value) => {
+      const config = value.config[configKey];
       const prevConfig = getProEditorConfig();
+
       if (isEqual(prevConfig, config)) return;
 
       store.setState(config, false, { type: 'ProEditor/updateByRedoOrUndo', payload: config });
@@ -58,11 +67,17 @@ const ProEditorStoreUpdater = memo<ProEditorStoreUpdaterProps>(({ store }) => {
     [],
   );
 
+  const updateConfig: typeof setConfig = useCallback((...args) => {
+    if (isEqualConfig()) return;
+
+    setConfig(...args);
+  }, []);
+
   // 将 ProEditor 中的 undo、redo 等方法注入到 store 中
   useEffect(() => {
     store.setState(
       produce((draft) => {
-        draft.proEditor.__INTERNAL_SET_CONFIG__NOT_USE_IT = setConfig;
+        draft.proEditor.__INTERNAL_SET_CONFIG__NOT_USE_IT = updateConfig;
       }),
       false,
       'injectProEditor',

@@ -42,11 +42,13 @@ interface ProEditorStore {
   data: number;
 }
 
+const storeName = 'redo-demo-app';
+
 const proEditorOptions: ProEditorOptions<Store, ProEditorStore> = {
-  name: 'redo-demo-app',
+  name: storeName,
   partialize: (s) => ({ data: s.data }),
 };
 
 export const useStore = create<Store>()(
-  devtools(proEditorMiddleware(createStore, proEditorOptions), { name: 'redo-app-test' }),
+  devtools(proEditorMiddleware(createStore, proEditorOptions), { name: storeName }),
 );

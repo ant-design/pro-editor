@@ -1,6 +1,3 @@
-/**
- * compact: true
- */
 import { Button, Card, Divider, Tabs } from 'antd';
 import { useTheme } from 'antd-style';
 import { Flexbox } from 'react-layout-kit';

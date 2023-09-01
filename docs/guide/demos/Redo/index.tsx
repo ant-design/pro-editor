@@ -1,3 +1,6 @@
+/**
+ * compact: true
+ */
 import { ProEditorProvider, ProEditorStoreUpdater } from '@ant-design/pro-editor';
 import App from './App';
 

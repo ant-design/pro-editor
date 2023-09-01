@@ -1,4 +1,3 @@
-// import {  } from '@/ProEditor/store';
 import { StateCreator, StoreMutatorIdentifier } from 'zustand/vanilla';
 import { ProEditorImpl, ProEditorSetStateAction } from './type';
 
@@ -18,6 +17,8 @@ export interface ProEditorOptions<S, EditorSaveState = S> {
 
 const middleware: ProEditorImpl = (storeInitializer, options) => (set, get, api) => {
   const partialize = options.partialize ?? ((s) => s);
+  const configKey = options.name;
+
   /**
    * 记录历史
    * @param action
@@ -25,10 +26,10 @@ const middleware: ProEditorImpl = (storeInitializer, options) => (set, get, api)
   const updateInProEditor = (action: ProEditorSetStateAction) => {
     const nextConfig = partialize(get());
 
-    get().proEditor.__INTERNAL_SET_CONFIG__NOT_USE_IT(nextConfig, {
-      trigger: 'proEditorMiddleware',
-      ...action,
-    });
+    get().proEditor.__INTERNAL_SET_CONFIG__NOT_USE_IT(
+      { [configKey]: nextConfig },
+      { trigger: 'proEditorMiddleware', ...action },
+    );
   };
   /*
    * Capture the initial state so that we can initialize the pro editor store to the

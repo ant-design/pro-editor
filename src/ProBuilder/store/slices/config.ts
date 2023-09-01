@@ -1,3 +1,4 @@
+import isEqual from 'fast-deep-equal';
 import merge from 'lodash.merge';
 import { StateCreator } from 'zustand';
 
@@ -130,6 +131,8 @@ export const configSlice: StateCreator<
     },
 
     setConfig: (config, options = {}) => {
+      if (isEqual(config, get().config)) return;
+
       const { replace, recordHistory, payload, trigger } = options;
       const useAction = merge({}, { recordHistory: true }, { recordHistory, payload });
 
