@@ -26,6 +26,7 @@ demo:
 <code src="./demos/useSortableList.tsx" ></code>
 <code src="./demos/provider.tsx" ></code>
 <code src="./demos/getId.tsx" ></code>
+<code src="./demos/empty.tsx" ></code>
 
 ## API
 
@@ -33,7 +34,7 @@ demo:
 
 | 属性名             | 类型                                                             | 描述                                                                              |
 | ------------------ | ---------------------------------------------------------------- | --------------------------------------------------------------------------------- |
-| value              | `SortableItem[]`                                                 | 值                                                                                |
+| value              | `T[]`                                                            | 值                                                                                |
 | initialValues      | `T[]`                                                            | 初始值                                                                            |
 | onChange           | `(value: T[], event: ListDataDispatchPayload) => void`           | 值变化                                                                            |
 | renderContent      | `(item: T, index: number) => ReactNode`                          | 自定义可排序列表项内容                                                            |
@@ -106,7 +107,7 @@ type GetItemStyles = (status: GetItemStylesArgs) => React.CSSProperties;
 `renderItem` 方法用于更大自由度地定义列表项，包括拖拽，删除，添加，列表项内容等部分，其参数暴露如下：
 
 ```tsx | pure
-export type RenderItem<T = SortableItem> = (
+export type RenderItem<T> = (
   item: T,
   options: {
     /**
@@ -164,7 +165,7 @@ interface AddItemAction {
   /**
    * 新增的节点
    */
-  item: SortableItem;
+  item: T;
   /**
    * 新增节点的位置，不传则默认在最后
    */
@@ -203,6 +204,6 @@ interface UpdateItemAction {
   /**
    * 修改后的节点内容
    */
-  item: Partial<SortableItem>;
+  item: Partial<T>;
 }
 ```
