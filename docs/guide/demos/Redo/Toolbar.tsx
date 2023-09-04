@@ -1,5 +1,4 @@
 import { RedoOutlined, UndoOutlined } from '@ant-design/icons';
-
 import { useProEditor } from '@ant-design/pro-editor';
 import { Badge, Button } from 'antd';
 import { Flexbox } from 'react-layout-kit';
@@ -11,6 +10,7 @@ const Toolbar = () => {
   const redoStackList = redoStack();
 
   const lastAction = undoStackList.at(-1);
+
   return (
     <Flexbox padding={12} gap={8}>
       <Flexbox horizontal gap={8}>

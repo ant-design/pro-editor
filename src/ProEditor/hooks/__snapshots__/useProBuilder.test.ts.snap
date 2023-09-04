@@ -1,0 +1,19 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`useProBuilder > 正确获取 presenceEditor 1`] = `
+{
+  "panelExpand": true,
+  "panelPosition": {
+    "x": 0,
+    "y": 0,
+  },
+  "panelSize": {
+    "width": 340,
+  },
+  "viewport": {
+    "x": 0,
+    "y": 0,
+    "zoom": 1,
+  },
+}
+`;

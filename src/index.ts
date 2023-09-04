@@ -26,7 +26,7 @@ export type { CanvasInteractRule, InteractStatus, InteractStatusNode } from './I
 export { default as LevaPanel } from './LevaPanel';
 export type { LevaPanelProps } from './LevaPanel';
 export * from './ProBuilder';
-export { default as ProEditorStoreUpdater } from './ProEditorStoreUpdater';
+export * from './ProEditor';
 export * from './SortableList';
 export * from './SortableTree';
 export { default as TipGuide } from './TipGuide';

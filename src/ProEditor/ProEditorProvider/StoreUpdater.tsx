@@ -1,15 +1,15 @@
-import { useStoreApi } from '@/ProEditor/store';
 import isEqual from 'fast-deep-equal';
 import { produce } from 'immer';
 import { memo, useCallback, useEffect } from 'react';
 import { StoreApi } from 'zustand';
 import { createStoreUpdater, storeApiSetState } from 'zustand-utils';
 import { UseBoundStore } from 'zustand/react';
+import { useStoreApi } from '../store';
 
-interface ProEditorStoreUpdaterProps {
+interface StoreUpdaterProps {
   store: UseBoundStore<StoreApi<any>>;
 }
-const ProEditorStoreUpdater = memo<ProEditorStoreUpdaterProps>(({ store }) => {
+const StoreUpdater = memo<StoreUpdaterProps>(({ store }) => {
   const { proEditor } = store.getState();
 
   // 前置校验： 1. 包裹 proEditorMiddleware 2. 包裹 ProEditorProvider
@@ -87,4 +87,4 @@ const ProEditorStoreUpdater = memo<ProEditorStoreUpdaterProps>(({ store }) => {
   return null;
 });
 
-export default ProEditorStoreUpdater;
+export default StoreUpdater;
