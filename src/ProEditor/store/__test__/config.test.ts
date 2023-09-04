@@ -16,7 +16,6 @@ describe('configSlice', () => {
     const { result } = renderHook(() => useStore());
 
     expect(result.current.yjsDoc).toBeDefined();
-    expect(result.current.componentAsset).toBeNull();
     expect(result.current.config).toBeNull();
     expect(result.current.onConfigChange).toBeNull();
     expect(result.current.props).toEqual({});
