@@ -24,7 +24,7 @@ const StoreUpdater = forwardRef(
     const useStoreUpdater = createStoreUpdater<StoreUpdaterProps>(storeApi);
 
     useStoreUpdater('value', initialValues, []);
-    useStoreUpdater('value', value, []);
+    useStoreUpdater('value', value);
     useStoreUpdater('actions', actions);
     useStoreUpdater('getId', getId);
     useStoreUpdater('onChange', onChange);
