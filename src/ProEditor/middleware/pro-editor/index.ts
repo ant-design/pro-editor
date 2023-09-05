@@ -1,5 +1,5 @@
 import { StateCreator, StoreMutatorIdentifier } from 'zustand/vanilla';
-import { ProEditorImpl, ProEditorSetStateAction } from './type';
+import { InjectInternalProEditor, ProEditorImpl, ProEditorSetStateAction } from './type';
 
 /**
  * 提供给用户的配置项
@@ -26,7 +26,9 @@ const middleware: ProEditorImpl = (storeInitializer, options) => (set, get, api)
   const updateInProEditor = (action: ProEditorSetStateAction) => {
     const nextConfig = partialize(get());
 
-    get().proEditor.__INTERNAL_SET_CONFIG__NOT_USE_IT(
+    const { proEditor } = get() as InjectInternalProEditor;
+
+    proEditor.__INTERNAL_SET_CONFIG__NOT_USE_IT(
       { [configKey]: nextConfig },
       { trigger: 'proEditorMiddleware', ...action },
     );

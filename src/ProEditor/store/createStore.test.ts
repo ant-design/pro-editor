@@ -71,15 +71,13 @@ describe('proEditorStore', () => {
         const useTestHook = () => {
           const [value, onChange] = useState<AssetConfig>();
           const [p, onPropsChange] = useState();
-          const [empty, setIsEmpty] = useState<boolean>(true);
           const store = useTestStore();
 
           useEffect(() => {
             useTestStore.setState({
-              onConfigChange: ({ config, isEmpty, props }) => {
+              onConfigChange: ({ config, props }) => {
                 onChange(config as any);
                 onPropsChange(props);
-                setIsEmpty(isEmpty);
               },
             });
             // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -96,11 +94,10 @@ describe('proEditorStore', () => {
             setConfig: onChange,
             value,
             props: p,
-            isEmpty: empty,
           };
         };
 
-        it('内部 config 更新时，内部 props 更新，同时外部值可接受到 props、config 和 isEmpty 值变化', () => {
+        it('内部 config 更新时，内部 props 更新，同时外部值可接受到 props、config 值变化', () => {
           const { result } = renderHook(useTestHook);
 
           // 内部值
@@ -109,7 +106,6 @@ describe('proEditorStore', () => {
 
           // 外部值
           expect(result.current.props).toBeUndefined();
-          expect(result.current.isEmpty).toBeTruthy();
 
           const config = {
             data: { dataType: 'oneApi' },
@@ -126,7 +122,6 @@ describe('proEditorStore', () => {
 
           // 外部值
           expect(result.current.value).toEqual(config);
-          expect(result.current.isEmpty).toBeFalsy();
           expect(result.current.props).toMatchSnapshot();
         });
 
@@ -135,7 +130,6 @@ describe('proEditorStore', () => {
 
           expect(result.current.store.config).toBeNull();
           expect(result.current.store.props).toEqual({});
-          expect(result.current.isEmpty).toBeTruthy();
 
           const config = {
             data: { dataType: 'oneApi' },
@@ -152,7 +146,6 @@ describe('proEditorStore', () => {
 
           // 外部值
           expect(result.current.value).toEqual(config);
-          expect(result.current.isEmpty).toBeTruthy();
           expect(result.current.props).toBeUndefined();
         });
       });

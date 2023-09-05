@@ -42,7 +42,7 @@ export interface ActionOptions {
   recordHistory?: boolean;
   replace?: boolean;
   trigger?: string;
-  type?: string;
+  type?: unknown;
   name?: string;
 }
 

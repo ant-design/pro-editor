@@ -1,4 +1,5 @@
 import { StateCreator } from 'zustand/vanilla';
+import { ConfigPublicAction } from '../../store/slices/config';
 import { TakeTwo, Write } from '../types/utils';
 
 export interface ProEditorSetStateAction {
@@ -62,3 +63,9 @@ export type ProEditorImpl = <T>(
   storeInitializer: StateCreator<T, [['pro-editor', unknown]], []>,
   options: ProEditorOptions<T, T>,
 ) => StateCreator<T, [['pro-editor', unknown]], []>;
+
+export interface InjectInternalProEditor {
+  proEditor: {
+    __INTERNAL_SET_CONFIG__NOT_USE_IT: ConfigPublicAction['setConfig'];
+  };
+}

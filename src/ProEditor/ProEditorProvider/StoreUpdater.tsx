@@ -4,6 +4,7 @@ import { memo, useCallback, useEffect } from 'react';
 import { StoreApi } from 'zustand';
 import { createStoreUpdater, storeApiSetState } from 'zustand-utils';
 import { UseBoundStore } from 'zustand/react';
+import { InjectInternalProEditor } from '../middleware/pro-editor/type';
 import { useStoreApi } from '../store';
 
 interface StoreUpdaterProps {
@@ -62,7 +63,12 @@ const StoreUpdater = memo<StoreUpdaterProps>(({ store }) => {
 
       if (isEqual(prevConfig, config)) return;
 
-      store.setState(config, false, { type: 'ProEditor/updateByRedoOrUndo', payload: config });
+      store.setState(
+        config,
+        false,
+        // @ts-ignore
+        { type: 'ProEditor/updateByRedoOrUndo', payload: config },
+      );
     },
     [],
   );
@@ -76,10 +82,11 @@ const StoreUpdater = memo<StoreUpdaterProps>(({ store }) => {
   // 将 ProEditor 中的 undo、redo 等方法注入到 store 中
   useEffect(() => {
     store.setState(
-      produce((draft) => {
+      produce((draft: InjectInternalProEditor) => {
         draft.proEditor.__INTERNAL_SET_CONFIG__NOT_USE_IT = updateConfig;
       }),
       false,
+      // @ts-ignore
       'injectProEditor',
     );
   }, []);
