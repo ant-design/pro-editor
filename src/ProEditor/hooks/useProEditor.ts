@@ -18,7 +18,7 @@ export interface ProEditorInstance<Config = any, Props = any>
    * 获取配置信息
    * @returns {Config} - 配置信息
    */
-  getConfig: () => Config;
+  getConfig: () => Config | null;
   /**
    * 获取组件属性
    * @returns {Props} - 组件属性

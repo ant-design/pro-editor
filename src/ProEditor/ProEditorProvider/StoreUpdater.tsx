@@ -13,7 +13,8 @@ interface StoreUpdaterProps {
 const StoreUpdater = memo<StoreUpdaterProps>(({ store }) => {
   const { proEditor } = store.getState();
 
-  // 前置校验： 1. 包裹 proEditorMiddleware 2. 包裹 ProEditorProvider
+  // =============== 前置校验 =============== //
+  // 1. 包裹 proEditorMiddleware 2. 包裹 ProEditorProvider
   if (!proEditor) {
     throw Error('please wrapper your zustand store with proEditorMiddleware');
   }
@@ -43,7 +44,7 @@ const StoreUpdater = memo<StoreUpdaterProps>(({ store }) => {
 
   const useStoreUpdater = createStoreUpdater(storeApi);
 
-  useStoreUpdater('config', { [configKey]: config }, [], (partialNewState) => {
+  useStoreUpdater('config', { [configKey]: config }, [config], (partialNewState) => {
     if (isEqualConfig()) return;
 
     storeApiSetState(storeApi, partialNewState, false, {
@@ -73,13 +74,14 @@ const StoreUpdater = memo<StoreUpdaterProps>(({ store }) => {
     [],
   );
 
+  // =============== 注入与中间件联动的方法
+
   const updateConfig: typeof setConfig = useCallback((...args) => {
     if (isEqualConfig()) return;
 
     setConfig(...args);
   }, []);
 
-  // 将 ProEditor 中的 undo、redo 等方法注入到 store 中
   useEffect(() => {
     store.setState(
       produce((draft: InjectInternalProEditor) => {
