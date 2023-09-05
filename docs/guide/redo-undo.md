@@ -18,7 +18,7 @@ order: 2
 
 1. 外层包裹 ProEditorProvider，传入相应的 zustand store
 
-```tsx
+```tsx | pure
 import { ProEditorProvider, ProEditorStoreUpdater } from '@ant-design/pro-editor';
 
 import { useStore } from './store';
@@ -55,7 +55,7 @@ export const useStore = create<Store>()(
 
 多个 Store 使用的方式：
 
-```tsx
+```tsx | pure
 import { ProEditorProvider, ProEditorStoreUpdater } from '@ant-design/pro-editor';
 
 import { useAStore } from './storeA';
@@ -73,7 +73,7 @@ export default () => {
 
 多 Store 撤销重做互相隔离
 
-```tsx
+```tsx | pure
 <div>
   <ProEditorProvider store=[cStore]>
     <A />
