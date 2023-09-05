@@ -1,5 +1,30 @@
 # Changelog
 
+## [Version&nbsp;0.19.0-alpha.1](https://github.com/ant-design/pro-editor/compare/v0.18.1...v0.19.0-alpha.1)
+
+<sup>Released on **2023-09-05**</sup>
+
+#### ✨ 新特性
+
+- Undo/redo Middleware.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's improved
+
+- Undo/redo Middleware, closes [#74](https://github.com/ant-design/pro-editor/issues/74) ([7699738](https://github.com/ant-design/pro-editor/commit/7699738))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
 ### [Version&nbsp;0.18.1](https://github.com/ant-design/pro-editor/compare/v0.18.0...v0.18.1)
 
 <sup>Released on **2023-09-04**</sup>
