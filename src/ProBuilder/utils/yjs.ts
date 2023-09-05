@@ -1,9 +1,5 @@
 import { Doc, UndoManager } from 'yjs';
-import { AbstractType } from 'yjs/dist/src/types/AbstractType';
 import { DocOpts } from 'yjs/dist/src/utils/Doc';
-import { Transaction } from 'yjs/dist/src/utils/Transaction';
-import { StackItem } from 'yjs/dist/src/utils/UndoManager';
-import { YEvent } from 'yjs/dist/src/utils/YEvent';
 
 export interface UserActionParams {
   type: string;
@@ -22,13 +18,6 @@ class UserAction {
   }
 }
 
-interface UndoEvent extends Transaction {
-  type: 'undo' | 'redo';
-  origin: UserAction;
-  stackItem: StackItem;
-  changedParentTypes: Map<AbstractType<YEvent<any>>, Array<YEvent<any>>>;
-}
-
 export class DocWithHistoryManager<T = object> extends Doc {
   private _internalHistoryKey = '__INTERNAL_HISTORY_MAP__';
 
@@ -37,12 +26,6 @@ export class DocWithHistoryManager<T = object> extends Doc {
 
     this.undoManager = new UndoManager(this.getHistoryMap(), {
       trackedOrigins: new Set([UserAction]),
-    });
-
-    this.undoManager.on('stack-item-added', (e: UndoEvent) => {
-      e.stackItem.meta.set('timestamp', e.origin.timestamp);
-      e.stackItem.meta.set('type', e.origin.type);
-      e.stackItem.meta.set('name', e.origin.name);
     });
   }
 

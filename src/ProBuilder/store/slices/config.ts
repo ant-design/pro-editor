@@ -1,10 +1,9 @@
-import isEqual from 'fast-deep-equal';
 import merge from 'lodash.merge';
 import { StateCreator } from 'zustand';
 
 import { ComponentAsset } from '@/ComponentAsset';
 
-import { DocWithHistoryManager } from '../../utils/yjs';
+import { DocWithHistoryManager, UserActionParams } from '../../utils/yjs';
 import { InternalProBuilderStore } from '../createStore';
 
 // ======== state ======== //
@@ -46,9 +45,7 @@ export interface ActionPayload {
 export interface ActionOptions {
   recordHistory?: boolean;
   replace?: boolean;
-  trigger?: string;
-  type?: string;
-  name?: string;
+  payload?: Partial<UserActionParams>;
 }
 
 /**
@@ -96,9 +93,14 @@ export const configSlice: StateCreator<
     yjsDoc: new DocWithHistoryManager<{ config: any }>(),
   };
 
+  const undoLength = initialConfigState.yjsDoc.undoManager.undoStack.length;
+
+  const redoLength = initialConfigState.yjsDoc.undoManager.redoStack.length;
+
   return {
     ...initialConfigState,
-
+    undoLength,
+    redoLength,
     resetConfig: () => {
       set({ config: initialConfigState.config, props: initialConfigState.props });
     },
@@ -131,24 +133,17 @@ export const configSlice: StateCreator<
       document.body.removeChild(eleLink);
     },
 
-    setConfig: (config, options = {}) => {
-      if (isEqual(config, get().config)) return;
-
-      const { replace, recordHistory, name, type, trigger } = options;
-
+    setConfig: (config, { replace, recordHistory } = {}) => {
       get().internalUpdateConfig(
         config,
-        {
-          type: `setConfig/${trigger || 'unknown'}`,
-          payload: { config, options },
-        },
+        { type: '调用 updateConfig 更新', payload: config },
         replace,
       );
 
-      const useAction = merge({}, { recordHistory: true }, { recordHistory, name, type });
+      const useAction = merge({}, { recordHistory: true }, { recordHistory });
 
       if (useAction.recordHistory) {
-        get().yjsDoc.recordHistoryData({ config }, { ...useAction, timestamp: Date.now() });
+        get().yjsDoc.recordHistoryData({ config }, { ...useAction.payload, timestamp: Date.now() });
       }
     },
   };
