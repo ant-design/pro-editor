@@ -15,6 +15,7 @@ import { useStyle } from '../style';
 const selector = (s: Store) => ({
   renderItem: s.renderItem,
   renderContent: s.renderContent,
+  renderEmpty: s.renderEmpty,
   getItemStyles: s.getItemStyles,
   getId: s.getId,
   actions: s.actions,
@@ -32,6 +33,7 @@ const SortableList: FC<SortableListProps> = ({ prefixCls }) => {
     dispatchListData,
     renderItem,
     renderContent,
+    renderEmpty,
     creatorButtonProps = false,
     hideRemove,
     getItemStyles,
@@ -63,11 +65,15 @@ const SortableList: FC<SortableListProps> = ({ prefixCls }) => {
   };
 
   return Array.isArray(items) && items.length === 0 ? (
-    <>
-      <Empty image={Empty.PRESENTED_IMAGE_SIMPLE} description="暂无数据">
-        {creatorButtonProps !== false ? <CreateButton empty={true} /> : null}
-      </Empty>
-    </>
+    renderEmpty ? (
+      renderEmpty()
+    ) : (
+      <>
+        <Empty image={Empty.PRESENTED_IMAGE_SIMPLE} description="暂无数据">
+          {creatorButtonProps !== false ? <CreateButton empty={true} /> : null}
+        </Empty>
+      </>
+    )
   ) : (
     <>
       {creatorButtonProps !== false && position === 'top' ? <CreateButton /> : null}

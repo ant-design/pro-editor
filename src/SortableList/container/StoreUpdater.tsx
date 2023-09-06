@@ -13,6 +13,7 @@ const StoreUpdater = forwardRef(
       onChange,
       renderItem,
       renderContent,
+      renderEmpty,
       getItemStyles,
       getId,
       creatorButtonProps,
@@ -30,6 +31,7 @@ const StoreUpdater = forwardRef(
     useStoreUpdater('onChange', onChange);
     useStoreUpdater('renderItem', renderItem);
     useStoreUpdater('renderContent', renderContent);
+    useStoreUpdater('renderEmpty', renderEmpty);
     useStoreUpdater('getItemStyles', getItemStyles);
     useStoreUpdater('creatorButtonProps', creatorButtonProps);
     useStoreUpdater('hideRemove', hideRemove);

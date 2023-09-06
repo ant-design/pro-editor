@@ -20,6 +20,7 @@ demo:
 <code src="./demos/controlled.tsx" ></code>
 <code src="./demos/actions.tsx" ></code>
 <code src="./demos/creatorButtonProps.tsx" ></code>
+<code src="./demos/customCreate.tsx" ></code>
 <code src="./demos/empty.tsx" ></code>
 
 ## API

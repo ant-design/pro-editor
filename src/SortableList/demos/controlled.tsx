@@ -10,7 +10,7 @@ import { useState } from 'react';
 import { Flexbox } from 'react-layout-kit';
 
 const Demo = () => {
-  const [list, setList] = useState<SortableItem[]>([]);
+  const [list, setList] = useState<SortableItem[]>([{ id: 'hello' }, { id: 'world' }]);
 
   const token = useTheme();
   return (
@@ -23,9 +23,11 @@ const Demo = () => {
         }}
       />
       <Button
+        type="primary"
         onClick={() => {
-          setList([{ id: 'hello' }, { id: 'world' }]);
+          setList([{ id: 'foo' }, { id: 'bar' }]);
         }}
+        style={{ marginTop: 8 }}
       >
         设置数据
       </Button>

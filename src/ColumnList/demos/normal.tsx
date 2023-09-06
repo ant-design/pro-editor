@@ -34,12 +34,24 @@ const columns: ColumnItemList<SchemaItem> = [
   },
 ];
 
+/**
+ * 创建一个随机的索引标记符，请勿在生产环境使用
+ */
+export const randomIndex = () => Math.random() * 10000;
+
 export default () => (
   <ColumnList<SchemaItem>
     columns={columns}
     initialValues={initialValues}
     onChange={(values) => {
       console.log('onChange', values);
+    }}
+    creatorButtonProps={{
+      record: () => ({
+        id: randomIndex(),
+        valueType: 'text',
+        title: '示例标题',
+      }),
     }}
   />
 );
