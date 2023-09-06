@@ -4,6 +4,7 @@ import type {
   GetItemStyles,
   RenderActionProps,
   RenderContent,
+  RenderEmpty,
   RenderItem,
   SortableItem,
   SortableItemList,
@@ -45,6 +46,10 @@ export interface SortableListState {
    * 渲染可排序项
    */
   renderItem?: RenderItem;
+  /**
+   * 渲染空状态
+   */
+  renderEmpty?: RenderEmpty;
   /**
    * 渲染可排序项内容
    */
@@ -97,6 +102,10 @@ export interface StoreUpdaterProps<T = SortableItem> {
    * 渲染内容区域
    */
   renderContent?: RenderContent<T>;
+  /**
+   * 渲染空状态
+   */
+  renderEmpty?: RenderEmpty;
   /**
    * 新建对象相关属性
    */

@@ -5,6 +5,7 @@
 import { PlusCircleTwoTone } from '@ant-design/icons';
 import type { ColumnItemList, SortableItem, SortableListRef } from '@ant-design/pro-editor';
 import { ActionIcon, ColumnList } from '@ant-design/pro-editor';
+import { Button, Empty } from 'antd';
 import { useRef } from 'react';
 import { Flexbox } from 'react-layout-kit';
 
@@ -60,6 +61,11 @@ const columns: ColumnItemList<SchemaItem> = [
 
 export default () => {
   const ref = useRef<SortableListRef<SchemaItem>>(null);
+
+  const handleCreate = () => {
+    const id = `id-${randomIndex()}}`;
+    ref.current.addItem({ id, title: `new-${id}`, dataIndex: 'text' });
+  };
   return (
     <>
       <Flexbox
@@ -73,15 +79,19 @@ export default () => {
           icon={<PlusCircleTwoTone />}
           key={'edit'}
           tabIndex={-1}
-          onClick={() => {
-            const id = `id-${randomIndex()}}`;
-            ref.current.addItem({ id, title: `new-${id}`, dataIndex: 'text' });
-          }}
+          onClick={handleCreate}
         />
       </Flexbox>
       <ColumnList<SchemaItem>
         ref={ref}
         columns={columns}
+        renderEmpty={() => (
+          <Empty image={Empty.PRESENTED_IMAGE_SIMPLE} description="暂无数据">
+            <Button type="primary" onClick={handleCreate}>
+              创建自定义数据
+            </Button>
+          </Empty>
+        )}
         initialValues={INIT_VALUES}
         onChange={(values) => {
           console.log('onChange', values);
