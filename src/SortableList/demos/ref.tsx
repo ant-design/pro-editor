@@ -32,7 +32,6 @@ export default () => {
           onClick={() => {
             const id = `id-${listData.length}-${randomIndex()}`;
             ref.current.addItem({ id, title: `new-${id}` });
-            ref.current.addItem({ id: 'xxx', title: '111' });
           }}
         />
       </Flexbox>
