@@ -1,5 +1,38 @@
 # Changelog
 
+## [Version&nbsp;0.19.0](https://github.com/ant-design/pro-editor/compare/v0.18.1...v0.19.0)
+
+<sup>Released on **2023-09-06**</sup>
+
+#### ✨ 新特性
+
+- Support renderEmpty and add sotrablelist custom create demo.
+
+#### 🐛 修复
+
+- 默认不提供 creatorButtonProps.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's improved
+
+- Support renderEmpty and add sotrablelist custom create demo ([d0629c6](https://github.com/ant-design/pro-editor/commit/d0629c6))
+
+#### What's fixed
+
+- 默认不提供 creatorButtonProps ([bfc2f6d](https://github.com/ant-design/pro-editor/commit/bfc2f6d))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
 ### [Version&nbsp;0.18.1](https://github.com/ant-design/pro-editor/compare/v0.18.0...v0.18.1)
 
 <sup>Released on **2023-09-04**</sup>
