@@ -35,6 +35,10 @@ export interface SortableListState {
    */
   value?: SortableItemList;
   /**
+   * 和 Value 值对应的 id 管理器
+   */
+  keyManager?: UniqueIdentifier[];
+  /**
    * 渲染额外区域
    */
   actions?: RenderActionProps;

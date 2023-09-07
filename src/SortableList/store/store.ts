@@ -44,11 +44,16 @@ const vanillaStore: StateCreator<Store, [['zustand/devtools', never]]> = (set, g
   },
   // ===== 更新 listData 方法 ======= //
   dispatchListData: (payload) => {
-    const { value, onChange } = get();
+    const { value, keyManager, onChange } = get();
     const data = listDataReducer(value, payload);
+    // value 值变化的时候，keyManager 也需要变化
+    const keys = listDataReducer(keyManager, payload);
+
+    console.log('keys', keys);
+
     if (data) {
       if (isEqual(value, data)) return;
-      set({ value: data });
+      set({ value: data, keyManager: keys });
       if (onChange) onChange(data, payload);
     }
   },

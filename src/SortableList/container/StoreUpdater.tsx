@@ -1,3 +1,4 @@
+import { produce } from 'immer';
 import { forwardRef, useImperativeHandle } from 'react';
 import { createStoreUpdater } from 'zustand-utils';
 import { useSortableList } from '..';
@@ -24,8 +25,32 @@ const StoreUpdater = forwardRef(
     const storeApi = useStoreApi();
     const useStoreUpdater = createStoreUpdater<StoreUpdaterProps>(storeApi);
 
-    useStoreUpdater('value', initialValues, []);
-    useStoreUpdater('value', value);
+    // KeyManager 和 value & initialValues 同步。
+    const KeyManagerUpdater = (state, key) => {
+      const { keyManager } = storeApi.getState();
+      // value 为空处理
+      const value = state[key] || [];
+      const manager = produce(keyManager, (draft) => {
+        value.forEach((__, index) => {
+          const key = draft[index];
+          if (key === undefined) {
+            draft[index] = crypto.randomUUID();
+          }
+        });
+        return draft;
+      });
+
+      storeApi.setState({ keyManager: manager, [key]: value });
+    };
+
+    useStoreUpdater('value', initialValues, [], (state) => {
+      KeyManagerUpdater(state, 'initialValues');
+    });
+
+    useStoreUpdater('value', value, [value], (state) => {
+      KeyManagerUpdater(state, 'value');
+    });
+
     useStoreUpdater('actions', actions);
     useStoreUpdater('getId', getId);
     useStoreUpdater('onChange', onChange);

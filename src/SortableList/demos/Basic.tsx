@@ -13,7 +13,7 @@ const Demo = () => {
   const token = useTheme();
   return (
     <Flexbox padding={24} style={{ background: token.colorBgLayout }}>
-      <SortableList value={list} />
+      <SortableList initialValues={list} />
     </Flexbox>
   );
 };
