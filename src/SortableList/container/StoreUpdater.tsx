@@ -34,7 +34,7 @@ const StoreUpdater = forwardRef(
         value.forEach((__, index) => {
           const key = draft[index];
           if (key === undefined) {
-            draft[index] = getUUID();
+            draft[index] = getUUID(index);
           }
         });
         return draft;
