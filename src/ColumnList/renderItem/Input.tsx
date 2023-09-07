@@ -1,4 +1,4 @@
-import { genUniqueId, useSortableList } from '@ant-design/pro-editor';
+import { useSortableList } from '@ant-design/pro-editor';
 import { Input } from 'antd';
 import { createStyles } from 'antd-style';
 import { CSSProperties, memo, useRef, useState } from 'react';
@@ -47,7 +47,7 @@ const ControlInput = memo<ItemRenderProps>(
       const value = instance.getValue() || [];
       // 如果是最后一个节点，按下回车后，会自动添加一个新的节点
       if (index + 1 === value.length) {
-        instance.addItem({ id: genUniqueId(value.length.toString()), [dataIndex]: '' });
+        instance.addItem({ [dataIndex]: '' });
       }
 
       setTimeout(() => {
