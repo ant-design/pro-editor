@@ -1,5 +1,4 @@
 import {
-  SortableItem,
   SortableList,
   SortableListProps,
   SortableListRef,
@@ -11,12 +10,11 @@ import { Header } from './Header';
 import { useStyle } from './style';
 import { ColumnItemList } from './types';
 
-export interface ColumnListProps<T extends SortableItem = SortableItem>
-  extends SortableListProps<T> {
+export interface ColumnListProps<T = any> extends SortableListProps<T> {
   columns: ColumnItemList<T>;
 }
 
-const ColumnList: <T extends SortableItem>(props: ColumnListProps<T>) => ReactNode = forwardRef<
+const ColumnList: <T>(props: ColumnListProps<T>) => ReactNode = forwardRef<
   SortableListRef,
   ColumnListProps
 >(({ prefixCls: customPrefixCls, className, columns, actions, hideRemove, ...props }, ref) => {
@@ -24,10 +22,11 @@ const ColumnList: <T extends SortableItem>(props: ColumnListProps<T>) => ReactNo
   const { cx } = useStyle(prefixCls);
 
   const renderItem = useCallback(
-    (item, { index, listeners }) => (
+    (item, { index, listeners, dragging }) => (
       <ColumnItem
         columns={columns}
         item={item}
+        dragging={dragging}
         listeners={listeners}
         index={index}
         prefixCls={prefixCls}

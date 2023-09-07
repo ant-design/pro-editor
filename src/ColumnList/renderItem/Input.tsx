@@ -1,7 +1,7 @@
 import { useSortableList } from '@ant-design/pro-editor';
-import { Input } from 'antd';
+import { Input, InputRef } from 'antd';
 import { createStyles } from 'antd-style';
-import { CSSProperties, memo, useRef, useState } from 'react';
+import { CSSProperties, memo, useEffect, useRef, useState } from 'react';
 
 const useStyle = createStyles(({ css, cx }, prefixCls) => {
   const prefix = `${prefixCls}-content`;
@@ -19,15 +19,16 @@ interface ItemRenderProps {
   dataIndex: string;
   value: string;
   index: number;
+  dragging: boolean;
   prefixCls: string;
   style: CSSProperties;
   placeholder?: string;
 }
 
 const ControlInput = memo<ItemRenderProps>(
-  ({ dataIndex, placeholder, value, index, prefixCls, style }) => {
+  ({ dataIndex, placeholder, value, index, prefixCls, style, dragging }) => {
     const instance = useSortableList();
-
+    const inputRef = useRef<InputRef>(null);
     const [innerValue, setInnerValue] = useState(value);
     const [changed, setChanged] = useState(false);
     const shouldChange = useRef(true);
@@ -37,6 +38,12 @@ const ControlInput = memo<ItemRenderProps>(
       instance.updateItem({ [dataIndex]: innerValue }, index);
       setChanged(false);
     };
+
+    useEffect(() => {
+      if (dragging) {
+        inputRef.current.blur();
+      }
+    }, [dragging]);
 
     const customListId = (index) => {
       const id = instance.getIdByIndex(index);
@@ -59,6 +66,7 @@ const ControlInput = memo<ItemRenderProps>(
     return (
       <Input
         size={'small'}
+        ref={inputRef}
         value={innerValue}
         style={style}
         id={customListId(index)}
