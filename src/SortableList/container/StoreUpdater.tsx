@@ -16,7 +16,6 @@ const StoreUpdater = forwardRef(
       renderContent,
       renderEmpty,
       getItemStyles,
-      getId,
       creatorButtonProps,
       hideRemove,
     }: StoreUpdaterProps,
@@ -46,7 +45,6 @@ const StoreUpdater = forwardRef(
     useStoreUpdater('value', initialValues, []);
     useStoreUpdater('value', value);
     useStoreUpdater('actions', actions);
-    useStoreUpdater('getId', getId);
     useStoreUpdater('onChange', onChange);
     useStoreUpdater('renderItem', renderItem);
     useStoreUpdater('renderContent', renderContent);

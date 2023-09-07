@@ -38,10 +38,6 @@ export interface SortableListState {
    */
   actions?: RenderActionProps;
   /**
-   * 获取唯一标识
-   */
-  getId?: (item: any, index: number) => UniqueIdentifier;
-  /**
    * 渲染可排序项
    */
   renderItem?: RenderItem;
@@ -93,10 +89,6 @@ export interface StoreUpdaterProps<T = any> {
    * 渲染可排序项
    */
   renderItem?: RenderItem<T>;
-  /**
-   * 获取唯一标识
-   */
-  getId?: (item: T, index: number) => UniqueIdentifier;
   /**
    * 渲染内容区域
    */

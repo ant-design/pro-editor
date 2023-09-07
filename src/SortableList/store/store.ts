@@ -26,10 +26,10 @@ const vanillaStore: StateCreator<Store, [['zustand/devtools', never]]> = (set, g
     set({ activeId });
   },
   handleDragEnd: ({ over, active }) => {
-    const { dispatchListData, value, getId } = get();
+    const { dispatchListData, keyManager } = get();
     if (over) {
-      const activeIndex = getIndexOfActiveItem(value, getId, active.id);
-      const overIndex = getIndexOfActiveItem(value, getId, over.id);
+      const activeIndex = getIndexOfActiveItem(keyManager, active.id);
+      const overIndex = getIndexOfActiveItem(keyManager, over.id);
 
       dispatchListData({
         type: 'moveItem',

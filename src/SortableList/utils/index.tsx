@@ -61,10 +61,6 @@ export const useLatest = (props: any) => {
   return [state, setState];
 };
 
-export const getIndexOfActiveItem = (
-  list: any[],
-  getId: (item: any, index: number) => UniqueIdentifier,
-  id?: UniqueIdentifier,
-) => {
-  return id ? list.findIndex((item, index) => getId(item, index) === id) : -1;
+export const getIndexOfActiveItem = (list: any[], id?: UniqueIdentifier) => {
+  return id ? list.findIndex((item) => item === id) : -1;
 };
