@@ -1,5 +1,31 @@
 # Changelog
 
+### [Version&nbsp;0.19.1](https://github.com/ant-design/pro-editor/compare/v0.19.0...v0.19.1)
+
+<sup>Released on **2023-09-07**</sup>
+
+#### 🐛 修复
+
+- ColumnList id lost, 修复文档样式显示异常.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's fixed
+
+- ColumnList id lost ([955e838](https://github.com/ant-design/pro-editor/commit/955e838))
+- 修复文档样式显示异常 ([bfa84fc](https://github.com/ant-design/pro-editor/commit/bfa84fc))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
 ## [Version&nbsp;0.19.0](https://github.com/ant-design/pro-editor/compare/v0.18.1...v0.19.0)
 
 <sup>Released on **2023-09-06**</sup>
