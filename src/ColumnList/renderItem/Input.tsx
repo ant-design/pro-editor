@@ -1,5 +1,4 @@
 import { genUniqueId, useSortableList } from '@ant-design/pro-editor';
-import { UniqueIdentifier } from '@dnd-kit/core';
 import { Input } from 'antd';
 import { createStyles } from 'antd-style';
 import { CSSProperties, memo, useRef, useState } from 'react';
@@ -20,14 +19,13 @@ interface ItemRenderProps {
   dataIndex: string;
   value: string;
   index: number;
-  id: UniqueIdentifier;
   prefixCls: string;
   style: CSSProperties;
   placeholder?: string;
 }
 
 const ControlInput = memo<ItemRenderProps>(
-  ({ dataIndex, placeholder, value, index, prefixCls, style, id }) => {
+  ({ dataIndex, placeholder, value, index, prefixCls, style }) => {
     const instance = useSortableList();
 
     const [innerValue, setInnerValue] = useState(value);
@@ -40,7 +38,10 @@ const ControlInput = memo<ItemRenderProps>(
       setChanged(false);
     };
 
-    const customListId = (index, id) => `column-list-${index}-${id}`;
+    const customListId = (index) => {
+      const id = instance.getIdByIndex(index);
+      return `column-list-${index}-${id}`;
+    };
 
     const handleNextFocus = () => {
       const value = instance.getValue() || [];
@@ -50,9 +51,7 @@ const ControlInput = memo<ItemRenderProps>(
       }
 
       setTimeout(() => {
-        const nextNodeEl = document.getElementById(
-          customListId(index + 1, instance.getIdByIndex(index + 1)),
-        );
+        const nextNodeEl = document.getElementById(customListId(index + 1));
         nextNodeEl?.focus();
       }, 200);
     };
@@ -62,7 +61,7 @@ const ControlInput = memo<ItemRenderProps>(
         size={'small'}
         value={innerValue}
         style={style}
-        id={customListId(index, id)}
+        id={customListId(index)}
         onCompositionStart={() => {
           shouldChange.current = false;
         }}

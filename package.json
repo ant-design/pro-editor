@@ -34,6 +34,7 @@
     "prepublishOnly": "father doctor && npm run build",
     "release": "semantic-release",
     "start": "npm run dev",
+    "sync": "tnpm sync @ant-design/pro-editor",
     "test": "vitest",
     "test:coverage": "vitest run --coverage",
     "test:update": "vitest -u",
