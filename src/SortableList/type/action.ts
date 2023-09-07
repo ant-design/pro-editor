@@ -1,5 +1,3 @@
-import { SortableItem } from '../type';
-
 // 新增节点
 export interface AddItemAction {
   /**
@@ -9,7 +7,7 @@ export interface AddItemAction {
   /**
    * 新增的节点
    */
-  item: SortableItem;
+  item: any;
   /**
    * 新增节点的位置
    * @default undefined
@@ -58,7 +56,7 @@ export interface UpdateItemAction {
   /**
    * 修改后的节点内容
    */
-  item: Partial<SortableItem>;
+  item: any;
 }
 
 /**

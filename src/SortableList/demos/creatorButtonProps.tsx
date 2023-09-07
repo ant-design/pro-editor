@@ -7,7 +7,7 @@ import { SortableList } from '@ant-design/pro-editor';
 import { useTheme } from 'antd-style';
 import { Flexbox } from 'react-layout-kit';
 
-const list = [{ id: 'hello' }, { id: 'world' }];
+const list = ['hello', 'world'];
 
 const Demo = () => {
   const token = useTheme();

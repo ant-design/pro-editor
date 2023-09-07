@@ -40,17 +40,11 @@ const StoreUpdater = forwardRef(
         return draft;
       });
 
-      storeApi.setState({ keyManager: manager, [key]: value });
+      storeApi.setState({ keyManager: manager });
     };
 
-    useStoreUpdater('value', initialValues, [], (state) => {
-      KeyManagerUpdater(state, 'initialValues');
-    });
-
-    useStoreUpdater('value', value, [value], (state) => {
-      KeyManagerUpdater(state, 'value');
-    });
-
+    useStoreUpdater('value', initialValues, []);
+    useStoreUpdater('value', value);
     useStoreUpdater('actions', actions);
     useStoreUpdater('getId', getId);
     useStoreUpdater('onChange', onChange);
@@ -60,6 +54,13 @@ const StoreUpdater = forwardRef(
     useStoreUpdater('getItemStyles', getItemStyles);
     useStoreUpdater('creatorButtonProps', creatorButtonProps);
     useStoreUpdater('hideRemove', hideRemove);
+
+    // KeyManager 状态受控
+    useStoreUpdater('initialValues', initialValues, [], (state) => {
+      KeyManagerUpdater(state, 'initialValues');
+    });
+
+    useStoreUpdater('value', value, null, (state) => KeyManagerUpdater(state, 'value'));
 
     // 将 store 传递到外部
     const instance = useSortableList();
