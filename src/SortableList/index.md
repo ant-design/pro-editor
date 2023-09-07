@@ -46,24 +46,11 @@ demo:
 
 ### CreatorButtonProps 创建按钮属性
 
-新增一行的时候要保证 `creatorButtonProps.record` key 值唯一，不然会导致组件逻辑出错。
-
-```tsx | pure
-<SortableList
-  rowKey="id"
-  creatorButtonProps={{
-    position: position as 'top',
-    // 每次新增的时候需要Key
-    record: () => ({ id: getNewId() }),
-  }}
-/>
-```
-
-| 属性名            | 类型                                           | 描述                 |
-| ----------------- | ---------------------------------------------- | -------------------- |
-| position          | `'bottom'\|'top'`                              | 按钮位置，默认在下方 |
-| record            | `(index: number) => {id: string\|number, ...}` | 生成初始值逻辑       |
-| creatorButtonText | `string`                                       | 新增一行按钮文案     |
+| 属性名            | 类型                   | 描述                 |
+| ----------------- | ---------------------- | -------------------- |
+| position          | `'bottom'\|'top'`      | 按钮位置，默认在下方 |
+| record            | `(index: number) => T` | 生成初始值逻辑       |
+| creatorButtonText | `string`               | 新增一行按钮文案     |
 
 ### GetItemStylesArgs
 
