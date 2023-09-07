@@ -3,7 +3,7 @@
  * description: 你可以设置 `creatorButtonProps={false}` 来关闭默认的创建效果，然后自定义创建逻辑
  */
 import { PlusCircleTwoTone } from '@ant-design/icons';
-import type { ColumnItemList, SortableItem, SortableListRef } from '@ant-design/pro-editor';
+import type { ColumnItemList, SortableListRef } from '@ant-design/pro-editor';
 import { ActionIcon, ColumnList } from '@ant-design/pro-editor';
 import { Button, Empty } from 'antd';
 import { useRef } from 'react';
@@ -15,23 +15,19 @@ type SchemaItem = {
   title: string;
   valueType?: string;
   dataIndex: string;
-} & SortableItem;
+};
 
 const INIT_VALUES = [
-  { id: 'orderId', dataIndex: 'orderId', valueType: 'text', title: '订单id', color: undefined },
+  { dataIndex: 'orderId', valueType: 'text', title: '订单id' },
   {
-    id: 'orderNumber',
     dataIndex: 'orderNumber',
     valueType: 'text',
     title: '订单号',
-    color: undefined,
   },
   {
-    id: 'orderMoney',
     dataIndex: 'orderMoney',
     valueType: 'text',
     title: '订单金额',
-    color: undefined,
   },
 ];
 
@@ -64,8 +60,9 @@ export default () => {
 
   const handleCreate = () => {
     const id = `id-${randomIndex()}}`;
-    ref.current.addItem({ id, title: `new-${id}`, dataIndex: 'text' });
+    ref.current.addItem({ dataIndex: id, title: `new-${id}`, valueType: 'text' });
   };
+
   return (
     <>
       <Flexbox
@@ -85,6 +82,7 @@ export default () => {
       <ColumnList<SchemaItem>
         ref={ref}
         columns={columns}
+        getId={(item) => item.dataIndex}
         renderEmpty={() => (
           <Empty image={Empty.PRESENTED_IMAGE_SIMPLE} description="暂无数据">
             <Button type="primary" onClick={handleCreate}>
