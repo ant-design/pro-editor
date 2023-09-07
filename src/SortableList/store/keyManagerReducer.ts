@@ -1,6 +1,7 @@
 import { arrayMove } from '@dnd-kit/sortable';
 import { produce } from 'immer';
 import { SortableListDispatchPayload } from '../type';
+import { getUUID } from '../utils';
 
 export const keyManagerReducer = (value: any[], payload: SortableListDispatchPayload) => {
   switch (payload.type) {
@@ -37,7 +38,7 @@ export const keyManagerReducer = (value: any[], payload: SortableListDispatchPay
     case 'addItem':
       const { index = value.length } = payload;
       return produce(value, (draft) => {
-        draft.splice(index, 0, crypto.randomUUID());
+        draft.splice(index, 0, getUUID());
         return draft;
       });
 

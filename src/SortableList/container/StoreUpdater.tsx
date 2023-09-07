@@ -4,6 +4,7 @@ import { createStoreUpdater } from 'zustand-utils';
 import { useSortableList } from '..';
 import { useStoreApi } from '../store';
 import type { StoreUpdaterProps } from '../type';
+import { getUUID } from '../utils';
 
 const StoreUpdater = forwardRef(
   (
@@ -33,7 +34,7 @@ const StoreUpdater = forwardRef(
         value.forEach((__, index) => {
           const key = draft[index];
           if (key === undefined) {
-            draft[index] = crypto.randomUUID();
+            draft[index] = getUUID();
           }
         });
         return draft;

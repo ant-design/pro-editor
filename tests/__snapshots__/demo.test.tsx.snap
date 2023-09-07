@@ -2648,7 +2648,7 @@ exports[`<ColumnList /> > renders actions.tsx correctly 1`] = `
           aria-roledescription="sortable"
           class="studio-sortable-list-item emotion-7 studio-sortable-list-item-withHandle"
           data-cypress="draggable-item"
-          data-id="d4f7789b-6345-4850-aa99-8aa271766e59"
+          data-id="16"
           data-index="0"
           role="button"
           style="background-color: rgb(255, 255, 255);"
@@ -2682,7 +2682,7 @@ exports[`<ColumnList /> > renders actions.tsx correctly 1`] = `
             >
               <input
                 class="studio-input studio-input-sm studio-column-list-content-tem emotion-13"
-                id="column-list-0-d4f7789b-6345-4850-aa99-8aa271766e59"
+                id="column-list-0-16"
                 placeholder="请输入"
                 style="flex: 1; max-width: 33.333333333333336%;"
                 type="text"
@@ -2890,7 +2890,7 @@ exports[`<ColumnList /> > renders actions.tsx correctly 1`] = `
           aria-roledescription="sortable"
           class="studio-sortable-list-item emotion-7 studio-sortable-list-item-withHandle"
           data-cypress="draggable-item"
-          data-id="af3d7eec-c7f9-4517-b978-874debf99401"
+          data-id="17"
           data-index="1"
           role="button"
           style="background-color: rgb(255, 255, 255);"
@@ -2924,7 +2924,7 @@ exports[`<ColumnList /> > renders actions.tsx correctly 1`] = `
             >
               <input
                 class="studio-input studio-input-sm studio-column-list-content-tem emotion-13"
-                id="column-list-1-af3d7eec-c7f9-4517-b978-874debf99401"
+                id="column-list-1-17"
                 placeholder="请输入"
                 style="flex: 1; max-width: 33.333333333333336%;"
                 type="text"
@@ -3132,7 +3132,7 @@ exports[`<ColumnList /> > renders actions.tsx correctly 1`] = `
           aria-roledescription="sortable"
           class="studio-sortable-list-item emotion-7 studio-sortable-list-item-withHandle"
           data-cypress="draggable-item"
-          data-id="7726b796-213b-483b-9053-9bfeee3c4836"
+          data-id="18"
           data-index="2"
           role="button"
           style="background-color: rgb(255, 255, 255);"
@@ -3166,7 +3166,7 @@ exports[`<ColumnList /> > renders actions.tsx correctly 1`] = `
             >
               <input
                 class="studio-input studio-input-sm studio-column-list-content-tem emotion-13"
-                id="column-list-2-7726b796-213b-483b-9053-9bfeee3c4836"
+                id="column-list-2-18"
                 placeholder="请输入"
                 style="flex: 1; max-width: 33.333333333333336%;"
                 type="text"
@@ -3720,7 +3720,7 @@ exports[`<ColumnList /> > renders column.tsx correctly 1`] = `
           aria-roledescription="sortable"
           class="studio-sortable-list-item emotion-8 studio-sortable-list-item-withHandle"
           data-cypress="draggable-item"
-          data-id="4c936799-c16d-4fe8-8a85-267dced72ba8"
+          data-id="12"
           data-index="0"
           role="button"
           style="background-color: rgb(255, 255, 255);"
@@ -3754,7 +3754,7 @@ exports[`<ColumnList /> > renders column.tsx correctly 1`] = `
             >
               <input
                 class="studio-input studio-input-sm studio-column-list-content-tem emotion-14"
-                id="column-list-0-4c936799-c16d-4fe8-8a85-267dced72ba8"
+                id="column-list-0-12"
                 placeholder="请输入"
                 style="flex: 1; max-width: 25%;"
                 type="text"
@@ -3950,7 +3950,7 @@ exports[`<ColumnList /> > renders column.tsx correctly 1`] = `
           aria-roledescription="sortable"
           class="studio-sortable-list-item emotion-8 studio-sortable-list-item-withHandle"
           data-cypress="draggable-item"
-          data-id="02c394d4-4eb2-48ed-9f30-e686a0579d96"
+          data-id="13"
           data-index="1"
           role="button"
           style="background-color: rgb(255, 255, 255);"
@@ -3984,7 +3984,7 @@ exports[`<ColumnList /> > renders column.tsx correctly 1`] = `
             >
               <input
                 class="studio-input studio-input-sm studio-column-list-content-tem emotion-14"
-                id="column-list-1-02c394d4-4eb2-48ed-9f30-e686a0579d96"
+                id="column-list-1-13"
                 placeholder="请输入"
                 style="flex: 1; max-width: 25%;"
                 type="text"
@@ -4180,7 +4180,7 @@ exports[`<ColumnList /> > renders column.tsx correctly 1`] = `
           aria-roledescription="sortable"
           class="studio-sortable-list-item emotion-8 studio-sortable-list-item-withHandle"
           data-cypress="draggable-item"
-          data-id="ac5cf1ee-8327-473a-9b30-9165e672d2b2"
+          data-id="14"
           data-index="2"
           role="button"
           style="background-color: rgb(255, 255, 255);"
@@ -4214,7 +4214,7 @@ exports[`<ColumnList /> > renders column.tsx correctly 1`] = `
             >
               <input
                 class="studio-input studio-input-sm studio-column-list-content-tem emotion-14"
-                id="column-list-2-ac5cf1ee-8327-473a-9b30-9165e672d2b2"
+                id="column-list-2-14"
                 placeholder="请输入"
                 style="flex: 1; max-width: 25%;"
                 type="text"
@@ -4410,7 +4410,7 @@ exports[`<ColumnList /> > renders column.tsx correctly 1`] = `
           aria-roledescription="sortable"
           class="studio-sortable-list-item emotion-8 studio-sortable-list-item-withHandle"
           data-cypress="draggable-item"
-          data-id="d24c2ecd-abfe-4de4-bf9e-bcdaaf296a52"
+          data-id="15"
           data-index="3"
           role="button"
           style="background-color: rgb(255, 255, 255);"
@@ -4444,7 +4444,7 @@ exports[`<ColumnList /> > renders column.tsx correctly 1`] = `
             >
               <input
                 class="studio-input studio-input-sm studio-column-list-content-tem emotion-14"
-                id="column-list-3-d24c2ecd-abfe-4de4-bf9e-bcdaaf296a52"
+                id="column-list-3-15"
                 placeholder="请输入"
                 style="flex: 1; max-width: 25%;"
                 type="text"
@@ -4947,7 +4947,7 @@ exports[`<ColumnList /> > renders controlled.tsx correctly 1`] = `
           aria-roledescription="sortable"
           class="studio-sortable-list-item emotion-7 studio-sortable-list-item-withHandle"
           data-cypress="draggable-item"
-          data-id="615bfd5f-8265-4819-9b87-4582085a8211"
+          data-id="9"
           data-index="0"
           role="button"
           style="background-color: rgb(255, 255, 255);"
@@ -4981,7 +4981,7 @@ exports[`<ColumnList /> > renders controlled.tsx correctly 1`] = `
             >
               <input
                 class="studio-input studio-input-sm studio-column-list-content-tem emotion-13"
-                id="column-list-0-615bfd5f-8265-4819-9b87-4582085a8211"
+                id="column-list-0-9"
                 placeholder="请输入"
                 style="flex: 1; max-width: 33.333333333333336%;"
                 type="text"
@@ -5160,7 +5160,7 @@ exports[`<ColumnList /> > renders controlled.tsx correctly 1`] = `
           aria-roledescription="sortable"
           class="studio-sortable-list-item emotion-7 studio-sortable-list-item-withHandle"
           data-cypress="draggable-item"
-          data-id="7997d7d7-d268-4997-8fd6-2bca80c8e3c0"
+          data-id="10"
           data-index="1"
           role="button"
           style="background-color: rgb(255, 255, 255);"
@@ -5194,7 +5194,7 @@ exports[`<ColumnList /> > renders controlled.tsx correctly 1`] = `
             >
               <input
                 class="studio-input studio-input-sm studio-column-list-content-tem emotion-13"
-                id="column-list-1-7997d7d7-d268-4997-8fd6-2bca80c8e3c0"
+                id="column-list-1-10"
                 placeholder="请输入"
                 style="flex: 1; max-width: 33.333333333333336%;"
                 type="text"
@@ -5373,7 +5373,7 @@ exports[`<ColumnList /> > renders controlled.tsx correctly 1`] = `
           aria-roledescription="sortable"
           class="studio-sortable-list-item emotion-7 studio-sortable-list-item-withHandle"
           data-cypress="draggable-item"
-          data-id="e28321d5-8112-4859-a135-c77331bf4056"
+          data-id="11"
           data-index="2"
           role="button"
           style="background-color: rgb(255, 255, 255);"
@@ -5407,7 +5407,7 @@ exports[`<ColumnList /> > renders controlled.tsx correctly 1`] = `
             >
               <input
                 class="studio-input studio-input-sm studio-column-list-content-tem emotion-13"
-                id="column-list-2-e28321d5-8112-4859-a135-c77331bf4056"
+                id="column-list-2-11"
                 placeholder="请输入"
                 style="flex: 1; max-width: 33.333333333333336%;"
                 type="text"
@@ -5950,7 +5950,7 @@ exports[`<ColumnList /> > renders creatorButtonProps.tsx correctly 1`] = `
           aria-roledescription="sortable"
           class="studio-sortable-list-item emotion-8 studio-sortable-list-item-withHandle"
           data-cypress="draggable-item"
-          data-id="3c45306b-16ce-4b93-8e48-a700c9bc632e"
+          data-id="6"
           data-index="0"
           role="button"
           style="background-color: rgb(255, 255, 255);"
@@ -5984,7 +5984,7 @@ exports[`<ColumnList /> > renders creatorButtonProps.tsx correctly 1`] = `
             >
               <input
                 class="studio-input studio-input-sm studio-column-list-content-tem emotion-14"
-                id="column-list-0-3c45306b-16ce-4b93-8e48-a700c9bc632e"
+                id="column-list-0-6"
                 placeholder="请输入"
                 style="flex: 1; max-width: 33.333333333333336%;"
                 type="text"
@@ -6163,7 +6163,7 @@ exports[`<ColumnList /> > renders creatorButtonProps.tsx correctly 1`] = `
           aria-roledescription="sortable"
           class="studio-sortable-list-item emotion-8 studio-sortable-list-item-withHandle"
           data-cypress="draggable-item"
-          data-id="c9e3bc32-4669-4e89-89a0-b1750a521ed0"
+          data-id="7"
           data-index="1"
           role="button"
           style="background-color: rgb(255, 255, 255);"
@@ -6197,7 +6197,7 @@ exports[`<ColumnList /> > renders creatorButtonProps.tsx correctly 1`] = `
             >
               <input
                 class="studio-input studio-input-sm studio-column-list-content-tem emotion-14"
-                id="column-list-1-c9e3bc32-4669-4e89-89a0-b1750a521ed0"
+                id="column-list-1-7"
                 placeholder="请输入"
                 style="flex: 1; max-width: 33.333333333333336%;"
                 type="text"
@@ -6376,7 +6376,7 @@ exports[`<ColumnList /> > renders creatorButtonProps.tsx correctly 1`] = `
           aria-roledescription="sortable"
           class="studio-sortable-list-item emotion-8 studio-sortable-list-item-withHandle"
           data-cypress="draggable-item"
-          data-id="885c09fa-b93f-4516-91b7-fa919f42cc4a"
+          data-id="8"
           data-index="2"
           role="button"
           style="background-color: rgb(255, 255, 255);"
@@ -6410,7 +6410,7 @@ exports[`<ColumnList /> > renders creatorButtonProps.tsx correctly 1`] = `
             >
               <input
                 class="studio-input studio-input-sm studio-column-list-content-tem emotion-14"
-                id="column-list-2-885c09fa-b93f-4516-91b7-fa919f42cc4a"
+                id="column-list-2-8"
                 placeholder="请输入"
                 style="flex: 1; max-width: 33.333333333333336%;"
                 type="text"
@@ -6960,7 +6960,7 @@ exports[`<ColumnList /> > renders customCreate.tsx correctly 1`] = `
           aria-roledescription="sortable"
           class="studio-sortable-list-item emotion-9 studio-sortable-list-item-withHandle"
           data-cypress="draggable-item"
-          data-id="8b2688e1-d581-4bf4-8276-e712bd800f9a"
+          data-id="3"
           data-index="0"
           role="button"
           style="background-color: rgb(255, 255, 255);"
@@ -6994,7 +6994,7 @@ exports[`<ColumnList /> > renders customCreate.tsx correctly 1`] = `
             >
               <input
                 class="studio-input studio-input-sm studio-column-list-content-tem emotion-15"
-                id="column-list-0-8b2688e1-d581-4bf4-8276-e712bd800f9a"
+                id="column-list-0-3"
                 placeholder="请输入"
                 style="flex: 1; max-width: 33.333333333333336%;"
                 type="text"
@@ -7173,7 +7173,7 @@ exports[`<ColumnList /> > renders customCreate.tsx correctly 1`] = `
           aria-roledescription="sortable"
           class="studio-sortable-list-item emotion-9 studio-sortable-list-item-withHandle"
           data-cypress="draggable-item"
-          data-id="97f42563-406b-4c1e-8ad9-81d1698c95ab"
+          data-id="4"
           data-index="1"
           role="button"
           style="background-color: rgb(255, 255, 255);"
@@ -7207,7 +7207,7 @@ exports[`<ColumnList /> > renders customCreate.tsx correctly 1`] = `
             >
               <input
                 class="studio-input studio-input-sm studio-column-list-content-tem emotion-15"
-                id="column-list-1-97f42563-406b-4c1e-8ad9-81d1698c95ab"
+                id="column-list-1-4"
                 placeholder="请输入"
                 style="flex: 1; max-width: 33.333333333333336%;"
                 type="text"
@@ -7386,7 +7386,7 @@ exports[`<ColumnList /> > renders customCreate.tsx correctly 1`] = `
           aria-roledescription="sortable"
           class="studio-sortable-list-item emotion-9 studio-sortable-list-item-withHandle"
           data-cypress="draggable-item"
-          data-id="88ee860b-ff32-4d28-80a2-62b9ba765f79"
+          data-id="5"
           data-index="2"
           role="button"
           style="background-color: rgb(255, 255, 255);"
@@ -7420,7 +7420,7 @@ exports[`<ColumnList /> > renders customCreate.tsx correctly 1`] = `
             >
               <input
                 class="studio-input studio-input-sm studio-column-list-content-tem emotion-15"
-                id="column-list-2-88ee860b-ff32-4d28-80a2-62b9ba765f79"
+                id="column-list-2-5"
                 placeholder="请输入"
                 style="flex: 1; max-width: 33.333333333333336%;"
                 type="text"
@@ -8048,7 +8048,7 @@ exports[`<ColumnList /> > renders normal.tsx correctly 1`] = `
           aria-roledescription="sortable"
           class="studio-sortable-list-item emotion-6 studio-sortable-list-item-withHandle"
           data-cypress="draggable-item"
-          data-id="4d6c48c4-c0e9-4c17-b45e-ca74d627341d"
+          data-id="0"
           data-index="0"
           role="button"
           style="background-color: rgb(255, 255, 255);"
@@ -8082,7 +8082,7 @@ exports[`<ColumnList /> > renders normal.tsx correctly 1`] = `
             >
               <input
                 class="studio-input studio-input-sm studio-column-list-content-tem emotion-12"
-                id="column-list-0-4d6c48c4-c0e9-4c17-b45e-ca74d627341d"
+                id="column-list-0-null"
                 placeholder="请输入"
                 style="flex: 1; max-width: 50%;"
                 type="text"
@@ -8090,7 +8090,7 @@ exports[`<ColumnList /> > renders normal.tsx correctly 1`] = `
               />
               <input
                 class="studio-input studio-input-sm studio-column-list-content-tem emotion-12"
-                id="column-list-0-4d6c48c4-c0e9-4c17-b45e-ca74d627341d"
+                id="column-list-0-null"
                 placeholder="请输入"
                 style="flex: 1; max-width: 50%;"
                 type="text"
@@ -8145,7 +8145,7 @@ exports[`<ColumnList /> > renders normal.tsx correctly 1`] = `
           aria-roledescription="sortable"
           class="studio-sortable-list-item emotion-6 studio-sortable-list-item-withHandle"
           data-cypress="draggable-item"
-          data-id="9b94d116-daec-4cda-884c-4fe4304094f4"
+          data-id="1"
           data-index="1"
           role="button"
           style="background-color: rgb(255, 255, 255);"
@@ -8179,7 +8179,7 @@ exports[`<ColumnList /> > renders normal.tsx correctly 1`] = `
             >
               <input
                 class="studio-input studio-input-sm studio-column-list-content-tem emotion-12"
-                id="column-list-1-9b94d116-daec-4cda-884c-4fe4304094f4"
+                id="column-list-1-1"
                 placeholder="请输入"
                 style="flex: 1; max-width: 50%;"
                 type="text"
@@ -8187,7 +8187,7 @@ exports[`<ColumnList /> > renders normal.tsx correctly 1`] = `
               />
               <input
                 class="studio-input studio-input-sm studio-column-list-content-tem emotion-12"
-                id="column-list-1-9b94d116-daec-4cda-884c-4fe4304094f4"
+                id="column-list-1-1"
                 placeholder="请输入"
                 style="flex: 1; max-width: 50%;"
                 type="text"
@@ -8242,7 +8242,7 @@ exports[`<ColumnList /> > renders normal.tsx correctly 1`] = `
           aria-roledescription="sortable"
           class="studio-sortable-list-item emotion-6 studio-sortable-list-item-withHandle"
           data-cypress="draggable-item"
-          data-id="6ed81628-b229-4b92-9381-efd37943c8a9"
+          data-id="2"
           data-index="2"
           role="button"
           style="background-color: rgb(255, 255, 255);"
@@ -8276,7 +8276,7 @@ exports[`<ColumnList /> > renders normal.tsx correctly 1`] = `
             >
               <input
                 class="studio-input studio-input-sm studio-column-list-content-tem emotion-12"
-                id="column-list-2-6ed81628-b229-4b92-9381-efd37943c8a9"
+                id="column-list-2-2"
                 placeholder="请输入"
                 style="flex: 1; max-width: 50%;"
                 type="text"
@@ -8284,7 +8284,7 @@ exports[`<ColumnList /> > renders normal.tsx correctly 1`] = `
               />
               <input
                 class="studio-input studio-input-sm studio-column-list-content-tem emotion-12"
-                id="column-list-2-6ed81628-b229-4b92-9381-efd37943c8a9"
+                id="column-list-2-2"
                 placeholder="请输入"
                 style="flex: 1; max-width: 50%;"
                 type="text"
@@ -19757,7 +19757,7 @@ exports[`<SortableList /> > renders Basic.tsx correctly 1`] = `
             aria-roledescription="sortable"
             class="studio-sortable-list-item emotion-4 studio-sortable-list-item-withHandle"
             data-cypress="draggable-item"
-            data-id="90fa7df0-b10c-4e43-8af2-f2555b38afa9"
+            data-id="43"
             data-index="0"
             role="button"
             style="background-color: rgb(255, 255, 255);"
@@ -19842,7 +19842,7 @@ exports[`<SortableList /> > renders Basic.tsx correctly 1`] = `
             aria-roledescription="sortable"
             class="studio-sortable-list-item emotion-4 studio-sortable-list-item-withHandle"
             data-cypress="draggable-item"
-            data-id="e149d74e-e507-4f69-ad1b-1d4dba4da9cf"
+            data-id="44"
             data-index="1"
             role="button"
             style="background-color: rgb(255, 255, 255);"
@@ -20175,7 +20175,7 @@ exports[`<SortableList /> > renders controlled.tsx correctly 1`] = `
             aria-roledescription="sortable"
             class="studio-sortable-list-item emotion-4 studio-sortable-list-item-withHandle"
             data-cypress="draggable-item"
-            data-id="5a98fbd1-3bae-44e4-876e-a5f8183bb90b"
+            data-id="41"
             data-index="0"
             role="button"
             style="background-color: rgb(255, 255, 255);"
@@ -20260,7 +20260,7 @@ exports[`<SortableList /> > renders controlled.tsx correctly 1`] = `
             aria-roledescription="sortable"
             class="studio-sortable-list-item emotion-4 studio-sortable-list-item-withHandle"
             data-cypress="draggable-item"
-            data-id="99cf3b78-4d52-4e4f-868f-86a6ad9513f3"
+            data-id="42"
             data-index="1"
             role="button"
             style="background-color: rgb(255, 255, 255);"
@@ -20625,7 +20625,7 @@ exports[`<SortableList /> > renders creatorButtonProps.tsx correctly 1`] = `
             aria-roledescription="sortable"
             class="studio-sortable-list-item emotion-4 studio-sortable-list-item-withHandle"
             data-cypress="draggable-item"
-            data-id="91eee9c2-a671-40f4-b552-2e9aecf4e3b9"
+            data-id="39"
             data-index="0"
             role="button"
             style="background-color: rgb(255, 255, 255);"
@@ -20708,7 +20708,7 @@ exports[`<SortableList /> > renders creatorButtonProps.tsx correctly 1`] = `
             aria-roledescription="sortable"
             class="studio-sortable-list-item emotion-4 studio-sortable-list-item-withHandle"
             data-cypress="draggable-item"
-            data-id="07cccb56-a22c-4dcd-9f5b-d3ecfdc21ddd"
+            data-id="40"
             data-index="1"
             role="button"
             style="background-color: rgb(255, 255, 255);"
@@ -21156,7 +21156,7 @@ exports[`<SortableList /> > renders getItemStyles.tsx correctly 1`] = `
           aria-roledescription="sortable"
           class="studio-sortable-list-item emotion-3 studio-sortable-list-item-withHandle"
           data-cypress="draggable-item"
-          data-id="a7f222f0-886b-4397-a4b3-ebbf3fa19195"
+          data-id="35"
           data-index="0"
           role="button"
           style="padding: 24px; background: pink; color: rgb(135, 74, 74); border-radius: 16px; box-shadow: none; background-color: rgb(255, 255, 255);"
@@ -21241,7 +21241,7 @@ exports[`<SortableList /> > renders getItemStyles.tsx correctly 1`] = `
           aria-roledescription="sortable"
           class="studio-sortable-list-item emotion-3 studio-sortable-list-item-withHandle"
           data-cypress="draggable-item"
-          data-id="58e428e6-7c4b-4316-b26f-8026d2443a96"
+          data-id="36"
           data-index="1"
           role="button"
           style="padding: 24px; background: pink; color: rgb(135, 74, 74); border-radius: 16px; box-shadow: none; background-color: rgb(255, 255, 255);"
@@ -21326,7 +21326,7 @@ exports[`<SortableList /> > renders getItemStyles.tsx correctly 1`] = `
           aria-roledescription="sortable"
           class="studio-sortable-list-item emotion-3 studio-sortable-list-item-withHandle"
           data-cypress="draggable-item"
-          data-id="9aa21a57-a147-4737-9c0a-49d3dc0e288b"
+          data-id="37"
           data-index="2"
           role="button"
           style="padding: 24px; background: pink; color: rgb(135, 74, 74); border-radius: 16px; box-shadow: none; background-color: rgb(255, 255, 255);"
@@ -21411,7 +21411,7 @@ exports[`<SortableList /> > renders getItemStyles.tsx correctly 1`] = `
           aria-roledescription="sortable"
           class="studio-sortable-list-item emotion-3 studio-sortable-list-item-withHandle"
           data-cypress="draggable-item"
-          data-id="58a8dec7-cb06-4600-ae36-66b24f31b436"
+          data-id="38"
           data-index="3"
           role="button"
           style="padding: 24px; background: pink; color: rgb(135, 74, 74); border-radius: 16px; box-shadow: none; background-color: rgb(255, 255, 255);"
@@ -21768,7 +21768,7 @@ exports[`<SortableList /> > renders provider.tsx correctly 1`] = `
             aria-roledescription="sortable"
             class="studio-sortable-list-item emotion-4 studio-sortable-list-item-withHandle"
             data-cypress="draggable-item"
-            data-id="d87fc83e-c7c3-4dd8-bede-0227db4f07fd"
+            data-id="32"
             data-index="0"
             role="button"
             style="background-color: rgb(255, 255, 255);"
@@ -21931,7 +21931,7 @@ exports[`<SortableList /> > renders provider.tsx correctly 1`] = `
             aria-roledescription="sortable"
             class="studio-sortable-list-item emotion-4 studio-sortable-list-item-withHandle"
             data-cypress="draggable-item"
-            data-id="d8775a3c-da95-421e-bdf9-f3af51827388"
+            data-id="33"
             data-index="1"
             role="button"
             style="background-color: rgb(255, 255, 255);"
@@ -22094,7 +22094,7 @@ exports[`<SortableList /> > renders provider.tsx correctly 1`] = `
             aria-roledescription="sortable"
             class="studio-sortable-list-item emotion-4 studio-sortable-list-item-withHandle"
             data-cypress="draggable-item"
-            data-id="2eec038d-d4df-4884-9376-74c4e80823a4"
+            data-id="34"
             data-index="2"
             role="button"
             style="background-color: rgb(255, 255, 255);"
@@ -22575,7 +22575,7 @@ exports[`<SortableList /> > renders ref.tsx correctly 1`] = `
             aria-roledescription="sortable"
             class="studio-sortable-list-item emotion-6 studio-sortable-list-item-withHandle"
             data-cypress="draggable-item"
-            data-id="991b9b60-3c7c-4744-ab4d-85c70507b8c0"
+            data-id="29"
             data-index="0"
             role="button"
             style="background-color: rgb(255, 255, 255);"
@@ -22738,7 +22738,7 @@ exports[`<SortableList /> > renders ref.tsx correctly 1`] = `
             aria-roledescription="sortable"
             class="studio-sortable-list-item emotion-6 studio-sortable-list-item-withHandle"
             data-cypress="draggable-item"
-            data-id="8e68656a-c130-421e-9bc9-92fc1d45ceb0"
+            data-id="30"
             data-index="1"
             role="button"
             style="background-color: rgb(255, 255, 255);"
@@ -22901,7 +22901,7 @@ exports[`<SortableList /> > renders ref.tsx correctly 1`] = `
             aria-roledescription="sortable"
             class="studio-sortable-list-item emotion-6 studio-sortable-list-item-withHandle"
             data-cypress="draggable-item"
-            data-id="189efd57-971c-4a91-a272-9e00aefe3693"
+            data-id="31"
             data-index="2"
             role="button"
             style="background-color: rgb(255, 255, 255);"
@@ -23328,7 +23328,7 @@ exports[`<SortableList /> > renders renderContent.tsx correctly 1`] = `
             aria-roledescription="sortable"
             class="studio-sortable-list-item emotion-4 studio-sortable-list-item-withHandle"
             data-cypress="draggable-item"
-            data-id="e71c5f37-b7d1-4a49-ae47-7af81cfc5b70"
+            data-id="26"
             data-index="0"
             role="button"
             style="background-color: rgb(255, 255, 255);"
@@ -23491,7 +23491,7 @@ exports[`<SortableList /> > renders renderContent.tsx correctly 1`] = `
             aria-roledescription="sortable"
             class="studio-sortable-list-item emotion-4 studio-sortable-list-item-withHandle"
             data-cypress="draggable-item"
-            data-id="5701b781-52c8-496a-8617-04cde44da4e6"
+            data-id="27"
             data-index="1"
             role="button"
             style="background-color: rgb(255, 255, 255);"
@@ -23654,7 +23654,7 @@ exports[`<SortableList /> > renders renderContent.tsx correctly 1`] = `
             aria-roledescription="sortable"
             class="studio-sortable-list-item emotion-4 studio-sortable-list-item-withHandle"
             data-cypress="draggable-item"
-            data-id="fea6f1b6-901f-40e5-b611-37b433c04451"
+            data-id="28"
             data-index="2"
             role="button"
             style="background-color: rgb(255, 255, 255);"
@@ -24022,7 +24022,7 @@ exports[`<SortableList /> > renders renderItem.tsx correctly 1`] = `
             aria-roledescription="sortable"
             class="studio-sortable-list-item emotion-5 studio-sortable-list-item-withHandle"
             data-cypress="draggable-item"
-            data-id="aa6fd927-6dea-4632-a63c-321f94155fb2"
+            data-id="22"
             data-index="0"
             role="button"
             style="padding: 16px; background-color: rgb(255, 255, 255);"
@@ -24111,7 +24111,7 @@ exports[`<SortableList /> > renders renderItem.tsx correctly 1`] = `
             aria-roledescription="sortable"
             class="studio-sortable-list-item emotion-5 studio-sortable-list-item-withHandle"
             data-cypress="draggable-item"
-            data-id="2e3668bd-1538-4a76-8588-7d56ef17abae"
+            data-id="23"
             data-index="1"
             role="button"
             style="padding: 16px; background-color: rgb(255, 255, 255);"
@@ -24200,7 +24200,7 @@ exports[`<SortableList /> > renders renderItem.tsx correctly 1`] = `
             aria-roledescription="sortable"
             class="studio-sortable-list-item emotion-5 studio-sortable-list-item-withHandle"
             data-cypress="draggable-item"
-            data-id="fcf71bda-c7d6-4ee5-8a81-0b4b36ae8e1c"
+            data-id="24"
             data-index="2"
             role="button"
             style="padding: 16px; background-color: rgb(255, 255, 255);"
@@ -24289,7 +24289,7 @@ exports[`<SortableList /> > renders renderItem.tsx correctly 1`] = `
             aria-roledescription="sortable"
             class="studio-sortable-list-item emotion-5 studio-sortable-list-item-withHandle"
             data-cypress="draggable-item"
-            data-id="233e5e8f-a8b0-4474-ad4d-c832f413d6e0"
+            data-id="25"
             data-index="3"
             role="button"
             style="padding: 16px; background-color: rgb(255, 255, 255);"
@@ -24642,7 +24642,7 @@ exports[`<SortableList /> > renders useSortableList.tsx correctly 1`] = `
             aria-roledescription="sortable"
             class="studio-sortable-list-item emotion-4 studio-sortable-list-item-withHandle"
             data-cypress="draggable-item"
-            data-id="75bb2426-a73f-4746-b26d-3d7d6b88e5fa"
+            data-id="19"
             data-index="0"
             role="button"
             style="background-color: rgb(255, 255, 255);"
@@ -24805,7 +24805,7 @@ exports[`<SortableList /> > renders useSortableList.tsx correctly 1`] = `
             aria-roledescription="sortable"
             class="studio-sortable-list-item emotion-4 studio-sortable-list-item-withHandle"
             data-cypress="draggable-item"
-            data-id="3ad5576f-7bec-4dbf-a280-9ff2abd44d19"
+            data-id="20"
             data-index="1"
             role="button"
             style="background-color: rgb(255, 255, 255);"
@@ -24968,7 +24968,7 @@ exports[`<SortableList /> > renders useSortableList.tsx correctly 1`] = `
             aria-roledescription="sortable"
             class="studio-sortable-list-item emotion-4 studio-sortable-list-item-withHandle"
             data-cypress="draggable-item"
-            data-id="ddc053d7-53b1-4f1b-af2f-76c7ead9e928"
+            data-id="21"
             data-index="2"
             role="button"
             style="background-color: rgb(255, 255, 255);"
@@ -25410,7 +25410,6 @@ exports[`<SortableTree /> > renders controlled.tsx correctly 1`] = `
     >
       <li
         class="studio-sortable-tree-node studio-sortable-tree-node-indicator emotion-2"
-        indentationwidth="24"
         style="--spacing: 0px; transition: transform 200ms ease;"
       >
         <div
@@ -25481,7 +25480,6 @@ exports[`<SortableTree /> > renders controlled.tsx correctly 1`] = `
       </li>
       <li
         class="studio-sortable-tree-node studio-sortable-tree-node-indicator emotion-2"
-        indentationwidth="24"
         style="--spacing: 0px; transition: transform 200ms ease;"
       >
         <div
@@ -25570,7 +25568,6 @@ exports[`<SortableTree /> > renders controlled.tsx correctly 1`] = `
       </li>
       <li
         class="studio-sortable-tree-node studio-sortable-tree-node-indicator emotion-2"
-        indentationwidth="24"
         style="--spacing: 24px; transition: transform 200ms ease;"
       >
         <div
@@ -25641,7 +25638,6 @@ exports[`<SortableTree /> > renders controlled.tsx correctly 1`] = `
       </li>
       <li
         class="studio-sortable-tree-node studio-sortable-tree-node-indicator emotion-2"
-        indentationwidth="24"
         style="--spacing: 24px; transition: transform 200ms ease;"
       >
         <div
@@ -25712,7 +25708,6 @@ exports[`<SortableTree /> > renders controlled.tsx correctly 1`] = `
       </li>
       <li
         class="studio-sortable-tree-node studio-sortable-tree-node-indicator emotion-2"
-        indentationwidth="24"
         style="--spacing: 24px; transition: transform 200ms ease;"
       >
         <div
@@ -25783,7 +25778,6 @@ exports[`<SortableTree /> > renders controlled.tsx correctly 1`] = `
       </li>
       <li
         class="studio-sortable-tree-node studio-sortable-tree-node-indicator emotion-2"
-        indentationwidth="24"
         style="--spacing: 24px; transition: transform 200ms ease;"
       >
         <div
@@ -25854,7 +25848,6 @@ exports[`<SortableTree /> > renders controlled.tsx correctly 1`] = `
       </li>
       <li
         class="studio-sortable-tree-node studio-sortable-tree-node-indicator emotion-2"
-        indentationwidth="24"
         style="--spacing: 0px; transition: transform 200ms ease;"
       >
         <div
@@ -25925,7 +25918,6 @@ exports[`<SortableTree /> > renders controlled.tsx correctly 1`] = `
       </li>
       <li
         class="studio-sortable-tree-node studio-sortable-tree-node-indicator emotion-2"
-        indentationwidth="24"
         style="--spacing: 0px; transition: transform 200ms ease;"
       >
         <div
@@ -26014,7 +26006,6 @@ exports[`<SortableTree /> > renders controlled.tsx correctly 1`] = `
       </li>
       <li
         class="studio-sortable-tree-node studio-sortable-tree-node-indicator emotion-2"
-        indentationwidth="24"
         style="--spacing: 24px; transition: transform 200ms ease;"
       >
         <div
@@ -26085,7 +26076,6 @@ exports[`<SortableTree /> > renders controlled.tsx correctly 1`] = `
       </li>
       <li
         class="studio-sortable-tree-node studio-sortable-tree-node-indicator emotion-2"
-        indentationwidth="24"
         style="--spacing: 24px; transition: transform 200ms ease;"
       >
         <div
@@ -26477,7 +26467,6 @@ exports[`<SortableTree /> > renders default.tsx correctly 1`] = `
     >
       <li
         class="studio-sortable-tree-node studio-sortable-tree-node-indicator emotion-2"
-        indentationwidth="24"
         style="--spacing: 0px; transition: transform 200ms ease;"
       >
         <div
@@ -26544,7 +26533,6 @@ exports[`<SortableTree /> > renders default.tsx correctly 1`] = `
       </li>
       <li
         class="studio-sortable-tree-node studio-sortable-tree-node-indicator emotion-2"
-        indentationwidth="24"
         style="--spacing: 0px; transition: transform 200ms ease;"
       >
         <div
@@ -26629,7 +26617,6 @@ exports[`<SortableTree /> > renders default.tsx correctly 1`] = `
       </li>
       <li
         class="studio-sortable-tree-node studio-sortable-tree-node-indicator emotion-2"
-        indentationwidth="24"
         style="--spacing: 24px; transition: transform 200ms ease;"
       >
         <div
@@ -26696,7 +26683,6 @@ exports[`<SortableTree /> > renders default.tsx correctly 1`] = `
       </li>
       <li
         class="studio-sortable-tree-node studio-sortable-tree-node-indicator emotion-2"
-        indentationwidth="24"
         style="--spacing: 24px; transition: transform 200ms ease;"
       >
         <div
@@ -26763,7 +26749,6 @@ exports[`<SortableTree /> > renders default.tsx correctly 1`] = `
       </li>
       <li
         class="studio-sortable-tree-node studio-sortable-tree-node-indicator emotion-2"
-        indentationwidth="24"
         style="--spacing: 24px; transition: transform 200ms ease;"
       >
         <div
@@ -26830,7 +26815,6 @@ exports[`<SortableTree /> > renders default.tsx correctly 1`] = `
       </li>
       <li
         class="studio-sortable-tree-node studio-sortable-tree-node-indicator emotion-2"
-        indentationwidth="24"
         style="--spacing: 24px; transition: transform 200ms ease;"
       >
         <div
@@ -26897,7 +26881,6 @@ exports[`<SortableTree /> > renders default.tsx correctly 1`] = `
       </li>
       <li
         class="studio-sortable-tree-node studio-sortable-tree-node-indicator emotion-2"
-        indentationwidth="24"
         style="--spacing: 0px; transition: transform 200ms ease;"
       >
         <div
@@ -26964,7 +26947,6 @@ exports[`<SortableTree /> > renders default.tsx correctly 1`] = `
       </li>
       <li
         class="studio-sortable-tree-node studio-sortable-tree-node-indicator emotion-2"
-        indentationwidth="24"
         style="--spacing: 0px; transition: transform 200ms ease;"
       >
         <div
@@ -27049,7 +27031,6 @@ exports[`<SortableTree /> > renders default.tsx correctly 1`] = `
       </li>
       <li
         class="studio-sortable-tree-node studio-sortable-tree-node-indicator emotion-2"
-        indentationwidth="24"
         style="--spacing: 24px; transition: transform 200ms ease;"
       >
         <div
@@ -27116,7 +27097,6 @@ exports[`<SortableTree /> > renders default.tsx correctly 1`] = `
       </li>
       <li
         class="studio-sortable-tree-node studio-sortable-tree-node-indicator emotion-2"
-        indentationwidth="24"
         style="--spacing: 24px; transition: transform 200ms ease;"
       >
         <div
@@ -27475,7 +27455,6 @@ exports[`<SortableTree /> > renders disableDrag.tsx correctly 1`] = `
     >
       <li
         class="studio-sortable-tree-node studio-sortable-tree-node-indicator emotion-2"
-        indentationwidth="24"
         style="--spacing: 0px; transition: transform 200ms ease;"
       >
         <div
@@ -27518,7 +27497,6 @@ exports[`<SortableTree /> > renders disableDrag.tsx correctly 1`] = `
       </li>
       <li
         class="studio-sortable-tree-node studio-sortable-tree-node-indicator emotion-2"
-        indentationwidth="24"
         style="--spacing: 0px; transition: transform 200ms ease;"
       >
         <div
@@ -27579,7 +27557,6 @@ exports[`<SortableTree /> > renders disableDrag.tsx correctly 1`] = `
       </li>
       <li
         class="studio-sortable-tree-node studio-sortable-tree-node-indicator emotion-2"
-        indentationwidth="24"
         style="--spacing: 24px; transition: transform 200ms ease;"
       >
         <div
@@ -27622,7 +27599,6 @@ exports[`<SortableTree /> > renders disableDrag.tsx correctly 1`] = `
       </li>
       <li
         class="studio-sortable-tree-node studio-sortable-tree-node-indicator emotion-2"
-        indentationwidth="24"
         style="--spacing: 24px; transition: transform 200ms ease;"
       >
         <div
@@ -27665,7 +27641,6 @@ exports[`<SortableTree /> > renders disableDrag.tsx correctly 1`] = `
       </li>
       <li
         class="studio-sortable-tree-node studio-sortable-tree-node-indicator emotion-2"
-        indentationwidth="24"
         style="--spacing: 24px; transition: transform 200ms ease;"
       >
         <div
@@ -27708,7 +27683,6 @@ exports[`<SortableTree /> > renders disableDrag.tsx correctly 1`] = `
       </li>
       <li
         class="studio-sortable-tree-node studio-sortable-tree-node-indicator emotion-2"
-        indentationwidth="24"
         style="--spacing: 24px; transition: transform 200ms ease;"
       >
         <div
@@ -27751,7 +27725,6 @@ exports[`<SortableTree /> > renders disableDrag.tsx correctly 1`] = `
       </li>
       <li
         class="studio-sortable-tree-node studio-sortable-tree-node-indicator emotion-2"
-        indentationwidth="24"
         style="--spacing: 0px; transition: transform 200ms ease;"
       >
         <div
@@ -27794,7 +27767,6 @@ exports[`<SortableTree /> > renders disableDrag.tsx correctly 1`] = `
       </li>
       <li
         class="studio-sortable-tree-node studio-sortable-tree-node-indicator emotion-2"
-        indentationwidth="24"
         style="--spacing: 0px; transition: transform 200ms ease;"
       >
         <div
@@ -27855,7 +27827,6 @@ exports[`<SortableTree /> > renders disableDrag.tsx correctly 1`] = `
       </li>
       <li
         class="studio-sortable-tree-node studio-sortable-tree-node-indicator emotion-2"
-        indentationwidth="24"
         style="--spacing: 24px; transition: transform 200ms ease;"
       >
         <div
@@ -27898,7 +27869,6 @@ exports[`<SortableTree /> > renders disableDrag.tsx correctly 1`] = `
       </li>
       <li
         class="studio-sortable-tree-node studio-sortable-tree-node-indicator emotion-2"
-        indentationwidth="24"
         style="--spacing: 24px; transition: transform 200ms ease;"
       >
         <div
@@ -28310,7 +28280,6 @@ exports[`<SortableTree /> > renders renderContent.tsx correctly 1`] = `
     >
       <li
         class="studio-sortable-tree-node studio-sortable-tree-node-indicator emotion-2"
-        indentationwidth="24"
         style="--spacing: 0px; transition: transform 200ms ease;"
       >
         <div
@@ -28401,7 +28370,6 @@ exports[`<SortableTree /> > renders renderContent.tsx correctly 1`] = `
       </li>
       <li
         class="studio-sortable-tree-node studio-sortable-tree-node-indicator emotion-2"
-        indentationwidth="24"
         style="--spacing: 0px; transition: transform 200ms ease;"
       >
         <div
@@ -28510,7 +28478,6 @@ exports[`<SortableTree /> > renders renderContent.tsx correctly 1`] = `
       </li>
       <li
         class="studio-sortable-tree-node studio-sortable-tree-node-indicator emotion-2"
-        indentationwidth="24"
         style="--spacing: 24px; transition: transform 200ms ease;"
       >
         <div
@@ -28601,7 +28568,6 @@ exports[`<SortableTree /> > renders renderContent.tsx correctly 1`] = `
       </li>
       <li
         class="studio-sortable-tree-node studio-sortable-tree-node-indicator emotion-2"
-        indentationwidth="24"
         style="--spacing: 24px; transition: transform 200ms ease;"
       >
         <div
@@ -28692,7 +28658,6 @@ exports[`<SortableTree /> > renders renderContent.tsx correctly 1`] = `
       </li>
       <li
         class="studio-sortable-tree-node studio-sortable-tree-node-indicator emotion-2"
-        indentationwidth="24"
         style="--spacing: 24px; transition: transform 200ms ease;"
       >
         <div
@@ -28783,7 +28748,6 @@ exports[`<SortableTree /> > renders renderContent.tsx correctly 1`] = `
       </li>
       <li
         class="studio-sortable-tree-node studio-sortable-tree-node-indicator emotion-2"
-        indentationwidth="24"
         style="--spacing: 24px; transition: transform 200ms ease;"
       >
         <div
@@ -28874,7 +28838,6 @@ exports[`<SortableTree /> > renders renderContent.tsx correctly 1`] = `
       </li>
       <li
         class="studio-sortable-tree-node studio-sortable-tree-node-indicator emotion-2"
-        indentationwidth="24"
         style="--spacing: 0px; transition: transform 200ms ease;"
       >
         <div
@@ -28965,7 +28928,6 @@ exports[`<SortableTree /> > renders renderContent.tsx correctly 1`] = `
       </li>
       <li
         class="studio-sortable-tree-node studio-sortable-tree-node-indicator emotion-2"
-        indentationwidth="24"
         style="--spacing: 0px; transition: transform 200ms ease;"
       >
         <div
@@ -29074,7 +29036,6 @@ exports[`<SortableTree /> > renders renderContent.tsx correctly 1`] = `
       </li>
       <li
         class="studio-sortable-tree-node studio-sortable-tree-node-indicator emotion-2"
-        indentationwidth="24"
         style="--spacing: 24px; transition: transform 200ms ease;"
       >
         <div
@@ -29165,7 +29126,6 @@ exports[`<SortableTree /> > renders renderContent.tsx correctly 1`] = `
       </li>
       <li
         class="studio-sortable-tree-node studio-sortable-tree-node-indicator emotion-2"
-        indentationwidth="24"
         style="--spacing: 24px; transition: transform 200ms ease;"
       >
         <div
@@ -29577,7 +29537,6 @@ exports[`<SortableTree /> > renders sortableRule.tsx correctly 1`] = `
     >
       <li
         class="studio-sortable-tree-node studio-sortable-tree-node-indicator emotion-2"
-        indentationwidth="24"
         style="--spacing: 0px; transition: transform 200ms ease;"
       >
         <div
@@ -29644,7 +29603,6 @@ exports[`<SortableTree /> > renders sortableRule.tsx correctly 1`] = `
       </li>
       <li
         class="studio-sortable-tree-node studio-sortable-tree-node-indicator emotion-2"
-        indentationwidth="24"
         style="--spacing: 0px; transition: transform 200ms ease;"
       >
         <div
@@ -29729,7 +29687,6 @@ exports[`<SortableTree /> > renders sortableRule.tsx correctly 1`] = `
       </li>
       <li
         class="studio-sortable-tree-node studio-sortable-tree-node-indicator emotion-2"
-        indentationwidth="24"
         style="--spacing: 24px; transition: transform 200ms ease;"
       >
         <div
@@ -29796,7 +29753,6 @@ exports[`<SortableTree /> > renders sortableRule.tsx correctly 1`] = `
       </li>
       <li
         class="studio-sortable-tree-node studio-sortable-tree-node-indicator emotion-2"
-        indentationwidth="24"
         style="--spacing: 24px; transition: transform 200ms ease;"
       >
         <div
@@ -29863,7 +29819,6 @@ exports[`<SortableTree /> > renders sortableRule.tsx correctly 1`] = `
       </li>
       <li
         class="studio-sortable-tree-node studio-sortable-tree-node-indicator emotion-2"
-        indentationwidth="24"
         style="--spacing: 24px; transition: transform 200ms ease;"
       >
         <div
@@ -29930,7 +29885,6 @@ exports[`<SortableTree /> > renders sortableRule.tsx correctly 1`] = `
       </li>
       <li
         class="studio-sortable-tree-node studio-sortable-tree-node-indicator emotion-2"
-        indentationwidth="24"
         style="--spacing: 24px; transition: transform 200ms ease;"
       >
         <div
@@ -29997,7 +29951,6 @@ exports[`<SortableTree /> > renders sortableRule.tsx correctly 1`] = `
       </li>
       <li
         class="studio-sortable-tree-node studio-sortable-tree-node-indicator emotion-2"
-        indentationwidth="24"
         style="--spacing: 0px; transition: transform 200ms ease;"
       >
         <div
@@ -30064,7 +30017,6 @@ exports[`<SortableTree /> > renders sortableRule.tsx correctly 1`] = `
       </li>
       <li
         class="studio-sortable-tree-node studio-sortable-tree-node-indicator emotion-2"
-        indentationwidth="24"
         style="--spacing: 0px; transition: transform 200ms ease;"
       >
         <div
@@ -30149,7 +30101,6 @@ exports[`<SortableTree /> > renders sortableRule.tsx correctly 1`] = `
       </li>
       <li
         class="studio-sortable-tree-node studio-sortable-tree-node-indicator emotion-2"
-        indentationwidth="24"
         style="--spacing: 24px; transition: transform 200ms ease;"
       >
         <div
@@ -30216,7 +30167,6 @@ exports[`<SortableTree /> > renders sortableRule.tsx correctly 1`] = `
       </li>
       <li
         class="studio-sortable-tree-node studio-sortable-tree-node-indicator emotion-2"
-        indentationwidth="24"
         style="--spacing: 24px; transition: transform 200ms ease;"
       >
         <div

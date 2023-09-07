@@ -4,6 +4,8 @@ import { useEffect, useState } from 'react';
 
 const defaultInitializer = (index: number) => index;
 
+const env = this === window ? 'browser' : 'node';
+
 export function createRange<T = number>(
   length: number,
   initializer: (index: number) => any = defaultInitializer,
@@ -63,4 +65,10 @@ export const useLatest = (props: any) => {
 
 export const getIndexOfActiveItem = (list: any[], id?: UniqueIdentifier) => {
   return id ? list.findIndex((item) => item === id) : -1;
+};
+
+let id = 0;
+
+export const getUUID = () => {
+  return env === 'browser' ? crypto.randomUUID() : id++;
 };
