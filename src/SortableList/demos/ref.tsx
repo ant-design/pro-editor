@@ -31,7 +31,7 @@ export default () => {
           tabIndex={-1}
           onClick={() => {
             const id = `id-${listData.length}-${randomIndex()}`;
-            ref.current.addItem({ id, title: `new-${id}` });
+            ref.current.addItem({ title: `new-${id}` });
           }}
         />
       </Flexbox>

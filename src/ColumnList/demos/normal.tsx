@@ -2,23 +2,22 @@
  * title: 基础使用
  * description: 通过配置 `columns` 渲染排序表单
  */
-import type { ColumnItemList, SortableItem } from '@ant-design/pro-editor';
+import type { ColumnItemList } from '@ant-design/pro-editor';
 import { ColumnList } from '@ant-design/pro-editor';
 
 type SchemaItem = {
   title: string;
   dataIndex: string;
-} & SortableItem;
+};
 
 const initialValues = [
-  { id: 'index', title: '序号', valueType: 'indexBorder', dataIndex: 'index' },
+  { title: '序号', valueType: 'indexBorder', dataIndex: 'index' },
   {
-    id: 'name',
     title: '授权企业名称',
     valueType: 'text',
     dataIndex: 'name',
   },
-  { id: 'authCompany', title: '被授权企业', valueType: 'text', dataIndex: 'authCompany' },
+  { title: '被授权企业', valueType: 'text', dataIndex: 'authCompany' },
 ];
 
 const columns: ColumnItemList<SchemaItem> = [
@@ -48,7 +47,6 @@ export default () => (
     }}
     creatorButtonProps={{
       record: () => ({
-        id: randomIndex(),
         valueType: 'text',
         title: '示例标题',
       }),

@@ -125,6 +125,7 @@ const TreeItem: FC<TreeItemProps> = memo(
     depth,
     disableSelection = iOS,
     collapsed,
+    indentationWidth: _indentationWidth,
     onCollapse,
     onRemove,
     style,

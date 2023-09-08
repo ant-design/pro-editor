@@ -1,16 +1,15 @@
 import { listDataReducer } from './listDataReducer';
 
 const listData = [
-  { id: 1, title: '序号', dataIndex: 'indexBorder' },
+  { title: '序号', dataIndex: 'indexBorder' },
   {
-    id: 2,
     title: '授权企业名称',
     dataIndex: 'text',
   },
-  { id: 3, title: '被授权企业', dataIndex: 'select' },
+  { title: '被授权企业', dataIndex: 'select' },
 ];
 
-const newItem = { id: 4, title: '邮箱', dataIndex: 'text' };
+const newItem = { title: '邮箱', dataIndex: 'text' };
 
 describe('listDataReducer', () => {
   describe('moveItem', () => {
@@ -26,16 +25,6 @@ describe('listDataReducer', () => {
 
   describe('addItem', () => {
     it('添加一项到末尾', () => {
-      const listData = [
-        { id: 1, title: '序号', dataIndex: 'indexBorder' },
-        {
-          id: 2,
-          title: '授权企业名称',
-          dataIndex: 'text',
-        },
-        { id: 3, title: '被授权企业', dataIndex: 'select' },
-      ];
-
       const data = listDataReducer(listData, {
         type: 'addItem',
         item: newItem,
@@ -45,16 +34,6 @@ describe('listDataReducer', () => {
     });
 
     it('添加一项到任意位置', () => {
-      const listData = [
-        { id: 1, title: '序号', dataIndex: 'indexBorder' },
-        {
-          id: 2,
-          title: '授权企业名称',
-          dataIndex: 'text',
-        },
-        { id: 3, title: '被授权企业', dataIndex: 'select' },
-      ];
-
       const data = listDataReducer(listData, {
         type: 'addItem',
         item: newItem,

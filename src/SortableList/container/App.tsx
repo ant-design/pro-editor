@@ -8,7 +8,6 @@ import {
   useSensor,
   useSensors,
 } from '@dnd-kit/core';
-import isEqual from 'lodash.isequal';
 import { createPortal } from 'react-dom';
 
 import { restrictToVerticalAxis, restrictToWindowEdges } from '@dnd-kit/modifiers';
@@ -35,7 +34,7 @@ const selector = (s: Store) => ({
   handleDragStart: s.handleDragStart,
   handleDragCancel: s.handleDragCancel,
   handleDragEnd: s.handleDragEnd,
-  getId: s.getId,
+  keyManager: s.keyManager,
 });
 
 export interface AppProps {
@@ -54,9 +53,10 @@ export interface AppProps {
 }
 
 const App: FC<AppProps> = ({ className, style, prefixCls: customPrefixCls }) => {
-  const { handleDragStart, handleDragCancel, handleDragEnd, getId } = useStore(selector, shallow);
-
-  const items = useStore((s) => s.value, isEqual);
+  const { handleDragStart, handleDragCancel, handleDragEnd, keyManager } = useStore(
+    selector,
+    shallow,
+  );
 
   const prefixCls = getPrefixCls('sortable-list', customPrefixCls);
 
@@ -84,13 +84,7 @@ const App: FC<AppProps> = ({ className, style, prefixCls: customPrefixCls }) => 
         onDragCancel={handleDragCancel}
         modifiers={[restrictToVerticalAxis, restrictToWindowEdges]}
       >
-        <SortableContext
-          items={items.map((item, index) => ({
-            ...item,
-            id: getId(item, index),
-          }))}
-          strategy={verticalListSortingStrategy}
-        >
+        <SortableContext items={keyManager} strategy={verticalListSortingStrategy}>
           <SortList prefixCls={prefixCls} />
           {overlay}
         </SortableContext>

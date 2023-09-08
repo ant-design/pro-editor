@@ -82,7 +82,6 @@ export default () => {
       <ColumnList<SchemaItem>
         ref={ref}
         columns={columns}
-        getId={(item) => item.dataIndex}
         renderEmpty={() => (
           <Empty image={Empty.PRESENTED_IMAGE_SIMPLE} description="暂无数据">
             <Button type="primary" onClick={handleCreate}>
