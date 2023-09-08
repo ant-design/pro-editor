@@ -1,5 +1,39 @@
 # Changelog
 
+## [Version&nbsp;0.20.0](https://github.com/ant-design/pro-editor/compare/v0.19.1...v0.20.0)
+
+<sup>Released on **2023-09-08**</sup>
+
+#### ✨ 新特性
+
+- Add keyManager list, 默认渲染 string list.
+
+#### 🐛 修复
+
+- Columnlist blur not change.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's improved
+
+- Add keyManager list ([1337802](https://github.com/ant-design/pro-editor/commit/1337802))
+- 默认渲染 string list ([1f87b03](https://github.com/ant-design/pro-editor/commit/1f87b03))
+
+#### What's fixed
+
+- Columnlist blur not change ([353134f](https://github.com/ant-design/pro-editor/commit/353134f))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
 ### [Version&nbsp;0.19.1](https://github.com/ant-design/pro-editor/compare/v0.19.0...v0.19.1)
 
 <sup>Released on **2023-09-07**</sup>
