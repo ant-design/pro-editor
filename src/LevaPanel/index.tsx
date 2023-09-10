@@ -1,5 +1,5 @@
 import { LevaPanel, LevaStoreProvider, useCreateStore } from 'leva';
-import { CSSProperties, ReactNode, memo } from 'react';
+import { CSSProperties, ReactNode } from 'react';
 import { createStyles } from '../theme';
 import Schema, { SchemaProps } from './Schema';
 
@@ -48,28 +48,33 @@ export interface LevaPanelProps<T> extends SchemaProps<T> {
   style?: CSSProperties;
 }
 
-const Panel: <T>(props: LevaPanelProps<T>) => ReactNode = memo(
-  ({ value, title, onChange, schema, className, style }) => {
-    const store = useCreateStore();
-    const { styles, cx } = useStyles();
+const Panel: <T>(props: LevaPanelProps<T>) => JSX.Element = ({
+  value,
+  title,
+  onChange,
+  schema,
+  className,
+  style,
+}) => {
+  const store = useCreateStore();
+  const { styles, cx } = useStyles();
 
-    return (
-      <div className={cx(styles, className)} style={style}>
-        <LevaPanel
-          hideCopyButton
-          neverHide
-          titleBar={{ title, drag: false }}
-          fill
-          flat
-          store={store}
-        />
+  return (
+    <div className={cx(styles, className)} style={style}>
+      <LevaPanel
+        hideCopyButton
+        neverHide
+        titleBar={{ title, drag: false }}
+        fill
+        flat
+        store={store}
+      />
 
-        <LevaStoreProvider store={store}>
-          <Schema schema={schema} value={value} onChange={onChange} />
-        </LevaStoreProvider>
-      </div>
-    );
-  },
-);
+      <LevaStoreProvider store={store}>
+        <Schema schema={schema} value={value} onChange={onChange} />
+      </LevaStoreProvider>
+    </div>
+  );
+};
 
 export default Panel;
