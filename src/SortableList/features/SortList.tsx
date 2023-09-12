@@ -1,7 +1,5 @@
 import { Empty } from 'antd';
 import isEqual from 'lodash.isequal';
-import type { FC } from 'react';
-import { memo } from 'react';
 import { shallow } from 'zustand/shallow';
 import { List, SortableItem } from '../components';
 import type { Store } from '../store';
@@ -28,7 +26,7 @@ interface SortableListProps {
   prefixCls: string;
 }
 
-const SortableList: FC<SortableListProps> = ({ prefixCls }) => {
+const SortableList: (props: SortableListProps) => JSX.Element = ({ prefixCls }) => {
   const {
     dispatchListData,
     renderItem,
@@ -65,15 +63,15 @@ const SortableList: FC<SortableListProps> = ({ prefixCls }) => {
   };
 
   return Array.isArray(items) && items.length === 0 ? (
-    renderEmpty ? (
-      renderEmpty()
-    ) : (
-      <>
+    <>
+      {renderEmpty ? (
+        renderEmpty()
+      ) : (
         <Empty image={Empty.PRESENTED_IMAGE_SIMPLE} description="暂无数据">
           {creatorButtonProps !== false ? <CreateButton empty={true} /> : null}
         </Empty>
-      </>
-    )
+      )}
+    </>
   ) : (
     <>
       {creatorButtonProps !== false && position === 'top' ? <CreateButton /> : null}
@@ -102,4 +100,4 @@ const SortableList: FC<SortableListProps> = ({ prefixCls }) => {
   );
 };
 
-export default memo(SortableList);
+export default SortableList;

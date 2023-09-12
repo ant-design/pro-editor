@@ -4,7 +4,7 @@ import isEqual from 'fast-deep-equal';
 import { useControls, useStoreContext } from 'leva';
 import { DataInput } from 'leva/src/types';
 import merge from 'lodash.merge';
-import { ReactNode, memo, useEffect, useMemo } from 'react';
+import { useEffect, useMemo } from 'react';
 import { getDefaultValueFromSchema } from '../utils';
 
 import { SchemaItem, toLevaSchema } from './utils/schema';
@@ -34,48 +34,50 @@ export interface SchemaProps<T> {
   onChange?: (changedValue: Partial<T>, fullValue: T) => void;
 }
 
-const Schema: <T>(props: SchemaProps<T>) => ReactNode = memo(
-  ({ value: outConfig, onChange, schema }) => {
-    const store = useStoreContext();
+const Schema: <T>(props: SchemaProps<T>) => JSX.Element = ({
+  value: outConfig,
+  onChange,
+  schema,
+}) => {
+  const store = useStoreContext();
 
-    const getValue = useMemoizedFn(() => {
-      const data = store.getData();
+  const getValue = useMemoizedFn(() => {
+    const data = store.getData();
 
-      return Object.fromEntries(
-        Object.values(data).map((item) => [item.key, (item as DataInput).value]),
-      );
+    return Object.fromEntries(
+      Object.values(data).map((item) => [item.key, (item as DataInput).value]),
+    );
+  });
+
+  const levaSchema = useMemo(() => {
+    return toLevaSchema(schema, (item, key) => {
+      const config = {
+        onChange: (value, path, context) => {
+          if (context.initial || !context.fromPanel) return;
+
+          const full = getValue();
+          onChange?.({ [context.key]: value } as any, full as any);
+        },
+      } as SchemaItem;
+      if (outConfig && outConfig[key]) {
+        config['value'] = outConfig[key];
+      }
+      return config;
     });
+  }, [schema]);
 
-    const levaSchema = useMemo(() => {
-      return toLevaSchema(schema, (item, key) => {
-        const config = {
-          onChange: (value, path, context) => {
-            if (context.initial || !context.fromPanel) return;
+  useEffect(() => {
+    const innerValue = getValue();
+    if (isEqual(innerValue, outConfig)) return;
 
-            const full = getValue();
-            onChange?.({ [context.key]: value } as any, full as any);
-          },
-        } as SchemaItem;
-        if (outConfig && outConfig[key]) {
-          config['value'] = outConfig[key];
-        }
-        return config;
-      });
-    }, [schema]);
+    const config = merge({}, getDefaultValueFromSchema(schema), outConfig);
 
-    useEffect(() => {
-      const innerValue = getValue();
-      if (isEqual(innerValue, outConfig)) return;
+    store.set(config, false);
+  }, [outConfig]);
 
-      const config = merge({}, getDefaultValueFromSchema(schema), outConfig);
+  useControls(levaSchema, { store });
 
-      store.set(config, false);
-    }, [outConfig]);
-
-    useControls(levaSchema, { store });
-
-    return null;
-  },
-);
+  return null;
+};
 
 export default Schema;

@@ -66,7 +66,7 @@ interface ActionGroupProps {
   render?: (
     config: Array<ActionIconGroupItem>,
     dropdownMenu?: Array<ActionIconGroupItem | { type: 'divider' }>,
-  ) => React.ReactNode;
+  ) => JSX.Element;
   /**
    * @description 全屏按钮点击的回掉
    */
