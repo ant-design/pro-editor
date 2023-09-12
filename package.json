@@ -134,7 +134,7 @@
     "dumi": "^2.2.7",
     "dumi-theme-antd-style": "latest",
     "eslint": "^8.48.0",
-    "father": "^4.3.1",
+    "father": "4.3.1",
     "gh-pages": "^5.0.0",
     "glob": "^10.3.3",
     "husky": "^8.0.3",
