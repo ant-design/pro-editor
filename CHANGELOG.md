@@ -1,5 +1,30 @@
 # Changelog
 
+### [Version&nbsp;0.20.2](https://github.com/ant-design/pro-editor/compare/v0.20.1...v0.20.2)
+
+<sup>Released on **2023-09-13**</sup>
+
+#### 🐛 修复
+
+- 修复 crypto.randomUUID 在 http 中无法使用的问题.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's fixed
+
+- 修复 crypto.randomUUID 在 http 中无法使用的问题 ([a2ec772](https://github.com/ant-design/pro-editor/commit/a2ec772))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
 ### [Version&nbsp;0.20.1](https://github.com/ant-design/pro-editor/compare/v0.20.0...v0.20.1)
 
 <sup>Released on **2023-09-12**</sup>
