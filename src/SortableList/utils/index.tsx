@@ -1,5 +1,6 @@
 import type { UniqueIdentifier } from '@dnd-kit/core';
 import isEqual from 'lodash.isequal';
+import { nanoid } from 'nanoid';
 import { useEffect, useState } from 'react';
 
 const defaultInitializer = (index: number) => index;
@@ -66,5 +67,5 @@ export const getIndexOfActiveItem = (list: any[], id?: UniqueIdentifier) => {
 };
 
 export const getUUID = (index) => {
-  return process.env.NODE_ENV === 'test' ? `test-${index}` : crypto.randomUUID();
+  return process.env.NODE_ENV === 'test' ? `test-${index}` : nanoid();
 };
