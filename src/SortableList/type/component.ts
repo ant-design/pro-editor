@@ -3,15 +3,7 @@ import type { Transform } from '@dnd-kit/utilities';
 import type { CSSProperties, ReactElement, Ref } from 'react';
 import { StoreUpdaterProps } from '../type/store';
 
-export interface SortableBaseItem {
-  id?: UniqueIdentifier;
-}
-
-export type SortableItem<T = Record<string, any>> = SortableBaseItem & T;
-
-export type SortableItemList<T = Record<string, any>> = SortableItem<T>[];
-
-export interface BaseItemProps<T = SortableItem>
+export interface BaseItemProps<T = any>
   extends Pick<StoreUpdaterProps<T>, 'renderItem' | 'renderContent' | 'actions' | 'hideRemove'> {
   dragOverlay?: boolean;
   color?: string;
@@ -33,11 +25,11 @@ export interface BaseItemProps<T = SortableItem>
   prefixCls?: string;
 }
 
-export type RenderActionProps<T = SortableItem> =
+export type RenderActionProps<T = any> =
   | ((item: T, index: number) => React.ReactNode[])
   | React.ReactNode[];
 
-export interface SortableItemProps<T = SortableItem>
+export interface SortableItemProps<T = any>
   extends Pick<
     StoreUpdaterProps<T>,
     'renderItem' | 'renderContent' | 'actions' | 'getItemStyles' | 'hideRemove'
@@ -51,7 +43,9 @@ export interface SortableItemProps<T = SortableItem>
   prefixCls?: string;
 }
 
-export type RenderContent<T = SortableItem> = (item: T, index: number) => React.ReactNode;
+export type RenderContent<T = any> = (item: T, index: number) => React.ReactNode;
+
+export type RenderEmpty = () => React.ReactNode;
 
 export interface CreatorButtonProps {
   /**
@@ -61,14 +55,14 @@ export interface CreatorButtonProps {
   /**
    * 生成初始值逻辑
    */
-  record: (index: number) => SortableItem<Record<string, any>>;
+  record: (index: number) => any;
   /**
    * 新增一行按钮文案
    */
   creatorButtonText?: string;
 }
 
-export type RenderItem<T = SortableItem> = (
+export type RenderItem<T = any> = (
   item: T,
   options: {
     /**

@@ -118,7 +118,11 @@ const Item = memo(
                   />
                 ) : null}
                 <Flexbox flex={1} style={{ paddingLeft: 4 }}>
-                  {renderContent ? renderContent(item, index) : id}
+                  {renderContent ? (
+                    renderContent(item, index)
+                  ) : (
+                    <div>{typeof item === 'string' ? item : index}</div>
+                  )}
                 </Flexbox>
                 <Flexbox
                   className={classNames(styles.actions)}

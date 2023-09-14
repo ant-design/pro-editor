@@ -15,8 +15,9 @@ import { useStyle } from '../style';
 const selector = (s: Store) => ({
   renderItem: s.renderItem,
   renderContent: s.renderContent,
+  renderEmpty: s.renderEmpty,
   getItemStyles: s.getItemStyles,
-  getId: s.getId,
+  keyManager: s.keyManager,
   actions: s.actions,
   hideRemove: s.hideRemove,
   creatorButtonProps: s.creatorButtonProps,
@@ -32,11 +33,12 @@ const SortableList: FC<SortableListProps> = ({ prefixCls }) => {
     dispatchListData,
     renderItem,
     renderContent,
+    renderEmpty,
     creatorButtonProps = false,
     hideRemove,
+    keyManager,
     getItemStyles,
     actions,
-    getId,
   } = useStore(selector, shallow);
 
   const { styles } = useStyle(prefixCls);
@@ -63,21 +65,24 @@ const SortableList: FC<SortableListProps> = ({ prefixCls }) => {
   };
 
   return Array.isArray(items) && items.length === 0 ? (
-    <>
-      <Empty image={Empty.PRESENTED_IMAGE_SIMPLE} description="暂无数据">
-        {creatorButtonProps !== false ? <CreateButton empty={true} /> : null}
-      </Empty>
-    </>
+    renderEmpty ? (
+      renderEmpty()
+    ) : (
+      <>
+        <Empty image={Empty.PRESENTED_IMAGE_SIMPLE} description="暂无数据">
+          {creatorButtonProps !== false ? <CreateButton empty={true} /> : null}
+        </Empty>
+      </>
+    )
   ) : (
     <>
       {creatorButtonProps !== false && position === 'top' ? <CreateButton /> : null}
       <List prefixCls={prefixCls}>
         {items.map((item, index) => {
-          const id = getId(item, index);
           return (
             <SortableItem
-              key={id}
-              id={id}
+              key={keyManager[index]}
+              id={keyManager[index]}
               item={item}
               index={index}
               actions={actions}

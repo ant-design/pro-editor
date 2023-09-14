@@ -1,8 +1,7 @@
-import { genUniqueId, useSortableList } from '@ant-design/pro-editor';
-import { UniqueIdentifier } from '@dnd-kit/core';
-import { Input } from 'antd';
+import { useSortableList } from '@ant-design/pro-editor';
+import { Input, InputRef } from 'antd';
 import { createStyles } from 'antd-style';
-import { CSSProperties, memo, useRef, useState } from 'react';
+import { CSSProperties, memo, useEffect, useRef, useState } from 'react';
 
 const useStyle = createStyles(({ css, cx }, prefixCls) => {
   const prefix = `${prefixCls}-content`;
@@ -20,16 +19,16 @@ interface ItemRenderProps {
   dataIndex: string;
   value: string;
   index: number;
-  id: UniqueIdentifier;
+  dragging: boolean;
   prefixCls: string;
   style: CSSProperties;
   placeholder?: string;
 }
 
 const ControlInput = memo<ItemRenderProps>(
-  ({ dataIndex, placeholder, value, index, prefixCls, style, id }) => {
+  ({ dataIndex, placeholder, value, index, prefixCls, style, dragging }) => {
     const instance = useSortableList();
-
+    const inputRef = useRef<InputRef>(null);
     const [innerValue, setInnerValue] = useState(value);
     const [changed, setChanged] = useState(false);
     const shouldChange = useRef(true);
@@ -40,19 +39,26 @@ const ControlInput = memo<ItemRenderProps>(
       setChanged(false);
     };
 
-    const customListId = (index, id) => `column-list-${index}-${id}`;
+    useEffect(() => {
+      if (dragging) {
+        inputRef.current.blur();
+      }
+    }, [dragging]);
+
+    const customListId = (index) => {
+      const id = instance.getIdByIndex(index);
+      return `column-list-${index}-${id}`;
+    };
 
     const handleNextFocus = () => {
       const value = instance.getValue() || [];
       // 如果是最后一个节点，按下回车后，会自动添加一个新的节点
       if (index + 1 === value.length) {
-        instance.addItem({ id: genUniqueId(value.length.toString()), [dataIndex]: '' });
+        instance.addItem({ [dataIndex]: '' });
       }
 
       setTimeout(() => {
-        const nextNodeEl = document.getElementById(
-          customListId(index + 1, instance.getIdByIndex(index + 1)),
-        );
+        const nextNodeEl = document.getElementById(customListId(index + 1));
         nextNodeEl?.focus();
       }, 200);
     };
@@ -60,9 +66,10 @@ const ControlInput = memo<ItemRenderProps>(
     return (
       <Input
         size={'small'}
+        ref={inputRef}
         value={innerValue}
         style={style}
-        id={customListId(index, id)}
+        id={customListId(index)}
         onCompositionStart={() => {
           shouldChange.current = false;
         }}

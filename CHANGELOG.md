@@ -1,12 +1,66 @@
 # Changelog
 
-## [Version&nbsp;0.19.0-alpha.1](https://github.com/ant-design/pro-editor/compare/v0.18.1...v0.19.0-alpha.1)
+### [Version&nbsp;0.20.2](https://github.com/ant-design/pro-editor/compare/v0.20.1...v0.20.2)
 
-<sup>Released on **2023-09-05**</sup>
+<sup>Released on **2023-09-13**</sup>
+
+#### 🐛 修复
+
+- 修复 crypto.randomUUID 在 http 中无法使用的问题.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's fixed
+
+- 修复 crypto.randomUUID 在 http 中无法使用的问题 ([a2ec772](https://github.com/ant-design/pro-editor/commit/a2ec772))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version&nbsp;0.20.1](https://github.com/ant-design/pro-editor/compare/v0.20.0...v0.20.1)
+
+<sup>Released on **2023-09-12**</sup>
+
+#### 🐛 修复
+
+- Lock version.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's fixed
+
+- Lock version ([b503ce6](https://github.com/ant-design/pro-editor/commit/b503ce6))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+## [Version&nbsp;0.20.0](https://github.com/ant-design/pro-editor/compare/v0.19.1...v0.20.0)
+
+<sup>Released on **2023-09-08**</sup>
 
 #### ✨ 新特性
 
-- Undo/redo Middleware.
+- Add keyManager list, 默认渲染 string list.
+
+#### 🐛 修复
+
+- Columnlist blur not change.
 
 <br/>
 
@@ -15,7 +69,71 @@
 
 #### What's improved
 
-- Undo/redo Middleware, closes [#74](https://github.com/ant-design/pro-editor/issues/74) ([7699738](https://github.com/ant-design/pro-editor/commit/7699738))
+- Add keyManager list ([1337802](https://github.com/ant-design/pro-editor/commit/1337802))
+- 默认渲染 string list ([1f87b03](https://github.com/ant-design/pro-editor/commit/1f87b03))
+
+#### What's fixed
+
+- Columnlist blur not change ([353134f](https://github.com/ant-design/pro-editor/commit/353134f))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version&nbsp;0.19.1](https://github.com/ant-design/pro-editor/compare/v0.19.0...v0.19.1)
+
+<sup>Released on **2023-09-07**</sup>
+
+#### 🐛 修复
+
+- ColumnList id lost, 修复文档样式显示异常.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's fixed
+
+- ColumnList id lost ([955e838](https://github.com/ant-design/pro-editor/commit/955e838))
+- 修复文档样式显示异常 ([bfa84fc](https://github.com/ant-design/pro-editor/commit/bfa84fc))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+## [Version&nbsp;0.19.0](https://github.com/ant-design/pro-editor/compare/v0.18.1...v0.19.0)
+
+<sup>Released on **2023-09-06**</sup>
+
+#### ✨ 新特性
+
+- Support renderEmpty and add sotrablelist custom create demo.
+
+#### 🐛 修复
+
+- 默认不提供 creatorButtonProps.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's improved
+
+- Support renderEmpty and add sotrablelist custom create demo ([d0629c6](https://github.com/ant-design/pro-editor/commit/d0629c6))
+
+#### What's fixed
+
+- 默认不提供 creatorButtonProps ([bfc2f6d](https://github.com/ant-design/pro-editor/commit/bfc2f6d))
 
 </details>
 

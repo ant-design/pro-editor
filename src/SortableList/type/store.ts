@@ -4,17 +4,13 @@ import type {
   GetItemStyles,
   RenderActionProps,
   RenderContent,
+  RenderEmpty,
   RenderItem,
-  SortableItem,
-  SortableItemList,
   SortableListDispatchPayload,
   UniqueIdentifier,
 } from '../type';
 
-export type OnChange<T = SortableItem> = (
-  items: SortableItemList<T>,
-  event: SortableListDispatchPayload,
-) => void;
+export type OnChange<T = any> = (items: T[], event: SortableListDispatchPayload) => void;
 
 export interface SortableListState {
   /*
@@ -32,19 +28,23 @@ export interface SortableListState {
   /**
    * 值
    */
-  value?: SortableItemList;
+  value?: any[];
+  /**
+   * 和 Value 值对应的 id 管理器
+   */
+  keyManager?: UniqueIdentifier[];
   /**
    * 渲染额外区域
    */
   actions?: RenderActionProps;
   /**
-   * 获取唯一标识
-   */
-  getId?: (item: any, index: number) => UniqueIdentifier;
-  /**
    * 渲染可排序项
    */
   renderItem?: RenderItem;
+  /**
+   * 渲染空状态
+   */
+  renderEmpty?: RenderEmpty;
   /**
    * 渲染可排序项内容
    */
@@ -66,13 +66,13 @@ export interface SortableListState {
 /**
  * 供外部使用的 ref 方法
  */
-export interface SortableListRef<T = SortableItem> {
+export interface SortableListRef<T = any> {
   addItem: (item?: T, index?: number) => void;
   removeItem: (index: number) => void;
   updateItem: (item: T, index: number) => void;
 }
 
-export interface StoreUpdaterProps<T = SortableItem> {
+export interface StoreUpdaterProps<T = any> {
   /**
    * 值
    */
@@ -90,13 +90,13 @@ export interface StoreUpdaterProps<T = SortableItem> {
    */
   renderItem?: RenderItem<T>;
   /**
-   * 获取唯一标识
-   */
-  getId?: (item: T, index: number) => UniqueIdentifier;
-  /**
    * 渲染内容区域
    */
   renderContent?: RenderContent<T>;
+  /**
+   * 渲染空状态
+   */
+  renderEmpty?: RenderEmpty;
   /**
    * 新建对象相关属性
    */

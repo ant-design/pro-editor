@@ -1,8 +1,6 @@
 import { createStyles } from '../theme';
 
 export const useStyle = createStyles(({ css, cx }, prefixCls: string) => {
-  console.log('prefixCls', prefixCls);
-
   return {
     container: cx(
       prefixCls,

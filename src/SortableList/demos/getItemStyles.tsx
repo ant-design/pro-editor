@@ -2,16 +2,11 @@
  * title: 自定义样式
  * description: 通过 `getItemStyles` 可以自定义每个 item 的样式。
  */
-import { SortableItem, SortableList } from '@ant-design/pro-editor';
+import { SortableList } from '@ant-design/pro-editor';
 import { useState } from 'react';
 
 const Demo = () => {
-  const [list, setList] = useState<SortableItem[]>([
-    { id: '关关雎鸠' },
-    { id: '在河之洲' },
-    { id: '窈窕淑女' },
-    { id: '君子好逑' },
-  ]);
+  const [list, setList] = useState(['关关雎鸠', '在河之洲', '窈窕淑女', '君子好逑']);
 
   return (
     <SortableList
