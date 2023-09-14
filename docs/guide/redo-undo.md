@@ -19,14 +19,13 @@ order: 2
 1. 外层包裹 ProEditorProvider，传入相应的 zustand store
 
 ```tsx | pure
-import { ProEditorProvider, ProEditorStoreUpdater } from '@ant-design/pro-editor';
+import { ProEditorProvider } from '@ant-design/pro-editor';
 
 import { useStore } from './store';
 
-
 export default () => {
   return (
-    <ProEditorProvider store=[useStore]>
+    <ProEditorProvider store={[useStore]}>
       <App />
     </ProEditorProvider>
   );
@@ -56,15 +55,14 @@ export const useStore = create<Store>()(
 多个 Store 使用的方式：
 
 ```tsx | pure
-import { ProEditorProvider, ProEditorStoreUpdater } from '@ant-design/pro-editor';
+import { ProEditorProvider } from '@ant-design/pro-editor';
 
 import { useAStore } from './storeA';
 import { useBStore } from './storeB';
 
-
 export default () => {
   return (
-    <ProEditorProvider  store=[useAStore,useBStore]>
+    <ProEditorProvider store={[useAStore, useBStore]}>
       <App />
     </ProEditorProvider>
   );
@@ -75,11 +73,11 @@ export default () => {
 
 ```tsx | pure
 <div>
-  <ProEditorProvider store=[cStore]>
+  <ProEditorProvider store={[cStore]}>
     <A />
   </ProEditorProvider>
 
-  <ProEditorProvider store=[dStore]>
+  <ProEditorProvider store={[dStore]}>
     <B />
   </ProEditorProvider>
 </div>

@@ -33,6 +33,17 @@ const middleware: ProEditorImpl = (storeInitializer, options) => (set, get, api)
       { trigger: 'proEditorMiddleware', ...action },
     );
   };
+
+  /**
+   * handle setState function
+   */
+  const savedSetState = api.setState;
+  api.setState = (partial, replace, action) => {
+    savedSetState(partial, replace, action);
+
+    updateInProEditor((action as any) || {});
+  };
+
   /*
    * Capture the initial state so that we can initialize the pro editor store to the
    * same values as the initial values of the Zustand store.
@@ -47,15 +58,7 @@ const middleware: ProEditorImpl = (storeInitializer, options) => (set, get, api)
       updateInProEditor((action as any) || {});
     },
     get,
-    {
-      ...api,
-      // Create a new setState function as we did with set.
-      setState: (partial, replace, action) => {
-        api.setState(partial, replace, action);
-
-        updateInProEditor((action as any) || {});
-      },
-    },
+    api,
   );
 
   // Return the initial state to create or the next middleware.
