@@ -1,6 +1,6 @@
 import { proEditorMiddleware, ProEditorOptions } from '@ant-design/pro-editor';
 import { create, StateCreator } from 'zustand';
-import { devtools } from 'zustand/middleware';
+import { devtools, subscribeWithSelector } from 'zustand/middleware';
 
 interface Store {
   tabs: string;
@@ -49,5 +49,9 @@ const proEditorOptions: ProEditorOptions<Store, ProEditorStore> = {
 };
 
 export const useStore = create<Store>()(
-  devtools(proEditorMiddleware(createStore, proEditorOptions), { name: storeName }),
+  devtools(proEditorMiddleware(subscribeWithSelector(createStore), proEditorOptions), {
+    name: storeName,
+  }),
 );
+
+useStore.subscribe((s) => s.data, console.log);

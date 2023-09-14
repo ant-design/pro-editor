@@ -117,7 +117,7 @@
   },
   "devDependencies": {
     "@emotion/jest": "^11.11.0",
-    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/jest-dom": "^6.1.3",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^14.4.3",
     "@types/color": "^3.0.3",
@@ -151,7 +151,7 @@
     "semantic-release": "^21.1.1",
     "semantic-release-config-gitmoji": "^1.5.3",
     "stylelint": "^15.10.3",
-    "typescript": "~5.1.6",
+    "typescript": "^5.2.2",
     "vitest": "latest",
     "wait-on": "^6.0.1",
     "y-protocols": "^1.0.5",
