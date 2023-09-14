@@ -1,5 +1,38 @@
 # Changelog
 
+## [Version&nbsp;0.21.0-alpha.1](https://github.com/ant-design/pro-editor/compare/v0.20.2...v0.21.0-alpha.1)
+
+<sup>Released on **2023-09-14**</sup>
+
+#### ✨ 新特性
+
+- Undo/redo Middleware.
+
+#### 🐛 修复
+
+- Fix compatible with subscribeWithSelector middleware.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's improved
+
+- Undo/redo Middleware, closes [#74](https://github.com/ant-design/pro-editor/issues/74) ([7699738](https://github.com/ant-design/pro-editor/commit/7699738))
+
+#### What's fixed
+
+- Fix compatible with subscribeWithSelector middleware, closes [#89](https://github.com/ant-design/pro-editor/issues/89) ([24ffb15](https://github.com/ant-design/pro-editor/commit/24ffb15))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
 ### [Version&nbsp;0.20.2](https://github.com/ant-design/pro-editor/compare/v0.20.1...v0.20.2)
 
 <sup>Released on **2023-09-13**</sup>
