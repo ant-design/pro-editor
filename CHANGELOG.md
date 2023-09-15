@@ -1,5 +1,30 @@
 # Changelog
 
+### [Version&nbsp;0.20.4](https://github.com/ant-design/pro-editor/compare/v0.20.3...v0.20.4)
+
+<sup>Released on **2023-09-15**</sup>
+
+#### 🐛 修复
+
+- SortableTree return type.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's fixed
+
+- SortableTree return type ([baa94e8](https://github.com/ant-design/pro-editor/commit/baa94e8))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
 ### [Version&nbsp;0.20.3](https://github.com/ant-design/pro-editor/compare/v0.20.2...v0.20.3)
 
 <sup>Released on **2023-09-15**</sup>
