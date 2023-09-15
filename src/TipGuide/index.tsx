@@ -55,7 +55,7 @@ export interface TipGuideProps {
   /**
    * 用于自定义 footer 部分的 render api
    */
-  footerRender?: (dom: React.ReactNode) => React.ReactNode;
+  footerRender?: (dom: React.ReactNode) => ReturnType<FC>;
 }
 
 const TipGuide: FC<TipGuideProps> = ({
