@@ -4,7 +4,7 @@ import isEqual from 'fast-deep-equal';
 import { useControls, useStoreContext } from 'leva';
 import { DataInput } from 'leva/src/types';
 import merge from 'lodash.merge';
-import { ReactNode, memo, useEffect, useMemo } from 'react';
+import { FC, memo, useEffect, useMemo } from 'react';
 import { getDefaultValueFromSchema } from '../utils';
 
 import { SchemaItem, toLevaSchema } from './utils/schema';
@@ -34,7 +34,7 @@ export interface SchemaProps<T> {
   onChange?: (changedValue: Partial<T>, fullValue: T) => void;
 }
 
-const Schema: <T>(props: SchemaProps<T>) => ReactNode = memo(
+const Schema: <T>(props: SchemaProps<T>) => ReturnType<FC> = memo(
   ({ value: outConfig, onChange, schema }) => {
     const store = useStoreContext();
 

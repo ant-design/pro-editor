@@ -1,6 +1,6 @@
 import type { DraggableSyntheticListeners, UniqueIdentifier } from '@dnd-kit/core';
 import type { Transform } from '@dnd-kit/utilities';
-import type { CSSProperties, ReactElement, Ref } from 'react';
+import type { CSSProperties, FC, ReactElement, Ref } from 'react';
 import { StoreUpdaterProps } from '../type/store';
 
 export interface BaseItemProps<T = any>
@@ -45,7 +45,7 @@ export interface SortableItemProps<T = any>
 
 export type RenderContent<T = any> = (item: T, index: number) => React.ReactNode;
 
-export type RenderEmpty = () => React.ReactNode;
+export type RenderEmpty = () => ReturnType<FC>;
 
 export interface CreatorButtonProps {
   /**
