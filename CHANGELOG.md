@@ -1,5 +1,31 @@
 # Changelog
 
+### [Version&nbsp;0.20.3](https://github.com/ant-design/pro-editor/compare/v0.20.2...v0.20.3)
+
+<sup>Released on **2023-09-15**</sup>
+
+#### 🐛 修复
+
+- Return type fc, upgrade ts error.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's fixed
+
+- Return type fc ([c5bf837](https://github.com/ant-design/pro-editor/commit/c5bf837))
+- Upgrade ts error ([2cbfca6](https://github.com/ant-design/pro-editor/commit/2cbfca6))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
 ### [Version&nbsp;0.20.2](https://github.com/ant-design/pro-editor/compare/v0.20.1...v0.20.2)
 
 <sup>Released on **2023-09-13**</sup>
