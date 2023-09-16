@@ -107,7 +107,7 @@ const FieldSelect: React.FC<FieldSelectProps> = (props) => {
       options={(options || []).map((item: FieldSelectOptionType) => {
         const { label, value, type, description } = item;
         return {
-          label: <FieldTitle type={type} title={label} description={description} extra={123} />,
+          label: <FieldTitle type={type} title={label} description={description} />,
           value,
           key: value,
         };
