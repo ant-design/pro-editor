@@ -1,5 +1,30 @@
 # Changelog
 
+### [Version&nbsp;0.20.5](https://github.com/ant-design/pro-editor/compare/v0.20.4...v0.20.5)
+
+<sup>Released on **2023-09-18**</sup>
+
+#### 🐛 修复
+
+- 修复 FieldTitle 样式错误.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's fixed
+
+- 修复 FieldTitle 样式错误, closes [#92](https://github.com/ant-design/pro-editor/issues/92) ([789172e](https://github.com/ant-design/pro-editor/commit/789172e))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
 ### [Version&nbsp;0.20.4](https://github.com/ant-design/pro-editor/compare/v0.20.3...v0.20.4)
 
 <sup>Released on **2023-09-15**</sup>
