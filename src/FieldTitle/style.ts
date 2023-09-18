@@ -1,11 +1,11 @@
 import { createStyles } from '../theme';
 
-export const useStyle = createStyles(({ token, css, cx }, { prefixCls, checkable }) => {
+export const useStyle = createStyles(({ token, css, cx }, { prefixCls }) => {
   return {
-    content: cx(
-      `${prefixCls}-content`,
+    container: cx(
+      `${prefixCls}-container`,
       css({
-        display: 'flex',
+        display: 'inline-flex',
         alignItems: 'center',
         fontSize: token.fontSize,
       }),
@@ -20,12 +20,6 @@ export const useStyle = createStyles(({ token, css, cx }, { prefixCls, checkable
       `${prefixCls}-description`,
       css({
         marginLeft: token.marginXXS,
-      }),
-    ),
-    extra: cx(
-      `${prefixCls}-extra`,
-      css({
-        paddingLeft: checkable ? token.paddingLG : undefined,
       }),
     ),
   };
