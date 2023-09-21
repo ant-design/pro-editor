@@ -32,10 +32,10 @@ demo:
 | dropdownProps       | `[]<ActionGroupItem \| { type: 'divider' }>`                                    | 给 dropdownMenu 设置的自定义 Props，支持除了 Menu 外其余所有 antd dropdown Props 的设置 |
 | dropdownMenuTrigger | `React.ReactNode`                                                               | 用于自定义 dropdownMenu 下拉的触发 Dom，默认为 DashOutlined 的 Icon                     |
 | render              | `(defalutDom: React.ReactNode, config: Array<ButtonConfig>) => React.ReactNode` | 用于渲染自定义能力的 render 方法                                                        |
-| onFullScreenClick   | `() => void`                                                                    | 全屏按钮点击的回掉                                                                      |
-| onUndoClick         | `() => void`                                                                    | 撤销按钮点击的回掉                                                                      |
-| onRedoClick         | `() => void`                                                                    | 重做按钮点击的回掉                                                                      |
-| onDeleteClick       | `() => void`                                                                    | 删除按钮点击的回掉                                                                      |
+| onFullScreenClick   | `() => void`                                                                    | 全屏按钮点击的回调                                                                      |
+| onUndoClick         | `() => void`                                                                    | 撤销按钮点击的回调                                                                      |
+| onRedoClick         | `() => void`                                                                    | 重做按钮点击的回调                                                                      |
+| onDeleteClick       | `() => void`                                                                    | 删除按钮点击的回调                                                                      |
 | type                | `'ghost' \| 'block' \| 'pure'`                                                  | 整体的样式                                                                              |
 | direction           | `'row' \| 'column'`                                                             | 图标排列时候的方向                                                                      |
 | size                | `'default' \| 'large' \| number`                                                | 图标尺寸                                                                                |
@@ -47,5 +47,5 @@ demo:
 | icon    | `React.ReactNode`     | 展示的 icon            |
 | style   | `React.CSSProperties` | 每个配置按钮的单独样式 |
 | key     | `key`                 | 每个按钮单独的 key     |
-| onClick | `() => void`          | 按钮点击事件的回掉     |
+| onClick | `() => void`          | 按钮点击事件的回调     |
 | label   | `string`              | 用于展示按钮的提示文案 |

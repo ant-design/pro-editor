@@ -24,7 +24,7 @@ type ActionIconGroupItem = {
    */
   key?: string;
   /**
-   * @description 按钮点击事件的回掉
+   * @description 按钮点击事件的回调
    */
   onClick?: () => void;
   /**
@@ -68,19 +68,19 @@ interface ActionGroupProps {
     dropdownMenu?: Array<ActionIconGroupItem | { type: 'divider' }>,
   ) => JSX.Element;
   /**
-   * @description 全屏按钮点击的回掉
+   * @description 全屏按钮点击的回调
    */
   onFullScreenClick?: () => void;
   /**
-   * @description 撤销按钮点击的回掉
+   * @description 撤销按钮点击的回调
    */
   onUndoClick?: () => void;
   /**
-   * @description 重做按钮点击的回掉
+   * @description 重做按钮点击的回调
    */
   onRedoClick?: () => void;
   /**
-   * @description 删除按钮点击的回掉
+   * @description 删除按钮点击的回调
    */
   onDeleteClick?: () => void;
   /**
