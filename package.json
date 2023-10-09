@@ -94,7 +94,6 @@
     "lodash.uniq": "^4.5.0",
     "mockjs": "^1.1.0",
     "polished": "^4.2.2",
-    "prettier": "^2.8.8",
     "re-resizable": "^6.9.11",
     "react-colorful": "^5.6.1",
     "react-copy-to-clipboard": "^5.1.0",
