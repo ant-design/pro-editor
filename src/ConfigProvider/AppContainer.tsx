@@ -1,10 +1,10 @@
 import { GetAntdThemeConfig, ThemeAppearance, ThemeMode } from 'antd-style';
 import { ThemeConfig } from 'antd/es/config-provider/context';
-import type { FC, PropsWithChildren } from 'react';
 import { STUDIO_UI_PREFIX } from '../theme';
 
+import { FC, PropsWithChildren } from 'react';
 import { OverrideAntdGlobalStyles } from '../antd/override';
-import { createStudioAntdTheme, getStudioStylish, getStudioToken, ThemeProvider } from '../theme';
+import { ThemeProvider, createStudioAntdTheme, getStudioStylish, getStudioToken } from '../theme';
 
 /**
  * @title 应用容器属性

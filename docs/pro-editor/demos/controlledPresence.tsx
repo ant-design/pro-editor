@@ -1,7 +1,7 @@
 /**
  * iframe: 800
  */
-import { AwarenessEditor, ComponentAsset, ProEditor } from '@/index';
+import { AwarenessEditor, ComponentAsset, ProBuilder } from '@/index';
 import { JsonViewer } from '@textea/json-viewer';
 import { useLocalStorageState } from 'ahooks';
 import { Flexbox } from 'react-layout-kit';
@@ -15,7 +15,7 @@ export default () => {
 
   return (
     <Flexbox>
-      <ProEditor
+      <ProBuilder
         componentAsset={assets}
         editorAwareness={presence}
         onEditorAwarenessChange={setPresence}

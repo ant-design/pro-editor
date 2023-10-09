@@ -20,15 +20,16 @@ demo:
 <code src="./demos/controlled.tsx" ></code>
 <code src="./demos/actions.tsx" ></code>
 <code src="./demos/creatorButtonProps.tsx" ></code>
+<code src="./demos/customCreate.tsx" ></code>
 <code src="./demos/empty.tsx" ></code>
 
 ## API
 
 提供封装的 `columns` 配置，其他属性参考 `SortableList`
 
-| 属性名  | 类型                         | 描述     |
-| ------- | ---------------------------- | -------- |
-| columns | `ColumnItem<SortableItem>[]` | 列配置项 |
+| 属性名  | 类型           | 描述     |
+| ------- | -------------- | -------- |
+| columns | `ColumnItem[]` | 列配置项 |
 
 ### ColumnItem
 
@@ -62,7 +63,7 @@ demo:
 
 | 属性名   | 类型                   | 描述           |
 | -------- | ---------------------- | -------------- |
-| item     | `SortableItem`         | 当前项数据     |
+| item     | `any`                  | 当前项数据     |
 | value    | `any`                  | 当前值         |
 | onChange | `(value: any) => void` | 值变化回调函数 |
 | column   | `ColumnItem<T>`        | 对应列信息     |

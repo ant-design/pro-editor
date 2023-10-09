@@ -2,23 +2,22 @@
  * title: 基础使用
  * description: 通过配置 `columns` 渲染排序表单
  */
-import type { ColumnItemList, SortableItem } from '@ant-design/pro-editor';
+import type { ColumnItemList } from '@ant-design/pro-editor';
 import { ColumnList } from '@ant-design/pro-editor';
 
 type SchemaItem = {
   title: string;
   dataIndex: string;
-} & SortableItem;
+};
 
 const initialValues = [
-  { id: 'index', title: '序号', valueType: 'indexBorder', dataIndex: 'index' },
+  { title: '序号', valueType: 'indexBorder', dataIndex: 'index' },
   {
-    id: 'name',
     title: '授权企业名称',
     valueType: 'text',
     dataIndex: 'name',
   },
-  { id: 'authCompany', title: '被授权企业', valueType: 'text', dataIndex: 'authCompany' },
+  { title: '被授权企业', valueType: 'text', dataIndex: 'authCompany' },
 ];
 
 const columns: ColumnItemList<SchemaItem> = [
@@ -34,12 +33,23 @@ const columns: ColumnItemList<SchemaItem> = [
   },
 ];
 
+/**
+ * 创建一个随机的索引标记符，请勿在生产环境使用
+ */
+export const randomIndex = () => Math.random() * 10000;
+
 export default () => (
   <ColumnList<SchemaItem>
     columns={columns}
     initialValues={initialValues}
     onChange={(values) => {
       console.log('onChange', values);
+    }}
+    creatorButtonProps={{
+      record: () => ({
+        valueType: 'text',
+        title: '示例标题',
+      }),
     }}
   />
 );

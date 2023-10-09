@@ -2,7 +2,6 @@ import {
   ColumnItemList,
   DeleteAction,
   HandleAction,
-  SortableItem,
   useSortableList,
 } from '@ant-design/pro-editor';
 import { createStyles } from 'antd-style';
@@ -69,9 +68,10 @@ const useStyle = createStyles(({ css, cx }, prefixCls) => {
   };
 });
 
-interface ItemRenderProps<T extends SortableItem = SortableItem> {
+interface ItemRenderProps<T = any> {
   columns: ColumnItemList<T>;
   item: T;
+  dragging: boolean;
   index: number;
   prefixCls: string;
   listeners: any;
@@ -80,7 +80,7 @@ interface ItemRenderProps<T extends SortableItem = SortableItem> {
 }
 
 const ColumnItem = memo<ItemRenderProps>(
-  ({ item, index, prefixCls, columns, listeners, actions, hideRemove }) => {
+  ({ item, index, prefixCls, columns, listeners, actions, hideRemove, dragging }) => {
     const { styles } = useStyle(prefixCls);
     const instance = useSortableList();
     return (
@@ -101,6 +101,7 @@ const ColumnItem = memo<ItemRenderProps>(
               value: item[col.dataIndex],
               id: item.id,
               index,
+              dragging,
               prefixCls,
               style,
               placeholder: col.placeholder,

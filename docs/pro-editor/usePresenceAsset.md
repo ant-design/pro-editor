@@ -22,6 +22,6 @@ const getPresenceAsset = () => {
 
 :::warning
 
-注：该 hook 只能在被 `ProEditorProvider` 包裹的组件中使用，或者在 `<ProEditor />` 组件的子组件中使用。
+注：该 hook 只能在被 `ProBuilderProvider` 包裹的组件中使用，或者在 `<ProEditor />` 组件的子组件中使用。
 
 :::

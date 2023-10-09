@@ -33,14 +33,6 @@ export interface FieldTitleProps {
    * 标题右侧描述
    */
   description?: React.ReactNode;
-  /**
-   * 额外内容
-   */
-  extra?: React.ReactNode;
-  /**
-   * 是否可选
-   */
-  checkable?: boolean;
 }
 
 const FieldTitle: React.FC<FieldTitleProps> = (props) => {
@@ -52,12 +44,10 @@ const FieldTitle: React.FC<FieldTitleProps> = (props) => {
     isParentArray,
     title,
     description = null,
-    extra = null,
-    checkable = true,
   } = props;
 
   const prefixCls = getPrefixCls('field-title', customizePrefixCls);
-  const { styles } = useStyle({ prefixCls, checkable });
+  const { styles } = useStyle({ prefixCls });
 
   let finalType = type;
   if (finalType === 'boolean') {
@@ -67,14 +57,11 @@ const FieldTitle: React.FC<FieldTitleProps> = (props) => {
     finalType += 'Array';
   }
   return (
-    <div className={classNames(prefixCls, className)} style={style}>
-      <div className={styles.content}>
-        {finalType ? <FieldIcon type={finalType} /> : null}
-        {title ? <span className={styles.title}>{title}</span> : null}
-        {description ? <span className={styles.description}>{description}</span> : null}
-      </div>
-      {extra ? <div className={styles.extra}>{extra}</div> : null}
-    </div>
+    <span className={classNames(prefixCls, className, styles.container)} style={style}>
+      {finalType ? <FieldIcon type={finalType} /> : null}
+      {title ? <span className={styles.title}>{title}</span> : null}
+      {description ? <span className={styles.description}>{description}</span> : null}
+    </span>
   );
 };
 

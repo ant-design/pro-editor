@@ -1,9 +1,7 @@
-import { SortableItem } from '@ant-design/pro-editor';
-
-export type SchemaItem = SortableItem<{
+export type SchemaItem = {
   title?: string;
   dataIndex?: string;
-}>;
+};
 
 export interface ItemRenderProps {
   item: SchemaItem;

@@ -14,7 +14,6 @@ import { getIndexOfActiveItem } from '../utils';
 const selector = (s: Store) => ({
   activeId: s.activeId,
   hideRemove: s.hideRemove,
-  getId: s.getId,
   renderItem: s.renderItem,
   renderContent: s.renderContent,
   getItemStyles: s.getItemStyles,
@@ -25,12 +24,13 @@ interface OverlayProps {
 }
 
 const Overlay: FC<OverlayProps> = ({ prefixCls }) => {
-  const { activeId, getId, renderItem, hideRemove, getItemStyles, renderContent } = useStore(
+  const { activeId, renderItem, hideRemove, getItemStyles, renderContent } = useStore(
     selector,
     shallow,
   );
   const items = useStore((s) => s.value, isEqual);
-  const activeIndex = getIndexOfActiveItem(items, getId, activeId);
+  const keyManager = useStore((s) => s.keyManager, isEqual);
+  const activeIndex = getIndexOfActiveItem(keyManager, activeId);
 
   return (
     <DragOverlay

@@ -9,6 +9,14 @@ export const useStyle = createStyles(({ css, cx }, prefixCls: string) => {
         width: fit-content;
       `,
     ),
+    footer: cx(
+      `${prefixCls}-footer`,
+      css`
+        width: 100%;
+        display: flex;
+        justify-content: end;
+      `,
+    ),
     tip: cx(
       `${prefixCls}-tip`,
       css`

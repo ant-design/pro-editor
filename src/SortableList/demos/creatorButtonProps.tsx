@@ -7,7 +7,7 @@ import { SortableList } from '@ant-design/pro-editor';
 import { useTheme } from 'antd-style';
 import { Flexbox } from 'react-layout-kit';
 
-const list = [{ id: 'hello' }, { id: 'world' }];
+const list = [{ text: 'hello' }, { text: 'world' }];
 
 const Demo = () => {
   const token = useTheme();
@@ -15,10 +15,11 @@ const Demo = () => {
     <Flexbox padding={24} style={{ background: token.colorBgLayout }}>
       <SortableList
         value={list}
+        renderContent={(item) => item.text}
         creatorButtonProps={{
           creatorButtonText: '自定义添加',
           record: () => ({
-            id: Math.ceil(Math.random() * 100000).toString(16),
+            text: Math.ceil(Math.random() * 100000).toString(16),
           }),
         }}
       />

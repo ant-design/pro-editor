@@ -1,12 +1,11 @@
 import type { TooltipProps } from 'antd';
-import { Badge, Button, Checkbox, Popover } from 'antd';
-import type { FC, ReactNode } from 'react';
+import { Badge, Button, Popover } from 'antd';
+import useMergedState from 'rc-util/lib/hooks/useMergedState';
+import { type FC, type ReactNode } from 'react';
 import { Flexbox } from 'react-layout-kit';
-
 import { ConfigProvider } from '../ConfigProvider';
 import { getPrefixCls, useToken } from '../theme';
 import { useStyle } from './style';
-import { useTipGuide } from './useTipGuide';
 
 export interface TipGuideProps {
   /**
@@ -26,10 +25,6 @@ export interface TipGuideProps {
    */
   maxWidth?: number;
   /**
-   * 用于持久化该引导值状态
-   */
-  guideKey: string;
-  /**
    * 引导内容
    */
   children?: ReactNode;
@@ -45,6 +40,22 @@ export interface TipGuideProps {
    * 类名
    */
   className?: string;
+  /**
+   * 受控的 open 属性
+   */
+  open?: boolean;
+  /**
+   * 当 open 属性变化时候的触发
+   */
+  onOpenChange?: (open: boolean) => void;
+  /**
+   * 默认时候的打开状态
+   */
+  defaultOpen?: boolean;
+  /**
+   * 用于自定义 footer 部分的 render api
+   */
+  footerRender?: (dom: React.ReactNode) => ReturnType<FC>;
 }
 
 const TipGuide: FC<TipGuideProps> = ({
@@ -56,14 +67,39 @@ const TipGuide: FC<TipGuideProps> = ({
   prefixCls: customPrefixCls,
   className,
   style,
-  guideKey,
+  defaultOpen = true,
+  open: outOpen,
+  onOpenChange = () => {},
+  footerRender,
 }) => {
   const prefixCls = getPrefixCls('tip-guide', customPrefixCls);
-
-  const { noLongerShow, toggleChecked, closeGuide, visible, checked } =
-    useTipGuide(guideKey);
   const token = useToken();
   const { styles, cx } = useStyle(prefixCls);
+  const [open, setOpen] = useMergedState<boolean>(defaultOpen, {
+    value: outOpen,
+    onChange: onOpenChange,
+  });
+
+  const FooterDom = () => {
+    const defalutFooter = (
+      <div className={styles.footer}>
+        <Button
+          type={'primary'}
+          size={'small'}
+          onClick={() => {
+            setOpen(!open);
+          }}
+        >
+          我知道了
+        </Button>
+      </div>
+    );
+    if (footerRender) {
+      return footerRender(defalutFooter);
+    }
+
+    return defalutFooter;
+  };
   return (
     <ConfigProvider
       componentToken={{
@@ -76,9 +112,7 @@ const TipGuide: FC<TipGuideProps> = ({
         Button: { colorPrimary: token['blue-7'] },
       }}
     >
-      {noLongerShow || !visible ? (
-        <>{children}</>
-      ) : (
+      {open ? (
         <div className={styles.container}>
           {children}
           <div
@@ -88,25 +122,12 @@ const TipGuide: FC<TipGuideProps> = ({
             }}
           >
             <Popover
-              open={visible}
+              open={open}
               content={
                 <Flexbox className={`${prefixCls}-guide-content`} gap={24}>
                   <div>{title}</div>
-                  <Flexbox
-                    direction={'horizontal'}
-                    distribution={'space-between'}
-                    gap={8}
-                  >
-                    <Checkbox onChange={toggleChecked} checked={checked}>
-                      不再显示
-                    </Checkbox>
-                    <Button
-                      type={'primary'}
-                      size={'small'}
-                      onClick={closeGuide}
-                    >
-                      我知道了
-                    </Button>
+                  <Flexbox direction={'horizontal'} distribution={'space-between'} gap={8}>
+                    <FooterDom />
                   </Flexbox>
                 </Flexbox>
               }
@@ -121,6 +142,8 @@ const TipGuide: FC<TipGuideProps> = ({
             </Popover>
           </div>
         </div>
+      ) : (
+        <>{children}</>
       )}
     </ConfigProvider>
   );

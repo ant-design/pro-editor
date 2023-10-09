@@ -1,15 +1,15 @@
 ---
-title: ProEditor 配置容器
-atomId: ProEditor
+title: ProBuilder 配置容器
+atomId: ProBuilder
 group: 组件
 nav:
   title: 装配器
   order: 3
 ---
 
-# ProEditor 装配器容器
+# ProBuilder 装配器容器
 
-使用 ProEditor 可以快速构建出组件的配置界面。
+使用 ProBuilder 可以快速构建出组件的配置界面。
 
 ## 以 Button 示例
 
