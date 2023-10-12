@@ -9,7 +9,7 @@ import { ActionIcon, getPrefixCls } from '@ant-design/pro-editor';
 import { Divider, Dropdown, DropdownProps } from 'antd';
 import { useStyle } from './style';
 
-type ActionIconGroupItem = {
+export type ActionIconGroupItemType = {
   /**
    * @description 展示的 icon
    */
@@ -33,6 +33,8 @@ type ActionIconGroupItem = {
   label?: string;
 };
 
+type ActionIconGroupItemTypeWithDivider = ActionIconGroupItemType | { type: 'divider' };
+
 interface ActionGroupProps {
   /**
    * @description 自定义的classname
@@ -47,11 +49,11 @@ interface ActionGroupProps {
   /**
    * @description 生成按钮的配置config
    */
-  items?: Array<ActionIconGroupItem | { type: 'divider' }>;
+  items?: Array<ActionIconGroupItemTypeWithDivider>;
   /**
    * @description 生成 drowDownMenuList 内容的 config
    */
-  dropdownMenu?: Array<ActionIconGroupItem | { type: 'divider' }>;
+  dropdownMenu?: Array<ActionIconGroupItemTypeWithDivider>;
   /**
    * @description 给 dropdownMenu 设置的自定义 Props，支持除了 Menu 外其余所有 antd dropdown Props 的设置
    */
@@ -64,8 +66,8 @@ interface ActionGroupProps {
    * @description 用于渲染自定义能力的render方法
    */
   render?: (
-    config: Array<ActionIconGroupItem | { type: 'divider' }>,
-    dropdownMenu?: Array<ActionIconGroupItem | { type: 'divider' }>,
+    config: Array<ActionIconGroupItemTypeWithDivider>,
+    dropdownMenu?: Array<ActionIconGroupItemTypeWithDivider>,
   ) => JSX.Element;
   /**
    * @description 通用的 Click 触发
@@ -195,4 +197,4 @@ const ActionGroup = (props: ActionGroupProps) => {
   );
 };
 
-export default ActionGroup;
+export { ActionGroup };
