@@ -1,5 +1,42 @@
 # Changelog
 
+## [Version&nbsp;0.21.0](https://github.com/ant-design/pro-editor/compare/v0.20.5...v0.21.0)
+
+<sup>Released on **2023-10-13**</sup>
+
+#### ✨ 新特性
+
+- ActionGroup add comman OnClick & add Divder Config, merge main.
+
+#### 🐛 修复
+
+- Change prettier from dev to dep, ci builder fixed, merge main, update snapshot.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's improved
+
+- ActionGroup add comman OnClick & add Divder Config ([234ef98](https://github.com/ant-design/pro-editor/commit/234ef98))
+- Merge main ([781217f](https://github.com/ant-design/pro-editor/commit/781217f))
+
+#### What's fixed
+
+- Change prettier from dev to dep ([54bf44a](https://github.com/ant-design/pro-editor/commit/54bf44a))
+- Ci builder fixed ([f028be2](https://github.com/ant-design/pro-editor/commit/f028be2))
+- Merge main ([70f491f](https://github.com/ant-design/pro-editor/commit/70f491f))
+- Update snapshot ([80e7722](https://github.com/ant-design/pro-editor/commit/80e7722))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
 ### [Version&nbsp;0.20.5](https://github.com/ant-design/pro-editor/compare/v0.20.4...v0.20.5)
 
 <sup>Released on **2023-09-18**</sup>
