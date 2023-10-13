@@ -1,3 +1,4 @@
+import { CopyOutlined, DragOutlined, ZoomInOutlined, ZoomOutOutlined } from '@ant-design/icons';
 /**
  * title: 模式配置
  */
@@ -27,7 +28,28 @@ export default () => {
       )}
 
       <Segmented options={['row', 'column']} value={direction} onChange={setDirection} />
-      <ActionGroup type={type} size={size === 'number' ? number : size} direction={direction} />
+      <ActionGroup
+        type={type}
+        size={size === 'number' ? number : size}
+        direction={direction}
+        items={[
+          {
+            icon: <CopyOutlined />,
+          },
+          {
+            icon: <ZoomInOutlined />,
+          },
+          {
+            icon: <ZoomOutOutlined />,
+          },
+          {
+            type: 'divider',
+          },
+          {
+            icon: <DragOutlined />,
+          },
+        ]}
+      />
     </Space>
   );
 };

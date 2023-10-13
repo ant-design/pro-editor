@@ -16,6 +16,7 @@ export const useStyle = createStyles(({ token, css, cx }, { prefixCls, type, dir
         display: flex;
         flex-direction: ${direction};
         border-radius: ${token.borderRadius}px;
+        align-items: center;
       `,
     ),
     button: cx(
