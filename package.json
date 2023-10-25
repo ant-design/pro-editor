@@ -150,7 +150,7 @@
     "semantic-release": "^21.1.2",
     "semantic-release-config-gitmoji": "^1.5.3",
     "stylelint": "^15.10.3",
-    "typescript": "~5.1.6",
+    "typescript": "^5.2.2",
     "vitest": "latest",
     "wait-on": "^6.0.1",
     "y-protocols": "^1.0.5",
