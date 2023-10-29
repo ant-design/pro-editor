@@ -16,6 +16,7 @@ export default () => {
         items={[
           {
             icon: <CopyOutlined />,
+            placement: 'bottom',
             onClick: () => {
               messageApi.info('复制！');
             },
