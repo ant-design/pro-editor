@@ -34,6 +34,11 @@ export interface ActionIconProps extends Omit<ButtonProps, 'title' | 'size'> {
    * @title 图标尺寸
    */
   size?: 'default' | 'large' | number;
+  /**
+   * @description Mouse enter delay of tooltip
+   * @default 0.5
+   */
+  tooltipDelay?: number;
 }
 
 const ActionIcon: FC<ActionIconProps> = ({
@@ -44,6 +49,7 @@ const ActionIcon: FC<ActionIconProps> = ({
   onClick,
   className,
   size,
+  tooltipDelay = 0.5,
   prefixCls: customPrefixCls,
   ...restProps
 }) => {
@@ -80,6 +86,7 @@ const ActionIcon: FC<ActionIconProps> = ({
           arrow={false}
           overlayClassName={styles.tooltip}
           title={title}
+          mouseEnterDelay={tooltipDelay}
           placement={placement}
         >
           {Icon}
