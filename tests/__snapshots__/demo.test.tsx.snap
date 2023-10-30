@@ -18212,6 +18212,1186 @@ exports[`<Highlight /> > renders theme.tsx correctly 1`] = `
 </div>
 `;
 
+exports[`<Highlight /> > renders wrapper.tsx correctly 1`] = `
+.emotion-0 {
+  background-color: hsla(221.29999999999995, 15.7%, 20%, 0.9);
+  border-radius: 6px;
+}
+
+.emotion-0 .studio-highlight-copy {
+  background-color: transparent;
+  position: inherit;
+  width: 30px;
+  padding-left: 6px;
+}
+
+.emotion-1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+}
+
+.emotion-2 {
+  padding: 4px 8px;
+  background: rgba(0, 0, 0, 0.02);
+  width: auto!important;
+}
+
+.emotion-3 {
+  color: #dddddd;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-transition: color 600ms cubic-bezier(0.215, 0.61, 0.355, 1),scale 400ms cubic-bezier(0.215, 0.61, 0.355, 1),background-color 100ms cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: color 600ms cubic-bezier(0.215, 0.61, 0.355, 1),scale 400ms cubic-bezier(0.215, 0.61, 0.355, 1),background-color 100ms cubic-bezier(0.215, 0.61, 0.355, 1);
+  width: 24px!important;
+  height: 24px!important;
+}
+
+.emotion-3:hover .studio-btn-icon {
+  color: #dddddd!important;
+}
+
+.emotion-3:hover {
+  color: rgba(0, 0, 0, 0.88)!important;
+}
+
+.emotion-3:active {
+  scale: 0.8;
+  color: rgba(0, 0, 0, 0.88);
+}
+
+.emotion-4 {
+  min-width: 100px;
+}
+
+.emotion-4.studio-select-multiple:not(.emotion-4.studio-select-customize-input) .emotion-4.studio-select.studio-select-selector:hover {
+  color: rgba(0, 0, 0, 0.88);
+  background-color: rgba(0, 0, 0, 0.04);
+  border-color: transparent;
+}
+
+.emotion-4.studio-select-multiple:not(.emotion-4.studio-select-customize-input) .emotion-4.studio-select.studio-select-selector:focus {
+  color: rgba(0, 0, 0, 0.88)!important;
+  background-color: rgba(0, 0, 0, 0.02)!important;
+  border-color: #1677ff!important;
+  box-shadow: none;
+}
+
+.emotion-4.studio-select:not(.studio-select-disabled):not(.studio-select-customize-input):hover .studio-select-selector {
+  border-color: transparent;
+}
+
+.emotion-4.studio-select:not(.studio-select-disabled):not(.studio-select-customize-input):hover .studio-select-selector:hover {
+  color: rgba(0, 0, 0, 0.88);
+  background-color: rgba(0, 0, 0, 0.04);
+  border-color: transparent;
+}
+
+.emotion-4.studio-select:not(.studio-select-disabled):not(.studio-select-customize-input):hover .studio-select-selector:focus {
+  color: rgba(0, 0, 0, 0.88)!important;
+  background-color: rgba(0, 0, 0, 0.02)!important;
+  border-color: #1677ff!important;
+  box-shadow: none;
+}
+
+.emotion-4.studio-select-focused:not(.studio-select-disabled):not(.studio-select-customize-input):hover .studio-select-selector {
+  color: rgba(0, 0, 0, 0.88)!important;
+  background-color: rgba(0, 0, 0, 0.02)!important;
+  border-color: #1677ff!important;
+  box-shadow: none;
+}
+
+.emotion-4.studio-select-focused:not(.studio-select-disabled):not(.studio-select-customize-input) .studio-select-selector {
+  color: rgba(0, 0, 0, 0.88)!important;
+  background-color: rgba(0, 0, 0, 0.02)!important;
+  border-color: #1677ff!important;
+  box-shadow: none;
+}
+
+.emotion-4 .studio-select-arrow {
+  top: 13px;
+  right: 8px;
+  width: 10px;
+  height: 10px;
+  font-size: 10px;
+}
+
+.emotion-4 .studio-btn {
+  color: #dddddd;
+}
+
+.emotion-4 .studio-btn:hover {
+  color: #777777!important;
+}
+
+.emotion-4 .studio-select-selector {
+  -webkit-padding-end: 4px!important;
+  padding-inline-end: 4px!important;
+}
+
+.emotion-4 .studio-select-selection-overflow-item-suffix .studio-select-selection-search {
+  display: none;
+}
+
+.emotion-5 {
+  min-width: 100px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+.emotion-6 {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 16px;
+  height: 16px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  opacity: 0.6;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+  background-color: #2b303b;
+}
+
+.emotion-6:hover {
+  opacity: 0.8;
+}
+
+.emotion-7 {
+  width: 16px;
+  color: #dddddd;
+  height: 16px;
+  font-size: 16px;
+}
+
+.emotion-7.scoll {
+  -webkit-animation: copy-button-trans 2s;
+  animation: copy-button-trans 2s;
+  -webkit-animation-play-state: running;
+  animation-play-state: running;
+}
+
+.emotion-9 {
+  background-color: #2b303b;
+  border: 1px solid #2b303b;
+  position: relative;
+  overflow: auto;
+  margin: 0;
+  border-radius: 6px;
+  -webkit-transition: background-color 100ms cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: background-color 100ms cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.emotion-9 pre {
+  margin: 0!important;
+  padding: 16px 24px!important;
+  background: none!important;
+}
+
+.emotion-9 code {
+  background: transparent!important;
+}
+
+.emotion-10 {
+  display: block;
+  overflow-x: auto;
+  color: #dddddd;
+  background-color: #777777;
+}
+
+.emotion-10 .hljs-comment,
+.emotion-10 .hljs-quote {
+  color: #555555;
+}
+
+.emotion-10 .hljs-variable,
+.emotion-10 .hljs-attribute,
+.emotion-10 .hljs-template-variable,
+.emotion-10 .hljs-tag,
+.emotion-10 .hljs-name,
+.emotion-10 .hljs-selector-id,
+.emotion-10 .hljs-selector-class,
+.emotion-10 .hljs-regexp,
+.emotion-10 .hljs-title,
+.emotion-10 .hljs-deletion {
+  color: #f04f88;
+}
+
+.emotion-10 .hljs-builtin-name,
+.emotion-10 .hljs-literal,
+.emotion-10 .hljs-type,
+.emotion-10 .hljs-params,
+.emotion-10 .hljs-meta,
+.emotion-10 .hljs-link {
+  color: #ffcb47;
+}
+
+.emotion-10 .hljs-string,
+.emotion-10 .hljs-number,
+.emotion-10 .hljs-symbol,
+.emotion-10 .hljs-bullet,
+.emotion-10 .hljs-addition {
+  color: #c4f042;
+}
+
+.emotion-10 .hljs-keyword,
+.emotion-10 .hljs-doctag,
+.emotion-10 .hljs-built_in,
+.emotion-10 .hljs-selector-tag,
+.emotion-10 .hljs-section {
+  color: #8ae8ff;
+}
+
+.emotion-10 .hljs-emphasis {
+  font-style: italic;
+}
+
+.emotion-10 .hljs-strong {
+  font-weight: bold;
+}
+
+.emotion-11 {
+  width: 100%;
+}
+
+.emotion-16 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.emotion-17 {
+  -webkit-backdrop-filter: saturate(180%) blur(10px);
+  backdrop-filter: saturate(180%) blur(10px);
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  height: 36px;
+  padding: 0 8px;
+  font-family: 'SFMono-Regular',Consolas,'Liberation Mono',Menlo,Courier,monospace;
+  color: #555555;
+  border-radius: 6;
+}
+
+.emotion-18 {
+  color: #555555;
+}
+
+.emotion-19 {
+  background-color: hsla(0, 0%, 98%, 0.9);
+  border-radius: 6px;
+}
+
+.emotion-19 .studio-highlight-copy {
+  background-color: transparent;
+  position: inherit;
+  width: 30px;
+  padding-left: 6px;
+}
+
+.emotion-22 {
+  color: #333333;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-transition: color 600ms cubic-bezier(0.215, 0.61, 0.355, 1),scale 400ms cubic-bezier(0.215, 0.61, 0.355, 1),background-color 100ms cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: color 600ms cubic-bezier(0.215, 0.61, 0.355, 1),scale 400ms cubic-bezier(0.215, 0.61, 0.355, 1),background-color 100ms cubic-bezier(0.215, 0.61, 0.355, 1);
+  width: 24px!important;
+  height: 24px!important;
+}
+
+.emotion-22:hover .studio-btn-icon {
+  color: #333333!important;
+}
+
+.emotion-22:hover {
+  color: rgba(0, 0, 0, 0.88)!important;
+}
+
+.emotion-22:active {
+  scale: 0.8;
+  color: rgba(0, 0, 0, 0.88);
+}
+
+.emotion-23 {
+  min-width: 100px;
+}
+
+.emotion-23.studio-select-multiple:not(.emotion-23.studio-select-customize-input) .emotion-23.studio-select.studio-select-selector:hover {
+  color: rgba(0, 0, 0, 0.88);
+  background-color: rgba(0, 0, 0, 0.04);
+  border-color: transparent;
+}
+
+.emotion-23.studio-select-multiple:not(.emotion-23.studio-select-customize-input) .emotion-23.studio-select.studio-select-selector:focus {
+  color: rgba(0, 0, 0, 0.88)!important;
+  background-color: rgba(0, 0, 0, 0.02)!important;
+  border-color: #1677ff!important;
+  box-shadow: none;
+}
+
+.emotion-23.studio-select:not(.studio-select-disabled):not(.studio-select-customize-input):hover .studio-select-selector {
+  border-color: transparent;
+}
+
+.emotion-23.studio-select:not(.studio-select-disabled):not(.studio-select-customize-input):hover .studio-select-selector:hover {
+  color: rgba(0, 0, 0, 0.88);
+  background-color: rgba(0, 0, 0, 0.04);
+  border-color: transparent;
+}
+
+.emotion-23.studio-select:not(.studio-select-disabled):not(.studio-select-customize-input):hover .studio-select-selector:focus {
+  color: rgba(0, 0, 0, 0.88)!important;
+  background-color: rgba(0, 0, 0, 0.02)!important;
+  border-color: #1677ff!important;
+  box-shadow: none;
+}
+
+.emotion-23.studio-select-focused:not(.studio-select-disabled):not(.studio-select-customize-input):hover .studio-select-selector {
+  color: rgba(0, 0, 0, 0.88)!important;
+  background-color: rgba(0, 0, 0, 0.02)!important;
+  border-color: #1677ff!important;
+  box-shadow: none;
+}
+
+.emotion-23.studio-select-focused:not(.studio-select-disabled):not(.studio-select-customize-input) .studio-select-selector {
+  color: rgba(0, 0, 0, 0.88)!important;
+  background-color: rgba(0, 0, 0, 0.02)!important;
+  border-color: #1677ff!important;
+  box-shadow: none;
+}
+
+.emotion-23 .studio-select-arrow {
+  top: 13px;
+  right: 8px;
+  width: 10px;
+  height: 10px;
+  font-size: 10px;
+}
+
+.emotion-23 .studio-btn {
+  color: #333333;
+}
+
+.emotion-23 .studio-btn:hover {
+  color: #666666!important;
+}
+
+.emotion-23 .studio-select-selector {
+  -webkit-padding-end: 4px!important;
+  padding-inline-end: 4px!important;
+}
+
+.emotion-23 .studio-select-selection-overflow-item-suffix .studio-select-selection-search {
+  display: none;
+}
+
+.emotion-25 {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 16px;
+  height: 16px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  opacity: 0.6;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+  background-color: #fafafa;
+}
+
+.emotion-25:hover {
+  opacity: 0.8;
+}
+
+.emotion-26 {
+  width: 16px;
+  color: #333333;
+  height: 16px;
+  font-size: 16px;
+}
+
+.emotion-26.scoll {
+  -webkit-animation: copy-button-trans 2s;
+  animation: copy-button-trans 2s;
+  -webkit-animation-play-state: running;
+  animation-play-state: running;
+}
+
+.emotion-28 {
+  background-color: #fafafa;
+  border: 1px solid #fafafa;
+  position: relative;
+  overflow: auto;
+  margin: 0;
+  border-radius: 6px;
+  -webkit-transition: background-color 100ms cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: background-color 100ms cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.emotion-28 pre {
+  margin: 0!important;
+  padding: 16px 24px!important;
+  background: none!important;
+}
+
+.emotion-28 code {
+  background: transparent!important;
+}
+
+.emotion-29 {
+  display: block;
+  overflow-x: auto;
+  color: #333333;
+  background-color: #666666;
+}
+
+.emotion-29 .hljs-comment,
+.emotion-29 .hljs-quote {
+  color: #aaaaaa;
+}
+
+.emotion-29 .hljs-variable,
+.emotion-29 .hljs-attribute,
+.emotion-29 .hljs-template-variable,
+.emotion-29 .hljs-tag,
+.emotion-29 .hljs-name,
+.emotion-29 .hljs-selector-id,
+.emotion-29 .hljs-selector-class,
+.emotion-29 .hljs-regexp,
+.emotion-29 .hljs-title,
+.emotion-29 .hljs-deletion {
+  color: #ec5e41;
+}
+
+.emotion-29 .hljs-builtin-name,
+.emotion-29 .hljs-literal,
+.emotion-29 .hljs-type,
+.emotion-29 .hljs-params,
+.emotion-29 .hljs-meta,
+.emotion-29 .hljs-link {
+  color: #ff802b;
+}
+
+.emotion-29 .hljs-string,
+.emotion-29 .hljs-number,
+.emotion-29 .hljs-symbol,
+.emotion-29 .hljs-bullet,
+.emotion-29 .hljs-addition {
+  color: #55b467;
+}
+
+.emotion-29 .hljs-keyword,
+.emotion-29 .hljs-doctag,
+.emotion-29 .hljs-built_in,
+.emotion-29 .hljs-selector-tag,
+.emotion-29 .hljs-section {
+  color: #369eff;
+}
+
+.emotion-29 .hljs-emphasis {
+  font-style: italic;
+}
+
+.emotion-29 .hljs-strong {
+  font-weight: bold;
+}
+
+.emotion-36 {
+  -webkit-backdrop-filter: saturate(180%) blur(10px);
+  backdrop-filter: saturate(180%) blur(10px);
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  height: 36px;
+  padding: 0 8px;
+  font-family: 'SFMono-Regular',Consolas,'Liberation Mono',Menlo,Courier,monospace;
+  color: #aaaaaa;
+  border-radius: 6;
+}
+
+.emotion-37 {
+  color: #aaaaaa;
+}
+
+<div>
+  <div
+    class="studio-space studio-space-vertical studio-space-gap-row-small studio-space-gap-col-small"
+  >
+    <div
+      class="studio-space-item"
+    >
+      <div
+        class="studio-highlight-wrapper emotion-0"
+        language="java"
+        theme="dark"
+      >
+        <div
+          class="layoutkit-flexbox emotion-1 studio-highlight-header emotion-2"
+        >
+          <button
+            class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-3"
+            type="button"
+          >
+            <span
+              class="studio-btn-icon"
+            >
+              <svg
+                class="lucide lucide-chevron-down"
+                fill="none"
+                height="14"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                width="14"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="m6 9 6 6 6-6"
+                />
+              </svg>
+            </span>
+          </button>
+          <div
+            class="studio-select studio-select-sm studio-select-borderless emotion-4 studio-select-multiple studio-select-show-arrow studio-select-show-search"
+          >
+            <div
+              class="studio-select-selector"
+            >
+              <div
+                class="studio-select-selection-overflow"
+              >
+                <div
+                  class="studio-select-selection-overflow-item"
+                  style="opacity: 1;"
+                >
+                  <span>
+                    <div
+                      class="emotion-5"
+                    >
+                      <button
+                        class="studio-btn studio-btn-text studio-btn-sm"
+                        type="button"
+                      >
+                        <span>
+                          java
+                        </span>
+                      </button>
+                    </div>
+                  </span>
+                </div>
+                <div
+                  class="studio-select-selection-overflow-item studio-select-selection-overflow-item-suffix"
+                  style="opacity: 1;"
+                >
+                  <div
+                    class="studio-select-selection-search"
+                    style="width: 0px;"
+                  >
+                    <input
+                      aria-autocomplete="list"
+                      aria-controls="rc_select_TEST_OR_SSR_list"
+                      aria-expanded="false"
+                      aria-haspopup="listbox"
+                      aria-label="Search"
+                      aria-owns="rc_select_TEST_OR_SSR_list"
+                      autocomplete="off"
+                      class="studio-select-selection-search-input"
+                      id="rc_select_TEST_OR_SSR"
+                      role="combobox"
+                      type="search"
+                      value=""
+                    />
+                    <span
+                      aria-hidden="true"
+                      class="studio-select-selection-search-mirror"
+                    >
+                       
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <span
+              aria-hidden="true"
+              class="studio-select-arrow"
+              style="user-select: none;"
+              unselectable="on"
+            />
+          </div>
+          <button
+            class="studio-highlight-copy emotion-6"
+            type="button"
+          >
+            <span
+              aria-label="copy"
+              class="anticon anticon-copy studio-highlight-copy-icon emotion-7"
+              role="img"
+            >
+              <svg
+                aria-hidden="true"
+                data-icon="copy"
+                fill="currentColor"
+                focusable="false"
+                height="1em"
+                viewBox="64 64 896 896"
+                width="1em"
+              >
+                <path
+                  d="M832 64H296c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h496v688c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8V96c0-17.7-14.3-32-32-32zM704 192H192c-17.7 0-32 14.3-32 32v530.7c0 8.5 3.4 16.6 9.4 22.6l173.3 173.3c2.2 2.2 4.7 4 7.4 5.5v1.9h4.2c3.5 1.3 7.2 2 11 2H704c17.7 0 32-14.3 32-32V224c0-17.7-14.3-32-32-32zM350 856.2L263.9 770H350v86.2zM664 888H414V746c0-22.1-17.9-40-40-40H232V264h432v624z"
+                />
+              </svg>
+            </span>
+            <span
+              aria-label="check"
+              class="anticon anticon-check studio-highlight-copy-icon emotion-7"
+              role="img"
+              style="color: rgb(63, 177, 99);"
+            >
+              <svg
+                aria-hidden="true"
+                data-icon="check"
+                fill="currentColor"
+                focusable="false"
+                height="1em"
+                viewBox="64 64 896 896"
+                width="1em"
+              >
+                <path
+                  d="M912 190h-69.9c-9.8 0-19.1 4.5-25.1 12.2L404.7 724.5 207 474a32 32 0 00-25.1-12.2H112c-6.7 0-10.4 7.7-6.3 12.9l273.9 347c12.8 16.2 37.4 16.2 50.3 0l488.4-618.9c4.1-5.1.4-12.8-6.3-12.8z"
+                />
+              </svg>
+            </span>
+          </button>
+        </div>
+        <div
+          class="studio-highlight-container emotion-9"
+          tabindex="-1"
+        >
+          <pre
+            class="emotion-10"
+          >
+            <table
+              border="0"
+              cellpadding="0"
+              cellspacing="0"
+            >
+              <tbody>
+                <tr>
+                  <td
+                    class="undefined-content emotion-11"
+                  >
+                    <span
+                      class="hljs-keyword"
+                    >
+                      public
+                    </span>
+                     
+                    <span
+                      class="hljs-class"
+                    >
+                      <span
+                        class="hljs-keyword"
+                      >
+                        class
+                      </span>
+                       
+                      <span
+                        class="hljs-title"
+                      >
+                        HelloWorld
+                      </span>
+                       
+                    </span>
+                    {
+                  </td>
+                </tr>
+                <tr>
+                  <td
+                    class="undefined-content emotion-11"
+                  >
+                        
+                    <span
+                      class="hljs-function"
+                    >
+                      <span
+                        class="hljs-keyword"
+                      >
+                        public
+                      </span>
+                       
+                      <span
+                        class="hljs-keyword"
+                      >
+                        static
+                      </span>
+                       
+                      <span
+                        class="hljs-keyword"
+                      >
+                        void
+                      </span>
+                       
+                      <span
+                        class="hljs-title"
+                      >
+                        main
+                      </span>
+                      <span
+                        class="hljs-params"
+                      >
+                        (String[] args)
+                      </span>
+                       
+                    </span>
+                    {
+                  </td>
+                </tr>
+                <tr>
+                  <td
+                    class="undefined-content emotion-11"
+                  >
+                          System.out.println(
+                    <span
+                      class="hljs-string"
+                    >
+                      "Hello World!"
+                    </span>
+                    );
+                  </td>
+                </tr>
+                <tr>
+                  <td
+                    class="undefined-content emotion-11"
+                  >
+                        }
+                  </td>
+                </tr>
+                <tr>
+                  <td
+                    class="undefined-content emotion-11"
+                  >
+                      }
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </pre>
+          <div
+            class="layoutkit-center emotion-16 emotion-17"
+          >
+            <span
+              aria-label="loading-3-quarters"
+              class="anticon anticon-loading-3-quarters anticon-spin emotion-18"
+              role="img"
+            >
+              <svg
+                aria-hidden="true"
+                data-icon="loading-3-quarters"
+                fill="currentColor"
+                focusable="false"
+                height="1em"
+                viewBox="0 0 1024 1024"
+                width="1em"
+              >
+                <path
+                  d="M512 1024c-69.1 0-136.2-13.5-199.3-40.2C251.7 958 197 921 150 874c-47-47-84-101.7-109.8-162.7C13.5 648.2 0 581.1 0 512c0-19.9 16.1-36 36-36s36 16.1 36 36c0 59.4 11.6 117 34.6 171.3 22.2 52.4 53.9 99.5 94.3 139.9 40.4 40.4 87.5 72.2 139.9 94.3C395 940.4 452.6 952 512 952c59.4 0 117-11.6 171.3-34.6 52.4-22.2 99.5-53.9 139.9-94.3 40.4-40.4 72.2-87.5 94.3-139.9C940.4 629 952 571.4 952 512c0-59.4-11.6-117-34.6-171.3a440.45 440.45 0 00-94.3-139.9 437.71 437.71 0 00-139.9-94.3C629 83.6 571.4 72 512 72c-19.9 0-36-16.1-36-36s16.1-36 36-36c69.1 0 136.2 13.5 199.3 40.2C772.3 66 827 103 874 150c47 47 83.9 101.8 109.7 162.7 26.7 63.1 40.2 130.2 40.2 199.3s-13.5 136.2-40.2 199.3C958 772.3 921 827 874 874c-47 47-101.8 83.9-162.7 109.7-63.1 26.8-130.2 40.3-199.3 40.3z"
+                />
+              </svg>
+            </span>
+            Highlighting...
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="studio-space-item"
+    >
+      <div
+        class="studio-highlight-wrapper emotion-19"
+        language="java"
+        theme="light"
+      >
+        <div
+          class="layoutkit-flexbox emotion-1 studio-highlight-header emotion-2"
+        >
+          <button
+            class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-22"
+            type="button"
+          >
+            <span
+              class="studio-btn-icon"
+            >
+              <svg
+                class="lucide lucide-chevron-down"
+                fill="none"
+                height="14"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                width="14"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="m6 9 6 6 6-6"
+                />
+              </svg>
+            </span>
+          </button>
+          <div
+            class="studio-select studio-select-sm studio-select-borderless emotion-23 studio-select-multiple studio-select-show-arrow studio-select-show-search"
+          >
+            <div
+              class="studio-select-selector"
+            >
+              <div
+                class="studio-select-selection-overflow"
+              >
+                <div
+                  class="studio-select-selection-overflow-item"
+                  style="opacity: 1;"
+                >
+                  <span>
+                    <div
+                      class="emotion-5"
+                    >
+                      <button
+                        class="studio-btn studio-btn-text studio-btn-sm"
+                        type="button"
+                      >
+                        <span>
+                          java
+                        </span>
+                      </button>
+                    </div>
+                  </span>
+                </div>
+                <div
+                  class="studio-select-selection-overflow-item studio-select-selection-overflow-item-suffix"
+                  style="opacity: 1;"
+                >
+                  <div
+                    class="studio-select-selection-search"
+                    style="width: 0px;"
+                  >
+                    <input
+                      aria-autocomplete="list"
+                      aria-controls="rc_select_TEST_OR_SSR_list"
+                      aria-expanded="false"
+                      aria-haspopup="listbox"
+                      aria-label="Search"
+                      aria-owns="rc_select_TEST_OR_SSR_list"
+                      autocomplete="off"
+                      class="studio-select-selection-search-input"
+                      id="rc_select_TEST_OR_SSR"
+                      role="combobox"
+                      type="search"
+                      value=""
+                    />
+                    <span
+                      aria-hidden="true"
+                      class="studio-select-selection-search-mirror"
+                    >
+                       
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <span
+              aria-hidden="true"
+              class="studio-select-arrow"
+              style="user-select: none;"
+              unselectable="on"
+            />
+          </div>
+          <button
+            class="studio-highlight-copy emotion-25"
+            type="button"
+          >
+            <span
+              aria-label="copy"
+              class="anticon anticon-copy studio-highlight-copy-icon emotion-26"
+              role="img"
+            >
+              <svg
+                aria-hidden="true"
+                data-icon="copy"
+                fill="currentColor"
+                focusable="false"
+                height="1em"
+                viewBox="64 64 896 896"
+                width="1em"
+              >
+                <path
+                  d="M832 64H296c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h496v688c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8V96c0-17.7-14.3-32-32-32zM704 192H192c-17.7 0-32 14.3-32 32v530.7c0 8.5 3.4 16.6 9.4 22.6l173.3 173.3c2.2 2.2 4.7 4 7.4 5.5v1.9h4.2c3.5 1.3 7.2 2 11 2H704c17.7 0 32-14.3 32-32V224c0-17.7-14.3-32-32-32zM350 856.2L263.9 770H350v86.2zM664 888H414V746c0-22.1-17.9-40-40-40H232V264h432v624z"
+                />
+              </svg>
+            </span>
+            <span
+              aria-label="check"
+              class="anticon anticon-check studio-highlight-copy-icon emotion-26"
+              role="img"
+              style="color: rgb(63, 177, 99);"
+            >
+              <svg
+                aria-hidden="true"
+                data-icon="check"
+                fill="currentColor"
+                focusable="false"
+                height="1em"
+                viewBox="64 64 896 896"
+                width="1em"
+              >
+                <path
+                  d="M912 190h-69.9c-9.8 0-19.1 4.5-25.1 12.2L404.7 724.5 207 474a32 32 0 00-25.1-12.2H112c-6.7 0-10.4 7.7-6.3 12.9l273.9 347c12.8 16.2 37.4 16.2 50.3 0l488.4-618.9c4.1-5.1.4-12.8-6.3-12.8z"
+                />
+              </svg>
+            </span>
+          </button>
+        </div>
+        <div
+          class="studio-highlight-container emotion-28"
+          tabindex="-1"
+        >
+          <pre
+            class="emotion-29"
+          >
+            <table
+              border="0"
+              cellpadding="0"
+              cellspacing="0"
+            >
+              <tbody>
+                <tr>
+                  <td
+                    class="undefined-content emotion-11"
+                  >
+                    <span
+                      class="hljs-keyword"
+                    >
+                      public
+                    </span>
+                     
+                    <span
+                      class="hljs-class"
+                    >
+                      <span
+                        class="hljs-keyword"
+                      >
+                        class
+                      </span>
+                       
+                      <span
+                        class="hljs-title"
+                      >
+                        HelloWorld
+                      </span>
+                       
+                    </span>
+                    {
+                  </td>
+                </tr>
+                <tr>
+                  <td
+                    class="undefined-content emotion-11"
+                  >
+                        
+                    <span
+                      class="hljs-function"
+                    >
+                      <span
+                        class="hljs-keyword"
+                      >
+                        public
+                      </span>
+                       
+                      <span
+                        class="hljs-keyword"
+                      >
+                        static
+                      </span>
+                       
+                      <span
+                        class="hljs-keyword"
+                      >
+                        void
+                      </span>
+                       
+                      <span
+                        class="hljs-title"
+                      >
+                        main
+                      </span>
+                      <span
+                        class="hljs-params"
+                      >
+                        (String[] args)
+                      </span>
+                       
+                    </span>
+                    {
+                  </td>
+                </tr>
+                <tr>
+                  <td
+                    class="undefined-content emotion-11"
+                  >
+                          System.out.println(
+                    <span
+                      class="hljs-string"
+                    >
+                      "Hello World!"
+                    </span>
+                    );
+                  </td>
+                </tr>
+                <tr>
+                  <td
+                    class="undefined-content emotion-11"
+                  >
+                        }
+                  </td>
+                </tr>
+                <tr>
+                  <td
+                    class="undefined-content emotion-11"
+                  >
+                      }
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </pre>
+          <div
+            class="layoutkit-center emotion-16 emotion-36"
+          >
+            <span
+              aria-label="loading-3-quarters"
+              class="anticon anticon-loading-3-quarters anticon-spin emotion-37"
+              role="img"
+            >
+              <svg
+                aria-hidden="true"
+                data-icon="loading-3-quarters"
+                fill="currentColor"
+                focusable="false"
+                height="1em"
+                viewBox="0 0 1024 1024"
+                width="1em"
+              >
+                <path
+                  d="M512 1024c-69.1 0-136.2-13.5-199.3-40.2C251.7 958 197 921 150 874c-47-47-84-101.7-109.8-162.7C13.5 648.2 0 581.1 0 512c0-19.9 16.1-36 36-36s36 16.1 36 36c0 59.4 11.6 117 34.6 171.3 22.2 52.4 53.9 99.5 94.3 139.9 40.4 40.4 87.5 72.2 139.9 94.3C395 940.4 452.6 952 512 952c59.4 0 117-11.6 171.3-34.6 52.4-22.2 99.5-53.9 139.9-94.3 40.4-40.4 72.2-87.5 94.3-139.9C940.4 629 952 571.4 952 512c0-59.4-11.6-117-34.6-171.3a440.45 440.45 0 00-94.3-139.9 437.71 437.71 0 00-139.9-94.3C629 83.6 571.4 72 512 72c-19.9 0-36-16.1-36-36s16.1-36 36-36c69.1 0 136.2 13.5 199.3 40.2C772.3 66 827 103 874 150c47 47 83.9 101.8 109.7 162.7 26.7 63.1 40.2 130.2 40.2 199.3s-13.5 136.2-40.2 199.3C958 772.3 921 827 874 874c-47 47-101.8 83.9-162.7 109.7-63.1 26.8-130.2 40.3-199.3 40.3z"
+                />
+              </svg>
+            </span>
+            Highlighting...
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`<IconPicker /> > renders controlled.tsx correctly 1`] = `
 .emotion-0 {
   display: -webkit-box;
