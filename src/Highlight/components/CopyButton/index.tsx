@@ -10,18 +10,19 @@ interface CopyButtonProps {
   /**
    * @title 复制按钮点击后回调
    */
-  onCopy: (content: any) => void;
+  onCopy?: (content: any) => void;
   /**
    * @title 主题
    * @description 主题颜色, dark 黑色主题，light 白色主题
    * @default "light"
    */
-  theme: ThemeType;
-  prefixCls: string;
+  theme?: ThemeType;
+  prefixCls?: string;
+  style?: React.CSSProperties;
 }
 
 const CopyButton: React.FC<CopyButtonProps> = (props) => {
-  const { content, onCopy, theme, prefixCls } = props;
+  const { content, onCopy, theme = 'light', prefixCls, style } = props;
   const [copyId, setCopyId] = useState<number | undefined>();
   const { styles } = useStyles({ prefixCls, theme });
 
@@ -44,7 +45,7 @@ const CopyButton: React.FC<CopyButtonProps> = (props) => {
           if (onCopy) onCopy(content);
         }}
       >
-        <button type={'button'} disabled={copied} className={styles.copy}>
+        <button type={'button'} disabled={copied} className={styles.copy} style={style}>
           <CopyOutlined className={classNames(styles.copyIcon, { scoll: copied })} />
           <CheckOutlined className={styles.copyIcon} style={{ color: 'rgb(63,177,99)' }} />
         </button>

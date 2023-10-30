@@ -30,6 +30,12 @@ group: 基础组件
 
 <code src="./demos/theme.tsx" ></code>
 
+### 外层默认容器包裹
+
+你可以通过 `containerWrapper` 来默认渲染一个外层的容器，改容器提供一些基本能力：展开关闭、语言切换
+
+<code src="./demos/wrapper.tsx" ></code>
+
 ## API 参数
 
 ### Highlight
