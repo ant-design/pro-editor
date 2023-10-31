@@ -142,6 +142,7 @@ const ActionGroup = (props: ActionGroupProps) => {
           if (item?.type)
             return (
               <Divider
+                key={`action-divider-${index}`}
                 type={direction === 'row' ? 'vertical' : 'horizontal'}
                 style={{
                   margin: `${direction === 'row' ? '0 4px' : '4px 0'}`,

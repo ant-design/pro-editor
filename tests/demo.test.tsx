@@ -1,4 +1,3 @@
-import { AppContainer } from '@ant-design/pro-editor';
 import { render } from '@testing-library/react';
 import * as fs from 'fs';
 import { glob } from 'glob';
@@ -38,7 +37,7 @@ dirs.forEach((dir) => {
         const Demo = await import(file);
 
         // console.log(`测试组件${dir} DEMO:${demoName}`);
-        const wrapper = render(<Demo.default />, { wrapper: AppContainer });
+        const wrapper = render(<Demo.default />);
         act(() => {
           vi.runAllTimers();
         });

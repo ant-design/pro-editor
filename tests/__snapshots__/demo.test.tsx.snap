@@ -7,7 +7,7 @@ exports[`<ActionGroup /> > renders basic.tsx correctly 1`] = `
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  padding: 1px 1px;
+  padding: 2px 2px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -175,7 +175,7 @@ exports[`<ActionGroup /> > renders config.tsx correctly 1`] = `
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  padding: 1px 1px;
+  padding: 2px 2px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -309,7 +309,7 @@ exports[`<ActionGroup /> > renders config.tsx correctly 1`] = `
       </span>
     </button>
     <div
-      class="studio-divider studio-divider-vertical"
+      class="ant-divider ant-divider-vertical"
       role="separator"
       style="margin: 0px 4px;"
     />
@@ -353,7 +353,7 @@ exports[`<ActionGroup /> > renders custom.tsx correctly 1`] = `
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  padding: 1px 1px;
+  padding: 2px 2px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -399,40 +399,40 @@ exports[`<ActionGroup /> > renders custom.tsx correctly 1`] = `
     class="studio-action-group-content emotion-0"
   >
     <div
-      class="studio-card studio-card-bordered studio-card-small"
+      class="ant-card ant-card-bordered ant-card-small"
       style="width: 300px;"
     >
       <div
-        class="studio-card-head"
+        class="ant-card-head"
       >
         <div
-          class="studio-card-head-wrapper"
+          class="ant-card-head-wrapper"
         >
           <div
-            class="studio-card-head-title"
+            class="ant-card-head-title"
           >
             操作工具箱
           </div>
           <div
-            class="studio-card-extra"
+            class="ant-card-extra"
           >
             <button
               aria-checked="true"
-              class="studio-switch studio-switch-checked"
+              class="ant-switch ant-switch-checked"
               role="switch"
               type="button"
             >
               <div
-                class="studio-switch-handle"
+                class="ant-switch-handle"
               />
               <span
-                class="studio-switch-inner"
+                class="ant-switch-inner"
               >
                 <span
-                  class="studio-switch-inner-checked"
+                  class="ant-switch-inner-checked"
                 />
                 <span
-                  class="studio-switch-inner-unchecked"
+                  class="ant-switch-inner-unchecked"
                 />
               </span>
             </button>
@@ -440,7 +440,7 @@ exports[`<ActionGroup /> > renders custom.tsx correctly 1`] = `
         </div>
       </div>
       <div
-        class="studio-card-body"
+        class="ant-card-body"
       >
         <p>
           工具
@@ -565,7 +565,7 @@ exports[`<ActionGroup /> > renders custom.tsx correctly 1`] = `
           内容
         </p>
         <input
-          class="studio-input"
+          class="ant-input"
           placeholder="请输入编辑器内容"
           type="text"
           value=""
@@ -574,12 +574,12 @@ exports[`<ActionGroup /> > renders custom.tsx correctly 1`] = `
           评分
         </p>
         <ul
-          class="studio-rate"
+          class="ant-rate"
           role="radiogroup"
           tabindex="0"
         >
           <li
-            class="studio-rate-star studio-rate-star-full"
+            class="ant-rate-star ant-rate-star-full"
           >
             <div
               aria-checked="true"
@@ -589,7 +589,7 @@ exports[`<ActionGroup /> > renders custom.tsx correctly 1`] = `
               tabindex="0"
             >
               <div
-                class="studio-rate-star-first"
+                class="ant-rate-star-first"
               >
                 <span
                   aria-label="star"
@@ -612,7 +612,7 @@ exports[`<ActionGroup /> > renders custom.tsx correctly 1`] = `
                 </span>
               </div>
               <div
-                class="studio-rate-star-second"
+                class="ant-rate-star-second"
               >
                 <span
                   aria-label="star"
@@ -637,7 +637,7 @@ exports[`<ActionGroup /> > renders custom.tsx correctly 1`] = `
             </div>
           </li>
           <li
-            class="studio-rate-star studio-rate-star-full"
+            class="ant-rate-star ant-rate-star-full"
           >
             <div
               aria-checked="true"
@@ -647,7 +647,7 @@ exports[`<ActionGroup /> > renders custom.tsx correctly 1`] = `
               tabindex="0"
             >
               <div
-                class="studio-rate-star-first"
+                class="ant-rate-star-first"
               >
                 <span
                   aria-label="star"
@@ -670,7 +670,7 @@ exports[`<ActionGroup /> > renders custom.tsx correctly 1`] = `
                 </span>
               </div>
               <div
-                class="studio-rate-star-second"
+                class="ant-rate-star-second"
               >
                 <span
                   aria-label="star"
@@ -695,7 +695,7 @@ exports[`<ActionGroup /> > renders custom.tsx correctly 1`] = `
             </div>
           </li>
           <li
-            class="studio-rate-star studio-rate-star-half studio-rate-star-active"
+            class="ant-rate-star ant-rate-star-half ant-rate-star-active"
           >
             <div
               aria-checked="true"
@@ -705,7 +705,7 @@ exports[`<ActionGroup /> > renders custom.tsx correctly 1`] = `
               tabindex="0"
             >
               <div
-                class="studio-rate-star-first"
+                class="ant-rate-star-first"
               >
                 <span
                   aria-label="star"
@@ -728,7 +728,7 @@ exports[`<ActionGroup /> > renders custom.tsx correctly 1`] = `
                 </span>
               </div>
               <div
-                class="studio-rate-star-second"
+                class="ant-rate-star-second"
               >
                 <span
                   aria-label="star"
@@ -753,7 +753,7 @@ exports[`<ActionGroup /> > renders custom.tsx correctly 1`] = `
             </div>
           </li>
           <li
-            class="studio-rate-star studio-rate-star-zero"
+            class="ant-rate-star ant-rate-star-zero"
           >
             <div
               aria-checked="false"
@@ -763,7 +763,7 @@ exports[`<ActionGroup /> > renders custom.tsx correctly 1`] = `
               tabindex="0"
             >
               <div
-                class="studio-rate-star-first"
+                class="ant-rate-star-first"
               >
                 <span
                   aria-label="star"
@@ -786,7 +786,7 @@ exports[`<ActionGroup /> > renders custom.tsx correctly 1`] = `
                 </span>
               </div>
               <div
-                class="studio-rate-star-second"
+                class="ant-rate-star-second"
               >
                 <span
                   aria-label="star"
@@ -811,7 +811,7 @@ exports[`<ActionGroup /> > renders custom.tsx correctly 1`] = `
             </div>
           </li>
           <li
-            class="studio-rate-star studio-rate-star-zero"
+            class="ant-rate-star ant-rate-star-zero"
           >
             <div
               aria-checked="false"
@@ -821,7 +821,7 @@ exports[`<ActionGroup /> > renders custom.tsx correctly 1`] = `
               tabindex="0"
             >
               <div
-                class="studio-rate-star-first"
+                class="ant-rate-star-first"
               >
                 <span
                   aria-label="star"
@@ -844,7 +844,7 @@ exports[`<ActionGroup /> > renders custom.tsx correctly 1`] = `
                 </span>
               </div>
               <div
-                class="studio-rate-star-second"
+                class="ant-rate-star-second"
               >
                 <span
                   aria-label="star"
@@ -882,7 +882,7 @@ exports[`<ActionGroup /> > renders dropMenu.tsx correctly 1`] = `
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  padding: 1px 1px;
+  padding: 2px 2px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1040,7 +1040,7 @@ exports[`<ActionGroup /> > renders dropMenu.tsx correctly 1`] = `
       </span>
     </button>
     <button
-      class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-dropdown-trigger studio-actionicon emotion-1"
+      class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only ant-dropdown-trigger studio-actionicon emotion-1"
       type="button"
     >
       <span
@@ -1078,7 +1078,7 @@ exports[`<ActionGroup /> > renders type.tsx correctly 1`] = `
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  padding: 1px 1px;
+  padding: 2px 2px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1121,55 +1121,55 @@ exports[`<ActionGroup /> > renders type.tsx correctly 1`] = `
 
 <div>
   <div
-    class="studio-space studio-space-vertical studio-space-gap-row-small studio-space-gap-col-small"
+    class="ant-space ant-space-vertical ant-space-gap-row-small ant-space-gap-col-small"
   >
     <div
-      class="studio-space-item"
+      class="ant-space-item"
     >
       <div
-        class="studio-segmented"
+        class="ant-segmented"
       >
         <div
-          class="studio-segmented-group"
+          class="ant-segmented-group"
         >
           <label
-            class="studio-segmented-item"
+            class="ant-segmented-item"
           >
             <input
-              class="studio-segmented-item-input"
+              class="ant-segmented-item-input"
               type="radio"
             />
             <div
-              class="studio-segmented-item-label"
+              class="ant-segmented-item-label"
               title="pure"
             >
               pure
             </div>
           </label>
           <label
-            class="studio-segmented-item"
+            class="ant-segmented-item"
           >
             <input
-              class="studio-segmented-item-input"
+              class="ant-segmented-item-input"
               type="radio"
             />
             <div
-              class="studio-segmented-item-label"
+              class="ant-segmented-item-label"
               title="ghost"
             >
               ghost
             </div>
           </label>
           <label
-            class="studio-segmented-item studio-segmented-item-selected"
+            class="ant-segmented-item ant-segmented-item-selected"
           >
             <input
               checked=""
-              class="studio-segmented-item-input"
+              class="ant-segmented-item-input"
               type="radio"
             />
             <div
-              class="studio-segmented-item-label"
+              class="ant-segmented-item-label"
               title="block"
             >
               block
@@ -1179,52 +1179,52 @@ exports[`<ActionGroup /> > renders type.tsx correctly 1`] = `
       </div>
     </div>
     <div
-      class="studio-space-item"
+      class="ant-space-item"
     >
       <div
-        class="studio-segmented"
+        class="ant-segmented"
       >
         <div
-          class="studio-segmented-group"
+          class="ant-segmented-group"
         >
           <label
-            class="studio-segmented-item studio-segmented-item-selected"
+            class="ant-segmented-item ant-segmented-item-selected"
           >
             <input
               checked=""
-              class="studio-segmented-item-input"
+              class="ant-segmented-item-input"
               type="radio"
             />
             <div
-              class="studio-segmented-item-label"
+              class="ant-segmented-item-label"
               title="default"
             >
               default
             </div>
           </label>
           <label
-            class="studio-segmented-item"
+            class="ant-segmented-item"
           >
             <input
-              class="studio-segmented-item-input"
+              class="ant-segmented-item-input"
               type="radio"
             />
             <div
-              class="studio-segmented-item-label"
+              class="ant-segmented-item-label"
               title="large"
             >
               large
             </div>
           </label>
           <label
-            class="studio-segmented-item"
+            class="ant-segmented-item"
           >
             <input
-              class="studio-segmented-item-input"
+              class="ant-segmented-item-input"
               type="radio"
             />
             <div
-              class="studio-segmented-item-label"
+              class="ant-segmented-item-label"
               title="number"
             >
               number
@@ -1234,38 +1234,38 @@ exports[`<ActionGroup /> > renders type.tsx correctly 1`] = `
       </div>
     </div>
     <div
-      class="studio-space-item"
+      class="ant-space-item"
     >
       <div
-        class="studio-segmented"
+        class="ant-segmented"
       >
         <div
-          class="studio-segmented-group"
+          class="ant-segmented-group"
         >
           <label
-            class="studio-segmented-item studio-segmented-item-selected"
+            class="ant-segmented-item ant-segmented-item-selected"
           >
             <input
               checked=""
-              class="studio-segmented-item-input"
+              class="ant-segmented-item-input"
               type="radio"
             />
             <div
-              class="studio-segmented-item-label"
+              class="ant-segmented-item-label"
               title="row"
             >
               row
             </div>
           </label>
           <label
-            class="studio-segmented-item"
+            class="ant-segmented-item"
           >
             <input
-              class="studio-segmented-item-input"
+              class="ant-segmented-item-input"
               type="radio"
             />
             <div
-              class="studio-segmented-item-label"
+              class="ant-segmented-item-label"
               title="column"
             >
               column
@@ -1275,7 +1275,7 @@ exports[`<ActionGroup /> > renders type.tsx correctly 1`] = `
       </div>
     </div>
     <div
-      class="studio-space-item"
+      class="ant-space-item"
     >
       <div
         class="studio-action-group-content emotion-0"
@@ -1365,7 +1365,7 @@ exports[`<ActionGroup /> > renders type.tsx correctly 1`] = `
           </span>
         </button>
         <div
-          class="studio-divider studio-divider-vertical"
+          class="ant-divider ant-divider-vertical"
           role="separator"
           style="margin: 0px 4px;"
         />
@@ -1418,7 +1418,7 @@ exports[`<ActionGroup /> > renders withPanel.tsx correctly 1`] = `
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  padding: 1px 1px;
+  padding: 2px 2px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1685,10 +1685,10 @@ exports[`<ActionIcon /> > renders preset.tsx correctly 1`] = `
 
 <div>
   <div
-    class="studio-space studio-space-horizontal studio-space-align-center studio-space-gap-row-small studio-space-gap-col-small"
+    class="ant-space ant-space-horizontal ant-space-align-center ant-space-gap-row-small ant-space-gap-col-small"
   >
     <div
-      class="studio-space-item"
+      class="ant-space-item"
     >
       <button
         class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-0"
@@ -1720,7 +1720,7 @@ exports[`<ActionIcon /> > renders preset.tsx correctly 1`] = `
       </button>
     </div>
     <div
-      class="studio-space-item"
+      class="ant-space-item"
     >
       <button
         class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-0"
@@ -1752,7 +1752,7 @@ exports[`<ActionIcon /> > renders preset.tsx correctly 1`] = `
       </button>
     </div>
     <div
-      class="studio-space-item"
+      class="ant-space-item"
     >
       <button
         class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-0"
@@ -1774,7 +1774,7 @@ exports[`<ActionIcon /> > renders preset.tsx correctly 1`] = `
       </button>
     </div>
     <div
-      class="studio-space-item"
+      class="ant-space-item"
     >
       <button
         class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-0"
@@ -1823,59 +1823,59 @@ exports[`<Awareness /> > renders Avatar.tsx correctly 1`] = `
     class="layoutkit-center emotion-0"
   >
     <span
-      class="studio-avatar studio-avatar-circle"
+      class="ant-avatar ant-avatar-circle"
       style="background: pink; color: black; z-index: 100; filter: none; overflow: initial; cursor: pointer;"
     >
       <span
-        class="studio-avatar-string"
+        class="ant-avatar-string"
         style="transform: scale(1) translateX(-50%);"
       >
         u
         <span
-          class="studio-badge studio-badge-status studio-badge-not-a-wrapper"
+          class="ant-badge ant-badge-status ant-badge-not-a-wrapper"
           style="position: absolute; left: 11px; top: 11px;"
         >
           <span
-            class="studio-badge-status-dot studio-badge-status-success"
+            class="ant-badge-status-dot ant-badge-status-success"
           />
         </span>
       </span>
     </span>
     <span
-      class="studio-avatar studio-avatar-circle"
+      class="ant-avatar ant-avatar-circle"
       style="background: blue; outline: 2px solid blue; z-index: 1000; filter: grayscale(80%); overflow: initial; cursor: pointer;"
     >
       <span
-        class="studio-avatar-string"
+        class="ant-avatar-string"
         style="transform: scale(1) translateX(-50%);"
       >
         u
         <span
-          class="studio-badge studio-badge-status studio-badge-not-a-wrapper"
+          class="ant-badge ant-badge-status ant-badge-not-a-wrapper"
           style="position: absolute; left: 11px; top: 11px;"
         >
           <span
-            class="studio-badge-status-dot studio-badge-status-default"
+            class="ant-badge-status-dot ant-badge-status-default"
             style="color: rgb(217, 217, 217); background: rgb(217, 217, 217);"
           />
         </span>
       </span>
     </span>
     <span
-      class="studio-avatar studio-avatar-circle"
+      class="ant-avatar ant-avatar-circle"
       style="background: green; z-index: 0; filter: grayscale(80%); overflow: initial; cursor: pointer;"
     >
       <span
-        class="studio-avatar-string"
+        class="ant-avatar-string"
         style="transform: scale(1) translateX(-50%);"
       >
         u
         <span
-          class="studio-badge studio-badge-status studio-badge-not-a-wrapper"
+          class="ant-badge ant-badge-status ant-badge-not-a-wrapper"
           style="position: absolute; left: 11px; top: 11px;"
         >
           <span
-            class="studio-badge-status-dot studio-badge-status-default"
+            class="ant-badge-status-dot ant-badge-status-default"
             style="color: rgb(217, 217, 217); background: rgb(217, 217, 217);"
           />
         </span>
@@ -2053,19 +2053,6 @@ exports[`<CollapseTitle /> > renders basic.tsx correctly 1`] = `
   -ms-user-select: none;
   user-select: none;
   border-radius: 4px;
-  cursor: pointer;
-  -webkit-transition: 150ms background-color ease-in-out;
-  transition: 150ms background-color ease-in-out;
-  border-radius: 4px;
-  background: rgba(0, 0, 0, 0.02);
-}
-
-.emotion-2:hover {
-  background: rgba(0, 0, 0, 0.02);
-}
-
-.emotion-2:hover {
-  background: rgba(0, 0, 0, 0.04);
 }
 
 .emotion-3 {
@@ -2185,13 +2172,6 @@ exports[`<CollapseTitle /> > renders defaultexpand.tsx correctly 1`] = `
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  cursor: pointer;
-  -webkit-transition: 150ms background-color ease-in-out;
-  transition: 150ms background-color ease-in-out;
-}
-
-.emotion-4:hover {
-  background: rgba(0, 0, 0, 0.02);
 }
 
 <div>
@@ -2276,19 +2256,6 @@ exports[`<CollapseTitle /> > renders expand.tsx correctly 1`] = `
   -ms-user-select: none;
   user-select: none;
   border-radius: 4px;
-  cursor: pointer;
-  -webkit-transition: 150ms background-color ease-in-out;
-  transition: 150ms background-color ease-in-out;
-  border-radius: 4px;
-  background: rgba(0, 0, 0, 0.02);
-}
-
-.emotion-2:hover {
-  background: rgba(0, 0, 0, 0.02);
-}
-
-.emotion-2:hover {
-  background: rgba(0, 0, 0, 0.04);
 }
 
 .emotion-3 {
@@ -2566,7 +2533,7 @@ exports[`<ColumnList /> > renders actions.tsx correctly 1`] = `
   padding-left: 13px;
 }
 
-.emotion-14 .studio-select-selector {
+.emotion-14 .ant-select-selector {
   padding-left: 13px;
 }
 
@@ -3656,7 +3623,7 @@ exports[`<ColumnList /> > renders column.tsx correctly 1`] = `
   padding-left: 13px;
 }
 
-.emotion-15 .studio-select-selector {
+.emotion-15 .ant-select-selector {
   padding-left: 13px;
 }
 
@@ -4888,7 +4855,7 @@ exports[`<ColumnList /> > renders controlled.tsx correctly 1`] = `
   padding-left: 13px;
 }
 
-.emotion-14 .studio-select-selector {
+.emotion-14 .ant-select-selector {
   padding-left: 13px;
 }
 
@@ -5857,7 +5824,7 @@ exports[`<ColumnList /> > renders creatorButtonProps.tsx correctly 1`] = `
   padding-left: 13px;
 }
 
-.emotion-15 .studio-select-selector {
+.emotion-15 .ant-select-selector {
   padding-left: 13px;
 }
 
@@ -6881,7 +6848,7 @@ exports[`<ColumnList /> > renders customCreate.tsx correctly 1`] = `
   padding-left: 13px;
 }
 
-.emotion-16 .studio-select-selector {
+.emotion-16 .ant-select-selector {
   padding-left: 13px;
 }
 
@@ -9200,14 +9167,6 @@ exports[`<DataFill /> > renders basic.tsx correctly 1`] = `
 `;
 
 exports[`<DataPreviewer /> > renders basic.tsx correctly 1`] = `
-.emotion-0 {
-  color: rgba(0, 0, 0, 0.65);
-}
-
-.emotion-0:hover {
-  color: rgba(0, 0, 0, 0.88);
-}
-
 .emotion-1 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -9266,13 +9225,6 @@ exports[`<DataPreviewer /> > renders basic.tsx correctly 1`] = `
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  cursor: pointer;
-  -webkit-transition: 150ms background-color ease-in-out;
-  transition: 150ms background-color ease-in-out;
-}
-
-.emotion-5:hover {
-  background: rgba(0, 0, 0, 0.02);
 }
 
 .emotion-6 {
@@ -10514,14 +10466,6 @@ exports[`<DataPreviewer /> > renders basic.tsx correctly 1`] = `
 `;
 
 exports[`<DataPreviewer /> > renders empty.tsx correctly 1`] = `
-.emotion-0 {
-  color: rgba(0, 0, 0, 0.65);
-}
-
-.emotion-0:hover {
-  color: rgba(0, 0, 0, 0.88);
-}
-
 .emotion-1 {
   padding: 8px;
   background: rgba(0, 0, 0, 0.02);
@@ -10583,10 +10527,10 @@ exports[`<DataPreviewer /> > renders empty.tsx correctly 1`] = `
       class="studio-data-previewer-empty emotion-1"
     >
       <div
-        class="studio-empty studio-empty-normal"
+        class="ant-empty ant-empty-normal"
       >
         <div
-          class="studio-empty-image"
+          class="ant-empty-image"
         >
           <svg
             height="41"
@@ -10622,7 +10566,7 @@ exports[`<DataPreviewer /> > renders empty.tsx correctly 1`] = `
           </svg>
         </div>
         <div
-          class="studio-empty-description"
+          class="ant-empty-description"
         >
           <div
             class="layoutkit-flexbox emotion-2"
@@ -10637,11 +10581,11 @@ exports[`<DataPreviewer /> > renders empty.tsx correctly 1`] = `
                 class="layoutkit-flexbox emotion-4"
               >
                 <button
-                  class="studio-btn studio-btn-primary studio-btn-sm studio-btn-background-ghost"
+                  class="ant-btn ant-btn-primary ant-btn-sm ant-btn-background-ghost"
                   type="button"
                 >
                   <span
-                    class="studio-btn-icon"
+                    class="ant-btn-icon"
                   >
                     <span
                       aria-label="flag"
@@ -10678,14 +10622,6 @@ exports[`<DataPreviewer /> > renders empty.tsx correctly 1`] = `
 `;
 
 exports[`<DataPreviewer /> > renders emptyAction.tsx correctly 1`] = `
-.emotion-0 {
-  color: rgba(0, 0, 0, 0.65);
-}
-
-.emotion-0:hover {
-  color: rgba(0, 0, 0, 0.88);
-}
-
 .emotion-1 {
   padding: 8px;
   background: rgba(0, 0, 0, 0.02);
@@ -10747,10 +10683,10 @@ exports[`<DataPreviewer /> > renders emptyAction.tsx correctly 1`] = `
       class="studio-data-previewer-empty emotion-1"
     >
       <div
-        class="studio-empty studio-empty-normal"
+        class="ant-empty ant-empty-normal"
       >
         <div
-          class="studio-empty-image"
+          class="ant-empty-image"
         >
           <svg
             height="41"
@@ -10786,7 +10722,7 @@ exports[`<DataPreviewer /> > renders emptyAction.tsx correctly 1`] = `
           </svg>
         </div>
         <div
-          class="studio-empty-description"
+          class="ant-empty-description"
         >
           <div
             class="layoutkit-flexbox emotion-2"
@@ -10801,11 +10737,11 @@ exports[`<DataPreviewer /> > renders emptyAction.tsx correctly 1`] = `
                 class="layoutkit-flexbox emotion-4"
               >
                 <button
-                  class="studio-btn studio-btn-primary studio-btn-sm studio-btn-background-ghost"
+                  class="ant-btn ant-btn-primary ant-btn-sm ant-btn-background-ghost"
                   type="button"
                 >
                   <span
-                    class="studio-btn-icon"
+                    class="ant-btn-icon"
                   >
                     <span
                       aria-label="flag"
@@ -10832,11 +10768,11 @@ exports[`<DataPreviewer /> > renders emptyAction.tsx correctly 1`] = `
                   </span>
                 </button>
                 <button
-                  class="studio-btn studio-btn-default studio-btn-sm"
+                  class="ant-btn ant-btn-default ant-btn-sm"
                   type="button"
                 >
                   <span
-                    class="studio-btn-icon"
+                    class="ant-btn-icon"
                   >
                     <span
                       aria-label="download"
@@ -10873,14 +10809,6 @@ exports[`<DataPreviewer /> > renders emptyAction.tsx correctly 1`] = `
 `;
 
 exports[`<DataPreviewer /> > renders extra.tsx correctly 1`] = `
-.emotion-0 {
-  color: rgba(0, 0, 0, 0.65);
-}
-
-.emotion-0:hover {
-  color: rgba(0, 0, 0, 0.88);
-}
-
 .emotion-1 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -10939,13 +10867,6 @@ exports[`<DataPreviewer /> > renders extra.tsx correctly 1`] = `
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  cursor: pointer;
-  -webkit-transition: 150ms background-color ease-in-out;
-  transition: 150ms background-color ease-in-out;
-}
-
-.emotion-5:hover {
-  background: rgba(0, 0, 0, 0.02);
 }
 
 .emotion-6 {
@@ -12215,14 +12136,6 @@ exports[`<DataPreviewer /> > renders extra.tsx correctly 1`] = `
 `;
 
 exports[`<DataPreviewer /> > renders renderEmpty.tsx correctly 1`] = `
-.emotion-0 {
-  color: rgba(0, 0, 0, 0.65);
-}
-
-.emotion-0:hover {
-  color: rgba(0, 0, 0, 0.88);
-}
-
 .emotion-1 {
   padding: 8px;
   background: rgba(0, 0, 0, 0.02);
@@ -12241,10 +12154,10 @@ exports[`<DataPreviewer /> > renders renderEmpty.tsx correctly 1`] = `
       class="studio-data-previewer-empty emotion-1"
     >
       <div
-        class="studio-empty studio-empty-normal"
+        class="ant-empty ant-empty-normal"
       >
         <div
-          class="studio-empty-image"
+          class="ant-empty-image"
         >
           <svg
             height="41"
@@ -12280,7 +12193,7 @@ exports[`<DataPreviewer /> > renders renderEmpty.tsx correctly 1`] = `
           </svg>
         </div>
         <div
-          class="studio-empty-description"
+          class="ant-empty-description"
         >
           <div>
             这是一个空状态
@@ -12293,14 +12206,6 @@ exports[`<DataPreviewer /> > renders renderEmpty.tsx correctly 1`] = `
 `;
 
 exports[`<DataPreviewer /> > renders showType.tsx correctly 1`] = `
-.emotion-0 {
-  color: rgba(0, 0, 0, 0.65);
-}
-
-.emotion-0:hover {
-  color: rgba(0, 0, 0, 0.88);
-}
-
 .emotion-1 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -12359,13 +12264,6 @@ exports[`<DataPreviewer /> > renders showType.tsx correctly 1`] = `
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  cursor: pointer;
-  -webkit-transition: 150ms background-color ease-in-out;
-  transition: 150ms background-color ease-in-out;
-}
-
-.emotion-5:hover {
-  background: rgba(0, 0, 0, 0.02);
 }
 
 .emotion-6 {
@@ -14434,25 +14332,25 @@ exports[`<DraggablePanel /> > renders top.tsx correctly 1`] = `
 
 exports[`<FieldIcon /> > renders basic.tsx correctly 1`] = `
 .emotion-0 {
-  font-size: 14px;
+  font-size: 16px;
 }
 
 <div>
   <div
-    class="studio-pro-card studio-pro-card-contain-card studio-pro-card-ghost"
+    class="ant-pro-card ant-pro-card-contain-card ant-pro-card-ghost"
   >
     <div
-      class="studio-pro-card-body studio-pro-card-body-wrap"
+      class="ant-pro-card-body ant-pro-card-body-wrap"
     >
       <div
-        class="studio-pro-card-col studio-pro-card-col-4"
+        class="ant-pro-card-col ant-pro-card-col-4"
         style="padding-inline-end: 4px; padding-inline-start: 4px; padding-block-start: 4px; padding-block-end: 4px;"
       >
         <div
-          class="studio-pro-card studio-pro-card-border"
+          class="ant-pro-card ant-pro-card-border"
         >
           <div
-            class="studio-pro-card-body studio-pro-card-body-center"
+            class="ant-pro-card-body ant-pro-card-body-center"
           >
             <span
               class="anticon studio-field-icon emotion-0"
@@ -14493,14 +14391,14 @@ exports[`<FieldIcon /> > renders basic.tsx correctly 1`] = `
         </div>
       </div>
       <div
-        class="studio-pro-card-col studio-pro-card-col-4"
+        class="ant-pro-card-col ant-pro-card-col-4"
         style="padding-inline-end: 4px; padding-inline-start: 4px; padding-block-start: 4px; padding-block-end: 4px;"
       >
         <div
-          class="studio-pro-card studio-pro-card-border"
+          class="ant-pro-card ant-pro-card-border"
         >
           <div
-            class="studio-pro-card-body studio-pro-card-body-center"
+            class="ant-pro-card-body ant-pro-card-body-center"
           >
             <span
               class="anticon studio-field-icon emotion-0"
@@ -14577,14 +14475,14 @@ exports[`<FieldIcon /> > renders basic.tsx correctly 1`] = `
         </div>
       </div>
       <div
-        class="studio-pro-card-col studio-pro-card-col-4"
+        class="ant-pro-card-col ant-pro-card-col-4"
         style="padding-inline-end: 4px; padding-inline-start: 4px; padding-block-start: 4px; padding-block-end: 4px;"
       >
         <div
-          class="studio-pro-card studio-pro-card-border"
+          class="ant-pro-card ant-pro-card-border"
         >
           <div
-            class="studio-pro-card-body studio-pro-card-body-center"
+            class="ant-pro-card-body ant-pro-card-body-center"
           >
             <span
               class="anticon studio-field-icon emotion-0"
@@ -14628,14 +14526,14 @@ exports[`<FieldIcon /> > renders basic.tsx correctly 1`] = `
         </div>
       </div>
       <div
-        class="studio-pro-card-col studio-pro-card-col-4"
+        class="ant-pro-card-col ant-pro-card-col-4"
         style="padding-inline-end: 4px; padding-inline-start: 4px; padding-block-start: 4px; padding-block-end: 4px;"
       >
         <div
-          class="studio-pro-card studio-pro-card-border"
+          class="ant-pro-card ant-pro-card-border"
         >
           <div
-            class="studio-pro-card-body studio-pro-card-body-center"
+            class="ant-pro-card-body ant-pro-card-body-center"
           >
             <span
               class="anticon studio-field-icon emotion-0"
@@ -14679,14 +14577,14 @@ exports[`<FieldIcon /> > renders basic.tsx correctly 1`] = `
         </div>
       </div>
       <div
-        class="studio-pro-card-col studio-pro-card-col-4"
+        class="ant-pro-card-col ant-pro-card-col-4"
         style="padding-inline-end: 4px; padding-inline-start: 4px; padding-block-start: 4px; padding-block-end: 4px;"
       >
         <div
-          class="studio-pro-card studio-pro-card-border"
+          class="ant-pro-card ant-pro-card-border"
         >
           <div
-            class="studio-pro-card-body studio-pro-card-body-center"
+            class="ant-pro-card-body ant-pro-card-body-center"
           >
             <span
               class="anticon studio-field-icon emotion-0"
@@ -14730,14 +14628,14 @@ exports[`<FieldIcon /> > renders basic.tsx correctly 1`] = `
         </div>
       </div>
       <div
-        class="studio-pro-card-col studio-pro-card-col-4"
+        class="ant-pro-card-col ant-pro-card-col-4"
         style="padding-inline-end: 4px; padding-inline-start: 4px; padding-block-start: 4px; padding-block-end: 4px;"
       >
         <div
-          class="studio-pro-card studio-pro-card-border"
+          class="ant-pro-card ant-pro-card-border"
         >
           <div
-            class="studio-pro-card-body studio-pro-card-body-center"
+            class="ant-pro-card-body ant-pro-card-body-center"
           >
             <span
               class="anticon studio-field-icon emotion-0"
@@ -14781,14 +14679,14 @@ exports[`<FieldIcon /> > renders basic.tsx correctly 1`] = `
         </div>
       </div>
       <div
-        class="studio-pro-card-col studio-pro-card-col-4"
+        class="ant-pro-card-col ant-pro-card-col-4"
         style="padding-inline-end: 4px; padding-inline-start: 4px; padding-block-start: 4px; padding-block-end: 4px;"
       >
         <div
-          class="studio-pro-card studio-pro-card-border"
+          class="ant-pro-card ant-pro-card-border"
         >
           <div
-            class="studio-pro-card-body studio-pro-card-body-center"
+            class="ant-pro-card-body ant-pro-card-body-center"
           >
             <span
               class="anticon studio-field-icon emotion-0"
@@ -14832,14 +14730,14 @@ exports[`<FieldIcon /> > renders basic.tsx correctly 1`] = `
         </div>
       </div>
       <div
-        class="studio-pro-card-col studio-pro-card-col-4"
+        class="ant-pro-card-col ant-pro-card-col-4"
         style="padding-inline-end: 4px; padding-inline-start: 4px; padding-block-start: 4px; padding-block-end: 4px;"
       >
         <div
-          class="studio-pro-card studio-pro-card-border"
+          class="ant-pro-card ant-pro-card-border"
         >
           <div
-            class="studio-pro-card-body studio-pro-card-body-center"
+            class="ant-pro-card-body ant-pro-card-body-center"
           >
             <span
               class="anticon studio-field-icon emotion-0"
@@ -14883,14 +14781,14 @@ exports[`<FieldIcon /> > renders basic.tsx correctly 1`] = `
         </div>
       </div>
       <div
-        class="studio-pro-card-col studio-pro-card-col-4"
+        class="ant-pro-card-col ant-pro-card-col-4"
         style="padding-inline-end: 4px; padding-inline-start: 4px; padding-block-start: 4px; padding-block-end: 4px;"
       >
         <div
-          class="studio-pro-card studio-pro-card-border"
+          class="ant-pro-card ant-pro-card-border"
         >
           <div
-            class="studio-pro-card-body studio-pro-card-body-center"
+            class="ant-pro-card-body ant-pro-card-body-center"
           >
             <span
               class="anticon studio-field-icon emotion-0"
@@ -14933,14 +14831,14 @@ exports[`<FieldIcon /> > renders basic.tsx correctly 1`] = `
         </div>
       </div>
       <div
-        class="studio-pro-card-col studio-pro-card-col-4"
+        class="ant-pro-card-col ant-pro-card-col-4"
         style="padding-inline-end: 4px; padding-inline-start: 4px; padding-block-start: 4px; padding-block-end: 4px;"
       >
         <div
-          class="studio-pro-card studio-pro-card-border"
+          class="ant-pro-card ant-pro-card-border"
         >
           <div
-            class="studio-pro-card-body studio-pro-card-body-center"
+            class="ant-pro-card-body ant-pro-card-body-center"
           >
             <span
               class="anticon studio-field-icon emotion-0"
@@ -14983,14 +14881,14 @@ exports[`<FieldIcon /> > renders basic.tsx correctly 1`] = `
         </div>
       </div>
       <div
-        class="studio-pro-card-col studio-pro-card-col-4"
+        class="ant-pro-card-col ant-pro-card-col-4"
         style="padding-inline-end: 4px; padding-inline-start: 4px; padding-block-start: 4px; padding-block-end: 4px;"
       >
         <div
-          class="studio-pro-card studio-pro-card-border"
+          class="ant-pro-card ant-pro-card-border"
         >
           <div
-            class="studio-pro-card-body studio-pro-card-body-center"
+            class="ant-pro-card-body ant-pro-card-body-center"
           >
             <span
               class="anticon studio-field-icon emotion-0"
@@ -15034,14 +14932,14 @@ exports[`<FieldIcon /> > renders basic.tsx correctly 1`] = `
         </div>
       </div>
       <div
-        class="studio-pro-card-col studio-pro-card-col-4"
+        class="ant-pro-card-col ant-pro-card-col-4"
         style="padding-inline-end: 4px; padding-inline-start: 4px; padding-block-start: 4px; padding-block-end: 4px;"
       >
         <div
-          class="studio-pro-card studio-pro-card-border"
+          class="ant-pro-card ant-pro-card-border"
         >
           <div
-            class="studio-pro-card-body studio-pro-card-body-center"
+            class="ant-pro-card-body ant-pro-card-body-center"
           >
             <span
               class="anticon studio-field-icon emotion-0"
@@ -15085,14 +14983,14 @@ exports[`<FieldIcon /> > renders basic.tsx correctly 1`] = `
         </div>
       </div>
       <div
-        class="studio-pro-card-col studio-pro-card-col-4"
+        class="ant-pro-card-col ant-pro-card-col-4"
         style="padding-inline-end: 4px; padding-inline-start: 4px; padding-block-start: 4px; padding-block-end: 4px;"
       >
         <div
-          class="studio-pro-card studio-pro-card-border"
+          class="ant-pro-card ant-pro-card-border"
         >
           <div
-            class="studio-pro-card-body studio-pro-card-body-center"
+            class="ant-pro-card-body ant-pro-card-body-center"
           >
             <span
               class="anticon studio-field-icon emotion-0"
@@ -15130,14 +15028,14 @@ exports[`<FieldIcon /> > renders basic.tsx correctly 1`] = `
         </div>
       </div>
       <div
-        class="studio-pro-card-col studio-pro-card-col-4"
+        class="ant-pro-card-col ant-pro-card-col-4"
         style="padding-inline-end: 4px; padding-inline-start: 4px; padding-block-start: 4px; padding-block-end: 4px;"
       >
         <div
-          class="studio-pro-card studio-pro-card-border"
+          class="ant-pro-card ant-pro-card-border"
         >
           <div
-            class="studio-pro-card-body studio-pro-card-body-center"
+            class="ant-pro-card-body ant-pro-card-body-center"
           >
             <span
               class="anticon studio-field-icon emotion-0"
@@ -15187,51 +15085,11 @@ exports[`<FieldSelect /> > renders basic.tsx correctly 1`] = `
   width: 100%;
 }
 
-.emotion-0.studio-select-multiple:not(.emotion-0.studio-select-customize-input) .emotion-0.studio-select.studio-select-selector:hover {
-  color: rgba(0, 0, 0, 0.88);
-  background-color: rgba(0, 0, 0, 0.04);
+.emotion-0.ant-select:not(.ant-select-disabled):not(.ant-select-customize-input):hover .ant-select-selector {
   border-color: transparent;
 }
 
-.emotion-0.studio-select-multiple:not(.emotion-0.studio-select-customize-input) .emotion-0.studio-select.studio-select-selector:focus {
-  color: rgba(0, 0, 0, 0.88)!important;
-  background-color: rgba(0, 0, 0, 0.02)!important;
-  border-color: #1677ff!important;
-  box-shadow: none;
-}
-
-.emotion-0.studio-select:not(.studio-select-disabled):not(.studio-select-customize-input):hover .studio-select-selector {
-  border-color: transparent;
-}
-
-.emotion-0.studio-select:not(.studio-select-disabled):not(.studio-select-customize-input):hover .studio-select-selector:hover {
-  color: rgba(0, 0, 0, 0.88);
-  background-color: rgba(0, 0, 0, 0.04);
-  border-color: transparent;
-}
-
-.emotion-0.studio-select:not(.studio-select-disabled):not(.studio-select-customize-input):hover .studio-select-selector:focus {
-  color: rgba(0, 0, 0, 0.88)!important;
-  background-color: rgba(0, 0, 0, 0.02)!important;
-  border-color: #1677ff!important;
-  box-shadow: none;
-}
-
-.emotion-0.studio-select-focused:not(.studio-select-disabled):not(.studio-select-customize-input):hover .studio-select-selector {
-  color: rgba(0, 0, 0, 0.88)!important;
-  background-color: rgba(0, 0, 0, 0.02)!important;
-  border-color: #1677ff!important;
-  box-shadow: none;
-}
-
-.emotion-0.studio-select-focused:not(.studio-select-disabled):not(.studio-select-customize-input) .studio-select-selector {
-  color: rgba(0, 0, 0, 0.88)!important;
-  background-color: rgba(0, 0, 0, 0.02)!important;
-  border-color: #1677ff!important;
-  box-shadow: none;
-}
-
-.emotion-0 .studio-select-arrow {
+.emotion-0 .ant-select-arrow {
   top: 13px;
   right: 8px;
   width: 10px;
@@ -15379,11 +15237,11 @@ exports[`<FieldTitle /> > renders basic.tsx correctly 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .emotion-1 {
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .emotion-2 {
@@ -15392,20 +15250,20 @@ exports[`<FieldTitle /> > renders basic.tsx correctly 1`] = `
 
 <div>
   <div
-    class="studio-pro-card studio-pro-card-contain-card studio-pro-card-ghost"
+    class="ant-pro-card ant-pro-card-contain-card ant-pro-card-ghost"
   >
     <div
-      class="studio-pro-card-body studio-pro-card-body-wrap"
+      class="ant-pro-card-body ant-pro-card-body-wrap"
     >
       <div
-        class="studio-pro-card-col studio-pro-card-col-4"
+        class="ant-pro-card-col ant-pro-card-col-4"
         style="padding-inline-end: 4px; padding-inline-start: 4px; padding-block-start: 4px; padding-block-end: 4px;"
       >
         <div
-          class="studio-pro-card studio-pro-card-border"
+          class="ant-pro-card ant-pro-card-border"
         >
           <div
-            class="studio-pro-card-body studio-pro-card-body-center"
+            class="ant-pro-card-body ant-pro-card-body-center"
           >
             <span
               class="studio-field-title studio-field-title-container emotion-0"
@@ -15455,14 +15313,14 @@ exports[`<FieldTitle /> > renders basic.tsx correctly 1`] = `
         </div>
       </div>
       <div
-        class="studio-pro-card-col studio-pro-card-col-4"
+        class="ant-pro-card-col ant-pro-card-col-4"
         style="padding-inline-end: 4px; padding-inline-start: 4px; padding-block-start: 4px; padding-block-end: 4px;"
       >
         <div
-          class="studio-pro-card studio-pro-card-border"
+          class="ant-pro-card ant-pro-card-border"
         >
           <div
-            class="studio-pro-card-body studio-pro-card-body-center"
+            class="ant-pro-card-body ant-pro-card-body-center"
           >
             <span
               class="studio-field-title studio-field-title-container emotion-0"
@@ -15548,14 +15406,14 @@ exports[`<FieldTitle /> > renders basic.tsx correctly 1`] = `
         </div>
       </div>
       <div
-        class="studio-pro-card-col studio-pro-card-col-4"
+        class="ant-pro-card-col ant-pro-card-col-4"
         style="padding-inline-end: 4px; padding-inline-start: 4px; padding-block-start: 4px; padding-block-end: 4px;"
       >
         <div
-          class="studio-pro-card studio-pro-card-border"
+          class="ant-pro-card ant-pro-card-border"
         >
           <div
-            class="studio-pro-card-body studio-pro-card-body-center"
+            class="ant-pro-card-body ant-pro-card-body-center"
           >
             <span
               class="studio-field-title studio-field-title-container emotion-0"
@@ -15608,14 +15466,14 @@ exports[`<FieldTitle /> > renders basic.tsx correctly 1`] = `
         </div>
       </div>
       <div
-        class="studio-pro-card-col studio-pro-card-col-4"
+        class="ant-pro-card-col ant-pro-card-col-4"
         style="padding-inline-end: 4px; padding-inline-start: 4px; padding-block-start: 4px; padding-block-end: 4px;"
       >
         <div
-          class="studio-pro-card studio-pro-card-border"
+          class="ant-pro-card ant-pro-card-border"
         >
           <div
-            class="studio-pro-card-body studio-pro-card-body-center"
+            class="ant-pro-card-body ant-pro-card-body-center"
           >
             <span
               class="studio-field-title studio-field-title-container emotion-0"
@@ -15668,14 +15526,14 @@ exports[`<FieldTitle /> > renders basic.tsx correctly 1`] = `
         </div>
       </div>
       <div
-        class="studio-pro-card-col studio-pro-card-col-4"
+        class="ant-pro-card-col ant-pro-card-col-4"
         style="padding-inline-end: 4px; padding-inline-start: 4px; padding-block-start: 4px; padding-block-end: 4px;"
       >
         <div
-          class="studio-pro-card studio-pro-card-border"
+          class="ant-pro-card ant-pro-card-border"
         >
           <div
-            class="studio-pro-card-body studio-pro-card-body-center"
+            class="ant-pro-card-body ant-pro-card-body-center"
           >
             <span
               class="studio-field-title studio-field-title-container emotion-0"
@@ -15728,14 +15586,14 @@ exports[`<FieldTitle /> > renders basic.tsx correctly 1`] = `
         </div>
       </div>
       <div
-        class="studio-pro-card-col studio-pro-card-col-4"
+        class="ant-pro-card-col ant-pro-card-col-4"
         style="padding-inline-end: 4px; padding-inline-start: 4px; padding-block-start: 4px; padding-block-end: 4px;"
       >
         <div
-          class="studio-pro-card studio-pro-card-border"
+          class="ant-pro-card ant-pro-card-border"
         >
           <div
-            class="studio-pro-card-body studio-pro-card-body-center"
+            class="ant-pro-card-body ant-pro-card-body-center"
           >
             <span
               class="studio-field-title studio-field-title-container emotion-0"
@@ -15788,14 +15646,14 @@ exports[`<FieldTitle /> > renders basic.tsx correctly 1`] = `
         </div>
       </div>
       <div
-        class="studio-pro-card-col studio-pro-card-col-4"
+        class="ant-pro-card-col ant-pro-card-col-4"
         style="padding-inline-end: 4px; padding-inline-start: 4px; padding-block-start: 4px; padding-block-end: 4px;"
       >
         <div
-          class="studio-pro-card studio-pro-card-border"
+          class="ant-pro-card ant-pro-card-border"
         >
           <div
-            class="studio-pro-card-body studio-pro-card-body-center"
+            class="ant-pro-card-body ant-pro-card-body-center"
           >
             <span
               class="studio-field-title studio-field-title-container emotion-0"
@@ -15848,14 +15706,14 @@ exports[`<FieldTitle /> > renders basic.tsx correctly 1`] = `
         </div>
       </div>
       <div
-        class="studio-pro-card-col studio-pro-card-col-4"
+        class="ant-pro-card-col ant-pro-card-col-4"
         style="padding-inline-end: 4px; padding-inline-start: 4px; padding-block-start: 4px; padding-block-end: 4px;"
       >
         <div
-          class="studio-pro-card studio-pro-card-border"
+          class="ant-pro-card ant-pro-card-border"
         >
           <div
-            class="studio-pro-card-body studio-pro-card-body-center"
+            class="ant-pro-card-body ant-pro-card-body-center"
           >
             <span
               class="studio-field-title studio-field-title-container emotion-0"
@@ -15908,14 +15766,14 @@ exports[`<FieldTitle /> > renders basic.tsx correctly 1`] = `
         </div>
       </div>
       <div
-        class="studio-pro-card-col studio-pro-card-col-4"
+        class="ant-pro-card-col ant-pro-card-col-4"
         style="padding-inline-end: 4px; padding-inline-start: 4px; padding-block-start: 4px; padding-block-end: 4px;"
       >
         <div
-          class="studio-pro-card studio-pro-card-border"
+          class="ant-pro-card ant-pro-card-border"
         >
           <div
-            class="studio-pro-card-body studio-pro-card-body-center"
+            class="ant-pro-card-body ant-pro-card-body-center"
           >
             <span
               class="studio-field-title studio-field-title-container emotion-0"
@@ -15967,14 +15825,14 @@ exports[`<FieldTitle /> > renders basic.tsx correctly 1`] = `
         </div>
       </div>
       <div
-        class="studio-pro-card-col studio-pro-card-col-4"
+        class="ant-pro-card-col ant-pro-card-col-4"
         style="padding-inline-end: 4px; padding-inline-start: 4px; padding-block-start: 4px; padding-block-end: 4px;"
       >
         <div
-          class="studio-pro-card studio-pro-card-border"
+          class="ant-pro-card ant-pro-card-border"
         >
           <div
-            class="studio-pro-card-body studio-pro-card-body-center"
+            class="ant-pro-card-body ant-pro-card-body-center"
           >
             <span
               class="studio-field-title studio-field-title-container emotion-0"
@@ -16026,14 +15884,14 @@ exports[`<FieldTitle /> > renders basic.tsx correctly 1`] = `
         </div>
       </div>
       <div
-        class="studio-pro-card-col studio-pro-card-col-4"
+        class="ant-pro-card-col ant-pro-card-col-4"
         style="padding-inline-end: 4px; padding-inline-start: 4px; padding-block-start: 4px; padding-block-end: 4px;"
       >
         <div
-          class="studio-pro-card studio-pro-card-border"
+          class="ant-pro-card ant-pro-card-border"
         >
           <div
-            class="studio-pro-card-body studio-pro-card-body-center"
+            class="ant-pro-card-body ant-pro-card-body-center"
           >
             <span
               class="studio-field-title studio-field-title-container emotion-0"
@@ -16086,14 +15944,14 @@ exports[`<FieldTitle /> > renders basic.tsx correctly 1`] = `
         </div>
       </div>
       <div
-        class="studio-pro-card-col studio-pro-card-col-4"
+        class="ant-pro-card-col ant-pro-card-col-4"
         style="padding-inline-end: 4px; padding-inline-start: 4px; padding-block-start: 4px; padding-block-end: 4px;"
       >
         <div
-          class="studio-pro-card studio-pro-card-border"
+          class="ant-pro-card ant-pro-card-border"
         >
           <div
-            class="studio-pro-card-body studio-pro-card-body-center"
+            class="ant-pro-card-body ant-pro-card-body-center"
           >
             <span
               class="studio-field-title studio-field-title-container emotion-0"
@@ -16146,14 +16004,14 @@ exports[`<FieldTitle /> > renders basic.tsx correctly 1`] = `
         </div>
       </div>
       <div
-        class="studio-pro-card-col studio-pro-card-col-4"
+        class="ant-pro-card-col ant-pro-card-col-4"
         style="padding-inline-end: 4px; padding-inline-start: 4px; padding-block-start: 4px; padding-block-end: 4px;"
       >
         <div
-          class="studio-pro-card studio-pro-card-border"
+          class="ant-pro-card ant-pro-card-border"
         >
           <div
-            class="studio-pro-card-body studio-pro-card-body-center"
+            class="ant-pro-card-body ant-pro-card-body-center"
           >
             <span
               class="studio-field-title studio-field-title-container emotion-0"
@@ -16206,14 +16064,14 @@ exports[`<FieldTitle /> > renders basic.tsx correctly 1`] = `
         </div>
       </div>
       <div
-        class="studio-pro-card-col studio-pro-card-col-4"
+        class="ant-pro-card-col ant-pro-card-col-4"
         style="padding-inline-end: 4px; padding-inline-start: 4px; padding-block-start: 4px; padding-block-end: 4px;"
       >
         <div
-          class="studio-pro-card studio-pro-card-border"
+          class="ant-pro-card ant-pro-card-border"
         >
           <div
-            class="studio-pro-card-body studio-pro-card-body-center"
+            class="ant-pro-card-body ant-pro-card-body-center"
           >
             <span
               class="studio-field-title studio-field-title-container emotion-0"
@@ -16242,11 +16100,11 @@ exports[`<FieldTitle /> > renders description.tsx correctly 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .emotion-1 {
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .emotion-2 {
@@ -16255,34 +16113,34 @@ exports[`<FieldTitle /> > renders description.tsx correctly 1`] = `
 
 <div>
   <div
-    class="studio-pro-card studio-pro-card-contain-card studio-pro-card-ghost"
+    class="ant-pro-card ant-pro-card-contain-card ant-pro-card-ghost"
   >
     <div
-      class="studio-pro-card-body studio-pro-card-body-wrap"
+      class="ant-pro-card-body ant-pro-card-body-wrap"
     >
       <div
-        class="studio-pro-card-col studio-pro-card-col-24"
+        class="ant-pro-card-col ant-pro-card-col-24"
         style="padding-inline-end: 4px; padding-inline-start: 4px; padding-block-start: 4px; padding-block-end: 4px;"
       >
         <div
-          class="studio-pro-card studio-pro-card-border"
+          class="ant-pro-card ant-pro-card-border"
         >
           <div
-            class="studio-pro-card-header"
+            class="ant-pro-card-header"
           >
             <div
-              class="studio-pro-card-title"
+              class="ant-pro-card-title"
             >
               <div
-                class="studio-pro-core-label-tip"
+                class="ant-pro-core-label-tip"
               >
                 <div
-                  class="studio-pro-core-label-tip-title"
+                  class="ant-pro-core-label-tip-title"
                 >
                   描述
                 </div>
                 <div
-                  class="studio-pro-core-label-tip-subtitle"
+                  class="ant-pro-core-label-tip-subtitle"
                 >
                   描述在标题右边
                 </div>
@@ -16290,7 +16148,7 @@ exports[`<FieldTitle /> > renders description.tsx correctly 1`] = `
             </div>
           </div>
           <div
-            class="studio-pro-card-body studio-pro-card-body-center"
+            class="ant-pro-card-body ant-pro-card-body-center"
           >
             <span
               class="studio-field-title studio-field-title-container emotion-0"
@@ -16442,7 +16300,7 @@ exports[`<FreeCanvas /> > renders basic.tsx correctly 1`] = `
                   class="emotion-1"
                 >
                   <button
-                    class="studio-btn studio-btn-default"
+                    class="ant-btn ant-btn-default"
                     type="button"
                   >
                     <span>
@@ -16462,17 +16320,17 @@ exports[`<FreeCanvas /> > renders basic.tsx correctly 1`] = `
           class="layoutkit-center emotion-3"
         >
           <div
-            class="studio-space studio-space-horizontal studio-space-align-center studio-space-gap-row-small studio-space-gap-col-small"
+            class="ant-space ant-space-horizontal ant-space-align-center ant-space-gap-row-small ant-space-gap-col-small"
           >
             <div
-              class="studio-space-item"
+              class="ant-space-item"
             >
               <button
-                class="studio-btn studio-btn-default studio-btn-icon-only"
+                class="ant-btn ant-btn-default ant-btn-icon-only"
                 type="button"
               >
                 <span
-                  class="studio-btn-icon"
+                  class="ant-btn-icon"
                 >
                   <span
                     aria-label="minus"
@@ -16497,10 +16355,10 @@ exports[`<FreeCanvas /> > renders basic.tsx correctly 1`] = `
               </button>
             </div>
             <div
-              class="studio-space-item"
+              class="ant-space-item"
             >
               <button
-                class="studio-btn studio-btn-default"
+                class="ant-btn ant-btn-default"
                 style="width: 64px;"
                 type="button"
               >
@@ -16510,14 +16368,14 @@ exports[`<FreeCanvas /> > renders basic.tsx correctly 1`] = `
               </button>
             </div>
             <div
-              class="studio-space-item"
+              class="ant-space-item"
             >
               <button
-                class="studio-btn studio-btn-default studio-btn-icon-only"
+                class="ant-btn ant-btn-default ant-btn-icon-only"
                 type="button"
               >
                 <span
-                  class="studio-btn-icon"
+                  class="ant-btn-icon"
                 >
                   <span
                     aria-label="plus"
@@ -16545,14 +16403,14 @@ exports[`<FreeCanvas /> > renders basic.tsx correctly 1`] = `
               </button>
             </div>
             <div
-              class="studio-space-item"
+              class="ant-space-item"
             >
               <button
-                class="studio-btn studio-btn-default studio-btn-icon-only"
+                class="ant-btn ant-btn-default ant-btn-icon-only"
                 type="button"
               >
                 <span
-                  class="studio-btn-icon"
+                  class="ant-btn-icon"
                 >
                   <span
                     aria-label="expand"
@@ -16580,10 +16438,10 @@ exports[`<FreeCanvas /> > renders basic.tsx correctly 1`] = `
               </button>
             </div>
             <div
-              class="studio-space-item"
+              class="ant-space-item"
             >
               <button
-                class="studio-btn studio-btn-default"
+                class="ant-btn ant-btn-default"
                 type="button"
               >
                 <span>
@@ -17598,25 +17456,25 @@ exports[`<Highlight /> > renders theme.tsx correctly 1`] = `
 <div>
   <div>
     <div
-      class="studio-space studio-space-horizontal studio-space-align-center studio-space-gap-row-small studio-space-gap-col-small"
+      class="ant-space ant-space-horizontal ant-space-align-center ant-space-gap-row-small ant-space-gap-col-small"
     >
       <div
-        class="studio-space-item"
+        class="ant-space-item"
       >
         语言选择:
       </div>
       <div
-        class="studio-space-item"
+        class="ant-space-item"
       >
         <div
-          class="studio-select studio-select-single studio-select-show-arrow"
+          class="ant-select ant-select-single ant-select-show-arrow"
           style="width: 120px;"
         >
           <div
-            class="studio-select-selector"
+            class="ant-select-selector"
           >
             <span
-              class="studio-select-selection-search"
+              class="ant-select-selection-search"
             >
               <input
                 aria-autocomplete="list"
@@ -17626,7 +17484,7 @@ exports[`<Highlight /> > renders theme.tsx correctly 1`] = `
                 aria-label="Search"
                 aria-owns="rc_select_TEST_OR_SSR_list"
                 autocomplete="off"
-                class="studio-select-selection-search-input"
+                class="ant-select-selection-search-input"
                 id="rc_select_TEST_OR_SSR"
                 readonly=""
                 role="combobox"
@@ -17637,7 +17495,7 @@ exports[`<Highlight /> > renders theme.tsx correctly 1`] = `
               />
             </span>
             <span
-              class="studio-select-selection-item"
+              class="ant-select-selection-item"
               title="Typescript"
             >
               Typescript
@@ -17645,13 +17503,13 @@ exports[`<Highlight /> > renders theme.tsx correctly 1`] = `
           </div>
           <span
             aria-hidden="true"
-            class="studio-select-arrow"
+            class="ant-select-arrow"
             style="user-select: none;"
             unselectable="on"
           >
             <span
               aria-label="down"
-              class="anticon anticon-down studio-select-suffix"
+              class="anticon anticon-down ant-select-suffix"
               role="img"
             >
               <svg
@@ -17672,22 +17530,22 @@ exports[`<Highlight /> > renders theme.tsx correctly 1`] = `
         </div>
       </div>
       <div
-        class="studio-space-item"
+        class="ant-space-item"
       >
         主题选择:
       </div>
       <div
-        class="studio-space-item"
+        class="ant-space-item"
       >
         <div
-          class="studio-select studio-select-single studio-select-show-arrow"
+          class="ant-select ant-select-single ant-select-show-arrow"
           style="width: 120px;"
         >
           <div
-            class="studio-select-selector"
+            class="ant-select-selector"
           >
             <span
-              class="studio-select-selection-search"
+              class="ant-select-selection-search"
             >
               <input
                 aria-autocomplete="list"
@@ -17697,7 +17555,7 @@ exports[`<Highlight /> > renders theme.tsx correctly 1`] = `
                 aria-label="Search"
                 aria-owns="rc_select_TEST_OR_SSR_list"
                 autocomplete="off"
-                class="studio-select-selection-search-input"
+                class="ant-select-selection-search-input"
                 id="rc_select_TEST_OR_SSR"
                 readonly=""
                 role="combobox"
@@ -17708,7 +17566,7 @@ exports[`<Highlight /> > renders theme.tsx correctly 1`] = `
               />
             </span>
             <span
-              class="studio-select-selection-item"
+              class="ant-select-selection-item"
               title="白色主题"
             >
               白色主题
@@ -17716,13 +17574,13 @@ exports[`<Highlight /> > renders theme.tsx correctly 1`] = `
           </div>
           <span
             aria-hidden="true"
-            class="studio-select-arrow"
+            class="ant-select-arrow"
             style="user-select: none;"
             unselectable="on"
           >
             <span
               aria-label="down"
-              class="anticon anticon-down studio-select-suffix"
+              class="anticon anticon-down ant-select-suffix"
               role="img"
             >
               <svg
@@ -17743,22 +17601,22 @@ exports[`<Highlight /> > renders theme.tsx correctly 1`] = `
         </div>
       </div>
       <div
-        class="studio-space-item"
+        class="ant-space-item"
       >
         展示行号:
       </div>
       <div
-        class="studio-space-item"
+        class="ant-space-item"
       >
         <div
-          class="studio-select studio-select-single studio-select-show-arrow"
+          class="ant-select ant-select-single ant-select-show-arrow"
           style="width: 120px;"
         >
           <div
-            class="studio-select-selector"
+            class="ant-select-selector"
           >
             <span
-              class="studio-select-selection-search"
+              class="ant-select-selection-search"
             >
               <input
                 aria-autocomplete="list"
@@ -17768,7 +17626,7 @@ exports[`<Highlight /> > renders theme.tsx correctly 1`] = `
                 aria-label="Search"
                 aria-owns="rc_select_TEST_OR_SSR_list"
                 autocomplete="off"
-                class="studio-select-selection-search-input"
+                class="ant-select-selection-search-input"
                 id="rc_select_TEST_OR_SSR"
                 readonly=""
                 role="combobox"
@@ -17779,7 +17637,7 @@ exports[`<Highlight /> > renders theme.tsx correctly 1`] = `
               />
             </span>
             <span
-              class="studio-select-selection-item"
+              class="ant-select-selection-item"
               title="不展示"
             >
               不展示
@@ -17787,13 +17645,13 @@ exports[`<Highlight /> > renders theme.tsx correctly 1`] = `
           </div>
           <span
             aria-hidden="true"
-            class="studio-select-arrow"
+            class="ant-select-arrow"
             style="user-select: none;"
             unselectable="on"
           >
             <span
               aria-label="down"
-              class="anticon anticon-down studio-select-suffix"
+              class="anticon anticon-down ant-select-suffix"
               role="img"
             >
               <svg
@@ -17814,22 +17672,22 @@ exports[`<Highlight /> > renders theme.tsx correctly 1`] = `
         </div>
       </div>
       <div
-        class="studio-space-item"
+        class="ant-space-item"
       >
         展示类型:
       </div>
       <div
-        class="studio-space-item"
+        class="ant-space-item"
       >
         <div
-          class="studio-select studio-select-single studio-select-show-arrow"
+          class="ant-select ant-select-single ant-select-show-arrow"
           style="width: 120px;"
         >
           <div
-            class="studio-select-selector"
+            class="ant-select-selector"
           >
             <span
-              class="studio-select-selection-search"
+              class="ant-select-selection-search"
             >
               <input
                 aria-autocomplete="list"
@@ -17839,7 +17697,7 @@ exports[`<Highlight /> > renders theme.tsx correctly 1`] = `
                 aria-label="Search"
                 aria-owns="rc_select_TEST_OR_SSR_list"
                 autocomplete="off"
-                class="studio-select-selection-search-input"
+                class="ant-select-selection-search-input"
                 id="rc_select_TEST_OR_SSR"
                 readonly=""
                 role="combobox"
@@ -17850,7 +17708,7 @@ exports[`<Highlight /> > renders theme.tsx correctly 1`] = `
               />
             </span>
             <span
-              class="studio-select-selection-item"
+              class="ant-select-selection-item"
               title="block"
             >
               block
@@ -17858,13 +17716,13 @@ exports[`<Highlight /> > renders theme.tsx correctly 1`] = `
           </div>
           <span
             aria-hidden="true"
-            class="studio-select-arrow"
+            class="ant-select-arrow"
             style="user-select: none;"
             unselectable="on"
           >
             <span
               aria-label="down"
-              class="anticon anticon-down studio-select-suffix"
+              class="anticon anticon-down ant-select-suffix"
               role="img"
             >
               <svg
@@ -18260,32 +18118,32 @@ exports[`<IconPicker /> > renders controlled.tsx correctly 1`] = `
     </span>
   </button>
   <div
-    class="studio-divider studio-divider-horizontal"
+    class="ant-divider ant-divider-horizontal"
     role="separator"
   />
   图标：
   <div
-    class="studio-divider studio-divider-horizontal"
+    class="ant-divider ant-divider-horizontal"
     role="separator"
   />
   激活脚本：
   <div
-    class="studio-divider studio-divider-horizontal"
+    class="ant-divider ant-divider-horizontal"
     role="separator"
   />
   Iconfont 图标库集合：
   <div
-    class="studio-divider studio-divider-horizontal"
+    class="ant-divider ant-divider-horizontal"
     role="separator"
   />
   <div
-    class="studio-space studio-space-horizontal studio-space-align-center studio-space-gap-row-small studio-space-gap-col-small"
+    class="ant-space ant-space-horizontal ant-space-align-center ant-space-gap-row-small ant-space-gap-col-small"
   >
     <div
-      class="studio-space-item"
+      class="ant-space-item"
     >
       <button
-        class="studio-btn studio-btn-default"
+        class="ant-btn ant-btn-default"
         type="button"
       >
         <span>
@@ -18294,10 +18152,10 @@ exports[`<IconPicker /> > renders controlled.tsx correctly 1`] = `
       </button>
     </div>
     <div
-      class="studio-space-item"
+      class="ant-space-item"
     >
       <button
-        class="studio-btn studio-btn-default"
+        class="ant-btn ant-btn-default"
         type="button"
       >
         <span>
@@ -18415,42 +18273,42 @@ exports[`<InteractContainer /> > renders Basic.tsx correctly 1`] = `
     style="padding: 24px;"
   >
     <div
-      class="studio-space studio-space-horizontal studio-space-align-center studio-space-gap-row-small studio-space-gap-col-small"
+      class="ant-space ant-space-horizontal ant-space-align-center ant-space-gap-row-small ant-space-gap-col-small"
     >
       <div
-        class="studio-space-item"
+        class="ant-space-item"
       >
         <div
-          class="studio-card studio-card-bordered studio-card-small"
+          class="ant-card ant-card-bordered ant-card-small"
         >
           <div
-            class="studio-card-body"
+            class="ant-card-body"
           >
             可选择元素
           </div>
         </div>
       </div>
       <div
-        class="studio-space-item"
+        class="ant-space-item"
       >
         <div
-          class="studio-card studio-card-bordered studio-card-small"
+          class="ant-card ant-card-bordered ant-card-small"
         >
           <div
-            class="studio-card-body"
+            class="ant-card-body"
           >
             可选择元素
           </div>
         </div>
       </div>
       <div
-        class="studio-space-item"
+        class="ant-space-item"
       >
         <div
-          class="studio-card studio-card-bordered studio-card-small"
+          class="ant-card ant-card-bordered ant-card-small"
         >
           <div
-            class="studio-card-body"
+            class="ant-card-body"
           >
             可选择元素
           </div>
@@ -18465,13 +18323,13 @@ exports[`<InteractContainer /> > renders Controlled.tsx correctly 1`] = `
 <div>
   <div>
     <div
-      class="studio-space studio-space-horizontal studio-space-align-center studio-space-gap-row-small studio-space-gap-col-small"
+      class="ant-space ant-space-horizontal ant-space-align-center ant-space-gap-row-small ant-space-gap-col-small"
     >
       <div
-        class="studio-space-item"
+        class="ant-space-item"
       >
         <button
-          class="studio-btn studio-btn-default"
+          class="ant-btn ant-btn-default"
           type="button"
         >
           <span>
@@ -18480,10 +18338,10 @@ exports[`<InteractContainer /> > renders Controlled.tsx correctly 1`] = `
         </button>
       </div>
       <div
-        class="studio-space-item"
+        class="ant-space-item"
       >
         <button
-          class="studio-btn studio-btn-default"
+          class="ant-btn ant-btn-default"
           type="button"
         >
           <span>
@@ -18493,7 +18351,7 @@ exports[`<InteractContainer /> > renders Controlled.tsx correctly 1`] = `
       </div>
     </div>
     <div
-      class="studio-divider studio-divider-horizontal"
+      class="ant-divider ant-divider-horizontal"
       role="separator"
     />
     <div
@@ -18504,42 +18362,42 @@ exports[`<InteractContainer /> > renders Controlled.tsx correctly 1`] = `
         style="padding: 40px;"
       >
         <div
-          class="studio-space studio-space-horizontal studio-space-align-center studio-space-gap-row-small studio-space-gap-col-small"
+          class="ant-space ant-space-horizontal ant-space-align-center ant-space-gap-row-small ant-space-gap-col-small"
         >
           <div
-            class="studio-space-item"
+            class="ant-space-item"
           >
             <div
-              class="studio-card studio-card-bordered studio-card-small"
+              class="ant-card ant-card-bordered ant-card-small"
             >
               <div
-                class="studio-card-body"
+                class="ant-card-body"
               >
                 可选择元素
               </div>
             </div>
           </div>
           <div
-            class="studio-space-item"
+            class="ant-space-item"
           >
             <div
-              class="studio-card studio-card-bordered studio-card-small"
+              class="ant-card ant-card-bordered ant-card-small"
             >
               <div
-                class="studio-card-body"
+                class="ant-card-body"
               >
                 可选择元素
               </div>
             </div>
           </div>
           <div
-            class="studio-space-item"
+            class="ant-space-item"
           >
             <div
-              class="studio-card studio-card-bordered studio-card-small"
+              class="ant-card ant-card-bordered ant-card-small"
             >
               <div
-                class="studio-card-body"
+                class="ant-card-body"
               >
                 可选择元素
               </div>
@@ -18573,13 +18431,13 @@ exports[`<InteractContainer /> > renders WithContainer.tsx correctly 1`] = `
     </div>
   </div>
   <div
-    class="studio-divider studio-divider-horizontal"
+    class="ant-divider ant-divider-horizontal"
     role="separator"
   />
   <div>
     此区域无法选择
     <button
-      class="studio-btn studio-btn-default"
+      class="ant-btn ant-btn-default"
       type="button"
     >
       <span>
@@ -18719,7 +18577,7 @@ exports[`<LevaPanel /> > renders button.tsx correctly 1`] = `
       style="flex: 1; display: flex; justify-content: center; padding: 12px; align-self: center;"
     >
       <button
-        class="studio-btn studio-btn-primary"
+        class="ant-btn ant-btn-primary"
         type="button"
       >
         <span>
@@ -20115,7 +19973,7 @@ exports[`<SortableList /> > renders controlled.tsx correctly 1`] = `
       />
     </div>
     <button
-      class="studio-btn studio-btn-primary"
+      class="ant-btn ant-btn-primary"
       style="margin-top: 8px;"
       type="button"
     >
@@ -21503,7 +21361,7 @@ exports[`<SortableList /> > renders provider.tsx correctly 1`] = `
     style="background: rgb(245, 245, 245);"
   >
     <button
-      class="studio-btn studio-btn-primary studio-btn-sm studio-btn-block"
+      class="ant-btn ant-btn-primary ant-btn-sm ant-btn-block"
       style="margin-bottom: 8px;"
       type="button"
     >
@@ -23749,7 +23607,7 @@ exports[`<SortableList /> > renders renderItem.tsx correctly 1`] = `
       class="layoutkit-flexbox emotion-1"
     >
       <button
-        class="studio-btn studio-btn-default"
+        class="ant-btn ant-btn-default"
         type="button"
       >
         <span>
@@ -23757,7 +23615,7 @@ exports[`<SortableList /> > renders renderItem.tsx correctly 1`] = `
         </span>
       </button>
       <button
-        class="studio-btn studio-btn-default"
+        class="ant-btn ant-btn-default"
         type="button"
       >
         <span>
@@ -30067,13 +29925,13 @@ exports[`<TipGuide /> > renders controlled.tsx correctly 1`] = `
 
 <div>
   <div
-    class="studio-space studio-space-horizontal studio-space-align-center studio-space-gap-row-small studio-space-gap-col-small"
+    class="ant-space ant-space-horizontal ant-space-align-center ant-space-gap-row-small ant-space-gap-col-small"
   >
     <div
-      class="studio-space-item"
+      class="ant-space-item"
     >
       <button
-        class="studio-btn studio-btn-default"
+        class="ant-btn ant-btn-default"
         type="button"
       >
         <span>
@@ -30082,10 +29940,10 @@ exports[`<TipGuide /> > renders controlled.tsx correctly 1`] = `
       </button>
     </div>
     <div
-      class="studio-space-item"
+      class="ant-space-item"
     >
       <button
-        class="studio-btn studio-btn-default"
+        class="ant-btn ant-btn-default"
         type="button"
       >
         <span>
@@ -30094,7 +29952,7 @@ exports[`<TipGuide /> > renders controlled.tsx correctly 1`] = `
       </button>
     </div>
     <div
-      class="studio-space-item"
+      class="ant-space-item"
     >
       <div
         class="studio-tip-guide emotion-0"
@@ -30240,16 +30098,16 @@ exports[`<TipGuide /> > renders localStorage.tsx correctly 1`] = `
 
 <div>
   <div
-    class="studio-space studio-space-horizontal studio-space-align-center studio-space-gap-row-small studio-space-gap-col-small"
+    class="ant-space ant-space-horizontal ant-space-align-center ant-space-gap-row-small ant-space-gap-col-small"
   >
     <div
-      class="studio-space-item"
+      class="ant-space-item"
     />
     <div
-      class="studio-space-item"
+      class="ant-space-item"
     >
       <button
-        class="studio-btn studio-btn-default"
+        class="ant-btn ant-btn-default"
         type="button"
       >
         <span>
@@ -30258,7 +30116,7 @@ exports[`<TipGuide /> > renders localStorage.tsx correctly 1`] = `
       </button>
     </div>
     <div
-      class="studio-space-item"
+      class="ant-space-item"
     >
       <div
         class="studio-tip-guide emotion-0"
@@ -30431,36 +30289,23 @@ exports[`<TipGuide /> > renders offset.tsx correctly 1`] = `
 `;
 
 exports[`<antd /> > renders basic.tsx correctly 1`] = `
-.emotion-0:hover {
-  color: rgba(0, 0, 0, 0.88);
-  background-color: rgba(0, 0, 0, 0.04);
-  border-color: transparent;
-}
-
-.emotion-0:focus {
-  color: rgba(0, 0, 0, 0.88)!important;
-  background-color: rgba(0, 0, 0, 0.02)!important;
-  border-color: #1677ff!important;
-  box-shadow: none;
-}
-
 <div>
   <div
-    class="studio-space studio-space-vertical studio-space-gap-row-small studio-space-gap-col-small"
+    class="ant-space ant-space-vertical ant-space-gap-row-small ant-space-gap-col-small"
   >
     <div
-      class="studio-space-item"
+      class="ant-space-item"
     >
       Input
     </div>
     <div
-      class="studio-space-item"
+      class="ant-space-item"
     >
       <div
-        class="studio-space studio-space-vertical studio-space-gap-row-small studio-space-gap-col-small"
+        class="ant-space ant-space-vertical ant-space-gap-row-small ant-space-gap-col-small"
       >
         <div
-          class="studio-space-item"
+          class="ant-space-item"
         >
           <input
             class="studio-input emotion-0"
@@ -30470,7 +30315,7 @@ exports[`<antd /> > renders basic.tsx correctly 1`] = `
           />
         </div>
         <div
-          class="studio-space-item"
+          class="ant-space-item"
         >
           <input
             class="studio-input emotion-0"
@@ -30485,19 +30330,6 @@ exports[`<antd /> > renders basic.tsx correctly 1`] = `
 `;
 
 exports[`<antd /> > renders inputNumber.tsx correctly 1`] = `
-.emotion-0:hover {
-  color: rgba(0, 0, 0, 0.88);
-  background-color: rgba(0, 0, 0, 0.04);
-  border-color: transparent;
-}
-
-.emotion-0:focus {
-  color: rgba(0, 0, 0, 0.88)!important;
-  background-color: rgba(0, 0, 0, 0.02)!important;
-  border-color: #1677ff!important;
-  box-shadow: none;
-}
-
 .emotion-0 .studio-input-number-group-addon {
   padding: 0 4px;
   color: rgba(0, 0, 0, 0.45);
@@ -30507,21 +30339,21 @@ exports[`<antd /> > renders inputNumber.tsx correctly 1`] = `
 
 <div>
   <div
-    class="studio-space studio-space-vertical studio-space-gap-row-small studio-space-gap-col-small"
+    class="ant-space ant-space-vertical ant-space-gap-row-small ant-space-gap-col-small"
   >
     <div
-      class="studio-space-item"
+      class="ant-space-item"
     >
       InputNumber
     </div>
     <div
-      class="studio-space-item"
+      class="ant-space-item"
     >
       <div
-        class="studio-space studio-space-vertical studio-space-gap-row-small studio-space-gap-col-small"
+        class="ant-space ant-space-vertical ant-space-gap-row-small ant-space-gap-col-small"
       >
         <div
-          class="studio-space-item"
+          class="ant-space-item"
         >
           <div
             class="studio-input-number-group-wrapper emotion-0 studio-input-number-group-wrapper-lg"
@@ -30612,7 +30444,7 @@ exports[`<antd /> > renders inputNumber.tsx correctly 1`] = `
           </div>
         </div>
         <div
-          class="studio-space-item"
+          class="ant-space-item"
         >
           <div
             class="studio-input-number-group-wrapper emotion-0 studio-input-number-group-wrapper-sm"
@@ -30703,7 +30535,7 @@ exports[`<antd /> > renders inputNumber.tsx correctly 1`] = `
           </div>
         </div>
         <div
-          class="studio-space-item"
+          class="ant-space-item"
         >
           <div
             class="studio-input-number-group-wrapper emotion-0 studio-input-number-group-wrapper-sm"
@@ -30875,7 +30707,7 @@ exports[`<antd /> > renders segmented.tsx correctly 1`] = `
       canvas
     </div>
     <div
-      class="studio-divider studio-divider-horizontal"
+      class="ant-divider ant-divider-horizontal"
       role="separator"
     />
     <div
@@ -30945,51 +30777,11 @@ exports[`<antd /> > renders select.tsx correctly 1`] = `
   gap: 16px;
 }
 
-.emotion-2.studio-select-multiple:not(.emotion-2.studio-select-customize-input) .emotion-2.studio-select.studio-select-selector:hover {
-  color: rgba(0, 0, 0, 0.88);
-  background-color: rgba(0, 0, 0, 0.04);
+.emotion-2.ant-select:not(.ant-select-disabled):not(.ant-select-customize-input):hover .ant-select-selector {
   border-color: transparent;
 }
 
-.emotion-2.studio-select-multiple:not(.emotion-2.studio-select-customize-input) .emotion-2.studio-select.studio-select-selector:focus {
-  color: rgba(0, 0, 0, 0.88)!important;
-  background-color: rgba(0, 0, 0, 0.02)!important;
-  border-color: #1677ff!important;
-  box-shadow: none;
-}
-
-.emotion-2.studio-select:not(.studio-select-disabled):not(.studio-select-customize-input):hover .studio-select-selector {
-  border-color: transparent;
-}
-
-.emotion-2.studio-select:not(.studio-select-disabled):not(.studio-select-customize-input):hover .studio-select-selector:hover {
-  color: rgba(0, 0, 0, 0.88);
-  background-color: rgba(0, 0, 0, 0.04);
-  border-color: transparent;
-}
-
-.emotion-2.studio-select:not(.studio-select-disabled):not(.studio-select-customize-input):hover .studio-select-selector:focus {
-  color: rgba(0, 0, 0, 0.88)!important;
-  background-color: rgba(0, 0, 0, 0.02)!important;
-  border-color: #1677ff!important;
-  box-shadow: none;
-}
-
-.emotion-2.studio-select-focused:not(.studio-select-disabled):not(.studio-select-customize-input):hover .studio-select-selector {
-  color: rgba(0, 0, 0, 0.88)!important;
-  background-color: rgba(0, 0, 0, 0.02)!important;
-  border-color: #1677ff!important;
-  box-shadow: none;
-}
-
-.emotion-2.studio-select-focused:not(.studio-select-disabled):not(.studio-select-customize-input) .studio-select-selector {
-  color: rgba(0, 0, 0, 0.88)!important;
-  background-color: rgba(0, 0, 0, 0.02)!important;
-  border-color: #1677ff!important;
-  box-shadow: none;
-}
-
-.emotion-2 .studio-select-arrow {
+.emotion-2 .ant-select-arrow {
   top: 13px;
   right: 8px;
   width: 10px;
@@ -30999,23 +30791,23 @@ exports[`<antd /> > renders select.tsx correctly 1`] = `
 
 <div>
   <div
-    class="studio-card studio-card-bordered"
+    class="ant-card ant-card-bordered"
   >
     <div
-      class="studio-card-head"
+      class="ant-card-head"
     >
       <div
-        class="studio-card-head-wrapper"
+        class="ant-card-head-wrapper"
       >
         <div
-          class="studio-card-head-title"
+          class="ant-card-head-title"
         >
           Select
         </div>
       </div>
     </div>
     <div
-      class="studio-card-body"
+      class="ant-card-body"
     >
       <div
         class="layoutkit-flexbox emotion-0"
@@ -31288,44 +31080,41 @@ exports[`<antd /> > renders tabs.tsx correctly 1`] = `
   height: 100%;
 }
 
-.emotion-0 .studio-tabs-tab+.studio-tabs-tab {
+.emotion-0 .ant-tabs-tab+.ant-tabs-tab {
   margin: 8px 4px!important;
   padding: 0 12px!important;
 }
 
-.emotion-0 .studio-tabs-tab {
+.emotion-0 .ant-tabs-tab {
   color: rgba(0, 0, 0, 0.65);
   -webkit-transition: background-color 150ms ease-out;
   transition: background-color 150ms ease-out;
 }
 
-.emotion-0 .studio-tabs-tab:first-child {
+.emotion-0 .ant-tabs-tab:first-child {
   margin: 8px 4px 8px 0;
   padding: 4px 12px!important;
 }
 
-.emotion-0 .studio-tabs-tab:hover {
+.emotion-0 .ant-tabs-tab:hover {
   color: rgba(0, 0, 0, 0.88)!important;
   background: rgba(0, 0, 0, 0.04);
   border-radius: 4px;
 }
 
-.emotion-0 .studio-tabs-nav {
+.emotion-0 .ant-tabs-nav {
   height: 46px;
   padding: 0 12px;
   padding-right: 8px!important;
 }
 
-.emotion-0 .studio-tabs-nav {
+.emotion-0 .ant-tabs-nav {
   position: absolute!important;
   z-index: 10;
   width: 100%;
-  background: rgba(255,255,255,0.6);
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
 }
 
-.emotion-0 .studio-tabs-content-holder {
+.emotion-0 .ant-tabs-content-holder {
   padding-top: 54px;
   overflow-y: auto;
 }
