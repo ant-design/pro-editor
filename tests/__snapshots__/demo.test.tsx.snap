@@ -1,6 +1,6 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`<ActionGroup /> > renders src\\ActionGroup\\demos\\basic.tsx correctly 1`] = `
+exports[`<ActionGroup /> > renders basic.tsx correctly 1`] = `
 .emotion-0 {
   background-color: rgba(0, 0, 0, 0.04);
   border: 1px solid transparent;
@@ -168,7 +168,7 @@ exports[`<ActionGroup /> > renders src\\ActionGroup\\demos\\basic.tsx correctly 
 </div>
 `;
 
-exports[`<ActionGroup /> > renders src\\ActionGroup\\demos\\config.tsx correctly 1`] = `
+exports[`<ActionGroup /> > renders config.tsx correctly 1`] = `
 .emotion-0 {
   background-color: rgba(0, 0, 0, 0.04);
   border: 1px solid transparent;
@@ -346,7 +346,7 @@ exports[`<ActionGroup /> > renders src\\ActionGroup\\demos\\config.tsx correctly
 </div>
 `;
 
-exports[`<ActionGroup /> > renders src\\ActionGroup\\demos\\custom.tsx correctly 1`] = `
+exports[`<ActionGroup /> > renders custom.tsx correctly 1`] = `
 .emotion-0 {
   background-color: rgba(0, 0, 0, 0.04);
   border: 1px solid transparent;
@@ -875,7 +875,7 @@ exports[`<ActionGroup /> > renders src\\ActionGroup\\demos\\custom.tsx correctly
 </div>
 `;
 
-exports[`<ActionGroup /> > renders src\\ActionGroup\\demos\\dropMenu.tsx correctly 1`] = `
+exports[`<ActionGroup /> > renders dropMenu.tsx correctly 1`] = `
 .emotion-0 {
   background-color: rgba(0, 0, 0, 0.04);
   border: 1px solid transparent;
@@ -1071,7 +1071,7 @@ exports[`<ActionGroup /> > renders src\\ActionGroup\\demos\\dropMenu.tsx correct
 </div>
 `;
 
-exports[`<ActionGroup /> > renders src\\ActionGroup\\demos\\type.tsx correctly 1`] = `
+exports[`<ActionGroup /> > renders type.tsx correctly 1`] = `
 .emotion-0 {
   background-color: rgba(0, 0, 0, 0.04);
   border: 1px solid transparent;
@@ -1403,7 +1403,7 @@ exports[`<ActionGroup /> > renders src\\ActionGroup\\demos\\type.tsx correctly 1
 </div>
 `;
 
-exports[`<ActionGroup /> > renders src\\ActionGroup\\demos\\withPanel.tsx correctly 1`] = `
+exports[`<ActionGroup /> > renders withPanel.tsx correctly 1`] = `
 .emotion-0 {
   overflow: hidden;
   border-radius: 8px;
@@ -1597,7 +1597,7 @@ exports[`<ActionGroup /> > renders src\\ActionGroup\\demos\\withPanel.tsx correc
 </div>
 `;
 
-exports[`<ActionIcon /> > renders src\\ActionIcon\\demos\\basic.tsx correctly 1`] = `
+exports[`<ActionIcon /> > renders basic.tsx correctly 1`] = `
 .emotion-0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1656,7 +1656,7 @@ exports[`<ActionIcon /> > renders src\\ActionIcon\\demos\\basic.tsx correctly 1`
 </div>
 `;
 
-exports[`<ActionIcon /> > renders src\\ActionIcon\\demos\\preset.tsx correctly 1`] = `
+exports[`<ActionIcon /> > renders preset.tsx correctly 1`] = `
 .emotion-0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1799,7 +1799,7 @@ exports[`<ActionIcon /> > renders src\\ActionIcon\\demos\\preset.tsx correctly 1
 </div>
 `;
 
-exports[`<Awareness /> > renders src\\Awareness\\demos\\Avatar.tsx correctly 1`] = `
+exports[`<Awareness /> > renders Avatar.tsx correctly 1`] = `
 .emotion-0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1885,7 +1885,7 @@ exports[`<Awareness /> > renders src\\Awareness\\demos\\Avatar.tsx correctly 1`]
 </div>
 `;
 
-exports[`<Awareness /> > renders src\\Awareness\\demos\\Cursor.tsx correctly 1`] = `
+exports[`<Awareness /> > renders Cursor.tsx correctly 1`] = `
 .emotion-0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2017,7 +2017,7 @@ exports[`<Awareness /> > renders src\\Awareness\\demos\\Cursor.tsx correctly 1`]
 </div>
 `;
 
-exports[`<CollapseTitle /> > renders src\\CollapseTitle\\demos\\basic.tsx correctly 1`] = `
+exports[`<CollapseTitle /> > renders basic.tsx correctly 1`] = `
 .emotion-0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2126,7 +2126,7 @@ exports[`<CollapseTitle /> > renders src\\CollapseTitle\\demos\\basic.tsx correc
 </div>
 `;
 
-exports[`<CollapseTitle /> > renders src\\CollapseTitle\\demos\\defaultexpand.tsx correctly 1`] = `
+exports[`<CollapseTitle /> > renders defaultexpand.tsx correctly 1`] = `
 .emotion-0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2240,7 +2240,7 @@ exports[`<CollapseTitle /> > renders src\\CollapseTitle\\demos\\defaultexpand.ts
 </div>
 `;
 
-exports[`<CollapseTitle /> > renders src\\CollapseTitle\\demos\\expand.tsx correctly 1`] = `
+exports[`<CollapseTitle /> > renders expand.tsx correctly 1`] = `
 .emotion-0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2357,7 +2357,7 @@ exports[`<CollapseTitle /> > renders src\\CollapseTitle\\demos\\expand.tsx corre
 </div>
 `;
 
-exports[`<ColumnList /> > renders src\\ColumnList\\demos\\actions.tsx correctly 1`] = `
+exports[`<ColumnList /> > renders actions.tsx correctly 1`] = `
 .emotion-0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2731,6 +2731,7 @@ exports[`<ColumnList /> > renders src\\ColumnList\\demos\\actions.tsx correctly 
                       aria-controls="rc_select_TEST_OR_SSR_list"
                       aria-expanded="false"
                       aria-haspopup="listbox"
+                      aria-label="Search"
                       aria-owns="rc_select_TEST_OR_SSR_list"
                       autocomplete="off"
                       class="studio-select-selection-search-input"
@@ -2792,6 +2793,7 @@ exports[`<ColumnList /> > renders src\\ColumnList\\demos\\actions.tsx correctly 
                       aria-controls="rc_select_TEST_OR_SSR_list"
                       aria-expanded="false"
                       aria-haspopup="listbox"
+                      aria-label="Search"
                       aria-owns="rc_select_TEST_OR_SSR_list"
                       autocomplete="off"
                       class="studio-select-selection-search-input"
@@ -2971,6 +2973,7 @@ exports[`<ColumnList /> > renders src\\ColumnList\\demos\\actions.tsx correctly 
                       aria-controls="rc_select_TEST_OR_SSR_list"
                       aria-expanded="false"
                       aria-haspopup="listbox"
+                      aria-label="Search"
                       aria-owns="rc_select_TEST_OR_SSR_list"
                       autocomplete="off"
                       class="studio-select-selection-search-input"
@@ -3032,6 +3035,7 @@ exports[`<ColumnList /> > renders src\\ColumnList\\demos\\actions.tsx correctly 
                       aria-controls="rc_select_TEST_OR_SSR_list"
                       aria-expanded="false"
                       aria-haspopup="listbox"
+                      aria-label="Search"
                       aria-owns="rc_select_TEST_OR_SSR_list"
                       autocomplete="off"
                       class="studio-select-selection-search-input"
@@ -3211,6 +3215,7 @@ exports[`<ColumnList /> > renders src\\ColumnList\\demos\\actions.tsx correctly 
                       aria-controls="rc_select_TEST_OR_SSR_list"
                       aria-expanded="false"
                       aria-haspopup="listbox"
+                      aria-label="Search"
                       aria-owns="rc_select_TEST_OR_SSR_list"
                       autocomplete="off"
                       class="studio-select-selection-search-input"
@@ -3272,6 +3277,7 @@ exports[`<ColumnList /> > renders src\\ColumnList\\demos\\actions.tsx correctly 
                       aria-controls="rc_select_TEST_OR_SSR_list"
                       aria-expanded="false"
                       aria-haspopup="listbox"
+                      aria-label="Search"
                       aria-owns="rc_select_TEST_OR_SSR_list"
                       autocomplete="off"
                       class="studio-select-selection-search-input"
@@ -3441,7 +3447,7 @@ exports[`<ColumnList /> > renders src\\ColumnList\\demos\\actions.tsx correctly 
 </div>
 `;
 
-exports[`<ColumnList /> > renders src\\ColumnList\\demos\\column.tsx correctly 1`] = `
+exports[`<ColumnList /> > renders column.tsx correctly 1`] = `
 .emotion-0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -3797,6 +3803,7 @@ exports[`<ColumnList /> > renders src\\ColumnList\\demos\\column.tsx correctly 1
                       aria-controls="rc_select_TEST_OR_SSR_list"
                       aria-expanded="false"
                       aria-haspopup="listbox"
+                      aria-label="Search"
                       aria-owns="rc_select_TEST_OR_SSR_list"
                       autocomplete="off"
                       class="studio-select-selection-search-input"
@@ -3858,6 +3865,7 @@ exports[`<ColumnList /> > renders src\\ColumnList\\demos\\column.tsx correctly 1
                       aria-controls="rc_select_TEST_OR_SSR_list"
                       aria-expanded="false"
                       aria-haspopup="listbox"
+                      aria-label="Search"
                       aria-owns="rc_select_TEST_OR_SSR_list"
                       autocomplete="off"
                       class="studio-select-selection-search-input"
@@ -4025,6 +4033,7 @@ exports[`<ColumnList /> > renders src\\ColumnList\\demos\\column.tsx correctly 1
                       aria-controls="rc_select_TEST_OR_SSR_list"
                       aria-expanded="false"
                       aria-haspopup="listbox"
+                      aria-label="Search"
                       aria-owns="rc_select_TEST_OR_SSR_list"
                       autocomplete="off"
                       class="studio-select-selection-search-input"
@@ -4086,6 +4095,7 @@ exports[`<ColumnList /> > renders src\\ColumnList\\demos\\column.tsx correctly 1
                       aria-controls="rc_select_TEST_OR_SSR_list"
                       aria-expanded="false"
                       aria-haspopup="listbox"
+                      aria-label="Search"
                       aria-owns="rc_select_TEST_OR_SSR_list"
                       autocomplete="off"
                       class="studio-select-selection-search-input"
@@ -4253,6 +4263,7 @@ exports[`<ColumnList /> > renders src\\ColumnList\\demos\\column.tsx correctly 1
                       aria-controls="rc_select_TEST_OR_SSR_list"
                       aria-expanded="false"
                       aria-haspopup="listbox"
+                      aria-label="Search"
                       aria-owns="rc_select_TEST_OR_SSR_list"
                       autocomplete="off"
                       class="studio-select-selection-search-input"
@@ -4314,6 +4325,7 @@ exports[`<ColumnList /> > renders src\\ColumnList\\demos\\column.tsx correctly 1
                       aria-controls="rc_select_TEST_OR_SSR_list"
                       aria-expanded="false"
                       aria-haspopup="listbox"
+                      aria-label="Search"
                       aria-owns="rc_select_TEST_OR_SSR_list"
                       autocomplete="off"
                       class="studio-select-selection-search-input"
@@ -4481,6 +4493,7 @@ exports[`<ColumnList /> > renders src\\ColumnList\\demos\\column.tsx correctly 1
                       aria-controls="rc_select_TEST_OR_SSR_list"
                       aria-expanded="false"
                       aria-haspopup="listbox"
+                      aria-label="Search"
                       aria-owns="rc_select_TEST_OR_SSR_list"
                       autocomplete="off"
                       class="studio-select-selection-search-input"
@@ -4542,6 +4555,7 @@ exports[`<ColumnList /> > renders src\\ColumnList\\demos\\column.tsx correctly 1
                       aria-controls="rc_select_TEST_OR_SSR_list"
                       aria-expanded="false"
                       aria-haspopup="listbox"
+                      aria-label="Search"
                       aria-owns="rc_select_TEST_OR_SSR_list"
                       autocomplete="off"
                       class="studio-select-selection-search-input"
@@ -4665,7 +4679,7 @@ exports[`<ColumnList /> > renders src\\ColumnList\\demos\\column.tsx correctly 1
 </div>
 `;
 
-exports[`<ColumnList /> > renders src\\ColumnList\\demos\\controlled.tsx correctly 1`] = `
+exports[`<ColumnList /> > renders controlled.tsx correctly 1`] = `
 .emotion-0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -5016,6 +5030,7 @@ exports[`<ColumnList /> > renders src\\ColumnList\\demos\\controlled.tsx correct
                       aria-controls="rc_select_TEST_OR_SSR_list"
                       aria-expanded="false"
                       aria-haspopup="listbox"
+                      aria-label="Search"
                       aria-owns="rc_select_TEST_OR_SSR_list"
                       autocomplete="off"
                       class="studio-select-selection-search-input"
@@ -5077,6 +5092,7 @@ exports[`<ColumnList /> > renders src\\ColumnList\\demos\\controlled.tsx correct
                       aria-controls="rc_select_TEST_OR_SSR_list"
                       aria-expanded="false"
                       aria-haspopup="listbox"
+                      aria-label="Search"
                       aria-owns="rc_select_TEST_OR_SSR_list"
                       autocomplete="off"
                       class="studio-select-selection-search-input"
@@ -5227,6 +5243,7 @@ exports[`<ColumnList /> > renders src\\ColumnList\\demos\\controlled.tsx correct
                       aria-controls="rc_select_TEST_OR_SSR_list"
                       aria-expanded="false"
                       aria-haspopup="listbox"
+                      aria-label="Search"
                       aria-owns="rc_select_TEST_OR_SSR_list"
                       autocomplete="off"
                       class="studio-select-selection-search-input"
@@ -5288,6 +5305,7 @@ exports[`<ColumnList /> > renders src\\ColumnList\\demos\\controlled.tsx correct
                       aria-controls="rc_select_TEST_OR_SSR_list"
                       aria-expanded="false"
                       aria-haspopup="listbox"
+                      aria-label="Search"
                       aria-owns="rc_select_TEST_OR_SSR_list"
                       autocomplete="off"
                       class="studio-select-selection-search-input"
@@ -5438,6 +5456,7 @@ exports[`<ColumnList /> > renders src\\ColumnList\\demos\\controlled.tsx correct
                       aria-controls="rc_select_TEST_OR_SSR_list"
                       aria-expanded="false"
                       aria-haspopup="listbox"
+                      aria-label="Search"
                       aria-owns="rc_select_TEST_OR_SSR_list"
                       autocomplete="off"
                       class="studio-select-selection-search-input"
@@ -5499,6 +5518,7 @@ exports[`<ColumnList /> > renders src\\ColumnList\\demos\\controlled.tsx correct
                       aria-controls="rc_select_TEST_OR_SSR_list"
                       aria-expanded="false"
                       aria-haspopup="listbox"
+                      aria-label="Search"
                       aria-owns="rc_select_TEST_OR_SSR_list"
                       autocomplete="off"
                       class="studio-select-selection-search-input"
@@ -5605,7 +5625,7 @@ exports[`<ColumnList /> > renders src\\ColumnList\\demos\\controlled.tsx correct
 </div>
 `;
 
-exports[`<ColumnList /> > renders src\\ColumnList\\demos\\creatorButtonProps.tsx correctly 1`] = `
+exports[`<ColumnList /> > renders creatorButtonProps.tsx correctly 1`] = `
 .emotion-0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -6013,6 +6033,7 @@ exports[`<ColumnList /> > renders src\\ColumnList\\demos\\creatorButtonProps.tsx
                       aria-controls="rc_select_TEST_OR_SSR_list"
                       aria-expanded="false"
                       aria-haspopup="listbox"
+                      aria-label="Search"
                       aria-owns="rc_select_TEST_OR_SSR_list"
                       autocomplete="off"
                       class="studio-select-selection-search-input"
@@ -6074,6 +6095,7 @@ exports[`<ColumnList /> > renders src\\ColumnList\\demos\\creatorButtonProps.tsx
                       aria-controls="rc_select_TEST_OR_SSR_list"
                       aria-expanded="false"
                       aria-haspopup="listbox"
+                      aria-label="Search"
                       aria-owns="rc_select_TEST_OR_SSR_list"
                       autocomplete="off"
                       class="studio-select-selection-search-input"
@@ -6224,6 +6246,7 @@ exports[`<ColumnList /> > renders src\\ColumnList\\demos\\creatorButtonProps.tsx
                       aria-controls="rc_select_TEST_OR_SSR_list"
                       aria-expanded="false"
                       aria-haspopup="listbox"
+                      aria-label="Search"
                       aria-owns="rc_select_TEST_OR_SSR_list"
                       autocomplete="off"
                       class="studio-select-selection-search-input"
@@ -6285,6 +6308,7 @@ exports[`<ColumnList /> > renders src\\ColumnList\\demos\\creatorButtonProps.tsx
                       aria-controls="rc_select_TEST_OR_SSR_list"
                       aria-expanded="false"
                       aria-haspopup="listbox"
+                      aria-label="Search"
                       aria-owns="rc_select_TEST_OR_SSR_list"
                       autocomplete="off"
                       class="studio-select-selection-search-input"
@@ -6435,6 +6459,7 @@ exports[`<ColumnList /> > renders src\\ColumnList\\demos\\creatorButtonProps.tsx
                       aria-controls="rc_select_TEST_OR_SSR_list"
                       aria-expanded="false"
                       aria-haspopup="listbox"
+                      aria-label="Search"
                       aria-owns="rc_select_TEST_OR_SSR_list"
                       autocomplete="off"
                       class="studio-select-selection-search-input"
@@ -6496,6 +6521,7 @@ exports[`<ColumnList /> > renders src\\ColumnList\\demos\\creatorButtonProps.tsx
                       aria-controls="rc_select_TEST_OR_SSR_list"
                       aria-expanded="false"
                       aria-haspopup="listbox"
+                      aria-label="Search"
                       aria-owns="rc_select_TEST_OR_SSR_list"
                       autocomplete="off"
                       class="studio-select-selection-search-input"
@@ -6602,7 +6628,7 @@ exports[`<ColumnList /> > renders src\\ColumnList\\demos\\creatorButtonProps.tsx
 </div>
 `;
 
-exports[`<ColumnList /> > renders src\\ColumnList\\demos\\customCreate.tsx correctly 1`] = `
+exports[`<ColumnList /> > renders customCreate.tsx correctly 1`] = `
 .emotion-0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -7017,6 +7043,7 @@ exports[`<ColumnList /> > renders src\\ColumnList\\demos\\customCreate.tsx corre
                       aria-controls="rc_select_TEST_OR_SSR_list"
                       aria-expanded="false"
                       aria-haspopup="listbox"
+                      aria-label="Search"
                       aria-owns="rc_select_TEST_OR_SSR_list"
                       autocomplete="off"
                       class="studio-select-selection-search-input"
@@ -7078,6 +7105,7 @@ exports[`<ColumnList /> > renders src\\ColumnList\\demos\\customCreate.tsx corre
                       aria-controls="rc_select_TEST_OR_SSR_list"
                       aria-expanded="false"
                       aria-haspopup="listbox"
+                      aria-label="Search"
                       aria-owns="rc_select_TEST_OR_SSR_list"
                       autocomplete="off"
                       class="studio-select-selection-search-input"
@@ -7228,6 +7256,7 @@ exports[`<ColumnList /> > renders src\\ColumnList\\demos\\customCreate.tsx corre
                       aria-controls="rc_select_TEST_OR_SSR_list"
                       aria-expanded="false"
                       aria-haspopup="listbox"
+                      aria-label="Search"
                       aria-owns="rc_select_TEST_OR_SSR_list"
                       autocomplete="off"
                       class="studio-select-selection-search-input"
@@ -7289,6 +7318,7 @@ exports[`<ColumnList /> > renders src\\ColumnList\\demos\\customCreate.tsx corre
                       aria-controls="rc_select_TEST_OR_SSR_list"
                       aria-expanded="false"
                       aria-haspopup="listbox"
+                      aria-label="Search"
                       aria-owns="rc_select_TEST_OR_SSR_list"
                       autocomplete="off"
                       class="studio-select-selection-search-input"
@@ -7439,6 +7469,7 @@ exports[`<ColumnList /> > renders src\\ColumnList\\demos\\customCreate.tsx corre
                       aria-controls="rc_select_TEST_OR_SSR_list"
                       aria-expanded="false"
                       aria-haspopup="listbox"
+                      aria-label="Search"
                       aria-owns="rc_select_TEST_OR_SSR_list"
                       autocomplete="off"
                       class="studio-select-selection-search-input"
@@ -7500,6 +7531,7 @@ exports[`<ColumnList /> > renders src\\ColumnList\\demos\\customCreate.tsx corre
                       aria-controls="rc_select_TEST_OR_SSR_list"
                       aria-expanded="false"
                       aria-haspopup="listbox"
+                      aria-label="Search"
                       aria-owns="rc_select_TEST_OR_SSR_list"
                       autocomplete="off"
                       class="studio-select-selection-search-input"
@@ -7606,7 +7638,7 @@ exports[`<ColumnList /> > renders src\\ColumnList\\demos\\customCreate.tsx corre
 </div>
 `;
 
-exports[`<ColumnList /> > renders src\\ColumnList\\demos\\empty.tsx correctly 1`] = `
+exports[`<ColumnList /> > renders empty.tsx correctly 1`] = `
 .emotion-0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -7734,7 +7766,7 @@ exports[`<ColumnList /> > renders src\\ColumnList\\demos\\empty.tsx correctly 1`
 </div>
 `;
 
-exports[`<ColumnList /> > renders src\\ColumnList\\demos\\normal.tsx correctly 1`] = `
+exports[`<ColumnList /> > renders normal.tsx correctly 1`] = `
 .emotion-0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -8380,7 +8412,7 @@ exports[`<ColumnList /> > renders src\\ColumnList\\demos\\normal.tsx correctly 1
 </div>
 `;
 
-exports[`<ContextMenu /> > renders src\\ContextMenu\\demos\\index.tsx correctly 1`] = `
+exports[`<ContextMenu /> > renders index.tsx correctly 1`] = `
 <div>
   <div>
     RightClick
@@ -8388,7 +8420,7 @@ exports[`<ContextMenu /> > renders src\\ContextMenu\\demos\\index.tsx correctly 
 </div>
 `;
 
-exports[`<DataFill /> > renders src\\DataFill\\demos\\basic.tsx correctly 1`] = `
+exports[`<DataFill /> > renders basic.tsx correctly 1`] = `
 .emotion-0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -9167,7 +9199,7 @@ exports[`<DataFill /> > renders src\\DataFill\\demos\\basic.tsx correctly 1`] = 
 </div>
 `;
 
-exports[`<DataPreviewer /> > renders src\\DataPreviewer\\demos\\basic.tsx correctly 1`] = `
+exports[`<DataPreviewer /> > renders basic.tsx correctly 1`] = `
 .emotion-0 {
   color: rgba(0, 0, 0, 0.65);
 }
@@ -10481,7 +10513,7 @@ exports[`<DataPreviewer /> > renders src\\DataPreviewer\\demos\\basic.tsx correc
 </div>
 `;
 
-exports[`<DataPreviewer /> > renders src\\DataPreviewer\\demos\\empty.tsx correctly 1`] = `
+exports[`<DataPreviewer /> > renders empty.tsx correctly 1`] = `
 .emotion-0 {
   color: rgba(0, 0, 0, 0.65);
 }
@@ -10645,7 +10677,7 @@ exports[`<DataPreviewer /> > renders src\\DataPreviewer\\demos\\empty.tsx correc
 </div>
 `;
 
-exports[`<DataPreviewer /> > renders src\\DataPreviewer\\demos\\emptyAction.tsx correctly 1`] = `
+exports[`<DataPreviewer /> > renders emptyAction.tsx correctly 1`] = `
 .emotion-0 {
   color: rgba(0, 0, 0, 0.65);
 }
@@ -10840,7 +10872,7 @@ exports[`<DataPreviewer /> > renders src\\DataPreviewer\\demos\\emptyAction.tsx 
 </div>
 `;
 
-exports[`<DataPreviewer /> > renders src\\DataPreviewer\\demos\\extra.tsx correctly 1`] = `
+exports[`<DataPreviewer /> > renders extra.tsx correctly 1`] = `
 .emotion-0 {
   color: rgba(0, 0, 0, 0.65);
 }
@@ -12182,7 +12214,7 @@ exports[`<DataPreviewer /> > renders src\\DataPreviewer\\demos\\extra.tsx correc
 </div>
 `;
 
-exports[`<DataPreviewer /> > renders src\\DataPreviewer\\demos\\renderEmpty.tsx correctly 1`] = `
+exports[`<DataPreviewer /> > renders renderEmpty.tsx correctly 1`] = `
 .emotion-0 {
   color: rgba(0, 0, 0, 0.65);
 }
@@ -12260,7 +12292,7 @@ exports[`<DataPreviewer /> > renders src\\DataPreviewer\\demos\\renderEmpty.tsx 
 </div>
 `;
 
-exports[`<DataPreviewer /> > renders src\\DataPreviewer\\demos\\showType.tsx correctly 1`] = `
+exports[`<DataPreviewer /> > renders showType.tsx correctly 1`] = `
 .emotion-0 {
   color: rgba(0, 0, 0, 0.65);
 }
@@ -13497,7 +13529,7 @@ exports[`<DataPreviewer /> > renders src\\DataPreviewer\\demos\\showType.tsx cor
 </div>
 `;
 
-exports[`<DraggablePanel /> > renders src\\DraggablePanel\\demos\\basic.tsx correctly 1`] = `
+exports[`<DraggablePanel /> > renders basic.tsx correctly 1`] = `
 .emotion-0 {
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
@@ -13637,7 +13669,7 @@ exports[`<DraggablePanel /> > renders src\\DraggablePanel\\demos\\basic.tsx corr
 </div>
 `;
 
-exports[`<DraggablePanel /> > renders src\\DraggablePanel\\demos\\bottom.tsx correctly 1`] = `
+exports[`<DraggablePanel /> > renders bottom.tsx correctly 1`] = `
 .emotion-0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -13788,7 +13820,7 @@ exports[`<DraggablePanel /> > renders src\\DraggablePanel\\demos\\bottom.tsx cor
 </div>
 `;
 
-exports[`<DraggablePanel /> > renders src\\DraggablePanel\\demos\\controlFloat.tsx correctly 1`] = `
+exports[`<DraggablePanel /> > renders controlFloat.tsx correctly 1`] = `
 .emotion-0 {
   overflow: hidden;
   border-radius: 8px;
@@ -13943,7 +13975,7 @@ exports[`<DraggablePanel /> > renders src\\DraggablePanel\\demos\\controlFloat.t
 </div>
 `;
 
-exports[`<DraggablePanel /> > renders src\\DraggablePanel\\demos\\float.tsx correctly 1`] = `
+exports[`<DraggablePanel /> > renders float.tsx correctly 1`] = `
 .emotion-0 {
   overflow: hidden;
   border-radius: 8px;
@@ -14098,7 +14130,7 @@ exports[`<DraggablePanel /> > renders src\\DraggablePanel\\demos\\float.tsx corr
 </div>
 `;
 
-exports[`<DraggablePanel /> > renders src\\DraggablePanel\\demos\\left.tsx correctly 1`] = `
+exports[`<DraggablePanel /> > renders left.tsx correctly 1`] = `
 .emotion-0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -14249,7 +14281,7 @@ exports[`<DraggablePanel /> > renders src\\DraggablePanel\\demos\\left.tsx corre
 </div>
 `;
 
-exports[`<DraggablePanel /> > renders src\\DraggablePanel\\demos\\top.tsx correctly 1`] = `
+exports[`<DraggablePanel /> > renders top.tsx correctly 1`] = `
 .emotion-0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -14400,7 +14432,7 @@ exports[`<DraggablePanel /> > renders src\\DraggablePanel\\demos\\top.tsx correc
 </div>
 `;
 
-exports[`<FieldIcon /> > renders src\\FieldIcon\\demos\\basic.tsx correctly 1`] = `
+exports[`<FieldIcon /> > renders basic.tsx correctly 1`] = `
 .emotion-0 {
   font-size: 14px;
 }
@@ -15150,7 +15182,7 @@ exports[`<FieldIcon /> > renders src\\FieldIcon\\demos\\basic.tsx correctly 1`] 
 </div>
 `;
 
-exports[`<FieldSelect /> > renders src\\FieldSelect\\demos\\basic.tsx correctly 1`] = `
+exports[`<FieldSelect /> > renders basic.tsx correctly 1`] = `
 .emotion-0 {
   width: 100%;
 }
@@ -15242,6 +15274,7 @@ exports[`<FieldSelect /> > renders src\\FieldSelect\\demos\\basic.tsx correctly 
           aria-controls="rc_select_TEST_OR_SSR_list"
           aria-expanded="false"
           aria-haspopup="listbox"
+          aria-label="Search"
           aria-owns="rc_select_TEST_OR_SSR_list"
           autocomplete="off"
           class="studio-select-selection-search-input"
@@ -15336,7 +15369,7 @@ exports[`<FieldSelect /> > renders src\\FieldSelect\\demos\\basic.tsx correctly 
 </div>
 `;
 
-exports[`<FieldTitle /> > renders src\\FieldTitle\\demos\\basic.tsx correctly 1`] = `
+exports[`<FieldTitle /> > renders basic.tsx correctly 1`] = `
 .emotion-0 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -16199,7 +16232,7 @@ exports[`<FieldTitle /> > renders src\\FieldTitle\\demos\\basic.tsx correctly 1`
 </div>
 `;
 
-exports[`<FieldTitle /> > renders src\\FieldTitle\\demos\\description.tsx correctly 1`] = `
+exports[`<FieldTitle /> > renders description.tsx correctly 1`] = `
 .emotion-0 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -16319,7 +16352,7 @@ exports[`<FieldTitle /> > renders src\\FieldTitle\\demos\\description.tsx correc
 </div>
 `;
 
-exports[`<FreeCanvas /> > renders src\\FreeCanvas\\demos\\basic.tsx correctly 1`] = `
+exports[`<FreeCanvas /> > renders basic.tsx correctly 1`] = `
 .emotion-0 .react-flow__attribution {
   display: none;
 }
@@ -16630,7 +16663,7 @@ exports[`<FreeCanvas /> > renders src\\FreeCanvas\\demos\\basic.tsx correctly 1`
 </div>
 `;
 
-exports[`<Highlight /> > renders src\\Highlight\\demos\\basic.tsx correctly 1`] = `
+exports[`<Highlight /> > renders basic.tsx correctly 1`] = `
 .emotion-0 {
   background-color: #2b303b;
   border: 1px solid #2b303b;
@@ -16990,7 +17023,7 @@ exports[`<Highlight /> > renders src\\Highlight\\demos\\basic.tsx correctly 1`] 
 </div>
 `;
 
-exports[`<Highlight /> > renders src\\Highlight\\demos\\lineNumber.tsx correctly 1`] = `
+exports[`<Highlight /> > renders lineNumber.tsx correctly 1`] = `
 .emotion-0 {
   background-color: #fafafa;
   border: 1px solid #fafafa;
@@ -17388,7 +17421,7 @@ exports[`<Highlight /> > renders src\\Highlight\\demos\\lineNumber.tsx correctly
 </div>
 `;
 
-exports[`<Highlight /> > renders src\\Highlight\\demos\\theme.tsx correctly 1`] = `
+exports[`<Highlight /> > renders theme.tsx correctly 1`] = `
 .emotion-0 {
   background-color: #fafafa;
   border: 1px solid #fafafa;
@@ -17590,6 +17623,7 @@ exports[`<Highlight /> > renders src\\Highlight\\demos\\theme.tsx correctly 1`] 
                 aria-controls="rc_select_TEST_OR_SSR_list"
                 aria-expanded="false"
                 aria-haspopup="listbox"
+                aria-label="Search"
                 aria-owns="rc_select_TEST_OR_SSR_list"
                 autocomplete="off"
                 class="studio-select-selection-search-input"
@@ -17660,6 +17694,7 @@ exports[`<Highlight /> > renders src\\Highlight\\demos\\theme.tsx correctly 1`] 
                 aria-controls="rc_select_TEST_OR_SSR_list"
                 aria-expanded="false"
                 aria-haspopup="listbox"
+                aria-label="Search"
                 aria-owns="rc_select_TEST_OR_SSR_list"
                 autocomplete="off"
                 class="studio-select-selection-search-input"
@@ -17730,6 +17765,7 @@ exports[`<Highlight /> > renders src\\Highlight\\demos\\theme.tsx correctly 1`] 
                 aria-controls="rc_select_TEST_OR_SSR_list"
                 aria-expanded="false"
                 aria-haspopup="listbox"
+                aria-label="Search"
                 aria-owns="rc_select_TEST_OR_SSR_list"
                 autocomplete="off"
                 class="studio-select-selection-search-input"
@@ -17800,6 +17836,7 @@ exports[`<Highlight /> > renders src\\Highlight\\demos\\theme.tsx correctly 1`] 
                 aria-controls="rc_select_TEST_OR_SSR_list"
                 aria-expanded="false"
                 aria-haspopup="listbox"
+                aria-label="Search"
                 aria-owns="rc_select_TEST_OR_SSR_list"
                 autocomplete="off"
                 class="studio-select-selection-search-input"
@@ -18175,7 +18212,7 @@ exports[`<Highlight /> > renders src\\Highlight\\demos\\theme.tsx correctly 1`] 
 </div>
 `;
 
-exports[`<IconPicker /> > renders src\\IconPicker\\demos\\controlled.tsx correctly 1`] = `
+exports[`<IconPicker /> > renders controlled.tsx correctly 1`] = `
 .emotion-0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -18272,7 +18309,7 @@ exports[`<IconPicker /> > renders src\\IconPicker\\demos\\controlled.tsx correct
 </div>
 `;
 
-exports[`<IconPicker /> > renders src\\IconPicker\\demos\\normal.tsx correctly 1`] = `
+exports[`<IconPicker /> > renders normal.tsx correctly 1`] = `
 .emotion-0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -18322,7 +18359,7 @@ exports[`<IconPicker /> > renders src\\IconPicker\\demos\\normal.tsx correctly 1
 </div>
 `;
 
-exports[`<IconPicker /> > renders src\\IconPicker\\demos\\scripts.tsx correctly 1`] = `
+exports[`<IconPicker /> > renders scripts.tsx correctly 1`] = `
 .emotion-0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -18372,7 +18409,7 @@ exports[`<IconPicker /> > renders src\\IconPicker\\demos\\scripts.tsx correctly 
 </div>
 `;
 
-exports[`<InteractContainer /> > renders src\\InteractContainer\\demos\\Basic.tsx correctly 1`] = `
+exports[`<InteractContainer /> > renders Basic.tsx correctly 1`] = `
 <div>
   <div
     style="padding: 24px;"
@@ -18424,7 +18461,7 @@ exports[`<InteractContainer /> > renders src\\InteractContainer\\demos\\Basic.ts
 </div>
 `;
 
-exports[`<InteractContainer /> > renders src\\InteractContainer\\demos\\Controlled.tsx correctly 1`] = `
+exports[`<InteractContainer /> > renders Controlled.tsx correctly 1`] = `
 <div>
   <div>
     <div
@@ -18515,7 +18552,7 @@ exports[`<InteractContainer /> > renders src\\InteractContainer\\demos\\Controll
 </div>
 `;
 
-exports[`<InteractContainer /> > renders src\\InteractContainer\\demos\\WithContainer.tsx correctly 1`] = `
+exports[`<InteractContainer /> > renders WithContainer.tsx correctly 1`] = `
 <div>
   <div
     id="ux"
@@ -18553,7 +18590,7 @@ exports[`<InteractContainer /> > renders src\\InteractContainer\\demos\\WithCont
 </div>
 `;
 
-exports[`<LevaPanel /> > renders src\\LevaPanel\\demos\\button.tsx correctly 1`] = `
+exports[`<LevaPanel /> > renders button.tsx correctly 1`] = `
 .emotion-0 {
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
@@ -19245,7 +19282,7 @@ exports[`<LevaPanel /> > renders src\\LevaPanel\\demos\\button.tsx correctly 1`]
 </div>
 `;
 
-exports[`<SortableList /> > renders src\\SortableList\\demos\\Basic.tsx correctly 1`] = `
+exports[`<SortableList /> > renders Basic.tsx correctly 1`] = `
 .emotion-0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -19663,7 +19700,7 @@ exports[`<SortableList /> > renders src\\SortableList\\demos\\Basic.tsx correctl
 </div>
 `;
 
-exports[`<SortableList /> > renders src\\SortableList\\demos\\controlled.tsx correctly 1`] = `
+exports[`<SortableList /> > renders controlled.tsx correctly 1`] = `
 .emotion-0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -20090,7 +20127,7 @@ exports[`<SortableList /> > renders src\\SortableList\\demos\\controlled.tsx cor
 </div>
 `;
 
-exports[`<SortableList /> > renders src\\SortableList\\demos\\creatorButtonProps.tsx correctly 1`] = `
+exports[`<SortableList /> > renders creatorButtonProps.tsx correctly 1`] = `
 .emotion-0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -20561,7 +20598,7 @@ exports[`<SortableList /> > renders src\\SortableList\\demos\\creatorButtonProps
 </div>
 `;
 
-exports[`<SortableList /> > renders src\\SortableList\\demos\\empty.tsx correctly 1`] = `
+exports[`<SortableList /> > renders empty.tsx correctly 1`] = `
 .emotion-0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -20658,7 +20695,7 @@ exports[`<SortableList /> > renders src\\SortableList\\demos\\empty.tsx correctl
 </div>
 `;
 
-exports[`<SortableList /> > renders src\\SortableList\\demos\\getItemStyles.tsx correctly 1`] = `
+exports[`<SortableList /> > renders getItemStyles.tsx correctly 1`] = `
 .emotion-0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -21231,7 +21268,7 @@ exports[`<SortableList /> > renders src\\SortableList\\demos\\getItemStyles.tsx 
 </div>
 `;
 
-exports[`<SortableList /> > renders src\\SortableList\\demos\\provider.tsx correctly 1`] = `
+exports[`<SortableList /> > renders provider.tsx correctly 1`] = `
 .emotion-0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -21557,6 +21594,7 @@ exports[`<SortableList /> > renders src\\SortableList\\demos\\provider.tsx corre
                             aria-controls="rc_select_TEST_OR_SSR_list"
                             aria-expanded="false"
                             aria-haspopup="listbox"
+                            aria-label="Search"
                             aria-owns="rc_select_TEST_OR_SSR_list"
                             autocomplete="off"
                             class="studio-select-selection-search-input"
@@ -21719,6 +21757,7 @@ exports[`<SortableList /> > renders src\\SortableList\\demos\\provider.tsx corre
                             aria-controls="rc_select_TEST_OR_SSR_list"
                             aria-expanded="false"
                             aria-haspopup="listbox"
+                            aria-label="Search"
                             aria-owns="rc_select_TEST_OR_SSR_list"
                             autocomplete="off"
                             class="studio-select-selection-search-input"
@@ -21881,6 +21920,7 @@ exports[`<SortableList /> > renders src\\SortableList\\demos\\provider.tsx corre
                             aria-controls="rc_select_TEST_OR_SSR_list"
                             aria-expanded="false"
                             aria-haspopup="listbox"
+                            aria-label="Search"
                             aria-owns="rc_select_TEST_OR_SSR_list"
                             autocomplete="off"
                             class="studio-select-selection-search-input"
@@ -21990,7 +22030,7 @@ exports[`<SortableList /> > renders src\\SortableList\\demos\\provider.tsx corre
 </div>
 `;
 
-exports[`<SortableList /> > renders src\\SortableList\\demos\\ref.tsx correctly 1`] = `
+exports[`<SortableList /> > renders ref.tsx correctly 1`] = `
 .emotion-0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -22361,6 +22401,7 @@ exports[`<SortableList /> > renders src\\SortableList\\demos\\ref.tsx correctly 
                             aria-controls="rc_select_TEST_OR_SSR_list"
                             aria-expanded="false"
                             aria-haspopup="listbox"
+                            aria-label="Search"
                             aria-owns="rc_select_TEST_OR_SSR_list"
                             autocomplete="off"
                             class="studio-select-selection-search-input"
@@ -22523,6 +22564,7 @@ exports[`<SortableList /> > renders src\\SortableList\\demos\\ref.tsx correctly 
                             aria-controls="rc_select_TEST_OR_SSR_list"
                             aria-expanded="false"
                             aria-haspopup="listbox"
+                            aria-label="Search"
                             aria-owns="rc_select_TEST_OR_SSR_list"
                             autocomplete="off"
                             class="studio-select-selection-search-input"
@@ -22685,6 +22727,7 @@ exports[`<SortableList /> > renders src\\SortableList\\demos\\ref.tsx correctly 
                             aria-controls="rc_select_TEST_OR_SSR_list"
                             aria-expanded="false"
                             aria-haspopup="listbox"
+                            aria-label="Search"
                             aria-owns="rc_select_TEST_OR_SSR_list"
                             autocomplete="off"
                             class="studio-select-selection-search-input"
@@ -22794,7 +22837,7 @@ exports[`<SortableList /> > renders src\\SortableList\\demos\\ref.tsx correctly 
 </div>
 `;
 
-exports[`<SortableList /> > renders src\\SortableList\\demos\\renderContent.tsx correctly 1`] = `
+exports[`<SortableList /> > renders renderContent.tsx correctly 1`] = `
 .emotion-0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -23111,6 +23154,7 @@ exports[`<SortableList /> > renders src\\SortableList\\demos\\renderContent.tsx 
                             aria-controls="rc_select_TEST_OR_SSR_list"
                             aria-expanded="false"
                             aria-haspopup="listbox"
+                            aria-label="Search"
                             aria-owns="rc_select_TEST_OR_SSR_list"
                             autocomplete="off"
                             class="studio-select-selection-search-input"
@@ -23273,6 +23317,7 @@ exports[`<SortableList /> > renders src\\SortableList\\demos\\renderContent.tsx 
                             aria-controls="rc_select_TEST_OR_SSR_list"
                             aria-expanded="false"
                             aria-haspopup="listbox"
+                            aria-label="Search"
                             aria-owns="rc_select_TEST_OR_SSR_list"
                             autocomplete="off"
                             class="studio-select-selection-search-input"
@@ -23435,6 +23480,7 @@ exports[`<SortableList /> > renders src\\SortableList\\demos\\renderContent.tsx 
                             aria-controls="rc_select_TEST_OR_SSR_list"
                             aria-expanded="false"
                             aria-haspopup="listbox"
+                            aria-label="Search"
                             aria-owns="rc_select_TEST_OR_SSR_list"
                             autocomplete="off"
                             class="studio-select-selection-search-input"
@@ -23544,7 +23590,7 @@ exports[`<SortableList /> > renders src\\SortableList\\demos\\renderContent.tsx 
 </div>
 `;
 
-exports[`<SortableList /> > renders src\\SortableList\\demos\\renderItem.tsx correctly 1`] = `
+exports[`<SortableList /> > renders renderItem.tsx correctly 1`] = `
 .emotion-0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -24105,7 +24151,7 @@ exports[`<SortableList /> > renders src\\SortableList\\demos\\renderItem.tsx cor
 </div>
 `;
 
-exports[`<SortableList /> > renders src\\SortableList\\demos\\useSortableList.tsx correctly 1`] = `
+exports[`<SortableList /> > renders useSortableList.tsx correctly 1`] = `
 .emotion-0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -24422,6 +24468,7 @@ exports[`<SortableList /> > renders src\\SortableList\\demos\\useSortableList.ts
                             aria-controls="rc_select_TEST_OR_SSR_list"
                             aria-expanded="false"
                             aria-haspopup="listbox"
+                            aria-label="Search"
                             aria-owns="rc_select_TEST_OR_SSR_list"
                             autocomplete="off"
                             class="studio-select-selection-search-input"
@@ -24584,6 +24631,7 @@ exports[`<SortableList /> > renders src\\SortableList\\demos\\useSortableList.ts
                             aria-controls="rc_select_TEST_OR_SSR_list"
                             aria-expanded="false"
                             aria-haspopup="listbox"
+                            aria-label="Search"
                             aria-owns="rc_select_TEST_OR_SSR_list"
                             autocomplete="off"
                             class="studio-select-selection-search-input"
@@ -24746,6 +24794,7 @@ exports[`<SortableList /> > renders src\\SortableList\\demos\\useSortableList.ts
                             aria-controls="rc_select_TEST_OR_SSR_list"
                             aria-expanded="false"
                             aria-haspopup="listbox"
+                            aria-label="Search"
                             aria-owns="rc_select_TEST_OR_SSR_list"
                             autocomplete="off"
                             class="studio-select-selection-search-input"
@@ -24855,7 +24904,7 @@ exports[`<SortableList /> > renders src\\SortableList\\demos\\useSortableList.ts
 </div>
 `;
 
-exports[`<SortableTree /> > renders src\\SortableTree\\demos\\controlled.tsx correctly 1`] = `
+exports[`<SortableTree /> > renders controlled.tsx correctly 1`] = `
 .emotion-0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -25912,7 +25961,7 @@ exports[`<SortableTree /> > renders src\\SortableTree\\demos\\controlled.tsx cor
 </div>
 `;
 
-exports[`<SortableTree /> > renders src\\SortableTree\\demos\\default.tsx correctly 1`] = `
+exports[`<SortableTree /> > renders default.tsx correctly 1`] = `
 .emotion-0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -26929,7 +26978,7 @@ exports[`<SortableTree /> > renders src\\SortableTree\\demos\\default.tsx correc
 </div>
 `;
 
-exports[`<SortableTree /> > renders src\\SortableTree\\demos\\disableDrag.tsx correctly 1`] = `
+exports[`<SortableTree /> > renders disableDrag.tsx correctly 1`] = `
 .emotion-0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -27677,7 +27726,7 @@ exports[`<SortableTree /> > renders src\\SortableTree\\demos\\disableDrag.tsx co
 </div>
 `;
 
-exports[`<SortableTree /> > renders src\\SortableTree\\demos\\renderContent.tsx correctly 1`] = `
+exports[`<SortableTree /> > renders renderContent.tsx correctly 1`] = `
 .emotion-0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -28982,7 +29031,7 @@ exports[`<SortableTree /> > renders src\\SortableTree\\demos\\renderContent.tsx 
 </div>
 `;
 
-exports[`<SortableTree /> > renders src\\SortableTree\\demos\\sortableRule.tsx correctly 1`] = `
+exports[`<SortableTree /> > renders sortableRule.tsx correctly 1`] = `
 .emotion-0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -29999,7 +30048,7 @@ exports[`<SortableTree /> > renders src\\SortableTree\\demos\\sortableRule.tsx c
 </div>
 `;
 
-exports[`<TipGuide /> > renders src\\TipGuide\\demos\\controlled.tsx correctly 1`] = `
+exports[`<TipGuide /> > renders controlled.tsx correctly 1`] = `
 .emotion-0 {
   position: relative;
   width: -webkit-fit-content;
@@ -30128,7 +30177,7 @@ exports[`<TipGuide /> > renders src\\TipGuide\\demos\\controlled.tsx correctly 1
 </div>
 `;
 
-exports[`<TipGuide /> > renders src\\TipGuide\\demos\\footer.tsx correctly 1`] = `
+exports[`<TipGuide /> > renders footer.tsx correctly 1`] = `
 .emotion-0 {
   position: relative;
   width: -webkit-fit-content;
@@ -30172,7 +30221,7 @@ exports[`<TipGuide /> > renders src\\TipGuide\\demos\\footer.tsx correctly 1`] =
 </div>
 `;
 
-exports[`<TipGuide /> > renders src\\TipGuide\\demos\\localStorage.tsx correctly 1`] = `
+exports[`<TipGuide /> > renders localStorage.tsx correctly 1`] = `
 .emotion-0 {
   position: relative;
   width: -webkit-fit-content;
@@ -30292,7 +30341,7 @@ exports[`<TipGuide /> > renders src\\TipGuide\\demos\\localStorage.tsx correctly
 </div>
 `;
 
-exports[`<TipGuide /> > renders src\\TipGuide\\demos\\normal.tsx correctly 1`] = `
+exports[`<TipGuide /> > renders normal.tsx correctly 1`] = `
 .emotion-0 {
   position: relative;
   width: -webkit-fit-content;
@@ -30336,7 +30385,7 @@ exports[`<TipGuide /> > renders src\\TipGuide\\demos\\normal.tsx correctly 1`] =
 </div>
 `;
 
-exports[`<TipGuide /> > renders src\\TipGuide\\demos\\offset.tsx correctly 1`] = `
+exports[`<TipGuide /> > renders offset.tsx correctly 1`] = `
 .emotion-0 {
   position: relative;
   width: -webkit-fit-content;
@@ -30381,7 +30430,7 @@ exports[`<TipGuide /> > renders src\\TipGuide\\demos\\offset.tsx correctly 1`] =
 </div>
 `;
 
-exports[`<antd /> > renders src\\antd\\demos\\basic.tsx correctly 1`] = `
+exports[`<antd /> > renders basic.tsx correctly 1`] = `
 .emotion-0:hover {
   color: rgba(0, 0, 0, 0.88);
   background-color: rgba(0, 0, 0, 0.04);
@@ -30435,7 +30484,7 @@ exports[`<antd /> > renders src\\antd\\demos\\basic.tsx correctly 1`] = `
 </div>
 `;
 
-exports[`<antd /> > renders src\\antd\\demos\\inputNumber.tsx correctly 1`] = `
+exports[`<antd /> > renders inputNumber.tsx correctly 1`] = `
 .emotion-0:hover {
   color: rgba(0, 0, 0, 0.88);
   background-color: rgba(0, 0, 0, 0.04);
@@ -30750,7 +30799,7 @@ exports[`<antd /> > renders src\\antd\\demos\\inputNumber.tsx correctly 1`] = `
 </div>
 `;
 
-exports[`<antd /> > renders src\\antd\\demos\\segmented.tsx correctly 1`] = `
+exports[`<antd /> > renders segmented.tsx correctly 1`] = `
 .emotion-0 {
   padding: 4px;
 }
@@ -30873,7 +30922,7 @@ exports[`<antd /> > renders src\\antd\\demos\\segmented.tsx correctly 1`] = `
 </div>
 `;
 
-exports[`<antd /> > renders src\\antd\\demos\\select.tsx correctly 1`] = `
+exports[`<antd /> > renders select.tsx correctly 1`] = `
 .emotion-0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -30990,6 +31039,7 @@ exports[`<antd /> > renders src\\antd\\demos\\select.tsx correctly 1`] = `
                   aria-controls="rc_select_TEST_OR_SSR_list"
                   aria-expanded="false"
                   aria-haspopup="listbox"
+                  aria-label="Search"
                   aria-owns="rc_select_TEST_OR_SSR_list"
                   autocomplete="off"
                   class="studio-select-selection-search-input"
@@ -31050,6 +31100,7 @@ exports[`<antd /> > renders src\\antd\\demos\\select.tsx correctly 1`] = `
                   aria-controls="rc_select_TEST_OR_SSR_list"
                   aria-expanded="false"
                   aria-haspopup="listbox"
+                  aria-label="Search"
                   aria-owns="rc_select_TEST_OR_SSR_list"
                   autocomplete="off"
                   class="studio-select-selection-search-input"
@@ -31116,6 +31167,7 @@ exports[`<antd /> > renders src\\antd\\demos\\select.tsx correctly 1`] = `
                   aria-controls="rc_select_TEST_OR_SSR_list"
                   aria-expanded="false"
                   aria-haspopup="listbox"
+                  aria-label="Search"
                   aria-owns="rc_select_TEST_OR_SSR_list"
                   autocomplete="off"
                   class="studio-select-selection-search-input"
@@ -31176,6 +31228,7 @@ exports[`<antd /> > renders src\\antd\\demos\\select.tsx correctly 1`] = `
                   aria-controls="rc_select_TEST_OR_SSR_list"
                   aria-expanded="false"
                   aria-haspopup="listbox"
+                  aria-label="Search"
                   aria-owns="rc_select_TEST_OR_SSR_list"
                   autocomplete="off"
                   class="studio-select-selection-search-input"
@@ -31229,7 +31282,7 @@ exports[`<antd /> > renders src\\antd\\demos\\select.tsx correctly 1`] = `
 </div>
 `;
 
-exports[`<antd /> > renders src\\antd\\demos\\tabs.tsx correctly 1`] = `
+exports[`<antd /> > renders tabs.tsx correctly 1`] = `
 .emotion-0 {
   position: relative;
   height: 100%;
@@ -31401,7 +31454,7 @@ exports[`<antd /> > renders src\\antd\\demos\\tabs.tsx correctly 1`] = `
 </div>
 `;
 
-exports[`<antd /> > renders src\\antd\\demos\\tree.tsx correctly 1`] = `
+exports[`<antd /> > renders tree.tsx correctly 1`] = `
 <div>
   <div
     class="studio-tree studio-tree-icon-hide"
@@ -31721,7 +31774,7 @@ exports[`<antd /> > renders src\\antd\\demos\\tree.tsx correctly 1`] = `
 </div>
 `;
 
-exports[`<antd /> > renders src\\antd\\demos\\treeselect.tsx correctly 1`] = `
+exports[`<antd /> > renders treeselect.tsx correctly 1`] = `
 <div>
   <div
     class="studio-select studio-tree-select studio-select-single studio-select-allow-clear studio-select-show-arrow studio-select-show-search"
@@ -31738,6 +31791,7 @@ exports[`<antd /> > renders src\\antd\\demos\\treeselect.tsx correctly 1`] = `
           aria-controls="rc_select_TEST_OR_SSR_list"
           aria-expanded="false"
           aria-haspopup="listbox"
+          aria-label="Search"
           aria-owns="rc_select_TEST_OR_SSR_list"
           autocomplete="off"
           class="studio-select-selection-search-input"

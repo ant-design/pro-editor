@@ -32,11 +32,10 @@ dirs.forEach((dir) => {
     files.forEach((file) => {
       const demoName = file?.split('/').pop();
 
-      if (!demoName) return;
-
       it(`renders ${demoName} correctly`, async () => {
         const Demo = await import(file);
 
+        if (!demoName) return;
         // console.log(`测试组件${dir} DEMO:${demoName}`);
         const wrapper = render(<Demo.default />, { wrapper: AppContainer });
         act(() => {
