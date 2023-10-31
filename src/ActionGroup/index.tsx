@@ -5,11 +5,11 @@ import {
   RedoOutlined,
   UndoOutlined,
 } from '@ant-design/icons';
-import { ActionIcon, getPrefixCls } from '@ant-design/pro-editor';
+import { ActionIcon, ActionIconProps, getPrefixCls } from '@ant-design/pro-editor';
 import { Divider, Dropdown, DropdownProps } from 'antd';
 import { useStyle } from './style';
 
-export type ActionIconGroupItemType = {
+export type ActionIconGroupItemType = ActionIconProps & {
   /**
    * @description 展示的 icon
    */
@@ -142,6 +142,7 @@ const ActionGroup = (props: ActionGroupProps) => {
           if (item?.type)
             return (
               <Divider
+                key={`action-divider-${index}`}
                 type={direction === 'row' ? 'vertical' : 'horizontal'}
                 style={{
                   margin: `${direction === 'row' ? '0 4px' : '4px 0'}`,
@@ -155,7 +156,9 @@ const ActionGroup = (props: ActionGroupProps) => {
               size={size}
               {...item}
               onClick={() => {
-                item?.onClick();
+                if (item?.onClick) {
+                  item?.onClick();
+                }
                 onClick(item?.key);
               }}
             />

@@ -34,6 +34,16 @@ export interface ActionIconProps extends Omit<ButtonProps, 'title' | 'size'> {
    * @title 图标尺寸
    */
   size?: 'default' | 'large' | number;
+  /**
+   * @description 鼠标移入时候的延迟tooltip时间，默认 0.5
+   * @default 0.5
+   */
+  tooltipDelay?: number;
+  /**
+   * @description 是否展示小箭头，默认不展示
+   * @default false
+   */
+  arrow?: boolean;
 }
 
 const ActionIcon: FC<ActionIconProps> = ({
@@ -43,7 +53,9 @@ const ActionIcon: FC<ActionIconProps> = ({
   cursor,
   onClick,
   className,
+  arrow = false,
   size,
+  tooltipDelay = 0.5,
   prefixCls: customPrefixCls,
   ...restProps
 }) => {
@@ -77,9 +89,10 @@ const ActionIcon: FC<ActionIconProps> = ({
         Icon
       ) : (
         <Tooltip
-          arrow={false}
+          arrow={arrow}
           overlayClassName={styles.tooltip}
           title={title}
+          mouseEnterDelay={tooltipDelay}
           placement={placement}
         >
           {Icon}

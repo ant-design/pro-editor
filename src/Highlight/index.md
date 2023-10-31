@@ -8,25 +8,25 @@ group: 基础组件
 
 ## 何时使用
 
-展示代码时使用，不需要编辑代码时使用。
+展示代码时使用，不需要编辑代码时使用
 
 ## 代码演示
 
 ### 指定语言
 
-你可以通过 `language` 指定语言高亮，通过 `theme` 指定高亮主题。
+你可以通过 `language` 指定语言高亮，通过 `theme` 指定高亮主题
 
 <code src="./demos/basic.tsx" ></code>
 
 ### 展示代码块行号
 
-你可以通过 `lineNumber` 指定是否需要展示代码块行号。
+你可以通过 `lineNumber` 指定是否需要展示代码块行号
 
 <code src="./demos/lineNumber.tsx" ></code>
 
 ### 主题 & 语言 & 行号 & 渲染器
 
-你可以通过这个示例查看不同语言在不同主题下的效果。
+你可以通过这个示例查看不同语言在不同主题下的效果
 
 <code src="./demos/theme.tsx" ></code>
 
