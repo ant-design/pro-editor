@@ -1,4 +1,5 @@
-import { createStyles } from '../theme';
+import Color from 'color';
+import { STUDIO_UI_PREFIX, createStyles } from '../theme';
 import { getThemeColor } from './theme/colors';
 
 interface IHighlightStyleProps {
@@ -10,14 +11,41 @@ interface IHighlightStyleProps {
 export const useStyles = createStyles(
   ({ css, cx, token }, { prefixCls, theme, type }: IHighlightStyleProps) => {
     const prefix = `${prefixCls}`;
-    const { colorFillTertiary } = getThemeColor(theme === 'dark');
+    const { colorFillTertiary, colorText, colorTextSecondary } = getThemeColor(theme === 'dark');
 
     const typeStylish = css`
       background-color: ${type === 'block' ? colorFillTertiary : 'transparent'};
       border: 1px solid ${type === 'block' ? colorFillTertiary : 'transparent'};
     `;
 
+    const lighterTypeStylish = css`
+      background-color: ${type === 'block'
+        ? Color(colorFillTertiary).alpha(0.9).hsl().string()
+        : 'transparent'};
+    `;
+
     return {
+      wrapper: cx(
+        `${prefix}-wrapper`,
+        lighterTypeStylish,
+        css`
+          border-radius: ${token.borderRadius}px;
+          .${prefix}-copy {
+            background-color: transparent;
+            position: inherit;
+            width: 30px;
+            padding-left: 6px;
+          }
+        `,
+      ),
+      header: cx(
+        `${prefix}-header`,
+        css`
+          padding: 4px 8px;
+          background: rgba(0, 0, 0, 0.02);
+          width: auto !important; // override self width
+        `,
+      ),
       container: cx(
         `${prefix}-container`,
         typeStylish,
@@ -39,6 +67,36 @@ export const useStyles = createStyles(
           }
         `,
       ),
+      trigger: css`
+        min-width: 100px;
+        display: flex;
+        justify-content: center;
+      `,
+      expandIcon: css`
+        color: ${colorText};
+        &:hover {
+          .${STUDIO_UI_PREFIX}-btn-icon {
+            color: ${colorText} !important;
+          }
+        }
+      `,
+      select: css`
+        min-width: 100px;
+        .${STUDIO_UI_PREFIX}-btn {
+          color: ${colorText};
+          &:hover {
+            color: ${colorTextSecondary} !important;
+          }
+        }
+        .${STUDIO_UI_PREFIX}-select-selector {
+          padding-inline-end: 4px !important;
+        }
+        .${STUDIO_UI_PREFIX}-select-selection-overflow-item-suffix {
+          .${STUDIO_UI_PREFIX}-select-selection-search {
+            display: none;
+          }
+        }
+      `,
     };
   },
 );

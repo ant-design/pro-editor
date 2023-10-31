@@ -6,8 +6,8 @@
  */
 import classNames from 'classnames';
 import { useEffect, useState } from 'react';
+import { HighlightProps } from '../../defalut';
 import { useHighlight } from '../../hooks/useHighlight';
-import { HighlightProps } from '../../index';
 import { THEME_LIGHT } from '../../theme';
 import HighlightCell from '../HighlightCell';
 import { useStyles } from './style';

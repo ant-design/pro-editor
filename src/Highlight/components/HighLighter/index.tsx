@@ -7,8 +7,8 @@
 import { Loading3QuartersOutlined as Loading } from '@ant-design/icons';
 import classNames from 'classnames';
 import { Center } from 'react-layout-kit';
+import { HighlightProps } from '../../defalut';
 import { useShiki } from '../../hooks/useShiki';
-import { HighlightProps } from '../../index';
 import HighLightJS from '../HighLightJS';
 import { useStyles } from './style';
 
