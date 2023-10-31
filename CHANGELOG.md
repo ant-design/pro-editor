@@ -1,5 +1,42 @@
 # Changelog
 
+## [Version&nbsp;0.22.0](https://github.com/ant-design/pro-editor/compare/v0.21.0...v0.22.0)
+
+<sup>Released on **2023-10-31**</sup>
+
+#### ✨ 新特性
+
+- ACtion Icon props add time delay, update arrow api, update snapshot.
+
+#### 🐛 修复
+
+- Action types fixed, ci fixed, merge ci build branch.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's improved
+
+- ACtion Icon props add time delay ([1e19f1d](https://github.com/ant-design/pro-editor/commit/1e19f1d))
+- Update arrow api ([e4996dc](https://github.com/ant-design/pro-editor/commit/e4996dc))
+- Update snapshot ([7a6fa6c](https://github.com/ant-design/pro-editor/commit/7a6fa6c))
+
+#### What's fixed
+
+- Action types fixed ([0ad8699](https://github.com/ant-design/pro-editor/commit/0ad8699))
+- Ci fixed ([78ed03e](https://github.com/ant-design/pro-editor/commit/78ed03e))
+- Merge ci build branch ([7df5f4e](https://github.com/ant-design/pro-editor/commit/7df5f4e))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
 ## [Version&nbsp;0.21.0](https://github.com/ant-design/pro-editor/compare/v0.20.5...v0.21.0)
 
 <sup>Released on **2023-10-13**</sup>
