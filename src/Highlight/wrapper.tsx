@@ -20,16 +20,10 @@ export interface HighlighterWrapperProps extends DivProps {
    */
   language: string;
 }
-
-const options: SelectProps['options'] = [];
-
-Object.entries(languageMap).forEach(([key, value]) => {
-  console.log(key, value);
-  options.push({
-    label: key,
-    value: key.toLowerCase(),
-  });
-});
+const options: SelectProps['options'] = Object.keys(languageMap).map((key) => ({
+  label: key,
+  value: key.toLowerCase(),
+}));
 
 export const FullFeatureWrapper = memo<HighlighterWrapperProps & HighlightProps>((props) => {
   const {
