@@ -1,5 +1,42 @@
 # Changelog
 
+## [Version&nbsp;0.23.0](https://github.com/ant-design/pro-editor/compare/v0.22.0...v0.23.0)
+
+<sup>Released on **2023-10-31**</sup>
+
+#### ✨ 新特性
+
+- Add snapshot update, change options create function, highlight add pro wrapper mode, update snapshot.
+
+#### 🐛 修复
+
+- Merge main, tsc lint fixed.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's improved
+
+- Add snapshot update ([55a4b0d](https://github.com/ant-design/pro-editor/commit/55a4b0d))
+- Change options create function ([00876d0](https://github.com/ant-design/pro-editor/commit/00876d0))
+- Highlight add pro wrapper mode ([f7b6ece](https://github.com/ant-design/pro-editor/commit/f7b6ece))
+- Update snapshot ([783285c](https://github.com/ant-design/pro-editor/commit/783285c))
+
+#### What's fixed
+
+- Merge main ([1804afa](https://github.com/ant-design/pro-editor/commit/1804afa))
+- Tsc lint fixed ([23c3705](https://github.com/ant-design/pro-editor/commit/23c3705))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
 ## [Version&nbsp;0.22.0](https://github.com/ant-design/pro-editor/compare/v0.21.0...v0.22.0)
 
 <sup>Released on **2023-10-31**</sup>
