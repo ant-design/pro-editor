@@ -1,11 +1,7 @@
 import { HighlightBase, HighlightProps } from './defalut';
 import FullFeatureWrapper from './wrapper';
 
-const Highlight = (
-  props: HighlightProps & {
-    containerWrapper: boolean;
-  },
-) => {
+const Highlight = (props: HighlightProps) => {
   if (props?.containerWrapper) {
     return <FullFeatureWrapper {...props} />;
   }
