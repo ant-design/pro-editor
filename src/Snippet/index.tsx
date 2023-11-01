@@ -1,8 +1,9 @@
+import HighLighter from '@/Highlight/components/HighLighter';
+import CopyButton from '@/components/CopyButton';
+import Spotlight from '@/components/Spotlight';
 import { memo } from 'react';
-
-import { Highlight } from '@ant-design/pro-editor';
-
 import { DivProps } from 'react-layout-kit';
+import { getPrefixCls } from '..';
 import { useStyles } from './style';
 
 export interface SnippetProps extends DivProps {
@@ -34,28 +35,37 @@ export interface SnippetProps extends DivProps {
    * @default 'ghost'
    */
   type?: 'ghost' | 'block';
+
+  prefixCls?: string;
 }
 
-const Snippet = memo<SnippetProps>(
-  ({
-    symbol,
+const Snippet = memo<SnippetProps>((props) => {
+  const {
+    symbol = '$',
     language = 'tsx',
     children,
-    // copyable = true,
+    copyable = true,
+    prefixCls: customPrefixCls,
     type = 'ghost',
     spotlight,
     className,
-    ...props
-  }) => {
-    const { styles, cx } = useStyles(type);
-    return (
-      <div className={cx(styles.container, className)} {...props}>
-        {/* {spotlight && <Spotlight />} */}
-        <Highlight language={language}>{[symbol, children].filter(Boolean).join(' ')}</Highlight>
-        {/* {copyable && <CopyButton content={children} size={{ blockSize: 24, fontSize: 14 }} />} */}
-      </div>
-    );
-  },
-);
+    ...rest
+  } = props;
+  const prefixCls = getPrefixCls('snippet', customPrefixCls);
+
+  const { styles, cx } = useStyles({
+    type,
+    prefixCls,
+  });
+  return (
+    <div className={cx(styles.container, className)} {...rest}>
+      {spotlight && <Spotlight />}
+      <HighLighter language={language} prefixCls={prefixCls}>
+        {[symbol, children].filter(Boolean).join(' ')}
+      </HighLighter>
+      {copyable && <CopyButton content={children} />}
+    </div>
+  );
+});
 
 export { Snippet };
