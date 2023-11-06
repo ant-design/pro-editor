@@ -1,6 +1,7 @@
 import HighLighter from '@/Highlight/components/HighLighter';
 import CopyButton from '@/components/CopyButton';
 import Spotlight from '@/components/Spotlight';
+import { useThemeMode } from 'antd-style';
 import { memo } from 'react';
 import { DivProps } from 'react-layout-kit';
 import { getPrefixCls } from '..';
@@ -52,6 +53,7 @@ const Snippet = memo<SnippetProps>((props) => {
     ...rest
   } = props;
   const prefixCls = getPrefixCls('snippet', customPrefixCls);
+  const { isDarkMode } = useThemeMode();
 
   const { styles, cx } = useStyles({
     type,
@@ -60,7 +62,7 @@ const Snippet = memo<SnippetProps>((props) => {
   return (
     <div className={cx(styles.container, className)} {...rest}>
       {spotlight && <Spotlight />}
-      <HighLighter language={language} prefixCls={prefixCls}>
+      <HighLighter language={language} prefixCls={prefixCls} theme={isDarkMode ? 'dark' : 'light'}>
         {[symbol, children].filter(Boolean).join(' ')}
       </HighLighter>
       {copyable && <CopyButton content={children} />}
