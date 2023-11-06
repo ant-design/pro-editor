@@ -1,5 +1,33 @@
 # Changelog
 
+## [Version&nbsp;0.24.0](https://github.com/ant-design/pro-editor/compare/v0.23.0...v0.24.0)
+
+<sup>Released on **2023-11-06**</sup>
+
+#### ✨ 新特性
+
+- New Components Snippet init, snippet almost done, snippet auto theme", use shikiji to replace shikiji-es.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's improved
+
+- New Components Snippet init ([724874b](https://github.com/ant-design/pro-editor/commit/724874b))
+- Snippet almost done ([fc0b503](https://github.com/ant-design/pro-editor/commit/fc0b503))
+- Snippet auto theme" ([181c494](https://github.com/ant-design/pro-editor/commit/181c494))
+- Use shikiji to replace shikiji-es ([9621cc2](https://github.com/ant-design/pro-editor/commit/9621cc2))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
 ## [Version&nbsp;0.23.0](https://github.com/ant-design/pro-editor/compare/v0.22.0...v0.23.0)
 
 <sup>Released on **2023-10-31**</sup>
