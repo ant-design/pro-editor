@@ -18805,22 +18805,26 @@ exports[`<Highlight /> > renders wrapper.tsx correctly 1`] = `
             <span
               class="studio-btn-icon"
             >
-              <svg
-                class="lucide lucide-chevron-down"
-                fill="none"
-                height="14"
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                viewBox="0 0 24 24"
-                width="14"
-                xmlns="http://www.w3.org/2000/svg"
+              <span
+                aria-label="down"
+                class="anticon anticon-down"
+                role="img"
+                size="14"
               >
-                <path
-                  d="m6 9 6 6 6-6"
-                />
-              </svg>
+                <svg
+                  aria-hidden="true"
+                  data-icon="down"
+                  fill="currentColor"
+                  focusable="false"
+                  height="1em"
+                  viewBox="64 64 896 896"
+                  width="1em"
+                >
+                  <path
+                    d="M884 256h-75c-5.1 0-9.9 2.5-12.9 6.6L512 654.2 227.9 262.6c-3-4.1-7.8-6.6-12.9-6.6h-75c-6.5 0-10.3 7.4-6.5 12.7l352.6 486.1c12.8 17.6 39 17.6 51.7 0l352.6-486.1c3.9-5.3.1-12.7-6.4-12.7z"
+                  />
+                </svg>
+              </span>
             </span>
           </button>
           <div
@@ -19092,22 +19096,26 @@ exports[`<Highlight /> > renders wrapper.tsx correctly 1`] = `
             <span
               class="studio-btn-icon"
             >
-              <svg
-                class="lucide lucide-chevron-down"
-                fill="none"
-                height="14"
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                viewBox="0 0 24 24"
-                width="14"
-                xmlns="http://www.w3.org/2000/svg"
+              <span
+                aria-label="down"
+                class="anticon anticon-down"
+                role="img"
+                size="14"
               >
-                <path
-                  d="m6 9 6 6 6-6"
-                />
-              </svg>
+                <svg
+                  aria-hidden="true"
+                  data-icon="down"
+                  fill="currentColor"
+                  focusable="false"
+                  height="1em"
+                  viewBox="64 64 896 896"
+                  width="1em"
+                >
+                  <path
+                    d="M884 256h-75c-5.1 0-9.9 2.5-12.9 6.6L512 654.2 227.9 262.6c-3-4.1-7.8-6.6-12.9-6.6h-75c-6.5 0-10.3 7.4-6.5 12.7l352.6 486.1c12.8 17.6 39 17.6 51.7 0l352.6-486.1c3.9-5.3.1-12.7-6.4-12.7z"
+                  />
+                </svg>
+              </span>
             </span>
           </button>
           <div
@@ -20441,10 +20449,10 @@ exports[`<Snippet /> > renders index.tsx correctly 1`] = `
   border: 1px solid #d9d9d9;
   position: relative;
   overflow: hidden;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   gap: 8px;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -20468,10 +20476,6 @@ exports[`<Snippet /> > renders index.tsx correctly 1`] = `
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
-}
-
-.emotion-0 .prism-code {
-  background: none!important;
 }
 
 .emotion-0 pre {
@@ -20635,7 +20639,6 @@ exports[`<Snippet /> > renders index.tsx correctly 1`] = `
 <div>
   <div
     class="studio-snippet-container emotion-0"
-    style="width: 350px;"
   >
     <pre
       class="emotion-1"
@@ -20693,30 +20696,26 @@ exports[`<Snippet /> > renders index.tsx correctly 1`] = `
       <span
         class="studio-btn-icon"
       >
-        <svg
-          class="lucide lucide-copy"
-          fill="none"
-          height="12"
-          stroke="currentColor"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="2"
-          viewBox="0 0 24 24"
-          width="12"
-          xmlns="http://www.w3.org/2000/svg"
+        <span
+          aria-label="copy"
+          class="anticon anticon-copy"
+          role="img"
+          size="12"
         >
-          <rect
-            height="14"
-            rx="2"
-            ry="2"
-            width="14"
-            x="8"
-            y="8"
-          />
-          <path
-            d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"
-          />
-        </svg>
+          <svg
+            aria-hidden="true"
+            data-icon="copy"
+            fill="currentColor"
+            focusable="false"
+            height="1em"
+            viewBox="64 64 896 896"
+            width="1em"
+          >
+            <path
+              d="M832 64H296c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h496v688c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8V96c0-17.7-14.3-32-32-32zM704 192H192c-17.7 0-32 14.3-32 32v530.7c0 8.5 3.4 16.6 9.4 22.6l173.3 173.3c2.2 2.2 4.7 4 7.4 5.5v1.9h4.2c3.5 1.3 7.2 2 11 2H704c17.7 0 32-14.3 32-32V224c0-17.7-14.3-32-32-32zM350 856.2L263.9 770H350v86.2zM664 888H414V746c0-22.1-17.9-40-40-40H232V264h432v624z"
+            />
+          </svg>
+        </span>
       </span>
     </button>
   </div>
