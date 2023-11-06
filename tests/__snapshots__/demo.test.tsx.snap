@@ -16897,39 +16897,45 @@ exports[`<Highlight /> > renders basic.tsx correctly 1`] = `
             >
                   
               <span
+                class="hljs-keyword"
+              >
+                public
+              </span>
+               
+              <span
+                class="hljs-keyword"
+              >
+                static
+              </span>
+               
+              <span
+                class="hljs-built_in"
+              >
+                void
+              </span>
+               
+              <span
                 class="hljs-function"
               >
-                <span
-                  class="hljs-keyword"
-                >
-                  public
-                </span>
-                 
-                <span
-                  class="hljs-keyword"
-                >
-                  static
-                </span>
-                 
-                <span
-                  class="hljs-keyword"
-                >
-                  void
-                </span>
-                 
                 <span
                   class="hljs-title"
                 >
                   main
                 </span>
+                (
                 <span
                   class="hljs-params"
                 >
-                  (String[] args)
+                  <span
+                    class="hljs-built_in"
+                  >
+                    String
+                  </span>
+                  [] args
                 </span>
-                 
+                )
               </span>
-              {
+               {
             </td>
           </tr>
           <tr>
@@ -17280,39 +17286,45 @@ exports[`<Highlight /> > renders lineNumber.tsx correctly 1`] = `
             >
                   
               <span
+                class="hljs-keyword"
+              >
+                public
+              </span>
+               
+              <span
+                class="hljs-keyword"
+              >
+                static
+              </span>
+               
+              <span
+                class="hljs-built_in"
+              >
+                void
+              </span>
+               
+              <span
                 class="hljs-function"
               >
-                <span
-                  class="hljs-keyword"
-                >
-                  public
-                </span>
-                 
-                <span
-                  class="hljs-keyword"
-                >
-                  static
-                </span>
-                 
-                <span
-                  class="hljs-keyword"
-                >
-                  void
-                </span>
-                 
                 <span
                   class="hljs-title"
                 >
                   main
                 </span>
+                (
                 <span
                   class="hljs-params"
                 >
-                  (String[] args)
+                  <span
+                    class="hljs-built_in"
+                  >
+                    String
+                  </span>
+                  [] args
                 </span>
-                 
+                )
               </span>
-              {
+               {
             </td>
           </tr>
           <tr>
@@ -18793,22 +18805,26 @@ exports[`<Highlight /> > renders wrapper.tsx correctly 1`] = `
             <span
               class="studio-btn-icon"
             >
-              <svg
-                class="lucide lucide-chevron-down"
-                fill="none"
-                height="14"
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                viewBox="0 0 24 24"
-                width="14"
-                xmlns="http://www.w3.org/2000/svg"
+              <span
+                aria-label="down"
+                class="anticon anticon-down"
+                role="img"
+                size="14"
               >
-                <path
-                  d="m6 9 6 6 6-6"
-                />
-              </svg>
+                <svg
+                  aria-hidden="true"
+                  data-icon="down"
+                  fill="currentColor"
+                  focusable="false"
+                  height="1em"
+                  viewBox="64 64 896 896"
+                  width="1em"
+                >
+                  <path
+                    d="M884 256h-75c-5.1 0-9.9 2.5-12.9 6.6L512 654.2 227.9 262.6c-3-4.1-7.8-6.6-12.9-6.6h-75c-6.5 0-10.3 7.4-6.5 12.7l352.6 486.1c12.8 17.6 39 17.6 51.7 0l352.6-486.1c3.9-5.3.1-12.7-6.4-12.7z"
+                  />
+                </svg>
+              </span>
             </span>
           </button>
           <div
@@ -19080,22 +19096,26 @@ exports[`<Highlight /> > renders wrapper.tsx correctly 1`] = `
             <span
               class="studio-btn-icon"
             >
-              <svg
-                class="lucide lucide-chevron-down"
-                fill="none"
-                height="14"
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                viewBox="0 0 24 24"
-                width="14"
-                xmlns="http://www.w3.org/2000/svg"
+              <span
+                aria-label="down"
+                class="anticon anticon-down"
+                role="img"
+                size="14"
               >
-                <path
-                  d="m6 9 6 6 6-6"
-                />
-              </svg>
+                <svg
+                  aria-hidden="true"
+                  data-icon="down"
+                  fill="currentColor"
+                  focusable="false"
+                  height="1em"
+                  viewBox="64 64 896 896"
+                  width="1em"
+                >
+                  <path
+                    d="M884 256h-75c-5.1 0-9.9 2.5-12.9 6.6L512 654.2 227.9 262.6c-3-4.1-7.8-6.6-12.9-6.6h-75c-6.5 0-10.3 7.4-6.5 12.7l352.6 486.1c12.8 17.6 39 17.6 51.7 0l352.6-486.1c3.9-5.3.1-12.7-6.4-12.7z"
+                  />
+                </svg>
+              </span>
             </span>
           </button>
           <div
@@ -20419,6 +20439,285 @@ exports[`<LevaPanel /> > renders button.tsx correctly 1`] = `
         </div>
       </div>
     </div>
+  </div>
+</div>
+`;
+
+exports[`<Snippet /> > renders index.tsx correctly 1`] = `
+.emotion-0 {
+  background-color: transparent;
+  border: 1px solid #d9d9d9;
+  position: relative;
+  overflow: hidden;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  gap: 8px;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  max-width: 100%;
+  height: 38px;
+  padding: 0 8px 0 12px;
+  border-radius: 6px;
+  -webkit-transition: background-color 100ms cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: background-color 100ms cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.emotion-0:hover {
+  background-color: rgba(0, 0, 0, 0.04);
+}
+
+.emotion-0 .studio-snippet-shiki {
+  position: relative;
+  overflow: hidden;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.emotion-0 pre {
+  overflow-x: auto!important;
+  overflow-y: hidden!important;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  height: 36px!important;
+  margin: 0!important;
+  line-height: 1;
+  background: none!important;
+}
+
+.emotion-0 code[class*='language-'] {
+  background: none!important;
+}
+
+.emotion-1 {
+  display: block;
+  overflow-x: auto;
+  color: #333333;
+  background-color: #666666;
+}
+
+.emotion-1 .hljs-comment,
+.emotion-1 .hljs-quote {
+  color: #aaaaaa;
+}
+
+.emotion-1 .hljs-variable,
+.emotion-1 .hljs-attribute,
+.emotion-1 .hljs-template-variable,
+.emotion-1 .hljs-tag,
+.emotion-1 .hljs-name,
+.emotion-1 .hljs-selector-id,
+.emotion-1 .hljs-selector-class,
+.emotion-1 .hljs-regexp,
+.emotion-1 .hljs-title,
+.emotion-1 .hljs-deletion {
+  color: #ec5e41;
+}
+
+.emotion-1 .hljs-builtin-name,
+.emotion-1 .hljs-literal,
+.emotion-1 .hljs-type,
+.emotion-1 .hljs-params,
+.emotion-1 .hljs-meta,
+.emotion-1 .hljs-link {
+  color: #ff802b;
+}
+
+.emotion-1 .hljs-string,
+.emotion-1 .hljs-number,
+.emotion-1 .hljs-symbol,
+.emotion-1 .hljs-bullet,
+.emotion-1 .hljs-addition {
+  color: #55b467;
+}
+
+.emotion-1 .hljs-keyword,
+.emotion-1 .hljs-doctag,
+.emotion-1 .hljs-built_in,
+.emotion-1 .hljs-selector-tag,
+.emotion-1 .hljs-section {
+  color: #369eff;
+}
+
+.emotion-1 .hljs-emphasis {
+  font-style: italic;
+}
+
+.emotion-1 .hljs-strong {
+  font-weight: bold;
+}
+
+.emotion-2 {
+  width: 100%;
+}
+
+.emotion-3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.emotion-4 {
+  -webkit-backdrop-filter: saturate(180%) blur(10px);
+  backdrop-filter: saturate(180%) blur(10px);
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  height: 36px;
+  padding: 0 8px;
+  font-family: 'SFMono-Regular',Consolas,'Liberation Mono',Menlo,Courier,monospace;
+  color: #aaaaaa;
+  border-radius: 6;
+}
+
+.emotion-5 {
+  color: #aaaaaa;
+}
+
+.emotion-6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-transition: color 600ms cubic-bezier(0.215, 0.61, 0.355, 1),scale 400ms cubic-bezier(0.215, 0.61, 0.355, 1),background-color 100ms cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: color 600ms cubic-bezier(0.215, 0.61, 0.355, 1),scale 400ms cubic-bezier(0.215, 0.61, 0.355, 1),background-color 100ms cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.emotion-6:hover {
+  color: rgba(0, 0, 0, 0.88)!important;
+}
+
+.emotion-6:active {
+  scale: 0.8;
+  color: rgba(0, 0, 0, 0.88);
+}
+
+<div>
+  <div
+    class="studio-snippet-container emotion-0"
+  >
+    <pre
+      class="emotion-1"
+    >
+      <table
+        border="0"
+        cellpadding="0"
+        cellspacing="0"
+      >
+        <tbody>
+          <tr>
+            <td
+              class="undefined-content emotion-2"
+            >
+              $ pnpm install 
+              <span
+                class="hljs-meta"
+              >
+                @ant
+              </span>
+              -design/pro-chat
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </pre>
+    <div
+      class="layoutkit-center emotion-3 emotion-4"
+    >
+      <span
+        aria-label="loading-3-quarters"
+        class="anticon anticon-loading-3-quarters anticon-spin emotion-5"
+        role="img"
+      >
+        <svg
+          aria-hidden="true"
+          data-icon="loading-3-quarters"
+          fill="currentColor"
+          focusable="false"
+          height="1em"
+          viewBox="0 0 1024 1024"
+          width="1em"
+        >
+          <path
+            d="M512 1024c-69.1 0-136.2-13.5-199.3-40.2C251.7 958 197 921 150 874c-47-47-84-101.7-109.8-162.7C13.5 648.2 0 581.1 0 512c0-19.9 16.1-36 36-36s36 16.1 36 36c0 59.4 11.6 117 34.6 171.3 22.2 52.4 53.9 99.5 94.3 139.9 40.4 40.4 87.5 72.2 139.9 94.3C395 940.4 452.6 952 512 952c59.4 0 117-11.6 171.3-34.6 52.4-22.2 99.5-53.9 139.9-94.3 40.4-40.4 72.2-87.5 94.3-139.9C940.4 629 952 571.4 952 512c0-59.4-11.6-117-34.6-171.3a440.45 440.45 0 00-94.3-139.9 437.71 437.71 0 00-139.9-94.3C629 83.6 571.4 72 512 72c-19.9 0-36-16.1-36-36s16.1-36 36-36c69.1 0 136.2 13.5 199.3 40.2C772.3 66 827 103 874 150c47 47 83.9 101.8 109.7 162.7 26.7 63.1 40.2 130.2 40.2 199.3s-13.5 136.2-40.2 199.3C958 772.3 921 827 874 874c-47 47-101.8 83.9-162.7 109.7-63.1 26.8-130.2 40.3-199.3 40.3z"
+          />
+        </svg>
+      </span>
+      Highlighting...
+    </div>
+    <button
+      class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-6"
+      type="button"
+    >
+      <span
+        class="studio-btn-icon"
+      >
+        <span
+          aria-label="copy"
+          class="anticon anticon-copy"
+          role="img"
+          size="12"
+        >
+          <svg
+            aria-hidden="true"
+            data-icon="copy"
+            fill="currentColor"
+            focusable="false"
+            height="1em"
+            viewBox="64 64 896 896"
+            width="1em"
+          >
+            <path
+              d="M832 64H296c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h496v688c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8V96c0-17.7-14.3-32-32-32zM704 192H192c-17.7 0-32 14.3-32 32v530.7c0 8.5 3.4 16.6 9.4 22.6l173.3 173.3c2.2 2.2 4.7 4 7.4 5.5v1.9h4.2c3.5 1.3 7.2 2 11 2H704c17.7 0 32-14.3 32-32V224c0-17.7-14.3-32-32-32zM350 856.2L263.9 770H350v86.2zM664 888H414V746c0-22.1-17.9-40-40-40H232V264h432v624z"
+            />
+          </svg>
+        </span>
+      </span>
+    </button>
   </div>
 </div>
 `;

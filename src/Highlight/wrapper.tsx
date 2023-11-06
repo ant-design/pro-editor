@@ -1,6 +1,6 @@
+import { DownOutlined, RightOutlined } from '@ant-design/icons';
 import { ActionIcon, Button, Select, type SelectProps } from '@ant-design/pro-editor';
 import classNames from 'classnames';
-import { ChevronDown, ChevronRight } from 'lucide-react';
 import { memo, useState } from 'react';
 import { DivProps, Flexbox } from 'react-layout-kit';
 import { getPrefixCls } from '..';
@@ -49,7 +49,7 @@ export const FullFeatureWrapper = memo<HighlighterWrapperProps & HighlightProps>
       <Flexbox align={'center'} className={styles.header} horizontal justify={'space-between'}>
         <ActionIcon
           className={styles.expandIcon}
-          icon={expand ? <ChevronDown size={14} /> : <ChevronRight size={14} />}
+          icon={expand ? <DownOutlined size={14} /> : <RightOutlined size={14} />}
           onClick={() => setExpand(!expand)}
           size={24}
         />

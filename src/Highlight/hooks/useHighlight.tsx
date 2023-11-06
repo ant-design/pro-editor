@@ -1,6 +1,7 @@
 import hljs from 'highlight.js/lib/core';
 import { useEffect } from 'react';
 
+import { default as bash, default as sh } from 'highlight.js/lib/languages/bash';
 import css from 'highlight.js/lib/languages/css';
 import java from 'highlight.js/lib/languages/java';
 import { default as javascript, default as jsx } from 'highlight.js/lib/languages/javascript';
@@ -26,6 +27,8 @@ export const languageMap = {
   java,
   python,
   sql,
+  bash,
+  sh,
 };
 
 export const useHighlight = (language) => {
@@ -41,10 +44,12 @@ export const useHighlight = (language) => {
   }, [language]);
 
   const renderHighlight = (content) => {
-    const result = (
-      language ? hljs.highlight(language, content || '') : hljs.highlightAuto(content)
-    )?.value;
-
+    let result = null;
+    if (language & languageMap[language]) {
+      result = hljs.highlight(language, content || '').value;
+    } else {
+      result = hljs.highlightAuto(content).value;
+    }
     return result;
   };
   return { renderHighlight };
