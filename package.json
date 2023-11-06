@@ -141,7 +141,6 @@
     "husky": "^8.0.3",
     "jsdom": "^22.1.0",
     "lint-staged": "^13.3.0",
-    "lucide-react": "latest",
     "prettier-plugin-organize-imports": "^3.2.3",
     "prettier-plugin-packagejson": "^2.4.5",
     "react": "^18.2.0",

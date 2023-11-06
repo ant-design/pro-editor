@@ -1,6 +1,5 @@
-import { CopyOutlined, ZoomInOutlined, ZoomOutOutlined } from '@ant-design/icons';
+import { CopyOutlined, ExpandOutlined, ZoomInOutlined, ZoomOutOutlined } from '@ant-design/icons';
 import { ContextMenu } from '@ant-design/pro-editor';
-import { BoxSelectIcon } from 'lucide-react';
 
 export default () => {
   return (
@@ -17,7 +16,7 @@ export default () => {
           {
             key: 'selectAll',
             label: '选择全部',
-            icon: <BoxSelectIcon width={'1em'} height={'1em'} />,
+            icon: <ExpandOutlined width={'1em'} height={'1em'} />,
             shortcut: ['meta', 'A'],
           },
           { label: '放大', key: 'zoomIn', icon: <ZoomInOutlined /> },

@@ -12,9 +12,8 @@ export const useStyles = createStyles(({ css, cx, token }, { type, prefixCls }) 
       typeStylish,
       css`
         position: relative;
-
         overflow: hidden;
-        display: flex;
+        display: inline-flex;
         gap: 8px;
         align-items: center;
         max-width: 100%;
@@ -33,10 +32,6 @@ export const useStyles = createStyles(({ css, cx, token }, { type, prefixCls }) 
           position: relative;
           overflow: hidden;
           flex: 1;
-        }
-
-        .prism-code {
-          background: none !important;
         }
 
         pre {

@@ -1,5 +1,5 @@
+import { CopyOutlined } from '@ant-design/icons';
 import copy from 'copy-to-clipboard';
-import { Copy } from 'lucide-react';
 import { memo } from 'react';
 
 import ActionIcon from '@/ActionIcon';
@@ -32,7 +32,7 @@ const CopyButton = memo<CopyButtonProps>(
       <ActionIcon
         {...props}
         className={className}
-        icon={<Copy size={12} />}
+        icon={<CopyOutlined size={12} />}
         onClick={() => {
           copy(content);
           setCopied();
