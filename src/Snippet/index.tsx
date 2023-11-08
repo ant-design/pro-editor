@@ -9,30 +9,30 @@ import { useStyles } from './style';
 
 export interface SnippetProps extends DivProps {
   /**
-   * @description The content to be displayed inside the Snippet component
+   * @description 内容区域
    */
   children: string;
   /**
-   * @description Whether the Snippet component is copyable or not
+   * @description 是否支持可复制的能力
    * @default true
    */
   copyable?: boolean;
   /**
-   * @description The language of the content inside the Snippet component
+   * @description 指定渲染的语言类型
    * @default 'tsx'
    */
   language?: string;
   /**
-   * @description Whether add spotlight background
+   * @description 是否添加聚光灯背景
    * @default false
    */
   spotlight?: boolean;
   /**
-   * @description The symbol to be displayed before the content inside the Snippet component
+   * @description 开头渲染的符号标志
    */
   symbol?: string;
   /**
-   * @description The type of the Snippet component
+   * @description 组件的渲染类型
    * @default 'ghost'
    */
   type?: 'ghost' | 'block';
@@ -63,7 +63,7 @@ const Snippet = memo<SnippetProps>((props) => {
     <div className={cx(styles.container, className)} {...rest}>
       {spotlight && <Spotlight />}
       <HighLighter language={language} prefixCls={prefixCls} theme={isDarkMode ? 'dark' : 'light'}>
-        {[symbol, children].filter(Boolean).join(' ')}
+        {symbol ? [symbol, children].join(' ') : children}
       </HighLighter>
       {copyable && <CopyButton content={children} />}
     </div>
