@@ -3,6 +3,7 @@ import { createRef } from 'react';
 import { getPrefixCls } from '../theme';
 import CopyButton from './components/CopyButton';
 import HighLighter from './components/HighLighter';
+import LanguageTag from './components/LanguageTag';
 import { useKeyDownCopyEvent } from './hooks/useKeyDownCopyEvent';
 import { useStyles } from './style';
 import { THEME_LIGHT, ThemeType } from './theme';
@@ -65,6 +66,10 @@ export interface HighlightProps {
    * 是否需要默认外层 wrapper
    */
   containerWrapper?: boolean;
+  /**
+   * 是否需默认展示语言种类
+   */
+  showLanguage?: boolean;
 }
 
 const HighlightBase: React.FC<HighlightProps> = (props) => {
@@ -75,8 +80,9 @@ const HighlightBase: React.FC<HighlightProps> = (props) => {
     lineNumber = false,
     copyable = true,
     theme = THEME_LIGHT,
-    language,
+    language = 'tsx',
     prefixCls: customPrefixCls,
+    showLanguage = true,
     type = 'block',
     onCopy,
   } = props;
@@ -95,6 +101,11 @@ const HighlightBase: React.FC<HighlightProps> = (props) => {
       >
         {copyable && (
           <CopyButton prefixCls={prefixCls} onCopy={onCopy} theme={theme} content={children} />
+        )}
+        {showLanguage && language && (
+          <LanguageTag prefixCls={prefixCls} theme={theme}>
+            {language.toLowerCase()}
+          </LanguageTag>
         )}
         <HighLighter
           lineNumber={lineNumber}
