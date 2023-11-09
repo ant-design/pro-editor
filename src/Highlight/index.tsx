@@ -8,4 +8,6 @@ const Highlight = (props: HighlightProps) => {
   return <HighlightBase {...props} />;
 };
 
+export * from './defalut';
+export * from './wrapper';
 export { Highlight };

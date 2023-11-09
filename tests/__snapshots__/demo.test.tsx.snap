@@ -16642,6 +16642,16 @@ exports[`<Highlight /> > renders basic.tsx correctly 1`] = `
   transition: background-color 100ms cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
+.emotion-0:not(:hover) .studio-highlight-copy {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.emotion-0:not(:hover) .studio-highlight-tag {
+  visibility: hidden;
+  opacity: 0;
+}
+
 .emotion-0 pre {
   margin: 0!important;
   padding: 16px 24px!important;
@@ -16695,68 +16705,87 @@ exports[`<Highlight /> > renders basic.tsx correctly 1`] = `
 }
 
 .emotion-4 {
+  color: #dddddd!important;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 2;
+  right: 0;
+  bottom: 8px;
+  background-color: hsla(221.29999999999995, 13.6%, 22.4%, 0.9);
+  font-family: 'SFMono-Regular',Consolas,'Liberation Mono',Menlo,Courier,monospace;
+  color: #777777;
+  -webkit-transition: opacity 0.1s;
+  transition: opacity 0.1s;
+}
+
+P .emotion-4:hover {
+  color: #dddddd;
+  background: rgba(0, 0, 0, 0.15);
+}
+
+.emotion-5 {
   display: block;
   overflow-x: auto;
   color: #dddddd;
   background-color: #777777;
 }
 
-.emotion-4 .hljs-comment,
-.emotion-4 .hljs-quote {
+.emotion-5 .hljs-comment,
+.emotion-5 .hljs-quote {
   color: #555555;
 }
 
-.emotion-4 .hljs-variable,
-.emotion-4 .hljs-attribute,
-.emotion-4 .hljs-template-variable,
-.emotion-4 .hljs-tag,
-.emotion-4 .hljs-name,
-.emotion-4 .hljs-selector-id,
-.emotion-4 .hljs-selector-class,
-.emotion-4 .hljs-regexp,
-.emotion-4 .hljs-title,
-.emotion-4 .hljs-deletion {
+.emotion-5 .hljs-variable,
+.emotion-5 .hljs-attribute,
+.emotion-5 .hljs-template-variable,
+.emotion-5 .hljs-tag,
+.emotion-5 .hljs-name,
+.emotion-5 .hljs-selector-id,
+.emotion-5 .hljs-selector-class,
+.emotion-5 .hljs-regexp,
+.emotion-5 .hljs-title,
+.emotion-5 .hljs-deletion {
   color: #f04f88;
 }
 
-.emotion-4 .hljs-builtin-name,
-.emotion-4 .hljs-literal,
-.emotion-4 .hljs-type,
-.emotion-4 .hljs-params,
-.emotion-4 .hljs-meta,
-.emotion-4 .hljs-link {
+.emotion-5 .hljs-builtin-name,
+.emotion-5 .hljs-literal,
+.emotion-5 .hljs-type,
+.emotion-5 .hljs-params,
+.emotion-5 .hljs-meta,
+.emotion-5 .hljs-link {
   color: #ffcb47;
 }
 
-.emotion-4 .hljs-string,
-.emotion-4 .hljs-number,
-.emotion-4 .hljs-symbol,
-.emotion-4 .hljs-bullet,
-.emotion-4 .hljs-addition {
+.emotion-5 .hljs-string,
+.emotion-5 .hljs-number,
+.emotion-5 .hljs-symbol,
+.emotion-5 .hljs-bullet,
+.emotion-5 .hljs-addition {
   color: #c4f042;
 }
 
-.emotion-4 .hljs-keyword,
-.emotion-4 .hljs-doctag,
-.emotion-4 .hljs-built_in,
-.emotion-4 .hljs-selector-tag,
-.emotion-4 .hljs-section {
+.emotion-5 .hljs-keyword,
+.emotion-5 .hljs-doctag,
+.emotion-5 .hljs-built_in,
+.emotion-5 .hljs-selector-tag,
+.emotion-5 .hljs-section {
   color: #8ae8ff;
 }
 
-.emotion-4 .hljs-emphasis {
+.emotion-5 .hljs-emphasis {
   font-style: italic;
 }
 
-.emotion-4 .hljs-strong {
+.emotion-5 .hljs-strong {
   font-weight: bold;
 }
 
-.emotion-5 {
+.emotion-6 {
   width: 100%;
 }
 
-.emotion-10 {
+.emotion-11 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -16775,7 +16804,7 @@ exports[`<Highlight /> > renders basic.tsx correctly 1`] = `
   gap: 8px;
 }
 
-.emotion-11 {
+.emotion-12 {
   -webkit-backdrop-filter: saturate(180%) blur(10px);
   backdrop-filter: saturate(180%) blur(10px);
   position: absolute;
@@ -16800,7 +16829,7 @@ exports[`<Highlight /> > renders basic.tsx correctly 1`] = `
   border-radius: 6;
 }
 
-.emotion-12 {
+.emotion-13 {
   color: #555555;
 }
 
@@ -16853,8 +16882,13 @@ exports[`<Highlight /> > renders basic.tsx correctly 1`] = `
         </svg>
       </span>
     </button>
+    <span
+      class="studio-tag studio-tag-borderless studio-highlight-tag emotion-4"
+    >
+      java
+    </span>
     <pre
-      class="emotion-4"
+      class="emotion-5"
     >
       <table
         border="0"
@@ -16864,7 +16898,7 @@ exports[`<Highlight /> > renders basic.tsx correctly 1`] = `
         <tbody>
           <tr>
             <td
-              class="undefined-content emotion-5"
+              class="undefined-content emotion-6"
             >
               <span
                 class="hljs-keyword"
@@ -16893,7 +16927,7 @@ exports[`<Highlight /> > renders basic.tsx correctly 1`] = `
           </tr>
           <tr>
             <td
-              class="undefined-content emotion-5"
+              class="undefined-content emotion-6"
             >
                   
               <span
@@ -16940,7 +16974,7 @@ exports[`<Highlight /> > renders basic.tsx correctly 1`] = `
           </tr>
           <tr>
             <td
-              class="undefined-content emotion-5"
+              class="undefined-content emotion-6"
             >
                     System.out.println(
               <span
@@ -16953,14 +16987,14 @@ exports[`<Highlight /> > renders basic.tsx correctly 1`] = `
           </tr>
           <tr>
             <td
-              class="undefined-content emotion-5"
+              class="undefined-content emotion-6"
             >
                   }
             </td>
           </tr>
           <tr>
             <td
-              class="undefined-content emotion-5"
+              class="undefined-content emotion-6"
             >
                 }
             </td>
@@ -16969,11 +17003,11 @@ exports[`<Highlight /> > renders basic.tsx correctly 1`] = `
       </table>
     </pre>
     <div
-      class="layoutkit-center emotion-10 emotion-11"
+      class="layoutkit-center emotion-11 emotion-12"
     >
       <span
         aria-label="loading-3-quarters"
-        class="anticon anticon-loading-3-quarters anticon-spin emotion-12"
+        class="anticon anticon-loading-3-quarters anticon-spin emotion-13"
         role="img"
       >
         <svg
@@ -17008,6 +17042,16 @@ exports[`<Highlight /> > renders lineNumber.tsx correctly 1`] = `
   transition: background-color 100ms cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
+.emotion-0:not(:hover) .studio-highlight-copy {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.emotion-0:not(:hover) .studio-highlight-tag {
+  visibility: hidden;
+  opacity: 0;
+}
+
 .emotion-0 pre {
   margin: 0!important;
   padding: 16px 24px!important;
@@ -17061,64 +17105,83 @@ exports[`<Highlight /> > renders lineNumber.tsx correctly 1`] = `
 }
 
 .emotion-4 {
+  color: #333333!important;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 2;
+  right: 0;
+  bottom: 8px;
+  background-color: hsla(0, 0%, 95.1%, 0.9);
+  font-family: 'SFMono-Regular',Consolas,'Liberation Mono',Menlo,Courier,monospace;
+  color: #666666;
+  -webkit-transition: opacity 0.1s;
+  transition: opacity 0.1s;
+}
+
+P .emotion-4:hover {
+  color: #333333;
+  background: rgba(0, 0, 0, 0.15);
+}
+
+.emotion-5 {
   display: block;
   overflow-x: auto;
   color: #333333;
   background-color: #666666;
 }
 
-.emotion-4 .hljs-comment,
-.emotion-4 .hljs-quote {
+.emotion-5 .hljs-comment,
+.emotion-5 .hljs-quote {
   color: #aaaaaa;
 }
 
-.emotion-4 .hljs-variable,
-.emotion-4 .hljs-attribute,
-.emotion-4 .hljs-template-variable,
-.emotion-4 .hljs-tag,
-.emotion-4 .hljs-name,
-.emotion-4 .hljs-selector-id,
-.emotion-4 .hljs-selector-class,
-.emotion-4 .hljs-regexp,
-.emotion-4 .hljs-title,
-.emotion-4 .hljs-deletion {
+.emotion-5 .hljs-variable,
+.emotion-5 .hljs-attribute,
+.emotion-5 .hljs-template-variable,
+.emotion-5 .hljs-tag,
+.emotion-5 .hljs-name,
+.emotion-5 .hljs-selector-id,
+.emotion-5 .hljs-selector-class,
+.emotion-5 .hljs-regexp,
+.emotion-5 .hljs-title,
+.emotion-5 .hljs-deletion {
   color: #ec5e41;
 }
 
-.emotion-4 .hljs-builtin-name,
-.emotion-4 .hljs-literal,
-.emotion-4 .hljs-type,
-.emotion-4 .hljs-params,
-.emotion-4 .hljs-meta,
-.emotion-4 .hljs-link {
+.emotion-5 .hljs-builtin-name,
+.emotion-5 .hljs-literal,
+.emotion-5 .hljs-type,
+.emotion-5 .hljs-params,
+.emotion-5 .hljs-meta,
+.emotion-5 .hljs-link {
   color: #ff802b;
 }
 
-.emotion-4 .hljs-string,
-.emotion-4 .hljs-number,
-.emotion-4 .hljs-symbol,
-.emotion-4 .hljs-bullet,
-.emotion-4 .hljs-addition {
+.emotion-5 .hljs-string,
+.emotion-5 .hljs-number,
+.emotion-5 .hljs-symbol,
+.emotion-5 .hljs-bullet,
+.emotion-5 .hljs-addition {
   color: #55b467;
 }
 
-.emotion-4 .hljs-keyword,
-.emotion-4 .hljs-doctag,
-.emotion-4 .hljs-built_in,
-.emotion-4 .hljs-selector-tag,
-.emotion-4 .hljs-section {
+.emotion-5 .hljs-keyword,
+.emotion-5 .hljs-doctag,
+.emotion-5 .hljs-built_in,
+.emotion-5 .hljs-selector-tag,
+.emotion-5 .hljs-section {
   color: #369eff;
 }
 
-.emotion-4 .hljs-emphasis {
+.emotion-5 .hljs-emphasis {
   font-style: italic;
 }
 
-.emotion-4 .hljs-strong {
+.emotion-5 .hljs-strong {
   font-weight: bold;
 }
 
-.emotion-5 {
+.emotion-6 {
   box-sizing: border-box;
   width: 1rem;
   margin-right: 1.5rem;
@@ -17131,11 +17194,11 @@ exports[`<Highlight /> > renders lineNumber.tsx correctly 1`] = `
   user-select: none;
 }
 
-.emotion-6 {
+.emotion-7 {
   width: 100%;
 }
 
-.emotion-15 {
+.emotion-16 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -17154,7 +17217,7 @@ exports[`<Highlight /> > renders lineNumber.tsx correctly 1`] = `
   gap: 8px;
 }
 
-.emotion-16 {
+.emotion-17 {
   -webkit-backdrop-filter: saturate(180%) blur(10px);
   backdrop-filter: saturate(180%) blur(10px);
   position: absolute;
@@ -17179,7 +17242,7 @@ exports[`<Highlight /> > renders lineNumber.tsx correctly 1`] = `
   border-radius: 6;
 }
 
-.emotion-17 {
+.emotion-18 {
   color: #aaaaaa;
 }
 
@@ -17232,8 +17295,13 @@ exports[`<Highlight /> > renders lineNumber.tsx correctly 1`] = `
         </svg>
       </span>
     </button>
+    <span
+      class="studio-tag studio-tag-borderless studio-highlight-tag emotion-4"
+    >
+      java
+    </span>
     <pre
-      class="emotion-4"
+      class="emotion-5"
     >
       <table
         border="0"
@@ -17243,12 +17311,12 @@ exports[`<Highlight /> > renders lineNumber.tsx correctly 1`] = `
         <tbody>
           <tr>
             <td
-              class="undefined-index emotion-5"
+              class="undefined-index emotion-6"
             >
               1
             </td>
             <td
-              class="undefined-content emotion-6"
+              class="undefined-content emotion-7"
             >
               <span
                 class="hljs-keyword"
@@ -17277,12 +17345,12 @@ exports[`<Highlight /> > renders lineNumber.tsx correctly 1`] = `
           </tr>
           <tr>
             <td
-              class="undefined-index emotion-5"
+              class="undefined-index emotion-6"
             >
               2
             </td>
             <td
-              class="undefined-content emotion-6"
+              class="undefined-content emotion-7"
             >
                   
               <span
@@ -17329,12 +17397,12 @@ exports[`<Highlight /> > renders lineNumber.tsx correctly 1`] = `
           </tr>
           <tr>
             <td
-              class="undefined-index emotion-5"
+              class="undefined-index emotion-6"
             >
               3
             </td>
             <td
-              class="undefined-content emotion-6"
+              class="undefined-content emotion-7"
             >
                     System.out.println(
               <span
@@ -17347,24 +17415,24 @@ exports[`<Highlight /> > renders lineNumber.tsx correctly 1`] = `
           </tr>
           <tr>
             <td
-              class="undefined-index emotion-5"
+              class="undefined-index emotion-6"
             >
               4
             </td>
             <td
-              class="undefined-content emotion-6"
+              class="undefined-content emotion-7"
             >
                   }
             </td>
           </tr>
           <tr>
             <td
-              class="undefined-index emotion-5"
+              class="undefined-index emotion-6"
             >
               5
             </td>
             <td
-              class="undefined-content emotion-6"
+              class="undefined-content emotion-7"
             >
                 }
             </td>
@@ -17373,11 +17441,11 @@ exports[`<Highlight /> > renders lineNumber.tsx correctly 1`] = `
       </table>
     </pre>
     <div
-      class="layoutkit-center emotion-15 emotion-16"
+      class="layoutkit-center emotion-16 emotion-17"
     >
       <span
         aria-label="loading-3-quarters"
-        class="anticon anticon-loading-3-quarters anticon-spin emotion-17"
+        class="anticon anticon-loading-3-quarters anticon-spin emotion-18"
         role="img"
       >
         <svg
@@ -17410,6 +17478,16 @@ exports[`<Highlight /> > renders theme.tsx correctly 1`] = `
   border-radius: 6px;
   -webkit-transition: background-color 100ms cubic-bezier(0.215, 0.61, 0.355, 1);
   transition: background-color 100ms cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.emotion-0:not(:hover) .studio-highlight-copy {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.emotion-0:not(:hover) .studio-highlight-tag {
+  visibility: hidden;
+  opacity: 0;
 }
 
 .emotion-0 pre {
@@ -17465,68 +17543,87 @@ exports[`<Highlight /> > renders theme.tsx correctly 1`] = `
 }
 
 .emotion-4 {
+  color: #333333!important;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 2;
+  right: 0;
+  bottom: 8px;
+  background-color: hsla(0, 0%, 95.1%, 0.9);
+  font-family: 'SFMono-Regular',Consolas,'Liberation Mono',Menlo,Courier,monospace;
+  color: #666666;
+  -webkit-transition: opacity 0.1s;
+  transition: opacity 0.1s;
+}
+
+P .emotion-4:hover {
+  color: #333333;
+  background: rgba(0, 0, 0, 0.15);
+}
+
+.emotion-5 {
   display: block;
   overflow-x: auto;
   color: #333333;
   background-color: #666666;
 }
 
-.emotion-4 .hljs-comment,
-.emotion-4 .hljs-quote {
+.emotion-5 .hljs-comment,
+.emotion-5 .hljs-quote {
   color: #aaaaaa;
 }
 
-.emotion-4 .hljs-variable,
-.emotion-4 .hljs-attribute,
-.emotion-4 .hljs-template-variable,
-.emotion-4 .hljs-tag,
-.emotion-4 .hljs-name,
-.emotion-4 .hljs-selector-id,
-.emotion-4 .hljs-selector-class,
-.emotion-4 .hljs-regexp,
-.emotion-4 .hljs-title,
-.emotion-4 .hljs-deletion {
+.emotion-5 .hljs-variable,
+.emotion-5 .hljs-attribute,
+.emotion-5 .hljs-template-variable,
+.emotion-5 .hljs-tag,
+.emotion-5 .hljs-name,
+.emotion-5 .hljs-selector-id,
+.emotion-5 .hljs-selector-class,
+.emotion-5 .hljs-regexp,
+.emotion-5 .hljs-title,
+.emotion-5 .hljs-deletion {
   color: #ec5e41;
 }
 
-.emotion-4 .hljs-builtin-name,
-.emotion-4 .hljs-literal,
-.emotion-4 .hljs-type,
-.emotion-4 .hljs-params,
-.emotion-4 .hljs-meta,
-.emotion-4 .hljs-link {
+.emotion-5 .hljs-builtin-name,
+.emotion-5 .hljs-literal,
+.emotion-5 .hljs-type,
+.emotion-5 .hljs-params,
+.emotion-5 .hljs-meta,
+.emotion-5 .hljs-link {
   color: #ff802b;
 }
 
-.emotion-4 .hljs-string,
-.emotion-4 .hljs-number,
-.emotion-4 .hljs-symbol,
-.emotion-4 .hljs-bullet,
-.emotion-4 .hljs-addition {
+.emotion-5 .hljs-string,
+.emotion-5 .hljs-number,
+.emotion-5 .hljs-symbol,
+.emotion-5 .hljs-bullet,
+.emotion-5 .hljs-addition {
   color: #55b467;
 }
 
-.emotion-4 .hljs-keyword,
-.emotion-4 .hljs-doctag,
-.emotion-4 .hljs-built_in,
-.emotion-4 .hljs-selector-tag,
-.emotion-4 .hljs-section {
+.emotion-5 .hljs-keyword,
+.emotion-5 .hljs-doctag,
+.emotion-5 .hljs-built_in,
+.emotion-5 .hljs-selector-tag,
+.emotion-5 .hljs-section {
   color: #369eff;
 }
 
-.emotion-4 .hljs-emphasis {
+.emotion-5 .hljs-emphasis {
   font-style: italic;
 }
 
-.emotion-4 .hljs-strong {
+.emotion-5 .hljs-strong {
   font-weight: bold;
 }
 
-.emotion-5 {
+.emotion-6 {
   width: 100%;
 }
 
-.emotion-19 {
+.emotion-20 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -17545,7 +17642,7 @@ exports[`<Highlight /> > renders theme.tsx correctly 1`] = `
   gap: 8px;
 }
 
-.emotion-20 {
+.emotion-21 {
   -webkit-backdrop-filter: saturate(180%) blur(10px);
   backdrop-filter: saturate(180%) blur(10px);
   position: absolute;
@@ -17570,7 +17667,7 @@ exports[`<Highlight /> > renders theme.tsx correctly 1`] = `
   border-radius: 6;
 }
 
-.emotion-21 {
+.emotion-22 {
   color: #aaaaaa;
 }
 
@@ -17911,8 +18008,13 @@ exports[`<Highlight /> > renders theme.tsx correctly 1`] = `
             </svg>
           </span>
         </button>
+        <span
+          class="studio-tag studio-tag-borderless studio-highlight-tag emotion-4"
+        >
+          typescript
+        </span>
         <pre
-          class="emotion-4"
+          class="emotion-5"
         >
           <table
             border="0"
@@ -17922,7 +18024,7 @@ exports[`<Highlight /> > renders theme.tsx correctly 1`] = `
             <tbody>
               <tr>
                 <td
-                  class="undefined-content emotion-5"
+                  class="undefined-content emotion-6"
                 >
                   <span
                     class="hljs-class"
@@ -17945,7 +18047,7 @@ exports[`<Highlight /> > renders theme.tsx correctly 1`] = `
               </tr>
               <tr>
                 <td
-                  class="undefined-content emotion-5"
+                  class="undefined-content emotion-6"
                 >
                     
                   <span
@@ -17970,7 +18072,7 @@ exports[`<Highlight /> > renders theme.tsx correctly 1`] = `
               </tr>
               <tr>
                 <td
-                  class="undefined-content emotion-5"
+                  class="undefined-content emotion-6"
                 >
                     
                   <span
@@ -17999,7 +18101,7 @@ exports[`<Highlight /> > renders theme.tsx correctly 1`] = `
               </tr>
               <tr>
                 <td
-                  class="undefined-content emotion-5"
+                  class="undefined-content emotion-6"
                 >
                       
                   <span
@@ -18012,21 +18114,21 @@ exports[`<Highlight /> > renders theme.tsx correctly 1`] = `
               </tr>
               <tr>
                 <td
-                  class="undefined-content emotion-5"
+                  class="undefined-content emotion-6"
                 >
                     }
                 </td>
               </tr>
               <tr>
                 <td
-                  class="undefined-content emotion-5"
+                  class="undefined-content emotion-6"
                 >
                   }
                 </td>
               </tr>
               <tr>
                 <td
-                  class="undefined-content emotion-5"
+                  class="undefined-content emotion-6"
                 >
                   <span
                     class="hljs-keyword"
@@ -18050,7 +18152,7 @@ exports[`<Highlight /> > renders theme.tsx correctly 1`] = `
               </tr>
               <tr>
                 <td
-                  class="undefined-content emotion-5"
+                  class="undefined-content emotion-6"
                 >
                   <span
                     class="hljs-built_in"
@@ -18062,7 +18164,7 @@ exports[`<Highlight /> > renders theme.tsx correctly 1`] = `
               </tr>
               <tr>
                 <td
-                  class="undefined-content emotion-5"
+                  class="undefined-content emotion-6"
                 >
                     
                   <span
@@ -18087,7 +18189,7 @@ exports[`<Highlight /> > renders theme.tsx correctly 1`] = `
               </tr>
               <tr>
                 <td
-                  class="undefined-content emotion-5"
+                  class="undefined-content emotion-6"
                 >
                       
                   <span
@@ -18106,21 +18208,21 @@ exports[`<Highlight /> > renders theme.tsx correctly 1`] = `
               </tr>
               <tr>
                 <td
-                  class="undefined-content emotion-5"
+                  class="undefined-content emotion-6"
                 >
                     }
                 </td>
               </tr>
               <tr>
                 <td
-                  class="undefined-content emotion-5"
+                  class="undefined-content emotion-6"
                 >
                   }
                 </td>
               </tr>
               <tr>
                 <td
-                  class="undefined-content emotion-5"
+                  class="undefined-content emotion-6"
                 >
                   <span
                     class="hljs-keyword"
@@ -18138,7 +18240,7 @@ exports[`<Highlight /> > renders theme.tsx correctly 1`] = `
               </tr>
               <tr>
                 <td
-                  class="undefined-content emotion-5"
+                  class="undefined-content emotion-6"
                 >
                   myArray.forEach(
                   <span
@@ -18158,11 +18260,11 @@ exports[`<Highlight /> > renders theme.tsx correctly 1`] = `
           </table>
         </pre>
         <div
-          class="layoutkit-center emotion-19 emotion-20"
+          class="layoutkit-center emotion-20 emotion-21"
         >
           <span
             aria-label="loading-3-quarters"
-            class="anticon anticon-loading-3-quarters anticon-spin emotion-21"
+            class="anticon anticon-loading-3-quarters anticon-spin emotion-22"
             role="img"
           >
             <svg
@@ -18342,6 +18444,10 @@ exports[`<Highlight /> > renders wrapper.tsx correctly 1`] = `
   justify-content: center;
 }
 
+.emotion-5 span {
+  font-family: 'SFMono-Regular',Consolas,'Liberation Mono',Menlo,Courier,monospace!important;
+}
+
 .emotion-6 {
   position: absolute;
   top: 16px;
@@ -18393,6 +18499,16 @@ exports[`<Highlight /> > renders wrapper.tsx correctly 1`] = `
   border-radius: 6px;
   -webkit-transition: background-color 100ms cubic-bezier(0.215, 0.61, 0.355, 1);
   transition: background-color 100ms cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.emotion-9:not(:hover) .studio-highlight-copy {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.emotion-9:not(:hover) .studio-highlight-tag {
+  visibility: hidden;
+  opacity: 0;
 }
 
 .emotion-9 pre {
@@ -18684,6 +18800,16 @@ exports[`<Highlight /> > renders wrapper.tsx correctly 1`] = `
   border-radius: 6px;
   -webkit-transition: background-color 100ms cubic-bezier(0.215, 0.61, 0.355, 1);
   transition: background-color 100ms cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.emotion-28:not(:hover) .studio-highlight-copy {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.emotion-28:not(:hover) .studio-highlight-tag {
+  visibility: hidden;
+  opacity: 0;
 }
 
 .emotion-28 pre {

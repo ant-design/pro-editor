@@ -33,6 +33,7 @@ export const FullFeatureWrapper = memo<HighlighterWrapperProps & HighlightProps>
     style,
     prefixCls: customPrefixCls,
     theme = THEME_LIGHT,
+    copyable = true,
     type = 'block',
   } = props || {};
   const prefixCls = getPrefixCls('highlight', customPrefixCls);
@@ -73,13 +74,14 @@ export const FullFeatureWrapper = memo<HighlighterWrapperProps & HighlightProps>
           suffixIcon={false}
           value={lang.toLowerCase()}
         />
-        <CopyButton content={children} prefixCls={prefixCls} theme={theme} />
+        {copyable && <CopyButton content={children} prefixCls={prefixCls} theme={theme} />}
       </Flexbox>
       <HighlightBase
         {...props}
         language={lang?.toLowerCase()}
         style={expand ? {} : { height: 0, overflow: 'hidden' }}
         copyable={false}
+        showLanguage={false}
       />
     </div>
   );

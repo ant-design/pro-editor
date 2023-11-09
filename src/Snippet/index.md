@@ -1,9 +1,11 @@
 ---
 nav: 组件
-group: Content
-title: Snippet
-description: The Snippet component is used to display a code snippet with syntax highlighting. It can be customized with a symbol before the content and a language for syntax highlighting. The component is also copyable with a CopyButton included by default.
+group: 基础组件
+title: Snippet 代码片段
+description: Snippet 组件用于显示带有语法突出显示的代码片段。可以在内容之前使用符号和语法突出显示的语言进行自定义。该组件还可以通过默认包含的 CopyButton 进行复制
 ---
+
+# Snippet 代码片段
 
 ## Default
 
@@ -11,4 +13,11 @@ description: The Snippet component is used to display a code snippet with syntax
 
 ## APIs
 
-<API></API>
+| 参数      | 说明                   | 类型               | 默认值  |
+| :-------- | :--------------------- | :----------------- | :------ |
+| children  | 组件内显示的内容       | string             | -       |
+| copyable  | 内容是否可以复制       | boolean            | true    |
+| language  | 组件内容的语言         | string             | 'tsx'   |
+| spotlight | 是否添加聚光灯背景效果 | boolean            | false   |
+| symbol    | 组件内容前显示的符号   | string             | -       |
+| type      | 组件的渲染类型         | 'ghost' \| 'block' | 'ghost' |

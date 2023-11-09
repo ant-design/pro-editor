@@ -56,6 +56,18 @@ export const useStyles = createStyles(
           border-radius: ${token.borderRadius}px;
           transition: background-color 100ms ${token.motionEaseOut};
 
+          :not(:hover) {
+            .${prefix}-copy {
+              visibility: hidden;
+              opacity: 0;
+            }
+
+            .${prefix}-tag {
+              visibility: hidden;
+              opacity: 0;
+            }
+          }
+
           pre {
             margin: 0 !important;
             padding: ${type === 'pure' ? 0 : `16px 24px`} !important;
@@ -71,7 +83,25 @@ export const useStyles = createStyles(
         min-width: 100px;
         display: flex;
         justify-content: center;
+        span {
+          font-family: ${token.fontFamilyCode} !important;
+        }
       `,
+      lang: cx(
+        css`
+          position: absolute;
+          z-index: 2;
+          right: 0;
+          bottom: 8px;
+
+          font-family: ${token.fontFamilyCode};
+          color: ${token.colorTextSecondary};
+
+          // opacity: 0;
+
+          transition: opacity 0.1s;
+        `,
+      ),
       expandIcon: css`
         color: ${colorText};
         &:hover {
