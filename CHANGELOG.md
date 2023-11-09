@@ -1,5 +1,39 @@
 # Changelog
 
+## [Version&nbsp;0.25.0](https://github.com/ant-design/pro-editor/compare/v0.24.0...v0.25.0)
+
+<sup>Released on **2023-11-09**</sup>
+
+#### ✨ 新特性
+
+- Add highlight hover emotion & language tag show, udpate snapshot.
+
+#### 🐛 修复
+
+- Ts error fixed.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's improved
+
+- Add highlight hover emotion & language tag show ([cdd0904](https://github.com/ant-design/pro-editor/commit/cdd0904))
+- Udpate snapshot ([ba89b5d](https://github.com/ant-design/pro-editor/commit/ba89b5d))
+
+#### What's fixed
+
+- Ts error fixed ([054c832](https://github.com/ant-design/pro-editor/commit/054c832))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
 ## [Version&nbsp;0.24.0](https://github.com/ant-design/pro-editor/compare/v0.23.0...v0.24.0)
 
 <sup>Released on **2023-11-06**</sup>
