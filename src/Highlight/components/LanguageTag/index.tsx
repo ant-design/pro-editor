@@ -16,8 +16,6 @@ const useStyles = createStyles(({ cx, css, token }, { prefixCls, theme }) => {
     .hsl()
     .string();
 
-  console.log('background', background);
-
   return {
     small: cx(
       `${prefix}-tag-small`,
@@ -60,20 +58,13 @@ export interface TagProps extends AntTagProps {
 }
 
 const LanguageTag: React.FC<TagProps> = (props) => {
-  const { icon, children, size = 'default', theme = 'light', prefixCls, ...rest } = props || {};
+  const { children, size = 'default', theme = 'light', prefixCls } = props || {};
   const { styles, cx } = useStyles({ theme, prefixCls });
 
-  console.log('rest', rest);
-
   return (
-    <>
-      <Tag
-        bordered={false}
-        className={cx(styles.tag, styles.lang, size === 'small' && styles.small)}
-      >
-        {children}
-      </Tag>
-    </>
+    <Tag bordered={false} className={cx(styles.tag, styles.lang, size === 'small' && styles.small)}>
+      {children}
+    </Tag>
   );
 };
 
