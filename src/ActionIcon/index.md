@@ -5,6 +5,8 @@ atomId: ActionIcon
 nav:
   title: 基础组件
   order: 2
+demo:
+  cols: 2
 ---
 
 # ActionIcon 动作图标
@@ -15,14 +17,7 @@ nav:
 
 ## 代码演示
 
-### Basic
-
 <code src="./demos/basic.tsx" ></code>
-
-### 预设
-
-一些编辑器常用按钮的预设
-
 <code src="./demos/preset.tsx" ></code>
 
 ## API
