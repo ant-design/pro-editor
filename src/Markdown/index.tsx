@@ -24,7 +24,7 @@ export interface MarkdownProps {
 }
 
 const Markdown = memo<MarkdownProps>(
-  ({ children, className, style, fullFeaturedCodeBlock, onDoubleClick, ...props }) => {
+  ({ children, className, style, fullFeaturedCodeBlock = true, onDoubleClick, ...props }) => {
     const { styles } = useStyles();
     const components: any = {
       a: Typography.Link,
