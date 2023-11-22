@@ -65,7 +65,7 @@ const ActionIcon: FC<ActionIconProps> = ({
   const Icon = (
     <Button
       icon={icon}
-      className={cx(className, styles.container)}
+      className={cx(styles.container, className)}
       type={'text'}
       style={{ cursor }}
       size={'small'}

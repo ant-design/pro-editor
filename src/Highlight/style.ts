@@ -15,7 +15,7 @@ export const useStyles = createStyles(
 
     const typeStylish = css`
       background-color: ${type === 'block' ? colorFillTertiary : 'transparent'};
-      border: 1px solid ${type === 'block' ? colorFillTertiary : 'transparent'};
+      border: 1px solid ${type === 'block' ? 'transparent' : token.colorBorder};
     `;
 
     const lighterTypeStylish = css`
@@ -38,12 +38,27 @@ export const useStyles = createStyles(
           }
         `,
       ),
+      expland: css`
+        color: ${Color(colorText).alpha(0.8).hsl().string()};
+      `,
+
+      copy: css`
+        color: ${Color(colorText).alpha(0.6).hsl().string()};
+      `,
       header: cx(
         `${prefix}-header`,
         css`
+          background-color: ${type === 'block' ? token.colorFillTertiary : 'transparent'};
           padding: 4px 8px;
-          background: rgba(0, 0, 0, 0.02);
+          border-radius: ${token.borderRadius}px;
           width: auto !important; // override self width
+        `,
+        css`
+          .${STUDIO_UI_PREFIX}-btn {
+            &:hover {
+              color: ${colorTextSecondary} !important;
+            }
+          }
         `,
       ),
       container: cx(
@@ -106,9 +121,6 @@ export const useStyles = createStyles(
         min-width: 100px;
         .${STUDIO_UI_PREFIX}-btn {
           color: ${colorText};
-          &:hover {
-            color: ${colorTextSecondary} !important;
-          }
         }
         .${STUDIO_UI_PREFIX}-select-selector {
           padding-inline-end: 4px !important;
