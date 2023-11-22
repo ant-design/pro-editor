@@ -6,32 +6,41 @@ import rehypeKatex from 'rehype-katex';
 import remarkGfm from 'remark-gfm';
 import remarkMath from 'remark-math';
 
-import { CodeFullFeatured, CodeLite } from './CodeBlock';
+import { HighlightProps, SnippetProps } from '@ant-design/pro-editor';
+import { Code } from './CodeBlock';
 import { useStyles } from './style';
 
 export interface MarkdownProps {
-  /**
-   * @description The markdown content to be rendered
-   */
   children: string;
   /**
-   * @description The class name for the Markdown component
+   * @description ClassName
    */
   className?: string;
   fullFeaturedCodeBlock?: boolean;
   onDoubleClick?: () => void;
   style?: CSSProperties;
+  // Highlight 的配置，会默认透传
+  highlight?: HighlightProps;
+  // Snippet 的配置，会默认透传
+  snippet?: SnippetProps;
 }
 
 const Markdown = memo<MarkdownProps>(
-  ({ children, className, style, fullFeaturedCodeBlock = true, onDoubleClick, ...props }) => {
+  ({ children, className, style, onDoubleClick, highlight = {}, snippet = {}, ...rest }) => {
     const { styles } = useStyles();
     const components: any = {
       a: Typography.Link,
       details: Collapse,
       hr: () => <Divider style={{ marginBottom: '1em', marginTop: 0 }} />,
       img: Image,
-      pre: fullFeaturedCodeBlock ? CodeFullFeatured : CodeLite,
+      pre: (props) => {
+        const { children, ...rest } = props;
+        return (
+          <Code highlight={highlight} snippet={snippet} {...rest}>
+            {children}
+          </Code>
+        );
+      },
     };
 
     return (
@@ -42,7 +51,7 @@ const Markdown = memo<MarkdownProps>(
               className={styles.markdown}
               components={components}
               remarkPlugins={[remarkGfm]}
-              {...props}
+              {...rest}
             >
               {children}
             </ReactMarkdown>
@@ -53,7 +62,7 @@ const Markdown = memo<MarkdownProps>(
             components={components}
             rehypePlugins={[rehypeKatex]}
             remarkPlugins={[remarkGfm, remarkMath]}
-            {...props}
+            {...rest}
           >
             {children}
           </ReactMarkdown>

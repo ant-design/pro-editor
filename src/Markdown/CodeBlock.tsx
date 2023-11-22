@@ -28,7 +28,7 @@ const countLines = (str: string): number => {
   return matches ? matches.length : 1;
 };
 
-const Code = memo(({ fullFeatured, ...properties }: any) => {
+const Code = memo(({ highlight, snippet, ...properties }: any) => {
   const { styles, cx } = useStyles();
 
   if (!properties.children[0]) return;
@@ -47,6 +47,7 @@ const Code = memo(({ fullFeatured, ...properties }: any) => {
         language={lang}
         symbol={''}
         type={'block'}
+        {...snippet}
       >
         {content}
       </Snippet>
@@ -56,19 +57,13 @@ const Code = memo(({ fullFeatured, ...properties }: any) => {
   return (
     <Highlight
       className={cx(styles.container, styles.highlight)}
-      containerWrapper={fullFeatured}
       language={lang}
       type="block"
+      {...highlight}
     >
       {content}
     </Highlight>
   );
 });
 
-export const CodeLite = memo((properties: any) => {
-  return <Code {...properties} />;
-});
-
-export const CodeFullFeatured = memo((properties: any) => {
-  return <Code fullFeatured {...properties} />;
-});
+export { Code };

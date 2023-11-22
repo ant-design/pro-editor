@@ -18,7 +18,7 @@ export interface HighlighterWrapperProps extends DivProps {
   /**
    * @description The language of the code content
    */
-  language: string;
+  language?: string;
 }
 const options: SelectProps['options'] = Object.keys(languageMap).map((key) => ({
   label: key,

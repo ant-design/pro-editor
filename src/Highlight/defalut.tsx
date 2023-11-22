@@ -30,7 +30,7 @@ export interface HighlightProps {
    * @renderType select
    * @default "typescript"
    */
-  language: string;
+  language?: string;
   /**
    * @title 主题
    * @description 主题颜色, dark 黑色主题，light 白色主题
