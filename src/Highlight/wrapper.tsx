@@ -49,6 +49,7 @@ export const FullFeatureWrapper = memo<HighlighterWrapperProps & HighlightProps>
     <div className={classNames(styles.wrapper, className)} style={style}>
       <Flexbox align={'center'} className={styles.header} horizontal justify={'space-between'}>
         <ActionIcon
+          className={styles.expland}
           icon={expand ? <DownOutlined size={14} /> : <RightOutlined size={14} />}
           onClick={() => setExpand(!expand)}
           size={24}
@@ -73,7 +74,7 @@ export const FullFeatureWrapper = memo<HighlighterWrapperProps & HighlightProps>
           suffixIcon={false}
           value={lang.toLowerCase()}
         />
-        {copyable && <CopyButton content={children} />}
+        {copyable && <CopyButton className={styles.copy} content={children} />}
       </Flexbox>
       <HighlightBase
         {...props}
