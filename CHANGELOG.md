@@ -1,5 +1,41 @@
 # Changelog
 
+## [Version&nbsp;0.26.0](https://github.com/ant-design/pro-editor/compare/v0.25.0...v0.26.0)
+
+<sup>Released on **2023-11-22**</sup>
+
+#### ✨ 新特性
+
+- Add Markdown new Components, add more doc & change as a theme token, reflact some components props & api, udpate snapshot.
+
+#### 🐛 修复
+
+- Delete normal Errorboundary.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's improved
+
+- Add Markdown new Components ([2d16d11](https://github.com/ant-design/pro-editor/commit/2d16d11))
+- Add more doc & change as a theme token ([7889fa5](https://github.com/ant-design/pro-editor/commit/7889fa5))
+- Reflact some components props & api ([1b14b65](https://github.com/ant-design/pro-editor/commit/1b14b65))
+- Udpate snapshot ([71ffd2b](https://github.com/ant-design/pro-editor/commit/71ffd2b))
+
+#### What's fixed
+
+- Delete normal Errorboundary ([ea44085](https://github.com/ant-design/pro-editor/commit/ea44085))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
 ## [Version&nbsp;0.25.0](https://github.com/ant-design/pro-editor/compare/v0.24.0...v0.25.0)
 
 <sup>Released on **2023-11-09**</sup>
