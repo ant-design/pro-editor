@@ -1,6 +1,5 @@
 import { Collapse, Divider, Image, Typography } from 'antd';
 import { CSSProperties, memo } from 'react';
-import { ErrorBoundary } from 'react-error-boundary';
 import ReactMarkdown from 'react-markdown';
 import rehypeKatex from 'rehype-katex';
 import remarkGfm from 'remark-gfm';
@@ -45,28 +44,15 @@ const Markdown = memo<MarkdownProps>(
 
     return (
       <Typography className={className} onDoubleClick={onDoubleClick} style={style}>
-        <ErrorBoundary
-          fallback={
-            <ReactMarkdown
-              className={styles.markdown}
-              components={components}
-              remarkPlugins={[remarkGfm]}
-              {...rest}
-            >
-              {children}
-            </ReactMarkdown>
-          }
+        <ReactMarkdown
+          className={styles.markdown}
+          components={components}
+          rehypePlugins={[rehypeKatex]}
+          remarkPlugins={[remarkGfm, remarkMath]}
+          {...rest}
         >
-          <ReactMarkdown
-            className={styles.markdown}
-            components={components}
-            rehypePlugins={[rehypeKatex]}
-            remarkPlugins={[remarkGfm, remarkMath]}
-            {...rest}
-          >
-            {children}
-          </ReactMarkdown>
-        </ErrorBoundary>
+          {children}
+        </ReactMarkdown>
       </Typography>
     );
   },
