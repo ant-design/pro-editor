@@ -102,14 +102,6 @@ export const useStyles = createStyles(
           transition: opacity 0.1s;
         `,
       ),
-      expandIcon: css`
-        color: ${colorText};
-        &:hover {
-          .${STUDIO_UI_PREFIX}-btn-icon {
-            color: ${colorText} !important;
-          }
-        }
-      `,
       select: css`
         min-width: 100px;
         .${STUDIO_UI_PREFIX}-btn {
