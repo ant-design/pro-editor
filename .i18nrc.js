@@ -5,6 +5,7 @@ module.exports = {
   markdown: {
     entry: ['docs/**/**.md', 'src/**/**.md'],
     entryLocale: 'zh-CN',
+    exclude: ['docs/index.zh-CN.md'],
     entryExtension: '.zh-CN.md',
     outputLocales: ['en-US'],
   },

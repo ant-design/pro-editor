@@ -1,32 +1,32 @@
 ---
-title: Best Practices for Data Flow
+title: Best Practices for Editor Data Flow
 group:
-  title: Data Flow
+  title: State Management
   order: 10
 ---
 
 ## Best Practices for Data Flow
 
-The editor scenario is different from the web page, with a large amount of rich interactive capabilities. It is crucial to design a data flow architecture that is easy to develop and maintain.
+The editor scenario is different from the CRUD web page, as it involves a large amount of rich interactive capabilities. Therefore, it is crucial to design a data flow architecture that is easy to develop and maintain.
 
 ## Conceptual Elements
 
 | Conceptual Term | Explanation                                                                                                                                                                                                                                                                                                                                                            |
 | --------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| store           | The store contains the application's state and actions. It allows access to and modification of the state in the application rendering.                                                                                                                                                                                                                                |
+| store           | The store contains the application's state and actions. It allows access to and modification of the state during application rendering.                                                                                                                                                                                                                                |
 | state           | The state refers to the application's data, storing the current state of the application. Any change in the state will trigger a re-rendering of the application to reflect the new state.                                                                                                                                                                             |
-| action          | An action is an operation function that describes the interactive events in the application. Actions are usually triggered by user interactions, network requests, or timers. Actions can be synchronous or asynchronous.                                                                                                                                              |
-| reducer         | A reducer is a pure function that takes the current state and action as parameters and returns a new state. It is used to update the application's state based on the action type. Reducer is a pure function without side effects, therefore it is always a synchronous function.                                                                                     |
+| action          | An action is an operation function that describes the interactive events occurring in the application. Actions are typically triggered by user interactions, network requests, or timers. Actions can be **synchronous** or **asynchronous**.                                                                                                                          |
+| reducer         | A reducer is a pure function that takes the current state and action as parameters and returns a new state. It is used to update the application's state based on the action type. A reducer is a pure function with no side effects, and therefore, it is always a **synchronous** function.                                                                          |
 | selector        | A selector is a function used to retrieve specific data from the application's state. It takes the application's state as a parameter and returns computed or transformed data. Selectors can combine parts of the state or multiple states to generate derived data. Selectors are commonly used to map the application's state to component props for component use. |
-| slice           | A slice is a concept used to express a part of the data model's state. It specifies a state slice and the related state, action, reducer, and selector. Using slices, a large store can be split into smaller, maintainable subtypes.                                                                                                                                  |
+| slice           | A slice is a concept used to express a part of the data model's state. It specifies a state slice and its related state, action, reducer, and selector. Using slices, a large store can be divided into smaller, maintainable subtypes.                                                                                                                                |
 
 ## Structural Layering
 
-At different levels of complexity, the organization of the store structure can vary significantly:
+In different levels of complexity, the organization of the store structure can vary significantly:
 
 ### Low Complexity
 
-Generally includes 2-5 states and 3-4 actions. The structure at this level usually consists of a `store.ts` and an `initialState.ts`.
+Generally includes 2 to 5 states and 3 to 4 actions. The structure at this level typically consists of a single `store.ts` file and a `initialState.ts` file.
 
 ```bash
 DataFill/store
@@ -36,7 +36,7 @@ DataFill/store
 
 ### Moderate Complexity
 
-Moderate complexity involves 5-15 states, 5-10 actions, and may include selector implementation for derived states. It may also involve reducer simplifying some data change complexity. The structure at this level generally consists of a `store.ts`, an `initialState.ts`, and a `selectors.ts`/`reducer.ts`.
+Moderate complexity involves 5 to 15 states, 5 to 10 actions, and may include selector implementation for derived states. It may also involve reducer simplifying part of the data changes. The structure at this level generally consists of a `store.ts`, `initialState.ts`, and `selectors.ts`/`reducer.ts`.
 
 ```bash
 IconPicker/store
@@ -56,7 +56,9 @@ SortableList/store
 
 ### Medium Complexity
 
-Medium complexity involves 15-30 states, 10-20 actions, and likely includes selectors to aggregate derived states and reducers to simplify some data change complexity. At this level, a single action store structure is difficult to maintain, often leading to the decomposition of multiple slices for managing different actions.
+Medium complexity involves 15 to 30 states, 10 to 20 actions, and likely includes selectors to aggregate derived states and reducers to simplify part of the data changes.
+
+At this level, using a single action store for management becomes challenging, and it often requires breaking it down into multiple slices to manage different actions.
 
 The following code represents the internal data flow of the `SortableTree` component:
 
@@ -75,16 +77,16 @@ SortableTree/store
 
 Interpreting key files:
 
-1. `selectors.ts`: Contains selector functions used to retrieve derived states from the store. Selector functions can aggregate and calculate derived states as needed, providing them to components for use.
-2. `slices folder`: Decomposed modules for managing different actions. Each module generally includes a Slice containing related actions.
-   - `crudSlice.ts`: Manages operations for adding, deleting, and modifying tree data.
-   - `dndSlice.ts`: Manages drag and drop related operations.
+1. `selectors.ts`: Contains selector functions used to retrieve derived states from the store. Selector functions can aggregate and compute derived states as needed, providing them to components for use.
+2. `slices folder`: Multiple modules extracted for managing different actions. Each module generally includes a Slice containing related actions.
+   - `crudSlice.ts`: Manages operations for CRUD operations on tree data.
+   - `dndSlice.ts`: Manages drag and drop-related operations.
    - `selectionSlice.ts`: Manages operations related to selected states.
-3. `treeDataReducer.ts`: Manages the reducer for tree data. It handles atomic operations related to changes in `treeData`, such as adding nodes, deleting nodes, and dragging nodes.
+3. `treeDataReducer.ts`: Manages the reducer for tree data. It handles atomic operations related to data changes in `treeData`, such as adding nodes, deleting nodes, and dragging nodes.
 
 ### High Complexity
 
-High complexity involves over 30 states and over 20 actions. It inevitably requires slice modularization. Each slice declares its own initState, action, reducer, and selector.
+High complexity involves over 30 states and over 20 actions. It inevitably requires slices for modular cohesion. Each slice declares its own initState, action, reducer, and selector.
 
 Below is an example of a high-complexity data flow ([link](https://github.com/lobehub/lobe-chat/tree/master/src/store/session)):
 
@@ -129,11 +131,11 @@ LobeChat SessionStore
 └── store.ts
 ```
 
-Although the directory structure of this data flow seems complex, with the modularization and fractal architecture, we can easily find the corresponding modules and maintain new features and iterations with ease.
+Although the directory structure of this data flow seems complex, with the modularization of slices and fractal architecture, it becomes easy to locate the corresponding modules, making it easy to maintain and add new features.
 
 ## Best Practices for Directory Structure in Editor Scenarios
 
-In the editor scenario, we should assume that it will eventually evolve into a high-complexity data flow. Therefore, from the beginning, we should split the data flow into slices in the directory structure, where each slice should be an independent module containing its own initState, action, reducer, and selector.
+In the editor scenario, we should assume that it will eventually evolve into a high-complexity data flow. Therefore, from the beginning, the directory structure should be split into slices, with each slice being an independent module containing its own initState, action, reducer, and selector.
 
 ```bash
 editorStore
@@ -151,7 +153,7 @@ editorStore
 
 ### Top-Level Objects
 
-`index.ts` is an aggregate export file, not further elaborated.
+`index.ts` is an aggregate export file and will not be elaborated further.
 
 #### initialState
 
@@ -167,7 +169,7 @@ export const initialState: EditorStoreState = {
 };
 ```
 
-If there are multiple slices in the future, simply aggregate and export the corresponding state in the same way.
+If later expanded to multiple slices, simply aggregate and export the corresponding state in the same way.
 
 #### selectors
 
@@ -181,7 +183,7 @@ export { sessionSelectors } from './slices/session';
 
 #### store
 
-Now let's take a look at `store.ts`.
+Now, let's take a look at `store.ts`.
 
 ```ts
 import { devtools } from 'zustand/middleware';
@@ -214,11 +216,11 @@ export const useEditorStore = createWithEqualityFn<EditorStore>()(
 
 The key code here is `createStore`, which aggregates all slices and returns a complete editor Store for store initialization.
 
-The `createWithEqualityFn` function wraps the relevant middleware in use, defaulting to using the `devtools` middleware to provide developer tool support and replacing the default comparison function with `shallow` to optimize performance.
+The `createWithEqualityFn` function wraps relevant middleware, and by default, it uses the `devtools` middleware to provide developer tool support and replaces the default comparison function with `shallow` to optimize performance.
 
 ### Slice Section
 
-The initState and selector of each slice are similar to non-slice. Therefore, not much elaboration is needed. Let's focus on `slices/crud/action.ts`:
+The initState and selector in each slice are similar to non-slice. Therefore, they will not be elaborated further. Let's focus on `slices/crud/action.ts`:
 
 ```ts
 import { StateCreator } from 'zustand/vanilla';
@@ -239,7 +241,7 @@ export const createCrudSlice: StateCreator<
 });
 ```
 
-Through the `import` statement, the code then defines a `CrudAction` interface to describe the business operations.
+Through the `import` statement, the code then defines a `CrudAction` interface to describe business operations.
 
 The `createCrudSlice` is declared as a function that takes `set` and `get` as parameters and returns an object containing the editor state and business operations.
 
@@ -249,26 +251,22 @@ StateCreator<EditorStore, [['zustand/devtools', never]], [], CrudAction>;
 
 The type definition introduces `StateCreator` as the full type, and `CrudAction` at the end represents the actions that need to be implemented in this slice. The middle `[['zustand/devtools', never]]` indicates that this slice is wrapped by the `devtools` middleware, allowing the `set` method to accept middleware parameters.
 
-This is the key to implementing the Slice pattern while ensuring type friendliness.
-
-After writing this way, we can use the `get()` method to obtain the full `EditorStore` state and actions. If the declared `CrudAction` type and implementation do not match, `createCRUDSlice` will prompt an error, without any additional interference.
-
-This way, each slice has the ability to perceive all states and call all methods, while focusing only on its own defined methods and states, effectively converging the focus.
+This implementation ensures that each slice has the ability to perceive all states and call all methods, while focusing only on its defined methods and states, thus achieving convergence of focus.
 
 ## Feature Development
 
 With the slice layering pattern, we can ensure that each slice's functional modules are controllable and do not expand indefinitely. They can be split into common, business, or internal slices as needed.
 
-Once the framework is controllable, we can focus on feature development. The development workload for core features exists in two areas: action and selector. Let's first discuss the action part.
+Once the framework is controllable, we can focus on feature development. The core feature development workload exists in two areas: action and selector. Let's first discuss the action part.
 
 ### Action Development
 
 Actions, being ordinary function methods, support both synchronous and asynchronous operations in theory. However, based on our past practical experience, actions can be divided into two categories:
 
 - Data state changes: For example, modifying the current user's status information, modifying login status, marking viewed guides, etc.
-- Business logic orchestration: For example, a login process, which includes requests, success judgment, failure judgment, and so on.
+- Business logic orchestration: For example, a login process includes requests, success judgment, failure judgment, etc.
 
-We strongly recommend consolidating the first category of data state changes into a `dispatchXXX` method and sinking the data change logic into a `reducer`. In SortableTree, a `dispatchTreeData` method is consolidated:
+We strongly recommend consolidating the first category of data state changes into a single `dispatchXXX` method and sinking the data change logic into a reducer. In SortableTree, a `dispatchTreeData` method is consolidated:
 
 ```ts
 const crudSlice = (set, get) => ({
@@ -285,13 +283,13 @@ The benefit of this approach is to ensure the atomicity of data changes. By sink
 
 This approach also brings several benefits:
 
-1. **Convenient for controlled capabilities**: After atomic data changes, by adding an `onTreeDataChange` at the bottom of `dispatchTreeData`, data state can be easily controlled, making it easy to convert the application into a component.
-2. **Semantic data changes**: By naming the payload methods in dispatch, it can semantically clarify the otherwise difficult-to-construct data changes. For example, `dispatchTreeData({ type: 'toggleCollapse', id:'123' })` can be easily understood as expanding/collapsing the node with id 123.
-3. **Enhanced state maintainability**: After consolidating the data change logic in dispatch, we can easily change the state by calling dispatch outside the store or inside the store, significantly reducing maintenance costs.
+1. **Facilitates controlled capability**: After atomic data changes, by adding an `onTreeDataChange` at the bottom of `dispatchTreeData`, it can easily achieve controlled data state changes, making it easy to transform the application into a component.
+2. **Semantic data changes**: By naming the dispatch corresponding payload methods, it can easily make the originally difficult data changes semantic. For example, `dispatchTreeData({ type: 'toggleCollapse', id:'123' })` can be easily understood as expanding/collapsing the node with id 123.
+3. **Enhances state maintainability**: After unifying the dispatch of data changes, we can easily change the state by calling dispatch outside the store or inside the store, significantly reducing maintenance costs.
 
 ### Reducer Development
 
-In addition, sinking the data change logic into a reducer brings corresponding benefits. Since the reducer is just a pure function, it can be easily unit tested. Combined with AI, we can implement reducers for one-sentence requirements and generate test code with a single click. The development and maintenance costs of reducers will be greatly reduced.
+In addition, sinking the data change logic into a reducer brings corresponding benefits. Since a reducer is just a pure function, it can easily implement unit testing. Combined with AI, we can achieve one-line requirement implementation of reducers and generate test code with a single click. The development and maintenance costs of reducers will be greatly reduced.
 
 | Feature Implementation                                                                           | Unit Testing                                                                                                                  |
 | ------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------- |
@@ -314,7 +312,7 @@ export const chatSelectors = {
 };
 ```
 
-Where `chatsTokenCount` is a selector, aimed at calculating the token count in messages. It transforms the `chats` array in the store into a value for external use.
+Where `chatsTokenCount` is a selector, aimed at calculating the token count in messages. It transforms the `chats` array in the store into a numerical value for external use.
 
 ```ts
 export const chatsTokenCount = (s: SessionStore): number[] => {
@@ -325,7 +323,7 @@ export const chatsTokenCount = (s: SessionStore): number[] => {
 
 Since a selector is just a function, it can also be easily integrated with simple unit testing.
 
-Using a selector on the page is also straightforward, simply import as needed. Since the transformed data type is `number`, the state type perceived by React is also `number`. Therefore, even if there are other state changes in `chats` that do not affect the calculation result (such as updating the message time), the component will not trigger a re-render.
+Using a selector on the page is also straightforward, simply import it as needed. Since the transformed data type is `number`, the state type perceived by React is also `number`. Therefore, even if there are other state changes in `chats` that do not affect the calculation result (such as updating the message time), the component will not trigger a re-render.
 
 ```tsx | pure
 const Token = memo<>(() => {
