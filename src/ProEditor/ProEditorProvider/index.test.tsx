@@ -1,5 +1,4 @@
 import { ProEditorProvider, proEditorMiddleware } from '@ant-design/pro-editor';
-
 import { render, renderHook, screen } from '@testing-library/react';
 import { create } from 'zustand';
 
@@ -22,7 +21,6 @@ describe('ProEditorProvider', () => {
         <div>Child Component</div>
       </ProEditorProvider>,
     );
-
     expect(screen.getByText('Child Component')).toBeInTheDocument();
   });
 
