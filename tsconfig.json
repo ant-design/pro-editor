@@ -8,7 +8,7 @@
     "target": "ESNext",
     "module": "esnext",
     "jsx": "react-jsx",
-    "types": ["vitest/globals"],
+    "types": ["vitest/globals", "@testing-library/jest-dom"],
     "declaration": true,
     "baseUrl": ".",
     "paths": {

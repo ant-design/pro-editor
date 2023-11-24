@@ -140,7 +140,10 @@ export const configSlice: StateCreator<
         replace,
       );
 
-      const useAction = merge({}, { recordHistory: true }, { recordHistory });
+      const useAction: {
+        recordHistory: boolean;
+        payload?: Partial<UserActionParams>;
+      } = merge({}, { recordHistory: true }, { recordHistory });
 
       if (useAction.recordHistory) {
         get().yjsDoc.recordHistoryData({ config }, { ...useAction.payload, timestamp: Date.now() });

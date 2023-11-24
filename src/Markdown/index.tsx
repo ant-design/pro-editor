@@ -6,6 +6,7 @@ import remarkGfm from 'remark-gfm';
 import remarkMath from 'remark-math';
 
 import { HighlightProps, SnippetProps } from '@ant-design/pro-editor';
+import { PluggableList } from 'react-markdown/lib/react-markdown';
 import { Code } from './CodeBlock';
 import { useStyles } from './style';
 
@@ -47,7 +48,7 @@ const Markdown = memo<MarkdownProps>(
         <ReactMarkdown
           className={styles.markdown}
           components={components}
-          rehypePlugins={[rehypeKatex]}
+          rehypePlugins={[rehypeKatex] as PluggableList}
           remarkPlugins={[remarkGfm, remarkMath]}
           {...rest}
         >

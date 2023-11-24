@@ -6,9 +6,9 @@ import { StackItem } from 'yjs/dist/src/utils/UndoManager';
 import { YEvent } from 'yjs/dist/src/utils/YEvent';
 
 export interface UserActionParams {
-  type: string;
-  name: string;
-  timestamp: number;
+  type?: string | unknown;
+  name?: string;
+  timestamp?: number;
 }
 
 class UserAction {

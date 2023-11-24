@@ -2,9 +2,9 @@ import { Doc, UndoManager } from 'yjs';
 import { DocOpts } from 'yjs/dist/src/utils/Doc';
 
 export interface UserActionParams {
-  type: string;
-  name: string;
-  timestamp: number;
+  type?: string;
+  name?: string;
+  timestamp?: number;
 }
 
 class UserAction {
