@@ -1,5 +1,31 @@
 # Changelog
 
+## [Version&nbsp;0.27.0](https://github.com/ant-design/pro-editor/compare/v0.26.0...v0.27.0)
+
+<sup>Released on **2023-11-24**</sup>
+
+#### ✨ 新特性
+
+- Fix wrong className order, udpate snapshot.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's improved
+
+- Fix wrong className order ([9842d45](https://github.com/ant-design/pro-editor/commit/9842d45))
+- Udpate snapshot ([ccc85fd](https://github.com/ant-design/pro-editor/commit/ccc85fd))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
 ## [Version&nbsp;0.26.0](https://github.com/ant-design/pro-editor/compare/v0.25.0...v0.26.0)
 
 <sup>Released on **2023-11-22**</sup>
