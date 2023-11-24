@@ -1,3 +1,4 @@
+import '@testing-library/jest-dom/vitest';
 import { theme } from 'antd';
 
 // Not use dynamic hashed for test env since version will change hash dynamically.

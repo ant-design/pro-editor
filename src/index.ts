@@ -29,6 +29,7 @@ export type { LevaPanelProps } from './LevaPanel';
 export { default as Markdown, type MarkdownProps } from './Markdown';
 export * from './ProBuilder';
 export * from './Snippet';
+export * from './ProEditor';
 export * from './SortableList';
 export * from './SortableTree';
 export { default as TipGuide } from './TipGuide';
