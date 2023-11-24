@@ -83,4 +83,8 @@ export default defineConfig({
     name: '@ant-design/pro-editor',
   },
   extraBabelPlugins: ['antd-style'],
+  locales: [
+    { name: 'English', id: 'en-US' },
+    { name: '简体中文', id: 'zh-CN' },
+  ],
 });
