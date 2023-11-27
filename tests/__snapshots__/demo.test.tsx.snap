@@ -2363,6 +2363,16 @@ exports[`<ColumnList /> > renders actions.tsx correctly 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -2373,7 +2383,7 @@ exports[`<ColumnList /> > renders actions.tsx correctly 1`] = `
   gap: 4px;
 }
 
-.emotion-1 {
+.emotion-2 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -2384,16 +2394,6 @@ exports[`<ColumnList /> > renders actions.tsx correctly 1`] = `
   min-width: 48px;
   color: rgba(0, 0, 0, 0.45);
   padding-left: 8px;
-}
-
-.emotion-4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
 }
 
 .emotion-5 {
@@ -2640,27 +2640,27 @@ exports[`<ColumnList /> > renders actions.tsx correctly 1`] = `
 
 <div>
   <div
-    class="layoutkit-flexbox emotion-0"
+    class="layoutkit-flexbox emotion-0 studio-column-list studio-sortable-list"
   >
     <div
-      class="studio-column-list-content studio-column-list-header emotion-1"
+      class="layoutkit-flexbox emotion-1"
     >
-      列标题
+      <div
+        class="studio-column-list-content studio-column-list-header emotion-2"
+      >
+        列标题
+      </div>
+      <div
+        class="studio-column-list-content studio-column-list-header emotion-2"
+      >
+        值类型
+      </div>
+      <div
+        class="studio-column-list-content studio-column-list-header emotion-2"
+      >
+        字段
+      </div>
     </div>
-    <div
-      class="studio-column-list-content studio-column-list-header emotion-1"
-    >
-      值类型
-    </div>
-    <div
-      class="studio-column-list-content studio-column-list-header emotion-1"
-    >
-      字段
-    </div>
-  </div>
-  <div
-    class="layoutkit-flexbox emotion-4 studio-column-list studio-sortable-list"
-  >
     <ul
       class="studio-sortable-list-container emotion-5"
       style="--columns: 1;"
@@ -3447,6 +3447,16 @@ exports[`<ColumnList /> > renders column.tsx correctly 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -3457,7 +3467,7 @@ exports[`<ColumnList /> > renders column.tsx correctly 1`] = `
   gap: 4px;
 }
 
-.emotion-1 {
+.emotion-2 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -3468,16 +3478,6 @@ exports[`<ColumnList /> > renders column.tsx correctly 1`] = `
   min-width: 48px;
   color: rgba(0, 0, 0, 0.45);
   padding-left: 8px;
-}
-
-.emotion-5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
 }
 
 .emotion-6 {
@@ -3701,32 +3701,32 @@ exports[`<ColumnList /> > renders column.tsx correctly 1`] = `
 
 <div>
   <div
-    class="layoutkit-flexbox emotion-0"
+    class="layoutkit-flexbox emotion-0 studio-column-list studio-sortable-list"
   >
     <div
-      class="studio-column-list-content studio-column-list-header emotion-1"
+      class="layoutkit-flexbox emotion-1"
     >
-      列标题
+      <div
+        class="studio-column-list-content studio-column-list-header emotion-2"
+      >
+        列标题
+      </div>
+      <div
+        class="studio-column-list-content studio-column-list-header emotion-2"
+      >
+        值类型
+      </div>
+      <div
+        class="studio-column-list-content studio-column-list-header emotion-2"
+      >
+        字段
+      </div>
+      <div
+        class="studio-column-list-content studio-column-list-header emotion-2"
+      >
+        颜色
+      </div>
     </div>
-    <div
-      class="studio-column-list-content studio-column-list-header emotion-1"
-    >
-      值类型
-    </div>
-    <div
-      class="studio-column-list-content studio-column-list-header emotion-1"
-    >
-      字段
-    </div>
-    <div
-      class="studio-column-list-content studio-column-list-header emotion-1"
-    >
-      颜色
-    </div>
-  </div>
-  <div
-    class="layoutkit-flexbox emotion-5 studio-column-list studio-sortable-list"
-  >
     <ul
       class="studio-sortable-list-container emotion-6"
       style="--columns: 1;"
@@ -4671,6 +4671,16 @@ exports[`<ColumnList /> > renders controlled.tsx correctly 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -4681,7 +4691,7 @@ exports[`<ColumnList /> > renders controlled.tsx correctly 1`] = `
   gap: 4px;
 }
 
-.emotion-1 {
+.emotion-2 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -4692,16 +4702,6 @@ exports[`<ColumnList /> > renders controlled.tsx correctly 1`] = `
   min-width: 48px;
   color: rgba(0, 0, 0, 0.45);
   padding-left: 8px;
-}
-
-.emotion-4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
 }
 
 .emotion-5 {
@@ -4925,27 +4925,27 @@ exports[`<ColumnList /> > renders controlled.tsx correctly 1`] = `
 
 <div>
   <div
-    class="layoutkit-flexbox emotion-0"
+    class="layoutkit-flexbox emotion-0 studio-column-list studio-sortable-list"
   >
     <div
-      class="studio-column-list-content studio-column-list-header emotion-1"
+      class="layoutkit-flexbox emotion-1"
     >
-      列标题
+      <div
+        class="studio-column-list-content studio-column-list-header emotion-2"
+      >
+        列标题
+      </div>
+      <div
+        class="studio-column-list-content studio-column-list-header emotion-2"
+      >
+        值类型
+      </div>
+      <div
+        class="studio-column-list-content studio-column-list-header emotion-2"
+      >
+        字段
+      </div>
     </div>
-    <div
-      class="studio-column-list-content studio-column-list-header emotion-1"
-    >
-      值类型
-    </div>
-    <div
-      class="studio-column-list-content studio-column-list-header emotion-1"
-    >
-      字段
-    </div>
-  </div>
-  <div
-    class="layoutkit-flexbox emotion-4 studio-column-list studio-sortable-list"
-  >
     <ul
       class="studio-sortable-list-container emotion-5"
       style="--columns: 1;"
@@ -5611,6 +5611,16 @@ exports[`<ColumnList /> > renders creatorButtonProps.tsx correctly 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -5621,7 +5631,7 @@ exports[`<ColumnList /> > renders creatorButtonProps.tsx correctly 1`] = `
   gap: 4px;
 }
 
-.emotion-1 {
+.emotion-2 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -5632,16 +5642,6 @@ exports[`<ColumnList /> > renders creatorButtonProps.tsx correctly 1`] = `
   min-width: 48px;
   color: rgba(0, 0, 0, 0.45);
   padding-left: 8px;
-}
-
-.emotion-4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
 }
 
 .emotion-5 {
@@ -5888,27 +5888,27 @@ exports[`<ColumnList /> > renders creatorButtonProps.tsx correctly 1`] = `
 
 <div>
   <div
-    class="layoutkit-flexbox emotion-0"
+    class="layoutkit-flexbox emotion-0 studio-column-list studio-sortable-list"
   >
     <div
-      class="studio-column-list-content studio-column-list-header emotion-1"
+      class="layoutkit-flexbox emotion-1"
     >
-      列标题
+      <div
+        class="studio-column-list-content studio-column-list-header emotion-2"
+      >
+        列标题
+      </div>
+      <div
+        class="studio-column-list-content studio-column-list-header emotion-2"
+      >
+        值类型
+      </div>
+      <div
+        class="studio-column-list-content studio-column-list-header emotion-2"
+      >
+        字段
+      </div>
     </div>
-    <div
-      class="studio-column-list-content studio-column-list-header emotion-1"
-    >
-      值类型
-    </div>
-    <div
-      class="studio-column-list-content studio-column-list-header emotion-1"
-    >
-      字段
-    </div>
-  </div>
-  <div
-    class="layoutkit-flexbox emotion-4 studio-column-list studio-sortable-list"
-  >
     <button
       class="studio-btn studio-btn-default studio-btn-sm studio-btn-block studio-sortable-list-btn-add emotion-5"
       type="button"
@@ -6652,6 +6652,16 @@ exports[`<ColumnList /> > renders customCreate.tsx correctly 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -6662,7 +6672,7 @@ exports[`<ColumnList /> > renders customCreate.tsx correctly 1`] = `
   gap: 4px;
 }
 
-.emotion-3 {
+.emotion-4 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -6673,16 +6683,6 @@ exports[`<ColumnList /> > renders customCreate.tsx correctly 1`] = `
   min-width: 48px;
   color: rgba(0, 0, 0, 0.45);
   padding-left: 8px;
-}
-
-.emotion-6 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
 }
 
 .emotion-7 {
@@ -6926,27 +6926,27 @@ exports[`<ColumnList /> > renders customCreate.tsx correctly 1`] = `
     </button>
   </div>
   <div
-    class="layoutkit-flexbox emotion-2"
+    class="layoutkit-flexbox emotion-2 studio-column-list studio-sortable-list"
   >
     <div
-      class="studio-column-list-content studio-column-list-header emotion-3"
+      class="layoutkit-flexbox emotion-3"
     >
-      列标题
+      <div
+        class="studio-column-list-content studio-column-list-header emotion-4"
+      >
+        列标题
+      </div>
+      <div
+        class="studio-column-list-content studio-column-list-header emotion-4"
+      >
+        值类型
+      </div>
+      <div
+        class="studio-column-list-content studio-column-list-header emotion-4"
+      >
+        字段
+      </div>
     </div>
-    <div
-      class="studio-column-list-content studio-column-list-header emotion-3"
-    >
-      值类型
-    </div>
-    <div
-      class="studio-column-list-content studio-column-list-header emotion-3"
-    >
-      字段
-    </div>
-  </div>
-  <div
-    class="layoutkit-flexbox emotion-6 studio-column-list studio-sortable-list"
-  >
     <ul
       class="studio-sortable-list-container emotion-7"
       style="--columns: 1;"
@@ -7612,6 +7612,16 @@ exports[`<ColumnList /> > renders empty.tsx correctly 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -7622,7 +7632,7 @@ exports[`<ColumnList /> > renders empty.tsx correctly 1`] = `
   gap: 4px;
 }
 
-.emotion-1 {
+.emotion-2 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -7635,39 +7645,29 @@ exports[`<ColumnList /> > renders empty.tsx correctly 1`] = `
   padding-left: 8px;
 }
 
-.emotion-4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
 <div>
   <div
-    class="layoutkit-flexbox emotion-0"
+    class="layoutkit-flexbox emotion-0 studio-column-list studio-sortable-list"
   >
     <div
-      class="studio-column-list-content studio-column-list-header emotion-1"
+      class="layoutkit-flexbox emotion-1"
     >
-      列标题
+      <div
+        class="studio-column-list-content studio-column-list-header emotion-2"
+      >
+        列标题
+      </div>
+      <div
+        class="studio-column-list-content studio-column-list-header emotion-2"
+      >
+        值类型
+      </div>
+      <div
+        class="studio-column-list-content studio-column-list-header emotion-2"
+      >
+        字段
+      </div>
     </div>
-    <div
-      class="studio-column-list-content studio-column-list-header emotion-1"
-    >
-      值类型
-    </div>
-    <div
-      class="studio-column-list-content studio-column-list-header emotion-1"
-    >
-      字段
-    </div>
-  </div>
-  <div
-    class="layoutkit-flexbox emotion-4 studio-column-list studio-sortable-list"
-  >
     <div
       class="studio-empty studio-empty-normal"
     >
@@ -7740,6 +7740,16 @@ exports[`<ColumnList /> > renders normal.tsx correctly 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -7750,7 +7760,7 @@ exports[`<ColumnList /> > renders normal.tsx correctly 1`] = `
   gap: 4px;
 }
 
-.emotion-1 {
+.emotion-2 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -7761,16 +7771,6 @@ exports[`<ColumnList /> > renders normal.tsx correctly 1`] = `
   min-width: 48px;
   color: rgba(0, 0, 0, 0.45);
   padding-left: 8px;
-}
-
-.emotion-3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
 }
 
 .emotion-4 {
@@ -8013,22 +8013,22 @@ exports[`<ColumnList /> > renders normal.tsx correctly 1`] = `
 
 <div>
   <div
-    class="layoutkit-flexbox emotion-0"
+    class="layoutkit-flexbox emotion-0 studio-column-list studio-sortable-list"
   >
     <div
-      class="studio-column-list-content studio-column-list-header emotion-1"
+      class="layoutkit-flexbox emotion-1"
     >
-      配置项一
+      <div
+        class="studio-column-list-content studio-column-list-header emotion-2"
+      >
+        配置项一
+      </div>
+      <div
+        class="studio-column-list-content studio-column-list-header emotion-2"
+      >
+        配置项二
+      </div>
     </div>
-    <div
-      class="studio-column-list-content studio-column-list-header emotion-1"
-    >
-      配置项二
-    </div>
-  </div>
-  <div
-    class="layoutkit-flexbox emotion-3 studio-column-list studio-sortable-list"
-  >
     <ul
       class="studio-sortable-list-container emotion-4"
       style="--columns: 1;"
@@ -16592,7 +16592,7 @@ exports[`<FreeCanvas /> > renders basic.tsx correctly 1`] = `
       </svg>
       <div
         class="react-flow__panel react-flow__attribution bottom right"
-        data-message="Please only hide this attribution when you are subscribed to React Flow Pro: https://reactflow.dev/pro"
+        data-message="Please only hide this attribution when you are subscribed to React Flow Pro: https://pro.reactflow.dev"
         style="pointer-events: all;"
       >
         <a
