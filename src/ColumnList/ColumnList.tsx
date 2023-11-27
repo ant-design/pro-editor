@@ -38,15 +38,13 @@ const ColumnList: <T>(props: ColumnListProps<T>) => ReturnType<FC> = forwardRef<
   );
 
   return (
-    <>
-      <Header prefixCls={prefixCls} columns={columns} />
-      <SortableList
-        ref={ref}
-        renderItem={renderItem}
-        className={cx(prefixCls, className)}
-        {...props}
-      />
-    </>
+    <SortableList
+      ref={ref}
+      renderItem={renderItem}
+      renderHeader={() => <Header prefixCls={prefixCls} columns={columns} />}
+      className={cx(prefixCls, className)}
+      {...props}
+    />
   );
 });
 

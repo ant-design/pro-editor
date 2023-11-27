@@ -47,6 +47,8 @@ export type RenderContent<T = any> = (item: T, index: number) => React.ReactNode
 
 export type RenderEmpty = () => ReturnType<FC>;
 
+export type RenderHeader = () => ReturnType<FC>;
+
 export interface CreatorButtonProps {
   /**
    * 添加创建按钮的位置

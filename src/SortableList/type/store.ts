@@ -5,6 +5,7 @@ import type {
   RenderActionProps,
   RenderContent,
   RenderEmpty,
+  RenderHeader,
   RenderItem,
   SortableListDispatchPayload,
   UniqueIdentifier,
@@ -49,6 +50,10 @@ export interface SortableListState {
    * 渲染可排序项内容
    */
   renderContent?: RenderContent;
+  /**
+   * 渲染头部
+   */
+  renderHeader?: RenderHeader;
   /**
    * 新建对象相关属性
    */
@@ -97,6 +102,10 @@ export interface StoreUpdaterProps<T = any> {
    * 渲染空状态
    */
   renderEmpty?: RenderEmpty;
+  /**
+   * 渲染头部
+   */
+  renderHeader?: RenderHeader;
   /**
    * 新建对象相关属性
    */
