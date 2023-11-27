@@ -16592,7 +16592,7 @@ exports[`<FreeCanvas /> > renders basic.tsx correctly 1`] = `
       </svg>
       <div
         class="react-flow__panel react-flow__attribution bottom right"
-        data-message="Please only hide this attribution when you are subscribed to React Flow Pro: https://pro.reactflow.dev"
+        data-message="Please only hide this attribution when you are subscribed to React Flow Pro: https://reactflow.dev/pro"
         style="pointer-events: all;"
       >
         <a
