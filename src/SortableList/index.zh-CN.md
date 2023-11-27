@@ -38,6 +38,8 @@ demo:
 | onChange           | `(value: T[], event: ListDataDispatchPayload) => void`           | 值变化                             |
 | renderContent      | `(item: T, index: number) => ReactNode`                          | 自定义可排序列表项内容             |
 | renderItem         | `(item: T, options) => ReactNode`                                | 自定义可排序列表项                 |
+| renderHeader       | `() => ReactNode`                                                | 自定义渲染表头                     |
+| renderEmpty        | `() => ReactNode`                                                | 自定义渲染空状态                   |
 | getItemStyle       | `(status: GetItemStylesArgs) => ReactNode`                       | 自定义容器样式                     |
 | ref                | `ForwardedRef<SortableListRef<T>>`                               | 对外部暴露方法                     |
 | hideRemove         | `boolean`                                                        | 是否隐藏删除按钮，默认为 false     |

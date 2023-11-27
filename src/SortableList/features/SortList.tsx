@@ -68,11 +68,9 @@ const SortableList: FC<SortableListProps> = ({ prefixCls }) => {
     renderEmpty ? (
       renderEmpty()
     ) : (
-      <>
-        <Empty image={Empty.PRESENTED_IMAGE_SIMPLE} description="暂无数据">
-          {creatorButtonProps !== false ? <CreateButton empty={true} /> : null}
-        </Empty>
-      </>
+      <Empty image={Empty.PRESENTED_IMAGE_SIMPLE} description="暂无数据">
+        {creatorButtonProps !== false ? <CreateButton empty={true} /> : null}
+      </Empty>
     )
   ) : (
     <>

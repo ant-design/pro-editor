@@ -35,6 +35,7 @@ const selector = (s: Store) => ({
   handleDragCancel: s.handleDragCancel,
   handleDragEnd: s.handleDragEnd,
   keyManager: s.keyManager,
+  renderHeader: s.renderHeader,
 });
 
 export interface AppProps {
@@ -53,7 +54,7 @@ export interface AppProps {
 }
 
 const App: FC<AppProps> = ({ className, style, prefixCls: customPrefixCls }) => {
-  const { handleDragStart, handleDragCancel, handleDragEnd, keyManager } = useStore(
+  const { handleDragStart, handleDragCancel, handleDragEnd, keyManager, renderHeader } = useStore(
     selector,
     shallow,
   );
@@ -85,6 +86,7 @@ const App: FC<AppProps> = ({ className, style, prefixCls: customPrefixCls }) => 
         modifiers={[restrictToVerticalAxis, restrictToWindowEdges]}
       >
         <SortableContext items={keyManager} strategy={verticalListSortingStrategy}>
+          {renderHeader?.()}
           <SortList prefixCls={prefixCls} />
           {overlay}
         </SortableContext>
