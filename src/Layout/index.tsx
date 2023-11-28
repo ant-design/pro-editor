@@ -1,7 +1,9 @@
 import { DraggablePanel } from '@ant-design/pro-editor';
 import { FlexProps, TabsProps } from 'antd';
+import { Size } from 're-resizable';
 import { ReactNode } from 'react';
 import { Flexbox } from 'react-layout-kit';
+import { ConfigProvider } from '../ConfigProvider';
 import { getPrefixCls } from '../theme';
 import { useStyle } from './style';
 
@@ -43,20 +45,30 @@ const getPannelProps = (
   | {
       placement: 'left' | 'right' | 'bottom';
       className?: string;
+      defaultSize?: Partial<Size>;
     }
   | false => {
   switch (['left', 'right', 'bottom', 'center'][index]) {
     case 'left':
       return {
         placement: 'left',
+        defaultSize: {
+          width: '200',
+        },
       };
     case 'right':
       return {
         placement: 'right',
+        defaultSize: {
+          width: '200',
+        },
       };
     case 'bottom':
       return {
         placement: 'bottom',
+        defaultSize: {
+          height: '200',
+        },
       };
     case 'center':
       return false;
@@ -141,4 +153,12 @@ const BasicLayout = (props: LayoutProps) => {
   );
 };
 
-export { BasicLayout as Layout };
+const WrapperLayout = (props) => {
+  return (
+    <ConfigProvider>
+      <BasicLayout {...props} />
+    </ConfigProvider>
+  );
+};
+
+export { WrapperLayout as Layout };
