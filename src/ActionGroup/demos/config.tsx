@@ -1,7 +1,3 @@
-/**
- * title: 配置使用
- * description: 通过配置 `items` 渲染整个内容，你可以通过在 items 声明 type 为 divider 来渲染一个分隔符
- */
 import { CopyOutlined, DragOutlined, ZoomInOutlined, ZoomOutOutlined } from '@ant-design/icons';
 import { ActionGroup } from '@ant-design/pro-editor';
 import { message } from 'antd';
