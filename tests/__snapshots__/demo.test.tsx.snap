@@ -13556,7 +13556,6 @@ exports[`<DraggablePanel /> > renders basic.tsx correctly 1`] = `
 }
 
 .emotion-3 {
-  background: #ffffff;
   overflow: hidden;
 }
 
@@ -13706,7 +13705,6 @@ exports[`<DraggablePanel /> > renders bottom.tsx correctly 1`] = `
 }
 
 .emotion-4 {
-  background: #ffffff;
   overflow: hidden;
 }
 
@@ -14167,7 +14165,6 @@ exports[`<DraggablePanel /> > renders left.tsx correctly 1`] = `
 }
 
 .emotion-4 {
-  background: #ffffff;
   overflow: hidden;
 }
 
@@ -14318,7 +14315,6 @@ exports[`<DraggablePanel /> > renders top.tsx correctly 1`] = `
 }
 
 .emotion-4 {
-  background: #ffffff;
   overflow: hidden;
 }
 
@@ -19813,6 +19809,16 @@ exports[`<InteractContainer /> > renders WithContainer.tsx correctly 1`] = `
 </div>
 `;
 
+exports[`<Layout /> > renders basic.tsx correctly 1`] = `
+<div>
+  <div
+    class="studio-layout"
+    leftpannel="[object Object]"
+    style="max-width: 100%;"
+  />
+</div>
+`;
+
 exports[`<LevaPanel /> > renders button.tsx correctly 1`] = `
 .emotion-0 {
   -webkit-flex-shrink: 0;
@@ -19872,7 +19878,6 @@ exports[`<LevaPanel /> > renders button.tsx correctly 1`] = `
 }
 
 .emotion-3 {
-  background: #ffffff;
   overflow: hidden;
 }
 
