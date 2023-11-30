@@ -1,5 +1,38 @@
 # Changelog
 
+## [Version&nbsp;0.29.0](https://github.com/ant-design/pro-editor/compare/v0.28.0...v0.29.0)
+
+<sup>Released on **2023-11-30**</sup>
+
+#### ✨ 新特性
+
+- Sortablelist support renderHeader".
+
+#### 🐛 修复
+
+- Workflow update.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's improved
+
+- Sortablelist support renderHeader" ([53d75fd](https://github.com/ant-design/pro-editor/commit/53d75fd))
+
+#### What's fixed
+
+- Workflow update ([5325ef5](https://github.com/ant-design/pro-editor/commit/5325ef5))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
 ## [Version&nbsp;0.28.0](https://github.com/ant-design/pro-editor/compare/v0.27.0...v0.28.0)
 
 <sup>Released on **2023-11-24**</sup>
