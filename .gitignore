@@ -14,3 +14,4 @@ server
 .husky/prepare-commit-msg
 coverage
 .vscode
+bun.lockb
