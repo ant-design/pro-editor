@@ -26,6 +26,7 @@ jobs:
         run: |
           pnpm i
           pnpm run lint
+          pnpm run build
           pnpm run docs:build
 
       - name: Deploy 🚀
