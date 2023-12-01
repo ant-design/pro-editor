@@ -69,7 +69,6 @@
     "@dnd-kit/utilities": "^3.2.2",
     "@faker-js/faker": "^7.6.0",
     "@floating-ui/react": "^0.24.8",
-    "@mui/material": "^5.14.18",
     "@textea/json-viewer": "^3.2.3",
     "ahooks": "^3.7.8",
     "classnames": "^2.3.2",
