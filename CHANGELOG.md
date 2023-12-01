@@ -1,5 +1,30 @@
 # Changelog
 
+### [Version&nbsp;0.29.1](https://github.com/ant-design/pro-editor/compare/v0.29.0...v0.29.1)
+
+<sup>Released on **2023-12-01**</sup>
+
+#### 🐛 修复
+
+- Fix dependencies.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's fixed
+
+- Fix dependencies, closes [#112](https://github.com/ant-design/pro-editor/issues/112) ([efb4e46](https://github.com/ant-design/pro-editor/commit/efb4e46))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
 ## [Version&nbsp;0.29.0](https://github.com/ant-design/pro-editor/compare/v0.28.0...v0.29.0)
 
 <sup>Released on **2023-11-30**</sup>
