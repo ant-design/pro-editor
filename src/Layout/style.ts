@@ -20,9 +20,10 @@ export const useStyle = createStyles(({ css, token, cx }, prefixCls: string) => 
       `${prefixCls}-header`,
       css`
         height: 48px;
+        min-height: 48px;
         border-radius: ${token.borderRadius}px;
         background-color: ${token.colorFillQuaternary};
-        margin-bottom: ${token.margin / 4}px;
+        margin: ${token.margin / 4}px;
       `,
     ),
     footer: cx(
@@ -30,7 +31,7 @@ export const useStyle = createStyles(({ css, token, cx }, prefixCls: string) => 
       css`
         height: 28px;
         width: 100%;
-        margin-top: ${token.margin / 4}px;
+        margin: ${token.margin / 4}px;
         background-color: ${token.colorFillQuaternary};
       `,
     ),
@@ -62,9 +63,11 @@ export const useStyle = createStyles(({ css, token, cx }, prefixCls: string) => 
         background-color: ${token.colorFillQuaternary};
         margin: ${token.margin / 4 + 2}px;
         height: calc(100% - ${token.margin / 2 + 1}px);
-        width: calc(100% - ${token.margin / 2 + 1}px);
       `,
     ),
+
+    leftPannel: cx(`${prefixCls}-left-pannel`, css``),
+    rightPannel: cx(`${prefixCls}-right-pannel`, css``),
     tip: cx(
       `${prefixCls}-tip`,
       css`

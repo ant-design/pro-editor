@@ -2,7 +2,7 @@ import { DraggablePanel } from '@ant-design/pro-editor';
 import { FlexProps, TabsProps } from 'antd';
 import { Size } from 're-resizable';
 import { ReactNode } from 'react';
-import { Flexbox } from 'react-layout-kit';
+import { Flexbox, FlexboxProps } from 'react-layout-kit';
 import { ConfigProvider } from '../ConfigProvider';
 import { getPrefixCls } from '../theme';
 import { useStyle } from './style';
@@ -16,7 +16,7 @@ interface HeaderFooterSettings {
   children?: ReactNode;
 }
 
-interface LayoutProps {
+interface LayoutProps extends FlexboxProps {
   header?: HeaderFooterSettings;
   footer?: HeaderFooterSettings;
   leftPannel?: PannelSettings;
@@ -39,50 +39,52 @@ interface PannelSettings {
   className?: string;
 }
 
-const getPannelProps = (
-  index: number,
-):
-  | {
-      placement: 'left' | 'right' | 'bottom';
-      className?: string;
-      defaultSize?: Partial<Size>;
-    }
-  | false => {
-  switch (['left', 'right', 'bottom', 'center'][index]) {
-    case 'left':
-      return {
-        placement: 'left',
-        defaultSize: {
-          width: '200',
-        },
-      };
-    case 'right':
-      return {
-        placement: 'right',
-        defaultSize: {
-          width: '200',
-        },
-      };
-    case 'bottom':
-      return {
-        placement: 'bottom',
-        defaultSize: {
-          height: '200',
-        },
-      };
-    case 'center':
-      return false;
-    default:
-      return false;
-  }
-};
-
 const BasicLayout = (props: LayoutProps) => {
   const { header, footer, leftPannel, rightPannel, bottomPannel, centerPannel, type, ...rest } =
     props;
 
   const prefixCls = getPrefixCls('layout');
   const { styles, cx } = useStyle(prefixCls);
+
+  const getPannelProps = (
+    index: number,
+  ):
+    | {
+        placement: 'left' | 'right' | 'bottom';
+        className?: string;
+        defaultSize?: Partial<Size>;
+      }
+    | false => {
+    switch (['left', 'right', 'bottom', 'center'][index]) {
+      case 'left':
+        return {
+          placement: 'left',
+          className: styles.leftPannel,
+          defaultSize: {
+            width: '200',
+          },
+        };
+      case 'right':
+        return {
+          placement: 'right',
+          className: styles.rightPannel,
+          defaultSize: {
+            width: '200',
+          },
+        };
+      case 'bottom':
+        return {
+          placement: 'bottom',
+          defaultSize: {
+            height: '200',
+          },
+        };
+      case 'center':
+        return false;
+      default:
+        return false;
+    }
+  };
 
   const DraggablePanelRender = (props: PannelSettings, index: number) => {
     const {
@@ -101,7 +103,7 @@ const BasicLayout = (props: LayoutProps) => {
         </div>
       );
     }
-    const { placement } = pannelProps;
+    const { placement, className: pannelClassName } = pannelProps;
     return (
       <DraggablePanel
         expandable={false}
@@ -112,7 +114,7 @@ const BasicLayout = (props: LayoutProps) => {
         {...pannelProps}
         {...rest}
       >
-        <div className={cx(styles.pannel, className)}>{children}</div>
+        <div className={cx(styles.pannel, pannelClassName, className)}>{children}</div>
       </DraggablePanel>
     );
   };
@@ -153,7 +155,7 @@ const BasicLayout = (props: LayoutProps) => {
   );
 };
 
-const WrapperLayout = (props) => {
+const WrapperLayout = (props: LayoutProps) => {
   return (
     <ConfigProvider>
       <BasicLayout {...props} />
