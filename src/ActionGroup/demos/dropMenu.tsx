@@ -1,8 +1,3 @@
-/**
- * title: dropdown
- * description: 通过配置 `dropdownMenu` 可以在尾部渲染一个下拉内容
- */
-
 import { CopyOutlined, DragOutlined, ZoomInOutlined, ZoomOutOutlined } from '@ant-design/icons';
 import { ActionGroup } from '@ant-design/pro-editor';
 import { message } from 'antd';
