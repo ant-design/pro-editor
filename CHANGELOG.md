@@ -1,5 +1,43 @@
 # Changelog
 
+## [Version&nbsp;0.30.0-rc.1](https://github.com/ant-design/pro-editor/compare/v0.29.2...v0.30.0-rc.1)
+
+<sup>Released on **2023-12-04**</sup>
+
+#### ✨ 新特性
+
+- Add Editor Layout new Components, update pannel defaultSize, update snapshot, update styles & props.
+
+#### 🐛 修复
+
+- Merge main, revert workflow, test workflow.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's improved
+
+- Add Editor Layout new Components ([927cc46](https://github.com/ant-design/pro-editor/commit/927cc46))
+- Update pannel defaultSize ([af323ec](https://github.com/ant-design/pro-editor/commit/af323ec))
+- Update snapshot ([5f77048](https://github.com/ant-design/pro-editor/commit/5f77048))
+- Update styles & props ([decb858](https://github.com/ant-design/pro-editor/commit/decb858))
+
+#### What's fixed
+
+- Merge main ([ae678e0](https://github.com/ant-design/pro-editor/commit/ae678e0))
+- Revert workflow ([7785cc1](https://github.com/ant-design/pro-editor/commit/7785cc1))
+- Test workflow ([2905ee9](https://github.com/ant-design/pro-editor/commit/2905ee9))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
 ## [Version&nbsp;0.29.0-rc.1](https://github.com/ant-design/pro-editor/compare/v0.28.0...v0.29.0-rc.1)
 
 <sup>Released on **2023-12-04**</sup>
