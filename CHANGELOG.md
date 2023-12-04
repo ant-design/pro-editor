@@ -1,5 +1,31 @@
 # Changelog
 
+### [Version&nbsp;0.29.2](https://github.com/ant-design/pro-editor/compare/v0.29.1...v0.29.2)
+
+<sup>Released on **2023-12-04**</sup>
+
+#### 🐛 修复
+
+- Add build into workflow, update test yml.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's fixed
+
+- Add build into workflow ([9c97246](https://github.com/ant-design/pro-editor/commit/9c97246))
+- Update test yml ([d81d82e](https://github.com/ant-design/pro-editor/commit/d81d82e))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
 ### [Version&nbsp;0.29.1](https://github.com/ant-design/pro-editor/compare/v0.29.0...v0.29.1)
 
 <sup>Released on **2023-12-01**</sup>
