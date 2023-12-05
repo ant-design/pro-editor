@@ -138,7 +138,7 @@ const BasicLayout = (props: LayoutProps) => {
       },
     } = props || {};
     if (hide) {
-      return <></>;
+      return null;
     }
     if (render) {
       return render(props);
