@@ -1,5 +1,5 @@
 import { DraggablePanel } from '@ant-design/pro-editor';
-import { FlexProps, TabsProps } from 'antd';
+import { Flex, FlexProps, TabsProps } from 'antd';
 import { Size } from 're-resizable';
 import { ReactNode } from 'react';
 import { Flexbox, FlexboxProps } from 'react-layout-kit';
@@ -126,30 +126,51 @@ const BasicLayout = (props: LayoutProps) => {
     centerPannel,
   ].map(DraggablePanelRender);
 
-  const HeaderDom = (props: HeaderFooterSettings) => {
-    const { children, render } = props || {};
+  const [HeaderDom, FooterDom] = [header, footer].map((props, index) => {
+    const {
+      children,
+      render,
+      hide = false,
+      flex = {
+        justify: 'space-between',
+        align: 'center',
+        className: '',
+      },
+    } = props || {};
+    if (hide) {
+      return <></>;
+    }
     if (render) {
       return render(props);
     }
-    return <div className={styles.header}>{children}</div>;
-  };
-
-  const FooterDom = (props: HeaderFooterSettings) => {
-    const { children } = props || {};
-    return <div className={styles.footer}>{children}</div>;
-  };
+    return (
+      <Flex
+        key={index === 0 ? 'editor-layout-header' : 'editor-layout-footer'}
+        {...flex}
+        className={cx(
+          index === 0 ? styles.header : styles.footer,
+          styles.flexContainer,
+          flex?.className,
+        )}
+      >
+        <div>Icon</div>
+        {children}
+        <div>Extra</div>
+      </Flex>
+    );
+  });
 
   return (
     <>
       <Flexbox className={styles.layout} {...rest}>
-        <HeaderDom />
+        {HeaderDom}
         <div className={styles.container}>
           {LeftPannelDom}
           {CenterPannelDom}
           {RightPannelDom}
         </div>
         {BottomPannelDom}
-        <FooterDom />
+        {FooterDom}
       </Flexbox>
     </>
   );

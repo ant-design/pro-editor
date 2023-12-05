@@ -23,16 +23,24 @@ export const useStyle = createStyles(({ css, token, cx }, prefixCls: string) => 
         min-height: 48px;
         border-radius: ${token.borderRadius}px;
         background-color: ${token.colorFillQuaternary};
-        margin: ${token.margin / 4}px;
+        margin: ${token.margin / 4 + 2}px;
+        margin-bottom: 0;
       `,
     ),
     footer: cx(
       `${prefixCls}-footer`,
       css`
         height: 28px;
-        width: 100%;
-        margin: ${token.margin / 4}px;
+        margin: ${token.margin / 4 + 2}px;
+        border-radius: ${token.borderRadius}px;
         background-color: ${token.colorFillQuaternary};
+      `,
+    ),
+
+    flexContainer: cx(
+      `${prefixCls}-flex-container`,
+      css`
+        padding: ${token.margin / 2 + 2}px;
       `,
     ),
 
@@ -40,10 +48,9 @@ export const useStyle = createStyles(({ css, token, cx }, prefixCls: string) => 
       `${prefixCls}-center-pannel`,
       css`
         flex: 1;
-
         .${prefixCls}-pannel {
-          height: calc(100% - ${token.margin / 2 + 1}px);
-          width: calc(100% - ${token.margin / 2 - 2}px);
+          height: calc(100% - ${token.margin / 2 - 2}px - ${token.margin + 4}px);
+          // width: calc(100% - ${token.margin / 2 - 2}px - ${token.margin + 4}px);
           margin: ${token.margin / 4 + 2}px ${token.margin / 4 - 1}px;
         }
       `,
@@ -62,7 +69,8 @@ export const useStyle = createStyles(({ css, token, cx }, prefixCls: string) => 
         border-radius: ${token.borderRadius}px;
         background-color: ${token.colorFillQuaternary};
         margin: ${token.margin / 4 + 2}px;
-        height: calc(100% - ${token.margin / 2 + 1}px);
+        height: calc(100% - ${token.margin / 4}px - ${token.margin + 4}px);
+        padding: ${token.margin / 2 + 2}px;
       `,
     ),
 
