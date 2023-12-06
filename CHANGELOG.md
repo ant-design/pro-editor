@@ -1,5 +1,48 @@
 # Changelog
 
+## [Version&nbsp;0.31.0-rc.1](https://github.com/ant-design/pro-editor/compare/v0.30.0...v0.31.0-rc.1)
+
+<sup>Released on **2023-12-06**</sup>
+
+#### ✨ 新特性
+
+- Add Editor Layout new Components, Change Name as EdiorLayout, merge master & update snapshot, update pannel defaultSize, update snapshot, update styles & props.
+
+#### 🐛 修复
+
+- Ci bulid fixed, merge main, release workflow update, revert workflow, test workflow, update styles.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's improved
+
+- Add Editor Layout new Components ([927cc46](https://github.com/ant-design/pro-editor/commit/927cc46))
+- Change Name as EdiorLayout ([c1e4c00](https://github.com/ant-design/pro-editor/commit/c1e4c00))
+- Merge master & update snapshot ([fed6ff8](https://github.com/ant-design/pro-editor/commit/fed6ff8))
+- Update pannel defaultSize ([af323ec](https://github.com/ant-design/pro-editor/commit/af323ec))
+- Update snapshot ([5f77048](https://github.com/ant-design/pro-editor/commit/5f77048))
+- Update styles & props ([decb858](https://github.com/ant-design/pro-editor/commit/decb858))
+
+#### What's fixed
+
+- Ci bulid fixed ([24df343](https://github.com/ant-design/pro-editor/commit/24df343))
+- Merge main ([ae678e0](https://github.com/ant-design/pro-editor/commit/ae678e0))
+- Release workflow update ([59acc60](https://github.com/ant-design/pro-editor/commit/59acc60))
+- Revert workflow ([7785cc1](https://github.com/ant-design/pro-editor/commit/7785cc1))
+- Test workflow ([2905ee9](https://github.com/ant-design/pro-editor/commit/2905ee9))
+- Update styles ([241de5b](https://github.com/ant-design/pro-editor/commit/241de5b))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
 ## [Version&nbsp;0.30.0-rc.2](https://github.com/ant-design/pro-editor/compare/v0.30.0-rc.1...v0.30.0-rc.2)
 
 <sup>Released on **2023-12-05**</sup>
