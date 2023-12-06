@@ -7,6 +7,7 @@ export const useStyle = createStyles(({ css, token, cx }, prefixCls: string) => 
       css`
         height: 100vh;
         width: 100vw;
+        box-sizing: border-box;
         background-color: ${token.colorBgContainer};
         overflow: hidden;
         border-radius: ${token.borderRadius}px;
@@ -19,19 +20,20 @@ export const useStyle = createStyles(({ css, token, cx }, prefixCls: string) => 
     header: cx(
       `${prefixCls}-header`,
       css`
+        box-sizing: border-box;
         height: 48px;
         min-height: 48px;
         border-radius: ${token.borderRadius}px;
         background-color: ${token.colorFillQuaternary};
-        margin: ${token.margin / 4 + 2}px;
-        margin-bottom: 0;
+        margin: ${token.margin / 4}px;
       `,
     ),
     footer: cx(
       `${prefixCls}-footer`,
       css`
         height: 28px;
-        margin: ${token.margin / 4 + 2}px;
+        box-sizing: border-box;
+        margin: ${token.margin / 4}px;
         border-radius: ${token.borderRadius}px;
         background-color: ${token.colorFillQuaternary};
       `,
@@ -48,11 +50,6 @@ export const useStyle = createStyles(({ css, token, cx }, prefixCls: string) => 
       `${prefixCls}-center-pannel`,
       css`
         flex: 1;
-        .${prefixCls}-pannel {
-          height: calc(100% - ${token.margin / 2 - 2}px - ${token.margin + 4}px);
-          // width: calc(100% - ${token.margin / 2 - 2}px - ${token.margin + 4}px);
-          margin: ${token.margin / 4 + 2}px ${token.margin / 4 - 1}px;
-        }
       `,
     ),
 
@@ -61,15 +58,17 @@ export const useStyle = createStyles(({ css, token, cx }, prefixCls: string) => 
       css`
         flex: 1;
         display: flex;
+        clear: both;
       `,
     ),
     pannel: cx(
       `${prefixCls}-pannel`,
       css`
         border-radius: ${token.borderRadius}px;
+        box-sizing: border-box;
         background-color: ${token.colorFillQuaternary};
-        margin: ${token.margin / 4 + 2}px;
-        height: calc(100% - ${token.margin / 4}px - ${token.margin + 4}px);
+        margin: ${token.margin / 4}px;
+        height: calc(100% - ${token.margin / 2}px);
         padding: ${token.margin / 2 + 2}px;
       `,
     ),

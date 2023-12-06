@@ -35,6 +35,8 @@ interface PannelSettings {
   hide?: boolean;
   minWidth?: number;
   minHeight?: number;
+  maxWidth?: number;
+  maxHeight?: number;
   style?: React.CSSProperties;
   className?: string;
 }
@@ -52,6 +54,8 @@ const BasicLayout = (props: LayoutProps) => {
     | {
         placement: 'left' | 'right' | 'bottom';
         className?: string;
+        maxWidth?: number;
+        maxHeight?: number;
         defaultSize?: Partial<Size>;
       }
     | false => {
@@ -60,21 +64,24 @@ const BasicLayout = (props: LayoutProps) => {
         return {
           placement: 'left',
           className: styles.leftPannel,
+          maxWidth: 500,
           defaultSize: {
-            width: '200',
+            width: '300',
           },
         };
       case 'right':
         return {
           placement: 'right',
           className: styles.rightPannel,
+          maxWidth: 500,
           defaultSize: {
-            width: '200',
+            width: '300',
           },
         };
       case 'bottom':
         return {
           placement: 'bottom',
+          maxHeight: 400,
           defaultSize: {
             height: '200',
           },
@@ -93,13 +100,14 @@ const BasicLayout = (props: LayoutProps) => {
       style,
       minHeight = 200,
       minWidth = 200,
+
       ...rest
     } = props || {};
     const pannelProps = getPannelProps(index);
     if (!pannelProps) {
       return (
-        <div className={cx(styles.centerPannel)}>
-          <div className={cx(styles.pannel, className)}>{children}</div>
+        <div className={cx(styles.pannel, styles.centerPannel)}>
+          <div className={cx(className)}>{children}</div>
         </div>
       );
     }
