@@ -1,5 +1,32 @@
 # Changelog
 
+## [Version&nbsp;0.31.0-rc.2](https://github.com/ant-design/pro-editor/compare/v0.31.0-rc.1...v0.31.0-rc.2)
+
+<sup>Released on **2023-12-06**</sup>
+
+#### 🐛 修复
+
+- Merge branch, update Layout Pannel Styles, update snapshot.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's fixed
+
+- Merge branch ([5b4c5a1](https://github.com/ant-design/pro-editor/commit/5b4c5a1))
+- Update Layout Pannel Styles ([a3144ac](https://github.com/ant-design/pro-editor/commit/a3144ac))
+- Update snapshot ([f2665ef](https://github.com/ant-design/pro-editor/commit/f2665ef))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
 ## [Version&nbsp;0.31.0-rc.1](https://github.com/ant-design/pro-editor/compare/v0.30.0...v0.31.0-rc.1)
 
 <sup>Released on **2023-12-06**</sup>
