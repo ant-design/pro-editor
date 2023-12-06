@@ -30,6 +30,14 @@ export interface DraggablePanelProps {
    */
   minHeight?: number;
   /**
+   * 最大宽度
+   */
+  maxWidth?: number;
+  /**
+   * 最大高度
+   */
+  maxHeight?: number;
+  /**
    * 控制可缩放区域
    */
   resize?: RndProps['enableResizing'];
@@ -112,6 +120,8 @@ export const Draggable: FC<DraggablePanelProps> = memo(
     defaultPosition,
     minWidth,
     minHeight,
+    maxHeight,
+    maxWidth,
     prefixCls: customPrefixCls,
     onSizeChange,
     onSizeDragging,
@@ -134,6 +144,8 @@ export const Draggable: FC<DraggablePanelProps> = memo(
             onSizeChange={onSizeChange}
             minHeight={minHeight}
             minWidth={minWidth}
+            maxHeight={maxHeight}
+            maxWidth={maxWidth}
             // 缩放
             resize={resize}
             onExpandChange={onExpandChange}
@@ -157,6 +169,8 @@ export const Draggable: FC<DraggablePanelProps> = memo(
             // 尺寸
             minHeight={minHeight}
             minWidth={minWidth}
+            maxHeight={maxHeight}
+            maxWidth={maxWidth}
             defaultSize={defaultSize}
             size={size}
             onSizeDragging={onSizeDragging}
