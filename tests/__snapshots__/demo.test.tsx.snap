@@ -13584,7 +13584,7 @@ exports[`<DraggablePanel /> > renders basic.tsx correctly 1`] = `
 
 <div>
   <div
-    style="background: rgb(241, 241, 241); border: 2px solid #ddd; height: 300px; display: flex;"
+    style="background: rgb(241, 241, 241); border: 2px solid #ddd; height: 300px; display: flex; overflow: hidden; max-width: 100%;"
   >
     <div
       style="flex: 1; padding: 12px;"
@@ -13621,7 +13621,7 @@ exports[`<DraggablePanel /> > renders basic.tsx correctly 1`] = `
       </div>
       <div
         class="studio-draggable-panel-fixed emotion-3"
-        style="position: relative; user-select: auto; background: rgb(255, 255, 255); padding: 12px; width: 400px; height: 100%; min-width: 280px; box-sizing: border-box; flex-shrink: 0;"
+        style="position: relative; user-select: auto; background: rgb(255, 255, 255); padding: 12px; width: 400px; height: 100%; max-width: 600px; min-width: 280px; box-sizing: border-box; flex-shrink: 0;"
       >
         可拖面板
         <div>
@@ -13771,7 +13771,7 @@ exports[`<DraggablePanel /> > renders bottom.tsx correctly 1`] = `
       </div>
       <div
         class="studio-draggable-panel-fixed emotion-4"
-        style="position: relative; user-select: auto; background: rgb(255, 255, 255); width: 100%; padding: 12px; height: 150px; min-width: 280px; box-sizing: border-box; flex-shrink: 0;"
+        style="position: relative; user-select: auto; background: rgb(255, 255, 255); width: 100%; padding: 12px; height: 150px; max-height: 250px; min-width: 280px; box-sizing: border-box; flex-shrink: 0;"
       >
         底部面板
         <div>
@@ -14226,7 +14226,7 @@ exports[`<DraggablePanel /> > renders left.tsx correctly 1`] = `
       </div>
       <div
         class="studio-draggable-panel-fixed emotion-4"
-        style="position: relative; user-select: auto; background: rgb(255, 255, 255); width: 400px; padding: 12px; height: 100%; min-width: 280px; box-sizing: border-box; flex-shrink: 0;"
+        style="position: relative; user-select: auto; background: rgb(255, 255, 255); width: 400px; padding: 12px; height: 100%; max-width: 800px; min-width: 280px; box-sizing: border-box; flex-shrink: 0;"
       >
         左侧面板
         <div>
@@ -14376,7 +14376,7 @@ exports[`<DraggablePanel /> > renders top.tsx correctly 1`] = `
       </div>
       <div
         class="studio-draggable-panel-fixed emotion-4"
-        style="position: relative; user-select: auto; background: rgb(255, 255, 255); width: 100%; padding: 12px; height: 150px; min-width: 280px; box-sizing: border-box; flex-shrink: 0;"
+        style="position: relative; user-select: auto; background: rgb(255, 255, 255); width: 100%; padding: 12px; height: 150px; max-height: 250px; min-width: 280px; box-sizing: border-box; flex-shrink: 0;"
       >
         顶部面板
         <div>
@@ -19810,12 +19810,278 @@ exports[`<InteractContainer /> > renders WithContainer.tsx correctly 1`] = `
 `;
 
 exports[`<Layout /> > renders basic.tsx correctly 1`] = `
+.emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-1 {
+  height: 100vh;
+  width: 100vw;
+  background-color: #ffffff;
+  overflow: hidden;
+  border-radius: 6px;
+}
+
+.emotion-1 .studio-draggable-panel {
+  border: none;
+}
+
+.emotion-2 {
+  height: 48px;
+  min-height: 48px;
+  border-radius: 6px;
+  background-color: rgba(0, 0, 0, 0.02);
+  margin: 4px;
+  margin-bottom: 0;
+  padding: 6px;
+}
+
+.emotion-3 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.emotion-4 {
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  position: relative;
+  border: 0 solid rgba(5, 5, 5, 0.06);
+}
+
+.emotion-4:hover .studio-draggable-panel-toggle {
+  opacity: 1;
+}
+
+.emotion-5 {
+  overflow: hidden;
+}
+
+.emotion-6 {
+  border-radius: 6px;
+  background-color: rgba(0, 0, 0, 0.02);
+  margin: 4px;
+  height: calc(100% - 2px - 12px);
+  padding: 6px;
+}
+
+.emotion-7 {
+  position: relative;
+}
+
+.emotion-7::before {
+  position: absolute;
+  z-index: 50;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  content: '';
+}
+
+.emotion-7:hover::before,
+.emotion-7:active::before {
+  background: #1677ff;
+}
+
+.emotion-7::before {
+  right: 50%;
+  width: 2px;
+  height: 100%;
+}
+
+.emotion-8 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.emotion-8 .studio-layout-pannel {
+  height: calc(100% - 2px - 12px);
+  margin: 4px 1px;
+}
+
+.emotion-9 {
+  border-radius: 6px;
+  background-color: rgba(0, 0, 0, 0.02);
+  margin: 4px;
+  height: calc(100% - 2px - 12px);
+  padding: 6px;
+}
+
+.emotion-13 {
+  position: relative;
+}
+
+.emotion-13::before {
+  position: absolute;
+  z-index: 50;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  content: '';
+}
+
+.emotion-13:hover::before,
+.emotion-13:active::before {
+  background: #1677ff;
+}
+
+.emotion-13::before {
+  left: 50%;
+  width: 2px;
+  height: 100%;
+}
+
+.emotion-14 {
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  position: relative;
+  border: 0 solid rgba(5, 5, 5, 0.06);
+}
+
+.emotion-14:hover .studio-draggable-panel-toggle {
+  opacity: 1;
+}
+
+.emotion-17 {
+  position: relative;
+}
+
+.emotion-17::before {
+  position: absolute;
+  z-index: 50;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  content: '';
+}
+
+.emotion-17:hover::before,
+.emotion-17:active::before {
+  background: #1677ff;
+}
+
+.emotion-17::before {
+  top: 50%;
+  height: 2px;
+  width: 100%;
+}
+
+.emotion-18 {
+  height: 28px;
+  margin: 4px;
+  border-radius: 6px;
+  background-color: rgba(0, 0, 0, 0.02);
+  padding: 6px;
+}
+
 <div>
   <div
-    class="studio-layout"
-    leftpannel="[object Object]"
+    class="layoutkit-flexbox emotion-0 studio-layout emotion-1"
     style="max-width: 100%;"
-  />
+  >
+    <div
+      class="studio-layout-header studio-layout-flex-container emotion-2 studio-flex studio-flex-align-center studio-flex-justify-space-between"
+    >
+      <div>
+        Icon
+      </div>
+      <div>
+        Extra
+      </div>
+    </div>
+    <div
+      class="studio-layout-container emotion-3"
+    >
+      <div
+        class="studio-draggable-panel studio-layout-left-pannel emotion-4"
+        style="border-right-width: 1px;"
+      >
+        <div
+          class="studio-draggable-panel-fixed emotion-5"
+          style="position: relative; user-select: auto; width: 200px; height: 100%; min-width: 200px; min-height: 200px; box-sizing: border-box; flex-shrink: 0;"
+        >
+          <div
+            class="studio-layout-pannel studio-layout-left-pannel emotion-6"
+          >
+            <div>
+              Left Pannel
+            </div>
+          </div>
+          <div>
+            <div
+              class="emotion-7 studio-draggable-panel-right-handle"
+              style="position: absolute; user-select: none; width: 10px; height: 100%; top: 0px; cursor: col-resize; right: -5px;"
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        class="studio-layout-center-pannel emotion-8"
+      >
+        <div
+          class="studio-layout-pannel emotion-9"
+        />
+      </div>
+      <div
+        class="studio-draggable-panel studio-layout-right-pannel emotion-4"
+        style="border-left-width: 1px;"
+      >
+        <div
+          class="studio-draggable-panel-fixed emotion-5"
+          style="position: relative; user-select: auto; width: 200px; height: 100%; min-width: 200px; min-height: 200px; box-sizing: border-box; flex-shrink: 0;"
+        >
+          <div
+            class="studio-layout-pannel studio-layout-right-pannel emotion-6"
+          />
+          <div>
+            <div
+              class="emotion-13 studio-draggable-panel-left-handle"
+              style="position: absolute; user-select: none; width: 10px; height: 100%; top: 0px; left: -5px; cursor: col-resize;"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="studio-draggable-panel emotion-14"
+      style="border-top-width: 1px;"
+    >
+      <div
+        class="studio-draggable-panel-fixed emotion-5"
+        style="position: relative; user-select: auto; width: 100%; height: 200px; min-width: 200px; min-height: 200px; box-sizing: border-box; flex-shrink: 0;"
+      >
+        <div
+          class="studio-layout-pannel emotion-9"
+        />
+        <div>
+          <div
+            class="studio-draggable-panel-top-handle emotion-17"
+            style="position: absolute; user-select: none; width: 100%; height: 10px; top: -5px; left: 0px; cursor: row-resize;"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      class="studio-layout-footer studio-layout-flex-container emotion-18 studio-flex studio-flex-align-center studio-flex-justify-space-between"
+    >
+      <div>
+        Icon
+      </div>
+      <div>
+        Extra
+      </div>
+    </div>
+  </div>
 </div>
 `;
 

@@ -29,6 +29,14 @@ export interface FloatProps {
    */
   minHeight?: number;
   /**
+   * 最大宽度
+   */
+  maxWidth?: number;
+  /**
+   * 最大高度
+   */
+  maxHeight?: number;
+  /**
    * 控制可缩放区域
    */
   resize?: RndProps['enableResizing'];
@@ -100,6 +108,8 @@ export const FloatMode: FC<FloatProps> = memo(
     defaultPosition: customizeDefaultPosition,
     minWidth = 280,
     minHeight = 200,
+    maxHeight,
+    maxWidth,
     prefixCls,
     canResizing,
   }) => {
@@ -147,6 +157,8 @@ export const FloatMode: FC<FloatProps> = memo(
     const sizeProps = {
       minWidth: Math.max(minWidth, 0),
       minHeight: Math.max(minHeight, 0),
+      maxHeight: maxHeight ? Math.max(maxHeight, 0) : undefined,
+      maxWidth: maxWidth ? Math.max(maxWidth, 0) : undefined,
       defaultSize,
       size: size as Size,
       style,

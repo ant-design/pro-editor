@@ -46,6 +46,8 @@ group: 基础组件
 | placement        | `'right' \| 'left' \| 'top' \| 'bottom'`   | `'right'`    | 固定模式下面板的朝向，默认放置在右侧     |
 | minWidth         | `number`                                   |              | 面板的最小宽度                           |
 | minHeight        | `number`                                   |              | 面板的最小高度                           |
+| maxWidth         | `number`                                   |              | 面板的最大宽度                           |
+| maxHeight        | `number`                                   |              | 面板的最大高度                           |
 | resize           | `RndProps['enableResizing']`               |              | 控制可缩放区域                           |
 | size             | `Partial<Size>`                            |              | 面板尺寸                                 |
 | onSizeChange     | `(delta: NumberSize, size?: Size) => void` |              | 面板尺寸变更回调                         |

@@ -6,12 +6,7 @@ import { Center } from 'react-layout-kit';
 import type { Props as RndProps } from 'react-rnd';
 import useControlledState from 'use-merge-value';
 
-import {
-  DownOutlined,
-  LeftOutlined,
-  RightOutlined,
-  UpOutlined,
-} from '@ant-design/icons';
+import { DownOutlined, LeftOutlined, RightOutlined, UpOutlined } from '@ant-design/icons';
 import { getPrefixCls } from '../theme';
 import { useStyle } from './style';
 
@@ -36,6 +31,15 @@ export interface FixModePanelProps {
    * 最小高度
    */
   minHeight?: number;
+
+  /**
+   * 最大宽度
+   */
+  maxWidth?: number;
+  /**
+   * 最大高度
+   */
+  maxHeight?: number;
   /**
    * 控制可缩放区域
    */
@@ -127,6 +131,8 @@ export const FixMode: FC<FixModePanelProps> = memo<FixModePanelProps>(
     defaultSize: customizeDefaultSize,
     minWidth,
     minHeight,
+    maxHeight,
+    maxWidth,
     prefixCls: customPrefixCls,
     onSizeChange,
     onSizeDragging,
@@ -153,8 +159,7 @@ export const FixMode: FC<FixModePanelProps> = memo<FixModePanelProps>(
       if (!canResizing) return {};
 
       return {
-        [revesePlacement(placement)]:
-          styles[`${revesePlacement(placement)}Handle`],
+        [revesePlacement(placement)]: styles[`${revesePlacement(placement)}Handle`],
       };
     }, [canResizing, placement]);
 
@@ -189,8 +194,9 @@ export const FixMode: FC<FixModePanelProps> = memo<FixModePanelProps>(
     const sizeProps = isExpand
       ? {
           minWidth: typeof minWidth === 'number' ? Math.max(minWidth, 0) : 280,
-          minHeight:
-            typeof minHeight === 'number' ? Math.max(minHeight, 0) : undefined,
+          minHeight: typeof minHeight === 'number' ? Math.max(minHeight, 0) : undefined,
+          maxHeight: typeof maxHeight === 'number' ? Math.max(maxHeight, 0) : undefined,
+          maxWidth: typeof maxWidth === 'number' ? Math.max(maxWidth, 0) : undefined,
           defaultSize,
           size: size as Size,
           style,
