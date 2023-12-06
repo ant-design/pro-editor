@@ -13585,7 +13585,7 @@ exports[`<DraggablePanel /> > renders basic.tsx correctly 1`] = `
 
 <div>
   <div
-    style="background: rgb(241, 241, 241); border: 2px solid #ddd; height: 300px; display: flex;"
+    style="background: rgb(241, 241, 241); border: 2px solid #ddd; height: 300px; display: flex; overflow: hidden; max-width: 100%;"
   >
     <div
       style="flex: 1; padding: 12px;"
@@ -13622,7 +13622,7 @@ exports[`<DraggablePanel /> > renders basic.tsx correctly 1`] = `
       </div>
       <div
         class="studio-draggable-panel-fixed emotion-3"
-        style="position: relative; user-select: auto; background: rgb(255, 255, 255); padding: 12px; width: 400px; height: 100%; min-width: 280px; box-sizing: border-box; flex-shrink: 0;"
+        style="position: relative; user-select: auto; background: rgb(255, 255, 255); padding: 12px; width: 400px; height: 100%; max-width: 600px; min-width: 280px; box-sizing: border-box; flex-shrink: 0;"
       >
         可拖面板
         <div>
@@ -13773,7 +13773,7 @@ exports[`<DraggablePanel /> > renders bottom.tsx correctly 1`] = `
       </div>
       <div
         class="studio-draggable-panel-fixed emotion-4"
-        style="position: relative; user-select: auto; background: rgb(255, 255, 255); width: 100%; padding: 12px; height: 150px; min-width: 280px; box-sizing: border-box; flex-shrink: 0;"
+        style="position: relative; user-select: auto; background: rgb(255, 255, 255); width: 100%; padding: 12px; height: 150px; max-height: 250px; min-width: 280px; box-sizing: border-box; flex-shrink: 0;"
       >
         底部面板
         <div>
@@ -14229,7 +14229,7 @@ exports[`<DraggablePanel /> > renders left.tsx correctly 1`] = `
       </div>
       <div
         class="studio-draggable-panel-fixed emotion-4"
-        style="position: relative; user-select: auto; background: rgb(255, 255, 255); width: 400px; padding: 12px; height: 100%; min-width: 280px; box-sizing: border-box; flex-shrink: 0;"
+        style="position: relative; user-select: auto; background: rgb(255, 255, 255); width: 400px; padding: 12px; height: 100%; max-width: 800px; min-width: 280px; box-sizing: border-box; flex-shrink: 0;"
       >
         左侧面板
         <div>
@@ -14380,7 +14380,7 @@ exports[`<DraggablePanel /> > renders top.tsx correctly 1`] = `
       </div>
       <div
         class="studio-draggable-panel-fixed emotion-4"
-        style="position: relative; user-select: auto; background: rgb(255, 255, 255); width: 100%; padding: 12px; height: 150px; min-width: 280px; box-sizing: border-box; flex-shrink: 0;"
+        style="position: relative; user-select: auto; background: rgb(255, 255, 255); width: 100%; padding: 12px; height: 150px; max-height: 250px; min-width: 280px; box-sizing: border-box; flex-shrink: 0;"
       >
         顶部面板
         <div>
