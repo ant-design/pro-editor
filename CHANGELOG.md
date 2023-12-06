@@ -1,5 +1,31 @@
 # Changelog
 
+## [Version&nbsp;0.30.0-rc.2](https://github.com/ant-design/pro-editor/compare/v0.30.0-rc.1...v0.30.0-rc.2)
+
+<sup>Released on **2023-12-05**</sup>
+
+#### 🐛 修复
+
+- Ci bulid fixed, update styles.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's fixed
+
+- Ci bulid fixed ([24df343](https://github.com/ant-design/pro-editor/commit/24df343))
+- Update styles ([241de5b](https://github.com/ant-design/pro-editor/commit/241de5b))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
 ## [Version&nbsp;0.30.0-rc.1](https://github.com/ant-design/pro-editor/compare/v0.29.2...v0.30.0-rc.1)
 
 <sup>Released on **2023-12-04**</sup>

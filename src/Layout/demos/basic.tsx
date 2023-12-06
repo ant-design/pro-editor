@@ -1,8 +1,8 @@
-import { Layout } from '@ant-design/pro-editor';
+import { EditorLayout } from '@ant-design/pro-editor';
 
 export default () => {
   return (
-    <Layout
+    <EditorLayout
       style={{
         maxWidth: '100%',
       }}
