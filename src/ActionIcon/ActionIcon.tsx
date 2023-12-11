@@ -54,7 +54,7 @@ const ActionIcon: FC<ActionIconProps> = ({
   onClick,
   className,
   arrow = false,
-  size,
+  size = 'default',
   tooltipDelay = 0.5,
   prefixCls: customPrefixCls,
   ...restProps
@@ -68,7 +68,7 @@ const ActionIcon: FC<ActionIconProps> = ({
       className={cx(styles.container, className)}
       type={'text'}
       style={{ cursor }}
-      size={'small'}
+      size={typeof size === 'number' || size === 'default' ? 'middle' : size}
       {...restProps}
       onClick={onClick}
     />
