@@ -15,15 +15,22 @@ group: 基础组件
 
 <code src="./demos/basic.tsx" ></code>
 
+### 关闭自定义输入
+
+你可以将 `showCustomField` 设置为 False 来关闭自定义输入的能力
+
+<code src="./demos/custom.tsx" ></code>
+
 ## API
 
 > 其他属性参考 antd `Select` 组件。
 
-| 参数     | 说明   | 类型                        | 默认值 |
-| :------- | :----- | :-------------------------- | :----- |
-| options  | 选项值 | 参考`FieldSelectOptionType` | -      |
-| onChange | 回调   | (value: string) => void     | -      |
-| value    | 值     | string                      | -      |
+| 参数            | 说明                   | 类型                        | 默认值 |
+| :-------------- | :--------------------- | :-------------------------- | :----- |
+| options         | 选项值                 | 参考`FieldSelectOptionType` | -      |
+| onChange        | 回调                   | (value: string) => void     | -      |
+| value           | 值                     | string                      | -      |
+| showCustomField | 是否使用自定义输入能力 | boolean                     | true   |
 
 ### FieldSelectOptionType 选项类型
 

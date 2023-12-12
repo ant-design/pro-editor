@@ -42,7 +42,7 @@ export const InputNumber: FC<InputNumberProps> = ({
   onFocus,
   onBlur,
   onPressEnter,
-  ...props
+  ...rest
 }) => {
   const { styles, cx } = useStyles();
 
@@ -65,8 +65,8 @@ export const InputNumber: FC<InputNumberProps> = ({
   return (
     <ConfigProvider>
       <_InputNumber
-        size={'small'}
-        {...props}
+        size={'middle'}
+        {...rest}
         value={input}
         onFocus={(event) => {
           onFocus?.(event);
