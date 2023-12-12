@@ -1,5 +1,30 @@
 # Changelog
 
+## [Version&nbsp;0.31.0](https://github.com/ant-design/pro-editor/compare/v0.30.0...v0.31.0)
+
+<sup>Released on **2023-12-12**</sup>
+
+#### ✨ 新特性
+
+- Change all default size as middle & update FieldSet doc.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's improved
+
+- Change all default size as middle & update FieldSet doc ([92d12aa](https://github.com/ant-design/pro-editor/commit/92d12aa))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
 ## [Version&nbsp;0.30.0](https://github.com/ant-design/pro-editor/compare/v0.29.2...v0.30.0)
 
 <sup>Released on **2023-12-06**</sup>
