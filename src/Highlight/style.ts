@@ -119,14 +119,14 @@ export const useStyles = createStyles(
       ),
       select: css`
         min-width: 100px;
-        ${prefix}-btn {
+        .${prefixCls}-btn {
           color: ${colorText};
         }
-        ${prefix}-select-selector {
+        .${prefixCls}-select-selector {
           padding-inline-end: 4px !important;
         }
-        ${prefix}-select-selection-overflow-item-suffix {
-          ${prefix}-select-selection-search {
+        .${prefixCls}-select-selection-overflow-item-suffix {
+          .${prefixCls}-select-selection-search {
             display: none;
           }
         }

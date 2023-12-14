@@ -5,7 +5,7 @@ import {
   RedoOutlined,
   UndoOutlined,
 } from '@ant-design/icons';
-import { ActionIcon, ActionIconProps, getPrefixCls } from '@ant-design/pro-editor';
+import { ActionIcon, ActionIconProps, ConfigProvider, getPrefixCls } from '@ant-design/pro-editor';
 import { Divider, Dropdown, DropdownProps } from 'antd';
 import { useStyle } from './style';
 
@@ -173,30 +173,32 @@ const ActionGroup = (props: ActionGroupProps) => {
   };
 
   return (
-    <div className={cx(styles.content, className)} style={style}>
-      <ActionDomList />
-      {dropdownMenu && (
-        <Dropdown
-          trigger={['click']}
-          {...dropdownProps}
-          menu={{
-            items: dropdownMenu.map((item: any) => {
-              if (item?.type) return item;
-              return {
-                ...item,
-                icon: item.icon,
-              };
-            }),
-          }}
-        >
-          {dropdownMenuTrigger ? (
-            dropdownMenuTrigger
-          ) : (
-            <ActionIcon icon={<DashOutlined />} key="more" size={size} />
-          )}
-        </Dropdown>
-      )}
-    </div>
+    <ConfigProvider>
+      <div className={cx(styles.content, className)} style={style}>
+        <ActionDomList />
+        {dropdownMenu && (
+          <Dropdown
+            trigger={['click']}
+            {...dropdownProps}
+            menu={{
+              items: dropdownMenu.map((item: any) => {
+                if (item?.type) return item;
+                return {
+                  ...item,
+                  icon: item.icon,
+                };
+              }),
+            }}
+          >
+            {dropdownMenuTrigger ? (
+              dropdownMenuTrigger
+            ) : (
+              <ActionIcon icon={<DashOutlined />} key="more" size={size} />
+            )}
+          </Dropdown>
+        )}
+      </div>
+    </ConfigProvider>
   );
 };
 
