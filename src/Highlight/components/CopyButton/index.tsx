@@ -17,14 +17,13 @@ interface CopyButtonProps {
    * @default "light"
    */
   theme?: ThemeType;
-  prefixCls?: string;
   style?: React.CSSProperties;
 }
 
 const CopyButton: React.FC<CopyButtonProps> = (props) => {
-  const { content, onCopy, theme = 'light', prefixCls, style } = props;
+  const { content, onCopy, theme = 'light', style } = props;
   const [copyId, setCopyId] = useState<number | undefined>();
-  const { styles } = useStyles({ prefixCls, theme });
+  const { styles } = useStyles({ theme });
 
   useEffect(() => {
     return () => {

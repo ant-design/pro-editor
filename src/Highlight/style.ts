@@ -1,16 +1,18 @@
 import Color from 'color';
-import { STUDIO_UI_PREFIX, createStyles } from '../theme';
+import { createStyles } from '../theme';
 import { getThemeColor } from './theme/colors';
 
 interface IHighlightStyleProps {
   type: 'pure' | 'block';
   theme: 'light' | 'dark';
-  prefixCls: string;
 }
 
 export const useStyles = createStyles(
-  ({ css, cx, token }, { prefixCls, theme, type }: IHighlightStyleProps) => {
-    const prefix = `${prefixCls}`;
+  ({ css, cx, token, prefixCls }, { theme, type }: IHighlightStyleProps) => {
+    const prefix = `${prefixCls}-${token?.editorPrefix}-highlight`;
+
+    console.log('${prefix}-copy', `${prefix}-copy`);
+
     const { colorFillTertiary, colorText, colorTextSecondary } = getThemeColor(theme === 'dark');
 
     const typeStylish = css`
@@ -54,7 +56,7 @@ export const useStyles = createStyles(
           width: auto !important; // override self width
         `,
         css`
-          .${STUDIO_UI_PREFIX}-btn {
+          .${prefix}-btn {
             &:hover {
               color: ${colorTextSecondary} !important;
             }
@@ -112,21 +114,19 @@ export const useStyles = createStyles(
           font-family: ${token.fontFamilyCode};
           color: ${token.colorTextSecondary};
 
-          // opacity: 0;
-
           transition: opacity 0.1s;
         `,
       ),
       select: css`
         min-width: 100px;
-        .${STUDIO_UI_PREFIX}-btn {
+        ${prefix}-btn {
           color: ${colorText};
         }
-        .${STUDIO_UI_PREFIX}-select-selector {
+        ${prefix}-select-selector {
           padding-inline-end: 4px !important;
         }
-        .${STUDIO_UI_PREFIX}-select-selection-overflow-item-suffix {
-          .${STUDIO_UI_PREFIX}-select-selection-search {
+        ${prefix}-select-selection-overflow-item-suffix {
+          ${prefix}-select-selection-search {
             display: none;
           }
         }

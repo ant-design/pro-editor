@@ -4,9 +4,8 @@ import { useStyles } from './style';
 import FullFeatureWrapper from './wrapper';
 
 const Highlight = (props: HighlightProps) => {
-  const { prefixCls, type, theme, containerWrapper } = props;
+  const { type, theme, containerWrapper } = props;
   const { theme: token } = useStyles({
-    prefixCls,
     type,
     theme,
   });

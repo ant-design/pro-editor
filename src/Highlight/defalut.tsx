@@ -87,7 +87,7 @@ const HighlightBase: React.FC<HighlightProps> = (props) => {
     onCopy,
   } = props;
   const prefixCls = getPrefixCls('highlight', customPrefixCls);
-  const { styles } = useStyles({ prefixCls, theme, type });
+  const { styles } = useStyles({ theme, type });
   const codeRef = createRef<HTMLDivElement>();
   useKeyDownCopyEvent(codeRef, onCopy);
 
@@ -99,13 +99,9 @@ const HighlightBase: React.FC<HighlightProps> = (props) => {
         style={style}
         className={classNames(styles.container, className)}
       >
-        {copyable && (
-          <CopyButton prefixCls={prefixCls} onCopy={onCopy} theme={theme} content={children} />
-        )}
+        {copyable && <CopyButton onCopy={onCopy} theme={theme} content={children} />}
         {showLanguage && language && (
-          <LanguageTag prefixCls={prefixCls} theme={theme}>
-            {language.toLowerCase()}
-          </LanguageTag>
+          <LanguageTag theme={theme}>{language.toLowerCase()}</LanguageTag>
         )}
         <HighLighter
           lineNumber={lineNumber}

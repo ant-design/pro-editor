@@ -1,9 +1,9 @@
-import { ConfigProvider as CP } from 'antd';
+import { ConfigProvider as AntdConfigProvider } from 'antd';
 import { AntdToken, ThemeAppearance, useAntdToken, useThemeMode } from 'antd-style';
 import type { OverrideToken } from 'antd/es/theme/interface';
 import type { FC, ReactNode } from 'react';
 
-import { createStudioAntdTheme } from '../theme';
+import { createStudioAntdTheme, ThemeProvider } from '../theme';
 
 export const useStudioAntdTheme = (appearance: ThemeAppearance) => {
   const token = useAntdToken();
@@ -45,9 +45,9 @@ export const ConfigProvider: FC<ConfigProviderProps> = ({ children, componentTok
   }
 
   return (
-    <CP prefixCls={'studio'} theme={studioTheme}>
-      {children}
-    </CP>
+    <AntdConfigProvider theme={studioTheme}>
+      <ThemeProvider>{children}</ThemeProvider>
+    </AntdConfigProvider>
   );
 };
 
