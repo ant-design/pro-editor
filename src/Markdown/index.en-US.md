@@ -14,11 +14,9 @@ You can also customize it by passing in props like components to React-Markdown,
 
 ## APIs
 
-| Property      | Type            | Description                                                     |
-| ------------- | --------------- | --------------------------------------------------------------- |
-| children      | string          | The Markdown content to render.                                 |
-| className     | string          | The class name of the Markdown component.                       |
-| onDoubleClick | () => void      | Double-click event handler.                                     |
-| style         | CSSProperties   | The style of the Markdown component.                            |
-| highlight     | Highlight Props | Configuration for Highlight, will be passed through by default. |
-| snippet       | Snippet Props   | Configuration for Snippet, will be passed through by default.   |
+| Property      | Type          | Description                               |
+| ------------- | ------------- | ----------------------------------------- |
+| children      | string        | The Markdown content to render.           |
+| className     | string        | The class name of the Markdown component. |
+| onDoubleClick | () => void    | Double-click event handler.               |
+| style         | CSSProperties | The style of the Markdown component.      |
