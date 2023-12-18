@@ -1,44 +1,18 @@
-import { DraggablePanel } from '@ant-design/pro-editor';
-import { Flex, FlexProps, TabsProps } from 'antd';
-import { Size } from 're-resizable';
-import { ReactNode } from 'react';
 import { Flexbox, FlexboxProps } from 'react-layout-kit';
 import { ConfigProvider } from '../ConfigProvider';
 import { getPrefixCls } from '../theme';
+import { HeaderAndFooter, HeaderFooterSettings } from './components/HeaderAndFooter';
+import { PannelDefault, PannelSettings } from './components/PannelDefault';
 import { useStyle } from './style';
 
-interface HeaderFooterSettings {
-  Icon?: ReactNode;
-  extra?: ReactNode;
-  flex?: FlexProps;
-  hide?: boolean;
-  render?: (props: HeaderFooterSettings) => ReactNode;
-  children?: ReactNode;
-}
-
 interface LayoutProps extends FlexboxProps {
-  header?: HeaderFooterSettings;
-  footer?: HeaderFooterSettings;
-  leftPannel?: PannelSettings;
-  rightPannel?: PannelSettings;
-  bottomPannel?: PannelSettings;
-  centerPannel?: PannelSettings;
+  header?: HeaderFooterSettings | false;
+  footer?: HeaderFooterSettings | false;
+  leftPannel?: PannelSettings | false;
+  rightPannel?: PannelSettings | false;
+  bottomPannel?: PannelSettings | false;
+  centerPannel?: PannelSettings | false;
   type?: string;
-}
-
-interface PannelSettings {
-  children: ReactNode | ReactNode[];
-  direction?: 'horizontal' | 'vertical';
-  tabs?: TabsProps;
-  icon?: ReactNode;
-  extra?: ReactNode;
-  hide?: boolean;
-  minWidth?: number;
-  minHeight?: number;
-  maxWidth?: number;
-  maxHeight?: number;
-  style?: React.CSSProperties;
-  className?: string;
 }
 
 const BasicLayout = (props: LayoutProps) => {
@@ -46,126 +20,21 @@ const BasicLayout = (props: LayoutProps) => {
     props;
 
   const prefixCls = getPrefixCls('layout');
-  const { styles, cx } = useStyle(prefixCls);
-
-  const getPannelProps = (
-    index: number,
-  ):
-    | {
-        placement: 'left' | 'right' | 'bottom';
-        className?: string;
-        maxWidth?: number;
-        maxHeight?: number;
-        defaultSize?: Partial<Size>;
-      }
-    | false => {
-    switch (['left', 'right', 'bottom', 'center'][index]) {
-      case 'left':
-        return {
-          placement: 'left',
-          className: styles.leftPannel,
-          maxWidth: 500,
-          defaultSize: {
-            width: '300',
-          },
-        };
-      case 'right':
-        return {
-          placement: 'right',
-          className: styles.rightPannel,
-          maxWidth: 500,
-          defaultSize: {
-            width: '300',
-          },
-        };
-      case 'bottom':
-        return {
-          placement: 'bottom',
-          maxHeight: 400,
-          defaultSize: {
-            height: '200',
-          },
-        };
-      case 'center':
-        return false;
-      default:
-        return false;
-    }
-  };
-
-  const DraggablePanelRender = (props: PannelSettings, index: number) => {
-    const {
-      children = '',
-      className,
-      style,
-      minHeight = 200,
-      minWidth = 200,
-
-      ...rest
-    } = props || {};
-    const pannelProps = getPannelProps(index);
-    if (!pannelProps) {
-      return (
-        <div className={cx(styles.pannel, styles.centerPannel)}>
-          <div className={cx(className)}>{children}</div>
-        </div>
-      );
-    }
-    const { placement, className: pannelClassName } = pannelProps;
-    return (
-      <DraggablePanel
-        expandable={false}
-        style={{ border: 'none', ...style }}
-        placement={placement}
-        minHeight={minHeight}
-        minWidth={minWidth}
-        {...pannelProps}
-        {...rest}
-      >
-        <div className={cx(styles.pannel, pannelClassName, className)}>{children}</div>
-      </DraggablePanel>
-    );
-  };
+  const { styles } = useStyle(prefixCls);
 
   const [LeftPannelDom, RightPannelDom, BottomPannelDom, CenterPannelDom] = [
     leftPannel,
     rightPannel,
     bottomPannel,
     centerPannel,
-  ].map(DraggablePanelRender);
+  ].map((props, index) => {
+    if (props === false) return null;
+    return <PannelDefault key={'pannel' + index} {...props} index={index} />;
+  });
 
   const [HeaderDom, FooterDom] = [header, footer].map((props, index) => {
-    const {
-      children,
-      render,
-      hide = false,
-      flex = {
-        justify: 'space-between',
-        align: 'center',
-        className: '',
-      },
-    } = props || {};
-    if (hide) {
-      return null;
-    }
-    if (render) {
-      return render(props);
-    }
-    return (
-      <Flex
-        key={index === 0 ? 'editor-layout-header' : 'editor-layout-footer'}
-        {...flex}
-        className={cx(
-          index === 0 ? styles.header : styles.footer,
-          styles.flexContainer,
-          flex?.className,
-        )}
-      >
-        <div>Icon</div>
-        {children}
-        <div>Extra</div>
-      </Flex>
-    );
+    if (props === false) return null;
+    return <HeaderAndFooter key={index} {...props} type={index === 0 ? 'header' : 'footer'} />;
   });
 
   return (
