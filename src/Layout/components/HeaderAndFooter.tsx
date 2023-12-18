@@ -21,7 +21,7 @@ interface HeaderFooterSettings {
   extra?: ReactNode;
   flex?: FlexProps;
   hide?: boolean;
-  render?: (props: HeaderFooterSettings) => ReactNode;
+  render?: (props: HeaderFooterSettings) => JSX.Element;
   style?: React.CSSProperties;
   className?: string;
   children?: ReactNode;
