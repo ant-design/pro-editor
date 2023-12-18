@@ -1,23 +1,21 @@
 # Changelog
 
-## [Version&nbsp;0.31.0-rc.2](https://github.com/ant-design/pro-editor/compare/v0.31.0-rc.1...v0.31.0-rc.2)
+## [Version&nbsp;0.31.0](https://github.com/ant-design/pro-editor/compare/v0.30.0...v0.31.0)
 
-<sup>Released on **2023-12-06**</sup>
+<sup>Released on **2023-12-12**</sup>
 
-#### 🐛 修复
+#### ✨ 新特性
 
-- Merge branch, update Layout Pannel Styles, update snapshot.
+- Change all default size as middle & update FieldSet doc.
 
 <br/>
 
 <details>
 <summary><kbd>Improvements and Fixes</kbd></summary>
 
-#### What's fixed
+#### What's improved
 
-- Merge branch ([5b4c5a1](https://github.com/ant-design/pro-editor/commit/5b4c5a1))
-- Update Layout Pannel Styles ([a3144ac](https://github.com/ant-design/pro-editor/commit/a3144ac))
-- Update snapshot ([f2665ef](https://github.com/ant-design/pro-editor/commit/f2665ef))
+- Change all default size as middle & update FieldSet doc ([92d12aa](https://github.com/ant-design/pro-editor/commit/92d12aa))
 
 </details>
 
@@ -27,7 +25,7 @@
 
 </div>
 
-## [Version&nbsp;0.31.0-rc.1](https://github.com/ant-design/pro-editor/compare/v0.30.0...v0.31.0-rc.1)
+## [Version&nbsp;0.30.0](https://github.com/ant-design/pro-editor/compare/v0.29.2...v0.30.0)
 
 <sup>Released on **2023-12-06**</sup>
 

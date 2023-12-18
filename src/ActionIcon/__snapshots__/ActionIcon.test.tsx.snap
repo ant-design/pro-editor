@@ -29,7 +29,7 @@ exports[`ActionIcon > 可正常渲染 1`] = `
 
 <div>
   <button
-    class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-0"
+    class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon emotion-0"
     type="button"
   >
     <span
@@ -88,7 +88,7 @@ exports[`ActionIcon > 带有标题 1`] = `
 
 <div>
   <button
-    class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-0"
+    class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon emotion-0"
     data-testid="smile"
     type="button"
   >

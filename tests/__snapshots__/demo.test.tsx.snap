@@ -53,7 +53,7 @@ exports[`<ActionGroup /> > renders basic.tsx correctly 1`] = `
     class="studio-action-group-content emotion-0"
   >
     <button
-      class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-1"
+      class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon emotion-1"
       type="button"
     >
       <span
@@ -81,7 +81,7 @@ exports[`<ActionGroup /> > renders basic.tsx correctly 1`] = `
       </span>
     </button>
     <button
-      class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-1"
+      class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon emotion-1"
       type="button"
     >
       <span
@@ -109,7 +109,7 @@ exports[`<ActionGroup /> > renders basic.tsx correctly 1`] = `
       </span>
     </button>
     <button
-      class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-1"
+      class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon emotion-1"
       type="button"
     >
       <span
@@ -137,7 +137,7 @@ exports[`<ActionGroup /> > renders basic.tsx correctly 1`] = `
       </span>
     </button>
     <button
-      class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-1"
+      class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon emotion-1"
       type="button"
     >
       <span
@@ -221,7 +221,7 @@ exports[`<ActionGroup /> > renders config.tsx correctly 1`] = `
     class="studio-action-group-content emotion-0"
   >
     <button
-      class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-1"
+      class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon emotion-1"
       label="复制"
       type="button"
     >
@@ -250,7 +250,7 @@ exports[`<ActionGroup /> > renders config.tsx correctly 1`] = `
       </span>
     </button>
     <button
-      class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-1"
+      class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon emotion-1"
       label="放大！"
       type="button"
     >
@@ -279,7 +279,7 @@ exports[`<ActionGroup /> > renders config.tsx correctly 1`] = `
       </span>
     </button>
     <button
-      class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-1"
+      class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon emotion-1"
       label="缩小！"
       style="color: rgb(24, 144, 255);"
       type="button"
@@ -314,7 +314,7 @@ exports[`<ActionGroup /> > renders config.tsx correctly 1`] = `
       style="margin: 0px 4px;"
     />
     <button
-      class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-1"
+      class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon emotion-1"
       label="快速定位"
       type="button"
     >
@@ -449,7 +449,7 @@ exports[`<ActionGroup /> > renders custom.tsx correctly 1`] = `
           style="display: flex; flex-direction: row;"
         >
           <button
-            class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-1"
+            class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon emotion-1"
             type="button"
           >
             <span
@@ -477,7 +477,7 @@ exports[`<ActionGroup /> > renders custom.tsx correctly 1`] = `
             </span>
           </button>
           <button
-            class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-1"
+            class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon emotion-1"
             type="button"
           >
             <span
@@ -505,7 +505,7 @@ exports[`<ActionGroup /> > renders custom.tsx correctly 1`] = `
             </span>
           </button>
           <button
-            class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-1"
+            class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon emotion-1"
             type="button"
           >
             <span
@@ -533,7 +533,7 @@ exports[`<ActionGroup /> > renders custom.tsx correctly 1`] = `
             </span>
           </button>
           <button
-            class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-1"
+            class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon emotion-1"
             type="button"
           >
             <span
@@ -928,7 +928,7 @@ exports[`<ActionGroup /> > renders dropMenu.tsx correctly 1`] = `
     class="studio-action-group-content emotion-0"
   >
     <button
-      class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-1"
+      class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon emotion-1"
       type="button"
     >
       <span
@@ -956,7 +956,7 @@ exports[`<ActionGroup /> > renders dropMenu.tsx correctly 1`] = `
       </span>
     </button>
     <button
-      class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-1"
+      class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon emotion-1"
       type="button"
     >
       <span
@@ -984,7 +984,7 @@ exports[`<ActionGroup /> > renders dropMenu.tsx correctly 1`] = `
       </span>
     </button>
     <button
-      class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-1"
+      class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon emotion-1"
       type="button"
     >
       <span
@@ -1012,7 +1012,7 @@ exports[`<ActionGroup /> > renders dropMenu.tsx correctly 1`] = `
       </span>
     </button>
     <button
-      class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-1"
+      class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon emotion-1"
       type="button"
     >
       <span
@@ -1040,7 +1040,7 @@ exports[`<ActionGroup /> > renders dropMenu.tsx correctly 1`] = `
       </span>
     </button>
     <button
-      class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-1 studio-dropdown-trigger"
+      class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon emotion-1 studio-dropdown-trigger"
       type="button"
     >
       <span
@@ -1281,7 +1281,7 @@ exports[`<ActionGroup /> > renders type.tsx correctly 1`] = `
         class="studio-action-group-content emotion-0"
       >
         <button
-          class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-1"
+          class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon emotion-1"
           type="button"
         >
           <span
@@ -1309,7 +1309,7 @@ exports[`<ActionGroup /> > renders type.tsx correctly 1`] = `
           </span>
         </button>
         <button
-          class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-1"
+          class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon emotion-1"
           type="button"
         >
           <span
@@ -1337,7 +1337,7 @@ exports[`<ActionGroup /> > renders type.tsx correctly 1`] = `
           </span>
         </button>
         <button
-          class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-1"
+          class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon emotion-1"
           type="button"
         >
           <span
@@ -1370,7 +1370,7 @@ exports[`<ActionGroup /> > renders type.tsx correctly 1`] = `
           style="margin: 0px 4px;"
         />
         <button
-          class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-1"
+          class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon emotion-1"
           type="button"
         >
           <span
@@ -1479,7 +1479,7 @@ exports[`<ActionGroup /> > renders withPanel.tsx correctly 1`] = `
         class="studio-action-group-content emotion-1"
       >
         <button
-          class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-2"
+          class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon emotion-2"
           type="button"
         >
           <span
@@ -1507,7 +1507,7 @@ exports[`<ActionGroup /> > renders withPanel.tsx correctly 1`] = `
           </span>
         </button>
         <button
-          class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-2"
+          class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon emotion-2"
           type="button"
         >
           <span
@@ -1535,7 +1535,7 @@ exports[`<ActionGroup /> > renders withPanel.tsx correctly 1`] = `
           </span>
         </button>
         <button
-          class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-2"
+          class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon emotion-2"
           type="button"
         >
           <span
@@ -1563,7 +1563,7 @@ exports[`<ActionGroup /> > renders withPanel.tsx correctly 1`] = `
           </span>
         </button>
         <button
-          class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-2"
+          class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon emotion-2"
           type="button"
         >
           <span
@@ -1626,7 +1626,7 @@ exports[`<ActionIcon /> > renders basic.tsx correctly 1`] = `
 
 <div>
   <button
-    class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-0"
+    class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon emotion-0"
     type="button"
   >
     <span
@@ -1691,7 +1691,7 @@ exports[`<ActionIcon /> > renders preset.tsx correctly 1`] = `
       class="studio-space-item"
     >
       <button
-        class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-0"
+        class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon emotion-0"
         type="button"
       >
         <span
@@ -1723,7 +1723,7 @@ exports[`<ActionIcon /> > renders preset.tsx correctly 1`] = `
       class="studio-space-item"
     >
       <button
-        class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-0"
+        class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon emotion-0"
         type="button"
       >
         <span
@@ -1755,7 +1755,7 @@ exports[`<ActionIcon /> > renders preset.tsx correctly 1`] = `
       class="studio-space-item"
     >
       <button
-        class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-0"
+        class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon emotion-0"
         type="button"
       >
         <span
@@ -1777,7 +1777,7 @@ exports[`<ActionIcon /> > renders preset.tsx correctly 1`] = `
       class="studio-space-item"
     >
       <button
-        class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-0"
+        class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon emotion-0"
         type="button"
       >
         <span
@@ -2685,7 +2685,7 @@ exports[`<ColumnList /> > renders actions.tsx correctly 1`] = `
             class="layoutkit-flexbox emotion-8 studio-column-list-item emotion-9"
           >
             <button
-              class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon studio-column-list-item-actions studio-column-list-item-handle emotion-10"
+              class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-column-list-item-actions studio-column-list-item-handle emotion-10"
               data-cypress="draggable-handle"
               style="width: 14px; height: 24px;"
               tabindex="-1"
@@ -2843,7 +2843,7 @@ exports[`<ColumnList /> > renders actions.tsx correctly 1`] = `
               class="layoutkit-flexbox emotion-8 studio-column-list-item-actions emotion-17 studio-column-list-item-actions-right emotion-18"
             >
               <button
-                class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-19"
+                class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon emotion-19"
                 tabindex="-1"
                 type="button"
               >
@@ -2872,7 +2872,7 @@ exports[`<ColumnList /> > renders actions.tsx correctly 1`] = `
                 </span>
               </button>
               <button
-                class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-19"
+                class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon emotion-19"
                 style="height: 22px;"
                 tabindex="-1"
                 type="button"
@@ -2925,7 +2925,7 @@ exports[`<ColumnList /> > renders actions.tsx correctly 1`] = `
             class="layoutkit-flexbox emotion-8 studio-column-list-item emotion-9"
           >
             <button
-              class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon studio-column-list-item-actions studio-column-list-item-handle emotion-10"
+              class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-column-list-item-actions studio-column-list-item-handle emotion-10"
               data-cypress="draggable-handle"
               style="width: 14px; height: 24px;"
               tabindex="-1"
@@ -3083,7 +3083,7 @@ exports[`<ColumnList /> > renders actions.tsx correctly 1`] = `
               class="layoutkit-flexbox emotion-8 studio-column-list-item-actions emotion-17 studio-column-list-item-actions-right emotion-18"
             >
               <button
-                class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-19"
+                class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon emotion-19"
                 tabindex="-1"
                 type="button"
               >
@@ -3112,7 +3112,7 @@ exports[`<ColumnList /> > renders actions.tsx correctly 1`] = `
                 </span>
               </button>
               <button
-                class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-19"
+                class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon emotion-19"
                 style="height: 22px;"
                 tabindex="-1"
                 type="button"
@@ -3165,7 +3165,7 @@ exports[`<ColumnList /> > renders actions.tsx correctly 1`] = `
             class="layoutkit-flexbox emotion-8 studio-column-list-item emotion-9"
           >
             <button
-              class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon studio-column-list-item-actions studio-column-list-item-handle emotion-10"
+              class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-column-list-item-actions studio-column-list-item-handle emotion-10"
               data-cypress="draggable-handle"
               style="width: 14px; height: 24px;"
               tabindex="-1"
@@ -3323,7 +3323,7 @@ exports[`<ColumnList /> > renders actions.tsx correctly 1`] = `
               class="layoutkit-flexbox emotion-8 studio-column-list-item-actions emotion-17 studio-column-list-item-actions-right emotion-18"
             >
               <button
-                class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-19"
+                class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon emotion-19"
                 tabindex="-1"
                 type="button"
               >
@@ -3352,7 +3352,7 @@ exports[`<ColumnList /> > renders actions.tsx correctly 1`] = `
                 </span>
               </button>
               <button
-                class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-19"
+                class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon emotion-19"
                 style="height: 22px;"
                 tabindex="-1"
                 type="button"
@@ -3751,7 +3751,7 @@ exports[`<ColumnList /> > renders column.tsx correctly 1`] = `
             class="layoutkit-flexbox emotion-9 studio-column-list-item emotion-10"
           >
             <button
-              class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon studio-column-list-item-actions studio-column-list-item-handle emotion-11"
+              class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-column-list-item-actions studio-column-list-item-handle emotion-11"
               data-cypress="draggable-handle"
               style="width: 14px; height: 24px;"
               tabindex="-1"
@@ -3926,7 +3926,7 @@ exports[`<ColumnList /> > renders column.tsx correctly 1`] = `
               class="layoutkit-flexbox emotion-9 studio-column-list-item-actions emotion-18 studio-column-list-item-actions-right emotion-19"
             >
               <button
-                class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-20"
+                class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon emotion-20"
                 style="height: 22px;"
                 tabindex="-1"
                 type="button"
@@ -3979,7 +3979,7 @@ exports[`<ColumnList /> > renders column.tsx correctly 1`] = `
             class="layoutkit-flexbox emotion-9 studio-column-list-item emotion-10"
           >
             <button
-              class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon studio-column-list-item-actions studio-column-list-item-handle emotion-11"
+              class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-column-list-item-actions studio-column-list-item-handle emotion-11"
               data-cypress="draggable-handle"
               style="width: 14px; height: 24px;"
               tabindex="-1"
@@ -4154,7 +4154,7 @@ exports[`<ColumnList /> > renders column.tsx correctly 1`] = `
               class="layoutkit-flexbox emotion-9 studio-column-list-item-actions emotion-18 studio-column-list-item-actions-right emotion-19"
             >
               <button
-                class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-20"
+                class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon emotion-20"
                 style="height: 22px;"
                 tabindex="-1"
                 type="button"
@@ -4207,7 +4207,7 @@ exports[`<ColumnList /> > renders column.tsx correctly 1`] = `
             class="layoutkit-flexbox emotion-9 studio-column-list-item emotion-10"
           >
             <button
-              class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon studio-column-list-item-actions studio-column-list-item-handle emotion-11"
+              class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-column-list-item-actions studio-column-list-item-handle emotion-11"
               data-cypress="draggable-handle"
               style="width: 14px; height: 24px;"
               tabindex="-1"
@@ -4382,7 +4382,7 @@ exports[`<ColumnList /> > renders column.tsx correctly 1`] = `
               class="layoutkit-flexbox emotion-9 studio-column-list-item-actions emotion-18 studio-column-list-item-actions-right emotion-19"
             >
               <button
-                class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-20"
+                class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon emotion-20"
                 style="height: 22px;"
                 tabindex="-1"
                 type="button"
@@ -4435,7 +4435,7 @@ exports[`<ColumnList /> > renders column.tsx correctly 1`] = `
             class="layoutkit-flexbox emotion-9 studio-column-list-item emotion-10"
           >
             <button
-              class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon studio-column-list-item-actions studio-column-list-item-handle emotion-11"
+              class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-column-list-item-actions studio-column-list-item-handle emotion-11"
               data-cypress="draggable-handle"
               style="width: 14px; height: 24px;"
               tabindex="-1"
@@ -4610,7 +4610,7 @@ exports[`<ColumnList /> > renders column.tsx correctly 1`] = `
               class="layoutkit-flexbox emotion-9 studio-column-list-item-actions emotion-18 studio-column-list-item-actions-right emotion-19"
             >
               <button
-                class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-20"
+                class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon emotion-20"
                 style="height: 22px;"
                 tabindex="-1"
                 type="button"
@@ -4970,7 +4970,7 @@ exports[`<ColumnList /> > renders controlled.tsx correctly 1`] = `
             class="layoutkit-flexbox emotion-8 studio-column-list-item emotion-9"
           >
             <button
-              class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon studio-column-list-item-actions studio-column-list-item-handle emotion-10"
+              class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-column-list-item-actions studio-column-list-item-handle emotion-10"
               data-cypress="draggable-handle"
               style="width: 14px; height: 24px;"
               tabindex="-1"
@@ -5128,7 +5128,7 @@ exports[`<ColumnList /> > renders controlled.tsx correctly 1`] = `
               class="layoutkit-flexbox emotion-8 studio-column-list-item-actions emotion-17 studio-column-list-item-actions-right emotion-18"
             >
               <button
-                class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-19"
+                class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon emotion-19"
                 style="height: 22px;"
                 tabindex="-1"
                 type="button"
@@ -5181,7 +5181,7 @@ exports[`<ColumnList /> > renders controlled.tsx correctly 1`] = `
             class="layoutkit-flexbox emotion-8 studio-column-list-item emotion-9"
           >
             <button
-              class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon studio-column-list-item-actions studio-column-list-item-handle emotion-10"
+              class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-column-list-item-actions studio-column-list-item-handle emotion-10"
               data-cypress="draggable-handle"
               style="width: 14px; height: 24px;"
               tabindex="-1"
@@ -5339,7 +5339,7 @@ exports[`<ColumnList /> > renders controlled.tsx correctly 1`] = `
               class="layoutkit-flexbox emotion-8 studio-column-list-item-actions emotion-17 studio-column-list-item-actions-right emotion-18"
             >
               <button
-                class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-19"
+                class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon emotion-19"
                 style="height: 22px;"
                 tabindex="-1"
                 type="button"
@@ -5392,7 +5392,7 @@ exports[`<ColumnList /> > renders controlled.tsx correctly 1`] = `
             class="layoutkit-flexbox emotion-8 studio-column-list-item emotion-9"
           >
             <button
-              class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon studio-column-list-item-actions studio-column-list-item-handle emotion-10"
+              class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-column-list-item-actions studio-column-list-item-handle emotion-10"
               data-cypress="draggable-handle"
               style="width: 14px; height: 24px;"
               tabindex="-1"
@@ -5550,7 +5550,7 @@ exports[`<ColumnList /> > renders controlled.tsx correctly 1`] = `
               class="layoutkit-flexbox emotion-8 studio-column-list-item-actions emotion-17 studio-column-list-item-actions-right emotion-18"
             >
               <button
-                class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-19"
+                class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon emotion-19"
                 style="height: 22px;"
                 tabindex="-1"
                 type="button"
@@ -5967,7 +5967,7 @@ exports[`<ColumnList /> > renders creatorButtonProps.tsx correctly 1`] = `
             class="layoutkit-flexbox emotion-9 studio-column-list-item emotion-10"
           >
             <button
-              class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon studio-column-list-item-actions studio-column-list-item-handle emotion-11"
+              class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-column-list-item-actions studio-column-list-item-handle emotion-11"
               data-cypress="draggable-handle"
               style="width: 14px; height: 24px;"
               tabindex="-1"
@@ -6125,7 +6125,7 @@ exports[`<ColumnList /> > renders creatorButtonProps.tsx correctly 1`] = `
               class="layoutkit-flexbox emotion-9 studio-column-list-item-actions emotion-18 studio-column-list-item-actions-right emotion-19"
             >
               <button
-                class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-20"
+                class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon emotion-20"
                 style="height: 22px;"
                 tabindex="-1"
                 type="button"
@@ -6178,7 +6178,7 @@ exports[`<ColumnList /> > renders creatorButtonProps.tsx correctly 1`] = `
             class="layoutkit-flexbox emotion-9 studio-column-list-item emotion-10"
           >
             <button
-              class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon studio-column-list-item-actions studio-column-list-item-handle emotion-11"
+              class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-column-list-item-actions studio-column-list-item-handle emotion-11"
               data-cypress="draggable-handle"
               style="width: 14px; height: 24px;"
               tabindex="-1"
@@ -6336,7 +6336,7 @@ exports[`<ColumnList /> > renders creatorButtonProps.tsx correctly 1`] = `
               class="layoutkit-flexbox emotion-9 studio-column-list-item-actions emotion-18 studio-column-list-item-actions-right emotion-19"
             >
               <button
-                class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-20"
+                class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon emotion-20"
                 style="height: 22px;"
                 tabindex="-1"
                 type="button"
@@ -6389,7 +6389,7 @@ exports[`<ColumnList /> > renders creatorButtonProps.tsx correctly 1`] = `
             class="layoutkit-flexbox emotion-9 studio-column-list-item emotion-10"
           >
             <button
-              class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon studio-column-list-item-actions studio-column-list-item-handle emotion-11"
+              class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-column-list-item-actions studio-column-list-item-handle emotion-11"
               data-cypress="draggable-handle"
               style="width: 14px; height: 24px;"
               tabindex="-1"
@@ -6547,7 +6547,7 @@ exports[`<ColumnList /> > renders creatorButtonProps.tsx correctly 1`] = `
               class="layoutkit-flexbox emotion-9 studio-column-list-item-actions emotion-18 studio-column-list-item-actions-right emotion-19"
             >
               <button
-                class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-20"
+                class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon emotion-20"
                 style="height: 22px;"
                 tabindex="-1"
                 type="button"
@@ -6887,7 +6887,7 @@ exports[`<ColumnList /> > renders customCreate.tsx correctly 1`] = `
       列配置项
     </div>
     <button
-      class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-1"
+      class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon emotion-1"
       tabindex="-1"
       type="button"
     >
@@ -6971,7 +6971,7 @@ exports[`<ColumnList /> > renders customCreate.tsx correctly 1`] = `
             class="layoutkit-flexbox emotion-10 studio-column-list-item emotion-11"
           >
             <button
-              class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon studio-column-list-item-actions studio-column-list-item-handle emotion-12"
+              class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-column-list-item-actions studio-column-list-item-handle emotion-12"
               data-cypress="draggable-handle"
               style="width: 14px; height: 24px;"
               tabindex="-1"
@@ -7129,7 +7129,7 @@ exports[`<ColumnList /> > renders customCreate.tsx correctly 1`] = `
               class="layoutkit-flexbox emotion-10 studio-column-list-item-actions emotion-19 studio-column-list-item-actions-right emotion-20"
             >
               <button
-                class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-1"
+                class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon emotion-1"
                 style="height: 22px;"
                 tabindex="-1"
                 type="button"
@@ -7182,7 +7182,7 @@ exports[`<ColumnList /> > renders customCreate.tsx correctly 1`] = `
             class="layoutkit-flexbox emotion-10 studio-column-list-item emotion-11"
           >
             <button
-              class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon studio-column-list-item-actions studio-column-list-item-handle emotion-12"
+              class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-column-list-item-actions studio-column-list-item-handle emotion-12"
               data-cypress="draggable-handle"
               style="width: 14px; height: 24px;"
               tabindex="-1"
@@ -7340,7 +7340,7 @@ exports[`<ColumnList /> > renders customCreate.tsx correctly 1`] = `
               class="layoutkit-flexbox emotion-10 studio-column-list-item-actions emotion-19 studio-column-list-item-actions-right emotion-20"
             >
               <button
-                class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-1"
+                class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon emotion-1"
                 style="height: 22px;"
                 tabindex="-1"
                 type="button"
@@ -7393,7 +7393,7 @@ exports[`<ColumnList /> > renders customCreate.tsx correctly 1`] = `
             class="layoutkit-flexbox emotion-10 studio-column-list-item emotion-11"
           >
             <button
-              class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon studio-column-list-item-actions studio-column-list-item-handle emotion-12"
+              class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-column-list-item-actions studio-column-list-item-handle emotion-12"
               data-cypress="draggable-handle"
               style="width: 14px; height: 24px;"
               tabindex="-1"
@@ -7551,7 +7551,7 @@ exports[`<ColumnList /> > renders customCreate.tsx correctly 1`] = `
               class="layoutkit-flexbox emotion-10 studio-column-list-item-actions emotion-19 studio-column-list-item-actions-right emotion-20"
             >
               <button
-                class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-1"
+                class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon emotion-1"
                 style="height: 22px;"
                 tabindex="-1"
                 type="button"
@@ -8053,7 +8053,7 @@ exports[`<ColumnList /> > renders normal.tsx correctly 1`] = `
             class="layoutkit-flexbox emotion-7 studio-column-list-item emotion-8"
           >
             <button
-              class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon studio-column-list-item-actions studio-column-list-item-handle emotion-9"
+              class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-column-list-item-actions studio-column-list-item-handle emotion-9"
               data-cypress="draggable-handle"
               style="width: 14px; height: 24px;"
               tabindex="-1"
@@ -8097,7 +8097,7 @@ exports[`<ColumnList /> > renders normal.tsx correctly 1`] = `
               class="layoutkit-flexbox emotion-7 studio-column-list-item-actions emotion-15 studio-column-list-item-actions-right emotion-16"
             >
               <button
-                class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-17"
+                class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon emotion-17"
                 style="height: 22px;"
                 tabindex="-1"
                 type="button"
@@ -8150,7 +8150,7 @@ exports[`<ColumnList /> > renders normal.tsx correctly 1`] = `
             class="layoutkit-flexbox emotion-7 studio-column-list-item emotion-8"
           >
             <button
-              class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon studio-column-list-item-actions studio-column-list-item-handle emotion-9"
+              class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-column-list-item-actions studio-column-list-item-handle emotion-9"
               data-cypress="draggable-handle"
               style="width: 14px; height: 24px;"
               tabindex="-1"
@@ -8194,7 +8194,7 @@ exports[`<ColumnList /> > renders normal.tsx correctly 1`] = `
               class="layoutkit-flexbox emotion-7 studio-column-list-item-actions emotion-15 studio-column-list-item-actions-right emotion-16"
             >
               <button
-                class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-17"
+                class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon emotion-17"
                 style="height: 22px;"
                 tabindex="-1"
                 type="button"
@@ -8247,7 +8247,7 @@ exports[`<ColumnList /> > renders normal.tsx correctly 1`] = `
             class="layoutkit-flexbox emotion-7 studio-column-list-item emotion-8"
           >
             <button
-              class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon studio-column-list-item-actions studio-column-list-item-handle emotion-9"
+              class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-column-list-item-actions studio-column-list-item-handle emotion-9"
               data-cypress="draggable-handle"
               style="width: 14px; height: 24px;"
               tabindex="-1"
@@ -8291,7 +8291,7 @@ exports[`<ColumnList /> > renders normal.tsx correctly 1`] = `
               class="layoutkit-flexbox emotion-7 studio-column-list-item-actions emotion-15 studio-column-list-item-actions-right emotion-16"
             >
               <button
-                class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-17"
+                class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon emotion-17"
                 style="height: 22px;"
                 tabindex="-1"
                 type="button"
@@ -9499,7 +9499,7 @@ exports[`<DataPreviewer /> > renders basic.tsx correctly 1`] = `
             class="layoutkit-flexbox emotion-1"
           >
             <button
-              class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-8"
+              class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon emotion-8"
               type="button"
             >
               <span
@@ -9536,7 +9536,7 @@ exports[`<DataPreviewer /> > renders basic.tsx correctly 1`] = `
             class="layoutkit-flexbox emotion-9"
           >
             <button
-              class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-8"
+              class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon emotion-8"
               type="button"
             >
               <span
@@ -11172,7 +11172,7 @@ exports[`<DataPreviewer /> > renders extra.tsx correctly 1`] = `
             class="layoutkit-flexbox emotion-1"
           >
             <button
-              class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-8"
+              class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon emotion-8"
               type="button"
             >
               <span
@@ -11209,7 +11209,7 @@ exports[`<DataPreviewer /> > renders extra.tsx correctly 1`] = `
             class="layoutkit-flexbox emotion-9"
           >
             <button
-              class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-8"
+              class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon emotion-8"
               type="button"
             >
               <span
@@ -11237,7 +11237,7 @@ exports[`<DataPreviewer /> > renders extra.tsx correctly 1`] = `
               </span>
             </button>
             <button
-              class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-8"
+              class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon emotion-8"
               type="button"
             >
               <span
@@ -12580,7 +12580,7 @@ exports[`<DataPreviewer /> > renders showType.tsx correctly 1`] = `
             class="layoutkit-flexbox emotion-1"
           >
             <button
-              class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-8"
+              class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon emotion-8"
               type="button"
             >
               <span
@@ -12617,7 +12617,7 @@ exports[`<DataPreviewer /> > renders showType.tsx correctly 1`] = `
             class="layoutkit-flexbox emotion-9"
           >
             <button
-              class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-8"
+              class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon emotion-8"
               type="button"
             >
               <span
@@ -15147,6 +15147,192 @@ exports[`<FieldIcon /> > renders basic.tsx correctly 1`] = `
 `;
 
 exports[`<FieldSelect /> > renders basic.tsx correctly 1`] = `
+.emotion-0 {
+  width: 100%;
+}
+
+.emotion-0.studio-select-multiple:not(.emotion-0.studio-select-customize-input) .emotion-0.studio-select.studio-select-selector:hover {
+  color: rgba(0, 0, 0, 0.88);
+  background-color: rgba(0, 0, 0, 0.04);
+  border-color: transparent;
+}
+
+.emotion-0.studio-select-multiple:not(.emotion-0.studio-select-customize-input) .emotion-0.studio-select.studio-select-selector:focus {
+  color: rgba(0, 0, 0, 0.88)!important;
+  background-color: rgba(0, 0, 0, 0.02)!important;
+  border-color: #1677ff!important;
+  box-shadow: none;
+}
+
+.emotion-0.studio-select:not(.studio-select-disabled):not(.studio-select-customize-input):hover .studio-select-selector {
+  border-color: transparent;
+}
+
+.emotion-0.studio-select:not(.studio-select-disabled):not(.studio-select-customize-input):hover .studio-select-selector:hover {
+  color: rgba(0, 0, 0, 0.88);
+  background-color: rgba(0, 0, 0, 0.04);
+  border-color: transparent;
+}
+
+.emotion-0.studio-select:not(.studio-select-disabled):not(.studio-select-customize-input):hover .studio-select-selector:focus {
+  color: rgba(0, 0, 0, 0.88)!important;
+  background-color: rgba(0, 0, 0, 0.02)!important;
+  border-color: #1677ff!important;
+  box-shadow: none;
+}
+
+.emotion-0.studio-select-focused:not(.studio-select-disabled):not(.studio-select-customize-input):hover .studio-select-selector {
+  color: rgba(0, 0, 0, 0.88)!important;
+  background-color: rgba(0, 0, 0, 0.02)!important;
+  border-color: #1677ff!important;
+  box-shadow: none;
+}
+
+.emotion-0.studio-select-focused:not(.studio-select-disabled):not(.studio-select-customize-input) .studio-select-selector {
+  color: rgba(0, 0, 0, 0.88)!important;
+  background-color: rgba(0, 0, 0, 0.02)!important;
+  border-color: #1677ff!important;
+  box-shadow: none;
+}
+
+.emotion-0 .studio-select-arrow {
+  top: 13px;
+  right: 8px;
+  width: 10px;
+  height: 10px;
+  font-size: 10px;
+}
+
+.emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 12px;
+}
+
+.emotion-2 {
+  font-size: 14px;
+}
+
+.emotion-3 {
+  margin-left: 4px;
+}
+
+<div>
+  <div
+    class="studio-select studio-field-select emotion-0 studio-select-single studio-select-show-arrow"
+  >
+    <div
+      class="studio-select-selector"
+    >
+      <span
+        class="studio-select-selection-search"
+      >
+        <input
+          aria-autocomplete="list"
+          aria-controls="rc_select_TEST_OR_SSR_list"
+          aria-expanded="false"
+          aria-haspopup="listbox"
+          aria-owns="rc_select_TEST_OR_SSR_list"
+          autocomplete="off"
+          class="studio-select-selection-search-input"
+          id="rc_select_TEST_OR_SSR"
+          readonly=""
+          role="combobox"
+          style="opacity: 0;"
+          type="search"
+          unselectable="on"
+          value=""
+        />
+      </span>
+      <span
+        class="studio-select-selection-item"
+      >
+        <span
+          class="studio-field-title studio-field-title-container emotion-1"
+        >
+          <span
+            class="anticon studio-field-icon emotion-2"
+            role="img"
+            style="color: rgb(82, 149, 196);"
+          >
+            <svg
+              aria-hidden="true"
+              class="pro-editor-icon"
+              fill="currentColor"
+              focusable="false"
+              height="1em"
+              style="vertical-align: -0.125em;"
+              viewBox="0 0 897 496"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+            >
+              <g
+                fill="none"
+                fill-rule="evenodd"
+                id="TypeNum-页面-1"
+                stroke="none"
+                stroke-width="1"
+              >
+                <g
+                  fill="currentColor"
+                  fill-rule="nonzero"
+                  id="TypeNum-icon-icon-test3"
+                  transform="translate(0.500000, -0.000000)"
+                >
+                  <path
+                    d="M99.31,99.994 L0,186.29 L0,90.406 L99.31,4.109 L188.345,4.109 L188.345,491.751 L99.309,491.751 L99.309,99.994 L99.31,99.994 Z M263.194,411.619 L445.374,199.989 C454.507,189.486 461.127,179.898 465.236,171.223 C469.346,162.547 471.4,152.503 471.4,141.087 C471.4,122.824 466.378,108.099 456.333,96.912 C446.288,85.725 431.677,80.132 412.5,80.132 C404.738,80.132 397.318,81.16 390.24,83.214 C383.164,85.269 376.771,88.694 371.064,93.488 C365.357,98.282 360.791,104.674 357.366,112.665 C353.942,120.655 352.229,130.585 352.229,142.457 L263.194,142.457 C263.194,120.084 267.074,100.108 274.837,82.529 C282.599,64.95 293.215,49.997 306.684,37.669 C320.154,25.341 335.906,15.981 353.942,9.589 C371.977,3.195 391.496,5.68434189e-14 412.5,5.68434189e-14 C433.96,5.68434189e-14 453.821,3.31 472.085,9.93 C490.349,16.552 505.987,25.912 519,38.011 C532.013,50.111 542.172,64.951 549.478,82.529 C556.783,100.109 560.436,119.856 560.436,141.772 C560.436,153.644 559.295,164.26 557.012,173.62 C554.748868,182.927687 551.295766,191.904944 546.738,200.33 C542.172,208.778 536.579,217.339 529.958,226.014 C523.338,234.689 515.918,243.821 507.7,253.41 L371.406,411.62 L560.436,411.62 L560.436,491.751 L263.194,491.751 L263.194,411.62 L263.194,411.619 Z M741.214,495.861 C721.124,495.861 701.834,493.121 683.341,487.642 C664.849,482.163 648.412,473.602 634.029,461.959 C619.647,450.316 608.118,435.476 599.442,417.441 C590.767,399.405 586.202,377.603 585.745,352.034 L674.78,352.034 C675.237,362.992 677.292,372.466 680.944,380.457 C684.597,388.447 689.391,395.067 695.327,400.319 C701.263,405.569 708.226,409.45 716.217,411.962 C724.207,414.473 732.539,415.729 741.215,415.729 C760.392,415.729 776.145,410.021 788.472,398.606 C800.8,387.191 806.964,370.298 806.964,347.924 C806.964,327.378 801.029,311.054 789.157,298.954 C777.286,286.855 760.392,280.805 738.475,280.805 L725.462,280.805 L725.462,203.413 L738.475,203.413 C760.392,203.413 776.145,197.591 785.733,185.948 C795.321,174.305 800.115,159.808 800.115,142.458 C800.115,121.91 794.18,106.386 782.308,95.885 C770.437,85.383 756.511,80.132 740.53,80.132 C723.636,80.132 709.596,85.269 698.41,95.542 C687.222,105.816 681.173,120.312 680.26,139.032 L591.224,139.032 C591.68,117.116 595.904,97.597 603.894,80.475 C611.884,63.352 622.614,48.741 636.084,36.642 C649.554,24.542 665.192,15.41 682.999,9.246 C700.806,3.082 719.983,0 740.529,0 C761.989,0 781.851,3.424 800.115,10.273 C818.379,17.123 834.131,26.711 847.373,39.039 C860.614,51.367 870.887,66.092 878.193,83.214 C885.498,100.337 889.151,119.171 889.151,139.718 C889.151,166.2 883.786,187.318 873.056,203.07 C862.326,218.823 848.971,231.036 832.99,239.712 C850.797,248.844 865.75,262.199 877.85,279.778 C889.95,297.357 896,320.985 896,350.664 C896,374.864 891.89,396.095 883.672,414.359 C875.453,432.623 864.267,447.804 850.112,459.904 C835.958,472.004 819.521,481.021 800.8,486.957 C782.08,492.893 762.218,495.861 741.215,495.861 L741.214,495.861 Z"
+                    id="TypeNum-形状"
+                  />
+                </g>
+              </g>
+            </svg>
+          </span>
+          <span
+            class="studio-field-title-title emotion-3"
+          >
+            orderId
+          </span>
+        </span>
+      </span>
+    </div>
+    <span
+      aria-hidden="true"
+      class="studio-select-arrow"
+      style="user-select: none;"
+      unselectable="on"
+    >
+      <span
+        aria-label="down"
+        class="anticon anticon-down studio-select-suffix"
+        role="img"
+      >
+        <svg
+          aria-hidden="true"
+          data-icon="down"
+          fill="currentColor"
+          focusable="false"
+          height="1em"
+          viewBox="64 64 896 896"
+          width="1em"
+        >
+          <path
+            d="M884 256h-75c-5.1 0-9.9 2.5-12.9 6.6L512 654.2 227.9 262.6c-3-4.1-7.8-6.6-12.9-6.6h-75c-6.5 0-10.3 7.4-6.5 12.7l352.6 486.1c12.8 17.6 39 17.6 51.7 0l352.6-486.1c3.9-5.3.1-12.7-6.4-12.7z"
+          />
+        </svg>
+      </span>
+    </span>
+  </div>
+</div>
+`;
+
+exports[`<FieldSelect /> > renders custom.tsx correctly 1`] = `
 .emotion-0 {
   width: 100%;
 }
@@ -18889,7 +19075,7 @@ exports[`<Highlight /> > renders wrapper.tsx correctly 1`] = `
           class="layoutkit-flexbox emotion-1 studio-highlight-header emotion-2"
         >
           <button
-            class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-3"
+            class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon emotion-3"
             type="button"
           >
             <span
@@ -18984,7 +19170,7 @@ exports[`<Highlight /> > renders wrapper.tsx correctly 1`] = `
             />
           </div>
           <button
-            class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-6"
+            class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon emotion-6"
             type="button"
           >
             <span
@@ -19163,7 +19349,7 @@ exports[`<Highlight /> > renders wrapper.tsx correctly 1`] = `
           class="layoutkit-flexbox emotion-1 studio-highlight-header emotion-19"
         >
           <button
-            class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-20"
+            class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon emotion-20"
             type="button"
           >
             <span
@@ -19258,7 +19444,7 @@ exports[`<Highlight /> > renders wrapper.tsx correctly 1`] = `
             />
           </div>
           <button
-            class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-23"
+            class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon emotion-23"
             type="button"
           >
             <span
@@ -19467,7 +19653,7 @@ exports[`<IconPicker /> > renders controlled.tsx correctly 1`] = `
 
 <div>
   <button
-    class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-0"
+    class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon emotion-0"
     type="button"
   >
     <span
@@ -19564,7 +19750,7 @@ exports[`<IconPicker /> > renders normal.tsx correctly 1`] = `
 
 <div>
   <button
-    class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-0"
+    class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon emotion-0"
     type="button"
   >
     <span
@@ -19614,7 +19800,7 @@ exports[`<IconPicker /> > renders scripts.tsx correctly 1`] = `
 
 <div>
   <button
-    class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-0"
+    class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon emotion-0"
     type="button"
   >
     <span
@@ -21693,7 +21879,7 @@ id sem consectetuer libero luctus adipiscing.
           Highlighting...
         </div>
         <button
-          class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-8"
+          class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon emotion-8"
           type="button"
         >
           <span
@@ -21731,7 +21917,7 @@ id sem consectetuer libero luctus adipiscing.
           class="layoutkit-flexbox emotion-11 studio-highlight-header emotion-12"
         >
           <button
-            class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-13"
+            class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon emotion-13"
             type="button"
           >
             <span
@@ -21826,7 +22012,7 @@ id sem consectetuer libero luctus adipiscing.
             />
           </div>
           <button
-            class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-16"
+            class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon emotion-16"
             type="button"
           >
             <span
@@ -23761,7 +23947,7 @@ exports[`<Snippet /> > renders index.tsx correctly 1`] = `
       Highlighting...
     </div>
     <button
-      class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-6"
+      class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon emotion-6"
       type="button"
     >
       <span
@@ -24038,7 +24224,7 @@ exports[`<SortableList /> > renders Basic.tsx correctly 1`] = `
               class="layoutkit-flexbox emotion-5 studio-sortable-list-item-content emotion-6"
             >
               <button
-                class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon studio-sortable-list-item-actions emotion-7"
+                class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-list-item-actions emotion-7"
                 data-cypress="draggable-handle"
                 style="width: 14px; height: 24px;"
                 tabindex="-1"
@@ -24070,7 +24256,7 @@ exports[`<SortableList /> > renders Basic.tsx correctly 1`] = `
                 class="layoutkit-flexbox emotion-5 studio-sortable-list-item-actions emotion-10"
               >
                 <button
-                  class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-11"
+                  class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon emotion-11"
                   style="height: 22px;"
                   tabindex="-1"
                   type="button"
@@ -24123,7 +24309,7 @@ exports[`<SortableList /> > renders Basic.tsx correctly 1`] = `
               class="layoutkit-flexbox emotion-5 studio-sortable-list-item-content emotion-6"
             >
               <button
-                class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon studio-sortable-list-item-actions emotion-7"
+                class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-list-item-actions emotion-7"
                 data-cypress="draggable-handle"
                 style="width: 14px; height: 24px;"
                 tabindex="-1"
@@ -24155,7 +24341,7 @@ exports[`<SortableList /> > renders Basic.tsx correctly 1`] = `
                 class="layoutkit-flexbox emotion-5 studio-sortable-list-item-actions emotion-10"
               >
                 <button
-                  class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-11"
+                  class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon emotion-11"
                   style="height: 22px;"
                   tabindex="-1"
                   type="button"
@@ -24456,7 +24642,7 @@ exports[`<SortableList /> > renders controlled.tsx correctly 1`] = `
               class="layoutkit-flexbox emotion-5 studio-sortable-list-item-content emotion-6"
             >
               <button
-                class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon studio-sortable-list-item-actions emotion-7"
+                class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-list-item-actions emotion-7"
                 data-cypress="draggable-handle"
                 style="width: 14px; height: 24px;"
                 tabindex="-1"
@@ -24488,7 +24674,7 @@ exports[`<SortableList /> > renders controlled.tsx correctly 1`] = `
                 class="layoutkit-flexbox emotion-5 studio-sortable-list-item-actions emotion-10"
               >
                 <button
-                  class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-11"
+                  class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon emotion-11"
                   style="height: 22px;"
                   tabindex="-1"
                   type="button"
@@ -24541,7 +24727,7 @@ exports[`<SortableList /> > renders controlled.tsx correctly 1`] = `
               class="layoutkit-flexbox emotion-5 studio-sortable-list-item-content emotion-6"
             >
               <button
-                class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon studio-sortable-list-item-actions emotion-7"
+                class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-list-item-actions emotion-7"
                 data-cypress="draggable-handle"
                 style="width: 14px; height: 24px;"
                 tabindex="-1"
@@ -24573,7 +24759,7 @@ exports[`<SortableList /> > renders controlled.tsx correctly 1`] = `
                 class="layoutkit-flexbox emotion-5 studio-sortable-list-item-actions emotion-10"
               >
                 <button
-                  class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-11"
+                  class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon emotion-11"
                   style="height: 22px;"
                   tabindex="-1"
                   type="button"
@@ -24906,7 +25092,7 @@ exports[`<SortableList /> > renders creatorButtonProps.tsx correctly 1`] = `
               class="layoutkit-flexbox emotion-5 studio-sortable-list-item-content emotion-6"
             >
               <button
-                class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon studio-sortable-list-item-actions emotion-7"
+                class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-list-item-actions emotion-7"
                 data-cypress="draggable-handle"
                 style="width: 14px; height: 24px;"
                 tabindex="-1"
@@ -24936,7 +25122,7 @@ exports[`<SortableList /> > renders creatorButtonProps.tsx correctly 1`] = `
                 class="layoutkit-flexbox emotion-5 studio-sortable-list-item-actions emotion-10"
               >
                 <button
-                  class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-11"
+                  class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon emotion-11"
                   style="height: 22px;"
                   tabindex="-1"
                   type="button"
@@ -24989,7 +25175,7 @@ exports[`<SortableList /> > renders creatorButtonProps.tsx correctly 1`] = `
               class="layoutkit-flexbox emotion-5 studio-sortable-list-item-content emotion-6"
             >
               <button
-                class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon studio-sortable-list-item-actions emotion-7"
+                class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-list-item-actions emotion-7"
                 data-cypress="draggable-handle"
                 style="width: 14px; height: 24px;"
                 tabindex="-1"
@@ -25019,7 +25205,7 @@ exports[`<SortableList /> > renders creatorButtonProps.tsx correctly 1`] = `
                 class="layoutkit-flexbox emotion-5 studio-sortable-list-item-actions emotion-10"
               >
                 <button
-                  class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-11"
+                  class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon emotion-11"
                   style="height: 22px;"
                   tabindex="-1"
                   type="button"
@@ -25437,7 +25623,7 @@ exports[`<SortableList /> > renders getItemStyles.tsx correctly 1`] = `
             class="layoutkit-flexbox emotion-4 studio-sortable-list-item-content emotion-5"
           >
             <button
-              class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon studio-sortable-list-item-actions emotion-6"
+              class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-list-item-actions emotion-6"
               data-cypress="draggable-handle"
               style="width: 14px; height: 24px;"
               tabindex="-1"
@@ -25469,7 +25655,7 @@ exports[`<SortableList /> > renders getItemStyles.tsx correctly 1`] = `
               class="layoutkit-flexbox emotion-4 studio-sortable-list-item-actions emotion-9"
             >
               <button
-                class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-10"
+                class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon emotion-10"
                 style="height: 22px;"
                 tabindex="-1"
                 type="button"
@@ -25522,7 +25708,7 @@ exports[`<SortableList /> > renders getItemStyles.tsx correctly 1`] = `
             class="layoutkit-flexbox emotion-4 studio-sortable-list-item-content emotion-5"
           >
             <button
-              class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon studio-sortable-list-item-actions emotion-6"
+              class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-list-item-actions emotion-6"
               data-cypress="draggable-handle"
               style="width: 14px; height: 24px;"
               tabindex="-1"
@@ -25554,7 +25740,7 @@ exports[`<SortableList /> > renders getItemStyles.tsx correctly 1`] = `
               class="layoutkit-flexbox emotion-4 studio-sortable-list-item-actions emotion-9"
             >
               <button
-                class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-10"
+                class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon emotion-10"
                 style="height: 22px;"
                 tabindex="-1"
                 type="button"
@@ -25607,7 +25793,7 @@ exports[`<SortableList /> > renders getItemStyles.tsx correctly 1`] = `
             class="layoutkit-flexbox emotion-4 studio-sortable-list-item-content emotion-5"
           >
             <button
-              class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon studio-sortable-list-item-actions emotion-6"
+              class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-list-item-actions emotion-6"
               data-cypress="draggable-handle"
               style="width: 14px; height: 24px;"
               tabindex="-1"
@@ -25639,7 +25825,7 @@ exports[`<SortableList /> > renders getItemStyles.tsx correctly 1`] = `
               class="layoutkit-flexbox emotion-4 studio-sortable-list-item-actions emotion-9"
             >
               <button
-                class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-10"
+                class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon emotion-10"
                 style="height: 22px;"
                 tabindex="-1"
                 type="button"
@@ -25692,7 +25878,7 @@ exports[`<SortableList /> > renders getItemStyles.tsx correctly 1`] = `
             class="layoutkit-flexbox emotion-4 studio-sortable-list-item-content emotion-5"
           >
             <button
-              class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon studio-sortable-list-item-actions emotion-6"
+              class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-list-item-actions emotion-6"
               data-cypress="draggable-handle"
               style="width: 14px; height: 24px;"
               tabindex="-1"
@@ -25724,7 +25910,7 @@ exports[`<SortableList /> > renders getItemStyles.tsx correctly 1`] = `
               class="layoutkit-flexbox emotion-4 studio-sortable-list-item-actions emotion-9"
             >
               <button
-                class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-10"
+                class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon emotion-10"
                 style="height: 22px;"
                 tabindex="-1"
                 type="button"
@@ -26049,7 +26235,7 @@ exports[`<SortableList /> > renders provider.tsx correctly 1`] = `
               class="layoutkit-flexbox emotion-5 studio-sortable-list-item-content emotion-6"
             >
               <button
-                class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon studio-sortable-list-item-actions emotion-7"
+                class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-list-item-actions emotion-7"
                 data-cypress="draggable-handle"
                 style="width: 14px; height: 24px;"
                 tabindex="-1"
@@ -26158,7 +26344,7 @@ exports[`<SortableList /> > renders provider.tsx correctly 1`] = `
                 class="layoutkit-flexbox emotion-5 studio-sortable-list-item-actions emotion-11"
               >
                 <button
-                  class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-12"
+                  class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon emotion-12"
                   style="height: 22px;"
                   tabindex="-1"
                   type="button"
@@ -26211,7 +26397,7 @@ exports[`<SortableList /> > renders provider.tsx correctly 1`] = `
               class="layoutkit-flexbox emotion-5 studio-sortable-list-item-content emotion-6"
             >
               <button
-                class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon studio-sortable-list-item-actions emotion-7"
+                class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-list-item-actions emotion-7"
                 data-cypress="draggable-handle"
                 style="width: 14px; height: 24px;"
                 tabindex="-1"
@@ -26320,7 +26506,7 @@ exports[`<SortableList /> > renders provider.tsx correctly 1`] = `
                 class="layoutkit-flexbox emotion-5 studio-sortable-list-item-actions emotion-11"
               >
                 <button
-                  class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-12"
+                  class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon emotion-12"
                   style="height: 22px;"
                   tabindex="-1"
                   type="button"
@@ -26373,7 +26559,7 @@ exports[`<SortableList /> > renders provider.tsx correctly 1`] = `
               class="layoutkit-flexbox emotion-5 studio-sortable-list-item-content emotion-6"
             >
               <button
-                class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon studio-sortable-list-item-actions emotion-7"
+                class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-list-item-actions emotion-7"
                 data-cypress="draggable-handle"
                 style="width: 14px; height: 24px;"
                 tabindex="-1"
@@ -26482,7 +26668,7 @@ exports[`<SortableList /> > renders provider.tsx correctly 1`] = `
                 class="layoutkit-flexbox emotion-5 studio-sortable-list-item-actions emotion-11"
               >
                 <button
-                  class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-12"
+                  class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon emotion-12"
                   style="height: 22px;"
                   tabindex="-1"
                   type="button"
@@ -26797,7 +26983,7 @@ exports[`<SortableList /> > renders ref.tsx correctly 1`] = `
         列配置项
       </div>
       <button
-        class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-2"
+        class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon emotion-2"
         tabindex="-1"
         type="button"
       >
@@ -26853,7 +27039,7 @@ exports[`<SortableList /> > renders ref.tsx correctly 1`] = `
               class="layoutkit-flexbox emotion-7 studio-sortable-list-item-content emotion-8"
             >
               <button
-                class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon studio-sortable-list-item-actions emotion-9"
+                class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-list-item-actions emotion-9"
                 data-cypress="draggable-handle"
                 style="width: 14px; height: 24px;"
                 tabindex="-1"
@@ -26962,7 +27148,7 @@ exports[`<SortableList /> > renders ref.tsx correctly 1`] = `
                 class="layoutkit-flexbox emotion-7 studio-sortable-list-item-actions emotion-13"
               >
                 <button
-                  class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-2"
+                  class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon emotion-2"
                   style="height: 22px;"
                   tabindex="-1"
                   type="button"
@@ -27015,7 +27201,7 @@ exports[`<SortableList /> > renders ref.tsx correctly 1`] = `
               class="layoutkit-flexbox emotion-7 studio-sortable-list-item-content emotion-8"
             >
               <button
-                class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon studio-sortable-list-item-actions emotion-9"
+                class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-list-item-actions emotion-9"
                 data-cypress="draggable-handle"
                 style="width: 14px; height: 24px;"
                 tabindex="-1"
@@ -27124,7 +27310,7 @@ exports[`<SortableList /> > renders ref.tsx correctly 1`] = `
                 class="layoutkit-flexbox emotion-7 studio-sortable-list-item-actions emotion-13"
               >
                 <button
-                  class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-2"
+                  class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon emotion-2"
                   style="height: 22px;"
                   tabindex="-1"
                   type="button"
@@ -27177,7 +27363,7 @@ exports[`<SortableList /> > renders ref.tsx correctly 1`] = `
               class="layoutkit-flexbox emotion-7 studio-sortable-list-item-content emotion-8"
             >
               <button
-                class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon studio-sortable-list-item-actions emotion-9"
+                class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-list-item-actions emotion-9"
                 data-cypress="draggable-handle"
                 style="width: 14px; height: 24px;"
                 tabindex="-1"
@@ -27286,7 +27472,7 @@ exports[`<SortableList /> > renders ref.tsx correctly 1`] = `
                 class="layoutkit-flexbox emotion-7 studio-sortable-list-item-actions emotion-13"
               >
                 <button
-                  class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-2"
+                  class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon emotion-2"
                   style="height: 22px;"
                   tabindex="-1"
                   type="button"
@@ -27603,7 +27789,7 @@ exports[`<SortableList /> > renders renderContent.tsx correctly 1`] = `
               class="layoutkit-flexbox emotion-5 studio-sortable-list-item-content emotion-6"
             >
               <button
-                class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon studio-sortable-list-item-actions emotion-7"
+                class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-list-item-actions emotion-7"
                 data-cypress="draggable-handle"
                 style="width: 14px; height: 24px;"
                 tabindex="-1"
@@ -27712,7 +27898,7 @@ exports[`<SortableList /> > renders renderContent.tsx correctly 1`] = `
                 class="layoutkit-flexbox emotion-5 studio-sortable-list-item-actions emotion-11"
               >
                 <button
-                  class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-12"
+                  class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon emotion-12"
                   style="height: 22px;"
                   tabindex="-1"
                   type="button"
@@ -27765,7 +27951,7 @@ exports[`<SortableList /> > renders renderContent.tsx correctly 1`] = `
               class="layoutkit-flexbox emotion-5 studio-sortable-list-item-content emotion-6"
             >
               <button
-                class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon studio-sortable-list-item-actions emotion-7"
+                class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-list-item-actions emotion-7"
                 data-cypress="draggable-handle"
                 style="width: 14px; height: 24px;"
                 tabindex="-1"
@@ -27874,7 +28060,7 @@ exports[`<SortableList /> > renders renderContent.tsx correctly 1`] = `
                 class="layoutkit-flexbox emotion-5 studio-sortable-list-item-actions emotion-11"
               >
                 <button
-                  class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-12"
+                  class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon emotion-12"
                   style="height: 22px;"
                   tabindex="-1"
                   type="button"
@@ -27927,7 +28113,7 @@ exports[`<SortableList /> > renders renderContent.tsx correctly 1`] = `
               class="layoutkit-flexbox emotion-5 studio-sortable-list-item-content emotion-6"
             >
               <button
-                class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon studio-sortable-list-item-actions emotion-7"
+                class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-list-item-actions emotion-7"
                 data-cypress="draggable-handle"
                 style="width: 14px; height: 24px;"
                 tabindex="-1"
@@ -28036,7 +28222,7 @@ exports[`<SortableList /> > renders renderContent.tsx correctly 1`] = `
                 class="layoutkit-flexbox emotion-5 studio-sortable-list-item-actions emotion-11"
               >
                 <button
-                  class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-12"
+                  class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon emotion-12"
                   style="height: 22px;"
                   tabindex="-1"
                   type="button"
@@ -28914,7 +29100,7 @@ exports[`<SortableList /> > renders useSortableList.tsx correctly 1`] = `
               class="layoutkit-flexbox emotion-5 studio-sortable-list-item-content emotion-6"
             >
               <button
-                class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon studio-sortable-list-item-actions emotion-7"
+                class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-list-item-actions emotion-7"
                 data-cypress="draggable-handle"
                 style="width: 14px; height: 24px;"
                 tabindex="-1"
@@ -29023,7 +29209,7 @@ exports[`<SortableList /> > renders useSortableList.tsx correctly 1`] = `
                 class="layoutkit-flexbox emotion-5 studio-sortable-list-item-actions emotion-11"
               >
                 <button
-                  class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-12"
+                  class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon emotion-12"
                   style="height: 22px;"
                   tabindex="-1"
                   type="button"
@@ -29076,7 +29262,7 @@ exports[`<SortableList /> > renders useSortableList.tsx correctly 1`] = `
               class="layoutkit-flexbox emotion-5 studio-sortable-list-item-content emotion-6"
             >
               <button
-                class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon studio-sortable-list-item-actions emotion-7"
+                class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-list-item-actions emotion-7"
                 data-cypress="draggable-handle"
                 style="width: 14px; height: 24px;"
                 tabindex="-1"
@@ -29185,7 +29371,7 @@ exports[`<SortableList /> > renders useSortableList.tsx correctly 1`] = `
                 class="layoutkit-flexbox emotion-5 studio-sortable-list-item-actions emotion-11"
               >
                 <button
-                  class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-12"
+                  class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon emotion-12"
                   style="height: 22px;"
                   tabindex="-1"
                   type="button"
@@ -29238,7 +29424,7 @@ exports[`<SortableList /> > renders useSortableList.tsx correctly 1`] = `
               class="layoutkit-flexbox emotion-5 studio-sortable-list-item-content emotion-6"
             >
               <button
-                class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon studio-sortable-list-item-actions emotion-7"
+                class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-list-item-actions emotion-7"
                 data-cypress="draggable-handle"
                 style="width: 14px; height: 24px;"
                 tabindex="-1"
@@ -29347,7 +29533,7 @@ exports[`<SortableList /> > renders useSortableList.tsx correctly 1`] = `
                 class="layoutkit-flexbox emotion-5 studio-sortable-list-item-actions emotion-11"
               >
                 <button
-                  class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-12"
+                  class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon emotion-12"
                   style="height: 22px;"
                   tabindex="-1"
                   type="button"
@@ -29679,7 +29865,7 @@ exports[`<SortableTree /> > renders controlled.tsx correctly 1`] = `
             aria-describedby="DndDescribedBy-21"
             aria-disabled="false"
             aria-roledescription="sortable"
-            class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon studio-sortable-tree-node-handle emotion-3"
+            class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-handle emotion-3"
             role="button"
             style="width: 12px;"
             tabindex="0"
@@ -29709,7 +29895,7 @@ exports[`<SortableTree /> > renders controlled.tsx correctly 1`] = `
             />
           </span>
           <button
-            class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon studio-sortable-tree-node-remove emotion-4"
+            class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-remove emotion-4"
             type="button"
           >
             <span
@@ -29749,7 +29935,7 @@ exports[`<SortableTree /> > renders controlled.tsx correctly 1`] = `
             aria-describedby="DndDescribedBy-21"
             aria-disabled="false"
             aria-roledescription="sortable"
-            class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon studio-sortable-tree-node-handle emotion-3"
+            class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-handle emotion-3"
             role="button"
             style="width: 12px;"
             tabindex="0"
@@ -29770,7 +29956,7 @@ exports[`<SortableTree /> > renders controlled.tsx correctly 1`] = `
             </span>
           </button>
           <button
-            class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-7"
+            class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon emotion-7"
             type="button"
           >
             <span
@@ -29797,7 +29983,7 @@ exports[`<SortableTree /> > renders controlled.tsx correctly 1`] = `
             />
           </span>
           <button
-            class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon studio-sortable-tree-node-remove emotion-4"
+            class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-remove emotion-4"
             type="button"
           >
             <span
@@ -29837,7 +30023,7 @@ exports[`<SortableTree /> > renders controlled.tsx correctly 1`] = `
             aria-describedby="DndDescribedBy-21"
             aria-disabled="false"
             aria-roledescription="sortable"
-            class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon studio-sortable-tree-node-handle emotion-3"
+            class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-handle emotion-3"
             role="button"
             style="width: 12px;"
             tabindex="0"
@@ -29867,7 +30053,7 @@ exports[`<SortableTree /> > renders controlled.tsx correctly 1`] = `
             />
           </span>
           <button
-            class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon studio-sortable-tree-node-remove emotion-4"
+            class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-remove emotion-4"
             type="button"
           >
             <span
@@ -29907,7 +30093,7 @@ exports[`<SortableTree /> > renders controlled.tsx correctly 1`] = `
             aria-describedby="DndDescribedBy-21"
             aria-disabled="false"
             aria-roledescription="sortable"
-            class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon studio-sortable-tree-node-handle emotion-3"
+            class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-handle emotion-3"
             role="button"
             style="width: 12px;"
             tabindex="0"
@@ -29937,7 +30123,7 @@ exports[`<SortableTree /> > renders controlled.tsx correctly 1`] = `
             />
           </span>
           <button
-            class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon studio-sortable-tree-node-remove emotion-4"
+            class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-remove emotion-4"
             type="button"
           >
             <span
@@ -29977,7 +30163,7 @@ exports[`<SortableTree /> > renders controlled.tsx correctly 1`] = `
             aria-describedby="DndDescribedBy-21"
             aria-disabled="false"
             aria-roledescription="sortable"
-            class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon studio-sortable-tree-node-handle emotion-3"
+            class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-handle emotion-3"
             role="button"
             style="width: 12px;"
             tabindex="0"
@@ -30007,7 +30193,7 @@ exports[`<SortableTree /> > renders controlled.tsx correctly 1`] = `
             />
           </span>
           <button
-            class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon studio-sortable-tree-node-remove emotion-4"
+            class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-remove emotion-4"
             type="button"
           >
             <span
@@ -30047,7 +30233,7 @@ exports[`<SortableTree /> > renders controlled.tsx correctly 1`] = `
             aria-describedby="DndDescribedBy-21"
             aria-disabled="false"
             aria-roledescription="sortable"
-            class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon studio-sortable-tree-node-handle emotion-3"
+            class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-handle emotion-3"
             role="button"
             style="width: 12px;"
             tabindex="0"
@@ -30077,7 +30263,7 @@ exports[`<SortableTree /> > renders controlled.tsx correctly 1`] = `
             />
           </span>
           <button
-            class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon studio-sortable-tree-node-remove emotion-4"
+            class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-remove emotion-4"
             type="button"
           >
             <span
@@ -30117,7 +30303,7 @@ exports[`<SortableTree /> > renders controlled.tsx correctly 1`] = `
             aria-describedby="DndDescribedBy-21"
             aria-disabled="false"
             aria-roledescription="sortable"
-            class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon studio-sortable-tree-node-handle emotion-3"
+            class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-handle emotion-3"
             role="button"
             style="width: 12px;"
             tabindex="0"
@@ -30147,7 +30333,7 @@ exports[`<SortableTree /> > renders controlled.tsx correctly 1`] = `
             />
           </span>
           <button
-            class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon studio-sortable-tree-node-remove emotion-4"
+            class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-remove emotion-4"
             type="button"
           >
             <span
@@ -30187,7 +30373,7 @@ exports[`<SortableTree /> > renders controlled.tsx correctly 1`] = `
             aria-describedby="DndDescribedBy-21"
             aria-disabled="false"
             aria-roledescription="sortable"
-            class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon studio-sortable-tree-node-handle emotion-3"
+            class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-handle emotion-3"
             role="button"
             style="width: 12px;"
             tabindex="0"
@@ -30208,7 +30394,7 @@ exports[`<SortableTree /> > renders controlled.tsx correctly 1`] = `
             </span>
           </button>
           <button
-            class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-7"
+            class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon emotion-7"
             type="button"
           >
             <span
@@ -30235,7 +30421,7 @@ exports[`<SortableTree /> > renders controlled.tsx correctly 1`] = `
             />
           </span>
           <button
-            class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon studio-sortable-tree-node-remove emotion-4"
+            class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-remove emotion-4"
             type="button"
           >
             <span
@@ -30275,7 +30461,7 @@ exports[`<SortableTree /> > renders controlled.tsx correctly 1`] = `
             aria-describedby="DndDescribedBy-21"
             aria-disabled="false"
             aria-roledescription="sortable"
-            class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon studio-sortable-tree-node-handle emotion-3"
+            class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-handle emotion-3"
             role="button"
             style="width: 12px;"
             tabindex="0"
@@ -30305,7 +30491,7 @@ exports[`<SortableTree /> > renders controlled.tsx correctly 1`] = `
             />
           </span>
           <button
-            class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon studio-sortable-tree-node-remove emotion-4"
+            class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-remove emotion-4"
             type="button"
           >
             <span
@@ -30345,7 +30531,7 @@ exports[`<SortableTree /> > renders controlled.tsx correctly 1`] = `
             aria-describedby="DndDescribedBy-21"
             aria-disabled="false"
             aria-roledescription="sortable"
-            class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon studio-sortable-tree-node-handle emotion-3"
+            class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-handle emotion-3"
             role="button"
             style="width: 12px;"
             tabindex="0"
@@ -30375,7 +30561,7 @@ exports[`<SortableTree /> > renders controlled.tsx correctly 1`] = `
             />
           </span>
           <button
-            class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon studio-sortable-tree-node-remove emotion-4"
+            class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-remove emotion-4"
             type="button"
           >
             <span
@@ -30736,7 +30922,7 @@ exports[`<SortableTree /> > renders default.tsx correctly 1`] = `
             aria-describedby="DndDescribedBy-20"
             aria-disabled="false"
             aria-roledescription="sortable"
-            class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon studio-sortable-tree-node-handle emotion-3"
+            class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-handle emotion-3"
             role="button"
             style="width: 12px;"
             tabindex="0"
@@ -30762,7 +30948,7 @@ exports[`<SortableTree /> > renders default.tsx correctly 1`] = `
             1
           </span>
           <button
-            class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon studio-sortable-tree-node-remove emotion-4"
+            class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-remove emotion-4"
             type="button"
           >
             <span
@@ -30802,7 +30988,7 @@ exports[`<SortableTree /> > renders default.tsx correctly 1`] = `
             aria-describedby="DndDescribedBy-20"
             aria-disabled="false"
             aria-roledescription="sortable"
-            class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon studio-sortable-tree-node-handle emotion-3"
+            class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-handle emotion-3"
             role="button"
             style="width: 12px;"
             tabindex="0"
@@ -30823,7 +31009,7 @@ exports[`<SortableTree /> > renders default.tsx correctly 1`] = `
             </span>
           </button>
           <button
-            class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-7"
+            class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon emotion-7"
             type="button"
           >
             <span
@@ -30846,7 +31032,7 @@ exports[`<SortableTree /> > renders default.tsx correctly 1`] = `
             2
           </span>
           <button
-            class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon studio-sortable-tree-node-remove emotion-4"
+            class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-remove emotion-4"
             type="button"
           >
             <span
@@ -30886,7 +31072,7 @@ exports[`<SortableTree /> > renders default.tsx correctly 1`] = `
             aria-describedby="DndDescribedBy-20"
             aria-disabled="false"
             aria-roledescription="sortable"
-            class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon studio-sortable-tree-node-handle emotion-3"
+            class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-handle emotion-3"
             role="button"
             style="width: 12px;"
             tabindex="0"
@@ -30912,7 +31098,7 @@ exports[`<SortableTree /> > renders default.tsx correctly 1`] = `
             Spring
           </span>
           <button
-            class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon studio-sortable-tree-node-remove emotion-4"
+            class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-remove emotion-4"
             type="button"
           >
             <span
@@ -30952,7 +31138,7 @@ exports[`<SortableTree /> > renders default.tsx correctly 1`] = `
             aria-describedby="DndDescribedBy-20"
             aria-disabled="false"
             aria-roledescription="sortable"
-            class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon studio-sortable-tree-node-handle emotion-3"
+            class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-handle emotion-3"
             role="button"
             style="width: 12px;"
             tabindex="0"
@@ -30978,7 +31164,7 @@ exports[`<SortableTree /> > renders default.tsx correctly 1`] = `
             Summer
           </span>
           <button
-            class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon studio-sortable-tree-node-remove emotion-4"
+            class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-remove emotion-4"
             type="button"
           >
             <span
@@ -31018,7 +31204,7 @@ exports[`<SortableTree /> > renders default.tsx correctly 1`] = `
             aria-describedby="DndDescribedBy-20"
             aria-disabled="false"
             aria-roledescription="sortable"
-            class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon studio-sortable-tree-node-handle emotion-3"
+            class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-handle emotion-3"
             role="button"
             style="width: 12px;"
             tabindex="0"
@@ -31044,7 +31230,7 @@ exports[`<SortableTree /> > renders default.tsx correctly 1`] = `
             Fall
           </span>
           <button
-            class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon studio-sortable-tree-node-remove emotion-4"
+            class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-remove emotion-4"
             type="button"
           >
             <span
@@ -31084,7 +31270,7 @@ exports[`<SortableTree /> > renders default.tsx correctly 1`] = `
             aria-describedby="DndDescribedBy-20"
             aria-disabled="false"
             aria-roledescription="sortable"
-            class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon studio-sortable-tree-node-handle emotion-3"
+            class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-handle emotion-3"
             role="button"
             style="width: 12px;"
             tabindex="0"
@@ -31110,7 +31296,7 @@ exports[`<SortableTree /> > renders default.tsx correctly 1`] = `
             Winter
           </span>
           <button
-            class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon studio-sortable-tree-node-remove emotion-4"
+            class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-remove emotion-4"
             type="button"
           >
             <span
@@ -31150,7 +31336,7 @@ exports[`<SortableTree /> > renders default.tsx correctly 1`] = `
             aria-describedby="DndDescribedBy-20"
             aria-disabled="false"
             aria-roledescription="sortable"
-            class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon studio-sortable-tree-node-handle emotion-3"
+            class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-handle emotion-3"
             role="button"
             style="width: 12px;"
             tabindex="0"
@@ -31176,7 +31362,7 @@ exports[`<SortableTree /> > renders default.tsx correctly 1`] = `
             About Us
           </span>
           <button
-            class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon studio-sortable-tree-node-remove emotion-4"
+            class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-remove emotion-4"
             type="button"
           >
             <span
@@ -31216,7 +31402,7 @@ exports[`<SortableTree /> > renders default.tsx correctly 1`] = `
             aria-describedby="DndDescribedBy-20"
             aria-disabled="false"
             aria-roledescription="sortable"
-            class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon studio-sortable-tree-node-handle emotion-3"
+            class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-handle emotion-3"
             role="button"
             style="width: 12px;"
             tabindex="0"
@@ -31237,7 +31423,7 @@ exports[`<SortableTree /> > renders default.tsx correctly 1`] = `
             </span>
           </button>
           <button
-            class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-7"
+            class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon emotion-7"
             type="button"
           >
             <span
@@ -31260,7 +31446,7 @@ exports[`<SortableTree /> > renders default.tsx correctly 1`] = `
             My Account
           </span>
           <button
-            class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon studio-sortable-tree-node-remove emotion-4"
+            class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-remove emotion-4"
             type="button"
           >
             <span
@@ -31300,7 +31486,7 @@ exports[`<SortableTree /> > renders default.tsx correctly 1`] = `
             aria-describedby="DndDescribedBy-20"
             aria-disabled="false"
             aria-roledescription="sortable"
-            class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon studio-sortable-tree-node-handle emotion-3"
+            class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-handle emotion-3"
             role="button"
             style="width: 12px;"
             tabindex="0"
@@ -31326,7 +31512,7 @@ exports[`<SortableTree /> > renders default.tsx correctly 1`] = `
             Addresses
           </span>
           <button
-            class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon studio-sortable-tree-node-remove emotion-4"
+            class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-remove emotion-4"
             type="button"
           >
             <span
@@ -31366,7 +31552,7 @@ exports[`<SortableTree /> > renders default.tsx correctly 1`] = `
             aria-describedby="DndDescribedBy-20"
             aria-disabled="false"
             aria-roledescription="sortable"
-            class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon studio-sortable-tree-node-handle emotion-3"
+            class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-handle emotion-3"
             role="button"
             style="width: 12px;"
             tabindex="0"
@@ -31392,7 +31578,7 @@ exports[`<SortableTree /> > renders default.tsx correctly 1`] = `
             Order History
           </span>
           <button
-            class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon studio-sortable-tree-node-remove emotion-4"
+            class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-remove emotion-4"
             type="button"
           >
             <span
@@ -31726,7 +31912,7 @@ exports[`<SortableTree /> > renders disableDrag.tsx correctly 1`] = `
             1
           </span>
           <button
-            class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon studio-sortable-tree-node-remove emotion-3"
+            class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-remove emotion-3"
             type="button"
           >
             <span
@@ -31763,7 +31949,7 @@ exports[`<SortableTree /> > renders disableDrag.tsx correctly 1`] = `
           class="studio-sortable-tree-node-body"
         >
           <button
-            class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-5"
+            class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon emotion-5"
             type="button"
           >
             <span
@@ -31786,7 +31972,7 @@ exports[`<SortableTree /> > renders disableDrag.tsx correctly 1`] = `
             2
           </span>
           <button
-            class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon studio-sortable-tree-node-remove emotion-3"
+            class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-remove emotion-3"
             type="button"
           >
             <span
@@ -31828,7 +32014,7 @@ exports[`<SortableTree /> > renders disableDrag.tsx correctly 1`] = `
             Spring
           </span>
           <button
-            class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon studio-sortable-tree-node-remove emotion-3"
+            class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-remove emotion-3"
             type="button"
           >
             <span
@@ -31870,7 +32056,7 @@ exports[`<SortableTree /> > renders disableDrag.tsx correctly 1`] = `
             Summer
           </span>
           <button
-            class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon studio-sortable-tree-node-remove emotion-3"
+            class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-remove emotion-3"
             type="button"
           >
             <span
@@ -31912,7 +32098,7 @@ exports[`<SortableTree /> > renders disableDrag.tsx correctly 1`] = `
             Fall
           </span>
           <button
-            class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon studio-sortable-tree-node-remove emotion-3"
+            class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-remove emotion-3"
             type="button"
           >
             <span
@@ -31954,7 +32140,7 @@ exports[`<SortableTree /> > renders disableDrag.tsx correctly 1`] = `
             Winter
           </span>
           <button
-            class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon studio-sortable-tree-node-remove emotion-3"
+            class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-remove emotion-3"
             type="button"
           >
             <span
@@ -31996,7 +32182,7 @@ exports[`<SortableTree /> > renders disableDrag.tsx correctly 1`] = `
             About Us
           </span>
           <button
-            class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon studio-sortable-tree-node-remove emotion-3"
+            class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-remove emotion-3"
             type="button"
           >
             <span
@@ -32033,7 +32219,7 @@ exports[`<SortableTree /> > renders disableDrag.tsx correctly 1`] = `
           class="studio-sortable-tree-node-body"
         >
           <button
-            class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-5"
+            class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon emotion-5"
             type="button"
           >
             <span
@@ -32056,7 +32242,7 @@ exports[`<SortableTree /> > renders disableDrag.tsx correctly 1`] = `
             My Account
           </span>
           <button
-            class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon studio-sortable-tree-node-remove emotion-3"
+            class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-remove emotion-3"
             type="button"
           >
             <span
@@ -32098,7 +32284,7 @@ exports[`<SortableTree /> > renders disableDrag.tsx correctly 1`] = `
             Addresses
           </span>
           <button
-            class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon studio-sortable-tree-node-remove emotion-3"
+            class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-remove emotion-3"
             type="button"
           >
             <span
@@ -32140,7 +32326,7 @@ exports[`<SortableTree /> > renders disableDrag.tsx correctly 1`] = `
             Order History
           </span>
           <button
-            class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon studio-sortable-tree-node-remove emotion-3"
+            class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-remove emotion-3"
             type="button"
           >
             <span
@@ -32549,7 +32735,7 @@ exports[`<SortableTree /> > renders renderContent.tsx correctly 1`] = `
             aria-describedby="DndDescribedBy-18"
             aria-disabled="false"
             aria-roledescription="sortable"
-            class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon studio-sortable-tree-node-handle emotion-3"
+            class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-handle emotion-3"
             role="button"
             style="width: 12px;"
             tabindex="0"
@@ -32577,7 +32763,7 @@ exports[`<SortableTree /> > renders renderContent.tsx correctly 1`] = `
             >
               <div>
                 <button
-                  class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-5"
+                  class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon emotion-5"
                   type="button"
                 >
                   <span
@@ -32599,7 +32785,7 @@ exports[`<SortableTree /> > renders renderContent.tsx correctly 1`] = `
             </div>
           </span>
           <button
-            class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon studio-sortable-tree-node-remove emotion-7"
+            class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-remove emotion-7"
             type="button"
           >
             <span
@@ -32639,7 +32825,7 @@ exports[`<SortableTree /> > renders renderContent.tsx correctly 1`] = `
             aria-describedby="DndDescribedBy-18"
             aria-disabled="false"
             aria-roledescription="sortable"
-            class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon studio-sortable-tree-node-handle emotion-3"
+            class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-handle emotion-3"
             role="button"
             style="width: 12px;"
             tabindex="0"
@@ -32660,7 +32846,7 @@ exports[`<SortableTree /> > renders renderContent.tsx correctly 1`] = `
             </span>
           </button>
           <button
-            class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-10"
+            class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon emotion-10"
             type="button"
           >
             <span
@@ -32685,7 +32871,7 @@ exports[`<SortableTree /> > renders renderContent.tsx correctly 1`] = `
             >
               <div>
                 <button
-                  class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-5"
+                  class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon emotion-5"
                   type="button"
                 >
                   <span
@@ -32707,7 +32893,7 @@ exports[`<SortableTree /> > renders renderContent.tsx correctly 1`] = `
             </div>
           </span>
           <button
-            class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon studio-sortable-tree-node-remove emotion-7"
+            class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-remove emotion-7"
             type="button"
           >
             <span
@@ -32747,7 +32933,7 @@ exports[`<SortableTree /> > renders renderContent.tsx correctly 1`] = `
             aria-describedby="DndDescribedBy-18"
             aria-disabled="false"
             aria-roledescription="sortable"
-            class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon studio-sortable-tree-node-handle emotion-3"
+            class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-handle emotion-3"
             role="button"
             style="width: 12px;"
             tabindex="0"
@@ -32775,7 +32961,7 @@ exports[`<SortableTree /> > renders renderContent.tsx correctly 1`] = `
             >
               <div>
                 <button
-                  class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-5"
+                  class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon emotion-5"
                   type="button"
                 >
                   <span
@@ -32797,7 +32983,7 @@ exports[`<SortableTree /> > renders renderContent.tsx correctly 1`] = `
             </div>
           </span>
           <button
-            class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon studio-sortable-tree-node-remove emotion-7"
+            class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-remove emotion-7"
             type="button"
           >
             <span
@@ -32837,7 +33023,7 @@ exports[`<SortableTree /> > renders renderContent.tsx correctly 1`] = `
             aria-describedby="DndDescribedBy-18"
             aria-disabled="false"
             aria-roledescription="sortable"
-            class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon studio-sortable-tree-node-handle emotion-3"
+            class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-handle emotion-3"
             role="button"
             style="width: 12px;"
             tabindex="0"
@@ -32865,7 +33051,7 @@ exports[`<SortableTree /> > renders renderContent.tsx correctly 1`] = `
             >
               <div>
                 <button
-                  class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-5"
+                  class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon emotion-5"
                   type="button"
                 >
                   <span
@@ -32887,7 +33073,7 @@ exports[`<SortableTree /> > renders renderContent.tsx correctly 1`] = `
             </div>
           </span>
           <button
-            class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon studio-sortable-tree-node-remove emotion-7"
+            class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-remove emotion-7"
             type="button"
           >
             <span
@@ -32927,7 +33113,7 @@ exports[`<SortableTree /> > renders renderContent.tsx correctly 1`] = `
             aria-describedby="DndDescribedBy-18"
             aria-disabled="false"
             aria-roledescription="sortable"
-            class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon studio-sortable-tree-node-handle emotion-3"
+            class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-handle emotion-3"
             role="button"
             style="width: 12px;"
             tabindex="0"
@@ -32955,7 +33141,7 @@ exports[`<SortableTree /> > renders renderContent.tsx correctly 1`] = `
             >
               <div>
                 <button
-                  class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-5"
+                  class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon emotion-5"
                   type="button"
                 >
                   <span
@@ -32977,7 +33163,7 @@ exports[`<SortableTree /> > renders renderContent.tsx correctly 1`] = `
             </div>
           </span>
           <button
-            class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon studio-sortable-tree-node-remove emotion-7"
+            class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-remove emotion-7"
             type="button"
           >
             <span
@@ -33017,7 +33203,7 @@ exports[`<SortableTree /> > renders renderContent.tsx correctly 1`] = `
             aria-describedby="DndDescribedBy-18"
             aria-disabled="false"
             aria-roledescription="sortable"
-            class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon studio-sortable-tree-node-handle emotion-3"
+            class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-handle emotion-3"
             role="button"
             style="width: 12px;"
             tabindex="0"
@@ -33045,7 +33231,7 @@ exports[`<SortableTree /> > renders renderContent.tsx correctly 1`] = `
             >
               <div>
                 <button
-                  class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-5"
+                  class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon emotion-5"
                   type="button"
                 >
                   <span
@@ -33067,7 +33253,7 @@ exports[`<SortableTree /> > renders renderContent.tsx correctly 1`] = `
             </div>
           </span>
           <button
-            class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon studio-sortable-tree-node-remove emotion-7"
+            class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-remove emotion-7"
             type="button"
           >
             <span
@@ -33107,7 +33293,7 @@ exports[`<SortableTree /> > renders renderContent.tsx correctly 1`] = `
             aria-describedby="DndDescribedBy-18"
             aria-disabled="false"
             aria-roledescription="sortable"
-            class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon studio-sortable-tree-node-handle emotion-3"
+            class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-handle emotion-3"
             role="button"
             style="width: 12px;"
             tabindex="0"
@@ -33135,7 +33321,7 @@ exports[`<SortableTree /> > renders renderContent.tsx correctly 1`] = `
             >
               <div>
                 <button
-                  class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-5"
+                  class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon emotion-5"
                   type="button"
                 >
                   <span
@@ -33157,7 +33343,7 @@ exports[`<SortableTree /> > renders renderContent.tsx correctly 1`] = `
             </div>
           </span>
           <button
-            class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon studio-sortable-tree-node-remove emotion-7"
+            class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-remove emotion-7"
             type="button"
           >
             <span
@@ -33197,7 +33383,7 @@ exports[`<SortableTree /> > renders renderContent.tsx correctly 1`] = `
             aria-describedby="DndDescribedBy-18"
             aria-disabled="false"
             aria-roledescription="sortable"
-            class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon studio-sortable-tree-node-handle emotion-3"
+            class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-handle emotion-3"
             role="button"
             style="width: 12px;"
             tabindex="0"
@@ -33218,7 +33404,7 @@ exports[`<SortableTree /> > renders renderContent.tsx correctly 1`] = `
             </span>
           </button>
           <button
-            class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-10"
+            class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon emotion-10"
             type="button"
           >
             <span
@@ -33243,7 +33429,7 @@ exports[`<SortableTree /> > renders renderContent.tsx correctly 1`] = `
             >
               <div>
                 <button
-                  class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-5"
+                  class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon emotion-5"
                   type="button"
                 >
                   <span
@@ -33265,7 +33451,7 @@ exports[`<SortableTree /> > renders renderContent.tsx correctly 1`] = `
             </div>
           </span>
           <button
-            class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon studio-sortable-tree-node-remove emotion-7"
+            class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-remove emotion-7"
             type="button"
           >
             <span
@@ -33305,7 +33491,7 @@ exports[`<SortableTree /> > renders renderContent.tsx correctly 1`] = `
             aria-describedby="DndDescribedBy-18"
             aria-disabled="false"
             aria-roledescription="sortable"
-            class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon studio-sortable-tree-node-handle emotion-3"
+            class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-handle emotion-3"
             role="button"
             style="width: 12px;"
             tabindex="0"
@@ -33333,7 +33519,7 @@ exports[`<SortableTree /> > renders renderContent.tsx correctly 1`] = `
             >
               <div>
                 <button
-                  class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-5"
+                  class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon emotion-5"
                   type="button"
                 >
                   <span
@@ -33355,7 +33541,7 @@ exports[`<SortableTree /> > renders renderContent.tsx correctly 1`] = `
             </div>
           </span>
           <button
-            class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon studio-sortable-tree-node-remove emotion-7"
+            class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-remove emotion-7"
             type="button"
           >
             <span
@@ -33395,7 +33581,7 @@ exports[`<SortableTree /> > renders renderContent.tsx correctly 1`] = `
             aria-describedby="DndDescribedBy-18"
             aria-disabled="false"
             aria-roledescription="sortable"
-            class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon studio-sortable-tree-node-handle emotion-3"
+            class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-handle emotion-3"
             role="button"
             style="width: 12px;"
             tabindex="0"
@@ -33423,7 +33609,7 @@ exports[`<SortableTree /> > renders renderContent.tsx correctly 1`] = `
             >
               <div>
                 <button
-                  class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-5"
+                  class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon emotion-5"
                   type="button"
                 >
                   <span
@@ -33445,7 +33631,7 @@ exports[`<SortableTree /> > renders renderContent.tsx correctly 1`] = `
             </div>
           </span>
           <button
-            class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon studio-sortable-tree-node-remove emotion-7"
+            class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-remove emotion-7"
             type="button"
           >
             <span
@@ -33806,7 +33992,7 @@ exports[`<SortableTree /> > renders sortableRule.tsx correctly 1`] = `
             aria-describedby="DndDescribedBy-17"
             aria-disabled="false"
             aria-roledescription="sortable"
-            class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon studio-sortable-tree-node-handle emotion-3"
+            class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-handle emotion-3"
             role="button"
             style="width: 12px;"
             tabindex="0"
@@ -33832,7 +34018,7 @@ exports[`<SortableTree /> > renders sortableRule.tsx correctly 1`] = `
             1
           </span>
           <button
-            class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon studio-sortable-tree-node-remove emotion-4"
+            class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-remove emotion-4"
             type="button"
           >
             <span
@@ -33872,7 +34058,7 @@ exports[`<SortableTree /> > renders sortableRule.tsx correctly 1`] = `
             aria-describedby="DndDescribedBy-17"
             aria-disabled="false"
             aria-roledescription="sortable"
-            class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon studio-sortable-tree-node-handle emotion-3"
+            class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-handle emotion-3"
             role="button"
             style="width: 12px;"
             tabindex="0"
@@ -33893,7 +34079,7 @@ exports[`<SortableTree /> > renders sortableRule.tsx correctly 1`] = `
             </span>
           </button>
           <button
-            class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-7"
+            class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon emotion-7"
             type="button"
           >
             <span
@@ -33916,7 +34102,7 @@ exports[`<SortableTree /> > renders sortableRule.tsx correctly 1`] = `
             2
           </span>
           <button
-            class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon studio-sortable-tree-node-remove emotion-4"
+            class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-remove emotion-4"
             type="button"
           >
             <span
@@ -33956,7 +34142,7 @@ exports[`<SortableTree /> > renders sortableRule.tsx correctly 1`] = `
             aria-describedby="DndDescribedBy-17"
             aria-disabled="false"
             aria-roledescription="sortable"
-            class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon studio-sortable-tree-node-handle emotion-3"
+            class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-handle emotion-3"
             role="button"
             style="width: 12px;"
             tabindex="0"
@@ -33982,7 +34168,7 @@ exports[`<SortableTree /> > renders sortableRule.tsx correctly 1`] = `
             Spring
           </span>
           <button
-            class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon studio-sortable-tree-node-remove emotion-4"
+            class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-remove emotion-4"
             type="button"
           >
             <span
@@ -34022,7 +34208,7 @@ exports[`<SortableTree /> > renders sortableRule.tsx correctly 1`] = `
             aria-describedby="DndDescribedBy-17"
             aria-disabled="false"
             aria-roledescription="sortable"
-            class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon studio-sortable-tree-node-handle emotion-3"
+            class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-handle emotion-3"
             role="button"
             style="width: 12px;"
             tabindex="0"
@@ -34048,7 +34234,7 @@ exports[`<SortableTree /> > renders sortableRule.tsx correctly 1`] = `
             Summer
           </span>
           <button
-            class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon studio-sortable-tree-node-remove emotion-4"
+            class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-remove emotion-4"
             type="button"
           >
             <span
@@ -34088,7 +34274,7 @@ exports[`<SortableTree /> > renders sortableRule.tsx correctly 1`] = `
             aria-describedby="DndDescribedBy-17"
             aria-disabled="false"
             aria-roledescription="sortable"
-            class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon studio-sortable-tree-node-handle emotion-3"
+            class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-handle emotion-3"
             role="button"
             style="width: 12px;"
             tabindex="0"
@@ -34114,7 +34300,7 @@ exports[`<SortableTree /> > renders sortableRule.tsx correctly 1`] = `
             Fall
           </span>
           <button
-            class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon studio-sortable-tree-node-remove emotion-4"
+            class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-remove emotion-4"
             type="button"
           >
             <span
@@ -34154,7 +34340,7 @@ exports[`<SortableTree /> > renders sortableRule.tsx correctly 1`] = `
             aria-describedby="DndDescribedBy-17"
             aria-disabled="false"
             aria-roledescription="sortable"
-            class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon studio-sortable-tree-node-handle emotion-3"
+            class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-handle emotion-3"
             role="button"
             style="width: 12px;"
             tabindex="0"
@@ -34180,7 +34366,7 @@ exports[`<SortableTree /> > renders sortableRule.tsx correctly 1`] = `
             Winter
           </span>
           <button
-            class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon studio-sortable-tree-node-remove emotion-4"
+            class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-remove emotion-4"
             type="button"
           >
             <span
@@ -34220,7 +34406,7 @@ exports[`<SortableTree /> > renders sortableRule.tsx correctly 1`] = `
             aria-describedby="DndDescribedBy-17"
             aria-disabled="false"
             aria-roledescription="sortable"
-            class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon studio-sortable-tree-node-handle emotion-3"
+            class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-handle emotion-3"
             role="button"
             style="width: 12px;"
             tabindex="0"
@@ -34246,7 +34432,7 @@ exports[`<SortableTree /> > renders sortableRule.tsx correctly 1`] = `
             About Us
           </span>
           <button
-            class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon studio-sortable-tree-node-remove emotion-4"
+            class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-remove emotion-4"
             type="button"
           >
             <span
@@ -34286,7 +34472,7 @@ exports[`<SortableTree /> > renders sortableRule.tsx correctly 1`] = `
             aria-describedby="DndDescribedBy-17"
             aria-disabled="false"
             aria-roledescription="sortable"
-            class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon studio-sortable-tree-node-handle emotion-3"
+            class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-handle emotion-3"
             role="button"
             style="width: 12px;"
             tabindex="0"
@@ -34307,7 +34493,7 @@ exports[`<SortableTree /> > renders sortableRule.tsx correctly 1`] = `
             </span>
           </button>
           <button
-            class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon emotion-7"
+            class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon emotion-7"
             type="button"
           >
             <span
@@ -34330,7 +34516,7 @@ exports[`<SortableTree /> > renders sortableRule.tsx correctly 1`] = `
             My Account
           </span>
           <button
-            class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon studio-sortable-tree-node-remove emotion-4"
+            class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-remove emotion-4"
             type="button"
           >
             <span
@@ -34370,7 +34556,7 @@ exports[`<SortableTree /> > renders sortableRule.tsx correctly 1`] = `
             aria-describedby="DndDescribedBy-17"
             aria-disabled="false"
             aria-roledescription="sortable"
-            class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon studio-sortable-tree-node-handle emotion-3"
+            class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-handle emotion-3"
             role="button"
             style="width: 12px;"
             tabindex="0"
@@ -34396,7 +34582,7 @@ exports[`<SortableTree /> > renders sortableRule.tsx correctly 1`] = `
             Addresses
           </span>
           <button
-            class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon studio-sortable-tree-node-remove emotion-4"
+            class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-remove emotion-4"
             type="button"
           >
             <span
@@ -34436,7 +34622,7 @@ exports[`<SortableTree /> > renders sortableRule.tsx correctly 1`] = `
             aria-describedby="DndDescribedBy-17"
             aria-disabled="false"
             aria-roledescription="sortable"
-            class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon studio-sortable-tree-node-handle emotion-3"
+            class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-handle emotion-3"
             role="button"
             style="width: 12px;"
             tabindex="0"
@@ -34462,7 +34648,7 @@ exports[`<SortableTree /> > renders sortableRule.tsx correctly 1`] = `
             Order History
           </span>
           <button
-            class="studio-btn studio-btn-text studio-btn-sm studio-btn-icon-only studio-actionicon studio-sortable-tree-node-remove emotion-4"
+            class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-remove emotion-4"
             type="button"
           >
             <span
@@ -35114,13 +35300,13 @@ exports[`<antd /> > renders inputNumber.tsx correctly 1`] = `
           class="studio-space-item"
         >
           <div
-            class="studio-input-number-group-wrapper emotion-0 studio-input-number-group-wrapper-sm"
+            class="studio-input-number-group-wrapper emotion-0"
           >
             <div
               class="studio-input-number-wrapper studio-input-number-group"
             >
               <div
-                class="studio-input-number studio-input-number-sm"
+                class="studio-input-number"
               >
                 <div
                   class="studio-input-number-handler-wrap"

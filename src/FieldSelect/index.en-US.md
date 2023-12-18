@@ -15,15 +15,22 @@ Extend the common selector, when selecting a field, add the field type.
 
 <code src="./demos/basic.tsx" ></code>
 
+### Turn off custom input
+
+You can turn off the ability to customize input by setting `showCustomField` to False
+
+<code src="./demos/custom.tsx" ></code>
+
 ## API
 
 > Other attributes refer to antd `Select` component.
 
-| Property | Description | Type                             | Default |
-| :------- | :---------- | :------------------------------- | :------ |
-| options  | Options     | Refer to `FieldSelectOptionType` | -       |
-| onChange | Callback    | (value: string) => void          | -       |
-| value    | Value       | string                           | -       |
+| Property        | Description                              | Type                             | Default |
+| :-------------- | :--------------------------------------- | :------------------------------- | :------ |
+| options         | Options                                  | Refer to `FieldSelectOptionType` | -       |
+| onChange        | Callback                                 | (value: string) => void          | -       |
+| value           | Value                                    | string                           | -       |
+| showCustomField | Whether to use custom input capabilities | boolean                          | true    |
 
 ### FieldSelectOptionType Option Type
 
