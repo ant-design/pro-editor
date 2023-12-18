@@ -1,3 +1,4 @@
+import ActionIcon from '@/ActionIcon';
 import { MenuUnfoldOutlined } from '@ant-design/icons';
 import { DropDownProps, Dropdown, Flex, FlexProps } from 'antd';
 import { ReactNode } from 'react';
@@ -12,7 +13,7 @@ enum typeEnum {
 type iconDropdownType = {
   icon?: ReactNode;
   dropdown?: DropDownProps;
-  title?: string;
+  title?: ReactNode;
 };
 
 interface HeaderFooterSettings {
@@ -21,6 +22,8 @@ interface HeaderFooterSettings {
   flex?: FlexProps;
   hide?: boolean;
   render?: (props: HeaderFooterSettings) => ReactNode;
+  style?: React.CSSProperties;
+  className?: string;
   children?: ReactNode;
   type?: typeEnum | string;
 }
@@ -39,11 +42,14 @@ const HeaderAndFooter = (props: HeaderFooterSettings) => {
       className: '',
     },
     type = 'header',
+    extra,
     iconConfig = {
       icon: <MenuUnfoldOutlined />,
       dropdown: undefined,
       title: '',
     },
+    style = {},
+    className,
   } = props || {};
   if (hide) {
     return null;
@@ -58,16 +64,23 @@ const HeaderAndFooter = (props: HeaderFooterSettings) => {
 
     if (!dropdown)
       return (
-        <div>
-          {icon}
+        <div className={styles.headerAndFooterIcon}>
+          <ActionIcon icon={icon} />
           {title}
         </div>
       );
 
     return (
-      <Dropdown trigger={['click']} {...iconConfig.dropdown}>
-        {iconConfig.icon}
-      </Dropdown>
+      <div className={styles.headerAndFooterIcon}>
+        <Dropdown
+          trigger={['click']}
+          placement={type === typeEnum.header ? 'bottomLeft' : 'topLeft'}
+          {...iconConfig.dropdown}
+        >
+          <ActionIcon icon={icon} />
+        </Dropdown>
+        {title}
+      </div>
     );
   };
 
@@ -79,11 +92,14 @@ const HeaderAndFooter = (props: HeaderFooterSettings) => {
         type === typeEnum.header ? styles.header : styles.footer,
         styles.flexContainer,
         flex?.className,
+        className,
       )}
+      style={style}
     >
+      {/* 虽然是放在 flex 中，但实际上是 absoult 定位到最中间 */}
+      <div className={styles.headerAndFooterCenterChildren}>{children}</div>
       <IconDom />
-      {children}
-      <div>Extra</div>
+      {extra && <div className={styles.headerAndFooterExtra}>{extra}</div>}
     </Flex>
   );
 };

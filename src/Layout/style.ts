@@ -31,7 +31,7 @@ export const useStyle = createStyles(({ css, token, cx }, prefixCls: string) => 
     footer: cx(
       `${prefixCls}-footer`,
       css`
-        height: 28px;
+        height: 36px;
         box-sizing: border-box;
         margin: ${token.margin / 4}px;
         border-radius: ${token.borderRadius}px;
@@ -43,6 +43,7 @@ export const useStyle = createStyles(({ css, token, cx }, prefixCls: string) => 
       `${prefixCls}-flex-container`,
       css`
         padding: ${token.margin / 2 + 2}px;
+        position: relative;
       `,
     ),
 
@@ -81,6 +82,34 @@ export const useStyle = createStyles(({ css, token, cx }, prefixCls: string) => 
         position: absolute;
         left: 50%;
         transform: translate(-50%);
+      `,
+    ),
+
+    headerAndFooterCenterChildren: cx(
+      'headerAndFooterCenterChildren',
+      css`
+        position: absolute;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      `,
+    ),
+
+    headerAndFooterIcon: cx(
+      'headerAndFooterIcon',
+      css`
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        min-width: 50px;
+      `,
+    ),
+
+    headerAndFooterExtra: cx(
+      'headerAndFooterExtra',
+      css`
+        min-width: 50px;
       `,
     ),
   };
