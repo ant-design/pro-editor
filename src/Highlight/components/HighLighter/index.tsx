@@ -8,6 +8,7 @@ import { THEME_LIGHT } from '@/Highlight/theme';
 import { STUDIO_UI_PREFIX } from '@/theme';
 import { Loading3QuartersOutlined as Loading } from '@ant-design/icons';
 import classNames from 'classnames';
+import { memo } from 'react';
 import { Center } from 'react-layout-kit';
 import { HighlightProps } from '../../defalut';
 import { useShiki } from '../../hooks/useShiki';
@@ -19,7 +20,7 @@ export type ShikiProps = Pick<
   'language' | 'children' | 'theme' | 'prefixCls' | 'lineNumber'
 >;
 
-const HighLighter: React.FC<ShikiProps> = (props) => {
+const HighLighter: React.FC<ShikiProps> = memo((props) => {
   const {
     children,
     lineNumber = false,
@@ -52,6 +53,6 @@ const HighLighter: React.FC<ShikiProps> = (props) => {
       ) : null}
     </>
   );
-};
+});
 
 export default HighLighter;
