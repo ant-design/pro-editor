@@ -1,5 +1,31 @@
 # Changelog
 
+### [Version&nbsp;0.31.1](https://github.com/ant-design/pro-editor/compare/v0.31.0...v0.31.1)
+
+<sup>Released on **2023-12-18**</sup>
+
+#### 🐛 修复
+
+- Fix markdown & highlight not support memo, remove demo old api.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's fixed
+
+- Fix markdown & highlight not support memo ([136850f](https://github.com/ant-design/pro-editor/commit/136850f))
+- Remove demo old api ([fd9ff8c](https://github.com/ant-design/pro-editor/commit/fd9ff8c))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
 ## [Version&nbsp;0.31.0](https://github.com/ant-design/pro-editor/compare/v0.30.0...v0.31.0)
 
 <sup>Released on **2023-12-12**</sup>
