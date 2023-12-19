@@ -62,7 +62,7 @@ const ControlInput = memo<ItemRenderProps>(
       setTimeout(() => {
         const nextNodeEl = document.getElementById(customListId(index + 1));
         nextNodeEl?.focus();
-      }, 200);
+      }, 0);
     };
 
     return (
