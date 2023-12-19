@@ -1,5 +1,5 @@
 /**
- * title: 不可添加
+ * title: 关闭添加能力
  * description: 可通过 `creatorButtonProps={false}` 来关闭添加功能，包括添加一行按钮，回车添加以及空状态添加
  */
 import type { ColumnItemList } from '@ant-design/pro-editor';
