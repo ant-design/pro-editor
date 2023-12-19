@@ -8,7 +8,7 @@ import type { Store } from '../store';
 import { useStore } from '../store';
 
 import { PlusOutlined } from '@ant-design/icons';
-import { Button } from 'antd';
+import { Button } from '../../antd';
 
 import { useStyle } from '../style';
 
@@ -43,13 +43,19 @@ const SortableList: FC<SortableListProps> = ({ prefixCls }) => {
 
   const { styles } = useStyle(prefixCls);
   const items = useStore((s) => s.value, isEqual);
-  const { record, creatorButtonText = '添加一列', position = 'bottom' } = creatorButtonProps || {};
+  const {
+    record,
+    creatorButtonText = '添加一列',
+    position = 'bottom',
+    style,
+  } = creatorButtonProps || {};
 
   const CreateButton = ({ empty = false }) => {
     return (
       <Button
         block={empty ? false : true}
         size={'small'}
+        style={style}
         className={styles.btnAdd}
         onClick={() => {
           dispatchListData({

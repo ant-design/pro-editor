@@ -62,6 +62,10 @@ export interface CreatorButtonProps {
    * 新增一行按钮文案
    */
   creatorButtonText?: string;
+  /**
+   * 按钮的样式设置，可以设置按钮是否显示，比如 style: {display: 'none'}
+   */
+  style?: CSSProperties;
 }
 
 export type RenderItem<T = any> = (

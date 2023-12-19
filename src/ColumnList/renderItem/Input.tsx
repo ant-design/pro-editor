@@ -1,4 +1,4 @@
-import { useSortableList } from '@ant-design/pro-editor';
+import { CreatorButtonProps, useSortableList } from '@ant-design/pro-editor';
 import { Input, InputRef } from 'antd';
 import { createStyles } from 'antd-style';
 import { CSSProperties, memo, useEffect, useRef, useState } from 'react';
@@ -23,10 +23,11 @@ interface ItemRenderProps {
   prefixCls: string;
   style: CSSProperties;
   placeholder?: string;
+  creatorButtonProps: CreatorButtonProps | false;
 }
 
 const ControlInput = memo<ItemRenderProps>(
-  ({ dataIndex, placeholder, value, index, prefixCls, style, dragging }) => {
+  ({ dataIndex, placeholder, value, index, prefixCls, style, dragging, creatorButtonProps }) => {
     const instance = useSortableList();
     const inputRef = useRef<InputRef>(null);
     const [innerValue, setInnerValue] = useState(value);
@@ -53,8 +54,9 @@ const ControlInput = memo<ItemRenderProps>(
     const handleNextFocus = () => {
       const value = instance.getValue() || [];
       // 如果是最后一个节点，按下回车后，会自动添加一个新的节点
-      if (index + 1 === value.length) {
-        instance.addItem({ [dataIndex]: '' });
+      if (index + 1 === value.length && creatorButtonProps !== false) {
+        const { record } = creatorButtonProps;
+        instance.addItem(record(value.length));
       }
 
       setTimeout(() => {
