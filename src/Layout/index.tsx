@@ -13,6 +13,8 @@ export type LayoutTypeEnum =
   | null
   | undefined;
 
+export type ThemeLayoutType = 'pure' | 'ghost' | 'block' | string;
+
 interface LayoutProps extends FlexboxProps {
   header?: HeaderFooterSettings | false;
   footer?: HeaderFooterSettings | false;
@@ -21,6 +23,7 @@ interface LayoutProps extends FlexboxProps {
   bottomPannel?: PannelSettings | false;
   centerPannel?: PannelSettings | false;
   type?: LayoutTypeEnum;
+  themeType?: ThemeLayoutType;
 }
 
 const BasicLayout = (props: LayoutProps) => {
@@ -32,23 +35,39 @@ const BasicLayout = (props: LayoutProps) => {
     bottomPannel,
     centerPannel,
     type = 'Bottom',
+    themeType = 'block',
     ...rest
   } = props;
 
   const pannels = [leftPannel, rightPannel, bottomPannel, centerPannel].map((props, index) => {
     if (props === false) return null;
-    return <PannelDefault key={'pannel' + index} {...props} index={index} />;
+    return (
+      <PannelDefault
+        key={'pannel' + index}
+        {...props}
+        index={index}
+        themeType={props?.themeType || themeType}
+      />
+    );
   });
 
   const headerandfooter = [header, footer].map((props, index) => {
     if (props === false) return null;
-    return <HeaderAndFooter key={index} {...props} type={index === 0 ? 'header' : 'footer'} />;
+    return (
+      <HeaderAndFooter
+        key={index}
+        {...props}
+        type={index === 0 ? 'header' : 'footer'}
+        themeType={props?.themeType || themeType}
+      />
+    );
   });
 
   return (
     <LayoutTypeContainer
       pannels={pannels}
       headerandfooter={headerandfooter}
+      themeType={themeType}
       type={type}
       {...rest}
     />

@@ -2,6 +2,7 @@ import ActionIcon from '@/ActionIcon';
 import { MenuUnfoldOutlined } from '@ant-design/icons';
 import { DropDownProps, Dropdown, Flex, FlexProps } from 'antd';
 import { ReactNode } from 'react';
+import { ThemeLayoutType } from '..';
 import { getPrefixCls } from '../../theme';
 import { useStyle } from './../style';
 
@@ -14,6 +15,7 @@ type iconDropdownType = {
   icon?: ReactNode;
   dropdown?: DropDownProps;
   title?: ReactNode;
+  render?: (props: iconDropdownType, defalutDom?: ReactNode) => JSX.Element;
 };
 
 interface HeaderFooterSettings {
@@ -26,12 +28,10 @@ interface HeaderFooterSettings {
   className?: string;
   children?: ReactNode;
   type?: typeEnum | string;
+  themeType?: ThemeLayoutType;
 }
 
 const HeaderAndFooter = (props: HeaderFooterSettings) => {
-  const prefixCls = getPrefixCls('layout');
-
-  const { styles, cx } = useStyle(prefixCls);
   const {
     children,
     render,
@@ -47,10 +47,17 @@ const HeaderAndFooter = (props: HeaderFooterSettings) => {
       icon: <MenuUnfoldOutlined />,
       dropdown: undefined,
       title: '',
+      render,
     },
+    themeType,
     style = {},
     className,
   } = props || {};
+
+  const prefixCls = getPrefixCls('layout');
+
+  const { styles, cx } = useStyle({ prefixCls, themeType });
+
   if (hide) {
     return null;
   }
@@ -60,7 +67,7 @@ const HeaderAndFooter = (props: HeaderFooterSettings) => {
 
   const IconDom = () => {
     if (iconConfig === false) return null;
-    const { icon, dropdown, title } = iconConfig || {};
+    const { icon, dropdown, title, render } = iconConfig || {};
 
     if (!dropdown)
       return (
@@ -70,8 +77,8 @@ const HeaderAndFooter = (props: HeaderFooterSettings) => {
         </div>
       );
 
-    return (
-      <div className={styles.headerAndFooterIcon}>
+    const DefalutIconDom = (
+      <>
         <Dropdown
           trigger={['click']}
           placement={type === typeEnum.header ? 'bottomLeft' : 'topLeft'}
@@ -80,8 +87,14 @@ const HeaderAndFooter = (props: HeaderFooterSettings) => {
           <ActionIcon icon={icon} />
         </Dropdown>
         {title}
-      </div>
+      </>
     );
+
+    if (render) {
+      return render(iconConfig, DefalutIconDom);
+    }
+
+    return DefalutIconDom;
   };
 
   return (
@@ -98,7 +111,9 @@ const HeaderAndFooter = (props: HeaderFooterSettings) => {
     >
       {/* 虽然是放在 flex 中，但实际上是 absoult 定位到最中间 */}
       <div className={styles.headerAndFooterCenterChildren}>{children}</div>
-      <IconDom />
+      <div className={styles.headerAndFooterIcon}>
+        <IconDom />
+      </div>
       {extra && <div className={styles.headerAndFooterExtra}>{extra}</div>}
     </Flex>
   );

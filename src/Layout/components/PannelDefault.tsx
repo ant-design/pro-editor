@@ -1,6 +1,7 @@
 import { DraggablePanel, TabsProps } from '@ant-design/pro-editor';
 import { Size } from 're-resizable';
 import { ReactNode } from 'react';
+import { ThemeLayoutType } from '..';
 import { getPrefixCls } from '../../theme';
 import { useStyle } from './../style';
 
@@ -17,11 +18,22 @@ interface PannelSettings {
   maxHeight?: number;
   style?: React.CSSProperties;
   className?: string;
+  themeType?: ThemeLayoutType;
 }
 
 const PannelDefault = (props: PannelSettings & { index: number }) => {
+  const {
+    children = '',
+    className,
+    style,
+    minHeight = 100,
+    minWidth = 100,
+    index = 0,
+    themeType,
+    ...rest
+  } = props || {};
   const prefixCls = getPrefixCls('layout');
-  const { styles, cx } = useStyle(prefixCls);
+  const { styles, cx } = useStyle({ prefixCls, themeType });
 
   const getPannelProps = (
     index: number,
@@ -67,20 +79,10 @@ const PannelDefault = (props: PannelSettings & { index: number }) => {
         return false;
     }
   };
-
-  const {
-    children = '',
-    className,
-    style,
-    minHeight = 100,
-    minWidth = 100,
-    index = 0,
-    ...rest
-  } = props || {};
   const pannelProps = getPannelProps(index);
   if (!pannelProps) {
     return (
-      <div className={cx(styles.pannel, styles.centerPannel)}>
+      <div className={cx(styles.pannel, styles.centerPannel)} style={style}>
         <div className={cx(className)}>{children}</div>
       </div>
     );
@@ -89,14 +91,16 @@ const PannelDefault = (props: PannelSettings & { index: number }) => {
   return (
     <DraggablePanel
       expandable={false}
-      style={{ border: 'none', ...style }}
+      style={{ border: 'none' }}
       placement={placement}
       minHeight={minHeight}
       minWidth={minWidth}
       {...pannelProps}
       {...rest}
     >
-      <div className={cx(styles.pannel, pannelClassName, className)}>{children}</div>
+      <div className={cx(styles.pannel, pannelClassName, className)} style={style}>
+        {children}
+      </div>
     </DraggablePanel>
   );
 };
