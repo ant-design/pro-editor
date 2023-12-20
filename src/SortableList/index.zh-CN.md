@@ -45,6 +45,7 @@ demo:
 | getItemStyle       | `(status: GetItemStylesArgs) => ReactNode`                       | 自定义容器样式                     |
 | ref                | `ForwardedRef<SortableListRef<T>>`                               | 对外部暴露方法                     |
 | hideRemove         | `boolean`                                                        | 是否隐藏删除按钮，默认为 false     |
+| handle             | `boolean`                                                        | 是否显示拖拽按钮，默认为 true      |
 | creatorButtonProps | `CreatorButtonProps\|false`                                      | 新建对象相关属性                   |
 | actions            | `(item: T, index: number) => ReactNode[]` \| `React.ReactNode[]` | 除列表自带操作之外的其他操作自渲染 |
 

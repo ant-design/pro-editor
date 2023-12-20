@@ -1,5 +1,4 @@
-import { useSortableList } from '@ant-design/pro-editor';
-import { Input, Select } from 'antd';
+import { Input, Select, useSortableList } from '@ant-design/pro-editor';
 import { memo, useState } from 'react';
 import { Flexbox } from 'react-layout-kit';
 import { ItemRenderProps, fieldStyle, tableColumnValueOptions } from './data';
@@ -22,10 +21,11 @@ const ItemRender = memo(({ item, index, compact = false }: ItemRenderProps) => {
     if (index + 1 === value.length) {
       const id = randomIndex();
       instance.addItem({ id, title: `new-${randomIndex()}` });
-    } else {
+    }
+    setTimeout(() => {
       const nextNodeEl = document.getElementById(`index-${index + 1}`);
       nextNodeEl?.focus();
-    }
+    }, 0);
   };
 
   return (
@@ -43,8 +43,8 @@ const ItemRender = memo(({ item, index, compact = false }: ItemRenderProps) => {
             if (changed) updateTitle();
             handleNextFocus();
           }}
-          onChange={(e) => {
-            setTitle(e.target.value);
+          onChange={(value) => {
+            setTitle(value);
             setChanged(true);
           }}
         />
