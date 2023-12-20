@@ -1,5 +1,31 @@
 # Changelog
 
+## [Version&nbsp;0.32.0-rc.2](https://github.com/ant-design/pro-editor/compare/v0.32.0-rc.1...v0.32.0-rc.2)
+
+<sup>Released on **2023-12-19**</sup>
+
+#### ✨ 新特性
+
+- Udpate snapshot, update dingding demo & pannel config done.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's improved
+
+- Udpate snapshot ([050fa45](https://github.com/ant-design/pro-editor/commit/050fa45))
+- Update dingding demo & pannel config done ([172dc14](https://github.com/ant-design/pro-editor/commit/172dc14))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
 ## [Version&nbsp;0.32.0-rc.1](https://github.com/ant-design/pro-editor/compare/v0.31.0...v0.32.0-rc.1)
 
 <sup>Released on **2023-12-18**</sup>
