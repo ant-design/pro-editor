@@ -20,8 +20,6 @@ const LayoutTypeContainer = (props: LayoutTypeContainerProps) => {
   const [LeftPannelDom, RightPannelDom, BottomPannelDom, CenterPannelDom] = pannels;
   const [HeaderDom, FooterDom] = headerandfooter;
 
-  console.log('type', type);
-
   if (type === 'Left&Right') {
     return (
       <Flexbox className={styles.layout} {...rest}>
