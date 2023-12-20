@@ -1,5 +1,30 @@
 # Changelog
 
+### [Version&nbsp;0.33.1](https://github.com/ant-design/pro-editor/compare/v0.33.0...v0.33.1)
+
+<sup>Released on **2023-12-20**</sup>
+
+#### 🐛 修复
+
+- Style 不要影响空状态按钮.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's fixed
+
+- Style 不要影响空状态按钮 ([9acf6a1](https://github.com/ant-design/pro-editor/commit/9acf6a1))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
 ## [Version&nbsp;0.33.0](https://github.com/ant-design/pro-editor/compare/v0.32.0...v0.33.0)
 
 <sup>Released on **2023-12-20**</sup>
