@@ -1,5 +1,38 @@
 # Changelog
 
+## [Version&nbsp;0.32.0](https://github.com/ant-design/pro-editor/compare/v0.31.1...v0.32.0)
+
+<sup>Released on **2023-12-20**</sup>
+
+#### ✨ 新特性
+
+- SortableList support handle control.
+
+#### 🐛 修复
+
+- Fix creatorButtonProps and add demos.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's improved
+
+- SortableList support handle control ([6a1ea43](https://github.com/ant-design/pro-editor/commit/6a1ea43))
+
+#### What's fixed
+
+- Fix creatorButtonProps and add demos ([4f37d45](https://github.com/ant-design/pro-editor/commit/4f37d45))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
 ### [Version&nbsp;0.31.1](https://github.com/ant-design/pro-editor/compare/v0.31.0...v0.31.1)
 
 <sup>Released on **2023-12-18**</sup>
