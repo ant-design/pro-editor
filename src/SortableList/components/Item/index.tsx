@@ -17,7 +17,7 @@ const Item = memo(
         dragging,
         disabled,
         fadeIn,
-        handle = true,
+        handle,
         index,
         listeners,
         onRemove,

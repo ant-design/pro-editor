@@ -32,7 +32,7 @@ export type RenderActionProps<T = any> =
 export interface SortableItemProps<T = any>
   extends Pick<
     StoreUpdaterProps<T>,
-    'renderItem' | 'renderContent' | 'actions' | 'getItemStyles' | 'hideRemove'
+    'renderItem' | 'renderContent' | 'actions' | 'getItemStyles' | 'hideRemove' | 'handle'
   > {
   disabled?: boolean;
   id: UniqueIdentifier;

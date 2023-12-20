@@ -20,6 +20,7 @@ const selector = (s: Store) => ({
   keyManager: s.keyManager,
   actions: s.actions,
   hideRemove: s.hideRemove,
+  handle: s.handle,
   creatorButtonProps: s.creatorButtonProps,
   dispatchListData: s.dispatchListData,
 });
@@ -36,6 +37,7 @@ const SortableList: FC<SortableListProps> = ({ prefixCls }) => {
     renderEmpty,
     creatorButtonProps = false,
     hideRemove,
+    handle,
     keyManager,
     getItemStyles,
     actions,
@@ -91,6 +93,7 @@ const SortableList: FC<SortableListProps> = ({ prefixCls }) => {
               index={index}
               actions={actions}
               hideRemove={hideRemove}
+              handle={handle}
               renderItem={renderItem}
               renderContent={renderContent}
               getItemStyles={getItemStyles}

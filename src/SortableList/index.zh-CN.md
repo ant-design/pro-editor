@@ -19,6 +19,7 @@ demo:
 <code src="./demos/Basic.tsx" ></code>
 <code src="./demos/controlled.tsx" ></code>
 <code src="./demos/hideRemove.tsx" ></code>
+<code src="./demos/handle.tsx" ></code>
 <code src="./demos/getItemStyles.tsx" ></code>
 <code src="./demos/renderItem.tsx" ></code>
 <code src="./demos/renderContent.tsx" ></code>
