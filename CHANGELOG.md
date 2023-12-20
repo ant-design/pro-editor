@@ -1,22 +1,29 @@
 # Changelog
 
-## [Version&nbsp;0.32.0-rc.3](https://github.com/ant-design/pro-editor/compare/v0.32.0-rc.2...v0.32.0-rc.3)
+## [Version&nbsp;0.32.0](https://github.com/ant-design/pro-editor/compare/v0.31.1...v0.32.0)
 
 <sup>Released on **2023-12-20**</sup>
 
+#### ✨ 新特性
+
+- SortableList support handle control.
+
 #### 🐛 修复
 
-- Fix markdown & highlight not support memo, remove demo old api.
+- Fix creatorButtonProps and add demos.
 
 <br/>
 
 <details>
 <summary><kbd>Improvements and Fixes</kbd></summary>
 
+#### What's improved
+
+- SortableList support handle control ([6a1ea43](https://github.com/ant-design/pro-editor/commit/6a1ea43))
+
 #### What's fixed
 
-- Fix markdown & highlight not support memo ([136850f](https://github.com/ant-design/pro-editor/commit/136850f))
-- Remove demo old api ([fd9ff8c](https://github.com/ant-design/pro-editor/commit/fd9ff8c))
+- Fix creatorButtonProps and add demos ([4f37d45](https://github.com/ant-design/pro-editor/commit/4f37d45))
 
 </details>
 

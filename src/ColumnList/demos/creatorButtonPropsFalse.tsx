@@ -1,6 +1,6 @@
 /**
- * title: 自定义初始化
- * description: 可通过 `creatorButtonProps` 来自定义初始化逻辑
+ * title: 关闭添加能力
+ * description: 可通过 `creatorButtonProps={false}` 来关闭添加功能，包括添加一行按钮，回车添加以及空状态添加
  */
 import type { ColumnItemList } from '@ant-design/pro-editor';
 import { ColumnList } from '@ant-design/pro-editor';
@@ -63,11 +63,6 @@ export default () => (
     onChange={(values) => {
       console.log('onChange', values);
     }}
-    creatorButtonProps={{
-      position: 'top',
-      record: (index) => ({
-        dataIndex: `${index}-${randomIndex()}`,
-      }),
-    }}
+    creatorButtonProps={false}
   />
 );

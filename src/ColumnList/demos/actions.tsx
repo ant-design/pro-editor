@@ -56,6 +56,7 @@ export default () => (
       <ActionIcon
         icon={<EditFilled />}
         key={'edit'}
+        style={{ height: 22 }}
         tabIndex={-1}
         onClick={() => message.info(field.dataIndex)}
       />,
