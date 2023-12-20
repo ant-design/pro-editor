@@ -14732,7 +14732,6 @@ exports[`<DraggablePanel /> > renders basic.tsx correctly 1`] = `
 }
 
 .emotion-3 {
-  background: #ffffff;
   overflow: hidden;
 }
 
@@ -14882,7 +14881,6 @@ exports[`<DraggablePanel /> > renders bottom.tsx correctly 1`] = `
 }
 
 .emotion-4 {
-  background: #ffffff;
   overflow: hidden;
 }
 
@@ -15343,7 +15341,6 @@ exports[`<DraggablePanel /> > renders left.tsx correctly 1`] = `
 }
 
 .emotion-4 {
-  background: #ffffff;
   overflow: hidden;
 }
 
@@ -15494,7 +15491,6 @@ exports[`<DraggablePanel /> > renders top.tsx correctly 1`] = `
 }
 
 .emotion-4 {
-  background: #ffffff;
   overflow: hidden;
 }
 
@@ -21175,6 +21171,3182 @@ exports[`<InteractContainer /> > renders WithContainer.tsx correctly 1`] = `
 </div>
 `;
 
+exports[`<Layout /> > renders basic.tsx correctly 1`] = `
+.emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-1 {
+  height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  overflow: hidden;
+  border-radius: 6px;
+  font-size: 10px;
+}
+
+.emotion-1 .studio-draggable-panel {
+  border: none;
+}
+
+.emotion-2 {
+  box-sizing: border-box;
+  height: 48px;
+  min-height: 48px;
+  border-radius: 6px;
+  background-color: rgba(0, 0, 0, 0.02);
+  margin: 2px;
+  background-color: rgba(0, 0, 0, 0.04);
+  border: 1px solid transparent;
+  padding: 6px;
+  position: relative;
+}
+
+.emotion-3 {
+  position: absolute;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-4:hover {
+  color: rgba(0, 0, 0, 0.88);
+  background-color: rgba(0, 0, 0, 0.04);
+  border-color: transparent;
+}
+
+.emotion-4:focus {
+  color: rgba(0, 0, 0, 0.88)!important;
+  background-color: rgba(0, 0, 0, 0.02)!important;
+  border-color: #1677ff!important;
+  box-shadow: none;
+}
+
+.emotion-5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 8px;
+  min-width: 50px;
+}
+
+.emotion-6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-transition: color 600ms cubic-bezier(0.215, 0.61, 0.355, 1),scale 400ms cubic-bezier(0.215, 0.61, 0.355, 1),background-color 100ms cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: color 600ms cubic-bezier(0.215, 0.61, 0.355, 1),scale 400ms cubic-bezier(0.215, 0.61, 0.355, 1),background-color 100ms cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.emotion-6:hover {
+  color: rgba(0, 0, 0, 0.88)!important;
+}
+
+.emotion-6:active {
+  scale: 0.8;
+  color: rgba(0, 0, 0, 0.88);
+}
+
+.emotion-7 {
+  min-width: 50px;
+}
+
+.emotion-8 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  clear: both;
+}
+
+.emotion-9 {
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  position: relative;
+  border: 0 solid rgba(5, 5, 5, 0.06);
+}
+
+.emotion-9:hover .studio-draggable-panel-toggle {
+  opacity: 1;
+}
+
+.emotion-10 {
+  overflow: hidden;
+}
+
+.emotion-11 {
+  border-radius: 6px;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.02);
+  margin: 2px;
+  height: calc(100% - 4px);
+  padding: 6px;
+  background-color: rgba(0, 0, 0, 0.04);
+  border: 1px solid transparent;
+}
+
+.emotion-12 {
+  position: relative;
+}
+
+.emotion-12::before {
+  position: absolute;
+  z-index: 50;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  content: '';
+}
+
+.emotion-12:hover::before,
+.emotion-12:active::before {
+  background: #1677ff;
+}
+
+.emotion-12::before {
+  right: 50%;
+  width: 2px;
+  height: 100%;
+}
+
+.emotion-13 {
+  border-radius: 6px;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.02);
+  margin: 2px;
+  height: calc(100% - 4px);
+  padding: 6px;
+  background-color: rgba(0, 0, 0, 0.04);
+  border: 1px solid transparent;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.emotion-17 {
+  position: relative;
+}
+
+.emotion-17::before {
+  position: absolute;
+  z-index: 50;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  content: '';
+}
+
+.emotion-17:hover::before,
+.emotion-17:active::before {
+  background: #1677ff;
+}
+
+.emotion-17::before {
+  left: 50%;
+  width: 2px;
+  height: 100%;
+}
+
+.emotion-18 {
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  position: relative;
+  border: 0 solid rgba(5, 5, 5, 0.06);
+}
+
+.emotion-18:hover .studio-draggable-panel-toggle {
+  opacity: 1;
+}
+
+.emotion-20 {
+  border-radius: 6px;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.02);
+  margin: 2px;
+  height: calc(100% - 4px);
+  padding: 6px;
+  background-color: rgba(0, 0, 0, 0.04);
+  border: 1px solid transparent;
+}
+
+.emotion-21 {
+  position: relative;
+}
+
+.emotion-21::before {
+  position: absolute;
+  z-index: 50;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  content: '';
+}
+
+.emotion-21:hover::before,
+.emotion-21:active::before {
+  background: #1677ff;
+}
+
+.emotion-21::before {
+  top: 50%;
+  height: 2px;
+  width: 100%;
+}
+
+.emotion-22 {
+  height: 36px;
+  box-sizing: border-box;
+  margin: 2px;
+  border-radius: 6px;
+  background-color: rgba(0, 0, 0, 0.02);
+  background-color: rgba(0, 0, 0, 0.04);
+  border: 1px solid transparent;
+  padding: 6px;
+  position: relative;
+}
+
+<div>
+  <div
+    class="layoutkit-flexbox emotion-0 studio-layout emotion-1"
+    style="max-width: 100%; height: 600px;"
+  >
+    <div
+      class="studio-layout-header studio-layout-flex-container emotion-2 studio-flex studio-flex-align-center studio-flex-justify-space-between"
+    >
+      <div
+        class="headerAndFooterCenterChildren emotion-3"
+      >
+        <span
+          class="studio-input-group-wrapper emotion-4"
+          style="width: 250px;"
+        >
+          <span
+            class="studio-input-wrapper studio-input-group"
+          >
+            <span
+              class="studio-input-group-addon"
+            >
+              Options
+            </span>
+            <input
+              class="studio-input"
+              placeholder="Search For Some Little Options"
+              type="text"
+              value=""
+            />
+          </span>
+        </span>
+      </div>
+      <div
+        class="headerAndFooterIcon emotion-5"
+      >
+        <button
+          class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon emotion-6 studio-dropdown-trigger"
+          type="button"
+        >
+          <span
+            class="studio-btn-icon"
+          >
+            <span
+              aria-label="menu-unfold"
+              class="anticon anticon-menu-unfold"
+              role="img"
+            >
+              <svg
+                aria-hidden="true"
+                data-icon="menu-unfold"
+                fill="currentColor"
+                focusable="false"
+                height="1em"
+                viewBox="64 64 896 896"
+                width="1em"
+              >
+                <path
+                  d="M408 442h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8zm-8 204c0 4.4 3.6 8 8 8h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56zm504-486H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 632H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM142.4 642.1L298.7 519a8.84 8.84 0 000-13.9L142.4 381.9c-5.8-4.6-14.4-.5-14.4 6.9v246.3a8.9 8.9 0 0014.4 7z"
+                />
+              </svg>
+            </span>
+          </span>
+        </button>
+        EditorLayout
+      </div>
+      <div
+        class="headerAndFooterExtra emotion-7"
+      >
+        <div
+          class="studio-space studio-space-horizontal studio-space-align-center studio-space-gap-row-small studio-space-gap-col-small"
+        >
+          <div
+            class="studio-space-item"
+          >
+            <button
+              class="studio-btn studio-btn-primary"
+              type="button"
+            >
+              <span>
+                Save
+              </span>
+            </button>
+          </div>
+          <div
+            class="studio-space-item"
+          >
+            <button
+              class="studio-btn studio-btn-dashed"
+              type="button"
+            >
+              <span>
+                Export
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="studio-layout-container emotion-8 studio-flex"
+    >
+      <div
+        class="studio-draggable-panel studio-layout-left-pannel emotion-9"
+        style="border-right-width: 1px;"
+      >
+        <div
+          class="studio-draggable-panel-fixed emotion-10"
+          style="position: relative; user-select: auto; width: 200px; height: 100%; max-width: 500px; min-width: 100px; min-height: 100px; box-sizing: border-box; flex-shrink: 0;"
+        >
+          <div
+            class="studio-layout-pannel studio-layout-left-pannel emotion-11"
+          >
+            <div>
+              Left Pannel
+            </div>
+          </div>
+          <div>
+            <div
+              class="emotion-12 studio-draggable-panel-right-handle"
+              style="position: absolute; user-select: none; width: 10px; height: 100%; top: 0px; cursor: col-resize; right: -5px;"
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        class="studio-layout-pannel studio-layout-center-pannel emotion-13"
+      >
+        <div
+          class=""
+        />
+      </div>
+      <div
+        class="studio-draggable-panel studio-layout-right-pannel emotion-9"
+        style="border-left-width: 1px;"
+      >
+        <div
+          class="studio-draggable-panel-fixed emotion-10"
+          style="position: relative; user-select: auto; width: 200px; height: 100%; max-width: 500px; min-width: 100px; min-height: 100px; box-sizing: border-box; flex-shrink: 0;"
+        >
+          <div
+            class="studio-layout-pannel studio-layout-right-pannel emotion-11"
+          />
+          <div>
+            <div
+              class="emotion-17 studio-draggable-panel-left-handle"
+              style="position: absolute; user-select: none; width: 10px; height: 100%; top: 0px; left: -5px; cursor: col-resize;"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="studio-draggable-panel emotion-18"
+      style="border-top-width: 1px;"
+    >
+      <div
+        class="studio-draggable-panel-fixed emotion-10"
+        style="position: relative; user-select: auto; width: 100%; height: 100px; max-height: 400px; min-width: 100px; min-height: 100px; box-sizing: border-box; flex-shrink: 0;"
+      >
+        <div
+          class="studio-layout-pannel emotion-20"
+        />
+        <div>
+          <div
+            class="studio-draggable-panel-top-handle emotion-21"
+            style="position: absolute; user-select: none; width: 100%; height: 10px; top: -5px; left: 0px; cursor: row-resize;"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      class="studio-layout-footer studio-layout-flex-container emotion-22 studio-flex studio-flex-align-center studio-flex-justify-space-between"
+    >
+      <div
+        class="headerAndFooterCenterChildren emotion-3"
+      />
+      <div
+        class="headerAndFooterIcon emotion-5"
+      >
+        <button
+          class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon emotion-6 studio-dropdown-trigger"
+          type="button"
+        >
+          <span
+            class="studio-btn-icon"
+          >
+            <span
+              aria-label="cloud"
+              class="anticon anticon-cloud"
+              role="img"
+            >
+              <svg
+                aria-hidden="true"
+                data-icon="cloud"
+                fill="currentColor"
+                focusable="false"
+                height="1em"
+                viewBox="64 64 896 896"
+                width="1em"
+              >
+                <path
+                  d="M811.4 418.7C765.6 297.9 648.9 212 512.2 212S258.8 297.8 213 418.6C127.3 441.1 64 519.1 64 612c0 110.5 89.5 200 199.9 200h496.2C870.5 812 960 722.5 960 612c0-92.7-63.1-170.7-148.6-193.3zm36.3 281a123.07 123.07 0 01-87.6 36.3H263.9c-33.1 0-64.2-12.9-87.6-36.3A123.3 123.3 0 01140 612c0-28 9.1-54.3 26.2-76.3a125.7 125.7 0 0166.1-43.7l37.9-9.9 13.9-36.6c8.6-22.8 20.6-44.1 35.7-63.4a245.6 245.6 0 0152.4-49.9c41.1-28.9 89.5-44.2 140-44.2s98.9 15.3 140 44.2c19.9 14 37.5 30.8 52.4 49.9 15.1 19.3 27.1 40.7 35.7 63.4l13.8 36.5 37.8 10c54.3 14.5 92.1 63.8 92.1 120 0 33.1-12.9 64.3-36.3 87.7z"
+                />
+              </svg>
+            </span>
+          </span>
+        </button>
+      </div>
+      <div
+        class="headerAndFooterExtra emotion-7"
+      >
+        <div
+          class="studio-space studio-space-horizontal studio-space-align-center"
+          style="flex-wrap: wrap; row-gap: 8px;"
+        >
+          <div
+            class="studio-space-item"
+          >
+            <span
+              class="studio-tag studio-tag-has-color"
+              style="background-color: rgb(85, 172, 238);"
+            >
+              <span
+                aria-label="twitter"
+                class="anticon anticon-twitter"
+                role="img"
+              >
+                <svg
+                  aria-hidden="true"
+                  data-icon="twitter"
+                  fill="currentColor"
+                  focusable="false"
+                  height="1em"
+                  viewBox="64 64 896 896"
+                  width="1em"
+                >
+                  <path
+                    d="M928 254.3c-30.6 13.2-63.9 22.7-98.2 26.4a170.1 170.1 0 0075-94 336.64 336.64 0 01-108.2 41.2A170.1 170.1 0 00672 174c-94.5 0-170.5 76.6-170.5 170.6 0 13.2 1.6 26.4 4.2 39.1-141.5-7.4-267.7-75-351.6-178.5a169.32 169.32 0 00-23.2 86.1c0 59.2 30.1 111.4 76 142.1a172 172 0 01-77.1-21.7v2.1c0 82.9 58.6 151.6 136.7 167.4a180.6 180.6 0 01-44.9 5.8c-11.1 0-21.6-1.1-32.2-2.6C211 652 273.9 701.1 348.8 702.7c-58.6 45.9-132 72.9-211.7 72.9-14.3 0-27.5-.5-41.2-2.1C171.5 822 261.2 850 357.8 850 671.4 850 843 590.2 843 364.7c0-7.4 0-14.8-.5-22.2 33.2-24.3 62.3-54.4 85.5-88.2z"
+                  />
+                </svg>
+              </span>
+              <span>
+                Twitter
+              </span>
+            </span>
+          </div>
+          <div
+            class="studio-space-item"
+          >
+            <span
+              class="studio-tag studio-tag-has-color"
+              style="background-color: rgb(205, 32, 31);"
+            >
+              <span
+                aria-label="youtube"
+                class="anticon anticon-youtube"
+                role="img"
+              >
+                <svg
+                  aria-hidden="true"
+                  data-icon="youtube"
+                  fill="currentColor"
+                  focusable="false"
+                  height="1em"
+                  viewBox="64 64 896 896"
+                  width="1em"
+                >
+                  <path
+                    d="M960 509.2c0-2.2 0-4.7-.1-7.6-.1-8.1-.3-17.2-.5-26.9-.8-27.9-2.2-55.7-4.4-81.9-3-36.1-7.4-66.2-13.4-88.8a139.52 139.52 0 00-98.3-98.5c-28.3-7.6-83.7-12.3-161.7-15.2-37.1-1.4-76.8-2.3-116.5-2.8-13.9-.2-26.8-.3-38.4-.4h-29.4c-11.6.1-24.5.2-38.4.4-39.7.5-79.4 1.4-116.5 2.8-78 3-133.5 7.7-161.7 15.2A139.35 139.35 0 0082.4 304C76.3 326.6 72 356.7 69 392.8c-2.2 26.2-3.6 54-4.4 81.9-.3 9.7-.4 18.8-.5 26.9 0 2.9-.1 5.4-.1 7.6v5.6c0 2.2 0 4.7.1 7.6.1 8.1.3 17.2.5 26.9.8 27.9 2.2 55.7 4.4 81.9 3 36.1 7.4 66.2 13.4 88.8 12.8 47.9 50.4 85.7 98.3 98.5 28.2 7.6 83.7 12.3 161.7 15.2 37.1 1.4 76.8 2.3 116.5 2.8 13.9.2 26.8.3 38.4.4h29.4c11.6-.1 24.5-.2 38.4-.4 39.7-.5 79.4-1.4 116.5-2.8 78-3 133.5-7.7 161.7-15.2 47.9-12.8 85.5-50.5 98.3-98.5 6.1-22.6 10.4-52.7 13.4-88.8 2.2-26.2 3.6-54 4.4-81.9.3-9.7.4-18.8.5-26.9 0-2.9.1-5.4.1-7.6v-5.6zm-72 5.2c0 2.1 0 4.4-.1 7.1-.1 7.8-.3 16.4-.5 25.7-.7 26.6-2.1 53.2-4.2 77.9-2.7 32.2-6.5 58.6-11.2 76.3-6.2 23.1-24.4 41.4-47.4 47.5-21 5.6-73.9 10.1-145.8 12.8-36.4 1.4-75.6 2.3-114.7 2.8-13.7.2-26.4.3-37.8.3h-28.6l-37.8-.3c-39.1-.5-78.2-1.4-114.7-2.8-71.9-2.8-124.9-7.2-145.8-12.8-23-6.2-41.2-24.4-47.4-47.5-4.7-17.7-8.5-44.1-11.2-76.3-2.1-24.7-3.4-51.3-4.2-77.9-.3-9.3-.4-18-.5-25.7 0-2.7-.1-5.1-.1-7.1v-4.8c0-2.1 0-4.4.1-7.1.1-7.8.3-16.4.5-25.7.7-26.6 2.1-53.2 4.2-77.9 2.7-32.2 6.5-58.6 11.2-76.3 6.2-23.1 24.4-41.4 47.4-47.5 21-5.6 73.9-10.1 145.8-12.8 36.4-1.4 75.6-2.3 114.7-2.8 13.7-.2 26.4-.3 37.8-.3h28.6l37.8.3c39.1.5 78.2 1.4 114.7 2.8 71.9 2.8 124.9 7.2 145.8 12.8 23 6.2 41.2 24.4 47.4 47.5 4.7 17.7 8.5 44.1 11.2 76.3 2.1 24.7 3.4 51.3 4.2 77.9.3 9.3.4 18 .5 25.7 0 2.7.1 5.1.1 7.1v4.8zM423 646l232-135-232-133z"
+                  />
+                </svg>
+              </span>
+              <span>
+                Youtube
+              </span>
+            </span>
+          </div>
+          <div
+            class="studio-space-item"
+          >
+            <span
+              class="studio-tag studio-tag-has-color"
+              style="background-color: rgb(59, 89, 153);"
+            >
+              <span
+                aria-label="facebook"
+                class="anticon anticon-facebook"
+                role="img"
+              >
+                <svg
+                  aria-hidden="true"
+                  data-icon="facebook"
+                  fill="currentColor"
+                  focusable="false"
+                  height="1em"
+                  viewBox="64 64 896 896"
+                  width="1em"
+                >
+                  <path
+                    d="M880 112H144c-17.7 0-32 14.3-32 32v736c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V144c0-17.7-14.3-32-32-32zm-32 736H663.9V602.2h104l15.6-120.7H663.9v-77.1c0-35 9.7-58.8 59.8-58.8h63.9v-108c-11.1-1.5-49-4.8-93.2-4.8-92.2 0-155.3 56.3-155.3 159.6v89H434.9v120.7h104.3V848H176V176h672v672z"
+                  />
+                </svg>
+              </span>
+              <span>
+                Facebook
+              </span>
+            </span>
+          </div>
+          <div
+            class="studio-space-item"
+          >
+            <span
+              class="studio-tag studio-tag-has-color"
+              style="background-color: rgb(85, 172, 238);"
+            >
+              <span
+                aria-label="linkedin"
+                class="anticon anticon-linkedin"
+                role="img"
+              >
+                <svg
+                  aria-hidden="true"
+                  data-icon="linkedin"
+                  fill="currentColor"
+                  focusable="false"
+                  height="1em"
+                  viewBox="64 64 896 896"
+                  width="1em"
+                >
+                  <path
+                    d="M847.7 112H176.3c-35.5 0-64.3 28.8-64.3 64.3v671.4c0 35.5 28.8 64.3 64.3 64.3h671.4c35.5 0 64.3-28.8 64.3-64.3V176.3c0-35.5-28.8-64.3-64.3-64.3zm0 736c-447.8-.1-671.7-.2-671.7-.3.1-447.8.2-671.7.3-671.7 447.8.1 671.7.2 671.7.3-.1 447.8-.2 671.7-.3 671.7zM230.6 411.9h118.7v381.8H230.6zm59.4-52.2c37.9 0 68.8-30.8 68.8-68.8a68.8 68.8 0 10-137.6 0c-.1 38 30.7 68.8 68.8 68.8zm252.3 245.1c0-49.8 9.5-98 71.2-98 60.8 0 61.7 56.9 61.7 101.2v185.7h118.6V584.3c0-102.8-22.2-181.9-142.3-181.9-57.7 0-96.4 31.7-112.3 61.7h-1.6v-52.2H423.7v381.8h118.6V604.8z"
+                  />
+                </svg>
+              </span>
+              <span>
+                LinkedIn
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<Layout /> > renders dingding.tsx correctly 1`] = `
+.emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-1 {
+  height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  overflow: hidden;
+  border-radius: 6px;
+  font-size: 10px;
+}
+
+.emotion-1 .studio-draggable-panel {
+  border: none;
+}
+
+.emotion-2 {
+  box-sizing: border-box;
+  height: 48px;
+  min-height: 48px;
+  border-radius: 6px;
+  background-color: rgba(0, 0, 0, 0.02);
+  margin: 2px;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 0px;
+  background-color: transparent;
+  margin: 0px;
+  padding: 6px;
+  position: relative;
+}
+
+.emotion-3 {
+  position: absolute;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-transition: color 600ms cubic-bezier(0.215, 0.61, 0.355, 1),scale 400ms cubic-bezier(0.215, 0.61, 0.355, 1),background-color 100ms cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: color 600ms cubic-bezier(0.215, 0.61, 0.355, 1),scale 400ms cubic-bezier(0.215, 0.61, 0.355, 1),background-color 100ms cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.emotion-4:hover {
+  color: rgba(0, 0, 0, 0.88)!important;
+}
+
+.emotion-4:active {
+  scale: 0.8;
+  color: rgba(0, 0, 0, 0.88);
+}
+
+.emotion-5:hover {
+  color: rgba(0, 0, 0, 0.88);
+  background-color: rgba(0, 0, 0, 0.04);
+  border-color: transparent;
+}
+
+.emotion-5:focus {
+  color: rgba(0, 0, 0, 0.88)!important;
+  background-color: rgba(0, 0, 0, 0.02)!important;
+  border-color: #1677ff!important;
+  box-shadow: none;
+}
+
+.emotion-6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 8px;
+  min-width: 50px;
+}
+
+.emotion-7 {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 1px 1px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  border-radius: 6px;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-transition: color 600ms cubic-bezier(0.215, 0.61, 0.355, 1),scale 400ms cubic-bezier(0.215, 0.61, 0.355, 1),background-color 100ms cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: color 600ms cubic-bezier(0.215, 0.61, 0.355, 1),scale 400ms cubic-bezier(0.215, 0.61, 0.355, 1),background-color 100ms cubic-bezier(0.215, 0.61, 0.355, 1);
+  width: 18px!important;
+  height: 18px!important;
+}
+
+.emotion-8:hover {
+  color: rgba(0, 0, 0, 0.88)!important;
+}
+
+.emotion-8:active {
+  scale: 0.8;
+  color: rgba(0, 0, 0, 0.88);
+}
+
+.emotion-12 {
+  min-width: 50px;
+}
+
+.emotion-13 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  clear: both;
+}
+
+.emotion-14 {
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  position: relative;
+  border: 0 solid rgba(5, 5, 5, 0.06);
+}
+
+.emotion-14:hover .studio-draggable-panel-toggle {
+  opacity: 1;
+}
+
+.emotion-15 {
+  overflow: hidden;
+}
+
+.emotion-16 {
+  border-radius: 6px;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.02);
+  margin: 2px;
+  height: calc(100% - 4px);
+  padding: 6px;
+  background-color: rgba(0, 0, 0, 0.04);
+  border: 1px solid transparent;
+}
+
+.emotion-17 {
+  overflow: scroll;
+}
+
+.emotion-18 {
+  position: relative;
+}
+
+.emotion-18::before {
+  position: absolute;
+  z-index: 50;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  content: '';
+}
+
+.emotion-18:hover::before,
+.emotion-18:active::before {
+  background: #1677ff;
+}
+
+.emotion-18::before {
+  right: 50%;
+  width: 2px;
+  height: 100%;
+}
+
+.emotion-19 {
+  border-radius: 6px;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.02);
+  margin: 2px;
+  height: calc(100% - 4px);
+  padding: 6px;
+  background-color: rgba(0, 0, 0, 0.04);
+  border: 1px solid transparent;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.emotion-20 {
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  position: relative;
+  border: 0 solid rgba(5, 5, 5, 0.06);
+}
+
+.emotion-20:hover .studio-draggable-panel-toggle {
+  opacity: 1;
+}
+
+.emotion-22 {
+  border-radius: 6px;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.02);
+  margin: 2px;
+  height: calc(100% - 4px);
+  padding: 6px;
+  background-color: rgba(0, 0, 0, 0.04);
+  border: 1px solid transparent;
+}
+
+.emotion-23 {
+  position: relative;
+}
+
+.emotion-23::before {
+  position: absolute;
+  z-index: 50;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  content: '';
+}
+
+.emotion-23:hover::before,
+.emotion-23:active::before {
+  background: #1677ff;
+}
+
+.emotion-23::before {
+  top: 50%;
+  height: 2px;
+  width: 100%;
+}
+
+<div>
+  <div
+    class="layoutkit-flexbox emotion-0 studio-layout emotion-1"
+    style="max-width: 100%; height: 600px; border: 1px solid #e3e3e3; box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);"
+  >
+    <div
+      class="studio-layout-header studio-layout-flex-container emotion-2 studio-flex studio-flex-align-center studio-flex-justify-space-between"
+      style="background-color: rgba(32, 121, 242, 0.05);"
+    >
+      <div
+        class="headerAndFooterCenterChildren emotion-3"
+      >
+        <button
+          class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon emotion-4 studio-dropdown-trigger"
+          type="button"
+        >
+          <span
+            class="studio-btn-icon"
+          >
+            <span
+              aria-label="field-time"
+              class="anticon anticon-field-time"
+              role="img"
+            >
+              <svg
+                aria-hidden="true"
+                data-icon="field-time"
+                fill="currentColor"
+                focusable="false"
+                height="1em"
+                viewBox="64 64 896 896"
+                width="1em"
+              >
+                <defs>
+                  <style />
+                </defs>
+                <path
+                  d="M945 412H689c-4.4 0-8 3.6-8 8v48c0 4.4 3.6 8 8 8h256c4.4 0 8-3.6 8-8v-48c0-4.4-3.6-8-8-8zM811 548H689c-4.4 0-8 3.6-8 8v48c0 4.4 3.6 8 8 8h122c4.4 0 8-3.6 8-8v-48c0-4.4-3.6-8-8-8zM477.3 322.5H434c-6.2 0-11.2 5-11.2 11.2v248c0 3.6 1.7 6.9 4.6 9l148.9 108.6c5 3.6 12 2.6 15.6-2.4l25.7-35.1v-.1c3.6-5 2.5-12-2.5-15.6l-126.7-91.6V333.7c.1-6.2-5-11.2-11.1-11.2z"
+                />
+                <path
+                  d="M804.8 673.9H747c-5.6 0-10.9 2.9-13.9 7.7a321 321 0 01-44.5 55.7 317.17 317.17 0 01-101.3 68.3c-39.3 16.6-81 25-124 25-43.1 0-84.8-8.4-124-25-37.9-16-72-39-101.3-68.3s-52.3-63.4-68.3-101.3c-16.6-39.2-25-80.9-25-124 0-43.1 8.4-84.7 25-124 16-37.9 39-72 68.3-101.3 29.3-29.3 63.4-52.3 101.3-68.3 39.2-16.6 81-25 124-25 43.1 0 84.8 8.4 124 25 37.9 16 72 39 101.3 68.3a321 321 0 0144.5 55.7c3 4.8 8.3 7.7 13.9 7.7h57.8c6.9 0 11.3-7.2 8.2-13.3-65.2-129.7-197.4-214-345-215.7-216.1-2.7-395.6 174.2-396 390.1C71.6 727.5 246.9 903 463.2 903c149.5 0 283.9-84.6 349.8-215.8a9.18 9.18 0 00-8.2-13.3z"
+                />
+              </svg>
+            </span>
+          </span>
+        </button>
+        <input
+          class="studio-input emotion-5"
+          placeholder="Search For Some Dialog"
+          style="width: 250px;"
+          type="text"
+          value=""
+        />
+      </div>
+      <div
+        class="headerAndFooterIcon emotion-6"
+      >
+        <div
+          class="studio-action-group-content emotion-7"
+        >
+          <button
+            class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon emotion-8"
+            label="关闭程序"
+            type="button"
+          >
+            <span
+              class="studio-btn-icon"
+            >
+              <span
+                aria-label="close-circle"
+                class="anticon anticon-close-circle"
+                role="img"
+                style="color: rgb(206, 68, 61); font-size: 10px;"
+              >
+                <svg
+                  aria-hidden="true"
+                  data-icon="close-circle"
+                  fill="currentColor"
+                  fill-rule="evenodd"
+                  focusable="false"
+                  height="1em"
+                  viewBox="64 64 896 896"
+                  width="1em"
+                >
+                  <path
+                    d="M512 64c247.4 0 448 200.6 448 448S759.4 960 512 960 64 759.4 64 512 264.6 64 512 64zm127.98 274.82h-.04l-.08.06L512 466.75 384.14 338.88c-.04-.05-.06-.06-.08-.06a.12.12 0 00-.07 0c-.03 0-.05.01-.09.05l-45.02 45.02a.2.2 0 00-.05.09.12.12 0 000 .07v.02a.27.27 0 00.06.06L466.75 512 338.88 639.86c-.05.04-.06.06-.06.08a.12.12 0 000 .07c0 .03.01.05.05.09l45.02 45.02a.2.2 0 00.09.05.12.12 0 00.07 0c.02 0 .04-.01.08-.05L512 557.25l127.86 127.87c.04.04.06.05.08.05a.12.12 0 00.07 0c.03 0 .05-.01.09-.05l45.02-45.02a.2.2 0 00.05-.09.12.12 0 000-.07v-.02a.27.27 0 00-.05-.06L557.25 512l127.87-127.86c.04-.04.05-.06.05-.08a.12.12 0 000-.07c0-.03-.01-.05-.05-.09l-45.02-45.02a.2.2 0 00-.09-.05.12.12 0 00-.07 0z"
+                  />
+                </svg>
+              </span>
+            </span>
+          </button>
+          <button
+            class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon emotion-8"
+            label="关闭程序"
+            type="button"
+          >
+            <span
+              class="studio-btn-icon"
+            >
+              <span
+                aria-label="minus-circle"
+                class="anticon anticon-minus-circle"
+                role="img"
+                style="color: rgb(255, 135, 53); font-size: 10px;"
+              >
+                <svg
+                  aria-hidden="true"
+                  data-icon="minus-circle"
+                  fill="currentColor"
+                  focusable="false"
+                  height="1em"
+                  viewBox="64 64 896 896"
+                  width="1em"
+                >
+                  <path
+                    d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm192 472c0 4.4-3.6 8-8 8H328c-4.4 0-8-3.6-8-8v-48c0-4.4 3.6-8 8-8h368c4.4 0 8 3.6 8 8v48z"
+                  />
+                </svg>
+              </span>
+            </span>
+          </button>
+          <button
+            class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon emotion-8"
+            label="详细提示"
+            type="button"
+          >
+            <span
+              class="studio-btn-icon"
+            >
+              <span
+                aria-label="exclamation-circle"
+                class="anticon anticon-exclamation-circle"
+                role="img"
+                style="color: rgb(96, 185, 56); font-size: 10px;"
+              >
+                <svg
+                  aria-hidden="true"
+                  data-icon="exclamation-circle"
+                  fill="currentColor"
+                  focusable="false"
+                  height="1em"
+                  viewBox="64 64 896 896"
+                  width="1em"
+                >
+                  <path
+                    d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm-32 232c0-4.4 3.6-8 8-8h48c4.4 0 8 3.6 8 8v272c0 4.4-3.6 8-8 8h-48c-4.4 0-8-3.6-8-8V296zm32 440a48.01 48.01 0 010-96 48.01 48.01 0 010 96z"
+                  />
+                </svg>
+              </span>
+            </span>
+          </button>
+        </div>
+        <button
+          class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon emotion-4 studio-dropdown-trigger"
+          type="button"
+        >
+          <span
+            class="studio-btn-icon"
+          >
+            <div
+              class="studio-image"
+              style="width: 26px;"
+            >
+              <img
+                class="studio-image-img"
+                src="https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png"
+                style="border-radius: 50%;"
+                width="26"
+              />
+            </div>
+          </span>
+        </button>
+        靓仔/妹
+        <div
+          class="studio-divider studio-divider-vertical"
+          role="separator"
+        />
+        😄 天选之子
+      </div>
+      <div
+        class="headerAndFooterExtra emotion-12"
+      >
+        <div
+          class="studio-space studio-space-horizontal studio-space-align-center studio-space-gap-row-small studio-space-gap-col-small"
+        >
+          <div
+            class="studio-space-item"
+          >
+            <button
+              class="studio-btn studio-btn-primary"
+              type="button"
+            >
+              <span>
+                Save
+              </span>
+            </button>
+          </div>
+          <div
+            class="studio-space-item"
+          >
+            <button
+              class="studio-btn studio-btn-dashed"
+              type="button"
+            >
+              <span
+                aria-label="folder-add"
+                class="anticon anticon-folder-add"
+                role="img"
+              >
+                <svg
+                  aria-hidden="true"
+                  data-icon="folder-add"
+                  fill="currentColor"
+                  focusable="false"
+                  height="1em"
+                  viewBox="64 64 896 896"
+                  width="1em"
+                >
+                  <path
+                    d="M484 443.1V528h-84.5c-4.1 0-7.5 3.1-7.5 7v42c0 3.8 3.4 7 7.5 7H484v84.9c0 3.9 3.2 7.1 7 7.1h42c3.9 0 7-3.2 7-7.1V584h84.5c4.1 0 7.5-3.2 7.5-7v-42c0-3.9-3.4-7-7.5-7H540v-84.9c0-3.9-3.1-7.1-7-7.1h-42c-3.8 0-7 3.2-7 7.1zm396-144.7H521L403.7 186.2a8.15 8.15 0 00-5.5-2.2H144c-17.7 0-32 14.3-32 32v592c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V330.4c0-17.7-14.3-32-32-32zM840 768H184V256h188.5l119.6 114.4H840V768z"
+                  />
+                </svg>
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="studio-layout-container emotion-13 studio-flex"
+    >
+      <div
+        class="studio-draggable-panel studio-layout-left-pannel emotion-14"
+        style="border-right-width: 1px;"
+      >
+        <div
+          class="studio-draggable-panel-fixed emotion-15"
+          style="position: relative; user-select: auto; width: 200px; height: 100%; max-width: 500px; min-width: 100px; min-height: 100px; box-sizing: border-box; flex-shrink: 0;"
+        >
+          <div
+            class="studio-layout-pannel studio-layout-left-pannel emotion-16"
+            style="background: white; padding: 0px;"
+          >
+            <div
+              style="height: 540px; overflow: scroll;"
+            >
+              <div
+                class="studio-list studio-list-split studio-list-loading emotion-17"
+              >
+                <div
+                  class="studio-spin-nested-loading"
+                >
+                  <div>
+                    <div
+                      aria-busy="true"
+                      aria-live="polite"
+                      class="studio-spin studio-spin-spinning"
+                    >
+                      <span
+                        class="studio-spin-dot studio-spin-dot-spin"
+                      >
+                        <i
+                          class="studio-spin-dot-item"
+                        />
+                        <i
+                          class="studio-spin-dot-item"
+                        />
+                        <i
+                          class="studio-spin-dot-item"
+                        />
+                        <i
+                          class="studio-spin-dot-item"
+                        />
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    class="studio-spin-container studio-spin-blur"
+                  >
+                    <div
+                      style="min-height: 53px;"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div
+              class="emotion-18 studio-draggable-panel-right-handle"
+              style="position: absolute; user-select: none; width: 10px; height: 100%; top: 0px; cursor: col-resize; right: -5px;"
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        class="studio-flex studio-flex-align-stretch studio-flex-vertical"
+        style="flex: 1;"
+      >
+        <div
+          class="studio-flex"
+          style="flex: 1;"
+        >
+          <div
+            class="studio-layout-pannel studio-layout-center-pannel emotion-19"
+          >
+            <div
+              class=""
+            />
+          </div>
+        </div>
+        <div
+          class="studio-draggable-panel emotion-20"
+          style="border-top-width: 1px;"
+        >
+          <div
+            class="studio-draggable-panel-fixed emotion-15"
+            style="position: relative; user-select: auto; width: 100%; height: 100px; max-height: 400px; min-width: 100px; min-height: 100px; box-sizing: border-box; flex-shrink: 0;"
+          >
+            <div
+              class="studio-layout-pannel emotion-22"
+            />
+            <div>
+              <div
+                class="studio-draggable-panel-top-handle emotion-23"
+                style="position: absolute; user-select: none; width: 100%; height: 10px; top: -5px; left: 0px; cursor: row-resize;"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<Layout /> > renders noLeftPannel.tsx correctly 1`] = `
+.emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-1 {
+  height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  overflow: hidden;
+  border-radius: 6px;
+  font-size: 10px;
+}
+
+.emotion-1 .studio-draggable-panel {
+  border: none;
+}
+
+.emotion-2 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  clear: both;
+}
+
+.emotion-3 {
+  border-radius: 6px;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.02);
+  margin: 2px;
+  height: calc(100% - 4px);
+  padding: 6px;
+  background-color: rgba(0, 0, 0, 0.04);
+  border: 1px solid transparent;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.emotion-4 {
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  position: relative;
+  border: 0 solid rgba(5, 5, 5, 0.06);
+}
+
+.emotion-4:hover .studio-draggable-panel-toggle {
+  opacity: 1;
+}
+
+.emotion-5 {
+  overflow: hidden;
+}
+
+.emotion-6 {
+  border-radius: 6px;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.02);
+  margin: 2px;
+  height: calc(100% - 4px);
+  padding: 6px;
+  background-color: rgba(0, 0, 0, 0.04);
+  border: 1px solid transparent;
+}
+
+.emotion-7 {
+  position: relative;
+}
+
+.emotion-7::before {
+  position: absolute;
+  z-index: 50;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  content: '';
+}
+
+.emotion-7:hover::before,
+.emotion-7:active::before {
+  background: #1677ff;
+}
+
+.emotion-7::before {
+  left: 50%;
+  width: 2px;
+  height: 100%;
+}
+
+.emotion-8 {
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  position: relative;
+  border: 0 solid rgba(5, 5, 5, 0.06);
+}
+
+.emotion-8:hover .studio-draggable-panel-toggle {
+  opacity: 1;
+}
+
+.emotion-10 {
+  border-radius: 6px;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.02);
+  margin: 2px;
+  height: calc(100% - 4px);
+  padding: 6px;
+  background-color: rgba(0, 0, 0, 0.04);
+  border: 1px solid transparent;
+}
+
+.emotion-11 {
+  position: relative;
+}
+
+.emotion-11::before {
+  position: absolute;
+  z-index: 50;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  content: '';
+}
+
+.emotion-11:hover::before,
+.emotion-11:active::before {
+  background: #1677ff;
+}
+
+.emotion-11::before {
+  top: 50%;
+  height: 2px;
+  width: 100%;
+}
+
+.emotion-12 {
+  height: 36px;
+  box-sizing: border-box;
+  margin: 2px;
+  border-radius: 6px;
+  background-color: rgba(0, 0, 0, 0.02);
+  background-color: rgba(0, 0, 0, 0.04);
+  border: 1px solid transparent;
+  padding: 6px;
+  position: relative;
+}
+
+.emotion-13 {
+  position: absolute;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-14 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 8px;
+  min-width: 50px;
+}
+
+.emotion-16 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-transition: color 600ms cubic-bezier(0.215, 0.61, 0.355, 1),scale 400ms cubic-bezier(0.215, 0.61, 0.355, 1),background-color 100ms cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: color 600ms cubic-bezier(0.215, 0.61, 0.355, 1),scale 400ms cubic-bezier(0.215, 0.61, 0.355, 1),background-color 100ms cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.emotion-16:hover {
+  color: rgba(0, 0, 0, 0.88)!important;
+}
+
+.emotion-16:active {
+  scale: 0.8;
+  color: rgba(0, 0, 0, 0.88);
+}
+
+<div>
+  <div
+    class="layoutkit-flexbox emotion-0 studio-layout emotion-1"
+    style="max-width: 100%; height: 600px;"
+  >
+    <div
+      class="studio-layout-container emotion-2 studio-flex"
+    >
+      <div
+        class="studio-layout-pannel studio-layout-center-pannel emotion-3"
+      >
+        <div
+          class=""
+        />
+      </div>
+      <div
+        class="studio-draggable-panel studio-layout-right-pannel emotion-4"
+        style="border-left-width: 1px;"
+      >
+        <div
+          class="studio-draggable-panel-fixed emotion-5"
+          style="position: relative; user-select: auto; width: 200px; height: 100%; max-width: 500px; min-width: 100px; min-height: 100px; box-sizing: border-box; flex-shrink: 0;"
+        >
+          <div
+            class="studio-layout-pannel studio-layout-right-pannel emotion-6"
+          />
+          <div>
+            <div
+              class="emotion-7 studio-draggable-panel-left-handle"
+              style="position: absolute; user-select: none; width: 10px; height: 100%; top: 0px; left: -5px; cursor: col-resize;"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="studio-draggable-panel emotion-8"
+      style="border-top-width: 1px;"
+    >
+      <div
+        class="studio-draggable-panel-fixed emotion-5"
+        style="position: relative; user-select: auto; width: 100%; height: 100px; max-height: 400px; min-width: 100px; min-height: 100px; box-sizing: border-box; flex-shrink: 0;"
+      >
+        <div
+          class="studio-layout-pannel emotion-10"
+        />
+        <div>
+          <div
+            class="studio-draggable-panel-top-handle emotion-11"
+            style="position: absolute; user-select: none; width: 100%; height: 10px; top: -5px; left: 0px; cursor: row-resize;"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      class="studio-layout-footer studio-layout-flex-container emotion-12 studio-flex studio-flex-align-center studio-flex-justify-space-between"
+    >
+      <div
+        class="headerAndFooterCenterChildren emotion-13"
+      />
+      <div
+        class="headerAndFooterIcon emotion-14"
+      >
+        <div
+          class="headerAndFooterIcon emotion-14"
+        >
+          <button
+            class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon emotion-16"
+            type="button"
+          >
+            <span
+              class="studio-btn-icon"
+            >
+              <span
+                aria-label="menu-unfold"
+                class="anticon anticon-menu-unfold"
+                role="img"
+              >
+                <svg
+                  aria-hidden="true"
+                  data-icon="menu-unfold"
+                  fill="currentColor"
+                  focusable="false"
+                  height="1em"
+                  viewBox="64 64 896 896"
+                  width="1em"
+                >
+                  <path
+                    d="M408 442h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8zm-8 204c0 4.4 3.6 8 8 8h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56zm504-486H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 632H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM142.4 642.1L298.7 519a8.84 8.84 0 000-13.9L142.4 381.9c-5.8-4.6-14.4-.5-14.4 6.9v246.3a8.9 8.9 0 0014.4 7z"
+                  />
+                </svg>
+              </span>
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<Layout /> > renders sessinList.tsx correctly 1`] = `
+.emotion-0 {
+  overflow: scroll;
+}
+
+<div>
+  <div
+    style="height: 540px; overflow: scroll;"
+  >
+    <div
+      class="studio-list studio-list-split studio-list-loading emotion-0"
+    >
+      <div
+        class="studio-spin-nested-loading"
+      >
+        <div>
+          <div
+            aria-busy="true"
+            aria-live="polite"
+            class="studio-spin studio-spin-spinning"
+          >
+            <span
+              class="studio-spin-dot studio-spin-dot-spin"
+            >
+              <i
+                class="studio-spin-dot-item"
+              />
+              <i
+                class="studio-spin-dot-item"
+              />
+              <i
+                class="studio-spin-dot-item"
+              />
+              <i
+                class="studio-spin-dot-item"
+              />
+            </span>
+          </div>
+        </div>
+        <div
+          class="studio-spin-container studio-spin-blur"
+        >
+          <div
+            style="min-height: 53px;"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<Layout /> > renders single.tsx correctly 1`] = `
+.emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-1 {
+  height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  overflow: hidden;
+  border-radius: 6px;
+  font-size: 10px;
+}
+
+.emotion-1 .studio-draggable-panel {
+  border: none;
+}
+
+.emotion-2 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  clear: both;
+}
+
+.emotion-3 {
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  position: relative;
+  border: 0 solid rgba(5, 5, 5, 0.06);
+}
+
+.emotion-3:hover .studio-draggable-panel-toggle {
+  opacity: 1;
+}
+
+.emotion-4 {
+  overflow: hidden;
+}
+
+.emotion-5 {
+  border-radius: 6px;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.02);
+  margin: 2px;
+  height: calc(100% - 4px);
+  padding: 6px;
+  background-color: rgba(0, 0, 0, 0.04);
+  border: 1px solid transparent;
+}
+
+.emotion-6 {
+  position: relative;
+}
+
+.emotion-6::before {
+  position: absolute;
+  z-index: 50;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  content: '';
+}
+
+.emotion-6:hover::before,
+.emotion-6:active::before {
+  background: #1677ff;
+}
+
+.emotion-6::before {
+  right: 50%;
+  width: 2px;
+  height: 100%;
+}
+
+.emotion-7 {
+  border-radius: 6px;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.02);
+  margin: 2px;
+  height: calc(100% - 4px);
+  padding: 6px;
+  background-color: rgba(0, 0, 0, 0.04);
+  border: 1px solid transparent;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.emotion-11 {
+  position: relative;
+}
+
+.emotion-11::before {
+  position: absolute;
+  z-index: 50;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  content: '';
+}
+
+.emotion-11:hover::before,
+.emotion-11:active::before {
+  background: #1677ff;
+}
+
+.emotion-11::before {
+  left: 50%;
+  width: 2px;
+  height: 100%;
+}
+
+.emotion-12 {
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  position: relative;
+  border: 0 solid rgba(5, 5, 5, 0.06);
+}
+
+.emotion-12:hover .studio-draggable-panel-toggle {
+  opacity: 1;
+}
+
+.emotion-14 {
+  border-radius: 6px;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.02);
+  margin: 2px;
+  height: calc(100% - 4px);
+  padding: 6px;
+  background-color: rgba(0, 0, 0, 0.04);
+  border: 1px solid transparent;
+}
+
+.emotion-15 {
+  position: relative;
+}
+
+.emotion-15::before {
+  position: absolute;
+  z-index: 50;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  content: '';
+}
+
+.emotion-15:hover::before,
+.emotion-15:active::before {
+  background: #1677ff;
+}
+
+.emotion-15::before {
+  top: 50%;
+  height: 2px;
+  width: 100%;
+}
+
+<div>
+  <div
+    class="layoutkit-flexbox emotion-0 studio-layout emotion-1"
+    style="max-width: 100%; height: 600px;"
+  >
+    <div
+      class="studio-layout-container emotion-2 studio-flex"
+    >
+      <div
+        class="studio-draggable-panel studio-layout-left-pannel emotion-3"
+        style="border-right-width: 1px;"
+      >
+        <div
+          class="studio-draggable-panel-fixed emotion-4"
+          style="position: relative; user-select: auto; width: 200px; height: 100%; max-width: 500px; min-width: 100px; min-height: 100px; box-sizing: border-box; flex-shrink: 0;"
+        >
+          <div
+            class="studio-layout-pannel studio-layout-left-pannel emotion-5"
+          >
+            <div>
+              Left Pannel
+            </div>
+          </div>
+          <div>
+            <div
+              class="emotion-6 studio-draggable-panel-right-handle"
+              style="position: absolute; user-select: none; width: 10px; height: 100%; top: 0px; cursor: col-resize; right: -5px;"
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        class="studio-layout-pannel studio-layout-center-pannel emotion-7"
+      >
+        <div
+          class=""
+        />
+      </div>
+      <div
+        class="studio-draggable-panel studio-layout-right-pannel emotion-3"
+        style="border-left-width: 1px;"
+      >
+        <div
+          class="studio-draggable-panel-fixed emotion-4"
+          style="position: relative; user-select: auto; width: 200px; height: 100%; max-width: 500px; min-width: 100px; min-height: 100px; box-sizing: border-box; flex-shrink: 0;"
+        >
+          <div
+            class="studio-layout-pannel studio-layout-right-pannel emotion-5"
+          />
+          <div>
+            <div
+              class="emotion-11 studio-draggable-panel-left-handle"
+              style="position: absolute; user-select: none; width: 10px; height: 100%; top: 0px; left: -5px; cursor: col-resize;"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="studio-draggable-panel emotion-12"
+      style="border-top-width: 1px;"
+    >
+      <div
+        class="studio-draggable-panel-fixed emotion-4"
+        style="position: relative; user-select: auto; width: 100%; height: 100px; max-height: 400px; min-width: 100px; min-height: 100px; box-sizing: border-box; flex-shrink: 0;"
+      >
+        <div
+          class="studio-layout-pannel emotion-14"
+        />
+        <div>
+          <div
+            class="studio-draggable-panel-top-handle emotion-15"
+            style="position: absolute; user-select: none; width: 100%; height: 10px; top: -5px; left: 0px; cursor: row-resize;"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<Layout /> > renders themeType.tsx correctly 1`] = `
+.emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-1 {
+  height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  overflow: hidden;
+  border-radius: 6px;
+  font-size: 10px;
+}
+
+.emotion-1 .studio-draggable-panel {
+  border: none;
+}
+
+.emotion-2 {
+  box-sizing: border-box;
+  height: 48px;
+  min-height: 48px;
+  border-radius: 6px;
+  background-color: rgba(0, 0, 0, 0.02);
+  margin: 2px;
+  background-color: rgba(0, 0, 0, 0.02);
+  border: 1px solid #d9d9d9;
+  padding: 6px;
+  position: relative;
+}
+
+.emotion-3 {
+  position: absolute;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-4:hover {
+  color: rgba(0, 0, 0, 0.88);
+  background-color: rgba(0, 0, 0, 0.04);
+  border-color: transparent;
+}
+
+.emotion-4:focus {
+  color: rgba(0, 0, 0, 0.88)!important;
+  background-color: rgba(0, 0, 0, 0.02)!important;
+  border-color: #1677ff!important;
+  box-shadow: none;
+}
+
+.emotion-5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 8px;
+  min-width: 50px;
+}
+
+.emotion-6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-transition: color 600ms cubic-bezier(0.215, 0.61, 0.355, 1),scale 400ms cubic-bezier(0.215, 0.61, 0.355, 1),background-color 100ms cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: color 600ms cubic-bezier(0.215, 0.61, 0.355, 1),scale 400ms cubic-bezier(0.215, 0.61, 0.355, 1),background-color 100ms cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.emotion-6:hover {
+  color: rgba(0, 0, 0, 0.88)!important;
+}
+
+.emotion-6:active {
+  scale: 0.8;
+  color: rgba(0, 0, 0, 0.88);
+}
+
+.emotion-7 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  clear: both;
+}
+
+.emotion-8 {
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  position: relative;
+  border: 0 solid rgba(5, 5, 5, 0.06);
+}
+
+.emotion-8:hover .studio-draggable-panel-toggle {
+  opacity: 1;
+}
+
+.emotion-9 {
+  overflow: hidden;
+}
+
+.emotion-10 {
+  border-radius: 6px;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.02);
+  margin: 2px;
+  height: calc(100% - 4px);
+  padding: 6px;
+  background-color: rgba(0, 0, 0, 0.02);
+  border: 1px solid #d9d9d9;
+}
+
+.emotion-11 {
+  position: relative;
+}
+
+.emotion-11::before {
+  position: absolute;
+  z-index: 50;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  content: '';
+}
+
+.emotion-11:hover::before,
+.emotion-11:active::before {
+  background: #1677ff;
+}
+
+.emotion-11::before {
+  right: 50%;
+  width: 2px;
+  height: 100%;
+}
+
+.emotion-12 {
+  border-radius: 6px;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.02);
+  margin: 2px;
+  height: calc(100% - 4px);
+  padding: 6px;
+  background-color: rgba(0, 0, 0, 0.02);
+  border: 1px solid #d9d9d9;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.emotion-16 {
+  position: relative;
+}
+
+.emotion-16::before {
+  position: absolute;
+  z-index: 50;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  content: '';
+}
+
+.emotion-16:hover::before,
+.emotion-16:active::before {
+  background: #1677ff;
+}
+
+.emotion-16::before {
+  left: 50%;
+  width: 2px;
+  height: 100%;
+}
+
+.emotion-17 {
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  position: relative;
+  border: 0 solid rgba(5, 5, 5, 0.06);
+}
+
+.emotion-17:hover .studio-draggable-panel-toggle {
+  opacity: 1;
+}
+
+.emotion-19 {
+  border-radius: 6px;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.02);
+  margin: 2px;
+  height: calc(100% - 4px);
+  padding: 6px;
+  background-color: rgba(0, 0, 0, 0.02);
+  border: 1px solid #d9d9d9;
+}
+
+.emotion-20 {
+  position: relative;
+}
+
+.emotion-20::before {
+  position: absolute;
+  z-index: 50;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  content: '';
+}
+
+.emotion-20:hover::before,
+.emotion-20:active::before {
+  background: #1677ff;
+}
+
+.emotion-20::before {
+  top: 50%;
+  height: 2px;
+  width: 100%;
+}
+
+.emotion-21 {
+  height: 36px;
+  box-sizing: border-box;
+  margin: 2px;
+  border-radius: 6px;
+  background-color: rgba(0, 0, 0, 0.02);
+  background-color: rgba(0, 0, 0, 0.02);
+  border: 1px solid #d9d9d9;
+  padding: 6px;
+  position: relative;
+}
+
+.emotion-25 {
+  min-width: 50px;
+}
+
+<div>
+  <div
+    class="studio-space studio-space-vertical studio-space-gap-row-small studio-space-gap-col-small"
+    style="max-width: 100%;"
+  >
+    <div
+      class="studio-space-item"
+    >
+      <div
+        class="studio-segmented"
+      >
+        <div
+          class="studio-segmented-group"
+        >
+          <label
+            class="studio-segmented-item studio-segmented-item-selected"
+          >
+            <input
+              checked=""
+              class="studio-segmented-item-input"
+              type="radio"
+            />
+            <div
+              class="studio-segmented-item-label"
+              title="ghost"
+            >
+              ghost
+            </div>
+          </label>
+          <label
+            class="studio-segmented-item"
+          >
+            <input
+              class="studio-segmented-item-input"
+              type="radio"
+            />
+            <div
+              class="studio-segmented-item-label"
+              title="block"
+            >
+              block
+            </div>
+          </label>
+          <label
+            class="studio-segmented-item"
+          >
+            <input
+              class="studio-segmented-item-input"
+              type="radio"
+            />
+            <div
+              class="studio-segmented-item-label"
+              title="pure"
+            >
+              pure
+            </div>
+          </label>
+        </div>
+      </div>
+    </div>
+    <div
+      class="studio-space-item"
+    >
+      <div
+        class="layoutkit-flexbox emotion-0 studio-layout emotion-1"
+        style="max-width: 100%; height: 600px;"
+      >
+        <div
+          class="studio-layout-header studio-layout-flex-container emotion-2 studio-flex studio-flex-align-center studio-flex-justify-space-between"
+        >
+          <div
+            class="headerAndFooterCenterChildren emotion-3"
+          >
+            <span
+              class="studio-input-group-wrapper emotion-4"
+              style="width: 250px;"
+            >
+              <span
+                class="studio-input-wrapper studio-input-group"
+              >
+                <span
+                  class="studio-input-group-addon"
+                >
+                  Options
+                </span>
+                <input
+                  class="studio-input"
+                  placeholder="Search For Some Options"
+                  type="text"
+                  value=""
+                />
+              </span>
+            </span>
+          </div>
+          <div
+            class="headerAndFooterIcon emotion-5"
+          >
+            <button
+              class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon emotion-6 studio-dropdown-trigger"
+              type="button"
+            >
+              <span
+                class="studio-btn-icon"
+              >
+                <span
+                  aria-label="menu-unfold"
+                  class="anticon anticon-menu-unfold"
+                  role="img"
+                >
+                  <svg
+                    aria-hidden="true"
+                    data-icon="menu-unfold"
+                    fill="currentColor"
+                    focusable="false"
+                    height="1em"
+                    viewBox="64 64 896 896"
+                    width="1em"
+                  >
+                    <path
+                      d="M408 442h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8zm-8 204c0 4.4 3.6 8 8 8h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56zm504-486H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 632H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM142.4 642.1L298.7 519a8.84 8.84 0 000-13.9L142.4 381.9c-5.8-4.6-14.4-.5-14.4 6.9v246.3a8.9 8.9 0 0014.4 7z"
+                    />
+                  </svg>
+                </span>
+              </span>
+            </button>
+            EditorLayout
+          </div>
+        </div>
+        <div
+          class="studio-layout-container emotion-7 studio-flex"
+        >
+          <div
+            class="studio-draggable-panel studio-layout-left-pannel emotion-8"
+            style="border-right-width: 1px;"
+          >
+            <div
+              class="studio-draggable-panel-fixed emotion-9"
+              style="position: relative; user-select: auto; width: 200px; height: 100%; max-width: 500px; min-width: 100px; min-height: 100px; box-sizing: border-box; flex-shrink: 0;"
+            >
+              <div
+                class="studio-layout-pannel studio-layout-left-pannel emotion-10"
+              >
+                <div>
+                  Left Pannel
+                </div>
+              </div>
+              <div>
+                <div
+                  class="emotion-11 studio-draggable-panel-right-handle"
+                  style="position: absolute; user-select: none; width: 10px; height: 100%; top: 0px; cursor: col-resize; right: -5px;"
+                />
+              </div>
+            </div>
+          </div>
+          <div
+            class="studio-layout-pannel studio-layout-center-pannel emotion-12"
+          >
+            <div
+              class=""
+            >
+              <div>
+                Center Pannel
+              </div>
+            </div>
+          </div>
+          <div
+            class="studio-draggable-panel studio-layout-right-pannel emotion-8"
+            style="border-left-width: 1px;"
+          >
+            <div
+              class="studio-draggable-panel-fixed emotion-9"
+              style="position: relative; user-select: auto; width: 200px; height: 100%; max-width: 500px; min-width: 100px; min-height: 100px; box-sizing: border-box; flex-shrink: 0;"
+            >
+              <div
+                class="studio-layout-pannel studio-layout-right-pannel emotion-10"
+              >
+                <div>
+                  right Pannel
+                </div>
+              </div>
+              <div>
+                <div
+                  class="emotion-16 studio-draggable-panel-left-handle"
+                  style="position: absolute; user-select: none; width: 10px; height: 100%; top: 0px; left: -5px; cursor: col-resize;"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="studio-draggable-panel emotion-17"
+          style="border-top-width: 1px;"
+        >
+          <div
+            class="studio-draggable-panel-fixed emotion-9"
+            style="position: relative; user-select: auto; width: 100%; height: 100px; max-height: 400px; min-width: 100px; min-height: 100px; box-sizing: border-box; flex-shrink: 0;"
+          >
+            <div
+              class="studio-layout-pannel emotion-19"
+            >
+              <div>
+                Bottom Pannel
+              </div>
+            </div>
+            <div>
+              <div
+                class="studio-draggable-panel-top-handle emotion-20"
+                style="position: absolute; user-select: none; width: 100%; height: 10px; top: -5px; left: 0px; cursor: row-resize;"
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          class="studio-layout-footer studio-layout-flex-container emotion-21 studio-flex studio-flex-align-center studio-flex-justify-space-between"
+        >
+          <div
+            class="headerAndFooterCenterChildren emotion-3"
+          >
+            <div>
+              Footer
+            </div>
+          </div>
+          <div
+            class="headerAndFooterIcon emotion-5"
+          >
+            <button
+              class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon emotion-6 studio-dropdown-trigger"
+              type="button"
+            >
+              <span
+                class="studio-btn-icon"
+              >
+                <span
+                  aria-label="cloud"
+                  class="anticon anticon-cloud"
+                  role="img"
+                >
+                  <svg
+                    aria-hidden="true"
+                    data-icon="cloud"
+                    fill="currentColor"
+                    focusable="false"
+                    height="1em"
+                    viewBox="64 64 896 896"
+                    width="1em"
+                  >
+                    <path
+                      d="M811.4 418.7C765.6 297.9 648.9 212 512.2 212S258.8 297.8 213 418.6C127.3 441.1 64 519.1 64 612c0 110.5 89.5 200 199.9 200h496.2C870.5 812 960 722.5 960 612c0-92.7-63.1-170.7-148.6-193.3zm36.3 281a123.07 123.07 0 01-87.6 36.3H263.9c-33.1 0-64.2-12.9-87.6-36.3A123.3 123.3 0 01140 612c0-28 9.1-54.3 26.2-76.3a125.7 125.7 0 0166.1-43.7l37.9-9.9 13.9-36.6c8.6-22.8 20.6-44.1 35.7-63.4a245.6 245.6 0 0152.4-49.9c41.1-28.9 89.5-44.2 140-44.2s98.9 15.3 140 44.2c19.9 14 37.5 30.8 52.4 49.9 15.1 19.3 27.1 40.7 35.7 63.4l13.8 36.5 37.8 10c54.3 14.5 92.1 63.8 92.1 120 0 33.1-12.9 64.3-36.3 87.7z"
+                    />
+                  </svg>
+                </span>
+              </span>
+            </button>
+          </div>
+          <div
+            class="headerAndFooterExtra emotion-25"
+          >
+            <div
+              class="studio-space studio-space-horizontal studio-space-align-center"
+              style="flex-wrap: wrap; row-gap: 8px;"
+            >
+              <div
+                class="studio-space-item"
+              >
+                <span
+                  class="studio-tag studio-tag-has-color"
+                  style="background-color: rgb(85, 172, 238);"
+                >
+                  <span
+                    aria-label="twitter"
+                    class="anticon anticon-twitter"
+                    role="img"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      data-icon="twitter"
+                      fill="currentColor"
+                      focusable="false"
+                      height="1em"
+                      viewBox="64 64 896 896"
+                      width="1em"
+                    >
+                      <path
+                        d="M928 254.3c-30.6 13.2-63.9 22.7-98.2 26.4a170.1 170.1 0 0075-94 336.64 336.64 0 01-108.2 41.2A170.1 170.1 0 00672 174c-94.5 0-170.5 76.6-170.5 170.6 0 13.2 1.6 26.4 4.2 39.1-141.5-7.4-267.7-75-351.6-178.5a169.32 169.32 0 00-23.2 86.1c0 59.2 30.1 111.4 76 142.1a172 172 0 01-77.1-21.7v2.1c0 82.9 58.6 151.6 136.7 167.4a180.6 180.6 0 01-44.9 5.8c-11.1 0-21.6-1.1-32.2-2.6C211 652 273.9 701.1 348.8 702.7c-58.6 45.9-132 72.9-211.7 72.9-14.3 0-27.5-.5-41.2-2.1C171.5 822 261.2 850 357.8 850 671.4 850 843 590.2 843 364.7c0-7.4 0-14.8-.5-22.2 33.2-24.3 62.3-54.4 85.5-88.2z"
+                      />
+                    </svg>
+                  </span>
+                  <span>
+                    Twitter
+                  </span>
+                </span>
+              </div>
+              <div
+                class="studio-space-item"
+              >
+                <span
+                  class="studio-tag studio-tag-has-color"
+                  style="background-color: rgb(205, 32, 31);"
+                >
+                  <span
+                    aria-label="youtube"
+                    class="anticon anticon-youtube"
+                    role="img"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      data-icon="youtube"
+                      fill="currentColor"
+                      focusable="false"
+                      height="1em"
+                      viewBox="64 64 896 896"
+                      width="1em"
+                    >
+                      <path
+                        d="M960 509.2c0-2.2 0-4.7-.1-7.6-.1-8.1-.3-17.2-.5-26.9-.8-27.9-2.2-55.7-4.4-81.9-3-36.1-7.4-66.2-13.4-88.8a139.52 139.52 0 00-98.3-98.5c-28.3-7.6-83.7-12.3-161.7-15.2-37.1-1.4-76.8-2.3-116.5-2.8-13.9-.2-26.8-.3-38.4-.4h-29.4c-11.6.1-24.5.2-38.4.4-39.7.5-79.4 1.4-116.5 2.8-78 3-133.5 7.7-161.7 15.2A139.35 139.35 0 0082.4 304C76.3 326.6 72 356.7 69 392.8c-2.2 26.2-3.6 54-4.4 81.9-.3 9.7-.4 18.8-.5 26.9 0 2.9-.1 5.4-.1 7.6v5.6c0 2.2 0 4.7.1 7.6.1 8.1.3 17.2.5 26.9.8 27.9 2.2 55.7 4.4 81.9 3 36.1 7.4 66.2 13.4 88.8 12.8 47.9 50.4 85.7 98.3 98.5 28.2 7.6 83.7 12.3 161.7 15.2 37.1 1.4 76.8 2.3 116.5 2.8 13.9.2 26.8.3 38.4.4h29.4c11.6-.1 24.5-.2 38.4-.4 39.7-.5 79.4-1.4 116.5-2.8 78-3 133.5-7.7 161.7-15.2 47.9-12.8 85.5-50.5 98.3-98.5 6.1-22.6 10.4-52.7 13.4-88.8 2.2-26.2 3.6-54 4.4-81.9.3-9.7.4-18.8.5-26.9 0-2.9.1-5.4.1-7.6v-5.6zm-72 5.2c0 2.1 0 4.4-.1 7.1-.1 7.8-.3 16.4-.5 25.7-.7 26.6-2.1 53.2-4.2 77.9-2.7 32.2-6.5 58.6-11.2 76.3-6.2 23.1-24.4 41.4-47.4 47.5-21 5.6-73.9 10.1-145.8 12.8-36.4 1.4-75.6 2.3-114.7 2.8-13.7.2-26.4.3-37.8.3h-28.6l-37.8-.3c-39.1-.5-78.2-1.4-114.7-2.8-71.9-2.8-124.9-7.2-145.8-12.8-23-6.2-41.2-24.4-47.4-47.5-4.7-17.7-8.5-44.1-11.2-76.3-2.1-24.7-3.4-51.3-4.2-77.9-.3-9.3-.4-18-.5-25.7 0-2.7-.1-5.1-.1-7.1v-4.8c0-2.1 0-4.4.1-7.1.1-7.8.3-16.4.5-25.7.7-26.6 2.1-53.2 4.2-77.9 2.7-32.2 6.5-58.6 11.2-76.3 6.2-23.1 24.4-41.4 47.4-47.5 21-5.6 73.9-10.1 145.8-12.8 36.4-1.4 75.6-2.3 114.7-2.8 13.7-.2 26.4-.3 37.8-.3h28.6l37.8.3c39.1.5 78.2 1.4 114.7 2.8 71.9 2.8 124.9 7.2 145.8 12.8 23 6.2 41.2 24.4 47.4 47.5 4.7 17.7 8.5 44.1 11.2 76.3 2.1 24.7 3.4 51.3 4.2 77.9.3 9.3.4 18 .5 25.7 0 2.7.1 5.1.1 7.1v4.8zM423 646l232-135-232-133z"
+                      />
+                    </svg>
+                  </span>
+                  <span>
+                    Youtube
+                  </span>
+                </span>
+              </div>
+              <div
+                class="studio-space-item"
+              >
+                <span
+                  class="studio-tag studio-tag-has-color"
+                  style="background-color: rgb(59, 89, 153);"
+                >
+                  <span
+                    aria-label="facebook"
+                    class="anticon anticon-facebook"
+                    role="img"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      data-icon="facebook"
+                      fill="currentColor"
+                      focusable="false"
+                      height="1em"
+                      viewBox="64 64 896 896"
+                      width="1em"
+                    >
+                      <path
+                        d="M880 112H144c-17.7 0-32 14.3-32 32v736c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V144c0-17.7-14.3-32-32-32zm-32 736H663.9V602.2h104l15.6-120.7H663.9v-77.1c0-35 9.7-58.8 59.8-58.8h63.9v-108c-11.1-1.5-49-4.8-93.2-4.8-92.2 0-155.3 56.3-155.3 159.6v89H434.9v120.7h104.3V848H176V176h672v672z"
+                      />
+                    </svg>
+                  </span>
+                  <span>
+                    Facebook
+                  </span>
+                </span>
+              </div>
+              <div
+                class="studio-space-item"
+              >
+                <span
+                  class="studio-tag studio-tag-has-color"
+                  style="background-color: rgb(85, 172, 238);"
+                >
+                  <span
+                    aria-label="linkedin"
+                    class="anticon anticon-linkedin"
+                    role="img"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      data-icon="linkedin"
+                      fill="currentColor"
+                      focusable="false"
+                      height="1em"
+                      viewBox="64 64 896 896"
+                      width="1em"
+                    >
+                      <path
+                        d="M847.7 112H176.3c-35.5 0-64.3 28.8-64.3 64.3v671.4c0 35.5 28.8 64.3 64.3 64.3h671.4c35.5 0 64.3-28.8 64.3-64.3V176.3c0-35.5-28.8-64.3-64.3-64.3zm0 736c-447.8-.1-671.7-.2-671.7-.3.1-447.8.2-671.7.3-671.7 447.8.1 671.7.2 671.7.3-.1 447.8-.2 671.7-.3 671.7zM230.6 411.9h118.7v381.8H230.6zm59.4-52.2c37.9 0 68.8-30.8 68.8-68.8a68.8 68.8 0 10-137.6 0c-.1 38 30.7 68.8 68.8 68.8zm252.3 245.1c0-49.8 9.5-98 71.2-98 60.8 0 61.7 56.9 61.7 101.2v185.7h118.6V584.3c0-102.8-22.2-181.9-142.3-181.9-57.7 0-96.4 31.7-112.3 61.7h-1.6v-52.2H423.7v381.8h118.6V604.8z"
+                      />
+                    </svg>
+                  </span>
+                  <span>
+                    LinkedIn
+                  </span>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<Layout /> > renders types.tsx correctly 1`] = `
+.emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-1 {
+  height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  overflow: hidden;
+  border-radius: 6px;
+  font-size: 10px;
+}
+
+.emotion-1 .studio-draggable-panel {
+  border: none;
+}
+
+.emotion-2 {
+  box-sizing: border-box;
+  height: 48px;
+  min-height: 48px;
+  border-radius: 6px;
+  background-color: rgba(0, 0, 0, 0.02);
+  margin: 2px;
+  background-color: rgba(0, 0, 0, 0.04);
+  border: 1px solid transparent;
+  padding: 6px;
+  position: relative;
+}
+
+.emotion-3 {
+  position: absolute;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-4:hover {
+  color: rgba(0, 0, 0, 0.88);
+  background-color: rgba(0, 0, 0, 0.04);
+  border-color: transparent;
+}
+
+.emotion-4:focus {
+  color: rgba(0, 0, 0, 0.88)!important;
+  background-color: rgba(0, 0, 0, 0.02)!important;
+  border-color: #1677ff!important;
+  box-shadow: none;
+}
+
+.emotion-5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 8px;
+  min-width: 50px;
+}
+
+.emotion-6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-transition: color 600ms cubic-bezier(0.215, 0.61, 0.355, 1),scale 400ms cubic-bezier(0.215, 0.61, 0.355, 1),background-color 100ms cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: color 600ms cubic-bezier(0.215, 0.61, 0.355, 1),scale 400ms cubic-bezier(0.215, 0.61, 0.355, 1),background-color 100ms cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.emotion-6:hover {
+  color: rgba(0, 0, 0, 0.88)!important;
+}
+
+.emotion-6:active {
+  scale: 0.8;
+  color: rgba(0, 0, 0, 0.88);
+}
+
+.emotion-7 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  clear: both;
+}
+
+.emotion-8 {
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  position: relative;
+  border: 0 solid rgba(5, 5, 5, 0.06);
+}
+
+.emotion-8:hover .studio-draggable-panel-toggle {
+  opacity: 1;
+}
+
+.emotion-9 {
+  overflow: hidden;
+}
+
+.emotion-10 {
+  border-radius: 6px;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.02);
+  margin: 2px;
+  height: calc(100% - 4px);
+  padding: 6px;
+  background-color: rgba(0, 0, 0, 0.04);
+  border: 1px solid transparent;
+}
+
+.emotion-11 {
+  position: relative;
+}
+
+.emotion-11::before {
+  position: absolute;
+  z-index: 50;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  content: '';
+}
+
+.emotion-11:hover::before,
+.emotion-11:active::before {
+  background: #1677ff;
+}
+
+.emotion-11::before {
+  right: 50%;
+  width: 2px;
+  height: 100%;
+}
+
+.emotion-12 {
+  border-radius: 6px;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.02);
+  margin: 2px;
+  height: calc(100% - 4px);
+  padding: 6px;
+  background-color: rgba(0, 0, 0, 0.04);
+  border: 1px solid transparent;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.emotion-16 {
+  position: relative;
+}
+
+.emotion-16::before {
+  position: absolute;
+  z-index: 50;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  content: '';
+}
+
+.emotion-16:hover::before,
+.emotion-16:active::before {
+  background: #1677ff;
+}
+
+.emotion-16::before {
+  left: 50%;
+  width: 2px;
+  height: 100%;
+}
+
+.emotion-17 {
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  position: relative;
+  border: 0 solid rgba(5, 5, 5, 0.06);
+}
+
+.emotion-17:hover .studio-draggable-panel-toggle {
+  opacity: 1;
+}
+
+.emotion-19 {
+  border-radius: 6px;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.02);
+  margin: 2px;
+  height: calc(100% - 4px);
+  padding: 6px;
+  background-color: rgba(0, 0, 0, 0.04);
+  border: 1px solid transparent;
+}
+
+.emotion-20 {
+  position: relative;
+}
+
+.emotion-20::before {
+  position: absolute;
+  z-index: 50;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  content: '';
+}
+
+.emotion-20:hover::before,
+.emotion-20:active::before {
+  background: #1677ff;
+}
+
+.emotion-20::before {
+  top: 50%;
+  height: 2px;
+  width: 100%;
+}
+
+.emotion-21 {
+  height: 36px;
+  box-sizing: border-box;
+  margin: 2px;
+  border-radius: 6px;
+  background-color: rgba(0, 0, 0, 0.02);
+  background-color: rgba(0, 0, 0, 0.04);
+  border: 1px solid transparent;
+  padding: 6px;
+  position: relative;
+}
+
+.emotion-25 {
+  min-width: 50px;
+}
+
+<div>
+  <div
+    class="studio-space studio-space-vertical studio-space-gap-row-small studio-space-gap-col-small"
+    style="max-width: 100%;"
+  >
+    <div
+      class="studio-space-item"
+    >
+      <div
+        class="studio-segmented"
+      >
+        <div
+          class="studio-segmented-group"
+        >
+          <label
+            class="studio-segmented-item"
+          >
+            <input
+              class="studio-segmented-item-input"
+              type="radio"
+            />
+            <div
+              class="studio-segmented-item-label"
+              title="Left&Right"
+            >
+              Left&Right
+            </div>
+          </label>
+          <label
+            class="studio-segmented-item"
+          >
+            <input
+              class="studio-segmented-item-input"
+              type="radio"
+            />
+            <div
+              class="studio-segmented-item-label"
+              title="LeftFull"
+            >
+              LeftFull
+            </div>
+          </label>
+          <label
+            class="studio-segmented-item"
+          >
+            <input
+              class="studio-segmented-item-input"
+              type="radio"
+            />
+            <div
+              class="studio-segmented-item-label"
+              title="RightFull"
+            >
+              RightFull
+            </div>
+          </label>
+          <label
+            class="studio-segmented-item studio-segmented-item-selected"
+          >
+            <input
+              checked=""
+              class="studio-segmented-item-input"
+              type="radio"
+            />
+            <div
+              class="studio-segmented-item-label"
+              title="Bottom"
+            >
+              Bottom
+            </div>
+          </label>
+        </div>
+      </div>
+    </div>
+    <div
+      class="studio-space-item"
+    >
+      <div
+        class="layoutkit-flexbox emotion-0 studio-layout emotion-1"
+        style="max-width: 100%; height: 600px;"
+      >
+        <div
+          class="studio-layout-header studio-layout-flex-container emotion-2 studio-flex studio-flex-align-center studio-flex-justify-space-between"
+        >
+          <div
+            class="headerAndFooterCenterChildren emotion-3"
+          >
+            <span
+              class="studio-input-group-wrapper emotion-4"
+              style="width: 250px;"
+            >
+              <span
+                class="studio-input-wrapper studio-input-group"
+              >
+                <span
+                  class="studio-input-group-addon"
+                >
+                  Options
+                </span>
+                <input
+                  class="studio-input"
+                  placeholder="Search For Some Options"
+                  type="text"
+                  value=""
+                />
+              </span>
+            </span>
+          </div>
+          <div
+            class="headerAndFooterIcon emotion-5"
+          >
+            <button
+              class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon emotion-6 studio-dropdown-trigger"
+              type="button"
+            >
+              <span
+                class="studio-btn-icon"
+              >
+                <span
+                  aria-label="menu-unfold"
+                  class="anticon anticon-menu-unfold"
+                  role="img"
+                >
+                  <svg
+                    aria-hidden="true"
+                    data-icon="menu-unfold"
+                    fill="currentColor"
+                    focusable="false"
+                    height="1em"
+                    viewBox="64 64 896 896"
+                    width="1em"
+                  >
+                    <path
+                      d="M408 442h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8zm-8 204c0 4.4 3.6 8 8 8h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56zm504-486H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 632H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM142.4 642.1L298.7 519a8.84 8.84 0 000-13.9L142.4 381.9c-5.8-4.6-14.4-.5-14.4 6.9v246.3a8.9 8.9 0 0014.4 7z"
+                    />
+                  </svg>
+                </span>
+              </span>
+            </button>
+            EditorLayout
+          </div>
+        </div>
+        <div
+          class="studio-layout-container emotion-7 studio-flex"
+        >
+          <div
+            class="studio-draggable-panel studio-layout-left-pannel emotion-8"
+            style="border-right-width: 1px;"
+          >
+            <div
+              class="studio-draggable-panel-fixed emotion-9"
+              style="position: relative; user-select: auto; width: 200px; height: 100%; max-width: 500px; min-width: 100px; min-height: 100px; box-sizing: border-box; flex-shrink: 0;"
+            >
+              <div
+                class="studio-layout-pannel studio-layout-left-pannel emotion-10"
+              >
+                <div>
+                  Left Pannel
+                </div>
+              </div>
+              <div>
+                <div
+                  class="emotion-11 studio-draggable-panel-right-handle"
+                  style="position: absolute; user-select: none; width: 10px; height: 100%; top: 0px; cursor: col-resize; right: -5px;"
+                />
+              </div>
+            </div>
+          </div>
+          <div
+            class="studio-layout-pannel studio-layout-center-pannel emotion-12"
+          >
+            <div
+              class=""
+            />
+          </div>
+          <div
+            class="studio-draggable-panel studio-layout-right-pannel emotion-8"
+            style="border-left-width: 1px;"
+          >
+            <div
+              class="studio-draggable-panel-fixed emotion-9"
+              style="position: relative; user-select: auto; width: 200px; height: 100%; max-width: 500px; min-width: 100px; min-height: 100px; box-sizing: border-box; flex-shrink: 0;"
+            >
+              <div
+                class="studio-layout-pannel studio-layout-right-pannel emotion-10"
+              />
+              <div>
+                <div
+                  class="emotion-16 studio-draggable-panel-left-handle"
+                  style="position: absolute; user-select: none; width: 10px; height: 100%; top: 0px; left: -5px; cursor: col-resize;"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="studio-draggable-panel emotion-17"
+          style="border-top-width: 1px;"
+        >
+          <div
+            class="studio-draggable-panel-fixed emotion-9"
+            style="position: relative; user-select: auto; width: 100%; height: 100px; max-height: 400px; min-width: 100px; min-height: 100px; box-sizing: border-box; flex-shrink: 0;"
+          >
+            <div
+              class="studio-layout-pannel emotion-19"
+            />
+            <div>
+              <div
+                class="studio-draggable-panel-top-handle emotion-20"
+                style="position: absolute; user-select: none; width: 100%; height: 10px; top: -5px; left: 0px; cursor: row-resize;"
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          class="studio-layout-footer studio-layout-flex-container emotion-21 studio-flex studio-flex-align-center studio-flex-justify-space-between"
+        >
+          <div
+            class="headerAndFooterCenterChildren emotion-3"
+          >
+            <div>
+              Footer
+            </div>
+          </div>
+          <div
+            class="headerAndFooterIcon emotion-5"
+          >
+            <button
+              class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon emotion-6 studio-dropdown-trigger"
+              type="button"
+            >
+              <span
+                class="studio-btn-icon"
+              >
+                <span
+                  aria-label="cloud"
+                  class="anticon anticon-cloud"
+                  role="img"
+                >
+                  <svg
+                    aria-hidden="true"
+                    data-icon="cloud"
+                    fill="currentColor"
+                    focusable="false"
+                    height="1em"
+                    viewBox="64 64 896 896"
+                    width="1em"
+                  >
+                    <path
+                      d="M811.4 418.7C765.6 297.9 648.9 212 512.2 212S258.8 297.8 213 418.6C127.3 441.1 64 519.1 64 612c0 110.5 89.5 200 199.9 200h496.2C870.5 812 960 722.5 960 612c0-92.7-63.1-170.7-148.6-193.3zm36.3 281a123.07 123.07 0 01-87.6 36.3H263.9c-33.1 0-64.2-12.9-87.6-36.3A123.3 123.3 0 01140 612c0-28 9.1-54.3 26.2-76.3a125.7 125.7 0 0166.1-43.7l37.9-9.9 13.9-36.6c8.6-22.8 20.6-44.1 35.7-63.4a245.6 245.6 0 0152.4-49.9c41.1-28.9 89.5-44.2 140-44.2s98.9 15.3 140 44.2c19.9 14 37.5 30.8 52.4 49.9 15.1 19.3 27.1 40.7 35.7 63.4l13.8 36.5 37.8 10c54.3 14.5 92.1 63.8 92.1 120 0 33.1-12.9 64.3-36.3 87.7z"
+                    />
+                  </svg>
+                </span>
+              </span>
+            </button>
+          </div>
+          <div
+            class="headerAndFooterExtra emotion-25"
+          >
+            <div
+              class="studio-space studio-space-horizontal studio-space-align-center"
+              style="flex-wrap: wrap; row-gap: 8px;"
+            >
+              <div
+                class="studio-space-item"
+              >
+                <span
+                  class="studio-tag studio-tag-has-color"
+                  style="background-color: rgb(85, 172, 238);"
+                >
+                  <span
+                    aria-label="twitter"
+                    class="anticon anticon-twitter"
+                    role="img"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      data-icon="twitter"
+                      fill="currentColor"
+                      focusable="false"
+                      height="1em"
+                      viewBox="64 64 896 896"
+                      width="1em"
+                    >
+                      <path
+                        d="M928 254.3c-30.6 13.2-63.9 22.7-98.2 26.4a170.1 170.1 0 0075-94 336.64 336.64 0 01-108.2 41.2A170.1 170.1 0 00672 174c-94.5 0-170.5 76.6-170.5 170.6 0 13.2 1.6 26.4 4.2 39.1-141.5-7.4-267.7-75-351.6-178.5a169.32 169.32 0 00-23.2 86.1c0 59.2 30.1 111.4 76 142.1a172 172 0 01-77.1-21.7v2.1c0 82.9 58.6 151.6 136.7 167.4a180.6 180.6 0 01-44.9 5.8c-11.1 0-21.6-1.1-32.2-2.6C211 652 273.9 701.1 348.8 702.7c-58.6 45.9-132 72.9-211.7 72.9-14.3 0-27.5-.5-41.2-2.1C171.5 822 261.2 850 357.8 850 671.4 850 843 590.2 843 364.7c0-7.4 0-14.8-.5-22.2 33.2-24.3 62.3-54.4 85.5-88.2z"
+                      />
+                    </svg>
+                  </span>
+                  <span>
+                    Twitter
+                  </span>
+                </span>
+              </div>
+              <div
+                class="studio-space-item"
+              >
+                <span
+                  class="studio-tag studio-tag-has-color"
+                  style="background-color: rgb(205, 32, 31);"
+                >
+                  <span
+                    aria-label="youtube"
+                    class="anticon anticon-youtube"
+                    role="img"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      data-icon="youtube"
+                      fill="currentColor"
+                      focusable="false"
+                      height="1em"
+                      viewBox="64 64 896 896"
+                      width="1em"
+                    >
+                      <path
+                        d="M960 509.2c0-2.2 0-4.7-.1-7.6-.1-8.1-.3-17.2-.5-26.9-.8-27.9-2.2-55.7-4.4-81.9-3-36.1-7.4-66.2-13.4-88.8a139.52 139.52 0 00-98.3-98.5c-28.3-7.6-83.7-12.3-161.7-15.2-37.1-1.4-76.8-2.3-116.5-2.8-13.9-.2-26.8-.3-38.4-.4h-29.4c-11.6.1-24.5.2-38.4.4-39.7.5-79.4 1.4-116.5 2.8-78 3-133.5 7.7-161.7 15.2A139.35 139.35 0 0082.4 304C76.3 326.6 72 356.7 69 392.8c-2.2 26.2-3.6 54-4.4 81.9-.3 9.7-.4 18.8-.5 26.9 0 2.9-.1 5.4-.1 7.6v5.6c0 2.2 0 4.7.1 7.6.1 8.1.3 17.2.5 26.9.8 27.9 2.2 55.7 4.4 81.9 3 36.1 7.4 66.2 13.4 88.8 12.8 47.9 50.4 85.7 98.3 98.5 28.2 7.6 83.7 12.3 161.7 15.2 37.1 1.4 76.8 2.3 116.5 2.8 13.9.2 26.8.3 38.4.4h29.4c11.6-.1 24.5-.2 38.4-.4 39.7-.5 79.4-1.4 116.5-2.8 78-3 133.5-7.7 161.7-15.2 47.9-12.8 85.5-50.5 98.3-98.5 6.1-22.6 10.4-52.7 13.4-88.8 2.2-26.2 3.6-54 4.4-81.9.3-9.7.4-18.8.5-26.9 0-2.9.1-5.4.1-7.6v-5.6zm-72 5.2c0 2.1 0 4.4-.1 7.1-.1 7.8-.3 16.4-.5 25.7-.7 26.6-2.1 53.2-4.2 77.9-2.7 32.2-6.5 58.6-11.2 76.3-6.2 23.1-24.4 41.4-47.4 47.5-21 5.6-73.9 10.1-145.8 12.8-36.4 1.4-75.6 2.3-114.7 2.8-13.7.2-26.4.3-37.8.3h-28.6l-37.8-.3c-39.1-.5-78.2-1.4-114.7-2.8-71.9-2.8-124.9-7.2-145.8-12.8-23-6.2-41.2-24.4-47.4-47.5-4.7-17.7-8.5-44.1-11.2-76.3-2.1-24.7-3.4-51.3-4.2-77.9-.3-9.3-.4-18-.5-25.7 0-2.7-.1-5.1-.1-7.1v-4.8c0-2.1 0-4.4.1-7.1.1-7.8.3-16.4.5-25.7.7-26.6 2.1-53.2 4.2-77.9 2.7-32.2 6.5-58.6 11.2-76.3 6.2-23.1 24.4-41.4 47.4-47.5 21-5.6 73.9-10.1 145.8-12.8 36.4-1.4 75.6-2.3 114.7-2.8 13.7-.2 26.4-.3 37.8-.3h28.6l37.8.3c39.1.5 78.2 1.4 114.7 2.8 71.9 2.8 124.9 7.2 145.8 12.8 23 6.2 41.2 24.4 47.4 47.5 4.7 17.7 8.5 44.1 11.2 76.3 2.1 24.7 3.4 51.3 4.2 77.9.3 9.3.4 18 .5 25.7 0 2.7.1 5.1.1 7.1v4.8zM423 646l232-135-232-133z"
+                      />
+                    </svg>
+                  </span>
+                  <span>
+                    Youtube
+                  </span>
+                </span>
+              </div>
+              <div
+                class="studio-space-item"
+              >
+                <span
+                  class="studio-tag studio-tag-has-color"
+                  style="background-color: rgb(59, 89, 153);"
+                >
+                  <span
+                    aria-label="facebook"
+                    class="anticon anticon-facebook"
+                    role="img"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      data-icon="facebook"
+                      fill="currentColor"
+                      focusable="false"
+                      height="1em"
+                      viewBox="64 64 896 896"
+                      width="1em"
+                    >
+                      <path
+                        d="M880 112H144c-17.7 0-32 14.3-32 32v736c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V144c0-17.7-14.3-32-32-32zm-32 736H663.9V602.2h104l15.6-120.7H663.9v-77.1c0-35 9.7-58.8 59.8-58.8h63.9v-108c-11.1-1.5-49-4.8-93.2-4.8-92.2 0-155.3 56.3-155.3 159.6v89H434.9v120.7h104.3V848H176V176h672v672z"
+                      />
+                    </svg>
+                  </span>
+                  <span>
+                    Facebook
+                  </span>
+                </span>
+              </div>
+              <div
+                class="studio-space-item"
+              >
+                <span
+                  class="studio-tag studio-tag-has-color"
+                  style="background-color: rgb(85, 172, 238);"
+                >
+                  <span
+                    aria-label="linkedin"
+                    class="anticon anticon-linkedin"
+                    role="img"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      data-icon="linkedin"
+                      fill="currentColor"
+                      focusable="false"
+                      height="1em"
+                      viewBox="64 64 896 896"
+                      width="1em"
+                    >
+                      <path
+                        d="M847.7 112H176.3c-35.5 0-64.3 28.8-64.3 64.3v671.4c0 35.5 28.8 64.3 64.3 64.3h671.4c35.5 0 64.3-28.8 64.3-64.3V176.3c0-35.5-28.8-64.3-64.3-64.3zm0 736c-447.8-.1-671.7-.2-671.7-.3.1-447.8.2-671.7.3-671.7 447.8.1 671.7.2 671.7.3-.1 447.8-.2 671.7-.3 671.7zM230.6 411.9h118.7v381.8H230.6zm59.4-52.2c37.9 0 68.8-30.8 68.8-68.8a68.8 68.8 0 10-137.6 0c-.1 38 30.7 68.8 68.8 68.8zm252.3 245.1c0-49.8 9.5-98 71.2-98 60.8 0 61.7 56.9 61.7 101.2v185.7h118.6V584.3c0-102.8-22.2-181.9-142.3-181.9-57.7 0-96.4 31.7-112.3 61.7h-1.6v-52.2H423.7v381.8h118.6V604.8z"
+                      />
+                    </svg>
+                  </span>
+                  <span>
+                    LinkedIn
+                  </span>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`<LevaPanel /> > renders button.tsx correctly 1`] = `
 .emotion-0 {
   -webkit-flex-shrink: 0;
@@ -21234,7 +24406,6 @@ exports[`<LevaPanel /> > renders button.tsx correctly 1`] = `
 }
 
 .emotion-3 {
-  background: #ffffff;
   overflow: hidden;
 }
 

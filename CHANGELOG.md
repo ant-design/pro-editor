@@ -1,5 +1,60 @@
 # Changelog
 
+## [Version&nbsp;0.33.0-rc.1](https://github.com/ant-design/pro-editor/compare/v0.32.0...v0.33.0-rc.1)
+
+<sup>Released on **2023-12-20**</sup>
+
+#### ✨ 新特性
+
+- Add Editor Layout new Components, Change Name as EdiorLayout, header & footer config & layout type was dont, merge main, merge master & update snapshot, reflact code struct, udpate snapshot, update dingding demo & pannel config done, update pannel defaultSize, update snapshot, update snapshot, update styles & props.
+
+#### 🐛 修复
+
+- Ci bulid fixed, ci fixed, delete console.log, merge branch, merge main, merge main, release workflow update, revert workflow, test workflow, update Layout Pannel Styles, update snapshot, update styles.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's improved
+
+- Add Editor Layout new Components ([927cc46](https://github.com/ant-design/pro-editor/commit/927cc46))
+- Change Name as EdiorLayout ([c1e4c00](https://github.com/ant-design/pro-editor/commit/c1e4c00))
+- Header & footer config & layout type was dont ([5dfbdfb](https://github.com/ant-design/pro-editor/commit/5dfbdfb))
+- Merge main ([11c65d8](https://github.com/ant-design/pro-editor/commit/11c65d8))
+- Merge master & update snapshot ([fed6ff8](https://github.com/ant-design/pro-editor/commit/fed6ff8))
+- Reflact code struct ([2c78710](https://github.com/ant-design/pro-editor/commit/2c78710))
+- Udpate snapshot ([050fa45](https://github.com/ant-design/pro-editor/commit/050fa45))
+- Update dingding demo & pannel config done ([172dc14](https://github.com/ant-design/pro-editor/commit/172dc14))
+- Update pannel defaultSize ([af323ec](https://github.com/ant-design/pro-editor/commit/af323ec))
+- Update snapshot ([68de22d](https://github.com/ant-design/pro-editor/commit/68de22d))
+- Update snapshot ([5f77048](https://github.com/ant-design/pro-editor/commit/5f77048))
+- Update styles & props ([decb858](https://github.com/ant-design/pro-editor/commit/decb858))
+
+#### What's fixed
+
+- Ci bulid fixed ([24df343](https://github.com/ant-design/pro-editor/commit/24df343))
+- Ci fixed ([be8c8c4](https://github.com/ant-design/pro-editor/commit/be8c8c4))
+- Delete console.log ([d45814c](https://github.com/ant-design/pro-editor/commit/d45814c))
+- Merge branch ([5b4c5a1](https://github.com/ant-design/pro-editor/commit/5b4c5a1))
+- Merge main ([1df83ce](https://github.com/ant-design/pro-editor/commit/1df83ce))
+- Merge main ([ae678e0](https://github.com/ant-design/pro-editor/commit/ae678e0))
+- Release workflow update ([59acc60](https://github.com/ant-design/pro-editor/commit/59acc60))
+- Revert workflow ([7785cc1](https://github.com/ant-design/pro-editor/commit/7785cc1))
+- Test workflow ([2905ee9](https://github.com/ant-design/pro-editor/commit/2905ee9))
+- Update Layout Pannel Styles ([a3144ac](https://github.com/ant-design/pro-editor/commit/a3144ac))
+- Update snapshot ([f2665ef](https://github.com/ant-design/pro-editor/commit/f2665ef))
+- Update styles ([241de5b](https://github.com/ant-design/pro-editor/commit/241de5b))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
 ## [Version&nbsp;0.32.0](https://github.com/ant-design/pro-editor/compare/v0.31.1...v0.32.0)
 
 <sup>Released on **2023-12-20**</sup>
@@ -90,7 +145,11 @@
 
 #### ✨ 新特性
 
-- Add max Height & Width control in DraggelPannel, update snapshot.
+- Add Editor Layout new Components, Change Name as EdiorLayout, merge master & update snapshot, update pannel defaultSize, update snapshot, update styles & props.
+
+#### 🐛 修复
+
+- Ci bulid fixed, merge main, release workflow update, revert workflow, test workflow, update styles.
 
 <br/>
 
@@ -99,8 +158,21 @@
 
 #### What's improved
 
-- Add max Height & Width control in DraggelPannel ([ceaec8b](https://github.com/ant-design/pro-editor/commit/ceaec8b))
-- Update snapshot ([abd1748](https://github.com/ant-design/pro-editor/commit/abd1748))
+- Add Editor Layout new Components ([927cc46](https://github.com/ant-design/pro-editor/commit/927cc46))
+- Change Name as EdiorLayout ([c1e4c00](https://github.com/ant-design/pro-editor/commit/c1e4c00))
+- Merge master & update snapshot ([fed6ff8](https://github.com/ant-design/pro-editor/commit/fed6ff8))
+- Update pannel defaultSize ([af323ec](https://github.com/ant-design/pro-editor/commit/af323ec))
+- Update snapshot ([5f77048](https://github.com/ant-design/pro-editor/commit/5f77048))
+- Update styles & props ([decb858](https://github.com/ant-design/pro-editor/commit/decb858))
+
+#### What's fixed
+
+- Ci bulid fixed ([24df343](https://github.com/ant-design/pro-editor/commit/24df343))
+- Merge main ([ae678e0](https://github.com/ant-design/pro-editor/commit/ae678e0))
+- Release workflow update ([59acc60](https://github.com/ant-design/pro-editor/commit/59acc60))
+- Revert workflow ([7785cc1](https://github.com/ant-design/pro-editor/commit/7785cc1))
+- Test workflow ([2905ee9](https://github.com/ant-design/pro-editor/commit/2905ee9))
+- Update styles ([241de5b](https://github.com/ant-design/pro-editor/commit/241de5b))
 
 </details>
 
@@ -110,68 +182,43 @@
 
 </div>
 
-### [Version&nbsp;0.29.2](https://github.com/ant-design/pro-editor/compare/v0.29.1...v0.29.2)
+## [Version&nbsp;0.30.0-rc.2](https://github.com/ant-design/pro-editor/compare/v0.30.0-rc.1...v0.30.0-rc.2)
+
+<sup>Released on **2023-12-05**</sup>
+
+#### 🐛 修复
+
+- Ci bulid fixed, update styles.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's fixed
+
+- Ci bulid fixed ([24df343](https://github.com/ant-design/pro-editor/commit/24df343))
+- Update styles ([241de5b](https://github.com/ant-design/pro-editor/commit/241de5b))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+## [Version&nbsp;0.30.0-rc.1](https://github.com/ant-design/pro-editor/compare/v0.29.2...v0.30.0-rc.1)
 
 <sup>Released on **2023-12-04**</sup>
 
-#### 🐛 修复
-
-- Add build into workflow, update test yml.
-
-<br/>
-
-<details>
-<summary><kbd>Improvements and Fixes</kbd></summary>
-
-#### What's fixed
-
-- Add build into workflow ([9c97246](https://github.com/ant-design/pro-editor/commit/9c97246))
-- Update test yml ([d81d82e](https://github.com/ant-design/pro-editor/commit/d81d82e))
-
-</details>
-
-<div align="right">
-
-[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
-
-</div>
-
-### [Version&nbsp;0.29.1](https://github.com/ant-design/pro-editor/compare/v0.29.0...v0.29.1)
-
-<sup>Released on **2023-12-01**</sup>
-
-#### 🐛 修复
-
-- Fix dependencies.
-
-<br/>
-
-<details>
-<summary><kbd>Improvements and Fixes</kbd></summary>
-
-#### What's fixed
-
-- Fix dependencies, closes [#112](https://github.com/ant-design/pro-editor/issues/112) ([efb4e46](https://github.com/ant-design/pro-editor/commit/efb4e46))
-
-</details>
-
-<div align="right">
-
-[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
-
-</div>
-
-## [Version&nbsp;0.29.0](https://github.com/ant-design/pro-editor/compare/v0.28.0...v0.29.0)
-
-<sup>Released on **2023-11-30**</sup>
-
 #### ✨ 新特性
 
-- Sortablelist support renderHeader".
+- Add Editor Layout new Components, update pannel defaultSize, update snapshot, update styles & props.
 
 #### 🐛 修复
 
-- Workflow update.
+- Merge main, revert workflow, test workflow.
 
 <br/>
 
@@ -180,11 +227,53 @@
 
 #### What's improved
 
-- Sortablelist support renderHeader" ([53d75fd](https://github.com/ant-design/pro-editor/commit/53d75fd))
+- Add Editor Layout new Components ([927cc46](https://github.com/ant-design/pro-editor/commit/927cc46))
+- Update pannel defaultSize ([af323ec](https://github.com/ant-design/pro-editor/commit/af323ec))
+- Update snapshot ([5f77048](https://github.com/ant-design/pro-editor/commit/5f77048))
+- Update styles & props ([decb858](https://github.com/ant-design/pro-editor/commit/decb858))
 
 #### What's fixed
 
-- Workflow update ([5325ef5](https://github.com/ant-design/pro-editor/commit/5325ef5))
+- Merge main ([ae678e0](https://github.com/ant-design/pro-editor/commit/ae678e0))
+- Revert workflow ([7785cc1](https://github.com/ant-design/pro-editor/commit/7785cc1))
+- Test workflow ([2905ee9](https://github.com/ant-design/pro-editor/commit/2905ee9))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+## [Version&nbsp;0.29.0-rc.1](https://github.com/ant-design/pro-editor/compare/v0.28.0...v0.29.0-rc.1)
+
+<sup>Released on **2023-12-04**</sup>
+
+#### ✨ 新特性
+
+- Add Editor Layout new Components, sortablelist support renderHeader", update pannel defaultSize, update snapshot.
+
+#### 🐛 修复
+
+- Revert workflow, test workflow.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's improved
+
+- Add Editor Layout new Components ([927cc46](https://github.com/ant-design/pro-editor/commit/927cc46))
+- Sortablelist support renderHeader" ([53d75fd](https://github.com/ant-design/pro-editor/commit/53d75fd))
+- Update pannel defaultSize ([af323ec](https://github.com/ant-design/pro-editor/commit/af323ec))
+- Update snapshot ([5f77048](https://github.com/ant-design/pro-editor/commit/5f77048))
+
+#### What's fixed
+
+- Revert workflow ([7785cc1](https://github.com/ant-design/pro-editor/commit/7785cc1))
+- Test workflow ([2905ee9](https://github.com/ant-design/pro-editor/commit/2905ee9))
 
 </details>
 
