@@ -1,73 +1,22 @@
 # Changelog
 
-## [Version&nbsp;0.32.0-rc.2](https://github.com/ant-design/pro-editor/compare/v0.32.0-rc.1...v0.32.0-rc.2)
-
-<sup>Released on **2023-12-19**</sup>
-
-#### ✨ 新特性
-
-- Udpate snapshot, update dingding demo & pannel config done.
-
-<br/>
-
-<details>
-<summary><kbd>Improvements and Fixes</kbd></summary>
-
-#### What's improved
-
-- Udpate snapshot ([050fa45](https://github.com/ant-design/pro-editor/commit/050fa45))
-- Update dingding demo & pannel config done ([172dc14](https://github.com/ant-design/pro-editor/commit/172dc14))
-
-</details>
-
-<div align="right">
-
-[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
-
-</div>
-
-## [Version&nbsp;0.32.0-rc.1](https://github.com/ant-design/pro-editor/compare/v0.31.0...v0.32.0-rc.1)
+### [Version&nbsp;0.31.1](https://github.com/ant-design/pro-editor/compare/v0.31.0...v0.31.1)
 
 <sup>Released on **2023-12-18**</sup>
 
-#### ✨ 新特性
-
-- Add Editor Layout new Components, Change Name as EdiorLayout, header & footer config & layout type was dont, merge main, merge master & update snapshot, reflact code struct, update pannel defaultSize, update snapshot, update snapshot, update styles & props.
-
 #### 🐛 修复
 
-- Ci bulid fixed, ci fixed, merge branch, merge main, release workflow update, revert workflow, test workflow, update Layout Pannel Styles, update snapshot, update styles.
+- Fix markdown & highlight not support memo, remove demo old api.
 
 <br/>
 
 <details>
 <summary><kbd>Improvements and Fixes</kbd></summary>
 
-#### What's improved
-
-- Add Editor Layout new Components ([927cc46](https://github.com/ant-design/pro-editor/commit/927cc46))
-- Change Name as EdiorLayout ([c1e4c00](https://github.com/ant-design/pro-editor/commit/c1e4c00))
-- Header & footer config & layout type was dont ([5dfbdfb](https://github.com/ant-design/pro-editor/commit/5dfbdfb))
-- Merge main ([11c65d8](https://github.com/ant-design/pro-editor/commit/11c65d8))
-- Merge master & update snapshot ([fed6ff8](https://github.com/ant-design/pro-editor/commit/fed6ff8))
-- Reflact code struct ([2c78710](https://github.com/ant-design/pro-editor/commit/2c78710))
-- Update pannel defaultSize ([af323ec](https://github.com/ant-design/pro-editor/commit/af323ec))
-- Update snapshot ([68de22d](https://github.com/ant-design/pro-editor/commit/68de22d))
-- Update snapshot ([5f77048](https://github.com/ant-design/pro-editor/commit/5f77048))
-- Update styles & props ([decb858](https://github.com/ant-design/pro-editor/commit/decb858))
-
 #### What's fixed
 
-- Ci bulid fixed ([24df343](https://github.com/ant-design/pro-editor/commit/24df343))
-- Ci fixed ([be8c8c4](https://github.com/ant-design/pro-editor/commit/be8c8c4))
-- Merge branch ([5b4c5a1](https://github.com/ant-design/pro-editor/commit/5b4c5a1))
-- Merge main ([ae678e0](https://github.com/ant-design/pro-editor/commit/ae678e0))
-- Release workflow update ([59acc60](https://github.com/ant-design/pro-editor/commit/59acc60))
-- Revert workflow ([7785cc1](https://github.com/ant-design/pro-editor/commit/7785cc1))
-- Test workflow ([2905ee9](https://github.com/ant-design/pro-editor/commit/2905ee9))
-- Update Layout Pannel Styles ([a3144ac](https://github.com/ant-design/pro-editor/commit/a3144ac))
-- Update snapshot ([f2665ef](https://github.com/ant-design/pro-editor/commit/f2665ef))
-- Update styles ([241de5b](https://github.com/ant-design/pro-editor/commit/241de5b))
+- Fix markdown & highlight not support memo ([136850f](https://github.com/ant-design/pro-editor/commit/136850f))
+- Remove demo old api ([fd9ff8c](https://github.com/ant-design/pro-editor/commit/fd9ff8c))
 
 </details>
 

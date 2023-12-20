@@ -28,7 +28,7 @@ const countLines = (str: string): number => {
   return matches ? matches.length : 1;
 };
 
-const Code = memo(({ highlight, snippet, ...properties }: any) => {
+export const Code = memo((properties: any) => {
   const { styles, cx } = useStyles();
 
   if (!properties.children[0]) return;
@@ -39,6 +39,7 @@ const Code = memo(({ highlight, snippet, ...properties }: any) => {
 
   const content = Array.isArray(children) ? (children[0] as string) : children;
   const lang = className?.replace('language-', '') || 'txt';
+
   if (countLines(content) === 1 && content.length <= 60) {
     return (
       <Snippet
@@ -47,7 +48,6 @@ const Code = memo(({ highlight, snippet, ...properties }: any) => {
         language={lang}
         symbol={''}
         type={'block'}
-        {...snippet}
       >
         {content}
       </Snippet>
@@ -59,11 +59,9 @@ const Code = memo(({ highlight, snippet, ...properties }: any) => {
       className={cx(styles.container, styles.highlight)}
       language={lang}
       type="block"
-      {...highlight}
+      containerWrapper={true}
     >
       {content}
     </Highlight>
   );
 });
-
-export { Code };

@@ -16,11 +16,9 @@ ProEditor 内置了一个默认的 Markdown 渲染器，使用 React-Markdown，
 
 ## APIs
 
-| 属性名        | 类型            | 描述                           |
-| ------------- | --------------- | ------------------------------ |
-| children      | string          | 要渲染的 Markdown 内容。       |
-| className     | string          | Markdown 组件的类名。          |
-| onDoubleClick | () => void      | 双击事件处理函数。             |
-| style         | CSSProperties   | Markdown 组件的样式。          |
-| highlight     | Highlight Props | Highlight 的配置，会默认透传。 |
-| snippet       | snippet Props   | Snippet 的配置，会默认透传     |
+| 属性名        | 类型          | 描述                     |
+| ------------- | ------------- | ------------------------ |
+| children      | string        | 要渲染的 Markdown 内容。 |
+| className     | string        | Markdown 组件的类名。    |
+| onDoubleClick | () => void    | 双击事件处理函数。       |
+| style         | CSSProperties | Markdown 组件的样式。    |

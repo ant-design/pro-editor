@@ -1,5 +1,5 @@
 import classNames from 'classnames';
-import { createRef } from 'react';
+import { createRef, memo } from 'react';
 import { getPrefixCls } from '../theme';
 import CopyButton from './components/CopyButton';
 import HighLighter from './components/HighLighter';
@@ -72,7 +72,7 @@ export interface HighlightProps {
   showLanguage?: boolean;
 }
 
-const HighlightBase: React.FC<HighlightProps> = (props) => {
+const HighlightBase: React.FC<HighlightProps> = memo((props) => {
   const {
     children,
     style,
@@ -118,6 +118,6 @@ const HighlightBase: React.FC<HighlightProps> = (props) => {
       </div>
     </>
   );
-};
+});
 
 export { HighlightBase };
