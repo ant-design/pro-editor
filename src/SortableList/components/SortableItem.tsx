@@ -8,6 +8,7 @@ export default function SortableItem({
   index,
   onRemove,
   useDragOverlay = true,
+  handle = true,
   getItemStyles,
   renderItem,
   renderContent,
@@ -37,6 +38,7 @@ export default function SortableItem({
       id={id}
       // 数据
       item={item}
+      handle={handle}
       disabled={disabled}
       dragging={isDragging}
       sorting={isSorting}

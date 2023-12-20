@@ -32,7 +32,7 @@ export type RenderActionProps<T = any> =
 export interface SortableItemProps<T = any>
   extends Pick<
     StoreUpdaterProps<T>,
-    'renderItem' | 'renderContent' | 'actions' | 'getItemStyles' | 'hideRemove'
+    'renderItem' | 'renderContent' | 'actions' | 'getItemStyles' | 'hideRemove' | 'handle'
   > {
   disabled?: boolean;
   id: UniqueIdentifier;
@@ -62,6 +62,10 @@ export interface CreatorButtonProps {
    * 新增一行按钮文案
    */
   creatorButtonText?: string;
+  /**
+   * 按钮的样式设置，可以设置按钮是否显示，比如 style: {display: 'none'}
+   */
+  style?: CSSProperties;
 }
 
 export type RenderItem<T = any> = (

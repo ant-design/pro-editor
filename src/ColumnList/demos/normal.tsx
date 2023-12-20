@@ -11,13 +11,12 @@ type SchemaItem = {
 };
 
 const initialValues = [
-  { title: '序号', valueType: 'indexBorder', dataIndex: 'index' },
+  { title: '序号', dataIndex: 'index' },
   {
     title: '授权企业名称',
-    valueType: 'text',
     dataIndex: 'name',
   },
-  { title: '被授权企业', valueType: 'text', dataIndex: 'authCompany' },
+  { title: '被授权企业', dataIndex: 'authCompany' },
 ];
 
 const columns: ColumnItemList<SchemaItem> = [
@@ -44,12 +43,6 @@ export default () => (
     initialValues={initialValues}
     onChange={(values) => {
       console.log('onChange', values);
-    }}
-    creatorButtonProps={{
-      record: () => ({
-        valueType: 'text',
-        title: '示例标题',
-      }),
     }}
   />
 );
