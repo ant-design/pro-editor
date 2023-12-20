@@ -57,7 +57,7 @@ const SortableList: FC<SortableListProps> = ({ prefixCls }) => {
       <Button
         block={empty ? false : true}
         size={'small'}
-        style={style}
+        style={empty ? null : style}
         className={styles.btnAdd}
         onClick={() => {
           dispatchListData({
