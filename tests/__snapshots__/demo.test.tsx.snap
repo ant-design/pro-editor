@@ -14732,6 +14732,7 @@ exports[`<DraggablePanel /> > renders basic.tsx correctly 1`] = `
 }
 
 .emotion-3 {
+  background: #ffffff;
   overflow: hidden;
 }
 
@@ -14881,6 +14882,7 @@ exports[`<DraggablePanel /> > renders bottom.tsx correctly 1`] = `
 }
 
 .emotion-4 {
+  background: #ffffff;
   overflow: hidden;
 }
 
@@ -15341,6 +15343,7 @@ exports[`<DraggablePanel /> > renders left.tsx correctly 1`] = `
 }
 
 .emotion-4 {
+  background: #ffffff;
   overflow: hidden;
 }
 
@@ -15491,6 +15494,7 @@ exports[`<DraggablePanel /> > renders top.tsx correctly 1`] = `
 }
 
 .emotion-4 {
+  background: #ffffff;
   overflow: hidden;
 }
 
@@ -21306,6 +21310,7 @@ exports[`<Layout /> > renders basic.tsx correctly 1`] = `
 }
 
 .emotion-10 {
+  background: #ffffff;
   overflow: hidden;
 }
 
@@ -21969,6 +21974,7 @@ exports[`<Layout /> > renders dingding.tsx correctly 1`] = `
 }
 
 .emotion-15 {
+  background: #ffffff;
   overflow: hidden;
 }
 
@@ -22469,6 +22475,7 @@ exports[`<Layout /> > renders noLeftPannel.tsx correctly 1`] = `
 }
 
 .emotion-5 {
+  background: #ffffff;
   overflow: hidden;
 }
 
@@ -22822,6 +22829,7 @@ exports[`<Layout /> > renders single.tsx correctly 1`] = `
 }
 
 .emotion-4 {
+  background: #ffffff;
   overflow: hidden;
 }
 
@@ -23154,6 +23162,7 @@ exports[`<Layout /> > renders themeType.tsx correctly 1`] = `
 }
 
 .emotion-9 {
+  background: #ffffff;
   overflow: hidden;
 }
 
@@ -23815,6 +23824,7 @@ exports[`<Layout /> > renders types.tsx correctly 1`] = `
 }
 
 .emotion-9 {
+  background: #ffffff;
   overflow: hidden;
 }
 
@@ -24406,6 +24416,7 @@ exports[`<LevaPanel /> > renders button.tsx correctly 1`] = `
 }
 
 .emotion-3 {
+  background: #ffffff;
   overflow: hidden;
 }
 
