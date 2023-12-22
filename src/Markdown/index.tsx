@@ -1,4 +1,4 @@
-import { Collapse, Divider, Image, Typography } from 'antd';
+import { Collapse, Divider, Typography } from 'antd';
 import { CSSProperties, memo } from 'react';
 import ReactMarkdown from 'react-markdown';
 import rehypeKatex from 'rehype-katex';
@@ -19,13 +19,18 @@ export interface MarkdownProps {
   style?: CSSProperties;
 }
 
+const MemoHr = memo(() => <Divider style={{ marginBottom: '1em', marginTop: 0 }} />);
+const MemoDetails = memo(() => <Collapse style={{ marginBottom: '1em' }} />);
+const MemoAlink = memo(() => <Typography.Link />);
+const MemoImage = memo(() => <img />);
+
 const Markdown = memo<MarkdownProps>(({ children, className, style, onDoubleClick, ...rest }) => {
   const { styles } = useStyles();
   const components: any = {
-    a: Typography.Link,
-    details: Collapse,
-    hr: () => <Divider style={{ marginBottom: '1em', marginTop: 0 }} />,
-    img: Image,
+    a: MemoAlink,
+    details: MemoDetails,
+    hr: MemoHr,
+    img: MemoImage,
     pre: Code,
   };
 
