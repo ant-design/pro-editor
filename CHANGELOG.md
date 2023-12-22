@@ -1,5 +1,30 @@
 # Changelog
 
+### [Version&nbsp;0.34.1](https://github.com/ant-design/pro-editor/compare/v0.34.0...v0.34.1)
+
+<sup>Released on **2023-12-22**</sup>
+
+#### 🐛 修复
+
+- Rollback draggalPannel styles.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's fixed
+
+- Rollback draggalPannel styles ([387b457](https://github.com/ant-design/pro-editor/commit/387b457))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
 ## [Version&nbsp;0.34.0](https://github.com/ant-design/pro-editor/compare/v0.33.1...v0.34.0)
 
 <sup>Released on **2023-12-22**</sup>
