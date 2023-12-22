@@ -1,5 +1,38 @@
 # Changelog
 
+## [Version&nbsp;0.34.0](https://github.com/ant-design/pro-editor/compare/v0.33.1...v0.34.0)
+
+<sup>Released on **2023-12-22**</sup>
+
+#### ✨ 新特性
+
+- Use memo wrapper in markdown.
+
+#### 🐛 修复
+
+- Update snapshot.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's improved
+
+- Use memo wrapper in markdown ([7c7382f](https://github.com/ant-design/pro-editor/commit/7c7382f))
+
+#### What's fixed
+
+- Update snapshot ([19b310b](https://github.com/ant-design/pro-editor/commit/19b310b))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
 ### [Version&nbsp;0.33.1](https://github.com/ant-design/pro-editor/compare/v0.33.0...v0.33.1)
 
 <sup>Released on **2023-12-20**</sup>
