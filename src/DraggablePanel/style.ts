@@ -116,6 +116,7 @@ export const useStyle = createStyles(({ token, css, cx }, prefix: string) => {
     fixed: cx(
       `${prefix}-fixed`,
       css`
+        background: ${token.colorBgContainer};
         overflow: hidden;
       `,
     ),
