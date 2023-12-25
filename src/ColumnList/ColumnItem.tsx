@@ -119,6 +119,7 @@ const ColumnItem = memo<ItemRenderProps>(
               placeholder: col.placeholder,
               creatorButtonProps,
             };
+
             switch (col.type) {
               default:
               case 'input':

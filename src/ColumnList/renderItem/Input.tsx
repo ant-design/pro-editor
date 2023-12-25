@@ -1,7 +1,6 @@
-import { CreatorButtonProps, useSortableList } from '@ant-design/pro-editor';
-import { Input, InputRef } from 'antd';
+import { CreatorButtonProps, Input, useSortableList } from '@ant-design/pro-editor';
 import { createStyles } from 'antd-style';
-import { CSSProperties, memo, useEffect, useRef, useState } from 'react';
+import { CSSProperties, memo, useEffect, useRef } from 'react';
 
 const useStyle = createStyles(({ css, cx }, prefixCls) => {
   const prefix = `${prefixCls}-content`;
@@ -29,16 +28,8 @@ interface ItemRenderProps {
 const ControlInput = memo<ItemRenderProps>(
   ({ dataIndex, placeholder, value, index, prefixCls, style, dragging, creatorButtonProps }) => {
     const instance = useSortableList();
-    const inputRef = useRef<InputRef>(null);
-    const [innerValue, setInnerValue] = useState(value);
-    const [changed, setChanged] = useState(false);
-    const shouldChange = useRef(true);
+    const inputRef = useRef(null);
     const { styles } = useStyle(prefixCls);
-
-    const updateTitle = () => {
-      instance.updateItem({ [dataIndex]: innerValue }, index);
-      setChanged(false);
-    };
 
     useEffect(() => {
       if (dragging) {
@@ -69,28 +60,16 @@ const ControlInput = memo<ItemRenderProps>(
       <Input
         size={'small'}
         ref={inputRef}
-        value={innerValue}
+        value={value}
         style={style}
         id={customListId(index)}
-        onCompositionStart={() => {
-          shouldChange.current = false;
-        }}
         placeholder={placeholder || '请输入'}
-        onCompositionEnd={() => {
-          shouldChange.current = true;
-        }}
-        onBlur={() => {
-          if (changed) updateTitle();
-        }}
         className={styles.input}
         onPressEnter={() => {
-          if (!shouldChange.current) return;
-          if (changed) updateTitle();
           handleNextFocus();
         }}
-        onChange={(e) => {
-          setInnerValue(e.target.value);
-          setChanged(true);
+        onChange={(value) => {
+          instance.updateItem({ [dataIndex]: value }, index);
         }}
       />
     );
