@@ -2566,6 +2566,19 @@ exports[`<ColumnList /> > renders actions.tsx correctly 1`] = `
   padding-left: 13px;
 }
 
+.emotion-13:hover {
+  color: rgba(0, 0, 0, 0.88);
+  background-color: rgba(0, 0, 0, 0.04);
+  border-color: transparent;
+}
+
+.emotion-13:focus {
+  color: rgba(0, 0, 0, 0.88)!important;
+  background-color: rgba(0, 0, 0, 0.02)!important;
+  border-color: #1677ff!important;
+  box-shadow: none;
+}
+
 .emotion-14 .studio-select-selector {
   padding-left: 13px;
 }
@@ -3653,6 +3666,19 @@ exports[`<ColumnList /> > renders column.tsx correctly 1`] = `
   padding-left: 13px;
 }
 
+.emotion-14:hover {
+  color: rgba(0, 0, 0, 0.88);
+  background-color: rgba(0, 0, 0, 0.04);
+  border-color: transparent;
+}
+
+.emotion-14:focus {
+  color: rgba(0, 0, 0, 0.88)!important;
+  background-color: rgba(0, 0, 0, 0.02)!important;
+  border-color: #1677ff!important;
+  box-shadow: none;
+}
+
 .emotion-15 .studio-select-selector {
   padding-left: 13px;
 }
@@ -3931,18 +3957,18 @@ exports[`<ColumnList /> > renders column.tsx correctly 1`] = `
                 </span>
               </div>
               <div
-                class="ant-color-picker-trigger ant-color-picker-sm"
+                class="studio-color-picker-trigger studio-color-picker-sm"
               >
                 <div
-                  class="ant-color-picker-color-block"
+                  class="studio-color-picker-color-block"
                 >
                   <div
-                    class="ant-color-picker-color-block-inner"
+                    class="studio-color-picker-color-block-inner"
                     style="background: rgb(22, 119, 255);"
                   />
                 </div>
                 <div
-                  class="ant-color-picker-trigger-text"
+                  class="studio-color-picker-trigger-text"
                 >
                   #1677FF
                 </div>
@@ -4159,18 +4185,18 @@ exports[`<ColumnList /> > renders column.tsx correctly 1`] = `
                 </span>
               </div>
               <div
-                class="ant-color-picker-trigger ant-color-picker-sm"
+                class="studio-color-picker-trigger studio-color-picker-sm"
               >
                 <div
-                  class="ant-color-picker-color-block"
+                  class="studio-color-picker-color-block"
                 >
                   <div
-                    class="ant-color-picker-color-block-inner"
+                    class="studio-color-picker-color-block-inner"
                     style="background: rgb(22, 119, 255);"
                   />
                 </div>
                 <div
-                  class="ant-color-picker-trigger-text"
+                  class="studio-color-picker-trigger-text"
                 >
                   #1677FF
                 </div>
@@ -4387,18 +4413,18 @@ exports[`<ColumnList /> > renders column.tsx correctly 1`] = `
                 </span>
               </div>
               <div
-                class="ant-color-picker-trigger ant-color-picker-sm"
+                class="studio-color-picker-trigger studio-color-picker-sm"
               >
                 <div
-                  class="ant-color-picker-color-block"
+                  class="studio-color-picker-color-block"
                 >
                   <div
-                    class="ant-color-picker-color-block-inner"
+                    class="studio-color-picker-color-block-inner"
                     style="background: rgb(22, 119, 255);"
                   />
                 </div>
                 <div
-                  class="ant-color-picker-trigger-text"
+                  class="studio-color-picker-trigger-text"
                 >
                   #1677FF
                 </div>
@@ -4615,18 +4641,18 @@ exports[`<ColumnList /> > renders column.tsx correctly 1`] = `
                 </span>
               </div>
               <div
-                class="ant-color-picker-trigger ant-color-picker-sm"
+                class="studio-color-picker-trigger studio-color-picker-sm"
               >
                 <div
-                  class="ant-color-picker-color-block"
+                  class="studio-color-picker-color-block"
                 >
                   <div
-                    class="ant-color-picker-color-block-inner"
+                    class="studio-color-picker-color-block-inner"
                     style="background: rgb(22, 119, 255);"
                   />
                 </div>
                 <div
-                  class="ant-color-picker-trigger-text"
+                  class="studio-color-picker-trigger-text"
                 >
                   #1677FF
                 </div>
@@ -4934,6 +4960,19 @@ exports[`<ColumnList /> > renders controlled.tsx correctly 1`] = `
   padding-left: 13px;
 }
 
+.emotion-13:hover {
+  color: rgba(0, 0, 0, 0.88);
+  background-color: rgba(0, 0, 0, 0.04);
+  border-color: transparent;
+}
+
+.emotion-13:focus {
+  color: rgba(0, 0, 0, 0.88)!important;
+  background-color: rgba(0, 0, 0, 0.02)!important;
+  border-color: #1677ff!important;
+  box-shadow: none;
+}
+
 .emotion-14 .studio-select-selector {
   padding-left: 13px;
 }
@@ -5007,6 +5046,15 @@ exports[`<ColumnList /> > renders controlled.tsx correctly 1`] = `
 }
 
 <div>
+  <button
+    class="studio-btn studio-btn-primary studio-btn-block"
+    style="margin-bottom: 12px;"
+    type="button"
+  >
+    <span>
+      受控设置数据
+    </span>
+  </button>
   <div
     class="layoutkit-flexbox emotion-0 studio-column-list studio-sortable-list"
   >
@@ -5952,6 +6000,19 @@ exports[`<ColumnList /> > renders creatorButtonProps.tsx correctly 1`] = `
 
 .emotion-14 {
   padding-left: 13px;
+}
+
+.emotion-14:hover {
+  color: rgba(0, 0, 0, 0.88);
+  background-color: rgba(0, 0, 0, 0.04);
+  border-color: transparent;
+}
+
+.emotion-14:focus {
+  color: rgba(0, 0, 0, 0.88)!important;
+  background-color: rgba(0, 0, 0, 0.02)!important;
+  border-color: #1677ff!important;
+  box-shadow: none;
 }
 
 .emotion-15 .studio-select-selector {
@@ -6926,6 +6987,19 @@ exports[`<ColumnList /> > renders creatorButtonPropsFalse.tsx correctly 1`] = `
 
 .emotion-13 {
   padding-left: 13px;
+}
+
+.emotion-13:hover {
+  color: rgba(0, 0, 0, 0.88);
+  background-color: rgba(0, 0, 0, 0.04);
+  border-color: transparent;
+}
+
+.emotion-13:focus {
+  color: rgba(0, 0, 0, 0.88)!important;
+  background-color: rgba(0, 0, 0, 0.02)!important;
+  border-color: #1677ff!important;
+  box-shadow: none;
 }
 
 .emotion-14 .studio-select-selector {
@@ -7910,6 +7984,19 @@ exports[`<ColumnList /> > renders customCreate.tsx correctly 1`] = `
 
 .emotion-15 {
   padding-left: 13px;
+}
+
+.emotion-15:hover {
+  color: rgba(0, 0, 0, 0.88);
+  background-color: rgba(0, 0, 0, 0.04);
+  border-color: transparent;
+}
+
+.emotion-15:focus {
+  color: rgba(0, 0, 0, 0.88)!important;
+  background-color: rgba(0, 0, 0, 0.02)!important;
+  border-color: #1677ff!important;
+  box-shadow: none;
 }
 
 .emotion-16 .studio-select-selector {
@@ -9117,6 +9204,19 @@ exports[`<ColumnList /> > renders normal.tsx correctly 1`] = `
 
 .emotion-12 {
   padding-left: 13px;
+}
+
+.emotion-12:hover {
+  color: rgba(0, 0, 0, 0.88);
+  background-color: rgba(0, 0, 0, 0.04);
+  border-color: transparent;
+}
+
+.emotion-12:focus {
+  color: rgba(0, 0, 0, 0.88)!important;
+  background-color: rgba(0, 0, 0, 0.02)!important;
+  border-color: #1677ff!important;
+  box-shadow: none;
 }
 
 .emotion-15 {
