@@ -2,6 +2,7 @@ import { Collapse, Divider, Typography } from 'antd';
 import { CSSProperties, memo } from 'react';
 import ReactMarkdown from 'react-markdown';
 import rehypeKatex from 'rehype-katex';
+import rehypeRaw from 'rehype-raw';
 import remarkGfm from 'remark-gfm';
 import remarkMath from 'remark-math';
 
@@ -39,7 +40,7 @@ const Markdown = memo<MarkdownProps>(({ children, className, style, onDoubleClic
       <ReactMarkdown
         className={styles.markdown}
         components={components}
-        rehypePlugins={[rehypeKatex] as PluggableList}
+        rehypePlugins={[rehypeKatex, rehypeRaw] as PluggableList}
         remarkPlugins={[remarkGfm, remarkMath]}
         {...rest}
       >

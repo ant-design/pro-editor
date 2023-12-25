@@ -107,6 +107,7 @@
     "react-rnd": "^10.4.1",
     "reactflow": "^11.10.1",
     "rehype-katex": "^6.0.3",
+    "rehype-raw": "^6.0.0",
     "remark-gfm": "^3.0.1",
     "remark-math": "^5.1.1",
     "rxjs": "^7.8.1",
