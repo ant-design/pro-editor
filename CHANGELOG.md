@@ -1,5 +1,30 @@
 # Changelog
 
+## [Version&nbsp;0.35.0](https://github.com/ant-design/pro-editor/compare/v0.34.2...v0.35.0)
+
+<sup>Released on **2023-12-25**</sup>
+
+#### ✨ 新特性
+
+- Markdown support html render.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's improved
+
+- Markdown support html render ([4ad6e1f](https://github.com/ant-design/pro-editor/commit/4ad6e1f))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
 ### [Version&nbsp;0.34.2](https://github.com/ant-design/pro-editor/compare/v0.34.1...v0.34.2)
 
 <sup>Released on **2023-12-25**</sup>
