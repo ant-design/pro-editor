@@ -1,5 +1,30 @@
 # Changelog
 
+### [Version&nbsp;0.34.2](https://github.com/ant-design/pro-editor/compare/v0.34.1...v0.34.2)
+
+<sup>Released on **2023-12-25**</sup>
+
+#### 🐛 修复
+
+- Columnlist control error.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's fixed
+
+- Columnlist control error ([6b518aa](https://github.com/ant-design/pro-editor/commit/6b518aa))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
 ### [Version&nbsp;0.34.1](https://github.com/ant-design/pro-editor/compare/v0.34.0...v0.34.1)
 
 <sup>Released on **2023-12-22**</sup>
