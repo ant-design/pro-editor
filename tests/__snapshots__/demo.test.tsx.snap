@@ -3957,18 +3957,18 @@ exports[`<ColumnList /> > renders column.tsx correctly 1`] = `
                 </span>
               </div>
               <div
-                class="ant-color-picker-trigger ant-color-picker-sm"
+                class="studio-color-picker-trigger studio-color-picker-sm"
               >
                 <div
-                  class="ant-color-picker-color-block"
+                  class="studio-color-picker-color-block"
                 >
                   <div
-                    class="ant-color-picker-color-block-inner"
+                    class="studio-color-picker-color-block-inner"
                     style="background: rgb(22, 119, 255);"
                   />
                 </div>
                 <div
-                  class="ant-color-picker-trigger-text"
+                  class="studio-color-picker-trigger-text"
                 >
                   #1677FF
                 </div>
@@ -4185,18 +4185,18 @@ exports[`<ColumnList /> > renders column.tsx correctly 1`] = `
                 </span>
               </div>
               <div
-                class="ant-color-picker-trigger ant-color-picker-sm"
+                class="studio-color-picker-trigger studio-color-picker-sm"
               >
                 <div
-                  class="ant-color-picker-color-block"
+                  class="studio-color-picker-color-block"
                 >
                   <div
-                    class="ant-color-picker-color-block-inner"
+                    class="studio-color-picker-color-block-inner"
                     style="background: rgb(22, 119, 255);"
                   />
                 </div>
                 <div
-                  class="ant-color-picker-trigger-text"
+                  class="studio-color-picker-trigger-text"
                 >
                   #1677FF
                 </div>
@@ -4413,18 +4413,18 @@ exports[`<ColumnList /> > renders column.tsx correctly 1`] = `
                 </span>
               </div>
               <div
-                class="ant-color-picker-trigger ant-color-picker-sm"
+                class="studio-color-picker-trigger studio-color-picker-sm"
               >
                 <div
-                  class="ant-color-picker-color-block"
+                  class="studio-color-picker-color-block"
                 >
                   <div
-                    class="ant-color-picker-color-block-inner"
+                    class="studio-color-picker-color-block-inner"
                     style="background: rgb(22, 119, 255);"
                   />
                 </div>
                 <div
-                  class="ant-color-picker-trigger-text"
+                  class="studio-color-picker-trigger-text"
                 >
                   #1677FF
                 </div>
@@ -4641,18 +4641,18 @@ exports[`<ColumnList /> > renders column.tsx correctly 1`] = `
                 </span>
               </div>
               <div
-                class="ant-color-picker-trigger ant-color-picker-sm"
+                class="studio-color-picker-trigger studio-color-picker-sm"
               >
                 <div
-                  class="ant-color-picker-color-block"
+                  class="studio-color-picker-color-block"
                 >
                   <div
-                    class="ant-color-picker-color-block-inner"
+                    class="studio-color-picker-color-block-inner"
                     style="background: rgb(22, 119, 255);"
                   />
                 </div>
                 <div
-                  class="ant-color-picker-trigger-text"
+                  class="studio-color-picker-trigger-text"
                 >
                   #1677FF
                 </div>
