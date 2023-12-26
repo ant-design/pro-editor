@@ -1,4 +1,4 @@
-export const content = `# This is an H1
+const content = `# This is an H1
 ## This is an H2
 ### This is an H3
 #### This is an H4
@@ -85,7 +85,9 @@ $$
 $$
 \\int_{a}^{b} f(x) \\, dx
 $$
+`;
 
+const htmlContent = `
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -103,3 +105,5 @@ $$
 </body>
 </html>
 `;
+
+export { content, htmlContent };
