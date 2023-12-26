@@ -1,5 +1,38 @@
 # Changelog
 
+## [Version&nbsp;0.36.0](https://github.com/ant-design/pro-editor/compare/v0.35.1...v0.36.0)
+
+<sup>Released on **2023-12-26**</sup>
+
+#### ✨ 新特性
+
+- Add snapshot.
+
+#### 🐛 修复
+
+- Fixed memo markdown components was not show.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's improved
+
+- Add snapshot ([ec7471d](https://github.com/ant-design/pro-editor/commit/ec7471d))
+
+#### What's fixed
+
+- Fixed memo markdown components was not show ([406359c](https://github.com/ant-design/pro-editor/commit/406359c))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
 ### [Version&nbsp;0.35.1](https://github.com/ant-design/pro-editor/compare/v0.35.0...v0.35.1)
 
 <sup>Released on **2023-12-26**</sup>
