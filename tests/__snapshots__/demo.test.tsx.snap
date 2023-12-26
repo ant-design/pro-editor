@@ -26001,6 +26001,7 @@ exports[`<Markdown /> > renders index.tsx correctly 1`] = `
 
       <div
         class="studio-divider studio-divider-horizontal"
+        node="[object Object]"
         role="separator"
         style="margin-bottom: 1em; margin-top: 0px;"
       />
@@ -26027,6 +26028,7 @@ id sem consectetuer libero luctus adipiscing.
 
       <div
         class="studio-divider studio-divider-horizontal"
+        node="[object Object]"
         role="separator"
         style="margin-bottom: 1em; margin-top: 0px;"
       />
@@ -26046,6 +26048,7 @@ id sem consectetuer libero luctus adipiscing.
 
       <div
         class="studio-divider studio-divider-horizontal"
+        node="[object Object]"
         role="separator"
         style="margin-bottom: 1em; margin-top: 0px;"
       />
@@ -26105,6 +26108,7 @@ id sem consectetuer libero luctus adipiscing.
 
       <div
         class="studio-divider studio-divider-horizontal"
+        node="[object Object]"
         role="separator"
         style="margin-bottom: 1em; margin-top: 0px;"
       />
@@ -26164,6 +26168,7 @@ id sem consectetuer libero luctus adipiscing.
 
       <div
         class="studio-divider studio-divider-horizontal"
+        node="[object Object]"
         role="separator"
         style="margin-bottom: 1em; margin-top: 0px;"
       />
@@ -26173,7 +26178,12 @@ id sem consectetuer libero luctus adipiscing.
         This is 
         <a
           class="studio-typography"
-        />
+          href="http://example.com/"
+          node="[object Object]"
+          title="Title"
+        >
+          an example
+        </a>
          inline link.
       </p>
       
@@ -26181,7 +26191,11 @@ id sem consectetuer libero luctus adipiscing.
       <p>
         <a
           class="studio-typography"
-        />
+          href="http://example.com/"
+          node="[object Object]"
+        >
+          http://example.com/
+        </a>
       </p>
       
 
@@ -26553,6 +26567,7 @@ id sem consectetuer libero luctus adipiscing.
 
       <div
         class="studio-divider studio-divider-horizontal"
+        node="[object Object]"
         role="separator"
         style="margin-bottom: 1em; margin-top: 0px;"
       />
