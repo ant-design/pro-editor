@@ -1,10 +1,12 @@
 import { createStyles } from '../theme';
 
 export const useStyles = createStyles(
-  ({ token, css, cx, stylish }, { prefixCls, className, showPanel }) => {
+  ({ token, css, cx, stylish, prefixCls }, { className, showPanel }) => {
+    const prefix = `${prefixCls}-${token?.editorPrefix}-collapse-title`;
+
     return {
       container: cx(
-        prefixCls,
+        prefix,
         className,
         showPanel
           ? css`
@@ -16,7 +18,7 @@ export const useStyles = createStyles(
       ),
 
       header: cx(
-        showPanel ? `${prefixCls}-expand` : `${prefixCls}-collapsed`,
+        showPanel ? `${prefix}-expand` : `${prefix}-collapsed`,
         showPanel
           ? ''
           : css`

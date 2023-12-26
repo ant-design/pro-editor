@@ -4,8 +4,6 @@ import type { CSSProperties, FC, ReactNode } from 'react';
 import { Flexbox } from 'react-layout-kit';
 import useMergedState from 'use-merge-value';
 
-import { getPrefixCls } from '@/theme';
-
 import { ConfigProvider } from '../ConfigProvider';
 
 import { useStyles } from './style';
@@ -57,14 +55,11 @@ const CollapseTitle: FC<CollapseTitleProps> = ({
   defaultExpand = false,
   expand,
   onExpandChange,
-  prefixCls: customizePrefixCls,
   title,
   children,
   className,
   extra,
 }) => {
-  const prefixCls = getPrefixCls('collapse-title', customizePrefixCls);
-
   const [showPanel, setCollapsed] = useMergedState(defaultExpand, {
     value: expand,
     onChange: onExpandChange,
@@ -74,7 +69,7 @@ const CollapseTitle: FC<CollapseTitleProps> = ({
     setCollapsed(!showPanel);
   };
 
-  const { styles } = useStyles({ showPanel, prefixCls, className });
+  const { styles } = useStyles({ showPanel, className });
   return (
     <ConfigProvider>
       <Flexbox className={styles.container}>
