@@ -12,8 +12,8 @@ import { Flexbox } from 'react-layout-kit';
 import ControlInput from './renderItem/Input';
 import ControlSelect from './renderItem/Select';
 
-const useStyle = createStyles(({ css, cx }, prefixCls) => {
-  const prefix = `${prefixCls}-item`;
+const useStyle = createStyles(({ css, cx, token, prefixCls }) => {
+  const prefix = `${prefixCls}-${token.editorPrefix}-item`;
 
   return {
     item: cx(
@@ -74,7 +74,6 @@ interface ItemRenderProps<T = any> {
   item: T;
   dragging: boolean;
   index: number;
-  prefixCls: string;
   listeners: any;
   actions?: React.ReactNode[];
   hideRemove?: boolean;
@@ -82,18 +81,8 @@ interface ItemRenderProps<T = any> {
 }
 
 const ColumnItem = memo<ItemRenderProps>(
-  ({
-    item,
-    index,
-    prefixCls,
-    columns,
-    listeners,
-    actions,
-    hideRemove,
-    dragging,
-    creatorButtonProps,
-  }) => {
-    const { styles } = useStyle(prefixCls);
+  ({ item, index, columns, listeners, actions, hideRemove, dragging, creatorButtonProps }) => {
+    const { styles } = useStyle();
     const instance = useSortableList();
     return (
       <Flexbox className={styles.item} direction={'horizontal'} align={'center'}>
@@ -114,7 +103,6 @@ const ColumnItem = memo<ItemRenderProps>(
               id: item.id,
               index,
               dragging,
-              prefixCls,
               style,
               placeholder: col.placeholder,
               creatorButtonProps,

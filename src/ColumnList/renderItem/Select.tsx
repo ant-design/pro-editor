@@ -3,8 +3,8 @@ import { Select } from 'antd';
 import { createStyles } from 'antd-style';
 import { CSSProperties, memo } from 'react';
 
-const useStyle = createStyles(({ prefixCls: ant, css, cx }, prefixCls) => {
-  const prefix = `${prefixCls}-content`;
+const useStyle = createStyles(({ prefixCls: ant, token, css, cx }) => {
+  const prefix = `${ant}-${token.editorPrefix}-content`;
   return {
     select: cx(
       `${prefix}-tem`,
@@ -21,17 +21,16 @@ interface ItemRenderProps {
   dataIndex: string;
   value: string;
   index: number;
-  prefixCls: string;
   style: CSSProperties;
   options: ColumnItemOption[];
   placeholder?: string;
 }
 
 const ControlSelect = memo<ItemRenderProps>(
-  ({ dataIndex, value, index, prefixCls, style, options, placeholder }) => {
+  ({ dataIndex, value, index, style, options, placeholder }) => {
     const instance = useSortableList();
 
-    const { styles } = useStyle(prefixCls);
+    const { styles } = useStyle();
 
     return (
       <Select

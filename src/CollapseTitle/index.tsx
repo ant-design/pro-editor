@@ -1,10 +1,10 @@
 import { CaretRightFilled } from '@ant-design/icons';
 import { Divider } from 'antd';
-import type { CSSProperties, FC, ReactNode } from 'react';
+import { memo, type CSSProperties, type FC, type ReactNode } from 'react';
 import { Flexbox } from 'react-layout-kit';
 import useMergedState from 'use-merge-value';
 
-import { ConfigProvider } from '../ConfigProvider';
+import { withProvider } from '@ant-design/pro-editor';
 
 import { useStyles } from './style';
 
@@ -51,27 +51,20 @@ export interface CollapseTitleProps {
   children?: ReactNode;
 }
 
-const CollapseTitle: FC<CollapseTitleProps> = ({
-  defaultExpand = false,
-  expand,
-  onExpandChange,
-  title,
-  children,
-  className,
-  extra,
-}) => {
-  const [showPanel, setCollapsed] = useMergedState(defaultExpand, {
-    value: expand,
-    onChange: onExpandChange,
-  });
+const CollapseTitle: FC<CollapseTitleProps> = memo(
+  ({ defaultExpand = false, expand, onExpandChange, title, children, className, extra }) => {
+    const [showPanel, setCollapsed] = useMergedState(defaultExpand, {
+      value: expand,
+      onChange: onExpandChange,
+    });
 
-  const toggleCollapse = () => {
-    setCollapsed(!showPanel);
-  };
+    const toggleCollapse = () => {
+      setCollapsed(!showPanel);
+    };
 
-  const { styles } = useStyles({ showPanel, className });
-  return (
-    <ConfigProvider>
+    const { styles } = useStyles({ showPanel, className });
+
+    return (
       <Flexbox className={styles.container}>
         <Flexbox
           direction={'horizontal'}
@@ -99,8 +92,8 @@ const CollapseTitle: FC<CollapseTitleProps> = ({
           </>
         ) : null}
       </Flexbox>
-    </ConfigProvider>
-  );
-};
+    );
+  },
+);
 
-export default CollapseTitle;
+export default withProvider(CollapseTitle);
