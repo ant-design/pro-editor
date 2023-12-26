@@ -1,5 +1,30 @@
 # Changelog
 
+### [Version&nbsp;0.35.1](https://github.com/ant-design/pro-editor/compare/v0.35.0...v0.35.1)
+
+<sup>Released on **2023-12-26**</sup>
+
+#### 🐛 修复
+
+- Slove Markdown Plugin problem.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's fixed
+
+- Slove Markdown Plugin problem ([107b007](https://github.com/ant-design/pro-editor/commit/107b007))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
 ## [Version&nbsp;0.35.0](https://github.com/ant-design/pro-editor/compare/v0.34.2...v0.35.0)
 
 <sup>Released on **2023-12-25**</sup>
