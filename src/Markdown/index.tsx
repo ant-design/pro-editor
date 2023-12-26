@@ -21,10 +21,12 @@ export interface MarkdownProps {
   remarkPlugins?: PluggableList;
 }
 
-const MemoHr = memo(() => <Divider style={{ marginBottom: '1em', marginTop: 0 }} />);
-const MemoDetails = memo(() => <Collapse style={{ marginBottom: '1em' }} />);
-const MemoAlink = memo(() => <Typography.Link />);
-const MemoImage = memo(() => <img />);
+const MemoHr = memo((props) => (
+  <Divider style={{ marginBottom: '1em', marginTop: 0 }} {...props} />
+));
+const MemoDetails = memo((props) => <Collapse style={{ marginBottom: '1em' }} {...props} />);
+const MemoImage = memo((props) => <img {...props} />);
+const MemoAlink = memo((props) => <Typography.Link {...props} />);
 
 const Markdown = memo<MarkdownProps>(
   ({
@@ -38,9 +40,9 @@ const Markdown = memo<MarkdownProps>(
   }) => {
     const { styles } = useStyles();
     const components: any = {
-      a: MemoAlink,
       details: MemoDetails,
       hr: MemoHr,
+      a: MemoAlink,
       img: MemoImage,
       pre: Code,
     };
