@@ -5,6 +5,7 @@ export const initialState: SortableListState = {
   value: [],
   keyManager: [],
   hideRemove: false,
+  handle: true,
   onChange: undefined,
   renderItem: undefined,
   actions: [],

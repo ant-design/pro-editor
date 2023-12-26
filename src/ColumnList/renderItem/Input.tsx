@@ -1,7 +1,6 @@
-import { useSortableList } from '@ant-design/pro-editor';
-import { Input, InputRef } from 'antd';
+import { CreatorButtonProps, Input, useSortableList } from '@ant-design/pro-editor';
 import { createStyles } from 'antd-style';
-import { CSSProperties, memo, useEffect, useRef, useState } from 'react';
+import { CSSProperties, memo, useEffect, useRef } from 'react';
 
 const useStyle = createStyles(({ css, cx }, prefixCls) => {
   const prefix = `${prefixCls}-content`;
@@ -23,21 +22,14 @@ interface ItemRenderProps {
   prefixCls: string;
   style: CSSProperties;
   placeholder?: string;
+  creatorButtonProps: CreatorButtonProps | false;
 }
 
 const ControlInput = memo<ItemRenderProps>(
-  ({ dataIndex, placeholder, value, index, prefixCls, style, dragging }) => {
+  ({ dataIndex, placeholder, value, index, prefixCls, style, dragging, creatorButtonProps }) => {
     const instance = useSortableList();
-    const inputRef = useRef<InputRef>(null);
-    const [innerValue, setInnerValue] = useState(value);
-    const [changed, setChanged] = useState(false);
-    const shouldChange = useRef(true);
+    const inputRef = useRef(null);
     const { styles } = useStyle(prefixCls);
-
-    const updateTitle = () => {
-      instance.updateItem({ [dataIndex]: innerValue }, index);
-      setChanged(false);
-    };
 
     useEffect(() => {
       if (dragging) {
@@ -53,42 +45,31 @@ const ControlInput = memo<ItemRenderProps>(
     const handleNextFocus = () => {
       const value = instance.getValue() || [];
       // 如果是最后一个节点，按下回车后，会自动添加一个新的节点
-      if (index + 1 === value.length) {
-        instance.addItem({ [dataIndex]: '' });
+      if (index + 1 === value.length && creatorButtonProps !== false) {
+        const { record } = creatorButtonProps;
+        instance.addItem(record(value.length));
       }
 
       setTimeout(() => {
         const nextNodeEl = document.getElementById(customListId(index + 1));
         nextNodeEl?.focus();
-      }, 200);
+      }, 0);
     };
 
     return (
       <Input
         size={'small'}
         ref={inputRef}
-        value={innerValue}
+        value={value}
         style={style}
         id={customListId(index)}
-        onCompositionStart={() => {
-          shouldChange.current = false;
-        }}
         placeholder={placeholder || '请输入'}
-        onCompositionEnd={() => {
-          shouldChange.current = true;
-        }}
-        onBlur={() => {
-          if (changed) updateTitle();
-        }}
         className={styles.input}
         onPressEnter={() => {
-          if (!shouldChange.current) return;
-          if (changed) updateTitle();
           handleNextFocus();
         }}
-        onChange={(e) => {
-          setInnerValue(e.target.value);
-          setChanged(true);
+        onChange={(value) => {
+          instance.updateItem({ [dataIndex]: value }, index);
         }}
       />
     );

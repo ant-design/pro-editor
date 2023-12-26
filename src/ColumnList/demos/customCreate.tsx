@@ -1,6 +1,6 @@
 /**
  * title: 自定义创建逻辑
- * description: 你可以设置 `creatorButtonProps={false}` 来关闭默认的创建效果，然后自定义创建逻辑
+ * description: 你可以设置 `style` 属性来隐藏默认添加按钮，然后自定义创建按钮
  */
 import { PlusCircleTwoTone } from '@ant-design/icons';
 import type { ColumnItemList, SortableListRef } from '@ant-design/pro-editor';
@@ -58,9 +58,14 @@ const columns: ColumnItemList<SchemaItem> = [
 export default () => {
   const ref = useRef<SortableListRef<SchemaItem>>(null);
 
-  const handleCreate = () => {
+  const createNewRecord = () => {
     const id = `id-${randomIndex()}}`;
-    ref.current.addItem({ dataIndex: id, title: `new-${id}`, valueType: 'text' });
+    return { dataIndex: '', title: `new-${id}`, valueType: 'text' };
+  };
+
+  const handleCreate = () => {
+    const data = createNewRecord();
+    ref.current.addItem(data);
   };
 
   return (
@@ -93,7 +98,7 @@ export default () => {
         onChange={(values) => {
           console.log('onChange', values);
         }}
-        creatorButtonProps={false}
+        creatorButtonProps={{ style: { display: 'none' }, record: createNewRecord }}
       />
     </>
   );

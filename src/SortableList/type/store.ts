@@ -66,6 +66,10 @@ export interface SortableListState {
    * 隐藏
    */
   hideRemove?: boolean;
+  /**
+   * 是否显示拖拽手柄
+   */
+  handle?: boolean;
 }
 
 /**
@@ -127,6 +131,10 @@ export interface StoreUpdaterProps<T = any> {
    * 是否隐藏删除按钮，默认为 false
    */
   hideRemove?: boolean;
+  /**
+   * 是否显示拖拽手柄，默认 true
+   */
+  handle?: boolean;
   /**
    * 自定义排序容器样式
    */

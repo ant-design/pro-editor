@@ -1,9 +1,10 @@
+import { memo } from 'react';
 import { ConfigProvider } from '../ConfigProvider';
 import { HighlightBase, HighlightProps } from './defalut';
 import { useStyles } from './style';
 import FullFeatureWrapper from './wrapper';
 
-const Highlight = (props: HighlightProps) => {
+const Highlight = memo<HighlightProps>((props: HighlightProps) => {
   const { type, theme, containerWrapper } = props;
   const { theme: token } = useStyles({
     type,
@@ -27,7 +28,7 @@ const Highlight = (props: HighlightProps) => {
       {containerWrapper ? <FullFeatureWrapper {...props} /> : <HighlightBase {...props} />}
     </ConfigProvider>
   );
-};
+});
 
 export * from './defalut';
 export * from './wrapper';

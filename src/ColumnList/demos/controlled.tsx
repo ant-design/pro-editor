@@ -4,6 +4,7 @@
  */
 import type { ColumnItemList } from '@ant-design/pro-editor';
 import { ColumnList } from '@ant-design/pro-editor';
+import { Button } from 'antd';
 import { useState } from 'react';
 
 import { tableColumnValueOptions } from './mock_data/options';
@@ -47,13 +48,36 @@ export default () => {
   const [value, setValue] = useState(INIT_VALUES);
 
   return (
-    <ColumnList<SchemaItem>
-      columns={columns}
-      value={value}
-      onChange={(values) => {
-        setValue(values);
-        console.log('onChange', values);
-      }}
-    />
+    <>
+      <Button
+        type="primary"
+        block
+        onClick={() => {
+          setValue([
+            {
+              dataIndex: 'orderCreated',
+              valueType: 'date',
+              title: '订单创建时间',
+            },
+            {
+              dataIndex: 'detailPic',
+              valueType: 'text',
+              title: '产品详情图',
+            },
+          ]);
+        }}
+        style={{ marginBottom: 12 }}
+      >
+        受控设置数据
+      </Button>
+      <ColumnList<SchemaItem>
+        columns={columns}
+        value={value}
+        onChange={(values) => {
+          setValue(values);
+          console.log('onChange', values);
+        }}
+      />
+    </>
   );
 };

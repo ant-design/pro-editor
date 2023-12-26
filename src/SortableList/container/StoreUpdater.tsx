@@ -20,6 +20,7 @@ const StoreUpdater = forwardRef(
       getItemStyles,
       creatorButtonProps,
       hideRemove,
+      handle,
     }: StoreUpdaterProps,
     ref,
   ) => {
@@ -55,6 +56,7 @@ const StoreUpdater = forwardRef(
     useStoreUpdater('getItemStyles', getItemStyles);
     useStoreUpdater('creatorButtonProps', creatorButtonProps);
     useStoreUpdater('hideRemove', hideRemove);
+    useStoreUpdater('handle', handle);
 
     // KeyManager 状态受控
     useStoreUpdater('initialValues', initialValues, [], (state) => {

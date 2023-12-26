@@ -1,5 +1,6 @@
 import {
   ColumnItemList,
+  CreatorButtonProps,
   DeleteAction,
   HandleAction,
   useSortableList,
@@ -77,10 +78,21 @@ interface ItemRenderProps<T = any> {
   listeners: any;
   actions?: React.ReactNode[];
   hideRemove?: boolean;
+  creatorButtonProps: CreatorButtonProps | false;
 }
 
 const ColumnItem = memo<ItemRenderProps>(
-  ({ item, index, prefixCls, columns, listeners, actions, hideRemove, dragging }) => {
+  ({
+    item,
+    index,
+    prefixCls,
+    columns,
+    listeners,
+    actions,
+    hideRemove,
+    dragging,
+    creatorButtonProps,
+  }) => {
     const { styles } = useStyle(prefixCls);
     const instance = useSortableList();
     return (
@@ -105,7 +117,9 @@ const ColumnItem = memo<ItemRenderProps>(
               prefixCls,
               style,
               placeholder: col.placeholder,
+              creatorButtonProps,
             };
+
             switch (col.type) {
               default:
               case 'input':
