@@ -40,13 +40,13 @@ group: 基础组件
 
 ## API
 
-| 参数         | 说明                                | 类型                                      | 默认值   |
-| :----------- | :---------------------------------- | :---------------------------------------- | :------- |
-| title        | 引导标题                            | `string`                                  | -        |
-| placement    | ToolTip 位置                        | `TooltipProps['placement']`               | 'bottom' |
-| offsetY      | 纵向偏移值                          | number                                    | -        |
-| maxWidth     | 最大宽度                            | number                                    | 300      |
-| open         | 受控的 open 属性                    | boolean                                   | -        |
-| onOpenChange | 当 open 属性变化时候的触发          | (open: boolean) => void                   | -        |
-| defaultOpen  | 默认时候的打开状态                  | boolean                                   | -        |
+| 参数           | 说明                          | 类型                                        | 默认值      |
+| :----------- | :-------------------------- | :---------------------------------------- | :------- |
+| title        | 引导标题                        | `string`                                  | -        |
+| placement    | ToolTip 位置                  | `TooltipProps['placement']`               | 'bottom' |
+| offsetY      | 纵向偏移值                       | number                                    | -        |
+| maxWidth     | 最大宽度                        | number                                    | 300      |
+| open         | 受控的 open 属性                 | boolean                                   | -        |
+| onOpenChange | 当 open 属性变化时候的触发            | (open: boolean) => void                   | -        |
+| defaultOpen  | 默认时候的打开状态                   | boolean                                   | -        |
 | footerRender | 用于自定义 footer 部分的 render api | (dom: React.ReactNode) => React.ReactNode | -        |

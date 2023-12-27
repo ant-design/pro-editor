@@ -21,9 +21,9 @@ group: 基础组件
 
 ## API
 
-| 参数          | 说明           | 类型                              | 默认值 |
-| :------------ | :------------- | :-------------------------------- | :----- |
-| type          | 字段类型       | 参考 `FieldIcon` 字段类型类型枚举 | -      |
-| isParentArray | 父级是否是数组 | boolean                           | -      |
-| title         | 字段标题       | `React.ReactNode`                 | -      |
-| description   | 标题右侧描述   | `React.ReactNode`                 | -      |
+| 参数            | 说明      | 类型                      | 默认值 |
+| :------------ | :------ | :---------------------- | :-- |
+| type          | 字段类型    | 参考 `FieldIcon` 字段类型类型枚举 | -   |
+| isParentArray | 父级是否是数组 | boolean                 | -   |
+| title         | 字段标题    | `React.ReactNode`       | -   |
+| description   | 标题右侧描述  | `React.ReactNode`       | -   |

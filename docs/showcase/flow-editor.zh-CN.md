@@ -10,4 +10,4 @@ Flow Editor 是一套节点式运行大模型的编辑工具。
 
 ## 访问地址
 
-https://github.com/ant-design/pro-flow-editor
+<https://github.com/ant-design/pro-flow-editor>

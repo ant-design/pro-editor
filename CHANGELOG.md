@@ -1,6 +1,6 @@
 # Changelog
 
-## [Version&nbsp;0.36.0](https://github.com/ant-design/pro-editor/compare/v0.35.1...v0.36.0)
+## [Version 0.36.0](https://github.com/ant-design/pro-editor/compare/v0.35.1...v0.36.0)
 
 <sup>Released on **2023-12-26**</sup>
 
@@ -33,7 +33,7 @@
 
 </div>
 
-### [Version&nbsp;0.35.1](https://github.com/ant-design/pro-editor/compare/v0.35.0...v0.35.1)
+### [Version 0.35.1](https://github.com/ant-design/pro-editor/compare/v0.35.0...v0.35.1)
 
 <sup>Released on **2023-12-26**</sup>
 
@@ -58,7 +58,7 @@
 
 </div>
 
-## [Version&nbsp;0.35.0](https://github.com/ant-design/pro-editor/compare/v0.34.2...v0.35.0)
+## [Version 0.35.0](https://github.com/ant-design/pro-editor/compare/v0.34.2...v0.35.0)
 
 <sup>Released on **2023-12-25**</sup>
 
@@ -83,7 +83,7 @@
 
 </div>
 
-### [Version&nbsp;0.34.2](https://github.com/ant-design/pro-editor/compare/v0.34.1...v0.34.2)
+### [Version 0.34.2](https://github.com/ant-design/pro-editor/compare/v0.34.1...v0.34.2)
 
 <sup>Released on **2023-12-25**</sup>
 
@@ -108,7 +108,7 @@
 
 </div>
 
-### [Version&nbsp;0.34.1](https://github.com/ant-design/pro-editor/compare/v0.34.0...v0.34.1)
+### [Version 0.34.1](https://github.com/ant-design/pro-editor/compare/v0.34.0...v0.34.1)
 
 <sup>Released on **2023-12-22**</sup>
 
@@ -133,7 +133,7 @@
 
 </div>
 
-## [Version&nbsp;0.34.0](https://github.com/ant-design/pro-editor/compare/v0.33.1...v0.34.0)
+## [Version 0.34.0](https://github.com/ant-design/pro-editor/compare/v0.33.1...v0.34.0)
 
 <sup>Released on **2023-12-22**</sup>
 
@@ -166,7 +166,7 @@
 
 </div>
 
-### [Version&nbsp;0.33.1](https://github.com/ant-design/pro-editor/compare/v0.33.0...v0.33.1)
+### [Version 0.33.1](https://github.com/ant-design/pro-editor/compare/v0.33.0...v0.33.1)
 
 <sup>Released on **2023-12-20**</sup>
 
@@ -191,7 +191,7 @@
 
 </div>
 
-## [Version&nbsp;0.33.0](https://github.com/ant-design/pro-editor/compare/v0.32.0...v0.33.0)
+## [Version 0.33.0](https://github.com/ant-design/pro-editor/compare/v0.32.0...v0.33.0)
 
 <sup>Released on **2023-12-20**</sup>
 
@@ -246,7 +246,7 @@
 
 </div>
 
-## [Version&nbsp;0.33.0-rc.1](https://github.com/ant-design/pro-editor/compare/v0.32.0...v0.33.0-rc.1)
+## [Version 0.33.0-rc.1](https://github.com/ant-design/pro-editor/compare/v0.32.0...v0.33.0-rc.1)
 
 <sup>Released on **2023-12-20**</sup>
 
@@ -301,7 +301,7 @@
 
 </div>
 
-## [Version&nbsp;0.32.0](https://github.com/ant-design/pro-editor/compare/v0.31.1...v0.32.0)
+## [Version 0.32.0](https://github.com/ant-design/pro-editor/compare/v0.31.1...v0.32.0)
 
 <sup>Released on **2023-12-20**</sup>
 
@@ -334,7 +334,7 @@
 
 </div>
 
-### [Version&nbsp;0.31.1](https://github.com/ant-design/pro-editor/compare/v0.31.0...v0.31.1)
+### [Version 0.31.1](https://github.com/ant-design/pro-editor/compare/v0.31.0...v0.31.1)
 
 <sup>Released on **2023-12-18**</sup>
 
@@ -360,7 +360,7 @@
 
 </div>
 
-## [Version&nbsp;0.31.0](https://github.com/ant-design/pro-editor/compare/v0.30.0...v0.31.0)
+## [Version 0.31.0](https://github.com/ant-design/pro-editor/compare/v0.30.0...v0.31.0)
 
 <sup>Released on **2023-12-12**</sup>
 
@@ -385,7 +385,7 @@
 
 </div>
 
-## [Version&nbsp;0.30.0](https://github.com/ant-design/pro-editor/compare/v0.29.2...v0.30.0)
+## [Version 0.30.0](https://github.com/ant-design/pro-editor/compare/v0.29.2...v0.30.0)
 
 <sup>Released on **2023-12-06**</sup>
 
@@ -428,7 +428,7 @@
 
 </div>
 
-## [Version&nbsp;0.30.0-rc.2](https://github.com/ant-design/pro-editor/compare/v0.30.0-rc.1...v0.30.0-rc.2)
+## [Version 0.30.0-rc.2](https://github.com/ant-design/pro-editor/compare/v0.30.0-rc.1...v0.30.0-rc.2)
 
 <sup>Released on **2023-12-05**</sup>
 
@@ -454,7 +454,7 @@
 
 </div>
 
-## [Version&nbsp;0.30.0-rc.1](https://github.com/ant-design/pro-editor/compare/v0.29.2...v0.30.0-rc.1)
+## [Version 0.30.0-rc.1](https://github.com/ant-design/pro-editor/compare/v0.29.2...v0.30.0-rc.1)
 
 <sup>Released on **2023-12-04**</sup>
 
@@ -492,7 +492,7 @@
 
 </div>
 
-## [Version&nbsp;0.29.0-rc.1](https://github.com/ant-design/pro-editor/compare/v0.28.0...v0.29.0-rc.1)
+## [Version 0.29.0-rc.1](https://github.com/ant-design/pro-editor/compare/v0.28.0...v0.29.0-rc.1)
 
 <sup>Released on **2023-12-04**</sup>
 
@@ -529,7 +529,7 @@
 
 </div>
 
-## [Version&nbsp;0.28.0](https://github.com/ant-design/pro-editor/compare/v0.27.0...v0.28.0)
+## [Version 0.28.0](https://github.com/ant-design/pro-editor/compare/v0.27.0...v0.28.0)
 
 <sup>Released on **2023-11-24**</sup>
 
@@ -562,7 +562,7 @@
 
 </div>
 
-## [Version&nbsp;0.28.0-alpha.1](https://github.com/ant-design/pro-editor/compare/v0.27.0...v0.28.0-alpha.1)
+## [Version 0.28.0-alpha.1](https://github.com/ant-design/pro-editor/compare/v0.27.0...v0.28.0-alpha.1)
 
 <sup>Released on **2023-11-24**</sup>
 
@@ -595,7 +595,7 @@
 
 </div>
 
-## [Version&nbsp;0.27.0](https://github.com/ant-design/pro-editor/compare/v0.26.0...v0.27.0)
+## [Version 0.27.0](https://github.com/ant-design/pro-editor/compare/v0.26.0...v0.27.0)
 
 <sup>Released on **2023-11-24**</sup>
 
@@ -621,7 +621,7 @@
 
 </div>
 
-## [Version&nbsp;0.26.0](https://github.com/ant-design/pro-editor/compare/v0.25.0...v0.26.0)
+## [Version 0.26.0](https://github.com/ant-design/pro-editor/compare/v0.25.0...v0.26.0)
 
 <sup>Released on **2023-11-22**</sup>
 
@@ -657,7 +657,7 @@
 
 </div>
 
-## [Version&nbsp;0.25.0](https://github.com/ant-design/pro-editor/compare/v0.24.0...v0.25.0)
+## [Version 0.25.0](https://github.com/ant-design/pro-editor/compare/v0.24.0...v0.25.0)
 
 <sup>Released on **2023-11-09**</sup>
 
@@ -691,7 +691,7 @@
 
 </div>
 
-## [Version&nbsp;0.24.0](https://github.com/ant-design/pro-editor/compare/v0.23.0...v0.24.0)
+## [Version 0.24.0](https://github.com/ant-design/pro-editor/compare/v0.23.0...v0.24.0)
 
 <sup>Released on **2023-11-06**</sup>
 
@@ -719,7 +719,7 @@
 
 </div>
 
-## [Version&nbsp;0.23.0](https://github.com/ant-design/pro-editor/compare/v0.22.0...v0.23.0)
+## [Version 0.23.0](https://github.com/ant-design/pro-editor/compare/v0.22.0...v0.23.0)
 
 <sup>Released on **2023-10-31**</sup>
 
@@ -756,7 +756,7 @@
 
 </div>
 
-## [Version&nbsp;0.22.0](https://github.com/ant-design/pro-editor/compare/v0.21.0...v0.22.0)
+## [Version 0.22.0](https://github.com/ant-design/pro-editor/compare/v0.21.0...v0.22.0)
 
 <sup>Released on **2023-10-31**</sup>
 
@@ -793,7 +793,7 @@
 
 </div>
 
-## [Version&nbsp;0.21.0](https://github.com/ant-design/pro-editor/compare/v0.20.5...v0.21.0)
+## [Version 0.21.0](https://github.com/ant-design/pro-editor/compare/v0.20.5...v0.21.0)
 
 <sup>Released on **2023-10-13**</sup>
 
@@ -830,7 +830,7 @@
 
 </div>
 
-### [Version&nbsp;0.20.5](https://github.com/ant-design/pro-editor/compare/v0.20.4...v0.20.5)
+### [Version 0.20.5](https://github.com/ant-design/pro-editor/compare/v0.20.4...v0.20.5)
 
 <sup>Released on **2023-09-18**</sup>
 
@@ -845,7 +845,7 @@
 
 #### What's fixed
 
-- 修复 FieldTitle 样式错误, closes [#92](https://github.com/ant-design/pro-editor/issues/92) ([789172e](https://github.com/ant-design/pro-editor/commit/789172e))
+- 修复 FieldTitle 样式错误，closes [#92](https://github.com/ant-design/pro-editor/issues/92) ([789172e](https://github.com/ant-design/pro-editor/commit/789172e))
 
 </details>
 
@@ -855,7 +855,7 @@
 
 </div>
 
-### [Version&nbsp;0.20.4](https://github.com/ant-design/pro-editor/compare/v0.20.3...v0.20.4)
+### [Version 0.20.4](https://github.com/ant-design/pro-editor/compare/v0.20.3...v0.20.4)
 
 <sup>Released on **2023-09-15**</sup>
 
@@ -880,7 +880,7 @@
 
 </div>
 
-### [Version&nbsp;0.20.3](https://github.com/ant-design/pro-editor/compare/v0.20.2...v0.20.3)
+### [Version 0.20.3](https://github.com/ant-design/pro-editor/compare/v0.20.2...v0.20.3)
 
 <sup>Released on **2023-09-15**</sup>
 
@@ -906,7 +906,7 @@
 
 </div>
 
-### [Version&nbsp;0.20.2](https://github.com/ant-design/pro-editor/compare/v0.20.1...v0.20.2)
+### [Version 0.20.2](https://github.com/ant-design/pro-editor/compare/v0.20.1...v0.20.2)
 
 <sup>Released on **2023-09-13**</sup>
 
@@ -931,7 +931,7 @@
 
 </div>
 
-### [Version&nbsp;0.20.1](https://github.com/ant-design/pro-editor/compare/v0.20.0...v0.20.1)
+### [Version 0.20.1](https://github.com/ant-design/pro-editor/compare/v0.20.0...v0.20.1)
 
 <sup>Released on **2023-09-12**</sup>
 
@@ -956,7 +956,7 @@
 
 </div>
 
-## [Version&nbsp;0.20.0](https://github.com/ant-design/pro-editor/compare/v0.19.1...v0.20.0)
+## [Version 0.20.0](https://github.com/ant-design/pro-editor/compare/v0.19.1...v0.20.0)
 
 <sup>Released on **2023-09-08**</sup>
 
@@ -990,7 +990,7 @@
 
 </div>
 
-### [Version&nbsp;0.19.1](https://github.com/ant-design/pro-editor/compare/v0.19.0...v0.19.1)
+### [Version 0.19.1](https://github.com/ant-design/pro-editor/compare/v0.19.0...v0.19.1)
 
 <sup>Released on **2023-09-07**</sup>
 
@@ -1016,7 +1016,7 @@
 
 </div>
 
-## [Version&nbsp;0.19.0](https://github.com/ant-design/pro-editor/compare/v0.18.1...v0.19.0)
+## [Version 0.19.0](https://github.com/ant-design/pro-editor/compare/v0.18.1...v0.19.0)
 
 <sup>Released on **2023-09-06**</sup>
 
@@ -1049,7 +1049,7 @@
 
 </div>
 
-### [Version&nbsp;0.18.1](https://github.com/ant-design/pro-editor/compare/v0.18.0...v0.18.1)
+### [Version 0.18.1](https://github.com/ant-design/pro-editor/compare/v0.18.0...v0.18.1)
 
 <sup>Released on **2023-09-04**</sup>
 
@@ -1074,7 +1074,7 @@
 
 </div>
 
-## [Version&nbsp;0.18.0](https://github.com/ant-design/pro-editor/compare/v0.17.0...v0.18.0)
+## [Version 0.18.0](https://github.com/ant-design/pro-editor/compare/v0.17.0...v0.18.0)
 
 <sup>Released on **2023-09-01**</sup>
 
@@ -1108,7 +1108,7 @@
 
 </div>
 
-## [Version&nbsp;0.17.0](https://github.com/ant-design/pro-editor/compare/v0.16.0...v0.17.0)
+## [Version 0.17.0](https://github.com/ant-design/pro-editor/compare/v0.16.0...v0.17.0)
 
 <sup>Released on **2023-08-31**</sup>
 
@@ -1143,7 +1143,7 @@
 
 </div>
 
-## [Version&nbsp;0.16.0](https://github.com/ant-design/pro-editor/compare/v0.15.0...v0.16.0)
+## [Version 0.16.0](https://github.com/ant-design/pro-editor/compare/v0.15.0...v0.16.0)
 
 <sup>Released on **2023-08-31**</sup>
 
@@ -1153,7 +1153,7 @@
 
 #### 🐛 修复
 
-- DispatchListData error, 修复控制台报错, 去除自动生成 ID 的逻辑,改为由用户自行传递 ID.
+- DispatchListData error, 修复控制台报错，去除自动生成 ID 的逻辑，改为由用户自行传递 ID.
 
 <br/>
 
@@ -1178,7 +1178,7 @@
 
 </div>
 
-## [Version&nbsp;0.15.0](https://github.com/ant-design/pro-editor/compare/v0.14.1...v0.15.0)
+## [Version 0.15.0](https://github.com/ant-design/pro-editor/compare/v0.14.1...v0.15.0)
 
 <sup>Released on **2023-08-30**</sup>
 
@@ -1203,13 +1203,13 @@
 
 </div>
 
-### [Version&nbsp;0.14.1](https://github.com/ant-design/pro-editor/compare/v0.14.0...v0.14.1)
+### [Version 0.14.1](https://github.com/ant-design/pro-editor/compare/v0.14.0...v0.14.1)
 
 <sup>Released on **2023-08-29**</sup>
 
 #### 🐛 修复
 
-- Drag over index lost, 修复 sortableList item 样式问题 && 更新文档, 多实例时的定位错误问题.
+- Drag over index lost, 修复 sortableList item 样式问题 && 更新文档，多实例时的定位错误问题.
 
 <br/>
 
@@ -1230,13 +1230,13 @@
 
 </div>
 
-## [Version&nbsp;0.14.0](https://github.com/ant-design/pro-editor/compare/v0.13.1...v0.14.0)
+## [Version 0.14.0](https://github.com/ant-design/pro-editor/compare/v0.13.1...v0.14.0)
 
 <sup>Released on **2023-08-29**</sup>
 
 #### ✨ 新特性
 
-- Auto generate id, support getItemStyles, 将创建按钮迁移到 columnList, 自定义创建按钮, 迁移 creatorButtonProps 属性到 columnList.
+- Auto generate id, support getItemStyles, 将创建按钮迁移到 columnList, 自定义创建按钮，迁移 creatorButtonProps 属性到 columnList.
 
 #### 🐛 修复
 
@@ -1269,28 +1269,28 @@
 
 </div>
 
-## [Version&nbsp;0.2.0](https://github.com/ant-design/pro-editor/compare/v0.1.1...v0.2.0)
+## [Version 0.2.0](https://github.com/ant-design/pro-editor/compare/v0.1.1...v0.2.0)
 
 <sup>Released on **2023-08-28**</sup>
 
 #### ✨ 新特性
 
-- **component-asset**: CreateUseAssetStore 方法支持导出 AssetProvider, 优化 createTestAssetStore ，便于下游测试, 添加 createTestAssetStore 方法，便于下游测试.
-- **pro-editor**: 增加 updateCanvasInteraction 方法, 支持 getCanvasInteraction，并调整 store set、get 命名风格, 支持撤销重做, 支持配置 ProEditorStore 在 devtools 中的名称.
+- **component-asset**: CreateUseAssetStore 方法支持导出 AssetProvider, 优化 createTestAssetStore ，便于下游测试，添加 createTestAssetStore 方法，便于下游测试.
+- **pro-editor**: 增加 updateCanvasInteraction 方法，支持 getCanvasInteraction，并调整 store set、get 命名风格，支持撤销重做，支持配置 ProEditorStore 在 devtools 中的名称.
 - **sortable-list**: 导出 SortableListDispatchPayload 类型定义.
-- **sortable-tree**: 支持禁用拖拽功能, 新增 sortableRule 函数规则，控制拖动排序.
-- Add ActinGroup Components, add c2d2c getDiffPropsWithSchema and getSymbolMasterNameFromProps func, add field component, add more ActionGroup api support & style update, add more antd temple components, SortableList support onChange event, support undo/redo for ProEditor, update Action Css Transition, update snapshot, 完善 AssetStore 数据链路, 实现 AssetStore 与 EditorStore 的状态自动同步, 新增 ContextMenu 组件, 新增 LevaPanel 属性面板, 重构优化 ComponentAsset store 实现，收敛 AssetStore 的定义方式.
+- **sortable-tree**: 支持禁用拖拽功能，新增 sortableRule 函数规则，控制拖动排序.
+- Add ActinGroup Components, add c2d2c getDiffPropsWithSchema and getSymbolMasterNameFromProps func, add field component, add more ActionGroup api support & style update, add more antd temple components, SortableList support onChange event, support undo/redo for ProEditor, update Action Css Transition, update snapshot, 完善 AssetStore 数据链路，实现 AssetStore 与 EditorStore 的状态自动同步，新增 ContextMenu 组件，新增 LevaPanel 属性面板，重构优化 ComponentAsset store 实现，收敛 AssetStore 的定义方式.
 
 #### 🐛 修复
 
-- **awareness**: 修正类型导出问题, 兼容服务端渲染.
-- **component-asset**: 修正 AssetSchema 类型, 修正 CreateAssetStore 的类型，对齐到 ProEditorInstance, 修正类型.
-- **excel-table**: 修正 Hansontable 在 server 端的兼容性问题, 修正 Hansontable 在 server 端的兼容性问题.
-- **pro-editor**: 修正与 assetStore 的数据同步问题, 调整 devtools api 名称.
+- **awareness**: 修正类型导出问题，兼容服务端渲染.
+- **component-asset**: 修正 AssetSchema 类型，修正 CreateAssetStore 的类型，对齐到 ProEditorInstance, 修正类型.
+- **excel-table**: 修正 Hansontable 在 server 端的兼容性问题，修正 Hansontable 在 server 端的兼容性问题.
+- **pro-editor**: 修正与 assetStore 的数据同步问题，调整 devtools api 名称.
 - **sortable-list**: 兼容默认数据展示.
-- **sortable-tree**: 修正 ReactNodeProps 方法类型定义, 修正 SortableTree 在 server 端的兼容性问题, 修正 SortableTree 在 server 端的兼容性问题.
+- **sortable-tree**: 修正 ReactNodeProps 方法类型定义，修正 SortableTree 在 server 端的兼容性问题，修正 SortableTree 在 server 端的兼容性问题.
 - **use-proeditor**: 修正 togglePanelExpand 方法缺失的 bug.
-- Fix avatar key, fix config update, fix Input ref props, fix miss deps, github pages css style lost, highlight scroll error, refactor with zustand v4.4 equalFn, remove lucide icon, SortableList 默认空数据处理, test case error, test snapshot udpate, update snapshot, update snapshot, update snapshot, upgrade zustand version, 优化 Input 和 InputNumber 组件的受控变更逻辑, 修正潜藏的 undo/redo bug，并补充单测, 将 antd-style 设为 peer，修正 ThemeProvider 多实例问题, 将 handsontable 模块异步导入，解决 SSR 下无法使用的问题.
+- Fix avatar key, fix config update, fix Input ref props, fix miss deps, github pages css style lost, highlight scroll error, refactor with zustand v4.4 equalFn, remove lucide icon, SortableList 默认空数据处理，test case error, test snapshot udpate, update snapshot, update snapshot, update snapshot, upgrade zustand version, 优化 Input 和 InputNumber 组件的受控变更逻辑，修正潜藏的 undo/redo bug，并补充单测，将 antd-style 设为 peer，修正 ThemeProvider 多实例问题，将 handsontable 模块异步导入，解决 SSR 下无法使用的问题.
 
 #### 💄 样式
 
@@ -1313,7 +1313,7 @@
 - **pro-editor**: 支持配置 ProEditorStore 在 devtools 中的名称 ([2cedbb3](https://github.com/ant-design/pro-editor/commit/2cedbb3))
 - **sortable-list**: 导出 SortableListDispatchPayload 类型定义 ([f47782b](https://github.com/ant-design/pro-editor/commit/f47782b))
 - **sortable-tree**: 支持禁用拖拽功能 ([9a00235](https://github.com/ant-design/pro-editor/commit/9a00235))
-- **sortable-tree**: 新增 sortableRule 函数规则，控制拖动排序, closes [#46](https://github.com/ant-design/pro-editor/issues/46) ([e941865](https://github.com/ant-design/pro-editor/commit/e941865))
+- **sortable-tree**: 新增 sortableRule 函数规则，控制拖动排序，closes [#46](https://github.com/ant-design/pro-editor/issues/46) ([e941865](https://github.com/ant-design/pro-editor/commit/e941865))
 - Add ActinGroup Components ([231d713](https://github.com/ant-design/pro-editor/commit/231d713))
 - Add c2d2c getDiffPropsWithSchema and getSymbolMasterNameFromProps func, closes [#52](https://github.com/ant-design/pro-editor/issues/52) ([aa62185](https://github.com/ant-design/pro-editor/commit/aa62185))
 - Add field component, closes [#49](https://github.com/ant-design/pro-editor/issues/49) ([dfdfd16](https://github.com/ant-design/pro-editor/commit/dfdfd16))
@@ -1360,7 +1360,7 @@
 - Update snapshot ([511defb](https://github.com/ant-design/pro-editor/commit/511defb))
 - Update snapshot ([53e7dfb](https://github.com/ant-design/pro-editor/commit/53e7dfb))
 - Upgrade zustand version ([1fc2daa](https://github.com/ant-design/pro-editor/commit/1fc2daa))
-- 优化 Input 和 InputNumber 组件的受控变更逻辑, closes [#45](https://github.com/ant-design/pro-editor/issues/45) ([e1c7d4f](https://github.com/ant-design/pro-editor/commit/e1c7d4f))
+- 优化 Input 和 InputNumber 组件的受控变更逻辑，closes [#45](https://github.com/ant-design/pro-editor/issues/45) ([e1c7d4f](https://github.com/ant-design/pro-editor/commit/e1c7d4f))
 - 修正潜藏的 undo/redo bug，并补充单测 ([d1e3cc1](https://github.com/ant-design/pro-editor/commit/d1e3cc1))
 - 将 antd-style 设为 peer，修正 ThemeProvider 多实例问题 ([4ab40d7](https://github.com/ant-design/pro-editor/commit/4ab40d7))
 - 将 handsontable 模块异步导入，解决 SSR 下无法使用的问题 ([ab69afd](https://github.com/ant-design/pro-editor/commit/ab69afd))
@@ -1378,7 +1378,7 @@
 
 </div>
 
-## [Version&nbsp;0.13.0](https://github.com/ant-design/pro-editor/compare/v0.12.1...v0.13.0)
+## [Version 0.13.0](https://github.com/ant-design/pro-editor/compare/v0.12.1...v0.13.0)
 
 <sup>Released on **2023-08-23**</sup>
 
@@ -1405,7 +1405,7 @@
 
 </div>
 
-### [Version&nbsp;0.12.1](https://github.com/ant-design/pro-editor/compare/v0.12.0...v0.12.1)
+### [Version 0.12.1](https://github.com/ant-design/pro-editor/compare/v0.12.0...v0.12.1)
 
 <sup>Released on **2023-08-22**</sup>
 
@@ -1431,7 +1431,7 @@
 
 </div>
 
-## [Version&nbsp;0.12.0](https://github.com/ant-design/pro-editor/compare/v0.11.0...v0.12.0)
+## [Version 0.12.0](https://github.com/ant-design/pro-editor/compare/v0.11.0...v0.12.0)
 
 <sup>Released on **2023-08-15**</sup>
 
@@ -1464,7 +1464,7 @@
 
 </div>
 
-## [Version&nbsp;0.11.0](https://github.com/ant-design/pro-editor/compare/v0.10.0...v0.11.0)
+## [Version 0.11.0](https://github.com/ant-design/pro-editor/compare/v0.10.0...v0.11.0)
 
 <sup>Released on **2023-08-14**</sup>
 
@@ -1498,7 +1498,7 @@
 
 </div>
 
-## [Version&nbsp;0.10.0](https://github.com/ant-design/pro-editor/compare/v0.9.0...v0.10.0)
+## [Version 0.10.0](https://github.com/ant-design/pro-editor/compare/v0.9.0...v0.10.0)
 
 <sup>Released on **2023-08-01**</sup>
 
@@ -1531,7 +1531,7 @@
 
 </div>
 
-## [Version&nbsp;0.9.0](https://github.com/ant-design/pro-editor/compare/v0.8.0...v0.9.0)
+## [Version 0.9.0](https://github.com/ant-design/pro-editor/compare/v0.8.0...v0.9.0)
 
 <sup>Released on **2023-07-24**</sup>
 
@@ -1556,7 +1556,7 @@
 
 </div>
 
-## [Version&nbsp;0.8.0](https://github.com/ant-design/pro-editor/compare/v0.7.2...v0.8.0)
+## [Version 0.8.0](https://github.com/ant-design/pro-editor/compare/v0.7.2...v0.8.0)
 
 <sup>Released on **2023-07-03**</sup>
 
@@ -1571,7 +1571,7 @@
 
 #### What's improved
 
-- **sortable-tree**: 新增 sortableRule 函数规则，控制拖动排序, closes [#46](https://github.com/ant-design/pro-editor/issues/46) ([9b8d127](https://github.com/ant-design/pro-editor/commit/9b8d127))
+- **sortable-tree**: 新增 sortableRule 函数规则，控制拖动排序，closes [#46](https://github.com/ant-design/pro-editor/issues/46) ([9b8d127](https://github.com/ant-design/pro-editor/commit/9b8d127))
 
 </details>
 
@@ -1581,7 +1581,7 @@
 
 </div>
 
-### [Version&nbsp;0.7.2](https://github.com/ant-design/pro-editor/compare/v0.7.1...v0.7.2)
+### [Version 0.7.2](https://github.com/ant-design/pro-editor/compare/v0.7.1...v0.7.2)
 
 <sup>Released on **2023-07-03**</sup>
 
@@ -1606,7 +1606,7 @@
 
 </div>
 
-### [Version&nbsp;0.7.1](https://github.com/ant-design/pro-editor/compare/v0.7.0...v0.7.1)
+### [Version 0.7.1](https://github.com/ant-design/pro-editor/compare/v0.7.0...v0.7.1)
 
 <sup>Released on **2023-07-03**</sup>
 
@@ -1621,7 +1621,7 @@
 
 #### What's fixed
 
-- 优化 Input 和 InputNumber 组件的受控变更逻辑, closes [#45](https://github.com/ant-design/pro-editor/issues/45) ([e903a6b](https://github.com/ant-design/pro-editor/commit/e903a6b))
+- 优化 Input 和 InputNumber 组件的受控变更逻辑，closes [#45](https://github.com/ant-design/pro-editor/issues/45) ([e903a6b](https://github.com/ant-design/pro-editor/commit/e903a6b))
 
 </details>
 
@@ -1631,7 +1631,7 @@
 
 </div>
 
-## [Version&nbsp;0.7.0](https://github.com/ant-design/pro-editor/compare/v0.6.0...v0.7.0)
+## [Version 0.7.0](https://github.com/ant-design/pro-editor/compare/v0.6.0...v0.7.0)
 
 <sup>Released on **2023-06-25**</sup>
 
@@ -1656,7 +1656,7 @@
 
 </div>
 
-## [Version&nbsp;0.6.0](https://github.com/ant-design/pro-editor/compare/v0.5.0...v0.6.0)
+## [Version 0.6.0](https://github.com/ant-design/pro-editor/compare/v0.5.0...v0.6.0)
 
 <sup>Released on **2023-06-20**</sup>
 
@@ -1681,7 +1681,7 @@
 
 </div>
 
-## [Version&nbsp;0.5.0](https://github.com/ant-design/pro-editor/compare/v0.4.2...v0.5.0)
+## [Version 0.5.0](https://github.com/ant-design/pro-editor/compare/v0.4.2...v0.5.0)
 
 <sup>Released on **2023-06-19**</sup>
 
@@ -1691,10 +1691,10 @@
 
 #### 🐛 修复
 
-- **awareness**: 修正类型导出问题, 兼容服务端渲染.
+- **awareness**: 修正类型导出问题，兼容服务端渲染.
 - **component-asset**: 修正 AssetSchema 类型.
-- **excel-table**: 修正 Hansontable 在 server 端的兼容性问题, 修正 Hansontable 在 server 端的兼容性问题.
-- **sortable-tree**: 修正 SortableTree 在 server 端的兼容性问题, 修正 SortableTree 在 server 端的兼容性问题.
+- **excel-table**: 修正 Hansontable 在 server 端的兼容性问题，修正 Hansontable 在 server 端的兼容性问题.
+- **sortable-tree**: 修正 SortableTree 在 server 端的兼容性问题，修正 SortableTree 在 server 端的兼容性问题.
 - Fix Input ref props, 将 antd-style 设为 peer，修正 ThemeProvider 多实例问题.
 
 <br/>
@@ -1726,7 +1726,7 @@
 
 </div>
 
-## [Version&nbsp;0.5.0-alpha.8](https://github.com/ant-design/pro-editor/compare/v0.5.0-alpha.7...v0.5.0-alpha.8)
+## [Version 0.5.0-alpha.8](https://github.com/ant-design/pro-editor/compare/v0.5.0-alpha.7...v0.5.0-alpha.8)
 
 <sup>Released on **2023-06-18**</sup>
 
@@ -1751,7 +1751,7 @@
 
 </div>
 
-## [Version&nbsp;0.5.0-alpha.7](https://github.com/ant-design/pro-editor/compare/v0.5.0-alpha.6...v0.5.0-alpha.7)
+## [Version 0.5.0-alpha.7](https://github.com/ant-design/pro-editor/compare/v0.5.0-alpha.6...v0.5.0-alpha.7)
 
 <sup>Released on **2023-06-18**</sup>
 
@@ -1776,7 +1776,7 @@
 
 </div>
 
-## [Version&nbsp;0.5.0-alpha.6](https://github.com/ant-design/pro-editor/compare/v0.5.0-alpha.5...v0.5.0-alpha.6)
+## [Version 0.5.0-alpha.6](https://github.com/ant-design/pro-editor/compare/v0.5.0-alpha.5...v0.5.0-alpha.6)
 
 <sup>Released on **2023-06-18**</sup>
 
@@ -1801,7 +1801,7 @@
 
 </div>
 
-## [Version&nbsp;0.5.0-alpha.5](https://github.com/ant-design/pro-editor/compare/v0.5.0-alpha.4...v0.5.0-alpha.5)
+## [Version 0.5.0-alpha.5](https://github.com/ant-design/pro-editor/compare/v0.5.0-alpha.4...v0.5.0-alpha.5)
 
 <sup>Released on **2023-06-18**</sup>
 
@@ -1826,7 +1826,7 @@
 
 </div>
 
-## [Version&nbsp;0.5.0-alpha.4](https://github.com/ant-design/pro-editor/compare/v0.5.0-alpha.3...v0.5.0-alpha.4)
+## [Version 0.5.0-alpha.4](https://github.com/ant-design/pro-editor/compare/v0.5.0-alpha.3...v0.5.0-alpha.4)
 
 <sup>Released on **2023-06-18**</sup>
 
@@ -1853,7 +1853,7 @@
 
 </div>
 
-## [Version&nbsp;0.5.0-alpha.3](https://github.com/ant-design/pro-editor/compare/v0.5.0-alpha.2...v0.5.0-alpha.3)
+## [Version 0.5.0-alpha.3](https://github.com/ant-design/pro-editor/compare/v0.5.0-alpha.2...v0.5.0-alpha.3)
 
 <sup>Released on **2023-06-18**</sup>
 
@@ -1878,7 +1878,7 @@
 
 </div>
 
-## [Version&nbsp;0.5.0-alpha.2](https://github.com/ant-design/pro-editor/compare/v0.5.0-alpha.1...v0.5.0-alpha.2)
+## [Version 0.5.0-alpha.2](https://github.com/ant-design/pro-editor/compare/v0.5.0-alpha.1...v0.5.0-alpha.2)
 
 <sup>Released on **2023-06-17**</sup>
 
@@ -1903,7 +1903,7 @@
 
 </div>
 
-## [Version&nbsp;0.5.0-alpha.1](https://github.com/ant-design/pro-editor/compare/v0.4.2-alpha.2...v0.5.0-alpha.1)
+## [Version 0.5.0-alpha.1](https://github.com/ant-design/pro-editor/compare/v0.4.2-alpha.2...v0.5.0-alpha.1)
 
 <sup>Released on **2023-06-16**</sup>
 
@@ -1928,7 +1928,7 @@
 
 </div>
 
-### [Version&nbsp;0.4.2](https://github.com/ant-design/pro-editor/compare/v0.4.1...v0.4.2)
+### [Version 0.4.2](https://github.com/ant-design/pro-editor/compare/v0.4.1...v0.4.2)
 
 <sup>Released on **2023-06-18**</sup>
 
@@ -1953,7 +1953,7 @@
 
 </div>
 
-### [Version&nbsp;0.4.2-alpha.2](https://github.com/ant-design/pro-editor/compare/v0.4.2-alpha.1...v0.4.2-alpha.2)
+### [Version 0.4.2-alpha.2](https://github.com/ant-design/pro-editor/compare/v0.4.2-alpha.1...v0.4.2-alpha.2)
 
 <sup>Released on **2023-06-16**</sup>
 
@@ -1978,7 +1978,7 @@
 
 </div>
 
-### [Version&nbsp;0.4.2-alpha.1](https://github.com/ant-design/pro-editor/compare/v0.4.1...v0.4.2-alpha.1)
+### [Version 0.4.2-alpha.1](https://github.com/ant-design/pro-editor/compare/v0.4.1...v0.4.2-alpha.1)
 
 <sup>Released on **2023-06-16**</sup>
 
@@ -2003,7 +2003,7 @@
 
 </div>
 
-### [Version&nbsp;0.4.1](https://github.com/ant-design/pro-editor/compare/v0.4.0...v0.4.1)
+### [Version 0.4.1](https://github.com/ant-design/pro-editor/compare/v0.4.0...v0.4.1)
 
 <sup>Released on **2023-06-15**</sup>
 
@@ -2028,19 +2028,19 @@
 
 </div>
 
-## [Version&nbsp;0.4.0](https://github.com/ant-design/pro-editor/compare/v0.3.0...v0.4.0)
+## [Version 0.4.0](https://github.com/ant-design/pro-editor/compare/v0.3.0...v0.4.0)
 
 <sup>Released on **2023-06-15**</sup>
 
 #### ✨ 新特性
 
-- **component-asset**: CreateUseAssetStore 方法支持导出 AssetProvider, 优化 createTestAssetStore ，便于下游测试, 添加 createTestAssetStore 方法，便于下游测试.
-- **pro-editor**: 增加 updateCanvasInteraction 方法, 支持 getCanvasInteraction，并调整 store set、get 命名风格, 支持配置 ProEditorStore 在 devtools 中的名称.
+- **component-asset**: CreateUseAssetStore 方法支持导出 AssetProvider, 优化 createTestAssetStore ，便于下游测试，添加 createTestAssetStore 方法，便于下游测试.
+- **pro-editor**: 增加 updateCanvasInteraction 方法，支持 getCanvasInteraction，并调整 store set、get 命名风格，支持配置 ProEditorStore 在 devtools 中的名称.
 
 #### 🐛 修复
 
 - **component-asset**: 修正 CreateAssetStore 的类型，对齐到 ProEditorInstance, 修正类型.
-- **pro-editor**: 修正与 assetStore 的数据同步问题, 调整 devtools api 名称.
+- **pro-editor**: 修正与 assetStore 的数据同步问题，调整 devtools api 名称.
 - **sortable-tree**: 修正 ReactNodeProps 方法类型定义.
 
 <br/>
@@ -2073,7 +2073,7 @@
 
 </div>
 
-## [Version&nbsp;0.4.0-alpha.8](https://github.com/ant-design/pro-editor/compare/v0.4.0-alpha.7...v0.4.0-alpha.8)
+## [Version 0.4.0-alpha.8](https://github.com/ant-design/pro-editor/compare/v0.4.0-alpha.7...v0.4.0-alpha.8)
 
 <sup>Released on **2023-06-15**</sup>
 
@@ -2098,7 +2098,7 @@
 
 </div>
 
-## [Version&nbsp;0.4.0-alpha.7](https://github.com/ant-design/pro-editor/compare/v0.4.0-alpha.6...v0.4.0-alpha.7)
+## [Version 0.4.0-alpha.7](https://github.com/ant-design/pro-editor/compare/v0.4.0-alpha.6...v0.4.0-alpha.7)
 
 <sup>Released on **2023-06-15**</sup>
 
@@ -2125,7 +2125,7 @@
 
 </div>
 
-## [Version&nbsp;0.4.0-alpha.6](https://github.com/ant-design/pro-editor/compare/v0.4.0-alpha.5...v0.4.0-alpha.6)
+## [Version 0.4.0-alpha.6](https://github.com/ant-design/pro-editor/compare/v0.4.0-alpha.5...v0.4.0-alpha.6)
 
 <sup>Released on **2023-06-15**</sup>
 
@@ -2150,7 +2150,7 @@
 
 </div>
 
-## [Version&nbsp;0.4.0-alpha.5](https://github.com/ant-design/pro-editor/compare/v0.4.0-alpha.4...v0.4.0-alpha.5)
+## [Version 0.4.0-alpha.5](https://github.com/ant-design/pro-editor/compare/v0.4.0-alpha.4...v0.4.0-alpha.5)
 
 <sup>Released on **2023-06-15**</sup>
 
@@ -2183,7 +2183,7 @@
 
 </div>
 
-## [Version&nbsp;0.4.0-alpha.4](https://github.com/ant-design/pro-editor/compare/v0.4.0-alpha.3...v0.4.0-alpha.4)
+## [Version 0.4.0-alpha.4](https://github.com/ant-design/pro-editor/compare/v0.4.0-alpha.3...v0.4.0-alpha.4)
 
 <sup>Released on **2023-06-15**</sup>
 
@@ -2208,7 +2208,7 @@
 
 </div>
 
-## [Version&nbsp;0.4.0-alpha.3](https://github.com/ant-design/pro-editor/compare/v0.4.0-alpha.2...v0.4.0-alpha.3)
+## [Version 0.4.0-alpha.3](https://github.com/ant-design/pro-editor/compare/v0.4.0-alpha.2...v0.4.0-alpha.3)
 
 <sup>Released on **2023-06-15**</sup>
 
@@ -2233,7 +2233,7 @@
 
 </div>
 
-## [Version&nbsp;0.4.0-alpha.2](https://github.com/ant-design/pro-editor/compare/v0.4.0-alpha.1...v0.4.0-alpha.2)
+## [Version 0.4.0-alpha.2](https://github.com/ant-design/pro-editor/compare/v0.4.0-alpha.1...v0.4.0-alpha.2)
 
 <sup>Released on **2023-06-14**</sup>
 
@@ -2258,7 +2258,7 @@
 
 </div>
 
-## [Version&nbsp;0.4.0-alpha.1](https://github.com/ant-design/pro-editor/compare/v0.3.0...v0.4.0-alpha.1)
+## [Version 0.4.0-alpha.1](https://github.com/ant-design/pro-editor/compare/v0.3.0...v0.4.0-alpha.1)
 
 <sup>Released on **2023-06-14**</sup>
 
@@ -2291,13 +2291,13 @@
 
 </div>
 
-## [Version&nbsp;0.3.0](https://github.com/ant-design/pro-editor/compare/v0.2.3...v0.3.0)
+## [Version 0.3.0](https://github.com/ant-design/pro-editor/compare/v0.2.3...v0.3.0)
 
 <sup>Released on **2023-06-14**</sup>
 
 #### ✨ 新特性
 
-- Support undo/redo for ProEditor, 完善 AssetStore 数据链路, 实现 AssetStore 与 EditorStore 的状态自动同步, 新增 ContextMenu 组件, 新增 LevaPanel 属性面板, 重构优化 ComponentAsset store 实现，收敛 AssetStore 的定义方式.
+- Support undo/redo for ProEditor, 完善 AssetStore 数据链路，实现 AssetStore 与 EditorStore 的状态自动同步，新增 ContextMenu 组件，新增 LevaPanel 属性面板，重构优化 ComponentAsset store 实现，收敛 AssetStore 的定义方式.
 
 #### 🐛 修复
 
@@ -2341,7 +2341,7 @@
 
 </div>
 
-## [Version&nbsp;0.3.0-alpha.8](https://github.com/ant-design/pro-editor/compare/v0.3.0-alpha.7...v0.3.0-alpha.8)
+## [Version 0.3.0-alpha.8](https://github.com/ant-design/pro-editor/compare/v0.3.0-alpha.7...v0.3.0-alpha.8)
 
 <sup>Released on **2023-06-14**</sup>
 
@@ -2374,13 +2374,13 @@
 
 </div>
 
-## [Version&nbsp;0.3.0-alpha.7](https://github.com/ant-design/pro-editor/compare/v0.3.0-alpha.6...v0.3.0-alpha.7)
+## [Version 0.3.0-alpha.7](https://github.com/ant-design/pro-editor/compare/v0.3.0-alpha.6...v0.3.0-alpha.7)
 
 <sup>Released on **2023-06-14**</sup>
 
 #### ✨ 新特性
 
-- 实现 AssetStore 与 EditorStore 的状态自动同步, 新增 LevaPanel 属性面板.
+- 实现 AssetStore 与 EditorStore 的状态自动同步，新增 LevaPanel 属性面板.
 
 <br/>
 
@@ -2400,7 +2400,7 @@
 
 </div>
 
-## [Version&nbsp;0.3.0-alpha.6](https://github.com/ant-design/pro-editor/compare/v0.3.0-alpha.5...v0.3.0-alpha.6)
+## [Version 0.3.0-alpha.6](https://github.com/ant-design/pro-editor/compare/v0.3.0-alpha.5...v0.3.0-alpha.6)
 
 <sup>Released on **2023-06-13**</sup>
 
@@ -2425,7 +2425,7 @@
 
 </div>
 
-## [Version&nbsp;0.3.0-alpha.5](https://github.com/ant-design/pro-editor/compare/v0.3.0-alpha.4...v0.3.0-alpha.5)
+## [Version 0.3.0-alpha.5](https://github.com/ant-design/pro-editor/compare/v0.3.0-alpha.4...v0.3.0-alpha.5)
 
 <sup>Released on **2023-06-13**</sup>
 
@@ -2450,7 +2450,7 @@
 
 </div>
 
-## [Version&nbsp;0.3.0-alpha.4](https://github.com/ant-design/pro-editor/compare/v0.3.0-alpha.3...v0.3.0-alpha.4)
+## [Version 0.3.0-alpha.4](https://github.com/ant-design/pro-editor/compare/v0.3.0-alpha.3...v0.3.0-alpha.4)
 
 <sup>Released on **2023-06-13**</sup>
 
@@ -2475,7 +2475,7 @@
 
 </div>
 
-## [Version&nbsp;0.3.0-alpha.3](https://github.com/ant-design/pro-editor/compare/v0.3.0-alpha.2...v0.3.0-alpha.3)
+## [Version 0.3.0-alpha.3](https://github.com/ant-design/pro-editor/compare/v0.3.0-alpha.2...v0.3.0-alpha.3)
 
 <sup>Released on **2023-06-13**</sup>
 
@@ -2500,7 +2500,7 @@
 
 </div>
 
-## [Version&nbsp;0.3.0-alpha.2](https://github.com/ant-design/pro-editor/compare/v0.3.0-alpha.1...v0.3.0-alpha.2)
+## [Version 0.3.0-alpha.2](https://github.com/ant-design/pro-editor/compare/v0.3.0-alpha.1...v0.3.0-alpha.2)
 
 <sup>Released on **2023-06-13**</sup>
 
@@ -2525,7 +2525,7 @@
 
 </div>
 
-## [Version&nbsp;0.3.0-alpha.1](https://github.com/ant-design/pro-editor/compare/v0.2.3...v0.3.0-alpha.1)
+## [Version 0.3.0-alpha.1](https://github.com/ant-design/pro-editor/compare/v0.2.3...v0.3.0-alpha.1)
 
 <sup>Released on **2023-06-13**</sup>
 
@@ -2558,7 +2558,7 @@
 
 </div>
 
-### [Version&nbsp;0.2.3](https://github.com/ant-design/pro-editor/compare/v0.2.2...v0.2.3)
+### [Version 0.2.3](https://github.com/ant-design/pro-editor/compare/v0.2.2...v0.2.3)
 
 <sup>Released on **2023-06-13**</sup>
 
@@ -2583,7 +2583,7 @@
 
 </div>
 
-### [Version&nbsp;0.2.2](https://github.com/ant-design/pro-editor/compare/v0.2.1...v0.2.2)
+### [Version 0.2.2](https://github.com/ant-design/pro-editor/compare/v0.2.1...v0.2.2)
 
 <sup>Released on **2023-06-13**</sup>
 
@@ -2600,7 +2600,7 @@
 
 </div>
 
-### [Version&nbsp;0.2.2-alpha.1](https://github.com/ant-design/pro-editor/compare/v0.2.1...v0.2.2-alpha.1)
+### [Version 0.2.2-alpha.1](https://github.com/ant-design/pro-editor/compare/v0.2.1...v0.2.2-alpha.1)
 
 <sup>Released on **2023-06-13**</sup>
 
@@ -2617,7 +2617,7 @@
 
 </div>
 
-### Version&nbsp;0.2.1
+### Version 0.2.1
 
 <sup>Released on **2023-06-12**</sup>
 
@@ -2627,7 +2627,7 @@
 
 #### 🐛 修复
 
-- Fix avatar key, github pages css style lost, SortableList 默认空数据处理, test case error, 将 handsontable 模块异步导入，解决 SSR 下无法使用的问题.
+- Fix avatar key, github pages css style lost, SortableList 默认空数据处理，test case error, 将 handsontable 模块异步导入，解决 SSR 下无法使用的问题.
 
 <br/>
 
