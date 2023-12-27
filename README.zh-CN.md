@@ -97,7 +97,7 @@ export default () => (
 >
 > 前端组件库已经彻底改变了开发方式，极大地提高了效率，提升了用户体验。然而，就像 Ant Design（antd）和 ProComponents 这样成熟的库一样，人们可能会想知道是否还有创新的空间。
 
-[![](https://next.ossinsight.io/widgets/official/compose-activity-trends/thumbnail.png?repo_id=637603722\&image_size=auto\&color_scheme=dark)](https://next.ossinsight.io/widgets/official/compose-activity-trends?repo_id=637603722)
+[![](https://next.ossinsight.io/widgets/official/compose-activity-trends/thumbnail.png?repo_id=637603722&image_size=auto&color_scheme=dark)](https://next.ossinsight.io/widgets/official/compose-activity-trends?repo_id=637603722)
 
 <br/>
 
@@ -141,16 +141,16 @@ ProEditor 的结构旨在有效地促进这些原则。
 
 让我们展示一些 ProEditor 的标志性组件：
 
-|        **DraggablePanel**       |    **ColumnList**    |
-| :-----------------------------: | :------------------: |
-|           可调整大小和可移动的面板          |    基于列定义的用户友好可排序列表   |
-|          ![][prevew-1]          |     ![][prevew-2]    |
-|          **FreeCanvas**         |    **IconPicker**    |
+|             **DraggablePanel**             |         **ColumnList**         |
+| :----------------------------------------: | :----------------------------: |
+|          可调整大小和可移动的面板          | 基于列定义的用户友好可排序列表 |
+|               ![][prevew-1]                |         ![][prevew-2]          |
+|               **FreeCanvas**               |         **IconPicker**         |
 |    无限缩放画布，类似于 Sketch 或 Figma    | 与 iconfont 兼容的图标选择工具 |
-|          ![][prevew-3]          |     ![][prevew-4]    |
-|             **在线协作**            |                      |
-| 融合了 yjs 和 zustand store 的多用户功能。 |                      |
-|          ![][prevew-5]          |                      |
+|               ![][prevew-3]                |         ![][prevew-4]          |
+|                **在线协作**                |                                |
+| 融合了 yjs 和 zustand store 的多用户功能。 |                                |
+|               ![][prevew-5]                |                                |
 
 > ProEditor 不仅仅是一套新工具，更是对 Web 开发不断演进的证明，证明即使在巨头领域，仍然有创新和改进的空间。
 
@@ -163,9 +163,9 @@ ProEditor 的结构旨在有效地促进这些原则。
 > - 现代浏览器和 Internet Explorer 11（使用[polyfills](https://stackoverflow.com/questions/57020976/polyfills-in-2019-for-ie11)）
 > - [Electron](https://www.electronjs.org/)
 
-| [![edge](https://raw.githubusercontent.com/alrra/browser-logos/master/src/edge/edge_48x48.png)](http://godban.github.io/browsers-support-badges/) | [![Edge](https://raw.githubusercontent.com/alrra/browser-logos/master/src/firefox/firefox_48x48.png)](http://godban.github.io/browsers-support-badges/) | [![chrome](https://raw.githubusercontent.com/alrra/browser-logos/master/src/chrome/chrome_48x48.png)](http://godban.github.io/browsers-support-badges/) | [![safari](https://raw.githubusercontent.com/alrra/browser-logos/master/src/safari/safari_48x48.png)](http://godban.github.io/browsers-support-badges/) | [![electron\_48x48](https://raw.githubusercontent.com/alrra/browser-logos/master/src/electron/electron_48x48.png)](http://godban.github.io/browsers-support-badges/) |
-| ------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Edge                                                                                                                                              | 最近 2 个版本                                                                                                                                                | 最近 2 个版本                                                                                                                                                | 最近 2 个版本                                                                                                                                                | 最近 2 个版本                                                                                                                                                             |
+| [![edge](https://raw.githubusercontent.com/alrra/browser-logos/master/src/edge/edge_48x48.png)](http://godban.github.io/browsers-support-badges/) | [![Edge](https://raw.githubusercontent.com/alrra/browser-logos/master/src/firefox/firefox_48x48.png)](http://godban.github.io/browsers-support-badges/) | [![chrome](https://raw.githubusercontent.com/alrra/browser-logos/master/src/chrome/chrome_48x48.png)](http://godban.github.io/browsers-support-badges/) | [![safari](https://raw.githubusercontent.com/alrra/browser-logos/master/src/safari/safari_48x48.png)](http://godban.github.io/browsers-support-badges/) | [![electron_48x48](https://raw.githubusercontent.com/alrra/browser-logos/master/src/electron/electron_48x48.png)](http://godban.github.io/browsers-support-badges/) |
+| ------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Edge                                                                                                                                              | 最近 2 个版本                                                                                                                                           | 最近 2 个版本                                                                                                                                           | 最近 2 个版本                                                                                                                                           | 最近 2 个版本                                                                                                                                                       |
 
 <br/>
 
@@ -229,8 +229,8 @@ $ pnpm dev
 
 - **[ProComponents](https://github.com/ant-design/pro-components)** - 专为企业级应用设计，像专业人士一样使用 Ant Design！
 - **[ProEditor](https://github.com/ant-design/pro-editor)** - 编辑器领域 UI 框架与前端组件解决方案。
-- **[ProFlow](https://github.com/ant-design/pro-flow)** - 用于快速构建 LLM 聊天界面的组件库。
-- **[ProChat](https://github.com/ant-design/pro-chat)** - 基于 React-Flow 的流程编辑器框架。
+- **[ProFlow](https://github.com/ant-design/pro-flow)** - 基于 React-Flow 的流程编辑器框架。
+- **[ProChat](https://github.com/ant-design/pro-chat)** - 用于快速构建 LLM 聊天界面的组件库。
 
 <br/>
 

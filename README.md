@@ -97,7 +97,7 @@ export default () => (
 >
 > Front-end component libraries have revolutionized development, boosting efficiency by orders of magnitude and elevating user experience. Yet, as mature as libraries like Ant Design (antd) and ProComponents are, one might wonder if there's any room left for innovation.
 
-[![](https://next.ossinsight.io/widgets/official/compose-activity-trends/thumbnail.png?repo_id=637603722\&image_size=auto\&color_scheme=dark)](https://next.ossinsight.io/widgets/official/compose-activity-trends?repo_id=637603722)
+[![](https://next.ossinsight.io/widgets/official/compose-activity-trends/thumbnail.png?repo_id=637603722&image_size=auto&color_scheme=dark)](https://next.ossinsight.io/widgets/official/compose-activity-trends?repo_id=637603722)
 
 <br/>
 
@@ -141,14 +141,14 @@ ProEditor is structured to facilitate these principles effectively.
 
 Let's showcase some of ProEditor's signature components:
 
-|                     **DraggablePanel**                    |                       **ColumnList**                      |
+|                    **DraggablePanel**                     |                      **ColumnList**                       |
 | :-------------------------------------------------------: | :-------------------------------------------------------: |
-|              For resizable and movable panels             | A user-friendly sortable list based on column definitions |
+|             For resizable and movable panels              | A user-friendly sortable list based on column definitions |
 |                       ![][prevew-1]                       |                       ![][prevew-2]                       |
-|                       **FreeCanvas**                      |                       **IconPicker**                      |
+|                      **FreeCanvas**                       |                      **IconPicker**                       |
 |    A limitless zoomable canvas akin to Sketch or Figma    |      An icon selection tool compatible with iconfont      |
 |                       ![][prevew-3]                       |                       ![][prevew-4]                       |
-|                  **Online Collaboration**                 |                                                           |
+|                 **Online Collaboration**                  |                                                           |
 | Multi-user capabilities wrapped in yjs and zustand store. |                                                           |
 |                       ![][prevew-5]                       |                                                           |
 
@@ -163,9 +163,9 @@ Let's showcase some of ProEditor's signature components:
 > - Modern browsers and Internet Explorer 11 (with [polyfills](https://stackoverflow.com/questions/57020976/polyfills-in-2019-for-ie11))
 > - [Electron](https://www.electronjs.org/)
 
-| [![edge](https://raw.githubusercontent.com/alrra/browser-logos/master/src/edge/edge_48x48.png)](http://godban.github.io/browsers-support-badges/) | [![Edge](https://raw.githubusercontent.com/alrra/browser-logos/master/src/firefox/firefox_48x48.png)](http://godban.github.io/browsers-support-badges/) | [![chrome](https://raw.githubusercontent.com/alrra/browser-logos/master/src/chrome/chrome_48x48.png)](http://godban.github.io/browsers-support-badges/) | [![safari](https://raw.githubusercontent.com/alrra/browser-logos/master/src/safari/safari_48x48.png)](http://godban.github.io/browsers-support-badges/) | [![electron\_48x48](https://raw.githubusercontent.com/alrra/browser-logos/master/src/electron/electron_48x48.png)](http://godban.github.io/browsers-support-badges/) |
-| ------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Edge                                                                                                                                              | last 2 versions                                                                                                                                         | last 2 versions                                                                                                                                         | last 2 versions                                                                                                                                         | last 2 versions                                                                                                                                                      |
+| [![edge](https://raw.githubusercontent.com/alrra/browser-logos/master/src/edge/edge_48x48.png)](http://godban.github.io/browsers-support-badges/) | [![Edge](https://raw.githubusercontent.com/alrra/browser-logos/master/src/firefox/firefox_48x48.png)](http://godban.github.io/browsers-support-badges/) | [![chrome](https://raw.githubusercontent.com/alrra/browser-logos/master/src/chrome/chrome_48x48.png)](http://godban.github.io/browsers-support-badges/) | [![safari](https://raw.githubusercontent.com/alrra/browser-logos/master/src/safari/safari_48x48.png)](http://godban.github.io/browsers-support-badges/) | [![electron_48x48](https://raw.githubusercontent.com/alrra/browser-logos/master/src/electron/electron_48x48.png)](http://godban.github.io/browsers-support-badges/) |
+| ------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Edge                                                                                                                                              | last 2 versions                                                                                                                                         | last 2 versions                                                                                                                                         | last 2 versions                                                                                                                                         | last 2 versions                                                                                                                                                     |
 
 <br/>
 
@@ -229,8 +229,8 @@ Every contribution, big or small, is celebrated. Join us in our mission to refin
 
 - **[ProComponents](https://github.com/ant-design/pro-components)** - Designed for Enterprise-Level Application, Use Ant Design like a Pro!.
 - **[ProEditor](https://github.com/ant-design/pro-editor)** - The Ultimate Editor UI Framework and Components.
-- **[ProFlow](https://github.com/ant-design/pro-flow)** - Components Library for Quickly Building LLM Chat Interfaces.
-- **[ProChat](https://github.com/ant-design/pro-chat)** - A Flow Editor Framework base on React-Flow.
+- **[ProFlow](https://github.com/ant-design/pro-flow)** - A Flow Editor Framework base on React-Flow.
+- **[ProChat](https://github.com/ant-design/pro-chat)** - Components Library for Quickly Building LLM Chat Interfaces.
 
 <br/>
 
