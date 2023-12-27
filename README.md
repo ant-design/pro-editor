@@ -105,7 +105,7 @@ export default () => (
 
 > \[!NOTE]
 >
-> We envision ProEditor as the foundational library for editing components, akin to antd, enabling developers to easily create complex interactive components with an inherently superior user experience. This is the rationale behind the "ProEditor" name.
+> We envision ProEditor as the foundational library for editing components, akin to antd, enabling developers to easily create complex interactive components with an inherently superior user experience. This is the rationale behind the `ProEditor`.
 
 **Our Principles for ProEditor:**
 
@@ -151,8 +151,6 @@ Let's showcase some of ProEditor's signature components:
 |                 **Online Collaboration**                  |                                                           |
 | Multi-user capabilities wrapped in yjs and zustand store. |                                                           |
 |                       ![][prevew-5]                       |                                                           |
-
-> ProEditor is not just a new set of tools but a testament to the continuous evolution of web development, proving that even in a field of giants, there is always space for innovation and improvement.
 
 <br/>
 

@@ -95,7 +95,7 @@ export default () => (
 
 > \[!NOTE]
 >
-> 前端组件库已经彻底改变了开发方式，极大地提高了效率，提升了用户体验。然而，就像 Ant Design（antd）和 ProComponents 这样成熟的库一样，人们可能会想知道是否还有创新的空间。
+> 前端组件库已经彻底改变了开发方式，极大地提高了效率，提升了用户体验。在各大组件库都趋于成熟的 2023 年，我们为什么要推出 ProEditor ？
 
 [![](https://next.ossinsight.io/widgets/official/compose-activity-trends/thumbnail.png?repo_id=637603722&image_size=auto&color_scheme=dark)](https://next.ossinsight.io/widgets/official/compose-activity-trends?repo_id=637603722)
 
@@ -105,13 +105,13 @@ export default () => (
 
 > \[!NOTE]
 >
-> 我们将 ProEditor 视为编辑组件的基础库，类似于 antd，使开发人员能够轻松创建具有内在卓越用户体验的复杂交互式组件。这就是 “ProEditor” 名称的理念所在。
+> 我们将 ProEditor 视为编辑组件的基础库，类似于 antd，使开发人员能够轻松创建具有内在卓越用户体验的复杂交互式组件。这就是 `ProEditor` 名称的理念所在。
 
 **我们对 ProEditor 的原则:**
 
-- 🖐️ **直观编辑**：支持自然的用户交互，如多选、取消选择和键盘快捷键，确保平滑的编辑体验。
-- ✨ **默认精致**：增强 Ant Design 组件，提供更加精致和优化的用户体验。
-- 🔧 **开放灵活**：提供原子级别的能力，提供各种组件、钩子和实用函数，以进行广泛的定制和灵活性。
+- 🖐️ **自然编辑**：支持用户最自然的交互，包括但不限于鼠标多选、反选、快捷键等。
+- ✨ **默认精致**：在 antd 基础组件上更进一步，交互体验上达到默认精致。
+- 🔧 **灵活开放**：所有能力均支持原子化输出，包括但不限于组件、hooks、工具函数等。
 
 <br/>
 
@@ -131,7 +131,7 @@ export default () => (
 
 ### 框架架构
 
-ProEditor 的结构旨在有效地促进这些原则。
+ProEditor 的架构大致如下：
 
 ![][architecture]
 
@@ -151,8 +151,6 @@ ProEditor 的结构旨在有效地促进这些原则。
 |                **在线协作**                |                                |
 | 融合了 yjs 和 zustand store 的多用户功能。 |                                |
 |               ![][prevew-5]                |                                |
-
-> ProEditor 不仅仅是一套新工具，更是对 Web 开发不断演进的证明，证明即使在巨头领域，仍然有创新和改进的空间。
 
 <br/>
 
