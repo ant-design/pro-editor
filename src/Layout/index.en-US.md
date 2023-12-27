@@ -67,21 +67,21 @@ You can easily build a layout similar to a dialogue content through configuratio
 
 ### PannelSettings
 
-| Property  | Type                     | Description                                                    |
-| --------- | ------------------------ | -------------------------------------------------------------- |
-| children  | ReactNode or ReactNode[] | Required content of the panel.                                 |
-| direction | string                   | Optional orientation of the panel, 'horizontal' or 'vertical'. |
-| tabs      | TabsProps                | Optional properties for tabs within the panel.                 |
-| icon      | ReactNode                | Optional icon for the panel.                                   |
-| extra     | ReactNode                | Optional additional React nodes to be displayed.               |
-| hide      | boolean                  | Optional flag to hide the panel.                               |
-| minWidth  | number                   | Optional minimum width for the panel.                          |
-| minHeight | number                   | Optional minimum height for the panel.                         |
-| maxWidth  | number                   | Optional maximum width for the panel.                          |
-| maxHeight | number                   | Optional maximum height for the panel.                         |
-| style     | React.CSSProperties      | Optional CSS properties for panel styling.                     |
-| className | string                   | Optional CSS class name for the panel.                         |
-| themeType | ThemeLayoutType          | Optional theme type for the panel.                             |
+| Property  | Type                      | Description                                                    |
+| --------- | ------------------------- | -------------------------------------------------------------- |
+| children  | ReactNode or ReactNode\[] | Required content of the panel.                                 |
+| direction | string                    | Optional orientation of the panel, 'horizontal' or 'vertical'. |
+| tabs      | TabsProps                 | Optional properties for tabs within the panel.                 |
+| icon      | ReactNode                 | Optional icon for the panel.                                   |
+| extra     | ReactNode                 | Optional additional React nodes to be displayed.               |
+| hide      | boolean                   | Optional flag to hide the panel.                               |
+| minWidth  | number                    | Optional minimum width for the panel.                          |
+| minHeight | number                    | Optional minimum height for the panel.                         |
+| maxWidth  | number                    | Optional maximum width for the panel.                          |
+| maxHeight | number                    | Optional maximum height for the panel.                         |
+| style     | React.CSSProperties       | Optional CSS properties for panel styling.                     |
+| className | string                    | Optional CSS class name for the panel.                         |
+| themeType | ThemeLayoutType           | Optional theme type for the panel.                             |
 
 ### HeaderFooterSettings
 

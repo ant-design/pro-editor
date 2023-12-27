@@ -20,7 +20,7 @@ group: 基础组件
 
 ### 默认展开
 
-通过  `defaultExpand` 控制是否默认展开。
+通过  `defaultExpand` 控制是否默认展开。
 
 <code src="./demos/defaultexpand.tsx" ></code>
 
@@ -32,10 +32,10 @@ group: 基础组件
 
 ## API
 
-| 参数           | 说明             | 类型                             | 默认值 |
-| :------------- | :--------------- | :------------------------------- | :----- |
-| defaultExpand  | 默认展开         | `boolean`                        | false  |
-| expand         | 受控展开         | `boolean`                        | -      |
-| title          | 标题             | `string`                         | -      |
-| onExpandChange | 展开回调         | `(expand: boolean) => void`      | -      |
-| extra          | 标题右侧扩展渲染 | `(expand: boolean) => ReactNode` | -      |
+| 参数             | 说明       | 类型                               | 默认值   |
+| :------------- | :------- | :------------------------------- | :---- |
+| defaultExpand  | 默认展开     | `boolean`                        | false |
+| expand         | 受控展开     | `boolean`                        | -     |
+| title          | 标题       | `string`                         | -     |
+| onExpandChange | 展开回调     | `(expand: boolean) => void`      | -     |
+| extra          | 标题右侧扩展渲染 | `(expand: boolean) => ReactNode` | -     |

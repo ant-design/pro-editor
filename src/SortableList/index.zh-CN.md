@@ -16,46 +16,35 @@ demo:
 
 ## 使用方式
 
-<code src="./demos/Basic.tsx" ></code>
-<code src="./demos/controlled.tsx" ></code>
-<code src="./demos/hideRemove.tsx" ></code>
-<code src="./demos/handle.tsx" ></code>
-<code src="./demos/getItemStyles.tsx" ></code>
-<code src="./demos/renderItem.tsx" ></code>
-<code src="./demos/renderContent.tsx" ></code>
-<code src="./demos/creatorButtonProps.tsx" ></code>
-<code src="./demos/ref.tsx" ></code>
-<code src="./demos/useSortableList.tsx" ></code>
-<code src="./demos/provider.tsx" ></code>
-<code src="./demos/empty.tsx" ></code>
+<code src="./demos/Basic.tsx" ></code> <code src="./demos/controlled.tsx" ></code> <code src="./demos/hideRemove.tsx" ></code> <code src="./demos/handle.tsx" ></code> <code src="./demos/getItemStyles.tsx" ></code> <code src="./demos/renderItem.tsx" ></code> <code src="./demos/renderContent.tsx" ></code> <code src="./demos/creatorButtonProps.tsx" ></code> <code src="./demos/ref.tsx" ></code> <code src="./demos/useSortableList.tsx" ></code> <code src="./demos/provider.tsx" ></code> <code src="./demos/empty.tsx" ></code>
 
 ## API
 
 ### Basic 组件属性
 
-| 属性名             | 类型                                                             | 描述                               |
-| ------------------ | ---------------------------------------------------------------- | ---------------------------------- |
-| value              | `T[]`                                                            | 值                                 |
-| initialValues      | `T[]`                                                            | 初始值                             |
-| onChange           | `(value: T[], event: ListDataDispatchPayload) => void`           | 值变化                             |
-| renderContent      | `(item: T, index: number) => ReactNode`                          | 自定义可排序列表项内容             |
-| renderItem         | `(item: T, options) => ReactNode`                                | 自定义可排序列表项                 |
-| renderHeader       | `() => ReactNode`                                                | 自定义渲染表头                     |
-| renderEmpty        | `() => ReactNode`                                                | 自定义渲染空状态                   |
-| getItemStyle       | `(status: GetItemStylesArgs) => ReactNode`                       | 自定义容器样式                     |
-| ref                | `ForwardedRef<SortableListRef<T>>`                               | 对外部暴露方法                     |
-| hideRemove         | `boolean`                                                        | 是否隐藏删除按钮，默认为 false     |
-| handle             | `boolean`                                                        | 是否显示拖拽按钮，默认为 true      |
-| creatorButtonProps | `CreatorButtonProps\|false`                                      | 新建对象相关属性                   |
-| actions            | `(item: T, index: number) => ReactNode[]` \| `React.ReactNode[]` | 除列表自带操作之外的其他操作自渲染 |
+| 属性名                | 类型                                                               | 描述                 |
+| ------------------ | ---------------------------------------------------------------- | ------------------ |
+| value              | `T[]`                                                            | 值                  |
+| initialValues      | `T[]`                                                            | 初始值                |
+| onChange           | `(value: T[], event: ListDataDispatchPayload) => void`           | 值变化                |
+| renderContent      | `(item: T, index: number) => ReactNode`                          | 自定义可排序列表项内容        |
+| renderItem         | `(item: T, options) => ReactNode`                                | 自定义可排序列表项          |
+| renderHeader       | `() => ReactNode`                                                | 自定义渲染表头            |
+| renderEmpty        | `() => ReactNode`                                                | 自定义渲染空状态           |
+| getItemStyle       | `(status: GetItemStylesArgs) => ReactNode`                       | 自定义容器样式            |
+| ref                | `ForwardedRef<SortableListRef<T>>`                               | 对外部暴露方法            |
+| hideRemove         | `boolean`                                                        | 是否隐藏删除按钮，默认为 false |
+| handle             | `boolean`                                                        | 是否显示拖拽按钮，默认为 true  |
+| creatorButtonProps | `CreatorButtonProps\|false`                                      | 新建对象相关属性           |
+| actions            | `(item: T, index: number) => ReactNode[]` \| `React.ReactNode[]` | 除列表自带操作之外的其他操作自渲染  |
 
 ### CreatorButtonProps 创建按钮属性
 
-| 属性名            | 类型                   | 描述                                                                 |
-| ----------------- | ---------------------- | -------------------------------------------------------------------- |
-| position          | `'bottom'\|'top'`      | 按钮位置，默认在下方                                                 |
-| record            | `(index: number) => T` | 生成初始值逻辑                                                       |
-| creatorButtonText | `string`               | 新增一行按钮文案                                                     |
+| 属性名               | 类型                     | 描述                                               |
+| ----------------- | ---------------------- | ------------------------------------------------ |
+| position          | `'bottom'\|'top'`      | 按钮位置，默认在下方                                       |
+| record            | `(index: number) => T` | 生成初始值逻辑                                          |
+| creatorButtonText | `string`               | 新增一行按钮文案                                         |
 | style             | CSSProperties          | 按钮的样式设置，可以设置按钮是否显示，如 `style: { display: 'none'}` |
 
 ### GetItemStylesArgs

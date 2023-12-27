@@ -102,8 +102,3 @@ export interface SortableTreeInstance<T = any> extends PublicSortableTreeStore {
   getFlattenData: () => FlattenNode<T>[];
 }
 ```
-
-[//]: # '### 多选方案'
-[//]: #
-
-[//]: # "<code src=\"./demos/\_multiSelect.tsx\" ></code>"
