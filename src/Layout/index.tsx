@@ -1,5 +1,5 @@
 import { FlexboxProps } from 'react-layout-kit';
-import { ConfigProvider } from '../ConfigProvider';
+import { withProvider } from '../ConfigProvider';
 import { HeaderAndFooter, HeaderFooterSettings } from './components/HeaderAndFooter';
 import { LayoutTypeContainer } from './components/LayoutTypeContainer';
 import { PannelDefault, PannelSettings } from './components/PannelDefault';
@@ -74,12 +74,6 @@ const BasicLayout = (props: LayoutProps) => {
   );
 };
 
-const WrapperLayout = (props: LayoutProps) => {
-  return (
-    <ConfigProvider>
-      <BasicLayout {...props} />
-    </ConfigProvider>
-  );
-};
+const WrapperLayout = withProvider(BasicLayout);
 
 export { WrapperLayout as Layout };

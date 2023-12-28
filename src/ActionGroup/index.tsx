@@ -5,7 +5,7 @@ import {
   RedoOutlined,
   UndoOutlined,
 } from '@ant-design/icons';
-import { ActionIcon, ActionIconProps, getPrefixCls } from '@ant-design/pro-editor';
+import { ActionIcon, ActionIconProps, getPrefixCls, withProvider } from '@ant-design/pro-editor';
 import { Divider, Dropdown, DropdownProps } from 'antd';
 import { useStyle } from './style';
 
@@ -200,4 +200,6 @@ const ActionGroup = (props: ActionGroupProps) => {
   );
 };
 
-export { ActionGroup };
+const WithProviderActionGroup = withProvider(ActionGroup);
+
+export { WithProviderActionGroup as ActionGroup };

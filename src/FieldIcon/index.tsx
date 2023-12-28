@@ -1,5 +1,5 @@
 import Icon from '@ant-design/icons';
-import { APIFieldType, getPrefixCls, themeToken } from '@ant-design/pro-editor';
+import { APIFieldType, getPrefixCls, themeToken, withProvider } from '@ant-design/pro-editor';
 import classNames from 'classnames';
 import type { CSSProperties } from 'react';
 import React from 'react';
@@ -103,4 +103,4 @@ const FieldIcon: React.FC<FieldIconProps> = (props) => {
   );
 };
 
-export default FieldIcon;
+export default withProvider(FieldIcon);

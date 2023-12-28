@@ -7,7 +7,7 @@ import {
   FieldTitle,
   Input,
   Select,
-  getPrefixCls,
+  withProvider,
 } from '@ant-design/pro-editor';
 import type { DefaultOptionType, SelectProps } from 'antd/es/select';
 import classNames from 'classnames';
@@ -67,7 +67,6 @@ const FieldSelect: React.FC<FieldSelectProps> = (props) => {
     style,
     className,
     value: propsValue,
-    prefixCls: customizePrefixCls,
     options,
     onChange,
     showCustomField = true,
@@ -81,9 +80,7 @@ const FieldSelect: React.FC<FieldSelectProps> = (props) => {
   });
   const [open, setOpen] = useState(false);
 
-  const prefixCls = getPrefixCls('field-select', customizePrefixCls);
-
-  const { styles } = useStyle(prefixCls);
+  const { styles } = useStyle();
 
   const onNameChange = (value) => {
     setName(value);
@@ -151,4 +148,4 @@ const FieldSelect: React.FC<FieldSelectProps> = (props) => {
   );
 };
 
-export default FieldSelect;
+export default withProvider(FieldSelect);

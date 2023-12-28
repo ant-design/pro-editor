@@ -5,6 +5,7 @@ import type { Props as RndProps } from 'react-rnd';
 
 import { getPrefixCls } from '../theme';
 
+import { withProvider } from '..';
 import { FixMode } from './FixMode';
 import { FloatMode } from './FloatMode';
 
@@ -105,7 +106,7 @@ export interface DraggablePanelProps {
   prefixCls?: string;
 }
 
-export const Draggable: FC<DraggablePanelProps> = memo(
+const Draggable: FC<DraggablePanelProps> = memo(
   ({
     children,
     className,
@@ -187,3 +188,7 @@ export const Draggable: FC<DraggablePanelProps> = memo(
     }
   },
 );
+
+const WithProviderDraggable = withProvider(Draggable);
+
+export { WithProviderDraggable as Draggable };

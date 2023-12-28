@@ -1,6 +1,7 @@
 import { createStyles } from '../theme';
 
-export const useStyle = createStyles(({ token, css, cx }, prefix: string) => {
+export const useStyle = createStyles(({ token, css, cx, prefixCls }) => {
+  const prefix = `${prefixCls}-${token?.editorPrefix}-draggable-panel`;
   const commonHandle = css`
     position: relative;
     &::before {

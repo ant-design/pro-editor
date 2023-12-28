@@ -6,6 +6,7 @@ import remarkGfm from 'remark-gfm';
 import remarkMath from 'remark-math';
 
 import { PluggableList } from 'react-markdown/lib/react-markdown';
+import { withProvider } from '..';
 import { Code } from './CodeBlock';
 import { useStyles } from './style';
 
@@ -66,4 +67,4 @@ const Markdown = memo<MarkdownProps>(
   },
 );
 
-export default Markdown;
+export default withProvider(Markdown);

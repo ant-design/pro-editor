@@ -1,15 +1,16 @@
 import { createStyles } from '../theme';
 
-export const useStyle = createStyles(({ token, stylish, cx, css }, prefixCls: string) => {
+export const useStyle = createStyles(({ token, stylish, cx, css, prefixCls }) => {
+  const prefix = `${prefixCls}-${token?.editorPrefix}-data-previewer`;
   return {
     container: cx(
-      prefixCls,
+      prefix,
       css`
         ${stylish.textInfo}
       `,
     ),
     empty: cx(
-      `${prefixCls}-empty`,
+      `${prefix}-empty`,
       css`
         padding: 8px;
         background: ${token.colorFillQuaternary};
@@ -20,7 +21,7 @@ export const useStyle = createStyles(({ token, stylish, cx, css }, prefixCls: st
       `,
     ),
     json: cx(
-      `${prefixCls}-json`,
+      `${prefix}-json`,
       css`
         border-radius: 4px;
 

@@ -40,7 +40,7 @@ export const ConfigProvider: FC<ConfigProviderProps> = ({ children, componentTok
 
   const studioTheme = useStudioAntdTheme(appearance);
 
-  console.log('componentToken', componentToken);
+  console.log('appearance', appearance);
 
   studioTheme.components = { ...studioTheme.components, ...componentToken };
 

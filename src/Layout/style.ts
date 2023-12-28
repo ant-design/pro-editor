@@ -1,6 +1,9 @@
-import { STUDIO_UI_PREFIX, createStyles } from '../theme';
+import { createStyles } from '../theme';
 
-export const useStyle = createStyles(({ css, token, cx }, { prefixCls, themeType }) => {
+export const useStyle = createStyles(({ css, token, cx, prefixCls }, { themeType }) => {
+  const STUDIO_UI_PREFIX = `${prefixCls}-${token?.editorPrefix}`;
+  const prefix = `${STUDIO_UI_PREFIX}-layout`;
+
   const typeStylish = css`
     background-color: ${themeType === 'block'
       ? token.colorFillTertiary
@@ -26,7 +29,7 @@ export const useStyle = createStyles(({ css, token, cx }, { prefixCls, themeType
 
   return {
     layout: cx(
-      prefixCls,
+      prefix,
       css`
         height: 100vh;
         width: 100vw;
@@ -43,7 +46,7 @@ export const useStyle = createStyles(({ css, token, cx }, { prefixCls, themeType
       pureStylish,
     ),
     header: cx(
-      `${prefixCls}-header`,
+      `${prefix}-header`,
       css`
         box-sizing: border-box;
         height: 48px;
@@ -56,7 +59,7 @@ export const useStyle = createStyles(({ css, token, cx }, { prefixCls, themeType
       pureStylish,
     ),
     footer: cx(
-      `${prefixCls}-footer`,
+      `${prefix}-footer`,
       css`
         height: 36px;
         box-sizing: border-box;
@@ -69,7 +72,7 @@ export const useStyle = createStyles(({ css, token, cx }, { prefixCls, themeType
     ),
 
     flexContainer: cx(
-      `${prefixCls}-flex-container`,
+      `${prefix}-flex-container`,
       css`
         padding: ${token.margin / 2 + 2}px;
         position: relative;
@@ -77,14 +80,14 @@ export const useStyle = createStyles(({ css, token, cx }, { prefixCls, themeType
     ),
 
     centerPannel: cx(
-      `${prefixCls}-center-pannel`,
+      `${prefix}-center-pannel`,
       css`
         flex: 1;
       `,
     ),
 
     container: cx(
-      `${prefixCls}-container`,
+      `${prefix}-container`,
       css`
         flex: 1;
         display: flex;
@@ -92,7 +95,7 @@ export const useStyle = createStyles(({ css, token, cx }, { prefixCls, themeType
       `,
     ),
     pannel: cx(
-      `${prefixCls}-pannel`,
+      `${prefix}-pannel`,
       css`
         border-radius: ${token.borderRadius}px;
         box-sizing: border-box;
@@ -105,10 +108,10 @@ export const useStyle = createStyles(({ css, token, cx }, { prefixCls, themeType
       pureStylish,
     ),
 
-    leftPannel: cx(`${prefixCls}-left-pannel`, css``),
-    rightPannel: cx(`${prefixCls}-right-pannel`, css``),
+    leftPannel: cx(`${prefix}-left-pannel`, css``),
+    rightPannel: cx(`${prefix}-right-pannel`, css``),
     tip: cx(
-      `${prefixCls}-tip`,
+      `${prefix}-tip`,
       css`
         position: absolute;
         left: 50%;

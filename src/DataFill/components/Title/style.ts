@@ -1,4 +1,4 @@
-import { createStyles } from 'antd-style';
+import { createStyles } from '@ant-design/pro-editor';
 
 export const useStyle = createStyles(({ token, css, cx }, prefixCls) => {
   return {
