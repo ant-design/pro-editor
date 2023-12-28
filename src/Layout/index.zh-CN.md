@@ -67,21 +67,21 @@ EditorLayout 是我们专门为了编辑器场景制作的编辑器布局组件
 
 ### PannelSettings 面板设定
 
-| 属性      | 类型                     | 描述                                         |
-| --------- | ------------------------ | -------------------------------------------- |
-| children  | ReactNode 或 ReactNode[] | 面板的必需内容。                             |
-| direction | string                   | 面板的可选方向，'horizontal' 或 'vertical'。 |
-| tabs      | TabsProps                | 面板内部的标签页属性。                       |
-| icon      | ReactNode                | 面板的可选图标。                             |
-| extra     | ReactNode                | 可选的额外 React 节点。                      |
-| hide      | boolean                  | 面板的可选隐藏标志。                         |
-| minWidth  | number                   | 面板的可选最小宽度。                         |
-| minHeight | number                   | 面板的可选最小高度。                         |
-| maxWidth  | number                   | 面板的可选最大宽度。                         |
-| maxHeight | number                   | 面板的可选最大高度。                         |
-| style     | React.CSSProperties      | 面板样式的可选 CSS 属性。                    |
-| className | string                   | 面板的可选 CSS 类名。                        |
-| themeType | ThemeLayoutType          | 面板的可选主题类型。                         |
+| 属性      | 类型                       | 描述                                         |
+| --------- | -------------------------- | -------------------------------------------- |
+| children  | ReactNode 或 ReactNode \[] | 面板的必需内容。                             |
+| direction | string                     | 面板的可选方向，'horizontal' 或 'vertical'。 |
+| tabs      | TabsProps                  | 面板内部的标签页属性。                       |
+| icon      | ReactNode                  | 面板的可选图标。                             |
+| extra     | ReactNode                  | 可选的额外 React 节点。                      |
+| hide      | boolean                    | 面板的可选隐藏标志。                         |
+| minWidth  | number                     | 面板的可选最小宽度。                         |
+| minHeight | number                     | 面板的可选最小高度。                         |
+| maxWidth  | number                     | 面板的可选最大宽度。                         |
+| maxHeight | number                     | 面板的可选最大高度。                         |
+| style     | React.CSSProperties        | 面板样式的可选 CSS 属性。                    |
+| className | string                     | 面板的可选 CSS 类名。                        |
+| themeType | ThemeLayoutType            | 面板的可选主题类型。                         |
 
 ### HeaderFooterSettings 头和脚的区域设定
 

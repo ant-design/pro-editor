@@ -62,7 +62,7 @@ export type MenuItemType = GeneralItemType | SubMenuType | MenuDividerType;
 
 菜单分割线类型。
 
-| 属性名 | 类型      | 描述                              |
-| ------ | --------- | --------------------------------- |
-| dashed | `boolean` | 菜单分割线的样式是否为虚线        |
-| type   | `string`  | 菜单分割线的类型，固定为'divider' |
+| 属性名 | 类型      | 描述                               |
+| ------ | --------- | ---------------------------------- |
+| dashed | `boolean` | 菜单分割线的样式是否为虚线         |
+| type   | `string`  | 菜单分割线的类型，固定为 'divider' |

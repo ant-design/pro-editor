@@ -17,8 +17,7 @@ demo:
 
 ## 代码演示
 
-<code src="./demos/basic.tsx" ></code>
-<code src="./demos/preset.tsx" ></code>
+<code src="./demos/basic.tsx" ></code> <code src="./demos/preset.tsx" ></code>
 
 ## API
 

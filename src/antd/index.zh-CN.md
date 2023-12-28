@@ -15,8 +15,7 @@ demo:
 
 针对输入框类控件，重点优化了数据变更的时机，只有在输入框失焦或按回车后，才会触发更新；
 
-<code src="./demos/basic.tsx" ></code>
-<code src="./demos/inputNumber.tsx" ></code>
+<code src="./demos/basic.tsx" ></code> <code src="./demos/inputNumber.tsx" ></code>
 
 ### Select
 

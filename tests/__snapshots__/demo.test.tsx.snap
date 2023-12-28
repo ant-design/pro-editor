@@ -25149,6 +25149,223 @@ exports[`<LevaPanel /> > renders button.tsx correctly 1`] = `
 </div>
 `;
 
+exports[`<Markdown /> > renders htmlPlugin.tsx correctly 1`] = `
+.emotion-0 {
+  color: rgba(0, 0, 0, 0.88);
+}
+
+.emotion-0 h1,
+.emotion-0 h2,
+.emotion-0 h3,
+.emotion-0 h4,
+.emotion-0 h5 {
+  font-weight: 600;
+}
+
+.emotion-0 p {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  font-size: 14px;
+  line-height: 1.8;
+  color: rgba(0, 0, 0, 0.88);
+  word-break: break-all;
+  word-wrap: break-word;
+}
+
+.emotion-0 p+* {
+  margin-block-end: 0.5em;
+}
+
+.emotion-0>*:last-child {
+  margin-bottom: 0!important;
+}
+
+.emotion-0 blockquote {
+  margin: 16px 0;
+  padding: 0 12px;
+}
+
+.emotion-0 blockquote p {
+  font-style: italic;
+  color: rgba(0, 0, 0, 0.45);
+}
+
+.emotion-0 p:not(:last-child) {
+  margin-bottom: 1em;
+}
+
+.emotion-0 a {
+  color: #1677ff;
+}
+
+.emotion-0 a:hover {
+  color: #69b1ff;
+}
+
+.emotion-0 a:active {
+  color: #0958d9;
+}
+
+.emotion-0 img {
+  max-width: 100%;
+}
+
+.emotion-0 pre,
+.emotion-0 [data-code-type='highlighter'] {
+  border: none;
+  border-radius: 6px;
+}
+
+.emotion-0 pre>code,
+.emotion-0 [data-code-type='highlighter']>code {
+  padding: 0!important;
+  border: none!important;
+}
+
+.emotion-0>:not([data-code-type='highlighter']) code {
+  padding: 2px 6px;
+  font-size: 10px;
+  border-radius: 4px;
+}
+
+.emotion-0 table {
+  border-spacing: 0;
+  width: 100%;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  -webkit-margin-start: 0;
+  margin-inline-start: 0;
+  -webkit-margin-end: 0;
+  margin-inline-end: 0;
+  padding: 8px;
+  border: 1px solid #f0f0f0;
+  border-radius: 6px;
+}
+
+.emotion-0 table code {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.emotion-0 th,
+.emotion-0 td {
+  padding-block-start: 10px;
+  padding-block-end: 10px;
+  -webkit-padding-start: 16px;
+  padding-inline-start: 16px;
+  -webkit-padding-end: 16px;
+  padding-inline-end: 16px;
+}
+
+.emotion-0 thead tr th {
+  background: rgba(0, 0, 0, 0.04);
+}
+
+.emotion-0 thead tr th:first-child {
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+
+.emotion-0 thead tr th:last-child {
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+.emotion-0>ol>li::marker {
+  color: #1677ff!important;
+}
+
+.emotion-0>ul>li {
+  line-height: 1.8;
+  list-style-type: disc;
+}
+
+.emotion-0>ul>li::marker {
+  color: #1677ff!important;
+}
+
+.emotion-0 ol>li::marker,
+.emotion-0 ul>li::marker {
+  color: rgba(0, 0, 0, 0.45);
+}
+
+.emotion-0 details {
+  margin-bottom: 1em;
+  padding: 12px 16px;
+  background: rgba(0, 0, 0, 0.04);
+  border: 1px solid #f0f0f0;
+  border-radius: 8px;
+  -webkit-transition: all 400ms cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: all 400ms cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.emotion-0 details[open] summary {
+  padding-bottom: 12px;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+<div>
+  <article
+    class="studio-typography"
+  >
+    <div
+      class="emotion-0"
+    >
+      
+
+
+      <meta
+        charset="UTF-8"
+      />
+      
+
+      <meta
+        content="width=device-width, initial-scale=1.0"
+        name="viewport"
+      />
+      
+
+      <title>
+        Custom Html Dom Render
+      </title>
+      
+
+
+
+      <div>
+        Custom Html Dom Render
+      </div>
+      
+
+      <ul>
+        
+    
+        <li>
+          Ant Desgin
+        </li>
+        
+    
+        <li>
+          Ant Desgin Pro
+        </li>
+        
+    
+        <li>
+          Ant Desgin Pro Components
+        </li>
+        
+
+      </ul>
+      
+
+
+    </div>
+  </article>
+</div>
+`;
+
 exports[`<Markdown /> > renders index.tsx correctly 1`] = `
 .emotion-0 {
   color: rgba(0, 0, 0, 0.88);
@@ -25784,6 +26001,7 @@ exports[`<Markdown /> > renders index.tsx correctly 1`] = `
 
       <div
         class="studio-divider studio-divider-horizontal"
+        node="[object Object]"
         role="separator"
         style="margin-bottom: 1em; margin-top: 0px;"
       />
@@ -25810,6 +26028,7 @@ id sem consectetuer libero luctus adipiscing.
 
       <div
         class="studio-divider studio-divider-horizontal"
+        node="[object Object]"
         role="separator"
         style="margin-bottom: 1em; margin-top: 0px;"
       />
@@ -25829,6 +26048,7 @@ id sem consectetuer libero luctus adipiscing.
 
       <div
         class="studio-divider studio-divider-horizontal"
+        node="[object Object]"
         role="separator"
         style="margin-bottom: 1em; margin-top: 0px;"
       />
@@ -25849,6 +26069,7 @@ id sem consectetuer libero luctus adipiscing.
 
         <li>
           Parish
+          
 
           <ol>
             
@@ -25860,6 +26081,7 @@ id sem consectetuer libero luctus adipiscing.
 
             <li>
               McHale
+              
 
               <ol>
                 
@@ -25886,6 +26108,7 @@ id sem consectetuer libero luctus adipiscing.
 
       <div
         class="studio-divider studio-divider-horizontal"
+        node="[object Object]"
         role="separator"
         style="margin-bottom: 1em; margin-top: 0px;"
       />
@@ -25906,6 +26129,7 @@ id sem consectetuer libero luctus adipiscing.
 
         <li>
           Blue
+          
 
           <ul>
             
@@ -25917,6 +26141,7 @@ id sem consectetuer libero luctus adipiscing.
 
             <li>
               Green
+              
 
               <ul>
                 
@@ -25943,6 +26168,7 @@ id sem consectetuer libero luctus adipiscing.
 
       <div
         class="studio-divider studio-divider-horizontal"
+        node="[object Object]"
         role="separator"
         style="margin-bottom: 1em; margin-top: 0px;"
       />
@@ -25952,7 +26178,12 @@ id sem consectetuer libero luctus adipiscing.
         This is 
         <a
           class="studio-typography"
-        />
+          href="http://example.com/"
+          node="[object Object]"
+          title="Title"
+        >
+          an example
+        </a>
          inline link.
       </p>
       
@@ -25960,24 +26191,13 @@ id sem consectetuer libero luctus adipiscing.
       <p>
         <a
           class="studio-typography"
-        />
+          href="http://example.com/"
+          node="[object Object]"
+        >
+          http://example.com/
+        </a>
       </p>
       
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
       <table>
         <thead>
@@ -26347,6 +26567,7 @@ id sem consectetuer libero luctus adipiscing.
 
       <div
         class="studio-divider studio-divider-horizontal"
+        node="[object Object]"
         role="separator"
         style="margin-bottom: 1em; margin-top: 0px;"
       />
@@ -27878,55 +28099,6 @@ id sem consectetuer libero luctus adipiscing.
           </span>
         </span>
       </div>
-      
-
-
-
-      <meta
-        charset="UTF-8"
-      />
-      
-
-      <meta
-        content="width=device-width, initial-scale=1.0"
-        name="viewport"
-      />
-      
-
-      <title>
-        Custom Html Dom Render
-      </title>
-      
-
-
-
-      <div>
-        Custom Html Dom Render
-      </div>
-      
-
-      <ul>
-        
-    
-        <li>
-          Ant Desgin
-        </li>
-        
-    
-        <li>
-          Ant Desgin Pro
-        </li>
-        
-    
-        <li>
-          Ant Desgin Pro Components
-        </li>
-        
-
-      </ul>
-      
-
-
     </div>
   </article>
 </div>

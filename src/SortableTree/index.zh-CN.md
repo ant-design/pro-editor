@@ -18,16 +18,9 @@ demo:
 
 ###
 
-<code src="./demos/default.tsx" ></code>
-<code src="./demos/controlled.tsx" ></code>
+<code src="./demos/default.tsx" ></code> <code src="./demos/controlled.tsx" ></code>
 
-<code src="./demos/renderContent.tsx" ></code>
-<code src="./demos/disableDrag.tsx" ></code>
-<code src="./demos/sortableRule.tsx" ></code>
-
-[//]: # '### 多选方案'
-[//]: #
-[//]: # '<code src="./demos/_multiSelect.tsx" ></code>'
+<code src="./demos/renderContent.tsx" ></code> <code src="./demos/disableDrag.tsx" ></code> <code src="./demos/sortableRule.tsx" ></code>
 
 ## API
 
