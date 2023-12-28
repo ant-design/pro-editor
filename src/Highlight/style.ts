@@ -4,14 +4,12 @@ import { getThemeColor } from './theme/colors';
 
 interface IHighlightStyleProps {
   type: 'pure' | 'block';
-  theme: 'light' | 'dark';
+  theme: 'light' | 'dark' | 'auto';
 }
 
 export const useStyles = createStyles(
   ({ css, cx, token, prefixCls }, { theme, type }: IHighlightStyleProps) => {
     const prefix = `${prefixCls}-${token?.editorPrefix}-highlight`;
-
-    console.log('${prefix}-copy', `${prefix}-copy`);
 
     const { colorFillTertiary, colorText, colorTextSecondary } = getThemeColor(theme === 'dark');
 

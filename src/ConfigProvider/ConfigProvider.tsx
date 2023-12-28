@@ -12,7 +12,6 @@ export const useStudioAntdTheme = (appearance: ThemeAppearance) => {
   const controlToken: Partial<AntdToken> = {
     colorBgContainer: token?.colorFillQuaternary,
     colorBorder: 'transparent',
-    controlHeightSM: 24,
     controlOutline: 'transparent',
   };
 
@@ -22,7 +21,6 @@ export const useStudioAntdTheme = (appearance: ThemeAppearance) => {
     Select: controlToken,
     Tree: {
       colorBgContainer: 'transparent',
-      controlHeightSM: 24,
     },
     TreeSelect: controlToken,
   };
@@ -40,13 +38,11 @@ export const ConfigProvider: FC<ConfigProviderProps> = ({ children, componentTok
 
   const studioTheme = useStudioAntdTheme(appearance);
 
-  console.log('appearance', appearance);
-
   studioTheme.components = { ...studioTheme.components, ...componentToken };
 
   return (
     <AntdConfigProvider theme={studioTheme}>
-      <ThemeProvider>{children}</ThemeProvider>
+      <ThemeProvider appearance={appearance}>{children}</ThemeProvider>
     </AntdConfigProvider>
   );
 };

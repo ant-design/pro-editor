@@ -6,7 +6,8 @@ export const useStyles = createStyles(({ css, cx, token, prefixCls }, { type }) 
     border: 1px solid ${type === 'block' ? 'transparent' : token.colorBorder};
   `;
 
-  const prefix = `${prefixCls}-${token?.editorPrefix}-snippet`;
+  const BasePrefix = `${prefixCls}-${token?.editorPrefix}`;
+  const prefix = `${BasePrefix}-snippet`;
 
   return {
     container: cx(

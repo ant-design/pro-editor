@@ -5,7 +5,6 @@
  * 优先支持主流语言，没有import在代码中使用的不会打包
  */
 import { THEME_LIGHT } from '@/Highlight/theme';
-import { STUDIO_UI_PREFIX } from '@/theme';
 import { Loading3QuartersOutlined as Loading } from '@ant-design/icons';
 import classNames from 'classnames';
 import { memo } from 'react';
@@ -21,20 +20,19 @@ export type ShikiProps = Pick<
 >;
 
 const HighLighter: React.FC<ShikiProps> = memo((props) => {
-  const {
-    children,
-    lineNumber = false,
-    theme = THEME_LIGHT,
-    language,
-    prefixCls = STUDIO_UI_PREFIX,
-  } = props;
-  const { styles } = useStyles({ prefixCls, lineNumber, theme });
+  const { children, lineNumber = false, theme = THEME_LIGHT, language, prefixCls } = props;
+  const { styles } = useStyles({ outPrefix: prefixCls, lineNumber, theme });
   const { renderShiki, loading } = useShiki(language, theme);
 
   return (
     <>
       {loading ? (
-        <HighLightJS lineNumber={lineNumber} theme={theme} language={language}>
+        <HighLightJS
+          lineNumber={lineNumber}
+          theme={theme}
+          language={language}
+          prefixCls={prefixCls}
+        >
           {children}
         </HighLightJS>
       ) : (

@@ -1,12 +1,11 @@
 import classNames from 'classnames';
 import { createRef, memo } from 'react';
-import { getPrefixCls } from '../theme';
 import CopyButton from './components/CopyButton';
 import HighLighter from './components/HighLighter';
 import LanguageTag from './components/LanguageTag';
 import { useKeyDownCopyEvent } from './hooks/useKeyDownCopyEvent';
 import { useStyles } from './style';
-import { THEME_LIGHT, ThemeType } from './theme';
+import { ThemeType } from './theme';
 
 export interface HighlightProps {
   /**
@@ -79,14 +78,12 @@ const HighlightBase: React.FC<HighlightProps> = memo((props) => {
     className,
     lineNumber = false,
     copyable = true,
-    theme = THEME_LIGHT,
+    theme,
     language = 'tsx',
-    prefixCls: customPrefixCls,
     showLanguage = true,
     type = 'block',
     onCopy,
   } = props;
-  const prefixCls = getPrefixCls('highlight', customPrefixCls);
   const { styles } = useStyles({ theme, type });
   const codeRef = createRef<HTMLDivElement>();
   useKeyDownCopyEvent(codeRef, onCopy);
@@ -103,12 +100,7 @@ const HighlightBase: React.FC<HighlightProps> = memo((props) => {
         {showLanguage && language && (
           <LanguageTag theme={theme}>{language.toLowerCase()}</LanguageTag>
         )}
-        <HighLighter
-          lineNumber={lineNumber}
-          language={language}
-          theme={theme}
-          prefixCls={prefixCls}
-        >
+        <HighLighter lineNumber={lineNumber} language={language} theme={theme}>
           {children}
         </HighLighter>
       </div>

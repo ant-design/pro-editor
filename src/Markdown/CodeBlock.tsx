@@ -17,9 +17,6 @@ const useStyles = createStyles(({ css }) => ({
       padding: 12px !important;
     }
   `,
-  snippet: css`
-    display: flex;
-  `,
 }));
 
 const countLines = (str: string): number => {
@@ -43,7 +40,10 @@ export const Code = memo((properties: any) => {
   if (countLines(content) === 1 && content.length <= 60) {
     return (
       <Snippet
-        className={cx(styles.container, styles.snippet)}
+        className={cx(styles.container)}
+        style={{
+          display: 'flex',
+        }}
         data-code-type="highlighter"
         language={lang}
         symbol={''}
