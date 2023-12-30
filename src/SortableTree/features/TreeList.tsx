@@ -75,30 +75,36 @@ interface TreeListProps {
 }
 
 const TreeList = memo<TreeListProps>(({ prefixCls }) => {
-  const [dispatchTreeData, hideAdd] = useStore(
-    (s) => [s.dispatchTreeData, s.hideAdd, s.hideRemove],
+  const [dispatchTreeData, hideAdd, virtual] = useStore(
+    (s) => [s.dispatchTreeData, s.hideAdd, s.virtual],
     shallow,
   );
   const flattenData: FlattenNode[] = useStore(dataFlattenSelector, isEqual);
   const { styles } = useStyle(prefixCls);
 
+  const { height = 800, itemHeight = () => 36, width = '100%' } = virtual || {};
+
   return (
     <>
-      <VariableSizeList
-        itemCount={flattenData!.length}
-        height={800}
-        itemSize={() => 36}
-        itemData={flattenData}
-        width={275}
-      >
-        {({ index, data, style }) => {
-          return <TreeNode prefixCls={prefixCls} node={data[index]} virtualStyle={style} />;
-        }}
-      </VariableSizeList>
-
-      {/* {flattenData.map((node) => (
-        <TreeNode key={node.id} node={node} prefixCls={prefixCls} />
-      ))} */}
+      {virtual ? (
+        <VariableSizeList
+          itemCount={flattenData!.length}
+          height={height}
+          itemSize={itemHeight}
+          itemData={flattenData}
+          width={width}
+        >
+          {({ index, data, style }) => {
+            return <TreeNode prefixCls={prefixCls} node={data[index]} virtualStyle={style} />;
+          }}
+        </VariableSizeList>
+      ) : (
+        <>
+          {flattenData.map((node) => (
+            <TreeNode key={node.id} node={node} prefixCls={prefixCls} />
+          ))}
+        </>
+      )}
       {hideAdd ? null : (
         <Button
           block

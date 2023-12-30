@@ -6,7 +6,7 @@ import { SortableTreeInstance, useSortableTree } from '../hooks/useSortableTree'
 import type { ControlledState, OnTreeDataChange } from '../store';
 import { useStoreApi } from '../store';
 
-import type { FlattenNode, Projected, RenderNodeProps, TreeData } from '../types';
+import type { FlattenNode, Projected, RenderNodeProps, TreeData, VirtualConfig } from '../types';
 
 export interface StoreUpdaterProps<T = any> extends ControlledState {
   /**
@@ -46,6 +46,11 @@ export interface StoreUpdaterProps<T = any> extends ControlledState {
     targetNode: FlattenNode<T>;
     projected: Projected;
   }) => boolean;
+
+  /**
+   * 开启虚拟滚动
+   */
+  virtual?: VirtualConfig;
 }
 
 const StoreUpdater = ({
@@ -61,6 +66,7 @@ const StoreUpdater = ({
   indentationWidth,
   disableDrag,
   sortableRule,
+  virtual,
 }: StoreUpdaterProps) => {
   const storeApi = useStoreApi();
 
@@ -75,6 +81,7 @@ const StoreUpdater = ({
   useStoreUpdater('indentationWidth', indentationWidth);
   useStoreUpdater('hideAdd', hideAdd);
   useStoreUpdater('hideRemove', hideRemove);
+  useStoreUpdater('virtual', virtual);
   useStoreUpdater('disableDrag', disableDrag);
   useStoreUpdater('sortableRule', sortableRule);
 

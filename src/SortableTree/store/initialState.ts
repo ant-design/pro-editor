@@ -1,4 +1,11 @@
-import type { FlattenNode, Projected, RenderNodeProps, TreeData, UniqueIdentifier } from '../types';
+import type {
+  FlattenNode,
+  Projected,
+  RenderNodeProps,
+  TreeData,
+  UniqueIdentifier,
+  VirtualConfig,
+} from '../types';
 import { TreeDataDispatchPayload } from './treeDataReducer';
 
 export type OnTreeDataChange<T = any> = (
@@ -89,6 +96,10 @@ export interface State<T = any> extends ControlledState {
     targetNode: FlattenNode<T>;
     projected: Projected;
   }) => boolean;
+  /**
+   * 虚拟滚动配置
+   */
+  virtual?: VirtualConfig;
 }
 
 export const initialDragState: Pick<
@@ -108,6 +119,7 @@ export const initialState: State = {
   renderContent: undefined,
   renderExtra: undefined,
   hideAdd: false,
+  virtual: false,
   disableDrag: false,
   hideRemove: false,
   ...initialDragState,

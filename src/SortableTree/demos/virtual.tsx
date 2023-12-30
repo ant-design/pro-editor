@@ -1,3 +1,7 @@
+/**
+ * title: 虚拟滚动
+ * description: 数据量较大时，使用 virtual 配置虚拟滚动
+ */
 import { SortableTree } from '@ant-design/pro-editor';
 
 interface DataContent {
@@ -3951,14 +3955,19 @@ const LayerManager = () => {
   ];
 
   return (
-    <SortableTree<DataContent>
-      treeData={treeData as any}
-      renderContent={(item) => <div>{item.id}</div>}
-      SHOW_STORE_IN_DEVTOOLS
-      onTreeDataChange={(data) => {
-        console.log('变更：', data);
-      }}
-    />
+    <div style={{ width: 340 }}>
+      <SortableTree<DataContent>
+        treeData={treeData as any}
+        renderContent={(item) => <div>{item.id}</div>}
+        SHOW_STORE_IN_DEVTOOLS
+        virtual={{
+          height: 480,
+        }}
+        onTreeDataChange={(data) => {
+          console.log('变更：', data);
+        }}
+      />
+    </div>
   );
 };
 export default LayerManager;
