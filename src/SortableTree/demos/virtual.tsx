@@ -1,6 +1,4 @@
-import type { TreeData } from '@ant-design/pro-editor';
 import { SortableTree } from '@ant-design/pro-editor';
-import React from 'react';
 
 interface DataContent {
   name: string;
@@ -8,22 +6,7 @@ interface DataContent {
   isLeaf: boolean;
 }
 
-interface IContentProps {
-  content: any;
-  id: string;
-  setCheckedId: any;
-  checked: boolean;
-}
-
-interface IProps {
-  layer: TreeData;
-  setLayer: any;
-  onLeafMove?: (leaf: any, layer: any) => void;
-  onLeafDelete?: (leaf: any) => void;
-  onLeafLock?: (leaf: any, locked: boolean) => void;
-}
-
-const LayerManager = (props: IProps) => {
+const LayerManager = () => {
   const treeData = [
     {
       id: '33',
@@ -3966,15 +3949,16 @@ const LayerManager = (props: IProps) => {
       ],
     },
   ];
-  console.log('treeData:11 ', treeData);
 
   return (
-    <div style={{ width: 275, padding: '0 12px', height: 800 }}>
-      <SortableTree<DataContent>
-        treeData={treeData as any}
-        renderContent={(item) => <div>{item.id}</div>}
-      />
-    </div>
+    <SortableTree<DataContent>
+      treeData={treeData as any}
+      renderContent={(item) => <div>{item.id}</div>}
+      SHOW_STORE_IN_DEVTOOLS
+      onTreeDataChange={(data) => {
+        console.log('变更：', data);
+      }}
+    />
   );
 };
 export default LayerManager;
