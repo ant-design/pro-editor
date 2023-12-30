@@ -22,6 +22,8 @@ demo:
 
 <code src="./demos/renderContent.tsx" ></code> <code src="./demos/disableDrag.tsx" ></code> <code src="./demos/sortableRule.tsx" ></code>
 
+<code src="./demos/virtual.tsx" ></code>
+
 ## API
 
 ### 属性
