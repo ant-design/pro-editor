@@ -22,56 +22,69 @@ demo:
 
 <code src="./demos/renderContent.tsx" ></code> <code src="./demos/disableDrag.tsx" ></code> <code src="./demos/sortableRule.tsx" ></code>
 
+<code src="./demos/virtual.tsx" ></code>
+
 ## API
 
 ### 属性
 
-| 名称                  | 类型                                                                                                    | 描述          |
-| ------------------- | ----------------------------------------------------------------------------------------------------- | ----------- |
-| hideAdd             | `boolean`                                                                                             | 隐藏默认的添加按钮   |
-| hideRemove          | `boolean`                                                                                             | 隐藏默认的删除按钮   |
-| disableDrag         | `boolean`                                                                                             | 禁用拖拽        |
-| indentationWidth    | `number`                                                                                              | 缩进宽度        |
-| onSelectedIdsChange | `(selectedIds: UniqueIdentifier[]) => void`                                                           | 选中 ID 变更回调  |
-| treeData            | `TreeData<T>`                                                                                         | 树的数据        |
-| defaultTreeData     | `TreeData<T>`                                                                                         | 默认数据        |
-| onTreeDataChange    | `(treeData: TreeData<T>,event: TreeDataDispatchPayload) => void`                                      | 数据变更回调      |
-| renderContent       | `(node: FlattenNode<T>) => JSX.Element`                                                               | 渲染内容        |
-| renderExtra         | `(node: FlattenNode<T>) => JSX.Element`                                                               | 渲染额外项       |
-| ref                 | `MutableRefObject<SortableTreeInstance<T>>`                                                           | 对外部暴露方法     |
-| sortableRule        | `data: { activeNode: FlattenNode<T>; targetNode: FlattenNode<T>; projected: Projected; }) => boolean` | 控制拖动排序的规则函数 |
+| 名称                | 类型                                                                                                  | 描述                       |
+| ------------------- | ----------------------------------------------------------------------------------------------------- | -------------------------- |
+| hideAdd             | `boolean`                                                                                             | 隐藏默认的添加按钮         |
+| hideRemove          | `boolean`                                                                                             | 隐藏默认的删除按钮         |
+| disableDrag         | `boolean`                                                                                             | 禁用拖拽                   |
+| indentationWidth    | `number`                                                                                              | 缩进宽度                   |
+| onSelectedIdsChange | `(selectedIds: UniqueIdentifier[]) => void`                                                           | 选中 ID 变更回调           |
+| treeData            | `TreeData<T>`                                                                                         | 树的数据                   |
+| defaultTreeData     | `TreeData<T>`                                                                                         | 默认数据                   |
+| onTreeDataChange    | `(treeData: TreeData<T>,event: TreeDataDispatchPayload) => void`                                      | 数据变更回调               |
+| renderContent       | `(node: FlattenNode<T>) => JSX.Element`                                                               | 渲染内容                   |
+| renderExtra         | `(node: FlattenNode<T>) => JSX.Element`                                                               | 渲染额外项                 |
+| ref                 | `MutableRefObject<SortableTreeInstance<T>>`                                                           | 对外部暴露方法             |
+| sortableRule        | `data: { activeNode: FlattenNode<T>; targetNode: FlattenNode<T>; projected: Projected; }) => boolean` | 控制拖动排序的规则函数     |
+| virtual             | `VirtualConfig` \| `false`                                                                            | 虚拟滚动配置，默认为 false |
+
+## VirtualConfig
+
+虚拟滚动配置
+
+| 名称       | 类型                        | 描述                        |
+| ---------- | --------------------------- | --------------------------- |
+| height     | `number`                    | 虚拟滚动容器高度，必填      |
+| width      | `number`\| `string`         | 虚拟滚动容器宽度，默认 100% |
+| itemHeight | `(index: number) => number` | 列表项高度，默认为 36       |
 
 ## TreeNode
 
 树节点
 
-| 名称        | 类型                 | 描述       |
-| --------- | ------------------ | -------- |
-| id        | `UniqueIdentifier` | 节点 ID    |
-| children  | `TreeNode<T>[]`    | 子节点列表    |
-| collapsed | `boolean`          | 组是否折叠    |
+| 名称      | 类型               | 描述             |
+| --------- | ------------------ | ---------------- |
+| id        | `UniqueIdentifier` | 节点 ID          |
+| children  | `TreeNode<T>[]`    | 子节点列表       |
+| collapsed | `boolean`          | 组是否折叠       |
 | showExtra | `boolean`          | 是否显示额外区域 |
-| content   | `T`                | 节点数据     |
+| content   | `T`                | 节点数据         |
 
 ## FlattenNode
 
 展平的节点
 
-| 名称       | 类型                           | 描述                   |
-| -------- | ---------------------------- | -------------------- |
+| 名称     | 类型                         | 描述                             |
+| -------- | ---------------------------- | -------------------------------- |
 | parentId | `UniqueIdentifier` \| `null` | 父节点 ID，如果是根节点则为 null |
-| depth    | `number`                     | 节点深度                 |
-| index    | `number`                     | 节点在同级节点中的位置          |
+| depth    | `number`                     | 节点深度                         |
+| index    | `number`                     | 节点在同级节点中的位置           |
 
 ## Projected
 
 放置目标位置信息
 
-| 名称       | 类型                           | 描述                   |
-| -------- | ---------------------------- | -------------------- |
-| depth    | `number`                     | 放置目标位置深度             |
-| maxDepth | `number`                     | 目标位置可放置最大深度          |
-| minDepth | `number`                     | 目标位置可放置可放置最小深度       |
+| 名称     | 类型                         | 描述                             |
+| -------- | ---------------------------- | -------------------------------- |
+| depth    | `number`                     | 放置目标位置深度                 |
+| maxDepth | `number`                     | 目标位置可放置最大深度           |
+| minDepth | `number`                     | 目标位置可放置可放置最小深度     |
 | parentId | `UniqueIdentifier` \| `null` | 父节点 ID，如果是根节点则为 null |
 
 ## SortableTreeInstance

@@ -1,23 +1,25 @@
 import { createStyles, cx, getStudioStylish } from '@/theme';
-import { PlusOutlined } from '@ant-design/icons';
 import { useMemoizedFn } from 'ahooks';
-import { Button } from 'antd';
 import isEqual from 'lodash.isequal';
 import { memo } from 'react';
+import { VariableSizeList } from 'react-window';
 import { shallow } from 'zustand/shallow';
 
 import { SortableTreeItem } from '../components';
 import { dataFlattenSelector, projectedSelector, useStore } from '../store';
 
-import { genUniqueId } from '../../utils';
+import { genUniqueId } from '@/utils';
+import { PlusOutlined } from '@ant-design/icons';
+import { Button } from 'antd';
 import type { FlattenNode } from '../types';
 
 interface TreeNodeProps {
   prefixCls: string;
   node: FlattenNode;
+  virtualStyle?: React.CSSProperties;
 }
 
-const TreeNode = memo<TreeNodeProps>(({ prefixCls, node }) => {
+const TreeNode = memo<TreeNodeProps>(({ prefixCls, node, virtualStyle }) => {
   const [activeId, indentationWidth, dispatchTreeData, hideRemove] = useStore(
     (s) => [s.activeId, s.indentationWidth, s.dispatchTreeData, s.hideRemove],
     shallow,
@@ -44,6 +46,7 @@ const TreeNode = memo<TreeNodeProps>(({ prefixCls, node }) => {
         children.length ? () => dispatchTreeData({ type: 'toggleCollapse', id }) : undefined
       }
       node={node}
+      virtualStyle={virtualStyle}
       onRemove={onRemove}
     />
   );
@@ -72,18 +75,36 @@ interface TreeListProps {
 }
 
 const TreeList = memo<TreeListProps>(({ prefixCls }) => {
-  const [dispatchTreeData, hideAdd] = useStore(
-    (s) => [s.dispatchTreeData, s.hideAdd, s.hideRemove],
+  const [dispatchTreeData, hideAdd, virtual] = useStore(
+    (s) => [s.dispatchTreeData, s.hideAdd, s.virtual],
     shallow,
   );
   const flattenData: FlattenNode[] = useStore(dataFlattenSelector, isEqual);
   const { styles } = useStyle(prefixCls);
 
+  const { height = 800, itemHeight = () => 36, width = '100%' } = virtual || {};
+
   return (
     <>
-      {flattenData.map((node) => (
-        <TreeNode key={node.id} node={node} prefixCls={prefixCls} />
-      ))}
+      {virtual ? (
+        <VariableSizeList
+          itemCount={flattenData!.length}
+          height={height}
+          itemSize={itemHeight}
+          itemData={flattenData}
+          width={width}
+        >
+          {({ index, data, style }) => {
+            return <TreeNode prefixCls={prefixCls} node={data[index]} virtualStyle={style} />;
+          }}
+        </VariableSizeList>
+      ) : (
+        <>
+          {flattenData.map((node) => (
+            <TreeNode key={node.id} node={node} prefixCls={prefixCls} />
+          ))}
+        </>
+      )}
       {hideAdd ? null : (
         <Button
           block

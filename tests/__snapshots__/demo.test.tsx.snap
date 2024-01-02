@@ -35205,7 +35205,7 @@ exports[`<SortableTree /> > renders controlled.tsx correctly 1`] = `
           class="studio-sortable-tree-node-body"
         >
           <button
-            aria-describedby="DndDescribedBy-24"
+            aria-describedby="DndDescribedBy-25"
             aria-disabled="false"
             aria-roledescription="sortable"
             class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-handle emotion-3"
@@ -35275,7 +35275,7 @@ exports[`<SortableTree /> > renders controlled.tsx correctly 1`] = `
           class="studio-sortable-tree-node-body"
         >
           <button
-            aria-describedby="DndDescribedBy-24"
+            aria-describedby="DndDescribedBy-25"
             aria-disabled="false"
             aria-roledescription="sortable"
             class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-handle emotion-3"
@@ -35363,7 +35363,7 @@ exports[`<SortableTree /> > renders controlled.tsx correctly 1`] = `
           class="studio-sortable-tree-node-body"
         >
           <button
-            aria-describedby="DndDescribedBy-24"
+            aria-describedby="DndDescribedBy-25"
             aria-disabled="false"
             aria-roledescription="sortable"
             class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-handle emotion-3"
@@ -35433,7 +35433,7 @@ exports[`<SortableTree /> > renders controlled.tsx correctly 1`] = `
           class="studio-sortable-tree-node-body"
         >
           <button
-            aria-describedby="DndDescribedBy-24"
+            aria-describedby="DndDescribedBy-25"
             aria-disabled="false"
             aria-roledescription="sortable"
             class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-handle emotion-3"
@@ -35503,7 +35503,7 @@ exports[`<SortableTree /> > renders controlled.tsx correctly 1`] = `
           class="studio-sortable-tree-node-body"
         >
           <button
-            aria-describedby="DndDescribedBy-24"
+            aria-describedby="DndDescribedBy-25"
             aria-disabled="false"
             aria-roledescription="sortable"
             class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-handle emotion-3"
@@ -35573,7 +35573,7 @@ exports[`<SortableTree /> > renders controlled.tsx correctly 1`] = `
           class="studio-sortable-tree-node-body"
         >
           <button
-            aria-describedby="DndDescribedBy-24"
+            aria-describedby="DndDescribedBy-25"
             aria-disabled="false"
             aria-roledescription="sortable"
             class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-handle emotion-3"
@@ -35643,7 +35643,7 @@ exports[`<SortableTree /> > renders controlled.tsx correctly 1`] = `
           class="studio-sortable-tree-node-body"
         >
           <button
-            aria-describedby="DndDescribedBy-24"
+            aria-describedby="DndDescribedBy-25"
             aria-disabled="false"
             aria-roledescription="sortable"
             class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-handle emotion-3"
@@ -35713,7 +35713,7 @@ exports[`<SortableTree /> > renders controlled.tsx correctly 1`] = `
           class="studio-sortable-tree-node-body"
         >
           <button
-            aria-describedby="DndDescribedBy-24"
+            aria-describedby="DndDescribedBy-25"
             aria-disabled="false"
             aria-roledescription="sortable"
             class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-handle emotion-3"
@@ -35801,7 +35801,7 @@ exports[`<SortableTree /> > renders controlled.tsx correctly 1`] = `
           class="studio-sortable-tree-node-body"
         >
           <button
-            aria-describedby="DndDescribedBy-24"
+            aria-describedby="DndDescribedBy-25"
             aria-disabled="false"
             aria-roledescription="sortable"
             class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-handle emotion-3"
@@ -35871,7 +35871,7 @@ exports[`<SortableTree /> > renders controlled.tsx correctly 1`] = `
           class="studio-sortable-tree-node-body"
         >
           <button
-            aria-describedby="DndDescribedBy-24"
+            aria-describedby="DndDescribedBy-25"
             aria-disabled="false"
             aria-roledescription="sortable"
             class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-handle emotion-3"
@@ -35968,7 +35968,7 @@ exports[`<SortableTree /> > renders controlled.tsx correctly 1`] = `
         </span>
       </button>
       <div
-        id="DndDescribedBy-24"
+        id="DndDescribedBy-25"
         style="display: none;"
       >
         
@@ -35980,7 +35980,7 @@ exports[`<SortableTree /> > renders controlled.tsx correctly 1`] = `
       <div
         aria-atomic="true"
         aria-live="assertive"
-        id="DndLiveRegion-24"
+        id="DndLiveRegion-25"
         role="status"
         style="position: fixed; width: 1px; height: 1px; margin: -1px; border: 0px; padding: 0px; overflow: hidden; clip-path: inset(100%); white-space: nowrap;"
       />
@@ -36262,7 +36262,7 @@ exports[`<SortableTree /> > renders default.tsx correctly 1`] = `
           class="studio-sortable-tree-node-body"
         >
           <button
-            aria-describedby="DndDescribedBy-23"
+            aria-describedby="DndDescribedBy-24"
             aria-disabled="false"
             aria-roledescription="sortable"
             class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-handle emotion-3"
@@ -36328,7 +36328,7 @@ exports[`<SortableTree /> > renders default.tsx correctly 1`] = `
           class="studio-sortable-tree-node-body"
         >
           <button
-            aria-describedby="DndDescribedBy-23"
+            aria-describedby="DndDescribedBy-24"
             aria-disabled="false"
             aria-roledescription="sortable"
             class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-handle emotion-3"
@@ -36412,7 +36412,7 @@ exports[`<SortableTree /> > renders default.tsx correctly 1`] = `
           class="studio-sortable-tree-node-body"
         >
           <button
-            aria-describedby="DndDescribedBy-23"
+            aria-describedby="DndDescribedBy-24"
             aria-disabled="false"
             aria-roledescription="sortable"
             class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-handle emotion-3"
@@ -36478,7 +36478,7 @@ exports[`<SortableTree /> > renders default.tsx correctly 1`] = `
           class="studio-sortable-tree-node-body"
         >
           <button
-            aria-describedby="DndDescribedBy-23"
+            aria-describedby="DndDescribedBy-24"
             aria-disabled="false"
             aria-roledescription="sortable"
             class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-handle emotion-3"
@@ -36544,7 +36544,7 @@ exports[`<SortableTree /> > renders default.tsx correctly 1`] = `
           class="studio-sortable-tree-node-body"
         >
           <button
-            aria-describedby="DndDescribedBy-23"
+            aria-describedby="DndDescribedBy-24"
             aria-disabled="false"
             aria-roledescription="sortable"
             class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-handle emotion-3"
@@ -36610,7 +36610,7 @@ exports[`<SortableTree /> > renders default.tsx correctly 1`] = `
           class="studio-sortable-tree-node-body"
         >
           <button
-            aria-describedby="DndDescribedBy-23"
+            aria-describedby="DndDescribedBy-24"
             aria-disabled="false"
             aria-roledescription="sortable"
             class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-handle emotion-3"
@@ -36676,7 +36676,7 @@ exports[`<SortableTree /> > renders default.tsx correctly 1`] = `
           class="studio-sortable-tree-node-body"
         >
           <button
-            aria-describedby="DndDescribedBy-23"
+            aria-describedby="DndDescribedBy-24"
             aria-disabled="false"
             aria-roledescription="sortable"
             class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-handle emotion-3"
@@ -36742,7 +36742,7 @@ exports[`<SortableTree /> > renders default.tsx correctly 1`] = `
           class="studio-sortable-tree-node-body"
         >
           <button
-            aria-describedby="DndDescribedBy-23"
+            aria-describedby="DndDescribedBy-24"
             aria-disabled="false"
             aria-roledescription="sortable"
             class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-handle emotion-3"
@@ -36826,7 +36826,7 @@ exports[`<SortableTree /> > renders default.tsx correctly 1`] = `
           class="studio-sortable-tree-node-body"
         >
           <button
-            aria-describedby="DndDescribedBy-23"
+            aria-describedby="DndDescribedBy-24"
             aria-disabled="false"
             aria-roledescription="sortable"
             class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-handle emotion-3"
@@ -36892,7 +36892,7 @@ exports[`<SortableTree /> > renders default.tsx correctly 1`] = `
           class="studio-sortable-tree-node-body"
         >
           <button
-            aria-describedby="DndDescribedBy-23"
+            aria-describedby="DndDescribedBy-24"
             aria-disabled="false"
             aria-roledescription="sortable"
             class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-handle emotion-3"
@@ -36985,7 +36985,7 @@ exports[`<SortableTree /> > renders default.tsx correctly 1`] = `
         </span>
       </button>
       <div
-        id="DndDescribedBy-23"
+        id="DndDescribedBy-24"
         style="display: none;"
       >
         
@@ -36997,7 +36997,7 @@ exports[`<SortableTree /> > renders default.tsx correctly 1`] = `
       <div
         aria-atomic="true"
         aria-live="assertive"
-        id="DndLiveRegion-23"
+        id="DndLiveRegion-24"
         role="status"
         style="position: fixed; width: 1px; height: 1px; margin: -1px; border: 0px; padding: 0px; overflow: hidden; clip-path: inset(100%); white-space: nowrap;"
       />
@@ -37733,7 +37733,7 @@ exports[`<SortableTree /> > renders disableDrag.tsx correctly 1`] = `
         </span>
       </button>
       <div
-        id="DndDescribedBy-22"
+        id="DndDescribedBy-23"
         style="display: none;"
       >
         
@@ -37745,7 +37745,7 @@ exports[`<SortableTree /> > renders disableDrag.tsx correctly 1`] = `
       <div
         aria-atomic="true"
         aria-live="assertive"
-        id="DndLiveRegion-22"
+        id="DndLiveRegion-23"
         role="status"
         style="position: fixed; width: 1px; height: 1px; margin: -1px; border: 0px; padding: 0px; overflow: hidden; clip-path: inset(100%); white-space: nowrap;"
       />
@@ -38075,7 +38075,7 @@ exports[`<SortableTree /> > renders renderContent.tsx correctly 1`] = `
           class="studio-sortable-tree-node-body"
         >
           <button
-            aria-describedby="DndDescribedBy-21"
+            aria-describedby="DndDescribedBy-22"
             aria-disabled="false"
             aria-roledescription="sortable"
             class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-handle emotion-3"
@@ -38165,7 +38165,7 @@ exports[`<SortableTree /> > renders renderContent.tsx correctly 1`] = `
           class="studio-sortable-tree-node-body"
         >
           <button
-            aria-describedby="DndDescribedBy-21"
+            aria-describedby="DndDescribedBy-22"
             aria-disabled="false"
             aria-roledescription="sortable"
             class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-handle emotion-3"
@@ -38273,7 +38273,7 @@ exports[`<SortableTree /> > renders renderContent.tsx correctly 1`] = `
           class="studio-sortable-tree-node-body"
         >
           <button
-            aria-describedby="DndDescribedBy-21"
+            aria-describedby="DndDescribedBy-22"
             aria-disabled="false"
             aria-roledescription="sortable"
             class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-handle emotion-3"
@@ -38363,7 +38363,7 @@ exports[`<SortableTree /> > renders renderContent.tsx correctly 1`] = `
           class="studio-sortable-tree-node-body"
         >
           <button
-            aria-describedby="DndDescribedBy-21"
+            aria-describedby="DndDescribedBy-22"
             aria-disabled="false"
             aria-roledescription="sortable"
             class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-handle emotion-3"
@@ -38453,7 +38453,7 @@ exports[`<SortableTree /> > renders renderContent.tsx correctly 1`] = `
           class="studio-sortable-tree-node-body"
         >
           <button
-            aria-describedby="DndDescribedBy-21"
+            aria-describedby="DndDescribedBy-22"
             aria-disabled="false"
             aria-roledescription="sortable"
             class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-handle emotion-3"
@@ -38543,7 +38543,7 @@ exports[`<SortableTree /> > renders renderContent.tsx correctly 1`] = `
           class="studio-sortable-tree-node-body"
         >
           <button
-            aria-describedby="DndDescribedBy-21"
+            aria-describedby="DndDescribedBy-22"
             aria-disabled="false"
             aria-roledescription="sortable"
             class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-handle emotion-3"
@@ -38633,7 +38633,7 @@ exports[`<SortableTree /> > renders renderContent.tsx correctly 1`] = `
           class="studio-sortable-tree-node-body"
         >
           <button
-            aria-describedby="DndDescribedBy-21"
+            aria-describedby="DndDescribedBy-22"
             aria-disabled="false"
             aria-roledescription="sortable"
             class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-handle emotion-3"
@@ -38723,7 +38723,7 @@ exports[`<SortableTree /> > renders renderContent.tsx correctly 1`] = `
           class="studio-sortable-tree-node-body"
         >
           <button
-            aria-describedby="DndDescribedBy-21"
+            aria-describedby="DndDescribedBy-22"
             aria-disabled="false"
             aria-roledescription="sortable"
             class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-handle emotion-3"
@@ -38831,7 +38831,7 @@ exports[`<SortableTree /> > renders renderContent.tsx correctly 1`] = `
           class="studio-sortable-tree-node-body"
         >
           <button
-            aria-describedby="DndDescribedBy-21"
+            aria-describedby="DndDescribedBy-22"
             aria-disabled="false"
             aria-roledescription="sortable"
             class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-handle emotion-3"
@@ -38921,7 +38921,7 @@ exports[`<SortableTree /> > renders renderContent.tsx correctly 1`] = `
           class="studio-sortable-tree-node-body"
         >
           <button
-            aria-describedby="DndDescribedBy-21"
+            aria-describedby="DndDescribedBy-22"
             aria-disabled="false"
             aria-roledescription="sortable"
             class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-handle emotion-3"
@@ -39038,7 +39038,7 @@ exports[`<SortableTree /> > renders renderContent.tsx correctly 1`] = `
         </span>
       </button>
       <div
-        id="DndDescribedBy-21"
+        id="DndDescribedBy-22"
         style="display: none;"
       >
         
@@ -39050,7 +39050,7 @@ exports[`<SortableTree /> > renders renderContent.tsx correctly 1`] = `
       <div
         aria-atomic="true"
         aria-live="assertive"
-        id="DndLiveRegion-21"
+        id="DndLiveRegion-22"
         role="status"
         style="position: fixed; width: 1px; height: 1px; margin: -1px; border: 0px; padding: 0px; overflow: hidden; clip-path: inset(100%); white-space: nowrap;"
       />
@@ -39332,7 +39332,7 @@ exports[`<SortableTree /> > renders sortableRule.tsx correctly 1`] = `
           class="studio-sortable-tree-node-body"
         >
           <button
-            aria-describedby="DndDescribedBy-20"
+            aria-describedby="DndDescribedBy-21"
             aria-disabled="false"
             aria-roledescription="sortable"
             class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-handle emotion-3"
@@ -39398,7 +39398,7 @@ exports[`<SortableTree /> > renders sortableRule.tsx correctly 1`] = `
           class="studio-sortable-tree-node-body"
         >
           <button
-            aria-describedby="DndDescribedBy-20"
+            aria-describedby="DndDescribedBy-21"
             aria-disabled="false"
             aria-roledescription="sortable"
             class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-handle emotion-3"
@@ -39482,7 +39482,7 @@ exports[`<SortableTree /> > renders sortableRule.tsx correctly 1`] = `
           class="studio-sortable-tree-node-body"
         >
           <button
-            aria-describedby="DndDescribedBy-20"
+            aria-describedby="DndDescribedBy-21"
             aria-disabled="false"
             aria-roledescription="sortable"
             class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-handle emotion-3"
@@ -39548,7 +39548,7 @@ exports[`<SortableTree /> > renders sortableRule.tsx correctly 1`] = `
           class="studio-sortable-tree-node-body"
         >
           <button
-            aria-describedby="DndDescribedBy-20"
+            aria-describedby="DndDescribedBy-21"
             aria-disabled="false"
             aria-roledescription="sortable"
             class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-handle emotion-3"
@@ -39614,7 +39614,7 @@ exports[`<SortableTree /> > renders sortableRule.tsx correctly 1`] = `
           class="studio-sortable-tree-node-body"
         >
           <button
-            aria-describedby="DndDescribedBy-20"
+            aria-describedby="DndDescribedBy-21"
             aria-disabled="false"
             aria-roledescription="sortable"
             class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-handle emotion-3"
@@ -39680,7 +39680,7 @@ exports[`<SortableTree /> > renders sortableRule.tsx correctly 1`] = `
           class="studio-sortable-tree-node-body"
         >
           <button
-            aria-describedby="DndDescribedBy-20"
+            aria-describedby="DndDescribedBy-21"
             aria-disabled="false"
             aria-roledescription="sortable"
             class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-handle emotion-3"
@@ -39746,7 +39746,7 @@ exports[`<SortableTree /> > renders sortableRule.tsx correctly 1`] = `
           class="studio-sortable-tree-node-body"
         >
           <button
-            aria-describedby="DndDescribedBy-20"
+            aria-describedby="DndDescribedBy-21"
             aria-disabled="false"
             aria-roledescription="sortable"
             class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-handle emotion-3"
@@ -39812,7 +39812,7 @@ exports[`<SortableTree /> > renders sortableRule.tsx correctly 1`] = `
           class="studio-sortable-tree-node-body"
         >
           <button
-            aria-describedby="DndDescribedBy-20"
+            aria-describedby="DndDescribedBy-21"
             aria-disabled="false"
             aria-roledescription="sortable"
             class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-handle emotion-3"
@@ -39896,7 +39896,7 @@ exports[`<SortableTree /> > renders sortableRule.tsx correctly 1`] = `
           class="studio-sortable-tree-node-body"
         >
           <button
-            aria-describedby="DndDescribedBy-20"
+            aria-describedby="DndDescribedBy-21"
             aria-disabled="false"
             aria-roledescription="sortable"
             class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-handle emotion-3"
@@ -39962,7 +39962,7 @@ exports[`<SortableTree /> > renders sortableRule.tsx correctly 1`] = `
           class="studio-sortable-tree-node-body"
         >
           <button
-            aria-describedby="DndDescribedBy-20"
+            aria-describedby="DndDescribedBy-21"
             aria-disabled="false"
             aria-roledescription="sortable"
             class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-handle emotion-3"
@@ -40022,6 +40022,1441 @@ exports[`<SortableTree /> > renders sortableRule.tsx correctly 1`] = `
       </li>
       <button
         class="studio-btn studio-btn-default studio-btn-sm studio-btn-block studio-btn-solid studio-sortable-tree-btn-add emotion-34"
+        type="button"
+      >
+        <span
+          class="studio-btn-icon"
+        >
+          <span
+            aria-label="plus"
+            class="anticon anticon-plus"
+            role="img"
+          >
+            <svg
+              aria-hidden="true"
+              data-icon="plus"
+              fill="currentColor"
+              focusable="false"
+              height="1em"
+              viewBox="64 64 896 896"
+              width="1em"
+            >
+              <path
+                d="M482 152h60q8 0 8 8v704q0 8-8 8h-60q-8 0-8-8V160q0-8 8-8z"
+              />
+              <path
+                d="M192 474h672q8 0 8 8v60q0 8-8 8H160q-8 0-8-8v-60q0-8 8-8z"
+              />
+            </svg>
+          </span>
+        </span>
+        <span>
+          添加一项
+        </span>
+      </button>
+      <div
+        id="DndDescribedBy-21"
+        style="display: none;"
+      >
+        
+    To pick up a draggable item, press the space bar.
+    While dragging, use the arrow keys to move the item.
+    Press space again to drop the item in its new position, or press escape to cancel.
+  
+      </div>
+      <div
+        aria-atomic="true"
+        aria-live="assertive"
+        id="DndLiveRegion-21"
+        role="status"
+        style="position: fixed; width: 1px; height: 1px; margin: -1px; border: 0px; padding: 0px; overflow: hidden; clip-path: inset(100%); white-space: nowrap;"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<SortableTree /> > renders virtual.tsx correctly 1`] = `
+.emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-1 .studio-sortable-tree-node {
+  box-sizing: border-box;
+  padding-left: var(--spacing);
+  list-style: none;
+}
+
+.emotion-1 .studio-sortable-tree-node-clone {
+  display: inline-block;
+  padding: 0;
+  padding-top: 5px;
+  padding-left: 10px;
+  pointer-events: none;
+}
+
+.emotion-1 .studio-sortable-tree-node-clone .studio-sortable-tree-node-body {
+  padding-right: 24px;
+  background-color: #ffffff;
+  border: 1px solid #dedede;
+  border-radius: 4px;
+  box-shadow: 0 15px 15px 0 rgba(34, 33, 81, 0.1);
+}
+
+.emotion-1 .studio-sortable-tree-node:hover .studio-sortable-tree-node-handle {
+  opacity: 1;
+}
+
+.emotion-1 .studio-sortable-tree-node-ghost.studio-sortable-tree-node-indicator {
+  position: relative;
+  z-index: 1;
+  margin-bottom: -1px;
+  opacity: 1;
+}
+
+.emotion-1 .studio-sortable-tree-node-ghost.studio-sortable-tree-node-indicator .studio-sortable-tree-node-body {
+  position: relative;
+  height: 4px;
+  padding: 0;
+  background-color: #56a1f8;
+  border-color: #1677ff;
+}
+
+.emotion-1 .studio-sortable-tree-node-ghost.studio-sortable-tree-node-indicator .studio-sortable-tree-node-body::before {
+  position: absolute;
+  top: -4px;
+  left: -8px;
+  display: block;
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+  border: 1px solid #1677ff;
+  border-radius: 50%;
+  content: '';
+}
+
+.emotion-1 .studio-sortable-tree-node-ghost.studio-sortable-tree-node-indicator .studio-sortable-tree-node-body>* {
+  height: 0;
+  opacity: 0;
+}
+
+.emotion-1 .studio-sortable-tree-node-ghost:not(.studio-sortable-tree-node-indicator) {
+  opacity: 0.5;
+}
+
+.emotion-1 .studio-sortable-tree-node-ghost .studio-sortable-tree-node-body>* {
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.emotion-1 .studio-sortable-tree-node-body {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 2px;
+  background-color: rgba(0, 0, 0, 0.02);
+  border-radius: 4px;
+}
+
+.emotion-1 .studio-sortable-tree-node-content {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.emotion-1 .studio-sortable-tree-node-count {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 14px;
+  background-color: #1677ff;
+  border-radius: 50%;
+}
+
+.emotion-1 .disableSelection .studio-sortable-tree-node-content,
+.emotion-1 .clone .studio-sortable-tree-node-content,
+.emotion-1 .disableSelection .studio-sortable-tree-node-count,
+.emotion-1 .clone .studio-sortable-tree-node-count {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.emotion-2 {
+  margin-bottom: 4px;
+}
+
+.emotion-2:hover .studio-sortable-tree-node-handle,
+.emotion-2:hover .studio-sortable-tree-node-remove {
+  opacity: 1;
+}
+
+.emotion-3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-transition: color 600ms cubic-bezier(0.215, 0.61, 0.355, 1),scale 400ms cubic-bezier(0.215, 0.61, 0.355, 1),background-color 100ms cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: color 600ms cubic-bezier(0.215, 0.61, 0.355, 1),scale 400ms cubic-bezier(0.215, 0.61, 0.355, 1),background-color 100ms cubic-bezier(0.215, 0.61, 0.355, 1);
+  position: absolute;
+  left: -13px;
+  opacity: 0;
+}
+
+.emotion-3:hover {
+  color: rgba(0, 0, 0, 0.88)!important;
+}
+
+.emotion-3:active {
+  scale: 0.8;
+  color: rgba(0, 0, 0, 0.88);
+}
+
+.emotion-4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-transition: color 600ms cubic-bezier(0.215, 0.61, 0.355, 1),scale 400ms cubic-bezier(0.215, 0.61, 0.355, 1),background-color 100ms cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: color 600ms cubic-bezier(0.215, 0.61, 0.355, 1),scale 400ms cubic-bezier(0.215, 0.61, 0.355, 1),background-color 100ms cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.emotion-4:hover {
+  color: rgba(0, 0, 0, 0.88)!important;
+}
+
+.emotion-4:active {
+  scale: 0.8;
+  color: rgba(0, 0, 0, 0.88);
+}
+
+.emotion-4 svg {
+  -webkit-transition: -webkit-transform 250ms ease;
+  transition: transform 250ms ease;
+}
+
+.emotion-5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-transition: color 600ms cubic-bezier(0.215, 0.61, 0.355, 1),scale 400ms cubic-bezier(0.215, 0.61, 0.355, 1),background-color 100ms cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: color 600ms cubic-bezier(0.215, 0.61, 0.355, 1),scale 400ms cubic-bezier(0.215, 0.61, 0.355, 1),background-color 100ms cubic-bezier(0.215, 0.61, 0.355, 1);
+  opacity: 0;
+}
+
+.emotion-5:hover {
+  color: rgba(0, 0, 0, 0.88)!important;
+}
+
+.emotion-5:active {
+  scale: 0.8;
+  color: rgba(0, 0, 0, 0.88);
+}
+
+.emotion-51 {
+  height: 24px;
+  padding-block: 2px;
+  margin-top: 4px;
+  color: rgba(0, 0, 0, 0.65);
+  background: rgba(0, 0, 0, 0.02);
+  border-color: transparent;
+}
+
+.emotion-51:hover {
+  color: rgba(0, 0, 0, 0.88)!important;
+  background: rgba(0, 0, 0, 0.06)!important;
+  border-color: transparent!important;
+}
+
+.emotion-51:focus {
+  color: rgba(0, 0, 0, 0.65);
+  background: rgba(0, 0, 0, 0.02);
+  border-color: transparent;
+  border-color: #1677ff!important;
+}
+
+<div>
+  <div
+    style="width: 340px;"
+  >
+    <div
+      class="layoutkit-flexbox emotion-0 emotion-1"
+    >
+      <div
+        style="position: relative; height: 480px; width: 100%; overflow: auto; will-change: transform; direction: ltr;"
+      >
+        <div
+          style="height: 16276px; width: 100%;"
+        >
+          <li
+            class="studio-sortable-tree-node studio-sortable-tree-node-indicator emotion-2"
+            style="--spacing: 0px; transition: transform 200ms ease; position: absolute; left: 0px; top: 0px; height: 36px; width: 100%;"
+          >
+            <div
+              class="studio-sortable-tree-node-body"
+            >
+              <button
+                aria-describedby="DndDescribedBy-20"
+                aria-disabled="false"
+                aria-roledescription="sortable"
+                class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-handle emotion-3"
+                role="button"
+                style="width: 12px;"
+                tabindex="0"
+                type="button"
+              >
+                <span
+                  class="studio-btn-icon"
+                >
+                  <svg
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    width="16"
+                  >
+                    <path
+                      d="M7 2a2 2 0 1 0 .001 4.001A2 2 0 0 0 7 2zm0 6a2 2 0 1 0 .001 4.001A2 2 0 0 0 7 8zm0 6a2 2 0 1 0 .001 4.001A2 2 0 0 0 7 14zm6-8a2 2 0 1 0-.001-4.001A2 2 0 0 0 13 6zm0 2a2 2 0 1 0 .001 4.001A2 2 0 0 0 13 8zm0 6a2 2 0 1 0 .001 4.001A2 2 0 0 0 13 14z"
+                    />
+                  </svg>
+                </span>
+              </button>
+              <button
+                class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon emotion-4"
+                type="button"
+              >
+                <span
+                  class="studio-btn-icon"
+                >
+                  <svg
+                    fill="currentColor"
+                    viewBox="0 0 70 41"
+                    width="10"
+                  >
+                    <path
+                      d="M30.76 39.2402C31.885 40.3638 33.41 40.995 35 40.995C36.59 40.995 38.115 40.3638 39.24 39.2402L68.24 10.2402C69.2998 9.10284 69.8768 7.59846 69.8494 6.04406C69.822 4.48965 69.1923 3.00657 68.093 1.90726C66.9937 0.807959 65.5106 0.178263 63.9562 0.150837C62.4018 0.123411 60.8974 0.700397 59.76 1.76024L35 26.5102L10.24 1.76024C9.10259 0.700397 7.59822 0.123411 6.04381 0.150837C4.4894 0.178263 3.00632 0.807959 1.90702 1.90726C0.807714 3.00657 0.178019 4.48965 0.150593 6.04406C0.123167 7.59846 0.700153 9.10284 1.75999 10.2402L30.76 39.2402Z"
+                    />
+                  </svg>
+                </span>
+              </button>
+              <span
+                class="studio-sortable-tree-node-content"
+              >
+                <div>
+                  33
+                </div>
+              </span>
+              <button
+                class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-remove emotion-5"
+                type="button"
+              >
+                <span
+                  class="studio-btn-icon"
+                >
+                  <span
+                    aria-label="delete"
+                    class="anticon anticon-delete"
+                    role="img"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      data-icon="delete"
+                      fill="currentColor"
+                      focusable="false"
+                      height="1em"
+                      viewBox="64 64 896 896"
+                      width="1em"
+                    >
+                      <path
+                        d="M864 256H736v-80c0-35.3-28.7-64-64-64H352c-35.3 0-64 28.7-64 64v80H160c-17.7 0-32 14.3-32 32v32c0 4.4 3.6 8 8 8h60.4l24.7 523c1.6 34.1 29.8 61 63.9 61h454c34.2 0 62.3-26.8 63.9-61l24.7-523H888c4.4 0 8-3.6 8-8v-32c0-17.7-14.3-32-32-32zm-200 0H360v-72h304v72z"
+                      />
+                    </svg>
+                  </span>
+                </span>
+              </button>
+            </div>
+          </li>
+          <li
+            class="studio-sortable-tree-node studio-sortable-tree-node-indicator emotion-2"
+            style="--spacing: 24px; transition: transform 200ms ease; position: absolute; left: 0px; top: 36px; height: 36px; width: 100%;"
+          >
+            <div
+              class="studio-sortable-tree-node-body"
+            >
+              <button
+                aria-describedby="DndDescribedBy-20"
+                aria-disabled="false"
+                aria-roledescription="sortable"
+                class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-handle emotion-3"
+                role="button"
+                style="width: 12px;"
+                tabindex="0"
+                type="button"
+              >
+                <span
+                  class="studio-btn-icon"
+                >
+                  <svg
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    width="16"
+                  >
+                    <path
+                      d="M7 2a2 2 0 1 0 .001 4.001A2 2 0 0 0 7 2zm0 6a2 2 0 1 0 .001 4.001A2 2 0 0 0 7 8zm0 6a2 2 0 1 0 .001 4.001A2 2 0 0 0 7 14zm6-8a2 2 0 1 0-.001-4.001A2 2 0 0 0 13 6zm0 2a2 2 0 1 0 .001 4.001A2 2 0 0 0 13 8zm0 6a2 2 0 1 0 .001 4.001A2 2 0 0 0 13 14z"
+                    />
+                  </svg>
+                </span>
+              </button>
+              <span
+                class="studio-sortable-tree-node-content"
+              >
+                <div>
+                  4C16E
+                </div>
+              </span>
+              <button
+                class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-remove emotion-5"
+                type="button"
+              >
+                <span
+                  class="studio-btn-icon"
+                >
+                  <span
+                    aria-label="delete"
+                    class="anticon anticon-delete"
+                    role="img"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      data-icon="delete"
+                      fill="currentColor"
+                      focusable="false"
+                      height="1em"
+                      viewBox="64 64 896 896"
+                      width="1em"
+                    >
+                      <path
+                        d="M864 256H736v-80c0-35.3-28.7-64-64-64H352c-35.3 0-64 28.7-64 64v80H160c-17.7 0-32 14.3-32 32v32c0 4.4 3.6 8 8 8h60.4l24.7 523c1.6 34.1 29.8 61 63.9 61h454c34.2 0 62.3-26.8 63.9-61l24.7-523H888c4.4 0 8-3.6 8-8v-32c0-17.7-14.3-32-32-32zm-200 0H360v-72h304v72z"
+                      />
+                    </svg>
+                  </span>
+                </span>
+              </button>
+            </div>
+          </li>
+          <li
+            class="studio-sortable-tree-node studio-sortable-tree-node-indicator emotion-2"
+            style="--spacing: 24px; transition: transform 200ms ease; position: absolute; left: 0px; top: 72px; height: 36px; width: 100%;"
+          >
+            <div
+              class="studio-sortable-tree-node-body"
+            >
+              <button
+                aria-describedby="DndDescribedBy-20"
+                aria-disabled="false"
+                aria-roledescription="sortable"
+                class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-handle emotion-3"
+                role="button"
+                style="width: 12px;"
+                tabindex="0"
+                type="button"
+              >
+                <span
+                  class="studio-btn-icon"
+                >
+                  <svg
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    width="16"
+                  >
+                    <path
+                      d="M7 2a2 2 0 1 0 .001 4.001A2 2 0 0 0 7 2zm0 6a2 2 0 1 0 .001 4.001A2 2 0 0 0 7 8zm0 6a2 2 0 1 0 .001 4.001A2 2 0 0 0 7 14zm6-8a2 2 0 1 0-.001-4.001A2 2 0 0 0 13 6zm0 2a2 2 0 1 0 .001 4.001A2 2 0 0 0 13 8zm0 6a2 2 0 1 0 .001 4.001A2 2 0 0 0 13 14z"
+                    />
+                  </svg>
+                </span>
+              </button>
+              <span
+                class="studio-sortable-tree-node-content"
+              >
+                <div>
+                  4C16F
+                </div>
+              </span>
+              <button
+                class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-remove emotion-5"
+                type="button"
+              >
+                <span
+                  class="studio-btn-icon"
+                >
+                  <span
+                    aria-label="delete"
+                    class="anticon anticon-delete"
+                    role="img"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      data-icon="delete"
+                      fill="currentColor"
+                      focusable="false"
+                      height="1em"
+                      viewBox="64 64 896 896"
+                      width="1em"
+                    >
+                      <path
+                        d="M864 256H736v-80c0-35.3-28.7-64-64-64H352c-35.3 0-64 28.7-64 64v80H160c-17.7 0-32 14.3-32 32v32c0 4.4 3.6 8 8 8h60.4l24.7 523c1.6 34.1 29.8 61 63.9 61h454c34.2 0 62.3-26.8 63.9-61l24.7-523H888c4.4 0 8-3.6 8-8v-32c0-17.7-14.3-32-32-32zm-200 0H360v-72h304v72z"
+                      />
+                    </svg>
+                  </span>
+                </span>
+              </button>
+            </div>
+          </li>
+          <li
+            class="studio-sortable-tree-node studio-sortable-tree-node-indicator emotion-2"
+            style="--spacing: 24px; transition: transform 200ms ease; position: absolute; left: 0px; top: 108px; height: 36px; width: 100%;"
+          >
+            <div
+              class="studio-sortable-tree-node-body"
+            >
+              <button
+                aria-describedby="DndDescribedBy-20"
+                aria-disabled="false"
+                aria-roledescription="sortable"
+                class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-handle emotion-3"
+                role="button"
+                style="width: 12px;"
+                tabindex="0"
+                type="button"
+              >
+                <span
+                  class="studio-btn-icon"
+                >
+                  <svg
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    width="16"
+                  >
+                    <path
+                      d="M7 2a2 2 0 1 0 .001 4.001A2 2 0 0 0 7 2zm0 6a2 2 0 1 0 .001 4.001A2 2 0 0 0 7 8zm0 6a2 2 0 1 0 .001 4.001A2 2 0 0 0 7 14zm6-8a2 2 0 1 0-.001-4.001A2 2 0 0 0 13 6zm0 2a2 2 0 1 0 .001 4.001A2 2 0 0 0 13 8zm0 6a2 2 0 1 0 .001 4.001A2 2 0 0 0 13 14z"
+                    />
+                  </svg>
+                </span>
+              </button>
+              <span
+                class="studio-sortable-tree-node-content"
+              >
+                <div>
+                  4C170
+                </div>
+              </span>
+              <button
+                class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-remove emotion-5"
+                type="button"
+              >
+                <span
+                  class="studio-btn-icon"
+                >
+                  <span
+                    aria-label="delete"
+                    class="anticon anticon-delete"
+                    role="img"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      data-icon="delete"
+                      fill="currentColor"
+                      focusable="false"
+                      height="1em"
+                      viewBox="64 64 896 896"
+                      width="1em"
+                    >
+                      <path
+                        d="M864 256H736v-80c0-35.3-28.7-64-64-64H352c-35.3 0-64 28.7-64 64v80H160c-17.7 0-32 14.3-32 32v32c0 4.4 3.6 8 8 8h60.4l24.7 523c1.6 34.1 29.8 61 63.9 61h454c34.2 0 62.3-26.8 63.9-61l24.7-523H888c4.4 0 8-3.6 8-8v-32c0-17.7-14.3-32-32-32zm-200 0H360v-72h304v72z"
+                      />
+                    </svg>
+                  </span>
+                </span>
+              </button>
+            </div>
+          </li>
+          <li
+            class="studio-sortable-tree-node studio-sortable-tree-node-indicator emotion-2"
+            style="--spacing: 24px; transition: transform 200ms ease; position: absolute; left: 0px; top: 144px; height: 36px; width: 100%;"
+          >
+            <div
+              class="studio-sortable-tree-node-body"
+            >
+              <button
+                aria-describedby="DndDescribedBy-20"
+                aria-disabled="false"
+                aria-roledescription="sortable"
+                class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-handle emotion-3"
+                role="button"
+                style="width: 12px;"
+                tabindex="0"
+                type="button"
+              >
+                <span
+                  class="studio-btn-icon"
+                >
+                  <svg
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    width="16"
+                  >
+                    <path
+                      d="M7 2a2 2 0 1 0 .001 4.001A2 2 0 0 0 7 2zm0 6a2 2 0 1 0 .001 4.001A2 2 0 0 0 7 8zm0 6a2 2 0 1 0 .001 4.001A2 2 0 0 0 7 14zm6-8a2 2 0 1 0-.001-4.001A2 2 0 0 0 13 6zm0 2a2 2 0 1 0 .001 4.001A2 2 0 0 0 13 8zm0 6a2 2 0 1 0 .001 4.001A2 2 0 0 0 13 14z"
+                    />
+                  </svg>
+                </span>
+              </button>
+              <span
+                class="studio-sortable-tree-node-content"
+              >
+                <div>
+                  4C171
+                </div>
+              </span>
+              <button
+                class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-remove emotion-5"
+                type="button"
+              >
+                <span
+                  class="studio-btn-icon"
+                >
+                  <span
+                    aria-label="delete"
+                    class="anticon anticon-delete"
+                    role="img"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      data-icon="delete"
+                      fill="currentColor"
+                      focusable="false"
+                      height="1em"
+                      viewBox="64 64 896 896"
+                      width="1em"
+                    >
+                      <path
+                        d="M864 256H736v-80c0-35.3-28.7-64-64-64H352c-35.3 0-64 28.7-64 64v80H160c-17.7 0-32 14.3-32 32v32c0 4.4 3.6 8 8 8h60.4l24.7 523c1.6 34.1 29.8 61 63.9 61h454c34.2 0 62.3-26.8 63.9-61l24.7-523H888c4.4 0 8-3.6 8-8v-32c0-17.7-14.3-32-32-32zm-200 0H360v-72h304v72z"
+                      />
+                    </svg>
+                  </span>
+                </span>
+              </button>
+            </div>
+          </li>
+          <li
+            class="studio-sortable-tree-node studio-sortable-tree-node-indicator emotion-2"
+            style="--spacing: 24px; transition: transform 200ms ease; position: absolute; left: 0px; top: 180px; height: 36px; width: 100%;"
+          >
+            <div
+              class="studio-sortable-tree-node-body"
+            >
+              <button
+                aria-describedby="DndDescribedBy-20"
+                aria-disabled="false"
+                aria-roledescription="sortable"
+                class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-handle emotion-3"
+                role="button"
+                style="width: 12px;"
+                tabindex="0"
+                type="button"
+              >
+                <span
+                  class="studio-btn-icon"
+                >
+                  <svg
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    width="16"
+                  >
+                    <path
+                      d="M7 2a2 2 0 1 0 .001 4.001A2 2 0 0 0 7 2zm0 6a2 2 0 1 0 .001 4.001A2 2 0 0 0 7 8zm0 6a2 2 0 1 0 .001 4.001A2 2 0 0 0 7 14zm6-8a2 2 0 1 0-.001-4.001A2 2 0 0 0 13 6zm0 2a2 2 0 1 0 .001 4.001A2 2 0 0 0 13 8zm0 6a2 2 0 1 0 .001 4.001A2 2 0 0 0 13 14z"
+                    />
+                  </svg>
+                </span>
+              </button>
+              <span
+                class="studio-sortable-tree-node-content"
+              >
+                <div>
+                  4C172
+                </div>
+              </span>
+              <button
+                class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-remove emotion-5"
+                type="button"
+              >
+                <span
+                  class="studio-btn-icon"
+                >
+                  <span
+                    aria-label="delete"
+                    class="anticon anticon-delete"
+                    role="img"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      data-icon="delete"
+                      fill="currentColor"
+                      focusable="false"
+                      height="1em"
+                      viewBox="64 64 896 896"
+                      width="1em"
+                    >
+                      <path
+                        d="M864 256H736v-80c0-35.3-28.7-64-64-64H352c-35.3 0-64 28.7-64 64v80H160c-17.7 0-32 14.3-32 32v32c0 4.4 3.6 8 8 8h60.4l24.7 523c1.6 34.1 29.8 61 63.9 61h454c34.2 0 62.3-26.8 63.9-61l24.7-523H888c4.4 0 8-3.6 8-8v-32c0-17.7-14.3-32-32-32zm-200 0H360v-72h304v72z"
+                      />
+                    </svg>
+                  </span>
+                </span>
+              </button>
+            </div>
+          </li>
+          <li
+            class="studio-sortable-tree-node studio-sortable-tree-node-indicator emotion-2"
+            style="--spacing: 24px; transition: transform 200ms ease; position: absolute; left: 0px; top: 216px; height: 36px; width: 100%;"
+          >
+            <div
+              class="studio-sortable-tree-node-body"
+            >
+              <button
+                aria-describedby="DndDescribedBy-20"
+                aria-disabled="false"
+                aria-roledescription="sortable"
+                class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-handle emotion-3"
+                role="button"
+                style="width: 12px;"
+                tabindex="0"
+                type="button"
+              >
+                <span
+                  class="studio-btn-icon"
+                >
+                  <svg
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    width="16"
+                  >
+                    <path
+                      d="M7 2a2 2 0 1 0 .001 4.001A2 2 0 0 0 7 2zm0 6a2 2 0 1 0 .001 4.001A2 2 0 0 0 7 8zm0 6a2 2 0 1 0 .001 4.001A2 2 0 0 0 7 14zm6-8a2 2 0 1 0-.001-4.001A2 2 0 0 0 13 6zm0 2a2 2 0 1 0 .001 4.001A2 2 0 0 0 13 8zm0 6a2 2 0 1 0 .001 4.001A2 2 0 0 0 13 14z"
+                    />
+                  </svg>
+                </span>
+              </button>
+              <span
+                class="studio-sortable-tree-node-content"
+              >
+                <div>
+                  4C173
+                </div>
+              </span>
+              <button
+                class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-remove emotion-5"
+                type="button"
+              >
+                <span
+                  class="studio-btn-icon"
+                >
+                  <span
+                    aria-label="delete"
+                    class="anticon anticon-delete"
+                    role="img"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      data-icon="delete"
+                      fill="currentColor"
+                      focusable="false"
+                      height="1em"
+                      viewBox="64 64 896 896"
+                      width="1em"
+                    >
+                      <path
+                        d="M864 256H736v-80c0-35.3-28.7-64-64-64H352c-35.3 0-64 28.7-64 64v80H160c-17.7 0-32 14.3-32 32v32c0 4.4 3.6 8 8 8h60.4l24.7 523c1.6 34.1 29.8 61 63.9 61h454c34.2 0 62.3-26.8 63.9-61l24.7-523H888c4.4 0 8-3.6 8-8v-32c0-17.7-14.3-32-32-32zm-200 0H360v-72h304v72z"
+                      />
+                    </svg>
+                  </span>
+                </span>
+              </button>
+            </div>
+          </li>
+          <li
+            class="studio-sortable-tree-node studio-sortable-tree-node-indicator emotion-2"
+            style="--spacing: 24px; transition: transform 200ms ease; position: absolute; left: 0px; top: 252px; height: 36px; width: 100%;"
+          >
+            <div
+              class="studio-sortable-tree-node-body"
+            >
+              <button
+                aria-describedby="DndDescribedBy-20"
+                aria-disabled="false"
+                aria-roledescription="sortable"
+                class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-handle emotion-3"
+                role="button"
+                style="width: 12px;"
+                tabindex="0"
+                type="button"
+              >
+                <span
+                  class="studio-btn-icon"
+                >
+                  <svg
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    width="16"
+                  >
+                    <path
+                      d="M7 2a2 2 0 1 0 .001 4.001A2 2 0 0 0 7 2zm0 6a2 2 0 1 0 .001 4.001A2 2 0 0 0 7 8zm0 6a2 2 0 1 0 .001 4.001A2 2 0 0 0 7 14zm6-8a2 2 0 1 0-.001-4.001A2 2 0 0 0 13 6zm0 2a2 2 0 1 0 .001 4.001A2 2 0 0 0 13 8zm0 6a2 2 0 1 0 .001 4.001A2 2 0 0 0 13 14z"
+                    />
+                  </svg>
+                </span>
+              </button>
+              <span
+                class="studio-sortable-tree-node-content"
+              >
+                <div>
+                  4C174
+                </div>
+              </span>
+              <button
+                class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-remove emotion-5"
+                type="button"
+              >
+                <span
+                  class="studio-btn-icon"
+                >
+                  <span
+                    aria-label="delete"
+                    class="anticon anticon-delete"
+                    role="img"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      data-icon="delete"
+                      fill="currentColor"
+                      focusable="false"
+                      height="1em"
+                      viewBox="64 64 896 896"
+                      width="1em"
+                    >
+                      <path
+                        d="M864 256H736v-80c0-35.3-28.7-64-64-64H352c-35.3 0-64 28.7-64 64v80H160c-17.7 0-32 14.3-32 32v32c0 4.4 3.6 8 8 8h60.4l24.7 523c1.6 34.1 29.8 61 63.9 61h454c34.2 0 62.3-26.8 63.9-61l24.7-523H888c4.4 0 8-3.6 8-8v-32c0-17.7-14.3-32-32-32zm-200 0H360v-72h304v72z"
+                      />
+                    </svg>
+                  </span>
+                </span>
+              </button>
+            </div>
+          </li>
+          <li
+            class="studio-sortable-tree-node studio-sortable-tree-node-indicator emotion-2"
+            style="--spacing: 24px; transition: transform 200ms ease; position: absolute; left: 0px; top: 288px; height: 36px; width: 100%;"
+          >
+            <div
+              class="studio-sortable-tree-node-body"
+            >
+              <button
+                aria-describedby="DndDescribedBy-20"
+                aria-disabled="false"
+                aria-roledescription="sortable"
+                class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-handle emotion-3"
+                role="button"
+                style="width: 12px;"
+                tabindex="0"
+                type="button"
+              >
+                <span
+                  class="studio-btn-icon"
+                >
+                  <svg
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    width="16"
+                  >
+                    <path
+                      d="M7 2a2 2 0 1 0 .001 4.001A2 2 0 0 0 7 2zm0 6a2 2 0 1 0 .001 4.001A2 2 0 0 0 7 8zm0 6a2 2 0 1 0 .001 4.001A2 2 0 0 0 7 14zm6-8a2 2 0 1 0-.001-4.001A2 2 0 0 0 13 6zm0 2a2 2 0 1 0 .001 4.001A2 2 0 0 0 13 8zm0 6a2 2 0 1 0 .001 4.001A2 2 0 0 0 13 14z"
+                    />
+                  </svg>
+                </span>
+              </button>
+              <span
+                class="studio-sortable-tree-node-content"
+              >
+                <div>
+                  4C175
+                </div>
+              </span>
+              <button
+                class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-remove emotion-5"
+                type="button"
+              >
+                <span
+                  class="studio-btn-icon"
+                >
+                  <span
+                    aria-label="delete"
+                    class="anticon anticon-delete"
+                    role="img"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      data-icon="delete"
+                      fill="currentColor"
+                      focusable="false"
+                      height="1em"
+                      viewBox="64 64 896 896"
+                      width="1em"
+                    >
+                      <path
+                        d="M864 256H736v-80c0-35.3-28.7-64-64-64H352c-35.3 0-64 28.7-64 64v80H160c-17.7 0-32 14.3-32 32v32c0 4.4 3.6 8 8 8h60.4l24.7 523c1.6 34.1 29.8 61 63.9 61h454c34.2 0 62.3-26.8 63.9-61l24.7-523H888c4.4 0 8-3.6 8-8v-32c0-17.7-14.3-32-32-32zm-200 0H360v-72h304v72z"
+                      />
+                    </svg>
+                  </span>
+                </span>
+              </button>
+            </div>
+          </li>
+          <li
+            class="studio-sortable-tree-node studio-sortable-tree-node-indicator emotion-2"
+            style="--spacing: 24px; transition: transform 200ms ease; position: absolute; left: 0px; top: 324px; height: 36px; width: 100%;"
+          >
+            <div
+              class="studio-sortable-tree-node-body"
+            >
+              <button
+                aria-describedby="DndDescribedBy-20"
+                aria-disabled="false"
+                aria-roledescription="sortable"
+                class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-handle emotion-3"
+                role="button"
+                style="width: 12px;"
+                tabindex="0"
+                type="button"
+              >
+                <span
+                  class="studio-btn-icon"
+                >
+                  <svg
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    width="16"
+                  >
+                    <path
+                      d="M7 2a2 2 0 1 0 .001 4.001A2 2 0 0 0 7 2zm0 6a2 2 0 1 0 .001 4.001A2 2 0 0 0 7 8zm0 6a2 2 0 1 0 .001 4.001A2 2 0 0 0 7 14zm6-8a2 2 0 1 0-.001-4.001A2 2 0 0 0 13 6zm0 2a2 2 0 1 0 .001 4.001A2 2 0 0 0 13 8zm0 6a2 2 0 1 0 .001 4.001A2 2 0 0 0 13 14z"
+                    />
+                  </svg>
+                </span>
+              </button>
+              <span
+                class="studio-sortable-tree-node-content"
+              >
+                <div>
+                  4C176
+                </div>
+              </span>
+              <button
+                class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-remove emotion-5"
+                type="button"
+              >
+                <span
+                  class="studio-btn-icon"
+                >
+                  <span
+                    aria-label="delete"
+                    class="anticon anticon-delete"
+                    role="img"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      data-icon="delete"
+                      fill="currentColor"
+                      focusable="false"
+                      height="1em"
+                      viewBox="64 64 896 896"
+                      width="1em"
+                    >
+                      <path
+                        d="M864 256H736v-80c0-35.3-28.7-64-64-64H352c-35.3 0-64 28.7-64 64v80H160c-17.7 0-32 14.3-32 32v32c0 4.4 3.6 8 8 8h60.4l24.7 523c1.6 34.1 29.8 61 63.9 61h454c34.2 0 62.3-26.8 63.9-61l24.7-523H888c4.4 0 8-3.6 8-8v-32c0-17.7-14.3-32-32-32zm-200 0H360v-72h304v72z"
+                      />
+                    </svg>
+                  </span>
+                </span>
+              </button>
+            </div>
+          </li>
+          <li
+            class="studio-sortable-tree-node studio-sortable-tree-node-indicator emotion-2"
+            style="--spacing: 24px; transition: transform 200ms ease; position: absolute; left: 0px; top: 360px; height: 36px; width: 100%;"
+          >
+            <div
+              class="studio-sortable-tree-node-body"
+            >
+              <button
+                aria-describedby="DndDescribedBy-20"
+                aria-disabled="false"
+                aria-roledescription="sortable"
+                class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-handle emotion-3"
+                role="button"
+                style="width: 12px;"
+                tabindex="0"
+                type="button"
+              >
+                <span
+                  class="studio-btn-icon"
+                >
+                  <svg
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    width="16"
+                  >
+                    <path
+                      d="M7 2a2 2 0 1 0 .001 4.001A2 2 0 0 0 7 2zm0 6a2 2 0 1 0 .001 4.001A2 2 0 0 0 7 8zm0 6a2 2 0 1 0 .001 4.001A2 2 0 0 0 7 14zm6-8a2 2 0 1 0-.001-4.001A2 2 0 0 0 13 6zm0 2a2 2 0 1 0 .001 4.001A2 2 0 0 0 13 8zm0 6a2 2 0 1 0 .001 4.001A2 2 0 0 0 13 14z"
+                    />
+                  </svg>
+                </span>
+              </button>
+              <span
+                class="studio-sortable-tree-node-content"
+              >
+                <div>
+                  4C177
+                </div>
+              </span>
+              <button
+                class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-remove emotion-5"
+                type="button"
+              >
+                <span
+                  class="studio-btn-icon"
+                >
+                  <span
+                    aria-label="delete"
+                    class="anticon anticon-delete"
+                    role="img"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      data-icon="delete"
+                      fill="currentColor"
+                      focusable="false"
+                      height="1em"
+                      viewBox="64 64 896 896"
+                      width="1em"
+                    >
+                      <path
+                        d="M864 256H736v-80c0-35.3-28.7-64-64-64H352c-35.3 0-64 28.7-64 64v80H160c-17.7 0-32 14.3-32 32v32c0 4.4 3.6 8 8 8h60.4l24.7 523c1.6 34.1 29.8 61 63.9 61h454c34.2 0 62.3-26.8 63.9-61l24.7-523H888c4.4 0 8-3.6 8-8v-32c0-17.7-14.3-32-32-32zm-200 0H360v-72h304v72z"
+                      />
+                    </svg>
+                  </span>
+                </span>
+              </button>
+            </div>
+          </li>
+          <li
+            class="studio-sortable-tree-node studio-sortable-tree-node-indicator emotion-2"
+            style="--spacing: 24px; transition: transform 200ms ease; position: absolute; left: 0px; top: 396px; height: 36px; width: 100%;"
+          >
+            <div
+              class="studio-sortable-tree-node-body"
+            >
+              <button
+                aria-describedby="DndDescribedBy-20"
+                aria-disabled="false"
+                aria-roledescription="sortable"
+                class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-handle emotion-3"
+                role="button"
+                style="width: 12px;"
+                tabindex="0"
+                type="button"
+              >
+                <span
+                  class="studio-btn-icon"
+                >
+                  <svg
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    width="16"
+                  >
+                    <path
+                      d="M7 2a2 2 0 1 0 .001 4.001A2 2 0 0 0 7 2zm0 6a2 2 0 1 0 .001 4.001A2 2 0 0 0 7 8zm0 6a2 2 0 1 0 .001 4.001A2 2 0 0 0 7 14zm6-8a2 2 0 1 0-.001-4.001A2 2 0 0 0 13 6zm0 2a2 2 0 1 0 .001 4.001A2 2 0 0 0 13 8zm0 6a2 2 0 1 0 .001 4.001A2 2 0 0 0 13 14z"
+                    />
+                  </svg>
+                </span>
+              </button>
+              <span
+                class="studio-sortable-tree-node-content"
+              >
+                <div>
+                  4C178
+                </div>
+              </span>
+              <button
+                class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-remove emotion-5"
+                type="button"
+              >
+                <span
+                  class="studio-btn-icon"
+                >
+                  <span
+                    aria-label="delete"
+                    class="anticon anticon-delete"
+                    role="img"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      data-icon="delete"
+                      fill="currentColor"
+                      focusable="false"
+                      height="1em"
+                      viewBox="64 64 896 896"
+                      width="1em"
+                    >
+                      <path
+                        d="M864 256H736v-80c0-35.3-28.7-64-64-64H352c-35.3 0-64 28.7-64 64v80H160c-17.7 0-32 14.3-32 32v32c0 4.4 3.6 8 8 8h60.4l24.7 523c1.6 34.1 29.8 61 63.9 61h454c34.2 0 62.3-26.8 63.9-61l24.7-523H888c4.4 0 8-3.6 8-8v-32c0-17.7-14.3-32-32-32zm-200 0H360v-72h304v72z"
+                      />
+                    </svg>
+                  </span>
+                </span>
+              </button>
+            </div>
+          </li>
+          <li
+            class="studio-sortable-tree-node studio-sortable-tree-node-indicator emotion-2"
+            style="--spacing: 24px; transition: transform 200ms ease; position: absolute; left: 0px; top: 432px; height: 36px; width: 100%;"
+          >
+            <div
+              class="studio-sortable-tree-node-body"
+            >
+              <button
+                aria-describedby="DndDescribedBy-20"
+                aria-disabled="false"
+                aria-roledescription="sortable"
+                class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-handle emotion-3"
+                role="button"
+                style="width: 12px;"
+                tabindex="0"
+                type="button"
+              >
+                <span
+                  class="studio-btn-icon"
+                >
+                  <svg
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    width="16"
+                  >
+                    <path
+                      d="M7 2a2 2 0 1 0 .001 4.001A2 2 0 0 0 7 2zm0 6a2 2 0 1 0 .001 4.001A2 2 0 0 0 7 8zm0 6a2 2 0 1 0 .001 4.001A2 2 0 0 0 7 14zm6-8a2 2 0 1 0-.001-4.001A2 2 0 0 0 13 6zm0 2a2 2 0 1 0 .001 4.001A2 2 0 0 0 13 8zm0 6a2 2 0 1 0 .001 4.001A2 2 0 0 0 13 14z"
+                    />
+                  </svg>
+                </span>
+              </button>
+              <span
+                class="studio-sortable-tree-node-content"
+              >
+                <div>
+                  4C179
+                </div>
+              </span>
+              <button
+                class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-remove emotion-5"
+                type="button"
+              >
+                <span
+                  class="studio-btn-icon"
+                >
+                  <span
+                    aria-label="delete"
+                    class="anticon anticon-delete"
+                    role="img"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      data-icon="delete"
+                      fill="currentColor"
+                      focusable="false"
+                      height="1em"
+                      viewBox="64 64 896 896"
+                      width="1em"
+                    >
+                      <path
+                        d="M864 256H736v-80c0-35.3-28.7-64-64-64H352c-35.3 0-64 28.7-64 64v80H160c-17.7 0-32 14.3-32 32v32c0 4.4 3.6 8 8 8h60.4l24.7 523c1.6 34.1 29.8 61 63.9 61h454c34.2 0 62.3-26.8 63.9-61l24.7-523H888c4.4 0 8-3.6 8-8v-32c0-17.7-14.3-32-32-32zm-200 0H360v-72h304v72z"
+                      />
+                    </svg>
+                  </span>
+                </span>
+              </button>
+            </div>
+          </li>
+          <li
+            class="studio-sortable-tree-node studio-sortable-tree-node-indicator emotion-2"
+            style="--spacing: 24px; transition: transform 200ms ease; position: absolute; left: 0px; top: 468px; height: 36px; width: 100%;"
+          >
+            <div
+              class="studio-sortable-tree-node-body"
+            >
+              <button
+                aria-describedby="DndDescribedBy-20"
+                aria-disabled="false"
+                aria-roledescription="sortable"
+                class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-handle emotion-3"
+                role="button"
+                style="width: 12px;"
+                tabindex="0"
+                type="button"
+              >
+                <span
+                  class="studio-btn-icon"
+                >
+                  <svg
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    width="16"
+                  >
+                    <path
+                      d="M7 2a2 2 0 1 0 .001 4.001A2 2 0 0 0 7 2zm0 6a2 2 0 1 0 .001 4.001A2 2 0 0 0 7 8zm0 6a2 2 0 1 0 .001 4.001A2 2 0 0 0 7 14zm6-8a2 2 0 1 0-.001-4.001A2 2 0 0 0 13 6zm0 2a2 2 0 1 0 .001 4.001A2 2 0 0 0 13 8zm0 6a2 2 0 1 0 .001 4.001A2 2 0 0 0 13 14z"
+                    />
+                  </svg>
+                </span>
+              </button>
+              <span
+                class="studio-sortable-tree-node-content"
+              >
+                <div>
+                  4C17A
+                </div>
+              </span>
+              <button
+                class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-remove emotion-5"
+                type="button"
+              >
+                <span
+                  class="studio-btn-icon"
+                >
+                  <span
+                    aria-label="delete"
+                    class="anticon anticon-delete"
+                    role="img"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      data-icon="delete"
+                      fill="currentColor"
+                      focusable="false"
+                      height="1em"
+                      viewBox="64 64 896 896"
+                      width="1em"
+                    >
+                      <path
+                        d="M864 256H736v-80c0-35.3-28.7-64-64-64H352c-35.3 0-64 28.7-64 64v80H160c-17.7 0-32 14.3-32 32v32c0 4.4 3.6 8 8 8h60.4l24.7 523c1.6 34.1 29.8 61 63.9 61h454c34.2 0 62.3-26.8 63.9-61l24.7-523H888c4.4 0 8-3.6 8-8v-32c0-17.7-14.3-32-32-32zm-200 0H360v-72h304v72z"
+                      />
+                    </svg>
+                  </span>
+                </span>
+              </button>
+            </div>
+          </li>
+          <li
+            class="studio-sortable-tree-node studio-sortable-tree-node-indicator emotion-2"
+            style="--spacing: 24px; transition: transform 200ms ease; position: absolute; left: 0px; top: 504px; height: 36px; width: 100%;"
+          >
+            <div
+              class="studio-sortable-tree-node-body"
+            >
+              <button
+                aria-describedby="DndDescribedBy-20"
+                aria-disabled="false"
+                aria-roledescription="sortable"
+                class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-handle emotion-3"
+                role="button"
+                style="width: 12px;"
+                tabindex="0"
+                type="button"
+              >
+                <span
+                  class="studio-btn-icon"
+                >
+                  <svg
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    width="16"
+                  >
+                    <path
+                      d="M7 2a2 2 0 1 0 .001 4.001A2 2 0 0 0 7 2zm0 6a2 2 0 1 0 .001 4.001A2 2 0 0 0 7 8zm0 6a2 2 0 1 0 .001 4.001A2 2 0 0 0 7 14zm6-8a2 2 0 1 0-.001-4.001A2 2 0 0 0 13 6zm0 2a2 2 0 1 0 .001 4.001A2 2 0 0 0 13 8zm0 6a2 2 0 1 0 .001 4.001A2 2 0 0 0 13 14z"
+                    />
+                  </svg>
+                </span>
+              </button>
+              <span
+                class="studio-sortable-tree-node-content"
+              >
+                <div>
+                  4C17B
+                </div>
+              </span>
+              <button
+                class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-remove emotion-5"
+                type="button"
+              >
+                <span
+                  class="studio-btn-icon"
+                >
+                  <span
+                    aria-label="delete"
+                    class="anticon anticon-delete"
+                    role="img"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      data-icon="delete"
+                      fill="currentColor"
+                      focusable="false"
+                      height="1em"
+                      viewBox="64 64 896 896"
+                      width="1em"
+                    >
+                      <path
+                        d="M864 256H736v-80c0-35.3-28.7-64-64-64H352c-35.3 0-64 28.7-64 64v80H160c-17.7 0-32 14.3-32 32v32c0 4.4 3.6 8 8 8h60.4l24.7 523c1.6 34.1 29.8 61 63.9 61h454c34.2 0 62.3-26.8 63.9-61l24.7-523H888c4.4 0 8-3.6 8-8v-32c0-17.7-14.3-32-32-32zm-200 0H360v-72h304v72z"
+                      />
+                    </svg>
+                  </span>
+                </span>
+              </button>
+            </div>
+          </li>
+          <li
+            class="studio-sortable-tree-node studio-sortable-tree-node-indicator emotion-2"
+            style="--spacing: 24px; transition: transform 200ms ease; position: absolute; left: 0px; top: 540px; height: 36px; width: 100%;"
+          >
+            <div
+              class="studio-sortable-tree-node-body"
+            >
+              <button
+                aria-describedby="DndDescribedBy-20"
+                aria-disabled="false"
+                aria-roledescription="sortable"
+                class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-handle emotion-3"
+                role="button"
+                style="width: 12px;"
+                tabindex="0"
+                type="button"
+              >
+                <span
+                  class="studio-btn-icon"
+                >
+                  <svg
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    width="16"
+                  >
+                    <path
+                      d="M7 2a2 2 0 1 0 .001 4.001A2 2 0 0 0 7 2zm0 6a2 2 0 1 0 .001 4.001A2 2 0 0 0 7 8zm0 6a2 2 0 1 0 .001 4.001A2 2 0 0 0 7 14zm6-8a2 2 0 1 0-.001-4.001A2 2 0 0 0 13 6zm0 2a2 2 0 1 0 .001 4.001A2 2 0 0 0 13 8zm0 6a2 2 0 1 0 .001 4.001A2 2 0 0 0 13 14z"
+                    />
+                  </svg>
+                </span>
+              </button>
+              <span
+                class="studio-sortable-tree-node-content"
+              >
+                <div>
+                  4C17C
+                </div>
+              </span>
+              <button
+                class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-remove emotion-5"
+                type="button"
+              >
+                <span
+                  class="studio-btn-icon"
+                >
+                  <span
+                    aria-label="delete"
+                    class="anticon anticon-delete"
+                    role="img"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      data-icon="delete"
+                      fill="currentColor"
+                      focusable="false"
+                      height="1em"
+                      viewBox="64 64 896 896"
+                      width="1em"
+                    >
+                      <path
+                        d="M864 256H736v-80c0-35.3-28.7-64-64-64H352c-35.3 0-64 28.7-64 64v80H160c-17.7 0-32 14.3-32 32v32c0 4.4 3.6 8 8 8h60.4l24.7 523c1.6 34.1 29.8 61 63.9 61h454c34.2 0 62.3-26.8 63.9-61l24.7-523H888c4.4 0 8-3.6 8-8v-32c0-17.7-14.3-32-32-32zm-200 0H360v-72h304v72z"
+                      />
+                    </svg>
+                  </span>
+                </span>
+              </button>
+            </div>
+          </li>
+        </div>
+      </div>
+      <button
+        class="studio-btn studio-btn-default studio-btn-sm studio-btn-block studio-btn-solid studio-sortable-tree-btn-add emotion-51"
         type="button"
       >
         <span
