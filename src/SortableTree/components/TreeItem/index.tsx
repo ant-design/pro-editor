@@ -113,6 +113,10 @@ export interface TreeItemProps extends Omit<HTMLAttributes<HTMLLIElement>, 'id'>
    * @title 样式类名前缀
    */
   prefixCls: string;
+  /**
+   * 虚拟滚动添加样式
+   */
+  virtualStyle?: CSSProperties;
 }
 
 const animateLayoutChanges: AnimateLayoutChanges = ({ isSorting, wasDragging }) =>
@@ -134,6 +138,7 @@ const TreeItem: FC<TreeItemProps> = memo(
     hideRemove,
     node,
     prefixCls,
+    virtualStyle,
     ...props
   }) => {
     const prefix = `${prefixCls}-node`;
@@ -200,6 +205,7 @@ const TreeItem: FC<TreeItemProps> = memo(
 
               transform: CSS.Translate.toString(transform),
               transition,
+              ...virtualStyle,
             } as CSSProperties
           }
           onClick={(e) => {
