@@ -39891,7 +39891,7 @@ exports[`<SortableTree /> > renders virtual.tsx correctly 1`] = `
         style="position: relative; height: 480px; width: 100%; overflow: auto; will-change: transform; direction: ltr;"
       >
         <div
-          style="height: 16276px; width: 100%;"
+          style="height: 4126px; width: 100%;"
         >
           <li
             class="studio-editor-node studio-editor-node-indicator emotion-2"
