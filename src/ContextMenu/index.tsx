@@ -21,10 +21,11 @@ import {
   useRole,
   useTypeahead,
 } from '@floating-ui/react';
-import { ConfigProvider, Divider } from 'antd';
+import { Divider } from 'antd';
 import { forwardRef, HTMLProps, useCallback, useEffect, useRef, useState } from 'react';
 
 import { cx } from 'antd-style';
+import { ConfigProvider } from '..';
 import MenuItem from './MenuItem';
 import { useStyles } from './style';
 import { GeneralItemType, MenuItemType } from './types';
