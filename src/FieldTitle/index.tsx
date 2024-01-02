@@ -1,4 +1,4 @@
-import { APIFieldType, FieldIcon, getPrefixCls } from '@ant-design/pro-editor';
+import { APIFieldType, FieldIcon, withProvider } from '@ant-design/pro-editor';
 import classNames from 'classnames';
 
 import { useStyle } from './style';
@@ -36,18 +36,9 @@ export interface FieldTitleProps {
 }
 
 const FieldTitle: React.FC<FieldTitleProps> = (props) => {
-  const {
-    style,
-    className,
-    prefixCls: customizePrefixCls,
-    type,
-    isParentArray,
-    title,
-    description = null,
-  } = props;
+  const { style, className, type, isParentArray, title, description = null } = props;
 
-  const prefixCls = getPrefixCls('field-title', customizePrefixCls);
-  const { styles } = useStyle({ prefixCls });
+  const { styles } = useStyle();
 
   let finalType = type;
   if (finalType === 'boolean') {
@@ -57,7 +48,7 @@ const FieldTitle: React.FC<FieldTitleProps> = (props) => {
     finalType += 'Array';
   }
   return (
-    <span className={classNames(prefixCls, className, styles.container)} style={style}>
+    <span className={classNames(className, styles.container)} style={style}>
       {finalType ? <FieldIcon type={finalType} /> : null}
       {title ? <span className={styles.title}>{title}</span> : null}
       {description ? <span className={styles.description}>{description}</span> : null}
@@ -65,4 +56,4 @@ const FieldTitle: React.FC<FieldTitleProps> = (props) => {
   );
 };
 
-export default FieldTitle;
+export default withProvider(FieldTitle) as React.FC<FieldTitleProps>;

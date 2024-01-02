@@ -2,7 +2,6 @@ import { Flex } from 'antd';
 import { ReactNode } from 'react';
 import { Flexbox } from 'react-layout-kit';
 import { LayoutTypeEnum, ThemeLayoutType } from '..';
-import { getPrefixCls } from '../../theme';
 import { useStyle } from './../style';
 
 type LayoutTypeContainerProps = {
@@ -14,8 +13,7 @@ type LayoutTypeContainerProps = {
 
 const LayoutTypeContainer = (props: LayoutTypeContainerProps) => {
   const { type, pannels, themeType, headerandfooter, ...rest } = props;
-  const prefixCls = getPrefixCls('layout');
-  const { styles } = useStyle({ prefixCls, themeType });
+  const { styles } = useStyle({ themeType });
 
   const [LeftPannelDom, RightPannelDom, BottomPannelDom, CenterPannelDom] = pannels;
   const [HeaderDom, FooterDom] = headerandfooter;

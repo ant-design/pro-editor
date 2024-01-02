@@ -1,16 +1,19 @@
 import { createStyles } from '../theme';
 
-export const useStyle = createStyles(({ css, cx }, prefixCls: string) => {
+export const useStyle = createStyles(({ css, cx, prefixCls, token }) => {
+  const prefix = `${prefixCls}-${token.editorPrefix}-tip-guide`;
   return {
+    content: cx(`${prefix}-guide-content`),
+    guide: cx(`${prefix}-guide`),
     container: cx(
-      prefixCls,
+      prefix,
       css`
         position: relative;
         width: fit-content;
       `,
     ),
     footer: cx(
-      `${prefixCls}-footer`,
+      `${prefix}-footer`,
       css`
         width: 100%;
         display: flex;
@@ -18,7 +21,7 @@ export const useStyle = createStyles(({ css, cx }, prefixCls: string) => {
       `,
     ),
     tip: cx(
-      `${prefixCls}-tip`,
+      `${prefix}-tip`,
       css`
         position: absolute;
         left: 50%;

@@ -26,11 +26,11 @@ ProEditor 内置了一个默认的 Markdown 渲染器，使用 React-Markdown，
 
 ## APIs
 
-| 属性名           | 类型                                | 描述                |
-| ------------- | --------------------------------- | ----------------- |
+| 属性名        | 类型                              | 描述                     |
+| ------------- | --------------------------------- | ------------------------ |
 | children      | string                            | 要渲染的 Markdown 内容。 |
-| className     | string                            | Markdown 组件的类名。   |
-| onDoubleClick | () => void                        | 双击事件处理函数。         |
-| style         | CSSProperties                     | Markdown 组件的样式。   |
-| rehypePlugins | Markdown rehypePlugins Types      | rehype 自定义插件      |
-| remarkPlugins | remarkPlugins rehypePlugins Types | remark 自定义插件      |
+| className     | string                            | Markdown 组件的类名。    |
+| onDoubleClick | () => void                        | 双击事件处理函数。       |
+| style         | CSSProperties                     | Markdown 组件的样式。    |
+| rehypePlugins | Markdown rehypePlugins Types      | rehype 自定义插件        |
+| remarkPlugins | remarkPlugins rehypePlugins Types | remark 自定义插件        |

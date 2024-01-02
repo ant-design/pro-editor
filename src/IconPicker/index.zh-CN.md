@@ -32,26 +32,26 @@ group:
 
 ## 基础属性
 
-| 属性名                          | 类型                                             | 描述                    |
-| ---------------------------- | ---------------------------------------------- | --------------------- |
-| defaultIcon                  | `IconUnit`                                     | 默认图标单元                |
-| defaultIconfontScripts       | `ExternalScripts[]`                            | 默认 Iconfont 脚本数组      |
-| defaultActiveIconfontScript  | `string`                                       | 默认选中的 Iconfont 脚本     |
-| icon                         | `IconUnit`                                     | 图标单元                  |
-| onIconChange                 | `(icon: IconUnit) => void`                     | Icon 改变回调函数           |
-| iconfontScripts              | `ExternalScripts[]`                            | IconFont 脚本地址         |
-| onIconfontScriptsChange      | `(iconfontScripts: ExternalScripts[]) => void` | Iconfont 脚本改变回调函数     |
-| activeIconfontScript         | `string`                                       | 选中的 Iconfont 脚本       |
+| 属性名                       | 类型                                           | 描述                             |
+| ---------------------------- | ---------------------------------------------- | -------------------------------- |
+| defaultIcon                  | `IconUnit`                                     | 默认图标单元                     |
+| defaultIconfontScripts       | `ExternalScripts[]`                            | 默认 Iconfont 脚本数组           |
+| defaultActiveIconfontScript  | `string`                                       | 默认选中的 Iconfont 脚本         |
+| icon                         | `IconUnit`                                     | 图标单元                         |
+| onIconChange                 | `(icon: IconUnit) => void`                     | Icon 改变回调函数                |
+| iconfontScripts              | `ExternalScripts[]`                            | IconFont 脚本地址                |
+| onIconfontScriptsChange      | `(iconfontScripts: ExternalScripts[]) => void` | Iconfont 脚本改变回调函数        |
+| activeIconfontScript         | `string`                                       | 选中的 Iconfont 脚本             |
 | onActiveIconfontScriptChange | `(scripts: string) => void`                    | 选中的 Iconfont 脚本改变回调函数 |
 
 ### ExternalScripts
 
 描述外部脚本的接口。
 
-| 属性名  | 类型       | 描述  |
-| ---- | -------- | --- |
-| name | `string` | 名称  |
-| url  | `string` | URL |
+| 属性名 | 类型     | 描述 |
+| ------ | -------- | ---- |
+| name   | `string` | 名称 |
+| url    | `string` | URL  |
 
 ### IconUnit
 
@@ -59,17 +59,17 @@ group:
 
 ### ReactIcon
 
-| 属性名           | 类型                 | 描述             |
-| ------------- | ------------------ | -------------- |
+| 属性名        | 类型               | 描述                    |
+| ------------- | ------------------ | ----------------------- |
 | type          | `antd` \| `custom` | 图标类型，antd 或自定义 |
-| componentName | `string`           | 图标组件名称         |
-| props         | `Object`           | 图标组件的 props 属性 |
+| componentName | `string`           | 图标组件名称            |
+| props         | `Object`           | 图标组件的 props 属性   |
 
 ### IconfontIcon
 
-| 属性名           | 类型         | 描述                          |
-| ------------- | ---------- | --------------------------- |
-| type          | `iconfont` | 图标类型，仅支持 iconfont           |
-| componentName | `string`   | 图标组件名称                      |
+| 属性名        | 类型       | 描述                                      |
+| ------------- | ---------- | ----------------------------------------- |
+| type          | `iconfont` | 图标类型，仅支持 iconfont                 |
+| componentName | `string`   | 图标组件名称                              |
 | props         | `Object`   | 图标组件的 props 属性，必须包含 type 字段 |
-| scriptUrl     | `string`   | iconfont 的脚本链接地址            |
+| scriptUrl     | `string`   | iconfont 的脚本链接地址                   |

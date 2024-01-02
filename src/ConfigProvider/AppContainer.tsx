@@ -1,6 +1,5 @@
 import { GetAntdThemeConfig, ThemeAppearance, ThemeMode } from 'antd-style';
 import { ThemeConfig } from 'antd/es/config-provider/context';
-import { STUDIO_UI_PREFIX } from '../theme';
 
 import { FC, PropsWithChildren } from 'react';
 import { OverrideAntdGlobalStyles } from '../antd/override';
@@ -27,6 +26,9 @@ export interface AppContainerProps {
    */
   theme?: ThemeConfig | GetAntdThemeConfig;
 }
+
+// 带改造，需要和 Studio 同步的
+const STUDIO_UI_PREFIX = 'studio';
 
 export const AppContainer: FC<PropsWithChildren<AppContainerProps>> = ({
   children,

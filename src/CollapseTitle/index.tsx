@@ -1,12 +1,10 @@
 import { CaretRightFilled } from '@ant-design/icons';
 import { Divider } from 'antd';
-import type { CSSProperties, FC, ReactNode } from 'react';
+import { memo, type CSSProperties, type FC, type ReactNode } from 'react';
 import { Flexbox } from 'react-layout-kit';
 import useMergedState from 'use-merge-value';
 
-import { getPrefixCls } from '@/theme';
-
-import { ConfigProvider } from '../ConfigProvider';
+import { ConfigProvider } from '@ant-design/pro-editor';
 
 import { useStyles } from './style';
 
@@ -53,57 +51,57 @@ export interface CollapseTitleProps {
   children?: ReactNode;
 }
 
-const CollapseTitle: FC<CollapseTitleProps> = ({
-  defaultExpand = false,
-  expand,
-  onExpandChange,
-  prefixCls: customizePrefixCls,
-  title,
-  children,
-  className,
-  extra,
-}) => {
-  const prefixCls = getPrefixCls('collapse-title', customizePrefixCls);
+const BaseCollapseTitle: FC<CollapseTitleProps> = memo(
+  ({ defaultExpand = false, expand, onExpandChange, title, children, className, extra }) => {
+    const [showPanel, setCollapsed] = useMergedState(defaultExpand, {
+      value: expand,
+      onChange: onExpandChange,
+    });
 
-  const [showPanel, setCollapsed] = useMergedState(defaultExpand, {
-    value: expand,
-    onChange: onExpandChange,
-  });
+    const toggleCollapse = () => {
+      setCollapsed(!showPanel);
+    };
 
-  const toggleCollapse = () => {
-    setCollapsed(!showPanel);
-  };
+    const { styles } = useStyles({ showPanel, className });
 
-  const { styles } = useStyles({ showPanel, prefixCls, className });
-  return (
-    <ConfigProvider>
-      <Flexbox className={styles.container}>
-        <Flexbox
-          direction={'horizontal'}
-          distribution={'space-between'}
-          align={'center'}
-          className={styles.header}
-          onClick={showPanel ? undefined : toggleCollapse}
-        >
+    return (
+      <ConfigProvider>
+        <Flexbox className={styles.container}>
           <Flexbox
             direction={'horizontal'}
-            gap={4}
+            distribution={'space-between'}
             align={'center'}
-            onClick={showPanel ? toggleCollapse : undefined}
-            className={styles.title}
+            className={styles.header}
+            onClick={showPanel ? undefined : toggleCollapse}
           >
-            <CaretRightFilled style={{ fontSize: 10 }} rotate={showPanel ? 90 : 0} />
-            <div>{title}</div>
+            <Flexbox
+              direction={'horizontal'}
+              gap={4}
+              align={'center'}
+              onClick={showPanel ? toggleCollapse : undefined}
+              className={styles.title}
+            >
+              <CaretRightFilled style={{ fontSize: 10 }} rotate={showPanel ? 90 : 0} />
+              <div>{title}</div>
+            </Flexbox>
+            {extra && extra(showPanel)}
           </Flexbox>
-          {extra && extra(showPanel)}
+          {showPanel ? (
+            <>
+              <Divider style={{ margin: '4px 0 12px' }} dashed />
+              {children}
+            </>
+          ) : null}
         </Flexbox>
-        {showPanel ? (
-          <>
-            <Divider style={{ margin: '4px 0 12px' }} dashed />
-            {children}
-          </>
-        ) : null}
-      </Flexbox>
+      </ConfigProvider>
+    );
+  },
+);
+
+const CollapseTitle = (props: CollapseTitleProps) => {
+  return (
+    <ConfigProvider>
+      <BaseCollapseTitle {...props} />
     </ConfigProvider>
   );
 };

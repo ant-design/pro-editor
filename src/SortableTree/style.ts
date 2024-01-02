@@ -1,7 +1,7 @@
 import { createStyles } from '../theme';
 
-export const useStyles = createStyles(({ css, token }, prefixCls) => {
-  const prefix = `${prefixCls}`;
+export const useStyles = createStyles(({ css, token, prefixCls }) => {
+  const prefix = `${prefixCls}-${token.editorPrefix}`;
 
   return css`
     & .${prefix}-node {

@@ -11,6 +11,10 @@ Use when displaying code without the need to edit it.
 
 ## Code Demo
 
+### auto theme
+
+<code src="./demos/auto.tsx" ></code>
+
 ### Specify Language
 
 You can specify the language for highlighting using `language` and the theme using `theme`.
@@ -43,7 +47,7 @@ You can use `containerWrapper` to render a default outer container, which provid
 | :----------- | :----------------------------------------------------------------------------------------------------- | :------ | :------ |
 | language     | Specify the language type, see table below                                                             | string  | -       |
 | showLanguage | Whether to display the language tag                                                                    | boolean | true    |
-| theme        | Specify the theme, options: `dark`, `light`                                                            | string  | `light` |
+| theme        | Specify the theme, options: `dark`, `light`,`auto`                                                     | string  | `auto`  |
 | lineNumber   | Specify whether to enable line numbers for the code block, options: `true`, `false`                    | boolean | false   |
 | copyable     | Specify whether to display a copy button for the code block, options: `true`, `false`                  | boolean | true    |
 | height       | Specify the height of the code block, for scenarios where the code block height needs to be controlled | number  | -       |

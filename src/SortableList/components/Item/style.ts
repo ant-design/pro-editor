@@ -24,10 +24,11 @@ const fadeIn = keyframes`
 	}
 `;
 
-export const useStyle = createStyles(({ css, cx, token }, prefixCls: string) => {
-  const prefix = `${prefixCls}`;
-
+export const useStyle = createStyles(({ css, cx, token, prefixCls }) => {
+  const prefix = `${prefixCls}-${token.editorPrefix}-sortable-list`;
   return {
+    // 透出给外层做前缀拼接
+    tokenPrefixCls: prefix,
     item: cx(
       `${prefixCls}-item`,
       css`

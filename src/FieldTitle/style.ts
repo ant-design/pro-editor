@@ -1,9 +1,10 @@
 import { createStyles } from '../theme';
 
-export const useStyle = createStyles(({ token, css, cx }, { prefixCls }) => {
+export const useStyle = createStyles(({ token, css, cx, prefixCls }) => {
+  const prefix = `${prefixCls}-${token?.editorPrefix}-field-title`;
   return {
     container: cx(
-      `${prefixCls}-container`,
+      `${prefix}-container`,
       css({
         display: 'inline-flex',
         alignItems: 'center',
@@ -11,13 +12,13 @@ export const useStyle = createStyles(({ token, css, cx }, { prefixCls }) => {
       }),
     ),
     title: cx(
-      `${prefixCls}-title`,
+      `${prefix}-title`,
       css({
         marginLeft: token.marginXXS,
       }),
     ),
     description: cx(
-      `${prefixCls}-description`,
+      `${prefix}-description`,
       css({
         marginLeft: token.marginXXS,
       }),

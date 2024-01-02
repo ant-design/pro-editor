@@ -1,12 +1,14 @@
 import { createStyles, getStudioStylish } from '../theme';
 
-export const useStyle = createStyles((props, prefixCls: string) => {
-  const { token, css, cx } = props;
+export const useStyle = createStyles((props) => {
+  const { token, css, cx, prefixCls } = props;
   const common = getStudioStylish(props);
+
+  const antCls = prefixCls;
 
   return {
     btnAdd: cx(
-      `${prefixCls}-btn-add`,
+      `${antCls}-btn-add`,
       css`
         height: 24px;
         padding-block: 2px;

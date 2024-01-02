@@ -1,13 +1,12 @@
 import { createStyles } from 'antd-style';
-import { STUDIO_UI_PREFIX } from '../../theme';
 
-const studioCls = `.${STUDIO_UI_PREFIX}`;
+export const useStyle = createStyles(({ token, css, prefixCls }) => {
+  const antCls = `.${prefixCls}`;
 
-export const useStyle = createStyles(({ token, css }) => {
   return {
     directory: css({
-      [`${studioCls}-tree-directory`]: {
-        [`${studioCls}-tree`]: {
+      [`${antCls}-tree-directory`]: {
+        [`${antCls}-tree`]: {
           '&-switcher, &-iconEle': {
             lineHeight: '32px !important',
           },
@@ -33,11 +32,11 @@ export const useStyle = createStyles(({ token, css }) => {
             },
 
             '&:hover': {
-              [`& ${studioCls}-tree-switcher`]: {
+              [`& ${antCls}-tree-switcher`]: {
                 color: token.colorText,
               },
 
-              [`& ${studioCls}-tree-node-content-wrapper`]: {
+              [`& ${antCls}-tree-node-content-wrapper`]: {
                 color: token.colorText,
               },
             },
@@ -47,15 +46,15 @@ export const useStyle = createStyles(({ token, css }) => {
               borderColor: token.colorPrimary,
               boxShadow: `0 0 3px 0 ${token.colorPrimary}`,
             },
-            [`${studioCls}-tree-switcher-noop`]: {
+            [`${antCls}-tree-switcher-noop`]: {
               cursor: 'pointer',
             },
 
-            [`& ${studioCls}-tree-switcher`]: {
+            [`& ${antCls}-tree-switcher`]: {
               color: token.colorText,
             },
 
-            [`& ${studioCls}-tree-node-content-wrapper`]: {
+            [`& ${antCls}-tree-node-content-wrapper`]: {
               color: token.colorText,
             },
           },
@@ -67,11 +66,11 @@ export const useStyle = createStyles(({ token, css }) => {
               border: `${token.borderRadiusXS} solid ${token.colorPrimary}`,
             },
 
-            [`& ${studioCls}-tree-switcher`]: {
+            [`& ${antCls}-tree-switcher`]: {
               color: token.colorText,
             },
 
-            [`& ${studioCls}-tree-node-content-wrapper`]: {
+            [`& ${antCls}-tree-node-content-wrapper`]: {
               color: token.colorText,
             },
           },

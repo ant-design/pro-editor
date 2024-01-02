@@ -19,24 +19,24 @@ group: 基础组件
 
 ## API
 
-| 参数   | 说明   | 类型       | 默认值 |
-| :--- | :--- | :------- | :-- |
-| type | 字段类型 | 参考字段类型枚举 | -   |
+| 参数 | 说明     | 类型             | 默认值 |
+| :--- | :------- | :--------------- | :----- |
+| type | 字段类型 | 参考字段类型枚举 | -      |
 
 ### APIFieldType 字段类型枚举
 
-| 类型             | 字段说明   |
-| :------------- | :----- |
-| `integer`      | 整数     |
-| `number`       | 数字     |
-| `bool`         | 布尔值    |
-| `string`       | 字符串    |
-| `integerArray` | 整数数组   |
-| `numberArray`  | 数字数组   |
-| `stringArray`  | 字符串数组  |
-| `boolArray`    | 布尔值数组  |
-| `any`          | 任意类型   |
+| 类型           | 字段说明     |
+| :------------- | :----------- |
+| `integer`      | 整数         |
+| `number`       | 数字         |
+| `bool`         | 布尔值       |
+| `string`       | 字符串       |
+| `integerArray` | 整数数组     |
+| `numberArray`  | 数字数组     |
+| `stringArray`  | 字符串数组   |
+| `boolArray`    | 布尔值数组   |
+| `any`          | 任意类型     |
 | `anyArray`     | 任意类型数组 |
-| `object`       | 对象     |
-| `objectArray`  | 对象数组   |
-| `array`        | 数组     |
+| `object`       | 对象         |
+| `objectArray`  | 对象数组     |
+| `array`        | 数组         |

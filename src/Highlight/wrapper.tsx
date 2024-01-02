@@ -4,7 +4,6 @@ import { ActionIcon, Button, Select, type SelectProps } from '@ant-design/pro-ed
 import classNames from 'classnames';
 import { memo, useState } from 'react';
 import { DivProps, Flexbox } from 'react-layout-kit';
-import { getPrefixCls } from '..';
 import { HighlightBase, HighlightProps } from './defalut';
 import { languageMap } from './hooks/useHighlight';
 import { useStyles } from './style';
@@ -31,16 +30,13 @@ export const FullFeatureWrapper = memo<HighlighterWrapperProps & HighlightProps>
     language = 'markdown',
     className,
     style,
-    prefixCls: customPrefixCls,
     theme = THEME_LIGHT,
     copyable = true,
     type = 'block',
   } = props || {};
-  const prefixCls = getPrefixCls('highlight', customPrefixCls);
   const [expand, setExpand] = useState(true);
   const [lang, setLang] = useState(language);
   const { styles } = useStyles({
-    prefixCls,
     theme,
     type,
   });

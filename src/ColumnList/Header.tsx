@@ -3,10 +3,11 @@ import { createStyles } from 'antd-style';
 import { memo } from 'react';
 import { Flexbox } from 'react-layout-kit';
 
-const useStyle = createStyles(({ token, css, cx }, prefixCls) => {
+const useStyle = createStyles(({ token, css, cx, prefixCls }) => {
+  const prefix = `${prefixCls}-${token?.editorPrefix}-column-list`;
   return {
     content: cx(
-      `${prefixCls}-content`,
+      `${prefix}-content`,
       css`
         flex: 1;
         width: 100%;
@@ -17,7 +18,7 @@ const useStyle = createStyles(({ token, css, cx }, prefixCls) => {
       `,
     ),
     header: cx(
-      `${prefixCls}-header`,
+      `${prefix}-header`,
       css`
         color: ${token.colorTextTertiary};
         padding-left: 8px;
@@ -27,11 +28,10 @@ const useStyle = createStyles(({ token, css, cx }, prefixCls) => {
 });
 
 interface HeaderProps {
-  prefixCls: string;
   columns: ColumnItemList<any>;
 }
-export const Header = memo<HeaderProps>(({ prefixCls, columns }) => {
-  const { styles, cx } = useStyle(prefixCls);
+export const Header = memo<HeaderProps>(({ columns }) => {
+  const { styles, cx } = useStyle();
 
   return (
     <Flexbox horizontal align={'center'} gap={4}>

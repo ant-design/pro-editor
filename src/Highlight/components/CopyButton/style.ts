@@ -1,8 +1,8 @@
 import { createStyles } from '../../../theme';
 import { getThemeColor } from '../../theme/colors';
 
-export const useStyles = createStyles(({ css, cx }, { prefixCls, theme }) => {
-  const prefix = `${prefixCls}`;
+export const useStyles = createStyles(({ css, token, prefixCls, cx }, { theme }) => {
+  const prefix = `${prefixCls}-${token.editorPrefix}-highlight`;
   const { colorFillTertiary, colorText } = getThemeColor(theme === 'dark');
 
   return {

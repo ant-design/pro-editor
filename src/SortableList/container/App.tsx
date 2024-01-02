@@ -20,7 +20,7 @@ import type { CSSProperties, FC } from 'react';
 import { useMemo } from 'react';
 import { Flexbox } from 'react-layout-kit';
 import { shallow } from 'zustand/shallow';
-import { cx, getPrefixCls } from '../../theme';
+import { cx } from '../../theme';
 import DragOverlay from '../features/DragOverlay';
 import SortList from '../features/SortList';
 import type { Store } from '../store';
@@ -53,13 +53,11 @@ export interface AppProps {
   prefixCls?: string;
 }
 
-const App: FC<AppProps> = ({ className, style, prefixCls: customPrefixCls }) => {
+const App: FC<AppProps> = ({ className, style }) => {
   const { handleDragStart, handleDragCancel, handleDragEnd, keyManager, renderHeader } = useStore(
     selector,
     shallow,
   );
-
-  const prefixCls = getPrefixCls('sortable-list', customPrefixCls);
 
   const sensors = useSensors(
     useSensor(MouseSensor),
@@ -69,13 +67,10 @@ const App: FC<AppProps> = ({ className, style, prefixCls: customPrefixCls }) => 
     }),
   );
 
-  const overlay = useMemo(
-    () => createPortal(<DragOverlay prefixCls={prefixCls} />, document.body),
-    [],
-  );
+  const overlay = useMemo(() => createPortal(<DragOverlay />, document.body), []);
 
   return (
-    <Flexbox className={cx(className, prefixCls)} style={style}>
+    <Flexbox className={cx(className)} style={style}>
       <DndContext
         sensors={sensors}
         collisionDetection={closestCenter} // 碰撞检测策略
@@ -87,7 +82,7 @@ const App: FC<AppProps> = ({ className, style, prefixCls: customPrefixCls }) => 
       >
         <SortableContext items={keyManager} strategy={verticalListSortingStrategy}>
           {renderHeader?.()}
-          <SortList prefixCls={prefixCls} />
+          <SortList />
           {overlay}
         </SortableContext>
       </DndContext>

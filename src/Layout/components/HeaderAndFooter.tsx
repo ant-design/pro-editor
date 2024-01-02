@@ -3,7 +3,6 @@ import { MenuUnfoldOutlined } from '@ant-design/icons';
 import { DropDownProps, Dropdown, Flex, FlexProps } from 'antd';
 import { ReactNode } from 'react';
 import { ThemeLayoutType } from '..';
-import { getPrefixCls } from '../../theme';
 import { useStyle } from './../style';
 
 enum typeEnum {
@@ -54,9 +53,7 @@ const HeaderAndFooter = (props: HeaderFooterSettings) => {
     className,
   } = props || {};
 
-  const prefixCls = getPrefixCls('layout');
-
-  const { styles, cx } = useStyle({ prefixCls, themeType });
+  const { styles, cx } = useStyle({ themeType });
 
   if (hide) {
     return null;

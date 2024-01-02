@@ -2,7 +2,6 @@ import { DraggablePanel, TabsProps } from '@ant-design/pro-editor';
 import { Size } from 're-resizable';
 import { ReactNode } from 'react';
 import { ThemeLayoutType } from '..';
-import { getPrefixCls } from '../../theme';
 import { useStyle } from './../style';
 
 interface PannelSettings {
@@ -32,8 +31,7 @@ const PannelDefault = (props: PannelSettings & { index: number }) => {
     themeType,
     ...rest
   } = props || {};
-  const prefixCls = getPrefixCls('layout');
-  const { styles, cx } = useStyle({ prefixCls, themeType });
+  const { styles, cx } = useStyle({ themeType });
 
   const getPannelProps = (
     index: number,

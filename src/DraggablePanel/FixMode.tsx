@@ -7,7 +7,6 @@ import type { Props as RndProps } from 'react-rnd';
 import useControlledState from 'use-merge-value';
 
 import { DownOutlined, LeftOutlined, RightOutlined, UpOutlined } from '@ant-design/icons';
-import { getPrefixCls } from '../theme';
 import { useStyle } from './style';
 
 export interface FixModePanelProps {
@@ -121,7 +120,7 @@ const revesePlacement = (placement: 'right' | 'left' | 'top' | 'bottom') => {
   }
 };
 
-export const FixMode: FC<FixModePanelProps> = memo<FixModePanelProps>(
+const FixMode: FC<FixModePanelProps> = memo<FixModePanelProps>(
   ({
     children,
     placement = 'right',
@@ -133,7 +132,6 @@ export const FixMode: FC<FixModePanelProps> = memo<FixModePanelProps>(
     minHeight,
     maxHeight,
     maxWidth,
-    prefixCls: customPrefixCls,
     onSizeChange,
     onSizeDragging,
     expandable = true,
@@ -141,11 +139,9 @@ export const FixMode: FC<FixModePanelProps> = memo<FixModePanelProps>(
     onExpandChange,
     className,
   }) => {
-    const prefixCls = getPrefixCls('draggable-panel', customPrefixCls);
-
     const isVertical = placement === 'top' || placement === 'bottom';
 
-    const { styles, cx } = useStyle(prefixCls);
+    const { styles, cx } = useStyle();
 
     const [isExpand, setIsExpand] = useControlledState(true, {
       value: expand,
@@ -262,3 +258,5 @@ export const FixMode: FC<FixModePanelProps> = memo<FixModePanelProps>(
     );
   },
 );
+
+export { FixMode };

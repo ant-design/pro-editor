@@ -6,7 +6,6 @@ import type { ContextCanvasProps } from './type';
 
 const ContextCanvas: FC<ContextCanvasProps> = (props) => {
   useStyle();
-
   useContextCanvas(props);
   return <>{props.children}</>;
 };

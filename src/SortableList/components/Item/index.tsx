@@ -32,14 +32,14 @@ const Item = memo(
         transform,
         id,
         className,
-        prefixCls,
         ...props
       },
       ref,
     ) => {
       const token = useToken();
-      const { styles } = useStyle(prefixCls);
-      const itemPrefixCls = classNames(`${prefixCls}-item`);
+      const { styles } = useStyle();
+      const itemPrefixCls = classNames(`${styles.tokenPrefixCls}-item`);
+      console.log('itemPrefixCls', itemPrefixCls);
 
       useEffect(() => {
         if (!dragOverlay) {

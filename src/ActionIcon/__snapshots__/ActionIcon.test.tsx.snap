@@ -29,11 +29,11 @@ exports[`ActionIcon > 可正常渲染 1`] = `
 
 <div>
   <button
-    class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon emotion-0"
+    class="ant-btn ant-btn-text ant-btn-icon-only ant-editor-icon emotion-0"
     type="button"
   >
     <span
-      class="studio-btn-icon"
+      class="ant-btn-icon"
     >
       <span
         aria-label="smile"
@@ -88,12 +88,12 @@ exports[`ActionIcon > 带有标题 1`] = `
 
 <div>
   <button
-    class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon emotion-0"
+    class="ant-btn ant-btn-text ant-btn-icon-only ant-editor-icon emotion-0"
     data-testid="smile"
     type="button"
   >
     <span
-      class="studio-btn-icon"
+      class="ant-btn-icon"
     >
       <span
         aria-label="smile"

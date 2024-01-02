@@ -2,8 +2,8 @@ import { CreatorButtonProps, Input, useSortableList } from '@ant-design/pro-edit
 import { createStyles } from 'antd-style';
 import { CSSProperties, memo, useEffect, useRef } from 'react';
 
-const useStyle = createStyles(({ css, cx }, prefixCls) => {
-  const prefix = `${prefixCls}-content`;
+const useStyle = createStyles(({ css, cx, prefixCls, token }) => {
+  const prefix = `${prefixCls}-${token.editorPrefix}-content`;
   return {
     input: cx(
       `${prefix}-tem`,
@@ -19,17 +19,16 @@ interface ItemRenderProps {
   value: string;
   index: number;
   dragging: boolean;
-  prefixCls: string;
   style: CSSProperties;
   placeholder?: string;
   creatorButtonProps: CreatorButtonProps | false;
 }
 
 const ControlInput = memo<ItemRenderProps>(
-  ({ dataIndex, placeholder, value, index, prefixCls, style, dragging, creatorButtonProps }) => {
+  ({ dataIndex, placeholder, value, index, style, dragging, creatorButtonProps }) => {
     const instance = useSortableList();
     const inputRef = useRef(null);
-    const { styles } = useStyle(prefixCls);
+    const { styles } = useStyle();
 
     useEffect(() => {
       if (dragging) {

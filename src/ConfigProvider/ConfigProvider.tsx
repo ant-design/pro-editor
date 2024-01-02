@@ -1,9 +1,9 @@
-import { ConfigProvider as CP } from 'antd';
+import { ConfigProvider as AntdConfigProvider } from 'antd';
 import { AntdToken, ThemeAppearance, useAntdToken, useThemeMode } from 'antd-style';
 import type { OverrideToken } from 'antd/es/theme/interface';
 import type { FC, ReactNode } from 'react';
 
-import { createStudioAntdTheme } from '../theme';
+import { createStudioAntdTheme, ThemeProvider } from '../theme';
 
 export const useStudioAntdTheme = (appearance: ThemeAppearance) => {
   const token = useAntdToken();
@@ -12,7 +12,6 @@ export const useStudioAntdTheme = (appearance: ThemeAppearance) => {
   const controlToken: Partial<AntdToken> = {
     colorBgContainer: token?.colorFillQuaternary,
     colorBorder: 'transparent',
-    controlHeightSM: 24,
     controlOutline: 'transparent',
   };
 
@@ -22,7 +21,6 @@ export const useStudioAntdTheme = (appearance: ThemeAppearance) => {
     Select: controlToken,
     Tree: {
       colorBgContainer: 'transparent',
-      controlHeightSM: 24,
     },
     TreeSelect: controlToken,
   };
@@ -40,14 +38,12 @@ export const ConfigProvider: FC<ConfigProviderProps> = ({ children, componentTok
 
   const studioTheme = useStudioAntdTheme(appearance);
 
-  if (componentToken) {
-    studioTheme.components = { ...studioTheme.components, ...componentToken };
-  }
+  studioTheme.components = { ...studioTheme.components, ...componentToken };
 
   return (
-    <CP prefixCls={'studio'} theme={studioTheme}>
-      {children}
-    </CP>
+    <AntdConfigProvider theme={studioTheme}>
+      <ThemeProvider appearance={appearance}>{children}</ThemeProvider>
+    </AntdConfigProvider>
   );
 };
 

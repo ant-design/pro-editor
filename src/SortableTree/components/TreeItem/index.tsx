@@ -14,8 +14,11 @@ import { FlattenNode } from '../../types';
 import { iOS } from '../../utils/utils';
 
 const useStyles = createStyles(
-  ({ css, cx }, { prefix, collapsed }: { prefix: string; collapsed: boolean }) => {
+  ({ css, cx, prefixCls, token }, { collapsed }: { collapsed: boolean }) => {
+    const prefix = `${prefixCls}-${token.editorPrefix}-node`;
     return {
+      // 透出给组件层面拼接使用
+      editorPrefix: token.editorPrefix,
       container: cx(
         prefix,
         `${prefix}-indicator`,
@@ -110,10 +113,6 @@ export interface TreeItemProps extends Omit<HTMLAttributes<HTMLLIElement>, 'id'>
    */
   hideRemove?: boolean;
   /**
-   * @title 样式类名前缀
-   */
-  prefixCls: string;
-  /**
    * 虚拟滚动添加样式
    */
   virtualStyle?: CSSProperties;
@@ -137,12 +136,12 @@ const TreeItem: FC<TreeItemProps> = memo(
     showExtra,
     hideRemove,
     node,
-    prefixCls,
     virtualStyle,
     ...props
   }) => {
-    const prefix = `${prefixCls}-node`;
-    const { styles, cx } = useStyles({ prefix, collapsed });
+    const { styles, cx, prefixCls: antCls } = useStyles({ collapsed });
+    const prefix = `${antCls}-${styles.editorPrefix}-node`;
+    const prefixCls = `${antCls}-${styles.editorPrefix}`;
 
     const [
       indentationWidth,

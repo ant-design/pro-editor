@@ -3,8 +3,7 @@ import type { CSSProperties, FC, ReactNode } from 'react';
 import { memo } from 'react';
 import type { Props as RndProps } from 'react-rnd';
 
-import { getPrefixCls } from '../theme';
-
+import { withProvider } from '..';
 import { FixMode } from './FixMode';
 import { FloatMode } from './FloatMode';
 
@@ -105,7 +104,7 @@ export interface DraggablePanelProps {
   prefixCls?: string;
 }
 
-export const Draggable: FC<DraggablePanelProps> = memo(
+const Draggable: FC<DraggablePanelProps> = memo(
   ({
     children,
     className,
@@ -122,21 +121,17 @@ export const Draggable: FC<DraggablePanelProps> = memo(
     minHeight,
     maxHeight,
     maxWidth,
-    prefixCls: customPrefixCls,
     onSizeChange,
     onSizeDragging,
     expandable = true,
     isExpand,
     onExpandChange,
   }) => {
-    const prefixCls = getPrefixCls('draggable-panel', customPrefixCls);
-
     switch (mode) {
       case 'fixed':
       default:
         return (
           <FixMode
-            prefixCls={prefixCls}
             // 尺寸
             size={size}
             defaultSize={defaultSize}
@@ -161,7 +156,6 @@ export const Draggable: FC<DraggablePanelProps> = memo(
       case 'float':
         return (
           <FloatMode
-            prefixCls={prefixCls}
             // 坐标
             defaultPosition={defaultPosition}
             position={position}
@@ -187,3 +181,7 @@ export const Draggable: FC<DraggablePanelProps> = memo(
     }
   },
 );
+
+const WithProviderDraggable: FC<DraggablePanelProps> = withProvider(Draggable);
+
+export { WithProviderDraggable as Draggable };

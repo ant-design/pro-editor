@@ -8,15 +8,14 @@ import { useStyle } from './style';
 
 interface TitleProps {
   title: string;
-  prefixCls: string;
   dataKey: string;
 }
 
-const Title: FC<TitleProps> = ({ title, prefixCls, dataKey }) => {
+const Title: FC<TitleProps> = ({ title, dataKey }) => {
   const demoData = useStore((s) => s.demoData);
   const demoKey = useStore((s) => s.demoKey);
 
-  const { styles } = useStyle(prefixCls);
+  const { styles } = useStyle();
 
   return (
     <Flexbox horizontal gap={8}>

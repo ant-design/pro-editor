@@ -1,15 +1,16 @@
 import { createStyles } from '../theme';
 
-export const useStyle = createStyles(({ token, css, cx }, prefixCls: string) => {
+export const useStyle = createStyles(({ token, css, cx, prefixCls }) => {
+  const prefix = `${prefixCls}-${token?.editorPrefix}-field-select`;
   return {
     select: cx(
-      `${prefixCls}`,
+      `${prefix}`,
       css({
         width: '100%',
       }),
     ),
     extra: cx(
-      `${prefixCls}-extra`,
+      `${prefix}-extra`,
       css({
         display: 'flex',
         alignItems: 'center',
@@ -18,14 +19,14 @@ export const useStyle = createStyles(({ token, css, cx }, prefixCls: string) => 
     ),
 
     extraInput: cx(
-      `${prefixCls}-extra-input`,
+      `${prefix}-extra-input`,
       css({
         marginRight: token.marginXXS,
       }),
     ),
 
     extraAction: cx(
-      `${prefixCls}-extra-action`,
+      `${prefix}-extra-action`,
       css({
         flexShrink: 0,
       }),

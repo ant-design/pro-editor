@@ -14,12 +14,11 @@ import { Button } from 'antd';
 import type { FlattenNode } from '../types';
 
 interface TreeNodeProps {
-  prefixCls: string;
   node: FlattenNode;
   virtualStyle?: React.CSSProperties;
 }
 
-const TreeNode = memo<TreeNodeProps>(({ prefixCls, node, virtualStyle }) => {
+const TreeNode = memo<TreeNodeProps>(({ node, virtualStyle }) => {
   const [activeId, indentationWidth, dispatchTreeData, hideRemove] = useStore(
     (s) => [s.activeId, s.indentationWidth, s.dispatchTreeData, s.hideRemove],
     shallow,
@@ -33,7 +32,6 @@ const TreeNode = memo<TreeNodeProps>(({ prefixCls, node, virtualStyle }) => {
   return (
     <SortableTreeItem
       id={id}
-      prefixCls={prefixCls}
       collapsed={Boolean(collapsed && children.length)}
       indentationWidth={indentationWidth}
       depth={id === activeId && projected ? projected.depth : depth}
@@ -52,14 +50,16 @@ const TreeNode = memo<TreeNodeProps>(({ prefixCls, node, virtualStyle }) => {
   );
 }, isEqual);
 
-const useStyle = createStyles((props, prefixCls: string) => {
-  const { token, css } = props;
+const useStyle = createStyles((props) => {
+  const { token, css, prefixCls } = props;
   const common = getStudioStylish(props);
+
+  const antCls = prefixCls;
 
   return {
     btnAdd: cx(
       'studio-btn-solid',
-      `${prefixCls}-btn-add`,
+      `${antCls}-btn-add`,
       css`
         height: 24px;
         padding-block: 2px;
@@ -70,17 +70,13 @@ const useStyle = createStyles((props, prefixCls: string) => {
   };
 });
 
-interface TreeListProps {
-  prefixCls: string;
-}
-
-const TreeList = memo<TreeListProps>(({ prefixCls }) => {
+const TreeList = memo(() => {
   const [dispatchTreeData, hideAdd, virtual] = useStore(
     (s) => [s.dispatchTreeData, s.hideAdd, s.virtual],
     shallow,
   );
   const flattenData: FlattenNode[] = useStore(dataFlattenSelector, isEqual);
-  const { styles } = useStyle(prefixCls);
+  const { styles } = useStyle();
 
   const { height = 800, itemHeight = () => 36, width = '100%' } = virtual || {};
 
@@ -95,13 +91,13 @@ const TreeList = memo<TreeListProps>(({ prefixCls }) => {
           width={width}
         >
           {({ index, data, style }) => {
-            return <TreeNode prefixCls={prefixCls} node={data[index]} virtualStyle={style} />;
+            return <TreeNode node={data[index]} virtualStyle={style} />;
           }}
         </VariableSizeList>
       ) : (
         <>
           {flattenData.map((node) => (
-            <TreeNode key={node.id} node={node} prefixCls={prefixCls} />
+            <TreeNode key={node.id} node={node} />
           ))}
         </>
       )}

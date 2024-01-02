@@ -2,7 +2,6 @@ import type { ButtonProps, TooltipProps } from 'antd';
 import { Button, Tooltip } from 'antd';
 import type { CSSProperties, FC } from 'react';
 import { ConfigProvider } from '../ConfigProvider';
-import { getPrefixCls } from '../theme';
 import { useStyles } from './style';
 
 /**
@@ -46,7 +45,7 @@ export interface ActionIconProps extends Omit<ButtonProps, 'title' | 'size'> {
   arrow?: boolean;
 }
 
-const ActionIcon: FC<ActionIconProps> = ({
+const BaseActionIcon: FC<ActionIconProps> = ({
   placement,
   title,
   icon,
@@ -56,11 +55,9 @@ const ActionIcon: FC<ActionIconProps> = ({
   arrow = false,
   size = 'default',
   tooltipDelay = 0.5,
-  prefixCls: customPrefixCls,
   ...restProps
 }) => {
-  const prefixCls = getPrefixCls('actionicon', customPrefixCls);
-  const { styles, theme: token, cx } = useStyles({ size, prefixCls });
+  const { styles, cx } = useStyles({ size });
 
   const Icon = (
     <Button
@@ -75,16 +72,7 @@ const ActionIcon: FC<ActionIconProps> = ({
   );
 
   return (
-    <ConfigProvider
-      componentToken={{
-        Button: {
-          colorText: token.colorTextTertiary,
-          // TODO： Token 的提供不太合理，需要改造
-          colorBgTextHover: token.colorFillSecondary,
-          colorBgTextActive: token.colorFill,
-        },
-      }}
-    >
+    <>
       {!title ? (
         Icon
       ) : (
@@ -98,6 +86,26 @@ const ActionIcon: FC<ActionIconProps> = ({
           {Icon}
         </Tooltip>
       )}
+    </>
+  );
+};
+
+const ActionIcon = (props: ActionIconProps) => {
+  const { size } = props || {};
+  const { theme: token } = useStyles({ size });
+
+  return (
+    <ConfigProvider
+      componentToken={{
+        Button: {
+          colorText: token.colorTextTertiary,
+          // TODO： Token 的提供不太合理，需要改造
+          colorBgTextHover: token.colorFillSecondary,
+          colorBgTextActive: token.colorFill,
+        },
+      }}
+    >
+      <BaseActionIcon {...props} />
     </ConfigProvider>
   );
 };

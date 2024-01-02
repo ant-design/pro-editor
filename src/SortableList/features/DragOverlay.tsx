@@ -1,5 +1,4 @@
 import { defaultDropAnimation, DragOverlay } from '@dnd-kit/core';
-import type { FC } from 'react';
 import { memo } from 'react';
 import { shallow } from 'zustand/shallow';
 import { Item } from '../components';
@@ -20,11 +19,7 @@ const selector = (s: Store) => ({
   getItemStyles: s.getItemStyles,
 });
 
-interface OverlayProps {
-  prefixCls: string;
-}
-
-const Overlay: FC<OverlayProps> = ({ prefixCls }) => {
+const Overlay = () => {
   const { activeId, renderItem, handle, hideRemove, getItemStyles, renderContent } = useStore(
     selector,
     shallow,
@@ -49,7 +44,6 @@ const Overlay: FC<OverlayProps> = ({ prefixCls }) => {
           dragOverlay
           index={activeIndex}
           item={items[activeIndex]}
-          prefixCls={prefixCls}
           renderItem={renderItem}
           renderContent={renderContent}
           style={getItemStyles({
