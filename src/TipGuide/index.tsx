@@ -29,10 +29,6 @@ export interface TipGuideProps {
    */
   children?: ReactNode;
   /**
-   * 前缀
-   */
-  prefixCls?: string;
-  /**
    * style
    */
   style?: React.CSSProperties;

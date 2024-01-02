@@ -47,10 +47,6 @@ export interface AppProps {
    * 样式
    */
   style?: CSSProperties;
-  /**
-   * 类名前缀
-   */
-  prefixCls?: string;
 }
 
 const App: FC<AppProps> = ({ className, style }) => {

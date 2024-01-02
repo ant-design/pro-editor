@@ -64,10 +64,6 @@ export interface DataPreviewerProps {
    * 样式
    */
   style?: CSSProperties;
-  /**
-   * 前缀
-   */
-  prefixCls?: string;
 }
 
 const Previewer: FC<DataPreviewerProps> = ({

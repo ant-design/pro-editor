@@ -8,7 +8,6 @@ export interface Props {
   style?: React.CSSProperties;
   className?: string;
   horizontal?: boolean;
-  prefixCls?: string;
 }
 
 const List = forwardRef<HTMLUListElement, Props>(

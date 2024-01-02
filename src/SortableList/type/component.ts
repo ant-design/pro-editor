@@ -22,7 +22,6 @@ export interface BaseItemProps<T = any>
   transition?: string | null;
   id: UniqueIdentifier;
   onRemove?: () => void;
-  prefixCls?: string;
 }
 
 export type RenderActionProps<T = any> =
@@ -40,7 +39,6 @@ export interface SortableItemProps<T = any>
   item: T;
   useDragOverlay?: boolean;
   onRemove?: (index: number) => void;
-  prefixCls?: string;
 }
 
 export type RenderContent<T = any> = (item: T, index: number) => React.ReactNode;

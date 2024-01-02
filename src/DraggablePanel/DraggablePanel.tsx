@@ -98,10 +98,6 @@ export interface DraggablePanelProps {
    * 内容
    */
   children: ReactNode;
-  /**
-   * 类名前缀
-   */
-  prefixCls?: string;
 }
 
 const Draggable: FC<DraggablePanelProps> = memo(

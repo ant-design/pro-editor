@@ -86,10 +86,6 @@ export interface FloatProps {
    * 内容
    */
   children: ReactNode;
-  /**
-   * 类名前缀
-   */
-  prefixCls?: string;
 }
 
 const DEFAULT_HEIGHT = 300;
@@ -110,10 +106,9 @@ export const FloatMode: FC<FloatProps> = memo(
     minHeight = 200,
     maxHeight,
     maxWidth,
-    prefixCls,
     canResizing,
   }) => {
-    const { styles } = useStyle(prefixCls);
+    const { styles } = useStyle();
 
     const resizeHandleClassNames: HandleClassName = useMemo(() => {
       if (!canResizing) return {};
