@@ -34620,6 +34620,7 @@ exports[`<SortableTree /> > renders controlled.tsx correctly 1`] = `
 
 .emotion-2 {
   margin-bottom: 4px;
+  padding-left: 12px;
 }
 
 .emotion-2:hover .studio-editor-node-handle,
@@ -34656,7 +34657,20 @@ exports[`<SortableTree /> > renders controlled.tsx correctly 1`] = `
   color: rgba(0, 0, 0, 0.88);
 }
 
-.emotion-4 {
+.emotion-4:hover {
+  color: rgba(0, 0, 0, 0.88);
+  background-color: rgba(0, 0, 0, 0.04);
+  border-color: transparent;
+}
+
+.emotion-4:focus {
+  color: rgba(0, 0, 0, 0.88)!important;
+  background-color: rgba(0, 0, 0, 0.02)!important;
+  border-color: #1677ff!important;
+  box-shadow: none;
+}
+
+.emotion-5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -34674,16 +34688,16 @@ exports[`<SortableTree /> > renders controlled.tsx correctly 1`] = `
   opacity: 0;
 }
 
-.emotion-4:hover {
+.emotion-5:hover {
   color: rgba(0, 0, 0, 0.88)!important;
 }
 
-.emotion-4:active {
+.emotion-5:active {
   scale: 0.8;
   color: rgba(0, 0, 0, 0.88);
 }
 
-.emotion-7 {
+.emotion-8 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -34700,21 +34714,21 @@ exports[`<SortableTree /> > renders controlled.tsx correctly 1`] = `
   transition: color 600ms cubic-bezier(0.215, 0.61, 0.355, 1),scale 400ms cubic-bezier(0.215, 0.61, 0.355, 1),background-color 100ms cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
-.emotion-7:hover {
+.emotion-8:hover {
   color: rgba(0, 0, 0, 0.88)!important;
 }
 
-.emotion-7:active {
+.emotion-8:active {
   scale: 0.8;
   color: rgba(0, 0, 0, 0.88);
 }
 
-.emotion-7 svg {
+.emotion-8 svg {
   -webkit-transition: -webkit-transform 250ms ease;
   transition: transform 250ms ease;
 }
 
-.emotion-34 {
+.emotion-44 {
   height: 24px;
   padding-block: 2px;
   margin-top: 4px;
@@ -34723,13 +34737,13 @@ exports[`<SortableTree /> > renders controlled.tsx correctly 1`] = `
   border-color: transparent;
 }
 
-.emotion-34:hover {
+.emotion-44:hover {
   color: rgba(0, 0, 0, 0.88)!important;
   background: rgba(0, 0, 0, 0.06)!important;
   border-color: transparent!important;
 }
 
-.emotion-34:focus {
+.emotion-44:focus {
   color: rgba(0, 0, 0, 0.65);
   background: rgba(0, 0, 0, 0.02);
   border-color: transparent;
@@ -34738,13 +34752,13 @@ exports[`<SortableTree /> > renders controlled.tsx correctly 1`] = `
 
 <div>
   <div
-    style="width: 340px; padding: 0px 12px;"
+    style="width: 340px;"
   >
     <div
       class="layoutkit-flexbox emotion-0 emotion-1"
     >
       <li
-        class="studio-editor-node studio-editor-node-indicator emotion-2"
+        class="studio-sortable-tree-node studio-sortable-tree-node-indicator emotion-2"
         style="--spacing: 0px; transition: transform 200ms ease;"
       >
         <div
@@ -34778,13 +34792,13 @@ exports[`<SortableTree /> > renders controlled.tsx correctly 1`] = `
             class="studio-editor-node-content"
           >
             <input
-              class="studio-input"
+              class="studio-input emotion-4"
               type="text"
               value="Home"
             />
           </span>
           <button
-            class="studio-btn studio-btn-text studio-btn-icon-only studio-editor-icon studio-editor-node-remove emotion-4"
+            class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-remove emotion-4"
             type="button"
           >
             <span
@@ -34814,7 +34828,7 @@ exports[`<SortableTree /> > renders controlled.tsx correctly 1`] = `
         </div>
       </li>
       <li
-        class="studio-editor-node studio-editor-node-indicator emotion-2"
+        class="studio-sortable-tree-node studio-sortable-tree-node-indicator emotion-2"
         style="--spacing: 0px; transition: transform 200ms ease;"
       >
         <div
@@ -34845,7 +34859,7 @@ exports[`<SortableTree /> > renders controlled.tsx correctly 1`] = `
             </span>
           </button>
           <button
-            class="studio-btn studio-btn-text studio-btn-icon-only studio-editor-icon emotion-7"
+            class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon emotion-7"
             type="button"
           >
             <span
@@ -34866,13 +34880,13 @@ exports[`<SortableTree /> > renders controlled.tsx correctly 1`] = `
             class="studio-editor-node-content"
           >
             <input
-              class="studio-input"
+              class="studio-input emotion-4"
               type="text"
               value="Collections"
             />
           </span>
           <button
-            class="studio-btn studio-btn-text studio-btn-icon-only studio-editor-icon studio-editor-node-remove emotion-4"
+            class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-remove emotion-4"
             type="button"
           >
             <span
@@ -34902,7 +34916,7 @@ exports[`<SortableTree /> > renders controlled.tsx correctly 1`] = `
         </div>
       </li>
       <li
-        class="studio-editor-node studio-editor-node-indicator emotion-2"
+        class="studio-sortable-tree-node studio-sortable-tree-node-indicator emotion-2"
         style="--spacing: 24px; transition: transform 200ms ease;"
       >
         <div
@@ -34936,13 +34950,13 @@ exports[`<SortableTree /> > renders controlled.tsx correctly 1`] = `
             class="studio-editor-node-content"
           >
             <input
-              class="studio-input"
+              class="studio-input emotion-4"
               type="text"
               value=""
             />
           </span>
           <button
-            class="studio-btn studio-btn-text studio-btn-icon-only studio-editor-icon studio-editor-node-remove emotion-4"
+            class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-remove emotion-4"
             type="button"
           >
             <span
@@ -34972,7 +34986,7 @@ exports[`<SortableTree /> > renders controlled.tsx correctly 1`] = `
         </div>
       </li>
       <li
-        class="studio-editor-node studio-editor-node-indicator emotion-2"
+        class="studio-sortable-tree-node studio-sortable-tree-node-indicator emotion-2"
         style="--spacing: 24px; transition: transform 200ms ease;"
       >
         <div
@@ -35006,13 +35020,13 @@ exports[`<SortableTree /> > renders controlled.tsx correctly 1`] = `
             class="studio-editor-node-content"
           >
             <input
-              class="studio-input"
+              class="studio-input emotion-4"
               type="text"
               value=""
             />
           </span>
           <button
-            class="studio-btn studio-btn-text studio-btn-icon-only studio-editor-icon studio-editor-node-remove emotion-4"
+            class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-remove emotion-4"
             type="button"
           >
             <span
@@ -35042,7 +35056,7 @@ exports[`<SortableTree /> > renders controlled.tsx correctly 1`] = `
         </div>
       </li>
       <li
-        class="studio-editor-node studio-editor-node-indicator emotion-2"
+        class="studio-sortable-tree-node studio-sortable-tree-node-indicator emotion-2"
         style="--spacing: 24px; transition: transform 200ms ease;"
       >
         <div
@@ -35076,13 +35090,13 @@ exports[`<SortableTree /> > renders controlled.tsx correctly 1`] = `
             class="studio-editor-node-content"
           >
             <input
-              class="studio-input"
+              class="studio-input emotion-4"
               type="text"
               value=""
             />
           </span>
           <button
-            class="studio-btn studio-btn-text studio-btn-icon-only studio-editor-icon studio-editor-node-remove emotion-4"
+            class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-remove emotion-4"
             type="button"
           >
             <span
@@ -35112,7 +35126,7 @@ exports[`<SortableTree /> > renders controlled.tsx correctly 1`] = `
         </div>
       </li>
       <li
-        class="studio-editor-node studio-editor-node-indicator emotion-2"
+        class="studio-sortable-tree-node studio-sortable-tree-node-indicator emotion-2"
         style="--spacing: 24px; transition: transform 200ms ease;"
       >
         <div
@@ -35146,13 +35160,13 @@ exports[`<SortableTree /> > renders controlled.tsx correctly 1`] = `
             class="studio-editor-node-content"
           >
             <input
-              class="studio-input"
+              class="studio-input emotion-4"
               type="text"
               value=""
             />
           </span>
           <button
-            class="studio-btn studio-btn-text studio-btn-icon-only studio-editor-icon studio-editor-node-remove emotion-4"
+            class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-remove emotion-4"
             type="button"
           >
             <span
@@ -35182,7 +35196,7 @@ exports[`<SortableTree /> > renders controlled.tsx correctly 1`] = `
         </div>
       </li>
       <li
-        class="studio-editor-node studio-editor-node-indicator emotion-2"
+        class="studio-sortable-tree-node studio-sortable-tree-node-indicator emotion-2"
         style="--spacing: 0px; transition: transform 200ms ease;"
       >
         <div
@@ -35216,13 +35230,13 @@ exports[`<SortableTree /> > renders controlled.tsx correctly 1`] = `
             class="studio-editor-node-content"
           >
             <input
-              class="studio-input"
+              class="studio-input emotion-4"
               type="text"
               value=""
             />
           </span>
           <button
-            class="studio-btn studio-btn-text studio-btn-icon-only studio-editor-icon studio-editor-node-remove emotion-4"
+            class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-remove emotion-4"
             type="button"
           >
             <span
@@ -35252,7 +35266,7 @@ exports[`<SortableTree /> > renders controlled.tsx correctly 1`] = `
         </div>
       </li>
       <li
-        class="studio-editor-node studio-editor-node-indicator emotion-2"
+        class="studio-sortable-tree-node studio-sortable-tree-node-indicator emotion-2"
         style="--spacing: 0px; transition: transform 200ms ease;"
       >
         <div
@@ -35283,7 +35297,7 @@ exports[`<SortableTree /> > renders controlled.tsx correctly 1`] = `
             </span>
           </button>
           <button
-            class="studio-btn studio-btn-text studio-btn-icon-only studio-editor-icon emotion-7"
+            class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon emotion-7"
             type="button"
           >
             <span
@@ -35304,13 +35318,13 @@ exports[`<SortableTree /> > renders controlled.tsx correctly 1`] = `
             class="studio-editor-node-content"
           >
             <input
-              class="studio-input"
+              class="studio-input emotion-4"
               type="text"
               value=""
             />
           </span>
           <button
-            class="studio-btn studio-btn-text studio-btn-icon-only studio-editor-icon studio-editor-node-remove emotion-4"
+            class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-remove emotion-4"
             type="button"
           >
             <span
@@ -35340,7 +35354,7 @@ exports[`<SortableTree /> > renders controlled.tsx correctly 1`] = `
         </div>
       </li>
       <li
-        class="studio-editor-node studio-editor-node-indicator emotion-2"
+        class="studio-sortable-tree-node studio-sortable-tree-node-indicator emotion-2"
         style="--spacing: 24px; transition: transform 200ms ease;"
       >
         <div
@@ -35374,13 +35388,13 @@ exports[`<SortableTree /> > renders controlled.tsx correctly 1`] = `
             class="studio-editor-node-content"
           >
             <input
-              class="studio-input"
+              class="studio-input emotion-4"
               type="text"
               value=""
             />
           </span>
           <button
-            class="studio-btn studio-btn-text studio-btn-icon-only studio-editor-icon studio-editor-node-remove emotion-4"
+            class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-remove emotion-4"
             type="button"
           >
             <span
@@ -35410,7 +35424,7 @@ exports[`<SortableTree /> > renders controlled.tsx correctly 1`] = `
         </div>
       </li>
       <li
-        class="studio-editor-node studio-editor-node-indicator emotion-2"
+        class="studio-sortable-tree-node studio-sortable-tree-node-indicator emotion-2"
         style="--spacing: 24px; transition: transform 200ms ease;"
       >
         <div
@@ -35444,13 +35458,13 @@ exports[`<SortableTree /> > renders controlled.tsx correctly 1`] = `
             class="studio-editor-node-content"
           >
             <input
-              class="studio-input"
+              class="studio-input emotion-4"
               type="text"
               value=""
             />
           </span>
           <button
-            class="studio-btn studio-btn-text studio-btn-icon-only studio-editor-icon studio-editor-node-remove emotion-4"
+            class="studio-btn studio-btn-text studio-btn-icon-only studio-actionicon studio-sortable-tree-node-remove emotion-4"
             type="button"
           >
             <span
@@ -35480,7 +35494,7 @@ exports[`<SortableTree /> > renders controlled.tsx correctly 1`] = `
         </div>
       </li>
       <button
-        class="studio-btn studio-btn-default studio-btn-sm studio-btn-block studio-btn-solid studio-btn-add emotion-34"
+        class="studio-btn studio-btn-default studio-btn-sm studio-btn-block studio-btn-solid studio-sortable-tree-btn-add emotion-34"
         type="button"
       >
         <span
@@ -35677,6 +35691,7 @@ exports[`<SortableTree /> > renders default.tsx correctly 1`] = `
 
 .emotion-2 {
   margin-bottom: 4px;
+  padding-left: 12px;
 }
 
 .emotion-2:hover .studio-editor-node-handle,
@@ -35801,7 +35816,7 @@ exports[`<SortableTree /> > renders default.tsx correctly 1`] = `
       class="layoutkit-flexbox emotion-0 emotion-1"
     >
       <li
-        class="studio-editor-node studio-editor-node-indicator emotion-2"
+        class="studio-sortable-tree-node studio-sortable-tree-node-indicator emotion-2"
         style="--spacing: 0px; transition: transform 200ms ease;"
       >
         <div
@@ -35867,7 +35882,7 @@ exports[`<SortableTree /> > renders default.tsx correctly 1`] = `
         </div>
       </li>
       <li
-        class="studio-editor-node studio-editor-node-indicator emotion-2"
+        class="studio-sortable-tree-node studio-sortable-tree-node-indicator emotion-2"
         style="--spacing: 0px; transition: transform 200ms ease;"
       >
         <div
@@ -35951,7 +35966,7 @@ exports[`<SortableTree /> > renders default.tsx correctly 1`] = `
         </div>
       </li>
       <li
-        class="studio-editor-node studio-editor-node-indicator emotion-2"
+        class="studio-sortable-tree-node studio-sortable-tree-node-indicator emotion-2"
         style="--spacing: 24px; transition: transform 200ms ease;"
       >
         <div
@@ -36017,7 +36032,7 @@ exports[`<SortableTree /> > renders default.tsx correctly 1`] = `
         </div>
       </li>
       <li
-        class="studio-editor-node studio-editor-node-indicator emotion-2"
+        class="studio-sortable-tree-node studio-sortable-tree-node-indicator emotion-2"
         style="--spacing: 24px; transition: transform 200ms ease;"
       >
         <div
@@ -36083,7 +36098,7 @@ exports[`<SortableTree /> > renders default.tsx correctly 1`] = `
         </div>
       </li>
       <li
-        class="studio-editor-node studio-editor-node-indicator emotion-2"
+        class="studio-sortable-tree-node studio-sortable-tree-node-indicator emotion-2"
         style="--spacing: 24px; transition: transform 200ms ease;"
       >
         <div
@@ -36149,7 +36164,7 @@ exports[`<SortableTree /> > renders default.tsx correctly 1`] = `
         </div>
       </li>
       <li
-        class="studio-editor-node studio-editor-node-indicator emotion-2"
+        class="studio-sortable-tree-node studio-sortable-tree-node-indicator emotion-2"
         style="--spacing: 24px; transition: transform 200ms ease;"
       >
         <div
@@ -36215,7 +36230,7 @@ exports[`<SortableTree /> > renders default.tsx correctly 1`] = `
         </div>
       </li>
       <li
-        class="studio-editor-node studio-editor-node-indicator emotion-2"
+        class="studio-sortable-tree-node studio-sortable-tree-node-indicator emotion-2"
         style="--spacing: 0px; transition: transform 200ms ease;"
       >
         <div
@@ -36281,7 +36296,7 @@ exports[`<SortableTree /> > renders default.tsx correctly 1`] = `
         </div>
       </li>
       <li
-        class="studio-editor-node studio-editor-node-indicator emotion-2"
+        class="studio-sortable-tree-node studio-sortable-tree-node-indicator emotion-2"
         style="--spacing: 0px; transition: transform 200ms ease;"
       >
         <div
@@ -36365,7 +36380,7 @@ exports[`<SortableTree /> > renders default.tsx correctly 1`] = `
         </div>
       </li>
       <li
-        class="studio-editor-node studio-editor-node-indicator emotion-2"
+        class="studio-sortable-tree-node studio-sortable-tree-node-indicator emotion-2"
         style="--spacing: 24px; transition: transform 200ms ease;"
       >
         <div
@@ -36431,7 +36446,7 @@ exports[`<SortableTree /> > renders default.tsx correctly 1`] = `
         </div>
       </li>
       <li
-        class="studio-editor-node studio-editor-node-indicator emotion-2"
+        class="studio-sortable-tree-node studio-sortable-tree-node-indicator emotion-2"
         style="--spacing: 24px; transition: transform 200ms ease;"
       >
         <div
@@ -36694,6 +36709,7 @@ exports[`<SortableTree /> > renders disableDrag.tsx correctly 1`] = `
 
 .emotion-2 {
   margin-bottom: 4px;
+  padding-left: 12px;
 }
 
 .emotion-2:hover .studio-editor-node-handle,
@@ -37442,6 +37458,7 @@ exports[`<SortableTree /> > renders renderContent.tsx correctly 1`] = `
 
 .emotion-2 {
   margin-bottom: 4px;
+  padding-left: 12px;
 }
 
 .emotion-2:hover .studio-editor-node-handle,
@@ -37608,13 +37625,13 @@ exports[`<SortableTree /> > renders renderContent.tsx correctly 1`] = `
 
 <div>
   <div
-    style="width: 340px; padding: 0px 12px;"
+    style="width: 340px;"
   >
     <div
       class="layoutkit-flexbox emotion-0 emotion-1"
     >
       <li
-        class="studio-editor-node studio-editor-node-indicator emotion-2"
+        class="studio-sortable-tree-node studio-sortable-tree-node-indicator emotion-2"
         style="--spacing: 0px; transition: transform 200ms ease;"
       >
         <div
@@ -37704,7 +37721,7 @@ exports[`<SortableTree /> > renders renderContent.tsx correctly 1`] = `
         </div>
       </li>
       <li
-        class="studio-editor-node studio-editor-node-indicator emotion-2"
+        class="studio-sortable-tree-node studio-sortable-tree-node-indicator emotion-2"
         style="--spacing: 0px; transition: transform 200ms ease;"
       >
         <div
@@ -37812,7 +37829,7 @@ exports[`<SortableTree /> > renders renderContent.tsx correctly 1`] = `
         </div>
       </li>
       <li
-        class="studio-editor-node studio-editor-node-indicator emotion-2"
+        class="studio-sortable-tree-node studio-sortable-tree-node-indicator emotion-2"
         style="--spacing: 24px; transition: transform 200ms ease;"
       >
         <div
@@ -37902,7 +37919,7 @@ exports[`<SortableTree /> > renders renderContent.tsx correctly 1`] = `
         </div>
       </li>
       <li
-        class="studio-editor-node studio-editor-node-indicator emotion-2"
+        class="studio-sortable-tree-node studio-sortable-tree-node-indicator emotion-2"
         style="--spacing: 24px; transition: transform 200ms ease;"
       >
         <div
@@ -37992,7 +38009,7 @@ exports[`<SortableTree /> > renders renderContent.tsx correctly 1`] = `
         </div>
       </li>
       <li
-        class="studio-editor-node studio-editor-node-indicator emotion-2"
+        class="studio-sortable-tree-node studio-sortable-tree-node-indicator emotion-2"
         style="--spacing: 24px; transition: transform 200ms ease;"
       >
         <div
@@ -38082,7 +38099,7 @@ exports[`<SortableTree /> > renders renderContent.tsx correctly 1`] = `
         </div>
       </li>
       <li
-        class="studio-editor-node studio-editor-node-indicator emotion-2"
+        class="studio-sortable-tree-node studio-sortable-tree-node-indicator emotion-2"
         style="--spacing: 24px; transition: transform 200ms ease;"
       >
         <div
@@ -38172,7 +38189,7 @@ exports[`<SortableTree /> > renders renderContent.tsx correctly 1`] = `
         </div>
       </li>
       <li
-        class="studio-editor-node studio-editor-node-indicator emotion-2"
+        class="studio-sortable-tree-node studio-sortable-tree-node-indicator emotion-2"
         style="--spacing: 0px; transition: transform 200ms ease;"
       >
         <div
@@ -38262,7 +38279,7 @@ exports[`<SortableTree /> > renders renderContent.tsx correctly 1`] = `
         </div>
       </li>
       <li
-        class="studio-editor-node studio-editor-node-indicator emotion-2"
+        class="studio-sortable-tree-node studio-sortable-tree-node-indicator emotion-2"
         style="--spacing: 0px; transition: transform 200ms ease;"
       >
         <div
@@ -38370,7 +38387,7 @@ exports[`<SortableTree /> > renders renderContent.tsx correctly 1`] = `
         </div>
       </li>
       <li
-        class="studio-editor-node studio-editor-node-indicator emotion-2"
+        class="studio-sortable-tree-node studio-sortable-tree-node-indicator emotion-2"
         style="--spacing: 24px; transition: transform 200ms ease;"
       >
         <div
@@ -38460,7 +38477,7 @@ exports[`<SortableTree /> > renders renderContent.tsx correctly 1`] = `
         </div>
       </li>
       <li
-        class="studio-editor-node studio-editor-node-indicator emotion-2"
+        class="studio-sortable-tree-node studio-sortable-tree-node-indicator emotion-2"
         style="--spacing: 24px; transition: transform 200ms ease;"
       >
         <div
@@ -38747,6 +38764,7 @@ exports[`<SortableTree /> > renders sortableRule.tsx correctly 1`] = `
 
 .emotion-2 {
   margin-bottom: 4px;
+  padding-left: 12px;
 }
 
 .emotion-2:hover .studio-editor-node-handle,
@@ -38871,7 +38889,7 @@ exports[`<SortableTree /> > renders sortableRule.tsx correctly 1`] = `
       class="layoutkit-flexbox emotion-0 emotion-1"
     >
       <li
-        class="studio-editor-node studio-editor-node-indicator emotion-2"
+        class="studio-sortable-tree-node studio-sortable-tree-node-indicator emotion-2"
         style="--spacing: 0px; transition: transform 200ms ease;"
       >
         <div
@@ -38937,7 +38955,7 @@ exports[`<SortableTree /> > renders sortableRule.tsx correctly 1`] = `
         </div>
       </li>
       <li
-        class="studio-editor-node studio-editor-node-indicator emotion-2"
+        class="studio-sortable-tree-node studio-sortable-tree-node-indicator emotion-2"
         style="--spacing: 0px; transition: transform 200ms ease;"
       >
         <div
@@ -39021,7 +39039,7 @@ exports[`<SortableTree /> > renders sortableRule.tsx correctly 1`] = `
         </div>
       </li>
       <li
-        class="studio-editor-node studio-editor-node-indicator emotion-2"
+        class="studio-sortable-tree-node studio-sortable-tree-node-indicator emotion-2"
         style="--spacing: 24px; transition: transform 200ms ease;"
       >
         <div
@@ -39087,7 +39105,7 @@ exports[`<SortableTree /> > renders sortableRule.tsx correctly 1`] = `
         </div>
       </li>
       <li
-        class="studio-editor-node studio-editor-node-indicator emotion-2"
+        class="studio-sortable-tree-node studio-sortable-tree-node-indicator emotion-2"
         style="--spacing: 24px; transition: transform 200ms ease;"
       >
         <div
@@ -39153,7 +39171,7 @@ exports[`<SortableTree /> > renders sortableRule.tsx correctly 1`] = `
         </div>
       </li>
       <li
-        class="studio-editor-node studio-editor-node-indicator emotion-2"
+        class="studio-sortable-tree-node studio-sortable-tree-node-indicator emotion-2"
         style="--spacing: 24px; transition: transform 200ms ease;"
       >
         <div
@@ -39219,7 +39237,7 @@ exports[`<SortableTree /> > renders sortableRule.tsx correctly 1`] = `
         </div>
       </li>
       <li
-        class="studio-editor-node studio-editor-node-indicator emotion-2"
+        class="studio-sortable-tree-node studio-sortable-tree-node-indicator emotion-2"
         style="--spacing: 24px; transition: transform 200ms ease;"
       >
         <div
@@ -39285,7 +39303,7 @@ exports[`<SortableTree /> > renders sortableRule.tsx correctly 1`] = `
         </div>
       </li>
       <li
-        class="studio-editor-node studio-editor-node-indicator emotion-2"
+        class="studio-sortable-tree-node studio-sortable-tree-node-indicator emotion-2"
         style="--spacing: 0px; transition: transform 200ms ease;"
       >
         <div
@@ -39351,7 +39369,7 @@ exports[`<SortableTree /> > renders sortableRule.tsx correctly 1`] = `
         </div>
       </li>
       <li
-        class="studio-editor-node studio-editor-node-indicator emotion-2"
+        class="studio-sortable-tree-node studio-sortable-tree-node-indicator emotion-2"
         style="--spacing: 0px; transition: transform 200ms ease;"
       >
         <div
@@ -39435,7 +39453,7 @@ exports[`<SortableTree /> > renders sortableRule.tsx correctly 1`] = `
         </div>
       </li>
       <li
-        class="studio-editor-node studio-editor-node-indicator emotion-2"
+        class="studio-sortable-tree-node studio-sortable-tree-node-indicator emotion-2"
         style="--spacing: 24px; transition: transform 200ms ease;"
       >
         <div
@@ -39501,7 +39519,7 @@ exports[`<SortableTree /> > renders sortableRule.tsx correctly 1`] = `
         </div>
       </li>
       <li
-        class="studio-editor-node studio-editor-node-indicator emotion-2"
+        class="studio-sortable-tree-node studio-sortable-tree-node-indicator emotion-2"
         style="--spacing: 24px; transition: transform 200ms ease;"
       >
         <div
@@ -39764,6 +39782,7 @@ exports[`<SortableTree /> > renders virtual.tsx correctly 1`] = `
 
 .emotion-2 {
   margin-bottom: 4px;
+  padding-left: 12px;
 }
 
 .emotion-2:hover .studio-editor-node-handle,
@@ -39894,7 +39913,7 @@ exports[`<SortableTree /> > renders virtual.tsx correctly 1`] = `
           style="height: 4126px; width: 100%;"
         >
           <li
-            class="studio-editor-node studio-editor-node-indicator emotion-2"
+            class="studio-sortable-tree-node studio-sortable-tree-node-indicator emotion-2"
             style="--spacing: 0px; transition: transform 200ms ease; position: absolute; left: 0px; top: 0px; height: 36px; width: 100%;"
           >
             <div
@@ -39980,7 +39999,7 @@ exports[`<SortableTree /> > renders virtual.tsx correctly 1`] = `
             </div>
           </li>
           <li
-            class="studio-editor-node studio-editor-node-indicator emotion-2"
+            class="studio-sortable-tree-node studio-sortable-tree-node-indicator emotion-2"
             style="--spacing: 24px; transition: transform 200ms ease; position: absolute; left: 0px; top: 36px; height: 36px; width: 100%;"
           >
             <div
@@ -40048,7 +40067,7 @@ exports[`<SortableTree /> > renders virtual.tsx correctly 1`] = `
             </div>
           </li>
           <li
-            class="studio-editor-node studio-editor-node-indicator emotion-2"
+            class="studio-sortable-tree-node studio-sortable-tree-node-indicator emotion-2"
             style="--spacing: 24px; transition: transform 200ms ease; position: absolute; left: 0px; top: 72px; height: 36px; width: 100%;"
           >
             <div
@@ -40116,7 +40135,7 @@ exports[`<SortableTree /> > renders virtual.tsx correctly 1`] = `
             </div>
           </li>
           <li
-            class="studio-editor-node studio-editor-node-indicator emotion-2"
+            class="studio-sortable-tree-node studio-sortable-tree-node-indicator emotion-2"
             style="--spacing: 24px; transition: transform 200ms ease; position: absolute; left: 0px; top: 108px; height: 36px; width: 100%;"
           >
             <div
@@ -40184,7 +40203,7 @@ exports[`<SortableTree /> > renders virtual.tsx correctly 1`] = `
             </div>
           </li>
           <li
-            class="studio-editor-node studio-editor-node-indicator emotion-2"
+            class="studio-sortable-tree-node studio-sortable-tree-node-indicator emotion-2"
             style="--spacing: 24px; transition: transform 200ms ease; position: absolute; left: 0px; top: 144px; height: 36px; width: 100%;"
           >
             <div
@@ -40252,7 +40271,7 @@ exports[`<SortableTree /> > renders virtual.tsx correctly 1`] = `
             </div>
           </li>
           <li
-            class="studio-editor-node studio-editor-node-indicator emotion-2"
+            class="studio-sortable-tree-node studio-sortable-tree-node-indicator emotion-2"
             style="--spacing: 24px; transition: transform 200ms ease; position: absolute; left: 0px; top: 180px; height: 36px; width: 100%;"
           >
             <div
@@ -40320,7 +40339,7 @@ exports[`<SortableTree /> > renders virtual.tsx correctly 1`] = `
             </div>
           </li>
           <li
-            class="studio-editor-node studio-editor-node-indicator emotion-2"
+            class="studio-sortable-tree-node studio-sortable-tree-node-indicator emotion-2"
             style="--spacing: 24px; transition: transform 200ms ease; position: absolute; left: 0px; top: 216px; height: 36px; width: 100%;"
           >
             <div
@@ -40388,7 +40407,7 @@ exports[`<SortableTree /> > renders virtual.tsx correctly 1`] = `
             </div>
           </li>
           <li
-            class="studio-editor-node studio-editor-node-indicator emotion-2"
+            class="studio-sortable-tree-node studio-sortable-tree-node-indicator emotion-2"
             style="--spacing: 24px; transition: transform 200ms ease; position: absolute; left: 0px; top: 252px; height: 36px; width: 100%;"
           >
             <div
@@ -40456,7 +40475,7 @@ exports[`<SortableTree /> > renders virtual.tsx correctly 1`] = `
             </div>
           </li>
           <li
-            class="studio-editor-node studio-editor-node-indicator emotion-2"
+            class="studio-sortable-tree-node studio-sortable-tree-node-indicator emotion-2"
             style="--spacing: 24px; transition: transform 200ms ease; position: absolute; left: 0px; top: 288px; height: 36px; width: 100%;"
           >
             <div
@@ -40524,7 +40543,7 @@ exports[`<SortableTree /> > renders virtual.tsx correctly 1`] = `
             </div>
           </li>
           <li
-            class="studio-editor-node studio-editor-node-indicator emotion-2"
+            class="studio-sortable-tree-node studio-sortable-tree-node-indicator emotion-2"
             style="--spacing: 24px; transition: transform 200ms ease; position: absolute; left: 0px; top: 324px; height: 36px; width: 100%;"
           >
             <div
@@ -40592,7 +40611,7 @@ exports[`<SortableTree /> > renders virtual.tsx correctly 1`] = `
             </div>
           </li>
           <li
-            class="studio-editor-node studio-editor-node-indicator emotion-2"
+            class="studio-sortable-tree-node studio-sortable-tree-node-indicator emotion-2"
             style="--spacing: 24px; transition: transform 200ms ease; position: absolute; left: 0px; top: 360px; height: 36px; width: 100%;"
           >
             <div
@@ -40660,7 +40679,7 @@ exports[`<SortableTree /> > renders virtual.tsx correctly 1`] = `
             </div>
           </li>
           <li
-            class="studio-editor-node studio-editor-node-indicator emotion-2"
+            class="studio-sortable-tree-node studio-sortable-tree-node-indicator emotion-2"
             style="--spacing: 24px; transition: transform 200ms ease; position: absolute; left: 0px; top: 396px; height: 36px; width: 100%;"
           >
             <div
@@ -40728,7 +40747,7 @@ exports[`<SortableTree /> > renders virtual.tsx correctly 1`] = `
             </div>
           </li>
           <li
-            class="studio-editor-node studio-editor-node-indicator emotion-2"
+            class="studio-sortable-tree-node studio-sortable-tree-node-indicator emotion-2"
             style="--spacing: 24px; transition: transform 200ms ease; position: absolute; left: 0px; top: 432px; height: 36px; width: 100%;"
           >
             <div
@@ -40796,7 +40815,7 @@ exports[`<SortableTree /> > renders virtual.tsx correctly 1`] = `
             </div>
           </li>
           <li
-            class="studio-editor-node studio-editor-node-indicator emotion-2"
+            class="studio-sortable-tree-node studio-sortable-tree-node-indicator emotion-2"
             style="--spacing: 24px; transition: transform 200ms ease; position: absolute; left: 0px; top: 468px; height: 36px; width: 100%;"
           >
             <div
@@ -40864,7 +40883,7 @@ exports[`<SortableTree /> > renders virtual.tsx correctly 1`] = `
             </div>
           </li>
           <li
-            class="studio-editor-node studio-editor-node-indicator emotion-2"
+            class="studio-sortable-tree-node studio-sortable-tree-node-indicator emotion-2"
             style="--spacing: 24px; transition: transform 200ms ease; position: absolute; left: 0px; top: 504px; height: 36px; width: 100%;"
           >
             <div
@@ -40932,7 +40951,7 @@ exports[`<SortableTree /> > renders virtual.tsx correctly 1`] = `
             </div>
           </li>
           <li
-            class="studio-editor-node studio-editor-node-indicator emotion-2"
+            class="studio-sortable-tree-node studio-sortable-tree-node-indicator emotion-2"
             style="--spacing: 24px; transition: transform 200ms ease; position: absolute; left: 0px; top: 540px; height: 36px; width: 100%;"
           >
             <div

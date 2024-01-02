@@ -79,6 +79,7 @@ const TreeList = memo(() => {
   const { styles } = useStyle();
 
   const { height = 800, itemHeight = () => 36, width = '100%' } = virtual || {};
+  console.log('flattenData', flattenData);
 
   return (
     <>
