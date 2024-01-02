@@ -1,5 +1,30 @@
 # Changelog
 
+## [Version&nbsp;0.38.0](https://github.com/ant-design/pro-editor/compare/v0.37.0...v0.38.0)
+
+<sup>Released on **2024-01-02**</sup>
+
+#### ✨ 新特性
+
+- ProEditor ConvigProvider 优化改造，Prefix 动态获取.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's improved
+
+- ProEditor ConvigProvider 优化改造，Prefix 动态获取, closes [#120](https://github.com/ant-design/pro-editor/issues/120) ([54f265f](https://github.com/ant-design/pro-editor/commit/54f265f))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
 ## [Version&nbsp;0.37.0](https://github.com/ant-design/pro-editor/compare/v0.36.0...v0.37.0)
 
 <sup>Released on **2024-01-02**</sup>
