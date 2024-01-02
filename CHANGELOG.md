@@ -1,5 +1,39 @@
 # Changelog
 
+## [Version&nbsp;0.37.0](https://github.com/ant-design/pro-editor/compare/v0.36.0...v0.37.0)
+
+<sup>Released on **2024-01-02**</sup>
+
+#### ✨ 新特性
+
+- Add vertual list", add virtual config".
+
+#### 🐛 修复
+
+- Update snapshot.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's improved
+
+- Add vertual list" ([c8e7b76](https://github.com/ant-design/pro-editor/commit/c8e7b76))
+- Add virtual config" ([b10760f](https://github.com/ant-design/pro-editor/commit/b10760f))
+
+#### What's fixed
+
+- Update snapshot ([6fc13ef](https://github.com/ant-design/pro-editor/commit/6fc13ef))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
 ## [Version 0.36.0](https://github.com/ant-design/pro-editor/compare/v0.35.1...v0.36.0)
 
 <sup>Released on **2023-12-26**</sup>
