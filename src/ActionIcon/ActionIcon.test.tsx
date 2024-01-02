@@ -14,6 +14,7 @@ describe('ActionIcon', () => {
     );
     expect(container).toMatchSnapshot();
     const icon = await findByTestId('smile');
-    expect(icon.className.includes('ant-editor-btn-icon')).toBeTruthy();
+    expect(icon.className.includes('ant-btn-icon')).toBeTruthy();
+    expect(icon.className.includes('ant-editor-icon')).toBeTruthy();
   });
 });
