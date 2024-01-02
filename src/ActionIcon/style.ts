@@ -1,6 +1,7 @@
 import { createStyles } from '../theme';
 
-export const useStyles = createStyles(({ token, css, cx }, { size, className, prefixCls }) => {
+export const useStyles = createStyles(({ token, css, cx, prefixCls }, { size, className }) => {
+  const prefix = `${prefixCls}-${token.editorPrefix}-icon`;
   const sizeBoundary =
     typeof size === 'number'
       ? css`
@@ -28,7 +29,7 @@ export const useStyles = createStyles(({ token, css, cx }, { size, className, pr
   `;
 
   return {
-    container: cx(prefixCls, button, sizeBoundary, className),
+    container: cx(prefix, button, sizeBoundary, className),
     tooltip: css`
       pointer-events: none;
     `,

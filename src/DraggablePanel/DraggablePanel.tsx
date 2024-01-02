@@ -3,8 +3,6 @@ import type { CSSProperties, FC, ReactNode } from 'react';
 import { memo } from 'react';
 import type { Props as RndProps } from 'react-rnd';
 
-import { getPrefixCls } from '../theme';
-
 import { withProvider } from '..';
 import { FixMode } from './FixMode';
 import { FloatMode } from './FloatMode';
@@ -123,21 +121,17 @@ const Draggable: FC<DraggablePanelProps> = memo(
     minHeight,
     maxHeight,
     maxWidth,
-    prefixCls: customPrefixCls,
     onSizeChange,
     onSizeDragging,
     expandable = true,
     isExpand,
     onExpandChange,
   }) => {
-    const prefixCls = getPrefixCls('draggable-panel', customPrefixCls);
-
     switch (mode) {
       case 'fixed':
       default:
         return (
           <FixMode
-            prefixCls={prefixCls}
             // 尺寸
             size={size}
             defaultSize={defaultSize}
@@ -162,7 +156,6 @@ const Draggable: FC<DraggablePanelProps> = memo(
       case 'float':
         return (
           <FloatMode
-            prefixCls={prefixCls}
             // 坐标
             defaultPosition={defaultPosition}
             position={position}

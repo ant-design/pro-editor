@@ -5,7 +5,6 @@ import { useCallback } from 'react';
 import { Flexbox } from 'react-layout-kit';
 import type { DataFillAppProps, FillTreeNode } from '../types';
 
-import { getPrefixCls } from '../../theme';
 import TreeNode from '../components/TreeNode';
 import { useStore } from '../store';
 
@@ -14,26 +13,17 @@ import { useStyle } from './style';
 const { DirectoryTree } = Tree;
 
 const App: FC<DataFillAppProps> = (props) => {
-  const { prefixCls: customizePrefixCls, className } = props;
+  const { className } = props;
 
-  const prefixCls = getPrefixCls('data-fill', customizePrefixCls);
-
-  const { styles } = useStyle(prefixCls);
+  const { styles } = useStyle();
 
   const treeData = useStore((s) => s.fillTreeData);
 
-  const titleRender = useCallback(
-    (data: FillTreeNode<any>) => <TreeNode data={data} prefixCls={prefixCls} />,
-    [],
-  );
+  const titleRender = useCallback((data: FillTreeNode<any>) => <TreeNode data={data} />, []);
 
   return (
-    <Flexbox className={classNames(prefixCls, className, styles.directory)}>
-      <DirectoryTree
-        treeData={treeData}
-        selectable={false}
-        titleRender={titleRender}
-      />
+    <Flexbox className={classNames(className, styles.directory)}>
+      <DirectoryTree treeData={treeData} selectable={false} titleRender={titleRender} />
     </Flexbox>
   );
 };

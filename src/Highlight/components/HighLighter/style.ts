@@ -4,9 +4,6 @@ import { getThemeColor } from '../../theme/colors';
 export const useStyles = createStyles(
   ({ css, cx, token, prefixCls }, { lineNumber, theme, outPrefix }) => {
     const prefix = `${prefixCls}-${token.editorPrefix}-${outPrefix ? outPrefix : 'highlight'}`;
-
-    console.log('outPrefix', outPrefix);
-
     const { colorTextTertiary } = getThemeColor(theme === 'dark');
 
     const lineNumberStyle = css`

@@ -1,5 +1,5 @@
 import Icon from '@ant-design/icons';
-import { APIFieldType, getPrefixCls, themeToken, withProvider } from '@ant-design/pro-editor';
+import { APIFieldType, themeToken, withProvider } from '@ant-design/pro-editor';
 import classNames from 'classnames';
 import type { CSSProperties } from 'react';
 import React from 'react';
@@ -21,11 +21,6 @@ import { useStyle } from './style';
 
 interface FieldIconProps {
   /**
-   * @description 自定义前缀
-   * @ignore
-   */
-  prefixCls?: string;
-  /**
    * 类名
    */
   className?: string;
@@ -40,11 +35,9 @@ interface FieldIconProps {
 }
 
 const FieldIcon: React.FC<FieldIconProps> = (props) => {
-  const { type, prefixCls: customizePrefixCls, className, style: customStyle } = props;
+  const { type, className, style: customStyle } = props;
 
-  const prefixCls = getPrefixCls('field-icon', customizePrefixCls);
-
-  const { styles } = useStyle(prefixCls);
+  const { styles } = useStyle();
 
   const style: CSSProperties = {};
   let IconComponent = TypeAny;

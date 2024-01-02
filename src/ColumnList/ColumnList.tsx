@@ -1,9 +1,9 @@
 import {
+  ConfigProvider,
   CreatorButtonProps,
   SortableList,
   SortableListProps,
   SortableListRef,
-  withProvider,
 } from '@ant-design/pro-editor';
 import { FC, forwardRef, useCallback } from 'react';
 import ColumnItem from './ColumnItem';
@@ -49,15 +49,17 @@ const ColumnList: <T>(props: ColumnListProps<T>) => ReturnType<FC> = forwardRef<
   );
 
   return (
-    <SortableList
-      ref={ref}
-      renderItem={renderItem}
-      renderHeader={() => <Header columns={columns} />}
-      className={cx(className)}
-      creatorButtonProps={customCreatorButtonProps}
-      {...props}
-    />
+    <ConfigProvider>
+      <SortableList
+        ref={ref}
+        renderItem={renderItem}
+        renderHeader={() => <Header columns={columns} />}
+        className={cx(className)}
+        creatorButtonProps={customCreatorButtonProps}
+        {...props}
+      />
+    </ConfigProvider>
   );
 });
 
-export default withProvider(ColumnList);
+export default ColumnList;

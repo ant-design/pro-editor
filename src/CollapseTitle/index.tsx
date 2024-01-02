@@ -51,7 +51,7 @@ export interface CollapseTitleProps {
   children?: ReactNode;
 }
 
-const CollapseTitle: FC<CollapseTitleProps> = memo(
+const BaseCollapseTitle: FC<CollapseTitleProps> = memo(
   ({ defaultExpand = false, expand, onExpandChange, title, children, className, extra }) => {
     const [showPanel, setCollapsed] = useMergedState(defaultExpand, {
       value: expand,
@@ -97,5 +97,13 @@ const CollapseTitle: FC<CollapseTitleProps> = memo(
     );
   },
 );
+
+const CollapseTitle = (props: CollapseTitleProps) => {
+  return (
+    <ConfigProvider>
+      <BaseCollapseTitle {...props} />
+    </ConfigProvider>
+  );
+};
 
 export default CollapseTitle;

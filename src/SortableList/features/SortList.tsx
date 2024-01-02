@@ -1,6 +1,5 @@
 import { Empty } from 'antd';
 import isEqual from 'lodash.isequal';
-import type { FC } from 'react';
 import { memo } from 'react';
 import { shallow } from 'zustand/shallow';
 import { List, SortableItem } from '../components';
@@ -25,11 +24,7 @@ const selector = (s: Store) => ({
   dispatchListData: s.dispatchListData,
 });
 
-interface SortableListProps {
-  prefixCls: string;
-}
-
-const SortableList: FC<SortableListProps> = ({ prefixCls }) => {
+const SortableList = () => {
   const {
     dispatchListData,
     renderItem,
@@ -43,7 +38,7 @@ const SortableList: FC<SortableListProps> = ({ prefixCls }) => {
     actions,
   } = useStore(selector, shallow);
 
-  const { styles } = useStyle(prefixCls);
+  const { styles } = useStyle();
   const items = useStore((s) => s.value, isEqual);
   const {
     record,
@@ -83,7 +78,7 @@ const SortableList: FC<SortableListProps> = ({ prefixCls }) => {
   ) : (
     <>
       {creatorButtonProps !== false && position === 'top' ? <CreateButton /> : null}
-      <List prefixCls={prefixCls}>
+      <List>
         {items.map((item, index) => {
           return (
             <SortableItem
@@ -99,7 +94,6 @@ const SortableList: FC<SortableListProps> = ({ prefixCls }) => {
               getItemStyles={getItemStyles}
               onRemove={() => dispatchListData({ type: 'removeItem', index })}
               useDragOverlay={true}
-              prefixCls={prefixCls}
             />
           );
         })}

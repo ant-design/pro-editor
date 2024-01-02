@@ -1,9 +1,10 @@
-import { createStyles } from '@ant-design/pro-editor';
+import { createStyles } from '../../../theme';
 
-export const useStyle = createStyles(({ token, css, cx }, prefixCls) => {
+export const useStyle = createStyles(({ token, css, cx, prefixCls }) => {
+  const prefix = `${prefixCls}-${token.editorPrefix}`;
   return {
     demo: cx(
-      `${prefixCls}-demo-data`,
+      `${prefix}-demo-data`,
       css({
         maxWidth: '120px',
         overflow: 'hidden',

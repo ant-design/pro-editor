@@ -5,7 +5,7 @@ import {
   RedoOutlined,
   UndoOutlined,
 } from '@ant-design/icons';
-import { ActionIcon, ActionIconProps, ConfigProvider, getPrefixCls } from '@ant-design/pro-editor';
+import { ActionIcon, ActionIconProps, ConfigProvider } from '@ant-design/pro-editor';
 import { Divider, Dropdown, DropdownProps } from 'antd';
 import { useStyle } from './style';
 
@@ -123,8 +123,7 @@ const ActionGroup = (props: ActionGroupProps) => {
     dropdownProps,
     dropdownMenuTrigger,
   } = props;
-  const prefixCls = getPrefixCls('action-group');
-  const { styles, cx } = useStyle({ prefixCls, direction, type });
+  const { styles, cx } = useStyle({ direction, type });
 
   const DefalutItemConfig = [
     { icon: <FullscreenOutlined />, onClick: onFullScreenClick },
@@ -173,33 +172,39 @@ const ActionGroup = (props: ActionGroupProps) => {
   };
 
   return (
+    <div className={cx(styles.content, className)} style={style}>
+      <ActionDomList />
+      {dropdownMenu && (
+        <Dropdown
+          trigger={['click']}
+          {...dropdownProps}
+          menu={{
+            items: dropdownMenu.map((item: any) => {
+              if (item?.type) return item;
+              return {
+                ...item,
+                icon: item.icon,
+              };
+            }),
+          }}
+        >
+          {dropdownMenuTrigger ? (
+            dropdownMenuTrigger
+          ) : (
+            <ActionIcon icon={<DashOutlined />} key="more" size={size} />
+          )}
+        </Dropdown>
+      )}
+    </div>
+  );
+};
+
+const WrapperActionGroup = (props: ActionGroupProps) => {
+  return (
     <ConfigProvider>
-      <div className={cx(styles.content, className)} style={style}>
-        <ActionDomList />
-        {dropdownMenu && (
-          <Dropdown
-            trigger={['click']}
-            {...dropdownProps}
-            menu={{
-              items: dropdownMenu.map((item: any) => {
-                if (item?.type) return item;
-                return {
-                  ...item,
-                  icon: item.icon,
-                };
-              }),
-            }}
-          >
-            {dropdownMenuTrigger ? (
-              dropdownMenuTrigger
-            ) : (
-              <ActionIcon icon={<DashOutlined />} key="more" size={size} />
-            )}
-          </Dropdown>
-        )}
-      </div>
+      <ActionGroup {...props} />
     </ConfigProvider>
   );
 };
 
-export { ActionGroup };
+export { WrapperActionGroup as ActionGroup };

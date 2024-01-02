@@ -20,14 +20,10 @@ const selector = (s: DataFillStore) => ({
 
 interface TreeNodeProps {
   data: FillTreeNode<any>;
-  prefixCls: string;
 }
 
-const TreeNode: FC<TreeNodeProps> = ({ data, prefixCls }) => {
-  const { updateConfig, handleFill, config, handleShowDemoData } = useStore(
-    selector,
-    shallow,
-  );
+const TreeNode: FC<TreeNodeProps> = ({ data }) => {
+  const { updateConfig, handleFill, config, handleShowDemoData } = useStore(selector, shallow);
 
   return (
     <Flexbox
@@ -40,7 +36,7 @@ const TreeNode: FC<TreeNodeProps> = ({ data, prefixCls }) => {
         handleFill(data.key);
       }}
     >
-      <Title title={data.title} prefixCls={prefixCls} dataKey={data.key} />
+      <Title title={data.title} dataKey={data.key} />
       {data.checked && (
         <div
           onClick={(e) => {
