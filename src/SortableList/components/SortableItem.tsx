@@ -14,7 +14,6 @@ export default function SortableItem({
   renderContent,
   item,
   actions,
-  prefixCls,
   hideRemove = false,
 }: SortableItemProps) {
   const {
@@ -63,7 +62,6 @@ export default function SortableItem({
       data-index={index}
       data-id={id}
       dragOverlay={!useDragOverlay && isDragging}
-      prefixCls={prefixCls}
       {...attributes}
     />
   );
