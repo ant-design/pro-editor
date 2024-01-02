@@ -8,21 +8,14 @@ import FullFeatureWrapper from './wrapper';
 
 const Highlight = memo<HighlightProps>((props: HighlightProps) => {
   const { type, theme: outTheme = THEME_AUTO, containerWrapper } = props;
-
   // 当为 auto 的时候，根据系统主题来判断
   const { appearance } = useThemeMode();
   const ProviderTheme = appearance === 'dark' ? 'dark' : 'light';
-  console.log('appearance', appearance);
-
   const theme = outTheme === THEME_AUTO ? ProviderTheme : outTheme;
-
   const { theme: token } = useStyles({
     type,
     theme,
   });
-
-  console.log('theme-base', theme);
-
   return (
     <ConfigProvider
       componentToken={{

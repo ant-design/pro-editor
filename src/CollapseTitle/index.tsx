@@ -4,7 +4,7 @@ import { memo, type CSSProperties, type FC, type ReactNode } from 'react';
 import { Flexbox } from 'react-layout-kit';
 import useMergedState from 'use-merge-value';
 
-import { withProvider } from '@ant-design/pro-editor';
+import { ConfigProvider } from '@ant-design/pro-editor';
 
 import { useStyles } from './style';
 
@@ -65,35 +65,37 @@ const CollapseTitle: FC<CollapseTitleProps> = memo(
     const { styles } = useStyles({ showPanel, className });
 
     return (
-      <Flexbox className={styles.container}>
-        <Flexbox
-          direction={'horizontal'}
-          distribution={'space-between'}
-          align={'center'}
-          className={styles.header}
-          onClick={showPanel ? undefined : toggleCollapse}
-        >
+      <ConfigProvider>
+        <Flexbox className={styles.container}>
           <Flexbox
             direction={'horizontal'}
-            gap={4}
+            distribution={'space-between'}
             align={'center'}
-            onClick={showPanel ? toggleCollapse : undefined}
-            className={styles.title}
+            className={styles.header}
+            onClick={showPanel ? undefined : toggleCollapse}
           >
-            <CaretRightFilled style={{ fontSize: 10 }} rotate={showPanel ? 90 : 0} />
-            <div>{title}</div>
+            <Flexbox
+              direction={'horizontal'}
+              gap={4}
+              align={'center'}
+              onClick={showPanel ? toggleCollapse : undefined}
+              className={styles.title}
+            >
+              <CaretRightFilled style={{ fontSize: 10 }} rotate={showPanel ? 90 : 0} />
+              <div>{title}</div>
+            </Flexbox>
+            {extra && extra(showPanel)}
           </Flexbox>
-          {extra && extra(showPanel)}
+          {showPanel ? (
+            <>
+              <Divider style={{ margin: '4px 0 12px' }} dashed />
+              {children}
+            </>
+          ) : null}
         </Flexbox>
-        {showPanel ? (
-          <>
-            <Divider style={{ margin: '4px 0 12px' }} dashed />
-            {children}
-          </>
-        ) : null}
-      </Flexbox>
+      </ConfigProvider>
     );
   },
 );
 
-export default withProvider(CollapseTitle);
+export default CollapseTitle;
