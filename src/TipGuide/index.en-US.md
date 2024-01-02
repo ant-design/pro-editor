@@ -13,8 +13,6 @@ Guide users' attention in simple scenarios.
 
 ### Basic
 
-Note that `guideKey` is required and must be unique.
-
 <code src="./demos/normal.tsx" ></code>
 
 ### Controlled
