@@ -148,4 +148,4 @@ const FieldSelect: React.FC<FieldSelectProps> = (props) => {
   );
 };
 
-export default withProvider(FieldSelect);
+export default withProvider(FieldSelect) as React.FC<FieldSelectProps>;

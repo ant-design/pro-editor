@@ -56,4 +56,4 @@ const FieldTitle: React.FC<FieldTitleProps> = (props) => {
   );
 };
 
-export default withProvider(FieldTitle);
+export default withProvider(FieldTitle) as React.FC<FieldTitleProps>;

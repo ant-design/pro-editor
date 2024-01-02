@@ -74,6 +74,6 @@ const BasicLayout = (props: LayoutProps) => {
   );
 };
 
-const WrapperLayout = withProvider(BasicLayout);
+const WrapperLayout: React.FC<LayoutProps> = withProvider(BasicLayout);
 
 export { WrapperLayout as Layout };

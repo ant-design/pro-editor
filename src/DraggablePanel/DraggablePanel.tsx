@@ -182,6 +182,6 @@ const Draggable: FC<DraggablePanelProps> = memo(
   },
 );
 
-const WithProviderDraggable = withProvider(Draggable);
+const WithProviderDraggable: FC<DraggablePanelProps> = withProvider(Draggable);
 
 export { WithProviderDraggable as Draggable };

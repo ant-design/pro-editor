@@ -213,4 +213,4 @@ const Previewer: FC<DataPreviewerProps> = ({
   );
 };
 
-export const DataPreviewer = withProvider(Previewer);
+export const DataPreviewer: FC<DataPreviewerProps> = withProvider(Previewer);

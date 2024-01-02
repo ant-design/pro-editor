@@ -96,4 +96,4 @@ const FieldIcon: React.FC<FieldIconProps> = (props) => {
   );
 };
 
-export default withProvider(FieldIcon);
+export default withProvider(FieldIcon) as React.FC<FieldIconProps>;

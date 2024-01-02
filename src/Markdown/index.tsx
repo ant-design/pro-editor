@@ -67,4 +67,4 @@ const Markdown = memo<MarkdownProps>(
   },
 );
 
-export default withProvider(Markdown);
+export default withProvider(Markdown) as React.FC<MarkdownProps>;
