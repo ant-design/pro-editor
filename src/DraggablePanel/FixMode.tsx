@@ -98,10 +98,6 @@ export interface FixModePanelProps {
    * 内容
    */
   children: ReactNode;
-  /**
-   * 类名前缀
-   */
-  prefixCls?: string;
 }
 
 const DEFAULT_HEIGHT = 150;

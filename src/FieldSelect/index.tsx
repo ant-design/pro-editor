@@ -31,11 +31,6 @@ export interface FieldSelectOptionType extends DefaultOptionType {
 
 export interface FieldSelectProps extends SelectProps {
   /**
-   * @description 自定义前缀
-   * @ignore
-   */
-  prefixCls?: string;
-  /**
    * 配置项
    */
   options?: FieldSelectOptionType[];

@@ -17,7 +17,12 @@ When you need a general panel to carry a series of global tools such as "full sc
 
 ## Code Demo
 
-<code src="./demos/basic.tsx" ></code> <code src="./demos/config.tsx" title='Configuration Usage' description= "Render the entire content by configuring `items`, and you can render a separator by declaring type as divider in items"></code> <code src="./demos/dropMenu.tsx" title="Dropdown" description="Render a dropdown content at the end by configuring `dropdownMenu`"></code> <code src="./demos/type.tsx" title="Mode Configuration"></code> <code src="./demos/custom.tsx" title='Customization' description= "Customize the rendering of special operational content using `render`"></code> <code src="./demos/withPanel.tsx" iframe title="Usage in Floating Panel" description="Combine with DraggablePanel to make the entire panel float and draggable"></code>
+<code src="./demos/basic.tsx" ></code>
+<code src="./demos/config.tsx" title='Configuration Usage' description= "Render the entire content by configuring `items`, and you can render a separator by declaring type as divider in items"></code>
+<code src="./demos/dropMenu.tsx" title="Dropdown" description="Render a dropdown content at the end by configuring `dropdownMenu`"></code>
+<code src="./demos/type.tsx" title="Mode Configuration"></code>
+<code src="./demos/custom.tsx" title='Customization' description= "Customize the rendering of special operational content using `render`"></code>
+<code src="./demos/withPanel.tsx" iframe title="Usage in Floating Panel" description="Combine with DraggablePanel to make the entire panel float and draggable"></code>
 
 ## API
 

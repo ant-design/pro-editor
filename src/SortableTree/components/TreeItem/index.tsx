@@ -24,6 +24,7 @@ const useStyles = createStyles(
         `${prefix}-indicator`,
         css`
           margin-bottom: 4px;
+          padding-left: 12px;
 
           &:hover {
             .${prefix}-handle, .${prefix}-remove {
@@ -200,7 +201,7 @@ const TreeItem: FC<TreeItemProps> = memo(
           style={
             {
               pointerEvents: disableInteraction ? 'none' : undefined,
-              '--spacing': `${indentationWidth * depth}px`,
+              '--spacing': `${indentationWidth * depth + (disableDrag ? 0 : 13)}px`,
 
               transform: CSS.Translate.toString(transform),
               transition,

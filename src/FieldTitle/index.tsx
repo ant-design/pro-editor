@@ -5,11 +5,6 @@ import { useStyle } from './style';
 
 export interface FieldTitleProps {
   /**
-   * @description 自定义前缀
-   * @ignore
-   */
-  prefixCls?: string;
-  /**
    * 类名
    */
   className?: string;

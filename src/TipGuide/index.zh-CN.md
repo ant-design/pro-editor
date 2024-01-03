@@ -14,8 +14,6 @@ group: 基础组件
 
 ### 基础
 
-注意 `guideKey` 必填，且唯一。
-
 <code src="./demos/normal.tsx" ></code>
 
 ### 受控

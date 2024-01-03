@@ -15,7 +15,8 @@ For the editing scenario, the basic styles and interactive feedback have been re
 
 For input box controls, the timing of data changes has been optimized, and updates will only be triggered when the input box loses focus or the Enter key is pressed;
 
-<code src="./demos/basic.tsx" ></code> <code src="./demos/inputNumber.tsx" ></code>
+<code src="./demos/basic.tsx" ></code>
+<code src="./demos/inputNumber.tsx" ></code>
 
 ### Select
 

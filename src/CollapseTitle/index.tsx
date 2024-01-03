@@ -28,10 +28,6 @@ export interface CollapseTitleProps {
    */
   onExpandChange?: (expand: boolean) => void;
   /**
-   * 前缀
-   */
-  prefixCls?: string;
-  /**
    * 类名
    */
   className?: string;

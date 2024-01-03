@@ -91,7 +91,8 @@ const TreeList = memo(() => {
           width={width}
         >
           {({ index, data, style }) => {
-            return <TreeNode node={data[index]} virtualStyle={style} />;
+            const node = data[index];
+            return <TreeNode node={node} virtualStyle={style} key={node.id} />;
           }}
         </VariableSizeList>
       ) : (

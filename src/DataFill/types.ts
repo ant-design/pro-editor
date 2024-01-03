@@ -89,11 +89,6 @@ export type OnItemClick = (payload: FilledPayload) => void;
 // eslint-disable-next-line @typescript-eslint/no-empty-interface
 export interface DataFillAppProps {
   /**
-   * @description 自定义前缀
-   * @ignore
-   */
-  prefixCls?: string;
-  /**
    * 类名
    */
   className?: string;
@@ -117,8 +112,7 @@ export type DateTimeParams = 'date' | 'dateTime' | 'time';
 export type WebsiteParams = 'url' | 'domain' | 'ip';
 export type DataParams = 'digits' | 'tens' | 'hundreds';
 
-export interface DataFillConfig
-  extends Partial<Record<DataFillType, boolean | string>> {
+export interface DataFillConfig extends Partial<Record<DataFillType, boolean | string>> {
   name: NameParams;
   percent: boolean;
   phone: boolean;
