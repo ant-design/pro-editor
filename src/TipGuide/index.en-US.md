@@ -45,5 +45,5 @@ You can use `offsetY` to vertically offset the guide point.
 | maxWidth     | Maximum width                              | number                                    | 300      |
 | open         | Controlled open attribute                  | boolean                                   | -        |
 | onOpenChange | Trigger when the open attribute changes    | (open: boolean) => void                   | -        |
-| defaultOpen  | Default open state                         | boolean                                   | -        |
+| defaultOpen  | Default open state                         | boolean                                   | true     |
 | footerRender | Render API for customizing the footer part | (dom: React.ReactNode) => React.ReactNode | -        |
