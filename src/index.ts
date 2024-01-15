@@ -25,8 +25,6 @@ export * from './IconPicker';
 export { default as InteractContainer } from './InteractContainer';
 export type { CanvasInteractRule, InteractStatus, InteractStatusNode } from './InteractContainer';
 export { Layout as EditorLayout } from './Layout';
-export { default as LevaPanel } from './LevaPanel';
-export type { LevaPanelProps } from './LevaPanel';
 export { default as Markdown, type MarkdownProps } from './Markdown';
 export * from './ProBuilder';
 export * from './ProEditor';

@@ -58,7 +58,7 @@ Since Next.js is a CSR/SSR isomorphic React framework, and ProEditor only provid
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   // Convert pure esm modules to node-compatible modules
-  transpilePackages: ['@ant-design/pro-editor', 'leva'], // leva is a ProEditor dependency module
+  transpilePackages: ['@ant-design/pro-editor'], // leva is a ProEditor dependency module
 };
 ```
 
