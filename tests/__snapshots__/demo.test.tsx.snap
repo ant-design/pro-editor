@@ -565,7 +565,7 @@ exports[`<ActionGroup /> > renders custom.tsx correctly 1`] = `
           内容
         </p>
         <input
-          class="studio-input"
+          class="studio-input studio-input-outlined"
           placeholder="请输入编辑器内容"
           type="text"
           value=""
@@ -2650,7 +2650,7 @@ exports[`<ColumnList /> > renders actions.tsx correctly 1`] = `
               class="layoutkit-flexbox emotion-13 studio-editor-item-content emotion-14"
             >
               <input
-                class="studio-input studio-input-sm emotion-15 studio-editor-content-tem emotion-16"
+                class="studio-input studio-input-sm studio-input-outlined emotion-15 studio-editor-content-tem emotion-16"
                 id="column-list-0-test-0"
                 placeholder="请输入"
                 style="flex: 1; max-width: 33.333333333333336%;"
@@ -2658,7 +2658,7 @@ exports[`<ColumnList /> > renders actions.tsx correctly 1`] = `
                 value="序号"
               />
               <div
-                class="studio-select studio-select-sm studio-editor-content-tem emotion-17 studio-select-single studio-select-show-arrow"
+                class="studio-select studio-select-sm studio-select-outlined studio-editor-content-tem emotion-17 studio-select-single studio-select-show-arrow"
                 style="flex: 1; max-width: 33.333333333333336%;"
               >
                 <div
@@ -2719,7 +2719,7 @@ exports[`<ColumnList /> > renders actions.tsx correctly 1`] = `
                 </span>
               </div>
               <div
-                class="studio-select studio-select-sm studio-editor-content-tem emotion-17 studio-select-single studio-select-show-arrow"
+                class="studio-select studio-select-sm studio-select-outlined studio-editor-content-tem emotion-17 studio-select-single studio-select-show-arrow"
                 style="flex: 1; max-width: 33.333333333333336%;"
               >
                 <div
@@ -2891,7 +2891,7 @@ exports[`<ColumnList /> > renders actions.tsx correctly 1`] = `
               class="layoutkit-flexbox emotion-13 studio-editor-item-content emotion-14"
             >
               <input
-                class="studio-input studio-input-sm emotion-15 studio-editor-content-tem emotion-16"
+                class="studio-input studio-input-sm studio-input-outlined emotion-15 studio-editor-content-tem emotion-16"
                 id="column-list-1-test-1"
                 placeholder="请输入"
                 style="flex: 1; max-width: 33.333333333333336%;"
@@ -2899,7 +2899,7 @@ exports[`<ColumnList /> > renders actions.tsx correctly 1`] = `
                 value="授权企业名称"
               />
               <div
-                class="studio-select studio-select-sm studio-editor-content-tem emotion-17 studio-select-single studio-select-show-arrow"
+                class="studio-select studio-select-sm studio-select-outlined studio-editor-content-tem emotion-17 studio-select-single studio-select-show-arrow"
                 style="flex: 1; max-width: 33.333333333333336%;"
               >
                 <div
@@ -2960,7 +2960,7 @@ exports[`<ColumnList /> > renders actions.tsx correctly 1`] = `
                 </span>
               </div>
               <div
-                class="studio-select studio-select-sm studio-editor-content-tem emotion-17 studio-select-single studio-select-show-arrow"
+                class="studio-select studio-select-sm studio-select-outlined studio-editor-content-tem emotion-17 studio-select-single studio-select-show-arrow"
                 style="flex: 1; max-width: 33.333333333333336%;"
               >
                 <div
@@ -3132,7 +3132,7 @@ exports[`<ColumnList /> > renders actions.tsx correctly 1`] = `
               class="layoutkit-flexbox emotion-13 studio-editor-item-content emotion-14"
             >
               <input
-                class="studio-input studio-input-sm emotion-15 studio-editor-content-tem emotion-16"
+                class="studio-input studio-input-sm studio-input-outlined emotion-15 studio-editor-content-tem emotion-16"
                 id="column-list-2-test-2"
                 placeholder="请输入"
                 style="flex: 1; max-width: 33.333333333333336%;"
@@ -3140,7 +3140,7 @@ exports[`<ColumnList /> > renders actions.tsx correctly 1`] = `
                 value="被授权企业"
               />
               <div
-                class="studio-select studio-select-sm studio-editor-content-tem emotion-17 studio-select-single studio-select-show-arrow"
+                class="studio-select studio-select-sm studio-select-outlined studio-editor-content-tem emotion-17 studio-select-single studio-select-show-arrow"
                 style="flex: 1; max-width: 33.333333333333336%;"
               >
                 <div
@@ -3201,7 +3201,7 @@ exports[`<ColumnList /> > renders actions.tsx correctly 1`] = `
                 </span>
               </div>
               <div
-                class="studio-select studio-select-sm studio-editor-content-tem emotion-17 studio-select-single studio-select-show-arrow"
+                class="studio-select studio-select-sm studio-select-outlined studio-editor-content-tem emotion-17 studio-select-single studio-select-show-arrow"
                 style="flex: 1; max-width: 33.333333333333336%;"
               >
                 <div
@@ -3716,7 +3716,7 @@ exports[`<ColumnList /> > renders column.tsx correctly 1`] = `
               class="layoutkit-flexbox emotion-14 studio-editor-item-content emotion-15"
             >
               <input
-                class="studio-input studio-input-sm emotion-16 studio-editor-content-tem emotion-17"
+                class="studio-input studio-input-sm studio-input-outlined emotion-16 studio-editor-content-tem emotion-17"
                 id="column-list-0-test-0"
                 placeholder="请输入"
                 style="flex: 1; max-width: 25%;"
@@ -3724,7 +3724,7 @@ exports[`<ColumnList /> > renders column.tsx correctly 1`] = `
                 value="订单创建时间"
               />
               <div
-                class="studio-select studio-select-sm studio-editor-content-tem emotion-18 studio-select-single studio-select-show-arrow"
+                class="studio-select studio-select-sm studio-select-outlined studio-editor-content-tem emotion-18 studio-select-single studio-select-show-arrow"
                 style="flex: 1; max-width: 25%;"
               >
                 <div
@@ -3785,7 +3785,7 @@ exports[`<ColumnList /> > renders column.tsx correctly 1`] = `
                 </span>
               </div>
               <div
-                class="studio-select studio-select-sm studio-editor-content-tem emotion-18 studio-select-single studio-select-show-arrow"
+                class="studio-select studio-select-sm studio-select-outlined studio-editor-content-tem emotion-18 studio-select-single studio-select-show-arrow"
                 style="flex: 1; max-width: 25%;"
               >
                 <div
@@ -3849,17 +3849,12 @@ exports[`<ColumnList /> > renders column.tsx correctly 1`] = `
                 class="studio-color-picker-trigger studio-color-picker-sm"
               >
                 <div
-                  class="studio-color-picker-color-block"
-                >
-                  <div
-                    class="studio-color-picker-color-block-inner"
-                    style="background: rgb(22, 119, 255);"
-                  />
-                </div>
+                  class="studio-color-picker-clear"
+                />
                 <div
                   class="studio-color-picker-trigger-text"
                 >
-                  #1677FF
+                  #000000,0%
                 </div>
               </div>
             </div>
@@ -3944,7 +3939,7 @@ exports[`<ColumnList /> > renders column.tsx correctly 1`] = `
               class="layoutkit-flexbox emotion-14 studio-editor-item-content emotion-15"
             >
               <input
-                class="studio-input studio-input-sm emotion-16 studio-editor-content-tem emotion-17"
+                class="studio-input studio-input-sm studio-input-outlined emotion-16 studio-editor-content-tem emotion-17"
                 id="column-list-1-test-1"
                 placeholder="请输入"
                 style="flex: 1; max-width: 25%;"
@@ -3952,7 +3947,7 @@ exports[`<ColumnList /> > renders column.tsx correctly 1`] = `
                 value="产品详情图"
               />
               <div
-                class="studio-select studio-select-sm studio-editor-content-tem emotion-18 studio-select-single studio-select-show-arrow"
+                class="studio-select studio-select-sm studio-select-outlined studio-editor-content-tem emotion-18 studio-select-single studio-select-show-arrow"
                 style="flex: 1; max-width: 25%;"
               >
                 <div
@@ -4013,7 +4008,7 @@ exports[`<ColumnList /> > renders column.tsx correctly 1`] = `
                 </span>
               </div>
               <div
-                class="studio-select studio-select-sm studio-editor-content-tem emotion-18 studio-select-single studio-select-show-arrow"
+                class="studio-select studio-select-sm studio-select-outlined studio-editor-content-tem emotion-18 studio-select-single studio-select-show-arrow"
                 style="flex: 1; max-width: 25%;"
               >
                 <div
@@ -4077,17 +4072,12 @@ exports[`<ColumnList /> > renders column.tsx correctly 1`] = `
                 class="studio-color-picker-trigger studio-color-picker-sm"
               >
                 <div
-                  class="studio-color-picker-color-block"
-                >
-                  <div
-                    class="studio-color-picker-color-block-inner"
-                    style="background: rgb(22, 119, 255);"
-                  />
-                </div>
+                  class="studio-color-picker-clear"
+                />
                 <div
                   class="studio-color-picker-trigger-text"
                 >
-                  #1677FF
+                  #000000,0%
                 </div>
               </div>
             </div>
@@ -4172,7 +4162,7 @@ exports[`<ColumnList /> > renders column.tsx correctly 1`] = `
               class="layoutkit-flexbox emotion-14 studio-editor-item-content emotion-15"
             >
               <input
-                class="studio-input studio-input-sm emotion-16 studio-editor-content-tem emotion-17"
+                class="studio-input studio-input-sm studio-input-outlined emotion-16 studio-editor-content-tem emotion-17"
                 id="column-list-2-test-2"
                 placeholder="请输入"
                 style="flex: 1; max-width: 25%;"
@@ -4180,7 +4170,7 @@ exports[`<ColumnList /> > renders column.tsx correctly 1`] = `
                 value="订单关闭原因"
               />
               <div
-                class="studio-select studio-select-sm studio-editor-content-tem emotion-18 studio-select-single studio-select-show-arrow"
+                class="studio-select studio-select-sm studio-select-outlined studio-editor-content-tem emotion-18 studio-select-single studio-select-show-arrow"
                 style="flex: 1; max-width: 25%;"
               >
                 <div
@@ -4241,7 +4231,7 @@ exports[`<ColumnList /> > renders column.tsx correctly 1`] = `
                 </span>
               </div>
               <div
-                class="studio-select studio-select-sm studio-editor-content-tem emotion-18 studio-select-single studio-select-show-arrow"
+                class="studio-select studio-select-sm studio-select-outlined studio-editor-content-tem emotion-18 studio-select-single studio-select-show-arrow"
                 style="flex: 1; max-width: 25%;"
               >
                 <div
@@ -4305,17 +4295,12 @@ exports[`<ColumnList /> > renders column.tsx correctly 1`] = `
                 class="studio-color-picker-trigger studio-color-picker-sm"
               >
                 <div
-                  class="studio-color-picker-color-block"
-                >
-                  <div
-                    class="studio-color-picker-color-block-inner"
-                    style="background: rgb(22, 119, 255);"
-                  />
-                </div>
+                  class="studio-color-picker-clear"
+                />
                 <div
                   class="studio-color-picker-trigger-text"
                 >
-                  #1677FF
+                  #000000,0%
                 </div>
               </div>
             </div>
@@ -4400,7 +4385,7 @@ exports[`<ColumnList /> > renders column.tsx correctly 1`] = `
               class="layoutkit-flexbox emotion-14 studio-editor-item-content emotion-15"
             >
               <input
-                class="studio-input studio-input-sm emotion-16 studio-editor-content-tem emotion-17"
+                class="studio-input studio-input-sm studio-input-outlined emotion-16 studio-editor-content-tem emotion-17"
                 id="column-list-3-test-3"
                 placeholder="请输入"
                 style="flex: 1; max-width: 25%;"
@@ -4408,7 +4393,7 @@ exports[`<ColumnList /> > renders column.tsx correctly 1`] = `
                 value="订单关闭类型"
               />
               <div
-                class="studio-select studio-select-sm studio-editor-content-tem emotion-18 studio-select-single studio-select-show-arrow"
+                class="studio-select studio-select-sm studio-select-outlined studio-editor-content-tem emotion-18 studio-select-single studio-select-show-arrow"
                 style="flex: 1; max-width: 25%;"
               >
                 <div
@@ -4469,7 +4454,7 @@ exports[`<ColumnList /> > renders column.tsx correctly 1`] = `
                 </span>
               </div>
               <div
-                class="studio-select studio-select-sm studio-editor-content-tem emotion-18 studio-select-single studio-select-show-arrow"
+                class="studio-select studio-select-sm studio-select-outlined studio-editor-content-tem emotion-18 studio-select-single studio-select-show-arrow"
                 style="flex: 1; max-width: 25%;"
               >
                 <div
@@ -4533,17 +4518,12 @@ exports[`<ColumnList /> > renders column.tsx correctly 1`] = `
                 class="studio-color-picker-trigger studio-color-picker-sm"
               >
                 <div
-                  class="studio-color-picker-color-block"
-                >
-                  <div
-                    class="studio-color-picker-color-block-inner"
-                    style="background: rgb(22, 119, 255);"
-                  />
-                </div>
+                  class="studio-color-picker-clear"
+                />
                 <div
                   class="studio-color-picker-trigger-text"
                 >
-                  #1677FF
+                  #000000,0%
                 </div>
               </div>
             </div>
@@ -4975,7 +4955,7 @@ exports[`<ColumnList /> > renders controlled.tsx correctly 1`] = `
               class="layoutkit-flexbox emotion-13 studio-editor-item-content emotion-14"
             >
               <input
-                class="studio-input studio-input-sm emotion-15 studio-editor-content-tem emotion-16"
+                class="studio-input studio-input-sm studio-input-outlined emotion-15 studio-editor-content-tem emotion-16"
                 id="column-list-0-test-0"
                 placeholder="请输入"
                 style="flex: 1; max-width: 33.333333333333336%;"
@@ -4983,7 +4963,7 @@ exports[`<ColumnList /> > renders controlled.tsx correctly 1`] = `
                 value="序号"
               />
               <div
-                class="studio-select studio-select-sm studio-editor-content-tem emotion-17 studio-select-single studio-select-show-arrow"
+                class="studio-select studio-select-sm studio-select-outlined studio-editor-content-tem emotion-17 studio-select-single studio-select-show-arrow"
                 style="flex: 1; max-width: 33.333333333333336%;"
               >
                 <div
@@ -5044,7 +5024,7 @@ exports[`<ColumnList /> > renders controlled.tsx correctly 1`] = `
                 </span>
               </div>
               <div
-                class="studio-select studio-select-sm studio-editor-content-tem emotion-17 studio-select-single studio-select-show-arrow"
+                class="studio-select studio-select-sm studio-select-outlined studio-editor-content-tem emotion-17 studio-select-single studio-select-show-arrow"
                 style="flex: 1; max-width: 33.333333333333336%;"
               >
                 <div
@@ -5186,7 +5166,7 @@ exports[`<ColumnList /> > renders controlled.tsx correctly 1`] = `
               class="layoutkit-flexbox emotion-13 studio-editor-item-content emotion-14"
             >
               <input
-                class="studio-input studio-input-sm emotion-15 studio-editor-content-tem emotion-16"
+                class="studio-input studio-input-sm studio-input-outlined emotion-15 studio-editor-content-tem emotion-16"
                 id="column-list-1-test-1"
                 placeholder="请输入"
                 style="flex: 1; max-width: 33.333333333333336%;"
@@ -5194,7 +5174,7 @@ exports[`<ColumnList /> > renders controlled.tsx correctly 1`] = `
                 value="授权企业名称"
               />
               <div
-                class="studio-select studio-select-sm studio-editor-content-tem emotion-17 studio-select-single studio-select-show-arrow"
+                class="studio-select studio-select-sm studio-select-outlined studio-editor-content-tem emotion-17 studio-select-single studio-select-show-arrow"
                 style="flex: 1; max-width: 33.333333333333336%;"
               >
                 <div
@@ -5255,7 +5235,7 @@ exports[`<ColumnList /> > renders controlled.tsx correctly 1`] = `
                 </span>
               </div>
               <div
-                class="studio-select studio-select-sm studio-editor-content-tem emotion-17 studio-select-single studio-select-show-arrow"
+                class="studio-select studio-select-sm studio-select-outlined studio-editor-content-tem emotion-17 studio-select-single studio-select-show-arrow"
                 style="flex: 1; max-width: 33.333333333333336%;"
               >
                 <div
@@ -5397,7 +5377,7 @@ exports[`<ColumnList /> > renders controlled.tsx correctly 1`] = `
               class="layoutkit-flexbox emotion-13 studio-editor-item-content emotion-14"
             >
               <input
-                class="studio-input studio-input-sm emotion-15 studio-editor-content-tem emotion-16"
+                class="studio-input studio-input-sm studio-input-outlined emotion-15 studio-editor-content-tem emotion-16"
                 id="column-list-2-test-2"
                 placeholder="请输入"
                 style="flex: 1; max-width: 33.333333333333336%;"
@@ -5405,7 +5385,7 @@ exports[`<ColumnList /> > renders controlled.tsx correctly 1`] = `
                 value="被授权企业"
               />
               <div
-                class="studio-select studio-select-sm studio-editor-content-tem emotion-17 studio-select-single studio-select-show-arrow"
+                class="studio-select studio-select-sm studio-select-outlined studio-editor-content-tem emotion-17 studio-select-single studio-select-show-arrow"
                 style="flex: 1; max-width: 33.333333333333336%;"
               >
                 <div
@@ -5466,7 +5446,7 @@ exports[`<ColumnList /> > renders controlled.tsx correctly 1`] = `
                 </span>
               </div>
               <div
-                class="studio-select studio-select-sm studio-editor-content-tem emotion-17 studio-select-single studio-select-show-arrow"
+                class="studio-select studio-select-sm studio-select-outlined studio-editor-content-tem emotion-17 studio-select-single studio-select-show-arrow"
                 style="flex: 1; max-width: 33.333333333333336%;"
               >
                 <div
@@ -5980,7 +5960,7 @@ exports[`<ColumnList /> > renders creatorButtonProps.tsx correctly 1`] = `
               class="layoutkit-flexbox emotion-14 studio-editor-item-content emotion-15"
             >
               <input
-                class="studio-input studio-input-sm emotion-16 studio-editor-content-tem emotion-17"
+                class="studio-input studio-input-sm studio-input-outlined emotion-16 studio-editor-content-tem emotion-17"
                 id="column-list-0-test-0"
                 placeholder="请输入"
                 style="flex: 1; max-width: 33.333333333333336%;"
@@ -5988,7 +5968,7 @@ exports[`<ColumnList /> > renders creatorButtonProps.tsx correctly 1`] = `
                 value="产品名称"
               />
               <div
-                class="studio-select studio-select-sm studio-editor-content-tem emotion-18 studio-select-single studio-select-show-arrow"
+                class="studio-select studio-select-sm studio-select-outlined studio-editor-content-tem emotion-18 studio-select-single studio-select-show-arrow"
                 style="flex: 1; max-width: 33.333333333333336%;"
               >
                 <div
@@ -6049,7 +6029,7 @@ exports[`<ColumnList /> > renders creatorButtonProps.tsx correctly 1`] = `
                 </span>
               </div>
               <div
-                class="studio-select studio-select-sm studio-editor-content-tem emotion-18 studio-select-single studio-select-show-arrow"
+                class="studio-select studio-select-sm studio-select-outlined studio-editor-content-tem emotion-18 studio-select-single studio-select-show-arrow"
                 style="flex: 1; max-width: 33.333333333333336%;"
               >
                 <div
@@ -6191,7 +6171,7 @@ exports[`<ColumnList /> > renders creatorButtonProps.tsx correctly 1`] = `
               class="layoutkit-flexbox emotion-14 studio-editor-item-content emotion-15"
             >
               <input
-                class="studio-input studio-input-sm emotion-16 studio-editor-content-tem emotion-17"
+                class="studio-input studio-input-sm studio-input-outlined emotion-16 studio-editor-content-tem emotion-17"
                 id="column-list-1-test-1"
                 placeholder="请输入"
                 style="flex: 1; max-width: 33.333333333333336%;"
@@ -6199,7 +6179,7 @@ exports[`<ColumnList /> > renders creatorButtonProps.tsx correctly 1`] = `
                 value="产品介绍"
               />
               <div
-                class="studio-select studio-select-sm studio-editor-content-tem emotion-18 studio-select-single studio-select-show-arrow"
+                class="studio-select studio-select-sm studio-select-outlined studio-editor-content-tem emotion-18 studio-select-single studio-select-show-arrow"
                 style="flex: 1; max-width: 33.333333333333336%;"
               >
                 <div
@@ -6260,7 +6240,7 @@ exports[`<ColumnList /> > renders creatorButtonProps.tsx correctly 1`] = `
                 </span>
               </div>
               <div
-                class="studio-select studio-select-sm studio-editor-content-tem emotion-18 studio-select-single studio-select-show-arrow"
+                class="studio-select studio-select-sm studio-select-outlined studio-editor-content-tem emotion-18 studio-select-single studio-select-show-arrow"
                 style="flex: 1; max-width: 33.333333333333336%;"
               >
                 <div
@@ -6402,7 +6382,7 @@ exports[`<ColumnList /> > renders creatorButtonProps.tsx correctly 1`] = `
               class="layoutkit-flexbox emotion-14 studio-editor-item-content emotion-15"
             >
               <input
-                class="studio-input studio-input-sm emotion-16 studio-editor-content-tem emotion-17"
+                class="studio-input studio-input-sm studio-input-outlined emotion-16 studio-editor-content-tem emotion-17"
                 id="column-list-2-test-2"
                 placeholder="请输入"
                 style="flex: 1; max-width: 33.333333333333336%;"
@@ -6410,7 +6390,7 @@ exports[`<ColumnList /> > renders creatorButtonProps.tsx correctly 1`] = `
                 value="订单状态"
               />
               <div
-                class="studio-select studio-select-sm studio-editor-content-tem emotion-18 studio-select-single studio-select-show-arrow"
+                class="studio-select studio-select-sm studio-select-outlined studio-editor-content-tem emotion-18 studio-select-single studio-select-show-arrow"
                 style="flex: 1; max-width: 33.333333333333336%;"
               >
                 <div
@@ -6471,7 +6451,7 @@ exports[`<ColumnList /> > renders creatorButtonProps.tsx correctly 1`] = `
                 </span>
               </div>
               <div
-                class="studio-select studio-select-sm studio-editor-content-tem emotion-18 studio-select-single studio-select-show-arrow"
+                class="studio-select studio-select-sm studio-select-outlined studio-editor-content-tem emotion-18 studio-select-single studio-select-show-arrow"
                 style="flex: 1; max-width: 33.333333333333336%;"
               >
                 <div
@@ -6894,7 +6874,7 @@ exports[`<ColumnList /> > renders creatorButtonPropsFalse.tsx correctly 1`] = `
               class="layoutkit-flexbox emotion-13 studio-editor-item-content emotion-14"
             >
               <input
-                class="studio-input studio-input-sm emotion-15 studio-editor-content-tem emotion-16"
+                class="studio-input studio-input-sm studio-input-outlined emotion-15 studio-editor-content-tem emotion-16"
                 id="column-list-0-test-0"
                 placeholder="请输入"
                 style="flex: 1; max-width: 33.333333333333336%;"
@@ -6902,7 +6882,7 @@ exports[`<ColumnList /> > renders creatorButtonPropsFalse.tsx correctly 1`] = `
                 value="产品名称"
               />
               <div
-                class="studio-select studio-select-sm studio-editor-content-tem emotion-17 studio-select-single studio-select-show-arrow"
+                class="studio-select studio-select-sm studio-select-outlined studio-editor-content-tem emotion-17 studio-select-single studio-select-show-arrow"
                 style="flex: 1; max-width: 33.333333333333336%;"
               >
                 <div
@@ -6963,7 +6943,7 @@ exports[`<ColumnList /> > renders creatorButtonPropsFalse.tsx correctly 1`] = `
                 </span>
               </div>
               <div
-                class="studio-select studio-select-sm studio-editor-content-tem emotion-17 studio-select-single studio-select-show-arrow"
+                class="studio-select studio-select-sm studio-select-outlined studio-editor-content-tem emotion-17 studio-select-single studio-select-show-arrow"
                 style="flex: 1; max-width: 33.333333333333336%;"
               >
                 <div
@@ -7105,7 +7085,7 @@ exports[`<ColumnList /> > renders creatorButtonPropsFalse.tsx correctly 1`] = `
               class="layoutkit-flexbox emotion-13 studio-editor-item-content emotion-14"
             >
               <input
-                class="studio-input studio-input-sm emotion-15 studio-editor-content-tem emotion-16"
+                class="studio-input studio-input-sm studio-input-outlined emotion-15 studio-editor-content-tem emotion-16"
                 id="column-list-1-test-1"
                 placeholder="请输入"
                 style="flex: 1; max-width: 33.333333333333336%;"
@@ -7113,7 +7093,7 @@ exports[`<ColumnList /> > renders creatorButtonPropsFalse.tsx correctly 1`] = `
                 value="产品介绍"
               />
               <div
-                class="studio-select studio-select-sm studio-editor-content-tem emotion-17 studio-select-single studio-select-show-arrow"
+                class="studio-select studio-select-sm studio-select-outlined studio-editor-content-tem emotion-17 studio-select-single studio-select-show-arrow"
                 style="flex: 1; max-width: 33.333333333333336%;"
               >
                 <div
@@ -7174,7 +7154,7 @@ exports[`<ColumnList /> > renders creatorButtonPropsFalse.tsx correctly 1`] = `
                 </span>
               </div>
               <div
-                class="studio-select studio-select-sm studio-editor-content-tem emotion-17 studio-select-single studio-select-show-arrow"
+                class="studio-select studio-select-sm studio-select-outlined studio-editor-content-tem emotion-17 studio-select-single studio-select-show-arrow"
                 style="flex: 1; max-width: 33.333333333333336%;"
               >
                 <div
@@ -7316,7 +7296,7 @@ exports[`<ColumnList /> > renders creatorButtonPropsFalse.tsx correctly 1`] = `
               class="layoutkit-flexbox emotion-13 studio-editor-item-content emotion-14"
             >
               <input
-                class="studio-input studio-input-sm emotion-15 studio-editor-content-tem emotion-16"
+                class="studio-input studio-input-sm studio-input-outlined emotion-15 studio-editor-content-tem emotion-16"
                 id="column-list-2-test-2"
                 placeholder="请输入"
                 style="flex: 1; max-width: 33.333333333333336%;"
@@ -7324,7 +7304,7 @@ exports[`<ColumnList /> > renders creatorButtonPropsFalse.tsx correctly 1`] = `
                 value="订单状态"
               />
               <div
-                class="studio-select studio-select-sm studio-editor-content-tem emotion-17 studio-select-single studio-select-show-arrow"
+                class="studio-select studio-select-sm studio-select-outlined studio-editor-content-tem emotion-17 studio-select-single studio-select-show-arrow"
                 style="flex: 1; max-width: 33.333333333333336%;"
               >
                 <div
@@ -7385,7 +7365,7 @@ exports[`<ColumnList /> > renders creatorButtonPropsFalse.tsx correctly 1`] = `
                 </span>
               </div>
               <div
-                class="studio-select studio-select-sm studio-editor-content-tem emotion-17 studio-select-single studio-select-show-arrow"
+                class="studio-select studio-select-sm studio-select-outlined studio-editor-content-tem emotion-17 studio-select-single studio-select-show-arrow"
                 style="flex: 1; max-width: 33.333333333333336%;"
               >
                 <div
@@ -7895,7 +7875,7 @@ exports[`<ColumnList /> > renders customCreate.tsx correctly 1`] = `
               class="layoutkit-flexbox emotion-15 studio-editor-item-content emotion-16"
             >
               <input
-                class="studio-input studio-input-sm emotion-17 studio-editor-content-tem emotion-18"
+                class="studio-input studio-input-sm studio-input-outlined emotion-17 studio-editor-content-tem emotion-18"
                 id="column-list-0-test-0"
                 placeholder="请输入"
                 style="flex: 1; max-width: 33.333333333333336%;"
@@ -7903,7 +7883,7 @@ exports[`<ColumnList /> > renders customCreate.tsx correctly 1`] = `
                 value="订单id"
               />
               <div
-                class="studio-select studio-select-sm studio-editor-content-tem emotion-19 studio-select-single studio-select-show-arrow"
+                class="studio-select studio-select-sm studio-select-outlined studio-editor-content-tem emotion-19 studio-select-single studio-select-show-arrow"
                 style="flex: 1; max-width: 33.333333333333336%;"
               >
                 <div
@@ -7964,7 +7944,7 @@ exports[`<ColumnList /> > renders customCreate.tsx correctly 1`] = `
                 </span>
               </div>
               <div
-                class="studio-select studio-select-sm studio-editor-content-tem emotion-19 studio-select-single studio-select-show-arrow"
+                class="studio-select studio-select-sm studio-select-outlined studio-editor-content-tem emotion-19 studio-select-single studio-select-show-arrow"
                 style="flex: 1; max-width: 33.333333333333336%;"
               >
                 <div
@@ -8106,7 +8086,7 @@ exports[`<ColumnList /> > renders customCreate.tsx correctly 1`] = `
               class="layoutkit-flexbox emotion-15 studio-editor-item-content emotion-16"
             >
               <input
-                class="studio-input studio-input-sm emotion-17 studio-editor-content-tem emotion-18"
+                class="studio-input studio-input-sm studio-input-outlined emotion-17 studio-editor-content-tem emotion-18"
                 id="column-list-1-test-1"
                 placeholder="请输入"
                 style="flex: 1; max-width: 33.333333333333336%;"
@@ -8114,7 +8094,7 @@ exports[`<ColumnList /> > renders customCreate.tsx correctly 1`] = `
                 value="订单号"
               />
               <div
-                class="studio-select studio-select-sm studio-editor-content-tem emotion-19 studio-select-single studio-select-show-arrow"
+                class="studio-select studio-select-sm studio-select-outlined studio-editor-content-tem emotion-19 studio-select-single studio-select-show-arrow"
                 style="flex: 1; max-width: 33.333333333333336%;"
               >
                 <div
@@ -8175,7 +8155,7 @@ exports[`<ColumnList /> > renders customCreate.tsx correctly 1`] = `
                 </span>
               </div>
               <div
-                class="studio-select studio-select-sm studio-editor-content-tem emotion-19 studio-select-single studio-select-show-arrow"
+                class="studio-select studio-select-sm studio-select-outlined studio-editor-content-tem emotion-19 studio-select-single studio-select-show-arrow"
                 style="flex: 1; max-width: 33.333333333333336%;"
               >
                 <div
@@ -8317,7 +8297,7 @@ exports[`<ColumnList /> > renders customCreate.tsx correctly 1`] = `
               class="layoutkit-flexbox emotion-15 studio-editor-item-content emotion-16"
             >
               <input
-                class="studio-input studio-input-sm emotion-17 studio-editor-content-tem emotion-18"
+                class="studio-input studio-input-sm studio-input-outlined emotion-17 studio-editor-content-tem emotion-18"
                 id="column-list-2-test-2"
                 placeholder="请输入"
                 style="flex: 1; max-width: 33.333333333333336%;"
@@ -8325,7 +8305,7 @@ exports[`<ColumnList /> > renders customCreate.tsx correctly 1`] = `
                 value="订单金额"
               />
               <div
-                class="studio-select studio-select-sm studio-editor-content-tem emotion-19 studio-select-single studio-select-show-arrow"
+                class="studio-select studio-select-sm studio-select-outlined studio-editor-content-tem emotion-19 studio-select-single studio-select-show-arrow"
                 style="flex: 1; max-width: 33.333333333333336%;"
               >
                 <div
@@ -8386,7 +8366,7 @@ exports[`<ColumnList /> > renders customCreate.tsx correctly 1`] = `
                 </span>
               </div>
               <div
-                class="studio-select studio-select-sm studio-editor-content-tem emotion-19 studio-select-single studio-select-show-arrow"
+                class="studio-select studio-select-sm studio-select-outlined studio-editor-content-tem emotion-19 studio-select-single studio-select-show-arrow"
                 style="flex: 1; max-width: 33.333333333333336%;"
               >
                 <div
@@ -9047,7 +9027,7 @@ exports[`<ColumnList /> > renders normal.tsx correctly 1`] = `
               class="layoutkit-flexbox emotion-12 studio-editor-item-content emotion-13"
             >
               <input
-                class="studio-input studio-input-sm emotion-14 studio-editor-content-tem emotion-15"
+                class="studio-input studio-input-sm studio-input-outlined emotion-14 studio-editor-content-tem emotion-15"
                 id="column-list-0-test-0"
                 placeholder="请输入"
                 style="flex: 1; max-width: 50%;"
@@ -9055,7 +9035,7 @@ exports[`<ColumnList /> > renders normal.tsx correctly 1`] = `
                 value="序号"
               />
               <input
-                class="studio-input studio-input-sm emotion-14 studio-editor-content-tem emotion-15"
+                class="studio-input studio-input-sm studio-input-outlined emotion-14 studio-editor-content-tem emotion-15"
                 id="column-list-0-test-0"
                 placeholder="请输入"
                 style="flex: 1; max-width: 50%;"
@@ -9144,7 +9124,7 @@ exports[`<ColumnList /> > renders normal.tsx correctly 1`] = `
               class="layoutkit-flexbox emotion-12 studio-editor-item-content emotion-13"
             >
               <input
-                class="studio-input studio-input-sm emotion-14 studio-editor-content-tem emotion-15"
+                class="studio-input studio-input-sm studio-input-outlined emotion-14 studio-editor-content-tem emotion-15"
                 id="column-list-1-test-1"
                 placeholder="请输入"
                 style="flex: 1; max-width: 50%;"
@@ -9152,7 +9132,7 @@ exports[`<ColumnList /> > renders normal.tsx correctly 1`] = `
                 value="授权企业名称"
               />
               <input
-                class="studio-input studio-input-sm emotion-14 studio-editor-content-tem emotion-15"
+                class="studio-input studio-input-sm studio-input-outlined emotion-14 studio-editor-content-tem emotion-15"
                 id="column-list-1-test-1"
                 placeholder="请输入"
                 style="flex: 1; max-width: 50%;"
@@ -9241,7 +9221,7 @@ exports[`<ColumnList /> > renders normal.tsx correctly 1`] = `
               class="layoutkit-flexbox emotion-12 studio-editor-item-content emotion-13"
             >
               <input
-                class="studio-input studio-input-sm emotion-14 studio-editor-content-tem emotion-15"
+                class="studio-input studio-input-sm studio-input-outlined emotion-14 studio-editor-content-tem emotion-15"
                 id="column-list-2-test-2"
                 placeholder="请输入"
                 style="flex: 1; max-width: 50%;"
@@ -9249,7 +9229,7 @@ exports[`<ColumnList /> > renders normal.tsx correctly 1`] = `
                 value="被授权企业"
               />
               <input
-                class="studio-input studio-input-sm emotion-14 studio-editor-content-tem emotion-15"
+                class="studio-input studio-input-sm studio-input-outlined emotion-14 studio-editor-content-tem emotion-15"
                 id="column-list-2-test-2"
                 placeholder="请输入"
                 style="flex: 1; max-width: 50%;"
@@ -16090,7 +16070,7 @@ exports[`<FieldSelect /> > renders basic.tsx correctly 1`] = `
 
 <div>
   <div
-    class="studio-select emotion-0 studio-editor-field-select emotion-1 studio-select-single studio-select-show-arrow"
+    class="studio-select studio-select-outlined emotion-0 studio-editor-field-select emotion-1 studio-select-single studio-select-show-arrow"
   >
     <div
       class="studio-select-selector"
@@ -16236,7 +16216,7 @@ exports[`<FieldSelect /> > renders custom.tsx correctly 1`] = `
 
 <div>
   <div
-    class="studio-select emotion-0 studio-editor-field-select emotion-1 studio-select-single studio-select-show-arrow"
+    class="studio-select studio-select-outlined emotion-0 studio-editor-field-select emotion-1 studio-select-single studio-select-show-arrow"
   >
     <div
       class="studio-select-selector"
@@ -19092,7 +19072,7 @@ P .emotion-4:hover {
         class="studio-space-item"
       >
         <div
-          class="studio-select studio-select-single studio-select-show-arrow"
+          class="studio-select studio-select-outlined studio-select-single studio-select-show-arrow"
           style="width: 120px;"
         >
           <div
@@ -19162,7 +19142,7 @@ P .emotion-4:hover {
         class="studio-space-item"
       >
         <div
-          class="studio-select studio-select-single studio-select-show-arrow"
+          class="studio-select studio-select-outlined studio-select-single studio-select-show-arrow"
           style="width: 120px;"
         >
           <div
@@ -19232,7 +19212,7 @@ P .emotion-4:hover {
         class="studio-space-item"
       >
         <div
-          class="studio-select studio-select-single studio-select-show-arrow"
+          class="studio-select studio-select-outlined studio-select-single studio-select-show-arrow"
           style="width: 120px;"
         >
           <div
@@ -19302,7 +19282,7 @@ P .emotion-4:hover {
         class="studio-space-item"
       >
         <div
-          class="studio-select studio-select-single studio-select-show-arrow"
+          class="studio-select studio-select-outlined studio-select-single studio-select-show-arrow"
           style="width: 120px;"
         >
           <div
@@ -21395,7 +21375,7 @@ exports[`<Layout /> > renders basic.tsx correctly 1`] = `
         class="headerAndFooterCenterChildren emotion-3"
       >
         <span
-          class="studio-input-group-wrapper emotion-4"
+          class="studio-input-group-wrapper studio-input-group-wrapper-outlined emotion-4"
           style="width: 250px;"
         >
           <span
@@ -21407,7 +21387,7 @@ exports[`<Layout /> > renders basic.tsx correctly 1`] = `
               Options
             </span>
             <input
-              class="studio-input"
+              class="studio-input studio-input-outlined"
               placeholder="Search For Some Little Options"
               type="text"
               value=""
@@ -22050,7 +22030,7 @@ exports[`<Layout /> > renders dingding.tsx correctly 1`] = `
           </span>
         </button>
         <input
-          class="studio-input emotion-5"
+          class="studio-input studio-input-outlined emotion-5"
           placeholder="Search For Some Dialog"
           style="width: 250px;"
           type="text"
@@ -23287,7 +23267,7 @@ exports[`<Layout /> > renders themeType.tsx correctly 1`] = `
             class="headerAndFooterCenterChildren emotion-3"
           >
             <span
-              class="studio-input-group-wrapper emotion-4"
+              class="studio-input-group-wrapper studio-input-group-wrapper-outlined emotion-4"
               style="width: 250px;"
             >
               <span
@@ -23299,7 +23279,7 @@ exports[`<Layout /> > renders themeType.tsx correctly 1`] = `
                   Options
                 </span>
                 <input
-                  class="studio-input"
+                  class="studio-input studio-input-outlined"
                   placeholder="Search For Some Options"
                   type="text"
                   value=""
@@ -23950,7 +23930,7 @@ exports[`<Layout /> > renders types.tsx correctly 1`] = `
             class="headerAndFooterCenterChildren emotion-3"
           >
             <span
-              class="studio-input-group-wrapper emotion-4"
+              class="studio-input-group-wrapper studio-input-group-wrapper-outlined emotion-4"
               style="width: 250px;"
             >
               <span
@@ -23962,7 +23942,7 @@ exports[`<Layout /> > renders types.tsx correctly 1`] = `
                   Options
                 </span>
                 <input
-                  class="studio-input"
+                  class="studio-input studio-input-outlined"
                   placeholder="Search For Some Options"
                   type="text"
                   value=""
@@ -24251,698 +24231,6 @@ exports[`<Layout /> > renders types.tsx correctly 1`] = `
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`<LevaPanel /> > renders button.tsx correctly 1`] = `
-.emotion-0 {
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  position: relative;
-  border: 0 solid rgba(5, 5, 5, 0.06);
-}
-
-.emotion-0:hover .studio-editor-draggable-panel-toggle {
-  opacity: 1;
-}
-
-.emotion-1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.emotion-2 {
-  position: absolute;
-  opacity: 0;
-  z-index: 1001;
-  -webkit-transition: opacity 0.1s;
-  transition: opacity 0.1s;
-  border-radius: 4px;
-  cursor: pointer;
-  background: #ffffff;
-  border-width: 1px;
-  border-style: solid;
-  color: rgba(0, 0, 0, 0.45);
-  border-color: #d9d9d9;
-  width: 16px;
-  height: 40px;
-  left: -17px;
-  top: 50%;
-  margin-top: -20px;
-  border-radius: 4px 0 0 4px;
-  border-right-width: 0;
-}
-
-.emotion-2:hover {
-  color: rgba(0, 0, 0, 0.65);
-  background: rgba(0, 0, 0, 0.02);
-}
-
-.emotion-3 {
-  background: #ffffff;
-  overflow: hidden;
-}
-
-.emotion-4 {
-  --leva-sizes-controlWidth: 66%;
-  --leva-colors-elevation1: rgba(0, 0, 0, 0.06);
-  --leva-colors-elevation2: transparent;
-  --leva-colors-elevation3: rgba(0, 0, 0, 0.06);
-  --leva-colors-accent1: #1677ff;
-  --leva-colors-accent2: #4096ff;
-  --leva-colors-accent3: #0958d9;
-  --leva-colors-highlight1: rgba(0, 0, 0, 0.45);
-  --leva-colors-highlight2: rgba(0, 0, 0, 0.65);
-  --leva-colors-highlight3: rgba(0, 0, 0, 0.88);
-  --leva-colors-vivid1: #faad14;
-  --leva-shadows-level1: unset;
-  --leva-shadows-level2: unset;
-  --leva-fonts-mono: 'SFMono-Regular',Consolas,'Liberation Mono',Menlo,Courier,monospace;
-  overflow: auto;
-  padding: 6px 0;
-}
-
-.emotion-4>div {
-  background: transparent;
-}
-
-.emotion-4>div>div {
-  background: transparent;
-}
-
-.emotion-4 input:checked+label>svg {
-  stroke: #f5f5f5;
-}
-
-.emotion-4 button {
-  --leva-colors-accent2: rgba(0, 0, 0, 0.06);
-}
-
-.emotion-5 {
-  position: relative;
-}
-
-.emotion-5::before {
-  position: absolute;
-  z-index: 50;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  content: '';
-}
-
-.emotion-5:hover::before,
-.emotion-5:active::before {
-  background: #1677ff;
-}
-
-.emotion-5::before {
-  left: 50%;
-  width: 2px;
-  height: 100%;
-}
-
-<div>
-  <div
-    style="min-height: 300px; display: flex;"
-  >
-    <div
-      style="flex: 1; display: flex; justify-content: center; padding: 12px; align-self: center;"
-    >
-      <button
-        class="studio-btn studio-btn-primary"
-        type="button"
-      >
-        <span>
-          默认按钮
-        </span>
-      </button>
-    </div>
-    <div
-      class="studio-editor-draggable-panel emotion-0"
-      style="border-left-width: 1px;"
-    >
-      <div
-        class="layoutkit-center emotion-1 studio-editor-draggable-panel-toggle studio-editor-draggable-panel-toggle-left emotion-2"
-      >
-        <span
-          aria-label="left"
-          class="anticon anticon-left"
-          role="img"
-        >
-          <svg
-            aria-hidden="true"
-            data-icon="left"
-            fill="currentColor"
-            focusable="false"
-            height="1em"
-            style="transform: rotate(180deg);"
-            viewBox="64 64 896 896"
-            width="1em"
-          >
-            <path
-              d="M724 218.3V141c0-6.7-7.7-10.4-12.9-6.3L260.3 486.8a31.86 31.86 0 000 50.3l450.8 352.1c5.3 4.1 12.9.4 12.9-6.3v-77.3c0-4.9-2.3-9.6-6.1-12.6l-360-281 360-281.1c3.8-3 6.1-7.7 6.1-12.6z"
-            />
-          </svg>
-        </span>
-      </div>
-      <div
-        class="studio-editor-draggable-panel-fixed emotion-3"
-        style="position: relative; user-select: auto; padding: 12px; width: 400px; height: 100%; min-width: 280px; box-sizing: border-box; flex-shrink: 0;"
-      >
-        <div
-          class="emotion-4"
-        >
-          <div
-            class="leva-c-kWgxhW leva-c-kWgxhW-bSMcqW-fill-true leva-c-kWgxhW-czBHep-hideTitleBar-false"
-            style="display: block; transform: translate3d(undefinedpx, undefinedpx, 0);"
-          >
-            <div
-              class="leva-c-hwBXYF"
-            >
-              <i
-                class="leva-c-ctBOWy"
-              >
-                <svg
-                  class="leva-c-cHvNmv"
-                  height="8"
-                  style="transform: rotate(0deg);"
-                  viewBox="0 0 9 5"
-                  width="12"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M3.8 4.4c.4.3 1 .3 1.4 0L8 1.7A1 1 0 007.4 0H1.6a1 1 0 00-.7 1.7l3 2.7z"
-                  />
-                </svg>
-              </i>
-              <div
-                class="leva-c-iLtnIm"
-              >
-                按钮属性配置器
-              </div>
-              <i
-                class="leva-c-ctBOWy"
-              >
-                <svg
-                  height="20"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M9 9a2 2 0 114 0 2 2 0 01-4 0z"
-                  />
-                  <path
-                    clip-rule="evenodd"
-                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-13a4 4 0 00-3.446 6.032l-2.261 2.26a1 1 0 101.414 1.415l2.261-2.261A4 4 0 1011 5z"
-                    fill-rule="evenodd"
-                  />
-                </svg>
-              </i>
-            </div>
-            <div
-              class="leva-c-fxiFTg leva-c-fxiFTg-dbaoCM-toggled-false"
-            >
-              <input
-                class="leva-c-iYYzmZ"
-                placeholder="[Open filter with CMD+SHIFT+L]"
-                value=""
-              />
-              <i
-                class="leva-c-ctBOWy"
-                style="visibility: hidden;"
-              >
-                <svg
-                  fill="currentColor"
-                  height="14"
-                  viewBox="0 0 20 20"
-                  width="14"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    clip-rule="evenodd"
-                    d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z"
-                    fill-rule="evenodd"
-                  />
-                </svg>
-              </i>
-            </div>
-            <div
-              class="leva-c-hBtFDW"
-            >
-              <div
-                class="leva-c-dmsJDs leva-c-dmsJDs-lpvxwm-toggled-true leva-c-dmsJDs-hXSjjU-isRoot-true"
-              >
-                <div
-                  class="leva-c-bDGmTT"
-                >
-                  <div
-                    class="leva-c-grzFYX leva-c-jzsQCy"
-                  >
-                    <div
-                      class="leva-c-iSkYoW"
-                    >
-                      <label
-                        class="leva-c-dKMqBT"
-                        for="children"
-                        title="按钮文本"
-                      >
-                        按钮文本
-                      </label>
-                    </div>
-                    <div
-                      class="leva-c-kXfPOu"
-                    >
-                      <input
-                        autocomplete="off"
-                        class="leva-c-ghmOOI"
-                        id="children"
-                        spellcheck="false"
-                        type="text"
-                        value="默认按钮"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="leva-c-bDGmTT"
-                >
-                  <div
-                    class="leva-c-grzFYX leva-c-jzsQCy"
-                  >
-                    <div
-                      class="leva-c-iSkYoW"
-                    >
-                      <label
-                        class="leva-c-dKMqBT"
-                        for="type"
-                        title="类型"
-                      >
-                        类型
-                      </label>
-                    </div>
-                    <div
-                      class="leva-c-dkRbIj"
-                    >
-                      <select
-                        class="leva-c-bHmsMj"
-                        id="type"
-                      >
-                        <option
-                          value="0"
-                        >
-                          强调
-                        </option>
-                        <option
-                          value="1"
-                        >
-                          默认
-                        </option>
-                        <option
-                          value="2"
-                        >
-                          虚线
-                        </option>
-                        <option
-                          value="3"
-                        >
-                          链接
-                        </option>
-                        <option
-                          value="4"
-                        >
-                          文本
-                        </option>
-                      </select>
-                      <div
-                        class="leva-c-fOquTv"
-                      >
-                        强调
-                      </div>
-                      <svg
-                        class="leva-c-cHvNmv"
-                        height="5"
-                        style="transform: rotate(0deg);"
-                        viewBox="0 0 9 5"
-                        width="9"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M3.8 4.4c.4.3 1 .3 1.4 0L8 1.7A1 1 0 007.4 0H1.6a1 1 0 00-.7 1.7l3 2.7z"
-                        />
-                      </svg>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="leva-c-bDGmTT"
-                >
-                  <div
-                    class="leva-c-grzFYX leva-c-jzsQCy"
-                  >
-                    <div
-                      class="leva-c-iSkYoW"
-                    >
-                      <label
-                        class="leva-c-dKMqBT"
-                        for="danger"
-                        title="危险态"
-                      >
-                        危险态
-                      </label>
-                    </div>
-                    <div
-                      class="leva-c-TldsY"
-                    >
-                      <input
-                        id="danger"
-                        type="checkbox"
-                      />
-                      <label
-                        for="danger"
-                      >
-                        <svg
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M5 13l4 4L19 7"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
-                          />
-                        </svg>
-                      </label>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="leva-c-bDGmTT"
-                >
-                  <div
-                    class="leva-c-grzFYX leva-c-jzsQCy"
-                  >
-                    <div
-                      class="leva-c-iSkYoW"
-                    >
-                      <label
-                        class="leva-c-dKMqBT"
-                        for="icon"
-                        title="图标"
-                      >
-                        图标
-                      </label>
-                    </div>
-                    <div
-                      class="leva-c-kXfPOu"
-                    >
-                      <input
-                        autocomplete="off"
-                        class="leva-c-ghmOOI"
-                        id="icon"
-                        spellcheck="false"
-                        type="text"
-                        value=""
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="leva-c-bDGmTT"
-                >
-                  <div
-                    class="leva-c-grzFYX leva-c-jzsQCy"
-                  >
-                    <div
-                      class="leva-c-iSkYoW"
-                    >
-                      <label
-                        class="leva-c-dKMqBT"
-                        for="size"
-                        title="大小"
-                      >
-                        大小
-                      </label>
-                    </div>
-                    <div
-                      class="leva-c-dkRbIj"
-                    >
-                      <select
-                        class="leva-c-bHmsMj"
-                        id="size"
-                      >
-                        <option
-                          value="0"
-                        >
-                          大
-                        </option>
-                        <option
-                          value="1"
-                        >
-                          中
-                        </option>
-                        <option
-                          value="2"
-                        >
-                          小
-                        </option>
-                      </select>
-                      <div
-                        class="leva-c-fOquTv"
-                      >
-                        中
-                      </div>
-                      <svg
-                        class="leva-c-cHvNmv"
-                        height="5"
-                        style="transform: rotate(0deg);"
-                        viewBox="0 0 9 5"
-                        width="9"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M3.8 4.4c.4.3 1 .3 1.4 0L8 1.7A1 1 0 007.4 0H1.6a1 1 0 00-.7 1.7l3 2.7z"
-                        />
-                      </svg>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="leva-c-bDGmTT"
-                >
-                  <div
-                    class="leva-c-grzFYX leva-c-jzsQCy"
-                  >
-                    <div
-                      class="leva-c-iSkYoW"
-                    >
-                      <label
-                        class="leva-c-dKMqBT"
-                        for="shape"
-                        title="形状"
-                      >
-                        形状
-                      </label>
-                    </div>
-                    <div
-                      class="leva-c-dkRbIj"
-                    >
-                      <select
-                        class="leva-c-bHmsMj"
-                        id="shape"
-                      >
-                        <option
-                          value="0"
-                        >
-                          默认
-                        </option>
-                        <option
-                          value="1"
-                        >
-                          圆形
-                        </option>
-                        <option
-                          value="2"
-                        >
-                          胶囊
-                        </option>
-                      </select>
-                      <div
-                        class="leva-c-fOquTv"
-                      >
-                        默认
-                      </div>
-                      <svg
-                        class="leva-c-cHvNmv"
-                        height="5"
-                        style="transform: rotate(0deg);"
-                        viewBox="0 0 9 5"
-                        width="9"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M3.8 4.4c.4.3 1 .3 1.4 0L8 1.7A1 1 0 007.4 0H1.6a1 1 0 00-.7 1.7l3 2.7z"
-                        />
-                      </svg>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="leva-c-bDGmTT"
-                >
-                  <div
-                    class="leva-c-grzFYX leva-c-jzsQCy"
-                  >
-                    <div
-                      class="leva-c-iSkYoW"
-                    >
-                      <label
-                        class="leva-c-dKMqBT"
-                        for="loading"
-                        title="加载中"
-                      >
-                        加载中
-                      </label>
-                    </div>
-                    <div
-                      class="leva-c-TldsY"
-                    >
-                      <input
-                        id="loading"
-                        type="checkbox"
-                      />
-                      <label
-                        for="loading"
-                      >
-                        <svg
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M5 13l4 4L19 7"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
-                          />
-                        </svg>
-                      </label>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="leva-c-bDGmTT"
-                >
-                  <div
-                    class="leva-c-grzFYX leva-c-jzsQCy"
-                  >
-                    <div
-                      class="leva-c-iSkYoW"
-                    >
-                      <label
-                        class="leva-c-dKMqBT"
-                        for="disabled"
-                        title="禁用"
-                      >
-                        禁用
-                      </label>
-                    </div>
-                    <div
-                      class="leva-c-TldsY"
-                    >
-                      <input
-                        id="disabled"
-                        type="checkbox"
-                      />
-                      <label
-                        for="disabled"
-                      >
-                        <svg
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M5 13l4 4L19 7"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
-                          />
-                        </svg>
-                      </label>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="leva-c-bDGmTT"
-                >
-                  <div
-                    class="leva-c-grzFYX leva-c-jzsQCy"
-                  >
-                    <div
-                      class="leva-c-iSkYoW"
-                    >
-                      <label
-                        class="leva-c-dKMqBT"
-                        for="ghost"
-                        title="幽灵按钮"
-                      >
-                        幽灵按钮
-                      </label>
-                    </div>
-                    <div
-                      class="leva-c-TldsY"
-                    >
-                      <input
-                        id="ghost"
-                        type="checkbox"
-                      />
-                      <label
-                        for="ghost"
-                      >
-                        <svg
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M5 13l4 4L19 7"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
-                          />
-                        </svg>
-                      </label>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div>
-          <div
-            class="emotion-5 studio-editor-draggable-panel-left-handle"
-            style="position: absolute; user-select: none; width: 10px; height: 100%; top: 0px; left: -5px; cursor: col-resize;"
-          />
         </div>
       </div>
     </div>
@@ -31119,7 +30407,7 @@ exports[`<SortableList /> > renders provider.tsx correctly 1`] = `
                     style="flex: 1; width: 100%; height: 24px; font-size: 12px; border-radius: 2px; min-width: 48px;"
                   >
                     <input
-                      class="studio-input studio-input-sm emotion-10"
+                      class="studio-input studio-input-sm studio-input-outlined emotion-10"
                       id="index-0"
                       style="width: 100%;"
                       type="text"
@@ -31130,7 +30418,7 @@ exports[`<SortableList /> > renders provider.tsx correctly 1`] = `
                     style="flex: 1; width: 100%; height: 24px; font-size: 12px; border-radius: 2px; min-width: 48px;"
                   >
                     <div
-                      class="studio-select studio-select-sm emotion-11 studio-select-single studio-select-show-arrow"
+                      class="studio-select studio-select-sm studio-select-outlined emotion-11 studio-select-single studio-select-show-arrow"
                       style="width: 100%;"
                     >
                       <div
@@ -31281,7 +30569,7 @@ exports[`<SortableList /> > renders provider.tsx correctly 1`] = `
                     style="flex: 1; width: 100%; height: 24px; font-size: 12px; border-radius: 2px; min-width: 48px;"
                   >
                     <input
-                      class="studio-input studio-input-sm emotion-10"
+                      class="studio-input studio-input-sm studio-input-outlined emotion-10"
                       id="index-1"
                       style="width: 100%;"
                       type="text"
@@ -31292,7 +30580,7 @@ exports[`<SortableList /> > renders provider.tsx correctly 1`] = `
                     style="flex: 1; width: 100%; height: 24px; font-size: 12px; border-radius: 2px; min-width: 48px;"
                   >
                     <div
-                      class="studio-select studio-select-sm emotion-11 studio-select-single studio-select-show-arrow"
+                      class="studio-select studio-select-sm studio-select-outlined emotion-11 studio-select-single studio-select-show-arrow"
                       style="width: 100%;"
                     >
                       <div
@@ -31443,7 +30731,7 @@ exports[`<SortableList /> > renders provider.tsx correctly 1`] = `
                     style="flex: 1; width: 100%; height: 24px; font-size: 12px; border-radius: 2px; min-width: 48px;"
                   >
                     <input
-                      class="studio-input studio-input-sm emotion-10"
+                      class="studio-input studio-input-sm studio-input-outlined emotion-10"
                       id="index-2"
                       style="width: 100%;"
                       type="text"
@@ -31454,7 +30742,7 @@ exports[`<SortableList /> > renders provider.tsx correctly 1`] = `
                     style="flex: 1; width: 100%; height: 24px; font-size: 12px; border-radius: 2px; min-width: 48px;"
                   >
                     <div
-                      class="studio-select studio-select-sm emotion-11 studio-select-single studio-select-show-arrow"
+                      class="studio-select studio-select-sm studio-select-outlined emotion-11 studio-select-single studio-select-show-arrow"
                       style="width: 100%;"
                     >
                       <div
@@ -31935,7 +31223,7 @@ exports[`<SortableList /> > renders ref.tsx correctly 1`] = `
                     style="flex: 1; width: 100%; height: 24px; font-size: 12px; border-radius: 2px; min-width: 48px;"
                   >
                     <input
-                      class="studio-input studio-input-sm emotion-12"
+                      class="studio-input studio-input-sm studio-input-outlined emotion-12"
                       id="index-0"
                       style="width: 100%;"
                       type="text"
@@ -31946,7 +31234,7 @@ exports[`<SortableList /> > renders ref.tsx correctly 1`] = `
                     style="flex: 1; width: 100%; height: 24px; font-size: 12px; border-radius: 2px; min-width: 48px;"
                   >
                     <div
-                      class="studio-select studio-select-sm emotion-13 studio-select-single studio-select-show-arrow"
+                      class="studio-select studio-select-sm studio-select-outlined emotion-13 studio-select-single studio-select-show-arrow"
                       style="width: 100%;"
                     >
                       <div
@@ -32097,7 +31385,7 @@ exports[`<SortableList /> > renders ref.tsx correctly 1`] = `
                     style="flex: 1; width: 100%; height: 24px; font-size: 12px; border-radius: 2px; min-width: 48px;"
                   >
                     <input
-                      class="studio-input studio-input-sm emotion-12"
+                      class="studio-input studio-input-sm studio-input-outlined emotion-12"
                       id="index-1"
                       style="width: 100%;"
                       type="text"
@@ -32108,7 +31396,7 @@ exports[`<SortableList /> > renders ref.tsx correctly 1`] = `
                     style="flex: 1; width: 100%; height: 24px; font-size: 12px; border-radius: 2px; min-width: 48px;"
                   >
                     <div
-                      class="studio-select studio-select-sm emotion-13 studio-select-single studio-select-show-arrow"
+                      class="studio-select studio-select-sm studio-select-outlined emotion-13 studio-select-single studio-select-show-arrow"
                       style="width: 100%;"
                     >
                       <div
@@ -32259,7 +31547,7 @@ exports[`<SortableList /> > renders ref.tsx correctly 1`] = `
                     style="flex: 1; width: 100%; height: 24px; font-size: 12px; border-radius: 2px; min-width: 48px;"
                   >
                     <input
-                      class="studio-input studio-input-sm emotion-12"
+                      class="studio-input studio-input-sm studio-input-outlined emotion-12"
                       id="index-2"
                       style="width: 100%;"
                       type="text"
@@ -32270,7 +31558,7 @@ exports[`<SortableList /> > renders ref.tsx correctly 1`] = `
                     style="flex: 1; width: 100%; height: 24px; font-size: 12px; border-radius: 2px; min-width: 48px;"
                   >
                     <div
-                      class="studio-select studio-select-sm emotion-13 studio-select-single studio-select-show-arrow"
+                      class="studio-select studio-select-sm studio-select-outlined emotion-13 studio-select-single studio-select-show-arrow"
                       style="width: 100%;"
                     >
                       <div
@@ -32697,7 +31985,7 @@ exports[`<SortableList /> > renders renderContent.tsx correctly 1`] = `
                     style="flex: 1; width: 100%; height: 24px; font-size: 12px; border-radius: 2px; min-width: 48px;"
                   >
                     <input
-                      class="studio-input studio-input-sm emotion-10"
+                      class="studio-input studio-input-sm studio-input-outlined emotion-10"
                       id="index-0"
                       style="width: 100%;"
                       type="text"
@@ -32708,7 +31996,7 @@ exports[`<SortableList /> > renders renderContent.tsx correctly 1`] = `
                     style="flex: 1; width: 100%; height: 24px; font-size: 12px; border-radius: 2px; min-width: 48px;"
                   >
                     <div
-                      class="studio-select studio-select-sm emotion-11 studio-select-single studio-select-show-arrow"
+                      class="studio-select studio-select-sm studio-select-outlined emotion-11 studio-select-single studio-select-show-arrow"
                       style="width: 100%;"
                     >
                       <div
@@ -32859,7 +32147,7 @@ exports[`<SortableList /> > renders renderContent.tsx correctly 1`] = `
                     style="flex: 1; width: 100%; height: 24px; font-size: 12px; border-radius: 2px; min-width: 48px;"
                   >
                     <input
-                      class="studio-input studio-input-sm emotion-10"
+                      class="studio-input studio-input-sm studio-input-outlined emotion-10"
                       id="index-1"
                       style="width: 100%;"
                       type="text"
@@ -32870,7 +32158,7 @@ exports[`<SortableList /> > renders renderContent.tsx correctly 1`] = `
                     style="flex: 1; width: 100%; height: 24px; font-size: 12px; border-radius: 2px; min-width: 48px;"
                   >
                     <div
-                      class="studio-select studio-select-sm emotion-11 studio-select-single studio-select-show-arrow"
+                      class="studio-select studio-select-sm studio-select-outlined emotion-11 studio-select-single studio-select-show-arrow"
                       style="width: 100%;"
                     >
                       <div
@@ -33021,7 +32309,7 @@ exports[`<SortableList /> > renders renderContent.tsx correctly 1`] = `
                     style="flex: 1; width: 100%; height: 24px; font-size: 12px; border-radius: 2px; min-width: 48px;"
                   >
                     <input
-                      class="studio-input studio-input-sm emotion-10"
+                      class="studio-input studio-input-sm studio-input-outlined emotion-10"
                       id="index-2"
                       style="width: 100%;"
                       type="text"
@@ -33032,7 +32320,7 @@ exports[`<SortableList /> > renders renderContent.tsx correctly 1`] = `
                     style="flex: 1; width: 100%; height: 24px; font-size: 12px; border-radius: 2px; min-width: 48px;"
                   >
                     <div
-                      class="studio-select studio-select-sm emotion-11 studio-select-single studio-select-show-arrow"
+                      class="studio-select studio-select-sm studio-select-outlined emotion-11 studio-select-single studio-select-show-arrow"
                       style="width: 100%;"
                     >
                       <div
@@ -34020,7 +33308,7 @@ exports[`<SortableList /> > renders useSortableList.tsx correctly 1`] = `
                     style="flex: 1; width: 100%; height: 24px; font-size: 12px; border-radius: 2px; min-width: 48px;"
                   >
                     <input
-                      class="studio-input studio-input-sm emotion-10"
+                      class="studio-input studio-input-sm studio-input-outlined emotion-10"
                       id="index-0"
                       style="width: 100%;"
                       type="text"
@@ -34031,7 +33319,7 @@ exports[`<SortableList /> > renders useSortableList.tsx correctly 1`] = `
                     style="flex: 1; width: 100%; height: 24px; font-size: 12px; border-radius: 2px; min-width: 48px;"
                   >
                     <div
-                      class="studio-select studio-select-sm emotion-11 studio-select-single studio-select-show-arrow"
+                      class="studio-select studio-select-sm studio-select-outlined emotion-11 studio-select-single studio-select-show-arrow"
                       style="width: 100%;"
                     >
                       <div
@@ -34182,7 +33470,7 @@ exports[`<SortableList /> > renders useSortableList.tsx correctly 1`] = `
                     style="flex: 1; width: 100%; height: 24px; font-size: 12px; border-radius: 2px; min-width: 48px;"
                   >
                     <input
-                      class="studio-input studio-input-sm emotion-10"
+                      class="studio-input studio-input-sm studio-input-outlined emotion-10"
                       id="index-1"
                       style="width: 100%;"
                       type="text"
@@ -34193,7 +33481,7 @@ exports[`<SortableList /> > renders useSortableList.tsx correctly 1`] = `
                     style="flex: 1; width: 100%; height: 24px; font-size: 12px; border-radius: 2px; min-width: 48px;"
                   >
                     <div
-                      class="studio-select studio-select-sm emotion-11 studio-select-single studio-select-show-arrow"
+                      class="studio-select studio-select-sm studio-select-outlined emotion-11 studio-select-single studio-select-show-arrow"
                       style="width: 100%;"
                     >
                       <div
@@ -34344,7 +33632,7 @@ exports[`<SortableList /> > renders useSortableList.tsx correctly 1`] = `
                     style="flex: 1; width: 100%; height: 24px; font-size: 12px; border-radius: 2px; min-width: 48px;"
                   >
                     <input
-                      class="studio-input studio-input-sm emotion-10"
+                      class="studio-input studio-input-sm studio-input-outlined emotion-10"
                       id="index-2"
                       style="width: 100%;"
                       type="text"
@@ -34355,7 +33643,7 @@ exports[`<SortableList /> > renders useSortableList.tsx correctly 1`] = `
                     style="flex: 1; width: 100%; height: 24px; font-size: 12px; border-radius: 2px; min-width: 48px;"
                   >
                     <div
-                      class="studio-select studio-select-sm emotion-11 studio-select-single studio-select-show-arrow"
+                      class="studio-select studio-select-sm studio-select-outlined emotion-11 studio-select-single studio-select-show-arrow"
                       style="width: 100%;"
                     >
                       <div
@@ -34779,7 +34067,7 @@ exports[`<SortableTree /> > renders controlled.tsx correctly 1`] = `
             class="studio-editor-node-content"
           >
             <input
-              class="studio-input emotion-4"
+              class="studio-input studio-input-outlined emotion-4"
               type="text"
               value="Home"
             />
@@ -34867,7 +34155,7 @@ exports[`<SortableTree /> > renders controlled.tsx correctly 1`] = `
             class="studio-editor-node-content"
           >
             <input
-              class="studio-input emotion-4"
+              class="studio-input studio-input-outlined emotion-4"
               type="text"
               value="Collections"
             />
@@ -34937,7 +34225,7 @@ exports[`<SortableTree /> > renders controlled.tsx correctly 1`] = `
             class="studio-editor-node-content"
           >
             <input
-              class="studio-input emotion-4"
+              class="studio-input studio-input-outlined emotion-4"
               type="text"
               value=""
             />
@@ -35007,7 +34295,7 @@ exports[`<SortableTree /> > renders controlled.tsx correctly 1`] = `
             class="studio-editor-node-content"
           >
             <input
-              class="studio-input emotion-4"
+              class="studio-input studio-input-outlined emotion-4"
               type="text"
               value=""
             />
@@ -35077,7 +34365,7 @@ exports[`<SortableTree /> > renders controlled.tsx correctly 1`] = `
             class="studio-editor-node-content"
           >
             <input
-              class="studio-input emotion-4"
+              class="studio-input studio-input-outlined emotion-4"
               type="text"
               value=""
             />
@@ -35147,7 +34435,7 @@ exports[`<SortableTree /> > renders controlled.tsx correctly 1`] = `
             class="studio-editor-node-content"
           >
             <input
-              class="studio-input emotion-4"
+              class="studio-input studio-input-outlined emotion-4"
               type="text"
               value=""
             />
@@ -35217,7 +34505,7 @@ exports[`<SortableTree /> > renders controlled.tsx correctly 1`] = `
             class="studio-editor-node-content"
           >
             <input
-              class="studio-input emotion-4"
+              class="studio-input studio-input-outlined emotion-4"
               type="text"
               value=""
             />
@@ -35305,7 +34593,7 @@ exports[`<SortableTree /> > renders controlled.tsx correctly 1`] = `
             class="studio-editor-node-content"
           >
             <input
-              class="studio-input emotion-4"
+              class="studio-input studio-input-outlined emotion-4"
               type="text"
               value=""
             />
@@ -35375,7 +34663,7 @@ exports[`<SortableTree /> > renders controlled.tsx correctly 1`] = `
             class="studio-editor-node-content"
           >
             <input
-              class="studio-input emotion-4"
+              class="studio-input studio-input-outlined emotion-4"
               type="text"
               value=""
             />
@@ -35445,7 +34733,7 @@ exports[`<SortableTree /> > renders controlled.tsx correctly 1`] = `
             class="studio-editor-node-content"
           >
             <input
-              class="studio-input emotion-4"
+              class="studio-input studio-input-outlined emotion-4"
               type="text"
               value=""
             />
@@ -37669,7 +36957,7 @@ exports[`<SortableTree /> > renders renderContent.tsx correctly 1`] = `
                 </button>
               </div>
               <input
-                class="studio-input studio-input-sm"
+                class="studio-input studio-input-sm studio-input-outlined"
                 id="1"
                 tabindex="10"
                 type="text"
@@ -37777,7 +37065,7 @@ exports[`<SortableTree /> > renders renderContent.tsx correctly 1`] = `
                 </button>
               </div>
               <input
-                class="studio-input studio-input-sm"
+                class="studio-input studio-input-sm studio-input-outlined"
                 id="2"
                 tabindex="10"
                 type="text"
@@ -37867,7 +37155,7 @@ exports[`<SortableTree /> > renders renderContent.tsx correctly 1`] = `
                 </button>
               </div>
               <input
-                class="studio-input studio-input-sm"
+                class="studio-input studio-input-sm studio-input-outlined"
                 id="3"
                 tabindex="10"
                 type="text"
@@ -37957,7 +37245,7 @@ exports[`<SortableTree /> > renders renderContent.tsx correctly 1`] = `
                 </button>
               </div>
               <input
-                class="studio-input studio-input-sm"
+                class="studio-input studio-input-sm studio-input-outlined"
                 id="Summer"
                 tabindex="10"
                 type="text"
@@ -38047,7 +37335,7 @@ exports[`<SortableTree /> > renders renderContent.tsx correctly 1`] = `
                 </button>
               </div>
               <input
-                class="studio-input studio-input-sm"
+                class="studio-input studio-input-sm studio-input-outlined"
                 id="Fall"
                 tabindex="10"
                 type="text"
@@ -38137,7 +37425,7 @@ exports[`<SortableTree /> > renders renderContent.tsx correctly 1`] = `
                 </button>
               </div>
               <input
-                class="studio-input studio-input-sm"
+                class="studio-input studio-input-sm studio-input-outlined"
                 id="Winter"
                 tabindex="10"
                 type="text"
@@ -38227,7 +37515,7 @@ exports[`<SortableTree /> > renders renderContent.tsx correctly 1`] = `
                 </button>
               </div>
               <input
-                class="studio-input studio-input-sm"
+                class="studio-input studio-input-sm studio-input-outlined"
                 id="About Us"
                 tabindex="10"
                 type="text"
@@ -38335,7 +37623,7 @@ exports[`<SortableTree /> > renders renderContent.tsx correctly 1`] = `
                 </button>
               </div>
               <input
-                class="studio-input studio-input-sm"
+                class="studio-input studio-input-sm studio-input-outlined"
                 id="My Account"
                 tabindex="10"
                 type="text"
@@ -38425,7 +37713,7 @@ exports[`<SortableTree /> > renders renderContent.tsx correctly 1`] = `
                 </button>
               </div>
               <input
-                class="studio-input studio-input-sm"
+                class="studio-input studio-input-sm studio-input-outlined"
                 id="Addresses"
                 tabindex="10"
                 type="text"
@@ -38515,7 +37803,7 @@ exports[`<SortableTree /> > renders renderContent.tsx correctly 1`] = `
                 </button>
               </div>
               <input
-                class="studio-input studio-input-sm"
+                class="studio-input studio-input-sm studio-input-outlined"
                 id="Order History"
                 tabindex="10"
                 type="text"
@@ -41478,7 +40766,7 @@ exports[`<antd /> > renders basic.tsx correctly 1`] = `
           class="studio-space-item"
         >
           <input
-            class="studio-input emotion-0"
+            class="studio-input studio-input-outlined emotion-0"
             placeholder="请输入内容"
             type="text"
             value=""
@@ -41488,7 +40776,7 @@ exports[`<antd /> > renders basic.tsx correctly 1`] = `
           class="studio-space-item"
         >
           <input
-            class="studio-input emotion-0"
+            class="studio-input studio-input-outlined emotion-0"
             type="text"
             value="包含有文本"
           />
@@ -41539,13 +40827,13 @@ exports[`<antd /> > renders inputNumber.tsx correctly 1`] = `
           class="studio-space-item"
         >
           <div
-            class="studio-input-number-group-wrapper emotion-0 studio-input-number-group-wrapper-lg"
+            class="studio-input-number-group-wrapper studio-input-number-group-wrapper-lg studio-input-number-group-wrapper-outlined emotion-0"
           >
             <div
               class="studio-input-number-wrapper studio-input-number-group"
             >
               <div
-                class="studio-input-number studio-input-number-lg"
+                class="studio-input-number studio-input-number-lg studio-input-number-outlined"
               >
                 <div
                   class="studio-input-number-handler-wrap"
@@ -41630,13 +40918,13 @@ exports[`<antd /> > renders inputNumber.tsx correctly 1`] = `
           class="studio-space-item"
         >
           <div
-            class="studio-input-number-group-wrapper emotion-0"
+            class="studio-input-number-group-wrapper studio-input-number-group-wrapper-outlined emotion-0"
           >
             <div
               class="studio-input-number-wrapper studio-input-number-group"
             >
               <div
-                class="studio-input-number"
+                class="studio-input-number studio-input-number-outlined"
               >
                 <div
                   class="studio-input-number-handler-wrap"
@@ -41721,13 +41009,13 @@ exports[`<antd /> > renders inputNumber.tsx correctly 1`] = `
           class="studio-space-item"
         >
           <div
-            class="studio-input-number-group-wrapper emotion-0 studio-input-number-group-wrapper-sm"
+            class="studio-input-number-group-wrapper studio-input-number-group-wrapper-sm studio-input-number-group-wrapper-outlined emotion-0"
           >
             <div
               class="studio-input-number-wrapper studio-input-number-group"
             >
               <div
-                class="studio-input-number studio-input-number-sm"
+                class="studio-input-number studio-input-number-sm studio-input-number-outlined"
               >
                 <div
                   class="studio-input-number-handler-wrap"
@@ -42040,7 +41328,7 @@ exports[`<antd /> > renders select.tsx correctly 1`] = `
         >
           默认
           <div
-            class="studio-select emotion-2 studio-select-single studio-select-show-arrow"
+            class="studio-select studio-select-outlined emotion-2 studio-select-single studio-select-show-arrow"
             style="width: 120px;"
           >
             <div
@@ -42100,7 +41388,7 @@ exports[`<antd /> > renders select.tsx correctly 1`] = `
             </span>
           </div>
           <div
-            class="studio-select emotion-2 studio-select-single studio-select-show-arrow"
+            class="studio-select studio-select-outlined emotion-2 studio-select-single studio-select-show-arrow"
             style="width: 120px;"
           >
             <div
@@ -42166,7 +41454,7 @@ exports[`<antd /> > renders select.tsx correctly 1`] = `
         >
           小尺寸
           <div
-            class="studio-select studio-select-sm emotion-2 studio-select-single studio-select-show-arrow"
+            class="studio-select studio-select-sm studio-select-outlined emotion-2 studio-select-single studio-select-show-arrow"
             style="width: 120px;"
           >
             <div
@@ -42226,7 +41514,7 @@ exports[`<antd /> > renders select.tsx correctly 1`] = `
             </span>
           </div>
           <div
-            class="studio-select studio-select-sm emotion-2 studio-select-single studio-select-show-arrow"
+            class="studio-select studio-select-sm studio-select-outlined emotion-2 studio-select-single studio-select-show-arrow"
             style="width: 120px;"
           >
             <div
@@ -42403,7 +41691,7 @@ exports[`<antd /> > renders tabs.tsx correctly 1`] = `
           </div>
           <div
             class="studio-tabs-ink-bar studio-tabs-ink-bar-animated"
-            style="left: 0px; transform: translateX(-50%); width: 0px;"
+            style="width: 0px; left: 0px; transform: translateX(-50%);"
           />
         </div>
       </div>
@@ -42788,7 +42076,7 @@ exports[`<antd /> > renders tree.tsx correctly 1`] = `
 exports[`<antd /> > renders treeselect.tsx correctly 1`] = `
 <div>
   <div
-    class="studio-select studio-tree-select studio-select-single studio-select-allow-clear studio-select-show-arrow studio-select-show-search"
+    class="studio-select studio-tree-select studio-select-outlined studio-select-single studio-select-allow-clear studio-select-show-arrow studio-select-show-search"
     style="width: 100%;"
   >
     <div
