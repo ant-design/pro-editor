@@ -113,7 +113,6 @@
     "rxjs": "^7.8.1",
     "shikiji": "^0.6.13",
     "type-fest": "^3.13.1",
-    "umi-request": "^1.4.0",
     "use-merge-value": "^1.2.0",
     "yjs": "^13.6.10",
     "zustand": "^4.4.7",
