@@ -1,7 +1,7 @@
 import { createStyles } from '../theme';
 
 export const useStyles = createStyles(({ css, token, prefixCls }) => {
-  const prefix = `${prefixCls}-${token.editorPrefix}`;
+  const prefix = `${prefixCls}-${token.editorPrefix}-sortable-tree`;
 
   return css`
     & .${prefix}-node {
