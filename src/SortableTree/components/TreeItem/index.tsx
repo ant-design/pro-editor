@@ -15,7 +15,7 @@ import { iOS } from '../../utils/utils';
 
 const useStyles = createStyles(
   ({ css, cx, prefixCls, token }, { collapsed }: { collapsed: boolean }) => {
-    const prefix = `${prefixCls}-${token.editorPrefix}-node`;
+    const prefix = `${prefixCls}-${token.editorPrefix}-sortable-tree-node`;
     return {
       // 透出给组件层面拼接使用
       editorPrefix: token.editorPrefix,
