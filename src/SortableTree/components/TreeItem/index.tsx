@@ -141,8 +141,8 @@ const TreeItem: FC<TreeItemProps> = memo(
     ...props
   }) => {
     const { styles, cx, prefixCls: antCls } = useStyles({ collapsed });
-    const prefix = `${antCls}-${styles.editorPrefix}-node`;
-    const prefixCls = `${antCls}-${styles.editorPrefix}`;
+    const prefix = `${antCls}-${styles.editorPrefix}-sortable-tree-node`;
+    const prefixCls = `${antCls}-${styles.editorPrefix}-sortable-tree`;
 
     const [
       indentationWidth,
