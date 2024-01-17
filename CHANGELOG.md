@@ -1,5 +1,30 @@
 # Changelog
 
+### [Version&nbsp;0.38.1](https://github.com/ant-design/pro-editor/compare/v0.38.0...v0.38.1)
+
+<sup>Released on **2024-01-17**</sup>
+
+#### 🐛 修复
+
+- Clean useless dep.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's fixed
+
+- Clean useless dep, closes [#146](https://github.com/ant-design/pro-editor/issues/146) ([20e28b6](https://github.com/ant-design/pro-editor/commit/20e28b6))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
 ## [Version&nbsp;0.38.0](https://github.com/ant-design/pro-editor/compare/v0.37.0...v0.38.0)
 
 <sup>Released on **2024-01-02**</sup>
