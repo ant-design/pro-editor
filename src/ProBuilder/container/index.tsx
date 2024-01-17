@@ -1,13 +1,12 @@
-import type { AppContainerProps } from '@ant-design/pro-editor';
-import { AppContainer } from '@ant-design/pro-editor';
 import { App } from 'antd';
 import type { FC } from 'react';
 import { memo } from 'react';
 import { HotkeysProvider } from 'react-hotkeys-hook';
 import { DevtoolsOptions } from 'zustand/middleware';
-
 import type { ProBuilderAppProps } from './App';
 import Content from './App';
+import type { AppContainerProps } from './AppContainer';
+import { AppContainer } from './AppContainer';
 import Provider from './Provider';
 import type { StoreUpdaterProps } from './StoreUpdater';
 import StoreUpdater from './StoreUpdater';
@@ -38,4 +37,5 @@ export const ProBuilder: FC<ProBuilderProps> = memo((props) => {
 });
 
 export { ProBuilderProvider } from './Provider';
+export { AppContainer };
 export type { StoreUpdaterProps };

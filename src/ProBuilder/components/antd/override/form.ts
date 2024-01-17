@@ -1,4 +1,4 @@
-import { createGlobalStyle } from '../../theme';
+import { createGlobalStyle } from '../../../../theme';
 
 // 带改造，需要和 Studio 同步的
 const STUDIO_UI_PREFIX = 'studio';
