@@ -15,26 +15,27 @@ import { iOS } from '../../utils/utils';
 
 const useStyles = createStyles(
   ({ css, cx, prefixCls, token }, { collapsed }: { collapsed: boolean }) => {
-    const prefix = `${prefixCls}-${token.editorPrefix}-sortable-tree-node`;
+    const componentPrefix = `${prefixCls}-${token.editorPrefix}-sortable-tree`;
+    const nodePrefix = `${componentPrefix}-node`;
     return {
       // 透出给组件层面拼接使用
-      editorPrefix: token.editorPrefix,
+      componentPrefix,
       container: cx(
-        prefix,
-        `${prefix}-indicator`,
+        nodePrefix,
+        `${nodePrefix}-indicator`,
         css`
           margin-bottom: 4px;
           padding-left: 12px;
 
           &:hover {
-            .${prefix}-handle, .${prefix}-remove {
+            .${nodePrefix}-handle, .${nodePrefix}-remove {
               opacity: 1;
             }
           }
         `,
       ),
       deleteAction: cx(
-        `${prefix}-remove`,
+        `${nodePrefix}-remove`,
         css`
           opacity: 0;
         `,
@@ -46,7 +47,7 @@ const useStyles = createStyles(
         }
       `,
       extra: cx(
-        `${prefix}-extra`,
+        `${nodePrefix}-extra`,
         css`
           margin-bottom: 8px;
         `,
@@ -140,9 +141,8 @@ const TreeItem: FC<TreeItemProps> = memo(
     virtualStyle,
     ...props
   }) => {
-    const { styles, cx, prefixCls: antCls } = useStyles({ collapsed });
-    const prefix = `${antCls}-${styles.editorPrefix}-sortable-tree-node`;
-    const prefixCls = `${antCls}-${styles.editorPrefix}-sortable-tree`;
+    const { styles, cx } = useStyles({ collapsed });
+    const nodePrefix = `${styles.componentPrefix}-node`;
 
     const [
       indentationWidth,
@@ -167,7 +167,7 @@ const TreeItem: FC<TreeItemProps> = memo(
 
     const extraPanelVisible = showExtra && !clone;
 
-    const containerRef = useRef(document.getElementsByClassName(prefixCls).item(0));
+    const containerRef = useRef(document.getElementsByClassName(styles.componentPrefix).item(0));
 
     const {
       isDragging: ghost,
@@ -193,9 +193,9 @@ const TreeItem: FC<TreeItemProps> = memo(
           ref={setDroppableNodeRef}
           className={cx(
             styles.container,
-            clone && `${prefix}-clone`,
-            ghost && `${prefix}-ghost`,
-            selected && !clone && `${prefix}-selected`,
+            clone && `${nodePrefix}-clone`,
+            ghost && `${nodePrefix}-ghost`,
+            selected && !clone && `${nodePrefix}-selected`,
             disableSelection && 'disableSelection',
           )}
           style={
@@ -213,12 +213,12 @@ const TreeItem: FC<TreeItemProps> = memo(
           }}
           {...props}
         >
-          <div className={`${prefix}-body`} ref={setDraggableNodeRef} style={style}>
+          <div className={`${nodePrefix}-body`} ref={setDraggableNodeRef} style={style}>
             {disableDrag ? null : (
               <HandleAction
                 {...listeners}
                 {...attributes}
-                className={cx(`${prefix}-handle`, clone ? undefined : styles.handle)}
+                className={cx(`${nodePrefix}-handle`, clone ? undefined : styles.handle)}
                 style={{ width: 12 }}
               />
             )}
@@ -231,12 +231,12 @@ const TreeItem: FC<TreeItemProps> = memo(
                 className={styles.collapseAction}
               />
             )}
-            <span className={`${prefix}-content`}>{Content ? <Content {...node} /> : id}</span>
+            <span className={`${nodePrefix}-content`}>{Content ? <Content {...node} /> : id}</span>
             {!hideRemove && !clone && onRemove && (
               <DeleteAction onClick={onRemove} title={'删除此项'} className={styles.deleteAction} />
             )}
             {clone && childCount && childCount > 1 ? (
-              <span className={`${prefix}-count`}>{childCount}</span>
+              <span className={`${nodePrefix}-count`}>{childCount}</span>
             ) : null}
           </div>
           {extraPanelVisible ? (
