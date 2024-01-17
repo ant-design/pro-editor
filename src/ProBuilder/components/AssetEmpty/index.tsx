@@ -5,22 +5,21 @@ import { Center } from 'react-layout-kit';
 
 import { createStyles } from '../../../theme';
 
-import { useStore } from '../../store';
-
-const useStyles = createStyles(({ token, css, cx }, prefixCls) => ({
-  cls: cx(
-    `${prefixCls}-empty`,
-    css`
-      height: 100%;
-      background: ${token.colorBgLayout};
-    `,
-  ),
-}));
+const useStyles = createStyles(({ token, css, cx, prefixCls }) => {
+  const prefix = `${prefixCls}-${token.editorPrefix}-pro-builder`;
+  return {
+    cls: cx(
+      `${prefix}-empty`,
+      css`
+        height: 100%;
+        background: ${token.colorBgLayout};
+      `,
+    ),
+  };
+});
 
 const AssetEmpty: FC = memo(() => {
-  const { prefixCls } = useStore();
-
-  const { styles } = useStyles(prefixCls);
+  const { styles } = useStyles();
 
   return (
     <Center className={styles.cls}>

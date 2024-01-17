@@ -34,9 +34,7 @@ export interface ConfigProviderProps {
 
 export const ConfigProvider: FC<ConfigProviderProps> = ({ children, componentToken }) => {
   const { appearance, themeMode } = useThemeMode();
-
   const studioTheme = useStudioAntdTheme(appearance);
-
   studioTheme.components = { ...studioTheme.components, ...componentToken };
 
   return (

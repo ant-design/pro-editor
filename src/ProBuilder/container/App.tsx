@@ -32,9 +32,8 @@ export interface ProBuilderAppProps {
 export const ProBuilder: FC<ProBuilderAppProps> = memo((props) => {
   const { logo, hideNavbar = true, style, ErrorBoundary = DefaultErrorBoundary, onCopy } = props;
 
-  const [prefixCls, exportConfig, componentAsset, width, panelExpand] = useStore(
+  const [exportConfig, componentAsset, width, panelExpand] = useStore(
     (s) => [
-      s.prefixCls,
       s.exportConfig,
       s.componentAsset,
       s.editorAwareness.panelSize.width,
@@ -43,7 +42,7 @@ export const ProBuilder: FC<ProBuilderAppProps> = memo((props) => {
     shallow,
   );
 
-  const { styles } = useStyle(prefixCls);
+  const { styles } = useStyle();
 
   // 注册快捷键
   useHotkeyManager();
@@ -61,7 +60,7 @@ export const ProBuilder: FC<ProBuilderAppProps> = memo((props) => {
       >
         {hideNavbar ? null : <NavBar logo={logo} />}
 
-        <Stage hideNavbar={hideNavbar} onCopy={onCopy} prefixCls={prefixCls} />
+        <Stage hideNavbar={hideNavbar} onCopy={onCopy} />
       </div>
       <ConfigPanel />
     </div>
