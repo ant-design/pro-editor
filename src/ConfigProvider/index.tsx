@@ -2,8 +2,7 @@ import { ConfigProvider as AntdConfigProvider } from 'antd';
 import { AntdToken, ThemeAppearance, useAntdToken, useThemeMode } from 'antd-style';
 import type { OverrideToken } from 'antd/es/theme/interface';
 import type { FC, ReactNode } from 'react';
-
-import { createStudioAntdTheme, ThemeProvider } from '../theme';
+import { ThemeProvider, createStudioAntdTheme, getStudioStylish, getStudioToken } from '../theme';
 
 export const useStudioAntdTheme = (appearance: ThemeAppearance) => {
   const token = useAntdToken();
@@ -34,7 +33,7 @@ export interface ConfigProviderProps {
 }
 
 export const ConfigProvider: FC<ConfigProviderProps> = ({ children, componentToken }) => {
-  const { appearance } = useThemeMode();
+  const { appearance, themeMode } = useThemeMode();
 
   const studioTheme = useStudioAntdTheme(appearance);
 
@@ -42,7 +41,16 @@ export const ConfigProvider: FC<ConfigProviderProps> = ({ children, componentTok
 
   return (
     <AntdConfigProvider theme={studioTheme}>
-      <ThemeProvider appearance={appearance}>{children}</ThemeProvider>
+      <ThemeProvider
+        appearance={appearance}
+        themeMode={themeMode}
+        // 以下都是自定义主题
+        theme={createStudioAntdTheme}
+        customToken={getStudioToken}
+        customStylish={getStudioStylish}
+      >
+        {children}
+      </ThemeProvider>
     </AntdConfigProvider>
   );
 };
