@@ -21,7 +21,7 @@ export const ProBuilder: FC<ProBuilderProps> = memo((props) => {
   const { styles } = useStyle();
 
   return (
-    <HotkeysProvider initiallyActiveScopes={['pro-editor']}>
+    <HotkeysProvider initiallyActiveScopes={['pro-builder']}>
       <Provider devtoolOptions={__EDITOR_STORE_DEVTOOLS__}>
         <ConfigProvider>
           <App className={styles.app} style={style}>
