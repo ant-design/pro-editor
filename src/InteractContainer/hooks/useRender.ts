@@ -1,11 +1,12 @@
+import { useTheme } from 'antd-style';
 import { useRef } from 'react';
-import getPrefixCls from '../../_util/getPrefixCls';
 
 import isEqual from 'lodash.isequal';
 import type { InteractionType } from '../type';
 
-export const useRender = (customizePrefixCls?: string) => {
-  const prefixCls = getPrefixCls('context-canvas', customizePrefixCls);
+export const useRender = () => {
+  const token = useTheme();
+  const prefixCls = `${token.prefixCls}-${token.editorPrefix}-context-canvas`;
 
   const selectItem = useRef<HTMLElement>();
   const hoverItem = useRef<HTMLElement>();
