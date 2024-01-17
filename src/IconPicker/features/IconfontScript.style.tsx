@@ -1,6 +1,6 @@
 import { createStyles } from '../../theme';
 
-export const useStyles = createStyles(({ token, css }) => ({
+export const useStyles = createStyles(({ token, css, prefixCls }) => ({
   add: css`
     border: none;
     cursor: pointer;
@@ -14,7 +14,7 @@ export const useStyles = createStyles(({ token, css }) => ({
   checked: css`
     background: ${token.colorPrimary};
     color: ${token.colorTextLightSolid};
-    .studio-tag-close-icon {
+    .${prefixCls}-tag-close-icon {
       color: ${token.colorTextLightSolid};
     }
   `,

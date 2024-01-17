@@ -1,16 +1,13 @@
+import { useHotkeyManager } from '@/ProBuilder/hooks/useHotkeyManager';
 import type { FC } from 'react';
 import { CSSProperties, memo, ReactNode } from 'react';
 import { shallow } from 'zustand/shallow';
-
-import NavBar from '../components/NavBar';
-
+import DefaultErrorBoundary from '../../ErrorBoundary';
 import AssetEmpty from '../components/AssetEmpty';
 import AssetStoreUpdater from '../components/AssetStoreUpdater';
 import ConfigPanel from '../components/ConfigPanel';
+import NavBar from '../components/NavBar';
 import Stage from '../components/Stage';
-
-import { useHotkeyManager } from '@/ProBuilder/hooks/useHotkeyManager';
-import DefaultErrorBoundary from '../../ErrorBoundary';
 import { useStore } from '../store';
 import { useStyle } from './style';
 

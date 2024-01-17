@@ -58,7 +58,6 @@ const useStyle = createStyles((props) => {
 
   return {
     btnAdd: cx(
-      'studio-btn-solid',
       `${antCls}-btn-add`,
       css`
         height: 24px;
