@@ -12,6 +12,10 @@ group: 基础组件
 
 ## 代码演示
 
+### 自动主题
+
+<code src="./demos/auto.tsx" ></code>
+
 ### 指定语言
 
 你可以通过 `language` 指定语言高亮，通过 `theme` 指定高亮主题
@@ -40,15 +44,15 @@ group: 基础组件
 
 ### Highlight
 
-| 参数         | 说明                                                      | 类型    | 默认值  |
-| :----------- | :-------------------------------------------------------- | :------ | :------ |
-| language     | 指定语言类型，详见下表                                    | string  | -       |
-| showLanguage | 是否展示语言的 Tag                                        | boolean | true    |
-| theme        | 指定主题，可选 `dark`, `light`                            | string  | `light` |
-| lineNumber   | 指定代码块行号是否开启，可选 `true`, `false`              | boolean | false   |
-| copyable     | 指定代码块是否展示复制按钮，可选 `true`, `false`          | boolean | true    |
-| height       | 指定代码块高度，用于需要控制代码块高度固定的场景          | number  | -       |
-| type         | 指定渲染类型，可选 `block`, `pure`, pure 模式去掉容器样式 | `block` | -       |
+| 参数         | 说明                                                      | 类型    | 默认值 |
+| :----------- | :-------------------------------------------------------- | :------ | :----- |
+| language     | 指定语言类型，详见下表                                    | string  | -      |
+| showLanguage | 是否展示语言的 Tag                                        | boolean | true   |
+| theme        | 指定主题，可选 `dark`, `light`,`auto`                     | string  | `auto` |
+| lineNumber   | 指定代码块行号是否开启，可选 `true`, `false`              | boolean | false  |
+| copyable     | 指定代码块是否展示复制按钮，可选 `true`, `false`          | boolean | true   |
+| height       | 指定代码块高度，用于需要控制代码块高度固定的场景          | number  | -      |
+| type         | 指定渲染类型，可选 `block`, `pure`, pure 模式去掉容器样式 | `block` | -      |
 
 ### 目前支持的语言列表
 

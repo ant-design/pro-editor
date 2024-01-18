@@ -30,16 +30,16 @@ exports[`ProBuilder > 没有传入 ComponentAsset 时，渲染为空状态 1`] =
 
 <div>
   <div
-    class="studio-app emotion-0"
+    class="ant-app emotion-0"
   >
     <div
-      class="layoutkit-center emotion-1 studio-editor-empty emotion-2"
+      class="layoutkit-center emotion-1 ant-editor-pro-builder-empty emotion-2"
     >
       <div
-        class="studio-empty"
+        class="ant-empty"
       >
         <div
-          class="studio-empty-image"
+          class="ant-empty-image"
         >
           <svg
             height="152"
@@ -102,7 +102,7 @@ exports[`ProBuilder > 没有传入 ComponentAsset 时，渲染为空状态 1`] =
           </svg>
         </div>
         <div
-          class="studio-empty-description"
+          class="ant-empty-description"
         >
           未找到 ComponentAsset，请在 props 中传入 ComponentAsset
         </div>

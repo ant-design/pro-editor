@@ -1,6 +1,5 @@
 import { Empty } from 'antd';
 import isEqual from 'lodash.isequal';
-import type { FC } from 'react';
 import { memo } from 'react';
 import { shallow } from 'zustand/shallow';
 import { List, SortableItem } from '../components';
@@ -8,7 +7,7 @@ import type { Store } from '../store';
 import { useStore } from '../store';
 
 import { PlusOutlined } from '@ant-design/icons';
-import { Button } from 'antd';
+import { Button } from '../../antd';
 
 import { useStyle } from '../style';
 
@@ -20,15 +19,12 @@ const selector = (s: Store) => ({
   keyManager: s.keyManager,
   actions: s.actions,
   hideRemove: s.hideRemove,
+  handle: s.handle,
   creatorButtonProps: s.creatorButtonProps,
   dispatchListData: s.dispatchListData,
 });
 
-interface SortableListProps {
-  prefixCls: string;
-}
-
-const SortableList: FC<SortableListProps> = ({ prefixCls }) => {
+const SortableList = () => {
   const {
     dispatchListData,
     renderItem,
@@ -36,20 +32,27 @@ const SortableList: FC<SortableListProps> = ({ prefixCls }) => {
     renderEmpty,
     creatorButtonProps = false,
     hideRemove,
+    handle,
     keyManager,
     getItemStyles,
     actions,
   } = useStore(selector, shallow);
 
-  const { styles } = useStyle(prefixCls);
+  const { styles } = useStyle();
   const items = useStore((s) => s.value, isEqual);
-  const { record, creatorButtonText = '添加一列', position = 'bottom' } = creatorButtonProps || {};
+  const {
+    record,
+    creatorButtonText = '添加一列',
+    position = 'bottom',
+    style,
+  } = creatorButtonProps || {};
 
   const CreateButton = ({ empty = false }) => {
     return (
       <Button
         block={empty ? false : true}
         size={'small'}
+        style={empty ? null : style}
         className={styles.btnAdd}
         onClick={() => {
           dispatchListData({
@@ -75,7 +78,7 @@ const SortableList: FC<SortableListProps> = ({ prefixCls }) => {
   ) : (
     <>
       {creatorButtonProps !== false && position === 'top' ? <CreateButton /> : null}
-      <List prefixCls={prefixCls}>
+      <List>
         {items.map((item, index) => {
           return (
             <SortableItem
@@ -85,12 +88,12 @@ const SortableList: FC<SortableListProps> = ({ prefixCls }) => {
               index={index}
               actions={actions}
               hideRemove={hideRemove}
+              handle={handle}
               renderItem={renderItem}
               renderContent={renderContent}
               getItemStyles={getItemStyles}
               onRemove={() => dispatchListData({ type: 'removeItem', index })}
               useDragOverlay={true}
-              prefixCls={prefixCls}
             />
           );
         })}

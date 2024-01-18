@@ -3,8 +3,7 @@ import type { CSSProperties, FC, ReactNode } from 'react';
 import { memo } from 'react';
 import type { Props as RndProps } from 'react-rnd';
 
-import { getPrefixCls } from '../theme';
-
+import { withProvider } from '..';
 import { FixMode } from './FixMode';
 import { FloatMode } from './FloatMode';
 
@@ -29,6 +28,14 @@ export interface DraggablePanelProps {
    * 最小高度
    */
   minHeight?: number;
+  /**
+   * 最大宽度
+   */
+  maxWidth?: number;
+  /**
+   * 最大高度
+   */
+  maxHeight?: number;
   /**
    * 控制可缩放区域
    */
@@ -91,13 +98,9 @@ export interface DraggablePanelProps {
    * 内容
    */
   children: ReactNode;
-  /**
-   * 类名前缀
-   */
-  prefixCls?: string;
 }
 
-export const Draggable: FC<DraggablePanelProps> = memo(
+const Draggable: FC<DraggablePanelProps> = memo(
   ({
     children,
     className,
@@ -112,21 +115,19 @@ export const Draggable: FC<DraggablePanelProps> = memo(
     defaultPosition,
     minWidth,
     minHeight,
-    prefixCls: customPrefixCls,
+    maxHeight,
+    maxWidth,
     onSizeChange,
     onSizeDragging,
     expandable = true,
     isExpand,
     onExpandChange,
   }) => {
-    const prefixCls = getPrefixCls('draggable-panel', customPrefixCls);
-
     switch (mode) {
       case 'fixed':
       default:
         return (
           <FixMode
-            prefixCls={prefixCls}
             // 尺寸
             size={size}
             defaultSize={defaultSize}
@@ -134,6 +135,8 @@ export const Draggable: FC<DraggablePanelProps> = memo(
             onSizeChange={onSizeChange}
             minHeight={minHeight}
             minWidth={minWidth}
+            maxHeight={maxHeight}
+            maxWidth={maxWidth}
             // 缩放
             resize={resize}
             onExpandChange={onExpandChange}
@@ -149,7 +152,6 @@ export const Draggable: FC<DraggablePanelProps> = memo(
       case 'float':
         return (
           <FloatMode
-            prefixCls={prefixCls}
             // 坐标
             defaultPosition={defaultPosition}
             position={position}
@@ -157,6 +159,8 @@ export const Draggable: FC<DraggablePanelProps> = memo(
             // 尺寸
             minHeight={minHeight}
             minWidth={minWidth}
+            maxHeight={maxHeight}
+            maxWidth={maxWidth}
             defaultSize={defaultSize}
             size={size}
             onSizeDragging={onSizeDragging}
@@ -173,3 +177,7 @@ export const Draggable: FC<DraggablePanelProps> = memo(
     }
   },
 );
+
+const WithProviderDraggable: FC<DraggablePanelProps> = withProvider(Draggable);
+
+export { WithProviderDraggable as Draggable };

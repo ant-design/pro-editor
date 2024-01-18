@@ -12,12 +12,14 @@ demo:
 
 ## 何时使用
 
-针对可排序列表场景提供基础底层封装，可在其上进行进一步自定义，参考 `ColumnList`。
+针对可排序列表场景提供基础底层封装，可在其上进行进一步自定义，我们还封装了 `ColumnList` 组件通过 `schema` 自动生成简单的排序列表。
 
 ## 使用方式
 
 <code src="./demos/Basic.tsx" ></code>
 <code src="./demos/controlled.tsx" ></code>
+<code src="./demos/hideRemove.tsx" ></code>
+<code src="./demos/handle.tsx" ></code>
 <code src="./demos/getItemStyles.tsx" ></code>
 <code src="./demos/renderItem.tsx" ></code>
 <code src="./demos/renderContent.tsx" ></code>
@@ -43,16 +45,18 @@ demo:
 | getItemStyle       | `(status: GetItemStylesArgs) => ReactNode`                       | 自定义容器样式                     |
 | ref                | `ForwardedRef<SortableListRef<T>>`                               | 对外部暴露方法                     |
 | hideRemove         | `boolean`                                                        | 是否隐藏删除按钮，默认为 false     |
+| handle             | `boolean`                                                        | 是否显示拖拽按钮，默认为 true      |
 | creatorButtonProps | `CreatorButtonProps\|false`                                      | 新建对象相关属性                   |
 | actions            | `(item: T, index: number) => ReactNode[]` \| `React.ReactNode[]` | 除列表自带操作之外的其他操作自渲染 |
 
 ### CreatorButtonProps 创建按钮属性
 
-| 属性名            | 类型                   | 描述                 |
-| ----------------- | ---------------------- | -------------------- |
-| position          | `'bottom'\|'top'`      | 按钮位置，默认在下方 |
-| record            | `(index: number) => T` | 生成初始值逻辑       |
-| creatorButtonText | `string`               | 新增一行按钮文案     |
+| 属性名            | 类型                   | 描述                                                                 |
+| ----------------- | ---------------------- | -------------------------------------------------------------------- |
+| position          | `'bottom'\|'top'`      | 按钮位置，默认在下方                                                 |
+| record            | `(index: number) => T` | 生成初始值逻辑                                                       |
+| creatorButtonText | `string`               | 新增一行按钮文案                                                     |
+| style             | CSSProperties          | 按钮的样式设置，可以设置按钮是否显示，如 `style: { display: 'none'}` |
 
 ### GetItemStylesArgs
 

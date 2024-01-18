@@ -1,5 +1,4 @@
 import { defaultDropAnimation, DragOverlay } from '@dnd-kit/core';
-import type { FC } from 'react';
 import { memo } from 'react';
 import { shallow } from 'zustand/shallow';
 import { Item } from '../components';
@@ -13,18 +12,15 @@ import { getIndexOfActiveItem } from '../utils';
 
 const selector = (s: Store) => ({
   activeId: s.activeId,
+  handle: s.handle,
   hideRemove: s.hideRemove,
   renderItem: s.renderItem,
   renderContent: s.renderContent,
   getItemStyles: s.getItemStyles,
 });
 
-interface OverlayProps {
-  prefixCls: string;
-}
-
-const Overlay: FC<OverlayProps> = ({ prefixCls }) => {
-  const { activeId, renderItem, hideRemove, getItemStyles, renderContent } = useStore(
+const Overlay = () => {
+  const { activeId, renderItem, handle, hideRemove, getItemStyles, renderContent } = useStore(
     selector,
     shallow,
   );
@@ -48,7 +44,6 @@ const Overlay: FC<OverlayProps> = ({ prefixCls }) => {
           dragOverlay
           index={activeIndex}
           item={items[activeIndex]}
-          prefixCls={prefixCls}
           renderItem={renderItem}
           renderContent={renderContent}
           style={getItemStyles({
@@ -60,6 +55,7 @@ const Overlay: FC<OverlayProps> = ({ prefixCls }) => {
             isDragOverlay: true,
           })}
           hideRemove={hideRemove}
+          handle={handle}
         />
       ) : null}
     </DragOverlay>

@@ -1,9 +1,11 @@
 import { createStyles } from '../../../theme';
 
-export const useStyle = createStyles(({ css, cx }, { prefixCls, horizontal }) => {
+export const useStyle = createStyles(({ css, token, cx, prefixCls }, { horizontal }) => {
+  const prefix = `${prefixCls}-${token.editorPrefix}-sortable-list`;
+
   return {
     container: cx(
-      `${prefixCls}-container`,
+      `${prefix}-container`,
       css({
         listStyle: 'none',
         display: 'grid',

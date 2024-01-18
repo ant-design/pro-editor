@@ -18,9 +18,10 @@ It can be used when editing tree-like data structures (adding, deleting, sorting
 
 ###
 
-<code src="./demos/default.tsx" ></code> <code src="./demos/controlled.tsx" ></code>
+<code src="./demos/default.tsx" ></code><code src="./demos/controlled.tsx" ></code>
 
 <code src="./demos/renderContent.tsx" ></code> <code src="./demos/disableDrag.tsx" ></code> <code src="./demos/sortableRule.tsx" ></code>
+<code src="./demos/virtual.tsx" ></code>
 
 ## API
 
@@ -102,8 +103,3 @@ export interface SortableTreeInstance<T = any> extends PublicSortableTreeStore {
   getFlattenData: () => FlattenNode<T>[];
 }
 ```
-
-[//]: # '### 多选方案'
-[//]: #
-
-[//]: # "<code src=\"./demos/\_multiSelect.tsx\" ></code>"

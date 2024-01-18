@@ -1,7 +1,7 @@
 import { createStyles } from '../../../theme';
 
-export const useStyles = createStyles(({ css, cx }, prefixCls) => {
-  const prefix = `${prefixCls}`;
+export const useStyles = createStyles(({ css, cx, token, prefixCls }) => {
+  const prefix = `${prefixCls}-${token.editorPrefix}-highlight`;
 
   return {
     index: cx(

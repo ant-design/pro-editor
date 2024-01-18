@@ -9,11 +9,7 @@ export type InteractionType = 'click' | 'hover';
 //   UnSelected = 'unSelected',
 // }
 
-export type InteractStatusType =
-  | 'hover'
-  | 'unhover'
-  | 'unSelected'
-  | 'selected';
+export type InteractStatusType = 'hover' | 'unhover' | 'unSelected' | 'selected';
 
 // export type InteractStatusType = typeof InteractStatusEnum[keyof typeof InteractStatusEnum];
 /**

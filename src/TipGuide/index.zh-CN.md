@@ -14,8 +14,6 @@ group: 基础组件
 
 ### 基础
 
-注意 `guideKey` 必填，且唯一。
-
 <code src="./demos/normal.tsx" ></code>
 
 ### 受控
@@ -48,5 +46,5 @@ group: 基础组件
 | maxWidth     | 最大宽度                            | number                                    | 300      |
 | open         | 受控的 open 属性                    | boolean                                   | -        |
 | onOpenChange | 当 open 属性变化时候的触发          | (open: boolean) => void                   | -        |
-| defaultOpen  | 默认时候的打开状态                  | boolean                                   | -        |
+| defaultOpen  | 默认时候的打开状态                  | boolean                                   | true     |
 | footerRender | 用于自定义 footer 部分的 render api | (dom: React.ReactNode) => React.ReactNode | -        |

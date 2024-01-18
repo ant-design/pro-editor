@@ -10,13 +10,12 @@ export interface HighlightCellProps {
 }
 
 export default function HighlightCell({
-  prefixCls,
   data,
   emptyText,
   lineNumber = false,
   onMouseDown,
 }: HighlightCellProps) {
-  const { styles } = useStyles(prefixCls);
+  const { styles } = useStyles();
   const rowIndex: number = data?.index;
 
   return (

@@ -1,3 +1,4 @@
+import { withProvider } from '@/ConfigProvider';
 import { Button, Form, Input } from 'antd';
 import { Flexbox } from 'react-layout-kit';
 import { css, cx, useToken } from '../../theme';
@@ -26,12 +27,7 @@ const ScriptEditor = () => {
         labelCol={{ span: 6 }}
         wrapperCol={{ span: 18 }}
       >
-        <Form.Item
-          name={'url'}
-          required
-          label={'链接'}
-          getValueFromEvent={(e) => e.target.value}
-        >
+        <Form.Item name={'url'} required label={'链接'} getValueFromEvent={(e) => e.target.value}>
           <Input placeholder={'iconfont js链接'} />
         </Form.Item>
         <Form.Item
@@ -43,10 +39,7 @@ const ScriptEditor = () => {
         >
           <Input placeholder={'请输入标题'} />
         </Form.Item>
-        <Form.Item
-          wrapperCol={{ offset: 6, span: 18 }}
-          style={{ marginBottom: 0 }}
-        >
+        <Form.Item wrapperCol={{ offset: 6, span: 18 }} style={{ marginBottom: 0 }}>
           <Button htmlType={'submit'} type={'primary'}>
             添加
           </Button>
@@ -56,4 +49,4 @@ const ScriptEditor = () => {
   );
 };
 
-export default ScriptEditor;
+export default withProvider(ScriptEditor);

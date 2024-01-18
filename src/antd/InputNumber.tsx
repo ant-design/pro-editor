@@ -7,11 +7,11 @@ import { ConfigProvider } from '../ConfigProvider';
 import { createStyles } from '../theme';
 
 const useStyles = createStyles(
-  ({ stylish, css, token }) =>
+  ({ stylish, css, token, prefixCls }) =>
     css`
       ${stylish.controlContainer}
 
-      .studio-input-number-group-addon {
+      .${prefixCls}-input-number-group-addon {
         padding: 0 4px;
         color: ${token.colorTextTertiary};
         background: ${token.colorFillQuaternary};
@@ -42,7 +42,7 @@ export const InputNumber: FC<InputNumberProps> = ({
   onFocus,
   onBlur,
   onPressEnter,
-  ...props
+  ...rest
 }) => {
   const { styles, cx } = useStyles();
 
@@ -65,8 +65,8 @@ export const InputNumber: FC<InputNumberProps> = ({
   return (
     <ConfigProvider>
       <_InputNumber
-        size={'small'}
-        {...props}
+        size={'middle'}
+        {...rest}
         value={input}
         onFocus={(event) => {
           onFocus?.(event);

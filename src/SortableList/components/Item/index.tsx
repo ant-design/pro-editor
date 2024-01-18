@@ -17,7 +17,7 @@ const Item = memo(
         dragging,
         disabled,
         fadeIn,
-        handle = true,
+        handle,
         index,
         listeners,
         onRemove,
@@ -32,14 +32,13 @@ const Item = memo(
         transform,
         id,
         className,
-        prefixCls,
         ...props
       },
       ref,
     ) => {
       const token = useToken();
-      const { styles } = useStyle(prefixCls);
-      const itemPrefixCls = classNames(`${prefixCls}-item`);
+      const { styles } = useStyle();
+      const itemPrefixCls = classNames(`${styles.tokenPrefixCls}-item`);
 
       useEffect(() => {
         if (!dragOverlay) {

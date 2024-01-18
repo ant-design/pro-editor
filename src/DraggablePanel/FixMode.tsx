@@ -6,13 +6,7 @@ import { Center } from 'react-layout-kit';
 import type { Props as RndProps } from 'react-rnd';
 import useControlledState from 'use-merge-value';
 
-import {
-  DownOutlined,
-  LeftOutlined,
-  RightOutlined,
-  UpOutlined,
-} from '@ant-design/icons';
-import { getPrefixCls } from '../theme';
+import { DownOutlined, LeftOutlined, RightOutlined, UpOutlined } from '@ant-design/icons';
 import { useStyle } from './style';
 
 export interface FixModePanelProps {
@@ -36,6 +30,15 @@ export interface FixModePanelProps {
    * 最小高度
    */
   minHeight?: number;
+
+  /**
+   * 最大宽度
+   */
+  maxWidth?: number;
+  /**
+   * 最大高度
+   */
+  maxHeight?: number;
   /**
    * 控制可缩放区域
    */
@@ -95,10 +98,6 @@ export interface FixModePanelProps {
    * 内容
    */
   children: ReactNode;
-  /**
-   * 类名前缀
-   */
-  prefixCls?: string;
 }
 
 const DEFAULT_HEIGHT = 150;
@@ -117,7 +116,7 @@ const revesePlacement = (placement: 'right' | 'left' | 'top' | 'bottom') => {
   }
 };
 
-export const FixMode: FC<FixModePanelProps> = memo<FixModePanelProps>(
+const FixMode: FC<FixModePanelProps> = memo<FixModePanelProps>(
   ({
     children,
     placement = 'right',
@@ -127,7 +126,8 @@ export const FixMode: FC<FixModePanelProps> = memo<FixModePanelProps>(
     defaultSize: customizeDefaultSize,
     minWidth,
     minHeight,
-    prefixCls: customPrefixCls,
+    maxHeight,
+    maxWidth,
     onSizeChange,
     onSizeDragging,
     expandable = true,
@@ -135,11 +135,9 @@ export const FixMode: FC<FixModePanelProps> = memo<FixModePanelProps>(
     onExpandChange,
     className,
   }) => {
-    const prefixCls = getPrefixCls('draggable-panel', customPrefixCls);
-
     const isVertical = placement === 'top' || placement === 'bottom';
 
-    const { styles, cx } = useStyle(prefixCls);
+    const { styles, cx } = useStyle();
 
     const [isExpand, setIsExpand] = useControlledState(true, {
       value: expand,
@@ -153,8 +151,7 @@ export const FixMode: FC<FixModePanelProps> = memo<FixModePanelProps>(
       if (!canResizing) return {};
 
       return {
-        [revesePlacement(placement)]:
-          styles[`${revesePlacement(placement)}Handle`],
+        [revesePlacement(placement)]: styles[`${revesePlacement(placement)}Handle`],
       };
     }, [canResizing, placement]);
 
@@ -189,8 +186,9 @@ export const FixMode: FC<FixModePanelProps> = memo<FixModePanelProps>(
     const sizeProps = isExpand
       ? {
           minWidth: typeof minWidth === 'number' ? Math.max(minWidth, 0) : 280,
-          minHeight:
-            typeof minHeight === 'number' ? Math.max(minHeight, 0) : undefined,
+          minHeight: typeof minHeight === 'number' ? Math.max(minHeight, 0) : undefined,
+          maxHeight: typeof maxHeight === 'number' ? Math.max(maxHeight, 0) : undefined,
+          maxWidth: typeof maxWidth === 'number' ? Math.max(maxWidth, 0) : undefined,
           defaultSize,
           size: size as Size,
           style,
@@ -256,3 +254,5 @@ export const FixMode: FC<FixModePanelProps> = memo<FixModePanelProps>(
     );
   },
 );
+
+export { FixMode };

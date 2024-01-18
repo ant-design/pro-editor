@@ -58,7 +58,7 @@ ProEditor 将会提供编辑场景需要的各类原子化能力，包括但不�
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   // 将纯 esm 模块转为 node 兼容模块
-  transpilePackages: ['@ant-design/pro-editor', 'leva'], // leva 为 ProEditor 依赖模块
+  transpilePackages: ['@ant-design/pro-editor'], // leva 为 ProEditor 依赖模块
 };
 ```
 

@@ -35,8 +35,11 @@ const MyComponent = () => {
 可以使用 editor 对象来访问 ProEditor 的属性和方法：
 
 - `getPresenceEditor`：获取当前 ProEditor 的 presenceEditor 对象；
+
 - `getViewport`：获取当前 ProEditor 的 `viewport`；
+
 - `getConfig`：获取当前 ProEditor 的 config；
+
 - `getProps`：获取当前 ProEditor 的 props。
 
 - 注意：以上方法返回的对象均为最新值，即每次调用都会返回最新的值。

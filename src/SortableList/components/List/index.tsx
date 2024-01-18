@@ -8,12 +8,11 @@ export interface Props {
   style?: React.CSSProperties;
   className?: string;
   horizontal?: boolean;
-  prefixCls?: string;
 }
 
 const List = forwardRef<HTMLUListElement, Props>(
-  ({ children, columns = 1, horizontal, style, className, prefixCls }: Props, ref) => {
-    const { styles } = useStyle({ prefixCls, horizontal });
+  ({ children, columns = 1, horizontal, style, className }: Props, ref) => {
+    const { styles } = useStyle({ horizontal });
 
     const listClassName = classNames(styles.container, className);
 

@@ -4,7 +4,7 @@ import Spotlight from '@/components/Spotlight';
 import { useThemeMode } from 'antd-style';
 import { memo } from 'react';
 import { DivProps } from 'react-layout-kit';
-import { getPrefixCls } from '..';
+import { ConfigProvider } from '..';
 import { useStyles } from './style';
 
 export interface SnippetProps extends DivProps {
@@ -46,27 +46,26 @@ const Snippet = memo<SnippetProps>((props) => {
     language = 'tsx',
     children,
     copyable = true,
-    prefixCls: customPrefixCls,
     type = 'ghost',
     spotlight,
     className,
     ...rest
   } = props;
-  const prefixCls = getPrefixCls('snippet', customPrefixCls);
   const { isDarkMode } = useThemeMode();
 
   const { styles, cx } = useStyles({
     type,
-    prefixCls,
   });
   return (
-    <div className={cx(styles.container, className)} {...rest}>
-      {spotlight && <Spotlight />}
-      <HighLighter language={language} prefixCls={prefixCls} theme={isDarkMode ? 'dark' : 'light'}>
-        {symbol ? [symbol, children].join(' ') : children}
-      </HighLighter>
-      {copyable && <CopyButton content={children} />}
-    </div>
+    <ConfigProvider>
+      <div className={cx(styles.container, className)} {...rest}>
+        {spotlight && <Spotlight />}
+        <HighLighter language={language} theme={isDarkMode ? 'dark' : 'light'} prefixCls="snippet">
+          {symbol ? [symbol, children].join(' ') : children}
+        </HighLighter>
+        {copyable && <CopyButton content={children} />}
+      </div>
+    </ConfigProvider>
   );
 });
 

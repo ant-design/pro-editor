@@ -1,7 +1,3 @@
-/**
- * title: 预设
- * description: 一些编辑器常用按钮的预设
- */
 import { CollapseAction, DeleteAction, EditAction, HandleAction } from '@ant-design/pro-editor';
 import { Space } from 'antd';
 

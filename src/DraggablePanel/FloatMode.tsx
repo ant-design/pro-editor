@@ -29,6 +29,14 @@ export interface FloatProps {
    */
   minHeight?: number;
   /**
+   * 最大宽度
+   */
+  maxWidth?: number;
+  /**
+   * 最大高度
+   */
+  maxHeight?: number;
+  /**
    * 控制可缩放区域
    */
   resize?: RndProps['enableResizing'];
@@ -78,10 +86,6 @@ export interface FloatProps {
    * 内容
    */
   children: ReactNode;
-  /**
-   * 类名前缀
-   */
-  prefixCls?: string;
 }
 
 const DEFAULT_HEIGHT = 300;
@@ -100,10 +104,11 @@ export const FloatMode: FC<FloatProps> = memo(
     defaultPosition: customizeDefaultPosition,
     minWidth = 280,
     minHeight = 200,
-    prefixCls,
+    maxHeight,
+    maxWidth,
     canResizing,
   }) => {
-    const { styles } = useStyle(prefixCls);
+    const { styles } = useStyle();
 
     const resizeHandleClassNames: HandleClassName = useMemo(() => {
       if (!canResizing) return {};
@@ -147,6 +152,8 @@ export const FloatMode: FC<FloatProps> = memo(
     const sizeProps = {
       minWidth: Math.max(minWidth, 0),
       minHeight: Math.max(minHeight, 0),
+      maxHeight: maxHeight ? Math.max(maxHeight, 0) : undefined,
+      maxWidth: maxWidth ? Math.max(maxWidth, 0) : undefined,
       defaultSize,
       size: size as Size,
       style,

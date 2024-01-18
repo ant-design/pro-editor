@@ -45,6 +45,7 @@ export default () => {
           icon={<EditFilled />}
           key={'edit'}
           tabIndex={-1}
+          style={{ height: 22 }}
           onClick={() => message.info(field.dataIndex)}
         />,
       ]}

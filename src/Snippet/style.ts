@@ -1,14 +1,17 @@
-import { createStyles } from 'antd-style';
+import { createStyles } from '../theme';
 
-export const useStyles = createStyles(({ css, cx, token }, { type, prefixCls }) => {
+export const useStyles = createStyles(({ css, cx, token, prefixCls }, { type }) => {
   const typeStylish = css`
     background-color: ${type === 'block' ? token.colorFillTertiary : 'transparent'};
     border: 1px solid ${type === 'block' ? 'transparent' : token.colorBorder};
   `;
 
+  const BasePrefix = `${prefixCls}-${token?.editorPrefix}`;
+  const prefix = `${BasePrefix}-snippet`;
+
   return {
     container: cx(
-      `${prefixCls}-container`,
+      `${prefix}-container`,
       typeStylish,
       css`
         position: relative;
@@ -28,7 +31,7 @@ export const useStyles = createStyles(({ css, cx, token }, { type, prefixCls }) 
           background-color: ${token.colorFillTertiary};
         }
 
-        .${prefixCls}-shiki {
+        .${prefix}-shiki {
           position: relative;
           overflow: hidden;
           flex: 1;

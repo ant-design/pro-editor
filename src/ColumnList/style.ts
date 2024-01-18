@@ -1,11 +1,12 @@
 import { createStyles, getStudioStylish } from '../theme';
 
-export const useStyle = createStyles((props, prefixCls) => {
-  const { token, css, cx } = props;
+export const useStyle = createStyles((props) => {
+  const { token, css, cx, prefixCls } = props;
   const common = getStudioStylish(props);
+  const prefix = `${prefixCls}-${token?.editorPrefix}-column-list`;
   return {
     content: cx(
-      `${prefixCls}-content`,
+      `${prefix}-content`,
       css`
         flex: 1;
         width: 100%;
@@ -16,13 +17,13 @@ export const useStyle = createStyles((props, prefixCls) => {
       `,
     ),
     header: cx(
-      `${prefixCls}-header`,
+      `${prefix}-header`,
       css`
         color: ${token.colorTextTertiary};
       `,
     ),
     btnAdd: cx(
-      `${prefixCls}-btn-add`,
+      `${prefix}-btn-add`,
       css`
         height: 24px;
         padding-block: 2px;

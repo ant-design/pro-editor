@@ -45,6 +45,8 @@ Resizable from left to right
 | placement        | `'right' \| 'left' \| 'top' \| 'bottom'`   | `'right'`    | The orientation of the panel in fixed mode, default placement is on the right |
 | minWidth         | `number`                                   |              | The minimum width of the panel                                                |
 | minHeight        | `number`                                   |              | The minimum height of the panel                                               |
+| maxWidth         | `number`                                   |              | The maximum width of the panel                                                |
+| maxHeight        | `number`                                   |              | The maximum height of the panel                                               |
 | resize           | `RndProps['enableResizing']`               |              | Control the resizable area                                                    |
 | size             | `Partial<Size>`                            |              | Panel size                                                                    |
 | onSizeChange     | `(delta: NumberSize, size?: Size) => void` |              | Callback for panel size change                                                |

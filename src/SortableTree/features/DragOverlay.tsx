@@ -1,7 +1,6 @@
 import type { DropAnimation, Modifier } from '@dnd-kit/core';
 import { DragOverlay, defaultDropAnimation } from '@dnd-kit/core';
 import { CSS } from '@dnd-kit/utilities';
-import type { FC } from 'react';
 import { memo } from 'react';
 import { shallow } from 'zustand/shallow';
 
@@ -42,11 +41,7 @@ const adjustTranslate: Modifier = ({ transform }) => {
   };
 };
 
-interface OverlayProps {
-  prefixCls: string;
-}
-
-const Overlay: FC<OverlayProps> = ({ prefixCls }) => {
+const Overlay = () => {
   const [activeId, treeData, indentationWidth, getActiveNode] = useStore(
     (s) => [s.activeId, s.treeData, s.indentationWidth, s.getActiveNode],
     shallow,
@@ -55,13 +50,9 @@ const Overlay: FC<OverlayProps> = ({ prefixCls }) => {
   const activeItem = getActiveNode();
 
   return (
-    <DragOverlay
-      dropAnimation={dropAnimationConfig}
-      modifiers={[adjustTranslate]}
-    >
+    <DragOverlay dropAnimation={dropAnimationConfig} modifiers={[adjustTranslate]}>
       {activeId && activeItem ? (
         <SortableTreeItem
-          prefixCls={prefixCls}
           id={activeId}
           depth={activeItem.depth}
           clone

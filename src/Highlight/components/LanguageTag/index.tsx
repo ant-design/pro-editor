@@ -5,8 +5,8 @@ import { ReactNode } from 'react';
 import { createStyles } from '../../../theme';
 import { getThemeColor } from '../../theme/colors';
 
-const useStyles = createStyles(({ cx, css, token }, { prefixCls, theme }) => {
-  const prefix = `${prefixCls}`;
+const useStyles = createStyles(({ cx, css, token, prefixCls }, { theme }) => {
+  const prefix = `${prefixCls}-${token.editorPrefix}-highlight`;
 
   const { colorFillTertiary, colorText, colorTextSecondary } = getThemeColor(theme === 'dark');
 
@@ -54,12 +54,11 @@ export interface TagProps extends AntTagProps {
   icon?: ReactNode;
   size?: 'default' | 'small';
   theme?: ThemeType;
-  prefixCls?: string;
 }
 
 const LanguageTag: React.FC<TagProps> = (props) => {
-  const { children, size = 'default', theme = 'light', prefixCls } = props || {};
-  const { styles, cx } = useStyles({ theme, prefixCls });
+  const { children, size = 'default', theme = 'light' } = props || {};
+  const { styles, cx } = useStyles({ theme });
 
   return (
     <Tag bordered={false} className={cx(styles.tag, styles.lang, size === 'small' && styles.small)}>

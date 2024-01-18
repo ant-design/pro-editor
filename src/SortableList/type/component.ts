@@ -22,7 +22,6 @@ export interface BaseItemProps<T = any>
   transition?: string | null;
   id: UniqueIdentifier;
   onRemove?: () => void;
-  prefixCls?: string;
 }
 
 export type RenderActionProps<T = any> =
@@ -32,7 +31,7 @@ export type RenderActionProps<T = any> =
 export interface SortableItemProps<T = any>
   extends Pick<
     StoreUpdaterProps<T>,
-    'renderItem' | 'renderContent' | 'actions' | 'getItemStyles' | 'hideRemove'
+    'renderItem' | 'renderContent' | 'actions' | 'getItemStyles' | 'hideRemove' | 'handle'
   > {
   disabled?: boolean;
   id: UniqueIdentifier;
@@ -40,7 +39,6 @@ export interface SortableItemProps<T = any>
   item: T;
   useDragOverlay?: boolean;
   onRemove?: (index: number) => void;
-  prefixCls?: string;
 }
 
 export type RenderContent<T = any> = (item: T, index: number) => React.ReactNode;
@@ -62,6 +60,10 @@ export interface CreatorButtonProps {
    * 新增一行按钮文案
    */
   creatorButtonText?: string;
+  /**
+   * 按钮的样式设置，可以设置按钮是否显示，比如 style: {display: 'none'}
+   */
+  style?: CSSProperties;
 }
 
 export type RenderItem<T = any> = (

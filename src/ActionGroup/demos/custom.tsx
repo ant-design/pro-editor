@@ -1,7 +1,3 @@
-/**
- * title: 自定义
- * description: 通过 `render` 可以自定义渲染特殊的操作内容
- */
 import { ActionGroup, ActionIcon, ActionIconGroupItemType } from '@ant-design/pro-editor';
 import { Card, Input, Rate, Switch } from 'antd';
 

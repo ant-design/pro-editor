@@ -1,12 +1,11 @@
 import classNames from 'classnames';
-import { createRef } from 'react';
-import { getPrefixCls } from '../theme';
+import { createRef, memo } from 'react';
 import CopyButton from './components/CopyButton';
 import HighLighter from './components/HighLighter';
 import LanguageTag from './components/LanguageTag';
 import { useKeyDownCopyEvent } from './hooks/useKeyDownCopyEvent';
 import { useStyles } from './style';
-import { THEME_LIGHT, ThemeType } from './theme';
+import { ThemeType } from './theme';
 
 export interface HighlightProps {
   /**
@@ -72,22 +71,20 @@ export interface HighlightProps {
   showLanguage?: boolean;
 }
 
-const HighlightBase: React.FC<HighlightProps> = (props) => {
+const HighlightBase: React.FC<HighlightProps> = memo((props) => {
   const {
     children,
     style,
     className,
     lineNumber = false,
     copyable = true,
-    theme = THEME_LIGHT,
+    theme,
     language = 'tsx',
-    prefixCls: customPrefixCls,
     showLanguage = true,
     type = 'block',
     onCopy,
   } = props;
-  const prefixCls = getPrefixCls('highlight', customPrefixCls);
-  const { styles } = useStyles({ prefixCls, theme, type });
+  const { styles } = useStyles({ theme, type });
   const codeRef = createRef<HTMLDivElement>();
   useKeyDownCopyEvent(codeRef, onCopy);
 
@@ -99,25 +96,16 @@ const HighlightBase: React.FC<HighlightProps> = (props) => {
         style={style}
         className={classNames(styles.container, className)}
       >
-        {copyable && (
-          <CopyButton prefixCls={prefixCls} onCopy={onCopy} theme={theme} content={children} />
-        )}
+        {copyable && <CopyButton onCopy={onCopy} theme={theme} content={children} />}
         {showLanguage && language && (
-          <LanguageTag prefixCls={prefixCls} theme={theme}>
-            {language.toLowerCase()}
-          </LanguageTag>
+          <LanguageTag theme={theme}>{language.toLowerCase()}</LanguageTag>
         )}
-        <HighLighter
-          lineNumber={lineNumber}
-          language={language}
-          theme={theme}
-          prefixCls={prefixCls}
-        >
+        <HighLighter lineNumber={lineNumber} language={language} theme={theme}>
           {children}
         </HighLighter>
       </div>
     </>
   );
-};
+});
 
 export { HighlightBase };

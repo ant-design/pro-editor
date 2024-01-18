@@ -14,23 +14,28 @@ import { FlattenNode } from '../../types';
 import { iOS } from '../../utils/utils';
 
 const useStyles = createStyles(
-  ({ css, cx }, { prefix, collapsed }: { prefix: string; collapsed: boolean }) => {
+  ({ css, cx, prefixCls, token }, { collapsed }: { collapsed: boolean }) => {
+    const componentPrefix = `${prefixCls}-${token.editorPrefix}-sortable-tree`;
+    const nodePrefix = `${componentPrefix}-node`;
     return {
+      // 透出给组件层面拼接使用
+      componentPrefix,
       container: cx(
-        prefix,
-        `${prefix}-indicator`,
+        nodePrefix,
+        `${nodePrefix}-indicator`,
         css`
           margin-bottom: 4px;
+          padding-left: 12px;
 
           &:hover {
-            .${prefix}-handle, .${prefix}-remove {
+            .${nodePrefix}-handle, .${nodePrefix}-remove {
               opacity: 1;
             }
           }
         `,
       ),
       deleteAction: cx(
-        `${prefix}-remove`,
+        `${nodePrefix}-remove`,
         css`
           opacity: 0;
         `,
@@ -42,7 +47,7 @@ const useStyles = createStyles(
         }
       `,
       extra: cx(
-        `${prefix}-extra`,
+        `${nodePrefix}-extra`,
         css`
           margin-bottom: 8px;
         `,
@@ -110,9 +115,9 @@ export interface TreeItemProps extends Omit<HTMLAttributes<HTMLLIElement>, 'id'>
    */
   hideRemove?: boolean;
   /**
-   * @title 样式类名前缀
+   * 虚拟滚动添加样式
    */
-  prefixCls: string;
+  virtualStyle?: CSSProperties;
 }
 
 const animateLayoutChanges: AnimateLayoutChanges = ({ isSorting, wasDragging }) =>
@@ -133,11 +138,11 @@ const TreeItem: FC<TreeItemProps> = memo(
     showExtra,
     hideRemove,
     node,
-    prefixCls,
+    virtualStyle,
     ...props
   }) => {
-    const prefix = `${prefixCls}-node`;
-    const { styles, cx } = useStyles({ prefix, collapsed });
+    const { styles, cx } = useStyles({ collapsed });
+    const nodePrefix = `${styles.componentPrefix}-node`;
 
     const [
       indentationWidth,
@@ -162,7 +167,7 @@ const TreeItem: FC<TreeItemProps> = memo(
 
     const extraPanelVisible = showExtra && !clone;
 
-    const containerRef = useRef(document.getElementsByClassName(prefixCls).item(0));
+    const containerRef = useRef(document.getElementsByClassName(styles.componentPrefix).item(0));
 
     const {
       isDragging: ghost,
@@ -188,18 +193,19 @@ const TreeItem: FC<TreeItemProps> = memo(
           ref={setDroppableNodeRef}
           className={cx(
             styles.container,
-            clone && `${prefix}-clone`,
-            ghost && `${prefix}-ghost`,
-            selected && !clone && `${prefix}-selected`,
+            clone && `${nodePrefix}-clone`,
+            ghost && `${nodePrefix}-ghost`,
+            selected && !clone && `${nodePrefix}-selected`,
             disableSelection && 'disableSelection',
           )}
           style={
             {
               pointerEvents: disableInteraction ? 'none' : undefined,
-              '--spacing': `${indentationWidth * depth}px`,
+              '--spacing': `${indentationWidth * depth + (disableDrag ? 0 : 13)}px`,
 
               transform: CSS.Translate.toString(transform),
               transition,
+              ...virtualStyle,
             } as CSSProperties
           }
           onClick={(e) => {
@@ -207,12 +213,12 @@ const TreeItem: FC<TreeItemProps> = memo(
           }}
           {...props}
         >
-          <div className={`${prefix}-body`} ref={setDraggableNodeRef} style={style}>
+          <div className={`${nodePrefix}-body`} ref={setDraggableNodeRef} style={style}>
             {disableDrag ? null : (
               <HandleAction
                 {...listeners}
                 {...attributes}
-                className={cx(`${prefix}-handle`, clone ? undefined : styles.handle)}
+                className={cx(`${nodePrefix}-handle`, clone ? undefined : styles.handle)}
                 style={{ width: 12 }}
               />
             )}
@@ -225,12 +231,12 @@ const TreeItem: FC<TreeItemProps> = memo(
                 className={styles.collapseAction}
               />
             )}
-            <span className={`${prefix}-content`}>{Content ? <Content {...node} /> : id}</span>
+            <span className={`${nodePrefix}-content`}>{Content ? <Content {...node} /> : id}</span>
             {!hideRemove && !clone && onRemove && (
               <DeleteAction onClick={onRemove} title={'删除此项'} className={styles.deleteAction} />
             )}
             {clone && childCount && childCount > 1 ? (
-              <span className={`${prefix}-count`}>{childCount}</span>
+              <span className={`${nodePrefix}-count`}>{childCount}</span>
             ) : null}
           </div>
           {extraPanelVisible ? (

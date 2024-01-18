@@ -5,7 +5,7 @@
  * 优先支持主流语言，没有import在代码中使用的不会打包
  */
 import classNames from 'classnames';
-import { useEffect, useState } from 'react';
+import { memo, useEffect, useState } from 'react';
 import { HighlightProps } from '../../defalut';
 import { useHighlight } from '../../hooks/useHighlight';
 import { THEME_LIGHT } from '../../theme';
@@ -17,7 +17,7 @@ export type HighLighJSProps = Pick<
   'language' | 'children' | 'theme' | 'prefixCls' | 'lineNumber'
 >;
 
-const HighLighJS: React.FC<HighLighJSProps> = (props) => {
+const HighLighJS: React.FC<HighLighJSProps> = memo((props) => {
   const { children, lineNumber = false, theme = THEME_LIGHT, language, prefixCls } = props;
   const [codeBlock, setCodeBlock] = useState(null);
   const { styles } = useStyles(theme);
@@ -60,6 +60,6 @@ const HighLighJS: React.FC<HighLighJSProps> = (props) => {
       </table>
     </pre>
   );
-};
+});
 
 export default HighLighJS;

@@ -1,12 +1,12 @@
-import { Collapse, Divider, Image, Typography } from 'antd';
+import { Collapse, Divider, Typography } from 'antd';
 import { CSSProperties, memo } from 'react';
 import ReactMarkdown from 'react-markdown';
 import rehypeKatex from 'rehype-katex';
 import remarkGfm from 'remark-gfm';
 import remarkMath from 'remark-math';
 
-import { HighlightProps, SnippetProps } from '@ant-design/pro-editor';
 import { PluggableList } from 'react-markdown/lib/react-markdown';
+import { withProvider } from '..';
 import { Code } from './CodeBlock';
 import { useStyles } from './style';
 
@@ -16,40 +16,48 @@ export interface MarkdownProps {
    * @description ClassName
    */
   className?: string;
-  fullFeaturedCodeBlock?: boolean;
   onDoubleClick?: () => void;
   style?: CSSProperties;
-  // Highlight 的配置，会默认透传
-  highlight?: HighlightProps;
-  // Snippet 的配置，会默认透传
-  snippet?: SnippetProps;
+  rehypePlugins?: PluggableList;
+  remarkPlugins?: PluggableList;
 }
 
+const MemoHr = memo((props) => (
+  <Divider style={{ marginBottom: '1em', marginTop: 0 }} {...props} />
+));
+const MemoDetails = memo((props) => <Collapse style={{ marginBottom: '1em' }} {...props} />);
+const MemoImage = memo((props) => <img {...props} />);
+const MemoAlink = memo((props) => <Typography.Link {...props} />);
+
 const Markdown = memo<MarkdownProps>(
-  ({ children, className, style, onDoubleClick, highlight = {}, snippet = {}, ...rest }) => {
+  ({
+    children,
+    className,
+    style,
+    onDoubleClick,
+    rehypePlugins: outRehypePlugins,
+    remarkPlugins: outRemarkPlugins,
+    ...rest
+  }) => {
     const { styles } = useStyles();
     const components: any = {
-      a: Typography.Link,
-      details: Collapse,
-      hr: () => <Divider style={{ marginBottom: '1em', marginTop: 0 }} />,
-      img: Image,
-      pre: (props) => {
-        const { children, ...rest } = props;
-        return (
-          <Code highlight={highlight} snippet={snippet} {...rest}>
-            {children}
-          </Code>
-        );
-      },
+      details: MemoDetails,
+      hr: MemoHr,
+      a: MemoAlink,
+      img: MemoImage,
+      pre: Code,
     };
+
+    const rehypePlugins = [rehypeKatex, ...(outRehypePlugins || [])];
+    const remarkPlugins = [remarkGfm, remarkMath, ...(outRemarkPlugins || [])];
 
     return (
       <Typography className={className} onDoubleClick={onDoubleClick} style={style}>
         <ReactMarkdown
           className={styles.markdown}
           components={components}
-          rehypePlugins={[rehypeKatex] as PluggableList}
-          remarkPlugins={[remarkGfm, remarkMath]}
+          rehypePlugins={rehypePlugins as PluggableList}
+          remarkPlugins={remarkPlugins as PluggableList}
           {...rest}
         >
           {children}
@@ -59,4 +67,4 @@ const Markdown = memo<MarkdownProps>(
   },
 );
 
-export default Markdown;
+export default withProvider(Markdown) as React.FC<MarkdownProps>;

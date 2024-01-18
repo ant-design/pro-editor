@@ -1,26 +1,27 @@
 import { createStyles } from '../theme';
 
-export const useStyle = createStyles(({ token, stylish, cx, css }, prefixCls: string) => {
+export const useStyle = createStyles(({ token, stylish, cx, css, prefixCls }) => {
+  const prefix = `${prefixCls}-${token?.editorPrefix}-data-previewer`;
   return {
     container: cx(
-      prefixCls,
+      prefix,
       css`
         ${stylish.textInfo}
       `,
     ),
     empty: cx(
-      `${prefixCls}-empty`,
+      `${prefix}-empty`,
       css`
         padding: 8px;
         background: ${token.colorFillQuaternary};
         border-radius: 4px;
-        .studio-empty-normal {
+        .${prefixCls}-empty-normal {
           margin: 12px 0;
         }
       `,
     ),
     json: cx(
-      `${prefixCls}-json`,
+      `${prefix}-json`,
       css`
         border-radius: 4px;
 
@@ -30,7 +31,7 @@ export const useStyle = createStyles(({ token, stylish, cx, css }, prefixCls: st
       `,
     ),
     table: css`
-      .studio-table-cell {
+      .${prefixCls}-table-cell {
         padding: 4px !important;
       }
     `,

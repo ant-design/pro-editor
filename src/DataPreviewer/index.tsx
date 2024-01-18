@@ -1,12 +1,11 @@
 import { DatabaseOutlined, FlagOutlined, RollbackOutlined, TableOutlined } from '@ant-design/icons';
-import { ActionIcon, CollapseTitle } from '@ant-design/pro-editor';
+import { ActionIcon, CollapseTitle, withProvider } from '@ant-design/pro-editor';
 import { JsonViewer } from '@textea/json-viewer';
 import { Button, Divider, Empty, Pagination, Popconfirm, Table } from 'antd';
 import type { CSSProperties, FC, ReactNode } from 'react';
 import { useMemo, useState } from 'react';
 import { Flexbox } from 'react-layout-kit';
 import useMergedState from 'use-merge-value';
-import { getPrefixCls } from '../theme';
 
 import { useThemeMode } from 'antd-style';
 import { useStyle } from './style';
@@ -65,10 +64,6 @@ export interface DataPreviewerProps {
    * 样式
    */
   style?: CSSProperties;
-  /**
-   * 前缀
-   */
-  prefixCls?: string;
 }
 
 const Previewer: FC<DataPreviewerProps> = ({
@@ -84,12 +79,9 @@ const Previewer: FC<DataPreviewerProps> = ({
   style,
   columns,
   onResetClick,
-  prefixCls: customPrefixCls,
 }) => {
-  const prefixCls = getPrefixCls('data-previewer', customPrefixCls);
-
   const { isDarkMode } = useThemeMode();
-  const { styles, cx } = useStyle(prefixCls);
+  const { styles, cx } = useStyle();
   const [hidePanel, setCollapsed] = useMergedState(false, {
     value: collapsed,
     onChange: onVisibleChange,
@@ -217,4 +209,4 @@ const Previewer: FC<DataPreviewerProps> = ({
   );
 };
 
-export const DataPreviewer = Previewer;
+export const DataPreviewer: FC<DataPreviewerProps> = withProvider(Previewer);

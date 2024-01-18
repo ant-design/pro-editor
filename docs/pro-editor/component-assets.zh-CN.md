@@ -7,7 +7,7 @@ group: 基础框架
 
 ### 木偶模型
 
-高代码（props）和 低代码（配置器）的关系不是简单的一一映射，而是一种有机的组织形态，我们把它称为——木偶模型。 props 就像是木偶的线，而配置器就是木偶的控制器，它们的关系如下图所示：
+高代码（props）和 低代码（配置器）的关系不是简单的一一映射，而是一种有机的组织形态，我们把它称为 —— 木偶模型。 props 就像是木偶的线，而配置器就是木偶的控制器，它们的关系如下图所示：
 
 ![image.png](https://mdn.alipayobjects.com/huamei_re70wt/afts/img/A*d8rTT4gXf-UAAAAAAAAAAAAADmuEAQ/original)
 

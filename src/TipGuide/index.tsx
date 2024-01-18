@@ -4,7 +4,7 @@ import useMergedState from 'rc-util/lib/hooks/useMergedState';
 import { type FC, type ReactNode } from 'react';
 import { Flexbox } from 'react-layout-kit';
 import { ConfigProvider } from '../ConfigProvider';
-import { getPrefixCls, useToken } from '../theme';
+import { useToken } from '../theme';
 import { useStyle } from './style';
 
 export interface TipGuideProps {
@@ -28,10 +28,6 @@ export interface TipGuideProps {
    * 引导内容
    */
   children?: ReactNode;
-  /**
-   * 前缀
-   */
-  prefixCls?: string;
   /**
    * style
    */
@@ -64,7 +60,6 @@ const TipGuide: FC<TipGuideProps> = ({
   title,
   offsetY,
   maxWidth = 300,
-  prefixCls: customPrefixCls,
   className,
   style,
   defaultOpen = true,
@@ -72,9 +67,8 @@ const TipGuide: FC<TipGuideProps> = ({
   onOpenChange = () => {},
   footerRender,
 }) => {
-  const prefixCls = getPrefixCls('tip-guide', customPrefixCls);
   const token = useToken();
-  const { styles, cx } = useStyle(prefixCls);
+  const { styles } = useStyle();
   const [open, setOpen] = useMergedState<boolean>(defaultOpen, {
     value: outOpen,
     onChange: onOpenChange,
@@ -124,7 +118,7 @@ const TipGuide: FC<TipGuideProps> = ({
             <Popover
               open={open}
               content={
-                <Flexbox className={`${prefixCls}-guide-content`} gap={24}>
+                <Flexbox className={styles.content} gap={24}>
                   <div>{title}</div>
                   <Flexbox direction={'horizontal'} distribution={'space-between'} gap={8}>
                     <FooterDom />
@@ -133,7 +127,7 @@ const TipGuide: FC<TipGuideProps> = ({
               }
               color={'blue'}
               overlayStyle={{ maxWidth, zIndex: 1000, ...style }}
-              overlayClassName={cx(`${prefixCls}-guide`, className)}
+              overlayClassName={`${styles.guide} ${className}`}
               placement={placement}
               arrow={{ pointAtCenter: true }}
               trigger="hover"

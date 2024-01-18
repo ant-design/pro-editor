@@ -5,7 +5,7 @@ import {
   RedoOutlined,
   UndoOutlined,
 } from '@ant-design/icons';
-import { ActionIcon, ActionIconProps, getPrefixCls } from '@ant-design/pro-editor';
+import { ActionIcon, ActionIconProps, ConfigProvider } from '@ant-design/pro-editor';
 import { Divider, Dropdown, DropdownProps } from 'antd';
 import { useStyle } from './style';
 
@@ -123,8 +123,7 @@ const ActionGroup = (props: ActionGroupProps) => {
     dropdownProps,
     dropdownMenuTrigger,
   } = props;
-  const prefixCls = getPrefixCls('action-group');
-  const { styles, cx } = useStyle({ prefixCls, direction, type });
+  const { styles, cx } = useStyle({ direction, type });
 
   const DefalutItemConfig = [
     { icon: <FullscreenOutlined />, onClick: onFullScreenClick },
@@ -200,4 +199,12 @@ const ActionGroup = (props: ActionGroupProps) => {
   );
 };
 
-export { ActionGroup };
+const WrapperActionGroup = (props: ActionGroupProps) => {
+  return (
+    <ConfigProvider>
+      <ActionGroup {...props} />
+    </ConfigProvider>
+  );
+};
+
+export { WrapperActionGroup as ActionGroup };

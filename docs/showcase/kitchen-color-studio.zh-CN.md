@@ -10,4 +10,4 @@ kitchen Color Studio 是一套开源的颜色系统编辑器。
 
 ## 访问地址
 
-https://github.com/ant-design/antd-color-editor
+<https://github.com/ant-design/antd-color-editor>

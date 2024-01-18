@@ -1,4 +1,4 @@
-export const content = `# This is an H1
+const content = `# This is an H1
 ## This is an H2
 ### This is an H3
 #### This is an H4
@@ -86,3 +86,24 @@ $$
 \\int_{a}^{b} f(x) \\, dx
 $$
 `;
+
+const htmlContent = `
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Custom Html Dom Render</title>
+</head>
+<body>
+<div>Custom Html Dom Render</div>
+<ul>
+    <li>Ant Desgin</li>
+    <li>Ant Desgin Pro</li>
+    <li>Ant Desgin Pro Components</li>
+</ul>
+
+</body>
+</html>
+`;
+
+export { content, htmlContent };

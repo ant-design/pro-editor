@@ -36,7 +36,7 @@ export default () => {
   const [treeData, setTreeData] = useState<TreeData<MenuContent>>(menuData);
 
   return (
-    <div style={{ width: 340, padding: '0 12px' }}>
+    <div style={{ width: 340 }}>
       <SortableTree<MenuContent>
         treeData={treeData}
         onTreeDataChange={(data) => {

@@ -24,7 +24,7 @@ import {
 import { Divider } from 'antd';
 import { forwardRef, HTMLProps, useCallback, useEffect, useRef, useState } from 'react';
 
-import { cx } from 'antd-style';
+import { ConfigProvider } from '..';
 import MenuItem from './MenuItem';
 import { useStyles } from './style';
 import { GeneralItemType, MenuItemType } from './types';
@@ -283,7 +283,7 @@ const MenuComponent = forwardRef<
             returnFocus={!isNested}
           >
             <div
-              className={cx(styles.container, 'studio-context-menu')}
+              className={styles.container}
               ref={refs.setFloating}
               style={floatingStyles}
               {...getFloatingProps()}
@@ -299,9 +299,11 @@ const MenuComponent = forwardRef<
 
 const ContextMenu = forwardRef<HTMLButtonElement, ContextMenuProps & HTMLProps<HTMLButtonElement>>(
   (props, ref) => (
-    <FloatingTree>
-      <MenuComponent {...props} ref={ref} />
-    </FloatingTree>
+    <ConfigProvider>
+      <FloatingTree>
+        <MenuComponent {...props} ref={ref} />
+      </FloatingTree>
+    </ConfigProvider>
   ),
 );
 

@@ -14,7 +14,7 @@ It is a encapsulation of antd Button, allowing icons to have responsive button a
 
 ## Code Example
 
-<code src="./demos/basic.tsx" ></code> <code src="./demos/preset.tsx" ></code>
+<code src="./demos/basic.tsx" ></code> <code title='Default' src="./demos/preset.tsx" description='Presets for some commonly used buttons in the editor'></code>
 
 ## API
 
