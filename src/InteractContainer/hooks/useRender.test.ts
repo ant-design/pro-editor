@@ -8,7 +8,7 @@ describe('useRender', () => {
     const div = document.createElement('div');
 
     result.current.renderSelected(div);
-    expect(div.className).toEqual('studio-context-canvas-click');
+    expect(div.className).toEqual('ant-editor-context-canvas-click');
 
     expect(result.current.currentSelectedElementRef.current).toEqual(div);
     expect(result.current.isSelected()).toBeTruthy();
@@ -25,7 +25,7 @@ describe('useRender', () => {
 
     const div = document.createElement('div');
     result.current.renderHover(div);
-    expect(div.className).toEqual('studio-context-canvas-hover');
+    expect(div.className).toEqual('ant-editor-context-canvas-hover');
     result.current.renderUnHover();
     expect(div.className).toEqual('');
   });
