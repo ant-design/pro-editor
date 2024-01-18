@@ -141,7 +141,6 @@ export default () => {
         rightPannel={false}
         leftPannel={{
           style: {
-            background: 'white',
             padding: '0px',
           },
           children: <SessonList />,
