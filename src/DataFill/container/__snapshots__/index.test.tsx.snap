@@ -114,36 +114,36 @@ exports[`DataFill > 数据填充可正常渲染 1`] = `
   white-space: nowrap;
   text-overflow: ellipsis;
   color: rgba(0, 0, 0, 0.25);
-  font-size: 12px;
+  font-size: 10px;
 }
 
 .emotion-6 {
   padding: 4px;
 }
 
-.emotion-6 .studio-segmented-item {
+.emotion-6 .ant-segmented-item {
   margin-right: 4px;
   color: rgba(0, 0, 0, 0.45);
   border-radius: 2px;
 }
 
-.emotion-6 .studio-segmented-item:hover {
+.emotion-6 .ant-segmented-item:hover {
   color: rgba(0, 0, 0, 0.65);
 }
 
-.emotion-6 .studio-segmented-item:last-child {
+.emotion-6 .ant-segmented-item:last-child {
   margin-right: 0;
 }
 
-.emotion-6 .studio-segmented-item-selected {
+.emotion-6 .ant-segmented-item-selected {
   color: rgba(0, 0, 0, 0.88);
 }
 
-.emotion-6 .studio-segmented-item-selected:hover {
+.emotion-6 .ant-segmented-item-selected:hover {
   color: rgba(0, 0, 0, 0.88);
 }
 
-.emotion-6 .studio-segmented-item-label {
+.emotion-6 .ant-segmented-item-label {
   min-height: auto;
   padding: 2px 7px;
   line-height: unset;
