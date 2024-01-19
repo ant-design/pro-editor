@@ -2,12 +2,11 @@ import { DatabaseOutlined, FlagOutlined, RollbackOutlined, TableOutlined } from 
 import { ActionIcon, CollapseTitle, withProvider } from '@ant-design/pro-editor';
 import { JsonViewer } from '@textea/json-viewer';
 import { Button, Divider, Empty, Pagination, Popconfirm, Table } from 'antd';
+import { useThemeMode } from 'antd-style';
 import type { CSSProperties, FC, ReactNode } from 'react';
 import { useMemo, useState } from 'react';
 import { Flexbox } from 'react-layout-kit';
 import useMergedState from 'use-merge-value';
-
-import { useThemeMode } from 'antd-style';
 import { useStyle } from './style';
 
 interface DataPreviewerColumn {

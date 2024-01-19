@@ -1,12 +1,11 @@
 /**
  * iframe: 800
  */
+import { demoAssets } from '@/ComponentAsset/demoAssets';
 import { AwarenessEditor, ComponentAsset, ProBuilder } from '@/index';
 import { JsonViewer } from '@textea/json-viewer';
 import { useLocalStorageState } from 'ahooks';
 import { Flexbox } from 'react-layout-kit';
-
-import { demoAssets } from '@/ComponentAsset/demoAssets';
 
 const assets = new ComponentAsset(demoAssets);
 
