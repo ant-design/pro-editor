@@ -1,5 +1,30 @@
 # Changelog
 
+## [Version&nbsp;0.39.0](https://github.com/ant-design/pro-editor/compare/v0.38.1...v0.39.0)
+
+<sup>Released on **2024-01-19**</sup>
+
+#### ✨ 新特性
+
+- 清理一些依赖.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's improved
+
+- 清理一些依赖, closes [#154](https://github.com/ant-design/pro-editor/issues/154) ([e53d6d0](https://github.com/ant-design/pro-editor/commit/e53d6d0))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
 ### [Version&nbsp;0.38.1](https://github.com/ant-design/pro-editor/compare/v0.38.0...v0.38.1)
 
 <sup>Released on **2024-01-17**</sup>
