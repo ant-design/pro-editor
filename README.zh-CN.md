@@ -66,7 +66,7 @@ $ pnpm install @ant-design/pro-editor
 
 ```js
 const nextConfig = {
-  transpilePackages: ['@ant-design/pro-editor'],
+  transpilePackages: ['@ant-design/pro-editor', 'leva', 'zustand'],
 };
 ```
 

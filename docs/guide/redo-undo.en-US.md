@@ -1,7 +1,8 @@
 ---
 title: Undo Redo
-group: State Management Development
-order: 2
+group:
+  title: State Management
+  order: 2
 ---
 
 # Undo Redo
