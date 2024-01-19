@@ -1,16 +1,13 @@
+import { useHotkeyManager } from '@/ProBuilder/hooks/useHotkeyManager';
 import type { FC } from 'react';
 import { CSSProperties, memo, ReactNode } from 'react';
 import { shallow } from 'zustand/shallow';
-
-import NavBar from '../components/NavBar';
-
+import DefaultErrorBoundary from '../../ErrorBoundary';
 import AssetEmpty from '../components/AssetEmpty';
 import AssetStoreUpdater from '../components/AssetStoreUpdater';
 import ConfigPanel from '../components/ConfigPanel';
+import NavBar from '../components/NavBar';
 import Stage from '../components/Stage';
-
-import { useHotkeyManager } from '@/ProBuilder/hooks/useHotkeyManager';
-import DefaultErrorBoundary from '../../ErrorBoundary';
 import { useStore } from '../store';
 import { useStyle } from './style';
 
@@ -35,9 +32,8 @@ export interface ProBuilderAppProps {
 export const ProBuilder: FC<ProBuilderAppProps> = memo((props) => {
   const { logo, hideNavbar = true, style, ErrorBoundary = DefaultErrorBoundary, onCopy } = props;
 
-  const [prefixCls, exportConfig, componentAsset, width, panelExpand] = useStore(
+  const [exportConfig, componentAsset, width, panelExpand] = useStore(
     (s) => [
-      s.prefixCls,
       s.exportConfig,
       s.componentAsset,
       s.editorAwareness.panelSize.width,
@@ -46,7 +42,7 @@ export const ProBuilder: FC<ProBuilderAppProps> = memo((props) => {
     shallow,
   );
 
-  const { styles } = useStyle(prefixCls);
+  const { styles } = useStyle();
 
   // 注册快捷键
   useHotkeyManager();
@@ -64,7 +60,7 @@ export const ProBuilder: FC<ProBuilderAppProps> = memo((props) => {
       >
         {hideNavbar ? null : <NavBar logo={logo} />}
 
-        <Stage hideNavbar={hideNavbar} onCopy={onCopy} prefixCls={prefixCls} />
+        <Stage hideNavbar={hideNavbar} onCopy={onCopy} />
       </div>
       <ConfigPanel />
     </div>

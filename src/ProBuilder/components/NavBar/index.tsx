@@ -2,9 +2,6 @@ import { Space } from 'antd';
 import type { FC, ReactNode } from 'react';
 import { memo } from 'react';
 import { Flexbox } from 'react-layout-kit';
-import { shallow } from 'zustand/shallow';
-
-import { useStore } from '../../store';
 import { useStyle } from './style';
 
 export interface NavBarProps {
@@ -15,8 +12,7 @@ export interface NavBarProps {
 }
 
 const NavBar: FC<NavBarProps> = memo(({ logo }) => {
-  const prefixCls = useStore((s) => s.prefixCls, shallow);
-  const { styles } = useStyle(`${prefixCls}-navbar`);
+  const { styles } = useStyle();
 
   const defaultLogo = (
     <Space>

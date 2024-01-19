@@ -6,10 +6,10 @@ import { ConfigProvider } from '../ConfigProvider';
 import { createStyles } from '../theme';
 
 const useStyles = createStyles(
-  ({ token, css }) => css`
+  ({ token, css, prefixCls }) => css`
     padding: 4px;
 
-    .studio-segmented-item {
+    .${prefixCls}-segmented-item {
       margin-right: 4px;
       color: ${token.colorTextTertiary};
       border-radius: 2px;
@@ -23,7 +23,7 @@ const useStyles = createStyles(
       }
     }
 
-    .studio-segmented-item-selected {
+    .${prefixCls}-segmented-item-selected {
       color: ${token.colorText};
 
       &:hover {
@@ -31,7 +31,7 @@ const useStyles = createStyles(
       }
     }
 
-    .studio-segmented-item-label {
+    .${prefixCls}-segmented-item-label {
       min-height: auto;
       padding: 2px 7px;
       line-height: unset;

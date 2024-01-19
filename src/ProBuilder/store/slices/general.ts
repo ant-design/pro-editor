@@ -1,7 +1,6 @@
 import { StackItem } from 'yjs/dist/src/utils/UndoManager';
 import { StateCreator } from 'zustand';
 
-import getPrefixCls from '@/_util/getPrefixCls';
 import { InternalProBuilderStore } from '../createStore';
 
 // ======== state ======== //
@@ -17,14 +16,11 @@ export enum EditorMode {
 }
 
 export interface GeneralSliceState {
-  /** 组件的类前缀 */
-  prefixCls: string;
   /** 用户角色 */
   mode: EditorMode;
 }
 
 const initialGeneralState: GeneralSliceState = {
-  prefixCls: getPrefixCls('editor'),
   // 模式
   mode: EditorMode.Develop,
 };

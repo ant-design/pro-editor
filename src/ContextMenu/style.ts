@@ -1,7 +1,7 @@
 import { createStyles } from '../theme';
 
 export const useStyles = createStyles(({ css, cx, token, prefixCls: antCls }) => {
-  const prefixCls = `${antCls}-${token.editorPrefix}-context-menu-item`;
+  const prefixCls = `${antCls}-${token.editorPrefix}-context-menu`;
   return {
     container: cx(
       prefixCls,

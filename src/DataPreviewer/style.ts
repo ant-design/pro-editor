@@ -15,7 +15,7 @@ export const useStyle = createStyles(({ token, stylish, cx, css, prefixCls }) =>
         padding: 8px;
         background: ${token.colorFillQuaternary};
         border-radius: 4px;
-        .studio-empty-normal {
+        .${prefixCls}-empty-normal {
           margin: 12px 0;
         }
       `,
@@ -31,7 +31,7 @@ export const useStyle = createStyles(({ token, stylish, cx, css, prefixCls }) =>
       `,
     ),
     table: css`
-      .studio-table-cell {
+      .${prefixCls}-table-cell {
         padding: 4px !important;
       }
     `,

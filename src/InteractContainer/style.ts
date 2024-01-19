@@ -1,10 +1,10 @@
 import { transparentize } from 'polished';
 import { createStyles, injectGlobal } from '../theme';
 
-export const useStyle = createStyles(({ token }) => {
+export const useStyle = createStyles(({ token, prefixCls }) => {
   // eslint-disable-next-line @typescript-eslint/no-unused-expressions
   injectGlobal`
-    .studio-context-canvas {
+    .${prefixCls}-${token.editorPrefix}-context-canvas {
       &-hover {
         position: relative;
         transition: opacity 0.5s ease-in !important;

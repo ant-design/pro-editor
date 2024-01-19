@@ -25,7 +25,7 @@ describe('useContextCanvas', () => {
         fireEvent.mouseEnter(div);
       });
 
-      expect(div.className).toEqual('studio-context-canvas-hover');
+      expect(div.className).toEqual('ant-editor-context-canvas-hover');
     });
     it('移入 -> 移出 -> 移入', () => {
       const div = document.createElement('div');
@@ -42,7 +42,7 @@ describe('useContextCanvas', () => {
         fireEvent.mouseEnter(div);
       });
 
-      expect(div.className).toEqual('studio-context-canvas-hover');
+      expect(div.className).toEqual('ant-editor-context-canvas-hover');
 
       act(() => {
         fireEvent.mouseLeave(div);
@@ -53,7 +53,7 @@ describe('useContextCanvas', () => {
       act(() => {
         fireEvent.mouseEnter(div);
       });
-      expect(div.className).toEqual('studio-context-canvas-hover');
+      expect(div.className).toEqual('ant-editor-context-canvas-hover');
     });
 
     it('选中时', () => {});
