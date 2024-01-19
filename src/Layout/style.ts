@@ -1,8 +1,8 @@
 import { createStyles } from '../theme';
 
 export const useStyle = createStyles(({ css, token, cx, prefixCls }, { themeType }) => {
-  const STUDIO_UI_PREFIX = `${prefixCls}-${token?.editorPrefix}`;
-  const prefix = `${STUDIO_UI_PREFIX}-layout`;
+  const EDITOR_PREFIX = `${prefixCls}-${token?.editorPrefix}`;
+  const prefix = `${EDITOR_PREFIX}-layout`;
 
   const typeStylish = css`
     background-color: ${themeType === 'block'
@@ -39,7 +39,7 @@ export const useStyle = createStyles(({ css, token, cx, prefixCls }, { themeType
         border-radius: ${token.borderRadius}px;
         font-size: ${token.fontSizeSM}px;
 
-        .${STUDIO_UI_PREFIX}-draggable-panel {
+        .${EDITOR_PREFIX}-draggable-panel {
           border: none;
         }
       `,

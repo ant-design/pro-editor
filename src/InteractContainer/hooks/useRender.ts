@@ -1,11 +1,15 @@
-import { useRef } from 'react';
-import getPrefixCls from '../../_util/getPrefixCls';
-
 import isEqual from 'lodash.isequal';
+import { useRef } from 'react';
+import { createStyles } from '../../theme';
 import type { InteractionType } from '../type';
 
-export const useRender = (customizePrefixCls?: string) => {
-  const prefixCls = getPrefixCls('context-canvas', customizePrefixCls);
+const useStyle = createStyles(({ token, prefixCls }) => {
+  const componentPrefix = `${prefixCls}-${token.editorPrefix}-context-canvas`;
+  return { componentPrefix };
+});
+
+export const useRender = () => {
+  const { styles } = useStyle();
 
   const selectItem = useRef<HTMLElement>();
   const hoverItem = useRef<HTMLElement>();
@@ -17,12 +21,12 @@ export const useRender = (customizePrefixCls?: string) => {
   const addClass = (element: HTMLElement, action: InteractionType) => {
     if (!element) return;
 
-    element.classList.add(`${prefixCls}-${action}`);
+    element.classList.add(`${styles.componentPrefix}-${action}`);
   };
   const removeClass = (element: HTMLElement, action: InteractionType) => {
     if (!element) return;
 
-    element.classList.remove(`${prefixCls}-${action}`);
+    element.classList.remove(`${styles.componentPrefix}-${action}`);
   };
   const removeAllClass = (action: InteractionType) => {
     removeClass(selectItem.current, action);

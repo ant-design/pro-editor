@@ -36,7 +36,7 @@ describe('ContextCanvas', () => {
       fireEvent.click(btn);
     });
 
-    expect(btn.className).toBe('studio-context-canvas-click');
+    expect(btn.className).toBe('ant-editor-context-canvas-click');
     // 点击失焦
     act(() => {
       fireEvent.click(btn);
@@ -46,7 +46,7 @@ describe('ContextCanvas', () => {
     act(() => {
       fireEvent.click(btn);
     });
-    expect(btn.className).toBe('studio-context-canvas-click');
+    expect(btn.className).toBe('ant-editor-context-canvas-click');
     // 点击非btn区域失焦
     act(() => {
       fireEvent.click(document.body);

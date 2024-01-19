@@ -1,6 +1,4 @@
 import { useEffect } from 'react';
-import getPrefixCls from '../../_util/getPrefixCls';
-
 import type { ContextCanvasProps } from '../type';
 
 import { useContainer } from './useContainer';
@@ -10,15 +8,13 @@ import { useInteractStatus } from './useInteractStatus';
 import { useRender } from './useRender';
 
 export const useContextCanvas = ({
-  prefixCls: customizePrefixCls,
   rules,
   status: outStatus,
   onStatusChange,
   getContainer,
   disabled,
 }: ContextCanvasProps) => {
-  const prefixCls = getPrefixCls('context-canvas', customizePrefixCls);
-  const Render = useRender(prefixCls);
+  const Render = useRender();
 
   const container = useContainer(getContainer);
 

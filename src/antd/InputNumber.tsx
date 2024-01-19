@@ -7,11 +7,11 @@ import { ConfigProvider } from '../ConfigProvider';
 import { createStyles } from '../theme';
 
 const useStyles = createStyles(
-  ({ stylish, css, token }) =>
+  ({ stylish, css, token, prefixCls }) =>
     css`
       ${stylish.controlContainer}
 
-      .studio-input-number-group-addon {
+      .${prefixCls}-input-number-group-addon {
         padding: 0 4px;
         color: ${token.colorTextTertiary};
         background: ${token.colorFillQuaternary};

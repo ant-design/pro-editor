@@ -5,22 +5,23 @@ import type { FC } from 'react';
 import { memo, useEffect, useRef } from 'react';
 import { shallow } from 'zustand/shallow';
 
+import { useTheme } from 'antd-style';
 import InteractContainer from '../../../InteractContainer';
 import { useUpdateEditorAwareness } from '../../hooks/useEditorAwareness';
 import { useStore } from '../../store';
 
 const Component: FC = memo(() => {
-  const [prefixCls, interaction, enableCanvasInteraction, componentAsset, updateCanvasInteract] =
-    useStore(
-      (s) => [
-        `${s.prefixCls}-canvas`,
-        s.interaction,
-        s.enableCanvasInteraction,
-        s.componentAsset,
-        s.internalUpdateCanvasInteract,
-      ],
-      shallow,
-    );
+  const token = useTheme();
+  const prefix = `${token.prefixCls}-${token.editorPrefix}-pro-builder-canvas`;
+  const [interaction, enableCanvasInteraction, componentAsset, updateCanvasInteract] = useStore(
+    (s) => [
+      s.interaction,
+      s.enableCanvasInteraction,
+      s.componentAsset,
+      s.internalUpdateCanvasInteract,
+    ],
+    shallow,
+  );
 
   const ref = useRef();
   const size = useSize(ref);
@@ -36,10 +37,10 @@ const Component: FC = memo(() => {
       disabled={!enableCanvasInteraction}
       status={interaction}
       rules={componentAsset.rules}
-      getContainer={`#${prefixCls}`}
+      getContainer={`#${prefix}`}
       onStatusChange={updateCanvasInteract}
     >
-      <div id={`${prefixCls}`} ref={ref} className={`${prefixCls}-component`}>
+      <div id={`${prefix}`} ref={ref} className={`${prefix}-component`}>
         <ConfigProvider locale={zhCN} prefixCls="canvas">
           <componentAsset.Component />
         </ConfigProvider>
