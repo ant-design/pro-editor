@@ -20,10 +20,6 @@ group: 面板模块
 
 <code src="./demos/empty.tsx" ></code>
 
-### 不显示类型
-
-<code src="./demos/showType.tsx" ></code>
-
 ### 附加按钮渲染
 
 <code src="./demos/extra.tsx" ></code>
@@ -48,5 +44,4 @@ group: 面板模块
 | onVisibleChange | `(visible: boolean) => void`         | 展开或者隐藏状态的回调     |
 | onEmptyClick    | `() => void`                         | 点击 “立即尝试” 按钮的回调 |
 | onResetClick    | `() => void`                         | 重置按钮回调               |
-| showType        | `boolean`                            | 是否显示数据类型           |
 | extra           | `ReactNode`                          | 额外节点展示               |

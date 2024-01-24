@@ -1,8 +1,6 @@
 import { DatabaseOutlined, FlagOutlined, RollbackOutlined, TableOutlined } from '@ant-design/icons';
-import { ActionIcon, CollapseTitle, withProvider } from '@ant-design/pro-editor';
-import { JsonViewer } from '@textea/json-viewer';
+import { ActionIcon, CollapseTitle, Highlight, withProvider } from '@ant-design/pro-editor';
 import { Button, Divider, Empty, Pagination, Popconfirm, Table } from 'antd';
-import { useThemeMode } from 'antd-style';
 import type { CSSProperties, FC, ReactNode } from 'react';
 import { useMemo, useState } from 'react';
 import { Flexbox } from 'react-layout-kit';
@@ -48,10 +46,6 @@ export interface DataPreviewerProps {
    */
   onResetClick?: () => void;
   /**
-   * 是否显示数据类型
-   */
-  showType?: boolean;
-  /**
    * 额外节点展示
    */
   extra?: ReactNode;
@@ -72,14 +66,12 @@ const Previewer: FC<DataPreviewerProps> = ({
   className,
   renderEmpty,
   onEmptyClick,
-  showType = true,
   extra,
   emptyAction,
   style,
   columns,
   onResetClick,
 }) => {
-  const { isDarkMode } = useThemeMode();
   const { styles, cx } = useStyle();
   const [hidePanel, setCollapsed] = useMergedState(false, {
     value: collapsed,
@@ -168,14 +160,9 @@ const Previewer: FC<DataPreviewerProps> = ({
                   }}
                   className={styles.json}
                 >
-                  <JsonViewer
-                    rootName={`第${index + 1}条数据`}
-                    collapseStringsAfterLength={22}
-                    enableClipboard={false}
-                    value={data[index]}
-                    displayDataTypes={showType}
-                    theme={isDarkMode ? 'dark' : 'light'}
-                  />
+                  <Highlight lineNumber language="json" type="pure">
+                    {JSON.stringify(data[index], null, 2)}
+                  </Highlight>
                 </Flexbox>
                 <Divider style={{ margin: '12px 0' }} dashed />
                 <Flexbox align={'flex-end'}>

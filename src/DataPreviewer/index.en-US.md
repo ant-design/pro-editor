@@ -19,10 +19,6 @@ Used for previewing data, and displaying an empty state when there is no data.
 
 <code src="./demos/empty.tsx" ></code>
 
-### Hide Type
-
-<code src="./demos/showType.tsx" ></code>
-
 ### Additional Button Rendering
 
 <code src="./demos/extra.tsx" ></code>
@@ -47,5 +43,4 @@ Used for previewing data, and displaying an empty state when there is no data.
 | onVisibleChange | `(visible: boolean) => void`         | Callback for expanding or hiding state        |
 | onEmptyClick    | `() => void`                         | Callback for clicking the "Try Now" button    |
 | onResetClick    | `() => void`                         | Reset button callback                         |
-| showType        | `boolean`                            | Whether to display data type                  |
 | extra           | `ReactNode`                          | Additional node display                       |
