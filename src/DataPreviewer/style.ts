@@ -24,10 +24,6 @@ export const useStyle = createStyles(({ token, stylish, cx, css, prefixCls }) =>
       `${prefix}-json`,
       css`
         border-radius: 4px;
-
-        .json-viewer-theme-dark {
-          background: none !important;
-        }
       `,
     ),
     table: css`

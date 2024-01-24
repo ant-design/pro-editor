@@ -3,7 +3,7 @@
  */
 import { demoAssets } from '@/ComponentAsset/demoAssets';
 import { AwarenessEditor, ComponentAsset, ProBuilder } from '@/index';
-import { JsonViewer } from '@textea/json-viewer';
+import { Highlight } from '@ant-design/pro-editor';
 import { useLocalStorageState } from 'ahooks';
 import { Flexbox } from 'react-layout-kit';
 
@@ -22,7 +22,7 @@ export default () => {
       />
       <Flexbox>
         当前视图状态：
-        <JsonViewer value={presence} />
+        <Highlight>{JSON.stringify(presence, null, 2)}</Highlight>
       </Flexbox>
     </Flexbox>
   );
