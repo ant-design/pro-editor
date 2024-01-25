@@ -9456,16 +9456,6 @@ exports[`<ColumnList /> > renders normal.tsx correctly 1`] = `
 
 exports[`<ContextMenu /> > renders index.tsx correctly 1`] = `<div />`;
 
-exports[`<DataFill /> > renders basic.tsx correctly 1`] = `
-.emotion-0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
 
 .emotion-1 .ant-tree-directory .ant-tree-switcher,
 .emotion-1 .ant-tree-directory .ant-tree-iconEle {
