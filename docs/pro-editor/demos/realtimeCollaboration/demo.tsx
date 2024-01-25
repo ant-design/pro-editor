@@ -1,9 +1,13 @@
+/**
+ * title: 实时协同
+ * description: 打开多个窗口，点击 "Join" 加入协作
+ */
 import { Awareness } from '@ant-design/pro-editor';
 import { Button, Divider, Input } from 'antd';
-import { memo } from 'react';
+import { memo, useState } from 'react';
 import { WebrtcProvider } from 'y-webrtc';
-
-import { createStore, doc, Provider, useStore } from './store';
+import { SessionForm } from './SessionForm';
+import { Provider, createStore, doc, useStore } from './store';
 
 const App = memo(() => {
   const store = useStore((state) => ({
@@ -30,11 +34,36 @@ const App = memo(() => {
   );
 });
 
-const Container = () => (
-  <Provider createStore={createStore}>
-    <Awareness provider={new WebrtcProvider('test-room', doc)} />
-    <App />
-  </Provider>
-);
+const Container = () => {
+  const [user, setUser] = useState(null);
+  const [open, setOpen] = useState(false);
+
+  const onCreate = (values) => {
+    setUser(values);
+    setOpen(false);
+  };
+
+  return (
+    <Provider createStore={createStore}>
+      <Button
+        type="primary"
+        onClick={() => {
+          setOpen(true);
+        }}
+      >
+        Join
+      </Button>
+      <SessionForm
+        open={open}
+        onCreate={onCreate}
+        onCancel={() => {
+          setOpen(false);
+        }}
+      />
+      {user ? <Awareness provider={new WebrtcProvider('test-room', doc)} user={user} /> : null}
+      <App />
+    </Provider>
+  );
+};
 
 export default memo(Container);
