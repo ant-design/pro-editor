@@ -33,7 +33,7 @@ export const SessionForm: React.FC<SessionFormProps> = ({ open, onCreate, onCanc
           });
       }}
     >
-      <Form form={form} layout="vertical" name="form_in_modal">
+      <Form form={form} layout="vertical" name="form_in_modal" initialValues={{ color: '#1677FF' }}>
         <Form.Item
           name="name"
           label="Name"
@@ -46,7 +46,7 @@ export const SessionForm: React.FC<SessionFormProps> = ({ open, onCreate, onCanc
           label="Color"
           rules={[{ required: true, message: 'Please select your color' }]}
         >
-          <ColorPicker defaultValue="#1677FF" format="hex" />
+          <ColorPicker format="hex" />
         </Form.Item>
       </Form>
     </Modal>

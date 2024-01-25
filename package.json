@@ -60,7 +60,6 @@
   },
   "dependencies": {
     "@ant-design/icons": "^5.2.6",
-    "@antv/dw-random": "^1.1.7",
     "@babel/runtime": "^7.23.6",
     "@dnd-kit/core": "^6.1.0",
     "@dnd-kit/modifiers": "^6.0.1",

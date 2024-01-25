@@ -45,14 +45,16 @@ const Container = () => {
 
   return (
     <Provider createStore={createStore}>
-      <Button
-        type="primary"
-        onClick={() => {
-          setOpen(true);
-        }}
-      >
-        Join
-      </Button>
+      {user ? null : (
+        <Button
+          type="primary"
+          onClick={() => {
+            setOpen(true);
+          }}
+        >
+          Join
+        </Button>
+      )}
       <SessionForm
         open={open}
         onCreate={onCreate}
