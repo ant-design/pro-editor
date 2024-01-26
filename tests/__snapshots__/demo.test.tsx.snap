@@ -565,7 +565,7 @@ exports[`<ActionGroup /> > renders custom.tsx correctly 1`] = `
           内容
         </p>
         <input
-          class="ant-input ant-input-outlined"
+          class="ant-input"
           placeholder="请输入编辑器内容"
           type="text"
           value=""
@@ -2696,7 +2696,7 @@ exports[`<ColumnList /> > renders actions.tsx correctly 1`] = `
               class="layoutkit-flexbox emotion-13 ant-editor-item-content emotion-14"
             >
               <input
-                class="ant-input ant-input-sm ant-input-outlined emotion-15 ant-editor-content-tem emotion-16"
+                class="ant-input ant-input-sm emotion-15 ant-editor-content-tem emotion-16"
                 id="column-list-0-test-0"
                 placeholder="请输入"
                 style="flex: 1; max-width: 33.333333333333336%;"
@@ -2704,7 +2704,7 @@ exports[`<ColumnList /> > renders actions.tsx correctly 1`] = `
                 value="序号"
               />
               <div
-                class="ant-select ant-select-sm ant-select-outlined ant-editor-content-tem emotion-17 ant-select-single ant-select-show-arrow"
+                class="ant-select ant-select-sm ant-editor-content-tem emotion-17 ant-select-single ant-select-show-arrow"
                 style="flex: 1; max-width: 33.333333333333336%;"
               >
                 <div
@@ -2765,7 +2765,7 @@ exports[`<ColumnList /> > renders actions.tsx correctly 1`] = `
                 </span>
               </div>
               <div
-                class="ant-select ant-select-sm ant-select-outlined ant-editor-content-tem emotion-17 ant-select-single ant-select-show-arrow"
+                class="ant-select ant-select-sm ant-editor-content-tem emotion-17 ant-select-single ant-select-show-arrow"
                 style="flex: 1; max-width: 33.333333333333336%;"
               >
                 <div
@@ -2937,7 +2937,7 @@ exports[`<ColumnList /> > renders actions.tsx correctly 1`] = `
               class="layoutkit-flexbox emotion-13 ant-editor-item-content emotion-14"
             >
               <input
-                class="ant-input ant-input-sm ant-input-outlined emotion-15 ant-editor-content-tem emotion-16"
+                class="ant-input ant-input-sm emotion-15 ant-editor-content-tem emotion-16"
                 id="column-list-1-test-1"
                 placeholder="请输入"
                 style="flex: 1; max-width: 33.333333333333336%;"
@@ -2945,7 +2945,7 @@ exports[`<ColumnList /> > renders actions.tsx correctly 1`] = `
                 value="授权企业名称"
               />
               <div
-                class="ant-select ant-select-sm ant-select-outlined ant-editor-content-tem emotion-17 ant-select-single ant-select-show-arrow"
+                class="ant-select ant-select-sm ant-editor-content-tem emotion-17 ant-select-single ant-select-show-arrow"
                 style="flex: 1; max-width: 33.333333333333336%;"
               >
                 <div
@@ -3006,7 +3006,7 @@ exports[`<ColumnList /> > renders actions.tsx correctly 1`] = `
                 </span>
               </div>
               <div
-                class="ant-select ant-select-sm ant-select-outlined ant-editor-content-tem emotion-17 ant-select-single ant-select-show-arrow"
+                class="ant-select ant-select-sm ant-editor-content-tem emotion-17 ant-select-single ant-select-show-arrow"
                 style="flex: 1; max-width: 33.333333333333336%;"
               >
                 <div
@@ -3178,7 +3178,7 @@ exports[`<ColumnList /> > renders actions.tsx correctly 1`] = `
               class="layoutkit-flexbox emotion-13 ant-editor-item-content emotion-14"
             >
               <input
-                class="ant-input ant-input-sm ant-input-outlined emotion-15 ant-editor-content-tem emotion-16"
+                class="ant-input ant-input-sm emotion-15 ant-editor-content-tem emotion-16"
                 id="column-list-2-test-2"
                 placeholder="请输入"
                 style="flex: 1; max-width: 33.333333333333336%;"
@@ -3186,7 +3186,7 @@ exports[`<ColumnList /> > renders actions.tsx correctly 1`] = `
                 value="被授权企业"
               />
               <div
-                class="ant-select ant-select-sm ant-select-outlined ant-editor-content-tem emotion-17 ant-select-single ant-select-show-arrow"
+                class="ant-select ant-select-sm ant-editor-content-tem emotion-17 ant-select-single ant-select-show-arrow"
                 style="flex: 1; max-width: 33.333333333333336%;"
               >
                 <div
@@ -3247,7 +3247,7 @@ exports[`<ColumnList /> > renders actions.tsx correctly 1`] = `
                 </span>
               </div>
               <div
-                class="ant-select ant-select-sm ant-select-outlined ant-editor-content-tem emotion-17 ant-select-single ant-select-show-arrow"
+                class="ant-select ant-select-sm ant-editor-content-tem emotion-17 ant-select-single ant-select-show-arrow"
                 style="flex: 1; max-width: 33.333333333333336%;"
               >
                 <div
@@ -3775,7 +3775,7 @@ exports[`<ColumnList /> > renders column.tsx correctly 1`] = `
               class="layoutkit-flexbox emotion-14 ant-editor-item-content emotion-15"
             >
               <input
-                class="ant-input ant-input-sm ant-input-outlined emotion-16 ant-editor-content-tem emotion-17"
+                class="ant-input ant-input-sm emotion-16 ant-editor-content-tem emotion-17"
                 id="column-list-0-test-0"
                 placeholder="请输入"
                 style="flex: 1; max-width: 25%;"
@@ -3783,7 +3783,7 @@ exports[`<ColumnList /> > renders column.tsx correctly 1`] = `
                 value="订单创建时间"
               />
               <div
-                class="ant-select ant-select-sm ant-select-outlined ant-editor-content-tem emotion-18 ant-select-single ant-select-show-arrow"
+                class="ant-select ant-select-sm ant-editor-content-tem emotion-18 ant-select-single ant-select-show-arrow"
                 style="flex: 1; max-width: 25%;"
               >
                 <div
@@ -3844,7 +3844,7 @@ exports[`<ColumnList /> > renders column.tsx correctly 1`] = `
                 </span>
               </div>
               <div
-                class="ant-select ant-select-sm ant-select-outlined ant-editor-content-tem emotion-18 ant-select-single ant-select-show-arrow"
+                class="ant-select ant-select-sm ant-editor-content-tem emotion-18 ant-select-single ant-select-show-arrow"
                 style="flex: 1; max-width: 25%;"
               >
                 <div
@@ -3908,12 +3908,17 @@ exports[`<ColumnList /> > renders column.tsx correctly 1`] = `
                 class="ant-color-picker-trigger ant-color-picker-sm"
               >
                 <div
-                  class="ant-color-picker-clear"
-                />
+                  class="ant-color-picker-color-block"
+                >
+                  <div
+                    class="ant-color-picker-color-block-inner"
+                    style="background: rgb(22, 119, 255);"
+                  />
+                </div>
                 <div
                   class="ant-color-picker-trigger-text"
                 >
-                  #000000,0%
+                  #1677FF
                 </div>
               </div>
             </div>
@@ -3998,7 +4003,7 @@ exports[`<ColumnList /> > renders column.tsx correctly 1`] = `
               class="layoutkit-flexbox emotion-14 ant-editor-item-content emotion-15"
             >
               <input
-                class="ant-input ant-input-sm ant-input-outlined emotion-16 ant-editor-content-tem emotion-17"
+                class="ant-input ant-input-sm emotion-16 ant-editor-content-tem emotion-17"
                 id="column-list-1-test-1"
                 placeholder="请输入"
                 style="flex: 1; max-width: 25%;"
@@ -4006,7 +4011,7 @@ exports[`<ColumnList /> > renders column.tsx correctly 1`] = `
                 value="产品详情图"
               />
               <div
-                class="ant-select ant-select-sm ant-select-outlined ant-editor-content-tem emotion-18 ant-select-single ant-select-show-arrow"
+                class="ant-select ant-select-sm ant-editor-content-tem emotion-18 ant-select-single ant-select-show-arrow"
                 style="flex: 1; max-width: 25%;"
               >
                 <div
@@ -4067,7 +4072,7 @@ exports[`<ColumnList /> > renders column.tsx correctly 1`] = `
                 </span>
               </div>
               <div
-                class="ant-select ant-select-sm ant-select-outlined ant-editor-content-tem emotion-18 ant-select-single ant-select-show-arrow"
+                class="ant-select ant-select-sm ant-editor-content-tem emotion-18 ant-select-single ant-select-show-arrow"
                 style="flex: 1; max-width: 25%;"
               >
                 <div
@@ -4131,12 +4136,17 @@ exports[`<ColumnList /> > renders column.tsx correctly 1`] = `
                 class="ant-color-picker-trigger ant-color-picker-sm"
               >
                 <div
-                  class="ant-color-picker-clear"
-                />
+                  class="ant-color-picker-color-block"
+                >
+                  <div
+                    class="ant-color-picker-color-block-inner"
+                    style="background: rgb(22, 119, 255);"
+                  />
+                </div>
                 <div
                   class="ant-color-picker-trigger-text"
                 >
-                  #000000,0%
+                  #1677FF
                 </div>
               </div>
             </div>
@@ -4221,7 +4231,7 @@ exports[`<ColumnList /> > renders column.tsx correctly 1`] = `
               class="layoutkit-flexbox emotion-14 ant-editor-item-content emotion-15"
             >
               <input
-                class="ant-input ant-input-sm ant-input-outlined emotion-16 ant-editor-content-tem emotion-17"
+                class="ant-input ant-input-sm emotion-16 ant-editor-content-tem emotion-17"
                 id="column-list-2-test-2"
                 placeholder="请输入"
                 style="flex: 1; max-width: 25%;"
@@ -4229,7 +4239,7 @@ exports[`<ColumnList /> > renders column.tsx correctly 1`] = `
                 value="订单关闭原因"
               />
               <div
-                class="ant-select ant-select-sm ant-select-outlined ant-editor-content-tem emotion-18 ant-select-single ant-select-show-arrow"
+                class="ant-select ant-select-sm ant-editor-content-tem emotion-18 ant-select-single ant-select-show-arrow"
                 style="flex: 1; max-width: 25%;"
               >
                 <div
@@ -4290,7 +4300,7 @@ exports[`<ColumnList /> > renders column.tsx correctly 1`] = `
                 </span>
               </div>
               <div
-                class="ant-select ant-select-sm ant-select-outlined ant-editor-content-tem emotion-18 ant-select-single ant-select-show-arrow"
+                class="ant-select ant-select-sm ant-editor-content-tem emotion-18 ant-select-single ant-select-show-arrow"
                 style="flex: 1; max-width: 25%;"
               >
                 <div
@@ -4354,12 +4364,17 @@ exports[`<ColumnList /> > renders column.tsx correctly 1`] = `
                 class="ant-color-picker-trigger ant-color-picker-sm"
               >
                 <div
-                  class="ant-color-picker-clear"
-                />
+                  class="ant-color-picker-color-block"
+                >
+                  <div
+                    class="ant-color-picker-color-block-inner"
+                    style="background: rgb(22, 119, 255);"
+                  />
+                </div>
                 <div
                   class="ant-color-picker-trigger-text"
                 >
-                  #000000,0%
+                  #1677FF
                 </div>
               </div>
             </div>
@@ -4444,7 +4459,7 @@ exports[`<ColumnList /> > renders column.tsx correctly 1`] = `
               class="layoutkit-flexbox emotion-14 ant-editor-item-content emotion-15"
             >
               <input
-                class="ant-input ant-input-sm ant-input-outlined emotion-16 ant-editor-content-tem emotion-17"
+                class="ant-input ant-input-sm emotion-16 ant-editor-content-tem emotion-17"
                 id="column-list-3-test-3"
                 placeholder="请输入"
                 style="flex: 1; max-width: 25%;"
@@ -4452,7 +4467,7 @@ exports[`<ColumnList /> > renders column.tsx correctly 1`] = `
                 value="订单关闭类型"
               />
               <div
-                class="ant-select ant-select-sm ant-select-outlined ant-editor-content-tem emotion-18 ant-select-single ant-select-show-arrow"
+                class="ant-select ant-select-sm ant-editor-content-tem emotion-18 ant-select-single ant-select-show-arrow"
                 style="flex: 1; max-width: 25%;"
               >
                 <div
@@ -4513,7 +4528,7 @@ exports[`<ColumnList /> > renders column.tsx correctly 1`] = `
                 </span>
               </div>
               <div
-                class="ant-select ant-select-sm ant-select-outlined ant-editor-content-tem emotion-18 ant-select-single ant-select-show-arrow"
+                class="ant-select ant-select-sm ant-editor-content-tem emotion-18 ant-select-single ant-select-show-arrow"
                 style="flex: 1; max-width: 25%;"
               >
                 <div
@@ -4577,12 +4592,17 @@ exports[`<ColumnList /> > renders column.tsx correctly 1`] = `
                 class="ant-color-picker-trigger ant-color-picker-sm"
               >
                 <div
-                  class="ant-color-picker-clear"
-                />
+                  class="ant-color-picker-color-block"
+                >
+                  <div
+                    class="ant-color-picker-color-block-inner"
+                    style="background: rgb(22, 119, 255);"
+                  />
+                </div>
                 <div
                   class="ant-color-picker-trigger-text"
                 >
-                  #000000,0%
+                  #1677FF
                 </div>
               </div>
             </div>
@@ -5027,7 +5047,7 @@ exports[`<ColumnList /> > renders controlled.tsx correctly 1`] = `
               class="layoutkit-flexbox emotion-13 ant-editor-item-content emotion-14"
             >
               <input
-                class="ant-input ant-input-sm ant-input-outlined emotion-15 ant-editor-content-tem emotion-16"
+                class="ant-input ant-input-sm emotion-15 ant-editor-content-tem emotion-16"
                 id="column-list-0-test-0"
                 placeholder="请输入"
                 style="flex: 1; max-width: 33.333333333333336%;"
@@ -5035,7 +5055,7 @@ exports[`<ColumnList /> > renders controlled.tsx correctly 1`] = `
                 value="序号"
               />
               <div
-                class="ant-select ant-select-sm ant-select-outlined ant-editor-content-tem emotion-17 ant-select-single ant-select-show-arrow"
+                class="ant-select ant-select-sm ant-editor-content-tem emotion-17 ant-select-single ant-select-show-arrow"
                 style="flex: 1; max-width: 33.333333333333336%;"
               >
                 <div
@@ -5096,7 +5116,7 @@ exports[`<ColumnList /> > renders controlled.tsx correctly 1`] = `
                 </span>
               </div>
               <div
-                class="ant-select ant-select-sm ant-select-outlined ant-editor-content-tem emotion-17 ant-select-single ant-select-show-arrow"
+                class="ant-select ant-select-sm ant-editor-content-tem emotion-17 ant-select-single ant-select-show-arrow"
                 style="flex: 1; max-width: 33.333333333333336%;"
               >
                 <div
@@ -5238,7 +5258,7 @@ exports[`<ColumnList /> > renders controlled.tsx correctly 1`] = `
               class="layoutkit-flexbox emotion-13 ant-editor-item-content emotion-14"
             >
               <input
-                class="ant-input ant-input-sm ant-input-outlined emotion-15 ant-editor-content-tem emotion-16"
+                class="ant-input ant-input-sm emotion-15 ant-editor-content-tem emotion-16"
                 id="column-list-1-test-1"
                 placeholder="请输入"
                 style="flex: 1; max-width: 33.333333333333336%;"
@@ -5246,7 +5266,7 @@ exports[`<ColumnList /> > renders controlled.tsx correctly 1`] = `
                 value="授权企业名称"
               />
               <div
-                class="ant-select ant-select-sm ant-select-outlined ant-editor-content-tem emotion-17 ant-select-single ant-select-show-arrow"
+                class="ant-select ant-select-sm ant-editor-content-tem emotion-17 ant-select-single ant-select-show-arrow"
                 style="flex: 1; max-width: 33.333333333333336%;"
               >
                 <div
@@ -5307,7 +5327,7 @@ exports[`<ColumnList /> > renders controlled.tsx correctly 1`] = `
                 </span>
               </div>
               <div
-                class="ant-select ant-select-sm ant-select-outlined ant-editor-content-tem emotion-17 ant-select-single ant-select-show-arrow"
+                class="ant-select ant-select-sm ant-editor-content-tem emotion-17 ant-select-single ant-select-show-arrow"
                 style="flex: 1; max-width: 33.333333333333336%;"
               >
                 <div
@@ -5449,7 +5469,7 @@ exports[`<ColumnList /> > renders controlled.tsx correctly 1`] = `
               class="layoutkit-flexbox emotion-13 ant-editor-item-content emotion-14"
             >
               <input
-                class="ant-input ant-input-sm ant-input-outlined emotion-15 ant-editor-content-tem emotion-16"
+                class="ant-input ant-input-sm emotion-15 ant-editor-content-tem emotion-16"
                 id="column-list-2-test-2"
                 placeholder="请输入"
                 style="flex: 1; max-width: 33.333333333333336%;"
@@ -5457,7 +5477,7 @@ exports[`<ColumnList /> > renders controlled.tsx correctly 1`] = `
                 value="被授权企业"
               />
               <div
-                class="ant-select ant-select-sm ant-select-outlined ant-editor-content-tem emotion-17 ant-select-single ant-select-show-arrow"
+                class="ant-select ant-select-sm ant-editor-content-tem emotion-17 ant-select-single ant-select-show-arrow"
                 style="flex: 1; max-width: 33.333333333333336%;"
               >
                 <div
@@ -5518,7 +5538,7 @@ exports[`<ColumnList /> > renders controlled.tsx correctly 1`] = `
                 </span>
               </div>
               <div
-                class="ant-select ant-select-sm ant-select-outlined ant-editor-content-tem emotion-17 ant-select-single ant-select-show-arrow"
+                class="ant-select ant-select-sm ant-editor-content-tem emotion-17 ant-select-single ant-select-show-arrow"
                 style="flex: 1; max-width: 33.333333333333336%;"
               >
                 <div
@@ -6045,7 +6065,7 @@ exports[`<ColumnList /> > renders creatorButtonProps.tsx correctly 1`] = `
               class="layoutkit-flexbox emotion-14 ant-editor-item-content emotion-15"
             >
               <input
-                class="ant-input ant-input-sm ant-input-outlined emotion-16 ant-editor-content-tem emotion-17"
+                class="ant-input ant-input-sm emotion-16 ant-editor-content-tem emotion-17"
                 id="column-list-0-test-0"
                 placeholder="请输入"
                 style="flex: 1; max-width: 33.333333333333336%;"
@@ -6053,7 +6073,7 @@ exports[`<ColumnList /> > renders creatorButtonProps.tsx correctly 1`] = `
                 value="产品名称"
               />
               <div
-                class="ant-select ant-select-sm ant-select-outlined ant-editor-content-tem emotion-18 ant-select-single ant-select-show-arrow"
+                class="ant-select ant-select-sm ant-editor-content-tem emotion-18 ant-select-single ant-select-show-arrow"
                 style="flex: 1; max-width: 33.333333333333336%;"
               >
                 <div
@@ -6114,7 +6134,7 @@ exports[`<ColumnList /> > renders creatorButtonProps.tsx correctly 1`] = `
                 </span>
               </div>
               <div
-                class="ant-select ant-select-sm ant-select-outlined ant-editor-content-tem emotion-18 ant-select-single ant-select-show-arrow"
+                class="ant-select ant-select-sm ant-editor-content-tem emotion-18 ant-select-single ant-select-show-arrow"
                 style="flex: 1; max-width: 33.333333333333336%;"
               >
                 <div
@@ -6256,7 +6276,7 @@ exports[`<ColumnList /> > renders creatorButtonProps.tsx correctly 1`] = `
               class="layoutkit-flexbox emotion-14 ant-editor-item-content emotion-15"
             >
               <input
-                class="ant-input ant-input-sm ant-input-outlined emotion-16 ant-editor-content-tem emotion-17"
+                class="ant-input ant-input-sm emotion-16 ant-editor-content-tem emotion-17"
                 id="column-list-1-test-1"
                 placeholder="请输入"
                 style="flex: 1; max-width: 33.333333333333336%;"
@@ -6264,7 +6284,7 @@ exports[`<ColumnList /> > renders creatorButtonProps.tsx correctly 1`] = `
                 value="产品介绍"
               />
               <div
-                class="ant-select ant-select-sm ant-select-outlined ant-editor-content-tem emotion-18 ant-select-single ant-select-show-arrow"
+                class="ant-select ant-select-sm ant-editor-content-tem emotion-18 ant-select-single ant-select-show-arrow"
                 style="flex: 1; max-width: 33.333333333333336%;"
               >
                 <div
@@ -6325,7 +6345,7 @@ exports[`<ColumnList /> > renders creatorButtonProps.tsx correctly 1`] = `
                 </span>
               </div>
               <div
-                class="ant-select ant-select-sm ant-select-outlined ant-editor-content-tem emotion-18 ant-select-single ant-select-show-arrow"
+                class="ant-select ant-select-sm ant-editor-content-tem emotion-18 ant-select-single ant-select-show-arrow"
                 style="flex: 1; max-width: 33.333333333333336%;"
               >
                 <div
@@ -6467,7 +6487,7 @@ exports[`<ColumnList /> > renders creatorButtonProps.tsx correctly 1`] = `
               class="layoutkit-flexbox emotion-14 ant-editor-item-content emotion-15"
             >
               <input
-                class="ant-input ant-input-sm ant-input-outlined emotion-16 ant-editor-content-tem emotion-17"
+                class="ant-input ant-input-sm emotion-16 ant-editor-content-tem emotion-17"
                 id="column-list-2-test-2"
                 placeholder="请输入"
                 style="flex: 1; max-width: 33.333333333333336%;"
@@ -6475,7 +6495,7 @@ exports[`<ColumnList /> > renders creatorButtonProps.tsx correctly 1`] = `
                 value="订单状态"
               />
               <div
-                class="ant-select ant-select-sm ant-select-outlined ant-editor-content-tem emotion-18 ant-select-single ant-select-show-arrow"
+                class="ant-select ant-select-sm ant-editor-content-tem emotion-18 ant-select-single ant-select-show-arrow"
                 style="flex: 1; max-width: 33.333333333333336%;"
               >
                 <div
@@ -6536,7 +6556,7 @@ exports[`<ColumnList /> > renders creatorButtonProps.tsx correctly 1`] = `
                 </span>
               </div>
               <div
-                class="ant-select ant-select-sm ant-select-outlined ant-editor-content-tem emotion-18 ant-select-single ant-select-show-arrow"
+                class="ant-select ant-select-sm ant-editor-content-tem emotion-18 ant-select-single ant-select-show-arrow"
                 style="flex: 1; max-width: 33.333333333333336%;"
               >
                 <div
@@ -6972,7 +6992,7 @@ exports[`<ColumnList /> > renders creatorButtonPropsFalse.tsx correctly 1`] = `
               class="layoutkit-flexbox emotion-13 ant-editor-item-content emotion-14"
             >
               <input
-                class="ant-input ant-input-sm ant-input-outlined emotion-15 ant-editor-content-tem emotion-16"
+                class="ant-input ant-input-sm emotion-15 ant-editor-content-tem emotion-16"
                 id="column-list-0-test-0"
                 placeholder="请输入"
                 style="flex: 1; max-width: 33.333333333333336%;"
@@ -6980,7 +7000,7 @@ exports[`<ColumnList /> > renders creatorButtonPropsFalse.tsx correctly 1`] = `
                 value="产品名称"
               />
               <div
-                class="ant-select ant-select-sm ant-select-outlined ant-editor-content-tem emotion-17 ant-select-single ant-select-show-arrow"
+                class="ant-select ant-select-sm ant-editor-content-tem emotion-17 ant-select-single ant-select-show-arrow"
                 style="flex: 1; max-width: 33.333333333333336%;"
               >
                 <div
@@ -7041,7 +7061,7 @@ exports[`<ColumnList /> > renders creatorButtonPropsFalse.tsx correctly 1`] = `
                 </span>
               </div>
               <div
-                class="ant-select ant-select-sm ant-select-outlined ant-editor-content-tem emotion-17 ant-select-single ant-select-show-arrow"
+                class="ant-select ant-select-sm ant-editor-content-tem emotion-17 ant-select-single ant-select-show-arrow"
                 style="flex: 1; max-width: 33.333333333333336%;"
               >
                 <div
@@ -7183,7 +7203,7 @@ exports[`<ColumnList /> > renders creatorButtonPropsFalse.tsx correctly 1`] = `
               class="layoutkit-flexbox emotion-13 ant-editor-item-content emotion-14"
             >
               <input
-                class="ant-input ant-input-sm ant-input-outlined emotion-15 ant-editor-content-tem emotion-16"
+                class="ant-input ant-input-sm emotion-15 ant-editor-content-tem emotion-16"
                 id="column-list-1-test-1"
                 placeholder="请输入"
                 style="flex: 1; max-width: 33.333333333333336%;"
@@ -7191,7 +7211,7 @@ exports[`<ColumnList /> > renders creatorButtonPropsFalse.tsx correctly 1`] = `
                 value="产品介绍"
               />
               <div
-                class="ant-select ant-select-sm ant-select-outlined ant-editor-content-tem emotion-17 ant-select-single ant-select-show-arrow"
+                class="ant-select ant-select-sm ant-editor-content-tem emotion-17 ant-select-single ant-select-show-arrow"
                 style="flex: 1; max-width: 33.333333333333336%;"
               >
                 <div
@@ -7252,7 +7272,7 @@ exports[`<ColumnList /> > renders creatorButtonPropsFalse.tsx correctly 1`] = `
                 </span>
               </div>
               <div
-                class="ant-select ant-select-sm ant-select-outlined ant-editor-content-tem emotion-17 ant-select-single ant-select-show-arrow"
+                class="ant-select ant-select-sm ant-editor-content-tem emotion-17 ant-select-single ant-select-show-arrow"
                 style="flex: 1; max-width: 33.333333333333336%;"
               >
                 <div
@@ -7394,7 +7414,7 @@ exports[`<ColumnList /> > renders creatorButtonPropsFalse.tsx correctly 1`] = `
               class="layoutkit-flexbox emotion-13 ant-editor-item-content emotion-14"
             >
               <input
-                class="ant-input ant-input-sm ant-input-outlined emotion-15 ant-editor-content-tem emotion-16"
+                class="ant-input ant-input-sm emotion-15 ant-editor-content-tem emotion-16"
                 id="column-list-2-test-2"
                 placeholder="请输入"
                 style="flex: 1; max-width: 33.333333333333336%;"
@@ -7402,7 +7422,7 @@ exports[`<ColumnList /> > renders creatorButtonPropsFalse.tsx correctly 1`] = `
                 value="订单状态"
               />
               <div
-                class="ant-select ant-select-sm ant-select-outlined ant-editor-content-tem emotion-17 ant-select-single ant-select-show-arrow"
+                class="ant-select ant-select-sm ant-editor-content-tem emotion-17 ant-select-single ant-select-show-arrow"
                 style="flex: 1; max-width: 33.333333333333336%;"
               >
                 <div
@@ -7463,7 +7483,7 @@ exports[`<ColumnList /> > renders creatorButtonPropsFalse.tsx correctly 1`] = `
                 </span>
               </div>
               <div
-                class="ant-select ant-select-sm ant-select-outlined ant-editor-content-tem emotion-17 ant-select-single ant-select-show-arrow"
+                class="ant-select ant-select-sm ant-editor-content-tem emotion-17 ant-select-single ant-select-show-arrow"
                 style="flex: 1; max-width: 33.333333333333336%;"
               >
                 <div
@@ -7986,7 +8006,7 @@ exports[`<ColumnList /> > renders customCreate.tsx correctly 1`] = `
               class="layoutkit-flexbox emotion-15 ant-editor-item-content emotion-16"
             >
               <input
-                class="ant-input ant-input-sm ant-input-outlined emotion-17 ant-editor-content-tem emotion-18"
+                class="ant-input ant-input-sm emotion-17 ant-editor-content-tem emotion-18"
                 id="column-list-0-test-0"
                 placeholder="请输入"
                 style="flex: 1; max-width: 33.333333333333336%;"
@@ -7994,7 +8014,7 @@ exports[`<ColumnList /> > renders customCreate.tsx correctly 1`] = `
                 value="订单id"
               />
               <div
-                class="ant-select ant-select-sm ant-select-outlined ant-editor-content-tem emotion-19 ant-select-single ant-select-show-arrow"
+                class="ant-select ant-select-sm ant-editor-content-tem emotion-19 ant-select-single ant-select-show-arrow"
                 style="flex: 1; max-width: 33.333333333333336%;"
               >
                 <div
@@ -8055,7 +8075,7 @@ exports[`<ColumnList /> > renders customCreate.tsx correctly 1`] = `
                 </span>
               </div>
               <div
-                class="ant-select ant-select-sm ant-select-outlined ant-editor-content-tem emotion-19 ant-select-single ant-select-show-arrow"
+                class="ant-select ant-select-sm ant-editor-content-tem emotion-19 ant-select-single ant-select-show-arrow"
                 style="flex: 1; max-width: 33.333333333333336%;"
               >
                 <div
@@ -8197,7 +8217,7 @@ exports[`<ColumnList /> > renders customCreate.tsx correctly 1`] = `
               class="layoutkit-flexbox emotion-15 ant-editor-item-content emotion-16"
             >
               <input
-                class="ant-input ant-input-sm ant-input-outlined emotion-17 ant-editor-content-tem emotion-18"
+                class="ant-input ant-input-sm emotion-17 ant-editor-content-tem emotion-18"
                 id="column-list-1-test-1"
                 placeholder="请输入"
                 style="flex: 1; max-width: 33.333333333333336%;"
@@ -8205,7 +8225,7 @@ exports[`<ColumnList /> > renders customCreate.tsx correctly 1`] = `
                 value="订单号"
               />
               <div
-                class="ant-select ant-select-sm ant-select-outlined ant-editor-content-tem emotion-19 ant-select-single ant-select-show-arrow"
+                class="ant-select ant-select-sm ant-editor-content-tem emotion-19 ant-select-single ant-select-show-arrow"
                 style="flex: 1; max-width: 33.333333333333336%;"
               >
                 <div
@@ -8266,7 +8286,7 @@ exports[`<ColumnList /> > renders customCreate.tsx correctly 1`] = `
                 </span>
               </div>
               <div
-                class="ant-select ant-select-sm ant-select-outlined ant-editor-content-tem emotion-19 ant-select-single ant-select-show-arrow"
+                class="ant-select ant-select-sm ant-editor-content-tem emotion-19 ant-select-single ant-select-show-arrow"
                 style="flex: 1; max-width: 33.333333333333336%;"
               >
                 <div
@@ -8408,7 +8428,7 @@ exports[`<ColumnList /> > renders customCreate.tsx correctly 1`] = `
               class="layoutkit-flexbox emotion-15 ant-editor-item-content emotion-16"
             >
               <input
-                class="ant-input ant-input-sm ant-input-outlined emotion-17 ant-editor-content-tem emotion-18"
+                class="ant-input ant-input-sm emotion-17 ant-editor-content-tem emotion-18"
                 id="column-list-2-test-2"
                 placeholder="请输入"
                 style="flex: 1; max-width: 33.333333333333336%;"
@@ -8416,7 +8436,7 @@ exports[`<ColumnList /> > renders customCreate.tsx correctly 1`] = `
                 value="订单金额"
               />
               <div
-                class="ant-select ant-select-sm ant-select-outlined ant-editor-content-tem emotion-19 ant-select-single ant-select-show-arrow"
+                class="ant-select ant-select-sm ant-editor-content-tem emotion-19 ant-select-single ant-select-show-arrow"
                 style="flex: 1; max-width: 33.333333333333336%;"
               >
                 <div
@@ -8477,7 +8497,7 @@ exports[`<ColumnList /> > renders customCreate.tsx correctly 1`] = `
                 </span>
               </div>
               <div
-                class="ant-select ant-select-sm ant-select-outlined ant-editor-content-tem emotion-19 ant-select-single ant-select-show-arrow"
+                class="ant-select ant-select-sm ant-editor-content-tem emotion-19 ant-select-single ant-select-show-arrow"
                 style="flex: 1; max-width: 33.333333333333336%;"
               >
                 <div
@@ -9151,7 +9171,7 @@ exports[`<ColumnList /> > renders normal.tsx correctly 1`] = `
               class="layoutkit-flexbox emotion-12 ant-editor-item-content emotion-13"
             >
               <input
-                class="ant-input ant-input-sm ant-input-outlined emotion-14 ant-editor-content-tem emotion-15"
+                class="ant-input ant-input-sm emotion-14 ant-editor-content-tem emotion-15"
                 id="column-list-0-test-0"
                 placeholder="请输入"
                 style="flex: 1; max-width: 50%;"
@@ -9159,7 +9179,7 @@ exports[`<ColumnList /> > renders normal.tsx correctly 1`] = `
                 value="序号"
               />
               <input
-                class="ant-input ant-input-sm ant-input-outlined emotion-14 ant-editor-content-tem emotion-15"
+                class="ant-input ant-input-sm emotion-14 ant-editor-content-tem emotion-15"
                 id="column-list-0-test-0"
                 placeholder="请输入"
                 style="flex: 1; max-width: 50%;"
@@ -9248,7 +9268,7 @@ exports[`<ColumnList /> > renders normal.tsx correctly 1`] = `
               class="layoutkit-flexbox emotion-12 ant-editor-item-content emotion-13"
             >
               <input
-                class="ant-input ant-input-sm ant-input-outlined emotion-14 ant-editor-content-tem emotion-15"
+                class="ant-input ant-input-sm emotion-14 ant-editor-content-tem emotion-15"
                 id="column-list-1-test-1"
                 placeholder="请输入"
                 style="flex: 1; max-width: 50%;"
@@ -9256,7 +9276,7 @@ exports[`<ColumnList /> > renders normal.tsx correctly 1`] = `
                 value="授权企业名称"
               />
               <input
-                class="ant-input ant-input-sm ant-input-outlined emotion-14 ant-editor-content-tem emotion-15"
+                class="ant-input ant-input-sm emotion-14 ant-editor-content-tem emotion-15"
                 id="column-list-1-test-1"
                 placeholder="请输入"
                 style="flex: 1; max-width: 50%;"
@@ -9345,7 +9365,7 @@ exports[`<ColumnList /> > renders normal.tsx correctly 1`] = `
               class="layoutkit-flexbox emotion-12 ant-editor-item-content emotion-13"
             >
               <input
-                class="ant-input ant-input-sm ant-input-outlined emotion-14 ant-editor-content-tem emotion-15"
+                class="ant-input ant-input-sm emotion-14 ant-editor-content-tem emotion-15"
                 id="column-list-2-test-2"
                 placeholder="请输入"
                 style="flex: 1; max-width: 50%;"
@@ -9353,7 +9373,7 @@ exports[`<ColumnList /> > renders normal.tsx correctly 1`] = `
                 value="被授权企业"
               />
               <input
-                class="ant-input ant-input-sm ant-input-outlined emotion-14 ant-editor-content-tem emotion-15"
+                class="ant-input ant-input-sm emotion-14 ant-editor-content-tem emotion-15"
                 id="column-list-2-test-2"
                 placeholder="请输入"
                 style="flex: 1; max-width: 50%;"
@@ -12277,1184 +12297,6 @@ exports[`<DataPreviewer /> > renders renderEmpty.tsx correctly 1`] = `
 </div>
 `;
 
-exports[`<DataPreviewer /> > renders showType.tsx correctly 1`] = `
-.emotion-0 {
-  color: rgba(0, 0, 0, 0.65);
-}
-
-.emotion-0:hover {
-  color: rgba(0, 0, 0, 0.88);
-}
-
-.emotion-1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.emotion-2 {
-  padding: 6px 8px;
-  background: rgba(0, 0, 0, 0.02);
-  border-radius: 4px;
-}
-
-.emotion-3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  justify-content: space-between;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  width: 100%;
-}
-
-.emotion-4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  gap: 4px;
-}
-
-.emotion-5 {
-  height: 24px;
-  margin-left: -4px;
-  padding: 4px;
-  border-radius: 4px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  cursor: pointer;
-  -webkit-transition: 150ms background-color ease-in-out;
-  transition: 150ms background-color ease-in-out;
-}
-
-.emotion-5:hover {
-  background: rgba(0, 0, 0, 0.02);
-}
-
-.emotion-6 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.emotion-8 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-transition: color 600ms cubic-bezier(0.215, 0.61, 0.355, 1),scale 400ms cubic-bezier(0.215, 0.61, 0.355, 1),background-color 100ms cubic-bezier(0.215, 0.61, 0.355, 1);
-  transition: color 600ms cubic-bezier(0.215, 0.61, 0.355, 1),scale 400ms cubic-bezier(0.215, 0.61, 0.355, 1),background-color 100ms cubic-bezier(0.215, 0.61, 0.355, 1);
-}
-
-.emotion-8:hover {
-  color: rgba(0, 0, 0, 0.88)!important;
-}
-
-.emotion-8:active {
-  scale: 0.8;
-  color: rgba(0, 0, 0, 0.88);
-}
-
-.emotion-9 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  gap: 4px;
-}
-
-.emotion-13 {
-  border-radius: 4px;
-}
-
-.emotion-14 {
-  background-color: transparent;
-  position: relative;
-  overflow: auto;
-  margin: 0;
-  border-radius: 6px;
-  -webkit-transition: background-color 100ms cubic-bezier(0.215, 0.61, 0.355, 1);
-  transition: background-color 100ms cubic-bezier(0.215, 0.61, 0.355, 1);
-}
-
-.emotion-14:not(:hover) .ant-editor-highlight-copy {
-  visibility: hidden;
-  opacity: 0;
-}
-
-.emotion-14:not(:hover) .ant-editor-highlight-tag {
-  visibility: hidden;
-  opacity: 0;
-}
-
-.emotion-14 pre {
-  margin: 0!important;
-  padding: 0!important;
-  background: none!important;
-}
-
-.emotion-14 code {
-  background: transparent!important;
-}
-
-.emotion-15 {
-  position: absolute;
-  top: 16px;
-  right: 16px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  width: 16px;
-  height: 16px;
-  padding: 0;
-  overflow: hidden;
-  border: 0;
-  outline: none;
-  cursor: pointer;
-  opacity: 0.6;
-  -webkit-transition: opacity 0.2s;
-  transition: opacity 0.2s;
-  background-color: #fafafa;
-}
-
-.emotion-15:hover {
-  opacity: 0.8;
-}
-
-.emotion-16 {
-  width: 16px;
-  color: #333333;
-  height: 16px;
-  font-size: 16px;
-}
-
-.emotion-16.scoll {
-  -webkit-animation: copy-button-trans 2s;
-  animation: copy-button-trans 2s;
-  -webkit-animation-play-state: running;
-  animation-play-state: running;
-}
-
-.emotion-18 {
-  color: #333333!important;
-  border-radius: 6px;
-  position: absolute;
-  z-index: 2;
-  right: 0;
-  bottom: 8px;
-  background-color: hsla(0, 0%, 95.1%, 0.9);
-  font-family: 'SFMono-Regular',Consolas,'Liberation Mono',Menlo,Courier,monospace;
-  color: #666666;
-  -webkit-transition: opacity 0.1s;
-  transition: opacity 0.1s;
-}
-
-P .emotion-18:hover {
-  color: #333333;
-  background: rgba(0, 0, 0, 0.15);
-}
-
-.emotion-19 {
-  display: block;
-  overflow-x: auto;
-  color: #333333;
-  background-color: #666666;
-}
-
-.emotion-19 .hljs-comment,
-.emotion-19 .hljs-quote {
-  color: #aaaaaa;
-}
-
-.emotion-19 .hljs-variable,
-.emotion-19 .hljs-attribute,
-.emotion-19 .hljs-template-variable,
-.emotion-19 .hljs-tag,
-.emotion-19 .hljs-name,
-.emotion-19 .hljs-selector-id,
-.emotion-19 .hljs-selector-class,
-.emotion-19 .hljs-regexp,
-.emotion-19 .hljs-title,
-.emotion-19 .hljs-deletion {
-  color: #ec5e41;
-}
-
-.emotion-19 .hljs-builtin-name,
-.emotion-19 .hljs-literal,
-.emotion-19 .hljs-type,
-.emotion-19 .hljs-params,
-.emotion-19 .hljs-meta,
-.emotion-19 .hljs-link {
-  color: #ff802b;
-}
-
-.emotion-19 .hljs-string,
-.emotion-19 .hljs-number,
-.emotion-19 .hljs-symbol,
-.emotion-19 .hljs-bullet,
-.emotion-19 .hljs-addition {
-  color: #55b467;
-}
-
-.emotion-19 .hljs-keyword,
-.emotion-19 .hljs-doctag,
-.emotion-19 .hljs-built_in,
-.emotion-19 .hljs-selector-tag,
-.emotion-19 .hljs-section {
-  color: #369eff;
-}
-
-.emotion-19 .hljs-emphasis {
-  font-style: italic;
-}
-
-.emotion-19 .hljs-strong {
-  font-weight: bold;
-}
-
-.emotion-20 {
-  box-sizing: border-box;
-  width: 1rem;
-  margin-right: 1.5rem;
-  display: inline-block;
-  color: rgba(115, 138, 148, 0.4);
-  text-align: right;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-.emotion-21 {
-  width: 100%;
-}
-
-.emotion-60 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  gap: 8px;
-}
-
-.emotion-61 {
-  -webkit-backdrop-filter: saturate(180%) blur(10px);
-  backdrop-filter: saturate(180%) blur(10px);
-  position: absolute;
-  top: 0;
-  right: 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  height: 36px;
-  padding: 0 8px;
-  font-family: 'SFMono-Regular',Consolas,'Liberation Mono',Menlo,Courier,monospace;
-  color: #aaaaaa;
-  border-radius: 6;
-}
-
-.emotion-62 {
-  color: #aaaaaa;
-}
-
-.emotion-63 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-align-items: flex-end;
-  -webkit-box-align: flex-end;
-  -ms-flex-align: flex-end;
-  align-items: flex-end;
-}
-
-<div>
-  <div
-    class="ant-editor-data-previewer emotion-0"
-  >
-    <div
-      class="layoutkit-flexbox emotion-1 ant-editor-collapse-title emotion-2"
-    >
-      <div
-        class="layoutkit-flexbox emotion-3 ant-editor-collapse-title-expand"
-      >
-        <div
-          class="layoutkit-flexbox emotion-4 emotion-5"
-        >
-          <span
-            aria-label="caret-right"
-            class="anticon anticon-caret-right"
-            role="img"
-            style="font-size: 10px;"
-          >
-            <svg
-              aria-hidden="true"
-              data-icon="caret-right"
-              fill="currentColor"
-              focusable="false"
-              height="1em"
-              style="transform: rotate(90deg);"
-              viewBox="0 0 1024 1024"
-              width="1em"
-            >
-              <path
-                d="M715.8 493.5L335 165.1c-14.2-12.2-35-1.2-35 18.5v656.8c0 19.7 20.8 30.7 35 18.5l380.8-328.4c10.9-9.4 10.9-27.6 0-37z"
-              />
-            </svg>
-          </span>
-          <div>
-            数据预览
-          </div>
-        </div>
-        <div
-          class="layoutkit-flexbox emotion-6"
-        >
-          <div
-            class="layoutkit-flexbox emotion-1"
-          >
-            <button
-              class="ant-btn ant-btn-text ant-btn-icon-only ant-editor-icon emotion-8"
-              type="button"
-            >
-              <span
-                class="ant-btn-icon"
-              >
-                <span
-                  aria-label="table"
-                  class="anticon anticon-table"
-                  role="img"
-                >
-                  <svg
-                    aria-hidden="true"
-                    data-icon="table"
-                    fill="currentColor"
-                    focusable="false"
-                    height="1em"
-                    viewBox="64 64 896 896"
-                    width="1em"
-                  >
-                    <path
-                      d="M928 160H96c-17.7 0-32 14.3-32 32v640c0 17.7 14.3 32 32 32h832c17.7 0 32-14.3 32-32V192c0-17.7-14.3-32-32-32zm-40 208H676V232h212v136zm0 224H676V432h212v160zM412 432h200v160H412V432zm200-64H412V232h200v136zm-476 64h212v160H136V432zm0-200h212v136H136V232zm0 424h212v136H136V656zm276 0h200v136H412V656zm476 136H676V656h212v136z"
-                    />
-                  </svg>
-                </span>
-              </span>
-            </button>
-          </div>
-          <div
-            class="ant-divider ant-divider-vertical ant-divider-dashed"
-            role="separator"
-            style="margin: 0px 4px;"
-          />
-          <div
-            class="layoutkit-flexbox emotion-9"
-          >
-            <button
-              class="ant-btn ant-btn-text ant-btn-icon-only ant-editor-icon emotion-8"
-              type="button"
-            >
-              <span
-                class="ant-btn-icon"
-              >
-                <span
-                  aria-label="rollback"
-                  class="anticon anticon-rollback"
-                  role="img"
-                >
-                  <svg
-                    aria-hidden="true"
-                    data-icon="rollback"
-                    fill="currentColor"
-                    focusable="false"
-                    height="1em"
-                    viewBox="64 64 896 896"
-                    width="1em"
-                  >
-                    <path
-                      d="M793 242H366v-74c0-6.7-7.7-10.4-12.9-6.3l-142 112a8 8 0 000 12.6l142 112c5.2 4.1 12.9.4 12.9-6.3v-74h415v470H175c-4.4 0-8 3.6-8 8v60c0 4.4 3.6 8 8 8h618c35.3 0 64-28.7 64-64V306c0-35.3-28.7-64-64-64z"
-                    />
-                  </svg>
-                </span>
-              </span>
-            </button>
-          </div>
-        </div>
-      </div>
-      <div
-        class="ant-divider ant-divider-horizontal ant-divider-dashed"
-        role="separator"
-        style="margin: 4px 0px 12px;"
-      />
-      <div
-        class="layoutkit-flexbox emotion-1"
-      >
-        <div
-          class="layoutkit-flexbox emotion-1 ant-editor-data-previewer-json emotion-13"
-          style="overflow: scroll; max-height: 200px; margin-bottom: 8px;"
-        >
-          <div
-            class="ant-editor-highlight-container emotion-14"
-            tabindex="-1"
-          >
-            <button
-              class="ant-editor-highlight-copy emotion-15"
-              type="button"
-            >
-              <span
-                aria-label="copy"
-                class="anticon anticon-copy ant-editor-highlight-copy-icon emotion-16"
-                role="img"
-              >
-                <svg
-                  aria-hidden="true"
-                  data-icon="copy"
-                  fill="currentColor"
-                  focusable="false"
-                  height="1em"
-                  viewBox="64 64 896 896"
-                  width="1em"
-                >
-                  <path
-                    d="M832 64H296c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h496v688c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8V96c0-17.7-14.3-32-32-32zM704 192H192c-17.7 0-32 14.3-32 32v530.7c0 8.5 3.4 16.6 9.4 22.6l173.3 173.3c2.2 2.2 4.7 4 7.4 5.5v1.9h4.2c3.5 1.3 7.2 2 11 2H704c17.7 0 32-14.3 32-32V224c0-17.7-14.3-32-32-32zM350 856.2L263.9 770H350v86.2zM664 888H414V746c0-22.1-17.9-40-40-40H232V264h432v624z"
-                  />
-                </svg>
-              </span>
-              <span
-                aria-label="check"
-                class="anticon anticon-check ant-editor-highlight-copy-icon emotion-16"
-                role="img"
-                style="color: rgb(63, 177, 99);"
-              >
-                <svg
-                  aria-hidden="true"
-                  data-icon="check"
-                  fill="currentColor"
-                  focusable="false"
-                  height="1em"
-                  viewBox="64 64 896 896"
-                  width="1em"
-                >
-                  <path
-                    d="M912 190h-69.9c-9.8 0-19.1 4.5-25.1 12.2L404.7 724.5 207 474a32 32 0 00-25.1-12.2H112c-6.7 0-10.4 7.7-6.3 12.9l273.9 347c12.8 16.2 37.4 16.2 50.3 0l488.4-618.9c4.1-5.1.4-12.8-6.3-12.8z"
-                  />
-                </svg>
-              </span>
-            </button>
-            <span
-              class="ant-tag ant-tag-borderless ant-editor-highlight-tag emotion-18"
-            >
-              json
-            </span>
-            <pre
-              class="emotion-19"
-            >
-              <table
-                border="0"
-                cellpadding="0"
-                cellspacing="0"
-              >
-                <tbody>
-                  <tr>
-                    <td
-                      class="ant-editor-highlight-index emotion-20"
-                    >
-                      1
-                    </td>
-                    <td
-                      class="ant-editor-highlight-content emotion-21"
-                    >
-                      {
-                    </td>
-                  </tr>
-                  <tr>
-                    <td
-                      class="ant-editor-highlight-index emotion-20"
-                    >
-                      2
-                    </td>
-                    <td
-                      class="ant-editor-highlight-content emotion-21"
-                    >
-                        
-                      <span
-                        class="hljs-attr"
-                      >
-                        "id"
-                      </span>
-                      : 
-                      <span
-                        class="hljs-number"
-                      >
-                        624748504
-                      </span>
-                      ,
-                    </td>
-                  </tr>
-                  <tr>
-                    <td
-                      class="ant-editor-highlight-index emotion-20"
-                    >
-                      3
-                    </td>
-                    <td
-                      class="ant-editor-highlight-content emotion-21"
-                    >
-                        
-                      <span
-                        class="hljs-attr"
-                      >
-                        "number"
-                      </span>
-                      : 
-                      <span
-                        class="hljs-number"
-                      >
-                        6689
-                      </span>
-                      ,
-                    </td>
-                  </tr>
-                  <tr>
-                    <td
-                      class="ant-editor-highlight-index emotion-20"
-                    >
-                      4
-                    </td>
-                    <td
-                      class="ant-editor-highlight-content emotion-21"
-                    >
-                        
-                      <span
-                        class="hljs-attr"
-                      >
-                        "title"
-                      </span>
-                      : 
-                      <span
-                        class="hljs-string"
-                      >
-                        "🐛 [BUG]yarn install命令 antd2.4.5会报错"
-                      </span>
-                      ,
-                    </td>
-                  </tr>
-                  <tr>
-                    <td
-                      class="ant-editor-highlight-index emotion-20"
-                    >
-                      5
-                    </td>
-                    <td
-                      class="ant-editor-highlight-content emotion-21"
-                    >
-                        
-                      <span
-                        class="hljs-attr"
-                      >
-                        "labels"
-                      </span>
-                      : [
-                    </td>
-                  </tr>
-                  <tr>
-                    <td
-                      class="ant-editor-highlight-index emotion-20"
-                    >
-                      6
-                    </td>
-                    <td
-                      class="ant-editor-highlight-content emotion-21"
-                    >
-                          {
-                    </td>
-                  </tr>
-                  <tr>
-                    <td
-                      class="ant-editor-highlight-index emotion-20"
-                    >
-                      7
-                    </td>
-                    <td
-                      class="ant-editor-highlight-content emotion-21"
-                    >
-                            
-                      <span
-                        class="hljs-attr"
-                      >
-                        "name"
-                      </span>
-                      : 
-                      <span
-                        class="hljs-string"
-                      >
-                        "bug"
-                      </span>
-                      ,
-                    </td>
-                  </tr>
-                  <tr>
-                    <td
-                      class="ant-editor-highlight-index emotion-20"
-                    >
-                      8
-                    </td>
-                    <td
-                      class="ant-editor-highlight-content emotion-21"
-                    >
-                            
-                      <span
-                        class="hljs-attr"
-                      >
-                        "color"
-                      </span>
-                      : 
-                      <span
-                        class="hljs-string"
-                      >
-                        "error"
-                      </span>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td
-                      class="ant-editor-highlight-index emotion-20"
-                    >
-                      9
-                    </td>
-                    <td
-                      class="ant-editor-highlight-content emotion-21"
-                    >
-                          }
-                    </td>
-                  </tr>
-                  <tr>
-                    <td
-                      class="ant-editor-highlight-index emotion-20"
-                    >
-                      10
-                    </td>
-                    <td
-                      class="ant-editor-highlight-content emotion-21"
-                    >
-                        ],
-                    </td>
-                  </tr>
-                  <tr>
-                    <td
-                      class="ant-editor-highlight-index emotion-20"
-                    >
-                      11
-                    </td>
-                    <td
-                      class="ant-editor-highlight-content emotion-21"
-                    >
-                        
-                      <span
-                        class="hljs-attr"
-                      >
-                        "state"
-                      </span>
-                      : 
-                      <span
-                        class="hljs-string"
-                      >
-                        "open"
-                      </span>
-                      ,
-                    </td>
-                  </tr>
-                  <tr>
-                    <td
-                      class="ant-editor-highlight-index emotion-20"
-                    >
-                      12
-                    </td>
-                    <td
-                      class="ant-editor-highlight-content emotion-21"
-                    >
-                        
-                      <span
-                        class="hljs-attr"
-                      >
-                        "locked"
-                      </span>
-                      : 
-                      <span
-                        class="hljs-literal"
-                      >
-                        false
-                      </span>
-                      ,
-                    </td>
-                  </tr>
-                  <tr>
-                    <td
-                      class="ant-editor-highlight-index emotion-20"
-                    >
-                      13
-                    </td>
-                    <td
-                      class="ant-editor-highlight-content emotion-21"
-                    >
-                        
-                      <span
-                        class="hljs-attr"
-                      >
-                        "comments"
-                      </span>
-                      : 
-                      <span
-                        class="hljs-number"
-                      >
-                        1
-                      </span>
-                      ,
-                    </td>
-                  </tr>
-                  <tr>
-                    <td
-                      class="ant-editor-highlight-index emotion-20"
-                    >
-                      14
-                    </td>
-                    <td
-                      class="ant-editor-highlight-content emotion-21"
-                    >
-                        
-                      <span
-                        class="hljs-attr"
-                      >
-                        "created_at"
-                      </span>
-                      : 
-                      <span
-                        class="hljs-string"
-                      >
-                        "2020-05-26T09:42:56Z"
-                      </span>
-                      ,
-                    </td>
-                  </tr>
-                  <tr>
-                    <td
-                      class="ant-editor-highlight-index emotion-20"
-                    >
-                      15
-                    </td>
-                    <td
-                      class="ant-editor-highlight-content emotion-21"
-                    >
-                        
-                      <span
-                        class="hljs-attr"
-                      >
-                        "updated_at"
-                      </span>
-                      : 
-                      <span
-                        class="hljs-string"
-                      >
-                        "2020-05-26T10:03:02Z"
-                      </span>
-                      ,
-                    </td>
-                  </tr>
-                  <tr>
-                    <td
-                      class="ant-editor-highlight-index emotion-20"
-                    >
-                      16
-                    </td>
-                    <td
-                      class="ant-editor-highlight-content emotion-21"
-                    >
-                        
-                      <span
-                        class="hljs-attr"
-                      >
-                        "closed_at"
-                      </span>
-                      : 
-                      <span
-                        class="hljs-literal"
-                      >
-                        null
-                      </span>
-                      ,
-                    </td>
-                  </tr>
-                  <tr>
-                    <td
-                      class="ant-editor-highlight-index emotion-20"
-                    >
-                      17
-                    </td>
-                    <td
-                      class="ant-editor-highlight-content emotion-21"
-                    >
-                        
-                      <span
-                        class="hljs-attr"
-                      >
-                        "author_association"
-                      </span>
-                      : 
-                      <span
-                        class="hljs-string"
-                      >
-                        "NONE"
-                      </span>
-                      ,
-                    </td>
-                  </tr>
-                  <tr>
-                    <td
-                      class="ant-editor-highlight-index emotion-20"
-                    >
-                      18
-                    </td>
-                    <td
-                      class="ant-editor-highlight-content emotion-21"
-                    >
-                        
-                      <span
-                        class="hljs-attr"
-                      >
-                        "user"
-                      </span>
-                      : 
-                      <span
-                        class="hljs-string"
-                      >
-                        "chenshuai2144"
-                      </span>
-                      ,
-                    </td>
-                  </tr>
-                  <tr>
-                    <td
-                      class="ant-editor-highlight-index emotion-20"
-                    >
-                      19
-                    </td>
-                    <td
-                      class="ant-editor-highlight-content emotion-21"
-                    >
-                        
-                      <span
-                        class="hljs-attr"
-                      >
-                        "avatar"
-                      </span>
-                      : 
-                      <span
-                        class="hljs-string"
-                      >
-                        "https://gw.alipayobjects.com/zos/antfincdn/XAosXuNZyF/BiazfanxmamNRoxxVxka.png"
-                      </span>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td
-                      class="ant-editor-highlight-index emotion-20"
-                    >
-                      20
-                    </td>
-                    <td
-                      class="ant-editor-highlight-content emotion-21"
-                    >
-                      }
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </pre>
-            <div
-              class="layoutkit-center emotion-60 emotion-61"
-            >
-              <span
-                aria-label="loading-3-quarters"
-                class="anticon anticon-loading-3-quarters anticon-spin emotion-62"
-                role="img"
-              >
-                <svg
-                  aria-hidden="true"
-                  data-icon="loading-3-quarters"
-                  fill="currentColor"
-                  focusable="false"
-                  height="1em"
-                  viewBox="0 0 1024 1024"
-                  width="1em"
-                >
-                  <path
-                    d="M512 1024c-69.1 0-136.2-13.5-199.3-40.2C251.7 958 197 921 150 874c-47-47-84-101.7-109.8-162.7C13.5 648.2 0 581.1 0 512c0-19.9 16.1-36 36-36s36 16.1 36 36c0 59.4 11.6 117 34.6 171.3 22.2 52.4 53.9 99.5 94.3 139.9 40.4 40.4 87.5 72.2 139.9 94.3C395 940.4 452.6 952 512 952c59.4 0 117-11.6 171.3-34.6 52.4-22.2 99.5-53.9 139.9-94.3 40.4-40.4 72.2-87.5 94.3-139.9C940.4 629 952 571.4 952 512c0-59.4-11.6-117-34.6-171.3a440.45 440.45 0 00-94.3-139.9 437.71 437.71 0 00-139.9-94.3C629 83.6 571.4 72 512 72c-19.9 0-36-16.1-36-36s16.1-36 36-36c69.1 0 136.2 13.5 199.3 40.2C772.3 66 827 103 874 150c47 47 83.9 101.8 109.7 162.7 26.7 63.1 40.2 130.2 40.2 199.3s-13.5 136.2-40.2 199.3C958 772.3 921 827 874 874c-47 47-101.8 83.9-162.7 109.7-63.1 26.8-130.2 40.3-199.3 40.3z"
-                  />
-                </svg>
-              </span>
-              Highlighting...
-            </div>
-          </div>
-        </div>
-        <div
-          class="ant-divider ant-divider-horizontal ant-divider-dashed"
-          role="separator"
-          style="margin: 12px 0px;"
-        />
-        <div
-          class="layoutkit-flexbox emotion-63"
-        >
-          <ul
-            class="ant-pagination ant-pagination-mini"
-          >
-            <li
-              class="ant-pagination-total-text"
-            >
-              共 20 条数据
-            </li>
-            <li
-              aria-disabled="true"
-              class="ant-pagination-prev ant-pagination-disabled"
-              title="Previous Page"
-            >
-              <button
-                class="ant-pagination-item-link"
-                disabled=""
-                tabindex="-1"
-                type="button"
-              >
-                <span
-                  aria-label="left"
-                  class="anticon anticon-left"
-                  role="img"
-                >
-                  <svg
-                    aria-hidden="true"
-                    data-icon="left"
-                    fill="currentColor"
-                    focusable="false"
-                    height="1em"
-                    viewBox="64 64 896 896"
-                    width="1em"
-                  >
-                    <path
-                      d="M724 218.3V141c0-6.7-7.7-10.4-12.9-6.3L260.3 486.8a31.86 31.86 0 000 50.3l450.8 352.1c5.3 4.1 12.9.4 12.9-6.3v-77.3c0-4.9-2.3-9.6-6.1-12.6l-360-281 360-281.1c3.8-3 6.1-7.7 6.1-12.6z"
-                    />
-                  </svg>
-                </span>
-              </button>
-            </li>
-            <li
-              class="ant-pagination-item ant-pagination-item-1 ant-pagination-item-active"
-              tabindex="0"
-              title="1"
-            >
-              <a
-                rel="nofollow"
-              >
-                1
-              </a>
-            </li>
-            <li
-              class="ant-pagination-item ant-pagination-item-2"
-              tabindex="0"
-              title="2"
-            >
-              <a
-                rel="nofollow"
-              >
-                2
-              </a>
-            </li>
-            <li
-              class="ant-pagination-item ant-pagination-item-3"
-              tabindex="0"
-              title="3"
-            >
-              <a
-                rel="nofollow"
-              >
-                3
-              </a>
-            </li>
-            <li
-              class="ant-pagination-item ant-pagination-item-4"
-              tabindex="0"
-              title="4"
-            >
-              <a
-                rel="nofollow"
-              >
-                4
-              </a>
-            </li>
-            <li
-              class="ant-pagination-item ant-pagination-item-5 ant-pagination-item-before-jump-next"
-              tabindex="0"
-              title="5"
-            >
-              <a
-                rel="nofollow"
-              >
-                5
-              </a>
-            </li>
-            <li
-              class="ant-pagination-jump-next ant-pagination-jump-next-custom-icon"
-              tabindex="0"
-              title="Next 5 Pages"
-            >
-              <a
-                class="ant-pagination-item-link"
-              >
-                <div
-                  class="ant-pagination-item-container"
-                >
-                  <span
-                    aria-label="double-right"
-                    class="anticon anticon-double-right ant-pagination-item-link-icon"
-                    role="img"
-                  >
-                    <svg
-                      aria-hidden="true"
-                      data-icon="double-right"
-                      fill="currentColor"
-                      focusable="false"
-                      height="1em"
-                      viewBox="64 64 896 896"
-                      width="1em"
-                    >
-                      <path
-                        d="M533.2 492.3L277.9 166.1c-3-3.9-7.7-6.1-12.6-6.1H188c-6.7 0-10.4 7.7-6.3 12.9L447.1 512 181.7 851.1A7.98 7.98 0 00188 864h77.3c4.9 0 9.6-2.3 12.6-6.1l255.3-326.1c9.1-11.7 9.1-27.9 0-39.5zm304 0L581.9 166.1c-3-3.9-7.7-6.1-12.6-6.1H492c-6.7 0-10.4 7.7-6.3 12.9L751.1 512 485.7 851.1A7.98 7.98 0 00492 864h77.3c4.9 0 9.6-2.3 12.6-6.1l255.3-326.1c9.1-11.7 9.1-27.9 0-39.5z"
-                      />
-                    </svg>
-                  </span>
-                  <span
-                    class="ant-pagination-item-ellipsis"
-                  >
-                    •••
-                  </span>
-                </div>
-              </a>
-            </li>
-            <li
-              class="ant-pagination-item ant-pagination-item-20"
-              tabindex="0"
-              title="20"
-            >
-              <a
-                rel="nofollow"
-              >
-                20
-              </a>
-            </li>
-            <li
-              aria-disabled="false"
-              class="ant-pagination-next"
-              tabindex="0"
-              title="Next Page"
-            >
-              <button
-                class="ant-pagination-item-link"
-                tabindex="-1"
-                type="button"
-              >
-                <span
-                  aria-label="right"
-                  class="anticon anticon-right"
-                  role="img"
-                >
-                  <svg
-                    aria-hidden="true"
-                    data-icon="right"
-                    fill="currentColor"
-                    focusable="false"
-                    height="1em"
-                    viewBox="64 64 896 896"
-                    width="1em"
-                  >
-                    <path
-                      d="M765.7 486.8L314.9 134.7A7.97 7.97 0 00302 141v77.3c0 4.9 2.3 9.6 6.1 12.6l360 281.1-360 281.1c-3.9 3-6.1 7.7-6.1 12.6V883c0 6.7 7.7 10.4 12.9 6.3l450.8-352.1a31.96 31.96 0 000-50.4z"
-                    />
-                  </svg>
-                </span>
-              </button>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
 exports[`<DraggablePanel /> > renders basic.tsx correctly 1`] = `
 .emotion-0 {
   -webkit-flex-shrink: 0;
@@ -16110,7 +14952,7 @@ P .emotion-4:hover {
         class="ant-space-item"
       >
         <div
-          class="ant-select ant-select-outlined ant-select-single ant-select-show-arrow"
+          class="ant-select ant-select-single ant-select-show-arrow"
           style="width: 120px;"
         >
           <div
@@ -16180,7 +15022,7 @@ P .emotion-4:hover {
         class="ant-space-item"
       >
         <div
-          class="ant-select ant-select-outlined ant-select-single ant-select-show-arrow"
+          class="ant-select ant-select-single ant-select-show-arrow"
           style="width: 120px;"
         >
           <div
@@ -16250,7 +15092,7 @@ P .emotion-4:hover {
         class="ant-space-item"
       >
         <div
-          class="ant-select ant-select-outlined ant-select-single ant-select-show-arrow"
+          class="ant-select ant-select-single ant-select-show-arrow"
           style="width: 120px;"
         >
           <div
@@ -16320,7 +15162,7 @@ P .emotion-4:hover {
         class="ant-space-item"
       >
         <div
-          class="ant-select ant-select-outlined ant-select-single ant-select-show-arrow"
+          class="ant-select ant-select-single ant-select-show-arrow"
           style="width: 120px;"
         >
           <div
@@ -18464,7 +17306,7 @@ exports[`<Layout /> > renders basic.tsx correctly 1`] = `
         class="headerAndFooterCenterChildren emotion-3"
       >
         <span
-          class="ant-input-group-wrapper ant-input-group-wrapper-outlined emotion-4"
+          class="ant-input-group-wrapper emotion-4"
           style="width: 250px;"
         >
           <span
@@ -18476,7 +17318,7 @@ exports[`<Layout /> > renders basic.tsx correctly 1`] = `
               Options
             </span>
             <input
-              class="ant-input ant-input-outlined"
+              class="ant-input"
               placeholder="Search For Some Little Options"
               type="text"
               value=""
@@ -19132,7 +17974,7 @@ exports[`<Layout /> > renders dingding.tsx correctly 1`] = `
           </span>
         </button>
         <input
-          class="ant-input ant-input-outlined emotion-5"
+          class="ant-input emotion-5"
           placeholder="Search For Some Dialog"
           style="width: 250px;"
           type="text"
@@ -20382,7 +19224,7 @@ exports[`<Layout /> > renders themeType.tsx correctly 1`] = `
             class="headerAndFooterCenterChildren emotion-3"
           >
             <span
-              class="ant-input-group-wrapper ant-input-group-wrapper-outlined emotion-4"
+              class="ant-input-group-wrapper emotion-4"
               style="width: 250px;"
             >
               <span
@@ -20394,7 +19236,7 @@ exports[`<Layout /> > renders themeType.tsx correctly 1`] = `
                   Options
                 </span>
                 <input
-                  class="ant-input ant-input-outlined"
+                  class="ant-input"
                   placeholder="Search For Some Options"
                   type="text"
                   value=""
@@ -21058,7 +19900,7 @@ exports[`<Layout /> > renders types.tsx correctly 1`] = `
             class="headerAndFooterCenterChildren emotion-3"
           >
             <span
-              class="ant-input-group-wrapper ant-input-group-wrapper-outlined emotion-4"
+              class="ant-input-group-wrapper emotion-4"
               style="width: 250px;"
             >
               <span
@@ -21070,7 +19912,7 @@ exports[`<Layout /> > renders types.tsx correctly 1`] = `
                   Options
                 </span>
                 <input
-                  class="ant-input ant-input-outlined"
+                  class="ant-input"
                   placeholder="Search For Some Options"
                   type="text"
                   value=""
@@ -27627,7 +26469,7 @@ exports[`<SortableList /> > renders provider.tsx correctly 1`] = `
                     style="flex: 1; width: 100%; height: 24px; font-size: 12px; border-radius: 2px; min-width: 48px;"
                   >
                     <input
-                      class="ant-input ant-input-sm ant-input-outlined emotion-10"
+                      class="ant-input ant-input-sm emotion-10"
                       id="index-0"
                       style="width: 100%;"
                       type="text"
@@ -27638,7 +26480,7 @@ exports[`<SortableList /> > renders provider.tsx correctly 1`] = `
                     style="flex: 1; width: 100%; height: 24px; font-size: 12px; border-radius: 2px; min-width: 48px;"
                   >
                     <div
-                      class="ant-select ant-select-sm ant-select-outlined emotion-11 ant-select-single ant-select-show-arrow"
+                      class="ant-select ant-select-sm emotion-11 ant-select-single ant-select-show-arrow"
                       style="width: 100%;"
                     >
                       <div
@@ -27789,7 +26631,7 @@ exports[`<SortableList /> > renders provider.tsx correctly 1`] = `
                     style="flex: 1; width: 100%; height: 24px; font-size: 12px; border-radius: 2px; min-width: 48px;"
                   >
                     <input
-                      class="ant-input ant-input-sm ant-input-outlined emotion-10"
+                      class="ant-input ant-input-sm emotion-10"
                       id="index-1"
                       style="width: 100%;"
                       type="text"
@@ -27800,7 +26642,7 @@ exports[`<SortableList /> > renders provider.tsx correctly 1`] = `
                     style="flex: 1; width: 100%; height: 24px; font-size: 12px; border-radius: 2px; min-width: 48px;"
                   >
                     <div
-                      class="ant-select ant-select-sm ant-select-outlined emotion-11 ant-select-single ant-select-show-arrow"
+                      class="ant-select ant-select-sm emotion-11 ant-select-single ant-select-show-arrow"
                       style="width: 100%;"
                     >
                       <div
@@ -27951,7 +26793,7 @@ exports[`<SortableList /> > renders provider.tsx correctly 1`] = `
                     style="flex: 1; width: 100%; height: 24px; font-size: 12px; border-radius: 2px; min-width: 48px;"
                   >
                     <input
-                      class="ant-input ant-input-sm ant-input-outlined emotion-10"
+                      class="ant-input ant-input-sm emotion-10"
                       id="index-2"
                       style="width: 100%;"
                       type="text"
@@ -27962,7 +26804,7 @@ exports[`<SortableList /> > renders provider.tsx correctly 1`] = `
                     style="flex: 1; width: 100%; height: 24px; font-size: 12px; border-radius: 2px; min-width: 48px;"
                   >
                     <div
-                      class="ant-select ant-select-sm ant-select-outlined emotion-11 ant-select-single ant-select-show-arrow"
+                      class="ant-select ant-select-sm emotion-11 ant-select-single ant-select-show-arrow"
                       style="width: 100%;"
                     >
                       <div
@@ -28496,7 +27338,7 @@ exports[`<SortableList /> > renders ref.tsx correctly 1`] = `
                     style="flex: 1; width: 100%; height: 24px; font-size: 12px; border-radius: 2px; min-width: 48px;"
                   >
                     <input
-                      class="ant-input ant-input-sm ant-input-outlined emotion-12"
+                      class="ant-input ant-input-sm emotion-12"
                       id="index-0"
                       style="width: 100%;"
                       type="text"
@@ -28507,7 +27349,7 @@ exports[`<SortableList /> > renders ref.tsx correctly 1`] = `
                     style="flex: 1; width: 100%; height: 24px; font-size: 12px; border-radius: 2px; min-width: 48px;"
                   >
                     <div
-                      class="ant-select ant-select-sm ant-select-outlined emotion-13 ant-select-single ant-select-show-arrow"
+                      class="ant-select ant-select-sm emotion-13 ant-select-single ant-select-show-arrow"
                       style="width: 100%;"
                     >
                       <div
@@ -28658,7 +27500,7 @@ exports[`<SortableList /> > renders ref.tsx correctly 1`] = `
                     style="flex: 1; width: 100%; height: 24px; font-size: 12px; border-radius: 2px; min-width: 48px;"
                   >
                     <input
-                      class="ant-input ant-input-sm ant-input-outlined emotion-12"
+                      class="ant-input ant-input-sm emotion-12"
                       id="index-1"
                       style="width: 100%;"
                       type="text"
@@ -28669,7 +27511,7 @@ exports[`<SortableList /> > renders ref.tsx correctly 1`] = `
                     style="flex: 1; width: 100%; height: 24px; font-size: 12px; border-radius: 2px; min-width: 48px;"
                   >
                     <div
-                      class="ant-select ant-select-sm ant-select-outlined emotion-13 ant-select-single ant-select-show-arrow"
+                      class="ant-select ant-select-sm emotion-13 ant-select-single ant-select-show-arrow"
                       style="width: 100%;"
                     >
                       <div
@@ -28820,7 +27662,7 @@ exports[`<SortableList /> > renders ref.tsx correctly 1`] = `
                     style="flex: 1; width: 100%; height: 24px; font-size: 12px; border-radius: 2px; min-width: 48px;"
                   >
                     <input
-                      class="ant-input ant-input-sm ant-input-outlined emotion-12"
+                      class="ant-input ant-input-sm emotion-12"
                       id="index-2"
                       style="width: 100%;"
                       type="text"
@@ -28831,7 +27673,7 @@ exports[`<SortableList /> > renders ref.tsx correctly 1`] = `
                     style="flex: 1; width: 100%; height: 24px; font-size: 12px; border-radius: 2px; min-width: 48px;"
                   >
                     <div
-                      class="ant-select ant-select-sm ant-select-outlined emotion-13 ant-select-single ant-select-show-arrow"
+                      class="ant-select ant-select-sm emotion-13 ant-select-single ant-select-show-arrow"
                       style="width: 100%;"
                     >
                       <div
@@ -29311,7 +28153,7 @@ exports[`<SortableList /> > renders renderContent.tsx correctly 1`] = `
                     style="flex: 1; width: 100%; height: 24px; font-size: 12px; border-radius: 2px; min-width: 48px;"
                   >
                     <input
-                      class="ant-input ant-input-sm ant-input-outlined emotion-10"
+                      class="ant-input ant-input-sm emotion-10"
                       id="index-0"
                       style="width: 100%;"
                       type="text"
@@ -29322,7 +28164,7 @@ exports[`<SortableList /> > renders renderContent.tsx correctly 1`] = `
                     style="flex: 1; width: 100%; height: 24px; font-size: 12px; border-radius: 2px; min-width: 48px;"
                   >
                     <div
-                      class="ant-select ant-select-sm ant-select-outlined emotion-11 ant-select-single ant-select-show-arrow"
+                      class="ant-select ant-select-sm emotion-11 ant-select-single ant-select-show-arrow"
                       style="width: 100%;"
                     >
                       <div
@@ -29473,7 +28315,7 @@ exports[`<SortableList /> > renders renderContent.tsx correctly 1`] = `
                     style="flex: 1; width: 100%; height: 24px; font-size: 12px; border-radius: 2px; min-width: 48px;"
                   >
                     <input
-                      class="ant-input ant-input-sm ant-input-outlined emotion-10"
+                      class="ant-input ant-input-sm emotion-10"
                       id="index-1"
                       style="width: 100%;"
                       type="text"
@@ -29484,7 +28326,7 @@ exports[`<SortableList /> > renders renderContent.tsx correctly 1`] = `
                     style="flex: 1; width: 100%; height: 24px; font-size: 12px; border-radius: 2px; min-width: 48px;"
                   >
                     <div
-                      class="ant-select ant-select-sm ant-select-outlined emotion-11 ant-select-single ant-select-show-arrow"
+                      class="ant-select ant-select-sm emotion-11 ant-select-single ant-select-show-arrow"
                       style="width: 100%;"
                     >
                       <div
@@ -29635,7 +28477,7 @@ exports[`<SortableList /> > renders renderContent.tsx correctly 1`] = `
                     style="flex: 1; width: 100%; height: 24px; font-size: 12px; border-radius: 2px; min-width: 48px;"
                   >
                     <input
-                      class="ant-input ant-input-sm ant-input-outlined emotion-10"
+                      class="ant-input ant-input-sm emotion-10"
                       id="index-2"
                       style="width: 100%;"
                       type="text"
@@ -29646,7 +28488,7 @@ exports[`<SortableList /> > renders renderContent.tsx correctly 1`] = `
                     style="flex: 1; width: 100%; height: 24px; font-size: 12px; border-radius: 2px; min-width: 48px;"
                   >
                     <div
-                      class="ant-select ant-select-sm ant-select-outlined emotion-11 ant-select-single ant-select-show-arrow"
+                      class="ant-select ant-select-sm emotion-11 ant-select-single ant-select-show-arrow"
                       style="width: 100%;"
                     >
                       <div
@@ -30687,7 +29529,7 @@ exports[`<SortableList /> > renders useSortableList.tsx correctly 1`] = `
                     style="flex: 1; width: 100%; height: 24px; font-size: 12px; border-radius: 2px; min-width: 48px;"
                   >
                     <input
-                      class="ant-input ant-input-sm ant-input-outlined emotion-10"
+                      class="ant-input ant-input-sm emotion-10"
                       id="index-0"
                       style="width: 100%;"
                       type="text"
@@ -30698,7 +29540,7 @@ exports[`<SortableList /> > renders useSortableList.tsx correctly 1`] = `
                     style="flex: 1; width: 100%; height: 24px; font-size: 12px; border-radius: 2px; min-width: 48px;"
                   >
                     <div
-                      class="ant-select ant-select-sm ant-select-outlined emotion-11 ant-select-single ant-select-show-arrow"
+                      class="ant-select ant-select-sm emotion-11 ant-select-single ant-select-show-arrow"
                       style="width: 100%;"
                     >
                       <div
@@ -30849,7 +29691,7 @@ exports[`<SortableList /> > renders useSortableList.tsx correctly 1`] = `
                     style="flex: 1; width: 100%; height: 24px; font-size: 12px; border-radius: 2px; min-width: 48px;"
                   >
                     <input
-                      class="ant-input ant-input-sm ant-input-outlined emotion-10"
+                      class="ant-input ant-input-sm emotion-10"
                       id="index-1"
                       style="width: 100%;"
                       type="text"
@@ -30860,7 +29702,7 @@ exports[`<SortableList /> > renders useSortableList.tsx correctly 1`] = `
                     style="flex: 1; width: 100%; height: 24px; font-size: 12px; border-radius: 2px; min-width: 48px;"
                   >
                     <div
-                      class="ant-select ant-select-sm ant-select-outlined emotion-11 ant-select-single ant-select-show-arrow"
+                      class="ant-select ant-select-sm emotion-11 ant-select-single ant-select-show-arrow"
                       style="width: 100%;"
                     >
                       <div
@@ -31011,7 +29853,7 @@ exports[`<SortableList /> > renders useSortableList.tsx correctly 1`] = `
                     style="flex: 1; width: 100%; height: 24px; font-size: 12px; border-radius: 2px; min-width: 48px;"
                   >
                     <input
-                      class="ant-input ant-input-sm ant-input-outlined emotion-10"
+                      class="ant-input ant-input-sm emotion-10"
                       id="index-2"
                       style="width: 100%;"
                       type="text"
@@ -31022,7 +29864,7 @@ exports[`<SortableList /> > renders useSortableList.tsx correctly 1`] = `
                     style="flex: 1; width: 100%; height: 24px; font-size: 12px; border-radius: 2px; min-width: 48px;"
                   >
                     <div
-                      class="ant-select ant-select-sm ant-select-outlined emotion-11 ant-select-single ant-select-show-arrow"
+                      class="ant-select ant-select-sm emotion-11 ant-select-single ant-select-show-arrow"
                       style="width: 100%;"
                     >
                       <div
@@ -31459,7 +30301,7 @@ exports[`<SortableTree /> > renders controlled.tsx correctly 1`] = `
             class="ant-editor-sortable-tree-node-content"
           >
             <input
-              class="ant-input ant-input-outlined emotion-4"
+              class="ant-input emotion-4"
               type="text"
               value="Home"
             />
@@ -31547,7 +30389,7 @@ exports[`<SortableTree /> > renders controlled.tsx correctly 1`] = `
             class="ant-editor-sortable-tree-node-content"
           >
             <input
-              class="ant-input ant-input-outlined emotion-4"
+              class="ant-input emotion-4"
               type="text"
               value="Collections"
             />
@@ -31617,7 +30459,7 @@ exports[`<SortableTree /> > renders controlled.tsx correctly 1`] = `
             class="ant-editor-sortable-tree-node-content"
           >
             <input
-              class="ant-input ant-input-outlined emotion-4"
+              class="ant-input emotion-4"
               type="text"
               value=""
             />
@@ -31687,7 +30529,7 @@ exports[`<SortableTree /> > renders controlled.tsx correctly 1`] = `
             class="ant-editor-sortable-tree-node-content"
           >
             <input
-              class="ant-input ant-input-outlined emotion-4"
+              class="ant-input emotion-4"
               type="text"
               value=""
             />
@@ -31757,7 +30599,7 @@ exports[`<SortableTree /> > renders controlled.tsx correctly 1`] = `
             class="ant-editor-sortable-tree-node-content"
           >
             <input
-              class="ant-input ant-input-outlined emotion-4"
+              class="ant-input emotion-4"
               type="text"
               value=""
             />
@@ -31827,7 +30669,7 @@ exports[`<SortableTree /> > renders controlled.tsx correctly 1`] = `
             class="ant-editor-sortable-tree-node-content"
           >
             <input
-              class="ant-input ant-input-outlined emotion-4"
+              class="ant-input emotion-4"
               type="text"
               value=""
             />
@@ -31897,7 +30739,7 @@ exports[`<SortableTree /> > renders controlled.tsx correctly 1`] = `
             class="ant-editor-sortable-tree-node-content"
           >
             <input
-              class="ant-input ant-input-outlined emotion-4"
+              class="ant-input emotion-4"
               type="text"
               value=""
             />
@@ -31985,7 +30827,7 @@ exports[`<SortableTree /> > renders controlled.tsx correctly 1`] = `
             class="ant-editor-sortable-tree-node-content"
           >
             <input
-              class="ant-input ant-input-outlined emotion-4"
+              class="ant-input emotion-4"
               type="text"
               value=""
             />
@@ -32055,7 +30897,7 @@ exports[`<SortableTree /> > renders controlled.tsx correctly 1`] = `
             class="ant-editor-sortable-tree-node-content"
           >
             <input
-              class="ant-input ant-input-outlined emotion-4"
+              class="ant-input emotion-4"
               type="text"
               value=""
             />
@@ -32125,7 +30967,7 @@ exports[`<SortableTree /> > renders controlled.tsx correctly 1`] = `
             class="ant-editor-sortable-tree-node-content"
           >
             <input
-              class="ant-input ant-input-outlined emotion-4"
+              class="ant-input emotion-4"
               type="text"
               value=""
             />
@@ -34349,7 +33191,7 @@ exports[`<SortableTree /> > renders renderContent.tsx correctly 1`] = `
                 </button>
               </div>
               <input
-                class="ant-input ant-input-sm ant-input-outlined"
+                class="ant-input ant-input-sm"
                 id="1"
                 tabindex="10"
                 type="text"
@@ -34457,7 +33299,7 @@ exports[`<SortableTree /> > renders renderContent.tsx correctly 1`] = `
                 </button>
               </div>
               <input
-                class="ant-input ant-input-sm ant-input-outlined"
+                class="ant-input ant-input-sm"
                 id="2"
                 tabindex="10"
                 type="text"
@@ -34547,7 +33389,7 @@ exports[`<SortableTree /> > renders renderContent.tsx correctly 1`] = `
                 </button>
               </div>
               <input
-                class="ant-input ant-input-sm ant-input-outlined"
+                class="ant-input ant-input-sm"
                 id="3"
                 tabindex="10"
                 type="text"
@@ -34637,7 +33479,7 @@ exports[`<SortableTree /> > renders renderContent.tsx correctly 1`] = `
                 </button>
               </div>
               <input
-                class="ant-input ant-input-sm ant-input-outlined"
+                class="ant-input ant-input-sm"
                 id="Summer"
                 tabindex="10"
                 type="text"
@@ -34727,7 +33569,7 @@ exports[`<SortableTree /> > renders renderContent.tsx correctly 1`] = `
                 </button>
               </div>
               <input
-                class="ant-input ant-input-sm ant-input-outlined"
+                class="ant-input ant-input-sm"
                 id="Fall"
                 tabindex="10"
                 type="text"
@@ -34817,7 +33659,7 @@ exports[`<SortableTree /> > renders renderContent.tsx correctly 1`] = `
                 </button>
               </div>
               <input
-                class="ant-input ant-input-sm ant-input-outlined"
+                class="ant-input ant-input-sm"
                 id="Winter"
                 tabindex="10"
                 type="text"
@@ -34907,7 +33749,7 @@ exports[`<SortableTree /> > renders renderContent.tsx correctly 1`] = `
                 </button>
               </div>
               <input
-                class="ant-input ant-input-sm ant-input-outlined"
+                class="ant-input ant-input-sm"
                 id="About Us"
                 tabindex="10"
                 type="text"
@@ -35015,7 +33857,7 @@ exports[`<SortableTree /> > renders renderContent.tsx correctly 1`] = `
                 </button>
               </div>
               <input
-                class="ant-input ant-input-sm ant-input-outlined"
+                class="ant-input ant-input-sm"
                 id="My Account"
                 tabindex="10"
                 type="text"
@@ -35105,7 +33947,7 @@ exports[`<SortableTree /> > renders renderContent.tsx correctly 1`] = `
                 </button>
               </div>
               <input
-                class="ant-input ant-input-sm ant-input-outlined"
+                class="ant-input ant-input-sm"
                 id="Addresses"
                 tabindex="10"
                 type="text"
@@ -35195,7 +34037,7 @@ exports[`<SortableTree /> > renders renderContent.tsx correctly 1`] = `
                 </button>
               </div>
               <input
-                class="ant-input ant-input-sm ant-input-outlined"
+                class="ant-input ant-input-sm"
                 id="Order History"
                 tabindex="10"
                 type="text"
@@ -38145,7 +36987,7 @@ exports[`<antd /> > renders basic.tsx correctly 1`] = `
           class="ant-space-item"
         >
           <input
-            class="ant-input ant-input-outlined emotion-0"
+            class="ant-input emotion-0"
             placeholder="请输入内容"
             type="text"
             value=""
@@ -38155,7 +36997,7 @@ exports[`<antd /> > renders basic.tsx correctly 1`] = `
           class="ant-space-item"
         >
           <input
-            class="ant-input ant-input-outlined emotion-0"
+            class="ant-input emotion-0"
             type="text"
             value="包含有文本"
           />
@@ -38193,13 +37035,13 @@ exports[`<antd /> > renders inputNumber.tsx correctly 1`] = `
           class="ant-space-item"
         >
           <div
-            class="ant-input-number-group-wrapper ant-input-number-group-wrapper-lg ant-input-number-group-wrapper-outlined emotion-0"
+            class="ant-input-number-group-wrapper emotion-0 ant-input-number-group-wrapper-lg"
           >
             <div
               class="ant-input-number-wrapper ant-input-number-group"
             >
               <div
-                class="ant-input-number ant-input-number-lg ant-input-number-outlined"
+                class="ant-input-number ant-input-number-lg"
               >
                 <div
                   class="ant-input-number-handler-wrap"
@@ -38284,13 +37126,13 @@ exports[`<antd /> > renders inputNumber.tsx correctly 1`] = `
           class="ant-space-item"
         >
           <div
-            class="ant-input-number-group-wrapper ant-input-number-group-wrapper-outlined emotion-0"
+            class="ant-input-number-group-wrapper emotion-0"
           >
             <div
               class="ant-input-number-wrapper ant-input-number-group"
             >
               <div
-                class="ant-input-number ant-input-number-outlined"
+                class="ant-input-number"
               >
                 <div
                   class="ant-input-number-handler-wrap"
@@ -38375,13 +37217,13 @@ exports[`<antd /> > renders inputNumber.tsx correctly 1`] = `
           class="ant-space-item"
         >
           <div
-            class="ant-input-number-group-wrapper ant-input-number-group-wrapper-sm ant-input-number-group-wrapper-outlined emotion-0"
+            class="ant-input-number-group-wrapper emotion-0 ant-input-number-group-wrapper-sm"
           >
             <div
               class="ant-input-number-wrapper ant-input-number-group"
             >
               <div
-                class="ant-input-number ant-input-number-sm ant-input-number-outlined"
+                class="ant-input-number ant-input-number-sm"
               >
                 <div
                   class="ant-input-number-handler-wrap"
@@ -38654,7 +37496,7 @@ exports[`<antd /> > renders select.tsx correctly 1`] = `
         >
           默认
           <div
-            class="ant-select ant-select-outlined emotion-2 ant-select-single ant-select-show-arrow"
+            class="ant-select emotion-2 ant-select-single ant-select-show-arrow"
             style="width: 120px;"
           >
             <div
@@ -38714,7 +37556,7 @@ exports[`<antd /> > renders select.tsx correctly 1`] = `
             </span>
           </div>
           <div
-            class="ant-select ant-select-outlined emotion-2 ant-select-single ant-select-show-arrow"
+            class="ant-select emotion-2 ant-select-single ant-select-show-arrow"
             style="width: 120px;"
           >
             <div
@@ -38780,7 +37622,7 @@ exports[`<antd /> > renders select.tsx correctly 1`] = `
         >
           小尺寸
           <div
-            class="ant-select ant-select-sm ant-select-outlined emotion-2 ant-select-single ant-select-show-arrow"
+            class="ant-select ant-select-sm emotion-2 ant-select-single ant-select-show-arrow"
             style="width: 120px;"
           >
             <div
@@ -38840,7 +37682,7 @@ exports[`<antd /> > renders select.tsx correctly 1`] = `
             </span>
           </div>
           <div
-            class="ant-select ant-select-sm ant-select-outlined emotion-2 ant-select-single ant-select-show-arrow"
+            class="ant-select ant-select-sm emotion-2 ant-select-single ant-select-show-arrow"
             style="width: 120px;"
           >
             <div
@@ -39014,7 +37856,7 @@ exports[`<antd /> > renders tabs.tsx correctly 1`] = `
           </div>
           <div
             class="ant-tabs-ink-bar ant-tabs-ink-bar-animated"
-            style="width: 0px; left: 0px; transform: translateX(-50%);"
+            style="left: 0px; transform: translateX(-50%); width: 0px;"
           />
         </div>
       </div>
@@ -39399,7 +38241,7 @@ exports[`<antd /> > renders tree.tsx correctly 1`] = `
 exports[`<antd /> > renders treeselect.tsx correctly 1`] = `
 <div>
   <div
-    class="ant-select ant-tree-select ant-select-outlined ant-select-single ant-select-allow-clear ant-select-show-arrow ant-select-show-search"
+    class="ant-select ant-tree-select ant-select-single ant-select-allow-clear ant-select-show-arrow ant-select-show-search"
     style="width: 100%;"
   >
     <div

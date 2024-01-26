@@ -21,6 +21,7 @@ const Demo = () => {
           console.log('change value', value);
           setList(value);
         }}
+        SHOW_STORE_IN_DEVTOOLS
       />
       <Button
         type="primary"
