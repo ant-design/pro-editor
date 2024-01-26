@@ -68,7 +68,7 @@ export const FullFeatureWrapper = memo<HighlighterWrapperProps & HighlightProps>
           showSearch
           size={'small'}
           suffixIcon={false}
-          value={lang.toLowerCase()}
+          value={[lang.toLowerCase()]}
         />
         {copyable && <CopyButton className={styles.copy} content={children} />}
       </Flexbox>
