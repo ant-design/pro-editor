@@ -24,7 +24,6 @@ export * from './ProEditor';
 export * from './Snippet';
 export * from './SortableList';
 export * from './SortableTree';
-export { default as TipGuide } from './TipGuide';
 export * from './antd';
 export * from './theme';
 export * from './types';
