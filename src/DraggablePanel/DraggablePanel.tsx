@@ -2,7 +2,6 @@ import type { NumberSize, Size } from 're-resizable';
 import type { CSSProperties, FC, ReactNode } from 'react';
 import { memo } from 'react';
 import type { Props as RndProps } from 'react-rnd';
-
 import { withProvider } from '..';
 import { FixMode } from './FixMode';
 import { FloatMode } from './FloatMode';
