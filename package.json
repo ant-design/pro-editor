@@ -67,7 +67,7 @@
     "@dnd-kit/utilities": "^3.2.2",
     "@emotion/styled": "^11.11.0",
     "@floating-ui/react": "^0.24.8",
-    "ahooks": "^3.7.8",
+    "ahooks": "3.7.8",
     "classnames": "^2.5.1",
     "color": "^4.2.3",
     "copy-to-clipboard": "^3.3.3",
