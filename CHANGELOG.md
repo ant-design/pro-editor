@@ -1,5 +1,30 @@
 # Changelog
 
+## [Version&nbsp;0.40.0](https://github.com/ant-design/pro-editor/compare/v0.39.0...v0.40.0)
+
+<sup>Released on **2024-01-31**</sup>
+
+#### ✨ 新特性
+
+- Awareness support user config，remove large dependency & unnecessary components.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's improved
+
+- Awareness support user config，remove large dependency & unnecessary components, closes [#157](https://github.com/ant-design/pro-editor/issues/157) ([8c631b1](https://github.com/ant-design/pro-editor/commit/8c631b1))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
 ## [Version&nbsp;0.39.0](https://github.com/ant-design/pro-editor/compare/v0.38.1...v0.39.0)
 
 <sup>Released on **2024-01-19**</sup>
