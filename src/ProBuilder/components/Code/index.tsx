@@ -1,6 +1,5 @@
 import { DownOutlined, RightOutlined } from '@ant-design/icons';
 import { DraggablePanel, Highlight } from '@ant-design/pro-editor';
-// import { transformSync } from '@babel/core';
 import { useTheme } from 'antd-style';
 import type { FC } from 'react';
 import { memo, useState } from 'react';
@@ -27,27 +26,6 @@ export const CodePanel: FC<CodePanelProps> = memo((props) => {
   const { isDarkMode } = useTheme();
 
   const configCode = componentAsset.generateCode(config);
-
-  let prettierCode = '';
-  try {
-    const prettier = require('prettier');
-    const plugins = [require('prettier/parser-typescript')];
-
-    prettierCode = prettier.format(configCode, {
-      parser: 'typescript',
-      plugins,
-      // 以下参考 Bigfish 配置
-      semi: true,
-      singleQuote: true,
-      printWidth: 100,
-      trailingComma: 'all',
-      proseWrap: 'never',
-      endOfLine: 'lf',
-    });
-  } catch (err) {
-    console.error('err', err);
-    prettierCode = `代码格式化失败，格式化前为:\n ${configCode}`;
-  }
 
   return (
     <DraggablePanel
@@ -91,7 +69,7 @@ export const CodePanel: FC<CodePanelProps> = memo((props) => {
           style={{ height: '100%' }}
           onCopy={onCopy}
         >
-          {prettierCode}
+          {configCode}
         </Highlight>
       </Flexbox>
     </DraggablePanel>

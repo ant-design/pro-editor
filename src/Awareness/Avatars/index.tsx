@@ -1,7 +1,6 @@
 import { Avatar as A } from 'antd';
 import { memo } from 'react';
 import { shallow } from 'zustand/shallow';
-
 import { useStore } from '../store';
 import Avatar from './Avatar';
 

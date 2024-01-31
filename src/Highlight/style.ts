@@ -15,7 +15,6 @@ export const useStyles = createStyles(
 
     const typeStylish = css`
       background-color: ${type === 'block' ? colorFillTertiary : 'transparent'};
-      border: 1px solid ${type === 'block' ? 'transparent' : token.colorBorder};
     `;
 
     const lighterTypeStylish = css`
@@ -66,7 +65,6 @@ export const useStyles = createStyles(
         typeStylish,
         css`
           position: relative;
-          overflow: auto;
           margin: 0;
           border-radius: ${token.borderRadius}px;
           transition: background-color 100ms ${token.motionEaseOut};

@@ -1,7 +1,7 @@
 ---
 title: DraggablePanel 可拖拽悬浮面板
 atomId: DraggablePanel
-group: 基础组件
+group: 面板模块
 ---
 
 # DraggablePanel 可拖拽悬浮面板

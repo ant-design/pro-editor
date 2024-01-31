@@ -13,7 +13,6 @@ const rules: CanvasInteractRule[] = [
 ];
 export const Demo = () => {
   const [activeStatus, setActiveStatus] = useState<InteractStatus>();
-  console.log(activeStatus);
 
   return (
     <div>

@@ -1,6 +1,6 @@
 // FIXME：这里理论上不应该使用 faker 的，后续需要重构优化掉
-import { faker } from '@faker-js/faker';
 import isEqual from 'fast-deep-equal';
+import { nanoid } from 'nanoid';
 import { useEffect } from 'react';
 import type { Position } from 'react-rnd';
 import type { Awareness } from 'y-protocols/awareness';
@@ -8,7 +8,6 @@ import type { WebrtcProvider } from 'y-webrtc';
 import type { StoreApi } from 'zustand';
 import { createContext } from 'zustand-utils';
 import { createWithEqualityFn } from 'zustand/traditional';
-
 import { useAwarenessEvent } from './event';
 
 export interface User {
@@ -26,19 +25,22 @@ export interface AwarenessState {
 interface ProviderStore {
   provider: WebrtcProvider;
   awareness?: Awareness;
-  currentUser: string;
+  currentUser: User;
   awarenessStates: AwarenessState[];
   followUser?: string;
 
   setFollowUser: (id: string) => void;
 }
 
-export const createStore = (provider: WebrtcProvider) => {
+export const createStore = (provider: WebrtcProvider, user: Pick<User, 'color' | 'name'>) => {
   const useStore = createWithEqualityFn<ProviderStore>((set) => {
     return {
       provider,
       awareness: provider.awareness,
-      currentUser: faker.name.fullName(),
+      currentUser: {
+        id: nanoid(),
+        ...user,
+      },
       awarenessStates: [],
 
       setFollowUser: (followUser) => {
@@ -68,11 +70,7 @@ export const createStore = (provider: WebrtcProvider) => {
     });
 
     // 再初始化一轮用户
-    awareness.setLocalStateField('user', {
-      id: useStore.getState().currentUser,
-      name: useStore.getState().currentUser,
-      color: faker.color.rgb(),
-    });
+    awareness.setLocalStateField('user', useStore.getState().currentUser);
 
     awareness.setLocalStateField('active', true);
     // eslint-disable-next-line react-hooks/exhaustive-deps

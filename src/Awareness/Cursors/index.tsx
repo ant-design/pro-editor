@@ -8,7 +8,7 @@ import { useStore } from '../store';
 
 const Cursors = memo(() => {
   const awarenessStates = useStore<AwarenessState[]>(
-    (s) => s.awarenessStates?.filter((a) => a.active && a.user.name !== s.currentUser),
+    (s) => s.awarenessStates?.filter((a) => a.active && a.user.id !== s.currentUser.id),
     isEqual,
   );
 
