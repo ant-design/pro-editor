@@ -62,13 +62,7 @@ export const CodePanel: FC<CodePanelProps> = memo((props) => {
         </Flexbox>
       </Flexbox>
       <Flexbox className={styles.code}>
-        <Highlight
-          theme={isDarkMode ? 'dark' : 'light'}
-          lineNumber
-          language="tsx"
-          style={{ height: '100%' }}
-          onCopy={onCopy}
-        >
+        <Highlight theme={isDarkMode ? 'dark' : 'light'} lineNumber language="tsx" onCopy={onCopy}>
           {configCode}
         </Highlight>
       </Flexbox>
