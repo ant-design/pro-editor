@@ -1,30 +1,17 @@
 import { useEffect, useState } from 'react';
 import { getHighlighter, type Highlighter } from 'shikiji';
 import { themeConfig } from '../theme';
+import { languageMap } from './useHighlight';
 
 // 目前支持的语言列表
-export const languageMap = [
-  'javascript',
-  'typescript',
-  'css',
-  'json',
-  'markdown',
-  'xml',
-  'yaml',
-  'tsx',
-  'jsx',
-  'java',
-  'python',
-  'sql',
-  'sh',
-];
+export const languageList = Object.keys(languageMap);
 
 export const useShiki = (language, theme) => {
   const [shiki, setShiki] = useState<Highlighter>(null);
 
   const initShiki = async () => {
     const highlighter = await getHighlighter({
-      langs: languageMap as any,
+      langs: languageList as any,
       themes: [themeConfig(true), themeConfig(false)],
     });
     setShiki(highlighter);

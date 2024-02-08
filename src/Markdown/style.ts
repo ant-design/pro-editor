@@ -1,7 +1,22 @@
 import { createStyles } from '../theme';
 
-export const useStyles = createStyles(({ css, token }) => {
+export const useStyles = createStyles(({ css, cx, token, prefixCls }) => {
+  const prefix = `${prefixCls}-${token?.editorPrefix}-markdown`;
+
   return {
+    container: css`
+      :not(:last-child) {
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0;
+        margin-inline-end: 0;
+      }
+    `,
+    highlight: css`
+      pre {
+        padding: 12px !important;
+      }
+    `,
     markdown: css`
       color: ${token.colorText};
 
@@ -162,5 +177,65 @@ export const useStyles = createStyles(({ css, token }) => {
         }
       }
     `,
+    wrapper: cx(
+      css`
+        background-color: 'transparent';
+        border-radius: ${token.borderRadius}px;
+      `,
+    ),
+    header: cx(
+      `${prefix}-header`,
+      css`
+        background-color: ${token.colorFillTertiary};
+        padding: 4px 8px;
+        border-radius: ${token.borderRadius}px;
+        width: auto !important; // override self width
+      `,
+      css`
+        .${prefix}-btn {
+          &:hover {
+            color: ${token.colorTextSecondary} !important;
+          }
+        }
+      `,
+    ),
+    copy: css`
+      background-color: transparent;
+      position: inherit;
+      width: 30px;
+      padding-left: 6px;
+    `,
+    select: css`
+      min-width: 100px;
+      .${prefixCls}-select-selector {
+        padding-inline-end: 4px !important;
+      }
+      .${prefixCls}-select-selection-overflow-item-suffix {
+        .${prefixCls}-select-selection-search {
+          display: none;
+        }
+      }
+    `,
+    trigger: css`
+      min-width: 100px;
+      display: flex;
+      justify-content: center;
+      span {
+        font-family: ${token.fontFamilyCode} !important;
+      }
+    `,
+    lang: cx(
+      css`
+        position: absolute;
+        z-index: 2;
+        right: 0;
+        bottom: 8px;
+
+        font-family: ${token.fontFamilyCode};
+        color: ${token.colorTextSecondary};
+
+        transition: opacity 0.1s;
+      `,
+    ),
   };
 });

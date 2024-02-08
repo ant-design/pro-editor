@@ -33,12 +33,6 @@ You can view the effects of different languages in different themes through this
 
 <code src="./demos/theme.tsx" ></code>
 
-### Default Container Wrapper
-
-You can use `containerWrapper` to render a default outer container, which provides some basic capabilities such as expand/collapse and language switching.
-
-<code src="./demos/wrapper.tsx" ></code>
-
 ## API Parameters
 
 ### Highlight
