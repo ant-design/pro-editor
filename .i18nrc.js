@@ -1,4 +1,5 @@
 /**
+ *
  * @type {import("@lobehub/i18n-cli").Config}
  */
 module.exports = {
@@ -9,5 +10,5 @@ module.exports = {
     entryExtension: '.zh-CN.md',
     outputLocales: ['en-US'],
   },
-  modelName: 'gpt-3.5-turbo-1106',
+  modelName: 'gpt-4',
 };
