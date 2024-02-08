@@ -1,5 +1,6 @@
 /**
- * title: 指定语言
+ * title: 指定语言和主题
+ * description: 你可以通过 `language` 指定语言高亮，通过 `theme` 指定高亮主题
  */
 
 import { Highlight } from '@ant-design/pro-editor';

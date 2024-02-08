@@ -7,7 +7,7 @@
 import { THEME_LIGHT } from '@/Highlight/theme';
 import { Loading3QuartersOutlined as Loading } from '@ant-design/icons';
 import classNames from 'classnames';
-import { memo } from 'react';
+import { memo, useMemo } from 'react';
 import { Center } from 'react-layout-kit';
 import { useShiki } from '../../hooks/useShiki';
 import { HighlightProps } from '../../index';
@@ -16,25 +16,29 @@ import { useStyles } from './style';
 
 export type ShikiProps = Pick<
   HighlightProps,
-  'language' | 'children' | 'theme' | 'prefixCls' | 'lineNumber'
+  'language' | 'children' | 'theme' | 'prefixCls' | 'lineNumber' | 'shiki'
 >;
 
 const HighLighter: React.FC<ShikiProps> = memo((props) => {
-  const { children, lineNumber = false, theme = THEME_LIGHT, language, prefixCls } = props;
+  const { children, lineNumber = false, theme = THEME_LIGHT, language, prefixCls, shiki } = props;
   const { styles } = useStyles({ outPrefix: prefixCls, lineNumber, theme });
-  const { renderShiki, loading } = useShiki(language, theme);
+  const { renderShiki, loading } = useShiki(language, theme, shiki);
 
-  return (
+  const HighlightJSBlock = useMemo(
+    () => (
+      <HighLightJS lineNumber={lineNumber} theme={theme} language={language} prefixCls={prefixCls}>
+        {children}
+      </HighLightJS>
+    ),
+    [lineNumber, theme, language, prefixCls, children],
+  );
+
+  return shiki === false ? (
+    HighlightJSBlock
+  ) : (
     <>
       {loading ? (
-        <HighLightJS
-          lineNumber={lineNumber}
-          theme={theme}
-          language={language}
-          prefixCls={prefixCls}
-        >
-          {children}
-        </HighLightJS>
+        HighlightJSBlock
       ) : (
         <div
           className={classNames(styles.shiki)}

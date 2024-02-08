@@ -8,7 +8,7 @@ group: 基础组件
 
 ## 何时使用
 
-展示代码时使用，不需要编辑代码时使用
+展示代码时使用，Highlight 默认使用 [Shiki](https://github.com/shikijs/shiki) 渲染，Shiki 使用 TextMate 语法器更加精确，不过需要加载额外的 wasm 文件，在网络不好的情况下体验不佳，若初始化失败组件会设定渲染器为 [highlight.js](https://highlightjs.org/) 来替代。
 
 ## 代码演示
 
@@ -16,21 +16,19 @@ group: 基础组件
 
 <code src="./demos/auto.tsx" ></code>
 
-### 指定语言
+### 关闭 Shiki
 
-你可以通过 `language` 指定语言高亮，通过 `theme` 指定高亮主题
+<code src="./demos/shiki.tsx" ></code>
+
+### 指定语言
 
 <code src="./demos/basic.tsx" ></code>
 
 ### 展示代码块行号
 
-你可以通过 `lineNumber` 指定是否需要展示代码块行号
-
 <code src="./demos/lineNumber.tsx" ></code>
 
 ### 主题 & 语言 & 行号 & 渲染器
-
-你可以通过这个示例查看不同语言在不同主题下的效果
 
 <code src="./demos/theme.tsx" ></code>
 
@@ -62,5 +60,3 @@ group: 基础组件
 - sql
 
 ### 渲染说明
-
-Highlight 默认使用 [Shiki](https://github.com/shikijs/shiki) 渲染，Shiki 使用 TextMate 语法器更加精确，不过需要加载额外的 wasm 文件，在网络不好的情况下体验不佳，若初始化失败组件会设定渲染器为 [highlight.js](https://highlightjs.org/) 来替代。

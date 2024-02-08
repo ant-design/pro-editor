@@ -1,5 +1,6 @@
 /**
  * title: 切换语言与主题
+ * description: 你可以通过这个示例查看不同语言在不同主题下的效果
  */
 
 import { Highlight } from '@ant-design/pro-editor';
@@ -43,8 +44,8 @@ export default () => {
           style={{ width: 120 }}
           onChange={(value) => setTheme(value)}
         >
-          <Option value="light">白色主题</Option>
-          <Option value="dark">黑色主题</Option>
+          <Option value="light">亮色主题</Option>
+          <Option value="dark">暗色主题</Option>
         </Select>
         展示行号:
         <Select

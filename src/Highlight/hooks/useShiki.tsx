@@ -6,7 +6,7 @@ import { languageMap } from './useHighlight';
 // 目前支持的语言列表
 export const HIGHLIGHT_LANGUAGES = Object.keys(languageMap);
 
-export const useShiki = (language, theme) => {
+export const useShiki = (language, theme, isShiki) => {
   const [shiki, setShiki] = useState<Highlighter>(null);
 
   const initShiki = async () => {
@@ -18,8 +18,8 @@ export const useShiki = (language, theme) => {
   };
 
   useEffect(() => {
-    initShiki();
-  }, []);
+    if (isShiki) initShiki();
+  }, [isShiki]);
 
   const renderShiki = (content) => {
     if (shiki && shiki.getLoadedLanguages().includes(language)) {

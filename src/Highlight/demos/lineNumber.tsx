@@ -1,5 +1,6 @@
 /**
  * title: 展示代码块行号
+ * description: 你可以通过 `lineNumber` 指定是否需要展示代码块行号
  */
 
 import { Highlight } from '@ant-design/pro-editor';
