@@ -179,16 +179,14 @@ export const useStyles = createStyles(({ css, cx, token, prefixCls }) => {
     `,
     wrapper: cx(
       css`
-        background-color: 'transparent';
+        background-color: ${token.colorFillTertiary};
         border-radius: ${token.borderRadius}px;
       `,
     ),
     header: cx(
       `${prefix}-header`,
       css`
-        background-color: ${token.colorFillTertiary};
         padding: 4px 8px;
-        border-radius: ${token.borderRadius}px;
         width: auto !important; // override self width
       `,
       css`

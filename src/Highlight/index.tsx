@@ -5,6 +5,7 @@ import CopyButton from './components/CopyButton';
 import HighLighter from './components/HighLighter';
 import LanguageTag from './components/LanguageTag';
 import { useKeyDownCopyEvent } from './hooks/useKeyDownCopyEvent';
+import { HIGHLIGHT_LANGUAGES } from './hooks/useShiki';
 import { useStyles } from './style';
 import { THEME_AUTO, ThemeType } from './theme';
 
@@ -108,4 +109,4 @@ const Highlight: React.FC<HighlightProps> = memo((props) => {
   );
 });
 
-export { Highlight };
+export { HIGHLIGHT_LANGUAGES, Highlight };

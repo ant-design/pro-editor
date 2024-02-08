@@ -1,12 +1,19 @@
 import CopyButton from '@/components/CopyButton';
 import { DownOutlined, RightOutlined } from '@ant-design/icons';
-import { ActionIcon, Button, Highlight, Select, type SelectProps } from '@ant-design/pro-editor';
+import {
+  ActionIcon,
+  Button,
+  HIGHLIGHT_LANGUAGES,
+  Highlight,
+  Select,
+  type SelectProps,
+} from '@ant-design/pro-editor';
 import classNames from 'classnames';
-import { memo, useState } from 'react';
+import { memo, useMemo, useState } from 'react';
 import { Flexbox } from 'react-layout-kit';
 import { useStyles } from './style';
 
-const options: SelectProps['options'] = Object.keys(languageMap).map((key) => ({
+const options: SelectProps['options'] = HIGHLIGHT_LANGUAGES.map((key) => ({
   label: key,
   value: key.toLowerCase(),
 }));
@@ -35,6 +42,20 @@ const HighlightWrapper = memo((props: HighlightWrapperProps) => {
   const [expand, setExpand] = useState(true);
   const [lang, setLang] = useState(language);
   const { styles } = useStyles();
+
+  const highlightBlock = useMemo(() => {
+    return (
+      <Highlight
+        language={lang?.toLowerCase()}
+        copyable={false}
+        showLanguage={false}
+        type="block"
+        style={{ maxHeight: 400, overflowY: 'scroll' }}
+      >
+        {children}
+      </Highlight>
+    );
+  }, [lang, children]);
 
   return (
     <div className={classNames(styles.wrapper, className)} style={style}>
@@ -66,11 +87,7 @@ const HighlightWrapper = memo((props: HighlightWrapperProps) => {
         />
         <CopyButton className={styles.copy} content={children} />
       </Flexbox>
-      {expand ? (
-        <Highlight language={lang?.toLowerCase()} copyable={false} showLanguage={false}>
-          {children}
-        </Highlight>
-      ) : null}
+      {expand ? highlightBlock : null}
     </div>
   );
 });
