@@ -6,7 +6,7 @@ import { useStyles } from './style';
 
 /**
  * @title 动作图标属性
- * @description 继承自 `Button` 组件所有属性，除了 `title` 和 `size`
+ * @description 继承自 `Button` 组件所有属性，除了 `title`, `type` 和 `size`
  */
 export interface ActionIconProps extends Omit<ButtonProps, 'title' | 'size'> {
   /**

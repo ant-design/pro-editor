@@ -17,8 +17,8 @@ demo:
 
 ## 代码演示
 
-<code src="./demos/basic.tsx" ></code>
-<code src="./demos/preset.tsx" ></code>
+<code src="./demos/basic.tsx" title="基础示例" description="`icon` 设置动作图标, `title` 设置动作说明"></code>
+<code src="./demos/preset.tsx" title="预设动作" description="我们预设了一些编辑器常用动作图标，可以根据需求新增"></code>
 
 ## API
 

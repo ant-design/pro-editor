@@ -1,39 +1,33 @@
-import {
-  DashOutlined,
-  DeleteOutlined,
-  FullscreenOutlined,
-  RedoOutlined,
-  UndoOutlined,
-} from '@ant-design/icons';
+import { DashOutlined } from '@ant-design/icons';
 import { ActionIcon, ActionIconProps, ConfigProvider } from '@ant-design/pro-editor';
 import { Divider, Dropdown, DropdownProps } from 'antd';
 import { useStyle } from './style';
 
-export type ActionIconGroupItemType = ActionIconProps & {
-  /**
-   * @description 展示的 icon
-   */
-  icon: React.ReactNode;
-  /**
-   * @description 样式
-   * @ignore
-   */
-  style?: React.CSSProperties;
-  /**
-   * @description 每个按钮单独的key
-   */
-  key?: string;
-  /**
-   * @description 按钮点击事件的回调
-   */
-  onClick?: () => void;
-  /**
-   * @description 用于展示按钮的提示文案
-   */
-  label?: string;
-};
-
-type ActionIconGroupItemTypeWithDivider = ActionIconGroupItemType | { type: 'divider' };
+export type ActionIconGroupItemType =
+  | (ActionIconProps & {
+      /**
+       * @description 展示的 icon
+       */
+      icon: React.ReactNode;
+      /**
+       * @description 样式
+       * @ignore
+       */
+      style?: React.CSSProperties;
+      /**
+       * @description 每个按钮单独的key
+       */
+      key?: string;
+      /**
+       * @description 按钮点击事件的回调
+       */
+      onClick?: () => void;
+      /**
+       * @description 用于展示按钮的提示文案
+       */
+      label?: string;
+    })
+  | { type: 'divider' };
 
 interface ActionGroupProps {
   /**
@@ -49,11 +43,11 @@ interface ActionGroupProps {
   /**
    * @description 生成按钮的配置config
    */
-  items?: Array<ActionIconGroupItemTypeWithDivider>;
+  items?: Array<ActionIconGroupItemType>;
   /**
    * @description 生成 drowDownMenuList 内容的 config
    */
-  dropdownMenu?: Array<ActionIconGroupItemTypeWithDivider>;
+  dropdownMenu?: Array<ActionIconGroupItemType>;
   /**
    * @description 给 dropdownMenu 设置的自定义 Props，支持除了 Menu 外其余所有 antd dropdown Props 的设置
    */
@@ -66,29 +60,14 @@ interface ActionGroupProps {
    * @description 用于渲染自定义能力的render方法
    */
   render?: (
-    config: Array<ActionIconGroupItemTypeWithDivider>,
-    dropdownMenu?: Array<ActionIconGroupItemTypeWithDivider>,
+    config: Array<ActionIconGroupItemType>,
+    dropdownMenu?: Array<ActionIconGroupItemType>,
   ) => JSX.Element;
   /**
    * @description 通用的 Click 触发
    */
   onClick?: (key?: string) => void;
-  /**
-   * @description 全屏按钮点击的回调
-   */
-  onFullScreenClick?: () => void;
-  /**
-   * @description 撤销按钮点击的回调
-   */
-  onUndoClick?: () => void;
-  /**
-   * @description 重做按钮点击的回调
-   */
-  onRedoClick?: () => void;
-  /**
-   * @description 删除按钮点击的回调
-   */
-  onDeleteClick?: () => void;
+
   /**
    * @description The type of the group
    * @default "block"
@@ -114,31 +93,18 @@ const ActionGroup = (props: ActionGroupProps) => {
     style,
     render,
     dropdownMenu,
-    items,
+    items = [],
     onClick = () => {},
-    onFullScreenClick,
-    onUndoClick,
-    onRedoClick,
-    onDeleteClick,
     dropdownProps,
     dropdownMenuTrigger,
   } = props;
   const { styles, cx } = useStyle({ direction, type });
 
-  const DefalutItemConfig = [
-    { icon: <FullscreenOutlined />, onClick: onFullScreenClick },
-    { icon: <UndoOutlined />, onClick: onUndoClick },
-    { icon: <RedoOutlined />, onClick: onRedoClick },
-    { icon: <DeleteOutlined />, onClick: onDeleteClick },
-  ];
-
-  const config = items || DefalutItemConfig;
-
   const ActionDomList = () => {
     const defalutDom = (
       <>
-        {config.map((item, index) => {
-          if (item?.type)
+        {items.map((item, index) => {
+          if (item?.type === 'divider')
             return (
               <Divider
                 key={`action-divider-${index}`}
@@ -166,7 +132,7 @@ const ActionGroup = (props: ActionGroupProps) => {
       </>
     );
     if (render) {
-      return render(config, dropdownMenu);
+      return render(items, dropdownMenu);
     }
     return defalutDom;
   };
