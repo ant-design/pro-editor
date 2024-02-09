@@ -15,8 +15,6 @@ export { default as FreeCanvas } from './FreeCanvas';
 export type { FreeCanvasProps } from './FreeCanvas';
 export * from './Highlight';
 export * from './IconPicker';
-export { default as InteractContainer } from './InteractContainer';
-export type { CanvasInteractRule, InteractStatus, InteractStatusNode } from './InteractContainer';
 export { Layout as EditorLayout } from './Layout';
 export { default as Markdown, type MarkdownProps } from './Markdown';
 export * from './ProBuilder';

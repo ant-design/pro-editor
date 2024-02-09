@@ -16,21 +16,21 @@ import { useStyles } from './style';
 
 export type ShikiProps = Pick<
   HighlightProps,
-  'language' | 'children' | 'theme' | 'prefixCls' | 'lineNumber' | 'shiki'
+  'language' | 'children' | 'theme' | 'lineNumber' | 'shiki'
 >;
 
 const HighLighter: React.FC<ShikiProps> = memo((props) => {
-  const { children, lineNumber = false, theme = THEME_LIGHT, language, prefixCls, shiki } = props;
-  const { styles } = useStyles({ outPrefix: prefixCls, lineNumber, theme });
+  const { children, lineNumber = false, theme = THEME_LIGHT, language, shiki = true } = props;
+  const { styles } = useStyles({ lineNumber, theme });
   const { renderShiki, loading } = useShiki(language, theme, shiki);
 
   const HighlightJSBlock = useMemo(
     () => (
-      <HighLightJS lineNumber={lineNumber} theme={theme} language={language} prefixCls={prefixCls}>
+      <HighLightJS lineNumber={lineNumber} theme={theme} language={language}>
         {children}
       </HighLightJS>
     ),
-    [lineNumber, theme, language, prefixCls, children],
+    [lineNumber, theme, language, children],
   );
 
   return shiki === false ? (

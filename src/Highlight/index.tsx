@@ -1,3 +1,4 @@
+import { ConfigProvider } from '@ant-design/pro-editor';
 import { useThemeMode } from 'antd-style';
 import classNames from 'classnames';
 import { createRef, memo } from 'react';
@@ -20,11 +21,6 @@ export interface HighlightProps {
    * @ignore
    */
   className?: string;
-  /**
-   * @description 类名前缀
-   * @ignore
-   */
-  prefixCls?: string;
   /**
    * @title 指定语言
    * @description 指定语言
@@ -73,7 +69,7 @@ export interface HighlightProps {
   shiki?: boolean;
 }
 
-const Highlight: React.FC<HighlightProps> = memo((props) => {
+const BaseHighlight: React.FC<HighlightProps> = memo((props) => {
   const {
     children,
     style,
@@ -113,5 +109,13 @@ const Highlight: React.FC<HighlightProps> = memo((props) => {
     </div>
   );
 });
+
+const Highlight = (props: HighlightProps) => {
+  return (
+    <ConfigProvider>
+      <BaseHighlight {...props} />
+    </ConfigProvider>
+  );
+};
 
 export { HIGHLIGHT_LANGUAGES, Highlight };

@@ -2,7 +2,6 @@ import classNames from 'classnames';
 import { useStyles } from './style';
 
 export interface HighlightCellProps {
-  prefixCls: string;
   data: { index: number; value: string };
   emptyText?: string;
   onMouseDown?: React.MouseEventHandler;

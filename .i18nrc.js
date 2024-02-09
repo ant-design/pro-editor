@@ -10,5 +10,5 @@ module.exports = {
     entryExtension: '.zh-CN.md',
     outputLocales: ['en-US'],
   },
-  modelName: 'gpt-4',
+  modelName: 'gpt-3.5-turbo-1106',
 };
