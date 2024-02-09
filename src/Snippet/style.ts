@@ -31,12 +31,6 @@ export const useStyles = createStyles(({ css, cx, token, prefixCls }, { type }) 
           background-color: ${token.colorFillTertiary};
         }
 
-        .${prefix}-shiki {
-          position: relative;
-          overflow: hidden;
-          flex: 1;
-        }
-
         pre {
           overflow-x: auto !important;
           overflow-y: hidden !important;
@@ -55,6 +49,14 @@ export const useStyles = createStyles(({ css, cx, token, prefixCls }, { type }) 
         code[class*='language-'] {
           background: none !important;
         }
+      `,
+    ),
+    highlighter: cx(
+      `${prefix}-highlighter`,
+      css`
+        position: relative;
+        overflow: hidden;
+        flex: 1;
       `,
     ),
   };

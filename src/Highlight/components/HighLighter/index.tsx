@@ -16,7 +16,7 @@ import { useStyles } from './style';
 
 export type ShikiProps = Pick<
   HighlightProps,
-  'language' | 'children' | 'theme' | 'lineNumber' | 'shiki'
+  'language' | 'children' | 'theme' | 'lineNumber' | 'shiki' | 'className' | 'style'
 >;
 
 const HighLighter: React.FC<ShikiProps> = memo((props) => {
@@ -50,7 +50,6 @@ const HighLighter: React.FC<ShikiProps> = memo((props) => {
       {loading ? (
         <Center className={styles.center} gap={8} horizontal>
           <Loading spin className={styles.loading} />
-          Highlighting...
         </Center>
       ) : null}
     </>

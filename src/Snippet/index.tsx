@@ -58,9 +58,11 @@ const BaseSnippet = memo<SnippetProps>((props) => {
   return (
     <div className={cx(styles.container, className)} {...rest}>
       {spotlight && <Spotlight />}
-      <HighLighter language={language} theme={isDarkMode ? 'dark' : 'light'} shiki>
-        {symbol ? [symbol, children].join(' ') : children}
-      </HighLighter>
+      <div className={styles.highlighter}>
+        <HighLighter language={language} theme={isDarkMode ? 'dark' : 'light'} shiki>
+          {symbol ? [symbol, children].join(' ') : children}
+        </HighLighter>
+      </div>
       {copyable && <CopyButton content={children} />}
     </div>
   );
