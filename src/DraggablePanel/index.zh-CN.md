@@ -6,37 +6,21 @@ group: 面板模块
 
 # DraggablePanel 可拖拽悬浮面板
 
-## 何时使用
-
 需要拉伸或者拖拽移动的面板时使用。
 
-## 固定面板
+## 代码演示
 
-### 右侧面板（默认）
+<code src="./demos/basic.tsx"  compact="true" title="右侧面板固定"  description="默认右侧面板固定，左右拖动"></code>
 
-可左右缩放
+<code src="./demos/left.tsx" title="左侧面板固定" description="左侧面板固定，左右拖动"></code>
 
-<code src="./demos/basic.tsx"  compact="true" ></code>
+<code src="./demos/bottom.tsx" title="底部面板固定" description="底部面板固定，上下拖动"></code>
 
-### 左侧面板
+<code src="./demos/top.tsx" title="顶部面板固定" description="顶部面板固定，上下拖动"></code>
 
-<code src="./demos/left.tsx"></code>
+<code src="./demos/float.tsx" compact="true" title="悬浮可拖拽面板" description="设置 `mode` 为 `float`"></code>
 
-### 底部面板
-
-<code src="./demos/bottom.tsx"></code>
-
-### 顶部面板
-
-<code src="./demos/top.tsx"></code>
-
-## 悬浮可拖拽面板
-
-<code src="./demos/float.tsx" compact="true" ></code>
-
-### 悬浮受控模式
-
-<code src="./demos/controlFloat.tsx" compact="true"  ></code>
+<code src="./demos/controlFloat.tsx" compact="true" title="悬浮受控模式" description="悬浮框位置受控"></code>
 
 ## API
 

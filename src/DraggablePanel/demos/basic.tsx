@@ -14,7 +14,7 @@ export default () => (
   >
     <div style={{ flex: 1, padding: 12 }}>内容</div>
     <DraggablePanel style={{ padding: 12 }} maxWidth={600}>
-      可拖面板
+      右侧面板
     </DraggablePanel>
   </div>
 );
