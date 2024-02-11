@@ -61,13 +61,14 @@ export const CodePanel: FC<CodePanelProps> = memo((props) => {
           {/* 右侧按钮区域 */}
         </Flexbox>
       </Flexbox>
-      <Flexbox className={styles.code} style={{ height: `calc(100% - ${HEADER_HEIGHT}px)` }}>
+      <Flexbox className={styles.code}>
         <Highlight
           theme={isDarkMode ? 'dark' : 'light'}
           lineNumber
           language="tsx"
           onCopy={onCopy}
-          style={{ height: '100%' }}
+          showLanguage={false}
+          style={{ height: '100%', overflow: 'auto' }}
         >
           {configCode}
         </Highlight>

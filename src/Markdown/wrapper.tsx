@@ -45,13 +45,7 @@ const HighlightWrapper = memo((props: HighlightWrapperProps) => {
 
   const highlightBlock = useMemo(() => {
     return (
-      <Highlight
-        language={lang?.toLowerCase()}
-        copyable={false}
-        showLanguage={false}
-        type="block"
-        style={{ maxHeight: 400, overflowY: 'scroll' }}
-      >
+      <Highlight language={lang?.toLowerCase()} copyable={false} showLanguage={false} type="block">
         {children}
       </Highlight>
     );
@@ -87,7 +81,7 @@ const HighlightWrapper = memo((props: HighlightWrapperProps) => {
         />
         <CopyButton className={styles.copy} content={children} />
       </Flexbox>
-      {expand ? highlightBlock : null}
+      <div className={styles.highlighter}>{expand ? highlightBlock : null}</div>
     </div>
   );
 });

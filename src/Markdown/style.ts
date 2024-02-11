@@ -183,6 +183,10 @@ export const useStyles = createStyles(({ css, cx, token, prefixCls }) => {
         border-radius: ${token.borderRadius}px;
       `,
     ),
+    highlighter: css`
+      max-height: 400px;
+      overflow: scroll;
+    `,
     header: cx(
       `${prefix}-header`,
       css`
