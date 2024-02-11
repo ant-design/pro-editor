@@ -1,6 +1,3 @@
-/**
- * iframe: 800
- */
 import { demoAssets } from '@/ComponentAsset/demoAssets';
 import { AwarenessEditor, ComponentAsset, ProBuilder } from '@/index';
 import { Highlight } from '@ant-design/pro-editor';
