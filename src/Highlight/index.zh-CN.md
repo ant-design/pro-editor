@@ -6,31 +6,21 @@ group: 基础组件
 
 # Highlight 代码高亮
 
-## 何时使用
-
 展示代码时使用，Highlight 默认使用 [Shiki](https://github.com/shikijs/shiki) 渲染，Shiki 使用 TextMate 语法器更加精确，不过需要加载额外的 wasm 文件，在网络不好的情况下体验不佳，若初始化失败组件会设定渲染器为 [highlight.js](https://highlightjs.org/) 来替代。
 
 ## 代码演示
 
-### 自动主题
+<code src="./demos/auto.tsx" title="自动主题" description="默认开启 `auto`，会根据当前环境自动切换主题"></code>
 
-<code src="./demos/auto.tsx" ></code>
+<code src="./demos/shiki.tsx"  title="关闭 shiki" description="默认开启 `shiki`渲染，在弱网或无网络情况下可以设置 `shiki=false` 关闭"></code>
 
-### 关闭 Shiki
+<code src="./demos/basic.tsx" title="指定语言和主题" description="你可以通过 `language` 指定语言高亮，通过 `theme` 指定高亮主题"></code>
 
-<code src="./demos/shiki.tsx" ></code>
+<code src="./demos/lineNumber.tsx"  title="展示代码块行号"
+description="你可以通过 `lineNumber` 指定是否需要展示代码块行号"></code>
 
-### 指定语言
-
-<code src="./demos/basic.tsx" ></code>
-
-### 展示代码块行号
-
-<code src="./demos/lineNumber.tsx" ></code>
-
-### 主题 & 语言 & 行号 & 渲染器
-
-<code src="./demos/theme.tsx" ></code>
+<code src="./demos/theme.tsx"  title="切换语言与主题"
+ description="你可以通过这个示例查看不同语言在不同主题下的效果"></code>
 
 ## API 参数
 

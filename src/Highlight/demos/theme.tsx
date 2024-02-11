@@ -1,6 +1,5 @@
 /**
- * title: 切换语言与主题
- * description: 你可以通过这个示例查看不同语言在不同主题下的效果
+
  */
 
 import { Highlight } from '@ant-design/pro-editor';

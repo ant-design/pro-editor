@@ -6,7 +6,9 @@ group: 面板模块
 
 # FreeCanvas 自由画布
 
-## 示例
+基于 `ReactFlow` 的自由画布封装
+
+## 代码示例
 
 <code src='./demos/basic.tsx' ></code>
 
