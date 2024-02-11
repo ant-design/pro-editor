@@ -7,7 +7,7 @@ description: Snippet 组件用于显示带有语法突出显示的代码片段�
 
 # Snippet 代码片段
 
-## Default
+## 代码演示
 
 <code src="./demos/index.tsx" nopadding title="基础示例"></code>
 

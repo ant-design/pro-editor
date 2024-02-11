@@ -29,7 +29,6 @@ export const useStyles = createStyles(({ token, stylish, css }) => {
     `,
     code: css`
       background: ${token.colorFillQuaternary};
-      height: 100%;
       overflow: scroll;
     `,
   };

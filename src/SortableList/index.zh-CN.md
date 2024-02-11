@@ -10,11 +10,9 @@ demo:
 
 # SortableList 可排序列表
 
-## 何时使用
-
 针对可排序列表场景提供基础底层封装，可在其上进行进一步自定义，我们还封装了 `ColumnList` 组件通过 `schema` 自动生成简单的排序列表。
 
-## 使用方式
+## 代码演示
 
 <code src="./demos/Basic.tsx" ></code>
 <code src="./demos/controlled.tsx" ></code>

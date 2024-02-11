@@ -11,7 +11,7 @@ group:
 
 通用错误提示面板
 
-## 代码示例
+## 代码演示
 
 <code src='./demos/_prod.tsx' title="生产环境"></code>
 
