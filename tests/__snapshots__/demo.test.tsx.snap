@@ -222,7 +222,6 @@ exports[`<ActionGroup /> > renders config.tsx correctly 1`] = `
   >
     <button
       class="ant-btn ant-btn-text ant-btn-icon-only ant-editor-icon emotion-1"
-      label="复制"
       type="button"
     >
       <span
@@ -251,7 +250,6 @@ exports[`<ActionGroup /> > renders config.tsx correctly 1`] = `
     </button>
     <button
       class="ant-btn ant-btn-text ant-btn-icon-only ant-editor-icon emotion-1"
-      label="放大！"
       type="button"
     >
       <span
@@ -280,7 +278,6 @@ exports[`<ActionGroup /> > renders config.tsx correctly 1`] = `
     </button>
     <button
       class="ant-btn ant-btn-text ant-btn-icon-only ant-editor-icon emotion-1"
-      label="缩小！"
       style="color: rgb(24, 144, 255);"
       type="button"
     >
@@ -315,7 +312,6 @@ exports[`<ActionGroup /> > renders config.tsx correctly 1`] = `
     />
     <button
       class="ant-btn ant-btn-text ant-btn-icon-only ant-editor-icon emotion-1"
-      label="快速定位"
       type="button"
     >
       <span
@@ -1338,6 +1334,7 @@ exports[`<ActionGroup /> > renders type.tsx correctly 1`] = `
         </button>
         <button
           class="ant-btn ant-btn-text ant-btn-icon-only ant-editor-icon emotion-1"
+          style="color: rgb(24, 144, 255);"
           type="button"
         >
           <span
@@ -9263,7 +9260,7 @@ exports[`<DraggablePanel /> > renders basic.tsx correctly 1`] = `
         class="ant-editor-draggable-panel-fixed emotion-3"
         style="position: relative; user-select: auto; padding: 12px; width: 400px; height: 100%; max-width: 600px; min-width: 280px; box-sizing: border-box; flex-shrink: 0;"
       >
-        可拖面板
+        右侧面板
         <div>
           <div
             class="emotion-4 ant-editor-draggable-panel-left-handle"
@@ -10732,7 +10729,6 @@ P .emotion-4:hover {
           />
         </svg>
       </span>
-      Highlighting...
     </div>
   </div>
 </div>
@@ -11130,7 +11126,6 @@ P .emotion-4:hover {
           />
         </svg>
       </span>
-      Highlighting...
     </div>
   </div>
 </div>
@@ -11566,7 +11561,6 @@ P .emotion-4:hover {
           />
         </svg>
       </span>
-      Highlighting...
     </div>
   </div>
 </div>
@@ -12709,7 +12703,6 @@ P .emotion-4:hover {
               />
             </svg>
           </span>
-          Highlighting...
         </div>
       </div>
     </div>
@@ -16460,14 +16453,6 @@ exports[`<Markdown /> > renders code.tsx correctly 1`] = `
   background-color: rgba(0, 0, 0, 0.04);
 }
 
-.emotion-1 .ant-editor-snippet-shiki {
-  position: relative;
-  overflow: hidden;
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-}
-
 .emotion-1 pre {
   overflow-x: auto!important;
   overflow-y: hidden!important;
@@ -16500,68 +16485,76 @@ exports[`<Markdown /> > renders code.tsx correctly 1`] = `
 }
 
 .emotion-3 {
+  position: relative;
+  overflow: hidden;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.emotion-4 {
   display: block;
   overflow-x: auto;
   color: #333333;
   background-color: #666666;
 }
 
-.emotion-3 .hljs-comment,
-.emotion-3 .hljs-quote {
+.emotion-4 .hljs-comment,
+.emotion-4 .hljs-quote {
   color: #aaaaaa;
 }
 
-.emotion-3 .hljs-variable,
-.emotion-3 .hljs-attribute,
-.emotion-3 .hljs-template-variable,
-.emotion-3 .hljs-tag,
-.emotion-3 .hljs-name,
-.emotion-3 .hljs-selector-id,
-.emotion-3 .hljs-selector-class,
-.emotion-3 .hljs-regexp,
-.emotion-3 .hljs-title,
-.emotion-3 .hljs-deletion {
+.emotion-4 .hljs-variable,
+.emotion-4 .hljs-attribute,
+.emotion-4 .hljs-template-variable,
+.emotion-4 .hljs-tag,
+.emotion-4 .hljs-name,
+.emotion-4 .hljs-selector-id,
+.emotion-4 .hljs-selector-class,
+.emotion-4 .hljs-regexp,
+.emotion-4 .hljs-title,
+.emotion-4 .hljs-deletion {
   color: #ec5e41;
 }
 
-.emotion-3 .hljs-builtin-name,
-.emotion-3 .hljs-literal,
-.emotion-3 .hljs-type,
-.emotion-3 .hljs-params,
-.emotion-3 .hljs-meta,
-.emotion-3 .hljs-link {
+.emotion-4 .hljs-builtin-name,
+.emotion-4 .hljs-literal,
+.emotion-4 .hljs-type,
+.emotion-4 .hljs-params,
+.emotion-4 .hljs-meta,
+.emotion-4 .hljs-link {
   color: #ff802b;
 }
 
-.emotion-3 .hljs-string,
-.emotion-3 .hljs-number,
-.emotion-3 .hljs-symbol,
-.emotion-3 .hljs-bullet,
-.emotion-3 .hljs-addition {
+.emotion-4 .hljs-string,
+.emotion-4 .hljs-number,
+.emotion-4 .hljs-symbol,
+.emotion-4 .hljs-bullet,
+.emotion-4 .hljs-addition {
   color: #55b467;
 }
 
-.emotion-3 .hljs-keyword,
-.emotion-3 .hljs-doctag,
-.emotion-3 .hljs-built_in,
-.emotion-3 .hljs-selector-tag,
-.emotion-3 .hljs-section {
+.emotion-4 .hljs-keyword,
+.emotion-4 .hljs-doctag,
+.emotion-4 .hljs-built_in,
+.emotion-4 .hljs-selector-tag,
+.emotion-4 .hljs-section {
   color: #369eff;
 }
 
-.emotion-3 .hljs-emphasis {
+.emotion-4 .hljs-emphasis {
   font-style: italic;
 }
 
-.emotion-3 .hljs-strong {
+.emotion-4 .hljs-strong {
   font-weight: bold;
 }
 
-.emotion-4 {
+.emotion-5 {
   width: 100%;
 }
 
-.emotion-6 {
+.emotion-7 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -16580,7 +16573,7 @@ exports[`<Markdown /> > renders code.tsx correctly 1`] = `
   gap: 8px;
 }
 
-.emotion-7 {
+.emotion-8 {
   -webkit-backdrop-filter: saturate(180%) blur(10px);
   backdrop-filter: saturate(180%) blur(10px);
   position: absolute;
@@ -16605,11 +16598,11 @@ exports[`<Markdown /> > renders code.tsx correctly 1`] = `
   border-radius: 6;
 }
 
-.emotion-8 {
+.emotion-9 {
   color: #aaaaaa;
 }
 
-.emotion-9 {
+.emotion-10 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -16626,21 +16619,21 @@ exports[`<Markdown /> > renders code.tsx correctly 1`] = `
   transition: color 600ms cubic-bezier(0.215, 0.61, 0.355, 1),scale 400ms cubic-bezier(0.215, 0.61, 0.355, 1),background-color 100ms cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
-.emotion-9:hover {
+.emotion-10:hover {
   color: rgba(0, 0, 0, 0.88)!important;
 }
 
-.emotion-9:active {
+.emotion-10:active {
   scale: 0.8;
   color: rgba(0, 0, 0, 0.88);
 }
 
-.emotion-10 {
+.emotion-11 {
   background-color: rgba(0, 0, 0, 0.04);
   border-radius: 6px;
 }
 
-.emotion-11:not(:last-child) {
+.emotion-12:not(:last-child) {
   margin-block-start: 1em;
   margin-block-end: 1em;
   -webkit-margin-start: 0;
@@ -16649,11 +16642,11 @@ exports[`<Markdown /> > renders code.tsx correctly 1`] = `
   margin-inline-end: 0;
 }
 
-.emotion-11 pre {
+.emotion-12 pre {
   padding: 12px!important;
 }
 
-.emotion-12 {
+.emotion-13 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -16671,16 +16664,16 @@ exports[`<Markdown /> > renders code.tsx correctly 1`] = `
   width: 100%;
 }
 
-.emotion-13 {
+.emotion-14 {
   padding: 4px 8px;
   width: auto!important;
 }
 
-.emotion-13 .ant-editor-markdown-btn:hover {
+.emotion-14 .ant-editor-markdown-btn:hover {
   color: rgba(0, 0, 0, 0.65)!important;
 }
 
-.emotion-14 {
+.emotion-15 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -16699,60 +16692,60 @@ exports[`<Markdown /> > renders code.tsx correctly 1`] = `
   height: 24px!important;
 }
 
-.emotion-14:hover {
+.emotion-15:hover {
   color: rgba(0, 0, 0, 0.88)!important;
 }
 
-.emotion-14:active {
+.emotion-15:active {
   scale: 0.8;
   color: rgba(0, 0, 0, 0.88);
 }
 
-.emotion-15.ant-select-multiple:not(.emotion-15.ant-select-customize-input) .emotion-15.ant-select.ant-select-selector:hover {
+.emotion-16.ant-select-multiple:not(.emotion-16.ant-select-customize-input) .emotion-16.ant-select.ant-select-selector:hover {
   color: rgba(0, 0, 0, 0.88);
   background-color: rgba(0, 0, 0, 0.04);
   border-color: transparent;
 }
 
-.emotion-15.ant-select-multiple:not(.emotion-15.ant-select-customize-input) .emotion-15.ant-select.ant-select-selector:focus {
+.emotion-16.ant-select-multiple:not(.emotion-16.ant-select-customize-input) .emotion-16.ant-select.ant-select-selector:focus {
   color: rgba(0, 0, 0, 0.88)!important;
   background-color: rgba(0, 0, 0, 0.02)!important;
   border-color: #1677ff!important;
   box-shadow: none;
 }
 
-.emotion-15.ant-select:not(.ant-select-disabled):not(.ant-select-customize-input):hover .ant-select-selector {
+.emotion-16.ant-select:not(.ant-select-disabled):not(.ant-select-customize-input):hover .ant-select-selector {
   border-color: transparent;
 }
 
-.emotion-15.ant-select:not(.ant-select-disabled):not(.ant-select-customize-input):hover .ant-select-selector:hover {
+.emotion-16.ant-select:not(.ant-select-disabled):not(.ant-select-customize-input):hover .ant-select-selector:hover {
   color: rgba(0, 0, 0, 0.88);
   background-color: rgba(0, 0, 0, 0.04);
   border-color: transparent;
 }
 
-.emotion-15.ant-select:not(.ant-select-disabled):not(.ant-select-customize-input):hover .ant-select-selector:focus {
+.emotion-16.ant-select:not(.ant-select-disabled):not(.ant-select-customize-input):hover .ant-select-selector:focus {
   color: rgba(0, 0, 0, 0.88)!important;
   background-color: rgba(0, 0, 0, 0.02)!important;
   border-color: #1677ff!important;
   box-shadow: none;
 }
 
-.emotion-15.ant-select-focused:not(.ant-select-disabled):not(.ant-select-customize-input):hover .ant-select-selector {
+.emotion-16.ant-select-focused:not(.ant-select-disabled):not(.ant-select-customize-input):hover .ant-select-selector {
   color: rgba(0, 0, 0, 0.88)!important;
   background-color: rgba(0, 0, 0, 0.02)!important;
   border-color: #1677ff!important;
   box-shadow: none;
 }
 
-.emotion-15.ant-select-focused:not(.ant-select-disabled):not(.ant-select-customize-input) .ant-select-selector {
+.emotion-16.ant-select-focused:not(.ant-select-disabled):not(.ant-select-customize-input) .ant-select-selector {
   color: rgba(0, 0, 0, 0.88)!important;
   background-color: rgba(0, 0, 0, 0.02)!important;
   border-color: #1677ff!important;
   box-shadow: none;
 }
 
-.emotion-15 .ant-select-arrow {
+.emotion-16 .ant-select-arrow {
   top: 13px;
   right: 8px;
   width: 10px;
@@ -16760,20 +16753,20 @@ exports[`<Markdown /> > renders code.tsx correctly 1`] = `
   font-size: 10px;
 }
 
-.emotion-16 {
+.emotion-17 {
   min-width: 100px;
 }
 
-.emotion-16 .ant-select-selector {
+.emotion-17 .ant-select-selector {
   -webkit-padding-end: 4px!important;
   padding-inline-end: 4px!important;
 }
 
-.emotion-16 .ant-select-selection-overflow-item-suffix .ant-select-selection-search {
+.emotion-17 .ant-select-selection-overflow-item-suffix .ant-select-selection-search {
   display: none;
 }
 
-.emotion-17 {
+.emotion-18 {
   min-width: 100px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -16785,11 +16778,11 @@ exports[`<Markdown /> > renders code.tsx correctly 1`] = `
   justify-content: center;
 }
 
-.emotion-17 span {
+.emotion-18 span {
   font-family: 'SFMono-Regular',Consolas,'Liberation Mono',Menlo,Courier,monospace!important;
 }
 
-.emotion-18 {
+.emotion-19 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -16810,16 +16803,21 @@ exports[`<Markdown /> > renders code.tsx correctly 1`] = `
   padding-left: 6px;
 }
 
-.emotion-18:hover {
+.emotion-19:hover {
   color: rgba(0, 0, 0, 0.88)!important;
 }
 
-.emotion-18:active {
+.emotion-19:active {
   scale: 0.8;
   color: rgba(0, 0, 0, 0.88);
 }
 
-.emotion-19 {
+.emotion-20 {
+  max-height: 400px;
+  overflow: auto;
+}
+
+.emotion-21 {
   background-color: #fafafa;
   position: relative;
   margin: 0;
@@ -16828,23 +16826,23 @@ exports[`<Markdown /> > renders code.tsx correctly 1`] = `
   transition: background-color 100ms cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
-.emotion-19:not(:hover) .ant-editor-highlight-copy {
+.emotion-21:not(:hover) .ant-editor-highlight-copy {
   visibility: hidden;
   opacity: 0;
 }
 
-.emotion-19:not(:hover) .ant-editor-highlight-tag {
+.emotion-21:not(:hover) .ant-editor-highlight-tag {
   visibility: hidden;
   opacity: 0;
 }
 
-.emotion-19 pre {
+.emotion-21 pre {
   margin: 0!important;
   padding: 16px 24px!important;
   background: none!important;
 }
 
-.emotion-19 code {
+.emotion-21 code {
   background: transparent!important;
 }
 
@@ -16860,56 +16858,59 @@ exports[`<Markdown /> > renders code.tsx correctly 1`] = `
         data-code-type="highlighter"
         style="display: flex;"
       >
-        <pre
-          class="emotion-3"
-        >
-          <table
-            border="0"
-            cellpadding="0"
-            cellspacing="0"
-          >
-            <tbody>
-              <tr>
-                <td
-                  class="ant-editor-highlight-content emotion-4"
-                >
-                  $ pnpm install
-                </td>
-              </tr>
-              <tr>
-                <td
-                  class="ant-editor-highlight-content emotion-4"
-                />
-              </tr>
-            </tbody>
-          </table>
-        </pre>
         <div
-          class="layoutkit-center emotion-6 emotion-7"
+          class="ant-editor-snippet-highlighter emotion-3"
         >
-          <span
-            aria-label="loading-3-quarters"
-            class="anticon anticon-loading-3-quarters anticon-spin emotion-8"
-            role="img"
+          <pre
+            class="emotion-4"
           >
-            <svg
-              aria-hidden="true"
-              data-icon="loading-3-quarters"
-              fill="currentColor"
-              focusable="false"
-              height="1em"
-              viewBox="0 0 1024 1024"
-              width="1em"
+            <table
+              border="0"
+              cellpadding="0"
+              cellspacing="0"
             >
-              <path
-                d="M512 1024c-69.1 0-136.2-13.5-199.3-40.2C251.7 958 197 921 150 874c-47-47-84-101.7-109.8-162.7C13.5 648.2 0 581.1 0 512c0-19.9 16.1-36 36-36s36 16.1 36 36c0 59.4 11.6 117 34.6 171.3 22.2 52.4 53.9 99.5 94.3 139.9 40.4 40.4 87.5 72.2 139.9 94.3C395 940.4 452.6 952 512 952c59.4 0 117-11.6 171.3-34.6 52.4-22.2 99.5-53.9 139.9-94.3 40.4-40.4 72.2-87.5 94.3-139.9C940.4 629 952 571.4 952 512c0-59.4-11.6-117-34.6-171.3a440.45 440.45 0 00-94.3-139.9 437.71 437.71 0 00-139.9-94.3C629 83.6 571.4 72 512 72c-19.9 0-36-16.1-36-36s16.1-36 36-36c69.1 0 136.2 13.5 199.3 40.2C772.3 66 827 103 874 150c47 47 83.9 101.8 109.7 162.7 26.7 63.1 40.2 130.2 40.2 199.3s-13.5 136.2-40.2 199.3C958 772.3 921 827 874 874c-47 47-101.8 83.9-162.7 109.7-63.1 26.8-130.2 40.3-199.3 40.3z"
-              />
-            </svg>
-          </span>
-          Highlighting...
+              <tbody>
+                <tr>
+                  <td
+                    class="ant-editor-highlight-content emotion-5"
+                  >
+                    $ pnpm install
+                  </td>
+                </tr>
+                <tr>
+                  <td
+                    class="ant-editor-highlight-content emotion-5"
+                  />
+                </tr>
+              </tbody>
+            </table>
+          </pre>
+          <div
+            class="layoutkit-center emotion-7 emotion-8"
+          >
+            <span
+              aria-label="loading-3-quarters"
+              class="anticon anticon-loading-3-quarters anticon-spin emotion-9"
+              role="img"
+            >
+              <svg
+                aria-hidden="true"
+                data-icon="loading-3-quarters"
+                fill="currentColor"
+                focusable="false"
+                height="1em"
+                viewBox="0 0 1024 1024"
+                width="1em"
+              >
+                <path
+                  d="M512 1024c-69.1 0-136.2-13.5-199.3-40.2C251.7 958 197 921 150 874c-47-47-84-101.7-109.8-162.7C13.5 648.2 0 581.1 0 512c0-19.9 16.1-36 36-36s36 16.1 36 36c0 59.4 11.6 117 34.6 171.3 22.2 52.4 53.9 99.5 94.3 139.9 40.4 40.4 87.5 72.2 139.9 94.3C395 940.4 452.6 952 512 952c59.4 0 117-11.6 171.3-34.6 52.4-22.2 99.5-53.9 139.9-94.3 40.4-40.4 72.2-87.5 94.3-139.9C940.4 629 952 571.4 952 512c0-59.4-11.6-117-34.6-171.3a440.45 440.45 0 00-94.3-139.9 437.71 437.71 0 00-139.9-94.3C629 83.6 571.4 72 512 72c-19.9 0-36-16.1-36-36s16.1-36 36-36c69.1 0 136.2 13.5 199.3 40.2C772.3 66 827 103 874 150c47 47 83.9 101.8 109.7 162.7 26.7 63.1 40.2 130.2 40.2 199.3s-13.5 136.2-40.2 199.3C958 772.3 921 827 874 874c-47 47-101.8 83.9-162.7 109.7-63.1 26.8-130.2 40.3-199.3 40.3z"
+                />
+              </svg>
+            </span>
+          </div>
         </div>
         <button
-          class="ant-btn ant-btn-text ant-btn-icon-only ant-editor-icon emotion-9"
+          class="ant-btn ant-btn-text ant-btn-icon-only ant-editor-icon emotion-10"
           type="button"
         >
           <span
@@ -16941,13 +16942,13 @@ exports[`<Markdown /> > renders code.tsx correctly 1`] = `
       
 
       <div
-        class="emotion-10 emotion-11"
+        class="emotion-11 emotion-12"
       >
         <div
-          class="layoutkit-flexbox emotion-12 ant-editor-markdown-header emotion-13"
+          class="layoutkit-flexbox emotion-13 ant-editor-markdown-header emotion-14"
         >
           <button
-            class="ant-btn ant-btn-text ant-btn-icon-only ant-editor-icon emotion-14"
+            class="ant-btn ant-btn-text ant-btn-icon-only ant-editor-icon emotion-15"
             type="button"
           >
             <span
@@ -16976,7 +16977,7 @@ exports[`<Markdown /> > renders code.tsx correctly 1`] = `
             </span>
           </button>
           <div
-            class="ant-select ant-select-sm ant-select-borderless emotion-15 emotion-16 ant-select-multiple ant-select-show-arrow ant-select-show-search"
+            class="ant-select ant-select-sm ant-select-borderless emotion-16 emotion-17 ant-select-multiple ant-select-show-arrow ant-select-show-search"
           >
             <div
               class="ant-select-selector"
@@ -16990,7 +16991,7 @@ exports[`<Markdown /> > renders code.tsx correctly 1`] = `
                 >
                   <span>
                     <div
-                      class="emotion-17"
+                      class="emotion-18"
                     >
                       <button
                         class="ant-btn ant-btn-text ant-btn-sm"
@@ -17042,7 +17043,7 @@ exports[`<Markdown /> > renders code.tsx correctly 1`] = `
             />
           </div>
           <button
-            class="ant-btn ant-btn-text ant-btn-icon-only ant-editor-icon emotion-18"
+            class="ant-btn ant-btn-text ant-btn-icon-only ant-editor-icon emotion-19"
             type="button"
           >
             <span
@@ -17072,923 +17073,925 @@ exports[`<Markdown /> > renders code.tsx correctly 1`] = `
           </button>
         </div>
         <div
-          class="ant-editor-highlight-container emotion-19"
-          style="max-height: 400px; overflow-y: scroll;"
-          tabindex="-1"
+          class="emotion-20"
         >
-          <pre
-            class="emotion-3"
-          >
-            <table
-              border="0"
-              cellpadding="0"
-              cellspacing="0"
-            >
-              <tbody>
-                <tr>
-                  <td
-                    class="ant-editor-highlight-content emotion-4"
-                  >
-                    <span
-                      class="hljs-keyword"
-                    >
-                      import
-                    </span>
-                     { Collapse, Divider, Typography } 
-                    <span
-                      class="hljs-keyword"
-                    >
-                      from
-                    </span>
-                     
-                    <span
-                      class="hljs-string"
-                    >
-                      'antd'
-                    </span>
-                    ;
-                  </td>
-                </tr>
-                <tr>
-                  <td
-                    class="ant-editor-highlight-content emotion-4"
-                  >
-                    <span
-                      class="hljs-keyword"
-                    >
-                      import
-                    </span>
-                     { CSSProperties, memo } 
-                    <span
-                      class="hljs-keyword"
-                    >
-                      from
-                    </span>
-                     
-                    <span
-                      class="hljs-string"
-                    >
-                      'react'
-                    </span>
-                    ;
-                  </td>
-                </tr>
-                <tr>
-                  <td
-                    class="ant-editor-highlight-content emotion-4"
-                  >
-                    <span
-                      class="hljs-keyword"
-                    >
-                      import
-                    </span>
-                     ReactMarkdown 
-                    <span
-                      class="hljs-keyword"
-                    >
-                      from
-                    </span>
-                     
-                    <span
-                      class="hljs-string"
-                    >
-                      'react-markdown'
-                    </span>
-                    ;
-                  </td>
-                </tr>
-                <tr>
-                  <td
-                    class="ant-editor-highlight-content emotion-4"
-                  >
-                    <span
-                      class="hljs-keyword"
-                    >
-                      import
-                    </span>
-                     rehypeKatex 
-                    <span
-                      class="hljs-keyword"
-                    >
-                      from
-                    </span>
-                     
-                    <span
-                      class="hljs-string"
-                    >
-                      'rehype-katex'
-                    </span>
-                    ;
-                  </td>
-                </tr>
-                <tr>
-                  <td
-                    class="ant-editor-highlight-content emotion-4"
-                  >
-                    <span
-                      class="hljs-keyword"
-                    >
-                      import
-                    </span>
-                     remarkGfm 
-                    <span
-                      class="hljs-keyword"
-                    >
-                      from
-                    </span>
-                     
-                    <span
-                      class="hljs-string"
-                    >
-                      'remark-gfm'
-                    </span>
-                    ;
-                  </td>
-                </tr>
-                <tr>
-                  <td
-                    class="ant-editor-highlight-content emotion-4"
-                  >
-                    <span
-                      class="hljs-keyword"
-                    >
-                      import
-                    </span>
-                     remarkMath 
-                    <span
-                      class="hljs-keyword"
-                    >
-                      from
-                    </span>
-                     
-                    <span
-                      class="hljs-string"
-                    >
-                      'remark-math'
-                    </span>
-                    ;
-                  </td>
-                </tr>
-                <tr>
-                  <td
-                    class="ant-editor-highlight-content emotion-4"
-                  />
-                </tr>
-                <tr>
-                  <td
-                    class="ant-editor-highlight-content emotion-4"
-                  >
-                    <span
-                      class="hljs-keyword"
-                    >
-                      import
-                    </span>
-                     { PluggableList } 
-                    <span
-                      class="hljs-keyword"
-                    >
-                      from
-                    </span>
-                     
-                    <span
-                      class="hljs-string"
-                    >
-                      'react-markdown/lib/react-markdown'
-                    </span>
-                    ;
-                  </td>
-                </tr>
-                <tr>
-                  <td
-                    class="ant-editor-highlight-content emotion-4"
-                  >
-                    <span
-                      class="hljs-keyword"
-                    >
-                      import
-                    </span>
-                     { withProvider } 
-                    <span
-                      class="hljs-keyword"
-                    >
-                      from
-                    </span>
-                     
-                    <span
-                      class="hljs-string"
-                    >
-                      '..'
-                    </span>
-                    ;
-                  </td>
-                </tr>
-                <tr>
-                  <td
-                    class="ant-editor-highlight-content emotion-4"
-                  >
-                    <span
-                      class="hljs-keyword"
-                    >
-                      import
-                    </span>
-                     { Code } 
-                    <span
-                      class="hljs-keyword"
-                    >
-                      from
-                    </span>
-                     
-                    <span
-                      class="hljs-string"
-                    >
-                      './CodeBlock'
-                    </span>
-                    ;
-                  </td>
-                </tr>
-                <tr>
-                  <td
-                    class="ant-editor-highlight-content emotion-4"
-                  >
-                    <span
-                      class="hljs-keyword"
-                    >
-                      import
-                    </span>
-                     { useStyles } 
-                    <span
-                      class="hljs-keyword"
-                    >
-                      from
-                    </span>
-                     
-                    <span
-                      class="hljs-string"
-                    >
-                      './style'
-                    </span>
-                    ;
-                  </td>
-                </tr>
-                <tr>
-                  <td
-                    class="ant-editor-highlight-content emotion-4"
-                  />
-                </tr>
-                <tr>
-                  <td
-                    class="ant-editor-highlight-content emotion-4"
-                  >
-                    <span
-                      class="hljs-keyword"
-                    >
-                      export
-                    </span>
-                     
-                    <span
-                      class="hljs-keyword"
-                    >
-                      interface
-                    </span>
-                     MarkdownProps {
-                  </td>
-                </tr>
-                <tr>
-                  <td
-                    class="ant-editor-highlight-content emotion-4"
-                  >
-                      
-                    <span
-                      class="hljs-attr"
-                    >
-                      children
-                    </span>
-                    : 
-                    <span
-                      class="hljs-built_in"
-                    >
-                      string
-                    </span>
-                    ;
-                  </td>
-                </tr>
-                <tr>
-                  <td
-                    class="ant-editor-highlight-content emotion-4"
-                  >
-                      
-                    <span
-                      class="hljs-comment"
-                    >
-                      /**
-                    </span>
-                  </td>
-                </tr>
-                <tr>
-                  <td
-                    class="ant-editor-highlight-content emotion-4"
-                  >
-                       * 
-                    <span
-                      class="hljs-doctag"
-                    >
-                      @description 
-                      <span
-                        class="hljs-variable"
-                      >
-                        ClassName
-                      </span>
-                    </span>
-                  </td>
-                </tr>
-                <tr>
-                  <td
-                    class="ant-editor-highlight-content emotion-4"
-                  >
-                       */
-                  </td>
-                </tr>
-                <tr>
-                  <td
-                    class="ant-editor-highlight-content emotion-4"
-                  >
-                      className?: 
-                    <span
-                      class="hljs-built_in"
-                    >
-                      string
-                    </span>
-                    ;
-                  </td>
-                </tr>
-                <tr>
-                  <td
-                    class="ant-editor-highlight-content emotion-4"
-                  >
-                      onDoubleClick?: 
-                    <span
-                      class="hljs-function"
-                    >
-                      () =&gt;
-                    </span>
-                     
-                    <span
-                      class="hljs-built_in"
-                    >
-                      void
-                    </span>
-                    ;
-                  </td>
-                </tr>
-                <tr>
-                  <td
-                    class="ant-editor-highlight-content emotion-4"
-                  >
-                      style?: CSSProperties;
-                  </td>
-                </tr>
-                <tr>
-                  <td
-                    class="ant-editor-highlight-content emotion-4"
-                  >
-                      rehypePlugins?: PluggableList;
-                  </td>
-                </tr>
-                <tr>
-                  <td
-                    class="ant-editor-highlight-content emotion-4"
-                  >
-                      remarkPlugins?: PluggableList;
-                  </td>
-                </tr>
-                <tr>
-                  <td
-                    class="ant-editor-highlight-content emotion-4"
-                  >
-                    }
-                  </td>
-                </tr>
-                <tr>
-                  <td
-                    class="ant-editor-highlight-content emotion-4"
-                  />
-                </tr>
-                <tr>
-                  <td
-                    class="ant-editor-highlight-content emotion-4"
-                  >
-                    <span
-                      class="hljs-keyword"
-                    >
-                      const
-                    </span>
-                     MemoHr = memo(
-                    <span
-                      class="hljs-function"
-                    >
-                      (
-                      <span
-                        class="hljs-params"
-                      >
-                        props
-                      </span>
-                      ) =&gt;
-                    </span>
-                     (
-                  </td>
-                </tr>
-                <tr>
-                  <td
-                    class="ant-editor-highlight-content emotion-4"
-                  >
-                      &lt;Divider style={{ marginBottom: '1em', marginTop: 0 }} {...props} /&gt;
-                  </td>
-                </tr>
-                <tr>
-                  <td
-                    class="ant-editor-highlight-content emotion-4"
-                  >
-                    ));
-                  </td>
-                </tr>
-                <tr>
-                  <td
-                    class="ant-editor-highlight-content emotion-4"
-                  >
-                    <span
-                      class="hljs-keyword"
-                    >
-                      const
-                    </span>
-                     MemoDetails = memo(
-                    <span
-                      class="hljs-function"
-                    >
-                      (
-                      <span
-                        class="hljs-params"
-                      >
-                        props
-                      </span>
-                      ) =&gt;
-                    </span>
-                     &lt;Collapse style={{ marginBottom: '1em' }} {...props} /&gt;);
-                  </td>
-                </tr>
-                <tr>
-                  <td
-                    class="ant-editor-highlight-content emotion-4"
-                  >
-                    <span
-                      class="hljs-keyword"
-                    >
-                      const
-                    </span>
-                     MemoImage = memo(
-                    <span
-                      class="hljs-function"
-                    >
-                      (
-                      <span
-                        class="hljs-params"
-                      >
-                        props
-                      </span>
-                      ) =&gt;
-                    </span>
-                     &lt;img {...props} /&gt;);
-                  </td>
-                </tr>
-                <tr>
-                  <td
-                    class="ant-editor-highlight-content emotion-4"
-                  >
-                    <span
-                      class="hljs-keyword"
-                    >
-                      const
-                    </span>
-                     MemoAlink = memo(
-                    <span
-                      class="hljs-function"
-                    >
-                      (
-                      <span
-                        class="hljs-params"
-                      >
-                        props
-                      </span>
-                      ) =&gt;
-                    </span>
-                     &lt;Typography.Link {...props} /&gt;);
-                  </td>
-                </tr>
-                <tr>
-                  <td
-                    class="ant-editor-highlight-content emotion-4"
-                  />
-                </tr>
-                <tr>
-                  <td
-                    class="ant-editor-highlight-content emotion-4"
-                  >
-                    <span
-                      class="hljs-keyword"
-                    >
-                      const
-                    </span>
-                     Markdown = memo&lt;MarkdownProps&gt;(
-                  </td>
-                </tr>
-                <tr>
-                  <td
-                    class="ant-editor-highlight-content emotion-4"
-                  >
-                      
-                    <span
-                      class="hljs-function"
-                    >
-                      (
-                      <span
-                        class="hljs-params"
-                      >
-                        {
-                      </span>
-                    </span>
-                  </td>
-                </tr>
-                <tr>
-                  <td
-                    class="ant-editor-highlight-content emotion-4"
-                  >
-                        children,
-                  </td>
-                </tr>
-                <tr>
-                  <td
-                    class="ant-editor-highlight-content emotion-4"
-                  >
-                        className,
-                  </td>
-                </tr>
-                <tr>
-                  <td
-                    class="ant-editor-highlight-content emotion-4"
-                  >
-                        style,
-                  </td>
-                </tr>
-                <tr>
-                  <td
-                    class="ant-editor-highlight-content emotion-4"
-                  >
-                        onDoubleClick,
-                  </td>
-                </tr>
-                <tr>
-                  <td
-                    class="ant-editor-highlight-content emotion-4"
-                  >
-                        rehypePlugins: outRehypePlugins,
-                  </td>
-                </tr>
-                <tr>
-                  <td
-                    class="ant-editor-highlight-content emotion-4"
-                  >
-                        remarkPlugins: outRemarkPlugins,
-                  </td>
-                </tr>
-                <tr>
-                  <td
-                    class="ant-editor-highlight-content emotion-4"
-                  >
-                        ...rest
-                  </td>
-                </tr>
-                <tr>
-                  <td
-                    class="ant-editor-highlight-content emotion-4"
-                  >
-                      }) =&gt; {
-                  </td>
-                </tr>
-                <tr>
-                  <td
-                    class="ant-editor-highlight-content emotion-4"
-                  >
-                        
-                    <span
-                      class="hljs-keyword"
-                    >
-                      const
-                    </span>
-                     { styles } = useStyles();
-                  </td>
-                </tr>
-                <tr>
-                  <td
-                    class="ant-editor-highlight-content emotion-4"
-                  >
-                        
-                    <span
-                      class="hljs-keyword"
-                    >
-                      const
-                    </span>
-                     components: 
-                    <span
-                      class="hljs-built_in"
-                    >
-                      any
-                    </span>
-                     = {
-                  </td>
-                </tr>
-                <tr>
-                  <td
-                    class="ant-editor-highlight-content emotion-4"
-                  >
-                          
-                    <span
-                      class="hljs-attr"
-                    >
-                      details
-                    </span>
-                    : MemoDetails,
-                  </td>
-                </tr>
-                <tr>
-                  <td
-                    class="ant-editor-highlight-content emotion-4"
-                  >
-                          
-                    <span
-                      class="hljs-attr"
-                    >
-                      hr
-                    </span>
-                    : MemoHr,
-                  </td>
-                </tr>
-                <tr>
-                  <td
-                    class="ant-editor-highlight-content emotion-4"
-                  >
-                          
-                    <span
-                      class="hljs-attr"
-                    >
-                      a
-                    </span>
-                    : MemoAlink,
-                  </td>
-                </tr>
-                <tr>
-                  <td
-                    class="ant-editor-highlight-content emotion-4"
-                  >
-                          
-                    <span
-                      class="hljs-attr"
-                    >
-                      img
-                    </span>
-                    : MemoImage,
-                  </td>
-                </tr>
-                <tr>
-                  <td
-                    class="ant-editor-highlight-content emotion-4"
-                  >
-                          
-                    <span
-                      class="hljs-attr"
-                    >
-                      pre
-                    </span>
-                    : Code,
-                  </td>
-                </tr>
-                <tr>
-                  <td
-                    class="ant-editor-highlight-content emotion-4"
-                  >
-                        };
-                  </td>
-                </tr>
-                <tr>
-                  <td
-                    class="ant-editor-highlight-content emotion-4"
-                  />
-                </tr>
-                <tr>
-                  <td
-                    class="ant-editor-highlight-content emotion-4"
-                  >
-                        
-                    <span
-                      class="hljs-keyword"
-                    >
-                      const
-                    </span>
-                     rehypePlugins = [rehypeKatex, ...(outRehypePlugins || [])];
-                  </td>
-                </tr>
-                <tr>
-                  <td
-                    class="ant-editor-highlight-content emotion-4"
-                  >
-                        
-                    <span
-                      class="hljs-keyword"
-                    >
-                      const
-                    </span>
-                     remarkPlugins = [remarkGfm, remarkMath, ...(outRemarkPlugins || [])];
-                  </td>
-                </tr>
-                <tr>
-                  <td
-                    class="ant-editor-highlight-content emotion-4"
-                  />
-                </tr>
-                <tr>
-                  <td
-                    class="ant-editor-highlight-content emotion-4"
-                  >
-                        
-                    <span
-                      class="hljs-keyword"
-                    >
-                      return
-                    </span>
-                     (
-                  </td>
-                </tr>
-                <tr>
-                  <td
-                    class="ant-editor-highlight-content emotion-4"
-                  >
-                          &lt;Typography className={className} onDoubleClick={onDoubleClick} style={style}&gt;
-                  </td>
-                </tr>
-                <tr>
-                  <td
-                    class="ant-editor-highlight-content emotion-4"
-                  >
-                            &lt;ReactMarkdown
-                  </td>
-                </tr>
-                <tr>
-                  <td
-                    class="ant-editor-highlight-content emotion-4"
-                  >
-                              className={styles.markdown}
-                  </td>
-                </tr>
-                <tr>
-                  <td
-                    class="ant-editor-highlight-content emotion-4"
-                  >
-                              components={components}
-                  </td>
-                </tr>
-                <tr>
-                  <td
-                    class="ant-editor-highlight-content emotion-4"
-                  >
-                              rehypePlugins={rehypePlugins as PluggableList}
-                  </td>
-                </tr>
-                <tr>
-                  <td
-                    class="ant-editor-highlight-content emotion-4"
-                  >
-                              remarkPlugins={remarkPlugins as PluggableList}
-                  </td>
-                </tr>
-                <tr>
-                  <td
-                    class="ant-editor-highlight-content emotion-4"
-                  >
-                              {...rest}
-                  </td>
-                </tr>
-                <tr>
-                  <td
-                    class="ant-editor-highlight-content emotion-4"
-                  >
-                            &gt;
-                  </td>
-                </tr>
-                <tr>
-                  <td
-                    class="ant-editor-highlight-content emotion-4"
-                  >
-                              {children}
-                  </td>
-                </tr>
-                <tr>
-                  <td
-                    class="ant-editor-highlight-content emotion-4"
-                  >
-                            &lt;/ReactMarkdown&gt;
-                  </td>
-                </tr>
-                <tr>
-                  <td
-                    class="ant-editor-highlight-content emotion-4"
-                  >
-                          &lt;/Typography&gt;
-                  </td>
-                </tr>
-                <tr>
-                  <td
-                    class="ant-editor-highlight-content emotion-4"
-                  >
-                        );
-                  </td>
-                </tr>
-                <tr>
-                  <td
-                    class="ant-editor-highlight-content emotion-4"
-                  >
-                      },
-                  </td>
-                </tr>
-                <tr>
-                  <td
-                    class="ant-editor-highlight-content emotion-4"
-                  >
-                    );
-                  </td>
-                </tr>
-                <tr>
-                  <td
-                    class="ant-editor-highlight-content emotion-4"
-                  />
-                </tr>
-                <tr>
-                  <td
-                    class="ant-editor-highlight-content emotion-4"
-                  >
-                    <span
-                      class="hljs-keyword"
-                    >
-                      export
-                    </span>
-                     
-                    <span
-                      class="hljs-keyword"
-                    >
-                      default
-                    </span>
-                     withProvider(Markdown) 
-                    <span
-                      class="hljs-keyword"
-                    >
-                      as
-                    </span>
-                     React.FC&lt;MarkdownProps&gt;;
-                  </td>
-                </tr>
-                <tr>
-                  <td
-                    class="ant-editor-highlight-content emotion-4"
-                  />
-                </tr>
-                <tr>
-                  <td
-                    class="ant-editor-highlight-content emotion-4"
-                  />
-                </tr>
-              </tbody>
-            </table>
-          </pre>
           <div
-            class="layoutkit-center emotion-6 emotion-7"
+            class="ant-editor-highlight-container emotion-21"
+            tabindex="-1"
           >
-            <span
-              aria-label="loading-3-quarters"
-              class="anticon anticon-loading-3-quarters anticon-spin emotion-8"
-              role="img"
+            <pre
+              class="emotion-4"
             >
-              <svg
-                aria-hidden="true"
-                data-icon="loading-3-quarters"
-                fill="currentColor"
-                focusable="false"
-                height="1em"
-                viewBox="0 0 1024 1024"
-                width="1em"
+              <table
+                border="0"
+                cellpadding="0"
+                cellspacing="0"
               >
-                <path
-                  d="M512 1024c-69.1 0-136.2-13.5-199.3-40.2C251.7 958 197 921 150 874c-47-47-84-101.7-109.8-162.7C13.5 648.2 0 581.1 0 512c0-19.9 16.1-36 36-36s36 16.1 36 36c0 59.4 11.6 117 34.6 171.3 22.2 52.4 53.9 99.5 94.3 139.9 40.4 40.4 87.5 72.2 139.9 94.3C395 940.4 452.6 952 512 952c59.4 0 117-11.6 171.3-34.6 52.4-22.2 99.5-53.9 139.9-94.3 40.4-40.4 72.2-87.5 94.3-139.9C940.4 629 952 571.4 952 512c0-59.4-11.6-117-34.6-171.3a440.45 440.45 0 00-94.3-139.9 437.71 437.71 0 00-139.9-94.3C629 83.6 571.4 72 512 72c-19.9 0-36-16.1-36-36s16.1-36 36-36c69.1 0 136.2 13.5 199.3 40.2C772.3 66 827 103 874 150c47 47 83.9 101.8 109.7 162.7 26.7 63.1 40.2 130.2 40.2 199.3s-13.5 136.2-40.2 199.3C958 772.3 921 827 874 874c-47 47-101.8 83.9-162.7 109.7-63.1 26.8-130.2 40.3-199.3 40.3z"
-                />
-              </svg>
-            </span>
-            Highlighting...
+                <tbody>
+                  <tr>
+                    <td
+                      class="ant-editor-highlight-content emotion-5"
+                    >
+                      <span
+                        class="hljs-keyword"
+                      >
+                        import
+                      </span>
+                       { Collapse, Divider, Typography } 
+                      <span
+                        class="hljs-keyword"
+                      >
+                        from
+                      </span>
+                       
+                      <span
+                        class="hljs-string"
+                      >
+                        'antd'
+                      </span>
+                      ;
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      class="ant-editor-highlight-content emotion-5"
+                    >
+                      <span
+                        class="hljs-keyword"
+                      >
+                        import
+                      </span>
+                       { CSSProperties, memo } 
+                      <span
+                        class="hljs-keyword"
+                      >
+                        from
+                      </span>
+                       
+                      <span
+                        class="hljs-string"
+                      >
+                        'react'
+                      </span>
+                      ;
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      class="ant-editor-highlight-content emotion-5"
+                    >
+                      <span
+                        class="hljs-keyword"
+                      >
+                        import
+                      </span>
+                       ReactMarkdown 
+                      <span
+                        class="hljs-keyword"
+                      >
+                        from
+                      </span>
+                       
+                      <span
+                        class="hljs-string"
+                      >
+                        'react-markdown'
+                      </span>
+                      ;
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      class="ant-editor-highlight-content emotion-5"
+                    >
+                      <span
+                        class="hljs-keyword"
+                      >
+                        import
+                      </span>
+                       rehypeKatex 
+                      <span
+                        class="hljs-keyword"
+                      >
+                        from
+                      </span>
+                       
+                      <span
+                        class="hljs-string"
+                      >
+                        'rehype-katex'
+                      </span>
+                      ;
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      class="ant-editor-highlight-content emotion-5"
+                    >
+                      <span
+                        class="hljs-keyword"
+                      >
+                        import
+                      </span>
+                       remarkGfm 
+                      <span
+                        class="hljs-keyword"
+                      >
+                        from
+                      </span>
+                       
+                      <span
+                        class="hljs-string"
+                      >
+                        'remark-gfm'
+                      </span>
+                      ;
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      class="ant-editor-highlight-content emotion-5"
+                    >
+                      <span
+                        class="hljs-keyword"
+                      >
+                        import
+                      </span>
+                       remarkMath 
+                      <span
+                        class="hljs-keyword"
+                      >
+                        from
+                      </span>
+                       
+                      <span
+                        class="hljs-string"
+                      >
+                        'remark-math'
+                      </span>
+                      ;
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      class="ant-editor-highlight-content emotion-5"
+                    />
+                  </tr>
+                  <tr>
+                    <td
+                      class="ant-editor-highlight-content emotion-5"
+                    >
+                      <span
+                        class="hljs-keyword"
+                      >
+                        import
+                      </span>
+                       { PluggableList } 
+                      <span
+                        class="hljs-keyword"
+                      >
+                        from
+                      </span>
+                       
+                      <span
+                        class="hljs-string"
+                      >
+                        'react-markdown/lib/react-markdown'
+                      </span>
+                      ;
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      class="ant-editor-highlight-content emotion-5"
+                    >
+                      <span
+                        class="hljs-keyword"
+                      >
+                        import
+                      </span>
+                       { withProvider } 
+                      <span
+                        class="hljs-keyword"
+                      >
+                        from
+                      </span>
+                       
+                      <span
+                        class="hljs-string"
+                      >
+                        '..'
+                      </span>
+                      ;
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      class="ant-editor-highlight-content emotion-5"
+                    >
+                      <span
+                        class="hljs-keyword"
+                      >
+                        import
+                      </span>
+                       { Code } 
+                      <span
+                        class="hljs-keyword"
+                      >
+                        from
+                      </span>
+                       
+                      <span
+                        class="hljs-string"
+                      >
+                        './CodeBlock'
+                      </span>
+                      ;
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      class="ant-editor-highlight-content emotion-5"
+                    >
+                      <span
+                        class="hljs-keyword"
+                      >
+                        import
+                      </span>
+                       { useStyles } 
+                      <span
+                        class="hljs-keyword"
+                      >
+                        from
+                      </span>
+                       
+                      <span
+                        class="hljs-string"
+                      >
+                        './style'
+                      </span>
+                      ;
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      class="ant-editor-highlight-content emotion-5"
+                    />
+                  </tr>
+                  <tr>
+                    <td
+                      class="ant-editor-highlight-content emotion-5"
+                    >
+                      <span
+                        class="hljs-keyword"
+                      >
+                        export
+                      </span>
+                       
+                      <span
+                        class="hljs-keyword"
+                      >
+                        interface
+                      </span>
+                       MarkdownProps {
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      class="ant-editor-highlight-content emotion-5"
+                    >
+                        
+                      <span
+                        class="hljs-attr"
+                      >
+                        children
+                      </span>
+                      : 
+                      <span
+                        class="hljs-built_in"
+                      >
+                        string
+                      </span>
+                      ;
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      class="ant-editor-highlight-content emotion-5"
+                    >
+                        
+                      <span
+                        class="hljs-comment"
+                      >
+                        /**
+                      </span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      class="ant-editor-highlight-content emotion-5"
+                    >
+                         * 
+                      <span
+                        class="hljs-doctag"
+                      >
+                        @description 
+                        <span
+                          class="hljs-variable"
+                        >
+                          ClassName
+                        </span>
+                      </span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      class="ant-editor-highlight-content emotion-5"
+                    >
+                         */
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      class="ant-editor-highlight-content emotion-5"
+                    >
+                        className?: 
+                      <span
+                        class="hljs-built_in"
+                      >
+                        string
+                      </span>
+                      ;
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      class="ant-editor-highlight-content emotion-5"
+                    >
+                        onDoubleClick?: 
+                      <span
+                        class="hljs-function"
+                      >
+                        () =&gt;
+                      </span>
+                       
+                      <span
+                        class="hljs-built_in"
+                      >
+                        void
+                      </span>
+                      ;
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      class="ant-editor-highlight-content emotion-5"
+                    >
+                        style?: CSSProperties;
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      class="ant-editor-highlight-content emotion-5"
+                    >
+                        rehypePlugins?: PluggableList;
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      class="ant-editor-highlight-content emotion-5"
+                    >
+                        remarkPlugins?: PluggableList;
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      class="ant-editor-highlight-content emotion-5"
+                    >
+                      }
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      class="ant-editor-highlight-content emotion-5"
+                    />
+                  </tr>
+                  <tr>
+                    <td
+                      class="ant-editor-highlight-content emotion-5"
+                    >
+                      <span
+                        class="hljs-keyword"
+                      >
+                        const
+                      </span>
+                       MemoHr = memo(
+                      <span
+                        class="hljs-function"
+                      >
+                        (
+                        <span
+                          class="hljs-params"
+                        >
+                          props
+                        </span>
+                        ) =&gt;
+                      </span>
+                       (
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      class="ant-editor-highlight-content emotion-5"
+                    >
+                        &lt;Divider style={{ marginBottom: '1em', marginTop: 0 }} {...props} /&gt;
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      class="ant-editor-highlight-content emotion-5"
+                    >
+                      ));
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      class="ant-editor-highlight-content emotion-5"
+                    >
+                      <span
+                        class="hljs-keyword"
+                      >
+                        const
+                      </span>
+                       MemoDetails = memo(
+                      <span
+                        class="hljs-function"
+                      >
+                        (
+                        <span
+                          class="hljs-params"
+                        >
+                          props
+                        </span>
+                        ) =&gt;
+                      </span>
+                       &lt;Collapse style={{ marginBottom: '1em' }} {...props} /&gt;);
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      class="ant-editor-highlight-content emotion-5"
+                    >
+                      <span
+                        class="hljs-keyword"
+                      >
+                        const
+                      </span>
+                       MemoImage = memo(
+                      <span
+                        class="hljs-function"
+                      >
+                        (
+                        <span
+                          class="hljs-params"
+                        >
+                          props
+                        </span>
+                        ) =&gt;
+                      </span>
+                       &lt;img {...props} /&gt;);
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      class="ant-editor-highlight-content emotion-5"
+                    >
+                      <span
+                        class="hljs-keyword"
+                      >
+                        const
+                      </span>
+                       MemoAlink = memo(
+                      <span
+                        class="hljs-function"
+                      >
+                        (
+                        <span
+                          class="hljs-params"
+                        >
+                          props
+                        </span>
+                        ) =&gt;
+                      </span>
+                       &lt;Typography.Link {...props} /&gt;);
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      class="ant-editor-highlight-content emotion-5"
+                    />
+                  </tr>
+                  <tr>
+                    <td
+                      class="ant-editor-highlight-content emotion-5"
+                    >
+                      <span
+                        class="hljs-keyword"
+                      >
+                        const
+                      </span>
+                       Markdown = memo&lt;MarkdownProps&gt;(
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      class="ant-editor-highlight-content emotion-5"
+                    >
+                        
+                      <span
+                        class="hljs-function"
+                      >
+                        (
+                        <span
+                          class="hljs-params"
+                        >
+                          {
+                        </span>
+                      </span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      class="ant-editor-highlight-content emotion-5"
+                    >
+                          children,
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      class="ant-editor-highlight-content emotion-5"
+                    >
+                          className,
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      class="ant-editor-highlight-content emotion-5"
+                    >
+                          style,
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      class="ant-editor-highlight-content emotion-5"
+                    >
+                          onDoubleClick,
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      class="ant-editor-highlight-content emotion-5"
+                    >
+                          rehypePlugins: outRehypePlugins,
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      class="ant-editor-highlight-content emotion-5"
+                    >
+                          remarkPlugins: outRemarkPlugins,
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      class="ant-editor-highlight-content emotion-5"
+                    >
+                          ...rest
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      class="ant-editor-highlight-content emotion-5"
+                    >
+                        }) =&gt; {
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      class="ant-editor-highlight-content emotion-5"
+                    >
+                          
+                      <span
+                        class="hljs-keyword"
+                      >
+                        const
+                      </span>
+                       { styles } = useStyles();
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      class="ant-editor-highlight-content emotion-5"
+                    >
+                          
+                      <span
+                        class="hljs-keyword"
+                      >
+                        const
+                      </span>
+                       components: 
+                      <span
+                        class="hljs-built_in"
+                      >
+                        any
+                      </span>
+                       = {
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      class="ant-editor-highlight-content emotion-5"
+                    >
+                            
+                      <span
+                        class="hljs-attr"
+                      >
+                        details
+                      </span>
+                      : MemoDetails,
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      class="ant-editor-highlight-content emotion-5"
+                    >
+                            
+                      <span
+                        class="hljs-attr"
+                      >
+                        hr
+                      </span>
+                      : MemoHr,
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      class="ant-editor-highlight-content emotion-5"
+                    >
+                            
+                      <span
+                        class="hljs-attr"
+                      >
+                        a
+                      </span>
+                      : MemoAlink,
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      class="ant-editor-highlight-content emotion-5"
+                    >
+                            
+                      <span
+                        class="hljs-attr"
+                      >
+                        img
+                      </span>
+                      : MemoImage,
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      class="ant-editor-highlight-content emotion-5"
+                    >
+                            
+                      <span
+                        class="hljs-attr"
+                      >
+                        pre
+                      </span>
+                      : Code,
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      class="ant-editor-highlight-content emotion-5"
+                    >
+                          };
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      class="ant-editor-highlight-content emotion-5"
+                    />
+                  </tr>
+                  <tr>
+                    <td
+                      class="ant-editor-highlight-content emotion-5"
+                    >
+                          
+                      <span
+                        class="hljs-keyword"
+                      >
+                        const
+                      </span>
+                       rehypePlugins = [rehypeKatex, ...(outRehypePlugins || [])];
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      class="ant-editor-highlight-content emotion-5"
+                    >
+                          
+                      <span
+                        class="hljs-keyword"
+                      >
+                        const
+                      </span>
+                       remarkPlugins = [remarkGfm, remarkMath, ...(outRemarkPlugins || [])];
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      class="ant-editor-highlight-content emotion-5"
+                    />
+                  </tr>
+                  <tr>
+                    <td
+                      class="ant-editor-highlight-content emotion-5"
+                    >
+                          
+                      <span
+                        class="hljs-keyword"
+                      >
+                        return
+                      </span>
+                       (
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      class="ant-editor-highlight-content emotion-5"
+                    >
+                            &lt;Typography className={className} onDoubleClick={onDoubleClick} style={style}&gt;
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      class="ant-editor-highlight-content emotion-5"
+                    >
+                              &lt;ReactMarkdown
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      class="ant-editor-highlight-content emotion-5"
+                    >
+                                className={styles.markdown}
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      class="ant-editor-highlight-content emotion-5"
+                    >
+                                components={components}
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      class="ant-editor-highlight-content emotion-5"
+                    >
+                                rehypePlugins={rehypePlugins as PluggableList}
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      class="ant-editor-highlight-content emotion-5"
+                    >
+                                remarkPlugins={remarkPlugins as PluggableList}
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      class="ant-editor-highlight-content emotion-5"
+                    >
+                                {...rest}
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      class="ant-editor-highlight-content emotion-5"
+                    >
+                              &gt;
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      class="ant-editor-highlight-content emotion-5"
+                    >
+                                {children}
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      class="ant-editor-highlight-content emotion-5"
+                    >
+                              &lt;/ReactMarkdown&gt;
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      class="ant-editor-highlight-content emotion-5"
+                    >
+                            &lt;/Typography&gt;
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      class="ant-editor-highlight-content emotion-5"
+                    >
+                          );
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      class="ant-editor-highlight-content emotion-5"
+                    >
+                        },
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      class="ant-editor-highlight-content emotion-5"
+                    >
+                      );
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      class="ant-editor-highlight-content emotion-5"
+                    />
+                  </tr>
+                  <tr>
+                    <td
+                      class="ant-editor-highlight-content emotion-5"
+                    >
+                      <span
+                        class="hljs-keyword"
+                      >
+                        export
+                      </span>
+                       
+                      <span
+                        class="hljs-keyword"
+                      >
+                        default
+                      </span>
+                       withProvider(Markdown) 
+                      <span
+                        class="hljs-keyword"
+                      >
+                        as
+                      </span>
+                       React.FC&lt;MarkdownProps&gt;;
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      class="ant-editor-highlight-content emotion-5"
+                    />
+                  </tr>
+                  <tr>
+                    <td
+                      class="ant-editor-highlight-content emotion-5"
+                    />
+                  </tr>
+                </tbody>
+              </table>
+            </pre>
+            <div
+              class="layoutkit-center emotion-7 emotion-8"
+            >
+              <span
+                aria-label="loading-3-quarters"
+                class="anticon anticon-loading-3-quarters anticon-spin emotion-9"
+                role="img"
+              >
+                <svg
+                  aria-hidden="true"
+                  data-icon="loading-3-quarters"
+                  fill="currentColor"
+                  focusable="false"
+                  height="1em"
+                  viewBox="0 0 1024 1024"
+                  width="1em"
+                >
+                  <path
+                    d="M512 1024c-69.1 0-136.2-13.5-199.3-40.2C251.7 958 197 921 150 874c-47-47-84-101.7-109.8-162.7C13.5 648.2 0 581.1 0 512c0-19.9 16.1-36 36-36s36 16.1 36 36c0 59.4 11.6 117 34.6 171.3 22.2 52.4 53.9 99.5 94.3 139.9 40.4 40.4 87.5 72.2 139.9 94.3C395 940.4 452.6 952 512 952c59.4 0 117-11.6 171.3-34.6 52.4-22.2 99.5-53.9 139.9-94.3 40.4-40.4 72.2-87.5 94.3-139.9C940.4 629 952 571.4 952 512c0-59.4-11.6-117-34.6-171.3a440.45 440.45 0 00-94.3-139.9 437.71 437.71 0 00-139.9-94.3C629 83.6 571.4 72 512 72c-19.9 0-36-16.1-36-36s16.1-36 36-36c69.1 0 136.2 13.5 199.3 40.2C772.3 66 827 103 874 150c47 47 83.9 101.8 109.7 162.7 26.7 63.1 40.2 130.2 40.2 199.3s-13.5 136.2-40.2 199.3C958 772.3 921 827 874 874c-47 47-101.8 83.9-162.7 109.7-63.1 26.8-130.2 40.3-199.3 40.3z"
+                  />
+                </svg>
+              </span>
+            </div>
           </div>
         </div>
       </div>
@@ -18397,14 +18400,6 @@ exports[`<Markdown /> > renders index.tsx correctly 1`] = `
   background-color: rgba(0, 0, 0, 0.04);
 }
 
-.emotion-1 .ant-editor-snippet-shiki {
-  position: relative;
-  overflow: hidden;
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-}
-
 .emotion-1 pre {
   overflow-x: auto!important;
   overflow-y: hidden!important;
@@ -18437,68 +18432,76 @@ exports[`<Markdown /> > renders index.tsx correctly 1`] = `
 }
 
 .emotion-3 {
+  position: relative;
+  overflow: hidden;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.emotion-4 {
   display: block;
   overflow-x: auto;
   color: #333333;
   background-color: #666666;
 }
 
-.emotion-3 .hljs-comment,
-.emotion-3 .hljs-quote {
+.emotion-4 .hljs-comment,
+.emotion-4 .hljs-quote {
   color: #aaaaaa;
 }
 
-.emotion-3 .hljs-variable,
-.emotion-3 .hljs-attribute,
-.emotion-3 .hljs-template-variable,
-.emotion-3 .hljs-tag,
-.emotion-3 .hljs-name,
-.emotion-3 .hljs-selector-id,
-.emotion-3 .hljs-selector-class,
-.emotion-3 .hljs-regexp,
-.emotion-3 .hljs-title,
-.emotion-3 .hljs-deletion {
+.emotion-4 .hljs-variable,
+.emotion-4 .hljs-attribute,
+.emotion-4 .hljs-template-variable,
+.emotion-4 .hljs-tag,
+.emotion-4 .hljs-name,
+.emotion-4 .hljs-selector-id,
+.emotion-4 .hljs-selector-class,
+.emotion-4 .hljs-regexp,
+.emotion-4 .hljs-title,
+.emotion-4 .hljs-deletion {
   color: #ec5e41;
 }
 
-.emotion-3 .hljs-builtin-name,
-.emotion-3 .hljs-literal,
-.emotion-3 .hljs-type,
-.emotion-3 .hljs-params,
-.emotion-3 .hljs-meta,
-.emotion-3 .hljs-link {
+.emotion-4 .hljs-builtin-name,
+.emotion-4 .hljs-literal,
+.emotion-4 .hljs-type,
+.emotion-4 .hljs-params,
+.emotion-4 .hljs-meta,
+.emotion-4 .hljs-link {
   color: #ff802b;
 }
 
-.emotion-3 .hljs-string,
-.emotion-3 .hljs-number,
-.emotion-3 .hljs-symbol,
-.emotion-3 .hljs-bullet,
-.emotion-3 .hljs-addition {
+.emotion-4 .hljs-string,
+.emotion-4 .hljs-number,
+.emotion-4 .hljs-symbol,
+.emotion-4 .hljs-bullet,
+.emotion-4 .hljs-addition {
   color: #55b467;
 }
 
-.emotion-3 .hljs-keyword,
-.emotion-3 .hljs-doctag,
-.emotion-3 .hljs-built_in,
-.emotion-3 .hljs-selector-tag,
-.emotion-3 .hljs-section {
+.emotion-4 .hljs-keyword,
+.emotion-4 .hljs-doctag,
+.emotion-4 .hljs-built_in,
+.emotion-4 .hljs-selector-tag,
+.emotion-4 .hljs-section {
   color: #369eff;
 }
 
-.emotion-3 .hljs-emphasis {
+.emotion-4 .hljs-emphasis {
   font-style: italic;
 }
 
-.emotion-3 .hljs-strong {
+.emotion-4 .hljs-strong {
   font-weight: bold;
 }
 
-.emotion-4 {
+.emotion-5 {
   width: 100%;
 }
 
-.emotion-6 {
+.emotion-7 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -18517,7 +18520,7 @@ exports[`<Markdown /> > renders index.tsx correctly 1`] = `
   gap: 8px;
 }
 
-.emotion-7 {
+.emotion-8 {
   -webkit-backdrop-filter: saturate(180%) blur(10px);
   backdrop-filter: saturate(180%) blur(10px);
   position: absolute;
@@ -18542,11 +18545,11 @@ exports[`<Markdown /> > renders index.tsx correctly 1`] = `
   border-radius: 6;
 }
 
-.emotion-8 {
+.emotion-9 {
   color: #aaaaaa;
 }
 
-.emotion-9 {
+.emotion-10 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -18563,21 +18566,21 @@ exports[`<Markdown /> > renders index.tsx correctly 1`] = `
   transition: color 600ms cubic-bezier(0.215, 0.61, 0.355, 1),scale 400ms cubic-bezier(0.215, 0.61, 0.355, 1),background-color 100ms cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
-.emotion-9:hover {
+.emotion-10:hover {
   color: rgba(0, 0, 0, 0.88)!important;
 }
 
-.emotion-9:active {
+.emotion-10:active {
   scale: 0.8;
   color: rgba(0, 0, 0, 0.88);
 }
 
-.emotion-10 {
+.emotion-11 {
   background-color: rgba(0, 0, 0, 0.04);
   border-radius: 6px;
 }
 
-.emotion-11:not(:last-child) {
+.emotion-12:not(:last-child) {
   margin-block-start: 1em;
   margin-block-end: 1em;
   -webkit-margin-start: 0;
@@ -18586,11 +18589,11 @@ exports[`<Markdown /> > renders index.tsx correctly 1`] = `
   margin-inline-end: 0;
 }
 
-.emotion-11 pre {
+.emotion-12 pre {
   padding: 12px!important;
 }
 
-.emotion-12 {
+.emotion-13 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -18608,16 +18611,16 @@ exports[`<Markdown /> > renders index.tsx correctly 1`] = `
   width: 100%;
 }
 
-.emotion-13 {
+.emotion-14 {
   padding: 4px 8px;
   width: auto!important;
 }
 
-.emotion-13 .ant-editor-markdown-btn:hover {
+.emotion-14 .ant-editor-markdown-btn:hover {
   color: rgba(0, 0, 0, 0.65)!important;
 }
 
-.emotion-14 {
+.emotion-15 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -18636,60 +18639,60 @@ exports[`<Markdown /> > renders index.tsx correctly 1`] = `
   height: 24px!important;
 }
 
-.emotion-14:hover {
+.emotion-15:hover {
   color: rgba(0, 0, 0, 0.88)!important;
 }
 
-.emotion-14:active {
+.emotion-15:active {
   scale: 0.8;
   color: rgba(0, 0, 0, 0.88);
 }
 
-.emotion-15.ant-select-multiple:not(.emotion-15.ant-select-customize-input) .emotion-15.ant-select.ant-select-selector:hover {
+.emotion-16.ant-select-multiple:not(.emotion-16.ant-select-customize-input) .emotion-16.ant-select.ant-select-selector:hover {
   color: rgba(0, 0, 0, 0.88);
   background-color: rgba(0, 0, 0, 0.04);
   border-color: transparent;
 }
 
-.emotion-15.ant-select-multiple:not(.emotion-15.ant-select-customize-input) .emotion-15.ant-select.ant-select-selector:focus {
+.emotion-16.ant-select-multiple:not(.emotion-16.ant-select-customize-input) .emotion-16.ant-select.ant-select-selector:focus {
   color: rgba(0, 0, 0, 0.88)!important;
   background-color: rgba(0, 0, 0, 0.02)!important;
   border-color: #1677ff!important;
   box-shadow: none;
 }
 
-.emotion-15.ant-select:not(.ant-select-disabled):not(.ant-select-customize-input):hover .ant-select-selector {
+.emotion-16.ant-select:not(.ant-select-disabled):not(.ant-select-customize-input):hover .ant-select-selector {
   border-color: transparent;
 }
 
-.emotion-15.ant-select:not(.ant-select-disabled):not(.ant-select-customize-input):hover .ant-select-selector:hover {
+.emotion-16.ant-select:not(.ant-select-disabled):not(.ant-select-customize-input):hover .ant-select-selector:hover {
   color: rgba(0, 0, 0, 0.88);
   background-color: rgba(0, 0, 0, 0.04);
   border-color: transparent;
 }
 
-.emotion-15.ant-select:not(.ant-select-disabled):not(.ant-select-customize-input):hover .ant-select-selector:focus {
+.emotion-16.ant-select:not(.ant-select-disabled):not(.ant-select-customize-input):hover .ant-select-selector:focus {
   color: rgba(0, 0, 0, 0.88)!important;
   background-color: rgba(0, 0, 0, 0.02)!important;
   border-color: #1677ff!important;
   box-shadow: none;
 }
 
-.emotion-15.ant-select-focused:not(.ant-select-disabled):not(.ant-select-customize-input):hover .ant-select-selector {
+.emotion-16.ant-select-focused:not(.ant-select-disabled):not(.ant-select-customize-input):hover .ant-select-selector {
   color: rgba(0, 0, 0, 0.88)!important;
   background-color: rgba(0, 0, 0, 0.02)!important;
   border-color: #1677ff!important;
   box-shadow: none;
 }
 
-.emotion-15.ant-select-focused:not(.ant-select-disabled):not(.ant-select-customize-input) .ant-select-selector {
+.emotion-16.ant-select-focused:not(.ant-select-disabled):not(.ant-select-customize-input) .ant-select-selector {
   color: rgba(0, 0, 0, 0.88)!important;
   background-color: rgba(0, 0, 0, 0.02)!important;
   border-color: #1677ff!important;
   box-shadow: none;
 }
 
-.emotion-15 .ant-select-arrow {
+.emotion-16 .ant-select-arrow {
   top: 13px;
   right: 8px;
   width: 10px;
@@ -18697,20 +18700,20 @@ exports[`<Markdown /> > renders index.tsx correctly 1`] = `
   font-size: 10px;
 }
 
-.emotion-16 {
+.emotion-17 {
   min-width: 100px;
 }
 
-.emotion-16 .ant-select-selector {
+.emotion-17 .ant-select-selector {
   -webkit-padding-end: 4px!important;
   padding-inline-end: 4px!important;
 }
 
-.emotion-16 .ant-select-selection-overflow-item-suffix .ant-select-selection-search {
+.emotion-17 .ant-select-selection-overflow-item-suffix .ant-select-selection-search {
   display: none;
 }
 
-.emotion-17 {
+.emotion-18 {
   min-width: 100px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -18722,11 +18725,11 @@ exports[`<Markdown /> > renders index.tsx correctly 1`] = `
   justify-content: center;
 }
 
-.emotion-17 span {
+.emotion-18 span {
   font-family: 'SFMono-Regular',Consolas,'Liberation Mono',Menlo,Courier,monospace!important;
 }
 
-.emotion-18 {
+.emotion-19 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -18747,16 +18750,21 @@ exports[`<Markdown /> > renders index.tsx correctly 1`] = `
   padding-left: 6px;
 }
 
-.emotion-18:hover {
+.emotion-19:hover {
   color: rgba(0, 0, 0, 0.88)!important;
 }
 
-.emotion-18:active {
+.emotion-19:active {
   scale: 0.8;
   color: rgba(0, 0, 0, 0.88);
 }
 
-.emotion-19 {
+.emotion-20 {
+  max-height: 400px;
+  overflow: auto;
+}
+
+.emotion-21 {
   background-color: #fafafa;
   position: relative;
   margin: 0;
@@ -18765,23 +18773,23 @@ exports[`<Markdown /> > renders index.tsx correctly 1`] = `
   transition: background-color 100ms cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
-.emotion-19:not(:hover) .ant-editor-highlight-copy {
+.emotion-21:not(:hover) .ant-editor-highlight-copy {
   visibility: hidden;
   opacity: 0;
 }
 
-.emotion-19:not(:hover) .ant-editor-highlight-tag {
+.emotion-21:not(:hover) .ant-editor-highlight-tag {
   visibility: hidden;
   opacity: 0;
 }
 
-.emotion-19 pre {
+.emotion-21 pre {
   margin: 0!important;
   padding: 16px 24px!important;
   background: none!important;
 }
 
-.emotion-19 code {
+.emotion-21 code {
   background: transparent!important;
 }
 
@@ -19065,56 +19073,59 @@ id sem consectetuer libero luctus adipiscing.
         data-code-type="highlighter"
         style="display: flex;"
       >
-        <pre
-          class="emotion-3"
-        >
-          <table
-            border="0"
-            cellpadding="0"
-            cellspacing="0"
-          >
-            <tbody>
-              <tr>
-                <td
-                  class="ant-editor-highlight-content emotion-4"
-                >
-                  $ pnpm install
-                </td>
-              </tr>
-              <tr>
-                <td
-                  class="ant-editor-highlight-content emotion-4"
-                />
-              </tr>
-            </tbody>
-          </table>
-        </pre>
         <div
-          class="layoutkit-center emotion-6 emotion-7"
+          class="ant-editor-snippet-highlighter emotion-3"
         >
-          <span
-            aria-label="loading-3-quarters"
-            class="anticon anticon-loading-3-quarters anticon-spin emotion-8"
-            role="img"
+          <pre
+            class="emotion-4"
           >
-            <svg
-              aria-hidden="true"
-              data-icon="loading-3-quarters"
-              fill="currentColor"
-              focusable="false"
-              height="1em"
-              viewBox="0 0 1024 1024"
-              width="1em"
+            <table
+              border="0"
+              cellpadding="0"
+              cellspacing="0"
             >
-              <path
-                d="M512 1024c-69.1 0-136.2-13.5-199.3-40.2C251.7 958 197 921 150 874c-47-47-84-101.7-109.8-162.7C13.5 648.2 0 581.1 0 512c0-19.9 16.1-36 36-36s36 16.1 36 36c0 59.4 11.6 117 34.6 171.3 22.2 52.4 53.9 99.5 94.3 139.9 40.4 40.4 87.5 72.2 139.9 94.3C395 940.4 452.6 952 512 952c59.4 0 117-11.6 171.3-34.6 52.4-22.2 99.5-53.9 139.9-94.3 40.4-40.4 72.2-87.5 94.3-139.9C940.4 629 952 571.4 952 512c0-59.4-11.6-117-34.6-171.3a440.45 440.45 0 00-94.3-139.9 437.71 437.71 0 00-139.9-94.3C629 83.6 571.4 72 512 72c-19.9 0-36-16.1-36-36s16.1-36 36-36c69.1 0 136.2 13.5 199.3 40.2C772.3 66 827 103 874 150c47 47 83.9 101.8 109.7 162.7 26.7 63.1 40.2 130.2 40.2 199.3s-13.5 136.2-40.2 199.3C958 772.3 921 827 874 874c-47 47-101.8 83.9-162.7 109.7-63.1 26.8-130.2 40.3-199.3 40.3z"
-              />
-            </svg>
-          </span>
-          Highlighting...
+              <tbody>
+                <tr>
+                  <td
+                    class="ant-editor-highlight-content emotion-5"
+                  >
+                    $ pnpm install
+                  </td>
+                </tr>
+                <tr>
+                  <td
+                    class="ant-editor-highlight-content emotion-5"
+                  />
+                </tr>
+              </tbody>
+            </table>
+          </pre>
+          <div
+            class="layoutkit-center emotion-7 emotion-8"
+          >
+            <span
+              aria-label="loading-3-quarters"
+              class="anticon anticon-loading-3-quarters anticon-spin emotion-9"
+              role="img"
+            >
+              <svg
+                aria-hidden="true"
+                data-icon="loading-3-quarters"
+                fill="currentColor"
+                focusable="false"
+                height="1em"
+                viewBox="0 0 1024 1024"
+                width="1em"
+              >
+                <path
+                  d="M512 1024c-69.1 0-136.2-13.5-199.3-40.2C251.7 958 197 921 150 874c-47-47-84-101.7-109.8-162.7C13.5 648.2 0 581.1 0 512c0-19.9 16.1-36 36-36s36 16.1 36 36c0 59.4 11.6 117 34.6 171.3 22.2 52.4 53.9 99.5 94.3 139.9 40.4 40.4 87.5 72.2 139.9 94.3C395 940.4 452.6 952 512 952c59.4 0 117-11.6 171.3-34.6 52.4-22.2 99.5-53.9 139.9-94.3 40.4-40.4 72.2-87.5 94.3-139.9C940.4 629 952 571.4 952 512c0-59.4-11.6-117-34.6-171.3a440.45 440.45 0 00-94.3-139.9 437.71 437.71 0 00-139.9-94.3C629 83.6 571.4 72 512 72c-19.9 0-36-16.1-36-36s16.1-36 36-36c69.1 0 136.2 13.5 199.3 40.2C772.3 66 827 103 874 150c47 47 83.9 101.8 109.7 162.7 26.7 63.1 40.2 130.2 40.2 199.3s-13.5 136.2-40.2 199.3C958 772.3 921 827 874 874c-47 47-101.8 83.9-162.7 109.7-63.1 26.8-130.2 40.3-199.3 40.3z"
+                />
+              </svg>
+            </span>
+          </div>
         </div>
         <button
-          class="ant-btn ant-btn-text ant-btn-icon-only ant-editor-icon emotion-9"
+          class="ant-btn ant-btn-text ant-btn-icon-only ant-editor-icon emotion-10"
           type="button"
         >
           <span
@@ -19146,13 +19157,13 @@ id sem consectetuer libero luctus adipiscing.
       
 
       <div
-        class="emotion-10 emotion-11"
+        class="emotion-11 emotion-12"
       >
         <div
-          class="layoutkit-flexbox emotion-12 ant-editor-markdown-header emotion-13"
+          class="layoutkit-flexbox emotion-13 ant-editor-markdown-header emotion-14"
         >
           <button
-            class="ant-btn ant-btn-text ant-btn-icon-only ant-editor-icon emotion-14"
+            class="ant-btn ant-btn-text ant-btn-icon-only ant-editor-icon emotion-15"
             type="button"
           >
             <span
@@ -19181,7 +19192,7 @@ id sem consectetuer libero luctus adipiscing.
             </span>
           </button>
           <div
-            class="ant-select ant-select-sm ant-select-borderless emotion-15 emotion-16 ant-select-multiple ant-select-show-arrow ant-select-show-search"
+            class="ant-select ant-select-sm ant-select-borderless emotion-16 emotion-17 ant-select-multiple ant-select-show-arrow ant-select-show-search"
           >
             <div
               class="ant-select-selector"
@@ -19195,7 +19206,7 @@ id sem consectetuer libero luctus adipiscing.
                 >
                   <span>
                     <div
-                      class="emotion-17"
+                      class="emotion-18"
                     >
                       <button
                         class="ant-btn ant-btn-text ant-btn-sm"
@@ -19247,7 +19258,7 @@ id sem consectetuer libero luctus adipiscing.
             />
           </div>
           <button
-            class="ant-btn ant-btn-text ant-btn-icon-only ant-editor-icon emotion-18"
+            class="ant-btn ant-btn-text ant-btn-icon-only ant-editor-icon emotion-19"
             type="button"
           >
             <span
@@ -19277,122 +19288,124 @@ id sem consectetuer libero luctus adipiscing.
           </button>
         </div>
         <div
-          class="ant-editor-highlight-container emotion-19"
-          style="max-height: 400px; overflow-y: scroll;"
-          tabindex="-1"
+          class="emotion-20"
         >
-          <pre
-            class="emotion-3"
-          >
-            <table
-              border="0"
-              cellpadding="0"
-              cellspacing="0"
-            >
-              <tbody>
-                <tr>
-                  <td
-                    class="ant-editor-highlight-content emotion-4"
-                  >
-                    <span
-                      class="hljs-keyword"
-                    >
-                      import
-                    </span>
-                     { renderHook } 
-                    <span
-                      class="hljs-keyword"
-                    >
-                      from
-                    </span>
-                     
-                    <span
-                      class="hljs-string"
-                    >
-                      '@testing-library/react-hooks'
-                    </span>
-                    ;
-                  </td>
-                </tr>
-                <tr>
-                  <td
-                    class="ant-editor-highlight-content emotion-4"
-                  >
-                    <span
-                      class="hljs-keyword"
-                    >
-                      import
-                    </span>
-                     { act } 
-                    <span
-                      class="hljs-keyword"
-                    >
-                      from
-                    </span>
-                     
-                    <span
-                      class="hljs-string"
-                    >
-                      'react-dom/test-utils'
-                    </span>
-                    ;
-                  </td>
-                </tr>
-                <tr>
-                  <td
-                    class="ant-editor-highlight-content emotion-4"
-                  >
-                    <span
-                      class="hljs-keyword"
-                    >
-                      import
-                    </span>
-                     { useDropNodeOnCanvas } 
-                    <span
-                      class="hljs-keyword"
-                    >
-                      from
-                    </span>
-                     
-                    <span
-                      class="hljs-string"
-                    >
-                      './useDropNodeOnCanvas'
-                    </span>
-                    ;
-                  </td>
-                </tr>
-                <tr>
-                  <td
-                    class="ant-editor-highlight-content emotion-4"
-                  />
-                </tr>
-              </tbody>
-            </table>
-          </pre>
           <div
-            class="layoutkit-center emotion-6 emotion-7"
+            class="ant-editor-highlight-container emotion-21"
+            tabindex="-1"
           >
-            <span
-              aria-label="loading-3-quarters"
-              class="anticon anticon-loading-3-quarters anticon-spin emotion-8"
-              role="img"
+            <pre
+              class="emotion-4"
             >
-              <svg
-                aria-hidden="true"
-                data-icon="loading-3-quarters"
-                fill="currentColor"
-                focusable="false"
-                height="1em"
-                viewBox="0 0 1024 1024"
-                width="1em"
+              <table
+                border="0"
+                cellpadding="0"
+                cellspacing="0"
               >
-                <path
-                  d="M512 1024c-69.1 0-136.2-13.5-199.3-40.2C251.7 958 197 921 150 874c-47-47-84-101.7-109.8-162.7C13.5 648.2 0 581.1 0 512c0-19.9 16.1-36 36-36s36 16.1 36 36c0 59.4 11.6 117 34.6 171.3 22.2 52.4 53.9 99.5 94.3 139.9 40.4 40.4 87.5 72.2 139.9 94.3C395 940.4 452.6 952 512 952c59.4 0 117-11.6 171.3-34.6 52.4-22.2 99.5-53.9 139.9-94.3 40.4-40.4 72.2-87.5 94.3-139.9C940.4 629 952 571.4 952 512c0-59.4-11.6-117-34.6-171.3a440.45 440.45 0 00-94.3-139.9 437.71 437.71 0 00-139.9-94.3C629 83.6 571.4 72 512 72c-19.9 0-36-16.1-36-36s16.1-36 36-36c69.1 0 136.2 13.5 199.3 40.2C772.3 66 827 103 874 150c47 47 83.9 101.8 109.7 162.7 26.7 63.1 40.2 130.2 40.2 199.3s-13.5 136.2-40.2 199.3C958 772.3 921 827 874 874c-47 47-101.8 83.9-162.7 109.7-63.1 26.8-130.2 40.3-199.3 40.3z"
-                />
-              </svg>
-            </span>
-            Highlighting...
+                <tbody>
+                  <tr>
+                    <td
+                      class="ant-editor-highlight-content emotion-5"
+                    >
+                      <span
+                        class="hljs-keyword"
+                      >
+                        import
+                      </span>
+                       { renderHook } 
+                      <span
+                        class="hljs-keyword"
+                      >
+                        from
+                      </span>
+                       
+                      <span
+                        class="hljs-string"
+                      >
+                        '@testing-library/react-hooks'
+                      </span>
+                      ;
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      class="ant-editor-highlight-content emotion-5"
+                    >
+                      <span
+                        class="hljs-keyword"
+                      >
+                        import
+                      </span>
+                       { act } 
+                      <span
+                        class="hljs-keyword"
+                      >
+                        from
+                      </span>
+                       
+                      <span
+                        class="hljs-string"
+                      >
+                        'react-dom/test-utils'
+                      </span>
+                      ;
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      class="ant-editor-highlight-content emotion-5"
+                    >
+                      <span
+                        class="hljs-keyword"
+                      >
+                        import
+                      </span>
+                       { useDropNodeOnCanvas } 
+                      <span
+                        class="hljs-keyword"
+                      >
+                        from
+                      </span>
+                       
+                      <span
+                        class="hljs-string"
+                      >
+                        './useDropNodeOnCanvas'
+                      </span>
+                      ;
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      class="ant-editor-highlight-content emotion-5"
+                    />
+                  </tr>
+                </tbody>
+              </table>
+            </pre>
+            <div
+              class="layoutkit-center emotion-7 emotion-8"
+            >
+              <span
+                aria-label="loading-3-quarters"
+                class="anticon anticon-loading-3-quarters anticon-spin emotion-9"
+                role="img"
+              >
+                <svg
+                  aria-hidden="true"
+                  data-icon="loading-3-quarters"
+                  fill="currentColor"
+                  focusable="false"
+                  height="1em"
+                  viewBox="0 0 1024 1024"
+                  width="1em"
+                >
+                  <path
+                    d="M512 1024c-69.1 0-136.2-13.5-199.3-40.2C251.7 958 197 921 150 874c-47-47-84-101.7-109.8-162.7C13.5 648.2 0 581.1 0 512c0-19.9 16.1-36 36-36s36 16.1 36 36c0 59.4 11.6 117 34.6 171.3 22.2 52.4 53.9 99.5 94.3 139.9 40.4 40.4 87.5 72.2 139.9 94.3C395 940.4 452.6 952 512 952c59.4 0 117-11.6 171.3-34.6 52.4-22.2 99.5-53.9 139.9-94.3 40.4-40.4 72.2-87.5 94.3-139.9C940.4 629 952 571.4 952 512c0-59.4-11.6-117-34.6-171.3a440.45 440.45 0 00-94.3-139.9 437.71 437.71 0 00-139.9-94.3C629 83.6 571.4 72 512 72c-19.9 0-36-16.1-36-36s16.1-36 36-36c69.1 0 136.2 13.5 199.3 40.2C772.3 66 827 103 874 150c47 47 83.9 101.8 109.7 162.7 26.7 63.1 40.2 130.2 40.2 199.3s-13.5 136.2-40.2 199.3C958 772.3 921 827 874 874c-47 47-101.8 83.9-162.7 109.7-63.1 26.8-130.2 40.3-199.3 40.3z"
+                  />
+                </svg>
+              </span>
+            </div>
           </div>
         </div>
       </div>
@@ -20964,12 +20977,286 @@ exports[`<Snippet /> > renders index.tsx correctly 1`] = `
   background-color: rgba(0, 0, 0, 0.04);
 }
 
-.emotion-0 .ant-editor-snippet-shiki {
+.emotion-0 pre {
+  overflow-x: auto!important;
+  overflow-y: hidden!important;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  height: 36px!important;
+  margin: 0!important;
+  line-height: 1;
+  background: none!important;
+}
+
+.emotion-0 code[class*='language-'] {
+  background: none!important;
+}
+
+.emotion-1 {
   position: relative;
   overflow: hidden;
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
+}
+
+.emotion-2 {
+  display: block;
+  overflow-x: auto;
+  color: #333333;
+  background-color: #666666;
+}
+
+.emotion-2 .hljs-comment,
+.emotion-2 .hljs-quote {
+  color: #aaaaaa;
+}
+
+.emotion-2 .hljs-variable,
+.emotion-2 .hljs-attribute,
+.emotion-2 .hljs-template-variable,
+.emotion-2 .hljs-tag,
+.emotion-2 .hljs-name,
+.emotion-2 .hljs-selector-id,
+.emotion-2 .hljs-selector-class,
+.emotion-2 .hljs-regexp,
+.emotion-2 .hljs-title,
+.emotion-2 .hljs-deletion {
+  color: #ec5e41;
+}
+
+.emotion-2 .hljs-builtin-name,
+.emotion-2 .hljs-literal,
+.emotion-2 .hljs-type,
+.emotion-2 .hljs-params,
+.emotion-2 .hljs-meta,
+.emotion-2 .hljs-link {
+  color: #ff802b;
+}
+
+.emotion-2 .hljs-string,
+.emotion-2 .hljs-number,
+.emotion-2 .hljs-symbol,
+.emotion-2 .hljs-bullet,
+.emotion-2 .hljs-addition {
+  color: #55b467;
+}
+
+.emotion-2 .hljs-keyword,
+.emotion-2 .hljs-doctag,
+.emotion-2 .hljs-built_in,
+.emotion-2 .hljs-selector-tag,
+.emotion-2 .hljs-section {
+  color: #369eff;
+}
+
+.emotion-2 .hljs-emphasis {
+  font-style: italic;
+}
+
+.emotion-2 .hljs-strong {
+  font-weight: bold;
+}
+
+.emotion-3 {
+  width: 100%;
+}
+
+.emotion-4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.emotion-5 {
+  -webkit-backdrop-filter: saturate(180%) blur(10px);
+  backdrop-filter: saturate(180%) blur(10px);
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  height: 36px;
+  padding: 0 8px;
+  font-family: 'SFMono-Regular',Consolas,'Liberation Mono',Menlo,Courier,monospace;
+  color: #aaaaaa;
+  border-radius: 6;
+}
+
+.emotion-6 {
+  color: #aaaaaa;
+}
+
+.emotion-7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-transition: color 600ms cubic-bezier(0.215, 0.61, 0.355, 1),scale 400ms cubic-bezier(0.215, 0.61, 0.355, 1),background-color 100ms cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: color 600ms cubic-bezier(0.215, 0.61, 0.355, 1),scale 400ms cubic-bezier(0.215, 0.61, 0.355, 1),background-color 100ms cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.emotion-7:hover {
+  color: rgba(0, 0, 0, 0.88)!important;
+}
+
+.emotion-7:active {
+  scale: 0.8;
+  color: rgba(0, 0, 0, 0.88);
+}
+
+<div>
+  <div
+    class="ant-editor-snippet-container emotion-0"
+  >
+    <div
+      class="ant-editor-snippet-highlighter emotion-1"
+    >
+      <pre
+        class="emotion-2"
+      >
+        <table
+          border="0"
+          cellpadding="0"
+          cellspacing="0"
+        >
+          <tbody>
+            <tr>
+              <td
+                class="ant-editor-highlight-content emotion-3"
+              >
+                $ pnpm install 
+                <span
+                  class="hljs-meta"
+                >
+                  @ant
+                </span>
+                -design/pro-chat
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </pre>
+      <div
+        class="layoutkit-center emotion-4 emotion-5"
+      >
+        <span
+          aria-label="loading-3-quarters"
+          class="anticon anticon-loading-3-quarters anticon-spin emotion-6"
+          role="img"
+        >
+          <svg
+            aria-hidden="true"
+            data-icon="loading-3-quarters"
+            fill="currentColor"
+            focusable="false"
+            height="1em"
+            viewBox="0 0 1024 1024"
+            width="1em"
+          >
+            <path
+              d="M512 1024c-69.1 0-136.2-13.5-199.3-40.2C251.7 958 197 921 150 874c-47-47-84-101.7-109.8-162.7C13.5 648.2 0 581.1 0 512c0-19.9 16.1-36 36-36s36 16.1 36 36c0 59.4 11.6 117 34.6 171.3 22.2 52.4 53.9 99.5 94.3 139.9 40.4 40.4 87.5 72.2 139.9 94.3C395 940.4 452.6 952 512 952c59.4 0 117-11.6 171.3-34.6 52.4-22.2 99.5-53.9 139.9-94.3 40.4-40.4 72.2-87.5 94.3-139.9C940.4 629 952 571.4 952 512c0-59.4-11.6-117-34.6-171.3a440.45 440.45 0 00-94.3-139.9 437.71 437.71 0 00-139.9-94.3C629 83.6 571.4 72 512 72c-19.9 0-36-16.1-36-36s16.1-36 36-36c69.1 0 136.2 13.5 199.3 40.2C772.3 66 827 103 874 150c47 47 83.9 101.8 109.7 162.7 26.7 63.1 40.2 130.2 40.2 199.3s-13.5 136.2-40.2 199.3C958 772.3 921 827 874 874c-47 47-101.8 83.9-162.7 109.7-63.1 26.8-130.2 40.3-199.3 40.3z"
+            />
+          </svg>
+        </span>
+      </div>
+    </div>
+    <button
+      class="ant-btn ant-btn-text ant-btn-icon-only ant-editor-icon emotion-7"
+      type="button"
+    >
+      <span
+        class="ant-btn-icon"
+      >
+        <span
+          aria-label="copy"
+          class="anticon anticon-copy"
+          role="img"
+          size="12"
+        >
+          <svg
+            aria-hidden="true"
+            data-icon="copy"
+            fill="currentColor"
+            focusable="false"
+            height="1em"
+            viewBox="64 64 896 896"
+            width="1em"
+          >
+            <path
+              d="M832 64H296c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h496v688c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8V96c0-17.7-14.3-32-32-32zM704 192H192c-17.7 0-32 14.3-32 32v530.7c0 8.5 3.4 16.6 9.4 22.6l173.3 173.3c2.2 2.2 4.7 4 7.4 5.5v1.9h4.2c3.5 1.3 7.2 2 11 2H704c17.7 0 32-14.3 32-32V224c0-17.7-14.3-32-32-32zM350 856.2L263.9 770H350v86.2zM664 888H414V746c0-22.1-17.9-40-40-40H232V264h432v624z"
+            />
+          </svg>
+        </span>
+      </span>
+    </button>
+  </div>
+</div>
+`;
+
+exports[`<Snippet /> > renders spotlight.tsx correctly 1`] = `
+.emotion-0 {
+  background-color: transparent;
+  border: 1px solid #d9d9d9;
+  position: relative;
+  overflow: hidden;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  gap: 8px;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  max-width: 100%;
+  height: 38px;
+  padding: 0 8px 0 12px;
+  border-radius: 6px;
+  -webkit-transition: background-color 100ms cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: background-color 100ms cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.emotion-0:hover {
+  background-color: rgba(0, 0, 0, 0.04);
 }
 
 .emotion-0 pre {
@@ -20995,68 +21282,92 @@ exports[`<Snippet /> > renders index.tsx correctly 1`] = `
 }
 
 .emotion-1 {
+  pointer-events: none;
+  position: absolute;
+  z-index: 1;
+  inset: 0;
+  opacity: 0;
+  background: radial-gradient(
+          64px circle at 0px 0px,
+          #fff,
+          rgba(0, 0, 0, 0.25)
+        );
+  border-radius: inherit;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.emotion-2 {
+  position: relative;
+  overflow: hidden;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.emotion-3 {
   display: block;
   overflow-x: auto;
   color: #333333;
   background-color: #666666;
 }
 
-.emotion-1 .hljs-comment,
-.emotion-1 .hljs-quote {
+.emotion-3 .hljs-comment,
+.emotion-3 .hljs-quote {
   color: #aaaaaa;
 }
 
-.emotion-1 .hljs-variable,
-.emotion-1 .hljs-attribute,
-.emotion-1 .hljs-template-variable,
-.emotion-1 .hljs-tag,
-.emotion-1 .hljs-name,
-.emotion-1 .hljs-selector-id,
-.emotion-1 .hljs-selector-class,
-.emotion-1 .hljs-regexp,
-.emotion-1 .hljs-title,
-.emotion-1 .hljs-deletion {
+.emotion-3 .hljs-variable,
+.emotion-3 .hljs-attribute,
+.emotion-3 .hljs-template-variable,
+.emotion-3 .hljs-tag,
+.emotion-3 .hljs-name,
+.emotion-3 .hljs-selector-id,
+.emotion-3 .hljs-selector-class,
+.emotion-3 .hljs-regexp,
+.emotion-3 .hljs-title,
+.emotion-3 .hljs-deletion {
   color: #ec5e41;
 }
 
-.emotion-1 .hljs-builtin-name,
-.emotion-1 .hljs-literal,
-.emotion-1 .hljs-type,
-.emotion-1 .hljs-params,
-.emotion-1 .hljs-meta,
-.emotion-1 .hljs-link {
+.emotion-3 .hljs-builtin-name,
+.emotion-3 .hljs-literal,
+.emotion-3 .hljs-type,
+.emotion-3 .hljs-params,
+.emotion-3 .hljs-meta,
+.emotion-3 .hljs-link {
   color: #ff802b;
 }
 
-.emotion-1 .hljs-string,
-.emotion-1 .hljs-number,
-.emotion-1 .hljs-symbol,
-.emotion-1 .hljs-bullet,
-.emotion-1 .hljs-addition {
+.emotion-3 .hljs-string,
+.emotion-3 .hljs-number,
+.emotion-3 .hljs-symbol,
+.emotion-3 .hljs-bullet,
+.emotion-3 .hljs-addition {
   color: #55b467;
 }
 
-.emotion-1 .hljs-keyword,
-.emotion-1 .hljs-doctag,
-.emotion-1 .hljs-built_in,
-.emotion-1 .hljs-selector-tag,
-.emotion-1 .hljs-section {
+.emotion-3 .hljs-keyword,
+.emotion-3 .hljs-doctag,
+.emotion-3 .hljs-built_in,
+.emotion-3 .hljs-selector-tag,
+.emotion-3 .hljs-section {
   color: #369eff;
 }
 
-.emotion-1 .hljs-emphasis {
+.emotion-3 .hljs-emphasis {
   font-style: italic;
 }
 
-.emotion-1 .hljs-strong {
+.emotion-3 .hljs-strong {
   font-weight: bold;
 }
 
-.emotion-2 {
+.emotion-4 {
   width: 100%;
 }
 
-.emotion-3 {
+.emotion-5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -21075,7 +21386,7 @@ exports[`<Snippet /> > renders index.tsx correctly 1`] = `
   gap: 8px;
 }
 
-.emotion-4 {
+.emotion-6 {
   -webkit-backdrop-filter: saturate(180%) blur(10px);
   backdrop-filter: saturate(180%) blur(10px);
   position: absolute;
@@ -21100,11 +21411,11 @@ exports[`<Snippet /> > renders index.tsx correctly 1`] = `
   border-radius: 6;
 }
 
-.emotion-5 {
+.emotion-7 {
   color: #aaaaaa;
 }
 
-.emotion-6 {
+.emotion-8 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -21121,11 +21432,11 @@ exports[`<Snippet /> > renders index.tsx correctly 1`] = `
   transition: color 600ms cubic-bezier(0.215, 0.61, 0.355, 1),scale 400ms cubic-bezier(0.215, 0.61, 0.355, 1),background-color 100ms cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
-.emotion-6:hover {
+.emotion-8:hover {
   color: rgba(0, 0, 0, 0.88)!important;
 }
 
-.emotion-6:active {
+.emotion-8:active {
   scale: 0.8;
   color: rgba(0, 0, 0, 0.88);
 }
@@ -21134,57 +21445,63 @@ exports[`<Snippet /> > renders index.tsx correctly 1`] = `
   <div
     class="ant-editor-snippet-container emotion-0"
   >
-    <pre
-      class="emotion-1"
-    >
-      <table
-        border="0"
-        cellpadding="0"
-        cellspacing="0"
-      >
-        <tbody>
-          <tr>
-            <td
-              class="ant-editor-highlight-content emotion-2"
-            >
-              $ pnpm install 
-              <span
-                class="hljs-meta"
-              >
-                @ant
-              </span>
-              -design/pro-chat
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </pre>
     <div
-      class="layoutkit-center emotion-3 emotion-4"
+      class="emotion-1"
+    />
+    <div
+      class="ant-editor-snippet-highlighter emotion-2"
     >
-      <span
-        aria-label="loading-3-quarters"
-        class="anticon anticon-loading-3-quarters anticon-spin emotion-5"
-        role="img"
+      <pre
+        class="emotion-3"
       >
-        <svg
-          aria-hidden="true"
-          data-icon="loading-3-quarters"
-          fill="currentColor"
-          focusable="false"
-          height="1em"
-          viewBox="0 0 1024 1024"
-          width="1em"
+        <table
+          border="0"
+          cellpadding="0"
+          cellspacing="0"
         >
-          <path
-            d="M512 1024c-69.1 0-136.2-13.5-199.3-40.2C251.7 958 197 921 150 874c-47-47-84-101.7-109.8-162.7C13.5 648.2 0 581.1 0 512c0-19.9 16.1-36 36-36s36 16.1 36 36c0 59.4 11.6 117 34.6 171.3 22.2 52.4 53.9 99.5 94.3 139.9 40.4 40.4 87.5 72.2 139.9 94.3C395 940.4 452.6 952 512 952c59.4 0 117-11.6 171.3-34.6 52.4-22.2 99.5-53.9 139.9-94.3 40.4-40.4 72.2-87.5 94.3-139.9C940.4 629 952 571.4 952 512c0-59.4-11.6-117-34.6-171.3a440.45 440.45 0 00-94.3-139.9 437.71 437.71 0 00-139.9-94.3C629 83.6 571.4 72 512 72c-19.9 0-36-16.1-36-36s16.1-36 36-36c69.1 0 136.2 13.5 199.3 40.2C772.3 66 827 103 874 150c47 47 83.9 101.8 109.7 162.7 26.7 63.1 40.2 130.2 40.2 199.3s-13.5 136.2-40.2 199.3C958 772.3 921 827 874 874c-47 47-101.8 83.9-162.7 109.7-63.1 26.8-130.2 40.3-199.3 40.3z"
-          />
-        </svg>
-      </span>
-      Highlighting...
+          <tbody>
+            <tr>
+              <td
+                class="ant-editor-highlight-content emotion-4"
+              >
+                $ pnpm install 
+                <span
+                  class="hljs-meta"
+                >
+                  @ant
+                </span>
+                -design/pro-chat
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </pre>
+      <div
+        class="layoutkit-center emotion-5 emotion-6"
+      >
+        <span
+          aria-label="loading-3-quarters"
+          class="anticon anticon-loading-3-quarters anticon-spin emotion-7"
+          role="img"
+        >
+          <svg
+            aria-hidden="true"
+            data-icon="loading-3-quarters"
+            fill="currentColor"
+            focusable="false"
+            height="1em"
+            viewBox="0 0 1024 1024"
+            width="1em"
+          >
+            <path
+              d="M512 1024c-69.1 0-136.2-13.5-199.3-40.2C251.7 958 197 921 150 874c-47-47-84-101.7-109.8-162.7C13.5 648.2 0 581.1 0 512c0-19.9 16.1-36 36-36s36 16.1 36 36c0 59.4 11.6 117 34.6 171.3 22.2 52.4 53.9 99.5 94.3 139.9 40.4 40.4 87.5 72.2 139.9 94.3C395 940.4 452.6 952 512 952c59.4 0 117-11.6 171.3-34.6 52.4-22.2 99.5-53.9 139.9-94.3 40.4-40.4 72.2-87.5 94.3-139.9C940.4 629 952 571.4 952 512c0-59.4-11.6-117-34.6-171.3a440.45 440.45 0 00-94.3-139.9 437.71 437.71 0 00-139.9-94.3C629 83.6 571.4 72 512 72c-19.9 0-36-16.1-36-36s16.1-36 36-36c69.1 0 136.2 13.5 199.3 40.2C772.3 66 827 103 874 150c47 47 83.9 101.8 109.7 162.7 26.7 63.1 40.2 130.2 40.2 199.3s-13.5 136.2-40.2 199.3C958 772.3 921 827 874 874c-47 47-101.8 83.9-162.7 109.7-63.1 26.8-130.2 40.3-199.3 40.3z"
+            />
+          </svg>
+        </span>
+      </div>
     </div>
     <button
-      class="ant-btn ant-btn-text ant-btn-icon-only ant-editor-icon emotion-6"
+      class="ant-btn ant-btn-text ant-btn-icon-only ant-editor-icon emotion-8"
       type="button"
     >
       <span

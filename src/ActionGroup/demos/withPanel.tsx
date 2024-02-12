@@ -1,7 +1,7 @@
 import type { Position } from '@ant-design/pro-editor';
 import { ActionGroup, DraggablePanel } from '@ant-design/pro-editor';
 import { useLocalStorageState } from 'ahooks';
-import { defaultItems } from './items';
+import { defaultItems } from './_items';
 
 export default () => {
   const [position, setPos] = useLocalStorageState<Position>('demo-pos');

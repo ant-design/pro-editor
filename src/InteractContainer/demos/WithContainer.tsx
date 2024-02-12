@@ -1,5 +1,5 @@
-import { InteractContainer } from '@ant-design/pro-editor';
 import { Button, Divider } from 'antd';
+import InteractContainer from '../index';
 
 const WithContainer = () => {
   return (
@@ -13,17 +13,9 @@ const WithContainer = () => {
         },
       ]}
     >
-      <div
-        id={'ux'}
-        style={{ margin: 16, padding: 16, border: '1px solid blue' }}
-      >
-        <div
-          style={{ padding: 40, border: '1px dashed red' }}
-          data-uxid={'ctn'}
-        >
-          <span data-uxid={'text'}>
-            只有红色虚线框的内容可以选择（hover会有悬浮样式）
-          </span>
+      <div id={'ux'} style={{ margin: 16, padding: 16, border: '1px solid blue' }}>
+        <div style={{ padding: 40, border: '1px dashed red' }} data-uxid={'ctn'}>
+          <span data-uxid={'text'}>只有红色虚线框的内容可以选择（hover会有悬浮样式）</span>
         </div>
         <div>点击红色虚线框之外蓝色框之内的区域，可以取消选中</div>
       </div>

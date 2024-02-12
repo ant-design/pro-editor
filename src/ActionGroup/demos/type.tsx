@@ -1,7 +1,7 @@
 import { ActionGroup } from '@ant-design/pro-editor';
 import { InputNumber, Segmented, Space } from 'antd';
 import { useState } from 'react';
-import { customItems } from './items';
+import { customItems } from './_items';
 
 export default () => {
   const [type, setType] = useState<string | any>('block');

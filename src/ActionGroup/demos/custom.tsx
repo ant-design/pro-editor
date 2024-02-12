@@ -1,6 +1,6 @@
 import { ActionGroup, ActionIcon } from '@ant-design/pro-editor';
 import { Card, Input, Rate, Switch } from 'antd';
-import { defaultItems } from './items';
+import { defaultItems } from './_items';
 
 export default () => {
   return (
