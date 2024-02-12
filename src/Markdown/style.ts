@@ -185,7 +185,7 @@ export const useStyles = createStyles(({ css, cx, token, prefixCls }) => {
     ),
     highlighter: css`
       max-height: 400px;
-      overflow: scroll;
+      overflow: auto;
     `,
     header: cx(
       `${prefix}-header`,
