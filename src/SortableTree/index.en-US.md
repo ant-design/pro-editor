@@ -1,6 +1,6 @@
 ---
-title: SortableTree Sortable Tree
-group: Sortable Component
+title: SortableTree
+group: Sortable
 atomId: SortableTree
 demo:
   cols: 2

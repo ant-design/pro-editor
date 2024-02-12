@@ -22,7 +22,7 @@ export default () => {
   return (
     <Flexbox padding={24} style={{ background: token.colorBgLayout }}>
       <Flexbox horizontal align={'center'} distribution={'space-between'}>
-        <div>列配置项</div>
+        <div>Column Config</div>
         <ActionIcon
           icon={<PlusCircleFilled />}
           key={'edit'}

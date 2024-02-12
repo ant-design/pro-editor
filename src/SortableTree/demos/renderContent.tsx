@@ -1,7 +1,3 @@
-/**
- * title: 自定义内容
- * description: 使用 renderContent 自定义渲染
- */
 import type { TreeData } from '@ant-design/pro-editor';
 import { IconPicker, SortableTree } from '@ant-design/pro-editor';
 import { Input } from 'antd';

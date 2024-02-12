@@ -28,7 +28,7 @@ const Demo = () => {
         }}
         style={{ marginTop: 8 }}
       >
-        设置数据
+        Set Data
       </Button>
     </Flexbox>
   );

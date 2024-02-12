@@ -1,7 +1,3 @@
-/**
- * title: 自定义可拖动规则
- * description: 通过函数规则自定义是否可拖动
- */
 import { SortableTree } from '@ant-design/pro-editor';
 
 import { message } from 'antd';

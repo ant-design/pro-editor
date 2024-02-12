@@ -1,7 +1,3 @@
-/**
- * title: 虚拟滚动
- * description: 数据量较大时，使用 virtual 配置虚拟滚动
- */
 import { SortableTree } from '@ant-design/pro-editor';
 import { treeData } from './data/virtual';
 

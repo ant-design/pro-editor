@@ -54,7 +54,7 @@ const ItemRender = memo(({ item, index, compact = false }: ItemRenderProps) => {
           size="small"
           style={{ width: '100%' }}
           options={tableColumnValueOptions}
-          placeholder="请选择列类型"
+          placeholder="Please Select Column Value"
           value={item?.dataIndex}
           onChange={(value) => {
             instance.updateItem({ dataIndex: value }, index);

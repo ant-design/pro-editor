@@ -37,7 +37,7 @@ const Demo = () => {
             );
           }}
         >
-          头部添加一项
+          Add item from top
         </Button>
         <Button
           onClick={() => {
@@ -50,7 +50,7 @@ const Demo = () => {
             );
           }}
         >
-          尾部添加一项
+          Add item from bottom
         </Button>
       </Flexbox>
 
@@ -88,7 +88,7 @@ const Demo = () => {
                     );
                   }}
                 >
-                  上方
+                  Up
                 </Button>
                 <Button
                   size={'small'}
@@ -103,7 +103,7 @@ const Demo = () => {
                     );
                   }}
                 >
-                  下方
+                  Down
                 </Button>
                 <Button
                   size={'small'}
@@ -111,10 +111,10 @@ const Demo = () => {
                   type={'text'}
                   onClick={() => ref.current.removeItem(index)}
                 >
-                  删除
+                  Delete
                 </Button>
                 <Button size={'small'} type={'text'} {...listeners}>
-                  拖拽
+                  Drag
                 </Button>
               </Flexbox>
             </Flexbox>

@@ -15,7 +15,7 @@ const Demo = () => {
         value={list}
         renderContent={(item) => item.text}
         creatorButtonProps={{
-          creatorButtonText: '自定义添加',
+          creatorButtonText: 'Custom Create',
           record: () => ({
             text: Math.ceil(Math.random() * 100000).toString(16),
           }),

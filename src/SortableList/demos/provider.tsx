@@ -35,7 +35,7 @@ const Extra = () => {
       style={{ marginBottom: 8 }}
       onClick={() => message.info(JSON.stringify(instance.getValue()))}
     >
-      获取值
+      Get Value
     </Button>
   );
 };
