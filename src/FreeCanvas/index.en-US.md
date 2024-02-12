@@ -1,12 +1,14 @@
 ---
 title: FreeCanvas
 atomId: FreeCanvas
-group: Basic
+group: Panel
 ---
 
 # FreeCanvas Free Canvas
 
-## Example
+A free canvas encapsulation based on `ReactFlow`
+
+## Code Demo
 
 <code src='./demos/basic.tsx' ></code>
 

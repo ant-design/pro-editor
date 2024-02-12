@@ -6,47 +6,37 @@ group: Basic
 
 # Highlight
 
-## When to use
-
-Use it to display code. Highlight uses [Shiki](https://github.com/shikijs/shiki) for rendering by default. Shiki uses the TextMate syntax parser for more precision, but it requires loading additional wasm files, which may result in poor performance in case of poor network conditions. If initialization fails, the component will use [highlight.js](https://highlightjs.org/) as a replacement.
+Used to display code, Highlight defaults to using [Shiki](https://github.com/shikijs/shiki) for rendering. Shiki uses a TextMate grammar for more precision, but it requires loading additional wasm files, which may result in a poor experience in case of poor network conditions. If initialization fails, the component will set the renderer to [highlight.js](https://highlightjs.org/) as a replacement.
 
 ## Code Demo
 
-### Automatic Theme
+<code src="./demos/auto.tsx" title="Automatic Theme" description="By default, `auto` is enabled, which will automatically switch themes based on the current environment"></code>
 
-<code src="./demos/auto.tsx" ></code>
+<code src="./demos/shiki.tsx"  title="Disable Shiki" description="By default, `shiki` rendering is enabled, but it can be disabled by setting `shiki=false` in weak or no network situations"></code>
 
-### Disable Shiki
+<code src="./demos/basic.tsx" title="Specify Language and Theme" description="You can specify the language for highlighting using `language` and the highlighting theme using `theme`"></code>
 
-<code src="./demos/shiki.tsx" ></code>
+<code src="./demos/lineNumber.tsx"  title="Display Code Block Line Numbers"
+description="You can specify whether to display line numbers for the code block using `lineNumber`"></code>
 
-### Specify Language
-
-<code src="./demos/basic.tsx" ></code>
-
-### Display Code Block Line Numbers
-
-<code src="./demos/lineNumber.tsx" ></code>
-
-### Theme & Language & Line Numbers & Renderer
-
-<code src="./demos/theme.tsx" ></code>
+<code src="./demos/theme.tsx"  title="Switch Language and Theme"
+description="You can use this example to see the effects of different languages in different themes"></code>
 
 ## API Parameters
 
 ### Highlight
 
-| Parameter    | Description                                                                                            | Type    | Default |
-| :----------- | :----------------------------------------------------------------------------------------------------- | :------ | :------ |
-| language     | Specify the language type, see the table below                                                         | string  | -       |
-| showLanguage | Whether to display the language tag                                                                    | boolean | true    |
-| theme        | Specify the theme, options: `dark`, `light`, `auto`                                                    | string  | `auto`  |
-| lineNumber   | Specify whether to enable line numbers for the code block, options: `true`, `false`                    | boolean | false   |
-| copyable     | Specify whether to display a copy button for the code block, options: `true`, `false`                  | boolean | true    |
-| height       | Specify the height of the code block, used for scenarios where the code block height needs to be fixed | number  | -       |
-| type         | Specify the rendering type, options: `block`, `pure`. In pure mode, the container style is removed     | `block` | -       |
+| Parameter    | Description                                                                                        | Type    | Default |
+| :----------- | :------------------------------------------------------------------------------------------------- | :------ | :------ |
+| language     | Specifies the language type, see table below                                                       | string  | -       |
+| showLanguage | Whether to display the language tag                                                                | boolean | true    |
+| theme        | Specifies the theme, options: `dark`, `light`, `auto`                                              | string  | `auto`  |
+| lineNumber   | Specifies whether to enable code block line numbers, options: `true`, `false`                      | boolean | false   |
+| copyable     | Specifies whether to display a copy button for the code block, options: `true`, `false`            | boolean | true    |
+| height       | Specifies the code block height, for scenarios where the code block height needs to be fixed       | number  | -       |
+| type         | Specifies the rendering type, options: `block`, `pure`. In pure mode, container styles are removed | `block` | -       |
 
-### Currently supported language list
+### Currently Supported Language List
 
 - javascript
 - typescript

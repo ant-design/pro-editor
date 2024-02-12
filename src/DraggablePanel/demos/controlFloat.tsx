@@ -21,7 +21,7 @@ export default () => {
         mode="float"
         style={{ padding: 12 }}
       >
-        悬浮可拖拽面板
+        Float Draggable Panel
       </DraggablePanel>
     </div>
   );

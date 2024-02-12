@@ -12,9 +12,9 @@ export default () => (
       maxWidth: '100%',
     }}
   >
-    <div style={{ flex: 1, padding: 12 }}>内容</div>
+    <div style={{ flex: 1, padding: 12 }}>Content</div>
     <DraggablePanel style={{ padding: 12 }} maxWidth={600}>
-      右侧面板
+      Right Panel
     </DraggablePanel>
   </div>
 );

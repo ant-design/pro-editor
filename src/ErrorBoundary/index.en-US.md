@@ -2,30 +2,27 @@
 title: ErrorBoundary
 order: 100
 atomId: ErrorBoundary
-group: Basic
+group:
+  title: Panel
 ---
 
 # ErrorBoundary Error Prompt
 
-## Example
+General error prompt panel
 
-### Production Environment
+## Code Demo
 
-<code src='./demos/_prod.tsx' ></code>
+<code src='./demos/_prod.tsx' title="Production Environment"></code>
 
-### Development Environment
-
-Error messages will be displayed directly during development:
-
-<code src='./demos/_dev.tsx' ></code>
+<code src='./demos/_dev.tsx' title="Development Environment" description="Error messages will be displayed directly during development"></code>
 
 ## API
 
 Error boundary component property interface
 
-| Property       | Type              | Description                            |
-| -------------- | ----------------- | -------------------------------------- |
-| children       | `React.ReactNode` | Child component                        |
-| onExportConfig | `() => void`      | Export configuration callback function |
-| onRetry        | `() => void`      | Retry callback function                |
-| showDev        | `boolean`         | Whether to display developer options   |
+| Property       | Type              | Description                                         |
+| -------------- | ----------------- | --------------------------------------------------- |
+| children       | `React.ReactNode` | Child component                                     |
+| onExportConfig | `() => void`      | Callback function for exporting configuration items |
+| onRetry        | `() => void`      | Retry callback function                             |
+| showDev        | `boolean`         | Whether to display developer options                |

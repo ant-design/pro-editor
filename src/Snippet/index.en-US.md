@@ -1,20 +1,24 @@
 ---
+nav: Components
 group: Basic
 title: Snippet
-description: The Snippet component is used to display code snippets with syntax highlighting. It can be customized with symbols and syntax highlighting languages before the content. The component also supports copying via the included CopyButton.
 ---
 
 # Snippet Code Snippet
 
-## Default
+The Snippet component is used to display code snippets with syntax highlighting. Customization can be done with symbols and syntax highlighting languages before the content. The component also supports copying through the included CopyButton by default.
 
-<code src="./demos/index.tsx" nopadding></code>
+## Code Demo
+
+<code src="./demos/index.tsx" nopadding title="Basic Example"></code>
+
+<code src="./demos/spotlight.tsx" nopadding title="Spotlight Background Effect" description="You can set the `spotlight` attribute to enable the spotlight background effect"></code>
 
 ## APIs
 
-| Parameter | Description                                   | Type               | Default |
+| Property  | Description                                   | Type               | Default |
 | :-------- | :-------------------------------------------- | :----------------- | :------ |
-| children  | Content displayed within the component        | string             | -       |
+| children  | Content displayed in the component            | string             | -       |
 | copyable  | Whether the content can be copied             | boolean            | true    |
 | language  | Language of the component content             | string             | 'tsx'   |
 | spotlight | Whether to add a spotlight background effect  | boolean            | false   |
