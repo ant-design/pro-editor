@@ -17,18 +17,18 @@ type SchemaItem = {
 
 const columns: ColumnItemList<SchemaItem> = [
   {
-    title: '列标题',
+    title: 'Title',
     dataIndex: 'title',
     type: 'input',
   },
   {
-    title: '值类型',
+    title: 'ValueType',
     dataIndex: 'valueType',
     type: 'select',
     options: tableColumnValueOptions,
   },
   {
-    title: '字段',
+    title: 'DataIndex',
     dataIndex: 'dataIndex',
     type: 'select',
   },

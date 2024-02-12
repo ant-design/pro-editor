@@ -19,13 +19,13 @@ export const fieldStyle: React.CSSProperties = {
 };
 
 export const INIT_VALUES = [
-  { id: 'index', title: '序号', dataIndex: 'indexBorder' },
+  { id: 'index', title: 'Index', dataIndex: 'indexBorder' },
   {
     id: 'authName',
-    title: '授权企业名称',
+    title: 'Enterprise',
     dataIndex: 'text',
   },
-  { id: 'authedName', title: '被授权企业', dataIndex: 'select' },
+  { id: 'authedName', title: 'Company', dataIndex: 'select' },
 ];
 
 /*

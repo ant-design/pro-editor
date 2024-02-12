@@ -16,29 +16,29 @@ type SchemaItem = {
 };
 
 const INIT_VALUES: SchemaItem[] = [
-  { title: '序号', valueType: 'indexBorder', dataIndex: 'index' },
+  { title: 'Index', valueType: 'indexBorder', dataIndex: 'index' },
   {
-    title: '授权企业名称',
+    title: 'Enterprise',
     valueType: 'text',
     dataIndex: 'name',
   },
-  { title: '被授权企业', valueType: 'text', dataIndex: 'authCompany' },
+  { title: 'Company', valueType: 'text', dataIndex: 'authCompany' },
 ];
 
 const columns: ColumnItemList<SchemaItem> = [
   {
-    title: '列标题',
+    title: 'Title',
     dataIndex: 'title',
     type: 'input',
   },
   {
-    title: '值类型',
+    title: 'ValueType',
     dataIndex: 'valueType',
     type: 'select',
     options: tableColumnValueOptions,
   },
   {
-    title: '字段',
+    title: 'DataIndex',
     dataIndex: 'dataIndex',
     type: 'select',
   },
@@ -57,18 +57,18 @@ export default () => {
             {
               dataIndex: 'orderCreated',
               valueType: 'date',
-              title: '订单创建时间',
+              title: 'CreateTime',
             },
             {
               dataIndex: 'detailPic',
               valueType: 'text',
-              title: '产品详情图',
+              title: 'Detail',
             },
           ]);
         }}
         style={{ marginBottom: 12 }}
       >
-        受控设置数据
+        Set Data
       </Button>
       <ColumnList<SchemaItem>
         columns={columns}

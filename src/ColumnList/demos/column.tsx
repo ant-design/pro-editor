@@ -16,48 +16,48 @@ const initialValues = [
   {
     dataIndex: 'orderCreated',
     valueType: 'date',
-    title: '订单创建时间',
+    title: 'CreateTime',
     color: undefined,
   },
   {
     dataIndex: 'detailPic',
     valueType: 'text',
-    title: '产品详情图',
+    title: 'Detail Pic',
     color: undefined,
   },
   {
     dataIndex: 'closeReason',
     valueType: 'text',
-    title: '订单关闭原因',
+    title: 'Close Reason',
     color: undefined,
   },
   {
     dataIndex: 'closeType',
     valueType: 'text',
-    title: '订单关闭类型',
+    title: 'Close Type',
     color: undefined,
   },
 ];
 
 const columns: ColumnItemList<SchemaItem> = [
   {
-    title: '列标题',
+    title: 'Title',
     dataIndex: 'title',
     type: 'input',
   },
   {
-    title: '值类型',
+    title: 'ValueType',
     dataIndex: 'valueType',
     type: 'select',
     options: tableColumnValueOptions,
   },
   {
-    title: '字段',
+    title: 'DataIndex',
     dataIndex: 'dataIndex',
     type: 'select',
   },
   {
-    title: '颜色',
+    title: 'Color',
     dataIndex: 'color',
     type: 'custom',
     render: ({ value, onChange }) => {

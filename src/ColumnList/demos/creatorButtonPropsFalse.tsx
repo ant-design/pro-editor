@@ -16,19 +16,19 @@ const INIT_VALUES = [
   {
     dataIndex: 'productName',
     valueType: 'text',
-    title: '产品名称',
+    title: 'Product Name',
     color: undefined,
   },
   {
     dataIndex: 'productComment',
     valueType: 'text',
-    title: '产品介绍',
+    title: 'Product Comment',
     color: undefined,
   },
   {
     dataIndex: 'orderStatus',
     valueType: 'text',
-    title: '订单状态',
+    title: 'Order Status',
   },
 ];
 
@@ -39,18 +39,18 @@ export const randomIndex = () => Math.random() * 10000;
 
 const columns: ColumnItemList<SchemaItem> = [
   {
-    title: '列标题',
+    title: 'Title',
     dataIndex: 'title',
     type: 'input',
   },
   {
-    title: '值类型',
+    title: 'ValueType',
     dataIndex: 'valueType',
     type: 'select',
     options: tableColumnValueOptions,
   },
   {
-    title: '字段',
+    title: 'DataIndex',
     dataIndex: 'dataIndex',
     type: 'select',
   },
