@@ -1,6 +1,4 @@
 /**
- * title: 创建按钮
- * description: 通过 `creatorButtonProps` 可以自定义创建按钮，record 为创建的数据
  * compact: true
  */
 import { SortableList } from '@ant-design/pro-editor';

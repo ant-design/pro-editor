@@ -10,7 +10,7 @@ title: ContextMenu 情景菜单
 
 ## 代码演示
 
-<code src="./demos/index.tsx" center iframe title="基本使用"></code>
+<code src="./demos/index.tsx" center iframe title="右键菜单" description="右键点击屏幕"></code>
 
 ## API
 

@@ -1,7 +1,5 @@
 /**
- * title: 自定义排序项
- * description: 通过 `renderItem` 可以自定义每个排序项，相比于 `renderContent` 提供的自由度更大
- * compact: true
+  compact: true
  */
 import { SortableList, SortableListRef } from '@ant-design/pro-editor';
 import { Badge, Button } from 'antd';

@@ -1,19 +1,16 @@
 ---
 title: ContextMenu
 group: Basic
+atomId: ContextMenu
 ---
 
-# ContextMenu Context Menu
+# ContextMenu
 
-## When to use
+Display a context menu that can be triggered by right-clicking or long-pressing, and can be operated with the keyboard.
 
-This component is used to display context menus, which can be triggered by right-clicking or long-pressing and can be operated using the keyboard.
+## Code Example
 
-## Code Demo
-
-### Basic Usage
-
-<code src="./demos/index.tsx" center iframe></code>
+<code src="./demos/index.tsx" center iframe title="Right click menu" description="Right click the screen"></code>
 
 ## API
 

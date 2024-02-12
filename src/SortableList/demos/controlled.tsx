@@ -1,6 +1,4 @@
 /**
- * title: 受控模式
- * description: onChange 会返回变更数据
  * compact: true
  */
 import { SortableList } from '@ant-design/pro-editor';

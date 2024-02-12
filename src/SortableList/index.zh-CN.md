@@ -14,18 +14,29 @@ demo:
 
 ## 代码演示
 
-<code src="./demos/Basic.tsx" ></code>
-<code src="./demos/controlled.tsx" ></code>
-<code src="./demos/hideRemove.tsx" ></code>
-<code src="./demos/handle.tsx" ></code>
-<code src="./demos/getItemStyles.tsx" ></code>
-<code src="./demos/renderItem.tsx" ></code>
-<code src="./demos/renderContent.tsx" ></code>
-<code src="./demos/creatorButtonProps.tsx" ></code>
-<code src="./demos/ref.tsx" ></code>
-<code src="./demos/useSortableList.tsx" ></code>
-<code src="./demos/provider.tsx" ></code>
-<code src="./demos/empty.tsx" ></code>
+<code src="./demos/Basic.tsx" title="基本使用" description="默认支持列表渲染"></code>
+<code src="./demos/controlled.tsx"  title="受控模式"
+ description="onChange 会返回变更数据"></code>
+<code src="./demos/hideRemove.tsx"  title="隐藏删除按钮"
+ description="你可以设置 `hideRemove` 属性来隐藏默认的删除按钮"></code>
+<code src="./demos/handle.tsx" title="隐藏拖拽按钮"
+ description="你可以设置 `handle` 属性来控制拖拽按钮的显隐"></code>
+<code src="./demos/getItemStyles.tsx"  title="自定义样式"
+ description="通过 `getItemStyles` 可以自定义每个 item 的样式。"></code>
+<code src="./demos/renderItem.tsx"  title="自定义排序项"
+ description="通过 `renderItem` 可以自定义每个排序项，相比于 `renderContent` 提供的自由度更大"></code>
+<code src="./demos/renderContent.tsx"  title="自定义列表项内容"
+ description="提供 `renderContent` 由用户自定义除拖拽等操作外的列表项内容。"></code>
+<code src="./demos/creatorButtonProps.tsx"  title="创建按钮"
+ description="通过 `creatorButtonProps` 可以自定义创建按钮，record 为创建的数据"></code>
+<code src="./demos/ref.tsx" title="使用 `ref` 获得实例"
+ description="提供传统的 `ref` 方式关联组件实例，可实现自定义功能，如将添加按钮渲染到组件右上方。"></code>
+<code src="./demos/useSortableList.tsx"  title="useSortableList"
+ description="在 Item 子组件中使用 `useSortableList()` hook，可以获得当前组件实例"></code>
+<code src="./demos/provider.tsx"  title="Provider"
+description="为了方便用户在更高的上下文中通过 `useSortableList()` hook 获得组件实例，我们提供了 `SortableListProvider` 由用户控制 Provider 的作用范围。"></code>
+<code src="./demos/empty.tsx"  title="空状态"
+ description="当列表没有值时会展示空状态。"></code>
 
 ## API
 

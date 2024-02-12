@@ -1,6 +1,6 @@
 ---
-title: SortableTree
-group: Sortable
+title: SortableTree Sortable Tree
+group: Sortable Component
 atomId: SortableTree
 demo:
   cols: 2
@@ -10,22 +10,11 @@ demo:
 
 A sortable tree component that conforms to the data structure of Ant Design [Tree](https://ant.design/components/tree).
 
-## When To Use
+## Code Example
 
-It can be used when editing tree-like data structures (adding, deleting, sorting).
-
-## Demo
-
-###
-
-<code src="./demos/default.tsx" ></code><code src="./demos/controlled.tsx" ></code>
-
-<code src="./demos/renderContent.tsx" ></code> <code src="./demos/disableDrag.tsx" ></code> <code src="./demos/sortableRule.tsx" ></code>
-<code src="./demos/virtual.tsx" ></code>
+<code src="./demos/default.tsx" ></code><code src="./demos/controlled.tsx" ></code><code src="./demos/renderContent.tsx" ></code><code src="./demos/disableDrag.tsx" ></code><code src="./demos/sortableRule.tsx" ></code><code src="./demos/virtual.tsx" ></code>
 
 ## API
-
-### Properties
 
 | Name                | Type                                                                                                  | Description                                     |
 | ------------------- | ----------------------------------------------------------------------------------------------------- | ----------------------------------------------- |
@@ -41,6 +30,17 @@ It can be used when editing tree-like data structures (adding, deleting, sorting
 | renderExtra         | `(node: FlattenNode<T>) => JSX.Element`                                                               | Render extra items                              |
 | ref                 | `MutableRefObject<SortableTreeInstance<T>>`                                                           | Expose methods externally                       |
 | sortableRule        | `data: { activeNode: FlattenNode<T>; targetNode: FlattenNode<T>; projected: Projected; }) => boolean` | Function to control drag and drop sorting rules |
+| virtual             | `VirtualConfig` \| `false`                                                                            | Virtual scroll configuration, default is false  |
+
+## VirtualConfig
+
+Virtual scroll configuration
+
+| Name       | Type                        | Description                                            |
+| ---------- | --------------------------- | ------------------------------------------------------ |
+| height     | `number`                    | Height of the virtual scroll container, required       |
+| width      | `number`\| `string`         | Width of the virtual scroll container, default is 100% |
+| itemHeight | `(index: number) => number` | Item height, default is 36                             |
 
 ## TreeNode
 
@@ -62,18 +62,18 @@ Flattened node
 | -------- | ---------------------------- | ----------------------------------------- |
 | parentId | `UniqueIdentifier` \| `null` | Parent node ID, null if it is a root node |
 | depth    | `number`                     | Node depth                                |
-| index    | `number`                     | Node position among sibling nodes         |
+| index    | `number`                     | Position of the node among sibling nodes  |
 
 ## Projected
 
 Placement target information
 
-| Name     | Type                         | Description                                     |
-| -------- | ---------------------------- | ----------------------------------------------- |
-| depth    | `number`                     | Placement target depth                          |
-| maxDepth | `number`                     | Maximum depth the target position can be placed |
-| minDepth | `number`                     | Minimum depth the target position can be placed |
-| parentId | `UniqueIdentifier` \| `null` | Parent node ID, null if it is a root node       |
+| Name     | Type                         | Description                               |
+| -------- | ---------------------------- | ----------------------------------------- |
+| depth    | `number`                     | Depth of the placement target             |
+| maxDepth | `number`                     | Maximum depth the target can be placed    |
+| minDepth | `number`                     | Minimum depth the target can be placed    |
+| parentId | `UniqueIdentifier` \| `null` | Parent node ID, null if it is a root node |
 
 ## SortableTreeInstance
 
@@ -97,8 +97,8 @@ export interface SortableTreeInstance<T = any> extends PublicSortableTreeStore {
    */
   getTreeData: () => TreeData<T>;
   /**
-   * Get the current flattened tree data
-   * @returns The current flattened tree data
+   * Get the flattened data of the current tree
+   * @returns The flattened data of the current tree
    */
   getFlattenData: () => FlattenNode<T>[];
 }

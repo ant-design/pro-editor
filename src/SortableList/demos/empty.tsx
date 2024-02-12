@@ -1,6 +1,4 @@
 /**
- * title: 空状态
- * description: 当列表没有值时会展示空状态。
  * compact: true
  */
 import { SortableList } from '@ant-design/pro-editor';

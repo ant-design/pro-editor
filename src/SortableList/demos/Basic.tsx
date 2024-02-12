@@ -1,6 +1,4 @@
 /**
- * title: 默认使用
- * description: 默认支持列表渲染
  * compact: true
  */
 import { SortableList } from '@ant-design/pro-editor';

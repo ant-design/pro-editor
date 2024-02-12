@@ -1,6 +1,4 @@
 /**
- * title: 隐藏删除按钮
- * description: 你可以设置 `hideRemove` 属性来隐藏默认的删除按钮
  * compact: true
  */
 import { SortableList } from '@ant-design/pro-editor';

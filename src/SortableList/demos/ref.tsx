@@ -1,6 +1,4 @@
 /**
- * title: 使用 ref 获得实例
- * description: 提供传统的 `ref` 方式关联组件实例，可实现自定义功能，如将添加按钮渲染到组件右上方。
  * compact: true
  */
 import { PlusCircleFilled } from '@ant-design/icons';
