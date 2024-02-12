@@ -4,23 +4,17 @@ atomId: Awareness
 group:
   title: Real-time Collaboration
   order: 5
+demo:
+  cols: 2
 ---
 
-# Introduction
+# Awareness Collaborative Perception Suite
 
-Awareness represents the movement and actions of users within the application. Users can see in real-time what others are doing.
+Awareness represents the user's movements and actions within the application. Users can see in real-time what others are doing.
 
-## Awareness.Cursor
+## Code Demo
 
-Pointer for collaborative roles
-
-<code src="./demos/Cursor.tsx" ></code>
-
-## Awareness.Avatar
-
-Collaborative user
-
-<code src="./demos/Avatar.tsx" ></code>
+<code src="./demos/Cursor.tsx" title="Awareness.Cursor" description="Pointer for collaborative roles"></code><code src="./demos/Avatar.tsx" title="Awareness.Avatar" description="Collaborative user"></code>
 
 ## API
 
@@ -40,7 +34,7 @@ Properties of the avatar component
 
 | Property  | Type         | Description                                                  |
 | --------- | ------------ | ------------------------------------------------------------ |
-| name      | `string`     | User name                                                    |
+| name      | `string`     | Username                                                     |
 | color     | `string`     | Color                                                        |
 | active    | `boolean`    | Whether it is in an active state, default is `false`         |
 | current   | `boolean`    | Whether it is the current user, default is `false`           |

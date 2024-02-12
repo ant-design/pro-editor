@@ -1,5 +1,6 @@
 ---
 title: ColumnList
+atomId: ColumnList
 group: Sortable
 order: 3
 demo:
@@ -8,23 +9,15 @@ demo:
 
 # ColumnList Column Editing List
 
-## When to use
-
-Generate a simple sorting list based on `schema`.
+Generate a simple sortable list based on the `schema`.
 
 ## Code Demo
 
-<code src="./demos/normal.tsx" ></code>
-<code src="./demos/column.tsx" ></code>
-<code src="./demos/controlled.tsx" ></code>
-<code src="./demos/actions.tsx" ></code>
-<code src="./demos/creatorButtonProps.tsx" ></code>
-<code src="./demos/customCreate.tsx" ></code>
-<code src="./demos/empty.tsx" ></code>
+<code src="./demos/normal.tsx" ></code><code src="./demos/creatorButtonPropsFalse.tsx"></code> <code src="./demos/column.tsx" ></code><code src="./demos/controlled.tsx" ></code><code src="./demos/actions.tsx" ></code><code src="./demos/creatorButtonProps.tsx" ></code><code src="./demos/customCreate.tsx" ></code><code src="./demos/empty.tsx" ></code>
 
 ## API
 
-Provides encapsulated `columns` configuration, other attributes refer to `SortableList`
+Provides encapsulated `columns` configuration, other properties refer to `SortableList`
 
 | Property | Type           | Description                |
 | -------- | -------------- | -------------------------- |
@@ -45,7 +38,7 @@ Column configuration items
 | key          | `string`                          | Unique key                                                                                             |
 | render       | `FC<ColumnCustomRenderProps<T>>`  | Custom rendering function                                                                              |
 | width        | `number` \| `string`              | Column width                                                                                           |
-| multiple     | `boolean`                         | Whether to allow multiple selection                                                                    |
+| multiple     | `boolean`                         | Whether multiple selection is allowed                                                                  |
 
 ### ColumnItemOption
 
