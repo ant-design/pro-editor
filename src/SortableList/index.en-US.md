@@ -13,40 +13,51 @@ Provides basic underlying encapsulation for sortable list scenarios, which can b
 
 ## Code Demo
 
-<code src="./demos/Basic.tsx" ></code><code src="./demos/controlled.tsx" ></code><code src="./demos/hideRemove.tsx" ></code><code src="./demos/handle.tsx" ></code><code src="./demos/getItemStyles.tsx" ></code><code src="./demos/renderItem.tsx" ></code><code src="./demos/renderContent.tsx" ></code><code src="./demos/creatorButtonProps.tsx" ></code><code src="./demos/ref.tsx" ></code><code src="./demos/useSortableList.tsx" ></code><code src="./demos/provider.tsx" ></code><code src="./demos/empty.tsx" ></code>
+<code src="./demos/Basic.tsx" title="Basic Usage" description="Supports default list rendering"></code><code src="./demos/controlled.tsx"  title="Controlled Mode"
+description="onChange will return the changed data"></code><code src="./demos/hideRemove.tsx"  title="Hide Remove Button"
+description="You can set the `hideRemove` attribute to hide the default remove button"></code><code src="./demos/handle.tsx" title="Hide Drag Button"
+description="You can set the `handle` attribute to control the visibility of the drag button"></code><code src="./demos/getItemStyles.tsx"  title="Custom Styles"
+description="You can customize the style of each item through `getItemStyles`"></code><code src="./demos/renderItem.tsx"  title="Custom Sortable Item"
+description="You can customize each sortable item through `renderItem`, which provides greater flexibility than `renderContent`"></code><code src="./demos/renderContent.tsx"  title="Custom List Item Content"
+description="Provides `renderContent` for users to customize the content of list items other than drag and drop operations."></code><code src="./demos/creatorButtonProps.tsx"  title="Create Button"
+description="You can customize the create button, with the record being the created data, through `creatorButtonProps`"></code><code src="./demos/ref.tsx" title="Get Instance using `ref`"
+description="Provides the traditional `ref` method to associate with the component instance, enabling custom functionality such as rendering the add button to the top right of the component."></code><code src="./demos/useSortableList.tsx"  title="useSortableList"
+description="Use the `useSortableList()` hook in the Item subcomponent to get the current component instance"></code><code src="./demos/provider.tsx"  title="Provider"
+description="To allow users to get the component instance through the `useSortableList()` hook in a higher context, we provide `SortableListProvider` for users to control the scope of the Provider."></code><code src="./demos/empty.tsx"  title="Empty State"
+description="Displays an empty state when the list has no values."></code>
 
 ## API
 
 ### Basic Component Properties
 
-| Property           | Type                                                             | Description                                                           |
-| ------------------ | ---------------------------------------------------------------- | --------------------------------------------------------------------- |
-| value              | `T[]`                                                            | Value                                                                 |
-| initialValues      | `T[]`                                                            | Initial value                                                         |
-| onChange           | `(value: T[], event: ListDataDispatchPayload) => void`           | Value change                                                          |
-| renderContent      | `(item: T, index: number) => ReactNode`                          | Customizable sortable list item content                               |
-| renderItem         | `(item: T, options) => ReactNode`                                | Customizable sortable list item                                       |
-| renderHeader       | `() => ReactNode`                                                | Custom render header                                                  |
-| renderEmpty        | `() => ReactNode`                                                | Custom render empty state                                             |
-| getItemStyle       | `(status: GetItemStylesArgs) => ReactNode`                       | Custom container style                                                |
-| ref                | `ForwardedRef<SortableListRef<T>>`                               | Expose methods externally                                             |
-| hideRemove         | `boolean`                                                        | Whether to hide the delete button, default is false                   |
-| handle             | `boolean`                                                        | Whether to show the drag button, default is true                      |
-| creatorButtonProps | `CreatorButtonProps\|false`                                      | New object related properties                                         |
-| actions            | `(item: T, index: number) => ReactNode[]` \| `React.ReactNode[]` | Other operations for self-rendering besides the list's own operations |
+| Property           | Type                                                             | Description                                                             |
+| ------------------ | ---------------------------------------------------------------- | ----------------------------------------------------------------------- |
+| value              | `T[]`                                                            | Value                                                                   |
+| initialValues      | `T[]`                                                            | Initial value                                                           |
+| onChange           | `(value: T[], event: ListDataDispatchPayload) => void`           | Value change                                                            |
+| renderContent      | `(item: T, index: number) => ReactNode`                          | Custom sortable list item content                                       |
+| renderItem         | `(item: T, options) => ReactNode`                                | Custom sortable list item                                               |
+| renderHeader       | `() => ReactNode`                                                | Custom render header                                                    |
+| renderEmpty        | `() => ReactNode`                                                | Custom render empty state                                               |
+| getItemStyle       | `(status: GetItemStylesArgs) => ReactNode`                       | Custom container style                                                  |
+| ref                | `ForwardedRef<SortableListRef<T>>`                               | Expose methods externally                                               |
+| hideRemove         | `boolean`                                                        | Whether to hide the remove button, default is false                     |
+| handle             | `boolean`                                                        | Whether to show the drag button, default is true                        |
+| creatorButtonProps | `CreatorButtonProps\|false`                                      | Properties related to creating objects                                  |
+| actions            | `(item: T, index: number) => ReactNode[]` \| `React.ReactNode[]` | Other operations for rendering in addition to the list's own operations |
 
-### CreatorButtonProps Properties
+### CreatorButtonProps Create Button Properties
 
-| Property          | Type                   | Description                                                                                         |
-| ----------------- | ---------------------- | --------------------------------------------------------------------------------------------------- |
-| position          | `'bottom'\|'top'`      | Button position, default is at the bottom                                                           |
-| record            | `(index: number) => T` | Logic for generating initial value                                                                  |
-| creatorButtonText | `string`               | Button text for adding a new row                                                                    |
-| style             | CSSProperties          | Button style settings, can set whether the button is displayed, such as `style: { display: 'none'}` |
+| Property          | Type                   | Description                                                                                                    |
+| ----------------- | ---------------------- | -------------------------------------------------------------------------------------------------------------- |
+| position          | `'bottom'\|'top'`      | Button position, default is at the bottom                                                                      |
+| record            | `(index: number) => T` | Logic for generating initial values                                                                            |
+| creatorButtonText | `string`               | Button text for adding a new row                                                                               |
+| style             | CSSProperties          | Button style settings, can be used to set whether the button is displayed, such as `style: { display: 'none'}` |
 
 ### GetItemStylesArgs
 
-`getItemStyle` is used to customize the container style of the sortable item, and its method is defined as follows:
+`getItemStyle` is used to customize the container style of sortable items, and its method is defined as follows:
 
 ```typescript | pure
 interface GetItemStylesArgs {
@@ -67,7 +78,7 @@ interface GetItemStylesArgs {
    */
   isSorting: boolean;
   /**
-   * Index of the dragged-over item
+   * Index of the item being dragged over
    */
   overIndex: number;
   /**
@@ -81,14 +92,14 @@ type GetItemStyles = (status: GetItemStylesArgs) => React.CSSProperties;
 
 ### RenderItem Parameters
 
-The `renderItem` method is used to define the list item with greater freedom, including dragging, deleting, adding, and list item content. Its parameters are exposed as follows:
+The `renderItem` method is used to define list items with greater flexibility, including drag and drop, delete, add, list item content, and other parts. Its exposed parameters are as follows:
 
 ```tsx | pure
 export type RenderItem<T> = (
   item: T,
   options: {
     /**
-     * Whether it is the dragged-out item
+     * Whether it is the dragged out item
      */
     dragOverlay: boolean;
     /**
@@ -116,15 +127,15 @@ export type RenderItem<T> = (
      */
     ref: Ref<HTMLElement>;
     /**
-     * Style for the current item
+     * Current item's passed-in style
      */
     style: CSSProperties | undefined;
     /**
-     * Transform animation for the current item
+     * Current item's transform animation
      */
     transform: any;
     /**
-     * Transition animation for the current item
+     * Current item's transition animation
      */
     transition: any;
   },
@@ -140,11 +151,11 @@ The component exposes underlying events through `onChange` and `ForwardRef`, all
 interface AddItemAction {
   type: 'addItem';
   /**
-   * Added node
+   * Newly added node
    */
   item: T;
   /**
-   * Position of the added node, default is at the end
+   * Position of the new node, defaults to the last if not passed
    */
   index?: number;
 }

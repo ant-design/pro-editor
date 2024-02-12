@@ -1,7 +1,3 @@
-/**
- * title: 自定义表单
- * description: 目前支持 `input` 和 `select`, `custom` 三种表单类型.
- */
 import type { ColumnItemList } from '@ant-design/pro-editor';
 import { ColorPicker, ColumnList } from '@ant-design/pro-editor';
 import { tableColumnValueOptions } from './mock_data/options';

@@ -1,7 +1,3 @@
-/**
- * title: 自定义操作
- * description: 可以通过 `actions` 属性自定义操作列
- */
 import { EditFilled } from '@ant-design/icons';
 import type { ColumnItemList } from '@ant-design/pro-editor';
 import { ActionIcon, ColumnList } from '@ant-design/pro-editor';

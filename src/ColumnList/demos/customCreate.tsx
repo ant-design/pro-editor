@@ -1,7 +1,3 @@
-/**
- * title: 自定义创建逻辑
- * description: 你可以设置 `style` 属性来隐藏默认添加按钮，然后自定义创建按钮
- */
 import { PlusCircleTwoTone } from '@ant-design/icons';
 import type { ColumnItemList, SortableListRef } from '@ant-design/pro-editor';
 import { ActionIcon, ColumnList } from '@ant-design/pro-editor';

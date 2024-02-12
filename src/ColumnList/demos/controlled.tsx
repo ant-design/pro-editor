@@ -1,7 +1,3 @@
-/**
- * title: 受控模式
- * description: 表单可通过 `value` 受控
- */
 import type { ColumnItemList } from '@ant-design/pro-editor';
 import { ColumnList } from '@ant-design/pro-editor';
 import { Button } from 'antd';
