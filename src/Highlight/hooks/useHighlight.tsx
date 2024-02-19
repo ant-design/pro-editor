@@ -1,6 +1,4 @@
 import hljs from 'highlight.js/lib/core';
-import { useEffect } from 'react';
-
 import { default as bash, default as sh } from 'highlight.js/lib/languages/bash';
 import css from 'highlight.js/lib/languages/css';
 import java from 'highlight.js/lib/languages/java';
@@ -12,6 +10,7 @@ import sql from 'highlight.js/lib/languages/sql';
 import { default as tsx, default as typescript } from 'highlight.js/lib/languages/typescript';
 import xml from 'highlight.js/lib/languages/xml';
 import yaml from 'highlight.js/lib/languages/yaml';
+import { useEffect } from 'react';
 
 // 目前支持的语言列表
 export const languageMap = {

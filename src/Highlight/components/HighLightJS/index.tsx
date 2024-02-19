@@ -6,19 +6,19 @@
  */
 import classNames from 'classnames';
 import { memo, useEffect, useState } from 'react';
-import { HighlightProps } from '../../defalut';
 import { useHighlight } from '../../hooks/useHighlight';
+import { HighlightProps } from '../../index';
 import { THEME_LIGHT } from '../../theme';
 import HighlightCell from '../HighlightCell';
 import { useStyles } from './style';
 
 export type HighLighJSProps = Pick<
   HighlightProps,
-  'language' | 'children' | 'theme' | 'prefixCls' | 'lineNumber'
+  'language' | 'children' | 'theme' | 'lineNumber'
 >;
 
 const HighLighJS: React.FC<HighLighJSProps> = memo((props) => {
-  const { children, lineNumber = false, theme = THEME_LIGHT, language, prefixCls } = props;
+  const { children, lineNumber = false, theme = THEME_LIGHT, language } = props;
   const [codeBlock, setCodeBlock] = useState(null);
   const { styles } = useStyles(theme);
   const { renderHighlight } = useHighlight(language);
@@ -41,7 +41,7 @@ const HighLighJS: React.FC<HighLighJSProps> = memo((props) => {
       rowList.map((src, index) => {
         return (
           <tr key={index}>
-            <HighlightCell lineNumber={lineNumber} data={src} prefixCls={prefixCls} />
+            <HighlightCell lineNumber={lineNumber} data={src} />
           </tr>
         );
       }),

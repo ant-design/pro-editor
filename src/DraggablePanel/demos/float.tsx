@@ -11,8 +11,8 @@ export default () => {
         display: 'flex',
       }}
     >
-      <DraggablePanel style={{ padding: 12 }} mode={'float'}>
-        悬浮可拖拽面板
+      <DraggablePanel style={{ padding: 12 }} mode="float">
+        Float Draggable Panel
       </DraggablePanel>
     </div>
   );

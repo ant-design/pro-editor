@@ -1,7 +1,3 @@
-/**
- * title: 右键菜单
- * description: 右键点击屏幕
- */
 import { CopyOutlined, ExpandOutlined, ZoomInOutlined, ZoomOutOutlined } from '@ant-design/icons';
 import { ContextMenu } from '@ant-design/pro-editor';
 

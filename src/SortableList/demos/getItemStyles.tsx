@@ -1,7 +1,3 @@
-/**
- * title: 自定义样式
- * description: 通过 `getItemStyles` 可以自定义每个 item 的样式。
- */
 import { SortableList } from '@ant-design/pro-editor';
 import { useState } from 'react';
 

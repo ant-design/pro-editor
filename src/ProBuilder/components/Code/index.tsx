@@ -66,8 +66,9 @@ export const CodePanel: FC<CodePanelProps> = memo((props) => {
           theme={isDarkMode ? 'dark' : 'light'}
           lineNumber
           language="tsx"
-          style={{ height: '100%' }}
           onCopy={onCopy}
+          showLanguage={false}
+          style={{ height: '100%', overflow: 'auto' }}
         >
           {configCode}
         </Highlight>

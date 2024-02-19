@@ -1,7 +1,3 @@
-/**
- * title: 自动根据当前主题判断
- */
-
 import { Highlight } from '@ant-design/pro-editor';
 
 export default () => (

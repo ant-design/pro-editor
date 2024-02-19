@@ -1,6 +1,6 @@
-import { InteractContainer } from '@ant-design/pro-editor';
 import { Button, Card, Divider, Space } from 'antd';
 import { useState } from 'react';
+import InteractContainer from '../index';
 
 import type { CanvasInteractRule, InteractStatus } from '../type';
 

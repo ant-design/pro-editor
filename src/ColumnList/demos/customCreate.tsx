@@ -1,7 +1,3 @@
-/**
- * title: 自定义创建逻辑
- * description: 你可以设置 `style` 属性来隐藏默认添加按钮，然后自定义创建按钮
- */
 import { PlusCircleTwoTone } from '@ant-design/icons';
 import type { ColumnItemList, SortableListRef } from '@ant-design/pro-editor';
 import { ActionIcon, ColumnList } from '@ant-design/pro-editor';
@@ -18,16 +14,16 @@ type SchemaItem = {
 };
 
 const INIT_VALUES = [
-  { dataIndex: 'orderId', valueType: 'text', title: '订单id' },
+  { dataIndex: 'orderId', valueType: 'text', title: 'Order ID' },
   {
     dataIndex: 'orderNumber',
     valueType: 'text',
-    title: '订单号',
+    title: 'Order Number',
   },
   {
     dataIndex: 'orderMoney',
     valueType: 'text',
-    title: '订单金额',
+    title: 'Order Money',
   },
 ];
 
@@ -38,18 +34,18 @@ export const randomIndex = () => Math.random() * 10000;
 
 const columns: ColumnItemList<SchemaItem> = [
   {
-    title: '列标题',
+    title: 'Title',
     dataIndex: 'title',
     type: 'input',
   },
   {
-    title: '值类型',
+    title: 'ValueType',
     dataIndex: 'valueType',
     type: 'select',
     options: tableColumnValueOptions,
   },
   {
-    title: '字段',
+    title: 'DataIndex',
     dataIndex: 'dataIndex',
     type: 'select',
   },
@@ -76,7 +72,7 @@ export default () => {
         distribution={'space-between'}
         style={{ marginBottom: 16 }}
       >
-        <div>列配置项</div>
+        <div>Custom Title</div>
         <ActionIcon
           icon={<PlusCircleTwoTone />}
           key={'edit'}
@@ -88,9 +84,9 @@ export default () => {
         ref={ref}
         columns={columns}
         renderEmpty={() => (
-          <Empty image={Empty.PRESENTED_IMAGE_SIMPLE} description="暂无数据">
+          <Empty image={Empty.PRESENTED_IMAGE_SIMPLE} description="No Data">
             <Button type="primary" onClick={handleCreate}>
-              创建自定义数据
+              Create Custom Data
             </Button>
           </Empty>
         )}

@@ -10,19 +10,20 @@ demo:
 
 符合 Ant Design [Tree](https://ant.design/components/tree) 数据结构的可排序树组件。
 
-## 何时使用
+## 代码演示
 
-需要做树型数据结构的编辑（增删、排序）时可以使用。
-
-## Demo 演示
-
-###
-
-<code src="./demos/default.tsx" ></code><code src="./demos/controlled.tsx" ></code><code src="./demos/renderContent.tsx" ></code><code src="./demos/disableDrag.tsx" ></code><code src="./demos/sortableRule.tsx" ></code><code src="./demos/virtual.tsx" ></code>
+<code src="./demos/default.tsx"  title="基本使用"
+ description="默认支持增加、删除、排序操作。"></code>
+<code src="./demos/controlled.tsx"  title="受控模式"></code>
+<code src="./demos/renderContent.tsx"  title="自定义内容"
+ description="使用 `renderContent` 自定义渲染"></code>
+<code src="./demos/disableDrag.tsx" title="禁用拖拽"></code>
+<code src="./demos/sortableRule.tsx"  title="自定义可拖动规则"
+ description="通过函数规则自定义是否可拖动"></code>
+<code src="./demos/virtual.tsx" title="虚拟滚动"
+ description="数据量较大时，使用 `virtual` 配置虚拟滚动" ></code>
 
 ## API
-
-### 属性
 
 | 名称                | 类型                                                                                                  | 描述                       |
 | ------------------- | ----------------------------------------------------------------------------------------------------- | -------------------------- |

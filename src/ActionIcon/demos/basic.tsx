@@ -1,6 +1,3 @@
-/**
- * title: Basic
- */
 import { SmileOutlined } from '@ant-design/icons';
 import { ActionIcon } from '@ant-design/pro-editor';
 

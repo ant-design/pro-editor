@@ -1,6 +1,4 @@
 /**
- * title: 隐藏拖拽按钮
- * description: 你可以设置 `handle` 属性来控制拖拽按钮的显隐
  * compact: true
  */
 import { SortableList } from '@ant-design/pro-editor';

@@ -7,28 +7,20 @@ nav:
   order: 3
 ---
 
-# ProBuilder 装配器容器
+# ProBuilder 装配器
 
-使用 ProBuilder 可以快速构建出组件的配置界面。
+使用 `ProBuilder` 可以快速构建出组件的配置界面。
 
-## 以 Button 示例
+## 代码演示
 
-<code src='./demos/buttonAssets.tsx' ></code>
+<code src='./demos/buttonAssets.tsx' compact="true" title="Button 示例"></code>
 
-## 传入 ComponentAssets
+<code src='./demos/defaultAssets.tsx' title="传入 `ComponentAssets`"></code>
 
-<code src='./demos/defaultAssets.tsx' ></code>
+<code src='./demos/empty.tsx' title="无 `ComponentAssets`"></code>
 
-## 无 ComponentAssets
+<code src="./demos/controlledPresence.tsx" title="视图状态受控" description="将 `editorAwareness` 设为受控状态，可以控制当前的视窗状态。"></code>
 
-<code src='./demos/empty.tsx' ></code>
-
-## 视图状态受控
-
-将 `editorAwareness` 设为受控状态，可以控制当前的视窗状态。
-
-<code src="./demos/controlledPresence.tsx" ></code>
-
-# API
+## API
 
 <API id="ProEditor"></API>

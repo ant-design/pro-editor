@@ -1,6 +1,4 @@
 /**
- * title: 使用 ref 获得实例
- * description: 提供传统的 `ref` 方式关联组件实例，可实现自定义功能，如将添加按钮渲染到组件右上方。
  * compact: true
  */
 import { PlusCircleFilled } from '@ant-design/icons';
@@ -24,7 +22,7 @@ export default () => {
   return (
     <Flexbox padding={24} style={{ background: token.colorBgLayout }}>
       <Flexbox horizontal align={'center'} distribution={'space-between'}>
-        <div>列配置项</div>
+        <div>Column Config</div>
         <ActionIcon
           icon={<PlusCircleFilled />}
           key={'edit'}

@@ -1,11 +1,9 @@
 import type { ComponentAssetParams } from '@ant-design/pro-editor';
-
 import { ButtonComponent } from './_Component';
 import { ButtonPanel } from './_Panel';
-
-import { createStore } from './store';
-
+import codeEmitter from './codeEmitter';
 import { ButtonConfig, buttonModel } from './models';
+import { createStore } from './store';
 
 export const buttonAssetParams: ComponentAssetParams<ButtonConfig> = {
   id: 'Button',
@@ -27,5 +25,5 @@ export const buttonAssetParams: ComponentAssetParams<ButtonConfig> = {
     devtools: { name: 'ButtonAssetStore' },
   },
 
-  codeEmitter: () => '',
+  codeEmitter,
 };

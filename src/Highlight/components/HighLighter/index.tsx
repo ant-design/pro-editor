@@ -7,34 +7,38 @@
 import { THEME_LIGHT } from '@/Highlight/theme';
 import { Loading3QuartersOutlined as Loading } from '@ant-design/icons';
 import classNames from 'classnames';
-import { memo } from 'react';
+import { memo, useMemo } from 'react';
 import { Center } from 'react-layout-kit';
-import { HighlightProps } from '../../defalut';
 import { useShiki } from '../../hooks/useShiki';
+import { HighlightProps } from '../../index';
 import HighLightJS from '../HighLightJS';
 import { useStyles } from './style';
 
 export type ShikiProps = Pick<
   HighlightProps,
-  'language' | 'children' | 'theme' | 'prefixCls' | 'lineNumber'
+  'language' | 'children' | 'theme' | 'lineNumber' | 'shiki' | 'className' | 'style'
 >;
 
 const HighLighter: React.FC<ShikiProps> = memo((props) => {
-  const { children, lineNumber = false, theme = THEME_LIGHT, language, prefixCls } = props;
-  const { styles } = useStyles({ outPrefix: prefixCls, lineNumber, theme });
-  const { renderShiki, loading } = useShiki(language, theme);
+  const { children, lineNumber = false, theme = THEME_LIGHT, language, shiki = true } = props;
+  const { styles } = useStyles({ lineNumber, theme });
+  const { renderShiki, loading } = useShiki(language, theme, shiki);
 
-  return (
+  const HighlightJSBlock = useMemo(
+    () => (
+      <HighLightJS lineNumber={lineNumber} theme={theme} language={language}>
+        {children}
+      </HighLightJS>
+    ),
+    [lineNumber, theme, language, children],
+  );
+
+  return shiki === false ? (
+    HighlightJSBlock
+  ) : (
     <>
       {loading ? (
-        <HighLightJS
-          lineNumber={lineNumber}
-          theme={theme}
-          language={language}
-          prefixCls={prefixCls}
-        >
-          {children}
-        </HighLightJS>
+        HighlightJSBlock
       ) : (
         <div
           className={classNames(styles.shiki)}
@@ -46,7 +50,6 @@ const HighLighter: React.FC<ShikiProps> = memo((props) => {
       {loading ? (
         <Center className={styles.center} gap={8} horizontal>
           <Loading spin className={styles.loading} />
-          Highlighting...
         </Center>
       ) : null}
     </>

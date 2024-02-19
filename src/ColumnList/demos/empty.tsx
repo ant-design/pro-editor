@@ -1,7 +1,3 @@
-/**
- * title: 空状态
- * description: 当表单值为空时，会渲染空状态
- */
 import { EditFilled } from '@ant-design/icons';
 import type { ColumnItemList } from '@ant-design/pro-editor';
 import { ActionIcon, ColumnList } from '@ant-design/pro-editor';
@@ -17,18 +13,18 @@ type SchemaItem = {
 
 const columns: ColumnItemList<SchemaItem> = [
   {
-    title: '列标题',
+    title: 'Title',
     dataIndex: 'title',
     type: 'input',
   },
   {
-    title: '值类型',
+    title: 'ValueType',
     dataIndex: 'valueType',
     type: 'select',
     options: tableColumnValueOptions,
   },
   {
-    title: '字段',
+    title: 'DataIndex',
     dataIndex: 'dataIndex',
     type: 'select',
   },

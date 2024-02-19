@@ -1,10 +1,10 @@
 import HighLighter from '@/Highlight/components/HighLighter';
 import CopyButton from '@/components/CopyButton';
 import Spotlight from '@/components/Spotlight';
+import { ConfigProvider } from '@ant-design/pro-editor';
 import { useThemeMode } from 'antd-style';
 import { memo } from 'react';
 import { DivProps } from 'react-layout-kit';
-import { ConfigProvider } from '..';
 import { useStyles } from './style';
 
 export interface SnippetProps extends DivProps {
@@ -36,11 +36,9 @@ export interface SnippetProps extends DivProps {
    * @default 'ghost'
    */
   type?: 'ghost' | 'block';
-
-  prefixCls?: string;
 }
 
-const Snippet = memo<SnippetProps>((props) => {
+const BaseSnippet = memo<SnippetProps>((props) => {
   const {
     symbol = '$',
     language = 'tsx',
@@ -51,22 +49,31 @@ const Snippet = memo<SnippetProps>((props) => {
     className,
     ...rest
   } = props;
-  const { isDarkMode } = useThemeMode();
 
+  const { isDarkMode } = useThemeMode();
   const { styles, cx } = useStyles({
     type,
   });
+
   return (
-    <ConfigProvider>
-      <div className={cx(styles.container, className)} {...rest}>
-        {spotlight && <Spotlight />}
-        <HighLighter language={language} theme={isDarkMode ? 'dark' : 'light'} prefixCls="snippet">
+    <div className={cx(styles.container, className)} {...rest}>
+      {spotlight && <Spotlight />}
+      <div className={styles.highlighter}>
+        <HighLighter language={language} theme={isDarkMode ? 'dark' : 'light'} shiki>
           {symbol ? [symbol, children].join(' ') : children}
         </HighLighter>
-        {copyable && <CopyButton content={children} />}
       </div>
-    </ConfigProvider>
+      {copyable && <CopyButton content={children} />}
+    </div>
   );
 });
+
+const Snippet = (props: SnippetProps) => {
+  return (
+    <ConfigProvider>
+      <BaseSnippet {...props} />
+    </ConfigProvider>
+  );
+};
 
 export { Snippet };

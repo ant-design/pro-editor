@@ -8,18 +8,16 @@ demo:
 
 # ActionGroup 工具面板
 
-## 何时使用
-
-当你需要一个通用面板用于承载全局通用的「全屏、重做、撤销、删除」这一系列工具的地方，可以使用。
+通用面板，用于承载全局通用的「全屏、重做、撤销、删除」这一系列工具
 
 ## 代码演示
 
-<code src="./demos/basic.tsx" ></code>
-<code src="./demos/config.tsx" title='配置使用' description= "通过配置 `items` 渲染整个内容，你可以通过在 items 声明 type 为 divider 来渲染一个分隔符"></code>
+<code src="./demos/basic.tsx" title="基本使用" description="通过配置 `items` 渲染"></code>
+<code src="./demos/config.tsx" title='配置使用' description= "声明 `type` 为 `divider` 来渲染分隔符"></code>
 <code src="./demos/dropMenu.tsx" title="dropdown" description="通过配置 `dropdownMenu` 可以在尾部渲染一个下拉内容"></code>
 <code src="./demos/type.tsx" title="模式配置"></code>
 <code src="./demos/custom.tsx" title='自定义' description= "通过 `render` 可以自定义渲染特殊的操作内容" ></code>
-<code src="./demos/withPanel.tsx" iframe title="浮动面板中使用" description="配合 DraggablePanel 可以使得整个面板可浮动拖拽"></code>
+<code src="./demos/withPanel.tsx" iframe title="浮动面板中使用" description="配合 `DraggablePanel` 可以使得整个面板可浮动拖拽"></code>
 
 ## API
 

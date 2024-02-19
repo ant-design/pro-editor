@@ -177,6 +177,10 @@ exports[`IconPicker Store > State：组件状态 > Hooks 初始值 1`] = `
       "type": "antd",
     },
     {
+      "componentName": "BaiduOutlined",
+      "type": "antd",
+    },
+    {
       "componentName": "BankFilled",
       "type": "antd",
     },
@@ -222,6 +226,14 @@ exports[`IconPicker Store > State：组件状态 > Hooks 初始值 1`] = `
     },
     {
       "componentName": "BgColorsOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "BilibiliFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "BilibiliOutlined",
       "type": "antd",
     },
     {
@@ -701,11 +713,23 @@ exports[`IconPicker Store > State：组件状态 > Hooks 初始值 1`] = `
       "type": "antd",
     },
     {
+      "componentName": "DiscordFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "DiscordOutlined",
+      "type": "antd",
+    },
+    {
       "componentName": "DislikeFilled",
       "type": "antd",
     },
     {
       "componentName": "DislikeOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "DockerOutlined",
       "type": "antd",
     },
     {
@@ -722,6 +746,10 @@ exports[`IconPicker Store > State：组件状态 > Hooks 初始值 1`] = `
     },
     {
       "componentName": "DotChartOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "DotNetOutlined",
       "type": "antd",
     },
     {
@@ -1245,6 +1273,10 @@ exports[`IconPicker Store > State：组件状态 > Hooks 初始值 1`] = `
       "type": "antd",
     },
     {
+      "componentName": "HarmonyOSOutlined",
+      "type": "antd",
+    },
+    {
       "componentName": "HddFilled",
       "type": "antd",
     },
@@ -1393,7 +1425,19 @@ exports[`IconPicker Store > State：组件状态 > Hooks 初始值 1`] = `
       "type": "antd",
     },
     {
+      "componentName": "JavaOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "JavaScriptOutlined",
+      "type": "antd",
+    },
+    {
       "componentName": "KeyOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "KubernetesOutlined",
       "type": "antd",
     },
     {
@@ -1458,6 +1502,10 @@ exports[`IconPicker Store > State：组件状态 > Hooks 初始值 1`] = `
     },
     {
       "componentName": "LinkedinOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "LinuxOutlined",
       "type": "antd",
     },
     {
@@ -1553,6 +1601,14 @@ exports[`IconPicker Store > State：组件状态 > Hooks 初始值 1`] = `
       "type": "antd",
     },
     {
+      "componentName": "MergeFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "MergeOutlined",
+      "type": "antd",
+    },
+    {
       "componentName": "MessageFilled",
       "type": "antd",
     },
@@ -1601,7 +1657,23 @@ exports[`IconPicker Store > State：组件状态 > Hooks 初始值 1`] = `
       "type": "antd",
     },
     {
+      "componentName": "MoonFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "MoonOutlined",
+      "type": "antd",
+    },
+    {
       "componentName": "MoreOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "MutedFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "MutedOutlined",
       "type": "antd",
     },
     {
@@ -1630,6 +1702,14 @@ exports[`IconPicker Store > State：组件状态 > Hooks 初始值 1`] = `
     },
     {
       "componentName": "OneToOneOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "OpenAIFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "OpenAIOutlined",
       "type": "antd",
     },
     {
@@ -1705,6 +1785,14 @@ exports[`IconPicker Store > State：组件状态 > Hooks 初始值 1`] = `
       "type": "antd",
     },
     {
+      "componentName": "PinterestFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "PinterestOutlined",
+      "type": "antd",
+    },
+    {
       "componentName": "PlayCircleFilled",
       "type": "antd",
     },
@@ -1765,6 +1853,14 @@ exports[`IconPicker Store > State：组件状态 > Hooks 初始值 1`] = `
       "type": "antd",
     },
     {
+      "componentName": "ProductFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "ProductOutlined",
+      "type": "antd",
+    },
+    {
       "componentName": "ProfileFilled",
       "type": "antd",
     },
@@ -1798,6 +1894,10 @@ exports[`IconPicker Store > State：组件状态 > Hooks 初始值 1`] = `
     },
     {
       "componentName": "PushpinOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "PythonOutlined",
       "type": "antd",
     },
     {
@@ -1961,6 +2061,10 @@ exports[`IconPicker Store > State：组件状态 > Hooks 初始值 1`] = `
       "type": "antd",
     },
     {
+      "componentName": "RubyOutlined",
+      "type": "antd",
+    },
+    {
       "componentName": "SafetyCertificateFilled",
       "type": "antd",
     },
@@ -2058,6 +2162,14 @@ exports[`IconPicker Store > State：组件状态 > Hooks 初始值 1`] = `
     },
     {
       "componentName": "SignalFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "SignatureFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "SignatureOutlined",
       "type": "antd",
     },
     {
@@ -2161,6 +2273,14 @@ exports[`IconPicker Store > State：组件状态 > Hooks 初始值 1`] = `
       "type": "antd",
     },
     {
+      "componentName": "SpotifyFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "SpotifyOutlined",
+      "type": "antd",
+    },
+    {
       "componentName": "StarFilled",
       "type": "antd",
     },
@@ -2202,6 +2322,14 @@ exports[`IconPicker Store > State：组件状态 > Hooks 初始值 1`] = `
     },
     {
       "componentName": "SubnodeOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "SunFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "SunOutlined",
       "type": "antd",
     },
     {
@@ -2285,6 +2413,14 @@ exports[`IconPicker Store > State：组件状态 > Hooks 初始值 1`] = `
       "type": "antd",
     },
     {
+      "componentName": "TikTokFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "TikTokOutlined",
+      "type": "antd",
+    },
+    {
       "componentName": "ToTopOutlined",
       "type": "antd",
     },
@@ -2322,6 +2458,22 @@ exports[`IconPicker Store > State：组件状态 > Hooks 初始值 1`] = `
     },
     {
       "componentName": "TrophyOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "TruckFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "TruckOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "TwitchFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "TwitchOutlined",
       "type": "antd",
     },
     {
@@ -2477,6 +2629,14 @@ exports[`IconPicker Store > State：组件状态 > Hooks 初始值 1`] = `
       "type": "antd",
     },
     {
+      "componentName": "WechatWorkFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "WechatWorkOutlined",
+      "type": "antd",
+    },
+    {
       "componentName": "WeiboCircleFilled",
       "type": "antd",
     },
@@ -2514,6 +2674,14 @@ exports[`IconPicker Store > State：组件状态 > Hooks 初始值 1`] = `
     },
     {
       "componentName": "WomanOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "XFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "XOutlined",
       "type": "antd",
     },
     {
@@ -2758,6 +2926,10 @@ exports[`IconPicker Store > State：组件状态 > 默认初始值 1`] = `
       "type": "antd",
     },
     {
+      "componentName": "BaiduOutlined",
+      "type": "antd",
+    },
+    {
       "componentName": "BankFilled",
       "type": "antd",
     },
@@ -2803,6 +2975,14 @@ exports[`IconPicker Store > State：组件状态 > 默认初始值 1`] = `
     },
     {
       "componentName": "BgColorsOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "BilibiliFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "BilibiliOutlined",
       "type": "antd",
     },
     {
@@ -3282,11 +3462,23 @@ exports[`IconPicker Store > State：组件状态 > 默认初始值 1`] = `
       "type": "antd",
     },
     {
+      "componentName": "DiscordFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "DiscordOutlined",
+      "type": "antd",
+    },
+    {
       "componentName": "DislikeFilled",
       "type": "antd",
     },
     {
       "componentName": "DislikeOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "DockerOutlined",
       "type": "antd",
     },
     {
@@ -3303,6 +3495,10 @@ exports[`IconPicker Store > State：组件状态 > 默认初始值 1`] = `
     },
     {
       "componentName": "DotChartOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "DotNetOutlined",
       "type": "antd",
     },
     {
@@ -3826,6 +4022,10 @@ exports[`IconPicker Store > State：组件状态 > 默认初始值 1`] = `
       "type": "antd",
     },
     {
+      "componentName": "HarmonyOSOutlined",
+      "type": "antd",
+    },
+    {
       "componentName": "HddFilled",
       "type": "antd",
     },
@@ -3974,7 +4174,19 @@ exports[`IconPicker Store > State：组件状态 > 默认初始值 1`] = `
       "type": "antd",
     },
     {
+      "componentName": "JavaOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "JavaScriptOutlined",
+      "type": "antd",
+    },
+    {
       "componentName": "KeyOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "KubernetesOutlined",
       "type": "antd",
     },
     {
@@ -4039,6 +4251,10 @@ exports[`IconPicker Store > State：组件状态 > 默认初始值 1`] = `
     },
     {
       "componentName": "LinkedinOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "LinuxOutlined",
       "type": "antd",
     },
     {
@@ -4134,6 +4350,14 @@ exports[`IconPicker Store > State：组件状态 > 默认初始值 1`] = `
       "type": "antd",
     },
     {
+      "componentName": "MergeFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "MergeOutlined",
+      "type": "antd",
+    },
+    {
       "componentName": "MessageFilled",
       "type": "antd",
     },
@@ -4182,7 +4406,23 @@ exports[`IconPicker Store > State：组件状态 > 默认初始值 1`] = `
       "type": "antd",
     },
     {
+      "componentName": "MoonFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "MoonOutlined",
+      "type": "antd",
+    },
+    {
       "componentName": "MoreOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "MutedFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "MutedOutlined",
       "type": "antd",
     },
     {
@@ -4211,6 +4451,14 @@ exports[`IconPicker Store > State：组件状态 > 默认初始值 1`] = `
     },
     {
       "componentName": "OneToOneOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "OpenAIFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "OpenAIOutlined",
       "type": "antd",
     },
     {
@@ -4286,6 +4534,14 @@ exports[`IconPicker Store > State：组件状态 > 默认初始值 1`] = `
       "type": "antd",
     },
     {
+      "componentName": "PinterestFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "PinterestOutlined",
+      "type": "antd",
+    },
+    {
       "componentName": "PlayCircleFilled",
       "type": "antd",
     },
@@ -4346,6 +4602,14 @@ exports[`IconPicker Store > State：组件状态 > 默认初始值 1`] = `
       "type": "antd",
     },
     {
+      "componentName": "ProductFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "ProductOutlined",
+      "type": "antd",
+    },
+    {
       "componentName": "ProfileFilled",
       "type": "antd",
     },
@@ -4379,6 +4643,10 @@ exports[`IconPicker Store > State：组件状态 > 默认初始值 1`] = `
     },
     {
       "componentName": "PushpinOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "PythonOutlined",
       "type": "antd",
     },
     {
@@ -4542,6 +4810,10 @@ exports[`IconPicker Store > State：组件状态 > 默认初始值 1`] = `
       "type": "antd",
     },
     {
+      "componentName": "RubyOutlined",
+      "type": "antd",
+    },
+    {
       "componentName": "SafetyCertificateFilled",
       "type": "antd",
     },
@@ -4639,6 +4911,14 @@ exports[`IconPicker Store > State：组件状态 > 默认初始值 1`] = `
     },
     {
       "componentName": "SignalFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "SignatureFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "SignatureOutlined",
       "type": "antd",
     },
     {
@@ -4742,6 +5022,14 @@ exports[`IconPicker Store > State：组件状态 > 默认初始值 1`] = `
       "type": "antd",
     },
     {
+      "componentName": "SpotifyFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "SpotifyOutlined",
+      "type": "antd",
+    },
+    {
       "componentName": "StarFilled",
       "type": "antd",
     },
@@ -4783,6 +5071,14 @@ exports[`IconPicker Store > State：组件状态 > 默认初始值 1`] = `
     },
     {
       "componentName": "SubnodeOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "SunFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "SunOutlined",
       "type": "antd",
     },
     {
@@ -4866,6 +5162,14 @@ exports[`IconPicker Store > State：组件状态 > 默认初始值 1`] = `
       "type": "antd",
     },
     {
+      "componentName": "TikTokFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "TikTokOutlined",
+      "type": "antd",
+    },
+    {
       "componentName": "ToTopOutlined",
       "type": "antd",
     },
@@ -4903,6 +5207,22 @@ exports[`IconPicker Store > State：组件状态 > 默认初始值 1`] = `
     },
     {
       "componentName": "TrophyOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "TruckFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "TruckOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "TwitchFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "TwitchOutlined",
       "type": "antd",
     },
     {
@@ -5058,6 +5378,14 @@ exports[`IconPicker Store > State：组件状态 > 默认初始值 1`] = `
       "type": "antd",
     },
     {
+      "componentName": "WechatWorkFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "WechatWorkOutlined",
+      "type": "antd",
+    },
+    {
       "componentName": "WeiboCircleFilled",
       "type": "antd",
     },
@@ -5095,6 +5423,14 @@ exports[`IconPicker Store > State：组件状态 > 默认初始值 1`] = `
     },
     {
       "componentName": "WomanOutlined",
+      "type": "antd",
+    },
+    {
+      "componentName": "XFilled",
+      "type": "antd",
+    },
+    {
+      "componentName": "XOutlined",
       "type": "antd",
     },
     {

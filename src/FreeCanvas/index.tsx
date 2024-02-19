@@ -1,12 +1,9 @@
 import type { FC, ReactNode } from 'react';
 import type { Viewport } from 'reactflow';
 import ReactFlow, { Background, ReactFlowProvider } from 'reactflow';
-
 import Artboard from './Artboard';
 import ControlAction from './ControlAction';
-
 import { useStyle } from './style';
-
 // 只有引入默认 style 才能保证交互是正常的
 import 'reactflow/dist/style.css';
 

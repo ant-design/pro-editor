@@ -7,7 +7,7 @@ export const useStyles = createStyles(({ token, css, cx, prefixCls }) => {
     container: cx(
       `${prefix}-container`,
       css`
-        overflow: scroll;
+        overflow: auto;
       `,
     ),
   };

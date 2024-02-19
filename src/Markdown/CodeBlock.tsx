@@ -1,7 +1,7 @@
+import { Snippet } from '@ant-design/pro-editor';
 import { createStyles } from 'antd-style';
 import { memo } from 'react';
-
-import { Highlight, Snippet } from '@ant-design/pro-editor';
+import HighlightWrapper from './wrapper';
 
 const useStyles = createStyles(({ css }) => ({
   container: css`
@@ -55,13 +55,8 @@ export const Code = memo((properties: any) => {
   }
 
   return (
-    <Highlight
-      className={cx(styles.container, styles.highlight)}
-      language={lang}
-      type="block"
-      containerWrapper={true}
-    >
+    <HighlightWrapper className={cx(styles.container, styles.highlight)} language={lang}>
       {content}
-    </Highlight>
+    </HighlightWrapper>
   );
 });

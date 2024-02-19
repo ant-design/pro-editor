@@ -3,26 +3,20 @@ nav: 组件
 group: 基础组件
 title: Markdown 文档展示
 atomId: Markdown
-description: Markdown是一个用于渲染Markdown文本的React组件。它支持各种Markdown语法，如标题、列表、链接、图片、代码块等。它通常用于文档、博客和其他文本密集型应用中。
+description:
 ---
 
-## Default
+# Markdown 文档展示
 
-ProEditor 内置了一个默认的 Markdown 渲染器，使用 React-Markdown，使用我们自己的 Highlight 和 Snippet 进行代码块的渲染
+Markdown 是一个用于渲染 Markdown 文本的 React 组件。它支持各种 Markdown 语法，如标题、列表、链接、图片、代码块等。它通常用于文档、博客和其他文本密集型应用中。
 
-你也可以通过自己传入 components 等 React-Markdown 的 Props 来进行自定义，多余的会透传过去。
+## 代码演示
 
-<code src="./demos/index.tsx" nopadding></code>
+<code src="./demos/index.tsx" nopadding title="默认渲染"></code>
 
-## 自定义传入 Plugins
+<code src="./demos/code.tsx" nopadding title="代码"></code>
 
-我们内置了一些对于 Markdown 转换的 Plugins，但是如果你有别的需求，你可以自定义传入 rehypePlugins 和 remarkPlugins 来扩充当前的渲染能力。
-
-例如，下方是一个传入 rehypeRaw 用来渲染 Html 能力的样例。
-
-> 需要注意的是，不同的插件之间可能会出现解析冲突的问题，这个可能需要用户自己解决。
-
-<code src="./demos/htmlPlugin.tsx" nopadding></code>
+<code src="./demos/htmlPlugin.tsx" nopadding title="自定义传入 Plugins" description="我们内置了一些对于 Markdown 转换的 Plugins，但是如果你有别的需求，你可以自定义传入 `rehypePlugins` 和 `remarkPlugins` 来扩充当前的渲染能力。例子是一个传入 rehypeRaw 用来渲染 Html 能力的样例。需要注意的是，不同的插件之间可能会出现解析冲突的问题，这个可能需要用户自己解决。"></code>
 
 ## APIs
 

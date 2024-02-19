@@ -5,11 +5,6 @@ const configs = [
     code: '#!/bin/bash\n\n###### CONFIG\nACCEPTED_HOSTS="/root/.hag_accepted.conf"\nBE_VERBOSE=false\n\nif [ "$UID" -ne 0 ]\nthen\n echo "Superuser rights required"\n exit 2\nfi\n\ngenApacheConf(){\n echo -e "# Host ${HOME_DIR}$1/$2 :"\n}\n\necho \'"quoted"\' | tr -d \\\\/" > text.txt\n\n',
   },
   {
-    language: 'cpp',
-    text: 'Cpp',
-    code: '#include <iostream>\n\nint main(int argc, char *argv[]) {\n\n  /* An annoying "Hello World" example */\n  for (auto i = 0; i < 0xFFFF; i++)\n    cout << "Hello, World!" << endl;\n\n  char c = \'\\n\';\n  unordered_map <string, vector<string> > m;\n  m["key"] = "\\\\\\\\"; // this is an error\n\n  return -2e3 + 12l;\n}',
-  },
-  {
     language: 'css',
     text: 'Css',
     code: "@font-face {\n  font-family: Chunkfive; src: url('Chunkfive.otf');\n}\n\nbody, .usertext {\n  color: #F0F0F0; background: #600;\n  font-family: Chunkfive, sans;\n  --heading-1: 30px/32px Helvetica, sans-serif;\n}\n\n@import url(print.css);\n@media print {\n  a[href^=http]::after {\n    content: attr(href)\n  }\n}",

@@ -1,33 +1,23 @@
 ---
 title: IconPicker
-group: Panel
+atomId: IconPicker
+group:
+  title: Panel
 ---
 
 # IconPicker Icon Selector
-
-## When To Use
 
 Used for selecting icons.
 
 ## Code Demo
 
-### Basic Usage
+<code src="./demos/normal.tsx" title="Basic Usage"></code>
 
-<code src="./demos/normal.tsx" ></code>
+<code src="./demos/controlled.tsx" title="Controlled Mode"></code>
 
-### Controlled Mode
-
-<code src="./demos/controlled.tsx" ></code>
-
-### External Scripts
-
-If external iconfontScripts are provided and onChange method is not set, the add icon source button will be hidden by default.
-
-<code src="./demos/scripts.tsx" ></code>
+<code src="./demos/scripts.tsx" title="External Scripts" description="If `iconfontScripts` are passed in externally and `onChange` method is not set, the button for adding icon sources will be hidden by default."></code>
 
 ## API
-
-## Basic Properties
 
 | Property                     | Type                                           | Description                                           |
 | ---------------------------- | ---------------------------------------------- | ----------------------------------------------------- |
@@ -64,9 +54,9 @@ The most basic unit of icon information, which can be `ReactIcon` or `IconfontIc
 
 ### IconfontIcon
 
-| Property      | Type       | Description                                              |
-| ------------- | ---------- | -------------------------------------------------------- |
-| type          | `iconfont` | Icon type, only supports iconfont                        |
-| componentName | `string`   | Icon component name                                      |
-| props         | `Object`   | Props of the icon component, must include the type field |
-| scriptUrl     | `string`   | Link to the iconfont script                              |
+| Property      | Type       | Description                                                |
+| ------------- | ---------- | ---------------------------------------------------------- |
+| type          | `iconfont` | Icon type, only supports iconfont                          |
+| componentName | `string`   | Icon component name                                        |
+| props         | `Object`   | Props of the icon component, must include the `type` field |
+| scriptUrl     | `string`   | Link address of the iconfont script                        |

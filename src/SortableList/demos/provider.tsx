@@ -1,6 +1,4 @@
 /**
- * title: Provider
- * description: 为了方便用户在更高的上下文中通过 `useSortableList()` hook 获得组件实例，我们提供了 `SortableListProvider` 由用户控制 Provider 的作用范围。
  * compact: true
  */
 import { SortableList, SortableListProvider, useSortableList } from '@ant-design/pro-editor';
@@ -37,7 +35,7 @@ const Extra = () => {
       style={{ marginBottom: 8 }}
       onClick={() => message.info(JSON.stringify(instance.getValue()))}
     >
-      获取值
+      Get Value
     </Button>
   );
 };

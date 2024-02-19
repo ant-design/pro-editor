@@ -1,6 +1,3 @@
-/**
- * iframe: 600
- */
 import { demoAssets } from '@/ComponentAsset/demoAssets';
 import { ComponentAsset, ProBuilder } from '@ant-design/pro-editor';
 
@@ -14,10 +11,9 @@ export default () => (
         },
       })
     }
-    style={{ height: '100vh' }}
+    style={{ height: 600 }}
     onCopy={(children) => {
       console.log('代码复制', children);
     }}
-    themeMode={'dark'}
   />
 );

@@ -1,5 +1,5 @@
-import { InteractContainer } from '@ant-design/pro-editor';
 import { Card, Space } from 'antd';
+import InteractContainer from '../index';
 
 export const Demo = () => {
   return (

@@ -10,37 +10,41 @@ demo:
 
 A sortable tree component that conforms to the data structure of Ant Design [Tree](https://ant.design/components/tree).
 
-## When To Use
+## Code Demo
 
-It can be used when editing tree-like data structures (adding, deleting, sorting).
-
-## Demo
-
-###
-
-<code src="./demos/default.tsx" ></code><code src="./demos/controlled.tsx" ></code>
-
-<code src="./demos/renderContent.tsx" ></code> <code src="./demos/disableDrag.tsx" ></code> <code src="./demos/sortableRule.tsx" ></code>
-<code src="./demos/virtual.tsx" ></code>
+<code src="./demos/default.tsx"  title="Basic Usage"
+description="Supports default add, delete, and sort operations."></code><code src="./demos/controlled.tsx"  title="Controlled Mode"></code><code src="./demos/renderContent.tsx"  title="Custom Content"
+description="Customize rendering using `renderContent`"></code><code src="./demos/disableDrag.tsx" title="Disable Drag"></code><code src="./demos/sortableRule.tsx"  title="Custom Sortable Rule"
+description="Customize whether it is draggable through a function rule"></code><code src="./demos/virtual.tsx" title="Virtual Scroll"
+description="Use the `virtual` configuration for virtual scrolling when dealing with large amounts of data" ></code>
 
 ## API
 
-### Properties
+| Name                | Type                                                                                                  | Description                                    |
+| ------------------- | ----------------------------------------------------------------------------------------------------- | ---------------------------------------------- |
+| hideAdd             | `boolean`                                                                                             | Hide the default add button                    |
+| hideRemove          | `boolean`                                                                                             | Hide the default remove button                 |
+| disableDrag         | `boolean`                                                                                             | Disable drag                                   |
+| indentationWidth    | `number`                                                                                              | Indentation width                              |
+| onSelectedIdsChange | `(selectedIds: UniqueIdentifier[]) => void`                                                           | Callback for selected ID changes               |
+| treeData            | `TreeData<T>`                                                                                         | Tree data                                      |
+| defaultTreeData     | `TreeData<T>`                                                                                         | Default data                                   |
+| onTreeDataChange    | `(treeData: TreeData<T>,event: TreeDataDispatchPayload) => void`                                      | Callback for data changes                      |
+| renderContent       | `(node: FlattenNode<T>) => JSX.Element`                                                               | Render content                                 |
+| renderExtra         | `(node: FlattenNode<T>) => JSX.Element`                                                               | Render extra item                              |
+| ref                 | `MutableRefObject<SortableTreeInstance<T>>`                                                           | Expose methods externally                      |
+| sortableRule        | `data: { activeNode: FlattenNode<T>; targetNode: FlattenNode<T>; projected: Projected; }) => boolean` | Function to control drag and drop sorting      |
+| virtual             | `VirtualConfig` \| `false`                                                                            | Virtual scroll configuration, default is false |
 
-| Name                | Type                                                                                                  | Description                                     |
-| ------------------- | ----------------------------------------------------------------------------------------------------- | ----------------------------------------------- |
-| hideAdd             | `boolean`                                                                                             | Hide the default add button                     |
-| hideRemove          | `boolean`                                                                                             | Hide the default remove button                  |
-| disableDrag         | `boolean`                                                                                             | Disable dragging                                |
-| indentationWidth    | `number`                                                                                              | Indentation width                               |
-| onSelectedIdsChange | `(selectedIds: UniqueIdentifier[]) => void`                                                           | Callback for selected ID changes                |
-| treeData            | `TreeData<T>`                                                                                         | Tree data                                       |
-| defaultTreeData     | `TreeData<T>`                                                                                         | Default data                                    |
-| onTreeDataChange    | `(treeData: TreeData<T>,event: TreeDataDispatchPayload) => void`                                      | Callback for data changes                       |
-| renderContent       | `(node: FlattenNode<T>) => JSX.Element`                                                               | Render content                                  |
-| renderExtra         | `(node: FlattenNode<T>) => JSX.Element`                                                               | Render extra items                              |
-| ref                 | `MutableRefObject<SortableTreeInstance<T>>`                                                           | Expose methods externally                       |
-| sortableRule        | `data: { activeNode: FlattenNode<T>; targetNode: FlattenNode<T>; projected: Projected; }) => boolean` | Function to control drag and drop sorting rules |
+## VirtualConfig
+
+Virtual scroll configuration
+
+| Name       | Type                        | Description                                            |
+| ---------- | --------------------------- | ------------------------------------------------------ |
+| height     | `number`                    | Height of the virtual scroll container, required       |
+| width      | `number`\| `string`         | Width of the virtual scroll container, default is 100% |
+| itemHeight | `(index: number) => number` | Item height, default is 36                             |
 
 ## TreeNode
 
@@ -62,18 +66,18 @@ Flattened node
 | -------- | ---------------------------- | ----------------------------------------- |
 | parentId | `UniqueIdentifier` \| `null` | Parent node ID, null if it is a root node |
 | depth    | `number`                     | Node depth                                |
-| index    | `number`                     | Node position among sibling nodes         |
+| index    | `number`                     | Position of the node among sibling nodes  |
 
 ## Projected
 
 Placement target information
 
-| Name     | Type                         | Description                                     |
-| -------- | ---------------------------- | ----------------------------------------------- |
-| depth    | `number`                     | Placement target depth                          |
-| maxDepth | `number`                     | Maximum depth the target position can be placed |
-| minDepth | `number`                     | Minimum depth the target position can be placed |
-| parentId | `UniqueIdentifier` \| `null` | Parent node ID, null if it is a root node       |
+| Name     | Type                         | Description                               |
+| -------- | ---------------------------- | ----------------------------------------- |
+| depth    | `number`                     | Depth of the placement target             |
+| maxDepth | `number`                     | Maximum depth the target can be placed    |
+| minDepth | `number`                     | Minimum depth the target can be placed    |
+| parentId | `UniqueIdentifier` \| `null` | Parent node ID, null if it is a root node |
 
 ## SortableTreeInstance
 
@@ -97,8 +101,8 @@ export interface SortableTreeInstance<T = any> extends PublicSortableTreeStore {
    */
   getTreeData: () => TreeData<T>;
   /**
-   * Get the current flattened tree data
-   * @returns The current flattened tree data
+   * Get the flattened data of the current tree
+   * @returns The flattened data of the current tree
    */
   getFlattenData: () => FlattenNode<T>[];
 }

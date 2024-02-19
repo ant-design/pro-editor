@@ -1,6 +1,4 @@
 /**
- * title: useSortableList
- * description: 在 Item 子组件中使用 `useSortableList()` hook，可以获得当前组件实例
  * compact: true
  */
 import { SortableList } from '@ant-design/pro-editor';

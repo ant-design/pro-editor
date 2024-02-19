@@ -11,29 +11,29 @@ type SchemaItem = {
 };
 
 const INIT_VALUES = [
-  { title: '序号', valueType: 'indexBorder', dataIndex: 'index' },
+  { title: 'Index', valueType: 'indexBorder', dataIndex: 'index' },
   {
-    title: '授权企业名称',
+    title: 'Enterprise',
     valueType: 'text',
     dataIndex: 'name',
   },
-  { title: '被授权企业', valueType: 'text', dataIndex: 'authCompany' },
+  { title: 'Company', valueType: 'text', dataIndex: 'authCompany' },
 ];
 
 const columns: ColumnItemList<SchemaItem> = [
   {
-    title: '列标题',
+    title: 'Title',
     dataIndex: 'title',
     type: 'input',
   },
   {
-    title: '值类型',
+    title: 'ValueType',
     dataIndex: 'valueType',
     type: 'select',
     options: tableColumnValueOptions,
   },
   {
-    title: '字段',
+    title: 'DataIndex',
     dataIndex: 'dataIndex',
     type: 'select',
   },

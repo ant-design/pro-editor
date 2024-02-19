@@ -8,13 +8,11 @@ demo:
 
 # ActionIcon
 
-## When to use
+A wrapper for antd Button that makes the icon responsive to button actions.
 
-It is a encapsulation of antd Button, allowing icons to have responsive button actions.
+## Code Demo
 
-## Code Example
-
-<code src="./demos/basic.tsx" ></code> <code title='Default' src="./demos/preset.tsx" description='Presets for some commonly used buttons in the editor'></code>
+<code src="./demos/basic.tsx" title="Basic Example" description="`icon` sets the action icon, `title` sets the action description"></code><code src="./demos/preset.tsx" title="Predefined Actions" description="We have predefined some commonly used editor action icons, which can be added as needed"></code>
 
 ## API
 
@@ -27,4 +25,4 @@ It is a encapsulation of antd Button, allowing icons to have responsive button a
 | onClick   | Click callback | `ButtonProps['onClick']`                   | -       |
 | size      | Icon size      | `'default' \| 'large' \|'small' \| number` | small   |
 
-Refer to other API in antd Button Props.
+For other API references, please refer to antd Button Props.

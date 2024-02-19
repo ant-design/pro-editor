@@ -9,17 +9,13 @@ group:
 
 # ErrorBoundary 错误提示
 
-## 示例
+通用错误提示面板
 
-### 生产环境
+## 代码演示
 
-<code src='./demos/_prod.tsx' ></code>
+<code src='./demos/_prod.tsx' title="生产环境"></code>
 
-### 开发环境
-
-开发时会直接显示报错信息：
-
-<code src='./demos/_dev.tsx' ></code>
+<code src='./demos/_dev.tsx' title="开发环境" description="开发时会直接显示报错信息"></code>
 
 ## API
 

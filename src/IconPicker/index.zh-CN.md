@@ -8,29 +8,17 @@ group:
 
 # IconPicker 图标选择器
 
-## 何时使用
-
 选择 Icon 时使用。
 
 ## 代码演示
 
-### 基本使用
+<code src="./demos/normal.tsx" title="基本使用"></code>
 
-<code src="./demos/normal.tsx" ></code>
+<code src="./demos/controlled.tsx" title="受控模式"></code>
 
-### 受控模式
-
-<code src="./demos/controlled.tsx" ></code>
-
-### 外部传入 scripts
-
-如果外部传入 iconfontScripts 源并且不设置 onChange 方法，那么默认会隐藏添加图标源的按钮。
-
-<code src="./demos/scripts.tsx" ></code>
+<code src="./demos/scripts.tsx" title="外部传入 scripts" description="如果外部传入 `iconfontScripts`` 源并且不设置 `onChange` 方法，那么默认会隐藏添加图标源的按钮。"></code>
 
 ## API
-
-## 基础属性
 
 | 属性名                       | 类型                                           | 描述                             |
 | ---------------------------- | ---------------------------------------------- | -------------------------------- |

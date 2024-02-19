@@ -1,4 +1,5 @@
 /**
+ * find src -type f -name "*.en-US.md" -exec rm -f {} +
  * @type {import("@lobehub/i18n-cli").Config}
  */
 module.exports = {

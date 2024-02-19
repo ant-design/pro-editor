@@ -1,10 +1,11 @@
-import { ActionGroup, ActionIcon, ActionIconGroupItemType } from '@ant-design/pro-editor';
+import { ActionGroup, ActionIcon } from '@ant-design/pro-editor';
 import { Card, Input, Rate, Switch } from 'antd';
+import { defaultItems } from './_items';
 
 export default () => {
   return (
     <ActionGroup
-      render={(config) => {
+      render={() => {
         return (
           <Card
             title="操作工具箱"
@@ -19,11 +20,10 @@ export default () => {
                 flexDirection: 'row',
               }}
             >
-              {config.map((item: ActionIconGroupItemType, index) => {
+              {defaultItems.map((item, index) => {
                 return (
                   <ActionIcon
                     key={`action-btn-${index}`}
-                    title={item?.label}
                     onClick={() => {
                       alert('触发动作');
                     }}
