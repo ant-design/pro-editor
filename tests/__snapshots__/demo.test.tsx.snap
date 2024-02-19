@@ -2292,17 +2292,17 @@ exports[`<ColumnList /> > renders actions.tsx correctly 1`] = `
       <div
         class="ant-editor-column-list-content ant-editor-column-list-header emotion-2"
       >
-        列标题
+        Title
       </div>
       <div
         class="ant-editor-column-list-content ant-editor-column-list-header emotion-2"
       >
-        值类型
+        ValueType
       </div>
       <div
         class="ant-editor-column-list-content ant-editor-column-list-header emotion-2"
       >
-        字段
+        DataIndex
       </div>
     </div>
     <ul
@@ -2358,7 +2358,7 @@ exports[`<ColumnList /> > renders actions.tsx correctly 1`] = `
                 placeholder="请输入"
                 style="flex: 1; max-width: 33.333333333333336%;"
                 type="text"
-                value="序号"
+                value="Index"
               />
               <div
                 class="ant-select ant-select-sm ant-editor-content-tem emotion-17 ant-select-single ant-select-show-arrow"
@@ -2389,9 +2389,9 @@ exports[`<ColumnList /> > renders actions.tsx correctly 1`] = `
                   </span>
                   <span
                     class="ant-select-selection-item"
-                    title="圆形序号"
+                    title="indexBorder"
                   >
-                    圆形序号
+                    indexBorder
                   </span>
                 </div>
                 <span
@@ -2599,7 +2599,7 @@ exports[`<ColumnList /> > renders actions.tsx correctly 1`] = `
                 placeholder="请输入"
                 style="flex: 1; max-width: 33.333333333333336%;"
                 type="text"
-                value="授权企业名称"
+                value="Enterprise"
               />
               <div
                 class="ant-select ant-select-sm ant-editor-content-tem emotion-17 ant-select-single ant-select-show-arrow"
@@ -2630,9 +2630,9 @@ exports[`<ColumnList /> > renders actions.tsx correctly 1`] = `
                   </span>
                   <span
                     class="ant-select-selection-item"
-                    title="文本"
+                    title="text"
                   >
-                    文本
+                    text
                   </span>
                 </div>
                 <span
@@ -2840,7 +2840,7 @@ exports[`<ColumnList /> > renders actions.tsx correctly 1`] = `
                 placeholder="请输入"
                 style="flex: 1; max-width: 33.333333333333336%;"
                 type="text"
-                value="被授权企业"
+                value="Company"
               />
               <div
                 class="ant-select ant-select-sm ant-editor-content-tem emotion-17 ant-select-single ant-select-show-arrow"
@@ -2871,9 +2871,9 @@ exports[`<ColumnList /> > renders actions.tsx correctly 1`] = `
                   </span>
                   <span
                     class="ant-select-selection-item"
-                    title="文本"
+                    title="text"
                   >
-                    文本
+                    text
                   </span>
                 </div>
                 <span
@@ -3366,22 +3366,22 @@ exports[`<ColumnList /> > renders column.tsx correctly 1`] = `
       <div
         class="ant-editor-column-list-content ant-editor-column-list-header emotion-2"
       >
-        列标题
+        Title
       </div>
       <div
         class="ant-editor-column-list-content ant-editor-column-list-header emotion-2"
       >
-        值类型
+        ValueType
       </div>
       <div
         class="ant-editor-column-list-content ant-editor-column-list-header emotion-2"
       >
-        字段
+        DataIndex
       </div>
       <div
         class="ant-editor-column-list-content ant-editor-column-list-header emotion-2"
       >
-        颜色
+        Color
       </div>
     </div>
     <ul
@@ -3437,7 +3437,7 @@ exports[`<ColumnList /> > renders column.tsx correctly 1`] = `
                 placeholder="请输入"
                 style="flex: 1; max-width: 25%;"
                 type="text"
-                value="订单创建时间"
+                value="CreateTime"
               />
               <div
                 class="ant-select ant-select-sm ant-editor-content-tem emotion-18 ant-select-single ant-select-show-arrow"
@@ -3468,9 +3468,9 @@ exports[`<ColumnList /> > renders column.tsx correctly 1`] = `
                   </span>
                   <span
                     class="ant-select-selection-item"
-                    title="日期"
+                    title="date"
                   >
-                    日期
+                    date
                   </span>
                 </div>
                 <span
@@ -3665,7 +3665,7 @@ exports[`<ColumnList /> > renders column.tsx correctly 1`] = `
                 placeholder="请输入"
                 style="flex: 1; max-width: 25%;"
                 type="text"
-                value="产品详情图"
+                value="Detail Pic"
               />
               <div
                 class="ant-select ant-select-sm ant-editor-content-tem emotion-18 ant-select-single ant-select-show-arrow"
@@ -3696,9 +3696,9 @@ exports[`<ColumnList /> > renders column.tsx correctly 1`] = `
                   </span>
                   <span
                     class="ant-select-selection-item"
-                    title="文本"
+                    title="text"
                   >
-                    文本
+                    text
                   </span>
                 </div>
                 <span
@@ -3893,7 +3893,7 @@ exports[`<ColumnList /> > renders column.tsx correctly 1`] = `
                 placeholder="请输入"
                 style="flex: 1; max-width: 25%;"
                 type="text"
-                value="订单关闭原因"
+                value="Close Reason"
               />
               <div
                 class="ant-select ant-select-sm ant-editor-content-tem emotion-18 ant-select-single ant-select-show-arrow"
@@ -3924,9 +3924,9 @@ exports[`<ColumnList /> > renders column.tsx correctly 1`] = `
                   </span>
                   <span
                     class="ant-select-selection-item"
-                    title="文本"
+                    title="text"
                   >
-                    文本
+                    text
                   </span>
                 </div>
                 <span
@@ -4121,7 +4121,7 @@ exports[`<ColumnList /> > renders column.tsx correctly 1`] = `
                 placeholder="请输入"
                 style="flex: 1; max-width: 25%;"
                 type="text"
-                value="订单关闭类型"
+                value="Close Type"
               />
               <div
                 class="ant-select ant-select-sm ant-editor-content-tem emotion-18 ant-select-single ant-select-show-arrow"
@@ -4152,9 +4152,9 @@ exports[`<ColumnList /> > renders column.tsx correctly 1`] = `
                   </span>
                   <span
                     class="ant-select-selection-item"
-                    title="文本"
+                    title="text"
                   >
-                    文本
+                    text
                   </span>
                 </div>
                 <span
@@ -4631,7 +4631,7 @@ exports[`<ColumnList /> > renders controlled.tsx correctly 1`] = `
     type="button"
   >
     <span>
-      受控设置数据
+      Set Data
     </span>
   </button>
   <div
@@ -4643,17 +4643,17 @@ exports[`<ColumnList /> > renders controlled.tsx correctly 1`] = `
       <div
         class="ant-editor-column-list-content ant-editor-column-list-header emotion-2"
       >
-        列标题
+        Title
       </div>
       <div
         class="ant-editor-column-list-content ant-editor-column-list-header emotion-2"
       >
-        值类型
+        ValueType
       </div>
       <div
         class="ant-editor-column-list-content ant-editor-column-list-header emotion-2"
       >
-        字段
+        DataIndex
       </div>
     </div>
     <ul
@@ -4709,7 +4709,7 @@ exports[`<ColumnList /> > renders controlled.tsx correctly 1`] = `
                 placeholder="请输入"
                 style="flex: 1; max-width: 33.333333333333336%;"
                 type="text"
-                value="序号"
+                value="Index"
               />
               <div
                 class="ant-select ant-select-sm ant-editor-content-tem emotion-17 ant-select-single ant-select-show-arrow"
@@ -4740,9 +4740,9 @@ exports[`<ColumnList /> > renders controlled.tsx correctly 1`] = `
                   </span>
                   <span
                     class="ant-select-selection-item"
-                    title="圆形序号"
+                    title="indexBorder"
                   >
-                    圆形序号
+                    indexBorder
                   </span>
                 </div>
                 <span
@@ -4920,7 +4920,7 @@ exports[`<ColumnList /> > renders controlled.tsx correctly 1`] = `
                 placeholder="请输入"
                 style="flex: 1; max-width: 33.333333333333336%;"
                 type="text"
-                value="授权企业名称"
+                value="Enterprise"
               />
               <div
                 class="ant-select ant-select-sm ant-editor-content-tem emotion-17 ant-select-single ant-select-show-arrow"
@@ -4951,9 +4951,9 @@ exports[`<ColumnList /> > renders controlled.tsx correctly 1`] = `
                   </span>
                   <span
                     class="ant-select-selection-item"
-                    title="文本"
+                    title="text"
                   >
-                    文本
+                    text
                   </span>
                 </div>
                 <span
@@ -5131,7 +5131,7 @@ exports[`<ColumnList /> > renders controlled.tsx correctly 1`] = `
                 placeholder="请输入"
                 style="flex: 1; max-width: 33.333333333333336%;"
                 type="text"
-                value="被授权企业"
+                value="Company"
               />
               <div
                 class="ant-select ant-select-sm ant-editor-content-tem emotion-17 ant-select-single ant-select-show-arrow"
@@ -5162,9 +5162,9 @@ exports[`<ColumnList /> > renders controlled.tsx correctly 1`] = `
                   </span>
                   <span
                     class="ant-select-selection-item"
-                    title="文本"
+                    title="text"
                   >
-                    文本
+                    text
                   </span>
                 </div>
                 <span
@@ -5627,17 +5627,17 @@ exports[`<ColumnList /> > renders creatorButtonProps.tsx correctly 1`] = `
       <div
         class="ant-editor-column-list-content ant-editor-column-list-header emotion-2"
       >
-        列标题
+        Title
       </div>
       <div
         class="ant-editor-column-list-content ant-editor-column-list-header emotion-2"
       >
-        值类型
+        ValueType
       </div>
       <div
         class="ant-editor-column-list-content ant-editor-column-list-header emotion-2"
       >
-        字段
+        DataIndex
       </div>
     </div>
     <button
@@ -5727,7 +5727,7 @@ exports[`<ColumnList /> > renders creatorButtonProps.tsx correctly 1`] = `
                 placeholder="请输入"
                 style="flex: 1; max-width: 33.333333333333336%;"
                 type="text"
-                value="产品名称"
+                value="Product Name"
               />
               <div
                 class="ant-select ant-select-sm ant-editor-content-tem emotion-18 ant-select-single ant-select-show-arrow"
@@ -5758,9 +5758,9 @@ exports[`<ColumnList /> > renders creatorButtonProps.tsx correctly 1`] = `
                   </span>
                   <span
                     class="ant-select-selection-item"
-                    title="文本"
+                    title="text"
                   >
-                    文本
+                    text
                   </span>
                 </div>
                 <span
@@ -5938,7 +5938,7 @@ exports[`<ColumnList /> > renders creatorButtonProps.tsx correctly 1`] = `
                 placeholder="请输入"
                 style="flex: 1; max-width: 33.333333333333336%;"
                 type="text"
-                value="产品介绍"
+                value="Product Comment"
               />
               <div
                 class="ant-select ant-select-sm ant-editor-content-tem emotion-18 ant-select-single ant-select-show-arrow"
@@ -5969,9 +5969,9 @@ exports[`<ColumnList /> > renders creatorButtonProps.tsx correctly 1`] = `
                   </span>
                   <span
                     class="ant-select-selection-item"
-                    title="文本"
+                    title="text"
                   >
-                    文本
+                    text
                   </span>
                 </div>
                 <span
@@ -6149,7 +6149,7 @@ exports[`<ColumnList /> > renders creatorButtonProps.tsx correctly 1`] = `
                 placeholder="请输入"
                 style="flex: 1; max-width: 33.333333333333336%;"
                 type="text"
-                value="订单状态"
+                value="Order Status"
               />
               <div
                 class="ant-select ant-select-sm ant-editor-content-tem emotion-18 ant-select-single ant-select-show-arrow"
@@ -6180,9 +6180,9 @@ exports[`<ColumnList /> > renders creatorButtonProps.tsx correctly 1`] = `
                   </span>
                   <span
                     class="ant-select-selection-item"
-                    title="文本"
+                    title="text"
                   >
-                    文本
+                    text
                   </span>
                 </div>
                 <span
@@ -6588,17 +6588,17 @@ exports[`<ColumnList /> > renders creatorButtonPropsFalse.tsx correctly 1`] = `
       <div
         class="ant-editor-column-list-content ant-editor-column-list-header emotion-2"
       >
-        列标题
+        Title
       </div>
       <div
         class="ant-editor-column-list-content ant-editor-column-list-header emotion-2"
       >
-        值类型
+        ValueType
       </div>
       <div
         class="ant-editor-column-list-content ant-editor-column-list-header emotion-2"
       >
-        字段
+        DataIndex
       </div>
     </div>
     <ul
@@ -6654,7 +6654,7 @@ exports[`<ColumnList /> > renders creatorButtonPropsFalse.tsx correctly 1`] = `
                 placeholder="请输入"
                 style="flex: 1; max-width: 33.333333333333336%;"
                 type="text"
-                value="产品名称"
+                value="Product Name"
               />
               <div
                 class="ant-select ant-select-sm ant-editor-content-tem emotion-17 ant-select-single ant-select-show-arrow"
@@ -6685,9 +6685,9 @@ exports[`<ColumnList /> > renders creatorButtonPropsFalse.tsx correctly 1`] = `
                   </span>
                   <span
                     class="ant-select-selection-item"
-                    title="文本"
+                    title="text"
                   >
-                    文本
+                    text
                   </span>
                 </div>
                 <span
@@ -6865,7 +6865,7 @@ exports[`<ColumnList /> > renders creatorButtonPropsFalse.tsx correctly 1`] = `
                 placeholder="请输入"
                 style="flex: 1; max-width: 33.333333333333336%;"
                 type="text"
-                value="产品介绍"
+                value="Product Comment"
               />
               <div
                 class="ant-select ant-select-sm ant-editor-content-tem emotion-17 ant-select-single ant-select-show-arrow"
@@ -6896,9 +6896,9 @@ exports[`<ColumnList /> > renders creatorButtonPropsFalse.tsx correctly 1`] = `
                   </span>
                   <span
                     class="ant-select-selection-item"
-                    title="文本"
+                    title="text"
                   >
-                    文本
+                    text
                   </span>
                 </div>
                 <span
@@ -7076,7 +7076,7 @@ exports[`<ColumnList /> > renders creatorButtonPropsFalse.tsx correctly 1`] = `
                 placeholder="请输入"
                 style="flex: 1; max-width: 33.333333333333336%;"
                 type="text"
-                value="订单状态"
+                value="Order Status"
               />
               <div
                 class="ant-select ant-select-sm ant-editor-content-tem emotion-17 ant-select-single ant-select-show-arrow"
@@ -7107,9 +7107,9 @@ exports[`<ColumnList /> > renders creatorButtonPropsFalse.tsx correctly 1`] = `
                   </span>
                   <span
                     class="ant-select-selection-item"
-                    title="文本"
+                    title="text"
                   >
-                    文本
+                    text
                   </span>
                 </div>
                 <span
@@ -7552,7 +7552,7 @@ exports[`<ColumnList /> > renders customCreate.tsx correctly 1`] = `
     style="margin-bottom: 16px;"
   >
     <div>
-      列配置项
+      Custom Title
     </div>
     <button
       class="ant-btn ant-btn-text ant-btn-icon-only ant-editor-icon emotion-1"
@@ -7602,17 +7602,17 @@ exports[`<ColumnList /> > renders customCreate.tsx correctly 1`] = `
       <div
         class="ant-editor-column-list-content ant-editor-column-list-header emotion-4"
       >
-        列标题
+        Title
       </div>
       <div
         class="ant-editor-column-list-content ant-editor-column-list-header emotion-4"
       >
-        值类型
+        ValueType
       </div>
       <div
         class="ant-editor-column-list-content ant-editor-column-list-header emotion-4"
       >
-        字段
+        DataIndex
       </div>
     </div>
     <ul
@@ -7668,7 +7668,7 @@ exports[`<ColumnList /> > renders customCreate.tsx correctly 1`] = `
                 placeholder="请输入"
                 style="flex: 1; max-width: 33.333333333333336%;"
                 type="text"
-                value="订单id"
+                value="Order ID"
               />
               <div
                 class="ant-select ant-select-sm ant-editor-content-tem emotion-19 ant-select-single ant-select-show-arrow"
@@ -7699,9 +7699,9 @@ exports[`<ColumnList /> > renders customCreate.tsx correctly 1`] = `
                   </span>
                   <span
                     class="ant-select-selection-item"
-                    title="文本"
+                    title="text"
                   >
-                    文本
+                    text
                   </span>
                 </div>
                 <span
@@ -7879,7 +7879,7 @@ exports[`<ColumnList /> > renders customCreate.tsx correctly 1`] = `
                 placeholder="请输入"
                 style="flex: 1; max-width: 33.333333333333336%;"
                 type="text"
-                value="订单号"
+                value="Order Number"
               />
               <div
                 class="ant-select ant-select-sm ant-editor-content-tem emotion-19 ant-select-single ant-select-show-arrow"
@@ -7910,9 +7910,9 @@ exports[`<ColumnList /> > renders customCreate.tsx correctly 1`] = `
                   </span>
                   <span
                     class="ant-select-selection-item"
-                    title="文本"
+                    title="text"
                   >
-                    文本
+                    text
                   </span>
                 </div>
                 <span
@@ -8090,7 +8090,7 @@ exports[`<ColumnList /> > renders customCreate.tsx correctly 1`] = `
                 placeholder="请输入"
                 style="flex: 1; max-width: 33.333333333333336%;"
                 type="text"
-                value="订单金额"
+                value="Order Money"
               />
               <div
                 class="ant-select ant-select-sm ant-editor-content-tem emotion-19 ant-select-single ant-select-show-arrow"
@@ -8121,9 +8121,9 @@ exports[`<ColumnList /> > renders customCreate.tsx correctly 1`] = `
                   </span>
                   <span
                     class="ant-select-selection-item"
-                    title="文本"
+                    title="text"
                   >
-                    文本
+                    text
                   </span>
                 </div>
                 <span
@@ -8381,17 +8381,17 @@ exports[`<ColumnList /> > renders empty.tsx correctly 1`] = `
       <div
         class="ant-editor-column-list-content ant-editor-column-list-header emotion-2"
       >
-        列标题
+        Title
       </div>
       <div
         class="ant-editor-column-list-content ant-editor-column-list-header emotion-2"
       >
-        值类型
+        ValueType
       </div>
       <div
         class="ant-editor-column-list-content ant-editor-column-list-header emotion-2"
       >
-        字段
+        DataIndex
       </div>
     </div>
     <div
@@ -8772,12 +8772,12 @@ exports[`<ColumnList /> > renders normal.tsx correctly 1`] = `
       <div
         class="ant-editor-column-list-content ant-editor-column-list-header emotion-2"
       >
-        配置项一
+        Title
       </div>
       <div
         class="ant-editor-column-list-content ant-editor-column-list-header emotion-2"
       >
-        配置项二
+        Index
       </div>
     </div>
     <ul
@@ -8833,7 +8833,7 @@ exports[`<ColumnList /> > renders normal.tsx correctly 1`] = `
                 placeholder="请输入"
                 style="flex: 1; max-width: 50%;"
                 type="text"
-                value="序号"
+                value="Index"
               />
               <input
                 class="ant-input ant-input-sm emotion-14 ant-editor-content-tem emotion-15"
@@ -8930,7 +8930,7 @@ exports[`<ColumnList /> > renders normal.tsx correctly 1`] = `
                 placeholder="请输入"
                 style="flex: 1; max-width: 50%;"
                 type="text"
-                value="授权企业名称"
+                value="Enterprise"
               />
               <input
                 class="ant-input ant-input-sm emotion-14 ant-editor-content-tem emotion-15"
@@ -9027,7 +9027,7 @@ exports[`<ColumnList /> > renders normal.tsx correctly 1`] = `
                 placeholder="请输入"
                 style="flex: 1; max-width: 50%;"
                 type="text"
-                value="被授权企业"
+                value="Company"
               />
               <input
                 class="ant-input ant-input-sm emotion-14 ant-editor-content-tem emotion-15"
@@ -9226,7 +9226,7 @@ exports[`<DraggablePanel /> > renders basic.tsx correctly 1`] = `
     <div
       style="flex: 1; padding: 12px;"
     >
-      内容
+      Content
     </div>
     <div
       class="ant-editor-draggable-panel emotion-0"
@@ -9260,7 +9260,7 @@ exports[`<DraggablePanel /> > renders basic.tsx correctly 1`] = `
         class="ant-editor-draggable-panel-fixed emotion-3"
         style="position: relative; user-select: auto; padding: 12px; width: 400px; height: 100%; max-width: 600px; min-width: 280px; box-sizing: border-box; flex-shrink: 0;"
       >
-        右侧面板
+        Right Panel
         <div>
           <div
             class="emotion-4 ant-editor-draggable-panel-left-handle"
@@ -9377,7 +9377,7 @@ exports[`<DraggablePanel /> > renders bottom.tsx correctly 1`] = `
     <div
       style="flex: 1; padding: 12px;"
     >
-      内容
+      Content
     </div>
     <div
       class="ant-editor-draggable-panel emotion-1"
@@ -9411,7 +9411,7 @@ exports[`<DraggablePanel /> > renders bottom.tsx correctly 1`] = `
         class="ant-editor-draggable-panel-fixed emotion-4"
         style="position: relative; user-select: auto; width: 100%; padding: 12px; height: 150px; max-height: 250px; min-width: 280px; box-sizing: border-box; flex-shrink: 0;"
       >
-        底部面板
+        Bottom Panel
         <div>
           <div
             class="ant-editor-draggable-panel-top-handle emotion-5"
@@ -9534,7 +9534,7 @@ exports[`<DraggablePanel /> > renders controlFloat.tsx correctly 1`] = `
       class="ant-editor-draggable-panel-float emotion-0 react-draggable"
       style="position: absolute; user-select: auto; width: 400px; height: 300px; display: inline-block; top: 0px; left: 0px; cursor: move; padding: 12px; transform: translate(200px,200px); max-width: 9007199254740991px; max-height: 9007199254740991px; min-width: 280px; min-height: 200px; box-sizing: border-box; flex-shrink: 0;"
     >
-      悬浮可拖拽面板
+      Float Draggable Panel
       <div>
         <div
           class="ant-editor-draggable-panel-top-handle emotion-1"
@@ -9684,7 +9684,7 @@ exports[`<DraggablePanel /> > renders float.tsx correctly 1`] = `
       class="ant-editor-draggable-panel-float emotion-0 react-draggable"
       style="position: absolute; user-select: auto; width: 400px; height: 300px; display: inline-block; top: 0px; left: 0px; cursor: move; padding: 12px; transform: translate(200px,200px); max-width: 9007199254740991px; max-height: 9007199254740991px; min-width: 280px; min-height: 200px; box-sizing: border-box; flex-shrink: 0;"
     >
-      悬浮可拖拽面板
+      Float Draggable Panel
       <div>
         <div
           class="ant-editor-draggable-panel-top-handle emotion-1"
@@ -9857,7 +9857,7 @@ exports[`<DraggablePanel /> > renders left.tsx correctly 1`] = `
         class="ant-editor-draggable-panel-fixed emotion-4"
         style="position: relative; user-select: auto; width: 400px; padding: 12px; height: 100%; max-width: 800px; min-width: 280px; box-sizing: border-box; flex-shrink: 0;"
       >
-        左侧面板
+        Left Panel
         <div>
           <div
             class="emotion-5 ant-editor-draggable-panel-right-handle"
@@ -9869,7 +9869,7 @@ exports[`<DraggablePanel /> > renders left.tsx correctly 1`] = `
     <div
       style="flex: 1; padding: 12px;"
     >
-      内容
+      Content
     </div>
   </div>
 </div>
@@ -10008,7 +10008,7 @@ exports[`<DraggablePanel /> > renders top.tsx correctly 1`] = `
         class="ant-editor-draggable-panel-fixed emotion-4"
         style="position: relative; user-select: auto; width: 100%; padding: 12px; height: 150px; max-height: 250px; min-width: 280px; box-sizing: border-box; flex-shrink: 0;"
       >
-        顶部面板
+        Top Panel
         <div>
           <div
             class="ant-editor-draggable-panel-bottom-handle emotion-5"
@@ -10020,7 +10020,7 @@ exports[`<DraggablePanel /> > renders top.tsx correctly 1`] = `
     <div
       style="flex: 1; padding: 12px;"
     >
-      内容
+      Content
     </div>
   </div>
 </div>
@@ -22371,7 +22371,7 @@ exports[`<SortableList /> > renders controlled.tsx correctly 1`] = `
       type="button"
     >
       <span>
-        设置数据
+        Set Data
       </span>
     </button>
   </div>
@@ -22824,7 +22824,7 @@ exports[`<SortableList /> > renders creatorButtonProps.tsx correctly 1`] = `
           </span>
         </span>
         <span>
-          自定义添加
+          Custom Create
         </span>
       </button>
       <div
@@ -24503,7 +24503,7 @@ exports[`<SortableList /> > renders provider.tsx correctly 1`] = `
       type="button"
     >
       <span>
-        获取值
+        Get Value
       </span>
     </button>
     <div
@@ -24568,7 +24568,7 @@ exports[`<SortableList /> > renders provider.tsx correctly 1`] = `
                       id="index-0"
                       style="width: 100%;"
                       type="text"
-                      value="序号"
+                      value="Index"
                     />
                   </div>
                   <div
@@ -24603,9 +24603,9 @@ exports[`<SortableList /> > renders provider.tsx correctly 1`] = `
                         </span>
                         <span
                           class="ant-select-selection-item"
-                          title="圆形序号"
+                          title="indexBorder"
                         >
-                          圆形序号
+                          indexBorder
                         </span>
                       </div>
                       <span
@@ -24730,7 +24730,7 @@ exports[`<SortableList /> > renders provider.tsx correctly 1`] = `
                       id="index-1"
                       style="width: 100%;"
                       type="text"
-                      value="授权企业名称"
+                      value="Enterprise"
                     />
                   </div>
                   <div
@@ -24765,9 +24765,9 @@ exports[`<SortableList /> > renders provider.tsx correctly 1`] = `
                         </span>
                         <span
                           class="ant-select-selection-item"
-                          title="文本"
+                          title="text"
                         >
-                          文本
+                          text
                         </span>
                       </div>
                       <span
@@ -24892,7 +24892,7 @@ exports[`<SortableList /> > renders provider.tsx correctly 1`] = `
                       id="index-2"
                       style="width: 100%;"
                       type="text"
-                      value="被授权企业"
+                      value="Company"
                     />
                   </div>
                   <div
@@ -24927,9 +24927,9 @@ exports[`<SortableList /> > renders provider.tsx correctly 1`] = `
                         </span>
                         <span
                           class="ant-select-selection-item"
-                          title="下拉框"
+                          title="select"
                         >
-                          下拉框
+                          select
                         </span>
                       </div>
                       <span
@@ -25343,7 +25343,7 @@ exports[`<SortableList /> > renders ref.tsx correctly 1`] = `
       class="layoutkit-flexbox emotion-1"
     >
       <div>
-        列配置项
+        Column Config
       </div>
       <button
         class="ant-btn ant-btn-text ant-btn-icon-only ant-editor-icon emotion-2"
@@ -25437,7 +25437,7 @@ exports[`<SortableList /> > renders ref.tsx correctly 1`] = `
                       id="index-0"
                       style="width: 100%;"
                       type="text"
-                      value="序号"
+                      value="Index"
                     />
                   </div>
                   <div
@@ -25472,9 +25472,9 @@ exports[`<SortableList /> > renders ref.tsx correctly 1`] = `
                         </span>
                         <span
                           class="ant-select-selection-item"
-                          title="圆形序号"
+                          title="indexBorder"
                         >
-                          圆形序号
+                          indexBorder
                         </span>
                       </div>
                       <span
@@ -25599,7 +25599,7 @@ exports[`<SortableList /> > renders ref.tsx correctly 1`] = `
                       id="index-1"
                       style="width: 100%;"
                       type="text"
-                      value="授权企业名称"
+                      value="Enterprise"
                     />
                   </div>
                   <div
@@ -25634,9 +25634,9 @@ exports[`<SortableList /> > renders ref.tsx correctly 1`] = `
                         </span>
                         <span
                           class="ant-select-selection-item"
-                          title="文本"
+                          title="text"
                         >
-                          文本
+                          text
                         </span>
                       </div>
                       <span
@@ -25761,7 +25761,7 @@ exports[`<SortableList /> > renders ref.tsx correctly 1`] = `
                       id="index-2"
                       style="width: 100%;"
                       type="text"
-                      value="被授权企业"
+                      value="Company"
                     />
                   </div>
                   <div
@@ -25796,9 +25796,9 @@ exports[`<SortableList /> > renders ref.tsx correctly 1`] = `
                         </span>
                         <span
                           class="ant-select-selection-item"
-                          title="下拉框"
+                          title="select"
                         >
-                          下拉框
+                          select
                         </span>
                       </div>
                       <span
@@ -26252,7 +26252,7 @@ exports[`<SortableList /> > renders renderContent.tsx correctly 1`] = `
                       id="index-0"
                       style="width: 100%;"
                       type="text"
-                      value="序号"
+                      value="Index"
                     />
                   </div>
                   <div
@@ -26287,9 +26287,9 @@ exports[`<SortableList /> > renders renderContent.tsx correctly 1`] = `
                         </span>
                         <span
                           class="ant-select-selection-item"
-                          title="圆形序号"
+                          title="indexBorder"
                         >
-                          圆形序号
+                          indexBorder
                         </span>
                       </div>
                       <span
@@ -26414,7 +26414,7 @@ exports[`<SortableList /> > renders renderContent.tsx correctly 1`] = `
                       id="index-1"
                       style="width: 100%;"
                       type="text"
-                      value="授权企业名称"
+                      value="Enterprise"
                     />
                   </div>
                   <div
@@ -26449,9 +26449,9 @@ exports[`<SortableList /> > renders renderContent.tsx correctly 1`] = `
                         </span>
                         <span
                           class="ant-select-selection-item"
-                          title="文本"
+                          title="text"
                         >
-                          文本
+                          text
                         </span>
                       </div>
                       <span
@@ -26576,7 +26576,7 @@ exports[`<SortableList /> > renders renderContent.tsx correctly 1`] = `
                       id="index-2"
                       style="width: 100%;"
                       type="text"
-                      value="被授权企业"
+                      value="Company"
                     />
                   </div>
                   <div
@@ -26611,9 +26611,9 @@ exports[`<SortableList /> > renders renderContent.tsx correctly 1`] = `
                         </span>
                         <span
                           class="ant-select-selection-item"
-                          title="下拉框"
+                          title="select"
                         >
-                          下拉框
+                          select
                         </span>
                       </div>
                       <span
@@ -26869,7 +26869,7 @@ exports[`<SortableList /> > renders renderItem.tsx correctly 1`] = `
         type="button"
       >
         <span>
-          头部添加一项
+          Add item from top
         </span>
       </button>
       <button
@@ -26877,7 +26877,7 @@ exports[`<SortableList /> > renders renderItem.tsx correctly 1`] = `
         type="button"
       >
         <span>
-          尾部添加一项
+          Add item from bottom
         </span>
       </button>
     </div>
@@ -26946,7 +26946,7 @@ exports[`<SortableList /> > renders renderItem.tsx correctly 1`] = `
                   type="button"
                 >
                   <span>
-                    上方
+                    Up
                   </span>
                 </button>
                 <button
@@ -26954,7 +26954,7 @@ exports[`<SortableList /> > renders renderItem.tsx correctly 1`] = `
                   type="button"
                 >
                   <span>
-                    下方
+                    Down
                   </span>
                 </button>
                 <button
@@ -26962,7 +26962,7 @@ exports[`<SortableList /> > renders renderItem.tsx correctly 1`] = `
                   type="button"
                 >
                   <span>
-                    删除
+                    Delete
                   </span>
                 </button>
                 <button
@@ -26970,7 +26970,7 @@ exports[`<SortableList /> > renders renderItem.tsx correctly 1`] = `
                   type="button"
                 >
                   <span>
-                    拖拽
+                    Drag
                   </span>
                 </button>
               </div>
@@ -27035,7 +27035,7 @@ exports[`<SortableList /> > renders renderItem.tsx correctly 1`] = `
                   type="button"
                 >
                   <span>
-                    上方
+                    Up
                   </span>
                 </button>
                 <button
@@ -27043,7 +27043,7 @@ exports[`<SortableList /> > renders renderItem.tsx correctly 1`] = `
                   type="button"
                 >
                   <span>
-                    下方
+                    Down
                   </span>
                 </button>
                 <button
@@ -27051,7 +27051,7 @@ exports[`<SortableList /> > renders renderItem.tsx correctly 1`] = `
                   type="button"
                 >
                   <span>
-                    删除
+                    Delete
                   </span>
                 </button>
                 <button
@@ -27059,7 +27059,7 @@ exports[`<SortableList /> > renders renderItem.tsx correctly 1`] = `
                   type="button"
                 >
                   <span>
-                    拖拽
+                    Drag
                   </span>
                 </button>
               </div>
@@ -27124,7 +27124,7 @@ exports[`<SortableList /> > renders renderItem.tsx correctly 1`] = `
                   type="button"
                 >
                   <span>
-                    上方
+                    Up
                   </span>
                 </button>
                 <button
@@ -27132,7 +27132,7 @@ exports[`<SortableList /> > renders renderItem.tsx correctly 1`] = `
                   type="button"
                 >
                   <span>
-                    下方
+                    Down
                   </span>
                 </button>
                 <button
@@ -27140,7 +27140,7 @@ exports[`<SortableList /> > renders renderItem.tsx correctly 1`] = `
                   type="button"
                 >
                   <span>
-                    删除
+                    Delete
                   </span>
                 </button>
                 <button
@@ -27148,7 +27148,7 @@ exports[`<SortableList /> > renders renderItem.tsx correctly 1`] = `
                   type="button"
                 >
                   <span>
-                    拖拽
+                    Drag
                   </span>
                 </button>
               </div>
@@ -27213,7 +27213,7 @@ exports[`<SortableList /> > renders renderItem.tsx correctly 1`] = `
                   type="button"
                 >
                   <span>
-                    上方
+                    Up
                   </span>
                 </button>
                 <button
@@ -27221,7 +27221,7 @@ exports[`<SortableList /> > renders renderItem.tsx correctly 1`] = `
                   type="button"
                 >
                   <span>
-                    下方
+                    Down
                   </span>
                 </button>
                 <button
@@ -27229,7 +27229,7 @@ exports[`<SortableList /> > renders renderItem.tsx correctly 1`] = `
                   type="button"
                 >
                   <span>
-                    删除
+                    Delete
                   </span>
                 </button>
                 <button
@@ -27237,7 +27237,7 @@ exports[`<SortableList /> > renders renderItem.tsx correctly 1`] = `
                   type="button"
                 >
                   <span>
-                    拖拽
+                    Drag
                   </span>
                 </button>
               </div>
@@ -27628,7 +27628,7 @@ exports[`<SortableList /> > renders useSortableList.tsx correctly 1`] = `
                       id="index-0"
                       style="width: 100%;"
                       type="text"
-                      value="序号"
+                      value="Index"
                     />
                   </div>
                   <div
@@ -27663,9 +27663,9 @@ exports[`<SortableList /> > renders useSortableList.tsx correctly 1`] = `
                         </span>
                         <span
                           class="ant-select-selection-item"
-                          title="圆形序号"
+                          title="indexBorder"
                         >
-                          圆形序号
+                          indexBorder
                         </span>
                       </div>
                       <span
@@ -27790,7 +27790,7 @@ exports[`<SortableList /> > renders useSortableList.tsx correctly 1`] = `
                       id="index-1"
                       style="width: 100%;"
                       type="text"
-                      value="授权企业名称"
+                      value="Enterprise"
                     />
                   </div>
                   <div
@@ -27825,9 +27825,9 @@ exports[`<SortableList /> > renders useSortableList.tsx correctly 1`] = `
                         </span>
                         <span
                           class="ant-select-selection-item"
-                          title="文本"
+                          title="text"
                         >
-                          文本
+                          text
                         </span>
                       </div>
                       <span
@@ -27952,7 +27952,7 @@ exports[`<SortableList /> > renders useSortableList.tsx correctly 1`] = `
                       id="index-2"
                       style="width: 100%;"
                       type="text"
-                      value="被授权企业"
+                      value="Company"
                     />
                   </div>
                   <div
@@ -27987,9 +27987,9 @@ exports[`<SortableList /> > renders useSortableList.tsx correctly 1`] = `
                         </span>
                         <span
                           class="ant-select-selection-item"
-                          title="下拉框"
+                          title="select"
                         >
-                          下拉框
+                          select
                         </span>
                       </div>
                       <span
