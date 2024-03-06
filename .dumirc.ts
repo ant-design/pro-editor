@@ -1,12 +1,9 @@
 import { defineConfig } from 'dumi';
 
-const isProd = process.env.NODE_ENV === 'production';
-
 export default defineConfig({
   outputPath: 'docs-dist',
   mfsu: false,
   favicons: ['https://gw.alipayobjects.com/zos/antfincdn/upvrAjAPQX/Logo_Tech%252520UI.svg'],
-  // @ts-ignore
   ssr: false,
   hash: true,
   ignoreMomentLocale: true,
