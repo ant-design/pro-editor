@@ -34,36 +34,6 @@ ProEditor 最初的定位是作为组件的可视化配置框架。因此在 Pro
 
 详见：[ProEditor 装配器容器](/pro-editor)
 
-### 🚧 使用原子化能力
-
-> Working in Progress
-
-ProEditor 将会提供编辑场景需要的各类原子化能力，包括但不限于「撤销重做」、「实时协同」、「键盘快捷键」、「选择能力」等。
-
-当前该部分能力仍处于高速开发中，敬请期待。
-
-## 与框架集成
-
-### 与 Umi 集成
-
-在中后台的研发场景， umi 是一个非常不错的选择。ProEditor 与 umi 的集成非常容易。安装后直接使用即可。
-
-### 与 Next.js 集成
-
-[Next.js](https://nextjs.org/) 是社区中非常流行的研发框架。ProEditor 与 Next.js 的集成也非常容易。
-
-由于 Next.js 是一个 CSR、SSR 同构的 React 框架，而 ProEditor 默认只提供 esm 模块，因此在安装后，需要在 `next.config.(m)js` 中 `transpilePackages` 中加入相关依赖：
-
-```js
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  // 将纯 esm 模块转为 node 兼容模块
-  transpilePackages: ['@ant-design/pro-editor', 'leva', 'zustand'], // leva 为 ProEditor 依赖模块
-};
-```
-
-接下来和其他组件一样使用即可。
-
 ## 工程化能力
 
 ### 按需加载
