@@ -48,7 +48,7 @@ const StoreUpdater = forwardRef(
     useStoreUpdater('initialValues', initialValues, [], (state) => {
       KeyManagerUpdater(state, 'initialValues');
     });
-    useStoreUpdater('value', value, [], (state) => {
+    useStoreUpdater('value', value, [value], (state) => {
       KeyManagerUpdater(state, 'value');
     });
     useStoreUpdater('actions', actions);
