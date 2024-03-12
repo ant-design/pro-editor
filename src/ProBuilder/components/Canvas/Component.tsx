@@ -1,6 +1,5 @@
 import { useSize } from 'ahooks';
 import { ConfigProvider } from 'antd';
-import zhCN from 'antd/locale/zh_CN';
 import type { FC } from 'react';
 import { memo, useEffect, useRef } from 'react';
 import { shallow } from 'zustand/shallow';
@@ -41,7 +40,7 @@ const Component: FC = memo(() => {
       onStatusChange={updateCanvasInteract}
     >
       <div id={`${prefix}`} ref={ref} className={`${prefix}-component`}>
-        <ConfigProvider locale={zhCN} prefixCls="canvas">
+        <ConfigProvider prefixCls="canvas">
           <componentAsset.Component />
         </ConfigProvider>
       </div>
