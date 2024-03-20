@@ -49,7 +49,7 @@ const Markdown = memo<MarkdownProps>(
     };
 
     const rehypePlugins = [rehypeKatex, ...(outRehypePlugins || [])];
-    const remarkPlugins = [remarkGfm, remarkMath, ...(outRemarkPlugins || [])];
+    const remarkPlugins = [[remarkGfm,{singleTilde: false}], remarkMath, ...(outRemarkPlugins || [])];
 
     return (
       <Typography className={className} onDoubleClick={onDoubleClick} style={style}>
