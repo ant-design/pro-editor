@@ -63,10 +63,6 @@ export interface HighlightProps {
    * 是否需默认展示语言种类
    */
   showLanguage?: boolean;
-  /**
-   * Shiki 高亮组件
-   */
-  shiki?: boolean;
 }
 
 const BaseHighlight: React.FC<HighlightProps> = memo((props) => {
@@ -78,7 +74,6 @@ const BaseHighlight: React.FC<HighlightProps> = memo((props) => {
     copyable = true,
     theme: outTheme = THEME_AUTO,
     language = 'tsx',
-    shiki = true,
     showLanguage = true,
     type = 'block',
     onCopy,
@@ -103,7 +98,7 @@ const BaseHighlight: React.FC<HighlightProps> = memo((props) => {
       {showLanguage && language && (
         <LanguageTag theme={theme}>{language.toLowerCase()}</LanguageTag>
       )}
-      <HighLighter lineNumber={lineNumber} language={language} theme={theme} shiki={shiki}>
+      <HighLighter lineNumber={lineNumber} language={language} theme={theme}>
         {children}
       </HighLighter>
     </div>

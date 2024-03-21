@@ -7,46 +7,30 @@
 import { THEME_LIGHT } from '@/Highlight/theme';
 import { Loading3QuartersOutlined as Loading } from '@ant-design/icons';
 import classNames from 'classnames';
-import { memo, useMemo } from 'react';
+import { memo } from 'react';
 import { Center } from 'react-layout-kit';
 import { useShiki } from '../../hooks/useShiki';
 import { HighlightProps } from '../../index';
-import HighLightJS from '../HighLightJS';
 import { useStyles } from './style';
 
 export type ShikiProps = Pick<
   HighlightProps,
-  'language' | 'children' | 'theme' | 'lineNumber' | 'shiki' | 'className' | 'style'
+  'language' | 'children' | 'theme' | 'lineNumber' | 'className' | 'style'
 >;
 
 const HighLighter: React.FC<ShikiProps> = memo((props) => {
-  const { children, lineNumber = false, theme = THEME_LIGHT, language, shiki = true } = props;
+  const { children, lineNumber = false, theme = THEME_LIGHT, language } = props;
   const { styles } = useStyles({ lineNumber, theme });
-  const { renderShiki, loading } = useShiki(language, theme, shiki);
+  const { renderShiki, loading } = useShiki(language, theme);
 
-  const HighlightJSBlock = useMemo(
-    () => (
-      <HighLightJS lineNumber={lineNumber} theme={theme} language={language}>
-        {children}
-      </HighLightJS>
-    ),
-    [lineNumber, theme, language, children],
-  );
-
-  return shiki === false ? (
-    HighlightJSBlock
-  ) : (
+  return (
     <>
-      {loading ? (
-        HighlightJSBlock
-      ) : (
-        <div
-          className={classNames(styles.shiki)}
-          dangerouslySetInnerHTML={{
-            __html: renderShiki(children) || '',
-          }}
-        />
-      )}
+      <div
+        className={classNames(styles.shiki)}
+        dangerouslySetInnerHTML={{
+          __html: renderShiki(children) || '',
+        }}
+      />
       {loading ? (
         <Center className={styles.center} gap={8} horizontal>
           <Loading spin className={styles.loading} />

@@ -6,13 +6,11 @@ group: Basic
 
 # Highlight
 
-Used to display code, Highlight defaults to using [Shiki](https://github.com/shikijs/shiki) for rendering. Shiki uses a TextMate grammar for more precision, but it requires loading additional wasm files, which may result in a poor experience in case of poor network conditions. If initialization fails, the component will set the renderer to [highlight.js](https://highlightjs.org/) as a replacement.
+Used to display code, Highlight defaults to using [Shiki](https://github.com/shikijs/shiki) for rendering. Shiki uses a TextMate grammar for more precision.
 
 ## Code Demo
 
 <code src="./demos/auto.tsx" title="Automatic Theme" description="By default, `auto` is enabled, which will automatically switch themes based on the current environment"></code>
-
-<code src="./demos/shiki.tsx"  title="Disable Shiki" description="By default, `shiki` rendering is enabled, but it can be disabled by setting `shiki=false` in weak or no network situations"></code>
 
 <code src="./demos/basic.tsx" title="Specify Language and Theme" description="You can specify the language for highlighting using `language` and the highlighting theme using `theme`"></code>
 
