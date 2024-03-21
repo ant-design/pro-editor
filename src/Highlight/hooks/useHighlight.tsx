@@ -20,6 +20,7 @@ export const languageMap = {
   json,
   markdown,
   xml,
+  html: xml,
   yaml,
   tsx,
   jsx,
