@@ -1,7 +1,3 @@
-/**
-
- */
-
 import { Highlight } from '@ant-design/pro-editor';
 import { Select, Space } from 'antd';
 import { useState } from 'react';

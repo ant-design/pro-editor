@@ -59,7 +59,7 @@ const BaseSnippet = memo<SnippetProps>((props) => {
     <div className={cx(styles.container, className)} {...rest}>
       {spotlight && <Spotlight />}
       <div className={styles.highlighter}>
-        <HighLighter language={language} theme={isDarkMode ? 'dark' : 'light'} shiki>
+        <HighLighter language={language} theme={isDarkMode ? 'dark' : 'light'}>
           {symbol ? [symbol, children].join(' ') : children}
         </HighLighter>
       </div>

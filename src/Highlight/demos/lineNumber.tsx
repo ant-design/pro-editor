@@ -1,7 +1,3 @@
-/**
-
- */
-
 import { Highlight } from '@ant-design/pro-editor';
 
 export default () => (
