@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { getHighlighter, type Highlighter } from 'shikiji';
+import { getHighlighter, type Highlighter } from 'shiki/bundle/web';
 import { themeConfig } from '../theme';
 import { languageMap } from './useHighlight';
 

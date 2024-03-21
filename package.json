@@ -102,7 +102,7 @@
     "remark-gfm": "^3.0.1",
     "remark-math": "^5.1.1",
     "rxjs": "^7.8.1",
-    "shikiji": "^0.6.13",
+    "shiki": "^1.2.0",
     "type-fest": "^3.13.1",
     "use-merge-value": "^1.2.0",
     "yjs": "^13.6.11",
