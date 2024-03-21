@@ -65,6 +65,26 @@ const configs = [
     text: 'Yaml',
     code: '---\n# comment\nstring_1: "Bar"\nstring_2: \'bar\'\nstring_3: bar\ninline_keys_ignored: sompath/name/file.jpg\nkeywords_in_yaml:\n  - true\n  - false\n  - TRUE\n  - FALSE\n  - 21\n  - 21.0\n  - !!str 123\n"quoted_key": &foobar\n  bar: foo\n  foo:\n  "foo": bar\n\nreference: *foobar\n\nmultiline_1: |\n  Multiline\n  String\nmultiline_2: >\n  Multiline\n  String\nmultiline_3: "\n  Multiline string\n  "\n\nansible_variables: "foo {{variable}}"\n\narray_nested:\n- a\n- b: 1\n  c: 2\n- b\n- comment',
   },
+  {
+    language: 'html',
+    text: 'Html',
+    code: `<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Html Dom Render</title>
+    </head>
+    <body>
+    <div>Custom Html Dom Render</div>
+    <ul>
+        <li>Ant Desgin</li>
+        <li>Ant Desgin Pro</li>
+        <li>Ant Desgin Pro Components</li>
+    </ul>
+
+    </body>
+    </html>`,
+  },
 ];
 
 export default configs;
