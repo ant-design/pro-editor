@@ -1,3 +1,4 @@
+import * as DOMPurify from 'dompurify';
 import { useEffect, useState } from 'react';
 import { getHighlighter, type Highlighter } from 'shiki/bundle/web';
 import { themeConfig } from '../theme';
@@ -42,9 +43,10 @@ export const useShiki = (language, theme) => {
         lang: language,
         theme,
       });
-      return result;
+      return DOMPurify.sanitize(result);
     } else {
-      return `<pre><code>${content}</code></pre>`;
+      // 在shiki加载完成之前，直接返回原始代码，同样需要进行xss过滤
+      return DOMPurify.sanitize(`<pre><code>${content}</code></pre>`);
     }
   };
 
