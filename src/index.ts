@@ -14,6 +14,7 @@ export { default as ErrorBoundary } from './ErrorBoundary';
 export { default as FreeCanvas } from './FreeCanvas';
 export type { FreeCanvasProps } from './FreeCanvas';
 export * from './Highlight';
+export { default as HolographicCard } from './HolographicCard';
 export * from './IconPicker';
 export * from './InteractContainer';
 export { Layout as EditorLayout } from './Layout';
