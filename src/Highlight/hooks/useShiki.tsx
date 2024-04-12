@@ -1,4 +1,4 @@
-import * as DOMPurify from 'dompurify';
+import DOMPurify from 'dompurify';
 import { useEffect, useState } from 'react';
 import { getHighlighter, type Highlighter } from 'shiki/bundle/web';
 import { themeConfig } from '../theme';
