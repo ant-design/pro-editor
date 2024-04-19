@@ -17,6 +17,8 @@ Markdown is a React component used to render Markdown text. It supports various 
 
 <code src="./demos/htmlPlugin.tsx" nopadding title="Custom Plugins Input" description="We have built-in some plugins for Markdown conversion, but if you have other requirements, you can customize the input of `rehypePlugins` and `remarkPlugins` to enhance the current rendering capabilities. The example is a sample input of rehypeRaw for rendering HTML capabilities. It is worth noting that there may be parsing conflicts between different plugins, which may need to be resolved by the user."></code>
 
+<code src="./demos/renderComponets.tsx" nopadding title="Custom Partial Components" description="You can customize the rendering of some React-Markdown components through the Components property. For example, here is a case where the current A tag is modified"></code>
+
 ## APIs
 
 | Property      | Type                              | Description                               |

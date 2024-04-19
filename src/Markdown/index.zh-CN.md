@@ -18,6 +18,8 @@ Markdown 是一个用于渲染 Markdown 文本的 React 组件。它支持各种
 
 <code src="./demos/htmlPlugin.tsx" nopadding title="自定义传入 Plugins" description="我们内置了一些对于 Markdown 转换的 Plugins，但是如果你有别的需求，你可以自定义传入 `rehypePlugins` 和 `remarkPlugins` 来扩充当前的渲染能力。例子是一个传入 rehypeRaw 用来渲染 Html 能力的样例。需要注意的是，不同的插件之间可能会出现解析冲突的问题，这个可能需要用户自己解决。"></code>
 
+<code src="./demos/renderComponets.tsx" nopadding title="自定义部分组件" description="可以通过 Components 属性来自定义渲染一些 React-Markdown 的渲染组件，例如这里是一个魔改当前 A 标签的案例"></code>
+
 ## APIs
 
 | 属性名        | 类型                              | 描述                     |
