@@ -1,6 +1,6 @@
 import { Collapse, Divider, Typography } from 'antd';
 import { CSSProperties, memo } from 'react';
-import ReactMarkdown from 'react-markdown';
+import ReactMarkdown, { Components } from 'react-markdown';
 import rehypeKatex from 'rehype-katex';
 import remarkGfm from 'remark-gfm';
 import remarkMath from 'remark-math';
@@ -20,6 +20,7 @@ export interface MarkdownProps {
   style?: CSSProperties;
   rehypePlugins?: PluggableList;
   remarkPlugins?: PluggableList;
+  components?: Components;
 }
 
 const MemoHr = memo((props) => (
@@ -27,7 +28,11 @@ const MemoHr = memo((props) => (
 ));
 const MemoDetails = memo((props) => <Collapse style={{ marginBottom: '1em' }} {...props} />);
 const MemoImage = memo((props) => <img {...props} />);
-const MemoAlink = memo((props) => <Typography.Link {...props} />);
+const MemoAlink = memo((props) => {
+  console.log(props);
+
+  return <Typography.Link {...props} />;
+});
 
 const Markdown = memo<MarkdownProps>(
   ({
@@ -37,6 +42,7 @@ const Markdown = memo<MarkdownProps>(
     onDoubleClick,
     rehypePlugins: outRehypePlugins,
     remarkPlugins: outRemarkPlugins,
+    components: outComponents,
     ...rest
   }) => {
     const { styles } = useStyles();
@@ -46,10 +52,15 @@ const Markdown = memo<MarkdownProps>(
       a: MemoAlink,
       img: MemoImage,
       pre: Code,
+      ...outComponents,
     };
 
     const rehypePlugins = [rehypeKatex, ...(outRehypePlugins || [])];
-    const remarkPlugins = [[remarkGfm,{singleTilde: false}], remarkMath, ...(outRemarkPlugins || [])];
+    const remarkPlugins = [
+      [remarkGfm, { singleTilde: false }],
+      remarkMath,
+      ...(outRemarkPlugins || []),
+    ];
 
     return (
       <Typography className={className} onDoubleClick={onDoubleClick} style={style}>
