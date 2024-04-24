@@ -1,8 +1,10 @@
 import { createStyles } from '../theme';
 
 export const useStyle = createStyles(({ css, token, cx, prefixCls }, { themeType }) => {
-  const EDITOR_PREFIX = `${prefixCls}-${token?.editorPrefix}`;
+  const EDITOR_PREFIX = `${prefixCls}-${token?.editorPrefix || 'editor'}`;
   const prefix = `${EDITOR_PREFIX}-layout`;
+
+  console.log(' .${EDITOR_PREFIX}-draggable-panel', ` .${EDITOR_PREFIX}-draggable-panel`);
 
   const typeStylish = css`
     background-color: ${themeType === 'block'
