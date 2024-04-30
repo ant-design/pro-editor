@@ -28,11 +28,7 @@ const MemoHr = memo((props) => (
 ));
 const MemoDetails = memo((props) => <Collapse style={{ marginBottom: '1em' }} {...props} />);
 const MemoImage = memo((props) => <img {...props} />);
-const MemoAlink = memo((props) => {
-  console.log(props);
-
-  return <Typography.Link {...props} />;
-});
+const MemoAlink = memo((props) => <Typography.Link {...props} />);
 
 const Markdown = memo<MarkdownProps>(
   ({
