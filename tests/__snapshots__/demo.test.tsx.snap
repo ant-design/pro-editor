@@ -9542,11 +9542,11 @@ exports[`<DraggablePanel /> > renders controlFloat.tsx correctly 1`] = `
         />
         <div
           class="emotion-2 ant-editor-draggable-panel-right-handle"
-          style="position: absolute; user-select: none; width: 10px; height: 100%; top: 0px; right: -5px; cursor: col-resize;"
+          style="position: absolute; user-select: none; width: 10px; height: 100%; top: 0px; cursor: col-resize; right: -5px;"
         />
         <div
           class="ant-editor-draggable-panel-bottom-handle emotion-3"
-          style="position: absolute; user-select: none; width: 100%; height: 10px; bottom: -5px; left: 0px; cursor: row-resize;"
+          style="position: absolute; user-select: none; width: 100%; height: 10px; left: 0px; cursor: row-resize; bottom: -5px;"
         />
         <div
           class="emotion-4 ant-editor-draggable-panel-left-handle"
@@ -9692,11 +9692,11 @@ exports[`<DraggablePanel /> > renders float.tsx correctly 1`] = `
         />
         <div
           class="emotion-2 ant-editor-draggable-panel-right-handle"
-          style="position: absolute; user-select: none; width: 10px; height: 100%; top: 0px; right: -5px; cursor: col-resize;"
+          style="position: absolute; user-select: none; width: 10px; height: 100%; top: 0px; cursor: col-resize; right: -5px;"
         />
         <div
           class="ant-editor-draggable-panel-bottom-handle emotion-3"
-          style="position: absolute; user-select: none; width: 100%; height: 10px; bottom: -5px; left: 0px; cursor: row-resize;"
+          style="position: absolute; user-select: none; width: 100%; height: 10px; left: 0px; cursor: row-resize; bottom: -5px;"
         />
         <div
           class="emotion-4 ant-editor-draggable-panel-left-handle"
