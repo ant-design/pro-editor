@@ -11,7 +11,7 @@ import { Code } from './CodeBlock';
 import { useStyles } from './style';
 
 export interface MarkdownProps {
-  children: string;
+  children?: string;
   /**
    * @description ClassName
    */
