@@ -18,6 +18,8 @@ group: 面板模块
 
 <code src="./demos/top.tsx" title="顶部面板固定" description="顶部面板固定，上下拖动"></code>
 
+<code src="./demos/controlFixed.tsx" title="面板展开受控" description="右侧面板固定，展开状态受控模式"></code>
+
 <code src="./demos/float.tsx" compact="true" title="悬浮可拖拽面板" description="设置 `mode` 为 `float`"></code>
 
 <code src="./demos/controlFloat.tsx" compact="true" title="悬浮受控模式" description="悬浮框位置受控"></code>
