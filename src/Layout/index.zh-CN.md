@@ -12,6 +12,8 @@ EditorLayout 是我们专门为了编辑器场景制作的编辑器布局组件
 
 <code src="./demos/basic.tsx" title="基础用法"></code>
 
+<code src="./demos/base.tsx" title="纯净样式"></code>
+
 <code src="./demos/single.tsx" title="只需要面板" description="你可以通过设置 `header` 和 `footer` 为 `false` 来隐藏头和尾的配置"></code>
 
 <code src="./demos/noLeftPannel.tsx" title="关闭 panel" description="当然你也可以对某个 `pannel` 设置 false 来关闭其内容"></code>
