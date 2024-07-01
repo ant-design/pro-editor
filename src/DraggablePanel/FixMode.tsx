@@ -190,7 +190,7 @@ const FixMode: FC<FixModePanelProps> = memo<FixModePanelProps>(
           maxHeight: typeof maxHeight === 'number' ? Math.max(maxHeight, 0) : undefined,
           maxWidth: typeof maxWidth === 'number' ? Math.max(maxWidth, 0) : undefined,
           defaultSize,
-          size: size as Size,
+          size: (size || { height: 'auto' }) as Size,
           style,
         }
       : {

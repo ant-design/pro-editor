@@ -18,6 +18,8 @@ Used for panels that need to be stretched or dragged and moved.
 
 <code src="./demos/top.tsx" title="Fixed Panel at the Top" description="The panel at the top is fixed and can be dragged up and down"></code>
 
+<code src="./demos/controlFixed.tsx" title="Fixed Panel expandable controlled" description="The panel  is fixed and expand can be controlled"></code>
+
 <code src="./demos/float.tsx" compact="true" title="Floating Draggable Panel" description="Set `mode` to `float`"></code>
 
 <code src="./demos/controlFloat.tsx" compact="true" title="Floating Controlled Mode" description="The position of the floating panel is controlled"></code>
