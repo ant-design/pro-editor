@@ -76,4 +76,4 @@ const BasicLayout = (props: LayoutProps) => {
 
 const WrapperLayout: React.FC<LayoutProps> = withProvider(BasicLayout);
 
-export { WrapperLayout as Layout };
+export { BasicLayout as BaseEditorLayout, WrapperLayout as Layout };
