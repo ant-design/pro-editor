@@ -9258,7 +9258,7 @@ exports[`<DraggablePanel /> > renders basic.tsx correctly 1`] = `
       </div>
       <div
         class="ant-editor-draggable-panel-fixed emotion-3"
-        style="position: relative; user-select: auto; padding: 12px; width: 400px; height: 100%; max-width: 600px; min-width: 280px; box-sizing: border-box; flex-shrink: 0;"
+        style="position: relative; user-select: auto; padding: 12px; width: auto; height: auto; max-width: 600px; min-width: 280px; box-sizing: border-box; flex-shrink: 0;"
       >
         Right Panel
         <div>
@@ -9409,13 +9409,158 @@ exports[`<DraggablePanel /> > renders bottom.tsx correctly 1`] = `
       </div>
       <div
         class="ant-editor-draggable-panel-fixed emotion-4"
-        style="position: relative; user-select: auto; width: 100%; padding: 12px; height: 150px; max-height: 250px; min-width: 280px; box-sizing: border-box; flex-shrink: 0;"
+        style="position: relative; user-select: auto; width: auto; padding: 12px; height: auto; max-height: 250px; min-width: 280px; box-sizing: border-box; flex-shrink: 0;"
       >
         Bottom Panel
         <div>
           <div
             class="ant-editor-draggable-panel-top-handle emotion-5"
             style="position: absolute; user-select: none; width: 100%; height: 10px; top: -5px; left: 0px; cursor: row-resize;"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<DraggablePanel /> > renders controlFixed.tsx correctly 1`] = `
+.emotion-0 {
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  position: relative;
+  border: 0 solid rgba(5, 5, 5, 0.06);
+}
+
+.emotion-0:hover .ant-editor-draggable-panel-toggle {
+  opacity: 1;
+}
+
+.emotion-1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-2 {
+  position: absolute;
+  opacity: 0;
+  z-index: 1001;
+  -webkit-transition: opacity 0.1s;
+  transition: opacity 0.1s;
+  border-radius: 4px;
+  cursor: pointer;
+  background: #ffffff;
+  border-width: 1px;
+  border-style: solid;
+  color: rgba(0, 0, 0, 0.45);
+  border-color: #d9d9d9;
+  width: 16px;
+  height: 40px;
+  left: -17px;
+  top: 50%;
+  margin-top: -20px;
+  border-radius: 4px 0 0 4px;
+  border-right-width: 0;
+}
+
+.emotion-2:hover {
+  color: rgba(0, 0, 0, 0.65);
+  background: rgba(0, 0, 0, 0.02);
+}
+
+.emotion-3 {
+  background: #ffffff;
+  overflow: hidden;
+}
+
+<div>
+  <div
+    style="height: 300px; display: flex; overflow: hidden; max-width: 100%;"
+  >
+    <div
+      style="flex: 1; padding: 12px;"
+    >
+      Content
+    </div>
+    <div
+      class="ant-editor-draggable-panel emotion-0"
+      style="border-left-width: 1px;"
+    >
+      <div
+        class="layoutkit-center emotion-1 ant-editor-draggable-panel-toggle ant-editor-draggable-panel-toggle-left emotion-2"
+        style="opacity: 1;"
+      >
+        <span
+          aria-label="left"
+          class="anticon anticon-left"
+          role="img"
+        >
+          <svg
+            aria-hidden="true"
+            data-icon="left"
+            fill="currentColor"
+            focusable="false"
+            height="1em"
+            viewBox="64 64 896 896"
+            width="1em"
+          >
+            <path
+              d="M724 218.3V141c0-6.7-7.7-10.4-12.9-6.3L260.3 486.8a31.86 31.86 0 000 50.3l450.8 352.1c5.3 4.1 12.9.4 12.9-6.3v-77.3c0-4.9-2.3-9.6-6.1-12.6l-360-281 360-281.1c3.8-3 6.1-7.7 6.1-12.6z"
+            />
+          </svg>
+        </span>
+      </div>
+      <div
+        class="ant-editor-draggable-panel-fixed emotion-3"
+        style="position: relative; user-select: auto; width: 0px; height: 0px; min-width: 0; min-height: 0; box-sizing: border-box; flex-shrink: 0;"
+      >
+        Right Panel
+        <div>
+          <div
+            class=""
+            style="position: absolute; user-select: none; width: 100%; height: 10px; top: -5px; left: 0px; cursor: row-resize;"
+          />
+          <div
+            class=""
+            style="position: absolute; user-select: none; width: 10px; height: 100%; top: 0px; cursor: col-resize; right: -5px;"
+          />
+          <div
+            class=""
+            style="position: absolute; user-select: none; width: 100%; height: 10px; left: 0px; cursor: row-resize; bottom: -5px;"
+          />
+          <div
+            class=""
+            style="position: absolute; user-select: none; width: 10px; height: 100%; top: 0px; left: -5px; cursor: col-resize;"
+          />
+          <div
+            class=""
+            style="position: absolute; user-select: none; width: 20px; height: 20px; right: -10px; top: -10px; cursor: ne-resize;"
+          />
+          <div
+            class=""
+            style="position: absolute; user-select: none; width: 20px; height: 20px; right: -10px; bottom: -10px; cursor: se-resize;"
+          />
+          <div
+            class=""
+            style="position: absolute; user-select: none; width: 20px; height: 20px; left: -10px; bottom: -10px; cursor: sw-resize;"
+          />
+          <div
+            class=""
+            style="position: absolute; user-select: none; width: 20px; height: 20px; left: -10px; top: -10px; cursor: nw-resize;"
           />
         </div>
       </div>
@@ -9855,7 +10000,7 @@ exports[`<DraggablePanel /> > renders left.tsx correctly 1`] = `
       </div>
       <div
         class="ant-editor-draggable-panel-fixed emotion-4"
-        style="position: relative; user-select: auto; width: 400px; padding: 12px; height: 100%; max-width: 800px; min-width: 280px; box-sizing: border-box; flex-shrink: 0;"
+        style="position: relative; user-select: auto; width: auto; padding: 12px; height: auto; max-width: 800px; min-width: 280px; box-sizing: border-box; flex-shrink: 0;"
       >
         Left Panel
         <div>
@@ -10006,7 +10151,7 @@ exports[`<DraggablePanel /> > renders top.tsx correctly 1`] = `
       </div>
       <div
         class="ant-editor-draggable-panel-fixed emotion-4"
-        style="position: relative; user-select: auto; width: 100%; padding: 12px; height: 150px; max-height: 250px; min-width: 280px; box-sizing: border-box; flex-shrink: 0;"
+        style="position: relative; user-select: auto; width: auto; padding: 12px; height: auto; max-height: 250px; min-width: 280px; box-sizing: border-box; flex-shrink: 0;"
       >
         Top Panel
         <div>
@@ -12360,7 +12505,7 @@ exports[`<Layout /> > renders basic.tsx correctly 1`] = `
       >
         <div
           class="ant-editor-draggable-panel-fixed emotion-10"
-          style="position: relative; user-select: auto; width: 200px; height: 100%; max-width: 500px; min-width: 100px; min-height: 100px; box-sizing: border-box; flex-shrink: 0;"
+          style="position: relative; user-select: auto; width: auto; height: auto; max-width: 500px; min-width: 100px; min-height: 100px; box-sizing: border-box; flex-shrink: 0;"
         >
           <div
             class="ant-editor-layout-pannel ant-editor-layout-left-pannel emotion-11"
@@ -12390,7 +12535,7 @@ exports[`<Layout /> > renders basic.tsx correctly 1`] = `
       >
         <div
           class="ant-editor-draggable-panel-fixed emotion-10"
-          style="position: relative; user-select: auto; width: 200px; height: 100%; max-width: 500px; min-width: 100px; min-height: 100px; box-sizing: border-box; flex-shrink: 0;"
+          style="position: relative; user-select: auto; width: auto; height: auto; max-width: 500px; min-width: 100px; min-height: 100px; box-sizing: border-box; flex-shrink: 0;"
         >
           <div
             class="ant-editor-layout-pannel ant-editor-layout-right-pannel emotion-11"
@@ -12410,7 +12555,7 @@ exports[`<Layout /> > renders basic.tsx correctly 1`] = `
     >
       <div
         class="ant-editor-draggable-panel-fixed emotion-10"
-        style="position: relative; user-select: auto; width: 100%; height: 100px; max-height: 400px; min-width: 100px; min-height: 100px; box-sizing: border-box; flex-shrink: 0;"
+        style="position: relative; user-select: auto; width: auto; height: auto; max-height: 400px; min-width: 100px; min-height: 100px; box-sizing: border-box; flex-shrink: 0;"
       >
         <div
           class="ant-editor-layout-pannel emotion-20"
@@ -13123,7 +13268,7 @@ exports[`<Layout /> > renders dingding.tsx correctly 1`] = `
       >
         <div
           class="ant-editor-draggable-panel-fixed emotion-15"
-          style="position: relative; user-select: auto; width: 200px; height: 100%; max-width: 500px; min-width: 100px; min-height: 100px; box-sizing: border-box; flex-shrink: 0;"
+          style="position: relative; user-select: auto; width: auto; height: auto; max-width: 500px; min-width: 100px; min-height: 100px; box-sizing: border-box; flex-shrink: 0;"
         >
           <div
             class="ant-editor-layout-pannel ant-editor-layout-left-pannel emotion-16"
@@ -13203,7 +13348,7 @@ exports[`<Layout /> > renders dingding.tsx correctly 1`] = `
         >
           <div
             class="ant-editor-draggable-panel-fixed emotion-15"
-            style="position: relative; user-select: auto; width: 100%; height: 100px; max-height: 400px; min-width: 100px; min-height: 100px; box-sizing: border-box; flex-shrink: 0;"
+            style="position: relative; user-select: auto; width: auto; height: auto; max-height: 400px; min-width: 100px; min-height: 100px; box-sizing: border-box; flex-shrink: 0;"
           >
             <div
               class="ant-editor-layout-pannel emotion-22"
@@ -13458,7 +13603,7 @@ exports[`<Layout /> > renders noLeftPannel.tsx correctly 1`] = `
       >
         <div
           class="ant-editor-draggable-panel-fixed emotion-5"
-          style="position: relative; user-select: auto; width: 200px; height: 100%; max-width: 500px; min-width: 100px; min-height: 100px; box-sizing: border-box; flex-shrink: 0;"
+          style="position: relative; user-select: auto; width: auto; height: auto; max-width: 500px; min-width: 100px; min-height: 100px; box-sizing: border-box; flex-shrink: 0;"
         >
           <div
             class="ant-editor-layout-pannel ant-editor-layout-right-pannel emotion-6"
@@ -13478,7 +13623,7 @@ exports[`<Layout /> > renders noLeftPannel.tsx correctly 1`] = `
     >
       <div
         class="ant-editor-draggable-panel-fixed emotion-5"
-        style="position: relative; user-select: auto; width: 100%; height: 100px; max-height: 400px; min-width: 100px; min-height: 100px; box-sizing: border-box; flex-shrink: 0;"
+        style="position: relative; user-select: auto; width: auto; height: auto; max-height: 400px; min-width: 100px; min-height: 100px; box-sizing: border-box; flex-shrink: 0;"
       >
         <div
           class="ant-editor-layout-pannel emotion-10"
@@ -13774,7 +13919,7 @@ exports[`<Layout /> > renders single.tsx correctly 1`] = `
       >
         <div
           class="ant-editor-draggable-panel-fixed emotion-4"
-          style="position: relative; user-select: auto; width: 200px; height: 100%; max-width: 500px; min-width: 100px; min-height: 100px; box-sizing: border-box; flex-shrink: 0;"
+          style="position: relative; user-select: auto; width: auto; height: auto; max-width: 500px; min-width: 100px; min-height: 100px; box-sizing: border-box; flex-shrink: 0;"
         >
           <div
             class="ant-editor-layout-pannel ant-editor-layout-left-pannel emotion-5"
@@ -13804,7 +13949,7 @@ exports[`<Layout /> > renders single.tsx correctly 1`] = `
       >
         <div
           class="ant-editor-draggable-panel-fixed emotion-4"
-          style="position: relative; user-select: auto; width: 200px; height: 100%; max-width: 500px; min-width: 100px; min-height: 100px; box-sizing: border-box; flex-shrink: 0;"
+          style="position: relative; user-select: auto; width: auto; height: auto; max-width: 500px; min-width: 100px; min-height: 100px; box-sizing: border-box; flex-shrink: 0;"
         >
           <div
             class="ant-editor-layout-pannel ant-editor-layout-right-pannel emotion-5"
@@ -13824,7 +13969,7 @@ exports[`<Layout /> > renders single.tsx correctly 1`] = `
     >
       <div
         class="ant-editor-draggable-panel-fixed emotion-4"
-        style="position: relative; user-select: auto; width: 100%; height: 100px; max-height: 400px; min-width: 100px; min-height: 100px; box-sizing: border-box; flex-shrink: 0;"
+        style="position: relative; user-select: auto; width: auto; height: auto; max-height: 400px; min-width: 100px; min-height: 100px; box-sizing: border-box; flex-shrink: 0;"
       >
         <div
           class="ant-editor-layout-pannel emotion-14"
@@ -14246,7 +14391,7 @@ exports[`<Layout /> > renders themeType.tsx correctly 1`] = `
           >
             <div
               class="ant-editor-draggable-panel-fixed emotion-9"
-              style="position: relative; user-select: auto; width: 200px; height: 100%; max-width: 500px; min-width: 100px; min-height: 100px; box-sizing: border-box; flex-shrink: 0;"
+              style="position: relative; user-select: auto; width: auto; height: auto; max-width: 500px; min-width: 100px; min-height: 100px; box-sizing: border-box; flex-shrink: 0;"
             >
               <div
                 class="ant-editor-layout-pannel ant-editor-layout-left-pannel emotion-10"
@@ -14280,7 +14425,7 @@ exports[`<Layout /> > renders themeType.tsx correctly 1`] = `
           >
             <div
               class="ant-editor-draggable-panel-fixed emotion-9"
-              style="position: relative; user-select: auto; width: 200px; height: 100%; max-width: 500px; min-width: 100px; min-height: 100px; box-sizing: border-box; flex-shrink: 0;"
+              style="position: relative; user-select: auto; width: auto; height: auto; max-width: 500px; min-width: 100px; min-height: 100px; box-sizing: border-box; flex-shrink: 0;"
             >
               <div
                 class="ant-editor-layout-pannel ant-editor-layout-right-pannel emotion-10"
@@ -14304,7 +14449,7 @@ exports[`<Layout /> > renders themeType.tsx correctly 1`] = `
         >
           <div
             class="ant-editor-draggable-panel-fixed emotion-9"
-            style="position: relative; user-select: auto; width: 100%; height: 100px; max-height: 400px; min-width: 100px; min-height: 100px; box-sizing: border-box; flex-shrink: 0;"
+            style="position: relative; user-select: auto; width: auto; height: auto; max-height: 400px; min-width: 100px; min-height: 100px; box-sizing: border-box; flex-shrink: 0;"
           >
             <div
               class="ant-editor-layout-pannel emotion-19"
@@ -14922,7 +15067,7 @@ exports[`<Layout /> > renders types.tsx correctly 1`] = `
           >
             <div
               class="ant-editor-draggable-panel-fixed emotion-9"
-              style="position: relative; user-select: auto; width: 200px; height: 100%; max-width: 500px; min-width: 100px; min-height: 100px; box-sizing: border-box; flex-shrink: 0;"
+              style="position: relative; user-select: auto; width: auto; height: auto; max-width: 500px; min-width: 100px; min-height: 100px; box-sizing: border-box; flex-shrink: 0;"
             >
               <div
                 class="ant-editor-layout-pannel ant-editor-layout-left-pannel emotion-10"
@@ -14952,7 +15097,7 @@ exports[`<Layout /> > renders types.tsx correctly 1`] = `
           >
             <div
               class="ant-editor-draggable-panel-fixed emotion-9"
-              style="position: relative; user-select: auto; width: 200px; height: 100%; max-width: 500px; min-width: 100px; min-height: 100px; box-sizing: border-box; flex-shrink: 0;"
+              style="position: relative; user-select: auto; width: auto; height: auto; max-width: 500px; min-width: 100px; min-height: 100px; box-sizing: border-box; flex-shrink: 0;"
             >
               <div
                 class="ant-editor-layout-pannel ant-editor-layout-right-pannel emotion-10"
@@ -14972,7 +15117,7 @@ exports[`<Layout /> > renders types.tsx correctly 1`] = `
         >
           <div
             class="ant-editor-draggable-panel-fixed emotion-9"
-            style="position: relative; user-select: auto; width: 100%; height: 100px; max-height: 400px; min-width: 100px; min-height: 100px; box-sizing: border-box; flex-shrink: 0;"
+            style="position: relative; user-select: auto; width: auto; height: auto; max-height: 400px; min-width: 100px; min-height: 100px; box-sizing: border-box; flex-shrink: 0;"
           >
             <div
               class="ant-editor-layout-pannel emotion-19"

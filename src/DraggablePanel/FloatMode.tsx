@@ -2,7 +2,7 @@ import type { Enable, NumberSize, Size } from 're-resizable';
 import { HandleClassName } from 're-resizable';
 import type { CSSProperties, FC, ReactNode } from 'react';
 import { memo, useMemo } from 'react';
-import type { Position, Props as RndProps } from 'react-rnd';
+import type { Position, Props, Props as RndProps } from 'react-rnd';
 import { Rnd } from 'react-rnd';
 
 import { useStyle } from './style';
@@ -155,7 +155,7 @@ export const FloatMode: FC<FloatProps> = memo(
       maxHeight: maxHeight ? Math.max(maxHeight, 0) : undefined,
       maxWidth: maxWidth ? Math.max(maxWidth, 0) : undefined,
       defaultSize,
-      size: size as Size,
+      size: size as Props[`size`],
       style,
     };
 
@@ -163,10 +163,12 @@ export const FloatMode: FC<FloatProps> = memo(
       <Rnd
         position={position}
         resizeHandleClasses={resizeHandleClassNames}
-        default={{
-          ...defaultPosition,
-          ...defaultSize,
-        }}
+        default={
+          {
+            ...defaultPosition,
+            ...defaultSize,
+          } as Props[`default`]
+        }
         onDragStop={(e, data) => {
           onPositionChange?.({ x: data.x, y: data.y });
         }}
