@@ -20,6 +20,8 @@ export const HIGHLIGHT_LANGUAGES = [
   'sql',
   'bash',
   'sh',
+  'vue',
+  'vue-html',
 ];
 
 export const useShiki = (language, theme) => {
