@@ -1,11 +1,11 @@
 import { Collapse, Divider, Typography } from 'antd';
+import 'katex/dist/katex.css';
 import { CSSProperties, memo } from 'react';
 import ReactMarkdown from 'react-markdown';
+import { PluggableList } from 'react-markdown/lib/react-markdown';
 import rehypeKatex from 'rehype-katex';
 import remarkGfm from 'remark-gfm';
 import remarkMath from 'remark-math';
-
-import { PluggableList } from 'react-markdown/lib/react-markdown';
 import { withProvider } from '..';
 import { Code } from './CodeBlock';
 import { useStyles } from './style';
@@ -49,7 +49,11 @@ const Markdown = memo<MarkdownProps>(
     };
 
     const rehypePlugins = [rehypeKatex, ...(outRehypePlugins || [])];
-    const remarkPlugins = [[remarkGfm,{singleTilde: false}], remarkMath, ...(outRemarkPlugins || [])];
+    const remarkPlugins = [
+      [remarkGfm, { singleTilde: false }],
+      remarkMath,
+      ...(outRemarkPlugins || []),
+    ];
 
     return (
       <Typography className={className} onDoubleClick={onDoubleClick} style={style}>
