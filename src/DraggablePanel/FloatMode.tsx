@@ -55,6 +55,11 @@ export interface FloatProps {
 
   canResizing?: boolean;
   /**
+   * 禁用拖动功能，指定一个选择器防止拖动初始化
+   * @example e.g. `.body`
+   */
+  cancel?: string;
+  /**
    * 面板位置
    * 受控模式
    */
@@ -98,6 +103,7 @@ export const FloatMode: FC<FloatProps> = memo(
     resize,
     style,
     position,
+    cancel,
     onPositionChange,
     size,
     defaultSize: customizeDefaultSize,
@@ -162,6 +168,7 @@ export const FloatMode: FC<FloatProps> = memo(
     return (
       <Rnd
         position={position}
+        cancel={cancel}
         resizeHandleClasses={resizeHandleClassNames}
         default={
           {

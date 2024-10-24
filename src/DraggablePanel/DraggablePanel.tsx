@@ -61,6 +61,11 @@ export interface DraggablePanelProps {
    */
   isExpand?: boolean;
   /**
+   * 禁用拖动功能，指定一个选择器防止拖动初始化
+   * @example e.g. `.body`
+   */
+  cancel?: string;
+  /**
    * 展开是否可以变更
    * @param expand
    */
@@ -107,6 +112,7 @@ const Draggable: FC<DraggablePanelProps> = memo(
     placement,
     resize,
     style,
+    cancel,
     position,
     onPositionChange,
     size,
@@ -167,6 +173,7 @@ const Draggable: FC<DraggablePanelProps> = memo(
             // 缩放
             resize={resize}
             canResizing={resize !== false}
+            cancel={cancel}
             className={className}
             style={style}
           >
